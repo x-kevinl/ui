@@ -1,0 +1,4 @@
+==Problem==
+Quadrilateral $ABCD$ has $AB = BC = CD$, $m\angle ABC = 70^\circ$ and $m\angle BCD = 170^\circ$. What is the degree measure of $\angle BAD$?
+
+$\mathrm{(A)}\ 75\qquad\mathrm{(B)}\ 80\qquad\mathrm{(C)}\ 85\qquad\mathrm{(D)}\ 90\qquad\mathrm{(E)}\ 95$

@@ -1,0 +1,28 @@
+== Solution 1==
+<asy>
+size(10cm);
+pair A, B, C, D, F;
+A = (0, tan(3 * pi / 7));
+B = (1, 0);
+C = (-1, 0);
+F = rotate(90/7, A) * (A - (0, 2));
+D = rotate(900/7, F) * A;
+
+draw(A -- B -- C -- cycle);
+draw(F -- D);
+draw(D -- B);
+
+label("$A$", A, N);
+label("$B$", B, E);
+label("$C$", C, W);
+label("$D$", D, W);
+label("$E$", F, E);
+</asy>
+
+If we set <math>\angle{BAC}</math> to <math>x</math>, we can find all other angles through these two properties:
+1. Angles in a triangle sum to <math>180^{\circ}</math>.
+2. The base angles of an isosceles triangle are congruent.
+
+Now we angle chase. <math>\angle{ADE}=\angle{EAD}=x</math>, <math>\angle{AED} = 180-2x</math>, <math>\angle{BED}=\angle{EBD}=2x</math>, <math>\angle{EDB} = 180-4x</math>, <math>\angle{BDC} = \angle{BCD} = 3x</math>, <math>\angle{CBD} = 180-6x</math>. Since <math>AB = AC</math> as given by the problem, <math>\angle{ABC} = \angle{ACB}</math>, so <math>180-4x=3x</math>. Therefore, <math>x = 180/7^{\circ}</math>, and our desired angle is <cmath>180-4\left(\frac{180}{7}\right) = \frac{540}{7}</cmath> for an answer of <math>\boxed{547}</math>.
+
+See here for a video solution: https://youtu.be/4e8Hk04Ax_E

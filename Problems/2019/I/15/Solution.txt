@@ -1,0 +1,38 @@
+==Solution 1==
+
+<asy>
+size(8cm);
+pair O, A, B, P, O1, O2, Q, X, Y;
+O=(0, 0);
+A=dir(140); B=dir(40);
+P=(3A+5B)/8;
+O1=extension((A+P)/2, (A+P)/2+(0, 1), A, O);
+O2=extension((B+P)/2, (B+P)/2+(0, 1), B, O);
+Q=intersectionpoints(circle(O1, length(A-O1)), circle(O2, length(B-O2)))[1];
+X=intersectionpoint(P -- (P+(P-Q)*100), circle(O, 1));
+Y=intersectionpoint(Q -- (Q+(Q-P)*100), circle(O, 1));
+
+draw(circle(O, 1));
+draw(circle(O1, length(A-O1)));
+draw(circle(O2, length(B-O2)));
+draw(A -- B); draw(X -- Y); draw(A -- O -- B); draw(O1 -- P -- O2);
+
+dot("$O$", O, S);
+dot("$A$", A, A);
+dot("$B$", B, B);
+dot("$P$", P, dir(70));
+dot("$Q$", Q, dir(200));
+dot("$O_1$", O1, SW);
+dot("$O_2$", O2, SE);
+dot("$X$", X, X);
+dot("$Y$", Y, Y);
+</asy>
+Let <math>O_1</math> and <math>O_2</math> be the centers of <math>\omega_1</math> and <math>\omega_2</math>, respectively. There is a homothety at <math>A</math> sending <math>\omega</math> to <math>\omega_1</math> that sends <math>B</math> to <math>P</math> and <math>O</math> to <math>O_1</math>, so <math>\overline{OO_2}\parallel\overline{O_1P}</math>. Similarly, <math>\overline{OO_1}\parallel\overline{O_2P}</math>, so <math>OO_1PO_2</math> is a parallelogram. Moreover, <cmath>\angle O_1QO_2=\angle O_1PO_2=\angle O_1OO_2,</cmath>whence <math>OO_1O_2Q</math> is cyclic. However, <cmath>OO_1=O_2P=O_2Q,</cmath>so <math>OO_1O_2Q</math> is an isosceles trapezoid. Since <math>\overline{O_1O_2}\perp\overline{XY}</math>, <math>\overline{OQ}\perp\overline{XY}</math>, so <math>Q</math> is the midpoint of <math>\overline{XY}</math>.
+
+By Power of a Point, <math>PX\cdot PY=PA\cdot PB=15</math>. Since <math>PX+PY=XY=11</math> and <math>XQ=11/2</math>, <cmath>XP=\frac{11-\sqrt{61}}2\implies PQ=XQ-XP=\frac{\sqrt{61}}2\implies PQ^2=\frac{61}4,</cmath>
+and the requested sum is <math>61+4=\boxed{065}</math>.
+
+(Solution by TheUltimate123)
+
+===Note===
+One may solve for <math>PX</math> first using PoAP, <math>PX = \frac{11}{2} - \frac{\sqrt{61}}{2}</math>. Then, notice that <math>PQ^2</math> is rational but <math>PX^2</math> is not, also <math>PX = \frac{XY}{2} - \frac{\sqrt{61}}{2}</math>. The most likely explanation for this is that <math>Q</math> is the midpoint of <math>XY</math>, so that <math>XQ = \frac{11}{2}</math> and <math>PQ=\frac{\sqrt{61}}{2}</math>. Then our answer is <math>m+n=61+4=\boxed{065}</math>. One can rigorously prove this using the methods above

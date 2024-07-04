@@ -1,0 +1,3 @@
+==Problem==
+
+Quadratic polynomials <math>P(x)</math> and <math>Q(x)</math> have leading coefficients <math>2</math> and <math>-2,</math> respectively. The graphs of both polynomials pass through the two points <math>(16,54)</math> and <math>(20,53).</math> Find <math>P(0) + Q(0).</math>

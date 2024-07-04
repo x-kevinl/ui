@@ -1,0 +1,7 @@
+== Solution 1== 
+
+Mike's speed is $\frac{15}{57}=\frac{5}{19}$ laps per minute.
+
+In the first $27$ minutes, he completed approximately $\frac{5}{19}\cdot27\approx\frac{1}{4}\cdot28=\boxed{\textbf{(B) } 7}$ laps.
+
+~MRENTHUSIASM

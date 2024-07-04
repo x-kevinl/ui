@@ -1,0 +1,2 @@
+== Problem 5 ==
+Let the set <math>S = \{P_1, P_2, \dots, P_{12}\}</math> consist of the twelve vertices of a regular <math>12</math>-gon. A subset <math>Q</math> of <math>S</math> is called "communal" if there is a circle such that all points of <math>Q</math> are inside the circle, and all points of <math>S</math> not in <math>Q</math> are outside of the circle. How many communal subsets are there? (Note that the empty set is a communal subset.)

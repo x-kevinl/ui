@@ -1,0 +1,2 @@
+== Problem ==
+Dave rolls a fair six-sided die until a six appears for the first time. Independently, Linda rolls a fair six-sided die until a six appears for the first time. Let <math>m</math> and <math>n</math> be relatively prime positive integers such that <math>\dfrac mn</math> is the probability that the number of times Dave rolls his die is equal to or within one of the number of times Linda rolls her die. Find <math>m+n</math>.

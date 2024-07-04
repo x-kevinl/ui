@@ -1,0 +1,15 @@
+== Solution ==
+Let's consider the maximization constraint first: we want to maximize the value of <math>|z^5 - (1+2i)z^3|</math>
+Simplifying, we have
+
+<math>|z^3| * |z^2 - (1+2i)|</math>
+
+<math>=|z|^3 * |z^2 - (1+2i)|</math>
+
+<math>=125|z^2 - (1+2i)|</math>
+
+Thus we only need to maximize the value of <math>|z^2 - (1+2i)|</math>.
+
+To maximize this value, we must have that <math>z^2</math> is in the opposite direction of <math>1+2i</math>. The unit vector in the complex plane in the desired direction is <math>\frac{-1}{\sqrt{5}} + \frac{-2}{\sqrt{5}} i</math>. Furthermore, we know that the magnitude of <math>z^2</math> is <math>25</math>, because the magnitude of <math>z</math> is <math>5</math>. From this information, we can find that <math>z^2 = \sqrt{5} (-5 - 10i)</math>
+
+Squaring, we get <math>z^4 = 5 (25 - 100 + 100i) = -375 + 500i</math>. Finally, <math>c+d = -375 + 500 = \boxed{125}</math>

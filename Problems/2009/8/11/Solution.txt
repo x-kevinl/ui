@@ -1,0 +1,2 @@
+==Solution==
+Because the pencil costs a whole number of cents, the cost must be a factor of both $143$ and $195$. They can be factored into $11\cdot13$ and $3\cdot5\cdot13$. The common factor cannot be $1$ or there would have to be more than $30$ sixth graders, so the pencil costs $13$ cents. The difference in costs that the sixth and seventh graders paid is $195-143=52$ cents, which is equal to $52/13 = \boxed{\textbf{(D)}\ 4}$ sixth graders.

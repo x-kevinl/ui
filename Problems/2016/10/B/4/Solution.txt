@@ -1,0 +1,3 @@
+==Solution 1==
+The process took $1+2+3+\ldots+13+14+15=120$ days, so the last day was $119$ days after the first day.
+Since $119$ is divisible by $7$, both must have been the same day of the week, so the answer is $\boxed{\textbf{(B)}\ \text{Monday}}$.

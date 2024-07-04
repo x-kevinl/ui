@@ -1,0 +1,75 @@
+==Solutions==
+===Solution 1===
+It is given that $ax^2+bx+c=0$ has 1 real root, so the discriminant is zero, or $b^2=4ac$. 
+
+Because a, b, c are in arithmetic progression, $b-a=c-b$, or $b=\frac {a+c} {2} $.
+
+We need to find the unique root, or $-\frac {b} {2a} $ (discriminant is 0).
+
+From $b^2=4ac$, we can get $-\frac {b} {2a} =-\frac {2c} {b}$.
+
+Ignoring the negatives(for now), we have 
+$\frac {2c} {b} = \frac {2c} {\frac {a+c} {2}} = \frac {4c} {a+c} = \frac {1} {\frac {1} {\frac {4c} {a+c}}} = \frac {1} {\frac {a+c} {4c}} = \frac {1} {\frac {a} {4c} + \frac {1} {4} }$.
+
+Fortunately, finding $\frac {a} {c} $ is not very hard.
+
+Plug in $b=\frac {a+c} {2}$ to $b^2=4ac$, we have $a^2+2ac+c^2=16ac$, or $a^2-14ac+c^2=0$, and dividing by $c^2$ gives $\left( \frac {a} {c} \right) ^2-14 \left( \frac {a} {c} \right) +1 = 0$, so $\frac {a} {c} = \frac {14 \pm \sqrt {192} } {2} = 7 \pm 4 \sqrt {3} $.
+
+But $7-4\sqrt {3} <1$, violating the assumption that $a \ge c$.
+
+Therefore, $\frac {a} {c} = 7 +4\sqrt {3} $.
+
+Plugging this in, we have $\frac {1} {\frac {a} {4c} + \frac {1} {4} } = \frac {1} {2+ \sqrt {3} } = 2- \sqrt {3} $.
+
+But we need the negative of this, so the answer is $\boxed {\textbf{(D)}}.$
+
+===Solution 2===
+Note that we can divide the polynomial by $a$ to make the leading coefficient 1 since dividing does not change the roots or the fact that the coefficients are in an arithmetic sequence. Also, we know that there is exactly one root so this equation must be of the form 
+$(x-r)^2 = x^2 - 2rx + r^2$ where $1 \ge -2r \ge r^2 \ge 0$.
+We now use the fact that the coefficients are in an arithmetic sequence. Note that in any arithmetic sequence, the average is equal to the median. Thus,
+$r^2 + 1 = -4r$ and $r = -2 \pm \sqrt{3}$. Since $1 \ge r^2$, we easily see that $|r|$ has to be between 1 and 0. Thus, we can eliminate $-2 - \sqrt{3}$ and are left with $\boxed{\textbf{(D)} -2 + \sqrt{3}}$ as the answer.
+
+===Solution 3===
+Given that $ax^2+bx+c=0$ has only 1 real root, we know that the discriminant must equal 0, or that $b^2=4ac$. Because the discriminant equals 0, we have that the root of the quadratic is $r=\frac {-b} {2a}$. We are also given that the coefficients of the quadratic are in arithmetic progression, where $a \ge b \ge c \ge 0$. Letting the arbitrary difference equal variable $d$, we have that $a=b+d$ and that $c=b-d$. Plugging those two equations into $b^2=4ac$, we have $b^2=4(b^2-d^2)=4b^2-4d^2$ which yields $3b^2=4d^2$. Isolating $d$, we have $d=\frac {b \sqrt{3}} {2}$. Substituting that in for $d$ in $a=b+d$, we get $a=b+\frac {b \sqrt{3}} {2}=b(1+\frac {\sqrt{3}} {2})$. Once again, substituting that in for $a$ in $r=\frac {-b} {2a}$, we have $r=\frac {-b} {2b(1+\frac {\sqrt{3}} {2})}=\frac {-1} {2+\sqrt {3}}=-2+\sqrt {3}$. The answer is: $\boxed {\textbf{(D)}}.$
+
+===Solution 4===
+We have $a-b=b-c$
+Hence $2b=a+c$.
+
+And we have $b^2-4ac=0\implies b^2=4ac$.
+Squaring the first expression, and dividing by 4, we get $b^2=\frac{a^2+2ac+c^2}{4}$.
+
+Setting the two equations equal, we have $4ac=\frac{a^2+2ac+c^2}{4}$.
+
+$\implies 16ac=a^2+2ac+c^2\implies 14ac=a^2+c^2\implies a^2-14ac+c^2=0$.
+
+Dividing by $c^2$, we get $(\frac{a}{c})^2-14(\frac{a}{c})+1=0$. 
+
+Setting $\frac{a}{c}=x,$ we have $x^2-14x+1=0.$ 
+
+Solving for $x$, we get $x=\frac{a}{c}=7 \pm 4\sqrt3$ We know that $a \ge c$, so $\frac{a}{c}=7+4\sqrt3$.
+
+By Vieta's, we know that $\frac{c}{a}=r^2$, where $r$ equals the double root of the quadratic.
+So, we get $\frac{c}{a}=\frac{1}{7 + 4\sqrt3}$. After rationalizing the denominator, we get $\frac{c}{a} = 7- 4\sqrt 3$.
+
+Hence, $r^2=7-4\sqrt3$. Solving for $r$, we have $r$ equals $-2+\sqrt3=\boxed{D}$.
+
+===Solution 5===
+
+The unique root is $-\frac {b} {2a} $ as discriminant has to be 0.
+
+We have $a-b=b-c \implies c=2b-a$.
+
+Also discriminant $b^2-4ac=0 \implies b^2=4ac$. Plug in $c=2b-a$ from above, we have $b^2=4a(2b-a) \implies b^2-8ab+4a^2=0$. Divide both sides by $a^2$,  we have $(\frac{b}{a})^2-8(\frac{b}{a})+4=0$.
+
+Solve $\frac{b}{a}$, we get $4\pm2\sqrt {3}$. Since $a \ge b$, $\frac{b}{a}=4-2\sqrt {3}$. 
+
+Therefore the unique root $-\frac{b}{2a} = -2+\sqrt3=\boxed{D}$.
+
+===Solution 6 (guess)===
+ 
+We can just try out the answer choices! First, (C) clearly fails. Then, we try (B). It fails too. But $\boxed{D}$ works.
+
+*feel free to add details
+
+~Yrock

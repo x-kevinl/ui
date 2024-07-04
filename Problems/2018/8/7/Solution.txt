@@ -1,0 +1,7 @@
+==Solution==
+
+We use the property that the digits of a number must sum to a multiple of $9$ if it are divisible by $9$. This means $2+0+1+8+U$ must be divisible by $9$. The only possible value for $U$ then must be $7$. Since we are looking for the remainder when divided by $8$, we can ignore the thousands. The remainder when $187$ is divided by $8$ is $\boxed{\textbf{(B) }3}$.
+
+If you got stuck on this problem, refer to AOPS Number Theory. You're smart.
+
+-InterstellerApex, Nivaar

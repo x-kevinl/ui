@@ -1,0 +1,11 @@
+== Solution ==
+
+Let the polynomial be $P$ and let the two integer zeros be $z_1$ and $z_2$. We can then write $P(x)=(x-z_1)(x-z_2)(x^2+ax+b)$ for some integers $a$ and $b$.
+
+If a complex number $p+qi$ with $q\not=0$ is a root of $P$, it must be the root of $x^2+ax+b$, and the other root of $x^2+ax+b$ must be $p-qi$.
+
+We can then write $x^2+ax+b = (x-p-qi)(x-p+qi) = (x-p)^2 - (qi)^2 = x^2 - 2px + p^2 + q^2$. 
+
+We can now examine each of the five given complex numbers, and find the one for which the values $-2p$ and $p^2+q^2$ are integers. This is $\boxed{\frac {1 + i \sqrt {11}}{2}}$, for which we have $-2p = -2\cdot\frac 12 = -1$ and $p^2+q^2 = \left( \frac 12 \right)^2 + \left( \frac {\sqrt{11}}2 \right)^2 = \frac 14 + \frac {11}4 = \frac {12}4 = 3$.
+
+(As an example, the polynomial $x^4 - 2x^3 + 4x^2 - 3x$ has zeroes $0$, $1$, and $\frac {1 \pm i \sqrt {11}}{2}$.)

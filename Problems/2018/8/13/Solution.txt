@@ -1,0 +1,7 @@
+==Solution 1==
+
+Say Laila gets a value of $x$ on her first 4 tests, and a value of $y$ on her last test. Thus, $4x+y=82 \cdot 4=410$. 
+
+Because $x$ and $y$ are different, $x$ must be less than $82$ and $y$ must be greater than $82$. When $x$ decreases by $1$, $y$ must increase by $4$ to keep the total constant. 
+
+The greatest value for $y$ is $98$ (as $y=100$ would make $x$ non-integer). In the range $83\le y\le 98$, only $4$ values for $y$ result in integer values for $x$: 86, 90, 94 and 98.  Thus, the answer is $\boxed{\textbf{(A) }4}$.

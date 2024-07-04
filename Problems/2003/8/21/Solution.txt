@@ -1,0 +1,2 @@
+== Solution ==
+Using the formula for the area of a trapezoid, we have $164=8(\frac{BC+AD}{2})$. Thus $BC+AD=41$. Drop perpendiculars from $B$ to $AD$ and from $C$ to $AD$ and let them hit $AD$ at $E$ and $F$ respectively. Note that each of these perpendiculars has length $8$. From the Pythagorean Theorem, $AE=6$ and $DF=15$ thus $AD=BC+21$. Substituting back into our original equation we have $BC+BC+21=41$ thus $BC=\boxed{\text{(B)}\ 10}$

@@ -1,0 +1,16 @@
+== Solution ==
+Divide the circle into four parts: the top semicircle by connecting E, F, and G($A$); the bottom sector ($B$), whose arc angle is $120^{\circ}$ because the large circle's radius is $2$ and the short length (the radius of the smaller semicircles) is $1$, giving a $30^{\circ}-60^{\circ}-90^{\circ}$ triangle; the triangle formed by the radii of $A$ and the chord ($C$); and the four parts which are the corners of a circle inscribed in a square ($D$). Then the area is $A + B - C + D$ (in $B-C$, we find the area of the bottom shaded region, and in $D$ we find the area of the shaded region above the semicircles but below the diameter).
+
+The area of $A$ is $\frac{1}{2} \pi \cdot 2^2 = 2\pi$.
+
+The area of $B$ is $\frac{120^{\circ}}{360^{\circ}} \pi \cdot 2^2 = \frac{4\pi}{3}$.
+
+For the area of $C$, the radius of $2$, and the distance of $1$ (the smaller semicircles' radius) to $BC$, creates two $30^{\circ}-60^{\circ}-90^{\circ}$ triangles, so $C$'s area is $2 \cdot \frac{1}{2} \cdot 1 \cdot \sqrt{3} = \sqrt{3}$.
+
+The area of $D$ is $4 \cdot 1-\frac{1}{4}\pi \cdot 2^2=4-\pi$.
+
+Hence, finding $A+B-C+D$, the desired area is $\frac{7\pi}{3}-\sqrt{3}+4$, so the answer is $7+3+3+4=\boxed{\textbf{(E) } 17}$.
+
+----------
+
+Note from ~milquetoast: I found this solution incredibly unspecific and difficult to understand, especially in defining C,  because of the wording. I think what this solution is trying to say is the same as the first video solution down below.

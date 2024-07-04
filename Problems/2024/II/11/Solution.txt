@@ -1,0 +1,6 @@
+==Solution 1==
+<math>ab(a+b)+bc(b+c)+ac(a+c)=300(ab+bc+ac)-3abc=6000000, 100(ab+bc+ac)-abc=2000000</math>
+
+Note <math>(100-a)(100-b)(100-c)=1000000-10000(a+b+c)+100(ab+bc+ac)-abc=0</math>. Thus, <math>a/b/c=100</math>. There are <math>201</math> cases for each but we need to subtract <math>2</math> for <math>(100,100,100)</math>. The answer is <math>\boxed{601}</math>
+
+~Bluesoul

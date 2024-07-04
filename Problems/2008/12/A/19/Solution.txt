@@ -1,0 +1,4 @@
+==Solution 1 (easiest)== 
+Let $A = \left(1 + x + x^2 + \cdots + x^{14}\right)$ and $B = \left(1 + x + x^2 + \cdots + x^{27}\right)$. We are expanding $A \cdot A \cdot B$. 
+
+Since there are $15$ terms in $A$, there are $15^2 = 225$ ways to choose one term from each $A$. The product of the selected terms is $x^n$ for some integer $n$ between $0$ and $28$ inclusive. For each $n \neq 0$, there is one and only one $x^{28 - n}$ in $B$. For example, if I choose $x^2$ from $A$ , then there is exactly one power of $x$ in $B$ that I can choose; in this case, it would be $x^{24}$. Since there is only one way to choose one term from each $A$ to get a product of $x^0$, there are $225 - 1 = 224$ ways to choose one term from each $A$ and one term from $B$ to get a product of $x^{28}$. Thus the coefficient of the $x^{28}$ term is $224 \Rightarrow \boxed{C}$.

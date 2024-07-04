@@ -1,0 +1,4 @@
+==Problem 21==
+What is the area of the triangle formed by the lines $y=5$, $y=1+x$, and $y=1-x$?
+
+$\textbf{(A) }4\qquad\textbf{(B) }8\qquad\textbf{(C) }10\qquad\textbf{(D) }12\qquad\textbf{(E) }16$

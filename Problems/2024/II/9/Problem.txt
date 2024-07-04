@@ -1,0 +1,5 @@
+==Problem==
+There is a collection of <math>25</math> indistinguishable white chips and <math>25</math> indistinguishable black chips. Find the number of ways to place some of these chips in the <math>25</math> unit cells of a <math>5\times5</math> grid such that: 
+* each cell contains at most one chip
+* all chips in the same row and all chips in the same column have the same colour
+* any additional chip placed on the grid would violate one or more of the previous two conditions.

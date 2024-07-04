@@ -1,0 +1,5 @@
+== Problem==
+
+What is the product of all the roots of the equation $$\sqrt{5 | x | + 8} = \sqrt{x^2 - 16}.$$
+
+$ \textbf{(A)}\ -64 \qquad\textbf{(B)}\ -24 \qquad\textbf{(C)}\ -9 \qquad\textbf{(D)}\ 24 \qquad\textbf{(E)}\ 576$

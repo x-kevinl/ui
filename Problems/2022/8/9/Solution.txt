@@ -1,0 +1,14 @@
+==Solution==
+
+Initially, the difference between the water temperature and the room temperature is $212-68=144$ degrees Fahrenheit.
+
+After $5$ minutes, the difference between the temperatures is $144\div2=72$ degrees Fahrenheit.
+
+After $10$ minutes, the difference between the temperatures is $72\div2=36$ degrees Fahrenheit.
+
+After $15$ minutes, the difference between the temperatures is $36\div2=18$ degrees Fahrenheit. At this point, the water temperature is $68+18=\boxed{\textbf{(B) } 86}$ degrees Fahrenheit.
+
+<u><b>Remark</b></u>
+
+Alternatively, we can condense the solution above into the following equation: $$68+(212-68)\cdot\left(\frac12\right)^{\tfrac{15}{5}}=86.$$
+~MRENTHUSIASM ~MathFun1000

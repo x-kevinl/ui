@@ -1,0 +1,2 @@
+== Problem ==
+Triangle <math> ABC </math> has <math> BC=20. </math> The [[incircle]] of the triangle evenly [[trisect]]s the [[median of a triangle | median]] <math> AD. </math> If the area of the triangle is <math> m \sqrt{n} </math> where <math> m </math> and <math> n </math> are integers and <math> n </math> is not [[divisor | divisible]] by the [[perfect square | square]] of a prime, find <math> m+n. </math>

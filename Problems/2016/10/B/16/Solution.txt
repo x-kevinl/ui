@@ -1,0 +1,37 @@
+==Solution 1==
+The sum of an infinite geometric series is of the form:
+$$\begin{split}
+S & = \frac{a_1}{1-r} 
+\end{split}$$
+where $a_1$ is the first term and $r$ is the ratio whose absolute value is less than 1.
+
+We know that the second term is the first term multiplied by the ratio. 
+In other words:
+$$\begin{split}
+a_1 \cdot r & = 1 \\
+a_1 & = \frac{1}{r}
+\end{split}$$
+
+Thus, the sum is the following:
+$$\begin{split}
+S & = \frac{\frac{1}{r}}{1-r} \\\\
+S & =\frac{1}{r-r^2}
+\end{split}$$
+
+Since we want the minimum value of this expression, we want the maximum value for the denominator, $-r^2+r$.
+The maximum x-value of a quadratic with leading coefficient $-a$ is $\frac{-b}{2a}$.
+$$\begin{split}
+r & = \frac{-(1)}{2(-1)} \\\\
+r & = \frac{1}{2} 
+\end{split}$$
+
+Plugging $r$ $=$ $\frac{1}{2}$ into the quadratic yields:
+$$\begin{split}
+S & = \frac{1}{\frac{1}{2} -\left(\frac{1}{2}\right)^2} \\\\
+S & = \frac{1}{\frac{1}{4}} 
+\end{split}$$
+
+Therefore, the minimum sum of our infinite geometric sequence is $\boxed{\textbf{(E)}\ 4}$.
+(Solution by akaashp11)
+
+As an extension to find the maximum value for the denominator we can find the derivative of $-r^2+r$ to get $1-2r$. we know that this changes sign when $r = \frac{1}{2}$ so plugging it in into the original equation we find the answer is $\boxed{\textbf{(E)}\ 4}$.

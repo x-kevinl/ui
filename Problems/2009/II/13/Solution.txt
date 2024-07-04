@@ -1,0 +1,94 @@
+== Solution ==
+
+=== Solution 1 ===
+
+Let the radius be 1 instead. All lengths will be halved so we will multiply by <math>2^{12}</math> at the end. Place the semicircle on the complex plane, with the center of the circle being 0 and the diameter being the real axis. Then <math>C_1,\ldots, C_6</math> are 6 of the 14th roots of unity. Let <math>\omega=\text{cis}\frac{360^{\circ}}{14}</math>; then <math>C_1,\ldots, C_6</math> correspond to <math>\omega,\ldots, \omega^6</math>. Let <math>C_1',\ldots, C_6'</math> be their reflections across the diameter. These points correspond to <math>\omega^8\ldots, \omega^{13}</math>. Then the lengths of the segments are <math>|1-\omega|,\ldots, |1-\omega^6|,|1-\omega^8|,\ldots |1-\omega^{13}|</math>. Noting that <math>B</math> represents 1 in the complex plane, the desired product is
+<cmath>
+\begin{align*}
+BC_1\cdots BC_6 \cdot AC_1\cdots AC_6&=
+BC_1\cdots BC_6 \cdot BC_1'\cdots BC_6'\\
+&=
+|(x-\omega^1)\ldots(x-\omega^6)(x-\omega^8)\ldots(x-\omega^{13})|
+\end{align*}</cmath>
+
+for <math>x=1</math>.
+However, the polynomial <math>(x-\omega^1)\ldots(x-\omega^6)(x-\omega^8)\ldots(x-\omega^{13})</math> has as its zeros all 14th roots of unity except for <math>-1</math> and <math>1</math>. Hence
+<cmath>
+(x-\omega^1)\ldots(x-\omega^6)(x-\omega^8)\ldots(x-\omega^{13})=\frac{x^{14}-1}{(x-1)(x+1)}=x^{12}+x^{10}+\cdots +x^2+1.
+</cmath>
+Thus the product is <math>|x^{12}+\cdots +x^2+1|=7</math> when the radius is 1, and the product is <math>2^{12}\cdot 7=28672</math>. Thus the answer is <math>\boxed {672}</math>.
+
+=== Solution 2 ===
+
+Let <math>O</math> be the midpoint of <math>A</math> and <math>B</math>. Assume <math>C_1</math> is closer to <math>A</math> instead of <math>B</math>.  <math>\angle AOC_1</math> = <math>\frac {\pi}{7}</math>. Using the [[Law of Cosines]], 
+
+<math>\overline {AC_1}^2</math> = <math>8 - 8 \cos \frac {\pi}{7}</math>,   
+<math>\overline {AC_2}^2</math> = <math>8 - 8 \cos \frac {2\pi}{7}</math>, 
+.
+.
+.
+<math>\overline {AC_6}^2</math> = <math>8 - 8 \cos \frac {6\pi}{7}</math>                                 
+
+So <math>n</math> = <math>(8^6)(1 - \cos \frac {\pi}{7})(1 - \cos \frac {2\pi}{7})\dots(1 - \cos \frac{6\pi}{7})</math>. It can be rearranged to form
+
+<math>n</math> = <math>(8^6)(1 - \cos \frac {\pi}{7})(1 - \cos \frac {6\pi}{7})\dots(1 - \cos \frac {3\pi}{7})(1 - \cos \frac {4\pi}{7})</math>. 
+
+Since <math>\cos a = - \cos (\pi - a)</math>, we have
+
+<math>n</math> = <math>(8^6)(1 - \cos \frac {\pi}{7})(1 + \cos \frac {\pi}{7}) \dots (1 - \cos \frac {3\pi}{7})(1 + \cos \frac {3\pi}{7})</math>
+
+= <math>(8^6)(1 - \cos^2 \frac {\pi}{7})(1 - \cos^2 \frac {2\pi}{7})(1 - \cos^2 \frac {3\pi}{7})</math>
+
+= <math>(8^6)(\sin^2 \frac {\pi}{7})(\sin^2 \frac {2\pi}{7})(\sin^2 \frac {3\pi}{7})</math>
+
+It can be shown that <math>\sin \frac {\pi}{7} \sin \frac {2\pi}{7} \sin \frac {3\pi}{7}</math> = <math>\frac {\sqrt {7}}{8}</math>, so <math>n</math> = <math>8^6(\frac {\sqrt {7}}{8})^2</math> = <math>7(8^4)</math> = <math>28672</math>, so the answer is <math>\boxed {672}</math>
+
+=== Solution 3 ===
+
+Note that for each <math>k</math> the triangle <math>ABC_k</math> is a right triangle. Hence the product <math>AC_k \cdot BC_k</math> is twice the area of the triangle <math>ABC_k</math>. Knowing that <math>AB=4</math>, the area of <math>ABC_k</math> can also be expressed as <math>2c_k</math>, where <math>c_k</math> is the length of the altitude from <math>C_k</math> onto <math>AB</math>. Hence we have <math>AC_k \cdot BC_k = 4c_k</math>.
+
+By the definition of <math>C_k</math> we obviously have <math>c_k = 2\sin\frac{k\pi}7</math>. 
+
+From these two observations we get that the product we should compute is equal to <math> 8^6 \cdot \prod_{k=1}^6 \sin \frac{k\pi}7 </math>, which is the same identity as in Solution 2.
+
+=== Computing the product of sines ===
+
+In this section we show one way how to evaluate the product <math>\prod_{k=1}^6 \sin \frac{k\pi}7 = \prod_{k=1}^3 (\sin \frac{k\pi}7)^2 </math>.
+
+Let <math>\omega_k = \cos \frac{2k\pi}7 + i\sin \frac{2k\pi}7</math>. The numbers <math>1,\omega_1,\omega_2,\dots,\omega_6</math> are the <math>7</math>-th complex roots of unity. In other words, these are the roots of the polynomial <math>x^7-1</math>. Then the numbers <math>\omega_1,\omega_2,\dots,\omega_6</math> are the roots of the polynomial <math>\frac{x^7-1}{x-1} = x^6+x^5+\cdots+x+1</math>.
+
+We just proved the identity <math>\prod_{k=1}^6 (x - \omega_k) = x^6+x^5+\cdots+x+1</math>.
+Substitute <math>x=1</math>. The right hand side is obviously equal to <math>7</math>. Let's now examine the left hand side.
+We have:
+
+<cmath>
+\begin{align*}
+(1-\omega_k)(1-\omega_{k-7})=|1-\omega_k|^2 
+& = \left( 1-\cos \frac{2k\pi}7 \right)^2 + \left( \sin \frac{2k\pi}7 \right)^2
+\\
+& = 2-2\cos \frac{2k\pi}7
+\\
+& = 2-2 \left( 1 - 2 \left( \sin \frac{k\pi}7 \right)^2 \right)
+\\
+& = 4\left( \sin \frac{k\pi}7 \right)^2
+\end{align*}
+</cmath>
+
+Therefore the size of the left hand side in our equation is <math>\prod_{k=1}^3 4 (\sin \frac{k\pi}7)^2 = 2^6 \prod_{k=1}^3 (\sin \frac{k\pi}7)^2</math>. As the right hand side is <math>7</math>, we get that <math>\prod_{k=1}^3 (\sin \frac{k\pi}7)^2 = \frac{7}{2^6}</math>.
+
+===Solution 4 (Product of Sines)===
+
+<i><b>Lemma 1:</b> A chord <math>ab</math> of a circle with center <math>O</math> and radius <math>r</math> has length <math>2r\sin\left(\dfrac{\angle AOB}{2}\right)</math>.</i>
+
+<i><b>Proof:</b> Denote <math>H</math> as the projection from <math>O</math> to line <math>AB</math>. Then, by definition, <math>HA=HB=r\sin\left(\dfrac{\angle AOB}{2}\right)</math>. Thus, <math>AB = 2r\sin\left(\dfrac{\angle AOB}{2}\right)</math>, which concludes the proof.</i>
+
+<i><b>Lemma 2:</b> <math>\prod_{k=1}^{n-1} \sin \dfrac{k\pi}{n} = \dfrac{n}{2^{n-1}}</math></i>
+
+<i><b>Proof:</b> Let <math>w=\text{cis}\;\dfrac{\pi}{n}</math>. Thus,
+<cmath>\prod_{k=1}^{n-1} \sin \dfrac{k\pi}{n} = \prod_{k=1}^{n-1} \dfrac{w^k-w^{-k}}{2i} = \dfrac{w^{\frac{n(n-1)}{2}}}{(2i)^{n-1}}\prod_{k=1}^{n-1} (1-w^{-2k}) = \dfrac{1}{2^{n-1}}\prod_{k=1}^{n-1} (1-w^{-2k})</cmath>
+Since, <math>w^{-2k}</math> are just the <math>n</math>th roots of unity excluding <math>1</math>, by Vieta's, <math>\prod_{k=1}^{n-1} \sin \dfrac{k\pi}{n}=\dfrac{1}{2^{n-1}}\prod_{k=1}^{n-1} (1-w^{-2k}) = \dfrac{n}{2^{n-1}}</math>, thus completing the proof.
+</i>
+
+By Lemma 1, the length <math>AC_k=2r\sin\dfrac{k\pi}{14}</math> and similar lengths apply for <math>BC_k</math>. Now, the problem asks for <math>\left(\prod_{k=1}^6 \left(4\sin\dfrac{k\pi}{14}\right)\right)^2</math>. This can be rewritten, due to <math>\sin \theta = \sin (\pi-\theta)</math>, as <math>\prod_{k=1}^6 \left(4\sin\dfrac{k\pi}{14}\right) \cdot \prod_{k=8}^{13} \left(4\sin\dfrac{k\pi}{14}\right) = \dfrac{1}{\sin \dfrac{7\pi}{14}}\cdot \prod_{k=1}^{13} \left(4\sin\dfrac{k\pi}{14}\right) = \prod_{k=1}^{13} \left(4\sin\dfrac{k\pi}{14}\right).</math> By Lemma 2, this furtherly boils down to <math>4^{12}\cdot \dfrac{14}{2^{13}} = 7\cdot 2^{12} = \boxed{672} \; \text{(mod }1000\text{)}</math>
+
+<b>~Solution by  sml1809</b>

@@ -1,0 +1,2 @@
+== Problem ==
+For certain pairs <math>(m,n)</math> of positive integers with <math>m\geq n</math> there are exactly <math>50</math> distinct positive integers <math>k</math> such that <math>|\log m - \log k| < \log n</math>. Find the sum of all possible values of the product <math>mn</math>.

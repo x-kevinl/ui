@@ -1,0 +1,14 @@
+==Solution==
+The store's offer means that every $5$th window is free. 
+
+Dave would get $\left\lfloor\frac{7}{5}\right\rfloor=1$ free window.
+
+Doug would get $\left\lfloor\frac{8}{5}\right\rfloor=1$ free window. 
+
+This is a total of $2$ free windows. 
+
+Together, they would get $\left\lfloor\frac{8+7}{5}\right\rfloor = \left\lfloor\frac{15}{5}\right\rfloor=3$ free windows. 
+
+So they get $3-2=1$ additional window if they purchase the windows together. 
+
+Therefore they save $1\cdot100= \boxed{\textbf{(A) }100}$.

@@ -1,0 +1,21 @@
+==Problem==
+Angle $ABC$ of $\triangle ABC$ is a right angle. The sides of $\triangle ABC$ are the diameters of semicircles as shown. The area of the semicircle on $\overline{AB}$ equals $8\pi$, and the arc of the semicircle on $\overline{AC}$ has length $8.5\pi$. What is the radius of the semicircle on $\overline{BC}$?
+<asy>
+import graph;
+pair A,B,C;
+A=(0,8);
+B=(0,0);
+C=(15,0);
+draw((0,8)..(-4,4)..(0,0)--(0,8));
+draw((0,0)..(7.5,-7.5)..(15,0)--(0,0));
+real theta = aTan(8/15);
+draw(arc((15/2,4),17/2,-theta,180-theta));
+draw((0,8)--(15,0));
+dot(A);
+dot(B);
+dot(C);
+label("$A$", A, NW);
+label("$B$", B, SW);
+label("$C$", C, SE);</asy>
+
+$\textbf{(A)}\ 7 \qquad \textbf{(B)}\ 7.5 \qquad \textbf{(C)}\ 8 \qquad \textbf{(D)}\ 8.5 \qquad \textbf{(E)}\ 9$

@@ -1,0 +1,19 @@
+==Solution==
+
+We can draw <math>CORNELIA</math> and introduce some points.
+
+[[File:2018_AIME_II_Problem_4.png|200px]]
+
+The diagram is essentially a 3x3 grid where each of the 9 squares making up the grid have a side length of 1.
+
+In order to find the area of <math>CORNELIA</math>, we need to find 4 times the area of <math>\bigtriangleup</math><math>ACY</math> and 2 times the area of <math>\bigtriangleup</math><math>YZW</math>.
+
+Using similar triangles <math>\bigtriangleup</math><math>ARW</math> and <math>\bigtriangleup</math><math>YZW</math>(We look at their heights), <math>YZ</math> <math>=</math> <math>\frac{1}{3}</math>. Therefore, the area of <math>\bigtriangleup</math><math>YZW</math> is <math>\frac{1}{3}\cdot\frac{1}{2}\cdot\frac{1}{2}</math> <math>=</math> <math>\frac{1}{12}</math>
+
+Since <math>YZ</math> <math>=</math> <math>\frac{1}{3}</math> and <math>XY = ZQ</math>, <math>XY</math> <math>=</math> <math>\frac{1}{3}</math> and <math>CY</math> <math>=</math> <math>\frac{4}{3}</math>.
+
+Therefore, the area of <math>\bigtriangleup</math><math>ACY</math> is <math>\frac{4}{3}\cdot</math> <math>1</math> <math>\cdot</math> <math>\frac{1}{2}</math> <math>=</math> <math>\frac{2}{3}</math>
+
+Our final answer is <math>\frac{1}{12}</math> <math>\cdot</math> <math>2</math> <math>+</math> <math>\frac{2}{3}</math> <math>\cdot</math> <math>4</math> <math>=</math> <math>\frac{17}{6}</math>
+
+<math>17 + 6 =</math> <math>\boxed{023}</math>

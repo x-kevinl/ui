@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>u</math> and <math>v</math> be [[integer]]s satisfying <math>0 < v < u</math>. Let <math>A = (u,v)</math>, let <math>B</math> be the [[reflection]] of <math>A</math> across the line <math>y = x</math>, let <math>C</math> be the reflection of <math>B</math> across the y-axis, let <math>D</math> be the reflection of <math>C</math> across the x-axis, and let <math>E</math> be the reflection of <math>D</math> across the y-axis. The area of [[pentagon]] <math>ABCDE</math> is <math>451</math>. Find <math>u + v</math>.

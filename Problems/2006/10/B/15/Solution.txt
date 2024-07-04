@@ -1,0 +1,8 @@
+== Solution 1 ==
+Using the property that opposite angles are equal in a [[rhombus]], $ \angle DAB = \angle DCB = 60 ^\circ $ and $ \angle ADC = \angle ABC = 120 ^\circ $. It is easy to see that rhombus $ABCD$ is made up of [[equilateral triangle]]s $DAB$ and $DCB$. Let the lengths of the sides of rhombus $ABCD$ be $s$. 
+
+The longer [[diagonal]] of rhombus $BFDE$ is $BD$. Since $BD$ is a side of an equilateral triangle with a side length of $s$, $ BD = s $. The longer diagonal of rhombus $ABCD$ is $AC$. Since $AC$ is twice the length of an altitude of of an equilateral triangle with a side length of $s$, $ AC = 2 \cdot \frac{s\sqrt{3}}{2} = s\sqrt{3} $.
+
+The ratio of the longer diagonal of rhombus $BFDE$ to rhombus $ABCD$ is $ \frac{s}{s\sqrt{3}} = \frac{\sqrt{3}}{3}$. Therefore, the ratio of the [[area]] of rhombus $BFDE$ to rhombus $ABCD$ is $ \left( \frac{\sqrt{3}}{3} \right) ^2 = \frac{1}{3} $.
+
+Let $x$ be the area of rhombus $BFDE$. Then $ \frac{x}{24} = \frac{1}{3} $, so $ x = \boxed{\textbf{(C) }8}$.

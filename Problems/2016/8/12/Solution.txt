@@ -1,0 +1,5 @@
+==Solution 1==
+
+Let there be $b$ boys and $g$ girls in the school. We see $g=b$, which means $\frac{3}{4}b+\frac{2}{3}b=\frac{17}{12}b$ kids went on the trip and $\frac{3}{4}b$ kids are girls. So, the answer is $\frac{\frac{3}{4}b}{\frac{17}{12}b}=\frac{9}{17}$, which is $\boxed{\textbf{(B)} \frac{9}{17}}$.
+
+~CHECKMATE2021

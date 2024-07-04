@@ -1,0 +1,16 @@
+== Solution 1 ==
+Note that the apex of the angle is not on the parallel lines. Set up a [[coordinate proof]].
+
+Let the set of parallel lines be [[perpendicular]] to the [[x-axis]], such that they cross it at <math>0, 1, 2 \ldots</math>. The base of region <math>\mathcal{A}</math> is on the line <math>x = 1</math>. The bigger base of region <math>\mathcal{D}</math> is on the line <math>x = 7</math>. 
+Let the top side of the angle be <math>y = x - s</math> and the bottom side be x-axis, as dividing the angle doesn't change the problem.
+
+Since the area of the triangle is equal to <math>\frac{1}{2}bh</math>,
+
+<cmath>
+\frac{\textrm{Region\ }\mathcal{C}}{\textrm{Region\ }\mathcal{B}} = \frac{11}{5}
+= \frac{\frac 12(5-s)^2 - \frac 12(4-s)^2}{\frac 12(3-s)^2 - \frac12(2-s)^2}
+</cmath>
+
+Solve this to find that <math>s = \frac{5}{6}</math>.
+
+Using the same reasoning as above, we get <math>\frac{\textrm{Region\ }\mathcal{D}}{\textrm{Region\ }\mathcal{A}} = \frac{\frac 12(7-s)^2 - \frac 12(6-s)^2}{\frac 12(1-s)^2}</math>, which is <math>\boxed{408}</math>.

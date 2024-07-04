@@ -1,0 +1,3 @@
+== Problem ==
+
+A coin that comes up heads with probability <math>p > 0</math> and tails with probability <math>1 - p > 0</math> independently on each flip is flipped <math>8</math> times. Suppose that the probability of three heads and five tails is equal to <math>\frac {1}{25}</math> of the probability of five heads and three tails. Let <math>p = \frac {m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m + n</math>.

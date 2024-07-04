@@ -1,0 +1,23 @@
+== Solution 1 ==
+Extend <math>\overline{AD}</math> and <math>\overline{BC}</math> to meet at <math>E</math>. Then, since <math>\angle BAD = \angle ADC</math> and <math>\angle ABD = \angle DCE</math>, we know that <math>\triangle ABD \sim \triangle DCE</math>. Hence <math>\angle ADB = \angle DEC</math>, and <math>\triangle BDE</math> is [[isosceles triangle|isosceles]]. Then <math>BD = BE = 10</math>. 
+
+<center><asy>
+/* We arbitrarily set AD = x */
+real x = 60^.5, anglesize = 28;
+
+pointpen = black; pathpen = black+linewidth(0.7); pen d = linetype("6 6")+linewidth(0.7);
+pair A=(0,0), D=(x,0), B=IP(CR(A,8),CR(D,10)), E=(-3x/5,0), C=IP(CR(E,16),CR(D,64/5));
+D(MP("A",A)--MP("B",B,NW)--MP("C",C,NW)--MP("D",D)--cycle); D(B--D); D(A--MP("E",E)--B,d);
+D(anglemark(D,A,B,anglesize));D(anglemark(C,D,A,anglesize));D(anglemark(A,B,D,anglesize));D(anglemark(E,C,D,anglesize));D(anglemark(A,B,D,5/4*anglesize));D(anglemark(E,C,D,5/4*anglesize));
+MP("10",(B+D)/2,SW);MP("8",(A+B)/2,W);MP("6",(B+C)/2,NW);
+</asy></center>
+
+Using the similarity, we have:
+
+<cmath>\frac{AB}{BD} = \frac 8{10} = \frac{CD}{CE} = \frac{CD}{16} \Longrightarrow CD = \frac{64}5</cmath>
+
+The answer is <math>m+n = \boxed{069}</math>.
+
+
+'''Extension''': To Find <math>AD</math>, use Law of Cosines on <math>\triangle BCD</math> to get <math>\cos(\angle BCD)=\frac{13}{20}</math>
+Then since <math>\angle BCD=\angle ABD</math> use Law of Cosines on <math>\triangle ABD</math> to find <math>AD=2\sqrt{15}</math>

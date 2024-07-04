@@ -1,0 +1,4 @@
+== Solution 1 ==
+
+
+In total, there were $3+4=7$ marbles left from both Ringo and Paul.We know that  $7 \equiv 1 \pmod{6}$. This means that there would be $1$ marble leftover, or $\boxed{A}$.

@@ -1,0 +1,55 @@
+== Solution ==
+Substitute <math>a=2^n3^m</math> into <math>a^6</math> and <math>6^a</math>, and find all pairs of non-negative integers (n,m) for which <math>(2^n3^m)^{6}</math> is not a divisor of <math>6^{2^n3^m}</math>
+
+Simplifying both expressions:
+
+<math>2^{6n} \cdot 3^{6m}</math> is not a divisor of <math>2^{2^n3^m} \cdot 3^{2^n3^m}</math>
+
+Comparing both exponents (noting that there must be either extra powers of 2 or extra powers of 3 in the left expression):
+
+<math>6n > 2^n3^m</math>  OR  <math>6m > 2^n3^m</math>
+
+
+Using the first inequality <math>6n > 2^n3^m</math> and going case by case starting with n <math>\in</math> {0, 1, 2, 3...}:
+
+n=0:
+<math>0>1 \cdot 3^m</math> which has no solution for non-negative integers m 
+
+n=1:
+<math>6 > 2 \cdot 3^m</math> which is true for m=0 but fails for higher integers <math>\Rightarrow (1,0)</math>
+
+n=2:
+<math>12 > 4 \cdot 3^m</math> which is true for m=0 but fails for higher integers <math>\Rightarrow (2,0)</math>
+
+n=3:
+<math>18 > 8 \cdot 3^m</math> which is true for m=0 but fails for higher integers <math>\Rightarrow (3,0)</math>
+
+n=4:
+<math>24 > 16 \cdot 3^m</math> which is true for m=0 but fails for higher integers <math>\Rightarrow (4,0)</math>
+
+n=5:
+<math>30 > 32 \cdot 3^m</math> which has no solution for non-negative integers m 
+
+There are no more solutions for higher <math>n</math>, as polynomials like <math>6n</math> grow slower than exponentials like <math>2^n</math>.
+
+
+
+Using the second inequality <math>6m > 2^n3^m</math> and going case by case starting with m <math>\in</math> {0, 1, 2, 3...}:
+
+m=0:
+<math>0>2^n \cdot 1</math> which has no solution for non-negative integers n 
+
+m=1:
+<math>6>2^n \cdot 3</math> which is true for n=0 but fails for higher integers <math>\Rightarrow (0,1)</math>
+
+m=2:
+<math>12>2^n \cdot 9</math> which is true for n=0 but fails for higher integers <math>\Rightarrow (0,2)</math>
+
+m=3:
+<math>18>2^n \cdot 27</math> which has no solution for non-negative integers n 
+
+There are no more solutions for higher <math>m</math>, as polynomials like <math>6m</math> grow slower than exponentials like <math>3^m</math>.
+
+
+Thus there are six numbers corresponding to (1,0), (2,0), (3,0), (4,0), (0,1), and (0,2).  
+Plugging them back into the original expression, these numbers are 2, 4, 8, 16, 3, and 9, respectively.  Their sum is <math>\framebox{042}</math>.

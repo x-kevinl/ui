@@ -1,0 +1,6 @@
+==Solution 1==
+[[File:2007 AMC 12B Problem 25.png|center]]
+Link to graph: https://www.math3d.org/pHFSD6vRi
+
+
+Let $A=(0,0,0)$, and $B=(2,0,0)$. Since $EA=2$, we could let $C=(2,0,2)$, $D=(2,2,2)$, and $E=(2,2,0)$. Now to get back to $A$ we need another vertex $F=(0,2,0)$. Now if we look at this configuration as if it was two dimensions, we would see a square missing a side if we don't draw $FA$. Now we can bend these three sides into an equilateral triangle, and the coordinates change: $A=(0,0,0)$, $B=(2,0,0)$, $C=(2,0,2)$, $D=(1,\sqrt{3},2)$, and $E=(1,\sqrt{3},0)$. Checking for all the requirements, they are all satisfied. Now we find the area of triangle $BDE$. The side lengths of this triangle are $2, 2, 2\sqrt{2}$, which is an isosceles right triangle. Thus the area of it is $\frac{2\cdot2}{2}=2\Rightarrow \mathrm{(C)}$.

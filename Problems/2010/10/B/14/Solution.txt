@@ -1,0 +1,6 @@
+== Solution ==
+We first sum the first $99$ numbers: $\frac{99(100)}{2}=99\cdot50$. Then, we know that the sum of the series is $99\cdot50+x$. There are $100$ terms, so we can divide this sum by $100$ and set it equal to $100x$:
+$$\frac{99\cdot50+x}{100}=100x \Rightarrow 99\cdot50=100^2x-x\Rightarrow \frac{99\cdot50}{100^2-1}=x$$
+Using difference of squares:
+$$x=\frac{99\cdot50}{101\cdot99}=\frac{50}{101}$$
+Thus, the answer is $\boxed{\textbf{(B) }\frac{50}{101}}$.

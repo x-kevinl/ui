@@ -1,0 +1,4 @@
+==Problem==
+Casey's shop class is making a golf trophy. He has to paint 300 dimples on a golf ball. If it takes him 2 seconds to paint one dimple, how many minutes will he need to do his job?
+
+$ \mathrm{(A) \ 4 } \qquad \mathrm{(B) \ 6 } \qquad \mathrm{(C) \ 8 } \qquad \mathrm{(D) \ 10 } \qquad \mathrm{(E) \ 12 }  $

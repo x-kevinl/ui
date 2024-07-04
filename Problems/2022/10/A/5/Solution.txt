@@ -1,0 +1,32 @@
+== Diagram ==
+<asy>
+/* Made by MRENTHUSIASM */
+size(200);
+real s = 2-sqrt(2);
+pair A, B, C, D, P, Q, R, S;
+A = (0,1); 
+B = (1,1);
+C = (1,0);
+D = (0,0);
+P = A + (s,0);
+Q = B - (0,1-s);
+R = C - (s,0);
+S = D + (0,1-s);
+fill(A--P--Q--C--R--S--cycle,yellow);
+draw(A--B--C--D--cycle^^P--Q^^R--S);
+dot("$A$",A,NW,linewidth(4));
+dot("$B$",B,NE,linewidth(4));
+dot("$C$",C,SE,linewidth(4));
+dot("$D$",D,SW,linewidth(4));
+dot("$P$",P,N,linewidth(4));
+dot("$Q$",Q,E,linewidth(4));
+dot("$R$",R,(0,-1),linewidth(4));
+dot("$S$",S,W,linewidth(4));
+label("$s$",midpoint(A--P),N,red);
+label("$s$",midpoint(P--Q),NE,red);
+label("$s$",midpoint(Q--C),E,red);
+label("$s$",midpoint(C--R),(0,-1),red);
+label("$s$",midpoint(R--S),SW,red);
+label("$s$",midpoint(S--A),W,red);
+</asy>
+~MRENTHUSIASM

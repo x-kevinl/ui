@@ -1,0 +1,8 @@
+==Problem==
+How many three-digit positive integers $N$ satisfy the following properties?
+
+*The number $N$ is divisible by $7$.
+
+*The number formed by reversing the digits of $N$ is divisible by $5$.
+
+$\textbf{(A) } 13 \qquad \textbf{(B) } 14 \qquad \textbf{(C) } 15 \qquad \textbf{(D) } 16 \qquad \textbf{(E) } 17$

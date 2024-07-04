@@ -1,0 +1,5 @@
+== Problem ==
+
+When Cheenu was a boy, he could run $15$ miles in $3$ hours and $30$ minutes. As an old man, he can now walk $10$ miles in $4$ hours. How many minutes longer does it take for him to walk a mile now compared to when he was a boy?
+
+$\textbf{(A) }6\qquad\textbf{(B) }10\qquad\textbf{(C) }15\qquad\textbf{(D) }18\qquad \textbf{(E) }30$

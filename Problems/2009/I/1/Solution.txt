@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+Assume that the largest geometric number starts with a <math>9</math>. We know that the common ratio must be a rational of the form <math>k/3</math> for some integer <math>k</math>, because a whole number should be attained for the 3rd term as well. When <math>k = 1</math>, the number is <math>931</math>. When <math>k = 2</math>, the number is <math>964</math>. When <math>k = 3</math>, we get <math>999</math>, but the integers must be distinct. By the same logic, the smallest geometric number is <math>124</math>. The largest geometric number is <math>964</math> and the smallest is <math>124</math>. Thus the difference is <math>964 - 124 = \boxed{840}</math>.

@@ -1,0 +1,13 @@
+== Solution 1==
+Since there are only two dependent equations given and three unknowns, the three expressions given can equate to any common value (that isn't 0, of course), so to simplify the problem let us assume without loss of generality that
+<cmath>2\log_{x}(2y) = 2\log_{2x}(4z) = \log_{2x^4}(8yz) = 2.</cmath>
+Then
+<cmath>
+\begin{align*}
+2\log_{x}(2y) = 2 &\implies x=2y\\
+2\log_{2x}(4z) = 2 &\implies 2x=4z\\
+\log_{2x^4}(8yz) = 2 &\implies 4x^8 = 8yz
+\end{align*}
+</cmath>
+Solving these equations, we quickly see that <math>4x^8 = (2y)(4z) = x(2x) \rightarrow x=2^{-1/6}</math> and then <math>y=z=2^{-1/6 - 1} = 2^{-7/6}.</math>
+Finally, our desired value is <math>2^{-1/6} \cdot (2^{-7/6})^5 \cdot 2^{-7/6} = 2^{-43/6}</math> and thus <math>p+q = 43 + 6 = \boxed{049.}</math>

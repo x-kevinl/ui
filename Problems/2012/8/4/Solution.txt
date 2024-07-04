@@ -1,0 +1,2 @@
+==Solution 1==
+Peter ate $1 + \frac{1}{2} = \frac{3}{2}$ slices. The pizza has $ 12 $ slices total. Taking the ratio of the amount of slices Peter ate to the amount of slices in the pizza, we find that Peter ate $\dfrac{\frac{3}{2}\text{ slices}}{12\text{ slices}} = \boxed{\textbf{(C)}\ \frac{1}{8}}$ of the pizza.

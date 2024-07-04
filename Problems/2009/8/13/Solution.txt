@@ -1,0 +1,2 @@
+==Solution 1==
+The three digit numbers are $135,153,351,315,513,531$. The numbers that end in $5$ are divisible are $5$, and the probability of choosing those numbers is $\boxed{\textbf{(B)}\ \frac13}$.

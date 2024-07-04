@@ -1,0 +1,6 @@
+==Problem==
+A regular hexagon of side length $1$ is inscribed in a circle. Each minor arc of the circle
+determined by a side of the hexagon is reflected over that side. What is the area of the region
+bounded by these $6$ reflected arcs?
+
+$(\textbf{A})\: \frac{5\sqrt{3}}{2} - \pi\qquad(\textbf{B}) \: 3\sqrt{3}-\pi\qquad(\textbf{C}) \: 4\sqrt{3}-\frac{3\pi}{2}\qquad(\textbf{D}) \: \pi - \frac{\sqrt{3}}{2}\qquad(\textbf{E}) \: \frac{\pi + \sqrt{3}}{2}$

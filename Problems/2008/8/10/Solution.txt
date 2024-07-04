@@ -1,0 +1,4 @@
+==Solution==
+The total of all their ages over the number of people is
+
+$$\frac{6 \cdot 40 + 4\cdot 25}{6+4} = \frac{340}{10} = \boxed{\textbf{(D)}\ 34}.$$

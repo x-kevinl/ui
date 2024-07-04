@@ -1,0 +1,10 @@
+== Solution 1 (Standard Form)==
+Let $r_1$ and $r_2$ be the roots of $\tilde{p}(x)$. Then, $\tilde{p}(x)=(x-r_1)(x-r_2)=x^2-(r_1+r_2)x+r_1r_2$. The solutions to $\tilde{p}(\tilde{p}(x))=0$ is the union of the solutions to $$ \tilde{p}(x)-r_1=x^2-(r_1+r_2)x+(r_1r_2-r_1)=0 $$ and $$ \tilde{p}(x)-r_2=x^2-(r_1+r_2)x+(r_1r_2-r_2)=0. $$ Note that one of these two quadratics has one solution (a double root) and the other has two as there are exactly three solutions. WLOG, assume that the quadratic with one root is $x^2-(r_1+r_2)x+(r_1r_2-r_1)=0$. Then, the discriminant is $0$, so $(r_1+r_2)^2 = 4r_1r_2 - 4r_1$. Thus, $r_1-r_2=\pm 2\sqrt{-r_1}$, but for $x^2-(r_1+r_2)x+(r_1r_2-r_2)=0$ to have two solutions, it must be the case that $r_1-r_2=- 2\sqrt{-r_1} (*)$. It follows that the sum of the roots of $\tilde{p}(x)$ is $2r_1 + 2\sqrt{-r_1}$, whose maximum value occurs when $r_1 = - \frac{1}{4} (\star)$. Solving for $r_2$ yields $r_2 = \frac{3}{4}$. Therefore, $\tilde{p}(x)=x^2 - \frac{1}{2} x - \frac{3}{16}$, so $\tilde{p}(1)= \boxed{\textbf{(A) } \frac{5}{16}}$.
+
+<u><b>Remarks</b></u>
+
+* For $x^2-(r_1+r_2)x+(r_1r_2-r_2)=0$ to have two solutions, the discriminant $(r_1+r_2)^2-4r_1r_2+4r_2$ must be positive. From here, we get that $(r_1-r_2)^2>-4r_2$, so $-4r_1>-4r_2 \implies r_1<r_2$. Hence, $r_1-r_2$ is negative, so $r_1-r_2=-2\sqrt{-r_1}$.
+
+* Set $\sqrt{-r_1}=x$. Now $r_1+\sqrt{-r_1}=-x^2+x$, for which the maximum occurs when $x=\frac{1}{2} \rightarrow r_1=-\frac{1}{4}$.
+
+~ Leo.Euler

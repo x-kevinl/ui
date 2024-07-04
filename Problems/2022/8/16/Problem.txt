@@ -1,0 +1,5 @@
+==Problem==
+
+Four numbers are written in a row. The average of the first two is $21,$ the average of the middle two is $26,$ and the average of the last two is $30.$ What is the average of the first and last of the numbers?
+
+$\textbf{(A) } 24 \qquad \textbf{(B) } 25 \qquad \textbf{(C) } 26 \qquad \textbf{(D) } 27 \qquad \textbf{(E) } 28$

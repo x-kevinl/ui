@@ -1,0 +1,2 @@
+== Solution 1==
+If Cassie leaves $ \frac{1}{2} $ an hour earlier then Brian, when Brian starts, the distance between them will be $ 62-\frac{12}{2}=56 $. Every hour, they will get $ 12+16=28 $ miles closer. $ \frac{56}{28}=2 $, so 2 hours from $9:00$ AM is when they meet, which is $ \boxed{\textbf{(D)}\ 11: 00} $.

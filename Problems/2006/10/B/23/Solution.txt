@@ -1,0 +1,42 @@
+== Solution 1==
+
+Label the points in the figure as shown below, and draw the segment $CF$. This segment divides the quadrilateral into two triangles, let their areas be $x$ and $y$.
+
+<asy>
+unitsize(2cm);
+defaultpen(.8);
+
+pair A = (0,0), B = (3,0), C = (1.4, 2), D = B + 0.4*(C-B), Ep = A + 0.3*(C-A);
+pair F = intersectionpoint( A--D, B--Ep );
+
+draw( A -- B -- C -- cycle );
+draw( A -- D );
+draw( B -- Ep );
+filldraw( D -- F -- Ep -- C -- cycle, mediumgray, black );
+
+label("$7$",(1.45,0.15));
+label("$7$",(2.2,0.45));
+label("$3$",(0.45,0.35));
+
+draw( C -- F, dashed );
+
+label("$A$",A,SW);
+label("$B$",B,SE);
+label("$C$",C,N);
+label("$D$",D,NE);
+label("$E$",Ep,NW);
+label("$F$",F,S);
+
+label("$x$",(1,1));
+label("$y$",(1.6,1));
+</asy>
+
+Since [[triangle]]s $AFB$ and $DFB$ share an [[altitude]] from $B$ and have equal area, their bases must be equal, hence $AF=DF$.
+
+Since triangles $AFC$ and $DFC$ share an altitude from $C$ and their respective bases are equal, their areas must be equal, hence $x+3=y$. 
+
+Since triangles $EFA$ and $BFA$ share an altitude from $A$ and their respective areas are in the ratio $3:7$, their bases must be in the same ratio, hence $EF:FB = 3:7$.
+
+Since triangles $EFC$ and $BFC$ share an altitude from $C$ and their respective bases are in the ratio $3:7$, their areas must be in the same ratio, hence $x:(y+7) = 3:7$, which gives us $7x = 3(y+7)$.
+
+Substituting $y=x+3$ into the second equation we get $7x = 3(x+10)$, which solves to $x=\frac{15}{2}$. Then $y=x+3 = \frac{15}{2}+3 = \frac{21}{2}$, and the total area of the quadrilateral is $x+y = \frac{15}{2}+\frac{21}{2} = \boxed{\textbf{(D) }18}$.

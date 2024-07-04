@@ -1,0 +1,19 @@
+==Solution 1==
+
+We can, $\textsc{wlog}$, assume $Y$ coincides with $D$ and $CD\parallel AF$ as before. In which case, we will have $BC=EF=41(\sqrt{3}-1)$. So we have square $AXDZ$ inscribed in equiangular hexagon $ABCDEF$ with $X$ on $\overline{BC}$ and $Z$ on $\overline{EF}$.
+<asy> 
+size(200); defaultpen(fontsize(10)+linewidth(1)); pair A=origin,B=(2.5,0),C=B+2.5*dir(60), D=C+1.75*dir(120),E=D-(3.19,0),F=E-1.8*dir(60); pair X=waypoint(B--C,0.345),Z=rotate(90,A)*X,Y=rotate(90,Z)*A; pair Cp=extension(B,C,Y,Y+dir(-60)); draw(A--B--Cp--Y--E--F--cycle); draw(A--X--Y--Z--cycle,linewidth(0.9)+linetype("2 2")); dot("$A$",A,W,linewidth(4)); dot("$B$",B,dir(0),linewidth(4)); dot("$C$",Cp,dir(0),linewidth(4)); dot("$E$",E,dir(100),linewidth(4)); dot("$F$",F,W,linewidth(4)); dot("$X$",X,dir(0),linewidth(4)); dot("$D$",Y,N,linewidth(4)); dot("$Z$",Z,W,linewidth(4)); label("$u$", B--X, SE);label("$v$", X--Cp, SE); label("$40$", A--B, S); label("$s$", A--X, NW); label("$s$", Y--X, SW); </asy>
+Let $\angle BXA = \theta$; then $\angle BAX=60^\circ -\theta$. Let $BX=u$. In $\triangle ABX$ we have 
+$$\begin{align}
+    \frac{2s}{\sqrt{3}}=\frac{u}{\sin(60^\circ-\theta)}=\frac {40}{\sin\theta}
+\end{align}$$
+We also have $\angle CXD=90^\circ - \theta$ and $\angle CDX = \theta-30^\circ$. Let $CX=v$. In $\triangle CDX$ we have
+$$\begin{align}\tag{2}
+    \frac{2s}{\sqrt{3}}=\frac{v}{\sin(\theta-30^\circ)}=\frac {CD}{\cos\theta}
+\end{align}$$
+Now $BC=u+v=41(\sqrt{3}-1)$. From $(1)$ and $(2)$ we get$$\begin{align*}
+    41(\sqrt{3}-1) &= \frac{2s}{\sqrt{3}}\left(\sin(60^\circ-\theta)+\sin(\theta-30^\circ)\right) \\
+    &= \frac{2s}{\sqrt{3}} \cdot \frac{\sqrt{3}-1}2\cdot (\sin\theta + \cos\theta)
+\end{align*}$$
+From $(1)$ we get $s\sin\theta = 20\sqrt{3}$ and therefore $s\cos\theta = \sqrt{s^2-3\cdot 20^2}$. Thus
+$$41(\sqrt{3}-1) = \frac{\sqrt{3}-1}{\sqrt{3}}(20\sqrt{3}+\sqrt{s^2-3\cdot 20^2})$$which simplifies to$$3\cdot 21^2  = s^2-3\cdot 20^2.$$Since $(20, 21, 29)$ is a Pythagorean triple, we get $s=29\sqrt{3}$, i.e. $\framebox{A}$.

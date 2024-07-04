@@ -1,0 +1,14 @@
+== Solution ==
+For all nonzero numbers $a,$ recall that $a^{-1}=\frac1a$ is the reciprocal of $a.$
+
+The original expression becomes
+$$\begin{align*}
+\left(\left((2+1)^{-1}+1\right)^{-1}+1\right)^{-1}+1 &= \left(\left(3^{-1}+1\right)^{-1}+1\right)^{-1}+1 \\
+&= \left(\left(\frac13+1\right)^{-1}+1\right)^{-1}+1 \\
+&= \left(\left(\frac43\right)^{-1}+1\right)^{-1}+1 \\
+&= \left(\frac34+1\right)^{-1}+1 \\
+&= \left(\frac74\right)^{-1}+1 \\
+&= \frac47+1 \\
+&= \boxed{\textbf{(B) }\frac{11}7}.
+\end{align*}$$
+~MRENTHUSIASM

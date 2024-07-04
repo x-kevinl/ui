@@ -1,0 +1,2 @@
+== Problem ==
+Define <math>n!!</math> to be <math>n(n-2)(n-4)\cdots 3\cdot 1</math> for <math>n</math> odd and <math>n(n-2)(n-4)\cdots 4\cdot 2</math> for <math>n</math> even. When <math>\sum_{i=1}^{2009} \frac{(2i-1)!!}{(2i)!!}</math> is expressed as a fraction in lowest terms, its denominator is <math>2^ab</math> with <math>b</math> odd. Find <math>\dfrac{ab}{10}</math>.

@@ -1,0 +1,7 @@
+==Problem==
+Find the number of <math>7</math>-tuples of positive integers <math>(a,b,c,d,e,f,g)</math> that satisfy the following systems of equations:
+<cmath>\begin{align*}
+abc&=70,\\
+cde&=71,\\
+efg&=72.
+\end{align*}</cmath>

@@ -1,0 +1,7 @@
+==Problem==
+
+How many three-digit positive integers $\underline{a} \ \underline{b} \ \underline{c}$ are there whose nonzero digits $a,b,$ and $c$ satisfy
+$$0.\overline{\underline{a}~\underline{b}~\underline{c}} = \frac{1}{3} (0.\overline{a} + 0.\overline{b} + 0.\overline{c})?$$
+(The bar indicates repetition, thus $0.\overline{\underline{a}~\underline{b}~\underline{c}}$ is the infinite repeating decimal $0.\underline{a}~\underline{b}~\underline{c}~\underline{a}~\underline{b}~\underline{c}~\cdots$)
+
+$\textbf{(A) } 9 \qquad \textbf{(B) } 10 \qquad \textbf{(C) } 11 \qquad \textbf{(D) } 13 \qquad \textbf{(E) } 14$

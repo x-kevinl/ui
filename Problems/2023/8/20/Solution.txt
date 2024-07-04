@@ -1,0 +1,4 @@
+==Solution 1 ==
+To double the range, we must find the current range, which is $28 - 3 = 25$, to then double to: $2(25) = 50$. Since we do not want to change the median, we need to get a value less than $8$ (as $8$ would change the mode) for the smaller, making $53$ fixed for the larger. Remember, anything less than $3$ is not beneficial to the optimization because you want to get the largest range without changing the mode. So, taking our optimal values of $7$ and $53$, we have an answer of $7 + 53 = \boxed{\textbf{(D)}\ 60}$.
+
+~apex304, SohumUttamchandani, wuwang2002, TaeKim, CrystalFlower, CHECKMATE2021

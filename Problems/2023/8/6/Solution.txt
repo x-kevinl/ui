@@ -1,0 +1,2 @@
+==Solution 1==
+First, let us consider the case where $0$ is a base: This would result in the entire expression being $0.$ Contrastingly, if $0$ is an exponent, we will get a value greater than $0.$ $3^2\times2^0=9$ is greater than $2^3\times2^0=8$ and $2^2\times3^0=4.$ Therefore, the answer is $\boxed{\textbf{(C) }9}.$

@@ -1,0 +1,2 @@
+== Solution ==
+Let $a$ be the amount of questions Jesse answered correctly, $b$ be the amount of questions Jesse left blank, and $c$ be the amount of questions Jesse answered incorrectly. Since there were $50$ questions on the contest, $a+b+c=50$. Since his total score was $99$, $4a-c=99$. Also, $a+c\leq50 \Rightarrow c\leq50-a$. We can substitute this inequality into the previous equation to obtain another inequality: $4a-(50-a)\leq99 \Rightarrow 5a\leq149 \Rightarrow a\leq \frac{149}5=29.8$. Since $a$ is an integer, the maximum value for $a$ is $\boxed{\textbf{(C)}\ 29}$.

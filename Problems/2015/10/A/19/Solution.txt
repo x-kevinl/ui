@@ -1,0 +1,26 @@
+==Solution 1 (No Trigonometry) ==
+
+[[File:2015AMC10AProblem19Picture.png]]
+
+$\triangle ADC$ can be split into a $45-45-90$ right triangle and a $30-60-90$ right triangle by dropping a perpendicular from $D$ to side $AC$. Let $F$ be where that perpendicular intersects $AC$.
+
+Because the side lengths of a $45-45-90$ right triangle are in ratio $a:a:a\sqrt{2}$, $DF = AF$.
+
+Because the side lengths of a $30-60-90$ right triangle are in ratio $a:a\sqrt{3}:2a$ and $AF + FC = 5$, $DF = \frac{5 - AF}{\sqrt{3}}$.
+
+Setting the two equations for $DF$ equal to each other, $AF = \frac{5 - AF}{\sqrt{3}}$.
+
+Solving gives $AF = DF = \frac{5\sqrt{3} - 5}{2}$.
+
+The area of $\triangle ADC =\frac12 \cdot DF \cdot AC = \frac{25\sqrt{3} - 25}{4}$.
+
+$\triangle ADC$ is congruent to $\triangle BEC$, so their areas are equal.
+
+A triangle's area can be written as the sum of the figures that make it up, so $[ABC] = [ADC] + [BEC] + [CDE]$.
+
+$\frac{25}{2} = \frac{25\sqrt{3} - 25}{4} + \frac{25\sqrt{3} - 25}{4} + [CDE]$.
+
+Solving gives $[CDE] = \frac{50 - 25\sqrt{3}}{2}$, so the answer is $\boxed{\textbf{(D) }\frac{50 - 25\sqrt{3}}{2}}$
+
+===Note===
+Another way to get $DF$ is that you assume $AF=DF$ to be equal to $a$, as previously mentioned, and $CF$ is equal to $a\sqrt{3}$. $AF+DF=5=a+a\sqrt{3}$

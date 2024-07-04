@@ -1,0 +1,6 @@
+== Solution ==
+The total price of the items is $(8-.01)+(5-.01)+(3-.01)+(2-.01)+(1-.01)=19-.05=18.95$
+
+$20-18.95=1.05$
+
+$\frac{1.05}{20}=.0525 \Rightarrow \text{(A)}$

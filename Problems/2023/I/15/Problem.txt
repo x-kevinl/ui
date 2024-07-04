@@ -1,0 +1,8 @@
+==Problem==
+Find the largest prime number <math>p<1000</math> for which there exists a complex number <math>z</math> satisfying
+
+* the real and imaginary part of <math>z</math> are both integers;
+
+* <math>|z|=\sqrt{p},</math> and
+
+* there exists a triangle whose three side lengths are <math>p,</math> the real part of <math>z^{3},</math> and the imaginary part of <math>z^{3}.</math>

@@ -1,0 +1,2 @@
+==Problem 9==
+Let <math>a_{10} = 10</math>, and for each positive integer <math>n >10</math> let <math>a_n = 100a_{n - 1} + n</math>. Find the least positive <math>n > 10</math> such that <math>a_n</math> is a multiple of <math>99</math>.

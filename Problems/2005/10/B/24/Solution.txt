@@ -1,0 +1,8 @@
+== Solution 1 ==
+Let $x = 10a+b, y = 10b+a$. The given conditions imply $x>y$, which implies $a>b$, and they also imply that both $a$ and $b$ are nonzero. 
+
+Then, $x^2 - y^2 = (x-y)(x+y) = (9a - 9b)(11a + 11b) = 99(a-b)(a+b) = m^2$. 
+
+Since this must be a perfect square, all the exponents in its prime factorization must be even. $99$ factorizes into $3^2 \cdot 11$, so $11|(a-b)(a+b)$. However, the maximum value of $a-b$ is $9-1=8$, so $11|a+b$. The maximum value of $a+b$ is $9+8=17$, so $a+b=11$. 
+
+Then, we have $33^2(a-b) = m^2$, so $a-b$ is a perfect square, but the only perfect squares that are within our bound on $a-b$ are $1$ and $4$. We know $a+b=11$, and, for $a-b=1$, adding equations to eliminate $b$ gives us $2a=12 \Longrightarrow a=6, b=5$. Testing $a-b=4$ gives us $2a=15 \Longrightarrow a=\frac{15}{2}, b=\frac{7}{2}$, which is impossible, as $a$ and $b$ must be digits. Therefore, $(a,b) = (6,5)$, and $x+y+m=\boxed{\textbf{(E) }154}$.

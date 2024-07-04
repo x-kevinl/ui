@@ -1,0 +1,2 @@
+==Problem==
+In <math>\triangle PQR</math>, <math>PR=15</math>, <math>QR=20</math>, and <math>PQ=25</math>. Points <math>A</math> and <math>B</math> lie on <math>\overline{PQ}</math>, points <math>C</math> and <math>D</math> lie on <math>\overline{QR}</math>, and points <math>E</math> and <math>F</math> lie on <math>\overline{PR}</math>, with <math>PA=QB=QC=RD=RE=PF=5</math>. Find the area of hexagon <math>ABCDEF</math>.

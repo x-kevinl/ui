@@ -1,0 +1,4 @@
+== Solution 1 ==
+We want to try make $a+b$, $b+c$, $c+d$, and $d+e$ as close as possible so that $M$, the maximum of these, is smallest.
+
+Notice that $2010=670+670+670$. In order to express $2010$ as a sum of $5$ numbers, we must split up some of these numbers. There are two ways to do this (while keeping the sum of two numbers as close as possible): $2010=670+1+670+1+668$ or $2010=670+1+669+1+669$. We see that in both cases, the value of $M$ is $671$, so the answer is $671 \Rightarrow \boxed{B}$.

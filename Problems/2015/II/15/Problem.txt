@@ -1,0 +1,18 @@
+==Problem==
+
+Circles <math>\mathcal{P}</math> and <math>\mathcal{Q}</math> have radii <math>1</math> and <math>4</math>, respectively, and are externally tangent at point <math>A</math>. Point <math>B</math> is on <math>\mathcal{P}</math> and point <math>C</math> is on <math>\mathcal{Q}</math> so that line <math>BC</math> is a common external tangent of the two circles. A line <math>\ell</math> through <math>A</math> intersects <math>\mathcal{P}</math> again at <math>D</math> and intersects <math>\mathcal{Q}</math> again at <math>E</math>. Points <math>B</math> and <math>C</math> lie on the same side of <math>\ell</math>, and the areas of <math>\triangle DBA</math> and <math>\triangle ACE</math> are equal. This common area is <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.
+
+<asy>
+import cse5;
+pathpen=black; pointpen=black;
+size(6cm);
+
+pair E = IP(L((-.2476,1.9689),(0.8,1.6),-3,5.5),CR((4,4),4)), D = (-.2476,1.9689);
+
+filldraw(D--(0.8,1.6)--(0,0)--cycle,gray(0.7));
+filldraw(E--(0.8,1.6)--(4,0)--cycle,gray(0.7));
+D(CR((0,1),1)); D(CR((4,4),4,150,390));
+D(L(MP("D",D(D),N),MP("A",D((0.8,1.6)),NE),1,5.5));
+D((-1.2,0)--MP("B",D((0,0)),S)--MP("C",D((4,0)),S)--(8,0));
+D(MP("E",E,N));
+</asy>

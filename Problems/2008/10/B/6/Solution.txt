@@ -1,0 +1,2 @@
+==Solution 1==
+Let $CD = 1$. Then $AB = 4(BC + 1)$ and $AB + BC = 9\cdot1$. From this system of equations, we obtain $BC = 1$. Adding $CD$ to both sides of the second equation, we obtain $AD = AB + BC + CD = 9 + 1 = 10$.  Thus, $\frac{BC}{AD} = \frac{1}{10} \implies\text{(C)}$

@@ -1,0 +1,2 @@
+==Problem 8==
+A hexagon that is inscribed in a circle has side lengths <math>22</math>, <math>22</math>, <math>20</math>, <math>22</math>, <math>22</math>, and <math>20</math> in that order. The radius of the circle can be written as <math>p+\sqrt{q}</math>, where <math>p</math> and <math>q</math> are positive integers. Find <math>p+q</math>.

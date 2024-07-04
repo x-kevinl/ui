@@ -1,0 +1,37 @@
+== Solution 1 ==
+<asy>
+unitsize(32mm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+dotfactor=3;
+
+pair B = (0, 0), C = (1, 0), D = (1, 1), A = (0, 1);
+pair Ep = (2 - sqrt(3), 0), F = (1, sqrt(3) - 1);
+pair Ap = (0, (3 - sqrt(3))/6);
+pair Cp = ((3 - sqrt(3))/6, 0);
+pair Dp = ((3 - sqrt(3))/6, (3 - sqrt(3))/6);
+pair[] dots = {A, B, C, D, Ep, F, Ap, Cp, Dp};
+
+draw(A--B--C--D--cycle);
+draw(A--F--Ep--cycle);
+draw(Ap--B--Cp--Dp--cycle);
+dot(dots);
+
+label("$A$", A, NW);
+label("$B$", B, SW);
+label("$C$", C, SE);
+label("$D$", D, NE);
+label("$E$", Ep, SE);
+label("$F$", F, E);
+label("$A'$", Ap, W);
+label("$C'$", Cp, SW);
+label("$D'$", Dp, E);
+label("$s$", Ap--B, W);
+label("$1$", A--D, N);
+</asy>
+Call the vertices of the new square A', B', C', and D', in relation to the vertices of <math>ABCD</math>, and define <math>s</math> to be one of the sides of that square. Since the sides are [[parallel]], by [[corresponding angles]] and AA~ we know that triangles <math>AA'D'</math> and <math>D'C'E</math> are similar. Thus, the sides are proportional: <math>\frac{AA'}{A'D'} = \frac{D'C'}{C'E} \Longrightarrow \frac{1 - s}{s} = \frac{s}{1 - s - CE}</math>. Simplifying, we get that <math>s^2 = (1 - s)(1 - s - CE)</math>.
+
+<math>\angle EAF</math> is <math>60</math> degrees, so <math>\angle BAE = \frac{90 - 60}{2} = 15</math>. Thus, <math>\cos 15 = \cos (45 - 30) = \frac{\sqrt{6} + \sqrt{2}}{4} = \frac{1}{AE}</math>, so <math>AE = \frac{4}{\sqrt{6} + \sqrt{2}} \cdot \frac{\sqrt{6} - \sqrt{2}}{\sqrt{6} - \sqrt{2}} = \sqrt{6} - \sqrt{2}</math>. Since <math>\triangle AEF</math> is [[equilateral]], <math>EF = AE = \sqrt{6} - \sqrt{2}</math>. <math>\triangle CEF</math> is a <math>45-45-90 \triangle</math>, so <math>CE = \frac{AE}{\sqrt{2}} = \sqrt{3} - 1</math>. Substituting back into the equation from the beginning, we get <math>s^2 = (1 - s)(2 - \sqrt{3} - s)</math>, so <math>(3 - \sqrt{3})s = 2 - \sqrt{3}</math>. Therefore, <math>s = \frac{2 - \sqrt{3}}{3 - \sqrt{3}} \cdot \frac{3 + \sqrt{3}}{3 + \sqrt{3}} = \frac{3 - \sqrt{3}}{6}</math>, and <math>a + b + c = 3 + 3 + 6 = \boxed{12}</math>.
+
+----
+
+Here's an alternative geometric way to calculate <math>AE</math> (as opposed to [[trigonometry|trigonometric]]): The diagonal <math>\overline{AC}</math> is made of the [[altitude]] of the equilateral triangle and the altitude of the <math>45-45-90 \triangle</math>. The former is <math>\frac{AE\sqrt{3}}{2}</math>, and the latter is <math>\frac{AE}{2}</math>; thus <math>\frac{AE\sqrt{3} + AE}{2} = AC = \sqrt{2} \Longrightarrow AE= \sqrt{6}-\sqrt{2}</math>. The solution continues as above.

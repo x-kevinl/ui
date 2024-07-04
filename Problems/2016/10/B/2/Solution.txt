@@ -1,0 +1,2 @@
+==Solution 1==
+$\frac{2^3(2^2)^2}{(2^2)^32^2}=\frac{2^7}{2^8}=\frac12$ which is $\textbf{(B)}$.

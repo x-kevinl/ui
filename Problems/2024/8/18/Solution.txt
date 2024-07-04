@@ -1,0 +1,11 @@
+==Solution 1==
+
+Let $x=\angle{BOC}$.
+
+We see that the shaded region is the inner ring plus a sector $x^\circ$ of the outer ring. The area of this in terms of $x$ is $\left( 4 \pi - \pi \right)+\frac{x}{360} \left( 9 \pi - 4 \pi \right)$. This simplifies to $3 \pi + \frac{x}{360}(5 \pi)$.
+
+Also, the unshaded portion is comprised of the smallest circle plus the sector $(360-x)^\circ$ of the outer ring. The area of this is $\pi + \frac{360-x}{360}(5 \pi)$.
+
+We are told these are equal, therefore $\pi + \frac{x}{360}(5 \pi) = 3 \pi + \frac{360-x}{360}(5 \pi)$. Solving for $x$ reveals $x=\boxed{\textbf{(A) } 108}$.
+
+~MrThinker

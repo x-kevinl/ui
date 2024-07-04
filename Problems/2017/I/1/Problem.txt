@@ -1,0 +1,2 @@
+==Problem 1==
+Fifteen distinct points are designated on <math>\triangle ABC</math>: the 3 vertices <math>A</math>, <math>B</math>, and <math>C</math>; <math>3</math> other points on side <math>\overline{AB}</math>; <math>4</math> other points on side <math>\overline{BC}</math>; and <math>5</math> other points on side <math>\overline{CA}</math>. Find the number of triangles with positive area whose vertices are among these <math>15</math> points.

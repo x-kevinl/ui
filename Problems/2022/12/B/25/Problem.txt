@@ -1,0 +1,21 @@
+==Problem==
+
+Four regular hexagons surround a square with side length 1, each one sharing an edge with the square,
+as shown in the figure below. The area of the resulting 12-sided outer nonconvex polygon can be
+written as $m \sqrt{n} + p$, where $m$, $n$, and $p$ are integers and $n$ is not divisible by the square of any prime.
+What is $m+n+p$?
+<asy>
+        import geometry;
+        unitsize(3cm);
+        draw((0,0) -- (1,0) -- (1,1) -- (0,1) -- cycle);
+        draw(shift((1/2,1-sqrt(3)/2))*polygon(6));
+        draw(shift((1/2,sqrt(3)/2))*polygon(6));
+        draw(shift((sqrt(3)/2,1/2))*rotate(90)*polygon(6));
+        draw(shift((1-sqrt(3)/2,1/2))*rotate(90)*polygon(6));
+		draw((0,1-sqrt(3))--(1,1-sqrt(3))--(3-sqrt(3),sqrt(3)-2)--(sqrt(3),0)--(sqrt(3),1)--(3-sqrt(3),3-sqrt(3))--(1,sqrt(3))--(0,sqrt(3))--(sqrt(3)-2,3-sqrt(3))--(1-sqrt(3),1)--(1-sqrt(3),0)--(sqrt(3)-2,sqrt(3)-2)--cycle,linewidth(2));
+</asy>
+$\textbf{(A) } -12 \qquad
+\textbf{(B) }-4 \qquad 
+\textbf{(C) } 4 \qquad
+\textbf{(D) }24 \qquad
+\textbf{(E) }32$

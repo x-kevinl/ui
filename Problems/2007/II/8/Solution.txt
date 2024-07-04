@@ -1,0 +1,12 @@
+== Solution ==
+=== Solution 1 ===
+Denote the number of horizontal lines drawn as <math>x</math>, and the number of vertical lines drawn as <math>y</math>. The number of basic rectangles is <math>(x - 1)(y - 1)</math>. <math>5x + 4y = 2007 \Longrightarrow y = \frac{2007 - 5x}{4}</math>. Substituting, we find that <math>(x - 1)\left(-\frac 54x + \frac{2003}4\right)</math>.
+
+[[FOIL]] this to get a quadratic, <math>-\frac 54x^2 + 502x - \frac{2003}4</math>. Use <math>\frac{-b}{2a}</math> to find the maximum possible value of the quadratic: <math>x = \frac{-502}{-2 \cdot \frac 54} = \frac{1004}5 \approx 201</math>. However, this gives a non-integral answer for <math>y</math>. The closest two values that work are <math>(199,253)</math> and <math>(203,248)</math>. 
+
+We see that <math>252 \cdot 198 = 49896 > 202 \cdot 247 = 49894</math>. The solution is <math>\boxed{896}</math>.
+
+=== Solution 2 ===
+We realize that drawing <math>x</math> vertical lines and <math>y</math> horizontal lines, the number of basic rectangles we have is <math>(x-1)(y-1)</math>. The easiest possible case to see is <math>223</math> vertical and <math>223</math> horizontal lines, as <math>(4+5)223 = 2007</math>. Now, for every 4 vertical lines you take away, you can add 5 horizontal lines, so you basically have the equation <math>(222-4x)(222+5x)</math> maximize. 
+
+Expanded, this gives <math>-20x^{2}+222x+222^{2}</math>. From <math>-\frac{b}{2a}</math> you get that the vertex is at <math>x=\frac{111}{20}</math>. This is not an integer though, so you see that when <math>x=5</math>, you have <math>-20*25+222*5+222^{2}</math> and that when x=6, you have <math>-20*36+222*6+222^{2}</math>. <math>222 > 20*11</math>, so the maximum integral value for x occurs when <math>x=6</math>. Now you just evaluate <math>-20*36+222*6+222^{2}\mod 1000</math> which is <math>{896}</math>.

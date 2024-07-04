@@ -1,0 +1,4 @@
+==Solution 1==
+Since an even number is $3$ times more likely to appear than an odd number, the probability of an even number appearing is $\frac{3}{4}$. Since the problem states that the sum of the two die must be even, the numbers must both be even or both be odd. We either have EE or OO, so we have $$\frac{3}{4}\cdot \frac{3}{4} + \frac{1}{4} \cdot \frac{1}{4} = \frac {1}{16} + \frac {9}{16} = \frac{10}{16} = \boxed{\textbf{(E)}\ \frac{5}{8}}.$$
+
+~Arcticturn ~Aidensharp

@@ -1,0 +1,4 @@
+==Problem==
+What is the value of $$(\log 5)^{3}+(\log 20)^{3}+(\log 8)(\log 0.25)$$ where $\log$ denotes the base-ten logarithm?
+
+$\textbf{(A)}~\frac{3}{2}\qquad\textbf{(B)}~\frac{7}{4}\qquad\textbf{(C)}~2\qquad\textbf{(D)}~\frac{9}{4}\qquad\textbf{(E)}~3$

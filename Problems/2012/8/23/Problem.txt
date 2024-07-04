@@ -1,0 +1,4 @@
+==Problem==
+An equilateral triangle and a regular hexagon have equal perimeters. If the triangle's area is 4, what is the area of the hexagon?
+
+$ \textbf{(A)}\hspace{.05in}4\qquad\textbf{(B)}\hspace{.05in}5\qquad\textbf{(C)}\hspace{.05in}6\qquad\textbf{(D)}\hspace{.05in}4\sqrt3\qquad\textbf{(E)}\hspace{.05in}6\sqrt3 $

@@ -1,0 +1,105 @@
+== Solutions ==
+=== Solution 1 (Synthetic) ===
+<center><asy>
+pointpen = black; pathpen = black +linewidth(0.7);
+pair A=(0,0),B=(0,25),C=(70/3,25),D=(70/3,0),E=(0,8),F=(70/3,22),G=(15,0);
+D(MP("A",A)--MP("B",B,N)--MP("C",C,N)--MP("D",D)--cycle);
+D(MP("E",E,W)--MP("F",F,(1,0))); D(B--G);
+D(E--MP("B'",G)--F--B,dashed);
+MP("8",(A+E)/2,W);MP("17",(B+E)/2,W);MP("22",(D+F)/2,(1,0));
+</asy></center>
+Since <math>EF</math> is the perpendicular bisector of <math>\overline{BB'}</math>, it follows that <math>BE = B'E</math> (by SAS). By the [[Pythagorean Theorem]], we have <math>AB' = 15</math>. Similarly, from <math>BF = B'F</math>, we have
+<cmath>
+\begin{align*}
+BC^2 + CF^2 = B'D^2 + DF^2 &\Longrightarrow BC^2 + 9 = (BC - 15)^2 + 484 \\
+BC  &= \frac{70}{3}
+\end{align*}
+</cmath>
+Thus the perimeter of <math>ABCD</math> is <math>2\left(25 + \frac{70}{3}\right) = \frac{290}{3}</math>, and our answer is <math>m+n=\boxed{293}</math>.
+
+=== Solution 2 (analytic) ===
+Let <math>A = (0,0), B=(0,25)</math>, so <math>E = (0,8)</math> and <math>F = (l,22)</math>, and let <math>l = AD</math> be the length of the rectangle. The [[slope]] of <math>EF</math> is <math>\frac{14}{l}</math> and so the equation of <math>EF</math> is <math>y -8 = \frac{14}{l}x</math>. We know that <math>EF</math> is perpendicular to and bisects <math>BB'</math>. The slope of <math>BB'</math> is thus <math>\frac{-l}{14}</math>, and so the equation of <math>BB'</math> is <math>y -25 = \frac{-l}{14}x</math>. Let the point of intersection of <math>EF, BB'</math> be <math>G</math>. Then the y-coordinate of <math>G</math> is <math>\frac{25}{2}</math>, so
+<cmath>
+\begin{align*}
+\frac{14}{l}x &= y-8 = \frac{9}{2}\\
+\frac{-l}{14}x &= y-25 = -\frac{25}{2}\\
+\end{align*}
+</cmath>
+Dividing the two equations yields
+<center><math>l^2 = \frac{25 \cdot 14^2}{9} \Longrightarrow l = \frac{70}{3}</math></center>
+The answer is <math>\boxed{293}</math> as above.
+
+===Solution 3 (Coordinate Bashing)===
+Firstly, observe that if we are given that <math>AE=8</math> and <math>BE=17</math>, the length of the triangle is given and the height depends solely on the length of <math>CF</math>. Let Point <math>A = (0,0)</math>. Since <math>AE=8</math>, point E is at (8,0). Next, point <math>B</math> is at <math>(25,0)</math> since <math>BE=17</math> and point <math>B'</math> is at <math>(0,-15)</math> since <math>BE=AE</math> by symmetry. Draw line segment <math>BB'</math>. Notice that this is perpendicular to <math>EF</math> by symmetry. Next, find the slope of EB, which is <math>\frac{15}{25}=\frac{3}{5}</math>. Then, the slope of <math>EF</math> is -<math>\frac{5}{3}</math>. 
+
+Line EF can be written as y=<math>-\frac{5}{3}x+b</math>. Plug in the point <math>(8,0)</math>, and we get the equation of EF to be y=<math>_\frac{5}{3}x+\frac{40}{3}</math>. Since the length of <math>AB</math>=25, a point on line <math>EF</math> lies on <math>DC</math> when <math>x=25-3=22</math>. Plug in <math>x=22</math> into our equation to get <math>y=-\frac{70}{3}</math>. <math>|y|=BC=\frac{70}{3}</math>. Therefore, our answer is <math>2(AB+BC)=2\left(25+\frac{70}{3}\right)=2\left(\frac{145}{3}\right)=\frac{290}{3}= \boxed{293}</math>.
+
+===Solution 4 (Trig)===
+Firstly, note that <math>B'E=BE=17</math>, so <math>AB'=\sqrt{17^2-8^2}=15</math>. Then let <math>\angle BEF=\angle B'EF=\theta</math>, so <math>\angle B'EA = \pi-2\theta</math>. Then <math>\tan(\pi-2\theta)=\frac{15}{8}</math>, or 
+
+<cmath>\frac{2\tan(\theta)}{\tan^2(\theta)-1}=\frac{15}{8}</cmath> using supplementary and double angle identities. Multiplying though and factoring yields 
+
+<cmath>(3\tan(\theta)-5)(5\tan(\theta)+3)=0</cmath>
+
+It is clear from the problem setup that <math>0<\theta<\frac\pi2</math>, so the correct value is <math>\tan(\theta)=\frac53</math>. Next, extend rays <math>\overrightarrow{BC}</math> and <math>\overrightarrow{EF}</math> to intersect at <math>C'</math>. Then <math>\tan(\theta)=\frac{BC'}{17}=\frac53</math>, so <math>BC'=\frac{85}{3}</math>. By similar triangles, <math>CC'=\frac{3}{17}BC'=\frac{15}{3}</math>, so <math>BC=\frac{70}{3}</math>. The perimeter is <math>\frac{140}{3}+50=\frac{290}{3}\Longrightarrow \boxed{293}</math>
+
+An even faster way to finish is, to draw a line segment <math>FF'</math> where <math>F'</math> is a point on <math>EB</math> such that <math>FF'</math> is perpendicular to <math>EB</math>. This makes right triangle <math>FF'E</math>, Also, note that <math>F'B</math> has length of <math>3</math> (draw the diagram out, and note the <math>F'B =FC</math>). From here, through <math>\tan \theta = \frac{5}{3}</math>, we can note that <math>\frac{FF'}{EF'} = \frac{5}{3} \implies \frac{FF'}{14} = \frac{5}{3} \implies FF' = \frac{70}{3}</math>. <math>FF'</math> is parallel and congrurent to <math>CB</math> and <math>AD</math>, and hence we can use this to calculate the perimeter. The perimeter is simply <math>\frac{70}{3} + \frac{70}{3} + 25 + 25 = \frac{290}{3} \Longrightarrow \boxed{293}</math>
+
+===Solution 5 (Fast, Pythagorean)===
+Use the prepared diagram for this solution.
+
+Call the intersection of DF and B'C' G. AB'E is an 8-15-17 right triangle, and so are B'DG and C'FG. Since C'F is 3, then using the properties of similar triangles GF is 51/8. DF is 22, so DG is 125/8. Finally, DB can to calculated to be 25/3.
+Add all the sides together to get <math>\boxed{293}</math>.
+
+-jackshi2006
+
+===Solution 6(fast as wind[rufeng])===
+Call the intersection of <math>B'C'</math>, <math>BC</math>, and <math>EF</math> <math>G</math>. Since <math>FCBE</math> and <math>FC'B'E</math> are congruent, we know that the three lines intersect.
+We already know <math>AB</math> so we just need to find <math>CB</math>, call it <math>x</math>. Drop an altitude from <math>F</math> to <math>AB</math> and call it <math>H</math>. <math>EH=EB-FC=14</math>. Using Pythagorean Theorem, we have <math>EF=\sqrt{x^2+14^2}</math>. Triangles <math>EFH</math> and <math>EGB</math> are similar (AA), so we get
+<cmath>\frac{HF}{BG}=\frac{EH}{EB}</cmath>
+<cmath>\frac{x}{x+GC}=\frac{14}{17}</cmath>
+Simplify and we get <math>GC=\frac{3x}{14}</math>. 
+
+We find the area of <math>FCBE</math> by using the fact that it is a trapezoid. 
+<math>[FCBE]=\frac{(3+17)x}{2}=10x</math>
+
+A different way to find the area:
+<math>[FCBE]=\frac{1}{2} EG\cdot(</math>height of <math>EGB</math> with <math>EG</math> as base<math>)-[FGC]</math>
+
+Since <math>GBE</math> and <math>G'B'E</math> are congruent(SAS), their height from <math>EG</math> is the same. <math>B'B=\sqrt{AB'^2+AB^2}=5\sqrt{34}</math>.
+<math>EG=\sqrt{EB^2+BG^2}=\sqrt{(\frac{17x}{14})^2+17^2}=17\sqrt{\frac{x^2}{196}+1}</math>
+
+<cmath>[FCBE]=\frac{1}{2} \cdot 17 \cdot \sqrt{\frac{x^2}{196}+1} \cdot \frac{5\sqrt{34}}{2}-\frac{9x}{28}</cmath>
+<cmath>280x+9x=7\cdot 5 \cdot \sqrt{34} \cdot 17 \cdot \sqrt{\frac{x^2}{196}+1}</cmath>
+<cmath>17^4 x^2=49 \cdot 25 \cdot 34 \cdot 17^2 \cdot (\frac{x^2}{196}+1)</cmath>
+<cmath>17x^2=\frac{25}{2}x^2+2450</cmath>
+<cmath>x=\frac{70}{3}</cmath>
+
+The perimeter is <math>\frac{140}{3}+50=\frac{290}{3},</math> so our answer is <math>\boxed{293}</math>.
+
+===Solution 7 (Similar to solution 5, more in depth)===
+Let the endpoint of the intersection of the fold near <math>F</math> be <math>G</math>. Since trapezoid <math>BCFE</math> is folded, it is congruent to trapezoid <math>B'C'FE</math>. Therefore, <math>BE=B'E=17</math>. Since <math>\triangle AB'E</math> is a right triangle, <math>AB'=15</math> from the pythagorean theorem. From here, we can see that triangles <math>\triangle AEB \sim \triangle DGB' \sim \triangle C'GF</math> by AA similarity. From here, we find <math>BC</math> from a lot of similarities. Let <math>BC=x</math>.
+
+Since <math>\triangle ABE' \sim \triangle DGB'</math>:
+
+<cmath>\frac {AE}{AB'} = \frac{DB}{DG}</cmath>
+
+<cmath>\frac {8}{15} = \frac {x-15}{DG}</cmath>
+
+<cmath>DG = \frac {15(x-15)}{8}</cmath>
+
+<cmath>GF = DC-DG-FC</cmath>
+
+<cmath>GF = \frac{-15x+401}{8}</cmath>
+
+Since <math>\triangle ABE' \sim \triangle C'GF'</math>,
+
+<cmath>\frac {AE}{B'E} = \frac {C'F}{GF}</cmath>
+
+<cmath>\frac {8}{17} = \frac{3}{\frac {-15x+401}{8}}</cmath>
+
+from which we get <math>x= \frac {70}{3}</math>.
+
+Finally, our answer is <math>2(\frac {70}{3}) + 2(25)=\frac {290}{3}</math>, which is <math>290+3=\boxed{293}</math>.
+
+~ Wesserwessey7254

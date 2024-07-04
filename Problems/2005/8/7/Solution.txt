@@ -1,0 +1,15 @@
+==Solution==
+Draw a picture.
+
+<asy>
+unitsize(3cm);
+draw((0,0)--(0,-.5)--(.75,-.5)--(.75,-1),linewidth(1pt));
+label("$\frac12$",(0,0)--(0,-.5),W);
+label("$\frac12$",(.75,-.5)--(.75,-1),E);
+label("$\frac34$",(.75,-.5)--(0,-.5),N);
+draw((0,0)--(.75,0)--(.75,-1)--(0,-1)--cycle,gray);
+</asy>
+
+Find the length of the diagonal of the rectangle to find the length of the direct line to the starting time using Pythagorean Theorem.
+
+$$\sqrt{\left(\frac12+\frac12\right)^2+\left(\frac34\right)^2} = \sqrt{1+\frac{9}{16}} = \sqrt{\frac{25}{16}} = \frac54 = \boxed{\textbf{(B)}\ 1 \tfrac14}$$

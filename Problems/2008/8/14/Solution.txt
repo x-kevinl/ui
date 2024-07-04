@@ -1,0 +1,2 @@
+== Solution ==
+There are $2$ ways to place the remaining $\text{As}$, $2$ ways to place the remaining $\text{Bs}$, and $1$ way to place the remaining $\text{Cs}$ for a total of $(2)(2)(1) = \boxed{\textbf{(C)}\ 4}$.

@@ -1,0 +1,7 @@
+==Problem==
+
+Karl bought five folders from Pay-A-Lot at a cost of $ \textdollar 2.50 $ each.
+Pay-A-Lot had a 20%-off sale the following day. How much could
+Karl have saved on the purchase by waiting a day?
+
+$ \textbf{(A)}\ \textdollar 1.00  \qquad\textbf{(B)}\ \textdollar 2.00 \qquad\textbf{(C)}\ \textdollar 2.50\qquad\textbf{(D)}\ \textdollar 2.75 \qquad\textbf{(E)}\ \textdollar 5.00 $

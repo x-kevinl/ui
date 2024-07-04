@@ -1,0 +1,6 @@
+== Problem ==
+
+The base of isosceles $\triangle ABC$ is $24$ and its area is $60$. What is the length of one
+of the congruent sides?
+
+$\mathrm{(A)}\ 5 \qquad \mathrm{(B)}\ 8 \qquad \mathrm{(C)}\ 13 \qquad \mathrm{(D)}\ 14 \qquad \mathrm{(E)}\ 18$

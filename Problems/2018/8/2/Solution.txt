@@ -1,0 +1,6 @@
+==Solution==
+By adding up the numbers in each of the $6$ parentheses, we get: 
+
+$\frac{2}{1} \cdot \frac{3}{2} \cdot \frac{4}{3} \cdot \frac{5}{4} \cdot \frac{6}{5} \cdot \frac{7}{6}$.
+
+Using telescoping, most of the terms cancel out diagonally. We are left with $\frac{7}{1}$ which is equivalent to $7$. Thus, the answer would be $\boxed{\textbf{(D) }7}$.

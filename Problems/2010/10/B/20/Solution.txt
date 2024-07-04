@@ -1,0 +1,11 @@
+== Solution 1 ==
+A good diagram is very helpful. 
+
+<center> [[File:Amc10B 2010.gif]] </center>
+
+The first circle is in red, the second in blue.
+With this diagram, we can see that the first circle is inscribed in equilateral triangle $GBA$ while the second circle is inscribed in $GKJ$.
+From this, it's evident that the ratio of the blue area to the red area is equal to the '''ratio of the areas $\triangle GKJ$ to $\triangle GBA$'''
+
+Since the ratio of areas is equal to the square of the ratio of lengths, we know our final answer is $\left(\frac{GK}{GB}\right)^2$.
+From the diagram, we can see that this is $9^2=\boxed{\textbf{(D)}\ 81}$

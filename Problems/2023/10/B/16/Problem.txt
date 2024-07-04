@@ -1,0 +1,8 @@
+== Problem ==
+Define an $\textit{upno}$ to be a positive integer of $2$ or more digits where the digits are strictly
+increasing moving left to right. Similarly, define a $\textit{downno}$ to be a positive integer 
+of $2$ or more digits where the digits are strictly decreasing moving left to right. For
+instance, the number $258$ is an upno and $8620$ is a downno. Let $U$ equal the total
+number of $upnos$ and let $D$ equal the total number of $downnos$. What is $|U-D|$?
+
+$\textbf{(A)}~512\qquad\textbf{(B)}~10\qquad\textbf{(C)}~0\qquad\textbf{(D)}~9\qquad\textbf{(E)}~511$

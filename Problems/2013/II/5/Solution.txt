@@ -1,0 +1,20 @@
+== Solution 1==
+
+<asy>
+pair A = (1, sqrt(3)), B = (0, 0), C= (2, 0);
+pair M = (1, 0);
+pair D = (2/3, 0), E = (4/3, 0);
+draw(A--B--C--cycle);
+label("$A$", A, N);
+label("$B$", B, SW);
+label("$C$", C, SE);
+label("$D$", D, S);
+label("$M$", M, S);
+label("$E$", E, S);
+draw(A--D);
+draw(A--M);
+draw(A--E); </asy>
+
+Without loss of generality, assume the triangle sides have length 3. Then the trisected side is partitioned into segments of length 1, making your computation easier. 
+
+Let <math>M</math> be the midpoint of <math>\overline{DE}</math>. Then <math>\Delta MCA</math> is a 30-60-90 triangle with <math>MC = \dfrac{3}{2}</math>, <math>AC = 3</math> and <math>AM = \dfrac{3\sqrt{3}}{2}</math>. Since the triangle <math>\Delta AME</math> is right, then we can find the length of <math>\overline{AE}</math> by pythagorean theorem, <math>AE = \sqrt{7}</math>. Therefore, since <math>\Delta AME</math> is a right triangle, we can easily find <math>\sin(\angle EAM) = \dfrac{1}{2\sqrt{7}}</math> and <math>\cos(\angle EAM) = \sqrt{1-\sin(\angle EAM)^2}=\dfrac{3\sqrt{3}}{2\sqrt{7}}</math>. So we can use the double angle formula for sine, <math>\sin(\angle EAD) = 2\sin(\angle EAM)\cos(\angle EAM) = \dfrac{3\sqrt{3}}{14}</math>. Therefore, <math>a + b + c = \boxed{020}</math>.

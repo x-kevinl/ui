@@ -1,0 +1,58 @@
+==Solution 1==
+
+Let us label the points on the diagram.
+
+<asy>
+import olympiad;
+size(200);
+defaultpen(linewidth(1) + fontsize(10));
+pair A = (0,0), B = (1,0), C = (4,0), D = (8,0), K = (0,4), F = (1,4), G = (7.25, 4), H = (8, 4), I = (8,3), J = (5, 7);
+fill(F--G--I--C--F--cycle, grey);
+markscalefactor=0.05;
+draw(A--D--H--K--A^^B--F^^F--C--I--J--F^^rightanglemark(F,J,I)^^rightanglemark(F,B,C)^^anglemark(D,C,I)^^anglemark(B,F,C)^^anglemark(H,I,G));
+draw(anglemark(F,C,B)^^anglemark(C,I,D)^^anglemark(I,G,H));
+markscalefactor=0.041;
+draw(anglemark(F,C,B)^^anglemark(C,I,D)^^anglemark(I,G,H));
+label("8",(4,-.5),S);
+label("5",(3, 5.5),NW);
+label("4",(8.25, 2), E);
+label("A", F, NW);
+label("B", B, S);
+label("C", C, S);
+label("D", D, SE);
+label("E", I, E);
+label("F", H, NE);
+label("G", G, NE);
+label("4", (1,2), E);
+label("5", (2.5,2), SW);
+label("3", (2.5,0), S);
+label("4", (6,0), S);
+label("5", (6,1.5), SE);
+label("3", (8, 1.5), E);
+label("1", (8, 3.5), E);
+</asy>
+
+By doing some angle chasing using the fact that $\angle ACE$ and $\angle CEG$ are right angles, we find that $\angle BAC \cong \angle DCE \cong \angle FEG$. Similarly, $\angle ACB \cong \angle CED \cong \angle EGF$. Therefore, $\triangle ABC \sim \triangle CDE \sim \triangle EFG$.
+
+As we are given a rectangle and a square, $AB = 4$ and $AC = 5$. Therefore, $\triangle ABC$ is a $3$-$4$-$5$ right triangle and $BC = 3$. 
+
+$CE$ is also $5$. So, using the similar triangles, $CD = 4$ and $DE = 3$.
+
+$EF = DF - DE = 4 - 3 = 1$. Using the similar triangles again, $EF$ is $\frac14$ of the corresponding $AB$. So, 
+
+$$\begin{align*}
+[\triangle EFG] &= \left(\frac14\right)^2 \cdot [\triangle ABC] \\
+&= \frac{1}{16} \cdot 6 \\
+&= \frac38.
+\end{align*}$$
+
+Finally, we have 
+
+$$\begin{align*}
+[ACEG] &= [ABDF] - [\triangle ABC] - [\triangle CDE] - [\triangle EFG] \\
+&= 7 \cdot 4 - \frac12 \cdot 3 \cdot 4 - \frac12 \cdot 3 \cdot 4 - \frac38 \\
+&= 28 - 6 - 6 - \frac38 \\
+&= \boxed{\textbf{(D) }15\dfrac{5}{8}}.
+\end{align*}$$
+
+~Connor132435

@@ -1,0 +1,7 @@
+== Solution 1 (Logic/Finding Patterns)==
+
+In our $5 \times 5$ grid we can see there are $8,9$ and $8$ of the letters $\text{P}, \text{Q},$ and $\text{R}$’s respectively. We can see our pattern between each is $x, x+1,$ and $x$ for the $\text{P}, \text{Q},$ and $\text{R}$’s respectively. This such pattern will follow in our bigger example, so we can see that the only answer choice which satisfies this condition is $\boxed{\textbf{(C)}~133\text{ Ps, }134\text{ Qs, }133\text{ Rs}}.$
+
+(Note: you could also "cheese" this problem by brute force/listing out all of the letters horizontally in a single line and looking at the repeating pattern. Refer to solution 4)
+
+~apex304, SohumUttamchandani, wuwang2002, TaeKim, Cxrupptedpat, Nivaar

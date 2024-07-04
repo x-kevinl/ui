@@ -1,0 +1,2 @@
+== Problem ==
+The [[product]] <math>N</math> of three [[positive integer]]s is <math>6</math> times their [[sum]], and one of the [[integer]]s is the sum of the other two. Find the sum of all possible values of <math>N</math>.

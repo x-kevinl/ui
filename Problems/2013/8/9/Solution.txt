@@ -1,0 +1,4 @@
+==Solution==
+This is a geometric sequence in which the common ratio is 2. To find the jump that would be over a 1000 meters, we note that $2^{10}=1024$.
+
+However, because the first term is $2^0=1$ and not $2^1=2$, the solution to the problem is $10-0+1=\boxed{\textbf{(C)}\ 11^{\text{th}}}$

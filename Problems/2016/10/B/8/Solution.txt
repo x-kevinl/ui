@@ -1,0 +1,5 @@
+==Solution 1==
+
+Notice that, for $n\ge 2$, $2015^n\equiv 15^n$ is congruent to $25\pmod{100}$ when $n$ is even and $75\pmod{100}$ when $n$ is odd. (Check for yourself).  Since $2016$ is even, $2015^{2016} \equiv 25\pmod{100}$ and $2015^{2016}-2017 \equiv 25 - 17 \equiv \underline{0}8\pmod{100}$.
+
+So the answer is $\textbf{(A)}\ \boxed{0}$.

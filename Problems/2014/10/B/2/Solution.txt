@@ -1,0 +1,4 @@
+==Solution 1==
+We can synchronously multiply $ {2^3} $ to the expresions both above and below the fraction bar. Thus, 
+$$\frac{2^3+2^3}{2^{-3}+2^{-3}}\\=\frac{2^6+2^6}{1+1}\\={2^6}. $$
+Hence, the fraction equals to $\boxed{{\textbf{(E) }64}}$.

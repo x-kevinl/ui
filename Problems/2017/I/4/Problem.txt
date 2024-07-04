@@ -1,0 +1,2 @@
+==Problem ==
+A pyramid has a triangular base with side lengths <math>20</math>, <math>20</math>, and <math>24</math>. The three edges of the pyramid from the three corners of the base to the fourth vertex of the pyramid all have length <math>25</math>. The volume of the pyramid is <math>m\sqrt{n}</math>, where <math>m</math> and <math>n</math> are positive integers, and <math>n</math> is not divisible by the square of any prime. Find <math>m+n</math>.

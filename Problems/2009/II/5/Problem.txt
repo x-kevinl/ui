@@ -1,0 +1,25 @@
+== Problem 5 ==
+Equilateral triangle <math>T</math> is inscribed in circle <math>A</math>, which has radius <math>10</math>. Circle <math>B</math> with radius <math>3</math> is internally tangent to circle <math>A</math> at one vertex of <math>T</math>. Circles <math>C</math> and <math>D</math>, both with radius <math>2</math>, are internally tangent to circle <math>A</math> at the other two vertices of <math>T</math>. Circles <math>B</math>, <math>C</math>, and <math>D</math> are all externally tangent to circle <math>E</math>, which has radius <math>\dfrac mn</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.
+
+<asy>
+unitsize(3mm);
+defaultpen(linewidth(.8pt));
+dotfactor=4;
+
+pair A=(0,0), D=8*dir(330), C=8*dir(210), B=7*dir(90);
+pair Ep=(0,4-27/5);
+pair[] dotted={A,B,C,D,Ep};
+
+draw(Circle(A,10));
+draw(Circle(B,3));
+draw(Circle(C,2));
+draw(Circle(D,2));
+draw(Circle(Ep,27/5));
+
+dot(dotted);
+label("$E$",Ep,E);
+label("$A$",A,W);
+label("$B$",B,W);
+label("$C$",C,W);
+label("$D$",D,E);
+</asy>

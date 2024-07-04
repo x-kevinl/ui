@@ -1,0 +1,2 @@
+==Solution==
+Each bounce is $2/3$ times the height of the previous bounce. The first bounce reaches $2$ meters, the second $4/3$, the third $8/9$, the fourth $16/27$, and the fifth $32/81$. Half of $81$ is $40.5$, so the ball does not reach the required height on bounce $\boxed{\textbf{(C)}\ 5}$.

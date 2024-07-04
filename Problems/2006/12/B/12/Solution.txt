@@ -1,0 +1,4 @@
+== Solution 1==
+Substituting $(0,-p)$, we find that $y = -p = a(0)^2 + b(0) + c = c$, so our parabola is $y = ax^2 + bx - p$. 
+
+The x-coordinate of the vertex of a parabola is given by $x = p = \frac{-b}{2a} \Longleftrightarrow a = \frac{-b}{2p}$. Additionally, substituting $(p,p)$, we find that $y = p = a(p)^2 + b(p) - p \Longleftrightarrow ap^2 + (b-2)p = \left(\frac{-b}{2p}\right)p^2 + (b-2)p = p\left(\frac b2-2\right) = 0$. Since it is given that $p \neq 0$, then $\frac{b}{2} = 2 \Longrightarrow b = 4\ \mathrm{(D)}$.

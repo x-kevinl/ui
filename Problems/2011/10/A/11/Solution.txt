@@ -1,0 +1,3 @@
+== Solution ==
+
+Let $8s$ be the length of the sides of square $ABCD$, then the length of one of the sides of square $EFGH$ is $\sqrt{(7s)^2+s^2}=\sqrt{50s^2}$, and hence the ratio in the areas is $\frac{\sqrt{50s^2}^2}{(8s)^2}=\frac{50}{64} = \boxed{\frac{25}{32} \ \mathbf{(B)}}$.

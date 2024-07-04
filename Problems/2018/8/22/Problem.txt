@@ -1,0 +1,16 @@
+==Problem 22==
+Point $E$ is the midpoint of side $\overline{CD}$ in square $ABCD,$ and $\overline{BE}$ meets diagonal $\overline{AC}$ at $F.$ The area of quadrilateral $AFED$ is $45.$ What is the area of $ABCD?$
+
+<asy>
+size(5cm);
+draw((0,0)--(6,0)--(6,6)--(0,6)--cycle);
+draw((0,6)--(6,0)); draw((3,0)--(6,6));
+label("$A$",(0,6),NW);
+label("$B$",(6,6),NE);
+label("$C$",(6,0),SE);
+label("$D$",(0,0),SW);
+label("$E$",(3,0),S);
+label("$F$",(4,2),E);
+</asy>
+
+$\textbf{(A) } 100 \qquad \textbf{(B) } 108 \qquad \textbf{(C) } 120 \qquad \textbf{(D) } 135 \qquad \textbf{(E) } 144$

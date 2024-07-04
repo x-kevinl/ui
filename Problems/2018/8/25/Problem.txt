@@ -1,0 +1,4 @@
+==Problem==
+How many perfect cubes lie between $2^8+1$ and $2^{18}+1$, inclusive?
+
+$\textbf{(A) }4\qquad\textbf{(B) }9\qquad\textbf{(C) }10\qquad\textbf{(D) }57\qquad \textbf{(E) }58$

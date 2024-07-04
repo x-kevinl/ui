@@ -1,0 +1,4 @@
+== Solution 1 ==
+Draw the altitude from $H$ to $AB$ and call the foot $L$. Then $HL=1$. Consider $HJ$. It is the hypotenuse of both right triangles $\triangle HGJ$ and $\triangle HLJ$, and we know $JG=HL=1$, so we must have $\triangle HGJ\cong\triangle JLH$ by Hypotenuse-Leg congruence. From this congruence we have $LJ=HG=BE$.
+
+Notice that all four triangles in this picture are similar. Also, we have $LA=HD=EJ$. So set $x=LJ=HG=BE$ and $y=LA=HD=EJ$. Now $BE+EJ+JL+LA=2(x+y)=1$. This means $x+y=\frac{1}{2}=BE+EJ=BJ$, so $J$ is the midpoint of $AB$. So $\triangle AJG$, along with all other similar triangles in the picture, is a 30-60-90 triangle, and we have $AG=\sqrt{3} \cdot AJ=\sqrt{3}/2$ and subsequently $GD=\frac{2-\sqrt{3}}{2}=KE$. This means $EJ=\sqrt{3} \cdot KE=\frac{2\sqrt{3}-3}{2}$, which gives $BE=\frac{1}{2}-EJ=\frac{4-2\sqrt{3}}{2}=2-\sqrt{3}$, so the answer is $\textbf{(C)}$.

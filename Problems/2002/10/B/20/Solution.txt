@@ -1,0 +1,7 @@
+===Solution 1===
+
+Rearranging, we get $a+8c=7b+4$ and $8a-c=7-4b$
+
+Squaring both, $a^2+16ac+64c^2=49b^2+56b+16$ and $64a^2-16ac+c^2=16b^2-56b+49$ are obtained.
+
+Adding the two equations and dividing by $65$ gives $a^2+c^2=b^2+1$, so $a^2-b^2+c^2=\boxed{(\text{B})1}$.

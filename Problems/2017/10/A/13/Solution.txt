@@ -1,0 +1,3 @@
+==Solution==
+
+A pattern starts to emerge as the function is continued. The repeating pattern is $0,1,1,2,0,2,2,1\ldots$ The problem asks for the sum of eight consecutive terms in the sequence. Because there are eight numbers in the repeating pattern, we just need to find the sum of the numbers in the sequence, which is $\boxed{\textbf{(D)}\ 9}$

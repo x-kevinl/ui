@@ -1,0 +1,4 @@
+==Problem==
+How many integers between $2020$ and $2400$ have four distinct digits arranged in increasing order? (For example, $2347$ is one integer.).
+
+$\textbf{(A) }\text{9} \qquad \textbf{(B) }\text{10} \qquad \textbf{(C) }\text{15} \qquad \textbf{(D) }\text{21}\qquad \textbf{(E) }\text{28}$

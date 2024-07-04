@@ -1,0 +1,4 @@
+== Problem ==
+Let $n=8^{2022}$. Which of the following is equal to $\frac{n}{4}?$
+
+$\textbf{(A)}\: 4^{1010}\qquad\textbf{(B)} \: 2^{2022}\qquad\textbf{(C)} \: 8^{2018}\qquad\textbf{(D)} \: 4^{3031}\qquad\textbf{(E)} \: 4^{3032}$

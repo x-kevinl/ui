@@ -1,0 +1,34 @@
+==Solution 1 (Observations and Patterns: Considers Only 5 Squares)==
+In the diagram below, the red arrows indicate the progression of numbers. In the second row from the top, the greatest number and the least number are $D$ and $E,$ respectively. Note that the numbers in the yellow cells are consecutive odd perfect squares, as we can prove by induction.
+<asy> 
+/* Made by MRENTHUSIASM */
+size(11.5cm);
+
+for (real i=7.5; i<=14.5; ++i) 
+{
+	fill((i+0.5,i+0.5)--(i-0.5,i+0.5)--(i-0.5,i-0.5)--(i+0.5,i-0.5)--cycle,yellow);
+}
+
+fill((2,14)--(1,14)--(1,13)--(2,13)--cycle,green);
+fill((1,14)--(0,14)--(0,13)--(1,13)--cycle,green);
+
+label("$A$",(14.5,14.5));
+label("$B$",(13.5,13.5));
+label("$C$",(0.5,14.5));
+label("$E$",(1.5,13.5));
+label("$D$",(0.5,13.5));
+
+add(grid(15,15,linewidth(1.25)));
+
+draw((1.5,13.5)--(14.5,13.5)--(14.5,0.5)--(0.5,0.5)--(0.5,14.5)--(14.5,14.5),red+linewidth(1.125),EndArrow);
+</asy>
+By observations, we proceed as follows:
+$$\begin{alignat*}{6}
+A=15^2=225, \ B=13^2=169 
+\quad &\implies \quad &C &= \hspace{1mm}&&A-14\hspace{1mm} &= 211& \\ 
+\quad &\implies \quad &D &= &&C-1  &= 210& \\ 
+\quad &\implies \quad &E &= &&B-12 &= 157&. 
+\end{alignat*}$$
+Therefore, the answer is $D+E=\boxed{\textbf{(A)} ~367}.$
+
+~MRENTHUSIASM

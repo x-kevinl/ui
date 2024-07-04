@@ -1,0 +1,29 @@
+== Solution ==
+This can be factored as:
+
+<cmath> P(x) = x\left( x^{23} + x^{22} + \cdots + x^2 + x + 1 \right)^2 </cmath>
+
+Note that <math> \left( x^{23} + x^{22} + \cdots + x^2 + x + 1 \right) \cdot (x-1) = x^{24} - 1 </math>.
+So the roots of <math>x^{23} + x^{22} + \cdots + x^2 + x + 1</math> are exactly all <math>24</math>-th complex roots of <math>1</math>, except for the root <math>x=1</math>. 
+
+Let <math>\omega=\cos \frac{360^\circ}{24} + i\sin \frac{360^\circ}{24}</math>. Then the distinct zeros of <math>P</math> are <math>0,\omega,\omega^2,\dots,\omega^{23}</math>.
+
+We can clearly ignore the root <math>x=0</math> as it does not contribute to the value that we need to compute. 
+
+The squares of the other roots are <math>\omega^2,~\omega^4,~\dots,~\omega^{24}=1,~\omega^{26}=\omega^2,~\dots,~\omega^{46}=\omega^{22}</math>.
+
+Hence we need to compute the following sum:
+
+<cmath>R = \sum_{k = 1}^{23} \left|\, \sin \left( k\cdot \frac{360^\circ}{12} \right) \right|</cmath>
+
+Using basic properties of the sine function, we can simplify this to
+
+<cmath>R = 4 \cdot \sum_{k = 1}^{5} \sin \left( k\cdot \frac{360^\circ}{12} \right)</cmath>
+
+The five-element sum is just <math>\sin 30^\circ + \sin 60^\circ + \sin 90^\circ + \sin 120^\circ + \sin 150^\circ</math>. 
+We know that <math>\sin 30^\circ = \sin 150^\circ = \frac 12</math>, <math>\sin 60^\circ = \sin 120^\circ = \frac{\sqrt 3}2</math>, and <math>\sin 90^\circ = 1</math>.
+Hence our sum evaluates to:
+
+<cmath>R = 4 \cdot \left( 2\cdot \frac 12 + 2\cdot \frac{\sqrt 3}2 + 1 \right) = 8 + 4\sqrt 3</cmath>
+
+Therefore the answer is <math>8+4+3 = \boxed{015}</math>.

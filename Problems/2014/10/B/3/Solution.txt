@@ -1,0 +1,2 @@
+==Solution 1==
+Let the total distance be $x$. We have $\dfrac{x}{3} + 20 + \dfrac{x}{5} = x$, or $\dfrac{8x}{15} + 20 = x$. Subtracting $\dfrac{8x}{15}$ from both sides gives us $20 = \dfrac{7x}{15}$. Multiplying by $\dfrac{15}{7}$ gives us $x = \boxed{{\textbf{(E) }\dfrac{300}{7}}}$

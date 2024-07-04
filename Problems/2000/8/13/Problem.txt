@@ -1,0 +1,15 @@
+==Problem==
+
+In triangle $CAT$, we have $ \angle ACT =\angle ATC $ and $ \angle CAT = 36^\circ $. If $ \overline{TR} $ bisects  $\angle ATC $, then $ \angle CRT = $
+
+<asy>
+pair A,C,T,R;
+C = (0,0); T = (2,0); A = (1,sqrt(5+sqrt(20))); R = (3/2 - sqrt(5)/2,1.175570);
+draw(C--A--T--cycle);
+draw(T--R);
+label("$A$",A,N);
+label("$T$",T,SE);
+label("$C$",C,SW);
+label("$R$",R,NW);</asy>
+
+$ \text{(A)}\ 36^\circ\qquad\text{(B)}\ 54^\circ\qquad\text{(C)}\ 72^\circ\qquad\text{(D)}\ 90^\circ\qquad\text{(E)}\ 108^\circ $

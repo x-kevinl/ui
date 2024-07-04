@@ -1,0 +1,4 @@
+==Problem==
+A teacher was leading a class of four perfectly logical students. The teacher chose a set <math>S</math> of four integers and gave a different number in <math>S</math> to each student. Then the teacher announced to the class that the numbers in <math>S</math> were four consecutive two-digit positive integers, that some number in <math>S</math> was divisible by <math>6</math>, and a different number in <math>S</math> was divisible by <math>7</math>. The teacher then asked if any of the students could deduce what <math>S</math> is, but in unison, all of the students replied no.
+
+However, upon hearing that all four students replied no, each student was able to determine the elements of <math>S</math>. Find the sum of all possible values of the greatest element of <math>S</math>.

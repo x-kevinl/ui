@@ -1,0 +1,5 @@
+==Solution 1==
+Note that when $y=0$, the $x$ values of the equations should be equal by the problem statement. We have that
+$$0 = ax + 5 \implies x = -\dfrac{5}{a}$$ $$0 = 3x+b \implies x= -\dfrac{b}{3}$$
+Which means that $$-\dfrac{5}{a} = -\dfrac{b}{3} \implies ab = 15$$
+The only possible pairs $(a,b)$ then are $(a,b) = (1,15), (3,5), (5,3), (15, 1)$. These pairs give respective $x$-values of $-5, -\dfrac{5}{3}, -1, -\dfrac{1}{3}$ which have a sum of $\boxed{\textbf{(E)} \: -8}$.

@@ -1,0 +1,9 @@
+==Solution 1==
+There are $10 \cdot 2+1=21$ teams. Any of the $\tbinom{21}3=1330$ sets of three teams must either be a fork (in which one team beat both the others) or a cycle:
+
+<asy>size(7cm);label("A",(5,5));label("C",(10,0));label("B",(0,0));draw((4,4)--(1,1),EndArrow);draw((6,4)--(9,1),EndArrow);
+label("A",(20,5));label("C",(25,0));label("B",(15,0));draw((19,4)--(16,1),EndArrow);draw((16,0)--(24,0),EndArrow);draw((24,1)--(21,4),EndArrow);
+</asy>
+But we know that every team beat exactly $10$ other teams, so for each possible $A$ at the head of a fork, there are always exactly $\tbinom{10}2$ choices for $B$ and $C$ as $A$ beat exactly 10 teams and we are choosing 2 of them. Therefore there are $21\cdot\tbinom{10}2=945$ forks, and all the rest must be cycles.
+
+Thus the answer is $1330-945=385$ which is $\boxed{\textbf{(A)}}$.

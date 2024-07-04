@@ -1,0 +1,3 @@
+== Solution ==
+
+A seven-digit palindrome is a number of the form $\overline{abcdcba}$. Clearly, $d$ must be $5$, as we have an odd number of fives. We are then left with $\{a,b,c\} = \{2,3,5\}$. There are $3!$ permutations of these three numbers, since each is reflected over the midpoint we only have to count the first there. Each of the $\boxed{(A)6}$ permutations of the set $\{2,3,5\}$ will give us one palindrome.

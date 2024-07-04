@@ -1,0 +1,3 @@
+==Solution==
+
+Jim has brown eyes and blonde hair. If you look for anybody who has brown eyes '''or''' blonde hair, you find that Nadeen, Austin, and Sue are Jim's possible siblings. However, the children have at least one common characteristics. Since Austin and Sue both have blonde hair, Nadeen is ruled out and therefore $\boxed{\textbf{(E)}\ \text{Austin and Sue}}$ are his siblings. You can also see that in the hair color column, there are three black haired people and three blond haired people.  Since Jim has blond hair, all his siblings must be the other two with blond hair.

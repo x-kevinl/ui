@@ -1,0 +1,4 @@
+==Solution 1==
+By angle subtraction, we have $\angle ADE = 360^\circ - \angle ADC - \angle CDE = 160^\circ.$ Note that $\triangle DEF$ is isosceles, so $\angle DFE = \frac{180^\circ - \angle ADE}{2}=10^\circ.$ Finally, we get $\angle AFE = 180^\circ - \angle DFE = \boxed{\textbf{(D) }170}$ degrees.
+
+~MRENTHUSIASM ~[[User:Aops-g5-gethsemanea2|Aops-g5-gethsemanea2]]

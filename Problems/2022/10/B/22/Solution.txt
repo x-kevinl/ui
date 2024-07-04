@@ -1,0 +1,42 @@
+==Solution 1==
+<asy>
+        import geometry;
+        unitsize(0.5cm);
+
+		void dc(pair x, pen p) {
+          pair y = intersectionpoints(circle((0,0),8),(0,0)--1000*x)[0];
+          draw(circle(x, abs(x-y)),p+linewidth(2));
+        }
+
+        pair O1 = (0,0),O2=(5,0),P1=intersectionpoints(circle(O1,5),circle(O2,3+sqrt(3)))[0],P2=intersectionpoints(circle(O1,3),circle(O2,5+sqrt(3)))[0],P3=intersectionpoints(circle(O1,5),circle(O2,3-sqrt(3)))[0],P4=intersectionpoints(circle(O1,3),circle(O2,5-sqrt(3)))[0];
+
+        draw(circle(O1,2));
+        draw(circle(O1,8));
+        draw(circle(O2,sqrt(3)));
+
+		dc(P1,blue);
+		dc(P2,red);
+		dc(P3,mediumgreen);
+		dc(P4,brown);
+</asy>
+The circles match up as follows: Case $1$ is brown, Case $2$ is blue, Case $3$ is green, and Case 4 is red.
+Let $x^2 + y^2 = 64$ be circle $O$, $x^2 + y^2 = 4$ be circle $P$, and $(x-5)^2 + y^2 = 3$ be circle $Q$.
+All the circles in S are internally tangent to circle $O$.
+There are four cases with two circles belonging to each:
+
+$*$ $P$ and $Q$ are internally tangent to $S$.
+
+$*$ $P$ and $Q$ are externally tangent to $S$.
+
+$*$ $P$ is externally and Circle $Q$ is internally tangent to $S$.
+
+$*$ $P$ is internally and Circle $Q$ is externally tangent to $S$.
+
+Consider Cases $1$ and $4$ together. Since circles $O$ and $P$ have the same center, the line connecting the center of $S$ and the center of $O$ will pass through the tangency point of both $S$ and $O$ and the tangency point of $S$ and $P$. This line will be the diameter of $S$ and have length $r_P + r_O = 10$. Therefore the radius of $S$ in these cases is $5$.
+
+Consider Cases $2$ and $3$ together. Similarly to Cases $1$ and $4$, the line connecting the center of $S$ to the center of $O$ will pass through the tangency points. This time, however, the diameter of $S$ will have length $r_P-r_O=6$. Therefore, the radius of $S$ in these cases is $3$.
+    
+The set of circles $S$ consists of $8$ circles - $4$ of which have radius $5$ and $4$ of which have radius $3$. 
+The total area of all circles in $S$ is $4(5^2\pi + 3^2\pi) = 136\pi \Rightarrow \boxed{\textbf{(E)}}$.
+
+-naman12

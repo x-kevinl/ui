@@ -1,0 +1,3 @@
+==Solution==
+
+The ratio $\frac{400 \text{ euros}}{500 \text{ dollars}}$ can be simplified using conversion factors:$$\frac{400 \text{ euros}}{500 \text{ dollars}} \cdot \frac{1.3 \text{ dollars}}{1 \text{ euro}} = \frac{520}{500} = 1.04$$ which means the money is greater by $\boxed{ \textbf{(B)} \ 4 }$ percent.

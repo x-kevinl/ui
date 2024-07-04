@@ -1,0 +1,5 @@
+== Solution == 
+Since $\triangle ACD$ is isosceles, $CB$ bisects $AD$. Thus $AB=BD=8$. From the Pythagorean Theorem, $CB=6$. Thus the area between the two circles is
+$100\pi - 36\pi=64\pi$ $\boxed{\textbf{(C)}\ 64\pi}$
+
+Note: The length $AC$ is necessary information, as this tells us the radius of the larger circle.  The area of the annulus is $\pi(AC^2-BC^2)=\pi AB^2=64\pi$.

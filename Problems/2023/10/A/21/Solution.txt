@@ -1,0 +1,13 @@
+==Solution 1==
+
+From the problem statement, we know $P(2-2)=0$, $P(9)=0$ and $4P(4)=0$. Therefore, we know that $0$, $9$, and $4$ are roots. So, we can factor $P(x)$ as $x(x - 9)(x - 4)(x - a)$, where $a$ is the unknown root. Since $P(x) - 1 = 0$, we plug in $x = 1$ which gives $1(-8)(-3)(1 - a) = 1$, therefore $24(1 - a) = 1 \implies 1 - a = 1/24 \implies a = 23/24$. Therefore, our answer is $23 + 24 =\boxed{\textbf{(D) }47}$
+
+~aiden22gao 
+                                                                                                                 
+~cosinesine
+
+~walmartbrian
+
+~sravya_m18
+
+~ESAOPS

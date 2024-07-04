@@ -1,0 +1,4 @@
+== Solution 1 ==
+We know that the sandwiches cost $4.50$ dollars. Guessing will bring us to multiplying $4.50$ by 6, which gives us $27.00$. Since they can spend $30.00$ they have $3$ dollars left. Since soft drinks cost $1.00$ dollar each, they can buy 3 soft drinks, which makes them spend $30.00$  Since they bought 6 sandwiches and 3 soft drinks, they bought a total of $9$ items. Therefore, the answer is $\boxed{\textbf{(D) }9}$.
+
+- SBose

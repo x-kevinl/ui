@@ -1,0 +1,21 @@
+==Solution 1==
+
+Consider this table:
+
+<math>
+\begin{array}{|c|c|c|} \hline
+a & b & c \\ \hline
+d & e & f\\ \hline
+\end{array}
+</math>
+
+We note that <math>c+f = 9</math>, because <math>c+f \leq 18</math>, meaning it never achieves a unit's digit sum of <math>9</math> otherwise. Since no values are carried onto the next digit, this implies <math>b+e=9</math> and <math>a+d=9</math>. We can then simplify our table into this:
+
+<math>
+\begin{array}{|c|c|c|} \hline
+a & b & c \\ \hline
+9-a & 9-b & 9-c \\ \hline
+\end{array}
+</math>
+
+We want <math>10(a+b+c) + (9-a+9-b+9-c) = 99</math>, or <math>9(a+b+c+3) = 99</math>, or <math>a+b+c=8</math>. Since zeroes are allowed, we just need to apply stars and bars on <math>a, b, c</math>, to get <math>\tbinom{8+3-1}{3-1} = \boxed{045}</math>. ~akliu

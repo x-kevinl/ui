@@ -1,0 +1,8 @@
+==Problem==
+
+How many ordered pairs $(x,y)$ of real numbers satisfy the following system of equations? 
+$$\begin{align*}
+x^2+3y&=9 \\
+(|x|+|y|-4)^2 &= 1
+\end{align*}$$
+$\textbf{(A) } 1 \qquad\textbf{(B) } 2 \qquad\textbf{(C) } 3 \qquad\textbf{(D) } 5 \qquad\textbf{(E) } 7$

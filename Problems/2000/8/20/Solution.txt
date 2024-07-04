@@ -1,0 +1,10 @@
+==Solution 1==
+Since you have one coin of each type, $1 + 5 + 10 + 25 = 41$ cents are already determined, leaving you with a total of $102 - 41 = 61$ cents remaining for $5$ coins.
+
+You must have $1$ more penny.  If you had more than $1$ penny, you must have at least $6$ pennies to leave a multiple of $5$ for the nickels, dimes, and quarters.  But you only have $5$ more coins to assign.
+
+Now you have $61 - 1 = 60$ cents remaining for $4$ coins, which may be nickels, quarters, or dimes.  If you have only one more dime, that leaves $50$ cents in $3$ nickels or quarters, which is impossible.  If you have two dimes, that leaves $40$ cents for $2$ nickels or quarters, which is again impossible.  If you have three dimes, that leaves $30$ cents for $1$ nickel or quarter, which is still impossible.  And all four remaining coins being dimes will not be enough.
+
+Therefore, you must have no more dimes to assign, and the $60$ cents in $4$ coins must be divided between the quarters and nickels.  We quickly see that $2$ nickels and $2$ quarters work.  Thus, the total count is $2$ quarters, $2$ nickels, $1$ penny, plus one more coin of each type that we originally subtracted.  Double-checking, that gives a total $2 + 2 + 1 + 4 = 9$ coins, and a total of $2\cdot 25 + 2\cdot 5 + 1 + (1 + 5 + 10 + 25) = 102$ cents.
+
+There is only $1$ dime in that combo, so the answer is $\boxed{A}$.

@@ -1,0 +1,15 @@
+==Solution 1==
+On the first turn, each player starts off with $\$1$. Each turn after that, there are only two possibilities: either everyone stays at $\$1$, which we will write as $(1-1-1)$, or the distribution of money becomes $\$2-\$1-\$0$ in some order, which we write as $(2-1-0)$. ($(3-0-0)$ cannot be achieved since either(1)the person cannot give money to himself or (2)there are a maximum of 2 dollars being distributed and the person has nothing to start with). We will consider these two states separately.
+
+In the $(1-1-1)$ state, each person has two choices for whom to give their dollar to, meaning there are $2^3=8$ possible ways that the money can be rearranged. Note that there are only two ways that we can reach $(1-1-1)$ again: 
+
+1. Raashan gives his money to Sylvia, who gives her money to Ted, who gives his money to Raashan.
+
+2. Raashan gives his money to Ted, who gives his money to Sylvia, who gives her money to Raashan.
+
+Thus, the probability of staying in the $(1-1-1)$ state is $\frac{1}{4}$, while the probability of going to the $(2-1-0)$ state is $\frac{3}{4}$ (we can check that the 6 other possibilities lead to $(2-1-0)$)
+
+
+In the $(2-1-0)$ state, we will label the person with $\$2$ as person A, the person with $\$1$ as person B, and the person with $\$0$ as person C. Person A has two options for whom to give money to, and person B has 2 options for whom to give money to, meaning there are total $2\cdot 2 = 4$ ways the money can be redistributed. The only way that the distribution can return to $(1-1-1)$ is if A gives $\$1$ to B, and B gives $\$1$ to C. We check the other possibilities to find that they all lead back to $(2-1-0)$. Thus, the probability of going to the $(1-1-1)$ state is $\frac{1}{4}$, while the probability of staying in the $(2-1-0)$ state is $\frac{3}{4}$.
+
+No matter which state we are in, the probability of going to the $(1-1-1)$ state is always $\frac{1}{4}$. This means that, after the bell rings 2018 times, regardless of what state the money distribution is in, there is a $\frac{1}{4}$ probability of going to the $(1-1-1)$ state after the 2019th bell ring. Thus, our answer is simply $\boxed{\textbf{(B) } \frac{1}{4}}$.

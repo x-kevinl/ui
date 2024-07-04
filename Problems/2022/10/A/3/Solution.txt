@@ -1,0 +1,8 @@
+== Solution 1 == 
+Let $x$ be the third number. It follows that the first number is $6x,$ and the second number is $x+40.$
+
+We have $$6x+(x+40)+x=8x+40=96,$$ from which $x=7.$
+
+Therefore, the first number is $42,$ and the second number is $47.$ Their absolute value of the difference is $|42-47|=\boxed{\textbf{(E) } 5}.$
+
+~MRENTHUSIASM

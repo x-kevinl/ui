@@ -1,0 +1,2 @@
+==Problem==
+Kathy has <math>5</math> red cards and <math>5</math> green cards. She shuffles the <math>10</math> cards and lays out <math>5</math> of the cards in a row in a random order. She will be happy if and only if all the red cards laid out are adjacent and all the green cards laid out are adjacent. For example, card orders RRGGG, GGGGR, or RRRRR will make Kathy happy, but RRRGR will not. The probability that Kathy will be happy is <math> \frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m + n</math>.

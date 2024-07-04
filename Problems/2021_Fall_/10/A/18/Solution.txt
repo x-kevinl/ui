@@ -1,0 +1,11 @@
+==Solution 1 (Casework)==
+There are $4$ possibilities for the top-left section. It follows that the top-right and bottom-left sections each have $3$ possibilities, so they have $3^2=9$ combinations. We have two cases:
+<ol style="margin-left: 1.5em;">
+  <li><b>The top-right and bottom-left sections have the same crop.</b></li><p>
+Note that $3$ of the $9$ combinations of the top-right and bottom-left sections satisfy this case, from which the bottom-right section has $3$ possibilities. Therefore, there are $4\cdot3\cdot3=36$ ways in this case. <p>
+  <li><b>The top-right and bottom-left sections have different crops.</b></li><p>
+Note that $6$ of the $9$ combinations of the top-right and bottom-left sections satisfy this case, from which the bottom-right section has $2$ possibilities. Therefore, there are $4\cdot6\cdot2=48$ ways in this case. <p>
+</ol>
+Together, the answer is $36+48=\boxed{\textbf{(C)}\ 84}.$
+
+~Arcticturn ~MRENTHUSIASM

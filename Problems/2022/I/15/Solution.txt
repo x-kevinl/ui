@@ -1,0 +1,16 @@
+==Solution 1 (geometric interpretation)==
+
+First, let define a triangle with side lengths <math>\sqrt{2x}</math>, <math>\sqrt{2z}</math>, and <math>l</math>, with altitude from <math>l</math>'s equal to <math>\sqrt{xz}</math>. <math>l = \sqrt{2x - xz} + \sqrt{2z - xz}</math>, the left side of one equation in the problem.
+
+Let  <math>\theta</math> be angle opposite the side with length <math>\sqrt{2x}</math>. Then the altitude has length <math>\sqrt{2z} \cdot \sin(\theta) = \sqrt{xz}</math> and thus <math>\sin(\theta) = \sqrt{\frac{x}{2}}</math>, so <math>x=2\sin^2(\theta)</math> and the side length <math>\sqrt{2x}</math> is equal to <math>2\sin(\theta)</math>.
+
+We can symmetrically apply this to the two other equations/triangles. 
+
+By law of sines, we have <math>\frac{2\sin(\theta)}{\sin(\theta)} = 2R</math>, with <math>R=1</math> as the circumradius, same for all 3 triangles. 
+The circumcircle's central angle to a side is <math>2 \arcsin(l/2)</math>, so the 3 triangles' <math>l=1, \sqrt{2}, \sqrt{3}</math>,  have angles <math>120^{\circ}, 90^{\circ}, 60^{\circ}</math>, respectively.
+
+This means that by half angle arcs, we see that we have in some order, <math>x=2\sin^2(\alpha)</math>, <math>y=2\sin^2(\beta)</math>, and <math>z=2\sin^2(\gamma)</math> (not necessarily this order, but here it does not matter due to symmetry), satisfying that <math>\alpha+\beta=180^{\circ}-\frac{120^{\circ}}{2}</math>, <math>\beta+\gamma=180^{\circ}-\frac{90^{\circ}}{2}</math>, and <math>\gamma+\alpha=180^{\circ}-\frac{60^{\circ}}{2}</math>. Solving, we get <math>\alpha=\frac{135^{\circ}}{2}</math>, <math>\beta=\frac{105^{\circ}}{2}</math>, and <math>\gamma=\frac{165^{\circ}}{2}</math>.
+
+We notice that <cmath>[(1-x)(1-y)(1-z)]^2=[\sin(2\alpha)\sin(2\beta)\sin(2\gamma)]^2=[\sin(135^{\circ})\sin(105^{\circ})\sin(165^{\circ})]^2</cmath> <cmath>=\left(\frac{\sqrt{2}}{2} \cdot \frac{\sqrt{6}-\sqrt{2}}{4} \cdot \frac{\sqrt{6}+\sqrt{2}}{4}\right)^2 = \left(\frac{\sqrt{2}}{8}\right)^2=\frac{1}{32} \to \boxed{033}. \blacksquare</cmath>
+
+- kevinmathz

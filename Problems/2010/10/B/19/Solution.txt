@@ -1,0 +1,43 @@
+==Solution 1==
+The formula for the area of a circle is $\pi r^2$ so the radius of this circle is $\sqrt{156}.$
+
+Because $OA=4\sqrt{3}=\sqrt{48} < \sqrt{156}, A$ must be in the interior of circle $O.$
+
+<center><asy>
+unitsize(3mm);
+defaultpen(linewidth(.8pt)+fontsize(11pt));
+dotfactor=3;
+
+real r=sqrt(156);
+pair A=(0,sqrt(48)), B=(-3,sqrt(147)), C=(3,sqrt(147));
+pair O=(0,0);
+pair X=(0,7sqrt(3));
+path outer=Circle(O,r);
+draw(outer);
+draw(A--B--C--cycle);
+draw(O--X); draw(O--B);
+
+pair[] ps={A,B,C,O,X};
+dot(ps);
+
+label("$A$",A,SE);
+label("$B$",B,NW);
+label("$C$",C,NE);
+label("$O$",O,S);
+label("$X$",X,N);
+label("$s$",A--C,SE);
+label("$\frac{s}{2}$",B--X,N);
+label("$\frac{s\sqrt{3}}{2}$",A--X,NE);
+label("$\sqrt{156}$",O--B,SW);
+label("$4\sqrt{3}$",A--O,E);
+</asy></center>
+
+Let $s$ be the side length of the triangle, the unknown value, and let $X$ be the point on $BC$ where $OX \perp BC.$ Since $\triangle ABC$ is equilateral, $BX=\frac{s}{2}$ and $AX=\frac{s\sqrt{3}}{2}.$ We are given $AO=4\sqrt{3}.$ Use the [[Pythagorean Theorem]] and solve for $s.$
+
+$$\begin{align*}
+(\sqrt{156})^2 &= \left(\frac{s}{2}\right)^2 + \left( \frac{s\sqrt{3}}{2} + 4\sqrt{3} \right)^2\\
+156 &= \frac14s^2 + \frac34s^2 + 12s + 48\\
+0 &= s^2 + 12s - 108\\
+0 &= (s-6)(s+18)\\
+s &= \boxed{\textbf{(B)}\ 6}
+\end{align*} $$

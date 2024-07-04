@@ -1,0 +1,13 @@
+==Solution 1 (Recursion)==
+Let $S(n)$ be the number of paths of $n$ moves such that the bug never will have been more than $1$ unit away from the starting position. Clearly, by symmetry, there are two possible states here, the bug being on the center and the bug being on one of the vertices of the unit hexagon around the center. Let $C(n)$ be the number of paths with the aforementioned restriction that end on the center. Let $V(n)$ be the number of paths with the aforementioned restriction that end on a vertex of the surrounding unit hexagon. We have $S(n) = 6C(n-1) + 3V(n-1),$ since from the center, there are $6$ possible points to land to and from a vertex there are $3$ possible points to land to (the two adjacent vertices and the center). We also have $C(n) = V(n-1)$, since to get to the center the bug must have come from a vertex, and $V(n) = 2V(n-1) + 6C(n-1),$ since from a vertex there are two vertices to move to, and from the center there are $6$ vertices to move to. We can construct a recursion table using the base cases $V(1) = 6$ and $C(1) = 0$ and our recursive rules for $C(n)$ and $V(n)$ as follows: 
+$$\begin{array}{c|c|c}
+n & V(n) & C(n) \\ \hline
+& & \\ [-2ex]
+1 & 6 & 0 \\
+2 & 12 & 6 \\
+3 & 60 & 12 \\
+4 & 192 & 60 \\
+\end{array}$$
+Then, $S(5) = 6C(4) + 3V(4) = 6 \cdot 60 + 3 \cdot 192 = 936,$ and the desired probability is thus $\frac{936}{6^5} = \boxed{\textbf{(A)}\ \frac{13}{108}}.$
+
+~fidgetboss_4000

@@ -1,0 +1,2 @@
+==Problem==
+The degree measures of the angles in a [[convex polygon|convex]] 18-sided polygon form an increasing [[arithmetic sequence]] with integer values. Find the degree measure of the smallest [[angle]].

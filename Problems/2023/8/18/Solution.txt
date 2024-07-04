@@ -1,0 +1,4 @@
+==Solution 1==
+We have $2$ directions going $5$ right or $3$ left. We can assign a variable to each of these directions. We can call going right $1$ direction $\text{X}$ and we can call going $1$ left $\text{Y}$. We can build a equation of $5\text{X}-3\text{Y}=2023$, where we have to limit the number of moves we do. We can do this by making more of our moves the $5$ move turn then the $3$ move turn. The first obvious step is to go some amount of moves in the right direction then subtract off in the left direction to land on $2023$. The least amount of $3$’s added to $2023$ to make a multiple of $5$ is $4$ as $2023 + 4(3) = 2035$. So now, we have solved the problem as we just go $\frac{2035}{5} = 407$ hops right, and just do 4 more hops left. Yielding $407 + 4 = \boxed{\textbf{(D)}\ 411}$ as our answer.
+
+~apex304, SohumUttamchandani, wuwang2002, TaeKim, Cxrupptedpat

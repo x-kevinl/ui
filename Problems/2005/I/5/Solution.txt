@@ -1,0 +1,6 @@
+== Solution 1 ==
+There are two separate parts to this problem: one is the color (gold vs silver), and the other is the orientation.
+
+There are <math>{8\choose4} = 70</math> ways to position the gold coins in the stack of 8 coins, which determines the positions of the silver coins.
+
+Create a string of letters H and T to denote the orientation of the top of the coin. To avoid making two faces touch, we cannot have the arrangement HT. Thus, all possible configurations must be a string of tails followed by a string of heads, since after the first H no more tails can appear. The first H can occur in a maximum of eight times different positions, and then there is also the possibility that it doesn’t occur at all, for <math>9</math> total configurations. Thus, the answer is <math>70 \cdot 9 = \boxed{630}</math>.

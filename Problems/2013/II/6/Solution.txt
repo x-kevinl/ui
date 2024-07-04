@@ -1,0 +1,42 @@
+==Solutions==
+===Solution 1===
+The difference between consecutive integral squares must be greater than 1000. <math>(x+1)^2-x^2\geq1000</math>, so <math>x\geq\frac{999}{2}\implies x\geq500</math>. <math>x=500</math> does not work, so <math>x>500</math>. Let <math>n=x-500</math>. By inspection,  <math>n^2</math> should end in a number close to but less than 1000 such that there exists <math>1000N</math> within the difference of the two squares. Examine when <math>n^2=1000</math>. Then, <math>n=10\sqrt{10}</math>. One example way to estimate <math>\sqrt{10}</math> follows. 
+
+ <math>3^2=9</math>, so <math>10=(x+3)^2=x^2+6x+9</math>. <math>x^2</math> is small, so <math>10=6x+9</math>. <math>x=1/6\implies \sqrt{10}\approx 19/6</math>. This is 3.16.
+
+Then, <math>n\approx 31.6</math>. <math>n^2<1000</math>, so <math>n</math> could be <math>31</math>. Add 500 to get the first square and 501 to get the second. Then, the two integral squares are <math>531^2</math> and <math>532^2</math>. Checking, <math>531^2=281961</math> and <math>532^2=283024</math>. <math>282,000</math> straddles the two squares, which have a difference of 1063. The difference has been minimized, so <math>N</math> is minimized <math>N=282000\implies\boxed{282}</math>
+
+~BJHHar
+
+===Solution 2===
+Let us first observe the difference between <math>x^2</math> and <math>(x+1)^2</math>, for any arbitrary <math>x\ge 0</math>. <math>(x+1)^2-x^2=2x+1</math>. So that means for every <math>x\ge 0</math>, the difference between that square and the next square have a difference of <math>2x+1</math>. Now, we need to find an <math>x</math> such that <math>2x+1\ge 1000</math>. Solving gives <math>x\ge \frac{999}{2}</math>, so <math>x\ge 500</math>. Now we need to find what range of numbers has to be square-free: <math>\overline{N000}\rightarrow \overline{N999}</math> have to all be square-free.
+Let us first plug in a few values of <math>x</math> to see if we can figure anything out. <math>x=500</math>, <math>x^2=250000</math>, and <math>(x+1)^2=251001</math>. Notice that this does not fit the criteria, because <math>250000</math> is a square, whereas <math>\overline{N000}</math> cannot be a square. This means, we must find a square, such that the last <math>3</math> digits are close to <math>1000</math>, but not there, such as <math>961</math> or <math>974</math>. Now, the best we can do is to keep on listing squares until we hit one that fits. We do not need to solve for each square: remember that the difference between consecutive squares are <math>2x+1</math>, so all we need to do is addition. After making a list, we find that <math>531^2=281961</math>, while <math>532^2=283024</math>. It skipped <math>282000</math>, so our answer is <math>\boxed{282}</math>.
+
+===Solution 3===
+Let <math>x</math> be the number being squared. Based on the reasoning above, we know that <math>N</math> must be at least <math>250</math>, so <math>x</math> has to be at least <math>500</math>. Let <math>k</math> be <math>x-500</math>. We can write <math>x^2</math> as <math>(500+k)^2</math>, or <math>250000+1000k+k^2</math>. We can disregard <math>250000</math> and <math>1000k</math>, since they won't affect the last three digits, which determines if there are any squares between <math>\overline{N000}\rightarrow \overline{N999}</math>. So we must find a square, <math>k^2</math>, such that it is under <math>1000</math>, but the next square is over <math>1000</math>. We find that <math>k=31</math> gives <math>k^2=961</math>, and so <math>(k+1)^2=32^2=1024</math>. We can be sure that this skips a thousand because the <math>1000k</math> increments it up <math>1000</math> each time. Now we can solve for <math>x</math>: <math>(500+31)^2=281961</math>, while <math>(500+32)^2=283024</math>. We skipped <math>282000</math>, so the answer is <math>\boxed{282}</math>.
+
+===Solution 4===
+The goal is to find the least <math>N \in \mathbb{N}</math> such that <math>\exists m \in \mathbb{N}</math> where <math>m^2 + 1 \leq 1000N, 1000N + 1000 \leq (m+1)^2</math>.
+
+
+Combining the two inequalities leads to <math>(m+1)^2 \geq m^2 + 1001, m \geq 500</math>.
+
+
+Let <math>m = k + 500</math>, where <math>k \in \mathbb{W}</math>, then the inequalities become,
+
+<math>N \geq \frac{(k+500)^2 + 1}{1000} = \frac{k^2 + 1}{1000} + k + 250</math>, and
+
+<math>N \leq \frac{(k+501)^2}{1000} - 1 = \frac{(k+1)^2}{1000} + k + 250.</math>
+
+
+For <math>k=31</math>, one can verify that <math>N = 282</math> is the unique integer satisfying the inequalities.
+
+For <math>k \leq 30</math>, <math>k + 250 < \frac{k^2 + 1}{1000} + k + 250 \leq N</math> <math>\leq \frac{(k+1)^2}{1000} + k + 250 \leq \frac{(30+1)^2}{1000} + k + 250 < k + 251</math>, 
+
+i.e., <math>k + 250 < N < k + 251</math>, a contradiction. 
+
+Note <math>k \geq 32</math> leads to larger <math>N</math>(s).
+
+Hence, the answer is <math>\boxed{282}</math>.
+
+~yuxiaomatt

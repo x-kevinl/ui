@@ -1,0 +1,5 @@
+==Solution 1==
+
+If <math>N</math> is <math>22</math> percent less than one integer <math>k</math>, then <math>N=\frac{78}{100}k=\frac{39}{50}k</math>. In addition, <math>N</math> is <math>16</math> percent greater than another integer <math>m</math>, so <math>N=\frac{116}{100}m=\frac{29}{25}m</math>. Therefore, <math>k</math> is divisible by <math>50</math> and <math>m</math> is divisible by <math>25</math>. Setting these two equal, we have <math>\frac{39}{50}k=\frac{29}{25}m</math>. Multiplying by <math>50</math> on both sides, we get <math>39k=58m</math>.
+
+The smallest integers <math>k</math> and <math>m</math> that satisfy this are <math>k=1450</math> and <math>m=975</math>, so <math>N=1131</math>. The answer is <math>\boxed{131}</math>.

@@ -1,0 +1,18 @@
+== Solution 1==
+
+The sum of the first $m$ odd integers is given by $m^2$. The sum of the first $n$ even integers is given by $n(n+1)$.
+
+Thus, $m^2 = n^2 + n + 212$. Since we want to solve for n, rearrange as a quadratic equation: $n^2 + n + (212 - m^2) = 0$.
+
+
+Use the quadratic formula: $n = \frac{-1 + \sqrt{1 - 4(212 - m^2)}}{2}$. Since $n$ is clearly an integer, $1 - 4(212 - m^2) = 4m^2 - 847$ must be not only a perfect square, but also an odd perfect square for $n$ to be an integer.
+
+
+Let $x = \sqrt{4m^2 - 847}$; note that this means $n = \frac{-1 + x}{2}$. It can be rewritten as $x^2 = 4m^2 - 847$, so $4m^2 - x^2 = 847$. Factoring the left side by using the difference of squares, we get $(2m + x)(2m - x) = 847 = 7\cdot11^2$.
+
+
+Our goal is to find possible values for $x$, then use the equation above to find $n$. The difference between the factors is $(2m + x) - (2m - x) = 2m + x - 2m + x = 2x.$ We have three pairs of factors, $847\cdot1, 121\cdot 7,$ and $77\cdot 11$. The differences between these factors are $846$, $114$, and $66$ - those are all possible values for $2x$. Thus the possibilities for $x$ are $423$, $57$, and $33$. 
+
+Now plug in these values into the equation $n = \frac{-1 + x}{2}$, so $n$ can equal $211$, $28$, or $16$, hence the answer is $\boxed{\textbf{(A)}\ 255}$.
+
+~Edits by BakedPotato66

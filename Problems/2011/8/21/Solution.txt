@@ -1,0 +1,6 @@
+==Solution==
+If at least half the guesses are too low, then Norb's age must be greater than $36.$
+
+If two of the guesses are off by one, then his age is in between two guesses whose difference is $2.$ It could be $31,37,$ or $48,$ but because his age is greater than $36$ it can only be $37$ or $48.$
+
+Lastly, Norb's age is a prime number so the answer must be $\boxed{\textbf{(C)}\ 37}$

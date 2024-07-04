@@ -1,0 +1,10 @@
+==Solution 1 (easy)==
+We can create the equation:
+$$0.8x \cdot 1.075 = 43$$
+using the information given. This is because x, the original price, got reduced by 20%, or multiplied by 0.8, and it also got multiplied by 1.075 on the discounted price. Solving that equation, we get
+$$\frac{4}{5} \cdot x \cdot \frac{43}{40} = 43$$
+$$\frac{4}{5} \cdot x \cdot \frac{1}{40} = 1$$
+$$\frac{1}{5} \cdot x \cdot \frac{1}{10} = 1$$
+$$x  = \boxed{50}$$
+
+~lprado

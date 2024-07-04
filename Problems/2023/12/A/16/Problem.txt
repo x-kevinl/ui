@@ -1,0 +1,4 @@
+==Problem==
+Consider the set of complex numbers $z$ satisfying $|1+z+z^{2}|=4$. The maximum value of the imaginary part of $z$ can be written in the form $\tfrac{\sqrt{m}}{n}$, where $m$ and $n$ are relatively prime positive integers. What is $m+n$?
+
+$\textbf{(A)}~20\qquad\textbf{(B)}~21\qquad\textbf{(C)}~22\qquad\textbf{(D)}~23\qquad\textbf{(E)}~24$

@@ -1,0 +1,28 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+
+size(200);
+pair A, B, C, D, E, F, G, H;
+A = dir(120);
+B = dir(60);
+C = dir(0);
+D = dir(-60);
+E = dir(-120);
+F = dir(180);
+G = midpoint(A--B);
+H = midpoint(D--E);
+
+filldraw(G--C--H--F--cycle,yellow);
+
+draw(polygon(6));
+dot("$A$",A,1.5*A,linewidth(4));
+dot("$B$",B,1.5*B,linewidth(4));
+dot("$C$",C,1.5*C,linewidth(4));
+dot("$D$",D,1.5*D,linewidth(4));
+dot("$E$",E,1.5*E,linewidth(4));
+dot("$F$",F,1.5*F,linewidth(4));
+dot("$G$",G,1.5*dir(90),linewidth(4));
+dot("$H$",H,1.5*dir(-90),linewidth(4));
+</asy>
+~MRENTHUSIASM

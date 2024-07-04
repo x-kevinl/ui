@@ -1,0 +1,9 @@
+== Problem ==
+
+Kayla rolls four fair $6$-sided dice. What is the probability that at least one of the numbers Kayla rolls is greater than $4$ and at least two of the numbers she rolls are greater than $2$?
+
+$\textbf{(A)}\ \frac{2}{3} \qquad
+ \textbf{(B)}\ \frac{19}{27} \qquad
+ \textbf{(C)}\ \frac{59}{81} \qquad
+ \textbf{(D)}\ \frac{61}{81} \qquad
+ \textbf{(E)}\ \frac{7}{9}$

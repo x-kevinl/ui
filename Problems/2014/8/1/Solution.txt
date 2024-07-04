@@ -1,0 +1,3 @@
+==Solution==
+We have $H=8-7=1$ and $T=8-2+5=11$. Clearly $1-11=-10$
+, so our answer is $\boxed{\textbf{(A)}-10}$.

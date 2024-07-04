@@ -1,0 +1,5 @@
+== Problem ==
+
+If $|x - 2| = p$, where $x < 2$, then $x - p =$
+
+$ \textbf{(A)} \ -2 \qquad \textbf{(B)} \ 2 \qquad \textbf{(C)} \ 2-2p \qquad \textbf{(D)} \ 2p-2 \qquad \textbf{(E)} \ |2p-2|  $

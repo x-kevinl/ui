@@ -1,0 +1,4 @@
+==Solution 1 (Expand)==
+Expanding, we get that the expression is $x^2+2xy+y^2+x^2y^2-2xy+1$ or $x^2+y^2+x^2y^2+1$. By the Trivial Inequality (all squares are nonnegative) the minimum value for this is $\boxed{\textbf{(D)} ~1}$, which can be achieved at $x=y=0$. 
+
+~aop2014

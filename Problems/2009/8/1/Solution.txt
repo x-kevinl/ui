@@ -1,0 +1,7 @@
+==Solution==
+
+If we set up an equation, we find out $x=(3+4)\cdot 2$ because 3 apples were left after giving half, then four away. 
+We can simplify the equations to $x=7\cdot 2=14.$
+The answer is $\text{(E) } 14.$
+
+~John0412

@@ -1,0 +1,4 @@
+==Solution 1==
+This problem is very similar to a handshake problem. We use the formula $ \frac{n(n-1)}{2} $ to usually find the number of games played (or handshakes). Now we have to use the formula in reverse.
+
+So we have the equation  $ \frac{n(n-1)}{2} = 21 $. Solving, we find that the number of teams in the BIG N conference is  $ \boxed{\textbf{(B)}\ 7} $.

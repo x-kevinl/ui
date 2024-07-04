@@ -1,0 +1,43 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(350);
+
+pair A, B, C, D, E, F, G, H, I, J, K, L;
+B = origin;
+C = (220,0);
+A = intersectionpoints(Circle(B,120),Circle(C,180))[0];
+D = A+1/4*(B-A);
+E = A+1/4*(C-A);
+F = B+1/4*(A-B);
+G = B+1/4*(C-B);
+H = C+1/8*(A-C);
+I = C+1/8*(B-C);
+J = extension(D,E,F,G);
+K = extension(F,G,H,I);
+L = extension(H,I,D,E);
+draw(A--B--C--cycle);
+draw(J+9/8*(K-J)--K+9/8*(J-K),dashed);
+draw(L+9/8*(K-L)--K+9/8*(L-K),dashed);
+draw(J+9/8*(L-J)--L+9/8*(J-L),dashed);
+draw(D--E^^F--G^^H--I,red);
+dot("$B$",B,1.5SW,linewidth(4));
+dot("$C$",C,1.5SE,linewidth(4));
+dot("$A$",A,1.5N,linewidth(4));
+dot(D,linewidth(4));
+dot(E,linewidth(4));
+dot(F,linewidth(4));
+dot(G,linewidth(4));
+dot(H,linewidth(4));
+dot(I,linewidth(4));
+dot(J,linewidth(4));
+dot(K,linewidth(4));
+dot(L,linewidth(4));
+label("$55$",midpoint(D--E),S,red);
+label("$45$",midpoint(F--G),dir(55),red);
+label("$15$",midpoint(H--I),dir(160),red);
+label("$\ell_A$",J+9/8*(L-J),1.5*dir(B--C));
+label("$\ell_B$",K+9/8*(J-K),1.5*dir(C--A));
+label("$\ell_C$",L+9/8*(K-L),1.5*dir(A--B));
+</asy>
+~MRENTHUSIASM

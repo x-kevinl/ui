@@ -1,0 +1,4 @@
+== Solution 1 (Laws of Exponents) ==
+We have
+$$\frac{(2112-2021)^2}{169}=\frac{91^2}{169}=\frac{91^2}{13^2}=\left(\frac{91}{13}\right)^2=7^2=\boxed{\textbf{(C) } 49}.$$
+~MRENTHUSIASM

@@ -1,0 +1,20 @@
+==Problem==
+
+The diagram below shows a rectangle with side lengths $4$ and $8$ and a square with side length $5$. Three vertices of the square lie on three different sides of the rectangle, as shown. What is the area of the region inside both the square and the rectangle?
+
+<asy>
+size(5cm);
+filldraw((4,0)--(8,3)--(8-3/4,4)--(1,4)--cycle,mediumgray);
+draw((0,0)--(8,0)--(8,4)--(0,4)--cycle,linewidth(1.1));
+draw((1,0)--(1,4)--(4,0)--(8,3)--(5,7)--(1,4),linewidth(1.1));
+label("$4$", (8,2), E);
+label("$8$", (4,0), S);
+label("$5$", (3,11/2), NW);
+draw((1,.35)--(1.35,.35)--(1.35,0),linewidth(1.1));
+</asy>
+
+$\textbf{(A) }15\dfrac{1}{8}  \qquad
+\textbf{(B) }15\dfrac{3}{8}  \qquad
+\textbf{(C) }15\dfrac{1}{2}  \qquad
+\textbf{(D) }15\dfrac{5}{8}  \qquad
+\textbf{(E) }15\dfrac{7}{8} $

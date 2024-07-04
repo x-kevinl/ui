@@ -1,0 +1,18 @@
+==Solution 1==
+<math>Case \textrm{ } 1:</math> The lines are not parallel to the faces
+
+A line through the point <math>(a,b,c)</math> must contain <math>(a \pm 1, b \pm 1, c \pm 1)</math> on it as well, as otherwise, the line would not pass through more than 5 points. This corresponds to the 4 diagonals of the cube.
+
+We look at the one from <math>(1,1,1)</math> to <math>(10,10,10)</math>. The lower endpoint of the desired lines must contain both a 1 and a 3, so it can be <math>(1,1,3), (1,2,3), (1,3,3)</math>. If <math>\textrm{min} > 0</math> then the point <math>(a-1,b-1,c-1)</math> will also be on the line for example, 3 applies to the other end.
+
+Accounting for permutations, there are <math>12</math> ways, so there are <math>12 \cdot 4 = 48</math> different lines for this case. 
+
+
+
+<math>Case \textrm{ } 2:</math> The lines where the <math>x</math>, <math>y</math>, or <math>z</math> is the same for all the points on the line. 
+
+WLOG, let the <math>x</math> value stay the same throughout. Let the line be parallel to the diagonal from <math>(1,1,1)</math> to <math>(1,10,10)</math>. For the line to have 8 points, the <math>y</math> and <math>z</math> must be 1 and 3 in either order, and the <math>x</math> value can be any value from 1 to 10. In addition, this line can be parallel to 6 face diagonals. So we get <math>2 \cdot 10 \cdot 6 = 120</math> possible lines for this case. 
+
+The answer is, therefore, <math>120 + 48 = \boxed{168}</math>
+
+Solution by stephcurry added to the wiki by Thedoge edited by Rapurt9 and phoenixfire

@@ -1,0 +1,21 @@
+==Solution 1==
+Firstly, we consider how many different ways possible to divide the <math>7\times 1</math> board.
+We ignore the cases of 1 or 2 pieces since we need at least one tile of each color.
+
+* Three pieces: <math>5+1+1</math>, <math>4+2+1</math>, <math>4+1+2</math>, etc, <math>\dbinom{6}{2}=15</math> ways in total (just apply stars and bars here)
+* Four pieces: <math>\dbinom{6}{3}=20</math>
+* Five pieces: <math>\dbinom{6}{4}=15</math>
+* Six pieces: <math>\dbinom{6}{5}=6</math>
+* Seven pieces: <math>\dbinom{6}{6}=1</math>
+
+Secondly, we use Principle of Inclusion-Exclusion to consider how many ways to color them:
+
+* Three pieces: <math>3^3-3\times 2^3+3=6</math>
+* Four pieces: <math>3^4-3\times 2^4+3=36</math>
+* Five pieces: <math>3^5-3\times 2^5+3=150</math>
+* Six pieces: <math>3^6-3\times 2^6+3=540</math>
+* Seven pieces: <math>3^7-3\times 2^7+3=1806</math>
+
+Finally, we combine them together: <math>15\times 6+20\times 36+15\times 150+6\times 540+1\times 1806= 8106</math>.
+
+So the answer is <math>\boxed{106}</math>.

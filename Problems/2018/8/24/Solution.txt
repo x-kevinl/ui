@@ -1,0 +1,4 @@
+==Solution 1==
+
+Note that $EJCI$ is a rhombus by symmetry.
+Let the side length of the cube be $s$. By the Pythagorean theorem, $EC= s\sqrt 3$ and $JI= s\sqrt 2$. Since the area of a rhombus is half the product of its diagonals, the area of the cross section is $\frac{s^2\sqrt 6}{2}$. This gives $R = \frac{\sqrt 6}2$. Thus, $R^2 = \boxed{\textbf{(C) } \frac{3}{2}}$.

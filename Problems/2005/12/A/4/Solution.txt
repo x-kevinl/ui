@@ -1,0 +1,2 @@
+== Solution ==
+For $n$ windows, the store offers a discount of $100 \cdot \left\lfloor\frac{n}{5}\right\rfloor$ ([[floor function]]). Dave receives a discount of $100 \cdot \left\lfloor \frac{7}{5}\right \rfloor = 100$ and Doug receives a discount of $100 \cdot \left\lfloor \frac{8}{5}\right\rfloor = 100$. These amount to $200$ dollars in discounts. Together, they receive a discount of $100 \cdot \left\lfloor \frac{15}{5} \right\rfloor = 300$, so they save $300-200=100\ \mathrm{(A)}$.

@@ -1,0 +1,2 @@
+==Solution 1==
+Consider the cross-sectional plane and label its area $b$. Note that the volume of the triangular prism that encloses the pyramid is $\frac{bh}{2}=3$, and we want the rectangular pyramid that shares the base and height with the triangular prism. The volume of the pyramid is $\frac{bh}{3}$, so the answer is $\boxed{(E) 2}$.(AOPS12142015)

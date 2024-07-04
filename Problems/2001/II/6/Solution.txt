@@ -1,0 +1,27 @@
+== Solution 1(Pythagorean Theorem)==
+Let <math>O</math> be the center of the circle, and <math>2a</math> be the side length of <math>ABCD</math>, <math>2b</math> be the side length of <math>EFGH</math>. By the [[Pythagorean Theorem]], the radius of <math>\odot O = OC = a\sqrt{2}</math>.
+ 
+<center><asy>
+size(150); pointpen = black; pathpen = black+linewidth(0.7); pen d = linetype("4 4") + blue + linewidth(0.7);
+pair C=(1,1), D=(1,-1), B=(-1,1), A=(-1,-1), E= (1, -0.2), F=(1, 0.2), G=(1.4, 0.2), H=(1.4, -0.2);
+D(MP("A",A)--MP("B",B,N)--MP("C",C,N)--MP("D",D)--cycle); D(MP("E",E,SW)--MP("F",F,NW)--MP("G",G,NE)--MP("H",H,SE)--cycle); D(CP(D(MP("O",(0,0))), A));
+
+D((0,0) -- (2^.5, 0), d); D((0,0) -- G -- (G.x,0), d); 
+</asy></center>
+
+Now consider [[right triangle]] <math>OGI</math>, where <math>I</math> is the midpoint of <math>\overline{GH}</math>. Then, by the Pythagorean Theorem,
+
+<cmath>\begin{align*}
+OG^2 = 2a^2 &= OI^2 + GI^2 = (a+2b)^2 + b^2 \\
+0 &= a^2 - 4ab - 5b^2 = (a - 5b)(a + b)
+\end{align*}
+</cmath>
+
+Thus <math>a = 5b</math> (since lengths are positive, we discard the other root). The ratio of the areas of two similar figures is the square of the ratio of their corresponding side lengths, so <math>\frac{[EFGH]}{[ABCD]} = \left(\frac 15\right)^2 = \frac{1}{25}</math>, and the answer is <math>10n + m = \boxed{251}</math>.
+
+Another way to proceed from <math>0 = a^2 - 4ab - 5b^2</math> is to note that <math>\frac{b}{a}</math> is the quantity we need; thus, we divide by <math>a^2</math> to get
+
+<cmath>0 = 1 - 4\left(\frac{b}{a}\right) - 5\left(\frac{b}{a}\right)^2</cmath>
+This is a quadratic in <math>\frac{b}{a}</math>, and solving it gives <math>\frac{b}{a} = \frac{1}{5},-1</math>. The negative solution is extraneous, and so the ratio of the areas is <math>\left(\frac{1}{5}\right)^2 = \frac{1}{25}</math> and the answer is <math>10\cdot 25 + 1 = \boxed{251}</math>.
+
+Remark: The division by <math>a^2</math> is equivalent to simply setting the original area of square <math>ABCD</math> to 1.

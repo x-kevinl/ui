@@ -1,0 +1,2 @@
+==Solution==
+Note that $40A=75B=\text{sum of the numbers in the array}$. This means that $\frac{A}{B}=\boxed{\text{(D) } \frac{15}{8}}$ using basic algebraic manipulation.

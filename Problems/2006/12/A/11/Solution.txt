@@ -1,0 +1,9 @@
+== Solution ==
+$$
+\begin{align*}(x+y)^2&=x^2+y^2\\
+x^2 + 2xy + y^2 &= x^2 + y^2\\
+2xy &= 0\end{align*}
+$$
+Either $ x = 0 $ or $ y = 0 $. The [[union]] of them is 2 lines, and thus the answer is $\mathrm{(C)}$.
+
+<asy> draw((0,-50)--(0,50));draw((-50,0)--(50,0));</asy>

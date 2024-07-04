@@ -1,0 +1,2 @@
+== Problem ==
+The [[equation]] <math> 2^{333x-2} + 2^{111x+2} = 2^{222x+1} + 1 </math> has three [[real]] [[root]]s. Given that their sum is <math>m/n</math> where <math> m </math> and <math> n </math> are [[relatively prime]] [[positive integer]]s, find <math> m+n. </math>

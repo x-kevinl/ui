@@ -1,0 +1,2 @@
+==Problem==
+For any finite set <math>S</math>, let <math>|S|</math> denote the number of elements in <math>S</math>. Find the number of ordered pairs <math>(A,B)</math> such that <math>A</math> and <math>B</math> are (not necessarily distinct) subsets of <math>\{1,2,3,4,5\}</math> that satisfy <cmath>|A| \cdot |B| = |A \cap B| \cdot |A \cup B|</cmath>

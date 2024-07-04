@@ -1,0 +1,5 @@
+==Problem==
+
+Find the number of functions <math>f</math> from <math>\{0, 1, 2, 3, 4, 5, 6\}</math> to the integers such that <math>f(0) = 0</math>, <math>f(6) = 12</math>, and
+<cmath>|x - y| \leq |f(x) - f(y)| \leq 3|x - y|</cmath>
+for all <math>x</math> and <math>y</math> in <math>\{0, 1, 2, 3, 4, 5, 6\}</math>.

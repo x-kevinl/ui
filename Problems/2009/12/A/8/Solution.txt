@@ -1,0 +1,6 @@
+== Solution 1 ==
+$\boxed{(A)}$
+The area of the outer square is $4$ times that of the inner square.
+Therefore the side of the outer square is $\sqrt 4 = 2$ times that of the inner square.
+
+Then the shorter side of the rectangle is $1/4$ of the side of the outer square, and the longer side of the rectangle is $3/4$ of the side of the outer square, hence their ratio is $\boxed{3}$.

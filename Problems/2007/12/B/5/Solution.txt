@@ -1,0 +1,2 @@
+==Solution==
+She must get at least $100 - 4.5 = 95.5$ points, and that can only be possible by answering at least $\lceil \frac{95.5}{6}\rceil = 16 \Rightarrow \mathrm {(D)}$ questions correctly.

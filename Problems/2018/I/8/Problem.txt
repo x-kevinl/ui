@@ -1,0 +1,2 @@
+==Problem==
+Let <math>ABCDEF</math> be an equiangular hexagon such that <math>AB=6, BC=8, CD=10</math>, and <math>DE=12</math>. Denote by <math>d</math> the diameter of the largest circle that fits inside the hexagon. Find <math>d^2</math>.

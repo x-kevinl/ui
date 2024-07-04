@@ -1,0 +1,25 @@
+== Solution 1 ==
+<cmath>\log_8 a_1+\log_8 a_2+\ldots+\log_8 a_{12}= \log_8 a+\log_8 (ar)+\ldots+\log_8 (ar^{11}) \\
+= \log_8(a\cdot ar\cdot ar^2\cdot \cdots \cdot ar^{11}) = \log_8  (a^{12}r^{66}) </cmath>
+
+So our question is equivalent to solving <math>\log_8 (a^{12}r^{66})=2006</math> for <math>a, r</math> [[positive integer]]s. <math>a^{12}r^{66}=8^{2006} = (2^3)^{2006} = (2^6)^{1003}</math> so <math>a^{2}r^{11}=2^{1003}</math>.
+
+The product of <math>a^2</math> and <math>r^{11}</math> is a power of 2.  Since both numbers have to be integers, this means that <math>a</math> and <math>r</math> are themselves powers of 2.  Now, let <math>a=2^x</math> and <math>r=2^y</math>:
+
+<cmath>\begin{eqnarray*}(2^x)^2\cdot(2^y)^{11}&=&2^{1003}\\
+2^{2x}\cdot 2^{11y}&=&2^{1003}\\
+2x+11y&=&1003\\
+y&=&\frac{1003-2x}{11} \end{eqnarray*}</cmath>
+
+For <math>y</math> to be an integer, the [[numerator]] must be [[divisible]] by <math>11</math>.  This occurs when <math>x=1</math> because <math>1001=91*11</math>. Because only [[even integer]]s are being subtracted from <math>1003</math>, the numerator never equals an even [[multiple]] of <math>11</math>. Therefore, the numerator takes on the value of every [[odd integer | odd]] multiple of <math>11</math> from <math>11</math> to <math>1001</math>.  Since the odd multiples are separated by a distance of <math>22</math>, the number of ordered pairs that work is <math>1 + \frac{1001-11}{22}=1 + \frac{990}{22}=46</math>.  (We must add 1 because both endpoints are being included.) So the answer is <math>\boxed{046}</math>.
+
+
+For the step above, you may also simply do <math>1001/11 + 1 = 91 + 1 = 92</math> to find how many multiples of <math>11</math> there are in between <math>11</math> and <math>1001</math>. Then, divide <math>92/2</math> = <math>\boxed{046}</math> to find only the odd solutions. <math>-XxHalo711</math>
+
+--------------
+Another way is to write 
+
+<math>x = \frac{1003-11y}2</math>
+
+Since <math>1003/11 = 91 + 2/11</math>, the answer is just the number of odd integers in <math>[1,91]</math>, which is, again,  <math>\boxed{046}</math>.
+----------------

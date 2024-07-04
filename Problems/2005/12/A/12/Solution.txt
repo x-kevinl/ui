@@ -1,0 +1,2 @@
+== Solution ==
+For convenience’s sake, we can transform $A$ to the origin and $B$ to $(99,999)$ (this does not change the problem). The line $AB$ has the [[equation]] $y = \frac{999}{99}x = \frac{111}{11}x$. The coordinates are integers if $11|x$, so the values of $x$ are $11, 22 \ldots 88$, with a total of $8\implies \boxed{\mathrm{(D)}}$ coordinates.

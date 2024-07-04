@@ -1,0 +1,2 @@
+== Problem 9 ==
+Let <math>x</math> and <math>y</math> be real numbers such that <math>\frac{\sin x}{\sin y} = 3</math> and <math>\frac{\cos x}{\cos y} = \frac12</math>. The value of <math>\frac{\sin 2x}{\sin 2y} + \frac{\cos 2x}{\cos 2y}</math> can be expressed in the form <math>\frac pq</math>, where <math>p</math> and <math>q</math> are relatively prime positive integers. Find <math>p+q</math>.

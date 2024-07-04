@@ -1,0 +1,10 @@
+== Solution==
+Let us [[partition]] the set <math>\{1,2,\cdots,12\}</math> into <math>n</math> numbers in <math>A</math> and <math>12-n</math> numbers in <math>B</math>, 
+
+Since <math>n</math> must be in <math>B</math> and <math>12-n</math> must be in <math>A</math> (<math>n\ne6</math>, we cannot partition into two sets of 6 because <math>6</math> needs to end up somewhere, <math>n\ne 0</math> or <math>12</math> either).
+
+We have <math>\dbinom{10}{n-1}</math>  ways of picking the numbers to be in <math>A</math>. 
+
+So the answer is <math>\left(\sum_{n=1}^{11} \dbinom{10}{n-1}\right) - \dbinom{10}{5}=2^{10}-252= \boxed{772}</math>.
+
+Note: We have <math>\dbinom{10}{n-1}</math>  ways of picking the numbers to be in <math>A</math> because there are <math>n</math> numbers in <math>A</math> and since <math>12-n</math> is already a term in the set we simply have to choose another <math>n-1</math> numbers from the <math>10</math> numbers that are available.

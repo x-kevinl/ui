@@ -1,0 +1,15 @@
+==Solution 1 (Bijection)==
+Suppose that $t$ tenors and $b$ basses are selected. The requirements are $t\equiv b\pmod{4}$ and $(t,b)\neq(0,0).$
+
+It follows that $b'=8-b$ basses are not selected. Since the ordered pairs $(t,b)$ and the ordered pairs $(t,b')$ have one-to-one correspondence, we consider the ordered pairs $(t,b')$ instead. The requirements become $t\equiv8-b'\pmod{4}$ and $(t,8-b')\neq(0,0),$ which simplify to $t+b'\equiv0\pmod{4}$ and $(t,b')\neq(0,8),$ respectively.
+
+As $t+b'\in\{0,4,8,12\},$ the total number of such groups is
+$$\begin{align*}
+N&=\binom{14}{0}+\binom{14}{4}+\left[\binom{14}{8}-1\right]+\binom{14}{12} \\
+&=\binom{14}{0}+\binom{14}{4}+\left[\binom{14}{6}-1\right]+\binom{14}{2} \\
+&=1+1001+[3003-1]+91 \\
+&=4095,
+\end{align*}$$
+from which $N\equiv\boxed{\textbf{(D) } 95}\pmod{100}.$
+
+~MRENTHUSIASM

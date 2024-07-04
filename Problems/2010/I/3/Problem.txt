@@ -1,0 +1,2 @@
+== Problem ==
+Suppose that <math>y = \frac34x</math> and <math>x^y = y^x</math>. The quantity <math>x + y</math> can be expressed as a rational number <math>\frac {r}{s}</math>, where <math>r</math> and <math>s</math> are relatively prime positive integers. Find <math>r + s</math>.

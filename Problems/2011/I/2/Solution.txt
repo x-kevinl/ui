@@ -1,0 +1,20 @@
+==Diagram==
+<asy>
+pair A,B,C,D,E,F;
+A=(0,10);
+B=(12,10);
+C=(12,0);
+D=(0,0);
+E=(4.722,4.7);
+F=(6.469,4.7);
+draw(A--B--C--D--A);
+draw(D--F--E--B);
+label("$A$",A,NW);
+label("$B$",B,NE);
+label("$C$",C,SE);
+label("$D$",D,SW);
+label("$E$",E,W);
+label("$F$",F,SE);
+</asy>
+
+~Kscv

@@ -1,0 +1,22 @@
+==Solution 1==
+The region is a right triangle which contains the following lattice points:
+$(0,0); (1,0)\rightarrow(1,3); (2,0)\rightarrow(2,6); (3,0)\rightarrow(3,9); (4,0)\rightarrow(4,12); (5,0)\rightarrow(5,15)$
+
+<asy>size(10cm);
+for(int i=0;i<6;++i)for(int j=0;j<=3*i;++j)dot((i,j));
+draw((0,-1)--(0,16),EndArrow);draw((-1,0)--(6,0),EndArrow);
+draw((-.5,-pi/2)--(5.2,5.2*pi),gray);draw((-1,-.1)--(6,-.1)^^(5.1,-1)--(5.1,16),gray);
+</asy>
+
+Squares $1\times 1$:
+Suppose that the top-right corner is $(x,y)$, with $2\le x\le 5$. Then to include all other corners, we need $1\le y\le 3(x-1)$.
+This produces $3+6+9+12=30$ squares.
+
+Squares $2\times 2$:
+Here $3\le x\le 5$. To include all other corners, we need $2\le y\le 3(x-2)$.
+This produces $2+5+8=15$ squares.
+
+Squares $3\times 3$:
+Similarly, this produces $5$ squares.
+
+No other squares will fit in the region. Therefore the answer is $\boxed{\textbf{(D) }50}$.

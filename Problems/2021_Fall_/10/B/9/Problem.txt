@@ -1,0 +1,5 @@
+==Problem==
+
+The knights in a certain kingdom come in two colors. $\frac{2}{7}$ of them are red, and the rest are blue. Furthermore, $\frac{1}{6}$ of the knights are magical, and the fraction of red knights who are magical is $2$ times the fraction of blue knights who are magical. What fraction of red knights are magical?
+
+$\textbf{(A) }\frac{2}{9}\qquad\textbf{(B) }\frac{3}{13}\qquad\textbf{(C) }\frac{7}{27}\qquad\textbf{(D) }\frac{2}{7}\qquad\textbf{(E) }\frac{1}{3}$

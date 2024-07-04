@@ -1,0 +1,14 @@
+==Solution 1 (Algebra Based)==
+Let $y = m(x - 20) + 14$. Equating them:
+
+$x^2 = mx - 20m + 14$
+
+$x^2 - mx + 20m - 14 = 0$
+
+For there to be no solutions, the discriminant must be less than zero:
+
+$m^2 - 4(20m - 14) < 0$
+
+$m^2 - 80m + 56 < 0$.
+
+So $m < 0$ for $r < m < s$ where $r$ and $s$ are the roots of $m^2 - 80m + 56 = 0$ and their sum by Vieta's formulas is $\boxed{\textbf{(E)}\ 80}$.

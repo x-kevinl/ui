@@ -1,0 +1,3 @@
+==Problem==
+
+Misha rolls a standard, fair six-sided die until she rolls <math>1-2-3</math> in that order on three consecutive rolls. The probability that she will roll the die an odd number of times is <math>\dfrac{m}{n}</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

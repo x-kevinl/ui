@@ -1,0 +1,5 @@
+==Solution 1==
+Note that $6.5$ months is approximately $6.5\cdot30\cdot24$ hours. Therefore, the speed (in miles per hour) is $$\frac{292{,}526{,}838}{6.5\cdot30\cdot24} \approx \frac{300{,}000{,}000}{6.5\cdot30\cdot24} = \frac{10{,}000{,}000}{6.5\cdot24} \approx \frac{10{,}000{,}000}{6.4\cdot25} = \frac{10{,}000{,}000}{160} = 62500 \approx \boxed{\textbf{(C)}\ 60{,}000}.$$
+As the answer choices are far apart from each other, we can ensure that the approximation is correct.
+
+~apex304, SohumUttamchandani, MRENTHUSIASM

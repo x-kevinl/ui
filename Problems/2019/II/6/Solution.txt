@@ -1,0 +1,20 @@
+==Solution 1==
+Using change of base on the second equation to base b,
+<cmath>\frac{\log x}{\log \log_{b}{x}}=54</cmath>
+<cmath>\log x = 54 \cdot \log\log_{b}{x}</cmath>
+<cmath>x = (\log_{b}{x})^{54}</cmath>
+Note by dolphin7 - you could also just rewrite the second equation in exponent form.
+Substituting this into the <math>\sqrt x</math> of the first equation,
+<cmath>3\log_{b}{((\log_{b}{x})^{27}\log_{b}{x})} = 56</cmath>
+<cmath>3\log_{b}{(\log_{b}{x})^{28}} = 56</cmath>
+<cmath>\log_{b}{(\log_{b}{x})^{84}} = 56</cmath>
+
+We can manipulate this equation to be able to substitute <math>x = (\log_{b}{x})^{54}</math> a couple more times:
+<cmath>\log_{b}{(\log_{b}{x})^{54}} = 56 \cdot \frac{54}{84}</cmath>
+<cmath>\log_{b}{x} = 36</cmath>
+<cmath>(\log_{b}{x})^{54} = 36^{54}</cmath>
+<cmath>x = 6^{108}</cmath>
+
+However, since we found that <math>\log_{b}{x} = 36</math>, <math>x</math> is also equal to <math>b^{36}</math>. Equating these,
+<cmath>b^{36} = 6^{108}</cmath>
+<cmath>b = 6^3 = \boxed{216}</cmath>

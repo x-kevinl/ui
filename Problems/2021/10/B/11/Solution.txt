@@ -1,0 +1,4 @@
+==Solution 1==
+Let the side lengths of the rectangular pan be $m$ and $n$. It follows that $(m-2)(n-2) = \frac{mn}{2}$, since half of the brownie pieces are in the interior. This gives $2(m-2)(n-2) = mn \iff mn - 4m - 4n + 8 = 0$. Adding 8 to both sides and applying [[Simon's Favorite Factoring Trick]], we obtain $(m-4)(n-4) = 8$. Since $m$ and $n$ are both positive, we obtain $(m, n) = (5, 12), (6, 8)$ (up to ordering). By inspection, $5 \cdot 12 = \boxed{\textbf{(D) }60}$ maximizes the number of brownies.
+
+~ ike.chen

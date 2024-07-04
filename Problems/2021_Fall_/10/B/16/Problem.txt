@@ -1,0 +1,4 @@
+==Problem==
+Five balls are arranged around a circle. Chris chooses two adjacent balls at random and interchanges them. Then Silva does the same, with her choice of adjacent balls to interchange being independent of Chris's. What is the expected number of balls that occupy their original positions after these two successive transpositions?
+
+$(\textbf{A})\: 1.6\qquad(\textbf{B}) \: 1.8\qquad(\textbf{C}) \: 2.0\qquad(\textbf{D}) \: 2.2\qquad(\textbf{E}) \: 2.4$

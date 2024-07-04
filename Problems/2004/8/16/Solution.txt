@@ -1,0 +1,2 @@
+==Solution==
+The first pitcher contains $600 \cdot \frac13 = 200$ mL of orange juice. The second pitcher contains $600 \cdot \frac25 = 240$ mL of orange juice. In the large pitcher, there is a total of $200+240=440$ mL of orange juice and $600+600=1200$ mL of fluids, giving a fraction of $\frac{440}{1200} = \boxed{\textbf{(C)}\ \frac{11}{30}}$.

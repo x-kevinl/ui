@@ -1,0 +1,2 @@
+==Problem==
+Let <math>N</math> be the number of complex numbers <math>z</math> with the properties that <math>|z|=1</math> and <math>z^{6!}-z^{5!}</math> is a real number. Find the remainder when <math>N</math> is divided by <math>1000</math>.

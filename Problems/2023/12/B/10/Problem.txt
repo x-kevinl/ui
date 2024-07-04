@@ -1,0 +1,4 @@
+==Problem==
+In the $xy$-plane, a circle of radius $4$ with center on the positive $x$-axis is tangent to the $y$-axis at the origin, and a circle with radius $10$ with center on the positive $y$-axis is tangent to the $x$-axis at the origin. What is the slope of the line passing through the two points at which these circles intersect?
+
+$\textbf{(A)}\ \dfrac{2}{7} \qquad\textbf{(B)}\ \dfrac{3}{7}  \qquad\textbf{(C)}\ \dfrac{2}{\sqrt{29}}  \qquad\textbf{(D)}\ \dfrac{1}{\sqrt{29}}  \qquad\textbf{(E)}\ \dfrac{2}{5}$

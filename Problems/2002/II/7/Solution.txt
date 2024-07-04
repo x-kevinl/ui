@@ -1,0 +1,17 @@
+== Solution ==
+<math>\frac{k(k+1)(2k+1)}{6}</math> is a multiple of <math>200</math> if <math>k(k+1)(2k+1)</math> is a multiple of <math>1200 = 2^4 \cdot 3 \cdot 5^2</math>. 
+So <math>16,3,25|k(k+1)(2k+1)</math>. 
+
+Since <math>2k+1</math> is always odd, and only one of <math>k</math> and <math>k+1</math> is even, either <math>k, k+1 \equiv 0 \pmod{16}</math>. 
+
+Thus, <math>k \equiv 0, 15 \pmod{16}</math>. 
+
+If <math>k \equiv 0 \pmod{3}</math>, then <math>3|k</math>. If <math>k \equiv 1 \pmod{3}</math>, then <math>3|2k+1</math>. If <math>k \equiv 2 \pmod{3}</math>, then <math>3|k+1</math>. 
+
+Thus, there are no restrictions on <math>k</math> in <math>\pmod{3}</math>. 
+
+It is easy to see that only one of <math>k</math>, <math>k+1</math>, and <math>2k+1</math> is divisible by <math>5</math>. So either <math>k, k+1, 2k+1 \equiv 0 \pmod{25}</math>. 
+
+Thus, <math>k \equiv 0, 24, 12 \pmod{25}</math>. 
+
+From the [[Chinese Remainder Theorem]], <math>k \equiv 0, 112, 224, 175, 287, 399 \pmod{400}</math>. Thus, the smallest positive integer <math>k</math> is <math>\boxed{112}</math>.

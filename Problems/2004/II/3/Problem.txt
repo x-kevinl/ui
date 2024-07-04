@@ -1,0 +1,2 @@
+== Problem ==
+A solid rectangular block is formed by gluing together <math> N </math> [[congruent (geometry) | congruent]] 1-cm [[cube (geometry) | cube]]s [[face]] to face. When the block is viewed so that three of its faces are visible, exactly <math>231</math> of the 1-cm cubes cannot be seen. Find the smallest possible value of <math> N. </math>

@@ -1,0 +1,14 @@
+==Solution==
+By logical deduction, we consider the scores from lowest to highest:
+$$\begin{align*}
+\text{Oscar's score is 4.} &\implies \text{Oscar is given cards 1 and 3.} \\
+&\implies \text{Aditi is given cards 2 and 5.} \\
+&\implies \text{Ravon is given cards 4 and 7.} && (\bigstar) \\
+&\implies \text{Tyrone is given cards 6 and 10.} \\
+&\implies \text{Kim is given cards 8 and 9.}
+\end{align*}$$
+Therefore, the answer is $\boxed{\textbf{(C) }\text{Ravon was given card 4.}}$
+
+Certainly, if we read the answer choices sooner, then we can stop at $(\bigstar)$ and pick $\textbf{(C)}.$
+
+~smarty101 ~smartypantsno_3 ~SmileKat32 ~MRENTHUSIASM

@@ -1,0 +1,24 @@
+== Solution 1==
+The following is a power of a point solution to this menace of a problem:
+
+<asy>
+defaultpen(fontsize(12)+0.6); size(250);
+pen p=fontsize(10)+gray+0.4;
+
+var phi=75.5, theta=130, r=4.8;
+pair A=r*dir(270-phi-57), C=r*dir(270+phi-57), B=r*dir(theta-57), H=extension(A,foot(A,B,C),B,foot(B,C,A));
+path omega=circumcircle(A,B,C), c=circumcircle(H,B,C);
+pair O=circumcenter(H,B,C), Op=2*H-O, Z=bisectorpoint(O,Op), X=IP(omega,L(H,Z,0,50)), Y=IP(omega,L(H,Z,50,0)), D=2*H-A, K=extension(B,C,X,Y), E=extension(A,origin,X,Y), L=foot(H,B,C);
+
+draw(K--C^^omega^^c^^L(A,D,0,1)); draw(Y--K^^L(A,origin,0,1.5)^^L(X,D,0.7,3.5),fuchsia+0.4); 
+draw(CR(H,length(H-L)),royalblue); 
+draw(C--K,p);
+dot("$A$",A,dir(120)); dot("$B$",B,down); dot("$C$",C,down); dot("$H$",H,down); dot("$X$",X,up); dot("$Y$",Y,down);
+dot("$O$",origin,down); dot("$O'$",O,down); dot("$K$",K,up); dot("$L$",L,dir(H-X)); 
+dot("$D$",D,down); dot("$E$",E,down); 
+
+//draw(O--origin,p);
+//draw(origin--4*dir(57),fuchsia);
+//draw(Arc(H,3,160,200),royalblue); //draw(Arc(H,2,30,70),heavygreen); //draw(Arc(H,6,220,240),fuchsia);
+</asy>
+Let points be what they appear as in the diagram below. Note that <math>3HX = HY</math> is not insignificant; from here, we set <math>XH = HE = \frac{1}{2} EY = HL = 2</math> by PoP and trivial construction. Now, <math>D</math> is the reflection of <math>A</math> over <math>H</math>. Note <math>AO \perp XY</math>, and therefore by Pythagorean theorem we have <math>AE = XD = \sqrt{5}</math>. Consider <math>HD = 3</math>. We have that <math>\triangle HXD \cong HLK</math>, and therefore we are ready to PoP with respect to <math>(BHC)</math>. Setting <math>BL = x, LC = y</math>, we obtain <math>xy = 10</math> by PoP on <math>(ABC)</math>, and furthermore, we have <math>KH^2 = 9 = (KL - x)(KL + y) = (\sqrt{5} - x)(\sqrt{5} + y)</math>. Now, we get <math>4 = \sqrt{5}(y - x) - xy</math>, and from <math>xy = 10</math> we take <cmath>\frac{14}{\sqrt{5}} = y - x.</cmath> However, squaring and manipulating with <math>xy = 10</math> yields that <math>(x + y)^2 = \frac{396}{5}</math> and from here, since <math>AL = 5</math> we get the area to be <math>3\sqrt{55} \implies \boxed{058}</math>. ~awang11's sol

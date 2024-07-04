@@ -1,0 +1,6 @@
+== Problem ==
+
+Let $a, b$ and $c$ be numbers with $0 < a < b < c$. Which of the following is
+impossible?
+
+$\mathrm{(A)} \ a + c < b  \qquad \mathrm{(B)} \ a \cdot b < c \qquad \mathrm{(C)} \ a + b < c \qquad \mathrm{(D)} \ a \cdot c < b \qquad \mathrm{(E)}\frac{b}{c} = a$

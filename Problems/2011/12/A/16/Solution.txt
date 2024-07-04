@@ -1,0 +1,39 @@
+== Solution ==
+
+We can do some casework when working our way around the pentagon from $A$ to $E$. At each stage, there will be a makeshift diagram.
+
+1.) For $A$, we can choose any of the 6 colors.
+
+         A : 6
+
+2.) For $B$, we can either have the same color as $A$, or any of the other 5 colors. We do this because each vertex of the pentagon is affected by the 2 opposite vertices, and $D$ will be affected by both $A$ and $B$.
+
+       A : 6
+  B:1        B:5
+
+3.) For $C$, we cannot have the same color as $A$. Also, we can have the same color as $B$ ($E$ will be affected), or any of the other 4 colors. Because $C$ can't be the same as $A$, it can't be the same as $B$ if $B$ is the same as $A$, so it can be any of the 5 other colors.
+
+       A : 6
+  B:1        B:5
+  C:5     C:4   C:1
+
+4.) $D$ is affected by $A$ and $B$. If they are the same, then $D$ can be any of the other 5 colors. If they are different, then $D$ can be any of the (6-2)=4 colors.
+
+       A : 6
+  B:1        B:5
+  C:5     C:4   C:1
+  D:5     D:4   D:4
+
+5.) $E$ is affected by $B$ and $C$. If they are the same, then $E$ can be any of the other 5 colors. If they are different, then $E$ can be any of the (6-2)=4 colors.
+
+       A : 6
+  B:1        B:5
+  C:5     C:4   C:1
+  D:5     D:4   D:4
+  E:4     E:4   E:5
+
+6.) Now, we can multiply these three paths and add them:
+$(6\times1\times5\times5\times4)+(6\times5\times4\times4\times4)+(6\times5\times1\times4\times5)
+=600+1920+600=3120$
+
+7.) Our answer is $C$!

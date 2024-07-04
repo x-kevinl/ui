@@ -1,0 +1,16 @@
+== Solution 1 ==
+Multiplying both sides by $x$: 
+
+$\frac{2003}{2004}x^{2}+1x+1=0$
+
+Let the roots be $a$ and $b$. 
+
+The problem is asking for $\frac{1}{a}+\frac{1}{b}= \frac{a+b}{ab}$
+
+By [[Vieta's formulas]]: 
+
+$a+b=(-1)^{1}\frac{1}{\frac{2003}{2004}}=-\frac{2004}{2003}$
+
+$ab=(-1)^{2}\frac{1}{\frac{2003}{2004}}=\frac{2004}{2003}$
+
+So the answer is $ \frac{a+b}{ab}=\frac{-\frac{2004}{2003}}{\frac{2004}{2003}}=-1 \Rightarrow\boxed{\mathrm{(B)}\ -1}$.

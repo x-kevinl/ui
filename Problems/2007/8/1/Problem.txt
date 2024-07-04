@@ -1,0 +1,4 @@
+== Problem ==
+Theresa's parents have agreed to buy her tickets to see her favorite band if she spends an average of $10$ hours per week helping around the house for $6$ weeks. For the first $5$ weeks she helps around the house for $8$, $11$, $7$, $12$ and $10$ hours. How many hours must she work for the final week to earn the tickets?
+
+$\mathrm{(A)}\ 9 \qquad\mathrm{(B)}\ 10 \qquad\mathrm{(C)}\ 11 \qquad\mathrm{(D)}\ 12 \qquad\mathrm{(E)}\ 13$

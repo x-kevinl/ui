@@ -1,0 +1,5 @@
+==Solution 1==
+Without loss of generality, let there be $20$ students (the least whole number possible) who took the test. We have $2$ students score $70$ points, $7$ students score $80$ points, $6$ students score $90$ points and $5$ students score $100$ points. Therefore, the mean
+is $87$ and the median is $90$.
+
+Thus, the solution is $$90-87=3\implies\boxed{\textbf{(C)} \ 3}$$

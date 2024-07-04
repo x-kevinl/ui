@@ -1,0 +1,3 @@
+== Problem 11 ==
+
+A token starts at the point <math>(0,0)</math> of an <math>xy</math>-coordinate grid and then makes a sequence of six moves. Each move is 1 unit in a direction parallel to one of the coordinate axes. Each move is selected randomly from the four possible directions and independently of the other moves. The probability the token ends at a point on the graph of <math>|y|=|x|</math> is <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

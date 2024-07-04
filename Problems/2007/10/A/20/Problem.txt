@@ -1,0 +1,4 @@
+== Problem ==
+Suppose that the number $a$ satisfies the equation $4 = a + a^{ - 1}$. What is the value of $a^{4} + a^{ - 4}$?
+
+$\textbf{(A)}\ 164 \qquad \textbf{(B)}\ 172 \qquad \textbf{(C)}\ 192 \qquad \textbf{(D)}\ 194 \qquad \textbf{(E)}\ 212$

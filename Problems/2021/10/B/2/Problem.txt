@@ -1,0 +1,4 @@
+==Problem==
+What is the value of $\sqrt{\left(3-2\sqrt{3}\right)^2}+\sqrt{\left(3+2\sqrt{3}\right)^2}$?
+
+$\textbf{(A)} ~0 \qquad\textbf{(B)} ~4\sqrt{3}-6 \qquad\textbf{(C)} ~6 \qquad\textbf{(D)} ~4\sqrt{3} \qquad\textbf{(E)} ~4\sqrt{3}+6$

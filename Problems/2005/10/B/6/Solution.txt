@@ -1,0 +1,4 @@
+== Solution ==
+Lisa's goal was to get an $A$ on $80\% \cdot 50 = 40$ quizzes.  She already has $A$'s on $22$ quizzes, so she needs to get $A$'s on $40-22=18$ more.  There are $50-30=20$ quizzes left, so she can afford to get less than an $A$ on $20-18=\boxed{\textbf{(B) }2}$ of them.
+
+Here, only the $A$'s matter... No complicated stuff!

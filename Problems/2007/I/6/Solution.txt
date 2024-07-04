@@ -1,0 +1,69 @@
+== Solution ==
+=== Solution 1 ===
+Let us keep a careful tree of the possible number of paths around every multiple of <math>13</math>.
+
+From <math>0 \Rightarrow 13</math>, we can end at either <math>12</math> (mult. of 3) or <math>13</math> (mult. of 13). 
+
+*Only <math>1</math> path leads to <math>12</math>
+**Continuing from <math>12</math>, there is <math>1 \cdot 1 = 1</math> way to continue to <math>24</math>
+**There are <math>1 \cdot \left(\frac{24-15}{3} + 1\right) = 4</math> ways to reach <math>26</math>.
+*There are <math>\frac{12 - 0}{3} + 1 = 5</math> ways to reach <math>13</math>. 
+** Continuing from <math>13</math>, there are <math>5 \cdot 1 = 5</math> ways to get to <math>24</math>
+**There are <math>5 \cdot \left(\frac{24-15}{3} + 1 + 1\right) = 25</math> ways (the first 1 to make it inclusive, the second to also jump from <math>13 \Rightarrow 26</math>) to get to <math>26</math>. 
+
+Regrouping, work from <math>24 | 26\Rightarrow 39</math>
+*There are <math>1 + 5 = 6</math> ways to get to <math>24</math> 
+** Continuing from <math>24</math>, there are <math>6 \cdot \left(\frac{39 - 27}{3}\right) = 24</math> ways to continue to <math>39</math>.
+*There are <math>4 + 25 = 29</math> ways to reach <math>26</math>. 
+** Continuing from <math>26</math>, there are <math>29 \cdot \left(\frac{39-27}{3} + 1\right) = 145</math> (note that the 1 is not to inclusive, but to count <math>26 \Rightarrow 39</math>). 
+
+In total, we get <math>145 + 24 = 169</math>.
+
+<br>
+
+In summary, we can draw the following tree, where in <math>(x,y)</math>, <math>x</math> represents the current position on the number line, and <math>y</math> represents the number of paths to get there:
+
+{| class="wikitable"
+|-
+| width="50%" |
+*<math>(12,1)</math>
+**<math>(24,1)</math>
+***<math>(39,4)</math>
+**<math>(26,4)</math>
+***<math>(39,20)</math>
+|
+*<math>(13,5)</math>
+**<math>(24,5)</math>
+***<math>(39,20)</math>
+**<math>(26,25)</math>
+***<math>(39,125)</math>
+|}
+
+Again, this totals <math>4 + 20 + 20 + 125 = 169</math>.
+
+=== Solution 2 === 
+We divide it into 3 stages. The first occurs before the frog moves past 13. The second occurs before it moves past 26, and the last is everything else.
+
+For the first stage the possible paths are <math>(0,13)</math>, <math>(0,3,13)</math>, <math>(0,3,6,13)</math>, <math>(0,3,6,9,13)</math>, <math>(0,3,6,9,12,13)</math>, and <math>(0,3,6,9,12)</math>. That is a total of 6.
+
+For the second stage the possible paths are <math>(26)</math>, <math>(15,26)</math>, <math>(15,18,26)</math>, <math>(15,18,21,26)</math>, <math>(15,18,21,24,26)</math>, and <math>(15,18,21,24)</math>. That is a total of 6.
+
+For the third stage the possible paths are <math>(39)</math>, <math>(27,39)</math>, <math>(27,30,39)</math>, <math>(27,30,33,39)</math>, and <math>(27,30,33,36,39)</math>. That is a total of 5.
+
+However, we cannot jump from <math>12 \Rightarrow 26</math> (this eliminates 5 paths) or <math>24 \Rightarrow 39</math> (this eliminates 6 paths), so we must subtract <math>6 + 5 = 11</math>.
+
+The answer is <math>6*6*5 - 11=169</math>
+
+=== Solution 3 ===
+
+Another way would be to use a table representing the number of ways to reach a certain number
+
+<math>\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+0 & 3 & 6 & 9 & 12 & 13 & 15 & 18 & 21 & 24 & 26 & 27 & 30 & 33 & 36 \\ 
+\hline
+1 & 1 & 1 & 1 & 1 & 5 & 6 & 6 & 6 & 6 & 29 & 35 & 35 & 35 & 35 \\
+\end{tabular}</math>
+
+How we came with each value is to just add in the number of ways that we can reach that number from previous numbers. For example, for <math>26</math>, we can reach it from <math>13, 15, 18, 21, 24</math>, so we add all those values to get the value for <math>26</math>. For <math>27</math>, it is only reachable from <math>24</math> or <math>26</math>, so we have <math>29 + 6 = 35</math>.
+
+The answer for <math>39</math> can be computed in a similar way to get <math>35 * 4 + 29 = \boxed{169}</math>.

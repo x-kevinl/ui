@@ -1,0 +1,4 @@
+==Problem==
+An arithmetic sequence of positive integers has $\text{n} \ge 3$ terms, initial term $a$, and common difference $d > 1$. Carl wrote down all the terms in this sequence correctly except for one term, which was off by $1$. The sum of the terms he wrote was $222$. What is $a + d + n$?
+
+$\textbf{(A) } 24 \qquad \textbf{(B) } 20 \qquad \textbf{(C) } 22 \qquad \textbf{(D) } 28 \qquad \textbf{(E) } 26$

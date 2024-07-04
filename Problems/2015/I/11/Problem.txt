@@ -1,0 +1,2 @@
+==Problem==
+Triangle <math>ABC</math> has positive integer side lengths with <math>AB=AC</math>. Let <math>I</math> be the intersection of the bisectors of <math>\angle B</math> and <math>\angle C</math>. Suppose <math>BI=8</math>. Find the smallest possible perimeter of <math>\triangle ABC</math>.

@@ -1,0 +1,13 @@
+==Solution 1==
+First consider, $|x-1|+|y-1| \le 1.$
+We can see that it is a square with a radius of $1$ (diagonal $\sqrt{2}$). The area of the square is $\sqrt{2}^2 = 2.$
+
+Next, we insert an absolute value sign into the equation and get $|x-1|+||y|-1| \le 1.$ This will double the square reflecting over x-axis.
+
+So now we have $2$ squares.
+
+Finally, we add one more absolute value and obtain $||x|-1|+||y|-1| \le 1.$ This will double the squares as we reflect the $2$ squares we already have over the y-axis.
+
+Concluding, we have $4$ congruent squares.  The total area is $4\cdot2 = $ $\boxed{\text{(B) 8}}$
+
+~Technodoggo ~Minor formatting change: e_is_2.71828 ~Grammar and clarity: NSAoPS

@@ -1,0 +1,36 @@
+==Solution==
+
+Answer: (D)
+
+Let $AB = c$, $BC = a$, and $AC = b$
+
+Then $AD = AF$, $BE = BD$ and $CF = CE$
+
+Then $a = BE + CF$, $b = AD + CF$, $c = AD + BE$
+
+Hence:
+
+ $AD = AF = \frac{b + c - a}{2}$
+ $BE = BD = \frac{a + c - b}{2}$
+ $CF = CE = \frac{a + b - c}{2}$
+
+Note that $a + 1 = b$ and $a - 1 = c$ for $n = 1$, I claim that it is true for all $n$, assume for induction that it is true for some $n$, then
+
+ $AD = AF = \frac{a}{2}$
+ $BE = BD = \frac{a - 2}{2} = AD - 1$
+ $CF = CE = \frac{a + 2}{2} = AD + 1$
+
+Furthermore, the average for the sides is decreased by a factor of 2 each time.
+
+So $T_n$ is a triangle with side length $\frac{2012}{2^{n- 1}} - 1$, $\frac{2012}{2^{n-1}}$, $\frac{2012}{2^{n-1}} + 1$
+
+and the perimeter of such $T_n$ is $\frac{(3)(2012)}{2^{n-1}}$
+
+<br />
+Now we need to find when $T_n$ fails the triangle inequality. So we need to find the last $n$ such that $\frac{2012}{2^{n-1}} > 2$
+
+ $\frac{2012}{2^{n-1}} > 2$
+ $2012 > 2^n$
+ $ n \le 10$
+
+For $n = 10$, perimeter is $\frac{(3)(2012)}{2^{9}} = \frac{1509}{2^7} = \frac{1509}{128}$

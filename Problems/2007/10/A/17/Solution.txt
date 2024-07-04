@@ -1,0 +1,2 @@
+== Solution ==
+$3 \cdot 5^2m$ must be a perfect cube, so each power of a prime in the factorization for $3 \cdot 5^2m$ must be divisible by $3$. Thus the minimum value of $m$ is $3^2 \cdot 5 = 45$, which makes $n = \sqrt[3]{3^3 \cdot 5^3} = 15$. The minimum possible value for the sum of $m$ and $n$ is $\boxed {(D)60}.$

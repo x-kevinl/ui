@@ -1,0 +1,2 @@
+==Problem==
+For positive integers <math>N</math> and <math>k</math>, define <math>N</math> to be <math>k</math>-nice if there exists a positive integer <math>a</math> such that <math>a^{k}</math> has exactly <math>N</math> positive divisors. Find the number of positive integers less than <math>1000</math> that are neither <math>7</math>-nice nor <math>8</math>-nice.

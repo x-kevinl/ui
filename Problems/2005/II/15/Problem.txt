@@ -1,0 +1,2 @@
+== Problem ==
+Let <math> w_1 </math> and <math> w_2 </math> denote the [[circle]]s <math> x^2+y^2+10x-24y-87=0 </math> and <math> x^2 +y^2-10x-24y+153=0, </math> respectively. Let <math> m </math> be the smallest positive value of <math> a </math> for which the line <math> y=ax </math> contains the center of a circle that is externally [[tangent (geometry)|tangent]] to <math> w_2 </math> and internally tangent to <math> w_1. </math> Given that <math> m^2=\frac pq, </math> where <math> p </math> and <math> q </math> are relatively prime integers, find <math> p+q. </math>

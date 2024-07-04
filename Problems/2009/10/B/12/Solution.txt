@@ -1,0 +1,8 @@
+== Solution 1 ==
+
+Consider the classical formula for triangle area: $\frac 12 \cdot b \cdot h$. 
+Each of the triangles that we can make has exactly one side lying on one of the two parallel lines. If we pick this side to be the base, the height will always be the same - it will be the distance between the two lines.
+
+Hence each area is uniquely determined by the length of the base. And it can easily be seen, that the only possible base lengths are $1$, $2$, and $3$. Therefore there are only $\boxed{(A)3}$ possible values for the area.
+
+(To be more precise in the last step, the possible base lengths are $AB=BC=CD=EF=1$, $AC=BD=2$, and $AD=3$.)

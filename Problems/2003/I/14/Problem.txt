@@ -1,0 +1,2 @@
+== Problem ==
+The [[decimal]] representation of <math> m/n, </math> where <math> m </math> and <math> n </math> are [[relatively prime]] positive integers and <math> m < n, </math> contains the digits <math>2, 5</math>, and <math>1</math> consecutively and in that order. Find the smallest value of <math> n </math> for which this is possible.

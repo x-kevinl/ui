@@ -1,0 +1,4 @@
+==Solution 1==
+Since triangle $BEF$ is equilateral, $EA=FC$, and $EAB$ and $FCB$ are $SAS$ congruent. Thus, triangle $DEF$ is an isosceles right triangle. So we let $DE=x$. Thus $EF=EB=FB=x\sqrt{2}$. If we go angle chasing, we find out that $\angle AEB=75^{\circ}$, thus $\angle ABE=15^{\circ}$. $\frac{AE}{EB}=\sin{15^{\circ}}=\frac{\sqrt{6}-\sqrt{2}}{4}$. Thus $\frac{AE}{x\sqrt{2}}=\frac{\sqrt{6}-\sqrt{2}}{4}$, or $AE=\frac{x(\sqrt{3}-1)}{2}$. Thus $AB=\frac{x(\sqrt{3}+1)}{2}$, and $[ABE]=\frac{x^2}{4}$, and $[DEF]=\frac{x^2}{2}$. Thus the ratio of the areas is $\boxed{\mathrm{(D)}\ 2}$
+
+z

@@ -1,0 +1,4 @@
+==Solution 1==
+$6.5$ millimeters is equal to $0.65$ centimeters. $25$ meters is $2500$ centimeters. The answer is $0.65 \times 2500$, so the answer is $\boxed{\textbf{(C) 1,625}}$. 
+
+~Failure.net

@@ -1,0 +1,2 @@
+== A Brief Note ==
+The process described in this problem exists in practice and is known as a ''truncation''.

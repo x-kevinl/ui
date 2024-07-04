@@ -1,0 +1,4 @@
+== Solution ==
+[[Image:2004_AMC_12A-12.png]]
+
+The [[equation]] of $\overline{AA'}$ can be found using points $A, C$ to be $y - 9 = \left(\frac{9-8}{0-2}\right)(x - 0) \Longrightarrow y = -\frac{1}{2}x + 9$. Similarily, $\overline{BB'}$ has the equation $y - 12 = \left(\frac{12-8}{0-2}\right)(x-0) \Longrightarrow y = -2x + 12$. These two equations intersect the line $y=x$ at $(6,6)$ and $(4,4)$. Using the [[distance formula]] or $45-45-90$ [[right triangle]]s, the answer is $2\sqrt{2}\ \mathrm{(B)}$.

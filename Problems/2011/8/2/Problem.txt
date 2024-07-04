@@ -1,0 +1,12 @@
+==Problem==
+Karl's rectangular vegetable garden is $ 20 $ feet by $ 45 $ feet, and Makenna's is $ 25 $ feet by $ 40 $ feet. Whose garden is larger in area?
+
+$\textbf{(A)}\ \text{Karl's garden is larger by 100 square feet.}$
+
+$\textbf{(B)}\ \text{Karl's garden is larger by 25 square feet.}$
+ 
+$\textbf{(C)}\ \text{The gardens are the same size.}$ 
+
+$\textbf{(D)}\ \text{Makenna's garden is larger by 25 square feet.}$
+
+$\textbf{(E)}\ \text{Makenna's garden is larger by 100 square feet.}$

@@ -1,0 +1,10 @@
+== Solutions ==
+
+=== Solution 1 ===
+Draw height $CH$ (Perpendicular line from point C to line AD). We have that $BH=1$. By the [[Pythagorean Theorem]], $CH=\sqrt{48}$. Since $CD=8$, $HD=\sqrt{8^2-48}=\sqrt{16}=4$, and $BD=HD-1$, so $BD=\boxed{\textbf{(A) }3}$.
+
+=== Solution 2 (Trig) ===
+
+After drawing out a diagram, let $\angle{ABC}=\theta$. By the Law of Cosines, $7^2=2^2+7^2-2(7)(2)\cos{\theta} \rightarrow 0=4-28\cos{\theta} \rightarrow \cos{\theta}=\frac{1}{7}$. In $\triangle CBD$, we have $\angle{CBD}=(180-\theta)$, and using the identity $\cos(180-\theta)=-\cos{\theta}$ and Law of Cosines one more time: $8^2=7^2+x^2-2(7)(x)\left( \frac{-1}{7} \right) \rightarrow 64=49+x^2+2x \rightarrow x^2+2x-15=0$. The only positive value for $x$ is $3$, which gives the length of $\overline{BD}$. Thus the answer is $\boxed{\textbf{(A) }3}$.
+
+~Bowser498

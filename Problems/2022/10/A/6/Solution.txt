@@ -1,0 +1,9 @@
+== Solution 1 == 
+We have 
+$$\begin{align*}
+\left|a-2-\sqrt{(a-1)^2}\right| &= \left|a-2-|a-1|\right| \\
+&=\left|a-2-(1-a)\right| \\
+&=\left|2a-3\right| \\
+&=\boxed{\textbf{(A) } 3-2a}.
+\end{align*}$$
+~MRENTHUSIASM

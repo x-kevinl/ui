@@ -1,0 +1,70 @@
+== Solution ==
+=== Solution 1 ===
+<center><asy>
+import graph; real min = -0.5, max = 2.5; pen dark = linewidth(1);
+
+real P(real x) { return 8*(x-1)^2/5+1; }
+real Q(real x) { return (x-1)^2+1; }
+real R(real x) { return 2*(x-1)^2+1; }
+draw(graph(P,min,max),dark);
+draw(graph(Q,min,max),linetype("6 2")+linewidth(0.7));
+draw(graph(R,min,max),linetype("6 2")+linewidth(0.7));
+dot((1,1));
+label("$P(x)$",(max,P(max)),E,fontsize(10));
+label("$Q(x)$",(max,Q(max)),E,fontsize(10));
+label("$R(x)$",(max,R(max)),E,fontsize(10));
+
+ /* axes */
+Label f; f.p=fontsize(8);
+xaxis(-2, 3, Ticks(f, 5, 1));
+yaxis(-1, 5, Ticks(f, 6, 1)); 
+</asy></center>
+
+Let <math>Q(x) = x^2 - 2x + 2</math>, <math>R(x) = 2x^2 - 4x + 3</math>. [[Completing the square]], we have <math>Q(x) = (x-1)^2 + 1</math>, and <math>R(x) = 2(x-1)^2 + 1</math>, so it follows that <math>P(x) \ge Q(x) \ge 1</math> for all <math>x</math> (by the [[Trivial Inequality]]). 
+
+Also, <math>1 = Q(1) \le P(1) \le R(1) = 1</math>, so <math>P(1) = 1</math>, and <math>P</math> obtains its minimum at the point <math>(1,1)</math>. Then <math>P(x)</math> must be of the form <math>c(x-1)^2 + 1</math> for some constant <math>c</math>; substituting <math>P(11) = 181</math> yields <math>c = \frac 95</math>. Finally, <math>P(16) = \frac 95 \cdot (16 - 1)^2 + 1 = \boxed{406}</math>.
+
+=== Solution 2 ===
+It can be seen that the function <math>P(x)</math> must be in the form <math>P(x) = ax^2 - 2ax + c</math> for some real <math>a</math> and <math>c</math>. This is because the [[derivative]] of <math>P(x)</math> is <math>2ax - 2a</math>, and a global minimum occurs only at <math>x = 1</math> (in addition, because of this derivative, the vertex of any quadratic polynomial occurs at <math>\frac{-b}{2a}</math>). Substituting <math>(1,1)</math> and <math>(11, 181)</math> we obtain two equations:
+
+<center><math>P(11) = 99a + c = 181</math>, and <math>P(1) = -a + c = 1</math>.</center>
+
+Solving, we get <math>a = \frac{9}{5}</math> and <math>c = \frac{14}{5}</math>, so <math>P(x) = \frac{9}{5}x^2 - \frac{18}{5}x + \frac {14}{5}</math>. Therefore, <math>P(16) = \boxed{406}</math>.
+
+=== Solution 3 ===
+
+Let <math>y = x^2 - 2x + 2</math>; note that <math>2y - 1 = 2x^2 - 4x + 3</math>. Setting <math>y = 2y - 1</math>, we find that equality holds when <math>y = 1</math> and therefore when <math>x^2 - 2x + 2 = 1</math>; this is true iff <math>x = 1</math>, so <math>P(1) = 1</math>.
+
+Let <math>Q(x) = P(x) - x</math>; clearly <math>Q(1) = 0</math>, so we can write <math>Q(x) = (x - 1)Q'(x)</math>, where <math>Q'(x)</math> is some linear function. Plug <math>Q(x)</math> into the given inequality:
+
+<math>x^2 - 3x + 2 \le Q(x) \le 2x^2 - 5x + 3</math>
+
+<math>(x - 1)(x - 2) \le (x - 1)Q'(x) \le (x - 1)(2x - 3)</math>, and thus
+
+<math>x - 2 \le Q'(x) \le 2x - 3</math>
+
+For all <math>x > 1</math>; note that the inequality signs are flipped if <math>x < 1</math>, and that the division is invalid for <math>x = 1</math>. However,
+
+<math>\lim_{x \to 1}  x - 2 = \lim_{x \to 1}  2x - 3 = -1</math>,
+
+and thus by the [[sandwich theorem]] <math>\lim_{x \to 1} Q'(x) = -1</math>; by the definition of a continuous function, <math>Q'(1) = -1</math>. Also, <math>Q(11) = 170</math>, so <math>Q'(11) = 170/(11-1) = 17</math>; plugging in and solving, <math>Q'(x) = (9/5)(x - 1) - 1</math>. Thus <math>Q(16) = 390</math>, and so <math>P(16) = \boxed{406}</math>.
+
+=== Solution 4 ===
+
+Let <math>Q(x) = P(x) - (x^2-2x+2)</math>, then <math>0\le Q(x) \le (x-1)^2</math> (note this is derived from the given inequality chain).  Therefore, <math>0\le Q(x+1) \le x^2 \Rightarrow Q(x+1) = Ax^2</math> for some real value A.
+
+<math>Q(11) = 10^2A \Rightarrow P(11)-(11^2-22+2)=100A \Rightarrow 80=100A \Rightarrow A=\frac{4}{5}</math>.
+
+<math>Q(16)=15^2A=180 \Rightarrow P(16)-(16^2-32+2) = 180 \Rightarrow P(16)=180+226= \boxed{406}</math>
+
+=== Solution 5 ===
+
+Let <math>P(x) = ax^2 + bx + c</math>. Plugging in <math>x = 1</math> to the expressions on both sides of the inequality, we see that <math>a + b + c = 1</math>. We see from the problem statement that <math>121a + 11b + c = 181</math>. Since we know the vertex of <math>P(x)</math> lies at <math>x = 1</math>, by symmetry we get <math>81a -9b + c = 181</math> as well. Since we now have three equations, we can solve this trivial system and get our answer of <math>\boxed{406}</math>.
+
+=== Solution 6 ===
+
+Similar to Solution 5, let <math>P(x) = ax^2 + bx + c</math>. Note that <math>(1,1)</math> is a vertex of the polynomial. Additionally, this means that <math>b = -2a</math> (since <math>\frac{-b}{2a}</math> is the minimum <math>x</math> point). Thus, we have <math>P(x) = ax^2 - 2ax + c</math>. Therefore <math>a - 2a + c = 1</math>. Moreover, <math>99a + c = 181</math>. And so our polynomial is <math>\frac{9}{5}x^2 - \frac{18}{5}x + \frac{14}{5}</math>. Plug in <math>x = 16</math> to get <math>\boxed{406}</math>.
+
+=== Solution 7 ===
+
+Very similar to Solution 6, start by noticing that <math>P(x)</math> is between two polynomials, we try to set them equal to find a point where the two polynomials intersect, meaning that <math>P(x)</math> would also have to intersect that point (it must be between the two graphs). Setting <math>x^2 - 2x + 2 = 2x^2 - 4x + 3</math>, we find that <math>x = 1</math>. Note that both of these graphs have the same vertex (at <math>x = 1</math>), and so <math>P(x)</math> must also have the same vertex <math>(1, 1)</math>. Setting <math>P(x) = ax^2 - 2ax + a + 1</math> (this is where we have a vertex at <math>(1, 1)</math>), we plug in <math>11</math> and find that <math>a = 1.8</math>. Evaluating <math>1.8x^2 - 3.6x + 2.8</math> when <math>x = 16</math> (our intended goal), we find that <math>P(16) = \boxed{406}</math>.

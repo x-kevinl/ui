@@ -1,0 +1,4 @@
+==Problem==
+In a mathematics contest with ten problems, a student gains 5 points for a correct answer and loses 2 points for an incorrect answer. If Olivia answered every problem and her score was 29, how many correct answers did she have?
+
+$ \text{(A)}\ 5\qquad\text{(B)}\ 6\qquad\text{(C)}\ 7\qquad\text{(D)}\ 8\qquad\text{(E)}\ 9 $

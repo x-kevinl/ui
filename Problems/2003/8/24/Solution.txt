@@ -1,0 +1,3 @@
+==Solution==
+
+The distance from Island $\text{X}$ to any point on the semicircle will always be constant. On the graph, this will represent a straight line. The distance between Island $\text{X}$ and line $\text{BC}$ will not be constant though. We can easily prove that the distance between $\text{X}$ and line $\text{BC}$ will represent a curve. As the ship travels from $B$ to $C$, the distance between the ship and Island $X$ will first decrease until it reaches the point $Y$ so that $\overline{XY}$ is perpendicular to $\overline{BC}$, and then increase afterwards. Hence the answer choice that fits them all is $\boxed{\text{(B)}}$.

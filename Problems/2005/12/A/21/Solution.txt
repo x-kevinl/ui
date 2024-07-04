@@ -1,0 +1,8 @@
+==Solution==
+$a^{c^{2005}} = b$
+
+[[Casework]] upon $c$:
+
+*$c = 0$: Then $a^0 = b \Longrightarrow b = 1$. Thus we get $(2004,1,0)$.
+*$c = 1$: Then $a^1 = b \Longrightarrow a = b$. Thus we get $(1002,1002,1)$.
+*$c \ge 2$: Then the exponent of $a$ becomes huge, and since $a \ge 2$ there is no way we can satisfy the second condition. Hence we have two ordered triples $\mathrm{(C)}$.

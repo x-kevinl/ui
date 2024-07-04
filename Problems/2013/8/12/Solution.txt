@@ -1,0 +1,8 @@
+==Solution==
+First, find the amount of money one will pay for three sandals without the discount. We have $\textdollar 50\times 3 \text{ sandals} = \textdollar 150$.
+
+Then, find the amount of money using the discount: $50 + 0.6 \times 50 + \frac{1}{2} \times 50 = \textdollar 105$.
+
+Finding the percentage yields $\frac{105}{150} = 70 \%$.
+
+To find the percent saved, we have $100 \% -70 \%= \boxed{\textbf{(B)}\ 30}$

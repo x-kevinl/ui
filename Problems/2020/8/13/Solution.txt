@@ -1,0 +1,2 @@
+==Solution 1==
+After Jamal adds $x$ purple socks, he has $(18+x)$ purple socks and $6+18+12+x=(36+x)$ total socks. This means the probability of drawing a purple sock is $\frac{18+x}{36+x}$, so we obtain $$\frac{18+x}{36+x}=\frac{3}{5}$$ Since $\frac{18+9}{36+9}=\frac{27}{45}=\frac{3}{5}$, the answer is $\boxed{\textbf{(B) }9}$.

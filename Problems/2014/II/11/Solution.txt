@@ -1,0 +1,40 @@
+==Solution 1==
+Let <math>P</math> be the foot of the perpendicular from <math>A</math> to <math>\overline{CR}</math>, so <math>\overline{AP}\parallel\overline{EM}</math>. Since triangle <math>ARC</math> is isosceles, <math>P</math> is the midpoint of <math>\overline{CR}</math>, and <math>\overline{PM}\parallel\overline{CD}</math>. Thus, <math>APME</math> is a parallelogram and <math>AE = PM = \frac{CD}{2}</math>. We can then use coordinates. Let <math>O</math> be the foot of altitude <math>RO</math> and set <math>O</math> as the origin. Now we notice special right triangles! In particular, <math>DO = \frac{1}{2}</math> and <math>EO = RO = \frac{\sqrt{3}}{2}</math>, so <math>D\left(\frac{1}{2}, 0\right)</math>, <math>E\left(-\frac{\sqrt{3}}{2}, 0\right)</math>, and <math>R\left(0, \frac{\sqrt{3}}{2}\right).</math> <math>M =</math> midpoint<math>(D, R) = \left(\frac{1}{4}, \frac{\sqrt{3}}{4}\right)</math> and the slope of <math>ME = \frac{\frac{\sqrt{3}}{4}}{\frac{1}{4} + \frac{\sqrt{3}}{2}} = \frac{\sqrt{3}}{1 + 2\sqrt{3}}</math>, so the slope of <math>RC = -\frac{1 + 2\sqrt{3}}{\sqrt{3}}.</math> Instead of finding the equation of the line, we use the definition of slope: for every <math>CO = x</math> to the left, we go <math>\frac{x(1 + 2\sqrt{3})}{\sqrt{3}} = \frac{\sqrt{3}}{2}</math> up. Thus, <math>x = \frac{\frac{3}{2}}{1 + 2\sqrt{3}} = \frac{3}{4\sqrt{3} + 2} = \frac{3(4\sqrt{3} - 2)}{44} = \frac{6\sqrt{3} - 3}{22}.</math> <math>DC = \frac{1}{2} - x = \frac{1}{2} - \frac{6\sqrt{3} - 3}{22} = \frac{14 - 6\sqrt{3}}{22}</math>, and <math>AE = \frac{7 - \sqrt{27}}{22}</math>, so the answer is <math>\boxed{056}</math>.
+
+<asy>
+unitsize(8cm);
+pair a, o, d, r, e, m, cm, c,p;
+o =(0,0);
+d = (0.5, 0);
+r = (0,sqrt(3)/2);
+e = (-sqrt(3)/2,0);
+
+m = midpoint(d--r);
+draw(e--m);
+cm = foot(r, e, m);
+draw(L(r, cm,1, 1));
+c = IP(L(r, cm, 1, 1), e--d);
+clip(r--d--e--cycle);
+draw(r--d--e--cycle);
+draw(rightanglemark(e, cm, c, 1.5));
+a = -(4sqrt(3)+9)/11+0.5;
+dot(a);
+draw(a--r, dashed);
+draw(a--c, dashed);
+pair[] PPAP = {a, o, d, r, e, m, c};
+for(int i = 0; i<7; ++i) {
+	dot(PPAP[i]);
+}
+label("$A$", a, W);
+label("$E$", e, SW);
+label("$C$", c, S);
+label("$O$", o, S);
+label("$D$", d, SE);
+label("$M$", m, NE);
+label("$R$", r, N);
+p = foot(a, r, c);
+label("$P$", p, NE);
+draw(p--m, dashed);
+draw(a--p, dashed);
+dot(p);
+</asy>

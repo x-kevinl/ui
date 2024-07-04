@@ -1,0 +1,3 @@
+==Solution 1==
+
+Let the radius of the large circle be $R$. Then, the radius of the smaller circles are $\frac R2$. The areas of the circles are directly proportional to the square of the radii, so the ratio of the area of the small circle to the large one is $\frac 14$. This means the combined area of the 2 smaller circles is half of the larger circle, and therefore the shaded region is equal to the combined area of the 2 smaller circles, which is $\boxed{\textbf{(D) } 1}$.

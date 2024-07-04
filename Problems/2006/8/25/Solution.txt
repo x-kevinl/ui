@@ -1,0 +1,5 @@
+==Solution==
+
+Notice that 44 and 38 are both even, while 59 is odd. If any odd prime is added to 59, an even number will be obtained. However, the only way to obtain this even number(common sum) would be to add another even number to 44, and a different one to 38. Since there is only one even prime (2), the middle card's hidden number cannot be an odd prime, and so must be even. Therefore, the middle card's hidden number must be 2, so the constant sum is $59+2=61$. Thus, the first card's hidden number is $61-44=17$, and the last card's hidden number is $61-38=23$. 
+
+Since the sum of the hidden primes is $2+17+23=42$, the average of the primes is $\dfrac{42}{3}=\boxed{\textbf{(B)} 14}$.

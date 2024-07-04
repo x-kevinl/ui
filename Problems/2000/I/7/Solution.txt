@@ -1,0 +1,17 @@
+==Solution 1==
+We can rewrite <math>xyz=1</math> as <math>\frac{1}{z}=xy</math>.
+
+Substituting into one of the given equations, we have 
+<cmath>x+xy=5</cmath>
+<cmath>x(1+y)=5</cmath>
+<cmath>\frac{1}{x}=\frac{1+y}{5}.</cmath>
+
+We can substitute back into <math>y+\frac{1}{x}=29</math> to obtain
+<cmath>y+\frac{1+y}{5}=29</cmath>
+<cmath>5y+1+y=145</cmath>
+<cmath>y=24.</cmath>
+
+We can then substitute once again to get
+<cmath>x=\frac15</cmath>
+<cmath>z=\frac{5}{24}.</cmath>
+Thus, <math>z+\frac1y=\frac{5}{24}+\frac{1}{24}=\frac{1}{4}</math>, so <math>m+n=\boxed{005}</math>.

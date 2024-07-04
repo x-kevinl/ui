@@ -1,0 +1,4 @@
+== Solution ==
+
+We define <math>Q(x)=P(x)-x+7</math>, noting that it has roots at <math>17</math> and <math>24</math>. Hence <math>P(x)-x+7=A(x-17)(x-24)</math>. In particular, this means that 
+<math>P(x)-x-3=A(x-17)(x-24)-10</math>. Therefore, <math>x=n_1,n_2</math> satisfy <math>A(x-17)(x-24)=10</math>, where <math>A</math>, <math>(x-17)</math>, and <math>(x-24)</math> are integers. This cannot occur if <math>x\le 17</math> or <math>x\ge 24</math> because the product <math>(x-17)(x-24)</math> will either be too large or not be a divisor of <math>10</math>. We find that <math>x=19</math> and <math>x=22</math> are the only values that allow <math>(x-17)(x-24)</math> to be a factor of <math>10</math>.  Hence the answer is <math>19\cdot 22=\boxed{418}</math>.

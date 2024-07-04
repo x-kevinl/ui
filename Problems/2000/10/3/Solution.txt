@@ -1,0 +1,8 @@
+== Solution 1 (Algebra)==
+We can begin by labeling the number of initial jellybeans $x$. If she ate $20\%$ of the jellybeans, then $80\%$ is remaining. Hence, after day 1, there are:
+$0.8 * x$
+
+After day 2, there are:
+$0.8 * 0.8 * x$ or $0.64x$ jellybeans. $0.64x = 32$, so $x = \boxed{(B)   50}$
+
+Solution By: armang32324

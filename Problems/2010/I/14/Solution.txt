@@ -1,0 +1,4 @@
+== Solution 1 ==
+Observe that <math>f</math> is strictly increasing in <math>n</math>. We realize that we need <math>100</math> terms to add up to around <math>300</math>, so we need some sequence of <math>2</math>s, <math>3</math>s, and then <math>4</math>s.
+
+It follows that <math>n \approx 100</math> (alternatively, use binary search to get to this, with <math>n\le 1000</math>). Manually checking shows that <math>f(109) = 300</math> and <math>f(110) > 300</math>. Thus, our answer is <math>\boxed{109}</math>.

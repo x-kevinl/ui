@@ -1,0 +1,8 @@
+== Solution ==
+[[Image:2005_12A_AMC-7b.png]]
+
+Arguable the hardest part of this question is to visualize the diagram. Since each side of $EFGH$ can be extended to pass through a vertex of $ABCD$, we realize that $EFGH$ must be tilted in such a fashion. Let a side of $EFGH$ be $x$. 
+
+[[Image:2005_12A_AMC-7.png]]
+
+Notice the [[right triangle]] (in blue) with legs $1, x+1$ and [[hypotenuse]] $\sqrt{50}$. By the [[Pythagorean Theorem]], we have $1^2 + (x+1)^2 = (\sqrt{50})^2 \Longrightarrow (x+1)^2 = 49 \Longrightarrow x = 6$. Thus, $[EFGH] = x^2 = 36\ \mathrm{(C)}$

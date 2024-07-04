@@ -1,0 +1,17 @@
+==Problem 24==
+A large square region is paved with $n^2$ gray square tiles, each measuring $s$ inches on a side. A border $d$ inches wide surrounds each tile. The figure below shows the case for $n=3$. When $n=24$, the $576$ gray tiles cover $64\%$ of the area of the large square region. What is the ratio $\frac{d}{s}$ for this larger value of $n?$
+
+<asy>
+draw((0,0)--(13,0)--(13,13)--(0,13)--cycle);
+filldraw((1,1)--(4,1)--(4,4)--(1,4)--cycle, mediumgray);
+filldraw((1,5)--(4,5)--(4,8)--(1,8)--cycle, mediumgray);
+filldraw((1,9)--(4,9)--(4,12)--(1,12)--cycle, mediumgray);
+filldraw((5,1)--(8,1)--(8,4)--(5,4)--cycle, mediumgray);
+filldraw((5,5)--(8,5)--(8,8)--(5,8)--cycle, mediumgray);
+filldraw((5,9)--(8,9)--(8,12)--(5,12)--cycle, mediumgray);
+filldraw((9,1)--(12,1)--(12,4)--(9,4)--cycle, mediumgray);
+filldraw((9,5)--(12,5)--(12,8)--(9,8)--cycle, mediumgray);
+filldraw((12,12)--(12,9)--(9,9)--(9,12)--cycle, mediumgray);
+</asy>	
+
+$\textbf{(A) }\frac{6}{25} \qquad \textbf{(B) }\frac{1}{4} \qquad \textbf{(C) }\frac{9}{25} \qquad \textbf{(D) }\frac{7}{16} \qquad \textbf{(E) }\frac{9}{16}$

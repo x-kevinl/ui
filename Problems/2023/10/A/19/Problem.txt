@@ -1,0 +1,4 @@
+==Problem==
+The line segment formed by $A(1, 2)$ and $B(3, 3)$ is rotated to the line segment formed by $A'(3, 1)$ and $B'(4, 3)$ about the point $P(r, s)$. What is $|r-s|$?
+
+$\textbf{(A) } \frac{1}{4} \qquad \textbf{(B) } \frac{1}{2} \qquad \textbf{(C) } \frac{3}{4}   \qquad \textbf{(D) } \frac{2}{3} \qquad   \textbf{(E) } 1$

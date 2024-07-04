@@ -1,0 +1,19 @@
+== Solution ==
+Let the side length be called <math>x</math>, so <math>x=AB=BC=CD=DE=EF=AF</math>. 
+
+[[Image:2006_II_AIME-1.png]]
+
+The diagonal <math>BF=\sqrt{AB^2+AF^2}=\sqrt{x^2+x^2}=x\sqrt{2}</math>. Then the areas of the triangles AFB and CDE in total are <math>\frac{x^2}{2}\cdot 2</math>,
+and the area of the rectangle BCEF equals <math>x\cdot x\sqrt{2}=x^2\sqrt{2}</math>
+
+Then we have to solve the equation 
+<div style="text-align:center;">
+<math>2116(\sqrt{2}+1)=x^2\sqrt{2}+x^2</math>.
+
+<math>2116(\sqrt{2}+1)=x^2(\sqrt{2}+1)</math>
+
+<math>2116=x^2</math>
+
+<math>x=46</math></div>
+
+Therefore, <math>AB</math> is <math>\boxed{046}</math>.

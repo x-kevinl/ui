@@ -1,0 +1,4 @@
+== Problem ==
+A two-digit positive integer is said to be $\emph{cuddly}$ if it is equal to the sum of its nonzero tens digit and the square of its units digit. How many two-digit positive integers are cuddly?
+
+$\textbf{(A) }0\qquad\textbf{(B) }1\qquad\textbf{(C) }2\qquad\textbf{(D) }3\qquad\textbf{(E) }4$

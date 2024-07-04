@@ -1,0 +1,7 @@
+== Problem ==
+
+Pick two consecutive positive integers whose sum is less than $100$. Square both
+of those integers and then find the difference of the squares. Which of the
+following could be the difference?
+
+$\mathrm{(A)}\ 2 \qquad \mathrm{(B)}\ 64 \qquad \mathrm{(C)}\ 79 \qquad \mathrm{(D)}\ 96 \qquad \mathrm{(E)}\ 131$

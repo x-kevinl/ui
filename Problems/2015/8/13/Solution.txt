@@ -1,0 +1,10 @@
+==Solutions==
+
+===Solution 1===
+
+Since there will be $9$ elements after removal, and their mean is $6$, we know their sum is $54$. We also know that the sum of the set pre-removal is $66$. Thus, the sum of the $2$ elements removed is $66-54=12$. There are only $\boxed{\textbf{(D)}~5}$ subsets of $2$ elements that sum to $12$: $\{1,11\}, \{2,10\}, \{3, 9\}, \{4, 8\}, \{5, 7\}$.
+
+===Solution 2===
+We can simply remove $5$ subsets of $2$ numbers while leaving only $6$ behind. The average of this one-number set is still $6$, so the answer is $\boxed{\textbf{(D)}~5}$.
+
+-tryanotherangle

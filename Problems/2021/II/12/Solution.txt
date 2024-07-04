@@ -1,0 +1,69 @@
+==Solution 1 (Sines and Cosines)==
+Since we are asked to find <math>\tan \theta</math>, we can find <math>\sin \theta</math> and <math>\cos \theta</math> separately and use their values to get <math>\tan \theta</math>. We can start by drawing a diagram. Let the vertices of the quadrilateral be <math>A</math>, <math>B</math>, <math>C</math>, and <math>D</math>. Let <math>AB = 5</math>, <math>BC = 6</math>, <math>CD = 9</math>, and <math>DA = 7</math>. Let <math>AX = a</math>, <math>BX = b</math>, <math>CX = c</math>, and <math>DX = d</math>. We know that <math>\theta</math> is the acute angle formed between the intersection of the diagonals <math>AC</math> and <math>BD</math>.
+<asy>
+unitsize(4cm);
+pair A,B,C,D,X;
+A = (0,0);
+B = (1,0);
+C = (1.25,-1);
+D = (-0.75,-0.75);
+draw(A--B--C--D--cycle,black+1bp);
+X = intersectionpoint(A--C,B--D);
+draw(A--C);
+draw(B--D);
+label("$A$",A,NW);
+label("$B$",B,NE);
+label("$C$",C,SE);
+label("$D$",D,SW);
+dot(X);
+label("$X$",X,S);
+label("$5$",(A+B)/2,N);
+label("$6$",(B+C)/2,E);
+label("$9$",(C+D)/2,S);
+label("$7$",(D+A)/2,W);
+label("$\theta$",X,2.5E);
+label("$a$",(A+X)/2,NE);
+label("$b$",(B+X)/2,NW);
+label("$c$",(C+X)/2,SW);
+label("$d$",(D+X)/2,SE);
+</asy>
+We are given that the area of quadrilateral <math>ABCD</math> is <math>30</math>. We can express this area using the areas of triangles <math>AXB</math>, <math>BXC</math>, <math>CXD</math>, and <math>DXA</math>. Since we want to find <math>\sin \theta</math> and <math>\cos \theta</math>, we can represent these areas using <math>\sin \theta</math> as follows:
+<cmath>\begin{align*}
+30 &=[ABCD] \\
+&=[AXB] + [BXC] + [CXD] + [DXA] \\
+&=\frac{1}{2} ab \sin (\angle AXB) + \frac{1}{2} bc \sin (\angle BXC) + \frac{1}{2} cd \sin (\angle CXD) + \frac{1}{2} da \sin (\angle AXD) \\
+&=\frac{1}{2} ab \sin (180^\circ - \theta) + \frac{1}{2} bc \sin (\theta) + \frac{1}{2} cd \sin (180^\circ - \theta) + \frac{1}{2} da \sin (\theta).
+\end{align*}</cmath>
+We know that <math>\sin (180^\circ - \theta) = \sin \theta</math>. Therefore it follows that:
+<cmath>\begin{align*}
+30 &=\frac{1}{2} ab \sin (180^\circ - \theta) + \frac{1}{2} bc \sin (\theta) + \frac{1}{2} cd \sin (180^\circ - \theta) + \frac{1}{2} da \sin (\theta) \\
+&=\frac{1}{2} ab \sin (\theta) + \frac{1}{2} bc \sin (\theta) + \frac{1}{2} cd \sin (\theta) + \frac{1}{2} da \sin (\theta) \\
+&=\frac{1}{2}\sin\theta (ab + bc + cd + da).
+\end{align*}</cmath>
+From here we see that <math>\sin \theta = \frac{60}{ab + bc + cd + da}</math>. Now we need to find <math>\cos \theta</math>. Using the Law of Cosines on each of the four smaller triangles, we get following equations:
+<cmath>\begin{align*}  
+5^2 &= a^2 + b^2 - 2ab\cos(180^\circ-\theta), \\  
+6^2 &= b^2 + c^2 - 2bc\cos \theta, \\  
+9^2 &= c^2 + d^2 - 2cd\cos(180^\circ-\theta), \\  
+7^2 &= d^2 + a^2 - 2da\cos \theta.  
+\end{align*}</cmath>
+We know that <math>\cos (180^\circ - \theta) = -\cos \theta</math> for all <math>\theta</math>. We can substitute this value into our equations to get:
+<cmath>\begin{align*}  
+5^2 &= a^2 + b^2 + 2ab\cos \theta, &&(1) \\  
+6^2 &= b^2 + c^2 - 2bc\cos \theta, &&(2) \\  
+9^2 &= c^2 + d^2 + 2cd\cos \theta, &&(3) \\  
+7^2 &= d^2 + a^2 - 2da\cos \theta. &&(4)
+\end{align*}</cmath>
+If we subtract <math>(2)+(4)</math> from <math>(1)+(3)</math>, the squared terms cancel, leaving us with:
+<cmath>\begin{align*}
+5^2 + 9^2 - 6^2 - 7^2 &= 2ab \cos \theta + 2bc \cos \theta + 2cd \cos \theta + 2da \cos \theta \\ 
+21 &= 2\cos \theta (ab  + bc + cd + da).
+\end{align*}</cmath>
+From here we see that <math>\cos \theta = \frac{21/2}{ab + bc + cd + da}</math>.
+
+Since we have figured out <math>\sin \theta</math> and <math>\cos \theta</math>, we can calculate <math>\tan \theta</math>: <cmath>\tan \theta = \frac{\sin \theta}{\cos \theta} = \frac{\frac{60}{ab + bc + cd + da}}{\frac{21/2}{ab + bc + cd + da}} = \frac{60}{21/2} = \frac{120}{21} = \frac{40}{7}.</cmath>
+Therefore our answer is <math>40 + 7 = \boxed{047}</math>.
+
+~ Steven Chen (www.professorchenedu.com)
+
+~ my_aops_lessons

@@ -1,0 +1,10 @@
+== Solution 1 ==
+First, we seat the children.
+
+The first child can be seated in $3$ spaces.
+
+The second child can be seated in $2$ spaces.
+
+Now there are $2 \times 1$ ways to seat the adults.
+
+$3 \times 2 \times 2 = 12 \Rightarrow \text{(B)}$

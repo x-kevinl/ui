@@ -1,0 +1,7 @@
+== Solution ==
+
+The total number of combinations when rolling two dice is $6*6 = 36$.
+
+There are three ways that a sum of 7 can be rolled. $2+5$, $4+3$, and $6+1$. There are two 2's on one die and two 5's on the other, so there are a total of 4 ways to roll the combination of 2 and 5. There are two 4's on one die and two 3's on the other, so there are a total of 4 ways to roll the combination of 4 and 3. There are two 6's on one die and two 1's on the other, so there are a total of 4 ways to roll the combination of 6 and 1. Add $4 + 4 + 4 = 12$.
+
+Thus, our probability is $\frac{12}{36} = \frac{1}{3}$. The answer is $\boxed{\textbf{(D)}\ \frac13}$.

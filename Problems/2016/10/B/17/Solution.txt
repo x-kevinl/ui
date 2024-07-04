@@ -1,0 +1,25 @@
+==Solution 1==
+Let us call the six faces of our cube $a,b,c,d,e,$ and $f$ (where $a$ is opposite $d$, $c$ is opposite $e$, and $b$ is opposite $f$.
+Thus, for the eight vertices, we have the following products: $abc,abe,bcd,bde,acf,cdf,aef,$ and $def$.
+Let us find the sum of these products:
+$$abc+abe+bcd+bde+acf+cdf+aef+def$$
+We notice $b$ is a factor of the first four terms, and $f$ is a factor of the last four terms.
+$$b(ac+ae+cd+de)+f(ac+ae+cd+de)$$
+Now, we can factor even more:
+
+$$\begin{align*}
+& (b+f)(ac+ae+cd+de)
+\\
+= &(b+f)(a(c+e)+d(c+e))
+\\
+= &(b+f)(a+d)(c+e)
+\end{align*}$$
+We have the product. Notice how the factors are sums of opposite faces. The greatest sum possible is $(7+2)$,$(6+3)$, and $(5+4)$ all factors.
+$$\begin{align*}
+& (7+2)(6+3)(5+4)
+\\
+= & 9 \cdot 9 \cdot 9
+\\
+= & 729.
+\end{align*}$$
+Thus our answer is $\boxed{\textbf{(D) }729}$.

@@ -1,0 +1,2 @@
+==Solution 1==
+Let Ray and Tom drive 40 miles. Ray's car would require $\frac{40}{40}=1$ gallon of gas and Tom's car would require $\frac{40}{10}=4$ gallons of gas. They would have driven a total of $40+40=80$ miles, on $1+4=5$ gallons of gas, for a combined rate of $\frac{80}{5}=$ $\boxed{\textbf{(B) }16}$

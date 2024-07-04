@@ -1,0 +1,12 @@
+== Solution 1 ==
+Given that each person shakes hands with two people, we can view all of these through graph theory as 'rings'.  This will split it into four cases:  Three rings of three, one ring of three and one ring of six, one ring of four and one ring of five, and one ring of nine. (All other cases that sum to nine won't work, since they have at least one 'ring' of two or fewer points, which doesn't satisfy the handshaking conditions of the problem.)
+
+'''Case 1:'''   To create our groups of three, there are <math>\dfrac{\dbinom{9}{3}\dbinom{6}{3}\dbinom{3}{3}}{3!}</math>.  In general, the number of ways we can arrange people within the rings to count properly is <math>\dfrac{(n-1)!}{2}</math>, since there are <math>(n-1)!</math> ways to arrange items in the circle, and then we don't want to want to consider reflections as separate entities.  Thus, each of the three cases has <math>\dfrac{(3-1)!}{2}=1</math> arrangements.  Therefore, for this case, there are <math>\left(\dfrac{\dbinom{9}{3}\dbinom{6}{3}\dbinom{3}{3}}{3!}\right)(1)^3=280</math>
+
+'''Case 2:'''  For three and six, there are <math>\dbinom{9}{6}=84</math> sets for the rings.  For organization within the ring, as before, there is only one way to arrange the ring of three.  For six, there is <math>\dfrac{(6-1)!}{2}=60</math>.  This means there are <math>(84)(1)(60)=5040</math> arrangements.
+
+'''Case 3:'''  For four and five, there are <math>\dbinom{9}{5}=126</math> sets for the rings.  Within the five, there are <math>\dfrac{4!}{2}=12</math>, and within the four there are <math>\dfrac{3!}{2}=3</math> arrangements.  This means the total is <math>(126)(12)(3)=4536</math>.
+
+'''Case 4:'''  For the nine case, there is <math>\dbinom{9}{9}=1</math> arrangement for the ring.  Within it, there are <math>\dfrac{8!}{2}=20160</math> arrangements.
+
+Summing the cases, we have <math>280+5040+4536+20160=30016 \to \boxed{016}</math>.

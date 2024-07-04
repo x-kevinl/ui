@@ -1,0 +1,5 @@
+==Problem==
+
+How many three-digit positive integers have an odd number of even digits?
+
+$\textbf{(A) }150\qquad\textbf{(B) }250\qquad\textbf{(C) }350\qquad\textbf{(D) }450\qquad\textbf{(E) }550$

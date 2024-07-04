@@ -1,0 +1,10 @@
+==Solution 1==
+If you multiply the corresponding terms of two arithmetic sequences, you get the terms of a quadratic function. Thus, we have a quadratic <math>ax^2+bx+c</math> such that <math>f(1)=1440</math>, <math>f(2)=1716</math>, and <math>f(3)=1848</math>. Plugging in the values for x gives us a system of three equations:
+
+<math>a+b+c=1440</math>
+
+<math>4a+2b+c=1716</math>
+
+<math>9a+3b+c=1848</math>
+
+Solving gives <math>a=-72, b=492,</math> and <math>c=1020</math>. Thus, the answer is <math>-72(8)^2+492\cdot8+1020= \boxed{348}.</math>

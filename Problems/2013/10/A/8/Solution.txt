@@ -1,0 +1,5 @@
+==Solution==
+
+Factoring out, we get: $\frac{2^{2012}(2^2 + 1)}{2^{2012}(2^2-1)}$.  
+
+Cancelling out the $2^{2012}$ from the numerator and denominator, we see that it simplifies to $\boxed{\textbf{(C) }\frac{5}{3}}$.

@@ -1,0 +1,6 @@
+== Solution ==
+Let the height of the panes equal $5x$, and let the width of the panes equal $2x$.  Now notice that the total width of the borders equals $10$, and the total height of the borders is $6$.  We have
+$$10 + 4(2x) = 6 + 2(5x)$$
+$$x = 2$$
+Now, the total side length of the window equals 
+$$10+ 4(2x) = 10 + 16 = \boxed{\textbf{(A)}\ 26}$$

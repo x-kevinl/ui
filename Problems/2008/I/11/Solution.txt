@@ -1,0 +1,31 @@
+== Solution 1a ==
+Let <math>a_n</math> and <math>b_n</math> denote, respectively, the number of sequences of length <math>n</math> ending in <math>A</math> and <math>B</math>. If a sequence ends in an <math>A</math>, then it must have been formed by appending two <math>A</math>s to the end of a string of length <math>n-2</math>. If a sequence ends in a <math>B,</math> it must have either been formed by appending one <math>B</math> to a string of length <math>n-1</math> ending in an <math>A</math>, or by appending two <math>B</math>s to a string of length <math>n-2</math> ending in a <math>B</math>. Thus, we have the [[recursion]]s
+<cmath>
+\begin{align*}
+a_n &= a_{n-2} + b_{n-2}\\
+b_n &= a_{n-1} + b_{n-2} 
+\end{align*}
+</cmath>
+By counting, we find that <math>a_1 = 0, b_1 = 1, a_2 = 1, b_2 = 0</math>. 
+<cmath>\begin{array}{|r||r|r|||r||r|r|}
+\hline
+n & a_n & b_n & n & a_n & b_n\\
+\hline
+1&0&1&
+8&6&10\\
+2&1&0&
+9&11&11\\
+3&1&2&
+10&16&21\\
+4&1&1&
+11&22&27\\
+5&3&3&
+12&37&43\\
+6&2&4&
+13&49&64\\
+7&6&5&
+14&80&92\\
+\hline
+\end{array}
+</cmath>
+Therefore, the number of such strings of length <math>14</math> is <math>a_{14} + b_{14} = \boxed{172}</math>.

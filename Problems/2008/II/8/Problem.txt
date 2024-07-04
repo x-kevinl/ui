@@ -1,0 +1,6 @@
+== Problem ==
+Let <math>a = \pi/2008</math>. Find the smallest positive integer <math>n</math> such that
+<cmath>
+2[\cos(a)\sin(a) + \cos(4a)\sin(2a) + \cos(9a)\sin(3a) + \cdots + \cos(n^2a)\sin(na)]
+</cmath>
+is an integer.

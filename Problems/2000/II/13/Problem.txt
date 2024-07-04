@@ -1,0 +1,2 @@
+== Problem ==
+The [[equation]] <math>2000x^6+100x^5+10x^3+x-2=0</math> has exactly two real roots, one of which is <math>\frac{m+\sqrt{n}}r</math>, where <math>m</math>, <math>n</math> and <math>r</math> are integers, <math>m</math> and <math>r</math> are relatively prime, and <math>r>0</math>. Find <math>m+n+r</math>.

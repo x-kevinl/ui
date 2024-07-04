@@ -1,0 +1,3 @@
+==Solution==
+
+The smaller rectangles each have the same height as the original square, but have $ \frac{1}{4} $ the length, since the paper is folded in half and then cut in half the same way. The larger rectangle has the same height as the original square but has $ \frac{1}{2} $ the length, since the paper is cut in half after the fold but the fold retains both sides of the larger rectangle. Therefore, the smaller rectangles have dimensions $ 4 \times 1 $ and the larger rectangle has dimensions $ 4 \times 2 $. The ratio of their perimeters is $ \frac{2(4+1)}{2(4+2)}=\frac{5}{6}, \boxed{\text{E}} $

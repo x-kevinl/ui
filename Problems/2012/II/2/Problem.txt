@@ -1,0 +1,2 @@
+== Problem 2 ==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>Two geometric sequences <math>a_1, a_2, a_3, \ldots</math> and <math>b_1, b_2, b_3, \ldots</math> have the same common ratio, with <math>a_1 = 27</math>, <math>b_1=99</math>, and <math>a_{15}=b_{11}</math>. Find <math>a_9</math>.<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>

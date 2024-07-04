@@ -1,0 +1,13 @@
+==Problem==
+Which of the following conditions is sufficient to guarantee that integers $x$, $y$, and $z$ satisfy the equation
+$$x(x-y)+y(y-z)+z(z-x) = 1?$$
+
+$\textbf{(A)} \: x>y$ and $y=z$
+
+$\textbf{(B)} \: x=y-1$ and $y=z-1$
+
+$\textbf{(C)} \: x=z+1$ and $y=x+1$
+
+$\textbf{(D)} \: x=z$ and $y-1=x$
+
+$\textbf{(E)} \: x+y+z=1$

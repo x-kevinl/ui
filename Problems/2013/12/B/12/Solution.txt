@@ -1,0 +1,31 @@
+== Solution ==
+Note that cities $C$ and $E$ can be removed when counting paths because if a path goes in to $C$ or $E$, there is only one possible path to take out of cities $C$ or $E$.
+So the diagram is as follows:
+
+<asy>
+unitsize(10mm);
+defaultpen(linewidth(1.2pt)+fontsize(10pt));
+dotfactor=4;
+pair A=(1,0), B=(4.24,0), C=(5.24,3.08), D=(2.62,4.98), E=(0,3.08);
+dot (A);
+dot (B);
+
+dot (D);
+
+label("$A$",A,S);
+label("$B$",B,SE);
+
+label("$D$",D,N);
+
+draw(A--B..D..cycle);
+draw(A--D);
+draw(B--D);
+</asy>
+
+Now we proceed with casework. Remember that there are two ways to travel from $A$ to $D$, $D$ to $A$, $B$ to $D$ and $D$ to $B$.:
+
+Case 1 $A \Rightarrow D$: From $D$, if the path returns to $A$, then the next path must go to $B\Rightarrow D \Rightarrow B$. There are $2 \cdot 1 \cdot 2 = 4$ possibilities of the path $ADABDB$. If the path goes to $D$ from $B$, then the path must continue with either $BDAB$ or $BADB$. There are $2 \cdot 2 \cdot 2 = 8$ possibilities. So, this case gives $4+8=12$ different possibilities.
+
+Case 2 $A \Rightarrow B$: The path must continue with $BDADB$. There are $2 \cdot 2 = 4$ possibilities for this case. 
+
+Putting the two cases together gives $12+4 = \boxed{\textbf{(D)} \ 16}$

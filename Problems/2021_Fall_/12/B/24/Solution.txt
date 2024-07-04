@@ -1,0 +1,19 @@
+==Solution 1 (Reflection)==
+
+[[File:2021AMC12BFallP24.png|center|500px]]
+
+By the Law of Cosine $\cos A = \frac{AC^2 + AB^2 - BC^2}{ 2 \cdot AC \cdot AB} = \frac{20^2 + 11^2 - 24^2}{2\cdot20\cdot11} = -\frac18$
+
+As $ABEC$ is a cyclic quadrilateral, $\angle CEA = \angle CBA$. As $BDEF$ is a cyclic quadrilateral, $\angle CBA = \angle FEA$.
+
+$\because \quad \angle CEA = \angle FEA \quad \text{and} \quad \angle CAE = \angle FAE$
+
+$\therefore \quad \triangle AFE \cong \triangle ACE$ by $ASA$
+
+Hence, $AF = AC = 20$
+
+By the Law of Cosine $CF = \sqrt{20^2 + 20^2 - 2 \cdot 20 \cdot 20 (-\frac18)} = \sqrt{900} = \boxed{\textbf{C}~\text{30}}$
+
+Note that $F$ is $C$'s reflection over line $AE$, quadrilateral $ACEF$ is a kite symmetrical by line $AE$, $AE \perp CF$.
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen]

@@ -1,0 +1,4 @@
+== Solution 1(Easy one) ==
+When a light beam reflects off a surface, the path is like that of a ball bouncing. Picture that, and also imagine X, Y, and Z coordinates for the cube vertices. The coordinates will all involve 0's and 12's only, so that means that the X, Y, and Z distance traveled by the light must all be divisible by 12. Since the light's Y changes by 5 and the X changes by 7 (the Z changes by 12, don't worry about that), and 5 and 7 are relatively prime to 12, the light must make 12 reflections onto the XY plane or the face parallel to the XY plane. 
+
+In each reflection, the distance traveled by the light is <math>\sqrt{ (12^2) + (5^2) + (7^2) }</math> = <math>\sqrt{218}</math>. This happens 12 times, so the total distance is <math>12\sqrt{218}</math>. <math>m=12</math> and <math>n=218</math>, so therefore, the answer is <math>m+n=\boxed{230}</math>.

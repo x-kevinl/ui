@@ -1,0 +1,8 @@
+==Solution 1==
+
+Let the radius of the larger and smaller circles be $x$ and $y$, respectively. Also, let their centers be $O_1$ and $O_2$, respectively. Then the ratio we need to find is
+$$\dfrac{\pi x^2}{\pi y^2} = \dfrac{x^2}{y^2} $$
+Draw the radii from the centers of the circles to $A$ and $B$. We can easily conclude that the $30^{\circ}$ belongs to the larger circle, and the $60$ degree arc belongs to the smaller circle. Therefore, $m\angle AO_1B = 30^{\circ}$ and $m\angle AO_2B = 60^{\circ}$. Note that $\Delta AO_2B$ is equilateral, so when chord AB is drawn, it has length $y$. Now, applying the Law of Cosines on $\Delta AO_1B$:
+$$ y^2 = x^2 + x^2 - 2x^2\cos{30} = 2x^2 - x^2\sqrt{3} = (2 - \sqrt{3})x^2 $$
+$$ \dfrac{x^2}{y^2} = \dfrac{1}{2 - \sqrt{3}} = \dfrac{2 + \sqrt{3}}{4-3} = 2 + \sqrt{3}=\boxed{\textbf{(D)}}$$
+(Solution by brandbest1)

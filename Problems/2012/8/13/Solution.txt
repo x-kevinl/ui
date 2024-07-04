@@ -1,0 +1,2 @@
+==Solution 1==
+We assume that the price of the pencils remains constant. Convert $ \textdollar 1.43 $ and $ \textdollar 1.87 $ to cents.  Since the price of the pencils is more than one penny, we can find the price of one pencil (in cents) by taking the greatest common divisor of $ 143 $ and $ 187 $, which is $ 11 $. Therefore, Jamar bought $ \frac{143}{11} \implies 13 $ pencils and Sharona bought $ \frac{187}{11} \implies 17 $ pencils. Thus, Sharona bought $ 17-13 = \boxed{\textbf{(C)}\ 4} $  more pencils than Jamar.

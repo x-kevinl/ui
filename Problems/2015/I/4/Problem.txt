@@ -1,0 +1,2 @@
+==Problem==
+Point <math>B</math> lies on line segment <math>\overline{AC}</math> with <math>AB=16</math> and <math>BC=4</math>. Points <math>D</math> and <math>E</math> lie on the same side of line <math>AC</math> forming equilateral triangles <math>\triangle ABD</math> and <math>\triangle BCE</math>. Let <math>M</math> be the midpoint of <math>\overline{AE}</math>, and <math>N</math> be the midpoint of <math>\overline{CD}</math>. The area of <math>\triangle BMN</math> is <math>x</math>. Find <math>x^2</math>.

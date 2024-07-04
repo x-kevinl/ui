@@ -1,0 +1,3 @@
+==Problem 12==
+
+Let <math>S</math> be the set of all polynomials of the form <math>z^3 + az^2 + bz + c</math>, where <math>a</math>, <math>b</math>, and <math>c</math> are integers. Find the number of polynomials in <math>S</math> such that each of its roots <math>z</math> satisfies either <math>|z| = 20</math> or <math>|z| = 13</math>.

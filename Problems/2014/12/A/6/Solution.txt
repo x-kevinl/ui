@@ -1,0 +1,2 @@
+==Solution 1==
+Let the two digits be $a$ and $b$. Then, $5a + 5b = 10a + b - 10b - a = 9a - 9b$, or $2a = 7b$. This yields $a = 7$ and $b = 2$ because $a, b < 10$. Then, $72 + 27 = \boxed{\textbf{(D) }99}.$

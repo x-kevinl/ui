@@ -1,0 +1,9 @@
+==Solution==
+
+We split this problem into $2$ cases.
+
+First, we calculate the probability that all four are the same. After the first dice, all the numbers must be equal to that roll, giving a probability of $1 \cdot \dfrac{1}{6} \cdot \dfrac{1}{6} \cdot \dfrac{1}{6} = \dfrac{1}{216}$.
+
+Second, we calculate the probability that three are the same and one is different. After the first dice, the next two must be equal and the third different. There are $4$ orders to roll the different dice, giving $4 \cdot 1 \cdot \dfrac{1}{6} \cdot \dfrac{1}{6} \cdot \dfrac{5}{6} = \dfrac{5}{54}$.
+
+Adding these up, we get $\dfrac{7}{72}$, or $\boxed{\textbf{(B)}}$.

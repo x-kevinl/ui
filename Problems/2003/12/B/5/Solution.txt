@@ -1,0 +1,12 @@
+==Solution 1==
+
+If you divide the television screen into two right triangles, the legs are in the ratio of $4 : 3$, and we can let one leg be $4x$ and the other be $3x$. Then we can use the Pythagorean Theorem.
+
+$$\begin{align*}(4x)^2+(3x)^2&=27^2\\
+16x^2+9x^2&=729\\
+25x^2&=729\\
+x^2&=\frac{729}{25}\\
+x&=\frac{27}{5}\\
+x&=5.4\end{align*}$$
+
+The horizontal length is $5.4\times4=21.6$, which is closest to $\boxed{\textbf{(D) \ } 21.5}$.

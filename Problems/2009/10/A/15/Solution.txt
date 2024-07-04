@@ -1,0 +1,5 @@
+== Solution 1==
+
+Split $F_n$ into $4$ congruent triangles by its diagonals (like in the pictures in the problem). This shows that the number of diamonds it contains is equal to $4$ times the $(n-2)$th triangular number (i.e. the diamonds within the triangles or between the diagonals) and $4(n-1)+1$ (the diamonds on sides of the triangles or on the diagonals). The $n$th triangular number is $\frac{n(n+1)}{2}$. Putting this together for $F_{20}$ this gives:
+
+$\frac{4(18)(19)}{2}+4(19)+1=\boxed{761}$

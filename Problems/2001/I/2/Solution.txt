@@ -1,0 +1,8 @@
+==Solution==
+Let <math>x</math> be the mean of <math>\mathcal{S}</math>. Let <math>a</math> be the number of elements in <math>\mathcal{S}</math>.
+Then, the given tells us that <math>\frac{ax+1}{a+1}=x-13</math> and <math>\frac{ax+2001}{a+1}=x+27</math>. Subtracting, we have 
+<cmath>\begin{align*}\frac{ax+2001}{a+1}-40=\frac{ax+1}{a+1} \Longrightarrow \frac{2000}{a+1}=40 \Longrightarrow a=49\end{align*}</cmath>
+We plug that into our very first formula, and get:
+<cmath>\begin{align*}\frac{49x+1}{50}&=x-13 \\
+49x+1&=50x-650 \\
+x&=\boxed{651}.\end{align*}</cmath>

@@ -1,0 +1,8 @@
+==Solution 0==
+Let <math>P_n</math> be the probability of getting consecutive <math>1,2,3</math> rolls in <math>n</math> rolls and not rolling <math>1,2,3</math> prior to the nth roll. 
+
+Let <math>x = P_3+P_5+...=1-(P_4+P_6+..)</math>. Following Solution 2, one can see that
+<cmath>P_{n+1}=P_{n}-\frac{P_{n-2}}{6^3}</cmath>
+for all positive integers <math>n \ge 5</math>. Summing for <math>n=5,7,...</math> gives
+<cmath>(1-x)-\frac{1}{6^3}=x-\frac{1}{6^3}-\frac{x}{6^3}</cmath>
+<cmath> \implies x = \frac{m}{n} = \frac{216}{431} \implies m+n=216+431= \boxed{647}</cmath>

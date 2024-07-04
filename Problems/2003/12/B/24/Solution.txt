@@ -1,0 +1,54 @@
+== Solution 1 ==
+
+Consider the graph of $f(x)=|x-a|+|x-b|+|x-c|$.
+
+When $x<a$, the slope is $-3$.
+
+When $a<x<b$, the slope is $-1$.
+
+When $b<x<c$, the slope is $1$.
+
+When $c<x$, the slope is $3$.
+
+Setting $x=b$ gives $y=|b-a|+|b-b|+|b-c|=c-a$, so $(b,c-a)$ is a point on $f(x)$. In fact, it is the minimum of $f(x)$ considering the slope of lines to the left and right of $(b,c-a)$. Thus, graphing this will produce a figure that looks like a cup:
+<asy>
+import graph;
+size(100);
+draw((0,6)--(3,0));
+xaxis(0,8.5);
+yaxis(0,10);
+real f(real x)
+{
+return -3(x-2)+5;
+}
+real f2(real x)
+{
+return -1(x-2)+5;
+}
+real f3(real x)
+{
+return 1(x-4)+3;
+}
+real f4(real x)
+{
+return 3(x-7)+6;
+}
+draw(graph(f,0,2));
+draw(graph(f2,2,4));
+draw(graph(f3,4,7));
+draw(graph(f4,7,8.5));
+draw((2,-0.25)--(2,0.25));
+label("a",(2,0),N);
+draw((4,-0.25)--(4,0.25));
+label("b",(4,0),N);
+draw((7,-0.25)--(7,0.25));
+label("c",(7,0),N);
+dot((2,5));
+label("P",(1.9,5.2),E);
+</asy>
+From the graph, it is clear that $f(x)$ and $2x+y=2003$ have one intersection point if and only if they intersect at $x=a$. Since the line where $a<x<b$ has slope $-1$, the positive difference in $y$-coordinates from $x=a$ to $x=b$ must be $b-a$. Together with the fact that $(b,c-a)$ is on $f(x)$, we see that $P=(a,c-a+b-a)$. Since this point is on $x=a$, the only intersection point with $2x+y=2003$, we have $2 \cdot a+(b+c-2a)=2003 \implies b+c=2003$. As $c>b$, the smallest possible value of $c$ occurs when $b=1001$ and $c=1002$. This is indeed a solution as $a=1000$ puts $P$ on $y=2003-2x$, and thus the answer is $\boxed{\mathrm{(C)}\ 1002}$.
+
+This indeed works for the two right segments of slope $1$ and $3$. We already know that the minimum is achieved between slopes $-3$ and $-1$ with $b+c=2003$:
+$$2003-2x=-a-b+c+x\longrightarrow 3x\ne a+b-c+2003 \{b<x<c\}\rightarrow (3b,3c)\ne a+2b\rightarrow b>a\text{ (true)}$$
+$$2003-2x=-a-b-c+3x\longrightarrow 5x\ne a+b+c+2003 \{x>c\}\rightarrow (5c,+5\infty)\ne a+2b+2c\rightarrow 3c>a+2b\text{ (true)}$$
+Indeed, within the restricted domain of $x$ in each segment, these inequalities prove to be unequal everywhere. So $y=2003-2x$ is strictly below $y=|x-a|+|x-b|+|x-c|$ at these domains.

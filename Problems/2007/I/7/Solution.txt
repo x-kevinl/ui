@@ -1,0 +1,9 @@
+== Solution ==
+The ceiling of a number minus the floor of a number is either equal to zero (if the number is an [[integer]]); otherwise, it is equal to 1. Thus, we need to find when or not <math>\log_{\sqrt{2}} k</math> is an integer.
+
+The change of base formula shows that <math>\frac{\log k}{\log \sqrt{2}} = \frac{2 \log k}{\log 2}</math>. For the <math>\log 2</math> term to cancel out, <math>k</math> is a [[exponent|power]] of <math>2</math>. Thus, <math>N</math> is equal to the sum of all the numbers from 1 to 1000, excluding all powers of 2 from <math>2^0 = 1</math> to <math>2^9 = 512</math>. 
+
+The formula for the sum of an [[arithmetic sequence]] and the sum of a [[geometric sequence]] yields that our answer is <math>\left[\frac{(1000 + 1)(1000)}{2} - (1 + 2 + 2^2 + \ldots + 2^9)\right] \mod{1000}</math>.
+
+Simplifying, we get
+<math>\left[1000\left(\frac{1000+1}{2}\right) -1023\right] \mod{1000} \equiv [500-23] \mod{1000} \equiv 477 \mod{1000}.</math> The answer is <math>\boxed{477}</math>

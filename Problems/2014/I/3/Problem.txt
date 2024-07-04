@@ -1,0 +1,2 @@
+== Problem 3 ==
+Find the number of rational numbers <math>r</math>, <math>0<r<1</math>, such that when <math>r</math> is written as a fraction in lowest terms, the numerator and the denominator have a sum of 1000.

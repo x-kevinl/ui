@@ -1,0 +1,3 @@
+==Problem==
+
+The value of <math>x</math> that satisfies <math>\log_{2^x} 3^{20} = \log_{2^{x+3}} 3^{2020}</math> can be written as <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

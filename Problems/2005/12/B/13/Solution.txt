@@ -1,0 +1,6 @@
+== Solution ==
+We see that we can re-write $4^{x_1}=5$, $5^{x_2}=6$, $6^{x_3}=7$, ... , $127^{x_{124}}=128$ as $\left(...\left(\left(\left(4^{x_1}\right)^{x_2}\right)^{x_3}\right)...\right)^{x_{124}}=128$ by using substitution. By using the properties of exponents, we know that $4^{x_1x_2...x_{124}}=128$. 
+
+$4^{x_1x_2...x_{124}}=128\\2^{2x_1x_2...x_{124}}=2^7\\2x_1x_2...x_{124}=7\\x_1x_2...x_{124}=\dfrac{7}{2}$
+
+Therefore, the answer is $\boxed{\mathrm{(D)}\,\dfrac{7}{2}}$

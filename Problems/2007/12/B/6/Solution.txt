@@ -1,0 +1,4 @@
+==Solution==
+[[Image:2007_12B_AMC-6.png]]
+
+One bug goes to $B$. The path that he takes is $\dfrac{5+6+7}{2}=9$ units long. The length of $BD$ is $9-AB=9-5=4 \Rightarrow \mathrm {(D)}$

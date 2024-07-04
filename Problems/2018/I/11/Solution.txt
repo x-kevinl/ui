@@ -1,0 +1,10 @@
+==Solution 1==
+Note that the given condition is equivalent to <math>3^n \equiv 1 \pmod{143^2}</math> and <math>143=11\cdot 13</math>. Because <math>\gcd(11^2, 13^2) = 1</math>, the desired condition is equivalent to <math>3^n \equiv 1 \pmod{121}</math> and <math>3^n \equiv 1 \pmod{169}</math>.
+
+If <math>3^n \equiv 1 \pmod{121}</math>, one can see the sequence <math>1, 3, 9, 27, 81, 1, 3, 9...</math> so <math>5|n</math>.
+
+Now if <math>3^n \equiv 1 \pmod{169}</math>, it is harder. But we do observe that <math>3^3 \equiv 1 \pmod{13}</math>, therefore <math>3^3 = 13a + 1</math> for some integer <math>a</math>. So our goal is to find the first number <math>p_1</math> such that <math>(13a+1)^ {p_1} \equiv 1 \pmod{169}</math>. Then, <math>p_1 \equiv 0 \pmod{13}, </math> which follows from the binomial theorem. It is not difficult to see that the smallest <math>p_1=13</math>, so ultimately <math>3^{39} \equiv 1 \pmod{169}</math>. Therefore, <math>39|n</math>.
+
+The first <math>n</math> satisfying both criteria is thus <math>5\cdot 39=\boxed{195}</math>.
+
+-expiLnCalc

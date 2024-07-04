@@ -1,0 +1,2 @@
+==Problem==
+Let <math>p</math> be the least prime number for which there exists a positive integer <math>n</math> such that <math>n^{4}+1</math> is divisible by <math>p^{2}</math>. Find the least positive integer <math>m</math> such that <math>m^{4}+1</math> is divisible by <math>p^{2}</math>.

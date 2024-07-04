@@ -1,0 +1,9 @@
+== Solution 1 ==
+
+We have $1\times n = n < 1 + n$, hence if at least one of the numbers is $1$, the sum is larger. There $15$ such possibilities.
+
+We have $2\times 2 = 2+2$.
+
+For $n>2$ we already have $2\times n = n + n > 2 + n$, hence all other cases are good.
+
+Out of the $8\times 8$ possible cases, we find that in $15+1=16$ the sum is greater than or equal to the product, hence in $64-16=48$ cases the sum is smaller, satisfying the condition. Therefore the answer is $\frac{48}{64}=\boxed{\mathrm{(C)\ }\frac{3}{4}}$.

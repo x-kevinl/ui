@@ -1,0 +1,6 @@
+==Solution 1==
+Since <math>3</math> is one of the numbers, a product with a <math>3</math> in it is automatically divisible by <math>3,</math> so WLOG <math>x_3=3,</math> we will multiply by <math>5</math> afterward since any of <math>x_1, x_2, \ldots, x_5</math> would be <math>3,</math> after some cancelation we see that now all we need to find is the number of ways that <math>x_5x_1(x_4+x_2)</math> is divisible by <math>3,</math> since <math>x_5x_1</math> is never divisible by <math>3,</math> now we just need to find the number of ways <math>x_4+x_2</math> is divisible by <math>3.</math> Note that <math>x_2</math> and <math>x_4</math> can be <math>(1, 2), (2, 1), (1, 5), (5, 1), (2, 4), (4, 2), (4, 5),</math> or <math>(5, 4).</math> We have <math>2</math> ways to designate <math>x_1</math> and <math>x_5</math> for a total of <math>8 \cdot 2 = 16.</math> So the desired answer is <math>16 \cdot 5=\boxed{080}.</math>
+
+~math31415926535
+
+~MathFun1000 (Rephrasing for clarity)

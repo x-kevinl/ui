@@ -1,0 +1,44 @@
+==Solution 1==
+
+<center><asy>
+size(8cm);
+pair A, B, C, D, E, EE;
+A = (0,0);
+B = (1,2);
+C = (3,3);
+D = (4,0);
+E = (27/8,15/8);
+EE = (27/8,0);
+draw(A--B--C--D--A--E);
+draw(E--EE,linetype("8 8"));
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(E);
+draw(rightanglemark(E,EE,D,4));
+label("A",A,SW);
+label("B",B,NW);
+label("C",C,NE);
+label("D",D,SE);
+label("E",E,NE);
+label("$4$",(A+D)/2,S);
+label("$\frac{27}{8}$",(A+EE)/2,S);
+label("$\frac{15}{8}$",(E+EE)/2,W);
+</asy></center>
+
+First, we shall find the area of quadrilateral $ABCD$. This can be done in any of three ways:
+
+[[Pick's Theorem]]: $[ABCD] = I + \dfrac{B}{2} - 1 = 5 + \dfrac{7}{2} - 1 = \dfrac{15}{2}.$
+
+Splitting: Drop perpendiculars from $B$ and $C$ to the x-axis to divide the quadrilateral into triangles and trapezoids, and so the area is $1 + 5 + \dfrac{3}{2} = \dfrac{15}{2}.$
+
+[[Shoelace Theorem]]: The area is half of $|1 \cdot 3 - 2 \cdot 3 - 3 \cdot 4| = 15$, or $\dfrac{15}{2}$.
+
+$[ABCD] = \frac{15}{2}$.  Therefore, each equal piece that the line separates $ABCD$ into must have an area of $\frac{15}{4}$.
+
+Call the point where the line through $A$ intersects $\overline{CD}$ $E$.  We know that $[ADE] = \frac{15}{4} = \frac{bh}{2}$.  Furthermore, we know that $b = 4$, as $AD = 4$.  Thus, solving for $h$, we find that $2h = \frac{15}{4}$, so $h = \frac{15}{8}$.  This gives that the y coordinate of E is $\frac{15}{8}$.  
+
+Line CD can be expressed as $y = -3x+12$, so the $x$ coordinate of E satisfies $\frac{15}{8} = -3x + 12$.  Solving for $x$, we find that $x = \frac{27}{8}$.
+
+From this, we know that $E = \left(\frac{27}{8}, \frac{15}{8}\right)$.  $27 + 15 + 8 + 8 = \boxed{\textbf{(B) }58}$

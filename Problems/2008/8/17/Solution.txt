@@ -1,0 +1,2 @@
+==Solution==
+A rectangle's area is maximized when its length and width are equivalent, or the two side lengths are closest together in this case with integer lengths. This occurs with the sides $12 \times 13 = 156$. Likewise, the area is smallest when the side lengths have the greatest difference, which is $1 \times 24 = 24$. The difference in area is $156-24=\boxed{\textbf{(D)}\ 132}$.

@@ -1,0 +1,11 @@
+==Solution 1==
+
+Verify that $a^3 \equiv a \pmod{6}$ manually for all $a\in \mathbb{Z}/6\mathbb{Z}$. We check: $0^3 \equiv 0 \pmod{6}$, $1^3 \equiv 1 \pmod{6}$, $2^3 \equiv 8 \equiv 2 \pmod{6}$, $3^3 \equiv 27 \equiv 3 \pmod{6}$, $4^3 \equiv 64 \equiv 4 \pmod{6}$, and $5^3 \equiv 125 \equiv 5 \pmod{6}$. We conclude that $a^3 \equiv a \pmod{6}$.
+
+Therefore, $$a_1+a_2+\cdots+a_{2018} \equiv a_1^3+a_2^3+\cdots+a_{2018}^3 \pmod{6}.$$
+
+Thus the answer is congruent to $2018^{2018}\equiv 2^{2018} \pmod{6} = \boxed{ \text{(E)}4}$ because $2^n \pmod{6}$ alternates with $2$ and $4$ when $n$ increases.
+
+~Dolphindesigner
+
+~Major error correction made by akashsuresh1.22~

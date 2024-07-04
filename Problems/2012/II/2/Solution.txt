@@ -1,0 +1,2 @@
+== Solution ==
+Call the common ratio <math>r.</math> Now since the <math>n</math>th term of a geometric sequence with first term <math>x</math> and common ratio <math>y</math> is <math>xy^{n-1},</math> we see that <math>a_1 \cdot r^{14} = b_1 \cdot r^{10} \implies r^4 = \frac{99}{27} = \frac{11}{3}.</math> But <math>a_9</math> equals <math>a_1 \cdot r^8 = a_1 \cdot (r^4)^2=27\cdot {\left(\frac{11}{3}\right)}^2=27\cdot \frac{121} 9=\boxed{363}</math>.

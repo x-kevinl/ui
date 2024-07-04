@@ -1,0 +1,2 @@
+== Problem ==
+How many integers <math> N </math> less than <math>1000</math> can be written as the sum of <math> j </math> consecutive positive odd integers from exactly 5 values of <math> j\ge 1 </math>?

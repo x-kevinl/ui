@@ -1,0 +1,10 @@
+==Solution 1==
+
+To find the greatest value of <math>x_{76} - x_{16}</math>, <math>x_{76}</math> must be as large as possible, and <math>x_{16}</math> must be as small as possible. If <math>x_{76}</math> is as large as possible, <math>x_{76} = x_{77} = x_{78} = \dots = x_{100} > 0</math>. If <math>x_{16}</math> is as small as possible, <math>x_{16} = x_{15} = x_{14} = \dots = x_{1} < 0</math>. The other numbers between <math>x_{16}</math> and <math>x_{76}</math> equal to <math>0</math>. Let <math>a = x_{76}</math>, <math>b = x_{16}</math>. Substituting <math>a</math> and <math>b</math> into <math>|x_1| + |x_2| + \cdots + |x_{100}| = 1</math> and <math>x_1 + x_2 + \cdots + x_{100} = 0</math> we get:
+<cmath>25a - 16b = 1</cmath>
+<cmath>25a + 16b = 0</cmath>
+<math>a = \frac{1}{50}</math>, <math>b = -\frac{1}{32}</math>
+
+<math>x_{76} - x_{16} = a - b = \frac{1}{50} + \frac{1}{32} = \frac{41}{800}</math>. <math>m+n = \boxed{\textbf{841}}</math>
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen]

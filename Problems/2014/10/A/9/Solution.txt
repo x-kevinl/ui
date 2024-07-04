@@ -1,0 +1,4 @@
+==Solution==
+We find that the area of the triangle is $\frac{6\times 2\sqrt{3}}{2} =6\sqrt{3}$. By the [[Pythagorean Theorem]], we have that the length of the hypotenuse is $\sqrt{(2\sqrt{3})^2+6^2}=4\sqrt{3}$. Dropping an altitude from the right angle to the hypotenuse, we can calculate the area in another way.
+
+Let $h$ be the third height of the triangle. We have $\frac{4\sqrt{3}h}{2}=6\sqrt{3}\implies h = \frac{6 \cdot 2}{4} \implies h=\boxed{\textbf{(C)}\ 3}$

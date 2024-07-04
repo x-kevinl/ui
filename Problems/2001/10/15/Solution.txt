@@ -1,0 +1,17 @@
+== Solution 1 ==
+
+Drawing the problem out, we see we get a parallelogram with a height of $ 40 $ and a base of $ 15 $, giving an area of $ 600 $.
+
+
+
+
+If we look at it the other way, we see the distance between the stripes is the height and the base is $ 50 $.
+
+<asy>
+draw((0,0)--(5,0));
+draw((2.5,5)--(7.5,5));
+draw((0,0)--(2.5,5));
+draw((5,0)--(7.5,5),linewidth(2));
+draw((2,4)--(6,2),dashed);</asy>
+
+The area is still the same, so the distance between the stripes is $ 600/50 = \boxed{\textbf{(C)}\ 12} $.

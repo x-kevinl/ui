@@ -1,0 +1,3 @@
+==Solution==
+
+Converting feet to yards and minutes to second, we see that the truck travels $\dfrac{b}{18}$ yards every $t$ seconds for $180$ seconds. We see that he does $\dfrac{180}{t}$ cycles of $\dfrac{b}{18}$ yards. Multiplying, we get $\dfrac{180b}{18t}$, or $\dfrac{10b}{t}$, or $\boxed{\textbf{(E)}}$.

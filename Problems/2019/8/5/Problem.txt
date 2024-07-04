@@ -1,0 +1,6 @@
+== Problem 5 ==
+A tortoise challenges a hare to a race. The hare eagerly agrees and quickly runs ahead, leaving the slow-moving tortoise behind. Confident that he will win, the hare stops to take a nap. Meanwhile, the tortoise walks at a slow steady pace for the entire race. The hare awakes and runs to the finish line, only to find the tortoise already there. Which of the following graphs matches the description of the race, showing the distance $d$ traveled by the two animals over time $t$ from start to finish?
+
+[[File:2019_AMC_8_-4_Image_1.png|900px]]
+
+[[File:2019_AMC_8_-4_Image_2.png|600px]]

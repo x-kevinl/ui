@@ -1,0 +1,6 @@
+== Solution 1 ==
+
+Multiplying the numerator and the denominator by the same value does not change the value of the fraction.
+We can multiply both by $12$, getting $\dfrac{4-3}{6-4} = \boxed{\dfrac 12}$.
+
+Alternately, we can directly compute that the numerator is $\dfrac 1{12}$, the denominator is $\dfrac 16$, and hence their ratio is $\boxed{(C)\frac{1}{2}}$.

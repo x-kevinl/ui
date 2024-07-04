@@ -1,0 +1,23 @@
+==Solution 1==
+<asy>
+pair A,B,C,D,X,Z,P;
+A=(0,0); B=(12,0); C=(8,10); X=(10,5); Z=(6,0); P=(6,3.4);
+fill(B--X--P--Z--cycle,lightgray);
+draw(A--B--C--cycle);
+dot(A);
+label("$A$",A,SW);
+dot(B);
+label("$B$",B,SE);
+dot(C);
+label("$C$",C,N);
+draw(X--P,dashed);
+draw(Z--P,dashed);
+dot(X);
+label("$X$",X,NE);
+dot(Z);
+label("$Z$",Z,S);
+dot(P);
+label("$P$",P,NW);
+</asy>
+
+The set of all points closer to point <math>B</math> than to point <math>A</math> lie to the right of the perpendicular bisector of <math>AB</math> (line <math>PZ</math> in the diagram), and the set of all points closer to point <math>B</math> than to point <math>C</math> lie below the perpendicular bisector of <math>BC</math> (line <math>PX</math> in the diagram). Therefore, the set of points inside the triangle that are closer to <math>B</math> than to either vertex <math>A</math> or vertex <math>C</math> is bounded by quadrilateral <math>BXPZ</math>. Because <math>X</math> is the midpoint of <math>BC</math> and <math>Z</math> is the midpoint of <math>AB</math>, <math>X=(10,5)</math> and <math>Z=(6,0)</math>. The coordinates of point <math>P</math> is the solution to the system of equations defined by lines <math>PX</math> and <math>PZ</math>. Using the point-slope form of a linear equation and the fact that the slope of the line perpendicular to a line with slope <math>m</math> is <math>-\frac{1}{m}</math>, the equation for line <math>PX</math> is <math>y=\frac{2}{5}x+1</math> and the equation for line <math>PZ</math> is <math>x=6</math>. The solution of this system is <math>P=\left(6,\frac{17}{5}\right)</math>. Using the shoelace formula on quadrilateral <math>BXPZ</math> and triangle <math>ABC</math>, the area of quadrilateral <math>BXPZ</math> is <math>\frac{109}{5}</math> and the area of triangle <math>ABC</math> is <math>60</math>. Finally, the probability that a randomly chosen point inside the triangle is closer to vertex <math>B</math> than to vertex <math>A</math> or vertex <math>C</math> is the ratio of the area of quadrilateral <math>BXPZ</math> to the area of <math>ABC</math>, which is <math>\frac{\frac{109}{5}}{60}=\frac{109}{300}</math>. The answer is <math>109+300=\boxed{409}</math>.

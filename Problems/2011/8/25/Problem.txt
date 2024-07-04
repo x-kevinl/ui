@@ -1,0 +1,9 @@
+==Problem==
+A circle with radius $1$ is inscribed in a square and circumscribed about another square as shown. Which fraction is closest to the ratio of the circle's shaded area to the area between the two squares?
+
+<asy>
+filldraw((-1,-1)--(-1,1)--(1,1)--(1,-1)--cycle,gray,black);
+filldraw(Circle((0,0),1), mediumgray,black);
+filldraw((-1,0)--(0,1)--(1,0)--(0,-1)--cycle,white,black);</asy>
+
+$ \textbf{(A)}\ \frac{1}2\qquad\textbf{(B)}\ 1\qquad\textbf{(C)}\ \frac{3}2\qquad\textbf{(D)}\ 2\qquad\textbf{(E)}\ \frac{5}2 $

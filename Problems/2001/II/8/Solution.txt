@@ -1,0 +1,17 @@
+== Solution ==
+Iterating the condition <math>f(3x) = 3f(x)</math>, we find that <math>f(x) = 3^kf\left(\frac{x}{3^k}\right)</math> for positive integers <math>k</math>. We know the definition of <math>f(x)</math> from <math>1 \le x \le 3</math>, so we would like to express <math>f(2001) = 3^kf\left(\frac{2001}{3^k}\right),\ 1 \le \frac{2001}{3^k} \le 3 \Longrightarrow k = 6</math>. Indeed,
+ 
+<cmath>f(2001) = 729\left[1 - \left| \frac{2001}{729} - 2\right|\right] = 186.</cmath>
+
+We now need the smallest <math>x</math> such that <math>f(x) = 3^kf\left(\frac{x}{3^k}\right) = 186</math>. The [[range]] of <math>f(x),\ 1 \le x \le 3</math>, is <math>0 \le f(x) \le 1</math>. So when <math>1 \le \frac{x}{3^k} \le 3</math>, we have <math>0 \le f\left(\frac{x}{3^k}\right) = \frac{186}{3^k} \le 1</math>. Multiplying by <math>3^k</math>: <math>0 \le 186 \le 3^k</math>, so the smallest value of <math>k</math> is <math>k = 5</math>. Then,
+
+<cmath>186 = {3^5}f\left(\frac{x}{3^5}\right).</cmath>
+
+Because we forced <math>1 \le \frac{x}{3^5} \le 3</math>, so
+
+<cmath>186 = {3^5}f\left(\frac{x}{3^5}\right) = 243\left[1 - \left| \frac{x}{243} - 2\right|\right] \Longrightarrow x = \pm 57 + 2 
+\cdot 243.</cmath>
+
+We want the smaller value of <math>x = \boxed{429}</math>.
+
+An alternative approach is to consider the graph of <math>f(x)</math>, which iterates every power of <math>3</math>, and resembles the section from <math>1 \le x \le 3</math> dilated by a factor of <math>3</math> at each iteration.

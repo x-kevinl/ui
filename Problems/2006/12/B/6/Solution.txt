@@ -1,0 +1,2 @@
+==Solution==
+Francesca makes a total of $100+100+400=600$ grams of lemonade, and in those $600$ grams, there are $25$ calories from the lemon juice and $386$ calories from the sugar, for a total of $25+386=411$ calories per $600$ grams. We want to know how many calories there are in $200=600/3$ grams, so we just divide $411$ by $3$ to get $137\implies\boxed{(\text{B})}$.

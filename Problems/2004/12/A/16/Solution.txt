@@ -1,0 +1,16 @@
+== Solution 1 ==
+For all real numbers $a,b,$ and $c$ such that $b>1,$ note that:
+<ol style="margin-left: 1.5em;">
+  <li>$\log_b a$ is defined if and only if $a>0.$</li><p>
+  <li>$\log_b a>c$ if and only if $a>b^c.$</li><p>
+</ol>
+Therefore, we have
+$$\begin{align*}
+\log_{2004}(\log_{2003}(\log_{2002}(\log_{2001}{x}))) \text{ is defined} &\implies \log_{2003}(\log_{2002}(\log_{2001}{x}))>0 \\
+&\implies \log_{2002}(\log_{2001}{x})>1 \\
+&\implies \log_{2001}{x}>2002 \\
+&\implies x>2001^{2002},
+\end{align*}$$
+from which $c=\boxed{\textbf {(B) }2001^{2002}}.$
+
+~Azjps ~MRENTHUSIASM

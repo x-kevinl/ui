@@ -1,0 +1,10 @@
+== Solution ==
+The volume of the original box is $15\cdot10\cdot8=1200.$ 
+
+The volume of each cube that is removed is $3\cdot3\cdot3=27.$
+
+Since there are $8$ corners on the box, $8$ cubes are removed. 
+
+So the total volume removed is $8\cdot27=216$. 
+
+Therefore, the desired percentage is $\frac{216}{1200}\cdot100 = \boxed{\mathrm{(D)}\ 18\%}.$

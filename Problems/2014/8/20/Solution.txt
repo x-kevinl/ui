@@ -1,0 +1,4 @@
+==Solution==
+The area in the rectangle but outside the circles is the area of the rectangle minus the area of all three of the quarter circles in the rectangle.
+
+The area of the rectangle is $3\cdot5 =15$. The area of all 3 quarter circles is $\frac{\pi}{4}+\frac{\pi(2)^2}{4}+\frac{\pi(3)^2}{4} = \frac{14\pi}{4} = \frac{7\pi}{2}$. Therefore the area in the rectangle but outside the circles is $15-\frac{7\pi}{2}$.  $\pi$ is approximately $\dfrac{22}{7},$ and substituting that in will give $15-11=\boxed{\text{(B) }4.0}$

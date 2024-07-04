@@ -1,0 +1,2 @@
+== Solution 1 ==
+$\frac {8}{4}\cdot\frac {12}{8}\cdot\frac {16}{12}\cdots\frac {4n + 4}{4n}\cdots\frac {2008}{2004} = \frac {1}{4}\cdot\left(\frac {8}{8}\cdot\frac {12}{12}\cdots\frac {4n}{4n}\cdots\frac {2004}{2004}\right)\cdot 2008 = \frac{2008}{4} =$ $502 \Rightarrow B$.

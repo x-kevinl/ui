@@ -1,0 +1,4 @@
+==Problem==
+What is the maximum area of an isosceles trapezoid that has legs of length $1$ and one base twice as long as the other?
+
+$\textbf{(A) }\frac 54 \qquad \textbf{(B) } \frac 87 \qquad \textbf{(C)} \frac{5\sqrt2}4 \qquad \textbf{(D) } \frac 32  \qquad \textbf{(E) } \frac{3\sqrt3}4$

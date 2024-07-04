@@ -1,0 +1,14 @@
+==Solution 1==
+Same as the previous problem, we only use the information we need. Note that it's not just Chandra reads half of it and Bob reads the rest since they have different reading rates. In this case, we set up an equation and solve.
+
+Let $x$ be the number of pages that Chandra reads.
+
+$30x = 45(760-x)$ Distribute the $45$
+
+$30x = 45(760) - 45x$ Add $45x$ to both sides
+
+$75x = 45(760)$ Divide both sides by $15$ to make it easier to solve
+
+$5x = 3(760)$ Divide both sides by $5$
+
+$x = 3(152) = \boxed{\textbf{(C)} 456}$

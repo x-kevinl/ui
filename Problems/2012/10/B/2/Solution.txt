@@ -1,0 +1,5 @@
+==Solution==
+
+Note that the diameter of the circle is equal to the shorter side of the rectangle. Since the radius is $5$, the diameter is $2\cdot 5 = 10$.
+Since the sides of the rectangle are in a $2:1$ ratio, the longer side has length $2\cdot 10 = 20$.
+Therefore the area is $20\cdot 10 = 200$ or $\boxed{\textbf{(E)}\ 200}$

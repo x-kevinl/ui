@@ -1,0 +1,4 @@
+== Problem ==
+In $\triangle ABC$ with integer side lengths, $\cos A = \frac{11}{16}$, $\cos B = \frac{7}{8}$, and $\cos C = -\frac{1}{4}$. What is the least possible perimeter for $\triangle ABC$?
+
+$\textbf{(A) } 9 \qquad \textbf{(B) } 12 \qquad \textbf{(C) } 23 \qquad \textbf{(D) } 27 \qquad \textbf{(E) } 44$

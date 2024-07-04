@@ -1,0 +1,9 @@
+==Problem==
+
+The Amaco Middle School bookstore sells pencils costing a whole number of cents. Some seventh graders each bought a pencil, paying a total of $1.43$ dollars. Some of the $ 30$ sixth graders each bought a pencil, and they paid a total of $1.95$ dollars. How many more sixth graders than seventh graders bought a pencil?
+
+$ \textbf{(A)}\  1  \qquad
+\textbf{(B)}\   2  \qquad
+\textbf{(C)}\   3  \qquad
+\textbf{(D)}\   4  \qquad
+\textbf{(E)}\   5$

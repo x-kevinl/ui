@@ -1,0 +1,2 @@
+== Problem ==
+Jar A contains four liters of a solution that is 45% acid.  Jar B contains five liters of a solution that is 48% acid.  Jar C contains one liter of a solution that is <math>k\%</math> acid.  From jar C, <math>\frac{m}{n}</math> liters of the solution is added to jar A, and the remainder of the solution in jar C is added to jar B.  At the end both jar A and jar B contain solutions that are 50% acid.  Given that <math>m</math> and <math>n</math> are relatively prime positive integers, find <math>k + m + n</math>.

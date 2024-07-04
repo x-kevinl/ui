@@ -1,0 +1,2 @@
+== Problem ==
+Suppose <math>x</math> is in the interval <math>[0, \pi/2]</math> and <math>\log_{24\sin x} (24\cos x)=\frac{3}{2}</math>. Find <math>24\cot^2 x</math>.

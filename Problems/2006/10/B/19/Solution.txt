@@ -1,0 +1,38 @@
+== Solution 1 ==
+The shaded area is equivalent to the area of sector $DOE$ minus the area of triangle $DOE$ plus the area of triangle $DBE$. 
+
+Using the [[Pythagorean Theorem]], $(DA)^2=(CE)^2=2^2-1^2=3$ so $DA=CE=\sqrt{3}$.
+
+Clearly, $DOA$ and $EOC$ are $30-60-90$ triangles with $\angle EOC = \angle DOA = 60^\circ $. Since $OABC$ is a square, $ \angle COA = 90^\circ $.
+
+$\angle DOE$ can be found by doing some subtraction of angles. 
+
+$ \angle COA - \angle DOA = \angle DOC = \angle EOA $
+
+$  90^\circ - 60^\circ = \angle EOA = 30^\circ $
+
+$ \angle DOA - \angle EOA = \angle DOE $
+
+$  60^\circ - 30^\circ = \angle DOE = 30^\circ $
+
+So, the area of sector $DOE$ is $ \frac{30}{360} \cdot \pi \cdot 2^2 = \frac{\pi}{3} $.
+
+The area of triangle $DOE$ is $ \frac{1}{2}\cdot 2 \cdot 2 \cdot \sin 30^\circ = 1 $.
+
+Since $AB=CB=1$ , $DB=EB=(\sqrt{3}-1)$. So, the area of triangle $DBE$ is $\frac{1}{2} \cdot (\sqrt{3}-1)^2 = 2-\sqrt{3}$. Therefore, the shaded area is $ (\frac{\pi}{3}) - (1) + (2-\sqrt{3}) = \boxed{\textbf{(A) }\frac{\pi}{3} + 1 - \sqrt{3}}$
+
+OR
+
+$\triangle{ODA}$ has the same height as $\triangle{OBD}$ which is $1.$
+
+We already know that $BD = \sqrt{3} - 1.$
+
+Therefore the area of $\triangle{OBD}$ is $(\sqrt{3}-1) \cdot 1 \cdot \frac{1}{2} = \frac{\sqrt{3}-1}{2}.$
+
+Since $\triangle{OBD} = \triangle{OBE} = \frac{\sqrt{3}-1}{2}.$
+
+Therefore the sum of the areas is $2 \cdot \frac{\sqrt{3}-1}{2} = \sqrt{3}-1.$
+
+Then the area of the shaded area becomes $\frac{\pi}{3} - (\sqrt{3} - 1) = \boxed{\textbf{(A) }\frac{\pi}{3} +1 - \sqrt{3}}.$
+
+~mathboy282

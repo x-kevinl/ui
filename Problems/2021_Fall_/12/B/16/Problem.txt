@@ -1,0 +1,5 @@
+== Problem ==
+
+Suppose $a$, $b$, $c$ are positive integers such that $$a+b+c=23$$ and $$\gcd(a,b)+\gcd(b,c)+\gcd(c,a)=9.$$ What is the sum of all possible distinct values of $a^2+b^2+c^2$? 
+
+$\textbf{(A)}\: 259\qquad\textbf{(B)} \: 438\qquad\textbf{(C)} \: 516\qquad\textbf{(D)} \: 625\qquad\textbf{(E)} \: 687$

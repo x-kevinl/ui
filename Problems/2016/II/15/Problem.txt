@@ -1,0 +1,2 @@
+==Problem==
+For <math>1 \leq i \leq 215</math> let <math>a_i = \dfrac{1}{2^{i}}</math> and <math>a_{216} = \dfrac{1}{2^{215}}</math>. Let <math>x_1, x_2, ..., x_{216}</math> be positive real numbers such that <math>\sum_{i=1}^{216} x_i=1</math> and <math>\sum_{1 \leq i < j \leq 216} x_ix_j = \dfrac{107}{215} + \sum_{i=1}^{216} \dfrac{a_i x_i^{2}}{2(1-a_i)}</math>. The maximum possible value of <math>x_2=\dfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

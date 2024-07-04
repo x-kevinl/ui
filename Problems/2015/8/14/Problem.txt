@@ -1,0 +1,5 @@
+==Problem==
+
+Which of the following integers cannot be written as the sum of four consecutive odd integers?
+
+$\textbf{(A)}\text{ 16}\quad\textbf{(B)}\text{ 40}\quad\textbf{(C)}\text{ 72}\quad\textbf{(D)}\text{ 100}\quad\textbf{(E)}\text{ 200}$

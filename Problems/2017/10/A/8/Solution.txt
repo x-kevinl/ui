@@ -1,0 +1,2 @@
+==Solution 1==
+Each one of the ten people has to shake hands with all the $20$ other people they don’t know. So $10\cdot20 = 200$. From there, we calculate how many handshakes occurred between the people who don’t know each other. This is simply counting how many ways to choose two people to shake hands from $10$, or $\binom{10}{2} = 45$. Thus the answer is $200 + 45 = \boxed{\textbf{(B)}\ 245}$.

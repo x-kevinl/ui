@@ -1,0 +1,4 @@
+==Problem==
+A small airplane has $4$ rows of seats with $3$ seats in each row. Eight passengers have boarded the plane and are distributed randomly among the seats. A married couple is next to board. What is the probability there will be 2 adjacent seats in the same row for the couple?
+
+$\textbf{(A)} \frac{8}{15}\qquad\textbf{(B)} \frac{32}{55}\qquad\textbf{(C) } \frac{20}{33}\qquad\textbf{(D) } \frac{34}{55}\qquad\textbf{(E) } \frac{8}{11}$

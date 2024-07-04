@@ -1,0 +1,4 @@
+==Problem==
+The numbers $16$ and $25$ are a pair of consecutive positive squares whose difference is $9$. How many pairs of consecutive positive perfect squares have a difference of less than or equal to $2023$?
+
+$\text{(A)}\ 674 \qquad \text{(B)}\ 1011 \qquad \text{(C)}\ 1010 \qquad \text{(D)}\ 2019 \qquad \text{(E)}\ 2017$

@@ -1,0 +1,5 @@
+==Solution 1==
+
+Suppose that the first number of the arithmetic sequence is $a$. We will try to compute the value of $S_{n}$. First, note that the sum of an arithmetic sequence is equal to the number of terms multiplied by the median of the sequence. The median of this sequence is equal to $a + n - 1$. Thus, the value of $S_{n}$ is $n(a + n - 1) = n^2 + n(a - 1)$. Then, $$\frac{S_{3n}}{S_{n}} = \frac{9n^2 + 3n(a - 1)}{n^2 + n(a - 1)} = 9 - \frac{6n(a-1)}{n^2 + n(a-1)}.$$ Of course, for this value to be constant, $6n(a-1)$ must be $0$ for all values of $n$, and thus $a = 1$. Finally, we have $S_{20} = 20^2 = \boxed{\textbf{(D) } 400}$.
+
+~mathboy100

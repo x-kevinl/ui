@@ -1,0 +1,11 @@
+==Problem==
+Given the areas of the three squares in the figure, what is the area of the interior triangle?
+
+<asy>
+draw((0,0)--(-5,12)--(7,17)--(12,5)--(17,5)--(17,0)--(12,0)--(12,-12)--(0,-12)--(0,0)--(12,5)--(12,0)--cycle,linewidth(1));
+label("$25$",(14.5,1),N);
+label("$144$",(6,-7.5),N);
+label("$169$",(3.5,7),N);
+</asy>
+
+$\mathrm{(A)}\ 13 \qquad\mathrm{(B)}\ 30 \qquad\mathrm{(C)}\ 60 \qquad\mathrm{(D)}\ 300 \qquad\mathrm{(E)}\ 1800$

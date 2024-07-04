@@ -1,0 +1,2 @@
+==Solution 1==
+Since Judi's 7 friends had to pay \$2.50 extra each to cover the total amount that Judi should have paid, we multiply $2.50\cdot7=17.50$ is the bill Judi would have paid if she had money. Hence, to calculate the total amount, we multiply $17.50\cdot8=\boxed{\textbf{(C) } 140}$ to find the total the 8 friends paid.

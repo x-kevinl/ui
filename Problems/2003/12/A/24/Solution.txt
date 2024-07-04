@@ -1,0 +1,9 @@
+== Solution ==
+Using logarithmic rules, we see that
+
+$$\log_{a}a-\log_{a}b+\log_{b}b-\log_{b}a = 2-(\log_{a}b+\log_{b}a)$$
+$$=2-\left(\log_{a}b+\frac {1}{\log_{a}b}\right)$$
+
+Since $a$ and $b$ are both greater than $1$, using [[AM-GM]] gives that the term in parentheses must be at least $2$, so the largest possible values is $2-2=0 \Rightarrow \boxed{\textbf{B}}.$
+
+Note that the maximum occurs when $a=b$.

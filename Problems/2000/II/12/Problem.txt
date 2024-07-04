@@ -1,0 +1,2 @@
+== Problem ==
+The points <math>A</math>, <math>B</math> and <math>C</math> lie on the surface of a [[sphere]] with center <math>O</math> and radius <math>20</math>. It is given that <math>AB=13</math>, <math>BC=14</math>, <math>CA=15</math>, and that the distance from <math>O</math> to <math>\triangle ABC</math> is <math>\frac{m\sqrt{n}}k</math>, where <math>m</math>, <math>n</math>, and <math>k</math> are positive integers, <math>m</math> and <math>k</math> are relatively prime, and <math>n</math> is not divisible by the square of any prime. Find <math>m+n+k</math>.

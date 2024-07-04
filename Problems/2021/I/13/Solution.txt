@@ -1,0 +1,13 @@
+==Quick, Olympiad-Style Solution==
+
+Let <math>D\equiv\omega\cap\omega_{1}</math> and <math>E\equiv\omega\cap\omega_{2}</math>. The solution relies on the following key claim:
+
+<font color=red><b>Claim.</b></font color> <math>DPEQ</math> is a harmonic quadrilateral.
+
+<font color=blue><b>Proof.</b></font color> Using the radical axis theorem, the tangents to circle <math>\omega</math> at <math>D</math> and <math>E</math> are concurrent with line <math>\overline{ABPQ}</math> at the radical center, implying that our claim is true by harmonic quadrilateral properties. <math>\blacksquare</math>
+
+Thus, we deduce the tangents to <math>\omega</math> at <math>P</math> and <math>Q</math> are concurrent at <math>F</math> with line <math>\overline{DE}</math>. Denote by <math>O_{1}, O_{2}, O</math> the centers of <math>\omega_{1}, \omega_{2}, \omega</math> respectively.
+
+Now suppose <math>G\equiv\overline{FDE}\cap\overline{O_{1}O_{2}}</math>. Note that <math>\overline{OF}\parallel\overline{O_{1}O_{2}}</math> giving us the pairs of similar triangles <cmath>\triangle O_{1}GD\sim\triangle OFD~\text{and}~\triangle O_{2}GE\sim\triangle OFE.</cmath> We thereby obtain <cmath>\dfrac{O_{1}G}{O_{1}D}=\dfrac{OF}{OD}=\dfrac{r\sec\tfrac{120^{\circ}}{2}}{r}=\sec 60^{\circ}=2</cmath> since <math>\widehat{PQ}=120^{\circ}</math>, where <math>r</math> denotes the radius of <math>\omega</math>, and <cmath>\dfrac{O_{2}G}{O_{2}E}=\dfrac{OF}{OE}=\sec 60^{\circ}=2</cmath> as well. It follows that <cmath>O_{1}O_{2}=O_{1}G-O_{2}G=2(O_{1}D-O_{2}E)=2(961-625)=\textbf{672}.</cmath>
+
+[[File:AIME 2021-I13 Geogebra Diagram.png|672px]]

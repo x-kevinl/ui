@@ -1,0 +1,2 @@
+==Solution==
+In order to get the smallest possible average, we want the 4 even numbers to be as small as possible. The first 4 positive even numbers are 2, 4, 6, and 8. Their average is $\frac{2+4+6+8}{4}=\boxed{\text{(C)}\ 5}$.

@@ -1,0 +1,4 @@
+==Solution==
+
+Since the number is even, the last digit must be $ 2 $ or $ 4 $. To make the smallest possible number, the ten-thousands digit must be as small as possible, so the ten-thousands digit is $ 1 $. Simillarly, the thousands digit has second priority, so it must also be as small as possible once the ten-thousands digit is decided, so the thousands digit is $ 2 $. Similarly, the hundreds digit needs to be the next smallest number, so it is $ 3 $. However, for the tens digit, we can't use $ 4 $, since we already used $ 2 $ and the number must be even, so the units digit must be $ 4 $ and the tens digit is $ 9, \boxed{\text{E}} $
+(The number is $ 12394 $.)

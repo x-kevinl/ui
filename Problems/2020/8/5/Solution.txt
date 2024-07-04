@@ -1,0 +1,3 @@
+==Solution 1==
+ 
+Each cup is filled with $\frac{3}{4} \cdot \frac{1}{5} = \frac{3}{20}$ of the amount of juice in the pitcher, so the percentage is $\frac{3}{20} \cdot 100 = \boxed{\textbf{(C) }15}$.

@@ -1,0 +1,8 @@
+== Solution == 
+Using the properties of logarithms, <math>\log_{10}xyz = 81</math> by taking the log base 10 of both sides, and <math>(\log_{10}x)(\log_{10}y) + (\log_{10}x)(\log_{10}z) + (\log_{10}y)(\log_{10}z)= 468</math> by using the fact that <math>\log_{10}ab = \log_{10}a + \log_{10}b</math>. 
+
+Through further simplification, we find that <math>\log_{10}x+\log_{10}y+\log_{10}z = 81</math>. It can be seen that there is enough information to use the formula <math>\ (a+b+c)^{2} = a^{2}+b^{2}+c^{2}+2ab+2ac+2bc</math>, as we have both <math>\ a+b+c</math> and <math>\ 2ab+2ac+2bc</math>, and we want to find <math>\sqrt {a^2 + b^2 + c^2}</math>. 
+
+After plugging in the values into the equation, we find that <math>\ (\log_{10}x)^2 + (\log_{10}y)^2 + (\log_{10}z)^2</math> is equal to <math>\ 6561 - 936 = 5625</math>. 
+
+However, we want to find <math>\sqrt {(\log_{10}x)^2 + (\log_{10}y)^2 + (\log_{10}z)^2}</math>, so we take the square root of <math>\ 5625</math>, or <math>\boxed{075}</math>.

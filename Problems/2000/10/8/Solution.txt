@@ -1,0 +1,12 @@
+==Solution==
+
+Let $f$ be the number of freshman and $s$ be the number of sophomores.
+
+$\frac{2}{5}f=\frac{4}{5}s$
+
+$2f = 4s$
+
+$f=2s$
+
+There are twice as many freshmen as sophomores.
+$\boxed{\text{D}}$

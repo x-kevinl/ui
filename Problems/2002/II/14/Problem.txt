@@ -1,0 +1,2 @@
+== Problem ==
+The [[perimeter]] of triangle <math>APM</math> is <math>152</math>, and the angle <math>PAM</math> is a [[right angle]]. A [[circle]] of [[radius]] <math>19</math> with center <math>O</math> on <math>\overline{AP}</math> is drawn so that it is [[Tangent (geometry)|tangent]] to <math>\overline{AM}</math> and <math>\overline{PM}</math>. Given that <math>OP=m/n</math> where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers, find <math>m+n</math>.

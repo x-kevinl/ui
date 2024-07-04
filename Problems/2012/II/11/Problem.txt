@@ -1,0 +1,2 @@
+== Problem 11 ==
+Let <math>f_1(x) = \frac23 - \frac3{3x+1}</math>, and for <math>n \ge 2</math>, define <math>f_n(x) = f_1(f_{n-1}(x))</math>. The value of <math>x</math> that satisfies <math>f_{1001}(x) = x-3</math> can be expressed in the form <math>\frac mn</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

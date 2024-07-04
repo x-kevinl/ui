@@ -1,0 +1,4 @@
+==Solution 1==
+First, we notice that the smaller isosceles triangles are similar to the larger isosceles triangles. We can find that the area of the gray area in the first triangle is $[ABC]\cdot\left(1-\left(\tfrac{11}{h}\right)^2\right)$. Similarly, we can find that the area of the gray part in the second triangle is $[ABC]\cdot\left(\tfrac{h-5}{h}\right)^2$. These areas are equal, so $1-\left(\frac{11}{h}\right)^2=\left(\frac{h-5}{h}\right)^2$. Simplifying yields $10h=146$ so $h=\boxed{\textbf{(A) }14.6}$.
+
+~MathFun1000 (~edits apex304)

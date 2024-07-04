@@ -1,0 +1,2 @@
+==Solution==
+The pepperoni circles' diameter is $2$, since $\dfrac{12}{6} = 2$. From that we see that the area of the $24$ circles of pepperoni is $\left ( \frac{2}{2} \right )^2 (24\pi) = 24\pi$. The large pizza's area is $6^2\pi$. Therefore, the ratio is $\frac{24\pi}{36\pi} = \boxed{\textbf{(B) }\frac{2}{3}}$

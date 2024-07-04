@@ -1,0 +1,2 @@
+== Problem ==
+A [[sphere]] is inscribed in the [[tetrahedron]] whose vertices are <math>A = (6,0,0), B = (0,4,0), C = (0,0,2),</math> and <math>D = (0,0,0).</math>  The [[radius]] of the sphere is <math>m/n,</math> where <math>m</math> and <math>n</math> are relatively prime positive integers.  Find <math>m + n.</math>

@@ -1,0 +1,3 @@
+==Solution 1==
+
+If Ben paid $\$ 12.50$ more than David, then he paid $\frac{12.5}{.25}= \$ 50.00$. Thus, David paid $\$ 37.50$, and they spent $50.00+37.50 =\$ 87.50 \implies \boxed{\textbf{(C) }\$ 87.50}$.

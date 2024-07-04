@@ -1,0 +1,2 @@
+==Problem==
+In <math>\triangle ABC</math> let <math>I</math> be the center of the inscribed circle, and let the bisector of <math>\angle ACB</math> intersect <math>AB</math> at <math>L</math>. The line through <math>C</math> and <math>L</math> intersects the circumscribed circle of <math>\triangle ABC</math> at the two points <math>C</math> and <math>D</math>. If <math>LI=2</math> and <math>LD=3</math>, then <math>IC=\tfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

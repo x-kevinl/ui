@@ -1,0 +1,40 @@
+== Solution 1 ==
+Observe that all tables must have 1s and 9s in the corners, 8s and 2s next to those corner squares, and 4-6 in the middle square. Also note that for each table, there exists a valid table diagonally symmetrical across the diagonal extending from the top left to the bottom right. 
+
+
+*'''Case 1: Center 4'''
+$$\begin{tabular}{|c|c|c|} \hline 1&2&\\
+\hline 3&4&8\\
+\hline &&9\\
+\hline \end{tabular} \;\;\; \begin{tabular}{|c|c|c|} \hline 1&2&\\
+\hline 3&4&\\
+\hline &8&9\\
+\hline \end{tabular}$$
+
+3 necessarily must be placed as above. Any number could fill the isolated square, but the other 2 are then invariant. So, there are 3 cases each and 6 overall cases. Given diagonal symmetry, alternate 2 and 8 placements yield symmetrical cases. $2*6=12$
+
+*'''Case 2: Center 5'''
+$$\begin{tabular}{|c|c|c|} \hline 1&2&3\\
+\hline 4&5&\\
+\hline &8&9\\
+\hline \end{tabular} \;\;\; \begin{tabular}{|c|c|c|} \hline 1&2&\\
+\hline 3&5&\\
+\hline &8&9\\
+\hline \end{tabular} \;\;\; \begin{tabular}{|c|c|c|} \hline 1&2&\\
+\hline 3&5&8\\
+\hline &&9\\
+\hline \end{tabular} \;\;\; \begin{tabular}{|c|c|c|} \hline 1&2&3\\
+\hline 4&5&8\\
+\hline &&9\\
+\hline \end{tabular}$$
+
+Here, no 3s or 7s are assured, but this is only a teensy bit trickier and messier. WLOG, casework with 3 instead of 7 as above. Remembering that $4<5$, logically see that the numbers of cases are then 2,3,3,1 respectively. By symmetry, $2*9=18$
+
+*'''Case 3: Center 6'''
+By inspection, realize that this is symmetrical to case 1 except that the 7s instead of the 3s are assured.
+$2*6=12$
+
+$$12+18+12=\boxed{\textbf{(D) }42}$$
+
+
+~BJHHar

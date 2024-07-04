@@ -1,0 +1,8 @@
+==Solution 1(Simulation)==
+The five numbers which cause people to leave the circle are $7, 14, 17, 21,$ and $27.$
+
+The most straightforward way to do this would be to draw out the circle with the people, and cross off people as you count.
+
+Assuming the six people start with $1$, Arn counts $7$ so he leaves first. Then, Cyd counts $14$ as there are $7$ numbers to be counted from this point. Then, Fon, Bob, and Eve, count, $17,$ $21,$ and $27$, respectively, so the last one standing is Dan. Hence, the answer would be $\boxed{\textbf{(D) }\text{Dan}}$.
+
+~Nivaar

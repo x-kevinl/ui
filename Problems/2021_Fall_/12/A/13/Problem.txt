@@ -1,0 +1,4 @@
+==Problem==
+The angle bisector of the acute angle formed at the origin by the graphs of the lines $y = x$ and $y=3x$ has equation $y=kx.$ What is $k?$
+
+$\textbf{(A)} \ \frac{1+\sqrt{5}}{2} \qquad \textbf{(B)} \ \frac{1+\sqrt{7}}{2} \qquad \textbf{(C)} \ \frac{2+\sqrt{3}}{2} \qquad \textbf{(D)} \ 2\qquad \textbf{(E)} \ \frac{2+\sqrt{5}}{2}$

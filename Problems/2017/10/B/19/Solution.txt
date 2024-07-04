@@ -1,0 +1,36 @@
+== Diagram ==
+<asy>
+size(12cm);
+real a = 1;
+pair A = (0, 0), B = rotate(60)*A + (a, 0), C = rotate(120)*B + (a, 0);
+
+// calculate extended points
+pair A_prime = A + 3*(A - C);
+pair B_prime = B + 3*(B - A);
+pair C_prime = C + 3*(C - B);
+
+// draw original triangle and extended triangle
+draw(A--B--C--cycle);
+draw(A--A_prime);
+draw(B--B_prime);
+draw(C--C_prime);
+draw(A_prime--B_prime--C_prime--cycle);
+
+// label points
+dot("$A$", A, SE);
+dot("$B$", B, NE);
+dot("$C$", C, W);
+dot("$A'$", A_prime, SW);
+dot("$B'$", B_prime, NE);
+dot("$C'$", C_prime, W);
+
+// label sides
+label("$1$", (A+B)/2, S);
+label("$1$", (B+C)/2, E);
+label("$1$", (C+A)/2, W);
+
+label("$3$", (A+A_prime)/2, E);
+label("$3$", (B+B_prime)/2, N);
+label("$3$", (C+C_prime)/2, W);
+
+</asy>

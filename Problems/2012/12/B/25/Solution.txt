@@ -1,0 +1,10 @@
+==Solution==
+Consider reflections. For any right triangle $ABC$ with the right labeling described in the problem, any reflection $A'B'C'$ labeled that way will give us $\tan CBA \cdot \tan C'B'A' = 1$. First we consider the reflection about the line $y=2.5$. Only those triangles $\subseteq T$ that have one vertex at $(0,5)$ do not reflect to a traingle $\subseteq T$. Within those triangles, consider a reflection about the line $y=5-x$. Then only those triangles $\subseteq T$ that have one vertex on the line $y=0$ do not reflect to a triangle $\subseteq T$. So we only need to look at right triangles that have vertices $(0,5), (*,0), (*,*)$. There are three cases:
+
+Case 1: $A=(0,5)$. Then $B=(*,0)$ is impossible.
+
+Case 2: $B=(0,5)$. Then we look for $A=(x,y)$ such that $\angle BAC=90^{\circ}$ and that $C=(*,0)$. They are: $(A=(x,5), C=(x,0))$,  $(A=(3,2), C=(1,0))$ and $(A=(4,1), C=(3,0))$. The product of their values of $\tan \angle CBA$ is $\frac{5}{1}\cdot  \frac{5}{2} \cdot \frac{5}{3} \cdot \frac{5}{4} \cdot \frac{1}{4} \cdot \frac{2}{3} = \frac{625}{144}$.
+
+Case 3: $C=(0,5)$. Then $A=(*,0)$ is impossible.
+
+Therefore $\boxed{\textbf{(B)}  \ \frac{625}{144}}$ is the answer.

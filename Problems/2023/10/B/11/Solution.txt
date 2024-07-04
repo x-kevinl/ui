@@ -1,0 +1,17 @@
+==Solution 1==
+
+We let the number of $\$20$, $\$50$, and $\$100$ bills be $a,b,$ and $c,$ respectively. 
+
+We are given that $20a+50b+100c=800.$ Dividing both sides by $10$, we see that $2a+5b+10c=80.$ 
+
+We divide both sides of this equation by $5$: $\dfrac25a+b+2c=16.$ Since $b+2c$ and $16$ are integers, $\dfrac25a$ must also be an integer, so $a$ must be divisible by $5$. Let $a=5d,$ where $d$ is some positive integer. 
+
+We can then write $2\cdot5d+5b+10c=80.$ Dividing both sides by $5$, we have $2d+b+2c=16.$ We divide by $2$ here to get $d+\dfrac b2+c=8.$ $d+c$ and $8$ are both integers, so $\dfrac b2$ is also an integer. $b$ must be divisible by $2$, so we let $b=2e$. 
+
+We now have $2d+2e+2c=16\implies d+e+c=8$. Every substitution we made is part of a bijection (i.e. our choices were one-to-one); thus, the problem is now reduced to counting how many ways we can have $d,e,$ and $c$ such that they add to $8$. 
+
+We still have another constraint left, that each of $d,e,$ and $c$ must be at least $1$. For $n\in\{d,e,c\}$, let $n'=n-1.$ We are now looking for how many ways we can have $d'+e'+c'=8-1-1-1=5.$ 
+
+We use a classic technique for solving these sorts of problems: stars and bars. We have $5$ stars and $3$ groups, which implies $2$ bars. Thus, the total number of ways is $\dbinom{5+2}2=\dbinom72=21.$ 
+
+~Technodoggo ~minor edits by lucaswujc

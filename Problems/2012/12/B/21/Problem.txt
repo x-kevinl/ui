@@ -1,0 +1,25 @@
+==Problem 21==
+
+Square $AXYZ$ is inscribed in equiangular hexagon $ABCDEF$ with $X$ on $\overline{BC}$, $Y$ on $\overline{DE}$, and $Z$ on $\overline{EF}$. Suppose that $AB=40$, and $EF=41(\sqrt{3}-1)$. What is the side-length of the square?
+
+$ \textbf{(A)}\ 29\sqrt{3} \qquad\textbf{(B)}\ \frac{21}{2}\sqrt{2}+\frac{41}{2}\sqrt{3} \qquad\textbf{(C)}\ \ 20\sqrt{3}+16 \qquad\textbf{(D)}\ 20\sqrt{2}+13 \sqrt{3} \qquad\textbf{(E)}\ 21\sqrt{6}$
+
+<asy>
+size(200);
+defaultpen(linewidth(1));
+pair A=origin,B=(2.5,0),C=B+2.5*dir(60), D=C+1.75*dir(120),E=D-(3.19,0),F=E-1.8*dir(60);
+pair X=waypoint(B--C,0.345),Z=rotate(90,A)*X,Y=rotate(90,Z)*A;
+draw(A--B--C--D--E--F--cycle);
+draw(A--X--Y--Z--cycle,linewidth(0.9)+linetype("2 2"));
+dot("$A$",A,W,linewidth(4));
+dot("$B$",B,dir(0),linewidth(4));
+dot("$C$",C,dir(0),linewidth(4));
+dot("$D$",D,dir(20),linewidth(4));
+dot("$E$",E,dir(100),linewidth(4));
+dot("$F$",F,W,linewidth(4));
+dot("$X$",X,dir(0),linewidth(4));
+dot("$Y$",Y,N,linewidth(4));
+dot("$Z$",Z,W,linewidth(4));
+</asy>
+
+(diagram by djmathman)

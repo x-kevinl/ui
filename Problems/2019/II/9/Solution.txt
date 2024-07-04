@@ -1,0 +1,12 @@
+==Solution 1==
+Every 20-pretty integer can be written in form <math>n = 2^a 5^b k</math>, where <math>a \ge 2</math>, <math>b \ge 1</math>, <math>\gcd(k,10) = 1</math>, and <math>d(n) = 20</math>, where <math>d(n)</math> is the number of divisors of <math>n</math>. Thus, we have <math>20 = (a+1)(b+1)d(k)</math>, using the fact that the divisor function is multiplicative. As <math>(a+1)(b+1)</math> must be a divisor of 20, there are not many cases to check.
+
+If <math>a+1 = 4</math>, then <math>b+1 = 5</math>. But this leads to no solutions, as <math>(a,b) = (3,4)</math> gives <math>2^3 5^4 > 2019</math>.
+
+If <math>a+1 = 5</math>, then <math>b+1 = 2</math> or <math>4</math>. The first case gives <math>n = 2^4 \cdot 5^1 \cdot p</math> where <math>p</math> is a prime other than 2 or 5. Thus we have <math>80p < 2019 \implies p = 3, 7, 11, 13, 17, 19, 23</math>. The sum of all such <math>n</math> is <math>80(3+7+11+13+17+19+23) = 7440</math>. In the second case <math>b+1 = 4</math> and <math>d(k) = 1</math>, and there is one solution <math>n = 2^4 \cdot 5^3 = 2000</math>.
+
+If <math>a+1 = 10</math>, then <math>b+1 = 2</math>, but this gives <math>2^9 \cdot 5^1 > 2019</math>. No other values for <math>a+1</math> work.
+
+Then we have <math>\frac{S}{20} = \frac{80(3+7+11+13+17+19+23) + 2000}{20} = 372 + 100 = \boxed{472}</math>.
+
+-scrabbler94

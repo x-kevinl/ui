@@ -1,0 +1,2 @@
+==Solution 1==
+The area of a kite is half the product of its diagonals. The diagonals have lengths of $ 6 $ and $ 7 $, so the area is $ \frac{(6)(7)}{2}=21, \boxed{\text{A}} $.

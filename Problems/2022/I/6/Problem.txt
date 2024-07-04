@@ -1,0 +1,2 @@
+== Problem ==
+Find the number of ordered pairs of integers <math>(a, b)</math> such that the sequence<cmath>3, 4, 5, a, b, 30, 40, 50</cmath>is strictly increasing and no set of four (not necessarily consecutive) terms forms an arithmetic progression.

@@ -1,0 +1,24 @@
+==Solution 1==
+
+It is possible to solve this problem using elementary counting methods. This solution proceeds by a cleaner generating function.
+
+We note that $\pm \sqrt{2}i$ both lie on the imaginary axis and each of the $\frac{1}{\sqrt{8}}(\pm 1\pm i)$ have length $\frac{1}{2}$ and angle of odd multiples of $\pi/4$, i.e. $\pi/4,3\pi/4,5\pi/4,7\pi/4$. When we draw these 6 complex numbers out on the complex plane, we get a crystal-looking thing. Note that the total number of ways to choose 12 complex numbers is $6^{12}$. Now we count the number of good combinations.
+
+We first consider the lengths. When we multiply 12 complex numbers together, their magnitudes multiply. Suppose we have $n$ of the numbers $\pm \sqrt{2}i$; then we must have $\left(\sqrt{2}\right)^n\cdot\left(\frac{1}{2}\right)^{12-n}=1 \Longrightarrow n=8$. Having $n=8$ will take care of the length of the product; now we need to deal with the angle.
+
+We require $\sum\theta\equiv\pi \mod 2\pi$. Letting $z$ be $e^{i\pi/4}$, we see that the angles we have available are $\{z^1,z^2,z^3,z^5,z^6,z^7\}$, where we must choose exactly 8 angles from the set $\{z^2,z^6\}$ and exactly 4 from the set $\{z^1,z^3,z^5,z^7\}$. If we found a good combination where we had $a_i$ of each angle $z^i$, then the amount this would contribute to our count would be $\binom{12}{4,8}\cdot\binom{8}{a_2,a_6}\cdot\binom{4}{a_1,a_3,a_5,a_7}$. We want to add these all up. We proceed by generating functions.
+
+Consider $$(t_2x^2+t_6x^6)^8(t_1x^1+t_3x^3+t_5x^5+t_7x^7)^4.$$ The expansion will be of the form $\sum_i\left(\sum_{\sum a=i} \binom{8}{a_2,a_6}\binom{4}{a_1,a_3,a_5,a_7}{t_1}^{a_1}{t_2}^{a_2}{t_3}^{a_3}{t_5}^{a_5}{t_6}^{a_6}{t_7}^{a_7}x^i \right)$. Note that if we reduced the powers of $x$ mod $8$ and fished out the coefficient of $x^4$ and plugged in $t_i=1\ \forall\,i$ (and then multiplied by $\binom{12}{4,8}$) then we would be done. Since plugging in $t_i=1$ doesn't affect the $x$'s, we do that right away. The expression then becomes $$x^{20}(1+x^4)^8(1+x^2+x^4+x^6)^4=x^{20}(1+x^4)^{12}(1+x^2)^4=x^4(1+x^4)^{12}(1+x^2)^4,$$ where the last equality is true because we are taking the powers of $x$ mod $8$. Let $[x^n]f(x)$ denote the coefficient of $x^n$ in $f(x)$. Note $[x^4] x^4(1+x^4)^{12}(1+x^2)^4=[x^0](1+x^4)^{12}(1+x^2)^4$. We use the roots of unity filter, which states $$\text{terms of }f(x)\text{ that have exponent congruent to }k\text{ mod }n=\frac{1}{n}\sum_{m=1}^n \frac{f(z^mx)}{z^{mk}},$$ where $z=e^{i\pi/n}$. In our case $k=0$, so we only need to find the average of the $f(z^mx)$'s.
+$$
+\begin{align*}
+z^0 &\Longrightarrow (1+x^4)^{12}(1+x^2)^4,\\
+z^1 &\Longrightarrow (1-x^4)^{12}(1+ix^2)^4,\\
+z^2 &\Longrightarrow (1+x^4)^{12}(1-x^2)^4,\\
+z^3 &\Longrightarrow (1-x^4)^{12}(1-ix^2)^4,\\
+z^4 &\Longrightarrow (1+x^4)^{12}(1+x^2)^4,\\
+z^5 &\Longrightarrow (1-x^4)^{12}(1+ix^2)^4,\\
+z^6 &\Longrightarrow (1+x^4)^{12}(1-x^2)^4,\\
+z^7 &\Longrightarrow (1-x^4)^{12}(1-ix^2)^4.
+\end{align*}
+$$
+We plug in $x=1$ and take the average to find the sum of all coefficients of $x^{\text{multiple of 8}}$. Plugging in $x=1$ makes all of the above zero except for $z^0$ and $z^4$. Averaging, we get $2^{14}$. Now the answer is simply $$\frac{\binom{12}{4,8}}{6^{12}}\cdot 2^{14}=\boxed{\textbf{(E)} ~\frac{2^2\cdot 5\cdot 11}{3^{10}}}.$$

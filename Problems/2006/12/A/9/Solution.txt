@@ -1,0 +1,12 @@
+== Solution ==
+Let the price of a pencil be $p$ and an eraser $e$.  Then $13p + 3e = 100$ with $p > e > 0$.  Since $p$ and $e$ are [[positive integer]]s, we must have $e \geq 1$ and $p \geq 2$.
+
+Considering the [[equation]] $13p + 3e = 100$ [[modulo]] 3 (that is, comparing the [[remainder]]s when both sides are divided by 3) we have $p + 0e \equiv 1 \pmod 3$ so $p$ leaves a remainder of 1 on division by 3.
+
+Since $p \geq 2$, possible values for $p$ are 4, 7, 10 ....
+
+Since 13 pencils cost less than 100 cents, $13p < 100$.  $13 \times 10 = 130$ is too high, so $p$ must be 4 or 7.
+
+If $p = 4$ then $13p = 52$ and so $3e = 48$ giving $e = 16$.  This contradicts the pencil being more expensive.  The only remaining value for $p$ is 7; then the 13 pencils cost $7 \times 13= 91$ cents and so the 3 erasers together cost 9 cents and each eraser costs $\frac{9}{3} = 3$ cents.
+
+Thus one pencil plus one eraser cost $7 + 3 = 10$ cents, which is answer choice $\mathrm{(A) \ }$.

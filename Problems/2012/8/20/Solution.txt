@@ -1,0 +1,10 @@
+==Solution 1==
+The value of $ \frac{7}{21} $ is $ \frac{1}{3} $. Now we give all the fractions a common denominator.
+
+$ \frac{5}{19} \implies \frac{345}{1311} $
+
+$ \frac{1}{3} \implies \frac{437}{1311} $
+
+$ \frac{9}{23} \implies \frac{513}{1311} $
+
+Ordering the fractions from least to greatest, we find that they are in the order listed. Therefore, our final answer is $ \boxed{\textbf{(B)}\ \frac{5}{19}<\frac{7}{21}<\frac{9}{23}} $.

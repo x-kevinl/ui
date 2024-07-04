@@ -1,0 +1,6 @@
+== Solution 1 ==
+Let the circle intersect <math>\overline{PM}</math> at <math>B</math>. Then note <math>\triangle OPB</math> and <math>\triangle MPA</math> are similar. Also note that <math>AM = BM</math> by [[power of a point]]. Using the fact that the ratio of corresponding sides in similar triangles is equal to the ratio of their perimeters, we have
+<cmath>\frac{19}{AM} = \frac{152-2AM-19+19}{152} = \frac{152-2AM}{152}</cmath>
+Solving, <math>AM = 38</math>. So the ratio of the side lengths of the triangles is 2. Therefore,
+<cmath>\frac{PB+38}{OP}= 2 \text{ and } \frac{OP+19}{PB} = 2</cmath>
+so <math>2OP = PB+38</math> and <math>2PB = OP+19.</math> Substituting for <math>PB</math>, we see that <math>4OP-76 = OP+19</math>, so <math>OP = \frac{95}3</math> and the answer is <math>\boxed{098}</math>.

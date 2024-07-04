@@ -1,0 +1,21 @@
+==Solution 1==
+Find the midpoint of the dotted line.  Draw a line perpendicular to it.  From the point this line intersects the top of the paper, draw lines to each endpoint of the dotted line.  These two lines plus the dotted line form a triangle which is the double-layered portion of the folded paper.  WLOG, assume the width of the paper is $1$ and the length is $\sqrt{3}$.  The triangle we want to find has side lengths $\dfrac{2\sqrt{3}}{3}$, $\sqrt{\left(\dfrac{\sqrt{3}}{3}\right)^{2}+1}=\dfrac{2\sqrt{3}}{3}$, and $\sqrt{\left(\dfrac{\sqrt{3}}{3}\right)^{2}+1}=\dfrac{2\sqrt{3}}{3}$.  It is an equilateral triangle with height $\dfrac{\sqrt{3}}{3}\cdot\sqrt{3}=1$, and area $\dfrac{\dfrac{2\sqrt{3}}{3}\cdot1}{2}=\dfrac{\sqrt{3}}{3}$.  The area of the paper is $1\cdot\sqrt{3}=\sqrt{3}$, and the folded paper has area $\sqrt{3}-\dfrac{\sqrt{3}}{3}=\dfrac{2\sqrt{3}}{3}$.  The ratio of the area of the folded paper to that of the original paper is thus $\boxed{\textbf{(C)} \: 2:3}$
+
+<asy>import graph;
+unitsize(3cm);
+real L = 0.05;
+pair A = (0,0);
+pair B = (sqrt(3),0);
+pair C = (sqrt(3),1);
+pair D = (0,1);
+pair X1 = (sqrt(3)/3,0);
+pair X2= (2*sqrt(3)/3,0);
+pair Y1 = (2*sqrt(3)/3,1);
+pair Y2 = (sqrt(3)/3,1);
+dot(X1);
+dot(Y1);
+draw(A--B--C--D--cycle, linewidth(2));
+draw(B--D,dashed);
+draw(X1--Y1,dashed);
+draw(Y2--X1--D, dotted);
+draw(X2--Y1--B, dotted);</asy>

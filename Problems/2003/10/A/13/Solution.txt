@@ -1,0 +1,79 @@
+== Solution ==
+=== Solution 1 ===
+Let the numbers be $x$, $y$, and $z$ in that order. The given tells us that 
+
+$$\begin{eqnarray*}y&=&7z\\
+x&=&4(y+z)=4(7z+z)=4(8z)=32z\\
+x+y+z&=&32z+7z+z=40z=20\\
+z&=&\frac{20}{40}=\frac{1}{2}\\
+y&=&7z=7\cdot\frac{1}{2}=\frac{7}{2}\\
+x&=&32z=32\cdot\frac{1}{2}=16
+\end{eqnarray*}$$
+
+Therefore, the product of all three numbers is $xyz=16\cdot\frac{7}{2}\cdot\frac{1}{2}=28 \Rightarrow \boxed{\mathrm{(A)}\ 28}$.
+
+=== Solution 2 ===
+Alternatively, we can set up the system in [[equation]] form:
+
+$$\begin{eqnarray*}1x+1y+1z&=&20\\
+1x-4y-4z&=&0\\
+0x+1y-7z&=&0\\
+\end{eqnarray*}$$
+
+Or, in [[matrix]] form
+$
+\begin{bmatrix}
+1 & 1 & 1 \\
+1 & -4 & -4 \\
+0 & 1 & -7
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z \\
+\end{bmatrix}
+=\begin{bmatrix}
+20 \\
+0 \\
+0 \\
+\end{bmatrix}
+$
+
+To solve this matrix equation, we can rearrange it thus:
+
+$\begin{bmatrix}
+x \\
+y \\
+z \\
+\end{bmatrix}
+= \begin{bmatrix}
+1 & 1 & 1 \\
+1 & -4 & -4 \\
+0 & 1 & -7
+\end{bmatrix}
+^{-1}
+\begin{bmatrix}
+20 \\
+0 \\
+0 \\
+\end{bmatrix}
+$
+
+Solving this matrix equation by using [[inverse matrices]] and [[matrix multiplication]] yields
+
+$\begin{bmatrix}
+x \\
+y \\
+z \\
+\end{bmatrix} =
+\begin{bmatrix}
+\frac{1}{2} \\
+\frac{7}{2} \\
+16 \\
+\end{bmatrix} 
+$
+
+Which means that $x = \frac{1}{2}$, $y = \frac{7}{2}$, and $z = 16$. Therefore, $xyz = \frac{1}{2}\cdot\frac{7}{2}\cdot16 = 28 \Rightarrow \boxed{\mathrm{(A)}\ 28}$
+
+=== Solution 3 ===
+Let's denote the 3rd number as $x$, the 2nd as $7x$, and the 1st as $4(7x+x)$ according to the information given in the problem. We know that all three numbers add up to $20$, so $4(8x)+7x+x = 20$. Solving the equation we get $x = \frac{1}{2}$. Then substitute this value of x to solve for the other two numbers. Lastly, we obtain $28$ as the product of all three numbers.

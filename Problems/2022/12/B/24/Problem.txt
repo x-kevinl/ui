@@ -1,0 +1,19 @@
+==Problem==
+
+The figure below depicts a regular $7$-gon inscribed in a unit circle.
+<asy>
+        import geometry;
+unitsize(3cm);
+draw(circle((0,0),1),linewidth(1.5));
+for (int i = 0; i < 7; ++i) {
+  for (int j = 0; j < i; ++j) {
+    draw(dir(i * 360/7) -- dir(j * 360/7),linewidth(1.5));
+  }
+}
+for(int i = 0; i < 7; ++i) { 
+  dot(dir(i * 360/7),5+black);
+}
+</asy>
+What is the sum of the $4$th powers of the lengths of all $21$ of its edges and diagonals?
+
+$\textbf{(A) }49 \qquad \textbf{(B) }98 \qquad \textbf{(C) }147 \qquad \textbf{(D) }168 \qquad \textbf{(E) }196$

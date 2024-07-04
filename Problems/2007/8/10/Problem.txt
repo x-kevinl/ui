@@ -1,0 +1,6 @@
+== Problem ==
+
+For any positive integer $n$, define $\boxed{n}$ to be the sum of the positive factors of $n$.
+For example, $\boxed{6} = 1 + 2 + 3 + 6 = 12$. Find $\boxed{\boxed{11}}$ .
+
+$\textbf{(A)}\ 13 \qquad \textbf{(B)}\ 20 \qquad \textbf{(C)}\ 24 \qquad \textbf{(D)}\ 28 \qquad \textbf{(E)}\ 30$

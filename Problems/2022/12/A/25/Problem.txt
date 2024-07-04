@@ -1,0 +1,4 @@
+==Problem==
+A circle with integer radius $r$ is centered at $(r, r)$. Distinct line segments of length $c_i$ connect points $(0, a_i)$ to $(b_i, 0)$ for $1 \le i \le 14$ and are tangent to the circle, where $a_i$, $b_i$, and $c_i$ are all positive integers and $c_1 \le c_2 \le \cdots \le c_{14}$. What is the ratio $\frac{c_{14}}{c_1}$ for the least possible value of $r$?
+
+$\textbf{(A)} ~\frac{21}{5} \qquad\textbf{(B)} ~\frac{85}{13} \qquad\textbf{(C)} ~7 \qquad\textbf{(D)} ~\frac{39}{5} \qquad\textbf{(E)} ~17 $

@@ -1,0 +1,6 @@
+==Solution 1==
+Consider this position chart: <cmath>\textbf{1 2 3 4 5 6 7 8 9 10 11 12}</cmath>
+Since there has to be an even number of spaces between each pair of the same color, spots <math>1</math>, <math>3</math>, <math>5</math>, <math>7</math>, <math>9</math>, and <math>11</math> contain some permutation of all <math>6</math> colored balls. Likewise, so do the even spots, so the number of even configurations is <math>6! \cdot 6!</math> (after putting every pair of colored balls in opposite parity positions, the configuration can be shown to be even). This is out of <math>\frac{12!}{(2!)^6}</math> possible arrangements, so the probability is: <cmath>\frac{6!\cdot6!}{\frac{12!}{(2!)^6}} = \frac{6!\cdot2^6}{7\cdot8\cdot9\cdot10\cdot11\cdot12} = \frac{2^4}{7\cdot11\cdot3} = \frac{16}{231},</cmath>
+which is in simplest form. So, <math>m + n = 16 + 231 = \boxed{247}</math>.
+
+~Oxymoronic15

@@ -1,0 +1,7 @@
+== Problem ==
+
+The table shows some of the results of a survey by radiostation KACL. What percentage of the males surveyed listen to the station?
+
+$ \begin{tabular}{|c|c|c|c|}\hline & Listen & Don't Listen & Total\\ \hline Males & ? & 26 & ?\\ \hline Females & 58 & ? & 96\\ \hline Total & 136 & 64 & 200\\ \hline\end{tabular} $
+
+$ \textbf{(A)}\ 39\qquad\textbf{(B)}\ 48\qquad\textbf{(C)}\ 52\qquad\textbf{(D)}\ 55\qquad\textbf{(E)}\ 75 $

@@ -1,0 +1,4 @@
+==Solution==
+[[Image:2007_12B_AMC-7.png]]
+
+Since $A$ and $B$ are [[right angle]]s, and $AE$ equals $BC$, and $AECB$ is a [[square]]. Since $ED$ and $CD$ are also 5, triangle $CDE$ is [[equilateral triangle|equilateral]]. Angle $E$ is therefore $90+60=150 \Rightarrow \mathrm {(E)}$

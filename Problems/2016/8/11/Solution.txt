@@ -1,0 +1,7 @@
+==Solutions==
+
+===Solution 1 - kindlymath55532===
+
+We can write the two digit number in the form of $10a+b$; reverse of $10a+b$ is $10b+a$. The sum of those numbers is:
+$$(10a+b)+(10b+a)=132$$$$11a+11b=132$$$$a+b=12$$
+We can use brute force to find order pairs $(a,b)$ such that $a+b=12$. Since $a$ and $b$ are both digits, both $a$ and $b$ have to be integers less than $10$. Thus, our ordered pairs are $(3,9); (4,8); (5,7); (6,6); (7,5); (8,4); (9,3)$; or $\boxed{\textbf{(B)} 7}$ ordered pairs.

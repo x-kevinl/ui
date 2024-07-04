@@ -1,0 +1,2 @@
+== Problem ==
+In [[convex]] [[quadrilateral]] <math> ABCD, \angle A \cong \angle C, AB = CD = 180, </math> and <math> AD \neq BC. </math> The [[perimeter]] of <math> ABCD </math> is <math> 640 </math>. Find <math> \lfloor 1000 \cos A \rfloor. </math> (The notation <math> \lfloor x \rfloor </math> means the greatest [[integer]] that is less than or equal to <math> x. </math>)

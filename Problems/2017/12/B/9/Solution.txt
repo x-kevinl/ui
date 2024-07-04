@@ -1,0 +1,4 @@
+==Solution 1==
+The equations of the two circles are $(x+10)^2+(y+4)^2=169$ and $(x-3)^2+(y-9)^2=65$. Rearrange them to $(x+10)^2+(y+4)^2-169=0$ and $(x-3)^2+(y-9)^2-65=0$, respectively. Their intersection points are where these two equations gain equality. The two points lie on the line with the equation $(x+10)^2+(y+4)^2-169=(x-3)^2+(y-9)^2-65$. We can simplify this like the following. $(x+10)^2+(y+4)^2-169=(x-3)^2+(y-9)^2-65 \rightarrow (x^2+20x+100)+(y^2+8y+16)-(x^2-6x+9)-(y^2-18y+81)=104 \rightarrow 26x+26y+26=104 \rightarrow 26x+26y=78 \rightarrow x+y=3$. Thus, $c = \boxed{\textbf{(A)}\ 3}$.
+
+Solution by TheUltimate123

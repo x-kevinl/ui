@@ -1,0 +1,2 @@
+==Problem==
+Triangle <math>ABC_0</math> has a right angle at <math>C_0</math>. Its side lengths are pairwise relatively prime positive integers, and its perimeter is <math>p</math>. Let <math>C_1</math> be the foot of the altitude to <math>\overline{AB}</math>, and for <math>n \geq 2</math>, let <math>C_n</math> be the foot of the altitude to <math>\overline{C_{n-2}B}</math> in <math>\triangle C_{n-2}C_{n-1}B</math>. The sum <math>\sum_{n=2}^\infty C_{n-2}C_{n-1} = 6p</math>. Find <math>p</math>.

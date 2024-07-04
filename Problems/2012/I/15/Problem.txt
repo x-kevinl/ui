@@ -1,0 +1,12 @@
+==Problem==
+There are <math>n</math> mathematicians seated around a circular table with <math>n</math> seats numbered <math>1,</math> <math>2,</math> <math>3,</math> <math>...,</math> <math>n</math> in clockwise order. After a break they again sit around the table. The mathematicians note that there is a positive integer <math>a</math> such that
+
+<UL>
+(<math>1</math>) for each <math>k,</math> the mathematician who was seated in seat <math>k</math> before the break is seated in seat <math>ka</math> after the break (where seat <math>i + n</math> is seat <math>i</math>);
+</UL>
+
+<UL>
+(<math>2</math>) for every pair of mathematicians, the number of mathematicians sitting between them after the break, counting in both the clockwise and the counterclockwise directions, is different from either of the number of mathematicians sitting between them before the break.
+</UL>
+
+Find the number of possible values of <math>n</math> with <math>1 < n < 1000.</math>

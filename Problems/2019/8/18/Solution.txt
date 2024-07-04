@@ -1,0 +1,6 @@
+==Solution 1==
+We have $2$ dice with $2$ evens and $4$ odds on each die. For the sum to be even, the 2 rolls must be $2$ odds or $2$ evens. 
+
+Ways to roll $2$ odds (Case $1$): The total number of ways to obtain $2$ odds on 2 rolls is $4*4=16$, as there are $4$ possible odds on the first roll and $4$ possible odds on the second roll.
+
+Ways to roll $2$ evens (Case $2$): Similarly, we have $2*2=4$ ways to obtain 2 evens. Probability is $\frac{20}{36}=\frac{5}{9}$, or $\framebox{C}$.

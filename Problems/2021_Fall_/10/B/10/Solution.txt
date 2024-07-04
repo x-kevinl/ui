@@ -1,0 +1,5 @@
+== Solution 1 ==
+Let Alice have the number A, Bob B.
+When Alice says that she can't tell who has the larger number, it means that $A$ cannot equal $1$. Therefore, it makes sense that Bob has $2$ because he now knows that Alice has the larger number. $2$ is also prime. The last statement means that $200+A$ is a perfect square. The three squares in the range $200-300$ are $225$, $256$, and $289$. So, $A$ could equal $25$, $56$, or $89$, so $A+B$ is $27$, $58$, or $91$, of only $\boxed{27}$ is an answer choice.
+
+--stjwyl

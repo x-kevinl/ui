@@ -1,0 +1,2 @@
+==Problem==
+Let <math>P(x)</math> be a nonzero polynomial such that <math>(x-1)P(x+1)=(x+2)P(x)</math> for every real <math>x</math>, and <math>\left(P(2)\right)^2 = P(3)</math>. Then <math>P(\tfrac72)=\tfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m + n</math>.

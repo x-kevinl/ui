@@ -1,0 +1,3 @@
+== Solution ==
+
+The answer is $A$ because she drove at $80$ kmh for $t$ hours (the amount of time before the stop), and $100$ kmh for $\frac{8}{3}-t$ because she wasn't driving for $20$ minutes, or $\frac{1}{3}$ hours. Multiplying by $t$ gives the total distance, which is $250$ km. Therefore, the answer is $80t+100\left(\frac{8}{3}-t\right)=250$ $\Rightarrow$ $\boxed{(A)}$

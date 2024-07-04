@@ -1,0 +1,5 @@
+==Problem==
+
+Emily sees a ship traveling at a constant speed along a straight section of a river. She walks parallel to the riverbank at a uniform rate faster than the ship. She counts $210$ equal steps walking from the back of the ship to the front. Walking in the opposite direction, she counts $42$ steps of the same size from the front of the ship to the back. In terms of Emily's equal steps, what is the length of the ship?
+
+$\textbf{(A) }70\qquad\textbf{(B) }84\qquad\textbf{(C) }98\qquad\textbf{(D) }105\qquad\textbf{(E) }126$

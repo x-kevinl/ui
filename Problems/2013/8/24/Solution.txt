@@ -1,0 +1,189 @@
+==Video Solution for Problems 21-25=
+https://youtu.be/-mi3qziCuec
+
+==Video Solution==
+https://youtu.be/sbBjMvq5GG4 ~savannahsolver
+
+Easy Solution1-<br>
+let side of 1 square be= 2 (doesn't matter if we are calculating ratios)<br>
+Then, total area= 3x2^2=12<br>
+Shaded area=Total area - Unshaded area<br>
+Unshaded area = [AJFEDA]<br>
+We can now extend AD to the centre point of FG. This can be called y.<br>
+△AJY[{(2+2) x 2+(2/2)}/2]=6 + [DEFY]=2x1=2<br>
+Unshaded area=6+2=8<br>
+Shaded area = 12-8=4 <br>
+Hence, ratio= 4/12 = 1/3<br>
+~aarnavSOni
+
+==Easiest Solution==
+
+We can see that the Pentagon is made of two congruent shapes. We can fit one triangle into the gap in the upper square. Therefore, the answer is just $\frac{1}{3}\implies\boxed{C}$
+
+==Solution 1==
+<asy>
+pair A,B,C,D,E,F,G,H,I,J,X;
+A = (0.5,2);
+B = (1.5,2);
+C = (1.5,1);
+D = (0.5,1);
+E = (0,1);
+F = (0,0);
+G = (1,0);
+H = (1,1);
+I = (2,1);
+J = (2,0); 
+X= extension(I,J,A,B);
+dot(X,red);
+draw(I--X--B,red);
+draw(A--B); 
+draw(C--B); 
+draw(D--A); 
+draw(F--E); 
+draw(I--J); 
+draw(J--F); 
+draw(G--H); 
+draw(A--J); 
+filldraw(A--B--C--I--J--cycle,grey);
+draw(E--I);
+dot("$A$", A, NW);
+dot("$B$", B, NE);
+dot("$C$", C, NE);
+dot("$D$", D, NW);
+dot("$E$", E, NW);
+dot("$F$", F, SW);
+dot("$G$", G, S);
+dot("$H$", H, N);
+dot("$I$", I, NE);
+label("$X$", X,SE);
+dot("$J$", J, SE);</asy>
+
+
+First let $s=2$ (where $s$ is the side length of the squares) for simplicity. We can extend $\overline{IJ}$ until it hits the extension of $\overline{AB}$. Call this point $X$. The area of triangle $AXJ$ then is $\dfrac{3 \cdot 4}{2}$ The area of rectangle $BXIC$ is $2 \cdot 1 = 2$. Thus, our desired area is $6-2 = 4$. Now, the ratio of the shaded area to the combined area of the three squares is $\frac{4}{3\cdot 2^2} = \boxed{\textbf{(C)}\hspace{.05in}\frac{1}{3}}$.
+
+==Solution 2==
+
+<asy>
+pair A,B,C,D,E,F,G,H,I,J,X;
+A = (0.5,2);
+B = (1.5,2);
+C = (1.5,1);
+D = (0.5,1);
+E = (0,1);
+F = (0,0);
+G = (1,0);
+H = (1,1);
+I = (2,1);
+J = (2,0); 
+X= (1.25,1);
+draw(A--B); 
+draw(C--B); 
+draw(D--A); 
+draw(F--E); 
+draw(I--J); 
+draw(J--F); 
+draw(G--H); 
+draw(A--J); 
+filldraw(A--B--C--I--J--cycle,grey);
+draw(E--I);
+dot(X,red);
+label("$A$", A, NW);
+label("$B$", B, NE);
+label("$C$", C, NE);
+label("$D$", D, NW);
+label("$E$", E, NW);
+label("$F$", F, SW);
+label("$G$", G, S);
+label("$H$", H, N);
+label("$I$", I, NE);
+label("$X$", X,SW,red);
+label("$J$", J, SE);</asy>
+
+Let the side length of each square be $1$.
+
+Let the intersection of $AJ$ and $EI$ be $X$.
+
+Since $[ABCD]=[GHIJ]$, $AD=IJ$. Since $\angle IXJ$ and $\angle AXD$ are vertical angles, they are congruent. We also have $\angle JIH\cong\angle ADC$ by definition. 
+
+So we have $\triangle ADX\cong\triangle JIX$ by $\textit{AAS}$ congruence. Therefore, $DX=JX$.
+
+Since $C$ and $D$ are midpoints of sides, $DH=CJ=\dfrac{1}{2}$. This combined with $DX=JX$ yields $HX=CX=\dfrac{1}{2}\times \dfrac{1}{2}=\dfrac{1}{4}$.
+
+The area of trapezoid $ABCX$ is $\dfrac{1}{2}(AB+CX)(BC)=\dfrac{1}{2}\times \dfrac{5}{4}\times 1=\dfrac{5}{8}$.
+
+The area of triangle $JIX$ is $\dfrac{1}{2}\times XJ\times IJ=\dfrac{1}{2}\times \dfrac{3}{4}\times 1=\dfrac{3}{8}$.
+
+So the area of the pentagon $AJICB$ is $\dfrac{3}{8}+\dfrac{5}{8}=1$.
+
+The area of the $3$ squares is $1\times 3=3$.
+
+Therefore, $\dfrac{[AJICB]}{[ABCIJFED]}= \boxed{\textbf{(C)}\hspace{.05in}\frac{1}{3}}$.
+
+==Solution 3==
+
+<asy>
+pair A,B,C,D,E,F,G,H,I,J,K;
+A = (0.5,2);
+B = (1.5,2);
+C = (1.5,1);
+D = (0.5,1);
+E = (0,1);
+F = (0,0);
+G = (1,0);
+H = (1,1);
+I = (2,1);
+J = (2,0); 
+K= (1.25,1);
+draw(A--B); 
+draw(C--B); 
+draw(D--A); 
+draw(F--E); 
+draw(I--J); 
+draw(J--F); 
+draw(G--H); 
+draw(A--J); 
+filldraw(A--B--C--I--J--cycle,grey);
+draw(E--I);
+dot(K,red);
+label("$A$", A, NW);
+label("$B$", B, NE);
+label("$C$", C, NE);
+label("$D$", D, NW);
+label("$E$", E, NW);
+label("$F$", F, SW);
+label("$G$", G, S);
+label("$H$", H, N);
+label("$I$", I, NE);
+label("$K$", K,SW,red);
+label("$J$", J, SE);</asy>
+
+Let the intersection of $AJ$ and $EI$ be $K$.
+
+Now we have $\triangle ADK$ and $\triangle KIJ$.
+
+Because both triangles has a side on congruent squares therefore $AD \cong IJ$.
+
+Because $\angle AKD$ and $\angle JKI$ are vertical angles $\angle AKD \cong \angle JKI$.
+
+Also both $\angle ADK$ and $\angle JIK$ are right angles so $\angle ADK \cong \angle JIK$.
+
+Therefore by AAS(Angle, Angle, Side) $\triangle ADK \cong \triangle KIJ$.
+
+Then translating/rotating the shaded $\triangle JIK$ into the position of $\triangle ADK$
+
+So the shaded area now completely covers the square $ABCD$
+
+Set the area of a square as $x$
+
+Therefore, $\frac{x}{3x}= \boxed{\textbf{(C)}\hspace{.05in}\frac{1}{3}}$.
+
+==Solution 4==
+Given the information in the problem, we see that the ABCIJ is congruent to ADHGJ. Since it is half of 2/3, it takes up 1/3 of the area.
+
+==Video Solution by OmegaLearn==
+https://youtu.be/j3QSD5eDpzU?t=346
+
+
+==See Also==
+{{AMC8 box|year=2013|num-b=23|num-a=25}}
+{{MAA Notice}}

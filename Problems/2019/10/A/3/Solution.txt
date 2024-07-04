@@ -1,0 +1,24 @@
+==Solution==
+
+===Solution 1===
+Let $A$ be the age of Ana and $B$ be the age of Bonita. Then,
+
+$$A-1 = 5(B-1)$$
+and
+$$A = B^2.$$
+
+Substituting the second equation into the first gives us
+
+$$B^2-1 = 5(B-1).$$
+
+By using difference of squares and dividing, $B=4.$ Moreover, $A=B^2=16.$
+
+The answer is $16-4 = 12 \implies \boxed{\textbf{(D)}}$
+
+===Solution 2 (Guess and Check)===
+Simple guess and check works. Start with all the square numbers - $1$, $4$, $9$, $16$, $25$, $36$, etc. (probably stop at around $100$ since at that point it wouldn't make sense). If Ana is $9$, then Bonita is $3$, so in the previous year, Ana's age was $4$ times greater than Bonita's. If Ana is $16$, then Bonita is $4$, and Ana's age was $5$ times greater than Bonita's in the previous year, as required. The difference in the ages is $16 - 4 = 12. \boxed{\textbf(D)}$
+
+===Solution 3 (Answer Choices)===
+The second sentence of the problem says that Ana's age was once $5$ times Bonita's age. Therefore, the difference of the ages $n$ must be divisible by $4.$ The only answer choice which is divisible by $4$ is $12 \rightarrow \boxed{\textbf(D)}.$
+
+- awesome_weisur

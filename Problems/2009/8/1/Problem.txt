@@ -1,0 +1,5 @@
+==Problem==
+
+Bridget bought a bag of apples at the grocery store. She gave half of the apples to Ann. Then she gave Cassie 3 apples, keeping 4 apples for herself. How many apples did Bridget buy? 
+
+$ \textbf{(A)}\ 3\qquad\textbf{(B)}\ 4\qquad\textbf{(C)}\ 7\qquad\textbf{(D)}\ 11\qquad\textbf{(E)}\ 14 $

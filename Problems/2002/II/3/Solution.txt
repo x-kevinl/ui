@@ -1,0 +1,6 @@
+== Solution 1==
+<math>abc=6^6</math>. Since they form an increasing geometric sequence, <math>b</math> is the [[geometric mean]] of the [[product]] <math>abc</math>. <math>b=\sqrt[3]{abc}=6^2=36</math>.
+
+Since <math>b-a</math> is the square of an integer, we can find a few values of <math>a</math> that work: <math>11, 20, 27, 32,</math> and <math>35</math>. Out of these, the only value of <math>a</math> that works is <math>a=27</math>, from which we can deduce that <math>c=\dfrac{36}{27}\cdot 36=\dfrac{4}{3}\cdot 36=48</math>.
+
+Thus, <math>a+b+c=27+36+48=\boxed{111}</math>

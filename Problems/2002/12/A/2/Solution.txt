@@ -1,0 +1,3 @@
+==Solution==
+
+We work backwards; the number that Cindy started with is $3(43)+9=138$. Now, the correct result is $\frac{138-3}{9}=\frac{135}{9}=15$. Our answer is $\boxed{\textbf{(A) }15}$.

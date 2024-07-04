@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+She has $n$ nickels and $d=20-n$ dimes. Their total cost is $5n+10d=5n+10(20-n)=200-5n$ cents. If the dimes were nickels and vice versa, she would have $10n+5d=10n+5(20-n)=100+5n$ cents. This value should be $70$ cents more than the previous one. We get $200-5n+70=100+5n$, which solves to $n=17$. Her coins are worth $200-5n=\boxed{\mathrm{(A)\ }\textdollar1.15}$.

@@ -1,0 +1,9 @@
+==Solution 1 (Casework)==
+
+We shall solve this problem by doing casework on the lowest element of the subset. Note that the number <math>1</math> cannot be in the subset because <math>1*1=1</math>. Let <math>S</math> be a product-free set. If the lowest element of <math>S</math> is <math>2</math>, we consider the set <math>\{3, 6, 9\}</math>. We see that 5 of these subsets can be a subset of <math>S</math> (<math>\{3\}</math>, <math>\{6\}</math>, <math>\{9\}</math>, <math>\{6, 9\}</math>, and the empty set). Now consider the set <math>\{5, 10\}</math>. We see that 3 of these subsets can be a subset of <math>S</math> (<math>\{5\}</math>, <math>\{10\}</math>, and the empty set). Note that <math>4</math> cannot be an element of <math>S</math>, because <math>2</math> is. Now consider the set <math>\{7, 8\}</math>. All four of these subsets can be a subset of <math>S</math>. So if the smallest element of <math>S</math> is <math>2</math>, there are <math>5*3*4=60</math> possible such sets.
+
+If the smallest element of <math>S</math> is <math>3</math>, the only restriction we have is that <math>9</math> is not in <math>S</math>. This leaves us <math>2^6=64</math> such sets.
+
+If the smallest element of <math>S</math> is not <math>2</math> or <math>3</math>, then <math>S</math> can be any subset of <math>\{4, 5, 6, 7, 8, 9, 10\}</math>, including the empty set. This gives us <math>2^7=128</math> such subsets.
+
+So our answer is <math>60+64+128=\boxed{252}</math>.

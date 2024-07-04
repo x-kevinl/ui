@@ -1,0 +1,2 @@
+==Solution==
+Start by buying the largest packs first. After three $24$-packs, $90-3(24)=18$ cans are left. After one $12$-pack, $18-12=6$ cans are left. Then buy one more $6$-pack. The total number of packs is $3+1+1=\boxed{\textbf{(B)}\ 5}$.

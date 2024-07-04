@@ -1,0 +1,2 @@
+==Problem==
+Find the number of four-element subsets of <math>\{1,2,3,4,\dots, 20\}</math> with the property that two distinct elements of a subset have a sum of <math>16</math>, and two distinct elements of a subset have a sum of <math>24</math>. For example, <math>\{3,5,13,19\}</math> and <math>\{6,10,20,18\}</math> are two such subsets.

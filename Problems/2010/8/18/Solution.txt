@@ -1,0 +1,16 @@
+==Solution==
+We can set a proportion:
+
+$$\dfrac{AD}{AB}=\dfrac{3}{2}$$
+
+We substitute $AB$ with 30 and solve for $AD$.
+
+$$\dfrac{AD}{30}=\dfrac{3}{2}$$
+
+$$AD=45$$
+
+We calculate the combined area of semicircle by putting together semicircle $AB$ and $CD$ to get a circle with radius $15$. Thus, the area is $225\pi$. The area of the rectangle is $30\cdot 45=1350$. We calculate the ratio:
+
+$$\dfrac{1350}{225\pi}=\dfrac{6}{\pi}\Rightarrow\boxed{\textbf{(C)}\ 6:\pi}$$
+
+Note that we could have solved this without the measurement of $30$ inches.

@@ -1,0 +1,5 @@
+==Solution 1==
+
+The amount of twos in our sum ranges from $0$ to $1008$, with differences of $3$ because $2 \cdot 3 = \operatorname{lcm}(2, 3)$.
+
+The possible amount of twos is $\frac{1008 - 0}{3} + 1 \Rightarrow \boxed{\textbf{(C)} 337}$.

@@ -1,0 +1,11 @@
+== Problem ==
+Let <math>N</math> be the number of [[ordered pair]]s of nonempty sets <math>\mathcal{A}</math> and <math>\mathcal{B}</math> that have the following properties:
+
+<UL>
+<LI> <math>\mathcal{A} \cup \mathcal{B} = \{1,2,3,4,5,6,7,8,9,10,11,12\}</math>,</LI>
+<LI> <math>\mathcal{A} \cap \mathcal{B} = \emptyset</math>, </LI>
+<LI> The number of elements of <math>\mathcal{A}</math> is not an element of <math>\mathcal{A}</math>,</LI>
+<LI> The number of elements of <math>\mathcal{B}</math> is not an element of <math>\mathcal{B}</math>.
+</UL>
+
+Find <math>N</math>.

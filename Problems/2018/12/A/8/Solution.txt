@@ -1,0 +1,2 @@
+==Solution 1==
+Let $x$ be the area of $ADE$. Note that $x$ is comprised of the $7$ small isosceles triangles and a triangle similar to $ADE$ with side length ratio $3:4$ (so an area ratio of $9:16$). Thus, we have $$x=7+\dfrac{9}{16}x.$$ This gives $x=16$, so the area of $DBCE=40-x=\boxed{(E) 24}$.

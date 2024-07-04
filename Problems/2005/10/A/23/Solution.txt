@@ -1,0 +1,19 @@
+==Solution 1==
+[[File:Circlenc1.png]]
+
+WLOG, Let us assume that the diameter is of length $1$. 
+
+The length of $AC$ is $\frac{1}{3}$ and $CO$ is $\frac{1}{2}-\frac{1}{3} = \frac{1}{6}$. 
+
+$OD$ is the radius of the circle, which is $\frac{1}{2}$, so using the [[Pythagorean Theorem]] the height $CD$ of $\triangle DCO$ is $\sqrt{\left(\frac{1}{2}\right)^2-\left(\frac{1}{6}\right)^2} = \frac{\sqrt{2}}{3}$. This is also the height of the $\triangle ABD$.
+
+The area of $\triangle DCO$ is $\frac{1}{2}\cdot\frac{1}{6}\cdot\frac{\sqrt{2}}{3}$ = $\frac{\sqrt{2}}{36}$.
+
+The height of $\triangle DCE$ can be found using the area of $\triangle DCO$ and $DO$ as base.
+
+Hence, the height of $\triangle DCE$ is $\dfrac{\dfrac{\sqrt{2}}{36}}{\dfrac{1}{2}\cdot\dfrac{1}{2}}$ = $\dfrac{\sqrt{2}}{9}$. 
+
+The diameter is the base for both the triangles $\triangle DCE$ and $\triangle ABD$,
+
+Hence, the ratio of the area of $\triangle DCE$ to the area of $\triangle ABD$ is
+$\dfrac{\dfrac{\sqrt{2}}{9}}{\dfrac{\sqrt{2}}{3}}$ = $\boxed{\textbf{(C) }\frac{1}{3}}$

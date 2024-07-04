@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+A positive integer is divisible by <math>4</math> if and only if its last two digits are divisible by <math>4.</math> For any value of <math>b</math>, there are two possible values for <math>a</math> and <math>c</math>, since we find that if <math>b</math> is even, <math>a</math> and <math>c</math> must be either <math>4</math> or <math>8</math>, and if <math>b</math> is odd, <math>a</math> and <math>c</math> must be either <math>2</math> or <math>6</math>. There are thus <math>2 \cdot 2 = 4</math> ways to choose <math>a</math> and <math>c</math> for each <math>b,</math> and <math>10</math> ways to choose <math>b</math> since <math>b</math> can be any digit. The final answer is then <math>4 \cdot 10 = \boxed{040}</math>.

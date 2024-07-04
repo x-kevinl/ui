@@ -1,0 +1,26 @@
+==Solution 1==
+
+Note that:
+
+* Truth-tellers would answer yes-no-no to the three questions in this order.
+
+* Liars would answer yes-yes-no to the three questions in this order.
+
+* Alternaters who responded truth-lie-truth would answer no-no-no to the three questions in this order.
+
+* Alternaters who responded lie-truth-lie would answer yes-yes-yes to the three questions in this order.
+
+Suppose that there are $T$ truth-tellers, $L$ liars, and $A$ alternaters who responded lie-truth-lie.
+
+The conditions of the first two questions imply that
+$$\begin{align*}
+T+L+A&=22, \\
+L+A&=15.
+\end{align*}$$
+Subtracting the second equation from the first, we have $T=22-15=\boxed{\textbf{(A) } 7}.$
+
+<u><b>Remark</b></u>
+
+The condition of the third question is extraneous. However, we know that there are $9$ alternaters who responded lie-truth-lie, $6$ liars, and $9$ alternaters who responded truth-lie-truth from this condition.
+
+~sigma ~[[OrenSH|orenbad]] ~MRENTHUSIASM

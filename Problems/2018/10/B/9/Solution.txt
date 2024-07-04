@@ -1,0 +1,18 @@
+==Solution 1==
+It can be seen that the probability of rolling the smallest number possible is the same as the probability of rolling the largest number possible, the probability of rolling the second smallest number possible is the same as the probability of rolling the second largest number possible, and so on. This is because the number of ways to add a certain number of ones to an assortment of $7$ ones is the same as the number of ways to take away a certain number of ones from an assortment of $7$ $6$s.
+
+So, we can match up the values to find the sum with the same probability as $10$. We can start by noticing that $7$ is the smallest possible roll and $42$ is the largest possible roll. The pairs with the same probability are as follows:
+
+$(7, 42), (8, 41), (9, 40), (10, 39), (11, 38)...$
+
+However, we need to find the number that matches up with $10$. So, we can stop at $(10, 39)$ and deduce that the sum with equal probability as $10$ is $39$. So, the correct answer is $\boxed{\textbf{(D)} \text{39}}$, and we are done.
+
+Written By: Archimedes15
+
+
+
+Add-on by ike.chen: to see how the number of ways to roll $10$ and $39$ are the same, consider this argument:
+
+Each of the $7$ dice needs to have a nonnegative value; it follows that the number of ways to roll $10$ is $\binom {10-1}{7-1}=84$ by stars and bars. $10-7=3$, so there's no chance that any dice has a value $>6$.
+
+Now imagine $7$ piles with $6$ blocks each. The number of ways to take $3$ blocks away (making the sum $7\cdot 6-3=39$) is also $\binom {3+7-1}{7-1}=84$.

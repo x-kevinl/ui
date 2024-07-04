@@ -1,0 +1,12 @@
+==Problem==
+All the high schools in a large school district are involved in a fundraiser selling T-shirts. Which of the choices below is logically equivalent to the statement "No school bigger than Euclid HS sold more T-shirts than Euclid HS"?
+
+$\textbf{(A) }$ All schools smaller than Euclid HS sold fewer T-shirts than Euclid HS.
+
+$\textbf{(B) }$ No school that sold more T-shirts than Euclid HS is bigger than Euclid HS.
+
+$\textbf{(C) }$ All schools bigger than Euclid HS sold fewer T-shirts than Euclid HS.
+
+$\textbf{(D) }$ All schools that sold fewer T-shirts than Euclid HS are smaller than Euclid HS.
+
+$\textbf{(E) }$ All schools smaller than Euclid HS sold more T-shirts than Euclid HS.

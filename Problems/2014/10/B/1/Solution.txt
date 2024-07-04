@@ -1,0 +1,2 @@
+==Solution==
+If Leah has $1$ more nickel, she has $14$ total coins. Because she has the same number of nickels and pennies, she has $7$ nickels and $7$ pennies. This is after the nickel has been added, so we must subtract $1$ nickel to get $6$ nickels and $7$ pennies. Therefore, Leah has $6\cdot5+7=\boxed{37 (\textbf{C})}$ cents.

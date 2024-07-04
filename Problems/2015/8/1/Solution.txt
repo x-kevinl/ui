@@ -1,0 +1,2 @@
+==Solution 1==
+First, we multiply $12\cdot9$. To get that, we need $108$ square feet of carpet to cover the room's floor.  Since there are $9$ square feet in a square yard, you divide $108$ by $9$ to get $12$ square yards, so our answer is $\bold{\boxed{\textbf{(A)}~12}}$.

@@ -1,0 +1,13 @@
+==Solution==
+
+Let $x$ be the fixed fee, and $y$ be the amount she pays for the minutes she used in the first month.
+
+$x+y=12.48$
+
+$x+2y=17.54$
+
+$y=5.06$
+
+$x=7.42$
+
+We want the fixed fee, which is $\boxed{\text{D}}$.

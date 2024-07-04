@@ -1,0 +1,5 @@
+==Problem==
+
+How many 4-digit positive integers have four different digits, where the leading digit is not zero, the integer is a multiple of 5, and 5 is the largest digit?
+
+$ \textbf{(A) }24\qquad\textbf{(B) }48\qquad\textbf{(C) }60\qquad\textbf{(D) }84\qquad\textbf{(E) }108 $

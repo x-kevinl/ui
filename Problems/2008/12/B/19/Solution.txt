@@ -1,0 +1,9 @@
+==Solution 1:==
+We need only concern ourselves with the imaginary portions of $f(1)$ and $f(i)$ (both of which must be 0). These are:
+
+$$\begin{align*}
+\text{Im}(f(1)) & = i+i\text{Im}(\alpha)+i\text{Im}(\gamma) \\
+\text{Im}(f(i)) & = -i+i\text{Re}(\alpha)+i\text{Im}(\gamma)
+\end{align*}$$
+
+Let $p=\text{Im}(\gamma)$ and $q=\text{Re}{(\gamma)},$ then we know $\text{Im}(\alpha)=-p-1$ and $\text{Re}(\alpha)=1-p.$ Therefore $$|\alpha|+|\gamma|=\sqrt{(1-p)^2+(-1-p)^2}+\sqrt{q^2+p^2}=\sqrt{2p^2+2}+\sqrt{p^2+q^2},$$ which reaches its minimum $\sqrt 2$ when $p=q=0$ by the Trivial Inequality. Thus, the answer is $\boxed B.$

@@ -1,0 +1,5 @@
+== Solution 2 ==
+
+Draw a good diagram! Now, let's call $BD=t$, so $DC=2t$. Given the rather nice angles of $\angle ABD = 45^\circ$ and $\angle ADC = 60^\circ$ as you can see, let's do trig. Drop an altitude from $A$ to $BC$; call this point $H$. We realize that there is no specific factor of $t$ we can call this just yet, so let $AH=kt$. Notice that in $\triangle{ABH}$ we get $BH=kt$. Using the 60-degree angle in $\triangle{ADH}$, we obtain $DH=\frac{\sqrt{3}}{3}kt$. The comparable ratio is that $BH-DH=t$. If we involve our $k$, we get:
+
+$kt(\frac{3}{3}-\frac{\sqrt{3}}{3})=t$. Eliminating $t$ and removing radicals from the denominator, we get $k=\frac{3+\sqrt{3}}{2}$. From there, one can easily obtain $HC=3t-kt=\frac{3-\sqrt{3}}{2}t$. Now we finally have a desired ratio. Since $\tan\angle ACH = 2+\sqrt{3}$ upon calculation, we know that $\angle ACH$ can be simplified. Indeed, if you know that $\tan(75)=2+\sqrt{3}$ or even take a minute or two to work out the sine and cosine using $\sin(x)^2+\cos(x)^2=1$, and perhaps the half- or double-angle formulas, you get $\boxed{75^\circ}$.

@@ -1,0 +1,6 @@
+==Solution 1==
+
+The probability that he rolls a six twice when using the fair die is <math>\frac{1}{6}\times \frac{1}{6}=\frac{1}{36}</math>.  The probability that he rolls a six twice using the biased die is <math>\frac{2}{3}\times \frac{2}{3}=\frac{4}{9}=\frac{16}{36}</math>.  Given that Charles rolled two sixes, we can see that it is <math>16</math> times more likely that he chose the second die.  Therefore the probability that he is using the fair die is <math>\frac{1}{17}</math>, and the probability that he is using the biased die is <math>\frac{16}{17}</math>.  The probability of rolling a third six is
+
+<cmath>\frac{1}{17}\times \frac{1}{6} + \frac{16}{17} \times \frac{2}{3} = \frac{1}{102}+\frac{32}{51}=\frac{65}{102}</cmath>
+Therefore, our desired <math>p+q</math> is <math>65+102= \boxed{167}</math>

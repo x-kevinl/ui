@@ -1,0 +1,49 @@
+== Solution ==
+<center>
+<asy>
+   /* Settings */
+import three; defaultpen(fontsize(10)+linewidth(0.62)); 
+currentprojection = perspective(-2,-50,15); size(200);
+   /* Variables */
+real x = 20 - ((750)^.5)/3, CE = 8*(6^.5) - 4*(5^.5), CD = 8*(6^.5), h = 4*CE/CD;
+pair Cxy = 8*expi((3*pi)/2-CE/8);
+triple Oxy = (0,0,0), A=(4*5^.5,-8,4), B=(0,-8,h), C=(Cxy.x,Cxy.y,0), D=(A.x,A.y,0), E=(B.x,B.y,0), O=(O.x,O.y,h);
+pair L = 8*expi(pi+0.05), R = 8*expi(-0.22); /* left and right cylinder lines, numbers from trial/error */
+   /* Drawing */
+draw(B--A--D--E--B--C); 
+draw(circle(Oxy,8)); 
+draw(circle(O,8)); 
+draw((L.x,L.y,0)--(L.x,L.y,h)); draw((R.x,R.y,0)--(R.x,R.y,h));
+draw(O--B--(A.x,A.y,h)--cycle,dashed);
+   /* Labeling */
+label("\(A\)",A,NE);  dot(A); 
+label("\(B\)",B,NW);  dot(B);
+label("\(C\)",C,W);   dot(C);
+label("\(D\)",D,E);   dot(D);
+label("\(E\)",E,S);   dot(E);
+label("\(O\)",O,NW);  dot(O);
+
+pair O1 = (25,4), A1=O1+(4*sqrt(5),-8), B1=O1+(0,-8);
+draw(circle(O1,8));
+draw(O1--A1--B1--O1);
+label("\(A\)",A1,SE);label("\(B\)",B1,SW);label("\(O\)",O1,N);
+label("$8$",O1--B1,W);label("$4$",(5*A1+O1)/6,0.8*(1,1));
+label("$8$",O1--A1,0.8*(-0.5,2));label("$4\sqrt{5}$",B1/2+A1/2,(0,-1));
+</asy></center>
+Looking from an overhead view, call the [[center]] of the [[circle]] <math>O</math>, the tether point to the unicorn <math>A</math> and the last point where the rope touches the tower <math>B</math>.  <math>\triangle OAB</math> is a [[right triangle]] because <math>OB</math> is a radius and <math>BA</math> is a [[tangent line]] at point <math>B</math>.  We use the [[Pythagorean Theorem]] to find the horizontal component of <math>AB</math> has length <math>4\sqrt{5}</math>.  
+
+<center><asy>
+defaultpen(fontsize(10)+linewidth(0.62));
+pair A=(-4*sqrt(5),4), B=(0,4*(8*sqrt(6)-4*sqrt(5))/(8*sqrt(6))), C=(8*sqrt(6)-4*sqrt(5),0), D=(-4*sqrt(5),0), E=(0,0);
+draw(A--C--D--A);draw(B--E);
+label("\(A\)",A,(-1,1));label("\(B\)",B,(1,1));label("\(C\)",C,(1,0));label("\(D\)",D,(-1,-1));label("\(E\)",E,(0,-1));
+label("$4\sqrt{5}$",D/2+E/2,(0,-1));label("$8\sqrt{6}-4\sqrt{5}$",C/2+E/2,(0,-1));
+label("$4$",D/2+A/2,(-1,0));label("$x$",C/2+B/2,(1,0.5));label("$20-x$",0.7*A+0.3*B,(1,0.5));
+dot(A^^B^^C^^D^^E);
+</asy></center>
+
+Now look at a side view and "unroll" the cylinder to be a flat surface. Let <math>C</math> be the bottom tether of the rope, let <math>D</math> be the point on the ground below <math>A</math>, and let <math>E</math> be the point directly below <math>B</math>.  [[Triangle]]s <math>\triangle CDA</math> and <math>\triangle CEB</math> are [[similar]] [[right triangle]]s.  By the Pythagorean Theorem <math>CD=8\cdot\sqrt{6}</math>.  
+
+Let <math>x</math> be the length of <math>CB</math>. <cmath>\frac{CA}{CD}=\frac{CB}{CE}\implies \frac{20}{8\sqrt{6}}=\frac{x}{8\sqrt{6}-4\sqrt{5}}\implies x=\frac{60-\sqrt{750}}{3}</cmath> 
+
+Therefore <math>a=60, b=750, c=3, a+b+c=\boxed{813}</math>.

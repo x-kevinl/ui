@@ -1,0 +1,27 @@
+==Solution 1==
+
+Notice that $L_{17}$ contains the highest power of every prime below $17$ since higher primes cannot divide $L_{17}$. Thus, $L_{17}=16\cdot 9 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \cdot 17$.
+
+When writing the sum under a common fraction, we multiply the denominators by $L_{17}$ divided by each denominator. However, since $L_{17}$ is a multiple of $17$, all terms will be a multiple of $17$ until we divide out $17$, and the only term that will do this is $\frac{1}{17}$. Thus, the remainder of all other terms when divided by $17$ will be $0$, so the problem is essentially asking us what the remainder of $\frac{L_{17}}{17} = L_{16}$ divided by $17$ is. This is equivalent to finding the remainder of $16 \cdot 9 \cdot 5 \cdot 7 \cdot 11 \cdot 13$ divided by $17$.
+
+We use modular arithmetic to simplify our answer:
+
+This is congruent to $-1 \cdot 9 \cdot 5 \cdot 7 \cdot 11 \cdot 13 \pmod{17}$.
+
+Evaluating, we get: 
+$$\begin{align*}
+(-1) \cdot 9 \cdot 35 \cdot 11 \cdot 13 &\equiv (-1) \cdot 9 \cdot 1 \cdot 11 \cdot 13 \pmod{17} \\
+&\equiv 9 \cdot 11 \cdot (-13) \pmod{17} \\
+&\equiv 9 \cdot 11 \cdot 4\pmod{17} \\
+&\equiv 2 \cdot 11 \pmod{17} \\
+&\equiv 5\pmod{17}
+\end{align*}$$
+Therefore the remainder is $\boxed{\textbf{(C) } 5}$.
+
+~KingRavi
+
+~mathboy282
+
+~Scarletsyc
+
+~wangzrpi

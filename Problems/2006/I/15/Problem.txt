@@ -1,0 +1,4 @@
+== Problem ==
+Given that a sequence satisfies <math> x_0=0 </math> and <math> |x_k|=|x_{k-1}+3| </math> for all integers <math> k\ge 1, </math> find the minimum possible value of <math> |x_1+x_2+\cdots+x_{2006}|. </math>
+
+__TOC__

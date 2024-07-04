@@ -1,0 +1,17 @@
+==Solution==
+
+Let the two numbers equal $x$ and $y$. From the information given in the problem, two equations can be written:
+
+$xy=9$
+
+$\frac{1}{x}=4 \left( \frac{1}{y} \right)$
+
+Therefore, $4x=y$
+
+Replacing $y$ with $4x$ in the equation,
+
+$4x^2=9$
+
+So $x=\frac{3}{2}$ and $y$ would then be $4 \times$ $\frac{3}{2}=6$
+
+The sum would be $\frac{3}{2}+6$ = $\boxed{\textbf{(D)}\ \frac{15}{2}}$

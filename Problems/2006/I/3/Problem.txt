@@ -1,0 +1,2 @@
+== Problem ==
+Find the least [[positive]] [[integer]] such that when its leftmost [[digit]] is deleted, the resulting integer is <math>\frac{1}{29}</math> of the original integer.

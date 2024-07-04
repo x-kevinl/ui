@@ -1,0 +1,6 @@
+== Problem ==
+Let $x$ and $y$ be two-digit integers such that $y$ is obtained by reversing the digits
+of $x$. The integers $x$ and $y$ satisfy $x^2 - y^2 = m^2$ for some positive integer $m$.
+What is $x + y + m$?
+
+$\textbf{(A) } 88 \qquad \textbf{(B) } 112 \qquad \textbf{(C) } 116 \qquad \textbf{(D) } 144 \qquad \textbf{(E) } 154 $

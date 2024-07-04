@@ -1,0 +1,4 @@
+==Solution==
+The information is the same for Problems 14,15, and 16. Therefore, we shall only use the information we need. All we need for this problem is that there's 760 pages, Bob reads a page in 45 seconds and Chandra reads a page in 30 seconds. A lot of people will find how long it takes Bob to read the book, how long it takes Chandra to read the book, and then find the seconds. However, if we just set up the expression, we can find an easier way.
+
+$760\cdot45 - 760\cdot30 = 760(45-30) = 760(15) = \boxed{\textbf{(B)}11,400}$

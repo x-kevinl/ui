@@ -1,0 +1,4 @@
+==Problem==
+Six rectangles each with a common base width of $2$ have lengths of $1, 4, 9, 16, 25$, and $36$. What is the sum of the areas of the six rectangles?
+
+$\textbf{(A) }91\qquad\textbf{(B) }93\qquad\textbf{(C) }162\qquad\textbf{(D) }182\qquad \textbf{(E) }202$

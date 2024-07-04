@@ -1,0 +1,23 @@
+== Problem ==
+Five unit squares are arranged in the coordinate plane as shown, with the lower left corner at the origin. The slanted line, extending from $(c,0)$ to $(3,3)$, divides the entire region into two regions of equal area. What is $c$?
+
+<asy>
+unitsize(0.2cm);
+defaultpen(linewidth(.8pt)+fontsize(8pt));
+
+fill((2/3,0)--(3,3)--(3,1)--(2,1)--(2,0)--cycle,gray);
+
+xaxis("$x$",-0.5,4,EndArrow(HookHead,4));
+yaxis("$y$",-0.5,4,EndArrow(4));
+
+draw((0,1)--(3,1)--(3,3)--(2,3)--(2,0));
+draw((1,0)--(1,2)--(3,2));
+draw((2/3,0)--(3,3));
+
+label("$(c,0)$",(2/3,0),S);
+label("$(3,3)$",(3,3),NE);
+</asy>
+
+$\textbf{(A)}\ \frac12\qquad \textbf{(B)}\ \frac35\qquad \textbf{(C)}\ \frac23\qquad \textbf{(D)}\ \frac34\qquad \textbf{(E)}\ \frac45$
+
+[[Category: Introductory Geometry Problems]]

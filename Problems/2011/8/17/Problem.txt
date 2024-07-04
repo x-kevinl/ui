@@ -1,0 +1,4 @@
+==Problem==
+Let $w$, $x$, $y$, and $z$ be whole numbers. If $2^w \cdot 3^x \cdot 5^y \cdot 7^z = 588$, then what does $2w + 3x + 5y + 7z$ equal?
+
+$ \textbf{(A) } 21\qquad\textbf{(B) }25\qquad\textbf{(C) }27\qquad\textbf{(D) }35\qquad\textbf{(E) }56 $

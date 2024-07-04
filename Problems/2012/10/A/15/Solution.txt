@@ -1,0 +1,33 @@
+== Solution 1 ==
+
+<center><asy>
+unitsize(2cm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+dotfactor=4;
+
+pair A=(0,0), B=(1,0); pair C=(0.8,-0.4);
+pair D=(1,-2), E=(0,-2);
+draw(A--(2,0)); draw((0,-1)--(2,-1)); draw(E--D);
+draw(A--E); draw(B--D); draw((2,0)--(2,-1));
+draw(A--(2,-1)); draw(B--E);
+
+pair[] ps={A,B,C,D,E};
+dot(ps);
+label("$A$",A,N);
+label("$B$",B,N);
+label("$C$",C,W);
+label("$D$",D,S);
+label("$E$",E,S);
+label("$1$",(D--E),S);
+label("$1$",(A--B),N);
+label("$2$",(A--E),W);
+label("$\sqrt{5}$",(B--E),NW);
+</asy></center>
+
+$AC$ intersects $BC$ at a right angle, (this can be proved by noticing that the slopes of the two lines are negative reciprocals of each other) so $\triangle ABC \sim \triangle BED$. The hypotenuse of right triangle BED is $\sqrt{1^2+2^2}=\sqrt{5}$.
+
+$$\frac{AC}{BC}=\frac{BD}{ED} \Rightarrow \frac{AC}{BC} = \frac21 \Rightarrow AC=2BC$$
+
+$$\frac{AC}{AB}=\frac{BD}{BE} \Rightarrow \frac{AC}{1}=\frac{2}{\sqrt{5}} \Rightarrow AC=\frac{2}{\sqrt{5}}$$
+
+Since $AC=2BC$, $BC=\frac{1}{\sqrt{5}}$. $\triangle ABC$ is a right triangle so the area is just $\frac12 \cdot AC \cdot BC = \frac12 \cdot \frac{2}{\sqrt{5}} \cdot \frac{1}{\sqrt{5}} = \boxed{\textbf{(B)}\ \frac15}$

@@ -1,0 +1,2 @@
+==Problem==
+Tetrahedron <math>ABCD</math> has <math>AD=BC=28</math>, <math>AC=BD=44</math>, and <math>AB=CD=52</math>. For any point <math>X</math> in space, suppose <math>f(X)=AX+BX+CX+DX</math>. The least possible value of <math>f(X)</math> can be expressed as <math>m\sqrt{n}</math>, where <math>m</math> and <math>n</math> are positive integers, and <math>n</math> is not divisible by the square of any prime. Find <math>m+n</math>.

@@ -1,0 +1,2 @@
+==Solution==
+Factoring the equation gives $a(2 - b)$. From this we can see that to obtain the least possible value, $2 - b$ should be negative, and should be as small as possible. To do so, $b$ should be maximized. Because $2 - b$ is negative, we should maximize the positive value of $a$ as well. The maximum values of both $a$ and $b$ are $5$, so the answer is $5(2 - 5) = \boxed{\textbf{(B)}\ -15}$.

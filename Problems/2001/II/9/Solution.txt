@@ -1,0 +1,15 @@
+== Solution 1==
+We can use [[complementary counting]], counting all of the colorings that have at least one red <math>2\times 2</math> square.
+
+*For at least one red <math>2 \times 2</math> square:
+:There are four <math>2 \times 2</math> squares to choose which one will be red. Then there are <math>2^5</math> ways to color the rest of the squares. <math>4*32=128</math>
+*For at least two <math>2 \times 2</math> squares:
+:There are two cases: those with two red squares on one side and those without red squares on one side.
+:The first case is easy: 4 ways to choose which the side the squares will be on, and <math>2^3</math> ways to color the rest of the squares, so 32 ways to do that. For the second case, there will be only two ways to pick two squares, and <math>2^2</math> ways to color the other squares. <math>32+8=40</math>
+*For at least three <math>2 \times 2</math> squares:
+:Choosing three such squares leaves only one square left, with four places to place it. This is <math>2 \cdot 4 = 8</math> ways.
+*For at least four <math>2 \times 2</math> squares, we clearly only have one way.
+
+By the [[Principle of Inclusion-Exclusion]], there are (alternatively subtracting and adding) <math>128-40+8-1=95</math> ways to have at least one red <math>2 \times 2</math> square.
+
+There are <math>2^9=512</math> ways to paint the <math>3 \times 3</math> square with no restrictions, so there are <math>512-95=417</math> ways to paint the square with the restriction. Therefore, the probability of obtaining a grid that does not have a <math>2 \times 2</math> red square is <math>\frac{417}{512}</math>, and <math>417+512=\boxed{929}</math>.

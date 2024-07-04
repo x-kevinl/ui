@@ -1,0 +1,2 @@
+== Problem ==
+A finite [[set]] <math>\mathcal{S}</math> of distinct real numbers has the following properties: the [[arithmetic mean|mean]] of <math>\mathcal{S}\cup\{1\}</math> is <math>13</math> less than the mean of <math>\mathcal{S}</math>, and the mean of <math>\mathcal{S}\cup\{2001\}</math> is <math>27</math> more than the mean of <math>\mathcal{S}</math>. Find the mean of <math>\mathcal{S}</math>.

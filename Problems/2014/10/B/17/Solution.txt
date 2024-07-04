@@ -1,0 +1,11 @@
+==Solution 1==
+
+We begin by factoring [[the]] $2^{1002}$ out. This leaves us with $5^{1002} - 1$. 
+
+We factor the difference of squares, leaving us with $(5^{501} - 1)(5^{501} + 1)$. We note that all even powers of $5$ more than two end in ...$625$. Also, all odd powers of five more than $2$ end in  ...$125$. Thus, $(5^{501} + 1)$ would end in ...$126$ and thus would contribute one power of two to the answer, but not more. 
+
+We can continue to factor $(5^{501} - 1)$ as a difference of cubes, leaving us with $(5^{167} - 1)$ times an odd number (Notice that the other number is $5^{334} + 5^{167} + 1$. The powers of $5$ end in $5$, so the two powers of $5$ will end with $0$. Adding $1$ will make it end in $1$. Thus, this is an odd number). $(5^{167} - 1)$ ends in ...$124$, contributing two powers of two to the final result.
+
+Or we can see that $(5^{501} - 1)$ ends in $124$, and is divisible by $2$ only. Still that's $2$ powers of $2$.
+ 
+Adding these extra $3$ powers of two to the original $1002$ factored out, we obtain the final answer of $\textbf{(D) } 2^{1005}$.

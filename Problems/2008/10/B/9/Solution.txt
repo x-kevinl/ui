@@ -1,0 +1,3 @@
+==Solution 1==
+
+Dividing both sides by $a$, we get $x^2 - 2x + b/a = 0$. By Vieta's formulas, the sum of the roots is $2$, therefore their average is $1\Rightarrow \boxed{A}$.

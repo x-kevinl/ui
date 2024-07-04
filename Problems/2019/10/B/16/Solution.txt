@@ -1,0 +1,20 @@
+==Diagram==
+<asy>
+draw((0,0)--(0,8),black);
+dot((0,0));
+dot((0,8));
+draw((0,0)--(4,0),black);
+dot((4,0));
+draw((0,8)--(4,0),black);
+draw((0,0)--(2.5,3),black);
+dot((2.5,3));
+draw((0,5)--(2.5,3),black);
+dot((0,5));
+label ("$B$", (0,8),N);
+label ("$C$", (0,0),SW);
+label ("$A$", (4,0),SE);
+label ("$E$", (0,5),W);
+label ("$D$", (2.5,3),NE);
+</asy>
+~ By Little Mouse
+<!-- EDITED BY LVLUO -->

@@ -1,0 +1,2 @@
+==Solution==
+For her distance to be represented as a constant horizontal line, Tess would have to be running in a circular shape with her home as the center. Since she is running around a rectangle, this is not possible, ruling out $B$ and $E$ with straight lines. Because $JL$ is the diagonal of the rectangle, and $L$ is at the middle distance around the perimeter, her maximum distance should be in the middle of her journey. The maximum in $A$ is at the end, and $C$ has two maximums, ruling both out. Thus the answer is $\boxed{\textbf{(D)}}$.

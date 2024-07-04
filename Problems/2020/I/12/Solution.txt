@@ -1,0 +1,25 @@
+==Solution 1==
+As usual, denote <math>v_p(n)</math> the highest power of prime <math>p</math> that divides <math>n</math>.
+[[Lifting the Exponent]] shows that <cmath>3=v_3(149^n-2^n) = v_3(n) + v_3(147) = v_3(n)+1</cmath> so thus, <math>3^2</math> divides <math>n</math>. It also shows that <cmath>7=v_7(149^n-2^n) = v_7(n) + v_7(147) = v_7(n)+2</cmath> so thus, <math>7^5</math> divides <math>n</math>. 
+
+
+Now, setting <math>n = 4c</math> (necessitated by <math>149^n \equiv 2^n \pmod 5</math> in order to set up LTE), we see <cmath>v_5(149^{4c}-2^{4c}) = v_5(149^{4c}-16^{c})</cmath> and since <math>149^{4} \equiv 1 \pmod{25}</math> and <math>16^1 \equiv 16 \pmod{25}</math> then <math>v_5(149^{4c}-2^{4c})=v_5(149^4-16)+v_5(c)=1+v_5(c)</math> meaning that we have that by LTE, <math>5^4 | c</math> and <math>4 \cdot 5^4</math> divides <math>n</math>. 
+
+Since <math>3^2</math>, <math>7^5</math> and <math>4\cdot 5^4</math> all divide <math>n</math>, the smallest value of <math>n</math> working is their LCM, also <math>3^2 \cdot 7^5 \cdot 4 \cdot 5^4 = 2^2 \cdot 3^2 \cdot 5^4 \cdot 7^5</math>. Thus the number of divisors is <math>(2+1)(2+1)(4+1)(5+1) = \boxed{270}</math>.
+
+~kevinmathz
+
+clarified by another user 
+
+notation note from another user
+
+===Note===
+We were able to use LTE with 3 and 7 but not 5 because in order to use LTE, we need \( p \mid x-y \).
+
+Obviously, \( 149^n \equiv 2^n \pmod{3} \) implies \( 149^n - 2^n \equiv 0 \pmod{3} \), so LTE works here.
+
+Furthermore, \( 149^n \equiv 2^n \pmod{7} \) implies \( 149^n - 2^n \equiv 0 \pmod{7} \), so LTE works here.
+
+However, when we get to the case of 5, we see that \( 149^n \equiv 2^n \pmod{5} \) doesn't always hold; specifically, this is only valid when \( n \) is a multiple of \( 4 \), which is why we let \( n = 4c \) in the solution.
+
+'''mathboy282'''

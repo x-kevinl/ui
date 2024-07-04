@@ -1,0 +1,17 @@
+== Solution 1 ==
+Let $s$ be the length of a side of the equilateral triangle and let $r$ be the radius of the circle. 
+
+In a circle with a radius $r$, the side of an inscribed equilateral triangle is $r\sqrt{3}$. 
+
+So $s=r\sqrt{3}$. 
+
+The perimeter of the triangle is $3s=3r\sqrt{3}$
+
+The area of the circle is $\pi r^{2}$
+
+So: 
+$\pi r^{2} = 3r\sqrt{3}$
+
+$\pi r=3\sqrt{3}$
+
+$r=\frac{3\sqrt{3}}{\pi} \Rightarrow\boxed{\mathrm{(B)}\ \frac{3\sqrt{3}}{\pi}}$

@@ -1,0 +1,2 @@
+==Solution 1==
+$\sqrt[3]{x\sqrt{x}}=\sqrt[3]{\sqrt{x^3}}=\sqrt[6]{x^3}=x^{3/6}=x^{1/2}\ \boxed{(D)}$

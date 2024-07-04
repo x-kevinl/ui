@@ -1,0 +1,23 @@
+==Solution 1==
+
+Consider a tetrahedron with vertices at $A,B,C,D$ on the $xyz$-plane. The length of $EF$ is just one-half of $AD$ because it is the midsegment of $\triangle ABD.$ The same concept applies to the other side lengths. $AD=3$ and $BC=\sqrt{1^2+2^2}=\sqrt{5}$. Then $EF=HG=\frac32$ and $EH=FG=\frac{\sqrt{5}}{2}$. The line segments lie on perpendicular planes so quadrilateral $EFGH$ is a rectangle. The area is
+
+$$EF \cdot FG = \frac 32 \cdot \frac{\sqrt{5}}{2} = \frac{3\sqrt 5} 4\implies \boxed{\textbf C}.$$
+
+<asy>
+import three;
+draw((0,0,0)--(1,0,0)--(0,0,3)--cycle);
+draw((0,0,0)--(0,2,0));
+draw((0,2,0)--(0,0,3));
+//EFGH
+draw((0.5,0,1.5)--(0.5,0,0)--(0,1,0)--(0,1,1.5)--(0.5,0,1.5),red);
+//Points
+label("$E$",(0.5,0,1.5),NW);
+label("$F$",(0.5,0,0),S);
+label("$G$",(0,1,0),S);
+label("$H$",(0,1,1.5),NE);
+label("$A$",(0,0,0),NE);
+label("$B$",(1,0,0),S);
+label("$C$",(0,2,0),S);
+label("$D$",(0,0,3),N);
+</asy>

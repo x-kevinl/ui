@@ -1,0 +1,32 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(300);
+
+pair A, B, C, D, A1, B1, C1, D1;
+A = origin;
+C = (sqrt(53041)/31,0);
+B = intersectionpoints(Circle(A,4),Circle(C,5))[0];
+D = intersectionpoints(Circle(A,7),Circle(C,6))[1];
+A1 = foot(A,B,D);
+C1 = foot(C,B,D);
+B1 = foot(B,A,C);
+D1 = foot(D,A,C);
+markscalefactor=0.025;
+draw(rightanglemark(A,A1,B),red);
+draw(rightanglemark(B,B1,A),red);
+draw(rightanglemark(C,C1,D),red);
+draw(rightanglemark(D,D1,C),red);
+draw(A1--B1--C1--D1--cycle,green);
+dot("$A$",A,1.5*W,linewidth(4));
+dot("$B$",B,1.5*dir(180-aCos(11/59)),linewidth(4));
+dot("$C$",C,1.5*E,linewidth(4));
+dot("$D$",D,1.5*dir(-aCos(11/59)),linewidth(4));
+dot("$A_1$",A1,1.5*dir(A1-A),linewidth(4));
+dot("$B_1$",B1,1.5*S,linewidth(4));
+dot("$C_1$",C1,1.5*dir(C1-C),linewidth(4));
+dot("$D_1$",D1,1.5*N,linewidth(4));
+draw(A--B--C--D--cycle^^A--C^^B--D^^circumcircle(A,B,C));
+draw(A--A1^^B--B1^^C--C1^^D--D1,dashed);
+</asy>
+~MRENTHUSIASM

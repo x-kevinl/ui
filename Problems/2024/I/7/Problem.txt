@@ -1,0 +1,2 @@
+==Problem==
+Find the largest possible real part of <cmath>(75+117i)z+\frac{96+144i}{z}</cmath>where <math>z</math> is a complex number with <math>|z|=4</math>.

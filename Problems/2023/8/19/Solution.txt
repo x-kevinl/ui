@@ -1,0 +1,4 @@
+==Solution 1==
+
+All equilateral triangles are similar. For the outer equilateral triangle to the inner equilateral triangle, since their side-length ratio is $\frac32,$ their area ratio is $\left(\frac32\right)^2=\frac94.$ It follows that the area ratio of three trapezoids to the inner equilateral triangle is $\frac94-1=\frac54,$ so the area ratio of one trapezoid to the inner equilateral triangle is $$\frac54\cdot\frac13=\frac{5}{12}=\boxed{\textbf{(C) } 5 : 12}.$$ 
+~apex304, SohumUttamchandani, wuwang2002, TaeKim, Cxrupptedpat, MRENTHUSIASM

@@ -1,0 +1,4 @@
+==Solution 1==
+Let $a=1$. Our list is $\{1,2,3,4,5\}$ with an average of $15\div 5=3$. Our next set starting with $3$ is $\{3,4,5,6,7\}$. Our average is $25\div 5=5$.
+
+Therefore, we notice that $5=1+4$ which means that the answer is $\boxed{\textbf{(B)}\ a+4}$.

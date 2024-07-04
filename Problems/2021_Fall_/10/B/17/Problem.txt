@@ -1,0 +1,4 @@
+==Problem==
+Distinct lines $\ell$ and $m$ lie in the $xy$-plane. They intersect at the origin. Point $P(-1, 4)$ is reflected about line $\ell$ to point $P'$, and then $P'$ is reflected about line $m$ to point $P''$. The equation of line $\ell$ is $5x - y = 0$, and the coordinates of $P''$ are $(4,1)$. What is the equation of line $m?$
+
+$(\textbf{A})\: 5x+2y=0\qquad(\textbf{B}) \: 3x+2y=0\qquad(\textbf{C}) \: x-3y=0\qquad(\textbf{D}) \: 2x-3y=0\qquad(\textbf{E}) \: 5x-3y=0$

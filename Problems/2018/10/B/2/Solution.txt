@@ -1,0 +1,9 @@
+== Solution 1 ==
+Suppose that Sam's average speed during the last $30$ minutes was $x$ mph.
+
+Recall that a half hour is equal to $30$ minutes. Therefore, Sam drove $60\cdot0.5=30$ miles during the first half hour, $65\cdot0.5=32.5$ miles during the second half hour, and $x\cdot0.5$ miles during the last half hour. We have $$\begin{align*}
+30+32.5+x\cdot0.5&=96 \\
+x\cdot0.5&=33.5 \\
+x&=\boxed{\textbf{(D) } 67}.
+\end{align*}$$
+~Haha0201 ~MRENTHUSIASM

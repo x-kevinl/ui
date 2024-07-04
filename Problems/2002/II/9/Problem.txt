@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>\mathcal{S}</math> be the [[set]] <math>\lbrace1,2,3,\ldots,10\rbrace</math> Let <math>n</math> be the number of sets of two non-empty disjoint subsets of <math>\mathcal{S}</math>. (Disjoint sets are defined as sets that have no common elements.) Find the remainder obtained when <math>n</math> is divided by <math>1000</math>.

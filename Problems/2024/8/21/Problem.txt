@@ -1,0 +1,7 @@
+==Problem==
+A group of frogs (called an army) is living in a tree. A frog turns green when in the shade and turns yellow
+when in the sun. Initially, the ratio of green to yellow frogs was $3 : 1$. Then $3$ green frogs moved to the
+sunny side and $5$ yellow frogs moved to the shady side. Now the ratio is $4 : 1$. What is the difference
+between the number of green frogs and the number of yellow frogs now?
+
+$\textbf{(A) } 10\qquad\textbf{(B) } 12\qquad\textbf{(C) } 16\qquad\textbf{(D) } 20\qquad\textbf{(E) } 24$

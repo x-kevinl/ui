@@ -1,0 +1,2 @@
+==Solution==
+We wish to find possible values of $a$, $b$, and $c$. By finding the greatest common factor of $12$ and $15$, we can find that $b$ is 3. Moving on to $a$ and $c$, in order to minimize them, we wish to find the least such that the least common multiple of $a$ and $3$ is $12$, $\rightarrow 4$. Similarly, with $3$ and $c$, we obtain $5$. The least common multiple of $4$ and $5$ is $20 \rightarrow \boxed{\textbf{(A)} 20}$

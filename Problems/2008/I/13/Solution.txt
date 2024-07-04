@@ -1,0 +1,128 @@
+== Solution ==
+=== Solution 1 ===
+<cmath>\begin{align*}
+p(0,0) &= a_0 \\
+&= 0 \\
+p(1,0) &= a_0 + a_1 + a_3 + a_6 \\
+&= a_1 + a_3 + a_6 \\
+&= 0 \\
+p(-1,0) &= -a_1 + a_3 - a_6 \\
+&= 0
+\end{align*}</cmath>
+
+Adding the above two equations gives <math>a_3 = 0</math>, and so we can deduce that <math>a_6 = -a_1</math>.
+
+Similarly, plugging in <math>(0,1)</math> and <math>(0,-1)</math> gives <math>a_5 = 0</math> and <math>a_9 = -a_2</math>. Now,
+<cmath>\begin{align*}
+p(1,1) &= a_0 + a_1 + a_2 + a_3 + a_4 + a_5 + a_6 + a_7 + a_8 + a_9 \\
+&= 0 + a_1 + a_2 + 0 + a_4 + 0 - a_1 + a_7 + a_8 - a_2 \\
+&= a_4 + a_7 + a_8 \\
+&= 0 \\
+p(1,-1) &= a_0 + a_1 - a_2 + 0 - a_4 + 0 - a_1 - a_7 + a_8 + a_2 \\
+&= -a_4 - a_7 + a_8 \\
+&= 0
+\end{align*}</cmath>
+Therefore <math>a_8 = 0</math> and <math>a_7 = -a_4</math>. Finally,
+<cmath>\begin{align*}
+p(2,2) &= 0 + 2a_1 + 2a_2 + 0 + 4a_4 + 0 - 8a_1 - 8a_4 +0 - 8a_2 \\
+&= -6 a_1 - 6 a_2 - 4 a_4 \\
+&= 0
+\end{align*}</cmath>
+So, <math>3a_1 + 3a_2 + 2a_4 = 0</math>, or equivalently <math>a_4 = -\frac{3(a_1 + a_2)}{2}</math>.
+
+Substituting these equations into the original polynomial <math>p</math>, we find that at <math>\left(\frac{a}{c}, \frac{b}{c}\right)</math>,
+<cmath>a_1x + a_2y + a_4xy - a_1x^3 - a_4x^2y - a_2y^3 = 0 \iff</cmath>
+<cmath>a_1x + a_2y - \frac{3(a_1 + a_2)}{2}xy - a_1x^3 + \frac{3(a_1 + a_2)}{2}x^2y - a_2y^3 = 0 \iff</cmath>
+<cmath>a_1x(x - 1)\left(x + 1 - \frac{3}{2}y\right) + a_2y\left(y^2 - 1 - \frac{3}{2}x(x - 1)\right) = 0</cmath>.
+The remaining coefficients <math>a_1</math> and <math>a_2</math> are now completely arbitrary because the original equations impose no more restrictions on them. Hence, for the final equation to hold for all possible <math>p</math>, we must have <math>x(x - 1)\left(x + 1 - \frac{3}{2}y\right) = y\left(y^2 - 1 - \frac{3}{2}x(x - 1)\right) = 0</math>. 
+
+As the answer format implies that the <math>x</math>-coordinate of the root is non-integral, <math>x(x - 1)\left(x + 1 - \frac{3}{2}y\right) = 0 \iff x + 1 - \frac{3}{2}y = 0 \iff y = \frac{2}{3}(x + 1)\ (1)</math>. The format also implies that <math>y</math> is positive, so <math>y\left(y^2 - 1 - \frac{3}{2}x(x - 1)\right) = 0 \iff y^2 - 1 - \frac{3}{2}x(x - 1) = 0\ (2)</math>. Substituting <math>(1)</math> into <math>(2)</math> and reducing to a quadratic yields <math>(19x - 5)(x - 2) = 0</math>, in which the only non-integral root is <math>x = \frac{5}{19}</math>, so <math>y = \frac{16}{19}</math>.
+
+The answer is <math>5 + 16 + 19 = \boxed{040}</math>.
+
+<asy>
+unitsize(1.2 cm);
+
+real upperhyper (real x) {
+return(sqrt((3*x^2 - 3*x + 2)/2));
+}
+
+real lowerhyper (real x) {
+return(-sqrt((3*x^2 - 3*x + 2)/2));
+}
+
+int i;
+
+for (i = -3; i <= 3; ++i) {
+draw((-3,i)--(3,i),gray(0.7));
+draw((i,-3)--(i,3),gray(0.7));
+}
+
+draw((0,-3)--(0,3),red);
+draw((1,-3)--(1,3),red);
+draw((-3,-4/3)--(3,8/3),red);
+draw((-3,0)--(3,0),blue);
+draw(graph(upperhyper,-1.863,2.863),blue);
+draw(graph(lowerhyper,-1.836,2.863),blue);
+
+dot("$(0,0)$", (0,0), NE, fontsize(8));
+dot("$(1,0)$", (1,0), NE, fontsize(8));
+dot("$(-1,0)$", (-1,0), NW, fontsize(8));
+dot("$(0,1)$", (0,1), SW, fontsize(8));
+dot("$(0,-1)$", (0,-1), NW, fontsize(8));
+dot("$(1,1)$", (1,1), SE, fontsize(8));
+dot("$(1,-1)$", (1,-1), NE, fontsize(8));
+dot("$(2,2)$", (2,2), SE, fontsize(8));
+dot((5/19,16/19), green);
+</asy>
+
+=== Solution 2 ===
+Consider the cross section of <math>z = p(x, y)</math> on the plane <math>z = 0</math>. We realize that we could construct the lines/curves in the cross section such that their equations multiply to match the form of <math>p(x, y)</math> (same degree of <math>x</math> and <math>y</math> in terms) and they include the eight given points. One simple way to do this would be to use the equations <math>x = 0</math>, <math>x = 1</math>, and <math>y = \frac{2}{3}x + \frac{2}{3}</math>, giving us 
+
+<math>p_1(x, y) = x\left(x - 1\right)\left( \frac{2}{3}x - y + \frac{2}{3}\right) = \frac{2}{3}x + xy + \frac{2}{3}x^3-x^2y</math>.
+
+Another way to do this would to use the line <math>y = x</math> and the ellipse, <math>x^2 + xy + y^2 = 1</math>. This would give
+
+<math>p_2(x, y) = \left(x - y\right)\left(x^2 + xy + y^2 - 1\right) = -x + y + x^3 - y^3</math>. (But 
+
+(Another way would be to use the hyperbola from Solution 1. Interesting that different curves both work.)
+
+At this point, we consider that <math>p_1</math> and <math>p_2</math> both must have <math>\left(\frac{a}{c}, \frac{b}{c}\right)</math> as a zero. A quick graph of the 4 lines and the ellipse used to create <math>p_1</math> and <math>p_2</math> gives nine intersection points. Eight of them are the given ones, and the ninth is <math>\left(\frac{5}{9}, \frac{16}{9}\right)</math>. The last intersection point can be found by finding the intersection points of <math>y = \frac{2}{3}x + \frac{2}{3}</math> and <math>x^2 + xy + y^2 = 1</math>.
+Finally, just add the values of <math>a</math>, <math>b</math>, and <math>c</math> to get <math>5 + 16 + 19 = \boxed{040}</math>
+
+<asy>
+unitsize(1.2 cm);
+
+real upperellipse(real x) {
+return((sqrt(4- 3*x^2 )-x)/2);
+}
+
+real lowerellipse(real x) {
+return((-sqrt(4- 3*x^2 )-x)/2);
+}
+
+int i;
+
+for (i = -3; i <= 3; ++i) {
+draw((-3,i)--(3,i),gray(0.7));
+draw((i,-3)--(i,3),gray(0.7));
+}
+
+draw((0,-3)--(0,3),red);
+draw((1,-3)--(1,3),red);
+draw((-3,-4/3)--(3,8/3),red);
+
+draw((-3, -3)--(3,3),blue);
+draw(graph(upperellipse,-1.1547,1.1547),blue);
+draw(graph(lowerellipse, -1.1547,1.1547),blue);
+
+dot("$(0,0)$", (0,0), NE, fontsize(8));
+dot("$(1,0)$", (1,0), NE, fontsize(8));
+dot("$(-1,0)$", (-1,0), NW, fontsize(8));
+dot("$(0,1)$", (0,1), SW, fontsize(8));
+dot("$(0,-1)$", (0,-1), NW, fontsize(8));
+dot("$(1,1)$", (1,1), SE, fontsize(8));
+dot("$(1,-1)$", (1,-1), NE, fontsize(8));
+dot("$(2,2)$", (2,2), SE, fontsize(8));
+dot((5/19,16/19), green);
+</asy>

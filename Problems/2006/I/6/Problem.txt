@@ -1,0 +1,2 @@
+== Problem ==
+Let <math> \mathcal{S} </math> be the set of [[real number]]s that can be represented as repeating [[Decimal| decimals]] of the form <math> 0.\overline{abc} </math> where <math> a, b, c </math> are distinct [[digit]]s. Find the sum of the elements of <math> \mathcal{S}. </math>

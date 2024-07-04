@@ -1,0 +1,16 @@
+==Problem==
+Let $P(x)$ be the unique polynomial of minimal degree with the following properties:
+
+*$P(x)$ has a leading coefficient $1$,
+
+*$1$ is a root of $P(x)-1$,
+
+*$2$ is a root of $P(x-2)$,
+
+*$3$ is a root of $P(3x)$, and
+
+*$4$ is a root of $4P(x)$.
+
+The roots of $P(x)$ are integers, with one exception. The root that is not an integer can be written as $\frac{m}{n}$, where $m$ and $n$ are relatively prime integers. What is $m+n$?
+
+$\textbf{(A) }41\qquad\textbf{(B) }43\qquad\textbf{(C) }45\qquad\textbf{(D) }47\qquad\textbf{(E) }49$

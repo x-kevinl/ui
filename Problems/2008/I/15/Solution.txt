@@ -1,0 +1,19 @@
+== Picture for Solutions ==
+(Used for the following solutions)
+
+<center><asy>
+import three; import math; import cse5; import olympiad;
+size(500);
+pathpen=blue;
+real r = (51^0.5-17^0.5)/200, h=867^0.25/100;
+triple A=(0,0,0),B=(1,0,0),C=(1,1,0),D=(0,1,0);
+triple F=B+(r,-r,h),G=(1,-r,h),H=(1+r,0,h),I=B+(0,0,h);
+draw(B--F--H--cycle); draw(B--F--G--cycle);
+draw(G--I--H); draw(B--I); draw(A--B--C--D--cycle);
+triple Fa=A+(-r,-r, h), Fc=C+(r,r, h), Fd=D+(-r,r, h);
+triple Ia = A+(0,0,h), Ic = C+(0,0,h), Id = D+(0,0,h);
+draw(Ia--I--Ic); draw(Fa--F--Fc--Fd--cycle);
+draw(A--Fa); draw(C--Fc); draw(D--Fd);
+triple A1 = (F.x,F.y,0); real factor = 1/4;
+draw(F--A1--B); draw((A1+(F-A1)*factor)--(A1+(F-A1)*factor+(B-A1)*factor)--(A1+(B-A1)*factor)); 
+</asy></center>

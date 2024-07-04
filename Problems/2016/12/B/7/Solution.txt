@@ -1,0 +1,10 @@
+==Solution==
+Following the pattern, you are crossing out...
+
+Time 1: Every non-multiple of $2$
+
+Time 2: Every non-multiple of $4$
+
+Time 3: Every non-multiple of $8$
+
+Following this pattern, you are left with every multiple of $64$ which is only $\boxed{\textbf{(D)}64}$.

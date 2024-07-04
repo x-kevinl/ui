@@ -1,0 +1,14 @@
+==Solution==
+Assume that <math>z=a+bi</math>. Then,
+<cmath>z^3=(a^3-3ab^2)+(3a^2b-b^3)i</cmath>Note that by the Triangle Inequality,
+<cmath>|(a^3-3ab^2)-(3a^2b-b^3)|<p\implies |a^3+b^3-3ab^2-3a^2b|<a^2+b^2</cmath>Thus, we know
+<cmath>|a+b||a^2+b^2-4ab|<a^2+b^2</cmath>Without loss of generality, assume <math>a>b</math> (as otherwise, consider <math>i^3\overline z=b+ai</math>). If <math>|a/b|\geq 4</math>, then
+<cmath>17b^2\geq a^2+b^2>|a+b||a^2+b^2-4ab|\geq |b-4b||16b^2-16b^2+b^2|=3b^3</cmath>`Thus, this means <math>b\leq\frac{17}3</math> or <math>b\leq 5</math>. Also note that the roots of <math>x^2-4x+1</math> are <math>2\pm\sqrt 3</math>, so thus if <math>b\geq 6</math>,
+<cmath>2\sqrt 3b=(2(2-\sqrt 3)-4)b<a<4b</cmath>Note that
+<cmath>1000>p=a^2+b^2\geq 12b^2+b^2=13b^2</cmath>so <math>b^2<81</math>, and <math>b<9</math>. If <math>b=8</math>, then <math>16\sqrt 3\leq a\leq 32</math>. Note that <math>\gcd(a,b)=1</math>, and <math>a\not\equiv b\pmod 2</math>, so <math>a=29</math> or <math>31</math>. However, then <math>5\mid a^2+b^2</math>, absurd.
+
+If <math>b=7</math>, by similar logic, we have that <math>14\sqrt 3 <a< 28</math>, so <math>b=26</math>. However, once again, <math>5\mid a^2+b^2</math>. If <math>b=6</math>, by the same logic, <math>12\sqrt3<a<24</math>, so <math>a=23</math>, where we run into the same problem. Thus <math>b\leq 5</math> indeed.
+
+If <math>b=5</math>, note that
+<cmath>(a+5)(a^2+25-20a)<a^2+25\implies a<20</cmath>We note that <math>p=5^2+18^2=349</math> works. Thus, we just need to make sure that if <math>b\leq 4</math>, <math>a\leq 18</math>. But this is easy, as
+<cmath>p>(a+b)(a^2+b^2-4ab)\geq (4+18)(4^2+18^2-4\cdot 4\cdot 18)>1000</cmath>absurd. Thus, the answer is <math>\boxed{349}</math>.

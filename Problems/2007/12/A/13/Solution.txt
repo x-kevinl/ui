@@ -1,0 +1,2 @@
+==Solution 1==
+The point $(a,b)$ is the foot of the perpendicular from $(12,10)$ to the line $y=-5x+18$. The perpendicular has slope $\frac{1}{5}$, so its equation is $y=10+\frac{1}{5}(x-12)=\frac{1}{5}x+\frac{38}{5}$. The $x$-coordinate at the foot of the perpendicular satisfies the equation $\frac{1}{5}x+\frac{38}{5}=-5x+18$, so $x=2$ and $y=-5\cdot2+18=8$. Thus $(a,b) = (2,8)$, and $a+b = \boxed{10}$.

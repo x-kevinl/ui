@@ -1,0 +1,2 @@
+== Solution 1==
+If Cheryl gets two marbles of the same color, then Claudia and Carol must take all four marbles of the two other colors. The probability of this happening, given that Cheryl has two marbles of a certain color is $\frac{4}{6} \cdot \frac{3}{5} \cdot \frac{2}{4} \cdot \frac{1}{3} = \frac{1}{15}$. Since there are three different colors, our final probability is $3 \cdot \frac{1}{15} = \textbf{ (C)} \frac{1}{5} $.

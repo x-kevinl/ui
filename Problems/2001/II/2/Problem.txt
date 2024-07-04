@@ -1,0 +1,2 @@
+== Problem ==
+Each of the <math>2001</math> students at a high school studies either Spanish or French, and some study both. The number who study Spanish is between <math>80</math> percent and <math>85</math> percent of the school population, and the number who study French is between <math>30</math> percent and <math>40</math> percent. Let <math>m</math> be the smallest number of students who could study both languages, and let <math>M</math> be the largest number of students who could study both languages. Find <math>M-m</math>.

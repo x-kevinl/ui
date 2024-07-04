@@ -1,0 +1,47 @@
+==Solution 1==
+
+By the Chicken McNugget theorem, the least possible value of <math>n</math> such that <math>91</math> cents cannot be formed satisfies <math>5n - (5 + n) = 91 \implies n = 24</math>, so <math>n</math> must be at least <math>24</math>.
+
+For a value of <math>n</math> to work, we must not only be unable to form the value <math>91</math>, but we must also be able to form the values <math>92</math> through <math>96</math>, as with these five values, we can form any value greater than <math>96</math> by using additional <math>5</math> cent stamps.
+
+Notice that we must form the value <math>96</math> without forming the value <math>91</math>. If we use any <math>5</math> cent stamps when forming <math>96</math>, we could simply remove one to get <math>91</math>. This means that we must obtain the value <math>96</math> using only stamps of denominations <math>n</math> and <math>n+1</math>.
+
+Recalling that <math>n \geq 24</math>, we can easily figure out the working <math>(n,n+1)</math> pairs that can used to obtain <math>96</math>, as we can use at most <math>\frac{96}{24}=4</math> stamps without going over. The potential sets are <math>(24, 25), (31, 32), (32, 33), (47, 48), (48, 49), (95, 96)</math>, and <math>(96, 97)</math>.
+
+The last two obviously do not work, since they are too large to form the values <math>92</math> through <math>95</math>. By a little testing, only <math>(24, 25)</math> and <math>(47, 48)</math> can form the necessary values, so <math>n \in \{24, 47\}</math>. <math>24 + 47 = \boxed{071}</math>.
+
+~Revision by [[User:emerald_block|emerald_block]] ~Minor Revision by [[Mathkiddie|Mathkiddie]]
+
+===Note on finding and testing potential pairs===
+
+In order to find potential <math>(n,n+1)</math> pairs, we simply test all combinations of <math>n</math> and <math>n+1</math> that sum to less than <math>4n</math> (so that <math>n\ge24</math>) to see if they produce an integer value of <math>n</math> when their sum is set to <math>96</math>. Note that, since <math>96</math> is divisible by <math>1</math>, <math>2</math>, <math>3</math>, and <math>4</math>, we must either use only <math>n</math> or only <math>n+1</math>, as otherwise, the sum is guaranteed to not be divisible by one of the numbers <math>2</math>, <math>3</math>, and <math>4</math>.
+
+<math>
+\begin{array}{c|c|c}
+\text{Combination} & \text{Sum} & n\text{-value} \\ \hline
+n,n,n,n & 4n & 24 \\
+n+1,n+1,n+1 & 3n+3 & 31 \\
+n,n,n & 3n & 32 \\
+n+1,n+1 & 2n+2 & 47 \\
+n,n & 2n & 48 \\
+n+1 & n+1 & 95 \\
+n & n & 96 \\
+\end{array}
+</math>
+
+To test whether a pair works, we simply check that, using the number <math>5</math> and the two numbers in the pair, it is impossible to form a sum of <math>91</math>, and it is possible to form sums of <math>92</math>, <math>93</math>, and <math>94</math>. (<math>95</math> can always be formed using only <math>5</math>s, and the pair is already able to form <math>96</math> because that was how it was found.) We simply need to reach the residues <math>2</math>, <math>3</math>, and <math>4</math><math>\pmod{5}</math> using only <math>n</math> and <math>n+1</math> without going over the number we are trying to form, while being unable to do so with the residue <math>1</math>. As stated in the above solution, the last two pairs are clearly too large to work.
+
+<math>
+\begin{array}{c|c|c|c|c}
+\text{Pair} & \text{Not }91 & 92 & 93 & 94 \\ \hline
+24,25 & \checkmark & \checkmark & \checkmark & \checkmark \\
+31,32 & \times & \checkmark & \checkmark & \checkmark \\
+32,33 & \times & \checkmark & \checkmark & \checkmark \\
+47,48 & \checkmark & \checkmark & \checkmark & \checkmark \\
+48,49 & \checkmark & \times & \checkmark & \checkmark \\
+\end{array}
+</math>
+
+(Note that if a pair is unable to fulfill a single requirement, there is no need to check the rest.)
+
+~[[User:emerald_block|emerald_block]]

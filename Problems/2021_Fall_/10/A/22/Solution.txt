@@ -1,0 +1,25 @@
+== Diagram ==
+<asy>
+/* Made by MRENTHUSIASM */
+size(250);
+import graph3;
+import solids;
+
+currentprojection=orthographic((0,-6,4));
+
+real r = (90-40sqrt(3))/11;
+
+triple A, B, C;
+A = (2/3*sqrt(3)*r*Cos(90),2/3*sqrt(3)*r*Sin(90),r);
+B = (2/3*sqrt(3)*r*Cos(210),2/3*sqrt(3)*r*Sin(210),r);
+C = (2/3*sqrt(3)*r*Cos(330),2/3*sqrt(3)*r*Sin(330),r);
+
+draw(scale(5,5,12)*unitcone,yellow,light=White);
+draw(Circle((0,0,0),5,(0,0,1)));
+draw(shift(A)*scale3(r)*unitsphere,lightgray,light=White);
+draw(shift(B)*scale3(r)*unitsphere,lightgray,light=White);
+draw(shift(C)*scale3(r)*unitsphere,lightgray,light=White);
+dot(A^^B^^C^^(0,0,0),linewidth(4.5));
+</asy>
+
+~MRENTHUSIASM

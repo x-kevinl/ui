@@ -1,0 +1,14 @@
+==Solution 1==
+
+The first point is placed anywhere on the circle, because it doesn't matter where it is chosen.
+ 
+The next point must lie within $60$ degrees of arc on either side, a total of $120$ degrees possible, giving a total $\frac{1}{3}$ chance. The last point must lie within $60$ degrees  of both points. 
+
+The minimum area of freedom we have to place the third point is a $60$ degrees arc(if the first two are $60$ degrees apart), with a $\frac{1}{6}$ probability.
+The maximum amount of freedom we have to place the third point is a $120$ degree arc(if the first two are the same point), with a $\frac{1}{3}$ probability.  
+
+As the second point moves farther away from the first point, up to a maximum of $60$ degrees, the probability changes linearly (every degree it moves, adds one degree to where the third could be).
+
+Therefore, we can average probabilities at each end to find $\frac{1}{4}$, the average probability we can place the third point based on a varying second point.
+
+Therefore the total probability is $1\times\frac{1}{3}\times\frac{1}{4}=\frac{1}{12}$ or $\boxed{\text{(D)}}$

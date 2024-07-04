@@ -1,0 +1,4 @@
+== Solution 1 ==
+
+Since we want $n$ to be as large as possible, we would like $d$ in $10d+e$ to be as large as possible. So, $d=7,$ the greatest single-digit prime. Then, $e$ cannot be $5$ because $10(7)+5 = 75,$ which is not prime. So $e = 3$. Therefore, $d \cdot e \cdot (10d+e) = 7 \cdot 3 \cdot 73 = 1533$.
+So, the sum of the digits of $n$ is $1+5+3+3=12 \Rightarrow \boxed{\mathrm{(A)}\ 12}$ ~ MathGenius_ (Edited by Sophia866)

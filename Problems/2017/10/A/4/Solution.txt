@@ -1,0 +1,5 @@
+==Solution==
+
+Every $30$ seconds, $3$ toys are put in the box and $2$ toys are taken out, so the number of toys in the box increases by $3-2=1$ every $30$ seconds. Then after $27 \times 30 = 810$ seconds (or $13 \frac{1}{2}$ minutes), there are $27$ toys in the box. Mia's mom will then put the remaining $3$ toys into the box after $30$ more seconds, so the total time taken is $27\times 30+30=840$ seconds, or $\boxed{(\textbf{B})\ 14}$ minutes.
+
+Note: During the last time Mia's mom will complete picking up the 30 toys(before Mia can take 2 out) which is the reason that you calculate up to 27 and then the rest.

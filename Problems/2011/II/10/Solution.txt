@@ -1,0 +1,30 @@
+== Solution 1 ==
+Let <math>E</math> and <math>F</math> be the midpoints of <math>\overline{AB}</math> and <math>\overline{CD}</math>, respectively, such that <math>\overline{BE}</math> intersects <math>\overline{CF}</math>.
+
+Since <math>E</math> and <math>F</math> are midpoints, <math>BE = 15</math> and <math>CF = 7</math>.
+
+<math>B</math> and <math>C</math> are located on the circumference of the circle, so <math>OB = OC = 25</math>.
+
+The line through the midpoint of a chord of a circle and the center of that circle is perpendicular to that chord, so <math>\triangle OEB</math> and <math>\triangle OFC</math> are right triangles (with <math>\angle OEB</math> and <math>\angle OFC</math> being the right angles).  By the Pythagorean Theorem, <math>OE = \sqrt{25^2 - 15^2} = 20</math>, and <math>OF = \sqrt{25^2 - 7^2} = 24</math>.
+
+Let <math>x</math>, <math>a</math>, and <math>b</math> be lengths <math>OP</math>, <math>EP</math>, and <math>FP</math>, respectively.  OEP and OFP are also right triangles, so <math>x^2 = a^2 + 20^2 \to a^2 = x^2 - 400</math>, and <math>x^2 = b^2 + 24^2 \to b^2 = x^2 - 576</math>
+
+We are given that <math>EF</math> has length 12, so, using the [[Law of Cosines]] with <math>\triangle EPF</math>:
+
+<math>12^2 = a^2 + b^2 - 2ab \cos (\angle EPF) = a^2 + b^2 - 2ab \cos (\angle EPO + \angle FPO)</math>
+
+Substituting for <math>a</math> and <math>b</math>, and applying the Cosine of Sum formula:
+
+<math>144 = (x^2 - 400) + (x^2 - 576) - 2 \sqrt{x^2 - 400} \sqrt{x^2 - 576} \left( \cos \angle EPO \cos \angle FPO - \sin \angle EPO \sin \angle FPO \right)</math>
+
+<math>\angle EPO</math> and <math>\angle FPO</math> are acute angles in right triangles, so substitute opposite/hypotenuse for sines and adjacent/hypotenuse for cosines:
+
+<math>144 = 2x^2 - 976 - 2 \sqrt{(x^2 - 400)(x^2 - 576)} \left(\frac{\sqrt{x^2 - 400}}{x} \frac{\sqrt{x^2 - 576}}{x} - \frac{20}{x} \frac{24}{x} \right)</math>
+
+Combine terms and multiply both sides by <math>x^2</math>: <math>144 x^2 = 2 x^4 - 976 x^2 - 2 (x^2 - 400) (x^2 - 576) + 960  \sqrt{(x^2 - 400)(x^2 - 576)}</math>
+
+Combine terms again, and divide both sides by 64: <math>13 x^2 = 7200 - 15 \sqrt{x^4 - 976 x^2 + 230400}</math>
+
+Square both sides: <math>169 x^4 - 187000 x^2 + 51,840,000 = 225 x^4 - 219600 x^2 + 51,840,000</math>
+
+This reduces to <math>x^2 = \frac{4050}{7} = (OP)^2</math>; <math>4050 + 7 \equiv \boxed{057} \pmod{1000}</math>.

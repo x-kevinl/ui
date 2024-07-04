@@ -1,0 +1,58 @@
+==Solution 1==
+
+Analyze the first right triangle.
+
+<asy>
+pair A,B,C;
+pair D, e, F;
+A = (0,0);
+B = (4,0);
+C = (0,3);
+
+D = (0, 12/7);
+e = (12/7 , 12/7);
+F = (12/7, 0);
+
+draw(A--B--C--cycle);
+draw(D--e--F);
+
+label("$x$", D/2, W);
+label("$A$", A, SW);
+label("$B$", B, SE);
+label("$C$", C, N);
+label("$D$", D, W);
+label("$E$", e, NE);
+label("$F$", F, S);
+</asy>
+
+Note that $\triangle ABC$ and $\triangle FBE$ are similar, so $\frac{BF}{FE} = \frac{AB}{AC}$. This can be written as $\frac{4-x}{x}=\frac{4}{3}$. Solving, $x = \frac{12}{7}$.
+
+Now we analyze the second triangle.
+
+
+<asy>
+pair A,B,C;
+pair q, R, S, T;
+A = (0,0);
+B = (4,0);
+C = (0,3);
+
+q = (1.297, 0);
+R = (2.27 , 1.297);
+S = (0.973, 2.27);
+T  = (0, 0.973);
+
+draw(A--B--C--cycle);
+draw(q--R--S--T--cycle);
+
+label("$y$", (q+R)/2, NW);
+label("$A'$", A, SW);
+label("$B'$", B, SE);
+label("$C'$", C, N);
+label("$Q$", (q-(0,0.3)));
+label("$R$", R, NE);
+label("$S$", S, NE);
+label("$T$", T, W);
+</asy>
+
+Similarly, $\triangle A'B'C'$ and $\triangle RB'Q$ are similar, so $RB' = \frac{4}{3}y$, and $C'S = \frac{3}{4}y$. Thus, $C'B' = C'S + SR + RB' = \frac{4}{3}y + y + \frac{3}{4}y = 5$. Solving for $y$, we get $y = \frac{60}{37}$. Thus, $\frac{x}{y} = \boxed{\textbf{(D)}\:\frac{37}{35}}$.

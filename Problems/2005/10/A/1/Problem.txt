@@ -1,0 +1,4 @@
+==Problem==
+While eating out, Mike and Joe each tipped their server $2$ dollars. Mike tipped $10\%$ of his bill and Joe tipped $20\%$ of his bill. What was the difference, in dollars between their bills? 
+
+$ \textbf{(A) } 2\qquad \textbf{(B) } 4\qquad \textbf{(C) } 5\qquad \textbf{(D) } 10\qquad \textbf{(E) } 20 $

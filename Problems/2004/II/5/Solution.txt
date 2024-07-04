@@ -1,0 +1,4 @@
+==Solution 1==
+A train is traveling at <math>1000</math> miles per hour and has one hour to reach its destination <math>1000</math> miles away. After <math>15</math> minutes and <math>250</math> miles it slows to <math>900</math> mph, and thus takes <math>\frac{250}{900}(60)=\frac{50}{3}</math> minutes to travel the next <math>250</math> miles. Then it slows to <math>800</math> mph, so the next quarter takes <math>\frac{250}{800}(60)=\frac{150}{8}</math>. The train then has <math>60-15-\frac{50}{3}-\frac{150}{8}=230/24</math> minutes left to travel 250 miles, and doing the arithmetic shows that during this last stretch it must travel more than <math>1565</math> mph to make it on time. Therefore the company needs to add <math>1566-800 = \boxed{766}</math> more workers.
+
+Solution by rocketscience

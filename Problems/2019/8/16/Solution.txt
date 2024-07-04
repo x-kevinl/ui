@@ -1,0 +1,8 @@
+==Solution 1 (by looking at the answer choices)==
+The only option that is easily divisible by $55$ is $110$, which gives 2 hours of travel. And, the formula is $\frac{15}{30} + \frac{110}{55} = \frac{5}{2}$.
+
+And, $\text{Average Speed}$ = $\frac{\text{Total Distance}}{\text{Total Time}}$.
+ 
+Thus, $\frac{125}{50} = \frac{5}{2}$.
+
+Both are equal and thus our answer is $\boxed{\textbf{(D)}\ 110}.$

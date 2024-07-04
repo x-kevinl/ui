@@ -1,0 +1,10 @@
+==Solution 1==
+Note that $\frac{1}{11} = 0.\overline{09}$.
+
+Dividing by 3 gives $\frac{1}{33} = 0.\overline{03}$, and dividing by 9 gives $\frac{1}{99} = 0.\overline{01}$.
+
+$S = \{11, 33, 99\}$
+
+$11 + 33 + 99 = 143$
+
+The answer must be at least $143$, but cannot be $155$ since no $n \le 12$ other than $11$ satisfies the conditions, so the answer is $143$.

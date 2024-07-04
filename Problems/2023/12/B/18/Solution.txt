@@ -1,0 +1,12 @@
+==Solution 1==
+
+Denote by $A_i$ the average of person with initial $A$ in semester $i \in \left\{1, 2 \right\}$
+Thus, $Y_1 = Z_1 + 3$, $Y_2 = Y_1 + 18$, $Y_2 = Z_2 + 3$.
+
+Denote by $A_{12}$ the average of person with initial $A$ in the full year.
+Thus, $Y_{12}$ can be any number in $\left( Y_1 , Y_2 \right)$ and $Z_{12}$ can be any number in $\left( Z_1 , Z_2 \right)$.
+
+Therefore, the impossible solution is
+$\boxed{\textbf{(A)}~\text{Yolanda's quiz average for the academic year was 22 points higher than Zelda's.}}$
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)

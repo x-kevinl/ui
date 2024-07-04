@@ -1,0 +1,6 @@
+== Solution ==
+
+The prime factorization of $2009$ is $2009 = 7\cdot 7\cdot 41$. As $a<b<2009$, the ratio must be positive and larger than $1$, hence there is only one possibility: the ratio must be $7$, and then $b=7\cdot 41$, and $a=41\Rightarrow\fbox{B}$.
+
+We know that this is important because the complete equation would be $a\cdot x^2=2009,$ and the only possible outcome for $x$ is $7.$
+-Edited slightly by RealityWrites - minor $\LaTeX$ edits by BS2012

@@ -1,0 +1,4 @@
+==Solution 1==
+The number of ways to choose three points to make a triangle is $\binom 63 = 20$. However, two* of these are a straight line so we subtract $2$ to get $\boxed{\textbf{(C)}\ 18}$.
+
+*Note:  We are assuming that there are no degenerate triangles in this problem, and that is why we subtract two.

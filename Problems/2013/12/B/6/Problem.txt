@@ -1,0 +1,4 @@
+==Problem==
+Real numbers $x$ and $y$ satisfy the equation $x^2+y^2=10x-6y-34$. What is $x+y$?
+
+$\text{(A)}\ 1 \qquad \text{(B)}\ 2 \qquad \text{(C)}\ 3 \qquad \text{(D)}\ 6 \qquad \text{(E)}\ 8$

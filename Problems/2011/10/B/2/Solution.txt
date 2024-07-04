@@ -1,0 +1,3 @@
+==Solution==
+
+The average of her current scores is $77$. To raise it $3$ points, she needs an average of $80$, and so after her $6$ tests, a sum of $480$. Her current sum is $385$, so she needs a $480 - 385 = \boxed{\mathrm{(E) \ } 95}$

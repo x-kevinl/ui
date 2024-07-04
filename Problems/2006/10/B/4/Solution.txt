@@ -1,0 +1,13 @@
+== Solution ==
+The area painted red is equal to the area of the smaller circle and the area painted blue is equal to the area of the larger circle minus the area of the smaller circle. 
+
+So we have:
+
+$$\begin{align*}
+A_{red}&=\pi\left(\frac{1}{2}\right)^2=\frac{\pi}{4}\\
+A_{blue}&=\pi\left(\frac{3}{2}\right)^2-\pi\left(\frac{1}{2}\right)^2=2\pi\\
+\end{align*}$$
+
+So the desired ratio is: 
+
+$ \frac{A_{blue}}{A_{red}}=\frac{2\pi}{\frac{\pi}{4}}=2\cancel{\pi}\cdot \frac{4}{\cancel{\pi}}=\boxed{\textbf{(D) }8}.$

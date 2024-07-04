@@ -1,0 +1,4 @@
+== Problem ==
+A container in the shape of a right circular [[cone]] is <math>12</math> inches tall and its base has a <math>5</math>-inch [[radius]]. The liquid that is sealed inside is <math>9</math> inches deep when the cone is held with its [[point]] down and its base horizontal. When the liquid is held with its point up and its base horizontal, the height of the liquid is <math>m - n\sqrt [3]{p},</math> from the base where <math>m,</math> <math>n,</math> and <math>p</math> are positive integers and <math>p</math> is not divisible by the cube of any prime number. Find <math>m + n + p</math>.
+
+__TOC__

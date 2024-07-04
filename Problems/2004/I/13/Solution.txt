@@ -1,0 +1,11 @@
+== Solution ==
+We see that the expression for the [[polynomial]] <math>P</math> is very difficult to work with directly, but there is one obvious transformation to make: sum the [[geometric series]]:
+
+<cmath>\begin{align*}
+P(x) &= \left(\frac{x^{18} - 1}{x - 1}\right)^2 - x^{17} = \frac{x^{36} - 2x^{18} + 1}{x^2 - 2x + 1} - x^{17}\\ &= \frac{x^{36} - x^{19} - x^{17} + 1}{(x - 1)^2} = \frac{(x^{19} - 1)(x^{17} - 1)}{(x - 1)^2} \end{align*}</cmath>
+
+This [[expression]] has [[root]]s at every <math>17</math>th root and <math>19</math>th [[roots of unity]], other than <math>1</math>.  Since <math>17</math> and <math>19</math> are [[relatively prime]], this means there are no duplicate roots.  Thus, <math>a_1, a_2, a_3, a_4</math> and <math>a_5</math> are the five smallest fractions of the form <math>\frac m{19}</math> or <math>\frac n {17}</math> for <math>m, n > 0</math>.  
+
+<math>\frac 3 {17}</math> and <math>\frac 4{19}</math> can both be seen to be larger than any of <math>\frac1{19}, \frac2{19}, \frac3{19}, \frac 1{17}, \frac2{17}</math>, so these latter five are the numbers we want to add.
+
+<math>\frac1{19}+ \frac2{19}+ \frac3{19}+ \frac 1{17}+ \frac2{17}= \frac6{19} + \frac 3{17} = \frac{6\cdot17 + 3\cdot19}{17\cdot19} = \frac{159}{323}</math> and so the answer is <math>159 + 323 = \boxed{482}</math>.

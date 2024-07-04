@@ -1,0 +1,5 @@
+== Solution ==
+[[Image:2006_AMC12A-16a.png]]
+
+$\angle AED$ and $\angle BEC$ are vertical angles so they are congruent, as are angles $\angle ADE$ and $\angle BCE$ (both are right angles because the radius and [[tangent line]] at a point on a circle are always perpendicular). Thus, $\triangle ACE \sim \triangle BDE$.
+By the [[Pythagorean Theorem]], line segment $DE = 4$.  The sides are proportional, so $\frac{DE}{AD} = \frac{CE}{BC} \Rightarrow \frac{4}{3} = \frac{CE}{8}$. This makes $CE = \frac{32}{3}$ and $CD = CE + DE = 4 + \frac{32}{3} = \boxed{\textbf{(B) }\frac{44}{3}}$.

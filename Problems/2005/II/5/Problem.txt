@@ -1,0 +1,2 @@
+== Problem ==
+Determine the number of [[ordered pair]]s <math> (a,b) </math> of [[integer]]s such that <math> \log_a b + 6\log_b a=5, 2 \leq a \leq 2005, </math> and <math> 2 \leq b \leq 2005. </math>

@@ -1,0 +1,5 @@
+==Solution==
+Listing the elements from least to greatest, we have $(5, 5, 6, 8, 106)$, we see that the median weight is 6 pounds.
+The average weight of the five kids is $\frac{5+5+6+8+106}{5} = \frac{130}{5} = 26$.
+
+Hence,$$26-6=\boxed{\textbf{(E)}\ \text{average, by 20}}.$$

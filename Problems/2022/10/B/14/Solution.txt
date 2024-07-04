@@ -1,0 +1,21 @@
+==Solution 1 (Pigeonhole Principle)==
+Let $M$ be the largest number in $S$.
+We categorize numbers $\left\{ 1, 2, \ldots , M-1 \right\}$ (except $\frac{M}{2}$ if $M$ is even) into $\left\lfloor \frac{M-1}{2} \right\rfloor$ groups, such that the $i$th group contains two numbers $i$ and $M-i$.
+
+Recall that $M \in S$ and the sum of two numbers in $S$ cannot be equal to $M$, and the sum of numbers in each group above is equal to $S$. Thus, each of the above $\left\lfloor \frac{M-1}{2} \right\rfloor$ groups can have at most one number in $S$.
+Therefore,
+$$
+\begin{align*}
+|S| & \leq 1 + \left\lfloor \frac{M-1}{2} \right\rfloor \\
+& \leq 1 + \left\lfloor \frac{25}{2} \right\rfloor \\
+& = 13.
+\end{align*}
+$$
+
+Next, we construct an instance of $S$ with $|S| = 13$.
+Let $S = \left\{ 13, 14, \ldots , 25 \right\}$.
+Thus, this set is feasible.
+Therefore, the most number of elements in $S$ is
+$\boxed{\textbf{(B) }13}$.
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)

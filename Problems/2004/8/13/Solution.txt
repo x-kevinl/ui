@@ -1,0 +1,6 @@
+==Solution==
+If Bill is the oldest, then Amy is not the oldest, and both statements I and II are true, so statement I is not the true one.
+
+If Amy is not the oldest, and we know Bill cannot be the oldest, then Celine is the oldest. This would mean she is not the youngest, and both statements II and III are true, so statement II is not the true one.
+
+Therefore, statement III is the true statement, and both I and II are false. From this, Amy is the oldest, Celine is in the middle, and lastly Bill is the youngest. This order is $\boxed{\textbf{(E)}\ \text{Amy, Celine, Bill}}$.

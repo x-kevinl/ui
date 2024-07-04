@@ -1,0 +1,9 @@
+== Solution ==
+
+The circumference of circle $A$ is $200\pi$, and the circumference of circle $B$ with radius $r$ is $2r\pi$. Since circle $B$ makes a complete revolution and ''ends up on the same point'', the circumference of $A$ must be a multiple of the circumference of $B$, therefore the quotient must be an integer.
+
+Thus, $\frac{200\pi}{2\pi \cdot r} = \frac{100}{r}$.
+
+Therefore $r$ must then be a factor of $100$, excluding $100$ because the problem says that $r<100$. $100\: =\: 2^2\; \cdot \; 5^2$. Therefore $100$ has $(2+1)\; \cdot \; (2+1)\;$ factors*. But you need to subtract $1$ from $9$, in order to exclude $100$. Therefore the answer is $\boxed{8}$.
+
+ *The number of factors of $a^x\: \cdot \: b^y\: \cdot \: c^z\;...$ and so on, where $a, b,$ and $c$ are prime numbers, is $(x+1)(y+1)(z+1)...$.

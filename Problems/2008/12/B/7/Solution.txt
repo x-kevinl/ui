@@ -1,0 +1,9 @@
+==Solution 1 ==
+
+$\left[ (x-y)^2 - (y-x)^2 \right]^2$
+
+$\left[ (x-y)^2 - (x-y)^2 \right]^2$
+
+$[0]^2$
+
+$0 \Rightarrow \textbf{(A)}$

@@ -1,0 +1,65 @@
+==Solution 1 (Similar Triangles)==
+As shown below, let $M_1,M_2,M_3,M_4$ be the midpoints of $\overline{AB},\overline{BC},\overline{CD},\overline{DA},$ respectively, and $G_1,G_2,G_3,G_4$ be the centroids of $\triangle{ABP},\triangle{BCP},\triangle{CDP},\triangle{DAP},$ respectively.
+<asy>
+/* Made by MRENTHUSIASM */
+unitsize(210);
+pair B = (0, 0), A = (0, 1), D = (1, 1), C = (1, 0), P = (1/4, 2/3);
+pair M1 = midpoint(A--B);
+pair M2 = midpoint(B--C);
+pair M3 = midpoint(C--D);
+pair M4 = midpoint(D--A);
+pair G1 = centroid(A,B,P);
+pair G2 = centroid(B,C,P);
+pair G3 = centroid(C,D,P);
+pair G4 = centroid(D,A,P);
+filldraw(M1--M2--P--cycle,red);
+filldraw(M2--M3--P--cycle,yellow);
+filldraw(M3--M4--P--cycle,green);
+filldraw(M4--M1--P--cycle,lightblue);
+draw(A--B--C--D--cycle);
+draw(M1--M2--M3--M4--cycle);
+draw(G1--G2--G3--G4--cycle);
+dot(P);
+defaultpen(fontsize(10pt));
+draw(A--P--B);
+draw(C--P--D);
+label("$A$", A, W);
+label("$B$", B, W);
+label("$C$", C, E);
+label("$D$", D, E);
+label("$P$", P, N);
+label("$M_1$", M1, W);
+label("$M_2$", M2, S);
+label("$M_3$", M3, E);
+label("$M_4$", M4, N);
+label("$G_1$", G1, 1.5S);
+label("$G_2$", G2, 1.5E);
+label("$G_3$", G3, 1.5NE);
+label("$G_4$", G4, 1.5E);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(M1);
+dot(M2);
+dot(M3);
+dot(M4);
+dot(G1);
+dot(G2);
+dot(G3);
+dot(G4);
+</asy>
+By SAS, we conclude that $\triangle G_1G_2P\sim\triangle M_1M_2P, \triangle G_2G_3P\sim\triangle M_2M_3P, \triangle G_3G_4P\sim\triangle M_3M_4P,$ and $\triangle G_4G_1P\sim\triangle M_4M_1P.$ By the properties of centroids, the ratio of similitude for each pair of triangles is $\frac23.$
+
+Note that quadrilateral $M_1M_2M_3M_4$ is a square of side-length $15\sqrt2.$ It follows that:
+<ol style="margin-left: 1.5em;">
+  <li>Since $\overline{G_1G_2}\parallel\overline{M_1M_2},\overline{G_2G_3}\parallel\overline{M_2M_3},\overline{G_3G_4}\parallel\overline{M_3M_4},$ and $\overline{G_4G_1}\parallel\overline{M_4M_1}$ by the Converse of the Corresponding Angles Postulate, we have $\angle G_1G_2G_3=\angle G_2G_3G_4=\angle G_3G_4G_1=\angle G_4G_1G_2=90^\circ.$</li><p>
+  <li>Since $G_1G_2=\frac23M_1M_2, G_2G_3=\frac23M_2M_3, G_3G_4=\frac23M_3M_4,$ and $G_4G_1=\frac23M_4M_1$ by the ratio of similitude, we have $G_1G_2=G_2G_3=G_3G_4=G_4G_1=10\sqrt2.$</li><p>
+</ol>
+Together, quadrilateral $G_1G_2G_3G_4$ is a square of side-length $10\sqrt2,$ so its area is $\left(10\sqrt2\right)^2=\boxed{\textbf{(C) }200}.$
+
+<u><b>Remark</b></u>
+
+This solution shows that, if point $P$ is within square $ABCD,$ then the shape and the area of quadrilateral $G_1G_2G_3G_4$ are independent of the location of $P.$ Let the brackets denote areas. More generally, $G_1G_2G_3G_4$ is always a square of area $$[G_1G_2G_3G_4]=\left(\frac23\right)^2[M_1M_2M_3M_4]=\frac49[M_1M_2M_3M_4]=\frac29[ABCD].$$ On the other hand, the location of $G_1G_2G_3G_4$ is dependent on the location of $P.$
+
+~RandomPieKevin ~Kyriegon ~MRENTHUSIASM

@@ -1,0 +1,3 @@
+==Solution 1==
+
+By adding a number from Bag A and a number from Bag B together, the values we can get are $3, 5, 7, 5, 7, 9, 7, 9, 11.$ Therefore the number of different values is $\boxed{\textbf{(B)}\ 5}$.

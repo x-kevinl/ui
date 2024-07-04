@@ -1,0 +1,68 @@
+==Solution 1==
+
+<asy>
+size(7cm);
+pair A,B,C,D,CC,DD;
+A = (-2,7);
+B = (14,7);
+C = (10,0);
+D = (0,0);
+CC = (10,7);
+DD = (0,7);
+draw(A--B--C--D--cycle);
+//label("33",(A+B)/2,N);
+label("21",(C+D)/2,S);
+label("10",(A+D)/2,W);
+label("14",(B+C)/2,E);
+label("$A$",A,NW);
+label("$B$",B,NE);
+label("$C$",C,SE);
+label("$D$",D,SW);
+label("$E$",DD,N);
+label("$F$",CC,N);
+draw(C--CC); draw(D--DD);
+</asy>
+
+In the diagram, $\overline{DE} \perp \overline{AB}, \overline{FC} \perp \overline{AB}$. 
+Denote $\overline{AE} = x$ and $\overline{DE} = h$. In right triangle $AED$, we have from the Pythagorean theorem: $x^2+h^2=100$. Note that since $EF = DC$, we have $BF = 33-DC-x = 12-x$. Using the Pythagorean theorem in right triangle $BFC$, we have $(12-x)^2 + h^2 = 196$. 
+
+
+We isolate the $h^2$ term in both equations, getting $h^2= 100-x^2$ and
+$h^2 = 196-(12-x)^2$.
+
+Setting these equal, we have $100-x^2 = 196 - 144 + 24x -x^2 \implies 24x = 48 \implies x = 2$. Now, we can determine that $h^2 = 100-4 \implies h = 4\sqrt{6}$.
+
+<asy>
+size(7cm);
+pair A,B,C,D,CC,DD;
+A = (-2,7);
+B = (14,7);
+C = (10,0);
+D = (0,0);
+CC = (10,7);
+DD = (0,7);
+draw(A--B--C--D--cycle);
+//label("33",(A+B)/2,N);
+label("21",(C+D)/2,S);
+label("10",(A+D)/2,W);
+label("14",(B+C)/2,E);
+label("$A$",A,NW);
+label("$B$",B,NE);
+label("$C$",C,SE);
+label("$D$",D,SW);
+label("$D$",D,SW);
+label("$E$",DD,SE);
+label("$F$",CC,SW);
+draw(C--CC); draw(D--DD);
+label("21",(CC+DD)/2,N);
+label("$2$",(A+DD)/2,N);
+label("$10$",(CC+B)/2,N);
+label("$4\sqrt{6}$",(C+CC)/2,W);
+label("$4\sqrt{6}$",(D+DD)/2,E);
+pair X = (-2,0);
+//draw(X--C--A--cycle,black+2bp);
+</asy>
+
+The two diagonals are $\overline{AC}$ and $\overline{BD}$. Using the Pythagorean theorem again on $\bigtriangleup AFC$ and $\bigtriangleup BED$, we can find these lengths to be $\sqrt{96+529} = 25$ and $\sqrt{96+961} = \sqrt{1057}$. Since $\sqrt{96+529}<\sqrt{96+961}$, $25$ is the shorter length*, so the answer is $\boxed{\textbf{(B) }25}$.
+
+*Or, alternatively, one can notice that the two triangles have the same height but $\bigtriangleup AFC$ has a shorter base than $\bigtriangleup BED$.

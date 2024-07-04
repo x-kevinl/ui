@@ -1,0 +1,9 @@
+==Problem==
+Sonya the frog chooses a point uniformly at random lying within the square
+$[0, 6]$ $\times$ $[0, 6]$ in the coordinate plane and hops to that point. She then randomly
+chooses a distance uniformly at random from $[0, 1]$ and a direction uniformly at
+random from {north, south, east, west}. All of her choices are independent. She now
+hops the distance in the chosen direction. What is the probability that she lands
+outside the square?
+
+$\textbf{(A) } \frac{1}{6} \qquad \textbf{(B) } \frac{1}{12} \qquad \textbf{(C) } \frac{1}{4} \qquad \textbf{(D) } \frac{1}{10} \qquad \textbf{(E) } \frac{1}{9}$

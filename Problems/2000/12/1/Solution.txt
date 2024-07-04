@@ -1,0 +1,5 @@
+== Solution 1 (Verifying the Statement)==
+First, we need to recognize that a number is going to be lowest only if, of the $3$ [[factor]]s, two of them are small. If we want to make sure that this is correct, we could test with a smaller number, like $30$. It becomes much more clear that this is true, and in this situation, the value of $I + M + O$ would be $18$. Now, we use this process on $2001$ to get $667 * 3 * 1$ as our $3$ factors.
+Hence, we have $667 + 3 + 1 = \boxed{\text{(E) 671}}$
+
+Solution By: armang32324

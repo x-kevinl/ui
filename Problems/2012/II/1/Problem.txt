@@ -1,0 +1,2 @@
+== Problem 1 ==
+Find the number of ordered pairs of positive integer solutions <math>(m, n)</math> to the equation <math>20m + 12n = 2012</math>.

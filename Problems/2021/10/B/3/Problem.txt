@@ -1,0 +1,5 @@
+==Problem==
+
+In an after-school program for juniors and seniors, there is a debate team with an equal number of students from each class on the team. Among the $28$ students in the program, $25\%$ of the juniors and $10\%$ of the seniors are on the debate team. How many juniors are in the program?
+
+$\textbf{(A)} ~5 \qquad\textbf{(B)} ~6 \qquad\textbf{(C)} ~8 \qquad\textbf{(D)} ~11 \qquad\textbf{(E)} ~20$

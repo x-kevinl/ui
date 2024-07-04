@@ -1,0 +1,2 @@
+==Solution==
+Numbers with exactly one zero have the form $\overline{a0b}$ or $\overline{ab0}$, where the $a,b \neq 0$. There are $(9\cdot1\cdot9)+(9\cdot9\cdot1) = 81+81 = \boxed{162}$ such numbers, hence our answer is $\fbox{D}$.

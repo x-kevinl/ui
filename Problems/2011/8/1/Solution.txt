@@ -1,0 +1,5 @@
+==Solution==
+
+$50$ cents is equivalent to $\textdollar 0.50.$ Then the three apples cost $3 \times \textdollar 0.50 = \textdollar 1.50.$ The change Margie receives is $\textdollar 5.00 - \textdollar 1.50 = \boxed{\textbf{(E)}\ \textdollar 3.50}$
+
+-Mathloveraldoxxx5223

@@ -1,0 +1,4 @@
+==Problem==
+What is the maximum number of balls of clay of radius $2$ that can completely fit inside a cube of side length $6$ assuming the balls can be reshaped but not compressed before they are packed in the cube?
+
+$\textbf{(A) }3\qquad\textbf{(B) }4\qquad\textbf{(C) }5\qquad\textbf{(D) }6\qquad\textbf{(E) }7$

@@ -1,0 +1,5 @@
+==Solution 1==
+
+We can consider a factor of $21!$ to be odd if it does not contain a $2$; hence, finding the exponent of $2$ in the prime factorization of $21!$ will help us find our answer. We can start off with all multiples of $2$ up to $21$, which is $10$. Then, we find multiples of $4$, which is $5$. Next, we look at multiples of $8$, of which there are $2$. Finally, we know there is only one multiple of $16$ in the set of positive integers up to $21$. Now, we can add all of these to get $10+5+2+1=18$. We know that, in the prime factorization of $21!$, we have $2^{18}$, and the only way to have an odd number is if there is not a $2$ in that number's prime factorization. This only happens with $2^{0}$, which is only one of the 19 different exponents of 2 we could have (of which having each exponent is equally likely). Hence, we have  $\boxed{\text{(B)} \dfrac{1}{19}}.$
+
+Solution by: armang32324

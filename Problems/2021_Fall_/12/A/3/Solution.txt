@@ -1,0 +1,8 @@
+==Solution 1==
+If Mr. Lopez chooses Route A, then he will spend $\frac{6}{30}=\frac{1}{5}$ hour, or $\frac{1}{5}\cdot60=12$ minutes.
+
+If Mr. Lopez chooses Route B, then he will spend $\frac{9/2}{40}+\frac{1/2}{20}=\frac{11}{80}$ hour, or $\frac{11}{80}\cdot60=8\frac14$ minutes.
+
+Therefore, Route B is quicker than Route A by $12-8\frac14=\boxed{\textbf{(B)}\  3 \frac{3}{4}}$ minutes.
+
+~MRENTHUSIASM

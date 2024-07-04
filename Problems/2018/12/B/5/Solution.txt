@@ -1,0 +1,2 @@
+==Solution 1 ==
+Since an element of a subset is either in or out, the total number of subsets of the $8$-element set is $2^8 = 256$. However, since we are only concerned about the subsets with at least $1$ prime in it, we can use complementary counting to count the subsets without a prime and subtract that from the total. Because there are $4$ non-primes, there are $2^8 -2^4 = \boxed{\textbf{(D) } 240}$ subsets with at least $1$ prime.

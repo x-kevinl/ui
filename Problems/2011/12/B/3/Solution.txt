@@ -1,0 +1,8 @@
+== Solution ==
+The total amount of money that was spent during the trip was
+$$ A + B $$
+So each person should pay
+$$ \frac{A+B}{2} $$
+if they were to share the costs equally. Because LeRoy has already paid $A$ dollars of his part, he still has to pay
+$$ \frac{A+B}{2} - A = $$
+$$ = \boxed{\frac{B-A}{2} \textbf{(C)}} $$

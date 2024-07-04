@@ -1,0 +1,13 @@
+==Solution 1==
+<asy>
+real a = 1/2, b = sqrt(3)/2;
+draw((0,0)--(1,0)--(1,1)--(0,1)--cycle);
+draw((0,0)--(a,-b)--(1,0)--(1+b,a)--(1,1)--(a,1+b)--(0,1)--(-b,a)--(0,0));
+draw((0,0)--(-1+a,-b)--(1+a,-b)--(1,0)--(1+b,-1+a)--(1+b,1+a)--(1,1)--(1+a,1+b)--(-1+a,1+b)--(0,1)--(-b,1+a)--(-b,-1+a)--(0,0));
+filldraw((1+a,-b)--(1,0)--(1+b,-1+a)--cycle,gray(0.9));
+filldraw((1+b,1+a)--(1,1)--(1+a,1+b)--cycle,gray(0.9));
+filldraw((-1+a,1+b)--(0,1)--(-b,1+a)--cycle,gray(0.9));
+filldraw((-b,-1+a)--(0,0)--(-1+a,-b)--cycle,gray(0.9));
+</asy>
+
+The equilateral triangles form trapezoids with side lengths $ 1, 1, 1, 2$ (half a unit hexagon) on each face of the unit square.  The four triangles "in between" these trapezoids are isosceles triangles with two side lengths $ 1$ and an angle of $ 30^{\circ}$ in between them, so the total area of these triangles (which is the area of $ S - R$) is, $ 4 \left( \frac {1}{2} \sin 30^{\circ} \right) = 1$ which makes the answer $ \boxed{C}$.

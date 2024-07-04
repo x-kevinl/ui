@@ -1,0 +1,5 @@
+==Solution==
+
+Since the letter that will replace the last $s$ does not depend on any letter except the other $s$'s, you can disregard anything else. There are $12$ $s$'s, so the last $s$ will be replaced by the letter $1+2+3+\cdots+12$ places to the right of $s$.
+$$1+2+3+\cdots+12=12 \times \frac{1+12}{2} = 78$$
+Every $26$ places, you will end up with the same letter so you can just take the remainder of $78$ when you divide by $26,$ which is $0.$ Therefore, the letter that will replace the last $s$ is $\boxed{\textbf{(D) } s}$

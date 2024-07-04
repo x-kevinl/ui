@@ -1,0 +1,23 @@
+==Solution==
+
+Let the side lengths of the rectangular box be $ x, y$  and $z$. 
+From the information we get 
+
+$$ 4(x+y+z) = 48 \Rightarrow x+y+z = 12 $$
+
+$$2(xy+yz+xz) = 94 $$
+
+The sum of all the  lengths of the box's interior diagonals is 
+
+$$4 \sqrt{x^2+y^2+z^2}$$
+
+Squaring the first expression, we get: 
+
+\begin{align*}
+144 =(x+y+z)^2 &=  x^2+y^2+z^2 + 2(xy+yz+xz) \\
+&=  x^2+y^2+z^2 + 94.
+\end{align*}
+
+Hence $$x^2+y^2+z^2 = 50$$
+
+$$4 \sqrt{x^2+y^2+z^2} =  \boxed{\textbf{(D)}\ 20\sqrt 2} $$

@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>\overline{AB}</math> be a diameter of circle <math>\omega</math>. Extend <math>\overline{AB}</math> through <math>A</math> to <math>C</math>. Point <math>T</math> lies on <math>\omega</math> so that line <math>CT</math> is tangent to <math>\omega</math>. Point <math>P</math> is the foot of the perpendicular from <math>A</math> to line <math>CT</math>. Suppose <math>\overline{AB} = 18</math>, and let <math>m</math> denote the maximum possible length of segment <math>BP</math>. Find <math>m^{2}</math>.

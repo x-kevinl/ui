@@ -1,0 +1,4 @@
+== Solution ==
+Squaring, we find that <math>(9 + bi)^2 = 81 + 18bi - b^2</math>. Cubing and ignoring the real parts of the result, we find that <math>(81 + 18bi - b^2)(9 + bi) = \ldots + (9\cdot 18 + 81)bi - b^3i</math>.
+
+Setting these two equal, we get that <math>18bi = 243bi - b^3i</math>, so <math>b(b^2 - 225) = 0</math> and <math>b = -15, 0, 15</math>. Since <math>b > 0</math>, the solution is <math>\boxed{015}</math>.

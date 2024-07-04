@@ -1,0 +1,2 @@
+==Solution==
+Assume that the area of each square is $1$.  Then, the area of the bolded region in the top left square is $\dfrac{1}{4}$.  The area of the top right bolded region is $\dfrac{1}{8}$.  The area of the bottom left bolded region is $\dfrac{3}{8}$.  And the area of the bottom right bolded region is $\dfrac{1}{4}$.  Add the four fractions:  $\dfrac{1}{4} + \dfrac{1}{8} + \dfrac{3}{8} + \dfrac{1}{4} = 1$.  The four squares together have an area of $4$, so the percentage bolded is $\dfrac{1}{4} \cdot 100 = \boxed{\textbf{(C)}\ 25}$.

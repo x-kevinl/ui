@@ -1,0 +1,3 @@
+== Solution ==
+
+Half of the 100 adult cats are female, so there are $\frac{100}{2}$ = $50$ female cats.  Half of those female adult cats have a litter of kittens, so there would be $\frac{50}{2}$ = $25$ litters.  Since the average number of kittens per litter is 4, this implies that there are $25 \times 4$ = $100$ kittens.  So the total number of cats and kittens would be $100 + 100$ = $\boxed{\textbf{(B)}\ 200}$

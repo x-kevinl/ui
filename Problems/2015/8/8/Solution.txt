@@ -1,0 +1,2 @@
+==Solution==
+We know from the [[Triangle Inequality]] that the last side, $s$, fulfills $s<5+19=24$. Adding $5+19$ to both sides of the inequality, we get $s+5+19<48$, and because $s+5+19$ is the perimeter of our triangle, $\boxed{\textbf{(D)}\ 48}$ is our answer.

@@ -1,0 +1,6 @@
+==Solution 1==
+Using the logarithmic property <math>\log_{a^n}b^n = \log_{a}b</math>, we note that <cmath>(2x+y)^2 = x^2+xy+7y^2</cmath>
+That gives <cmath>x^2+xy-2y^2=0</cmath> upon simplification and division by <math>3</math>. Factoring <math>x^2+xy-2y^2=0</math> gives <cmath>(x+2y)(x-y)=0</cmath> Then, <cmath>x=y \text{ or }x=-2y</cmath>
+From the second equation, <cmath>9x^2+6xy+y^2=3x^2+4xy+Ky^2</cmath> If we take <math>x=y</math>, we see that <math>K=9</math>. If we take <math>x=-2y</math>, we see that <math>K=21</math>. The product is <math>\boxed{189}</math>.
+
+-expiLnCalc

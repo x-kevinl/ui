@@ -1,0 +1,19 @@
+==Solution 1 (Coloring)==
+<asy>import three; draw((1,1,1)--(1,0,1)--(1,0,0)--(0,0,0)--(0,0,1)--(0,1,1)--(1,1,1)--(1,1,0)--(0,1,0)--(0,1,1)); draw((0,0,1)--(1,0,1)); draw((1,0,0)--(1,1,0)); draw((0,0,0)--(0,1,0)); 
+label("2",(0,0,0),S);
+label("A",(1,0,0),W);
+label("B",(0,0,1),N);
+label("1",(1,0,1),NW);
+label("3",(1,1,0),S);
+label("C",(0,1,0),E);
+label("D",(1,1,1),SE);
+label("4",(0,1,1),NE);
+</asy>
+
+We label the vertices of the cube as different letters and numbers shown above. We label these so that Erin can only crawl from a number to a letter or a letter to a number (this can be seen as a coloring argument). The starting point is labeled $A$.
+
+
+If we define a "move" as each time Erin crawls along a single edge from one vertex to another, we see that after 7 moves, Erin must be on a numbered vertex. Since this numbered vertex cannot be one unit away from $A$ (since Erin cannot crawl back to $A$), this vertex must be $4$.
+
+
+Therefore, we now just need to count the number of paths from $A$ to $4$. To count this, we can work backwards. There are 3 choices for which vertex Erin was at before she moved to $4$, and 2 choices for which vertex Erin was at 2 moves before $4$. All of Erin's previous moves were forced, so the total number of legal paths from $A$ to $4$ is $3 \cdot 2 = \boxed{\textbf{(A)}\; 6}$.

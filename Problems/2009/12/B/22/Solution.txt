@@ -1,0 +1,30 @@
+== Solution ==
+
+=== Solution 1 ===
+
+The area of any parallelogram $ABCD$ can be computed as the size of the vector product of $\overrightarrow{AB}$ and $\overrightarrow{AD}$.
+
+In our setting where $A=(0,0)$, $B=(s,s)$, and $D=(t,kt)$ this is simply $s\cdot kt - s\cdot t = (k-1)st$. 
+
+In other words, we need to count the triples of integers $(k,s,t)$ where $k>1$, $s,t>0$ and $(k-1)st = 1,\!000,\!000 = 2^6 5^6$.
+
+These can be counted as follows: We have $6$ identical red balls (representing powers of $2$), $6$ blue balls (representing powers of $5$), and three labeled urns (representing the factors $k-1$, $s$, and $t$). The red balls can be distributed in ${8\choose 2} = 28$ ways, and for each of these ways, the blue balls can then also be distributed in $28$ ways. (See [[Distinguishability]] for a more detailed explanation.)
+
+Thus there are exactly $28^2 = 784$ ways how to break $1,\!000,\!000$ into three positive integer factors, and for each of them we get a single parallelogram. Hence the number of valid parallelograms is $784 \longrightarrow \boxed{C}$.
+
+=== Solution 2 ===
+
+Without the vector product the area of $ABCD$ can be computed for example as follows: If $B=(s,s)$ and $D=(t,kt)$, then clearly $C=(s+t,s+kt)$. Let $B'=(s,0)$, $C'=(s+t,0)$ and $D'=(t,0)$ be the orthogonal projections of $B$, $C$, and $D$ onto the $x$ axis. Let $[P]$ denote the area of the polygon $P$. We can then compute:
+
+$$
+\begin{align*}
+[ABCD] & = [ADD'] + [DD'C'C] - [BB'C'C] - [ABB']
+\\
+& = \frac{kt^2}2 + \frac{s(s+2kt)}2 - \frac{t(2s+kt)}2 - \frac{s^2}2
+\\
+& = kst - st
+\\
+& = (k-1)st.
+\end{align*}
+$$
+The remainder of the solution is the same as the above.

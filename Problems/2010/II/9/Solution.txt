@@ -1,0 +1,120 @@
+==Solution==
+<center><asy>
+defaultpen(0.8pt+fontsize(12pt));
+pair A,B,C,D,E,F;
+pair G,H,I,J,K,L;
+A=dir(0);
+B=dir(60);
+C=dir(120);
+D=dir(180);
+E=dir(240);
+F=dir(300);
+draw(A--B--C--D--E--F--cycle,blue);
+
+G=(A+B)/2;
+H=(B+C)/2;
+I=(C+D)/2;
+J=(D+E)/2;
+K=(E+F)/2;
+L=(F+A)/2;
+
+int i;
+for (i=0; i<6; i+=1) {
+ draw(rotate(60*i)*(A--H),dotted);
+ }
+
+
+pair M,N,O,P,Q,R;
+M=extension(A,H,B,I);
+N=extension(B,I,C,J);
+O=extension(C,J,D,K);
+P=extension(D,K,E,L);
+Q=extension(E,L,F,G);
+R=extension(F,G,A,H);
+draw(M--N--O--P--Q--R--cycle,red);
+
+
+label('$A$',A,(1,0));
+label('$B$',B,NE);
+label('$C$',C,NW);
+label('$D$',D, W);
+label('$E$',E,SW);
+label('$F$',F,SE);
+label('$G$',G,NE);
+label('$H$',H, (0,1));
+label('$I$',I,NW);
+label('$J$',J,SW);
+label('$K$',K, S);
+label('$L$',L,SE);
+label('$M$',M);
+label('$N$',N);
+label('$O$',(0,0),NE); dot((0,0));
+</asy></center>
+
+Let <math>M</math> be the intersection of <math>\overline{AH}</math> and <math>\overline{BI}</math>.
+
+Let <math>N</math> be the intersection of <math>\overline{BI}</math> and <math>\overline{CJ}</math>.
+
+Let <math>O</math> be the center.
+
+===Solution 1===
+Without loss of generality, let <math>BC=2.</math>
+
+Note that <math>\angle BMH</math> is the vertical angle to an angle of the regular hexagon, so it has a measure of <math>120^\circ</math>.
+
+Because <math>\triangle ABH</math> and <math>\triangle BCI</math> are rotational images of one another, we get that <math>\angle{MBH}=\angle{HAB}</math> and hence <math>\triangle ABH \sim \triangle BMH \sim \triangle BCI</math>.
+
+Using a similar argument, <math>NI=MH</math>, and
+
+<cmath>MN=BI-NI-BM=BI-(BM+MH).</cmath>
+
+Applying the [[Law of cosines]] on <math>\triangle BCI</math>, <math>BI=\sqrt{2^2+1^2-2(2)(1)(\cos(120^\circ))}=\sqrt{7}</math>
+
+<cmath>\begin{align*}\frac{BC+CI}{BI}&=\frac{3}{\sqrt{7}}=\frac{BM+MH}{BH} \\
+BM+MH&=\frac{3BH}{\sqrt{7}}=\frac{3}{\sqrt{7}} \\
+MN&=BI-(BM+MH)=\sqrt{7}-\frac{3}{\sqrt{7}}=\frac{4}{\sqrt{7}} \\
+\frac{\text{Area of smaller hexagon}}{\text{Area of bigger hexagon}}&=\left(\frac{MN}{BC}\right)^2=\left(\frac{2}{\sqrt{7}}\right)^2=\frac{4}{7}\end{align*}</cmath>
+
+Thus, the answer is <math>4 + 7 = \boxed{011}.</math>
+
+===Solution 2 (Coordinate Bash)===
+We can use coordinates. Let <math>O</math> be at <math>(0,0)</math> with <math>A</math> at <math>(1,0)</math>, 
+
+then <math>B</math> is at <math>(\cos(60^\circ),\sin(60^\circ))=\left(\frac{1}{2},\frac{\sqrt{3}}{2}\right)</math>, 
+
+<math>C</math> is at <math>(\cos(120^\circ),\sin(120^\circ))=\left(-\frac{1}{2},\frac{\sqrt{3}}{2}\right)</math>, 
+
+<math>D</math> is at <math>(\cos(180^\circ),\sin(180^\circ))=(-1,0)</math>, 
+
+<cmath>\begin{align*}&H=\frac{B+C}{2}=\left(0,\frac{\sqrt{3}}{2}\right) \\
+&I=\frac{C+D}{2}=\left(-\frac{3}{4},\frac{\sqrt{3}}{4}\right)\end{align*}</cmath>
+
+<br/>
+
+Line <math>AH</math> has the slope of <math>-\frac{\sqrt{3}}{2}</math>
+and the equation of <math>y=-\frac{\sqrt{3}}{2}(x-1)</math>
+
+<br/>
+
+Line <math>BI</math> has the slope of <math>\frac{\sqrt{3}}{5}</math>
+and the equation <math>y-\frac{3}{2}=\frac{\sqrt{3}}{5}\left(x-\frac{1}{2}\right)</math>
+
+<br/> 
+
+Let's solve the system of equation to find <math>M</math>
+
+<cmath>\begin{align*}-\frac{\sqrt{3}}{2}(x-1)-\frac{3}{2}&=\frac{\sqrt{3}}{5}\left(x-\frac{1}{2}\right) \\
+-5\sqrt{3}x&=2\sqrt{3}x-\sqrt{3} \\
+x&=\frac{1}{7} \\
+y&=-\frac{\sqrt{3}}{2}(x-1)=\frac{3\sqrt{3}}{7}\end{align*}</cmath>
+
+Finally,
+
+<cmath>\begin{align*}&\sqrt{x^2+y^2}=OM=\frac{1}{7}\sqrt{1^2+(3\sqrt{3})^2}=\frac{1}{7}\sqrt{28}=\frac{2}{\sqrt{7}} \\
+&\frac{\text{Area of smaller hexagon}}{\text{Area of bigger hexagon}}=\left(\frac{OM}{OA}\right)^2=\left(\frac{2}{\sqrt{7}}\right)^2=\frac{4}{7}\end{align*}</cmath>
+
+Thus, the answer is <math>\boxed{011}</math>.
+
+
+Diagram (by dragoon)
+https://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvZC82L2ZiNDljZmZiNjUzYWE4NGRmNmIwYTljMWQxZDU2ZDc1ZmNiMDQ3LmpwZWc=&rn=RDQ3ODA2RjUtMzlDNi00QzQ3LUE2OTYtMjlCQkE4NThDNkRBLmpwZWc=

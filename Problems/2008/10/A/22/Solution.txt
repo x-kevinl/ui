@@ -1,0 +1,42 @@
+==Solution 1==
+We construct a tree showing all possible outcomes that Jacob may get after $3$ flips; we can do this because there are only $8$ possibilities:
+$$
+6\quad\begin{cases}
+
+\ \text{H}: 11 &\quad
+
+\begin{cases}
+
+\ \text{H}: 21 &\quad
+\begin{cases}
+\ \text{H}: \boxed{41}\\
+\ \text{T}: 9.5
+\end{cases}\\
+
+\ \text{T}: 4.5 &\quad
+\begin{cases}
+\ \text{H}: \boxed{8}\\
+\ \text{T}: 1.25
+\end{cases}
+
+\end{cases}\\
+
+\ \text{T}: 2 &\quad
+
+\begin{cases}
+
+\ \text{H}: 3 &\qquad\!
+\begin{cases}
+\ \text{H}: \boxed{5}\\
+\ \text{T}: 0.5
+\end{cases}\\
+
+\ \text{T}: 0 &\qquad\!
+\begin{cases}
+\ \text{H}: \boxed{-1}\\
+\ \text{T}: \boxed{-1}
+\end{cases}
+\end{cases}
+\end{cases}
+$$
+There is a $\frac{5}{8}$ chance that the fourth term in Jacob's sequence is an integer, so the answer is $\mathrm{(D)}$.

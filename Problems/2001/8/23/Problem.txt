@@ -1,0 +1,15 @@
+==Problem==
+
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>Points $R$, $S$ and $T$ are vertices of an equilateral triangle, and points $X$, $Y$ and $Z$ are midpoints of its sides. How many noncongruent triangles can be
+drawn using any three of these six points as vertices?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+<asy>
+pair SS,R,T,X,Y,Z;
+SS = (2,2*sqrt(3)); R = (0,0); T = (4,0);
+X = (2,0); Y = (1,sqrt(3)); Z = (3,sqrt(3));
+dot(SS); dot(R); dot(T); dot(X); dot(Y); dot(Z);
+label("$S$",SS,N); label("$R$",R,SW); label("$T$",T,SE);
+label("$X$",X,S); label("$Y$",Y,NW); label("$Z$",Z,NE);
+</asy>
+
+$\text{(A)}\ 1 \qquad \text{(B)}\ 2 \qquad \text{(C)}\ 3 \qquad \text{(D)}\ 4 \qquad \text{(E)}\ 20$

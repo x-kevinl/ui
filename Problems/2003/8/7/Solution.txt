@@ -1,0 +1,8 @@
+==Solution==
+
+===Solution 1===
+Blake scored a total of $ 4 \times 78=312 $ points. Jenny scored $ 10-10+20+20=40 $ points higher than Blake, so her average is $ \frac{312+40}{4}=88 $. 
+the difference is $ 88-78=\boxed{\mathrm{(A)}\ 10} $.
+
+===Solution 2===
+The total point difference between Blake's and Jenny's scores is $ 10-10+20+20=40 $. The average of it is $ \frac{40}{4}=\boxed{\mathrm{(A)}\ 10} $.

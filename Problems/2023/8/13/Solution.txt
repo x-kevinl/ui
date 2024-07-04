@@ -1,0 +1,11 @@
+==Solution==
+
+Suppose that the race is $d$ miles long. The water stations are located at $$\frac{d}{8}, \frac{2d}{8}, \ldots, \frac{7d}{8}$$ miles from the start, and the repair stations are located at $$\frac{d}{3}, \frac{2d}{3}$$ miles from the start.
+
+We are given that $\frac{3d}{8}=\frac{d}{3}+2,$ from which  
+$$\begin{align*}
+\frac{9d}{24}&=\frac{8d}{24}+2 \\
+\frac{d}{24}&=2 \\
+d&=\boxed{\textbf{(D)}\ 48}.
+\end{align*}$$
+~apex304, SohumUttamchandani, wuwang2002, TaeKim, Cxrupptedpat, MRENTHUSIASM

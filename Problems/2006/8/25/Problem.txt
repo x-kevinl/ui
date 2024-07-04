@@ -1,0 +1,14 @@
+==Problem==
+
+Barry wrote 6 different numbers, one on each side of 3 cards, and laid the cards on a table, as shown. The sums of the two numbers on each of the three cards are equal. The three numbers on the hidden sides are prime numbers. What is the average of the hidden prime numbers? 
+
+<asy>
+path card=((0,0)--(0,3)--(2,3)--(2,0)--cycle);
+draw(card, linewidth(1));
+draw(shift(2.5,0)*card, linewidth(1));
+draw(shift(5,0)*card, linewidth(1));
+label("$44$", (1,1.5));
+label("$59$", shift(2.5,0)*(1,1.5));
+label("$38$", shift(5,0)*(1,1.5));</asy>
+
+$ \textbf{(A)}\ 13\qquad\textbf{(B)}\ 14\qquad\textbf{(C)}\ 15\qquad\textbf{(D)}\ 16\qquad\textbf{(E)}\ 17 $

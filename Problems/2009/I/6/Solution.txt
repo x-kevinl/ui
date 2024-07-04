@@ -1,0 +1,27 @@
+== Solution 1==
+First, <math>x</math> must be less than <math>5</math>, since otherwise <math>x^{\lfloor x\rfloor}</math> would be at least <math>3125</math> which is greater than <math>1000</math>. 
+
+Because <math>{\lfloor x\rfloor}</math> must be an integer, let’s do case work based on <math>{\lfloor x\rfloor}</math>:
+
+For <math>{\lfloor x\rfloor}=0</math>, <math>N=1</math> as long as <math>x \neq 0</math>. This gives us <math>1</math> value of <math>N</math>.
+
+For <math>{\lfloor x\rfloor}=1</math>, <math>N</math> can be anything between <math>1^1</math> to <math>2^1</math> excluding <math>2^1</math>
+
+Therefore, <math>N=1</math>. However, we got <math>N=1</math> in case 1 so it got counted twice.
+
+For <math>{\lfloor x\rfloor}=2</math>, <math>N</math> can be anything between <math>2^2</math> to <math>3^2</math> excluding <math>3^2</math>
+
+This gives us <math>3^2-2^2=5</math> <math>N</math>'s
+
+For <math>{\lfloor x\rfloor}=3</math>, <math>N</math> can be anything between <math>3^3</math> to <math>4^3</math> excluding <math>4^3</math>
+
+This gives us <math>4^3-3^3=37</math> <math>N</math>'s
+
+For <math>{\lfloor x\rfloor}=4</math>, <math>N</math> can be anything between <math>4^4</math> to <math>5^4</math> excluding <math>5^4</math>
+
+This gives us <math>5^4-4^4=369</math> <math>N</math>'s
+
+Since <math>x</math> must be less than <math>5</math>, we can stop here and the answer is <math>1+5+37+369= \boxed {412}</math> possible values for <math>N</math>.
+
+Alternatively, one could find that the values which work are <math>1^1,\ 2^2,\ 3^3,\ 4^4,\ \sqrt{5}^{\lfloor\sqrt{5}\rfloor},\ \sqrt{6}^{\lfloor\sqrt{6}\rfloor},\ \sqrt{7}^{\lfloor\sqrt{7}\rfloor},\ \sqrt{8}^{\lfloor\sqrt{8}\rfloor},\ \sqrt[3]{28}^{\lfloor\sqrt[3]{28}\rfloor},\ \sqrt[3]{29}^{\lfloor\sqrt[3]{29}\rfloor},\ \sqrt[3]{30}^{\lfloor\sqrt[3]{30}\rfloor},\ ...,</math>
+<math>\ \sqrt[3]{63}^{\lfloor\sqrt[3]{63}\rfloor},\ \sqrt[4]{257}^{\lfloor\sqrt[4]{257}\rfloor},\ \sqrt[4]{258}^{\lfloor\sqrt[4]{258}\rfloor},\ ...,\ \sqrt[4]{624}^{\lfloor\sqrt[4]{624}\rfloor}</math> to get the same answer.

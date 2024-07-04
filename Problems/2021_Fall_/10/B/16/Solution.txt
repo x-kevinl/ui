@@ -1,0 +1,24 @@
+==Solution 1==
+
+After the first swap, we do casework on the next swap.
+
+
+Case 1: Silva swaps the two balls that were just swapped
+
+There is only one way for Silva to do this, and it leaves 5 balls occupying their original position.
+
+
+Case 2: Silva swaps one ball that has just been swapped with one that hasn't been swapped
+
+There are two ways for Silva to do this, and it leaves 2 balls occupying their original positions.
+
+
+Case 3: Silva swaps two balls that have not been swapped
+
+There are two ways for Silva to do this, and it leaves 1 ball occupying their original position.
+
+
+Our answer is the average of all 5 possible swaps, so we get $$\frac{5+2\cdot2+2\cdot1}{5}=\frac{11}5=\boxed{(\textbf{D}) \: 2.2}.$$
+
+
+~kingofpineapplz

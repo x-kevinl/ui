@@ -1,0 +1,26 @@
+==Solution 1==
+
+Let $A$ be at $(6, 5)$, B be at $(8, -3)$, and $C$ be at $(9, 1)$.  Reflecting over the line $x=8$, we see that $A' = D =  (10,5)$, $B' = B$ (as the x-coordinate of B is 8), and $C' = E =  (7, 1)$.  Line $AB$ can be represented as $y=-4x+29$, so we see that $E$ is on line $AB$.  
+
+<asy>
+pair A = (6, 5), B = (8, -3), C = (9, 1), D = (10, 5), E = (7, 1), F = (8, 7/3);
+draw(A--B--C--cycle^^D--E--B--cycle);
+dot(A^^B^^C^^D^^E^^F);
+label("$A$",A,NW);
+label("$B$",B,S);
+label("$C$",C,SE);
+label("$D$",D,NE);
+label("$E$",E,W);
+label("$F$", F, N);
+
+
+</asy>
+
+
+We see that if we connect $A$ to $D$, we get a line of length $4$ (between $(6, 5)$ and $(10,5)$).  The area of $\triangle ABD$ is equal to $\frac{bh}{2} = \frac{4(8)}{2} = 16$.
+
+Now, let the point of intersection between $AC$ and $DE$ be $F$.  If we can just find the area of $\triangle ADF$ and subtract it from $16$, we are done.
+
+We realize that because the diagram is symmetric over $x = 8$, the intersection of lines $AC$ and $DE$ should intersect at an x-coordinate of $8$.  We know that the slope of $DE$ is $\frac{5-1}{10-7} = \frac{4}{3}$.  Thus, we can represent the line going through $E$ and $D$ as $y - 1=\frac{4}{3}(x - 7)$.  Plugging in $x = 8$, we find that the y-coordinate of F is $\frac{7}{3}$.  Thus, the height of $\triangle ADF$ is $5 - \frac{7}{3} = \frac{8}{3}$.  Using the formula for the area of a triangle, the area of $\triangle ADF$ is $\frac{16}{3}$.  
+
+To get our final answer, we must subtract this from $16$.  $[ABD] - [ADF] = 16 - \frac{16}{3} = \boxed{\textbf{(E) }\frac{32}{3}}$

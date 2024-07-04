@@ -1,0 +1,55 @@
+==Solution==
+
+=== Solution 1 ===
+
+We can obtain the solution by calculating the area of rectangle $ABGH$ minus the combined area of triangles $\triangle AHG$ and $\triangle CGM$.
+
+We know that triangles $\triangle AMH$ and $\triangle GMC$ are similar because $\overline{AH} \parallel \overline{CG}$. Also, since $\frac{AH}{CG} = \frac{3}{2}$, the ratio of the distance from $M$ to $\overline{AH}$ to the distance from $M$ to $\overline{CG}$ is also $\frac{3}{2}$. Solving with the fact that the distance from $\overline{AH}$ to $\overline{CG}$ is 4, we see that the distance from $M$ to $\overline{CG}$ is $\frac{8}{5}$.
+
+The area of $\triangle AHG$ is simply $\frac{1}{2} \cdot 4 \cdot 12 = 24$, the area of $\triangle CGM$ is $\frac{1}{2} \cdot \frac{8}{5} \cdot 8 = \frac{32}{5}$, and the area of rectangle $ABGH$ is $4 \cdot 12 = 48$.
+
+Taking the area of rectangle $ABGH$ and subtracting the combined area of $\triangle AHG$ and $\triangle CGM$ yields $48 - \left(24 + \frac{32}{5}\right) = \boxed{\frac{88}{5}}\ \text{(C)}$.
+
+=== Solution 2 ===
+
+<asy>
+unitsize(2cm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+dotfactor=4;
+
+pair A=(1,3), B=(2,3), C=(2,2), D=(3,2), Ep=(3,1), F=(2,1), G=(2,0), H=(1,0), I=(1,1), J=(0,1), K=(0,2), L=(1,2);
+pair M=intersectionpoints(A--G,H--C)[0];
+pair Z=(2.5,3);
+
+draw(A--B--C--D--Ep--F--G--H--I--J--K--L--cycle);
+draw(A--G);
+draw(H--C);
+draw(B--Z--C);
+draw(C--F);
+dot(M);
+
+label("$A$",A,NW);
+label("$B$",B,N);
+label("$C$",C,SE);
+label("$D$",D,NE);
+label("$E$",Ep,SE);
+label("$F$",F,SE);
+label("$G$",G,SE);
+label("$H$",H,SW);
+label("$I$",I,SW);
+label("$J$",J,SW);
+label("$K$",K,NW);
+label("$L$",L,NW);
+label("$M$",M,W);
+label("$N$",Z,NE);
+</asy>
+
+Extend $AB$ and $CH$ and call their intersection $N$.
+
+The triangles $CBN$ and $CGH$ are clearly similar with ratio $1:2$, hence $BN=2$ and thus $AN=6$. The area of the triangle $BCN$ is $\frac{2\cdot 4}2 = 4$.
+
+The triangles $MAN$ and $MGH$ are similar as well, and we now know that the ratio of their dimensions is $AN:GH = 6:4 = 3:2$.
+
+Draw altitudes from $M$ onto $AN$ and $GH$, let their feet be $M_1$ and $M_2$. We get that $MM_1 : MM_2 = 3:2$. Hence $MM_1 = \frac 35 \cdot 12 = \frac {36}5 $. (An alternate way is by seeing that the set-up AHGCM is similar to the 2 pole problem (http://www.artofproblemsolving.com/wiki/index.php/1951_AHSME_Problems/Problem_30). Therefore, $MM_2$ must be $\frac{1}{\frac{1}{8}+\frac{1}{12}} = \frac{24}{5}$, by the harmonic mean. Thus, $MM_1$ must be $\frac{36}{5}$.)   
+
+Then the area of $AMN$ is $\frac 12 \cdot AN \cdot MM_1 = \frac{108}5$, and the area of $ABCM$ can be obtained by subtracting the area of $BCN$, which is $4$. Hence the answer is $\frac{108}5 - 4 =  \boxed{\frac{88}5}$.

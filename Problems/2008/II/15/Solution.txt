@@ -1,0 +1,30 @@
+== Solution ==
+=== Solution 1 ===
+Write <math>n^2 = (m + 1)^3 - m^3 = 3m^2 + 3m + 1</math>, or equivalently, <math>(2n + 1)(2n - 1) = 4n^2 - 1 = 12m^2 + 12m + 3 = 3(2m + 1)^2</math>.
+
+Since <math>2n + 1</math> and <math>2n - 1</math> are both odd and their difference is <math>2</math>, they are [[relatively prime]]. But since their product is three times a square, one of them must be a square and the other three times a square. We cannot have <math>2n - 1</math> be three times a square, for then <math>2n + 1</math> would be a square congruent to <math>2</math> modulo <math>3</math>, which is impossible.
+
+Thus <math>2n - 1</math> is a square, say <math>b^2</math>. But <math>2n + 79</math> is also a square, say <math>a^2</math>. Then <math>(a + b)(a - b) = a^2 - b^2 = 80</math>. Since <math>a + b</math> and <math>a - b</math> have the same parity and their product is even, they are both even. To maximize <math>n</math>, it suffices to maximize <math>2b = (a + b) - (a - b)</math> and check that this yields an integral value for <math>m</math>. This occurs when <math>a + b = 40</math> and <math>a - b = 2</math>, that is, when <math>a = 21</math> and <math>b = 19</math>. This yields <math>n = 181</math> and <math>m = 104</math>, so the answer is <math>\boxed{181}</math>.
+
+=== Solution 2 ===
+Suppose that the consecutive cubes are <math>m</math> and <math>m + 1</math>. We can use completing the square and the first condition to get:
+<cmath>
+(2n)^2 - 3(2m + 1)^2 = 1\equiv a^2 - 3b^2
+</cmath>
+where <math>a</math> and <math>b</math> are non-negative integers. Now this is a [[Pell equation]], with solutions in the form <math>(2 + \sqrt {3})^k = a_k + \sqrt {3}b_k,</math> <math>k = 0,1,2,3,...</math>. However, <math>a</math> is even and <math>b</math> is odd. It is easy to see that the parity of <math>a</math> and <math>b</math> switch each time (by induction). Hence all solutions to the first condition are in the form:
+<cmath>
+(2 + \sqrt {3})^{2k + 1} = a_k + \sqrt {3}b_k
+</cmath>
+where <math>k = 0,1,2,..</math>. So we can (with very little effort) obtain the following: <math>(k,a_k = 2n) = (0,2),(1,26),(2,362),(3,5042)</math>. It is an AIME problem so it is implicit that <math>n < 1000</math>, so <math>2n < 2000</math>. It is easy to see that <math>a_n</math> is strictly increasing by induction. Checking <math>2n = 362\implies n =\boxed{181}</math> in the second condition works (we know <math>b_k</math> is odd so we don't need to find <math>m</math>). So we're done.
+
+=== Solution 3 (Big Bash) ===
+
+Let us generate numbers <math>1</math> to <math>1000</math> for the second condition, for squares. We know for <math>N</math> to be integer, the squares must be odd. So we generate <math>N = 1, 21, 45, 73, 105, 141, 181, 381, 441, 721, 801</math>. <math>N</math> cannot exceed <math>1000</math> since it is AIME problem. Now take the first criterion, let <math>a</math> be the smaller consecutive cube. We then get:
+
+<math> N^2 = (A + 1)^3 - A^3</math>
+
+<math> N^2 - 1 = 3A^2 + 3A</math>
+
+<math> (N + 1)(N - 1) = 3A(A + 1)</math>
+
+Now we know either <math>N + 1</math> or <math>N - 1</math> must be factor of <math>3</math>, hence <math>N = 1 \pmod 3 </math> or<math>  N = 2 \pmod 3</math>. Only <math>1, 73, 181, 721</math> satisfy this criterion. Testing each of the numbers in the condition yields <math>181</math> as the largest that fits both, thus answer <math>= \boxed{181}</math>.

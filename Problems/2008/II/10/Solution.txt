@@ -1,0 +1,38 @@
+== Solution ==
+We label our points using coordinates <math>0 \le x,y \le 3</math>, with the bottom-left point being <math>(0,0)</math>. By the [[Pythagorean Theorem]], the distance between two points is <math>\sqrt{d_x^2 + d_y^2}</math> where <math>0 \le d_x, d_y \le 3</math>; these yield the possible distances (in decreasing order)
+<cmath>\sqrt{18},\ \sqrt{13},\ \sqrt{10},\ \sqrt{9},\ \sqrt{8},\ \sqrt{5},\ \sqrt{4},\ \sqrt{2},\ \sqrt{1}</cmath> 
+As these define <math>9</math> lengths, so the maximum value of <math>m</math> is <math>10</math>. For now, we assume that <math>m = 10</math> is achievable. Because it is difficult to immediately impose restrictions on a path with increasing distances, we consider the paths in ''shrinking'' fashion. Note that the ''shrinking paths'' and ''growing paths'' are equivalent, but there are restrictions upon the locations of the first edges of the former. 
+
+The <math>\sqrt{18}</math> length is only possible for one of the long diagonals, so our path must start with one of the <math>4</math> corners of the grid. [[Without loss of generality]] (since the grid is rotationally symmetric), we let the vertex be <math>(0,0)</math> and the endpoint be <math>(3,3)</math>. 
+<center><asy>
+unitsize(0.25inch);
+defaultpen(linewidth(0.7)); dotfactor = 4; pen s = linewidth(4); 
+int i, j;
+for(i = 0; i < 4; ++i)
+	for(j = 0; j < 4; ++j)
+		dot(((real)i, (real)j));
+dot((0,0)^^(3,3),s); draw((0,0)--(3,3)); 
+</asy></center>
+The <math>\sqrt{13}</math> length can now only go to <math>2</math> points; due to reflectional symmetry about the main diagonal, we may WLOG let the next endpoint be <math>(1,0)</math>. 
+<center><asy>
+unitsize(0.25inch);
+defaultpen(linewidth(0.7)); dotfactor = 4; pen s = linewidth(4); pen c = rgb(0.5,0.5,0.5);
+int i, j;
+for(i = 0; i < 4; ++i)
+	for(j = 0; j < 4; ++j)
+		dot(((real)i, (real)j));
+dot((0,0)^^(3,3)^^(1,0),s); draw((0,0)--(3,3),c); draw((3,3)--(1,0)); 
+</asy></center>
+From <math>(1,0)</math>, there are two possible ways to move <math>\sqrt{10}</math> away, either to <math>(0,3)</math> or <math>(2,3)</math>. However, from <math>(0,3)</math>, there is no way to move <math>\sqrt{9}</math> away, so we discard it as a possibility. 
+
+From <math>(2,3)</math>, the lengths of <math>\sqrt{8},\ \sqrt{5},\ \sqrt{4},\ \sqrt{2}</math> fortunately are all determined, with the endpoint sequence being <math>(2,3)-(2,0)-(0,2)-(2,1)-(0,1)-(1,2)</math>.
+<center><asy>
+unitsize(0.25inch);
+defaultpen(linewidth(0.7)); dotfactor = 4; pen s = linewidth(4); pen c = rgb(0.5,0.5,0.5);
+int i, j;
+for(i = 0; i < 4; ++i)
+	for(j = 0; j < 4; ++j)
+		dot(((real)i, (real)j));
+dot((0,0)^^(3,3)^^(1,0)^^(2,3)^^(2,0)^^(0,2)^^(2,1)^^(0,1)^^(1,2),s); draw((0,0)--(3,3)--(1,0)--(2,3)--(2,0)--(0,2)--(2,1)--(0,1)--(1,2));
+</asy></center>
+From <math>(1,2)</math>, there are <math>3</math> possible lengths of <math>\sqrt{1}</math> (to either <math>(1,1),(2,2),(1,3)</math>). Thus, the number of paths is <math>r = 4 \cdot 2 \cdot 3 = 24</math>, and the answer is <math>mr = 10 \cdot 24 = \boxed{240}</math>.

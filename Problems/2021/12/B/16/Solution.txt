@@ -1,0 +1,7 @@
+==Solution 1==
+Note that $f(1/x)$ has the same roots as $g(x)$, if it is multiplied by some monomial so that the leading term is $x^3$ they will be equal. We have
+$$f(1/x) = \frac{1}{x^3} + \frac{a}{x^2}+\frac{b}{x} + c$$
+so we can see that
+$$g(x) = \frac{x^3}{c}f(1/x)$$
+Therefore
+$$g(1) = \frac{1}{c}f(1) = \boxed{\textbf{(A) }\frac{1+a+b+c}c}$$

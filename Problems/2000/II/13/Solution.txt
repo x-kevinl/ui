@@ -1,0 +1,39 @@
+== Solution ==
+We may factor the equation as:{{ref|1}}
+
+<cmath>
+\begin{align*}
+2000x^6+100x^5+10x^3+x-2&=0\\
+2(1000x^6-1) + x(100x^4+10x^2+1)&=0\\
+2[(10x^2)^3-1]+x[(10x^2)^2+(10x^2)+1]&=0\\
+2(10x^2-1)[(10x^2)^2+(10x^2)+1]+x[(10x^2)^2+(10x^2)+1]&=0\\
+(20x^2+x-2)(100x^4+10x^2+1)&=0\\
+\end{align*}
+</cmath>
+
+Now <math>100x^4+10x^2+1\ge 1>0</math> for real <math>x</math>. Thus the real roots must be the roots of the equation <math>20x^2+x-2=0</math>. By the [[quadratic formula]] the roots of this are:
+
+<cmath>x=\frac{-1\pm\sqrt{1^2-4(-2)(20)}}{40} = \frac{-1\pm\sqrt{1+160}}{40} = \frac{-1\pm\sqrt{161}}{40}.</cmath>
+
+Thus <math>r=\frac{-1+\sqrt{161}}{40}</math>, and so the final answer is <math>-1+161+40 = \boxed{200}</math>.
+
+<br />
+{{note|1}} A well-known technique for dealing with symmetric (or in this case, nearly symmetric) polynomials is to divide through by a power of <math>x</math> with half of the polynomial's degree (in this case, divide through by <math>x^3</math>), and then to use one of the substitutions <math>t = x \pm \frac{1}{x}</math>. In this case, the substitution <math>t = x\sqrt{10} - \frac{1}{x\sqrt{10}}</math> gives <math>t^2 + 2 = 10x^2 + \frac 1{10x^2}</math> and <math>2\sqrt{10}(t^3 + 3t) = 200x^3 - \frac{2}{10x^3}</math>, which reduces the polynomial to just <math>(t^2 + 3)\left(2\sqrt{10}t + 1\right) = 0</math>. Then one can backwards solve for <math>x</math>.
+Note: After dividing the equation with <math>x^3</math>, divide again with <math>10</math> before substituting it with <math>t</math> to get it right.
+
+
+A slightly different approach using symmetry:
+<br />
+Let <math>y = 10x - 1/x</math>.
+Notice that the equation can be rewritten (after dividing across by <math>x^3</math>) as 
+<cmath> 2( (10x)^3 - 1/x^3 ) + (10x)^2 + (1/x)^2 + 10 = 0 </cmath>
+Now it is easy to see that the equation reduces to 
+<cmath>
+\begin{align*}
+2(y^3+30y)+ (y^2+20) + 10 = 0 \\
+2y^3 + y^2 + 60y + 30 = 0 \\
+y^2(2y+1) + 30(2y+1) = 0 \\
+(2y+1)(y^2+30)= 0 \\
+\end{align*}
+</cmath>
+so for real solutions we have <math>y = -1/2</math>. Solve the quadratic in <math>x</math> to get the final answer as <math>\boxed{200}</math>.

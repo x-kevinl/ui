@@ -1,0 +1,238 @@
+== Solution ==
+
+
+<asy>
+unitsize(2cm);
+defaultpen(linewidth(.8pt)+fontsize(8pt));
+
+draw((-1,-1)--(1,-1)--(1,1)--(-1,1)--cycle);
+draw((1,1)--(-1,0));
+pair P=foot((1,-1),(1,1),(-1,0));
+draw((1,-1)--P);
+draw(rightanglemark((-1,0),P,(1,-1),4));
+
+label("$M$",(-1,0),W);
+label("$C$",(-0.1,-0.3));
+label("$A$",(-0.4,0.7));
+label("$B$",(0.7,0.4));
+label("$P$",(-1,1),NW);
+label("$Q$",(1,1),NE);
+label("$R$",(1,-1),SE);
+label("$S$",(-1,-1),SW);
+label("$N$",P,NW);
+</asy>
+
+Let's label the points as in the picture above. Let $[RNQ]$ be the area of $\triangle RNQ$. Then the volume of the corresponding piece is $c=2[RNQ]$. This cake piece has icing on the top and on the vertical side that contains the edge $QR$. Hence the total area with icing is $[RNQ]+2^2 = [RNQ]+4$. Thus the answer to our problem is $3[RNQ]+4$, and all we have to do now is determine $[RNQ]$.
+
+=== Solution 1 ===
+
+Introduce a coordinate system where $Q=(0,0)$, $P=(2,0)$ and $R=(0,2)$. 
+
+In this coordinate system we have $M=(2,1)$, and the line $QM$ has the equation $2y-x=0$. 
+
+As the line $RN$ is orthogonal to $QM$, it must have the equation $y+2x+q=0$ for some suitable constant $q$. As this line contains the point $R=(0,2)$, we have $q=-2$.
+
+Substituting $x=2y$ into $y+2x-2=0$, we get $y=\frac 25$, and then $x=\frac 45$. 
+
+We can note that in $\triangle RNQ$ $x$ is the height from $N$ onto $RQ$, hence its area is $[RNQ] = \frac{x \cdot RQ} 2 = \frac{2x}2 = x = \frac 45$, and therefore the answer is $3[RNQ]+4 = 3\cdot \frac 45 + 4 = \boxed{\frac{32}5 \Longrightarrow B}$.
+
+=== Solution 2 ===
+
+Extend $RN$ to intersect $PQ$ at $O$:
+
+<asy>
+unitsize(2cm);
+defaultpen(linewidth(.8pt)+fontsize(8pt));
+
+draw((-1,-1)--(1,-1)--(1,1)--(-1,1)--cycle);
+draw((1,1)--(-1,0));
+pair P=foot((1,-1),(1,1),(-1,0));
+draw((1,-1)--P);
+draw(rightanglemark((-1,0),P,(1,-1),4));
+draw(P -- (0,1));
+
+label("$M$",(-1,0),W);
+label("$C$",(-0.1,-0.3));
+label("$A$",(-0.4,0.7));
+label("$B$",(0.7,0.4));
+label("$P$",(-1,1),NW);
+label("$Q$",(1,1),NE);
+label("$R$",(1,-1),SE);
+label("$S$",(-1,-1),SW);
+label("$N$",P,1.5*WNW);
+label("$O$",(0,1),N);
+</asy>
+
+It is now obvious that $O$ is the midpoint of $PQ$. (Imagine rotating the square $PQRS$ by $90^\circ$ clockwise around its center. This rotation will map the segment $MQ$ to a segment that is orthogonal to $MQ$, contains $R$ and contains the midpoint of $PQ$.
+
+From $\triangle PQM$ we can compute that $QM = \sqrt{1^2 + 2^2} = \sqrt 5$.
+
+Observe that $\triangle PQM$ and $\triangle NQO$ have the same angles and therefore they are similar. The ratio of their sides is $\frac{QM}{OQ} = \frac{\sqrt 5}1 = \sqrt 5$.
+
+Hence we have $ON = \frac{PM}{\sqrt 5} = \frac 1{\sqrt 5}$, and $NQ = \frac{PQ}{\sqrt 5} = \frac 2{\sqrt 5}$.
+
+Knowing this, we can compute the area of $\triangle NQO$ as $[NQO] = \frac{ON \cdot NQ}2 = \frac 15$.
+
+Finally, we compute $[RNQ] = [ROQ] - [NQO] = 1 - \frac 15 = \frac 45,$ and conclude that the answer is $3[RNQ]+4 = 3\cdot \frac 45 + 4 = \boxed{\frac{32}5}.$
+
+*You could also notice that the two triangles $\triangle PMQ$ and $\triangle NQR$ in the original figure are similar.
+
+===Solution 3 (Pythagorean Theorem only)===
+
+<asy>
+unitsize(2cm);
+defaultpen(linewidth(.8pt)+fontsize(8pt));
+
+draw((-1,-1)--(1,-1)--(1,1)--(-1,1)--cycle);
+draw((1,1)--(-1,0));
+pair P=foot((1,-1),(1,1),(-1,0));
+draw((1,-1)--P);
+draw(rightanglemark((-1,0),P,(1,-1),4));
+draw((-1,0)--(1,-1));
+
+label("$M$",(-1,0),W);
+label("$C$",(-0.1,-0.3));
+label("$A$",(-0.4,0.7));
+label("$B$",(0.7,0.4));
+label("$P$",(-1,1),NW);
+label("$Q$",(1,1),NE);
+label("$R$",(1,-1),SE);
+label("$S$",(-1,-1),SW);
+label("$N$",P,NW);
+label("$x$", (0.65, 0.7));
+label("$\sqrt{5} - x$", (-0.3, 0.15));
+</asy>
+
+Since $PQ = SR = 2$ and $PM = MS = 1$, we know that $MQ = MR = \sqrt{2^{2} + 1^{2}} = \sqrt{5}$.  If we let $NQ = x$, then $MN = \sqrt{5} - x$.  Now, by the Pythagorean Theorem, we have:
+
+$$x^{2} + NR^{2} = 2^{2} = 4$$
+$$(\sqrt{5} - x)^{2} + NR^{2} = (\sqrt{5})^{2} = 5$$
+
+Expanding and rearranging the second equation gives:
+
+$$5 - 2x\sqrt{5} + x^{2} + NR^{2} = 5$$
+$$x^{2} + NR^{2} - 2x\sqrt{5} = 0$$
+$$x^{2} + NR^{2} = 2x\sqrt{5}$$
+
+Since $x^{2} + NR^{2} = 4$, we have that:
+
+$$2x\sqrt{5} = 4$$
+$$x\sqrt{5} = 2$$
+$$x = \frac{2}{\sqrt{5}} = \frac{2\sqrt{5}}{5}$$
+
+Knowing $x$, we can solve for the height $NR$:
+
+$$NR^{2} = 2^{2} - x^{2} = 4 - ({\frac{2\sqrt{5}}{5}})^{2} = 4 - \frac{4}{5} = \frac{16}{5}$$
+$$NR = \sqrt{\frac{16}{5}} = \frac{4}{\sqrt{5}} = \frac{4\sqrt{5}}{5}$$
+
+Therefore, the area of triangle $RNQ$ is $\frac{1}{2} \cdot \frac{2\sqrt{5}}{5} \cdot\frac{4\sqrt{5}}{5} = \frac{1}{2} \cdot\frac{40}{25} = \frac{4}{5}$.  Since the solution to the problem is $3[RNQ] + 4$, the answer is $3(\frac{4}{5}) + 4 = \frac{12}{5} + \frac{20}{5} = \boxed{(B) \frac{32}{5}}$.
+
+===Solution 4===
+
+<asy>
+unitsize(2cm);
+defaultpen(linewidth(.8pt)+fontsize(8pt));
+
+draw((-1,-1)--(1,-1)--(1,1)--(-1,1)--cycle);
+draw((1,1)--(-1,0));
+pair P=foot((1,-1),(1,1),(-1,0));
+draw((1,-1)--P);
+draw(rightanglemark((-1,0),P,(1,-1),4));
+
+label("$M$",(-1,0),W);
+label("$C$",(-0.1,-0.3));
+label("$A$",(-0.4,0.7));
+label("$B$",(0.7,0.4));
+label("$P$",(-1,1),NW);
+label("$Q$",(1,1),NE);
+label("$R$",(1,-1),SE);
+label("$S$",(-1,-1),SW);
+label("$N$",P,NW);
+</asy>
+
+$MQ = \sqrt{2^{2} + 1^{2}} = \sqrt{5}$
+
+since $\angle PQM + \angle PMQ = 90 = \angle PQM + \angle NQR$
+
+therefore $\angle PMQ = \angle NQR$
+
+and since $\angle MPQ = \angle QNR = 90$
+
+therefore $\triangle MPQ \sim \triangle QNR$ 
+
+therefore $\frac {[QNR]}{[MPQ]} = (\frac{QR}{QM})^{2}, [QNR] = [MPQ] \cdot (\frac{QR}{QM})^{2}$
+
+$[MPQ] = \frac{1}{2} \cdot 2 \cdot 1 = 1$
+
+$[QNR] = 1 \cdot (\frac{2}{\sqrt{5}})^{2} = 1 \cdot \frac{4}{5} = \frac{4}{5}$
+
+Since the solution to the problem is $3[QNR] + 4$, the answer is $3(\frac{4}{5}) + 4 = \frac{12}{5} + \frac{20}{5} = \boxed{(B) \frac{32}{5}}$.
+
+
+
+===Solution 5 (Similarity)===
+<asy>
+unitsize(2cm);
+defaultpen(linewidth(.8pt)+fontsize(8pt));
+
+draw((-1,-1)--(1,-1)--(1,1)--(-1,1)--cycle);
+draw((1,1)--(-1,0));
+pair P=foot((1,-1),(1,1),(-1,0));
+draw((1,-1)--P);
+draw(rightanglemark((-1,0),P,(1,-1),4));
+
+label("$M$",(-1,0),W);
+label("$C$",(-0.1,-0.3));
+label("$A$",(-0.4,0.7));
+label("$B$",(0.7,0.4));
+label("$P$",(-1,1),NW);
+label("$Q$",(1,1),NE);
+label("$R$",(1,-1),SE);
+label("$S$",(-1,-1),SW);
+label("$N$",P,NW);
+</asy>
+
+All units of length in the following solution are in inches, or inches squared, or inches cubed. Units of angles are in degrees.
+
+
+$PQ = 2$. Since $M$ is the midpoint of $\overline{SP}$ which measures $2$, $MP = 1$.
+
+
+Since angle MNR is right, angle QNR is also right. Let $m\angle PQM = x$. Then $m\angle PMQ = 90 - x$. Notice also since $\angle PQR$ is right, $m \angle NQR = 90 - x$. Since $\angle QNR$ is right, $m\angle QRN = x$. Therefore, $\triangle PQM \sim \triangle NRQ$. 
+
+
+Let $QN = a$. By the Pythagorean theorem, $MQ = \sqrt{5}$. By similarity, $\frac{PM}{MQ} = \frac{NQ}{QR} \longrightarrow \frac{1}{\sqrt{5}} = \frac{a}{2}$, so $a=\frac{2}{\sqrt{5}}=\frac{2\sqrt{5}}{5}$. By the Pythagorean theorem, $NR^2+NQ^2=QR^2$. Substituting known values in and solving for $NR$, we get $NR=\frac{4\sqrt{5}}{5}$. (Alternatively, use the fact that $\triangle PQM \sim \triangle NRQ$). Since $\triangle NQR$ is a right triangle, the area is just $NQ \cdot NR \cdot \frac{1}{2}$ which, substituting values, is equal to $\frac{4}{5}$. But remember that $s$ also consists of the side of the cake, so we have to add $2^2=4$. So $s=\frac{4}{5}+4=\frac{24}{5}$. 
+
+
+Meanwhile, $c$ is the volume of the slice (a triangular prism) which is found by the base area times height. We already calculated the base area to be $\frac{4}{5}$, so simply multiply by $2$ to get the volume $=\frac{8}{5}$. This is the value of $c$.
+
+Sum $c+s$: $c+s=\frac{8}{5}+\frac{24}{5}=\frac{32}{5} \Longrightarrow \boxed{\textbf{(B) } \frac{32}{5}}$.
+
+
+~JH. L
+
+===Solution 6 (only Pythagorean Theorem, no algebra)===
+Label the vertices of the square, $P$, $Q$, $R$, and $S$ and draw line segment $MA$ (as shown below):
+<asy>
+unitsize(2cm);
+defaultpen(linewidth(.8pt)+fontsize(8pt));
+
+draw((-1,-1)--(1,-1)--(1,1)--(-1,1)--cycle);
+draw((1,1)--(-1,0));
+pair P=foot((1,-1),(1,1),(-1,0));
+draw((1,-1)--P);
+draw((1, 1)--(1,0));
+draw(rightanglemark((-1,0),P,(1,-1),4));
+draw((-1,0)--(1,-1));
+label("$M$",(-1,0),W);
+label("$C$",(-0.1,-0.3));
+label("$A$",(-0.4,0.7));
+label("$B$",(0.7,0.4));
+label("$P$",(-1,1),NW);
+label("$Q$",(1,1),NE);
+label("$R$",(1,-1),SE);
+label("$S$",(-1,-1),SW);
+label("$N$",P,NW);
+</asy>
+
+$PM=MS=1$ and $SR=2$, so by the pythagorean theorem, $$MR = \sqrt{1^2+2^2} = \sqrt{5}.$$ By the same logic, $MQ=\sqrt{5}$. The area of $\triangle QMR$ is the area of the whole square, minus the combined areas of $\triangle PMQ$ and $\triangle MSR$, so $$[QMR] = 4-1-1=2.$$ Since $QM$ is the base of $\triangle QMR$ and $RN$ is the height, $$\frac{QM(RN)}{2} = 2$$ $$\frac{\sqrt5(RN)}{2} = 2,$$ so $RN=\frac{3\sqrt5}{5}$. We also know that $$QN = QM-MN = \sqrt{5} - \frac{3\sqrt5}{5} = \frac{2\sqrt5}{5}.$$ Now, we can find the area of $\triangle QNR$. $$[QNR] = \frac{1}{2}(QN)(RN) = \frac{1}{2}(\frac{4\sqrt5}{5})(\frac{2\sqrt5}{5}) = \frac{4}{5}.$$ The area of icing is the area of $\triangle QNR$, plus the area of the 2x2 square on $QR$, so $$s=\frac{4}{5}+4 =\frac{4}{5} + \frac{20}{5} = \frac{24}{5}.$$ The cubic inches of cake is the volume of the piece, which is the area of $\triangle QNR$ times $2$ (the height of the cake), so $c = \frac{8}{5}$. Hence, $c+s = \frac{32}{5}$, and the answer is $\boxed{\textbf{(B) } \frac{32}{5}}$ ~azc1027

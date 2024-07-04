@@ -1,0 +1,5 @@
+==Solution 1==
+The seventh AMC 8 would have been given in $1991$. If Samantha was 12 then, that means she was born 12 years ago, so she was born in $1991-12=1979$.
+
+Our answer is $\boxed{(\text{A})1979}$
+corrections made by DrDominic

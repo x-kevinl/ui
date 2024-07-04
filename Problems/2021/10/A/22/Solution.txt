@@ -1,0 +1,4 @@
+==Solution 1==
+Suppose the roommate took sheets $a$ through $b$, or equivalently, page numbers $2a-1$ through $2b$. Because there are $(2b-2a+2)$ numbers taken, $$\frac{(2a-1+2b)(2b-2a+2)}{2}+19(50-(2b-2a+2))=\frac{50\cdot51}{2} \implies (2a+2b-39)(b-a+1)=\frac{50\cdot13}{2}=25\cdot13.$$ The first possible solution that comes to mind is if $2a+2b-39=25, b-a+1=13 \implies a+b=32, b-a=12$, which indeed works, giving $b=22$ and $a=10$. The answer is $22-10+1=\boxed{\textbf{(B)} ~13}$.
+
+~Lcz

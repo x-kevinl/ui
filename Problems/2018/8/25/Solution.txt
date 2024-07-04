@@ -1,0 +1,3 @@
+==Solution 1==
+
+We compute $2^8+1=257$. We're all familiar with what $6^3$ is, namely $216$, which is too small. The smallest cube greater than it is $7^3=343$. $2^{18}+1$ is too large to calculate, but we notice that $2^{18}=(2^6)^3=64^3$, which therefore will clearly be the largest cube less than $2^{18}+1$. So, the required number of cubes is $64-7+1= \boxed{\textbf{(E) }58}$.

@@ -1,0 +1,4 @@
+==Problem==
+An aquarium has a rectangular base that measures $100$ cm by $40$ cm and has a height of $50$ cm. The aquarium is filled with water to a  depth of $37$ cm. A rock with volume $1000\text{cm}^3$ is then placed in the aquarium and completely submerged. By how many centimeters does the water level rise? 
+
+$ \textbf{(A)}\ 0.25\qquad\textbf{(B)}\ 0.5\qquad\textbf{(C)}\ 1\qquad\textbf{(D)}\ 1.25\qquad\textbf{(E)}\ 2.5 $

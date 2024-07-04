@@ -1,0 +1,15 @@
+== Solution ==
+
+Let $x$ be the cost of her dinner. 
+
+$27.50=x+\frac{1}{10}*x+\frac{3}{20}*x$
+
+$27+\frac{1}{2}=\frac{5}{4}*x$
+
+$\frac{55}{2}=\frac{5}{4}x$
+
+$\frac{55}{2}*\frac{4}{5}=x$
+
+$x=22$
+
+$\boxed{\textbf{(D)}}$

@@ -1,0 +1,12 @@
+== Solution 1 ==
+For the purposes of this problem, we will use miles and minutes as our units; thus, the bikers travel at speeds of <math>\dfrac{1}{3}</math> mi/min.
+
+Let <math>d</math> be the length of the trains, <math>r_1</math> be the speed of train 1 (the faster train), and <math>r_2</math> be the speed of train 2.
+
+Consider the problem from the bikers' moving frame of reference. In order to pass Jon, the first train has to cover a distance equal to its own length, at a rate of <math>r_1 - \dfrac{1}{3}</math>. Similarly, the second train has to cover a distance equal to its own length, at a rate of <math>r_2 + \dfrac{1}{3}</math>. Since the times are equal and <math>d = rt</math>, we have that <math>\dfrac{d}{r_1 - \dfrac{1}{3}} = \dfrac{d}{r_2 + \dfrac{1}{3}}</math>. Solving for <math>r_1</math> in terms of <math>r_2</math>, we get that <math>r_1 = r_2 + \dfrac{2}{3}</math>.
+
+Now, let's examine the times it takes the trains to pass Steve. This time, we augment train 1's speed by <math>\dfrac{1}{3}</math>, and decrease train 2's speed by <math>\dfrac{1}{3}</math>. Thus, we have that <math>\dfrac{d}{r_2 - \dfrac{1}{3}} = 10\dfrac{d}{r_1 + \dfrac{1}{3}}</math>.
+
+Multiplying this out and simplifying, we get that <math>r_1 = 10r_2 - \dfrac{11}{3}</math>. Since we now have 2 expressions for <math>r_1</math> in terms of <math>r_2</math>, we can set them equal to each other:
+
+<math>r_2 + \dfrac{2}{3} = 10r_2 - \dfrac{11}{3}</math>. Solving for <math>r_2</math>, we get that <math>r_2 = \dfrac{13}{27}</math>. Since we know that it took train 2 1 minute to pass Jon, we know that <math>1 = \dfrac{d}{r_2 + \dfrac{1}{3}}</math>. Plugging in <math>\dfrac{13}{27}</math> for <math>r_2</math> and solving for <math>d</math>, we get that <math>d = \dfrac{22}{27}</math>, and our answer is <math>27 + 22 = \boxed{049}</math>.

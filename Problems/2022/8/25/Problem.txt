@@ -1,0 +1,7 @@
+==Problem==
+
+A cricket randomly hops between $4$ leaves, on each turn hopping to one of the other $3$ leaves with equal probability. After $4$ hops what is the probability that the cricket has returned to the leaf where it started?
+
+[[File:2022 AMC 8 Problem 25 Picture.jpg|center|600px]]
+
+$\textbf{(A) }\frac{2}{9}\qquad\textbf{(B) }\frac{19}{80}\qquad\textbf{(C) }\frac{20}{81}\qquad\textbf{(D) }\frac{1}{4}\qquad\textbf{(E) }\frac{7}{27}$

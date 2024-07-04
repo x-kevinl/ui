@@ -1,0 +1,3 @@
+== Solution ==
+
+We split up into cases of the hundreds digits being $2$ or $5$. If the hundred digits is $2$, then the units digits must be $8$ in order for the number to be even and then there are $4$ remaining choices ($1,5,7,9$) for the tens digit, giving $1 \times 4 \times 1=4$ possibilities. Similarly, there are $1 \times 2 \times 4=8$ possibilities for the $5$ case, giving a total of $\boxed{4+8=12 \ \mathbf{(A)}}$ possibilities.

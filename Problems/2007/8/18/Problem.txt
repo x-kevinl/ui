@@ -1,0 +1,9 @@
+==Problem==
+
+The product of the two $99$-digit numbers
+
+$303,030,303,...,030,303$ and $505,050,505,...,050,505$
+
+has thousands digit $A$ and units digit $B$. What is the sum of $A$ and $B$?
+
+$\mathrm{(A)}\ 3 \qquad \mathrm{(B)}\ 5 \qquad \mathrm{(C)}\ 6 \qquad \mathrm{(D)}\ 8 \qquad \mathrm{(E)}\ 10$

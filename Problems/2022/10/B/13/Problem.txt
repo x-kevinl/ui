@@ -1,0 +1,5 @@
+==Problem==
+
+The positive difference between a pair of primes is equal to $2$, and the positive difference between the cubes of the two primes is $31106$. What is the sum of the digits of the least prime that is greater than those two primes?
+
+$\textbf{(A)}\ 8 \qquad\textbf{(B)}\ 10 \qquad\textbf{(C)}\ 11 \qquad\textbf{(D)}\ 13 \qquad\textbf{(E)}\ 16$

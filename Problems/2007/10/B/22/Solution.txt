@@ -1,0 +1,4 @@
+==Solution==
+
+There are $2 \cdot 3 \cdot 1 = 6$ ways for your number to show up once, $1 \cdot 1 = 1$ way for your number to show up twice, and $3 \cdot 3 = 9$ ways for your number to not show up at all. Think of this as a set of sixteen numbers with six $1$'s, one $2$, and nine $-1$'s. The average of this set is the expected return to the player.
+$$\frac{6(1)+1(2)-9(1)}{16} = \frac{6+2-9}{16} = \boxed{\mathrm{(B) \ } -\frac{1}{16}}$$

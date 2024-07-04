@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>P(x) = x^2 - 3x - 7</math>, and let <math>Q(x)</math> and <math>R(x)</math> be two quadratic polynomials also with the coefficient of <math>x^2</math> equal to <math>1</math>. David computes each of the three sums <math>P + Q</math>, <math>P + R</math>, and <math>Q + R</math> and is surprised to find that each pair of these sums has a common root, and these three common roots are distinct. If <math>Q(0) = 2</math>, then <math>R(0) = \frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m + n</math>.

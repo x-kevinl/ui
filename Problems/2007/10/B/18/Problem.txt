@@ -1,0 +1,24 @@
+==Problem==
+
+A circle of radius $1$ is surrounded by $4$ circles of radius $r$ as shown. What is $r$?
+
+<center><asy>
+unitsize(5mm);
+defaultpen(linewidth(.8pt)+fontsize(7pt));
+dotfactor=4;
+
+real r1=1, r2=1+sqrt(2);
+pair A=(0,0), B=(1+sqrt(2),1+sqrt(2)), C=(-1-sqrt(2),1+sqrt(2)), D=(-1-sqrt(2),-1-sqrt(2)), E=(1+sqrt(2),-1-sqrt(2));
+pair A1=(1,0), B1=(2+2sqrt(2),1+sqrt(2)), C1=(0,1+sqrt(2)), D1=(0,-1-sqrt(2)), E1=(2+2sqrt(2),-1-sqrt(2));
+path circleA=Circle(A,r1); path circleB=Circle(B,r2); path circleC=Circle(C,r2); path circleD=Circle(D,r2); path circleE=Circle(E,r2);
+draw(circleA); draw(circleB); draw(circleC); draw(circleD); draw(circleE);
+draw(A--A1); draw(B--B1); draw(C--C1); draw(D--D1); draw(E--E1);
+
+label("$1$",midpoint(A--A1),N);
+label("$r$",midpoint(B--B1),N);
+label("$r$",midpoint(C--C1),N);
+label("$r$",midpoint(D--D1),N);
+label("$r$",midpoint(E--E1),N);
+</asy></center>
+
+$\textbf{(A) } \sqrt{2} \qquad\textbf{(B) } 1+\sqrt{2} \qquad\textbf{(C) } \sqrt{6} \qquad\textbf{(D) } 3 \qquad\textbf{(E) } 2+\sqrt{2}$

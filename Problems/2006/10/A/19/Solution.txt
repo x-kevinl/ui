@@ -1,0 +1,2 @@
+== Solution ==
+The sum of the angles of a triangle is $180$ degrees. For an arithmetic progression with an odd number of terms, the middle term is equal to the average of the sum of all of the terms, making it $\frac{180}{3} = 60$ degrees. The minimum possible value for the smallest angle is $1$ and the highest possible is $59$ (since the numbers are distinct), so there are $\boxed{\textbf{(C) }59}$ possibilities.

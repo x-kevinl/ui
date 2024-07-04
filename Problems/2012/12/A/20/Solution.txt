@@ -1,0 +1,10 @@
+== Solution 1==
+Every term in the expansion of the product is formed by taking one term from each factor and multiplying them all together. Therefore, we pick a power of $x$ or a power of $2$ from each factor.
+
+Every number, including $2012$, has a unique representation by the sum of powers of two, and that representation can be found by converting a number to its binary form. $2012 = 11111011100_2$, meaning $2012 = 1024 + 512 + 256 + 128 + 64 + 16 + 8 + 4$. 
+
+Thus, the $x^{2012}$ term was made by multiplying $x^{1024}$ from the $(x^{1024} + 1024)$ factor, $x^{512}$ from the $(x^{512} + 512)$ factor, and so on. The only numbers not used are $32$, $2$, and $1$.
+
+Thus, from the $(x^{32} + 32), (x^2+2), (x+1)$ factors, $32$, $2$, and $1$ were chosen as opposed to $x^{32}, x^2$, and $x$. 
+
+Thus, the coefficient of the $x^{2012}$ term is $32 \times 2 \times 1 = 64 = 2^6$. So the answer is $6 \rightarrow \boxed{B}$.

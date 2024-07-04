@@ -1,0 +1,10 @@
+== Problem ==
+The [[graph]] below shows a portion of the [[curve]] defined by the quartic [[polynomial]] $P(x) = x^4 + ax^3 + bx^2 + cx + d$. Which of the following is the smallest?
+
+[[Image:2000_12_AMC-22.png]]
+
+$\textbf{(A)}\ P(-1)\\
+\textbf{(B)}\ \text{The\ product\ of\ the\ zeros\ of\ } P\\
+\textbf{(C)}\ \text{The\ product\ of\ the\ non-real\ zeros\ of\ } P \\
+\textbf{(D)}\ \text{The\ sum\ of\ the\ coefficients\ of\ } P \\
+\textbf{(E)}\ \text{The\ sum\ of\ the\ real\ zeros\ of\ } P$

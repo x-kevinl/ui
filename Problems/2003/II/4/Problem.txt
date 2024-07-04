@@ -1,0 +1,4 @@
+== Problem ==
+In a regular tetrahedron the centers of the four faces are the vertices of a smaller tetrahedron. The ratio of the volume of the smaller tetrahedron to that of the larger is <math>m/n</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.
+
+__TOC__

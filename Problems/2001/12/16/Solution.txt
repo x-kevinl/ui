@@ -1,0 +1,21 @@
+== Solution ==
+
+=== Solution 1 ===
+
+Let the spider try to put on all $16$ things in a random order. Each of the $16!$ permutations is equally probable. For any fixed leg, the probability that he will first put on the sock and only then the shoe is clearly $\frac{1}{2}$. Then the probability that he will correctly put things on all legs is $\frac{1}{2^{8}}$. Therefore the number of correct permutations must be $\boxed{\frac {16!}{2^8}}$.
+
+=== Solution 2 ===
+
+Each dressing sequence can be uniquely described by a sequence containing two $1$s, two $2$s, ..., and two $8$s -- the first occurrence of number $x$ means that the spider puts the sock onto leg $x$, the second occurrence of $x$ means he puts the shoe onto leg $x$. 
+If the numbers were all unique, the answer would be $ 16! $. However, since 8 terms appear twice, the answer is $ \frac{16!}{(2!)^8} = \boxed{\dfrac {16!}{2^8}}$.
+
+=== Solution 3 (Bashy Solution)=== 
+You can put all $8$ socks on first for $8!$ ways and then all $8$ shoes on next for $8!$ more ways. This is not the only possibility, so the lower bound is $(8!)^2$. Here is the reason why this is not the only possibility: You could for example put on 3 socks and then 1, 2, or 3 shoes before moving on and putting more socks on. Clearly this is not accounted for if you put on 8 socks right away and then 8 shoes. You don't have to put on 8 socks and then 8 shoes. You can choose all $16$ in a random fashion, but some combinations would violate the rules, so the upper bound is $16!$. $\text{(C)}$ & $\text{(E)}$ are the lower and upper bounds, so the answer is in between them, $\boxed{\frac {16!}{2^8}}$.
+
+=== Solution 4 ===
+Pretty clearly, if we choose each sock-shoe pair individually, they will automatically align themselves.
+Name the corresponding socks for leg 1 as a1 and each shoe for leg 1 be b1, and follow this flow of logic, extending it to leg 8, with sock named a1 and shoe named b1. Then, we can see that the set {a1,b1} and set {ba,a1} will both correspond to the order {a1,ba}, from the condition. Basically, this just means that we just need to choose a set of 2 elements without the order. 
+$\binom{16}{2}\binom{14}{2}\cdots\binom{2}{2} = \frac{16 \cdot 15 \cdots 2}{2 \cdot 2 \cdots 2} = \frac{16!}{2^8}$
+
+=== Video Solution ===
+https://youtu.be/D1n-qEPdm6g

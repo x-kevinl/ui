@@ -1,0 +1,2 @@
+== Solution ==
+Let the three integers be <math>a, b, c</math>.  <math>N = abc = 6(a + b + c)</math> and <math>c = a + b</math>.  Then <math>N = ab(a + b) = 6(a + b + a + b) = 12(a + b)</math>.  Since <math>a</math> and <math>b</math> are positive, <math>ab = 12</math> so <math>\{a, b\}</math> is one of <math>\{1, 12\}, \{2, 6\}, \{3, 4\}</math> so <math>a + b</math> is one of <math>13, 8, 7</math> so the sum of all possible values of <math>N</math> is <math>12 \cdot (13 + 8 + 7) = 12(28) = \boxed{336}</math>.

@@ -1,0 +1,2 @@
+== Problem ==
+Alice knows that <math>3</math> red cards and <math>3</math> black cards will be revealed to her one at a time in random order. Before each card is revealed, Alice must guess its color. If Alice plays optimally, the expected number of cards she will guess correctly is <math>\frac{m}{n},</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n.</math>

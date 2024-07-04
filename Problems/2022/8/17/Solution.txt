@@ -1,0 +1,5 @@
+==Solution==
+
+Notice that once $n>8,$ the units digit of $n!!$ will be $0$ because there will be a factor of $10.$ Thus, we only need to calculate the units digit of $$2!!+4!!+6!!+8!! = 2+8+48+48\cdot8.$$ We only care about units digits, so we have $2+8+8+8\cdot8,$ which has the same units digit as $2+8+8+4.$ The answer is $\boxed{\textbf{(B) } 2}.$
+
+~wamofan

@@ -1,0 +1,21 @@
+== Solution 1==
+<center><asy>
+size(300); pointpen=black;pathpen=black+linewidth(0.65); pen s = fontsize(10);
+pair A=(0,0),B=(26,0),C=IP(circle(A,10),circle(B,20)),D=(B+C)/2,I=incenter(A,B,C);
+path cir = incircle(A,B,C); pair E1=IP(cir,B--C),F=IP(cir,A--C),G=IP(cir,A--B),P=IP(A--D,cir),Q=OP(A--D,cir);
+D(MP("A",A,s)--MP("B",B,s)--MP("C",C,N,s)--cycle); D(cir); 
+D(A--MP("D",D,NE,s)); D(MP("E",E1,NE,s)); D(MP("F",F,NW,s)); D(MP("G",G,s)); D(MP("P",P,SW,s)); D(MP("Q",Q,SE,s));
+MP("10",(B+D)/2,NE); MP("10",(C+D)/2,NE);
+</asy></center><!-- Asymptote replacement for Image:2005_I_AIME-15.png by azjps -->
+
+Let <math>E</math>, <math>F</math> and <math>G</math> be the points of tangency of the incircle with <math>BC</math>, <math>AC</math> and <math>AB</math>, respectively.  Without loss of generality, let <math>AC < AB</math>, so that <math>E</math> is between <math>D</math> and <math>C</math>.  Let the length of the median be <math>3m</math>.  Then by two applications of the [[Power of a Point Theorem]], <math>DE^2 = 2m \cdot m = AF^2</math>, so <math>DE = AF</math>.  Now, <math>CE</math> and <math>CF</math> are two tangents to a circle from the same point, so by the Two Tangent Theorem <math>CE = CF = c</math> and thus <math>AC = AF + CF = DE + CE = CD = 10</math>.  Then <math>DE = AF = AG = 10 - c</math> so <math>BG = BE = BD + DE = 20 - c</math> and thus <math>AB = AG + BG = 30 - 2c</math>.
+
+Now, by [[Stewart's Theorem]] in triangle <math>\triangle ABC</math> with [[cevian]] <math>\overline{AD}</math>, we have
+
+<cmath>(3m)^2\cdot 20 + 20\cdot10\cdot10 = 10^2\cdot10 + (30 - 2c)^2\cdot 10.</cmath>
+
+Our earlier result from Power of a Point was that <math>2m^2 = (10 - c)^2</math>, so we combine these two results to solve for <math>c</math> and we get
+
+<cmath>9(10 - c)^2 + 200 = 100 + (30 - 2c)^2 \quad \Longrightarrow \quad c^2 - 12c + 20 = 0.</cmath>
+
+Thus <math>c = 2</math> or <math> = 10</math>.  We discard the value <math>c = 10</math> as extraneous (it gives us a line) and are left with <math>c = 2</math>, so our triangle has area <math>\sqrt{28 \cdot 18 \cdot 8 \cdot 2} = 24\sqrt{14}</math> and so the answer is <math>24 + 14 = \boxed{038}</math>.

@@ -1,0 +1,3 @@
+==Problem==
+
+In <math>\triangle ABC</math>, the sides have integer lengths and <math>AB=AC</math>. Circle <math>\omega</math> has its center at the incenter of <math>\triangle ABC</math>. An ''excircle'' of <math>\triangle ABC</math> is a circle in the exterior of <math>\triangle ABC</math> that is tangent to one side of the triangle and tangent to the extensions of the other two sides. Suppose that the excircle tangent to <math>\overline{BC}</math> is internally tangent to <math>\omega</math>, and the other two excircles are both externally tangent to <math>\omega</math>. Find the minimum possible value of the perimeter of <math>\triangle ABC</math>.

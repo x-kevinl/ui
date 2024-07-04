@@ -1,0 +1,2 @@
+== Problem ==
+An [[integer]] is called ''parity-monotonic'' if its decimal representation <math>a_{1}a_{2}a_{3}\cdots a_{k}</math> satisfies <math>a_{i}<a_{i+1}</math> if <math>a_{i}</math> is [[odd]], and <math>a_{i}>a_{i+1}</math> if <math>a_{i}</math> is [[even]]. How many four-digit parity-monotonic integers are there?

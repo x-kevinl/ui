@@ -1,0 +1,4 @@
+==Problem==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>Ten tiles numbered $1$ through $10$ are turned face down. One tile is turned up at random, and a die is rolled. What is the probability that the product of the numbers on the tile and the die will be a square?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+$\textbf{(A)}\ \frac{1}{10}\qquad\textbf{(B)}\ \frac{1}{6}\qquad\textbf{(C)}\ \frac{11}{60}\qquad\textbf{(D)}\ \frac{1}{5}\qquad\textbf{(E)}\ \frac{7}{30}$

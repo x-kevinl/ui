@@ -1,0 +1,16 @@
+==Problem==
+Consider the dark square in an array of unit squares, part of which is shown. The first ring of squares around this center square contains $8$ unit squares. The second ring contains $16$ unit squares. If we continue this process, the number of unit squares in the $100^\text{th}$ ring is
+
+<asy>
+unitsize(3mm);
+defaultpen(linewidth(1pt));
+fill((2,2)--(2,7)--(7,7)--(7,2)--cycle, mediumgray);
+fill((3,3)--(6,3)--(6,6)--(3,6)--cycle, gray);
+fill((4,4)--(5,4)--(5,5)--(4,5)--cycle, black);
+for(real i=0; i<=9; ++i)
+{
+draw((i,0)--(i,9));
+draw((0,i)--(9,i));
+}</asy>
+
+$\textbf{(A)}\ 396 \qquad \textbf{(B)}\ 404 \qquad \textbf{(C)}\ 800 \qquad \textbf{(D)}\ 10,\!000 \qquad \textbf{(E)}\ 10,\!404$

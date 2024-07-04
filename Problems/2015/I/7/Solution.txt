@@ -1,0 +1,48 @@
+==Solution 1==
+
+Let us find the proportion of the side length of <math>KLMN</math> and <math>FJGH</math>. Let the side length of <math>KLMN=y</math> and the side length of <math>FJGH=x</math>.
+
+<asy>
+pair A,B,C,D,E,F,G,H,J,K,L,M,N,P;
+B=(0,0);
+real m=7*sqrt(55)/5;
+J=(m,0);
+C=(7*m/2,0);
+A=(0,7*m/2);
+D=(7*m/2,7*m/2);
+E=(A+D)/2;
+H=(0,2m);
+N=(0,2m+3*sqrt(55)/2);
+G=foot(H,E,C);
+F=foot(J,E,C);
+draw(A--B--C--D--cycle);
+draw(C--E);
+draw(G--H--J--F);
+pair X=foot(N,E,C);
+M=extension(N,X,A,D);
+K=foot(N,H,G);
+L=foot(M,H,G);
+draw(K--N--M--L);
+label("$A$",A,NW);
+label("$B$",B,SW);
+label("$C$",C,SE);
+label("$D$",D,NE);
+label("$E$",E,dir(90));
+label("$F$",F,NE);
+label("$G$",G,NE);
+label("$H$",H,W);
+label("$J$",J,S);
+label("$K$",K,SE);
+label("$L$",L,SE);
+label("$M$",M,dir(90));
+label("$N$",N,dir(180)); </asy>
+
+
+Now, examine <math>BC</math>. We know <math>BC=BJ+JC</math>, and triangles <math>\Delta BHJ</math> and <math>\Delta JFC</math> are similar to <math>\Delta EDC</math> since they are <math>1-2-\sqrt{5}</math> triangles. Thus, we can rewrite <math>BC</math> in terms of the side length of <math>FJGH</math>. 
+<cmath>BJ=\frac{1}{\sqrt{5}}HJ=\frac{x}{\sqrt{5}}=\frac{x\sqrt{5}}{5}, JC=\frac{\sqrt{5}}{2}JF=\frac{x\sqrt{5}}{2}\Rightarrow BC=\frac{7x\sqrt{5}}{10}</cmath>
+
+Now examine <math>AB</math>. We can express this length in terms of <math>x,y</math> since <math>AB=AN+NH+HB</math>. By using similar triangles as in the first part, we have 
+<cmath>AB=\frac{1}{\sqrt{5}}y+\frac{\sqrt{5}}{2}y+\frac{2}{\sqrt{5}}x</cmath>
+<cmath>AB=BC\Rightarrow \frac{7y\sqrt{5}}{10}+\frac{2x\sqrt{5}}{5}=\frac{7x\sqrt{5}}{10}\Rightarrow \frac{7y\sqrt{5}}{10}=\frac{3x\sqrt{5}}{10}\Rightarrow 7y=3x</cmath>
+
+Now, it is trivial to see that <math>[FJGH]=\left(\frac{x}{y}\right)^2[KLMN]=\left(\frac{7}{3}\right)^2\cdot 99=\boxed{539}.</math>

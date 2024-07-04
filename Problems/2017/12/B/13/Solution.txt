@@ -1,0 +1,4 @@
+==Solution 1==
+Looking at the answer choices, we see that the possibilities are indeed countable. Thus, we will utilize that approach in the form of two separate cases, as rotation and reflection take care of numerous possibilities. First, consider the case that the green disk is in a corner. This yields $6$ possible arrangements for the $3$ blue disks and $2$ red disks in the remaining available slots. Now, consider the case that the green disk is on an edge. This yields $6$ more possible arrangements for the $3$ blue disks and $2$ red disks in the remaining available slots. Thus, our answer is $6 + 6 = \boxed{\bold{(D)}\, 12}$
+
+Solution by akaashp11

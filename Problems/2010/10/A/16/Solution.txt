@@ -1,0 +1,2 @@
+== Solution ==
+By the [[Angle Bisector Theorem]], we know that $\frac{AB}{BC} = \frac{3}{8}$. If we use the lowest possible integer values for $AB$ and $BC$ (the lengths of $AD$ and $DC$, respectively), then $AB + BC = AD + DC = AC$, contradicting the [[Triangle Inequality]]. If we use the next lowest values ($AB = 6$ and $BC = 16$), the Triangle Inequality is satisfied. Therefore, our answer is $6 + 16 + 3 + 8 = \boxed{33}$, or choice $\textbf{(B)}$.

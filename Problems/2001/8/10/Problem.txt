@@ -1,0 +1,5 @@
+==Problem==
+
+A collector offers to buy state quarters for 2000% of their face value. At that rate how much will Bryden get for his four state quarters?
+
+$\text{(A)}\ 20\text{ dollars} \qquad \text{(B)}\ 50\text{ dollars} \qquad \text{(C)}\ 200\text{ dollars} \qquad \text{(D)}\ 500\text{ dollars} \qquad \text{(E)}\ 2000\text{ dollars}$

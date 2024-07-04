@@ -1,0 +1,6 @@
+== Problem ==
+Ms. Hamilton’s eighth-grade class wants to participate in the annual three-person-team basketball tournament.
+
+Lance, Sally, Joy, and Fred are chosen for the team. In how many ways can the three starters be chosen?
+
+$ \textbf{(A)}\ 2\qquad\textbf{(B)}\ 4\qquad\textbf{(C)}\ 6\qquad\textbf{(D)}\ 8\qquad\textbf{(E)}\ 10 $

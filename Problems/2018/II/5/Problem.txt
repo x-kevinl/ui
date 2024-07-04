@@ -1,0 +1,3 @@
+==Problem==
+
+Suppose that <math>x</math>, <math>y</math>, and <math>z</math> are complex numbers such that <math>xy = -80 - 320i</math>, <math>yz = 60</math>, and <math>zx = -96 + 24i</math>, where <math>i</math> <math>=</math> <math>\sqrt{-1}</math>. Then there are real numbers <math>a</math> and <math>b</math> such that <math>x + y + z = a + bi</math>. Find <math>a^2 + b^2</math>.

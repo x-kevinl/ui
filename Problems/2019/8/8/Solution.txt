@@ -1,0 +1,2 @@
+==Solution 1==
+After Gilda gives $20$% of the marbles to Pedro, she has $80$% of the marbles left. If she then gives $10$% of what's left to Ebony, she has $(0.8*0.9)$ = $72$% of what she had at the beginning. Finally, she gives $25$% of what's left to her brother, so she has $(0.75*0.72)$ $\boxed{\textbf{(E)}\ 54}$ of what she had in the beginning left.

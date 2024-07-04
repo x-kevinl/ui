@@ -1,0 +1,2 @@
+==Problem==
+Find the sum of all positive integers <math>n</math> such that, given an unlimited supply of stamps of denominations <math>5,n,</math> and <math>n+1</math> cents, <math>91</math> cents is the greatest postage that cannot be formed.

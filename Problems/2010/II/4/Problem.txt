@@ -1,0 +1,2 @@
+== Problem ==
+Dave arrives at an airport which has twelve gates arranged in a straight line with exactly <math>100</math> feet between adjacent gates. His departure gate is assigned at random. After waiting at that gate, Dave is told the departure gate has been changed to a different gate, again at random. Let the [[probability]] that Dave walks <math>400</math> feet or less to the new gate be a fraction <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. Find <math>m+n</math>.

@@ -1,0 +1,8 @@
+==Problem==
+Susan had 50 dollars to spend at the carnival. She spent 12 dollars on food and twice as much on rides. How many dollars did she have left to spend?
+
+$\textbf{(A)}\ 12 \qquad
+\textbf{(B)}\ 14 \qquad
+\textbf{(C)}\ 26 \qquad
+\textbf{(D)}\ 38 \qquad
+\textbf{(E)}\ 50$

@@ -1,0 +1,7 @@
+==Solution 1 (Official MAA)==
+First it will be shown by induction that the zeros of <math>f_n</math> are the integers
+<math>a, {a+2,} {a+4,} \dots, {a + n(n-1)}</math>, where <math>a = n - \frac{n(n-1)}2.</math>
+
+This is certainly true for <math>n=1</math>. Suppose that it is true for <math>n = m-1 \ge 1</math>, and note that the zeros of <math>f_m</math> are the solutions of <math>|x - m| = k</math>, where <math>k</math> is a nonnegative zero of <math>f_{m-1}</math>. Because the zeros of <math>f_{m-1}</math> form an arithmetic sequence with common difference <math>2,</math> so do the zeros of <math>f_m</math>. The greatest zero of <math>f_{m-1}</math> is<cmath>m-1+\frac{(m-1)(m-2)}2 =\frac{m(m-1)}2,</cmath>so the greatest zero of <math>f_m</math> is <math>m+\frac{m(m-1)}2</math> and the least is <math>m-\frac{m(m-1)}2</math>.
+
+It follows that the number of zeros of <math>f_n</math> is <math>\frac{n(n-1)}2+1=\frac{n^2-n+2}2</math>, and their average value is <math>n</math>. The sum of the zeros of <math>f_n</math> is<cmath>\frac{n^3-n^2+2n}2.</cmath>Let <math>S(n)=n^3-n^2+2n</math>, so the sum of the zeros exceeds <math>500{,}000</math> if and only if <math>S(n) > 1{,}000{,}000 = 100^3\!.</math> Because <math>S(n)</math> is increasing for <math>n > 2</math>, the values <math>S(100) = 1{,}000{,}000 - 10{,}000 + 200 = 990{,}200</math> and <math>S(101)=1{,}030{,}301 - 10{,}201 + 202 = 1{,}020{,}302</math> show that the requested value of <math>n</math> is <math>\boxed{101}</math>.

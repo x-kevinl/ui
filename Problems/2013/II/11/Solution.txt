@@ -1,0 +1,12 @@
+==Solution 1==
+Any such function can be constructed by distributing the elements of <math>A</math> on three tiers.
+
+The bottom tier contains the constant value, <math>c=f(f(x))</math> for any <math>x</math>. (Obviously <math>f(c)=c</math>.)
+
+The middle tier contains <math>k</math> elements <math>x\ne c</math> such that <math>f(x)=c</math>, where <math>1\le k\le 6</math>.
+
+The top tier contains <math>6-k</math> elements such that <math>f(x)</math> equals an element on the middle tier.
+
+There are <math>7</math> choices for <math>c</math>. Then for a given <math>k</math>, there are <math>\tbinom6k</math> ways to choose the elements on the middle tier, and then <math>k^{6-k}</math> ways to draw arrows down from elements on the top tier to elements on the middle tier.
+
+Thus <math>N=7\cdot\sum_{k=1}^6\tbinom6k\cdot k^{6-k}=7399</math>, giving the answer <math>\boxed{399}</math>.

@@ -1,0 +1,4 @@
+== Problem ==
+Ellina has twelve blocks, two each of red (<math>\textbf{R}</math>), blue (<math>\textbf{B}</math>), yellow (<math>\textbf{Y}</math>), green (<math>\textbf{G}</math>), orange (<math>\textbf{O}</math>), and purple (<math>\textbf{P}</math>). Call an arrangement of blocks <math>\textit{even}</math> if there is an even number of blocks between each pair of blocks of the same color. For example, the arrangement
+<cmath>\textbf{R B B Y G G Y R O P P O}</cmath>
+is even. Ellina arranges her blocks in a row in random order. The probability that her arrangement is even is <math>\frac{m}{n},</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n.</math>

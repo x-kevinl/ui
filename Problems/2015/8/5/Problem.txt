@@ -1,0 +1,7 @@
+==Problem==
+
+Billy's basketball team scored the following points over the course of the first $11$ games of the season. If his team scores $40$ in the $12^{th}$ game, which of the following statistics will show an increase?
+
+$$42, 47, 53, 53, 58, 58, 58, 61, 64, 65, 73$$
+
+$\textbf{(A) } \text{range} \qquad \textbf{(B) } \text{median} \qquad \textbf{(C) } \text{mean} \qquad \textbf{(D) } \text{mode} \qquad \textbf{(E) } \text{mid-range} $

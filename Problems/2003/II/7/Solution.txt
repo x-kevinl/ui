@@ -1,0 +1,4 @@
+== Solution ==
+The diagonals of the rhombus perpendicularly bisect each other. Call half of diagonal BD <math>a</math> and half of diagonal AC <math>b</math>. The length of the four sides of the rhombus is <math>\sqrt{a^2+b^2}</math>. 
+
+The area of any triangle can be expressed as <math>\frac{a\cdot b\cdot c}{4R}</math>, where <math>a</math>, <math>b</math>, and <math>c</math> are the sides and <math>R</math> is the circumradius. Thus, the area of <math>\triangle ABD</math> is <math>ab=2a(a^2+b^2)/(4\cdot12.5)</math>. Also, the area of <math>\triangle ABC</math> is <math>ab=2b(a^2+b^2)/(4\cdot25)</math>. Setting these two expressions equal to each other and simplifying gives <math>b=2a</math>. Substitution yields <math>a=10</math> and <math>b=20</math>, so the area of the rhombus is <math>20\cdot40/2=\boxed{400}</math>.

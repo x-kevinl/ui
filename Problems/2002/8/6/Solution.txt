@@ -1,0 +1,2 @@
+==Solution==
+The change in the water volume has a net gain of $20-18=2$ millimeters per minute. The birdbath's volume increases at a constant rate until it reaches its maximum and starts overflowing to keep a constant volume. This is best represented by graph $\boxed{\text{(A)}\ A}$.

@@ -1,0 +1,3 @@
+==Problem==
+
+The circumcircle of acute <math>\triangle ABC</math> has center <math>O</math>. The line passing through point <math>O</math> perpendicular to <math>\overline{OB}</math> intersects lines <math>AB</math> and <math>BC</math> at <math>P</math> and <math>Q</math>, respectively. Also <math>AB=5</math>, <math>BC=4</math>, <math>BQ=4.5</math>, and <math>BP=\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

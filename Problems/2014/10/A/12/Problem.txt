@@ -1,0 +1,19 @@
+==Problem==
+
+A regular hexagon has side length 6. Congruent arcs with radius 3 are drawn with the center at each of the vertices, creating circular sectors as shown. The region inside the hexagon but outside the sectors is shaded as shown What is the area of the shaded region?
+
+<asy>
+size(125);
+defaultpen(linewidth(0.8));
+path hexagon=(2*dir(0))--(2*dir(60))--(2*dir(120))--(2*dir(180))--(2*dir(240))--(2*dir(300))--cycle;
+fill(hexagon,grey);
+for(int i=0;i<=5;i=i+1)
+{
+path arc=2*dir(60*i)--arc(2*dir(60*i),1,120+60*i,240+60*i)--cycle;
+unfill(arc);
+draw(arc);
+}
+draw(hexagon,linewidth(1.8));</asy>
+
+$ \text{(A)}\ 27\sqrt{3}-9\pi \qquad \text{(B)}\ 27\sqrt{3}-6\pi \qquad \text{(C)}\ 54\sqrt{3}-18\pi \qquad \text{(D)}\ 54\sqrt{3}-12\pi \qquad \text{(E)}\ 108\sqrt{3}-9\pi $
+[[Category: Introductory Geometry Problems]]

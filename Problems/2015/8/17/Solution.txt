@@ -1,0 +1,54 @@
+==Solutions==
+
+===Solution 1===
+
+For starters, we identify d as distance and v as velocity (speed)
+
+Writing the equation gives us: $\frac{d}{v}=\frac{1}{3}$ and $\frac{d}{v+18}=\frac{1}{5}$.
+
+This gives $d=\frac{1}{5}v+3.6=\frac{1}{3}v$, which gives $v=27$, which then gives $d=\boxed{\textbf{(D)}~9}$.
+
+===Solution 2===
+$d = rt$, $d=\frac{1}{3} \times r = \frac{1}{5} \times (r + 18)$
+
+$\frac{r}{3} = \frac{r}{5} + \frac{18}{5}$
+
+
+$10r = 270$ so $r = 27$, plug into the first one and it's $\boxed{\textbf{(D)}~9}$ miles to school.
+
+===Solution 3===
+We set up an equation in terms of $d$ the distance and $x$ the speed In miles per hour. We have $d=\left (\dfrac{1}{3}\right )(x)=\left (\dfrac{1}{5}\right) (x+18)$, giving
+$$(5)(x)=(3)(x+18)$$
+$$5x=3x+54$$
+$$2x=54$$
+$$x=27$$
+Hence, $d=\dfrac{27}{3}=\boxed{\textbf{(D)}~9}$.
+
+===Solution 4===
+Since it takes $\frac{3}{5}$ of the original time for him to get to school when there is no traffic, the speed must be $\frac{5}{3}$ of the speed in no traffic or $\frac{2}{3}$ more. Letting $x$ be the rate and we know that $\frac{5}{3}x = x + 18$, so we have $\frac{2x}{3} = 18$ miles per hour. Solving for $x$ gives us $27$ miles per hour. Because $20$ minutes is a third of an hour, the distance would then be $9$ miles $\boxed{\textbf{(D)}~9}$.
+
+===Solution 5===
+When driving in rush hour traffic, he drives $20$ minutes for one distance ($1d$) to the school. It means he drives $60$ minutes for $3$ distances ($3d$) to the school. When driving in no traffic hours, he drives $12$ minutes for one distance ($1d$) to the school. It means he drives $60$ minutes for $5$ distances ($5d$) to the school. Subtracting these two situations, it gives us $5d-3d = 18 = 2d$, then $d=\frac{18}{2}=9$. So the distance to the school would be $\boxed{\textbf{(D)}~9}$ miles. ----LarryFlora
+
+
+===Solution 6===
+(Ratios)
+$\textbf{requires edits}$
+
+In rush hour traffic, we can create this ratio for each distance we are going to try supposing the distance is $d$:
+
+$d$ : $20$ minutes
+
+In no traffic, we can do the same:
+
+$d$ : $12$ minutes
+
+We want the ratio to be the distance to $60$ minutes:
+
+$d$ : $20$ minutes = $3$d : $60$ minutes 
+
+$d$ : $12$ minutes = $5$d : $60$ minutes
+
+This shows the speed in miles per hour. This means that the speed in the 2nd ratio has to be 18 faster than the first ratio. We get
+
+$3d+18 = 5d \cdot d=9$, or $\boxed{\textbf{(D)}~9}$.

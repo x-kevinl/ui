@@ -1,0 +1,17 @@
+==Solution 1==
+
+The probability that Rachelle gets a C in English is $1-\frac{1}{6}-\frac{1}{4} = \frac{7}{12}$.
+
+The probability that she gets a C in History is $1-\frac{1}{4}-\frac{1}{3} = \frac{5}{12}$.
+
+We see that the sum of Rachelle's "point" scores must be at least 14 since $4*3.5 = 14$. We know that in Mathematics and Science we have a total point score of 8 (since she will get As in both), so we only need a sum of 6 in English and History. This can be achieved by getting two As, one A and one B, one A and one C, or two Bs. We evaluate these cases.
+
+The probability that she gets two As is $\frac{1}{6}\cdot\frac{1}{4} = \frac{1}{24}$.
+
+The probability that she gets one A and one B is $\frac{1}{6}\cdot\frac{1}{3} + \frac{1}{4}\cdot\frac{1}{4} = \frac{1}{18}+\frac{1}{16} =  \frac{8}{144}+\frac{9}{144} = \frac{17}{144}$.
+
+The probability that she gets one A and one C is $\frac{1}{6}\cdot\frac{5}{12} + \frac{1}{4}\cdot\frac{7}{12} = \frac{5}{72}+\frac{7}{48} =  \frac{31}{144}$.
+
+The probability that she gets two Bs is $\frac{1}{4}\cdot\frac{1}{3} = \frac{1}{12}$.
+
+Adding these, we get $\frac{1}{24} + \frac{17}{144} +  \frac{31}{144} + \frac{1}{12} = \frac{66}{144} = \boxed{\mathbf{(D)}\;  \frac{11}{24}}$.

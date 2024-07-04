@@ -1,0 +1,2 @@
+== Problem ==
+A block of cheese in the shape of a rectangular solid measures <math>10</math> cm by <math>13</math> cm by <math>14</math> cm. Ten slices are cut from the cheese. Each slice has a width of <math>1</math> cm and is cut parallel to one face of the cheese. The individual slices are not necessarily parallel to each other. What is the maximum possible volume in cubic cm of the remaining block of cheese after ten slices have been cut off?

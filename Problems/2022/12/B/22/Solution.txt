@@ -1,0 +1,87 @@
+==Solution 1 (Geometric Probability)==
+
+Let $x$ and $y$ be random variables that are independently and uniformly distributed in the interval $(0,1).$ Note that $$P(x+y\leq 1)=\frac{\frac12\cdot1^2}{1^2}=\frac12,$$ as shown below:
+<asy>
+/* Made by MRENTHUSIASM */
+size(200); 
+
+real xMin = -0.25;
+real xMax = 1.25;
+real yMin = -0.25;
+real yMax = 1.25;
+
+//Draws the horizontal ticks
+void horizontalTicks()
+{
+  for (real i = 1; i < yMax; ++i)
+  {
+    draw((-1/32,i)--(1/32,i), black+linewidth(1));
+  }
+}
+
+//Draws the vertical ticks
+void verticalTicks()
+{
+  for (real i = 1; i < xMax; ++i)
+  {
+    draw((i,-1/32)--(i,1/32), black+linewidth(1));
+  }
+}
+
+horizontalTicks();
+verticalTicks();
+label("$0$",(0,0),2*SW);
+label("$1$",(1,0),2*S);
+label("$1$",(0,1),2*W);
+fill((0,0)--(1,0)--(0,1)--cycle,yellow);
+draw((0,1)--(1,1)^^(1,0)--(1,1),dashed);
+draw((0,1)--(1,0));
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(8));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(8));
+label("$x$",(xMax,0),(2,0));
+label("$y$",(0,yMax),(0,2));
+</asy>
+Let $x,y,$ and $z$ be random variables that are independently and uniformly distributed in the interval $(0,1).$ Note that $$P(x+y+z\leq 1)=\frac{\frac13\cdot\left(\frac12\cdot1^2\right)\cdot1}{1^3}=\frac16,$$ as shown below:
+<asy>
+/* Made by MRENTHUSIASM */
+size(200);
+import graph3;
+import solids;
+
+currentprojection=orthographic((0.3,0.1,0.1));
+
+draw(surface((1,0,0)--(0,1,0)--(0,0,1)--cycle),yellow);
+draw(surface((1,0,0)--(0,1,0)--(0,0,0)--cycle),yellow);
+draw(surface((1,0,0)--(0,0,1)--(0,0,0)--cycle),yellow);
+draw(surface((0,1,0)--(0,0,1)--(0,0,0)--cycle),yellow);
+
+draw((0,0,1)--(0,1,1)--(1,1,1)--(1,0,1)--cycle,dashed);
+draw((0,1,0)--(1,1,0)--(1,0,0),dashed);
+draw((0,1,1)--(0,1,0)^^(1,1,1)--(1,1,0)^^(1,0,1)--(1,0,0),dashed);
+draw((-0.5,0,0)--(1.5,0,0),linewidth(1.25),EndArrow3(10));
+draw((0,-0.5,0)--(0,1.5,0),linewidth(1.25),EndArrow3(10));
+draw((0,0,-0.5)--(0,0,1.5),linewidth(1.25),EndArrow3(10));
+draw((-0.1,0,1)--(0.1,0,1),linewidth(1));
+draw((0,1,-0.1)--(0,1,0.1),linewidth(1));
+draw((1,-0.1,0)--(1,0.1,0),linewidth(1));
+label("$x$",(1.5,0,0),4*dir((1.5,0,0)));
+label("$y$",(0,1.5,0),2*dir((0,1.5,0)));
+label("$z$",(0,0,1.5),2*dir((0,0,1.5)));
+label("$0$",(0,0,0),2*dir((0,0.5,-0.5)));
+label("$1$",(1,0,0),4*dir((0,-1,0)));
+label("$1$",(0,1,0),4*dir((0,0,-1)));
+label("$1$",(0,0,1),5*dir((-1,0,0)));
+draw((1,0,0)--(0,1,0)--(0,0,1)--cycle);
+</asy>
+We have two cases:
+<ol style="margin-left: 1.5em;">
+  <li>Amelia takes exactly $2$ steps.</li><p>
+We need $x_1+x_2>1$ and $t_1+t_2>1.$ So, the probability is $$P(x_1+x_2>1)\cdot P(t_1+t_2>1)=\left(1-\frac12\right)\cdot\left(1-\frac12\right)=\frac14.$$
+  <li>Amelia takes exactly $3$ steps.</li><p>
+We need $x_1+x_2+x_3>1$ and $t_1+t_2\leq1.$ So, the probability is $$P(x_1+x_2+x_3>1)\cdot P(t_1+t_2\leq1)=\left(1-\frac16\right)\cdot\frac12=\frac{5}{12}.$$
+</ol>
+Together, the answer is $\frac14 + \frac{5}{12} = \boxed{\textbf{(C) }\frac{2}{3}}.$
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)
+
+~MRENTHUSIASM

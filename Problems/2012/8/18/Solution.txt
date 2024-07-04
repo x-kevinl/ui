@@ -1,0 +1,4 @@
+==Solution==
+The problem states that the answer cannot be a perfect square or have prime factors less than $50$. Therefore, the answer will be the product of at least two different primes greater than $50$. The two smallest primes greater than $50$ are $53$ and $59$. Multiplying these two primes, we obtain the number $3127$, which is also the smallest number on the list of answer choices. 
+
+So we are done, and the answer is $\boxed{\textbf{(A)}\ 3127}$.

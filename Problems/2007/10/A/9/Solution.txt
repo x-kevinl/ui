@@ -1,0 +1,8 @@
+== Solution 1 ==
+$$81^{b+2} = 3^{4(b+2)} = 3^a \Longrightarrow a = 4b+8$$
+
+And
+
+$$125^{b} = 5^{3b} = 5^{a-3} \Longrightarrow a - 3 = 3b$$
+
+Substitution gives $4b+8 - 3 = 3b \Longrightarrow b = -5$, and solving for $a$ yields $-12$. Thus $ab = 60\ \mathrm{(E)}$.

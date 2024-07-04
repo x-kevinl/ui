@@ -1,0 +1,27 @@
+==Solution 1 (Algebra)==
+
+We call the three roots (some may be equal to one another) <math>x_1</math>, <math>x_2</math>, and <math>x_3</math>.  Using Vieta's formulas, we get <math>x_1+x_2+x_3 = a</math>, <math>x_1 \cdot x_2+x_1 \cdot x_3+x_2 \cdot x_3 = \frac{a^2-81}{2}</math>, and <math>x_1 \cdot x_2 \cdot x_3 = \frac{c}{2}</math>. 
+
+Squaring our first equation we get <math>x_1^2+x_2^2+x_3^2+2 \cdot x_1 \cdot x_2+2 \cdot x_1 \cdot x_3+2 \cdot x_2 \cdot x_3 = a^2</math>.
+
+We can then subtract twice our second equation to get <math>x_1^2+x_2^2+x_3^2 = a^2-2 \cdot \frac{a^2-81}{2}</math>.
+
+Simplifying the right side:
+
+
+<cmath> \begin{align*}
+a^2-2 \cdot \frac{a^2-81}{2} &= a^2-a^2+81\\
+&= 81.\\
+\end{align*} </cmath>
+
+So, we know <math>x_1^2+x_2^2+x_3^2 = 81</math>.
+
+We can then list out all the triples of positive integers whose squares sum to <math>81</math>:
+
+We get <math>(1, 4, 8)</math>, <math>(3, 6, 6)</math>, and <math>(4, 4, 7)</math>.  
+
+These triples give <math>a</math> values of <math>13</math>, <math>15</math>, and <math>15</math>, respectively, and <math>c</math> values of <math>64</math>, <math>216</math>, and <math>224</math>, respectively.  
+
+We know that Jon still found two possible values of <math>c</math> when Steve told him the <math>a</math> value, so the <math>a</math> value must be <math>15</math>.  Thus, the two <math>c</math> values are <math>216</math> and <math>224</math>, which sum to <math>\boxed{\text{440}}</math>.
+
+~BealsConjecture~

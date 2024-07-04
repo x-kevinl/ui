@@ -1,0 +1,15 @@
+==Solution 1==
+Note that if <math>\tan \theta</math> is positive, then <math>\theta</math> is in the first or third quadrant, so <math>0^{\circ} < \theta < 90^{\circ} \pmod{180^{\circ}}</math>. 
+
+Furthermore, the only way <math>\tan{\left(2^{n}\theta\right)}</math> can be positive for all <math>n</math> that are multiples of <math>3</math> is when:
+<cmath>2^0\theta \equiv 2^3\theta \equiv 2^6\theta \equiv ... \pmod{180^{\circ}}.</cmath>
+(This is because if it isn't the same value, the terminal angle will gradually shift from the first quadrant into different quadrants, making the condition for positive tan untrue. This must also be true in order for <math>\theta</math> to be unique.) 
+
+This is the case if <math>2^3\theta \equiv 2^0\theta \pmod{180^{\circ}}</math>, so <math>7\theta \equiv 0^{\circ} \pmod{180^{\circ}}</math>. Therefore, recalling that <math>0^{\circ}<\theta<90^{\circ},</math> the possible <math>\theta</math> are:
+<cmath>\frac{180}{7}^{\circ}, \frac{360}{7}^{\circ}, \frac{540}{7}^{\circ}.</cmath>
+
+<math>\frac{180}{7}^{\circ}</math> does not work since <math>\tan\left(2 \cdot \frac{180}{7}^{\circ}\right)</math> is positive.
+
+<math>\frac{360}{7}^{\circ}</math> does not work because <math>\tan\left(4 \cdot \frac{360}{7}^{\circ}\right)</math> is positive.
+
+Thus, <math>\theta = \frac{540}{7}^{\circ}</math>, and a quick check verifies that it does work. Our desired answer is <math>540 + 7 = \boxed{547}</math>.

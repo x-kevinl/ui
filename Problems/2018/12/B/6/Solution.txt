@@ -1,0 +1,4 @@
+==Solution 1==
+Each can of soda costs $\frac QS$ quarters, or $\frac{Q}{4S}$ dollars. Therefore, $D$ dollars can purchase $\frac{D}{\left(\tfrac{Q}{4S}\right)}=\boxed{\textbf{(B) } \frac{4DS}{Q}}$ cans of soda.
+
+~MRENTHUSIASM

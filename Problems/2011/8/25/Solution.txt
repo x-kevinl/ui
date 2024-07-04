@@ -1,0 +1,11 @@
+==Solution 1==
+The area of the smaller square is one half of the product of its diagonals. Note that the distance from a corner of the smaller square to the center is equivalent to the circle's radius so the diagonal is equal to the diameter: $2 \cdot 
+2 \cdot \frac{1}{2}=2.$
+
+The circle's shaded area is the area of the smaller square subtracted from the area of the circle: $\pi - 2.$
+
+If you draw the diagonals of the smaller square, you will see that the larger square is split $4$ congruent half-shaded squares. The area between the squares is equal to the area of the smaller square: $2.$
+
+Approximating $\pi$ to $3.14,$ the ratio of the circle's shaded area to the area between the two squares is about
+
+$$\frac{\pi-2}{2} \approx \frac{3.14-2}{2} = \frac{1.14}{2} \approx \boxed{\textbf{(A)}\ \frac12}$$

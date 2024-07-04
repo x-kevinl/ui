@@ -1,0 +1,4 @@
+==Problem==
+The first AMC $8$ was given in $1985$ and it has been given annually since that time. Samantha turned $12$ years old the year that she took the seventh AMC $8$. In what year was Samantha born?
+
+$\textbf{(A) }1979\qquad\textbf{(B) }1980\qquad\textbf{(C) }1981\qquad\textbf{(D) }1982\qquad \textbf{(E) }1983$

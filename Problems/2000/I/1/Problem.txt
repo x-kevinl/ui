@@ -1,0 +1,2 @@
+== Problem ==
+Find the least positive integer <math>n</math> such that no matter how <math>10^{n}</math> is expressed as the product of any two positive integers, at least one of these two integers contains the digit <math>0</math>.

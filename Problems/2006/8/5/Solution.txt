@@ -1,0 +1,8 @@
+== Solution ==
+===Solution 1===
+Drawing segments $AC$ and $BD$, the number of triangles outside square $ABCD$ is the same as the number of triangles inside the square. Thus areas must be equal so the area of $ABCD$ is half the area of the larger square which is $ \frac{60}{2}=\boxed{\textbf{(D)}\ 30 } $.
+
+===Solution 2===
+If the side length of the larger square is $ x $, the side length of the smaller square is $ \frac{\sqrt{2} \cdot x}{2} $. Therefore the area of the smaller square is $ \frac{x^2}{2} $, half of the larger square's area, $ x^2 $. 
+
+Thus, the area of the smaller square in the picture is $ \frac{60}{2}=\boxed{\textbf{(D)}\ 30 } $.

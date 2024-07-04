@@ -1,0 +1,4 @@
+==Problem==
+The area of the region bounded by the graph of$$x^2+y^2 = 3|x-y| + 3|x+y|$$is $m+n\pi$, where $m$ and $n$ are integers. What is $m + n$?
+
+$\textbf{(A)} ~18\qquad\textbf{(B)} ~27\qquad\textbf{(C)} ~36\qquad\textbf{(D)} ~45\qquad\textbf{(E)} ~54$

@@ -1,0 +1,15 @@
+==Solution==
+We can solve this problem with a brute force approach.
+
+*If Cal's number is $1$:
+**If Bill's number is $2$, Al's can be any of $4, 6, 8, 10$.
+**If Bill's number is $3$, Al's can be any of $6, 9$.
+**If Bill's number is $4$, Al's can be $8$.
+**If Bill's number is $5$, Al's can be $10$.
+**Otherwise, Al's number could not be a whole number multiple of Bill's.
+*If Cal's number is $2$:
+**If Bill's number is $4$, Al's can be $8$.
+**Otherwise, Al's number could not be a whole number multiple of Bill's while Bill's number is still a whole number multiple of Cal's.
+*Otherwise, Bill's number must be greater than $5$, i.e. Al's number could not be a whole number multiple of Bill's.
+
+Clearly, there are exactly $9$ cases where Al's number will be a whole number multiple of Bill's and Bill's number will be a whole number multiple of Cal's. Since there are $10*9*8$ possible permutations of the numbers Al, Bill, and Cal were assigned, the probability that this is true is $\frac9{10*9*8}=\boxed{\text{(\textbf C) }\frac1{80}}$

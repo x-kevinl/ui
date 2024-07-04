@@ -1,0 +1,6 @@
+== Solution ==
+The difference between consecutive squares is <math>(x + 1)^2 - x^2 = 2x + 1</math>, which means that all squares above <math>50^2 = 2500</math> are more than <math>100</math> apart.
+
+Then the first <math>26</math> sets (<math>S_0,\cdots S_{25}</math>) each have at least one perfect square because the differences between consecutive squares in them are all less than <math>100</math>. Also, since <math>316</math> is the largest <math>x</math> such that <math>x^2 < 100000</math> (<math>100000</math> is the upper bound which all numbers in <math>S_{999}</math> must be less than), there are <math>316 - 50 = 266</math> other sets after <math>S_{25}</math> that have a perfect square.
+
+There are <math>1000 - 266 - 26 = \boxed{708}</math> sets without a perfect square.

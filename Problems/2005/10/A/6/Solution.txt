@@ -1,0 +1,8 @@
+==Solution==
+Since the [[arithmetic mean|average]] of the first $20$ numbers is $30$, their sum is $20\cdot30=600$. 
+
+Since the average of $30$ other numbers is $20$, their sum is $30\cdot20=600$. 
+
+So the sum of all $50$ numbers is $600+600=1200$
+
+Therefore, the average of all $50$ numbers is $\frac{1200}{50}=\boxed{\textbf{(B) }24}$

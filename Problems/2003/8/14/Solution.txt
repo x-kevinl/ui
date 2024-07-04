@@ -1,0 +1,2 @@
+==Solution==
+Since both T's are 7, then O has to equal 4, because 7 + 7 = 14. Then, F has to equal 1. To get R, we do 4 + 4 (since O = 4) to get R = 8. The value for W then has to be a number less than 5, otherwise it will change the value of O, and can't be a number that has already been used, like 4 or 1. The only other possibilities are 2 and 3. 2 doesn't work because it makes U = 4, which is what O already equals. So, the only possible value of W is 3 $\boxed{\text{D}}$

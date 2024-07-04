@@ -1,0 +1,16 @@
+==Solution 1==
+ 
+<asy>
+draw((0,0)--(12,0)--(12,5)--cycle);
+draw((0,0)--(12,0)--(12,-5)--cycle);
+draw(circle((8.665,0),3.3333));
+label("$A$", (0,0), W);
+label("$C$", (12,0), E);
+label("$B$", (12,5), NE);
+label("$B'$", (12,-5), NE);
+label("$12$", (7, 0), S);
+label("$5$", (12, 2.5), E);
+label("$5$", (12, -2.5), E);</asy>
+We can see that our circle is the incircle of $ABB'.$ We can use a formula for finding the radius of the incircle. The area of a triangle $= \text{Semiperimeter} \cdot \text{inradius}$ .  The area of $ABB'$ is $12\times5 = 60.$ We use the pythagorean triples to find out that AB is 13. The semiperimeter is $\dfrac{10+13+13}{2}=18.$ Simplifying $\dfrac{60}{18} = \dfrac{10}{3}.$ Our answer is therefore $\boxed{\textbf{(D)}\ \frac{10}{3}}.$
+
+~CHECKMATE2021

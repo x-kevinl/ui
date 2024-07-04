@@ -1,0 +1,4 @@
+==Problem==
+Henry the donkey has a very long piece of pasta. He takes a number of bites of pasta, each time eating $3$ inches of pasta from the middle of one piece. In the end, he has $10$ pieces of pasta whose total length is $17$ inches. How long, in inches, was the piece of pasta he started with?
+
+$\textbf{(A) } 34\qquad\textbf{(B) } 38\qquad\textbf{(C) } 41\qquad\textbf{(D) } 44\qquad\textbf{(E) } 47$

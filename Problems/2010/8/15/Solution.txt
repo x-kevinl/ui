@@ -1,0 +1,2 @@
+==Solution==
+We do $100-30-20-15-10$ to find the percent of gumdrops that are green. We find that $25\%$ of the gumdrops are green. That means there are $120$ gumdrops. If we replace half of the blue gumdrops with brown gumdrops, then $15\%$ of the jar's gumdrops are brown. $\dfrac{35}{100} \cdot 120=42 \Rightarrow \boxed{\textbf{(C)}\ 42}$

@@ -1,0 +1,7 @@
+== Solution 1 ==
+Using the [[difference of squares]], <math>2010 = (a^2 - b^2) + (c^2 - d^2) = (a + b)(a - b) + (c + d)(c - d) \ge a + b + c + d = 2010</math>, where equality must hold so <math>b = a - 1</math> and <math>d = c - 1</math>. Then we see <math>a = 1004</math> is maximal and <math>a = 504</math> is minimal, so the answer is <math>\boxed{501}</math>.
+
+
+Note: We can also find that <math>b=a-1</math> in another way. We know <cmath>a^{2} - b^{2} + c^{2} - d^{2}=(a+b)+(c+d) \implies (a+b)(a-b)-(a+b)+(c+d)(c-d)-(c+d)=0 \implies (a+b)(a-b-1)+(c+d)(c-d-1)=0</cmath>
+
+Therefore, one of <math>(a+b)(a-b-1)</math> and <math>(c+d)(c-d-1)</math> must be <math>0.</math> Clearly, <math>a+b \neq 0</math> since then one would be positive and negative, or both would be zero. Therefore, <math>a-b-1=0</math> so <math>a=b+1</math>. Similarly, we can deduce that <math>c=d+1.</math>

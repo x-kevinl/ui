@@ -1,0 +1,12 @@
+==Solution 1==
+Let the height of the box be <math>x</math>.
+
+After using the Pythagorean Theorem three times, we can quickly see that the sides of the triangle are 10, <math>\sqrt{\left(\frac{x}{2}\right)^2 + 64}</math>, and <math>\sqrt{\left(\frac{x}{2}\right)^2 + 36}</math>. Since the area of the triangle is <math>30</math>, the altitude of the triangle from the base with length <math>10</math> is <math>6</math>.
+
+Considering the two triangles created by the altitude, we use the Pythagorean theorem twice to find the lengths of the two line segments that make up the base of <math>10</math>.
+
+We find:
+<cmath>10 = \sqrt{\left(28+x^2/4\right)}+x/2</cmath>
+
+Solving for <math>x</math> gives us <math>x=\frac{36}{5}</math>. Since this fraction is simplified:
+<cmath>m+n=\boxed{041}</cmath>

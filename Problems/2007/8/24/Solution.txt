@@ -1,0 +1,5 @@
+==Solution 1==
+The number of ways to form a 3-digit number is $4 \cdot 3 \cdot 2 = 24$. The combination of digits that give us multiples of 3 are (1,2,3) and (2,3,4), as the integers in the subsets have a sum which is divisible by 3. The number of 3-digit numbers that contain these numbers is $3! + 3! = 12$. 
+Therefore, the probability is $\frac{12}{24} = \boxed{\frac{1}{2}}$.
+
+~abc2142

@@ -1,0 +1,24 @@
+== Solution ==
+[[Image:2007 AIME II-9.png]]
+
+=== Solution 1 ===
+Several [[Pythagorean triple]]s exist amongst the numbers given. <math>BE = DF = \sqrt{63^2 + 84^2} = 21\sqrt{3^2 + 4^2} = 105</math>. Also, the length of <math>EF = \sqrt{63^2 + (448 - 2\cdot84)^2} = 7\sqrt{9^2 + 40^2} = 287</math>.
+
+Use the [[Two Tangent Theorem]] on <math>\triangle BEF</math>. Since both circles are inscribed in congruent triangles, they are congruent; therefore, <math>EP = FQ = \frac{287 - PQ}{2}</math>. By the Two Tangent theorem, note that <math>EP = EX = \frac{287 - PQ}{2}</math>, making <math>BX = 105 - EX = 105 - \left[\frac{287 - PQ}{2}\right]</math>. Also, <math>BX = BY</math>. <math>FY = 364 - BY = 364 - \left[105 - \left[\frac{287 - PQ}{2}\right]\right]</math>. 
+
+Finally, <math>FP = FY = 364 - \left[105 - \left[\frac{287 - PQ}{2}\right]\right] = \frac{805 - PQ}{2}</math>. Also, <math>FP = FQ + PQ = \frac{287 - PQ}{2} + PQ</math>. Equating, we see that <math>\frac{805 - PQ}{2} = \frac{287 + PQ}{2}</math>, so <math>PQ = \boxed{259}</math>.
+
+=== Solution 2 ===
+By the [[Two Tangent Theorem]], we have that <math>FY = PQ + QF</math>. Solve for <math>PQ = FY - QF</math>. Also, <math>QF = EP = EX</math>, so <math>PQ = FY - EX</math>. Since <math>BX = BY</math>, this can become <math>PQ = FY - EX + (BY - BX)</math><math> = \left(FY + BY\right) - \left(EX + BX\right) = FB - EB</math>. Substituting in their values, the answer is <math>364 - 105 = 259</math>.
+
+===Solution 3===
+
+Call the incenter of <math>\triangle BEF</math> <math>O_1</math> and the incenter of <math>\triangle DFE</math> <math>O_2</math>. Draw triangles <math>\triangle O_1PQ,\triangle PQO_2</math>.
+
+Drawing <math>BE</math>, We find that <math>BE = \sqrt {63^2 + 84^2} = 105</math>. Applying the same thing for <math>F</math>, we find that <math>FD = 105</math> as well. Draw a line through <math>E,F</math> parallel to the sides of the rectangle, to intersect the opposite side at <math>E_1,F_1</math> respectively. Drawing <math>\triangle EE_1F</math> and <math>FF_1E</math>, we can find that <math>EF = \sqrt {63^2 + 280^2} = 287</math>. We then use Heron's formula to get:
+
+<cmath>[BEF] = [DEF] = 11 466</cmath>.
+
+So the inradius of the triangle-type things is <math>\frac {637}{21}</math>.
+
+Now, we just have to find <math>O_1Q = O_2P</math>, which can be done with simple subtraction, and then we can use the [[Pythagorean Theorem]] to find <math>PQ</math>.

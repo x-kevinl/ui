@@ -1,0 +1,17 @@
+== Solution 1 ==
+Since $z_0$ is a root of $P$, and $P$ has integer coefficients, $z_0$ must be algebraic. Since $z_0$ is algebraic and lies on the unit circle, $z_0$ must be a root of unity (Comment: this is not true. See this link: [http://math.stackexchange.com/questions/4323/are-all-algebraic-integers-with-absolute-value-1-roots-of-unity]). Since $P$ has degree 4, it seems reasonable (and we will assume this only temporarily) that $z_0$ must be a 2nd, 3rd, or 4th root of unity. These are among the set $\{\pm1,\pm i,(-1\pm i\sqrt{3})/2\}$. Since complex roots of polynomials come in conjugate pairs, we have that $P$ has one (or more) of the following factors: $z+1$, $z-1$, $z^2+1$, or $z^2+z+1$. If $z=1$ then $a+b+c+d+4=0$; a contradiction since $a,b,c,d$ are non-negative. On the other hand, suppose $z=-1$. Then $(a+c)-(b+d)=4$. This implies $a+b=8,7,6,5,4$ while $b+d=4,3,2,1,0$ correspondingly. After listing cases, the only such valid $a,b,c,d$ are $4,4,4,0$, $4,3,3,0$, $4,2,2,0$, $4,1,1,0$, and $4,0,0,0$. 
+
+Now suppose $z=i$. Then $4=(a-c)i+(b-d)$ whereupon $a=c$ and $b-d=4$. But then $a=b=c$ and $d=a-4$. This gives only the cases $a,b,c,d$ equals $4,4,4,0$, which we have already counted in a previous case.
+
+Suppose $z=-i$. Then $4=i(c-a)+(b-d)$ so that $a=c$ and $b=4+d$. This only gives rise to $a,b,c,d$ equal $4,4,4,0$ which we have previously counted. 
+
+Finally suppose $z^2+z+1$ divides $P$. Using polynomial division ((or that $z^3=1$ to make the same deductions) we ultimately obtain that $b=4+c$. This can only happen if $a,b,c,d$ is $4,4,0,0$. 
+
+Hence we've the polynomials
+$$4x^4+4x^3+4x^2+4x$$
+$$4x^4+4x^3+3x^2+3x$$
+$$4x^4+4x^3+2x^2+2x$$
+$$4x^4+4x^3+x^2+x$$
+$$4x^4+4x^3$$
+$$4x^4+4x^3+4x^2$$
+However, by inspection $4x^4+4x^3+4x^2+4x+4$ has roots on the unit circle, because $x^4+x^3+x^2+x+1=(x^5-1)/(x-1)$ which brings the sum to 92 (choice B).  Note that this polynomial has a 5th root of unity as a root. We will show that we were \textit{almost} correct in our initial assumption; that is that $z_0$ is at most a 5th root of unity, and that the last polynomial we obtained is the last polynomial with the given properties. Suppose that $z_0$ in an $n$th root of unity where $n>5$, and $z_0$ is not a 3rd or 4th root of unity. (Note that 1st and 2nd roots of unity are themselves 4th roots of unity). If $n$ is prime, then \textit{every} $n$th root of unity except 1 must satisfy our polynomial, but since $n>5$ and the degree of our polynomial is 4, this is impossible. Suppose $n$ is composite. If it has a prime factor $p$ greater than 5 then again every $p$th root of unity must satisfy our polynomial and we arrive at the same contradiction. Therefore suppose $n$ is divisible only by 2,3,or 5. Since by hypothesis $z_0$ is not a 2nd or 3rd root of unity, $z_0$ must be a 5th root of unity. Since 5 is prime, every 5th root of unity except 1 must satisfy our polynomial. That is, the other 4 complex 5th roots of unity must satisfy $P(z_0)=0$. But $(x^5-1)/(x-1)$ has exactly all 5th roots of unity excluding 1, and $(x^5-1)/(x-1)=x^4+x^3+x^2+x+1$. Thus this must divide $P$ which implies $P(x)=4(x^4+x^3+x^2+x+1)$. This completes the proof.

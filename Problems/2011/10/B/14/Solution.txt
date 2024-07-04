@@ -1,0 +1,9 @@
+== Solution ==
+
+Let the sides of the rectangular parking lot be $a$ and $b$. Then $a^2 + b^2 = 625$ and $ab = 168$. Add the two equations together, then factor.
+$$\begin{align*}
+a^2 + 2ab + b^2 &= 625 + 168 \times 2\\
+(a + b)^2 &= 961\\
+a + b &= 31
+\end{align*}$$
+The perimeter of a rectangle is $2 (a + b) = 2 (31) = \boxed{\textbf{(C)} 62}$

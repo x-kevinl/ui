@@ -1,0 +1,46 @@
+==Solution 1==
+
+[[File:Pentagon_2023_12B_Q25_dissmo.png|600px]]
+
+Let the original pentagon be $ABCDE$ centered at $O$. The dashed lines represent the fold lines. WLOG, let's focus on vertex $A$.
+
+Since $A$ is folded onto $O$, $AM = MO$ where $M$ is the intersection of $AO$ and the creaseline between $A$ and $O$. Note that the inner pentagon is regular, and therefore similar to the original pentagon, due to symmetry.
+
+Because of their similarity, the ratio of the inner pentagon's area to that of the outer pentagon can be represented by 
+
+$\left(\frac{OM}{ON}\right)^{2} = \left(\frac{\frac{OA}{2}}{OA\sin (\angle OAE)}\right)^{2} = \frac{1}{4\sin^{2}54}$ 
+
+
+===Option 1: Knowledge===
+
+Remember that $\sin54 = \frac{1+\sqrt5}{4}$.
+
+
+===Option 2: Angle Identities===
+
+$\sin54 = \cos36$
+
+$4\cos^{3}18-3\cos18 = 2\sin18\cos18$
+
+$4(1-\sin^{2}18)-3-2\sin18=0$
+
+$4\sin^{2}18+2\sin18-1=0$
+
+$\sin18 = \frac{-1+\sqrt5}{4}$
+
+$\sin54 = \cos36 = 1-2\sin^{2}18 = \frac{1+\sqrt5}{4}$
+
+
+$\sin^{2}54 =\frac{3+\sqrt5}{8}$
+
+Let the inner pentagon be $Z$.
+
+$[Z] = \frac{1}{4\sin^{2}54}[ABCDE]$
+
+$ = \frac{2(1+\sqrt5)}{3+\sqrt5}$
+
+$ = \sqrt5-1$
+   
+$\boxed{B}$
+
+-Dissmo

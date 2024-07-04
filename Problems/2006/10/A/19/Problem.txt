@@ -1,0 +1,4 @@
+== Problem ==
+How many non-[[similar]] triangles have angles whose degree measures are distinct positive integers in [[arithmetic progression]]? 
+
+$\textbf{(A) } 0\qquad\textbf{(B) } 1\qquad\textbf{(C) } 59\qquad\textbf{(D) } 89\qquad\textbf{(E) } 178\qquad$

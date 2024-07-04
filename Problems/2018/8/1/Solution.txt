@@ -1,0 +1,6 @@
+==Solution 1(Good Ol' Ratios)==
+
+
+You can see that since the ratio of real building's heights to the model building's height is $1:20$. We also know that the U.S Capitol is $289$ feet in real life, so to find the height of the model, we divide by 20. That gives us $14.45$ which rounds to 14. Therefore, to the nearest whole number, the duplicate is $\boxed{\textbf{(A) }14}$.  
+
+~avamarora, Nivaar.

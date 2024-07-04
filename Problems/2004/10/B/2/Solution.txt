@@ -1,0 +1,5 @@
+==Solution 1==
+
+Ten numbers $(70,71,\dots,79)$ have $7$ as the tens digit. Nine numbers $(17,27,\dots,97)$ have it as the ones digit. Number $77$ is in both sets.
+
+Thus the result is $10+9-1=18 \Rightarrow$ $\boxed{\mathrm{(B)}\ 18}$.

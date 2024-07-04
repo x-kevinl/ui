@@ -1,0 +1,3 @@
+==Solution==
+
+We can assume there are $10$ people in the class. Then there will be $1$ junior and $9$ seniors. The sum of everyone's scores is $10 \cdot 84 = 840$. Since the average score of the seniors was $83$, the sum of all the senior's scores is $9 \cdot 83 = 747$. The only score that has not been added to that is the junior's score, which is $840 - 747 = \boxed{\textbf{(C) } 93}$

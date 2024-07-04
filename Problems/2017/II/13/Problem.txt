@@ -1,0 +1,2 @@
+==Problem==
+For each integer <math>n\geq3</math>, let <math>f(n)</math> be the number of <math>3</math>-element subsets of the vertices of the regular <math>n</math>-gon that are the vertices of an isosceles triangle (including equilateral triangles). Find the sum of all values of <math>n</math> such that <math>f(n+1)=f(n)+78</math>.

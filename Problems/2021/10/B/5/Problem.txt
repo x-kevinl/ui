@@ -1,0 +1,5 @@
+==Problem==
+
+The ages of Jonie's four cousins are distinct single-digit positive integers. Two of the cousins' ages multiplied together give $24$, while the other two multiply to $30$. What is the sum of the ages of Jonie's four cousins?
+
+$\textbf{(A)} ~21 \qquad\textbf{(B)} ~22 \qquad\textbf{(C)} ~23 \qquad\textbf{(D)} ~24 \qquad\textbf{(E)} ~25$

@@ -1,0 +1,4 @@
+==Problem==
+Let $f$ be the unique function defined on the positive integers such that $$\sum_{d\mid n}d\cdot f\left(\frac{n}{d}\right)=1$$ for all positive integers $n$. What is $f(2023)$?
+
+$\textbf{(A)}~-1536\qquad\textbf{(B)}~96\qquad\textbf{(C)}~108\qquad\textbf{(D)}~116\qquad\textbf{(E)}~144$

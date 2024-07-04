@@ -1,0 +1,27 @@
+==Solution 1==
+
+WLOG, we assume Sonya jumps $0.5$ units every time, since that is her expected value. 
+
+If Sonya is within $0.5$ blocks of an edge, she can jump off the board. Let us examine the region that is at most $0.5$ blocks from exactly one edge. 
+
+<asy>
+import graph;
+
+Label f;
+xaxis(0,6,Ticks(f, 6.0, 0.5));
+yaxis(0,6,Ticks(f, 6.0, 0.5));
+
+draw((0,0)--(6,0)--(6,6)--(0,6)--cycle);
+filldraw((0,0.5)--(0.5,0.5)--(0.5,5.5)--(0,5.5)--cycle,gray);
+filldraw((0.5,0)--(0.5,0.5)--(5.5,0.5)--(5.5,0)--cycle,gray);
+filldraw((6,0.5)--(5.5,0.5)--(5.5,5.5)--(6,5.5)--cycle,gray);
+filldraw((0.5,6)--(0.5,5.5)--(5.5,5.5)--(5.5,6)--cycle,gray);
+</asy>
+
+If Sonya starts in this region, she has a $\dfrac14$ chance of landing outside (there's exactly one direction she can hop to get out). The total area of this region is $4\cdot0.5\cdot5=10.$ For this region, Sonya has a $\dfrac14$ chance, so we multiply $10$ by $\dfrac14$ to get $2.5.$ 
+
+If Sonya is in one of the corner squares, she can go two directions to get out, so she has a $\dfrac24=\dfrac12$ chance to get out. The total area is $0.5\cdot0.5\cdot4=1$, so this region yields $\dfrac12\cdot1=\dfrac12.$ 
+
+Adding the two, we get $3$. This is out of $36$ square units of area, so our answer is thus $\boxed{\textbf{(B) }\tfrac{1}{12}}.$ 
+
+~Technodoggo

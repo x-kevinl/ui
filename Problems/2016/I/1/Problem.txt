@@ -1,0 +1,2 @@
+==Problem 1==
+For <math>-1<r<1</math>, let <math>S(r)</math> denote the sum of the geometric series <cmath>12+12r+12r^2+12r^3+\cdots .</cmath>  Let <math>a</math> between <math>-1</math> and <math>1</math> satisfy <math>S(a)S(-a)=2016</math>. Find <math>S(a)+S(-a)</math>.

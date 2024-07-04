@@ -1,0 +1,4 @@
+==Problem==
+The sales tax rate in Rubenenkoville is 6%. During a sale at the Bergville Coat Closet, the price of a coat is discounted 20% from its &#36;90.00 price. Two clerks, Jack and Jill, calculate the bill independently. Jack rings up &#36;90.00 and adds 6% sales tax, then subtracts 20% from this total. Jill rings up &#36;90.00, subtracts 20% of the price, then adds 6% of the discounted price for sales tax. What is Jack's total minus Jill's total?
+
+$ \textbf{(A)}\ -\textdollar 1.06\qquad\textbf{(B)}\ -\textdollar 0.53 \qquad\textbf{(C)}\ \textdollar 0\qquad\textbf{(D)}\ \textdollar 0.53\qquad\textbf{(E)}\ \textdollar 1.06 $

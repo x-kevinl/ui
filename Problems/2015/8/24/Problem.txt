@@ -1,0 +1,5 @@
+== Problem ==
+
+A baseball league consists of two four-team divisions. Each team plays every other team in its division $N$ games. Each team plays every team in the other division $M$ games with $N>2M$ and $M>4$. Each team plays a $76$ game schedule. How many games does a team play within its own division?
+
+$\textbf{(A) } 36 \qquad \textbf{(B) } 48 \qquad \textbf{(C) } 54 \qquad \textbf{(D) } 60 \qquad \textbf{(E) } 72 $

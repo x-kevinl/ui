@@ -1,0 +1,2 @@
+==Problem==
+The sum of all positive integers <math>m</math> such that <math>\frac{13!}{m}</math> is a perfect square can be written as <math>2^a3^b5^c7^d11^e13^f,</math> where <math>a,b,c,d,e,</math> and <math>f</math> are positive integers. Find <math>a+b+c+d+e+f.</math>

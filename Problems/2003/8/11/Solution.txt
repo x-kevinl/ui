@@ -1,0 +1,2 @@
+== Solution ==
+On Friday, the shoes would cost $ 40 \cdot 1.1= 44 $ dollars. Then on Monday, the shoes would cost $ 44- \frac{44}{10}=44-4.4=\boxed{\textbf{(B)}\ 39.60} $.

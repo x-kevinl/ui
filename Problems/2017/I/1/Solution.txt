@@ -1,0 +1,2 @@
+==Solution==
+Every triangle is uniquely determined by 3 points. There are <math>\binom{15}{3}=455</math> ways to choose 3 points, but that counts the degenerate triangles formed by choosing three points on a line. There are <math>\binom{5}{3}</math> invalid cases on segment <math>AB</math>, <math>\binom{6}{3}</math> invalid cases on segment <math>BC</math>, and <math>\binom{7}{3}</math> invalid cases on segment <math>CA</math> for a total of <math>65</math> invalid cases. The answer is thus <math>455-65=\boxed{390}</math>.

@@ -1,0 +1,4 @@
+== Solution 1==
+For $y=mx+2$ to not pass through any lattice points with $0<x\leq 100$ is the same as saying that $mx\notin\mathbb Z$ for $x\in\{1,2,\dots,100\}$, or in other words, $m$ is not expressible as a ratio of positive integers $s/t$ with $t\leq 100$. Hence the maximum possible value of $a$ is the first real number after $1/2$ that is so expressible.
+
+For each $d=2,\dots,100$, the smallest multiple of $1/d$ which exceeds $1/2$ is $1,\frac23,\frac34,\frac35,\dots,\frac{50}{98},\frac{50}{99},\frac{51}{100}$ respectively, and the smallest of these is $\boxed{\textbf{(B)}\frac{50}{99}}$.

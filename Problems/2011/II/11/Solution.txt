@@ -1,0 +1,41 @@
+==Solution==
+<cmath>D_{1}=\begin{vmatrix}
+ 10  
+ \end{vmatrix} = 10, \quad
+D_{2}=\begin{vmatrix}
+10 & 3  \\
+ 3 & 10  \\ \end{vmatrix}
+=(10)(10) - (3)(3) = 91, \quad
+D_{3}=\begin{vmatrix}
+ 10 & 3 & 0  \\
+ 3 & 10 & 3  \\
+ 0 & 3 & 10  \\
+ \end{vmatrix}. </cmath>
+Using the expansionary/recursive definition of determinants (also stated in the problem):
+
+<math>D_{3}=\left| {\begin{array}{ccc}
+ 10 & 3 & 0  \\
+ 3 & 10 & 3  \\
+ 0 & 3 & 10  \\
+ \end{array} } \right|=10\left| {\begin{array}{cc}
+ 10 & 3  \\
+ 3 & 10  \\
+ \end{array} } \right| - 3\left| {\begin{array}{cc}
+ 3 & 3  \\
+ 0 & 10  \\
+ \end{array} } \right| + 0\left| {\begin{array}{cc}
+ 3 & 10  \\
+ 0 & 3  \\
+ \end{array} } \right| = 10D_{2} - 9D_{1} = 820</math>
+
+This pattern repeats because the first element in the first row of <math>M_{n}</math> is always 10, the second element is always 3, and the rest are always 0. The ten element directly expands to <math>10D_{n-1}</math>. The three element expands to 3 times the determinant of the the matrix formed from omitting the second column and first row from the original matrix. Call this matrix <math>X_{n}</math>. <math>X_{n}</math> has a first column entirely of zeros except for the first element, which is a three. A property of matrices is that the determinant can be expanded over the rows instead of the columns (still using the recursive definition as given in the problem), and the determinant found will still be the same. Thus, expanding over this first column yields <math>3D_{n-2} + 0(\text{other things})=3D_{n-2}</math>. Thus, the <math>3 \det(X_{n})</math> expression turns into <math>9D_{n-2}</math>. Thus, the equation <math>D_{n}=10D_{n-1}-9D_{n-2}</math> holds for all n > 2.
+
+This equation can be rewritten as <math>D_{n}=10(D_{n-1}-D_{n-2}) + D_{n-2}</math>. This version of the equation involves the difference of successive terms of a recursive sequence. Calculating <math>D_{0}</math> backwards from the recursive formula and <math>D_{4}</math> from the formula yields <math>D_{0}=1, D_{4}=7381</math>. Examining the differences between successive terms, a pattern emerges. 
+<math>D_{0}=1=9^{0}</math>, <math>D_{1}-D_{0}=10-1=9=9^{1}</math>, <math>D_{2}-D_{1}=91-10=81=9^{2}</math>, <math>D_{3}-D_{2}=820-91=729=9^{3}</math>, <math>D_{4}-D_{3}=7381-820=6561=9^{4}</math>.
+Thus, <math>D_{n}=D_{0} + 9^{1}+9^{2}+ . . . +9^{n}=\sum_{i=0}^{n}9^{i}=\frac{(1)(9^{n+1}-1)}{9-1}=\frac{9^{n+1}-1}{8}</math>.
+
+Thus, the desired sum is <math>\sum_{n=1}^{\infty}\frac{1}{8\frac{9^{n+1}-1}{8}+1}=\sum_{n=1}^{\infty}\frac{1}{9^{n+1}-1+1} = \sum_{n=1}^{\infty}\frac{1}{9^{n+1}} </math>
+
+This is an infinite [[geometric series]] with first term <math>\frac{1}{81}</math> and common ratio <math>\frac{1}{9}</math>. Thus, the sum is <math>\frac{\frac{1}{81}}{1-\frac{1}{9}}=\frac{\frac{1}{81}}{\frac{8}{9}}=\frac{9}{(81)(8)}=\frac{1}{(9)(8)}=\frac{1}{72}</math>.
+
+Thus, <math>p + q = 1 + 72 = \boxed{073}</math>.

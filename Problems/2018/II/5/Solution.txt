@@ -1,0 +1,5 @@
+==Solution 1 (Euler's formula and Substitution)==
+
+The First (pun intended) thing to notice is that <math>xy</math> and <math>zx</math> have a similar structure, but not exactly conjugates, but instead once you take out the magnitudes of both, simply multiples of a root of unity. It turns out that root of unity is <math>e^{\frac{3\pi i}{2}}</math>. Anyway this results in getting that <math>\left(\frac{-3i}{10}\right)y=z</math>. Then substitute this into <math>yz</math> to get, after some calculation, that <math>y=10e^{\frac{5\pi i}{4}}\sqrt{2}</math> and <math>z=-3e^{\frac{7\pi i}{4}}\sqrt{2}</math>. Then plug <math>z</math> into <math>zx</math>, you could do the same thing with <math>xy</math> but <math>zx</math> looks like it's easier due to it being smaller. Anyway you get <math>x=20+12i</math>. Then add all three up, it turns out easier than it seems because for <math>z</math> and <math>y</math> the <math>\sqrt{2}</math> disappears after you expand the root of unity (e raised to a specific power). Long story short, you get <math>x=20+12i, y=-3+3i, z=-10-10i \implies x+y+z=7+5i \implies a^2+b^2=\boxed{074}</math>.
+
+~First

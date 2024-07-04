@@ -1,0 +1,2 @@
+== Problem ==
+Find the least positive integer <math>k</math> for which the equation <math>\left\lfloor\frac{2002}{n}\right\rfloor=k</math> has no integer solutions for <math>n</math>. (The notation <math>\lfloor x\rfloor</math> means the greatest integer less than or equal to <math>x</math>.)

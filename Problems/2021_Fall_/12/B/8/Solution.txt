@@ -1,0 +1,15 @@
+==Solution 1 (Area)==
+
+Let the lengths of the two congruent sides of the triangle be $x$, then the product desired is $x^2$.
+
+Notice that the product of the base and twice the height is $4$ times the area of the triangle.
+
+Set the vertex angle to be $a$, we derive the equation:
+
+$x^2=4\left(\frac{1}{2}x^2\sin(a)\right)$
+
+$\sin(a)=\frac{1}{2}$
+
+As the triangle is obtuse, $a=150^\circ$ only. We get $\boxed{\textbf{(D)} \ 150}.$
+
+~Wilhelm Z

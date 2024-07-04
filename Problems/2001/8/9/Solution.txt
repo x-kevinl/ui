@@ -1,0 +1,4 @@
+==Solution==
+
+
+The large grid has dimensions three times that of the small grid, so its dimensions are $ 3(6)\times3(7) $, or $ 18\times21 $, so the area is $ (18)(21)=378 $. The area of the kite is half of the area of the rectangle as you can see, so the area of the waste material is also half the area of the rectangle.  Thus, the area of the waste material is $ 378/2=\boxed{189\textbf{ (D)}} $.

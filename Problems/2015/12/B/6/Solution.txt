@@ -1,0 +1,2 @@
+==Solution 1==
+There are a total of $(12+1) \times (12+1) = 169$ products, and a product is odd if and only if both its factors are odd. There are $6$ odd numbers between $0$ and $12$, namely $1, 3, 5, 7, 9, 11,$ hence the number of odd products is $6 \times 6 = 36$. Therefore the answer is $36/169 \doteq \boxed{\textbf{(A)} \, 0.21}$.

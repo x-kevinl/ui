@@ -1,0 +1,17 @@
+== Solution ==
+<math>1^n</math> will always be 1, so we can ignore those terms, and using the definition (<math>2002 / 7 = 286</math>):
+
+<cmath>(10^{2002} + 1)^{\frac {10}7} = 10^{2860}+\dfrac{10}{7}10^{858}+\dfrac{15}{49}10^{-1144}+\cdots</cmath>
+
+Since the exponent of the <math>10</math> goes down extremely fast, it suffices to consider the first few terms. Also, the <math>10^{2860}</math> term will not affect the digits after the decimal, so we need to find the first three digits after the decimal in
+
+<cmath>\dfrac{10}{7}10^{858}</cmath>.
+
+(The remainder after this term is positive by the [[Remainder Estimation Theorem]]). Since the repeating decimal of <math>\dfrac{10}{7}</math> repeats every 6 digits, we can cut out a lot of 6's from <math>858</math> to reduce the problem to finding the first three digits after the decimal of 
+
+<math>\dfrac{10}{7}</math>.
+
+That is the same as <math>1+\dfrac{3}{7}</math>, and the first three digits after <math>\dfrac{3}{7}</math> are <math>\boxed{428}</math>.
+
+----
+An equivalent statement is to note that we are looking for <math>1000 \left\{\frac{10^{859}}{7}\right\}</math>, where <math>\{x\} = x - \lfloor x \rfloor</math> is the fractional part of a number. By [[Fermat's Little Theorem]], <math>10^6 \equiv 1 \pmod{7}</math>, so <math>10^{859} \equiv 3^{6 \times 143 + 1} \equiv 3 \pmod{7}</math>; in other words, <math>10^{859}</math> leaves a residue of <math>3</math> after division by <math>7</math>. Then the desired answer is the first three decimal places after <math>\frac 37</math>, which are <math>\boxed{428}</math>.

@@ -1,0 +1,7 @@
+==Solution 1==
+
+Note that because $\overline{DE}$ and $\overline{EF}$ are parallel to the sides of $\triangle ABC$, the internal triangles $\triangle BDE$ and $\triangle EFC$ are similar to $\triangle ABC$, and are therefore also isosceles triangles.
+
+It follows that $BD = DE$. Thus, $AD + DE = AD + DB = AB = 28$.
+
+The opposite sides of parallelograms are equal (you can prove this fact simply by drawing the diagonal of the parallelogram and proving that the two resulting triangles are congruent by SSS), so the perimeter is $2 \times (AD + DE) = 56\implies \boxed{\textbf{(C)}}$.

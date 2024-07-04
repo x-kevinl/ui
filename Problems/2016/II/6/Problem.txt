@@ -1,0 +1,4 @@
+==Problem==
+For polynomial <math>P(x)=1-\dfrac{1}{3}x+\dfrac{1}{6}x^{2}</math>, define
+<math>Q(x)=P(x)P(x^{3})P(x^{5})P(x^{7})P(x^{9})=\sum_{i=0}^{50} a_ix^{i}</math>.
+Then <math>\sum_{i=0}^{50} |a_i|=\dfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

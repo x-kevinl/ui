@@ -1,0 +1,4 @@
+== Problem ==
+The product of the lengths of the two congruent sides of an obtuse isosceles triangle is equal to the product of the base and twice the triangle's height to the base. What is the measure, in degrees, of the vertex angle of this triangle?
+
+$\textbf{(A)} \: 105 \qquad\textbf{(B)} \: 120 \qquad\textbf{(C)} \: 135 \qquad\textbf{(D)} \: 150 \qquad\textbf{(E)} \: 165$

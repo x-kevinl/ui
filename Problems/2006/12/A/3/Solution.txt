@@ -1,0 +1,2 @@
+== Solution 1 ==
+Let $m$ be Mary's age. Then $\frac{m}{30}=\frac{3}{5}$. Solving for $m$, we obtain $m=\boxed{\textbf{(B) }18}.$

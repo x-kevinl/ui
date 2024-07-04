@@ -1,0 +1,4 @@
+==Problem 1==
+What is the ones digit of $$222,22
+2-22,222-2,222-222-22-2?$$
+$\textbf{(A) } 0\qquad\textbf{(B) } 2\qquad\textbf{(C) } 4\qquad\textbf{(D) } 6\qquad\textbf{(E) } 8$

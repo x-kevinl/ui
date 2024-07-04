@@ -1,0 +1,11 @@
+==Solution 1 (Two Variables)==
+The following system of equations can be formed with $P$ representing the number of students in Portia's high school and $L$ representing the number of students in Lara's high school:
+$$\begin{align*}
+P&=3L, \\
+P+L&=2600.
+\end{align*}$$
+Substituting $P=3L$ gives $4L=2600.$ Solving for $L$ gives $L=650.$ Since we need to find $P,$ we multiply $650$ by $3$ to get $P=\boxed{\textbf{(C)} ~1950}.$
+
+~happykeeper (Solution)
+
+~MRENTHUSIASM (Reformatting)

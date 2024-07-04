@@ -1,0 +1,3 @@
+==Solution 1==
+
+Let the total amount of flowers be $x$.  Thus, the number of pink flowers is $0.6x$, and the number of red flowers is $0.4x$.  The number of pink carnations is $\frac{2}{3}(0.6x) = 0.4x$ and the number of red carnations is $\frac{3}{4}(0.4x) = 0.3x$.  Summing these, the total number of carnations is $0.4x+0.3x=0.7x$.  Dividing, we see that  $\frac{0.7x}{x} = 0.7 = \boxed{\textbf{(E) }70\%}$

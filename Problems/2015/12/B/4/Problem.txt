@@ -1,0 +1,3 @@
+===Note===
+This problem is also problem number 5 on the 2015 AMC 10B, just with different names.
+[https://artofproblemsolving.com/wiki/index.php/2015_AMC_10B_Problems/Problem_5 This is the link.]

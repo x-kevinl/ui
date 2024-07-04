@@ -1,0 +1,2 @@
+== Solution ==
+The numerator in each fraction cancels out with the denominator of the next fraction. There are only two numbers that didn't cancel: $\frac{2006}{2}=\boxed{\textbf{(C)}\ 1003} $.

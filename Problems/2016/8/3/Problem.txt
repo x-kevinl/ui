@@ -1,0 +1,5 @@
+== Problem ==
+
+Four students take an exam. Three of their scores are $70, 80,$ and $90$. If the average of their four scores is $70$, then what is the remaining score?
+
+$\textbf{(A) }40\qquad\textbf{(B) }50\qquad\textbf{(C) }55\qquad\textbf{(D) }60\qquad \textbf{(E) }70$

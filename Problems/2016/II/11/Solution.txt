@@ -1,0 +1,4 @@
+==Solution==
+We claim that an integer <math>N</math> is only <math>k</math>-nice if and only if <math>N \equiv 1 \pmod k</math>. By the number of divisors formula, the number of divisors of <math>\prod_{i=1}^n p_i^{a_i}</math> is <math>\prod_{i=1}^n (a_i+1)</math>. Since all the <math>a_i</math>s are divisible by <math>k</math> in a perfect <math>k</math> power, the only if part of the claim follows. To show that all numbers <math>N \equiv 1 \pmod k</math> are <math>k</math>-nice, write <math>N=bk+1</math>. Note that <math>2^{kb}</math> has the desired number of factors and is a perfect kth power. By PIE, the number of positive integers less than <math>1000</math> that are either <math>1 \pmod 7</math> or <math>1\pmod 8</math> is <math>142+125-17=250</math>, so the desired answer is <math>999-250=\boxed{749}</math>.
+
+Solution by Shaddoll and firebolt360

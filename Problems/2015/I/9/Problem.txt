@@ -1,0 +1,2 @@
+==Problem==
+Let <math>S</math> be the set of all ordered triple of integers <math>(a_1,a_2,a_3)</math> with <math>1 \le a_1,a_2,a_3 \le 10</math>. Each ordered triple in <math>S</math> generates a sequence according to the rule <math>a_n=a_{n-1}\cdot | a_{n-2}-a_{n-3} |</math> for all <math>n\ge 4</math>. Find the number of such sequences for which <math>a_n=0</math> for some <math>n</math>.

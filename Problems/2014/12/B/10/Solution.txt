@@ -1,0 +1,4 @@
+==Solution 1==
+
+We know that the number of miles she drove is divisible by $5$, so $a$ and $c$ must either be the equal or differ by $5$. We can quickly conclude that the former is impossible, so $a$ and $c$ must be $5$ apart.  Because we know that $c > a$ and $a + c \le 7$ and $a \ge 1$, we find that the only possible values for $a$ and $c$ are $1$ and $6$, respectively.  Because $a + b + c \le 7$, $b = 0$.  Therefore, we have
+$$a^2 + b^2 + c^2 = 36 + 0 + 1 = \boxed{\textbf{(D)}\ 37}$$

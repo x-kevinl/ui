@@ -1,0 +1,29 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(200); 
+
+int xMin = -3;
+int xMax = 9;
+int yMin = -3;
+int yMax = 7;
+
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$x$",(xMax,0),(2,0));
+label("$y$",(0,yMax),(0,2));
+
+pair A = (3,5);
+pair B = (0,2);
+pair C = (2,0);
+pair D = (7,5);
+
+draw(A--B--C--D,red);
+dot(A,linewidth(3.5));
+dot(B,linewidth(3.5));
+dot(C,linewidth(3.5));
+dot(D,linewidth(3.5));
+label("$(3,5)$",A,(0,2));
+label("$(7,5)$",D,(0,2));
+</asy>
+~MRENTHUSIASM

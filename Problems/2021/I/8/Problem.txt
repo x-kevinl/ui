@@ -1,0 +1,2 @@
+==Problem==
+Find the number of integers <math>c</math> such that the equation <cmath>\left||20|x|-x^2|-c\right|=21</cmath>has <math>12</math> distinct real solutions.

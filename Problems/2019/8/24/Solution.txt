@@ -1,0 +1,26 @@
+== Solution 1 ==
+
+We use the line-segment ratios to infer area ratios and height ratios.
+
+Areas:
+
+$AD:DC = 1:2 \implies AD:AC = 1:3 \implies [ABD] =\frac{[ABC]}{3} = 120$.
+
+$BE:BD = 1:2 \text{ (midpoint)}  \implies  [ABE] = \frac{[ABD]}{2} = \frac{120}{2} = 60$.
+
+Heights:
+
+Let $h_A$ = height (of altitude) from $\overline{BC}$ to $A$.
+
+$AD:DC = 1:2  \implies CD:CA = 2:3  \implies  \text{height } h_D$ from $\overline{BC}$ to $D$ is $\frac{2}{3}h_A$.
+
+
+$BE:BD = 1:2 \text{ (midpoint)}  \implies  \text{height } h_E$ from $\overline{BC}$ to $E$ is $\frac{1}{2} h_D = \frac{1}{2}(\frac{2}{3} h_A) = \frac{1}{3} h_A$. 
+
+
+Conclusion:
+
+$\frac{[EBF]} {[ABF]} =  \frac{[EBF]} {[EBF] + [ABE]} =   \frac{[EBF]} {[EBF]+60}$,  and also $\frac{[EBF]} {[ABF]} = \frac{h_E}{h_A} = \frac{1}{3} $.
+
+
+So, $\frac{[EBF]} {[EBF] + 60} =  \frac{1}{3}$, and thus, $[EBF] = \boxed{30} $.

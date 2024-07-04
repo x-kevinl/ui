@@ -1,0 +1,9 @@
+==Solution 1==
+
+Let a "tile" denote a $1\times1$ square and "square" refer to $2\times2$. 
+
+We first have $4!=24$ possible ways to fill out the top left square. We then fill out the bottom right tile. In the bottom right square, we already have one corner filled out (from our initial coloring), and we now have $3$ options left to pick from. 
+
+We then look at the right middle tile. It is part of two squares: the top right and top left. Among these squares, $3$ colors have already been used, so we only have one more option for it. Similarly, every other square only has one more option, so we have a total of $3\cdot4!=\boxed{\textbf{(D) }72}$ ways. 
+
+~Technodoggo

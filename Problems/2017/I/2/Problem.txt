@@ -1,0 +1,2 @@
+==Problem 2==
+When each of <math>702</math>, <math>787</math>, and <math>855</math> is divided by the positive integer <math>m</math>, the remainder is always the positive integer <math>r</math>. When each of <math>412</math>, <math>722</math>, and <math>815</math> is divided by the positive integer <math>n</math>, the remainder is always the positive integer <math>s \neq r</math>. Find <math>m+n+r+s</math>.

@@ -1,0 +1,2 @@
+== Solution ==
+We see that the vertex of the quadratic function $y = x^2 + a^2$ is $(0,\,a^2)$. The y-intercept of the line $y = x + a$ is $(0,\,a)$. We want to find the values (if any) such that $a=a^2$. Solving for $a$, the only values that satisfy this are $0$ and $1$, so the answer is $\boxed{\mathrm{(C)}\ 2}$

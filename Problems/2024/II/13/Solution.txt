@@ -1,0 +1,16 @@
+==Solution 1==
+<cmath>\prod_{k=0}^{12} \left(2- 2\omega^k + \omega^{2k}\right) = \prod_{k=0}^{12} \left((1 - \omega^k)^2 + 1\right) = \prod_{k=0}^{12} \left((1 + i) - \omega^k)((1 - i) - \omega^k\right)</cmath>
+
+Now, we consider the polynomial <math>x^{13} - 1</math> whose roots are the 13th roots of unity. Taking our rewritten product from <math>0</math> to <math>12</math>, we see that both instances of <math>\omega^k</math> cycle through each of the 13th roots. Then, our answer is:
+
+<cmath>((1 + i)^{13} - 1)(1 - i)^{13} - 1)</cmath>
+
+<cmath>= (-64(1 + i) - 1)(-64(1 - i) - 1)</cmath>
+
+<cmath>= (65 + 64i)(65 - 64i)</cmath>
+
+<cmath>= 65^2 + 64^2</cmath>
+
+<cmath>= 8\boxed{\textbf{321}} </cmath>
+
+~Mqnic_

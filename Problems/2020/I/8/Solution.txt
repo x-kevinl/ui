@@ -1,0 +1,56 @@
+==Solution 1 (Coordinates)==
+<asy>
+size(8cm);
+pair O, A, B, C, D, F, G, H, I, P, X;
+O = (0, 0);
+A = (5, 0);
+X = (8, 0);
+P = (5, 5 / sqrt(3));
+B = rotate(-120, A) * ((O + A) / 2);
+C = rotate(-120, B) * ((A + B) / 2);
+D = rotate(-120, C) * ((B + C) / 2);
+F = rotate(-120, D) * ((C + D) / 2);
+G = rotate(-120, F) * ((D + F) / 2);
+H = rotate(-120, G) * ((F + G) / 2);
+I = rotate(-120, H) * ((G + H) / 2);
+draw(O -- A -- B -- C -- D -- F -- G -- H -- I);
+draw(A -- X, dashed);
+markscalefactor = 0.05;
+path angle = anglemark(X, A, B);
+draw(angle);
+
+dot(P);
+dot(O);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+
+label("$O$", O, W);
+label("$P$", P, E);
+label("$A$", A, S);
+label("$B$", B, E);
+label("$C$", C, E);
+label("$D$", D, W);
+label("$60^\circ$", angle, ENE*3);
+</asy>
+
+We notice that the moves cycle every 6 moves, so we plot out the first 6 moves on the coordinate grid with point <math>O</math> as the origin. We will keep a tally of the x-coordinate and y-coordinate separately. Then, we will combine them and account for the cycling using the formula for an infinite geometric series.
+
+First move: The ant moves right <math>5</math>. 
+Second move: We use properties of a <math>30-60-90</math> triangle to get <math>\frac{5}{4}</math> right, <math>\frac{5\sqrt{3}}{4}</math> up. 
+Third move: <math>\frac{5}{8}</math> left, <math>\frac{5\sqrt{3}}{8}</math> up.
+Fourth move: <math>\frac{5}{8}</math> left.
+Fifth move: <math>\frac{5}{32}</math> left, <math>\frac{5\sqrt{3}}{32}</math> down.
+Sixth move: <math>\frac{5}{64}</math> right, <math>\frac{5\sqrt{3}}{64}</math> down.
+
+Total of x-coordinate: <math>5 + \frac{5}{4} - \frac{5}{8} - \frac{5}{8}  - \frac{5}{32} + \frac{5}{64} = \frac{315}{64}</math>.
+Total of y-coordinate: <math>0 + \frac{5\sqrt{3}}{4} + \frac{5\sqrt{3}}{8} + 0 - \frac{5\sqrt{3}}{32} - \frac{5\sqrt{3}}{64} = \frac{105\sqrt{3}}{64}</math>.
+
+After this cycle of six moves, all moves repeat with a factor of <math>(\frac{1}{2})^6 = \frac{1}{64}</math>. Using the formula for a geometric series, multiplying each sequence by <math>\frac{1}{1-\frac{1}{64}} = \frac{64}{63}</math> will give us the point <math>P</math>.
+
+Now, knowing the initial <math>x</math> and <math>y,</math> we plug this into the geometric series formula (<math>\frac{a}{1-r}</math>), and we get <math>\frac{315}{64} \cdot \frac{64}{63} = 5</math>, <math>\frac{105\sqrt{3}}{64} \cdot \frac{64}{63} = \frac{5\sqrt{3}}{3}</math>.
+Therefore, the coordinates of point <math>P</math> are <math>(5,\frac{5\sqrt{3}}{3})</math>, so using the Pythagorean Theorem, <math>OP^2 = \frac{100}{3}</math>, for an answer of <math>\boxed{103}</math>.
+
+
+-molocyxu

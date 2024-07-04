@@ -1,0 +1,12 @@
+==Solution 1==
+Note that the unit of the answer is <b>strawberries</b>, which is the product of
+
+* square feet
+
+* plants per square foot
+
+* strawberries per plant
+
+By conversion factors, we have $$\left(6 \ \color{red}\cancel{\mathrm{ft}}\color{black}\cdot8 \ \color{red}\cancel{\mathrm{ft}}\color{black}\right)\cdot\left(4 \ \frac{\color{green}\cancel{\mathrm{plants}}}{\color{red}\cancel{\mathrm{ft}^2}}\right)\cdot\left(10 \ \frac{\mathrm{strawberries}}{\color{green}\cancel{\mathrm{plant}}}\right)=6\cdot8\cdot4\cdot10 \ \mathrm{strawberries}=\boxed{\textbf{(D) }1920} \ \mathrm{strawberries}.$$
+
+~MRENTHUSIASM ~Bobthegod78

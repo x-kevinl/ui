@@ -1,0 +1,3 @@
+== Solution ==
+
+Let $L_1$ be the line that goes through $(2,4)$ and $(14,9)$, and let $L_2$ be the line $y=mx+b$. If we let $\theta$ be the measure of the acute angle formed by $L_1$ and the x-axis, then $\tan\theta=\frac{5}{12}$. $L_1$ clearly bisects the angle formed by $L_2$ and the x-axis, so $m=\tan{2\theta}=\frac{2\tan\theta}{1-\tan^2{\theta}}=\frac{120}{119}$. We also know that $L_1$ and $L_2$ intersect at a point on the x-axis. The equation of $L_1$ is $y=\frac{5}{12}x+\frac{19}{6}$, so the coordinate of this point is $\left(-\frac{38}{5},0\right)$. Hence the equation of $L_2$ is $y=\frac{120}{119}x+\frac{912}{119}$, so $b=\frac{912}{119}$, and our answer choice is $\boxed{\mathrm{E}}$.

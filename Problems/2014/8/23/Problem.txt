@@ -1,0 +1,14 @@
+==Problem==
+Three members of the Euclid Middle School girls' softball team had the following conversation.
+
+Ashley: I just realized that our uniform numbers are all $2$-digit primes.
+
+Bethany : And the sum of your two uniform numbers is the date of my birthday earlier this month.
+
+Caitlin: That's funny. The sum of your two uniform numbers is the date of my birthday later this month.
+
+Ashley: And the sum of your two uniform numbers is today's date.
+
+What number does Caitlin wear?
+
+$\textbf{(A) }11\qquad\textbf{(B) }13\qquad\textbf{(C) }17\qquad\textbf{(D) }19\qquad \textbf{(E) }23$

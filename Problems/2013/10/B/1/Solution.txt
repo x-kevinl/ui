@@ -1,0 +1,5 @@
+==Solution==
+
+This expression is equivalent to $\frac{12}{9} - \frac{9}{12} = \frac{16}{12} - \frac{9}{12} = \boxed{\textbf{(C) }\frac{7}{12}}$
+
+For the exact same problem but with answer choice D unsimplified, see http://artofproblemsolving.com/wiki/index.php/2011_AMC_10B_Problems/Problem_1

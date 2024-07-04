@@ -1,0 +1,10 @@
+==Solution==
+In this problem, we want to find the number of ordered pairs <math>(m, n)</math> such that <math>m^2n = 20^{20}</math>. Let <math>x = m^2</math>. Therefore, we want two numbers, <math>x</math> and <math>n</math>, such that their product is <math>20^{20}</math> and <math>x</math> is a perfect square. Note that there is exactly one valid <math>n</math> for a unique <math>x</math>, which is <math>\tfrac{20^{20}}{x}</math>. This reduces the problem to finding the number of unique perfect square factors of <math>20^{20}</math>.
+
+
+<math>20^{20} = 2^{40} \cdot 5^{20} = \left(2^2\right)^{20}\cdot\left(5^2\right)^{10}.</math> Therefore, the answer is <math>21 \cdot 11 = \boxed{231}.</math>
+
+
+~superagh
+
+~TheBeast5520

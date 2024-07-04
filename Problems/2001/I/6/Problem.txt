@@ -1,0 +1,4 @@
+== Problem ==
+A fair die is rolled four times. The [[probability]] that each of the final three rolls is at least as large as the roll preceding it may be expressed in the form <math>\frac{m}{n}</math> where <math>m</math> and <math>n</math> are [[relatively prime]] [[positive]] [[integer]]s. Find <math>m + n</math>.
+
+__TOC__

@@ -1,0 +1,2 @@
+==Solution==
+The overlap length is $2(15)-25=5$, so the shaded area is $5 \cdot 15 =75$. The area of the whole shape is $25 \cdot 15 = 375$. The fraction $\dfrac{75}{375}$ reduces to $\dfrac{1}{5}$ or 20%. Therefore, the answer is $\boxed{ \textbf{(C)}\ \text{20} }$

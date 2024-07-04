@@ -1,0 +1,4 @@
+==Solution==
+Let $m = $ Brianna's money.  We have $\frac15 m = \frac13 (\mbox{CDs}) \Rightarrow \frac35 m = (\mbox{CDs})$.  Thus, the money left over is $m-\frac35m = \frac25m$, so the answer is $\boxed{\textbf{(C) }\frac{2}{5}}$.
+
+This was just a simple manipulation of the equation. No solving was needed!

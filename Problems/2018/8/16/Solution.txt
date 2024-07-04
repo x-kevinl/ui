@@ -1,0 +1,2 @@
+==Solution==
+Since the Arabic books and Spanish books have to be kept together, we can treat them both as just one book. That means we're trying to find the number of ways you can arrange one Arabic book, one Spanish book, and three German books, which is just $5$ factorial. Now, we multiply this product by $2!$ because there are $2!$ ways to arrange the Arabic books within themselves, and $4!$ ways to arrange the Spanish books within themselves. Multiplying all these together, we have $2! \cdot 4! \cdot 5!=\boxed{\textbf{(C) }5760}$.

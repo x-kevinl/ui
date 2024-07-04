@@ -1,0 +1,4 @@
+== Solution ==
+Let $p$ be the price at the beginning of January.  The price at the end of March was $(1.2)(0.8)(1.25)p = 1.2p.$ Because the price at the end of April was $p$, the price decreased by $0.2p$ during April, and the percent decrease was
+$$x = 100 \cdot \frac{0.2p}{1.2p} = \frac {100}{6} \approx 16.7.$$
+So to the nearest integer $x$ is $\boxed{17}$.  The answer is $\mathrm{(B)}$.

@@ -1,0 +1,4 @@
+== Solution ==
+Since $-1$ raised to an odd integer is $-1$ and $-1$ raised to an even integer exponent is $1$: 
+
+$ (-1)^{1} + (-1)^{2} + ... + (-1)^{2006} = (-1) + (1) + ... + (-1)+(1) = \boxed{\textbf{(C) }0}. $

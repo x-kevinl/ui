@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>a,b,c,d,e,f,g,h,i</math> be distinct integers from <math>1</math> to <math>9.</math> The minimum possible positive value of <cmath>\dfrac{a \cdot b \cdot c - d \cdot e \cdot f}{g \cdot h \cdot i}</cmath> can be written as <math>\frac{m}{n},</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n.</math>

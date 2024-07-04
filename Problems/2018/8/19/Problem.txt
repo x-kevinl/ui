@@ -1,0 +1,19 @@
+==Problem==
+In a sign pyramid a cell gets a "+" if the two cells below it have the same sign, and it gets a "-" if the two cells below it have different signs. The diagram below illustrates a sign pyramid with four levels. How many possible ways are there to fill the four cells in the bottom row to produce a "+" at the top of the pyramid?
+
+<asy>
+unitsize(2cm);
+path box = (-0.5,-0.2)--(-0.5,0.2)--(0.5,0.2)--(0.5,-0.2)--cycle;
+draw(box); label("$+$",(0,0));
+draw(shift(1,0)*box); label("$-$",(1,0));
+draw(shift(2,0)*box); label("$+$",(2,0));
+draw(shift(3,0)*box); label("$-$",(3,0));
+draw(shift(0.5,0.4)*box); label("$-$",(0.5,0.4));
+draw(shift(1.5,0.4)*box); label("$-$",(1.5,0.4));
+draw(shift(2.5,0.4)*box); label("$-$",(2.5,0.4));
+draw(shift(1,0.8)*box); label("$+$",(1,0.8));
+draw(shift(2,0.8)*box); label("$+$",(2,0.8));
+draw(shift(1.5,1.2)*box); label("$+$",(1.5,1.2));
+</asy>
+
+$\textbf{(A) } 2 \qquad \textbf{(B) } 4 \qquad \textbf{(C) } 8 \qquad \textbf{(D) } 12 \qquad \textbf{(E) } 16$

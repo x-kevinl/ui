@@ -1,0 +1,4 @@
+==Solution 1==
+Let <math>k</math> be one of the elements in Alices set <math>A</math> of positive integers. The number of sets that Bob lists with the property that their maximum element is k is <math>2^{k-1}</math>, since every positive integer less than k can be in the set or out. Thus, for the number of sets bob have listed to be 2024, we want to find a sum of unique powers of two that can achieve this. 2024 is equal to <math>2^{10}+2^9+2^8+2^7+2^6+2^5+2^3</math>. We must increase each power by 1 to find the elements in set <math>A</math>, which are <math>(11,10,9,8,7,6,4)</math>. Add these up to get <math>\boxed{055}</math>. -westwoodmonster
+
+Note: The power of two expansion can be found from the binary form of <math>2024</math>, which is <math>11111101000_2</math>. ~cxsmi

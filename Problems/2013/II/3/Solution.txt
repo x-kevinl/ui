@@ -1,0 +1,2 @@
+==Solution==
+We find that <math>T=10(1+2+\cdots +119)</math>. From Gauss's formula, we find that the value of <math>T</math> is <math>10(7140)=71400</math>. The value of <math>\frac{T}{2}</math> is therefore <math>35700</math>. We find that <math>35700</math> is <math>10(3570)=10\cdot \frac{k(k+1)}{2}</math>, so <math>3570=\frac{k(k+1)}{2}</math>. As a result, <math>7140=k(k+1)</math>, which leads to <math>0=k^2+k-7140</math>. We notice that <math>k=84</math>, so the answer is <math>10(119-84)=\boxed{350}</math>.

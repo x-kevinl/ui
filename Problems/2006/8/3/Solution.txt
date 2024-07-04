@@ -1,0 +1,2 @@
+== Solution ==
+When Elisa started, she finished a lap in $ \frac{25}{10}=2.5 $ minutes. Now, she finishes a lap is $ \frac{24}{12}= 2 $ minutes. The difference is $ 2.5-2=\boxed{\textbf{(A)}\ \frac{1}{2}} $.

@@ -1,0 +1,14 @@
+==Solution 1==
+We use simple case work to solve this problem.
+
+Case 1: even, even, even = $4 \cdot 5 \cdot 5 = 100$
+
+Case 2: even, odd, odd = $4 \cdot 5 \cdot 5 = 100$
+
+Case 3: odd, even, odd = $5 \cdot 5 \cdot 5 = 125$
+
+Case 4: odd, odd, even = $5 \cdot 5 \cdot 5 = 125$
+
+Simply sum up the cases to get your answer. $100 + 100 + 125 + 125 = \boxed{\textbf{(D)~}450}$.
+
+- Wesseywes7254

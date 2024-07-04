@@ -1,0 +1,27 @@
+==Solution 1==
+
+First, let $R(n)$ be the sum of the $n$th row. Now, with some observation and math instinct, we can guess that $R(n) = 2^n - n$.
+
+Now we try to prove it by induction,
+
+$R(1) = 2^n - n = 2^1 - 1 = 1$ (works for base case)
+
+$R(k) = 2^k - k$
+
+$R(k+1) = 2^{k+1} - (k + 1) = 2(2^k) - k - 1$
+
+By definition from the question, the next row is always$:$ 
+
+Double the sum of last row (Imagine each number from last row branches off toward left and right to the next row), plus # of new row, minus 2 (minus leftmost and rightmost's 1)
+
+Which gives us $:$
+
+$2(2^k - k) + (k + 1) - 2 = 2(2^k) - k - 1$
+
+Hence, proven
+
+Last, simply substitute $n = 2023$, we get $R(2023) = 2^{2023} - 2023$
+
+Last digit of $2^{2023}$ is $8$, $8-3 = \boxed{\textbf{(C) } 5}$
+
+~lptoggled

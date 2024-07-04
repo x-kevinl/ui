@@ -1,0 +1,54 @@
+== Solution ==
+===Solution 1===
+
+We use the [[Pythagorean Theorem]] on <math>ABC</math> to determine that <math>AB=25.</math>
+
+Let <math>N</math> be the orthogonal projection from <math>C</math> to <math>AB.</math> Thus, <math>[CDM]=\frac{(DM)(MN)} {2}</math>, <math>MN=BN-BM</math>, and <math>[ABC]=\frac{24 \cdot 7} {2} =\frac{25 \cdot (CN)} {2}.</math>
+
+From the third equation, we get 
+<math>CN=\frac{168} {25}.</math>
+
+By the [[Pythagorean Theorem]] in <math>\Delta BCN,</math> we have 
+
+<math>BN=\sqrt{\left(\frac{24 \cdot 25} {25}\right)^2-\left(\frac{24 \cdot 7} {25}\right)^2}=\frac{24} {25}\sqrt{25^2-7^2}=\frac{576} {25}.</math> 
+
+Thus, 
+<math>MN=\frac{576} {25}-\frac{25} {2}=\frac{527} {50}.</math> 
+
+In <math>\Delta ADM</math>, we use the [[Pythagorean Theorem]] to get 
+<math>DM=\sqrt{15^2-\left(\frac{25} {2}\right)^2}=\frac{5} {2} \sqrt{11}.</math>
+
+Thus, 
+<math>[CDM]=\frac{527 \cdot 5\sqrt{11}} {50 \cdot 2 \cdot 2}= \frac{527\sqrt{11}} {40}.</math>
+
+Hence, the answer is <math>527+11+40=\boxed{578}.</math>
+
+~ minor edits by kundusne000
+
+===Solution 2===
+
+By the [[Pythagorean Theorem]] in <math>\Delta AMD</math>, we get <math>DM=\frac{5\sqrt{11}} {2}</math>. Since <math>ABC</math> is a right triangle, <math>M</math> is the circumcenter and thus, <math>CM=\frac{25} {2}</math>. We let <math>\angle CMD=\theta</math>. By the [[Law of Cosines]],
+
+<math>24^2 = 2 \cdot (12.5)^2-2 \cdot (12.5)^2 * \cos (90+\theta).</math>
+
+It follows that <math>\sin \theta = \frac{527} {625}</math>. Thus,
+<math>[CMD]=\frac{1} {2} (12.5) \left(\frac{5\sqrt{11}} {2}\right)\left(\frac{527} {625}\right)=\frac{527\sqrt{11}} {40}</math>.
+
+===Solution 3===
+
+Suppose <math>ABC</math> is plotted on the [[cartesian plane]] with <math>C</math> at <math>(0,0)</math>, <math>A</math> at <math>(0,7)</math>, and <math>B</math> at <math>(24,0)</math>.
+Then <math>M</math> is at <math>(12,3.5)</math>. Since <math>\Delta ABD</math> is isosceles, <math>MD</math> is perpendicular to <math>AM</math>, and since <math>AM=12.5</math> and <math>AD=15, MD=2.5\sqrt{11}</math>.
+The slope of <math>AM</math> is <math>-\frac{7}{24}</math> so the slope of <math>MD</math> is <math>\frac{24}{7}</math>.
+Draw a vertical line through <math>M</math> and a horizontal line through <math>D</math>. Suppose these two lines meet at <math>X</math>. then <math>MX=\frac{24}{7}DX</math> so <math>MD=\frac{25}{7}DX=\frac{25}{24}MD</math> by the pythagorean theorem.
+So <math>MX=2.4\sqrt{11}</math> and <math>DX=.7\sqrt{11}</math> so the coordinates of D are <math>(12-.7\sqrt{11},\, 3.5-2.4\sqrt{11})</math>.
+Since we know the coordinates of each of the vertices of <math>\Delta CMD</math>, we can apply the [[Shoelace Theorem]] to find the area of <math>\Delta CMD, \frac{527 \sqrt{11}}{40}</math>.
+
+~ minor edit by kundusne000
+
+===Solution 4===
+
+Let <math>E</math> be the intersection of lines <math>BC</math> and <math>DM</math>.  Since triangles <math>\Delta CME</math> and <math>\Delta CMD</math> share a side and height, the area of <math>\Delta CDM</math> is equal to <math>\frac{DM}{EM}</math> times the area of <math>\Delta CME</math>.
+By AA similarity, <math>\Delta EMB</math> is similar to <math>\Delta ACB</math>, <math>\frac{EM}{AC}=\frac{MB}{CB}</math>. Solving yields <math>EM=\frac{175}{48}</math>. Using the same method but for <math>EB</math> yields <math>EB=\frac{625}{48}</math>. As in previous solutions, by the [[Pythagorean Theorem]], <math>DM=\frac{5\sqrt{11}}{2}</math>. So, <math>\frac{DM}{EM}=\frac{24\sqrt{11}}{35}</math>.
+Now, since we know both <math>CB</math> and <math>EB</math>, we can find that <math>CE=\frac{527}{48}</math>. The height of <math>\Delta CME</math> is the length from point <math>M</math> to <math>CB</math>. Since <math>M</math> is the midpoint of <math>AB</math>, the height is just <math>\frac{1}{2}\cdot7=\frac{7}{2}</math>. Using this, we can find that the area of <math>\Delta CMD</math> is <math>\frac{1}{2}\cdot\frac{7}{2}\cdot\frac{527}{48}\cdot\frac{24\sqrt{11}}{35}=\frac{527\sqrt{11}}{40}</math>, giving our answer of <math>\boxed{578}</math>.
+
+Solution by someonenumber011.

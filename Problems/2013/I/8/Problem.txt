@@ -1,0 +1,2 @@
+== Problem ==
+The domain of the function <math>f(x) = \arcsin(\log_{m}(nx))</math> is a closed interval of length <math>\frac{1}{2013}</math> , where <math>m</math> and <math>n</math> are positive integers and <math>m>1</math>. Find the remainder when the smallest possible sum <math>m+n</math> is divided by 1000.

@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>S_i</math> be the set of all integers <math>n</math> such that <math>100i\leq n < 100(i + 1)</math>.  For example, <math>S_4</math> is the set <math>{400,401,402,\ldots,499}</math>.  How many of the sets <math>S_0, S_1, S_2, \ldots, S_{999}</math> do not contain a perfect square?

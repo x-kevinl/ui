@@ -1,0 +1,22 @@
+==Solution 1==
+Considering <math>n \pmod{6}</math>, we have the following formulas:
+
+<math>n\equiv 0</math>: <math>\frac{n(n-4)}{2} + \frac{n}{3}</math>
+
+<math>n\equiv 2, 4</math>: <math>\frac{n(n-2)}{2}</math>
+
+<math>n\equiv 3</math>: <math>\frac{n(n-3)}{2} + \frac{n}{3}</math>
+
+<math>n\equiv 1, 5</math>: <math>\frac{n(n-1)}{2}</math>
+
+To derive these formulas, we note the following:
+Any isosceles triangle formed by the vertices of our regular <math>n</math>-sided polygon <math>P</math> has its sides from the set of edges and diagonals of <math>P</math>. Notably, as two sides of an isosceles triangle must be equal, it is important to use the property that same-lengthed edges and diagonals come in groups of <math>n</math>, unless <math>n</math> is even when one set of diagonals (those which bisect the polygon) comes in a group of <math>\frac{n}{2}</math>. Three properties hold true of <math>f(n)</math>:
+
+When <math>n</math> is odd there are <math>\frac{n(n-1)}{2}</math> satisfactory subsets (This can be chosen with <math>n</math> choices for the not-base vertex, and <math>\frac{n-1}{2}</math> for the pair of equal sides as we have <math>n-1</math> edges to choose from, and we must divide by 2 for over-count).*
+*Another explanation: For any diagonal or side of the polygon chosen as the base of the isosceles triangle, there is exactly 1 isosceles triangle that can be formed. So, the total number of satisfactory subsets is <math>\dbinom{n}{2}=\dfrac{n(n-1)}{2}.</math>
+
+When <math>n</math> is even there are <math>\frac{n(n-2)}{2}</math> satisfactory subsets (This can be chosen with <math>n</math> choices for the not-base vertex, and <math>\frac{n-2}{2}</math> for the pair of equal sides as we have <math>n-1</math> edges to choose from, one of them which is not satisfactory (the bisecting edge), and we must divide by 2 for over-count).
+
+When <math>n</math> is a multiple of three we additionally over-count equilateral triangles, of which there are <math>\frac{n}{3}</math>. As we count them three times, we are two times over, so we subtract <math>\frac{2n}{3}</math>.
+
+Considering the six possibilities <math>n \equiv 0,1,2,3,4,5 \pmod{6}</math> and solving, we find that the only valid solutions are <math>n = 36, 52, 157</math>, from which the answer is <math>36 + 52 + 157 = \boxed{245}</math>.

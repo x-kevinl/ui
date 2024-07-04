@@ -1,0 +1,30 @@
+==Diagram==
+<asy>
+size(200);
+defaultpen(linewidth(0.4)+fontsize(10));
+pen s = linewidth(0.8)+fontsize(8);
+
+pair A,B,C,P,Q,X,Y,O;
+O = origin;
+real theta = 32;
+A = dir(180+theta);
+B = dir(-theta);
+C = dir(75);
+Q = foot(B,A,C);
+P = foot(C,A,B);
+path c = circumcircle(A,B,C);
+X = IP(c, Q--(2*P-Q));
+Y = IP(c, P--(2*Q-P));
+draw(A--B--C--A, black+0.8);
+draw(c^^X--Y^^B--Q^^C--P);
+dot("$A$", A, SW);
+dot("$B$", B, SE);
+dot("$C$", C, N);
+dot("$P$", P, SW);
+dot("$Q$", Q, W);
+dot("$X$", X, SE);
+dot("$Y$", Y, NW);
+label("$25$", P--Q, SW);
+label("$15$", Q--Y, SW);
+label("$10$", X--P, SW);
+</asy>

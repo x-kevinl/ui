@@ -1,0 +1,5 @@
+==Problem==
+
+The letters $A$, $B$, $C$ and $D$ represent digits. If  $ \begin{tabular}{ccc}&A&B\\ +&C&A\\ \hline &D&A\end{tabular} $and $ \begin{tabular}{ccc}&A&B\\ -&C&A\\ \hline &&A\end{tabular} $,what digit does $D$ represent?
+
+$ \textbf{(A)}\ 5\qquad\textbf{(B)}\ 6\qquad\textbf{(C)}\ 7\qquad\textbf{(D)}\ 8\qquad\textbf{(E)}\ 9 $

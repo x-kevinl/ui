@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+Draw the hexagon between the centers of the circles, and compute its area $(6)(0.5)(2\sqrt{3})=6\sqrt{3}$. Then add the areas of the three sectors outside the hexagon ($2\pi$) and subtract the areas of the three sectors inside the hexagon but outside the figure($\pi$) to get the area enclosed in the curved figure $(\pi+6\sqrt{3})$, which is $\boxed{\textbf{(E)}\ \pi+6\sqrt{3}}$.

@@ -1,0 +1,4 @@
+==Solution 1==
+We know that the total amount of games must be the sum of games won by left and right handed players. Then, we can write $g = l + r$, and since $l = 1.4r$, $g = 2.4r$. Given that $r$ and $g$ are both integers, $g/2.4$ also must be an integer. From here we can see that $g$ must be divisible by 12, leaving only answers B and D. Now we know the formula for how many games are played in this tournament is $n(n-1)/2$, the sum of the first $n-1$ triangular numbers. Now, setting 36 and 48 equal to the equation will show that two consecutive numbers must have a product of 72 or 96. Clearly, $72=8*9$, so the answer is $\boxed{\textbf{(B) }36}$.
+
+~~ Antifreeze5420

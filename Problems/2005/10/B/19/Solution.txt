@@ -1,0 +1,2 @@
+== Solution ==
+To begin, we see that the remaining $30\%$ of the students got $95$ points. Assume that there are $20$ students; we see that $2$ students got $70$ points, $5$ students got $80$ points, $4$ students got $85$ points, $3$ students got $90$ points, and $6$ students got $95$ points. The median is $85$, since the $10^{\text{th}}$ and $11^{\text{th}}$ terms are both $85$. The mean is $\dfrac{70\,(2)+80\,(5)+85\,(4)+90\,(3)+95\,(6)}{20}=\dfrac{1720}{20}=86$. The difference between the mean and median, therefore, is $\boxed{\textbf{(B)}\ 1}$.

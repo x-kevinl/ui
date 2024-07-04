@@ -1,0 +1,7 @@
+==Solution 1 (Arithmetic)==
+
+Note that the sum of the first two numbers is $21\cdot2=42,$ the sum of the middle two numbers is $26\cdot2=52,$ and the sum of the last two numbers is $30\cdot2=60.$
+
+It follows that the sum of the four numbers is $42+60=102,$ so the sum of the first and last numbers is $102-52=50.$ Therefore, the average of the first and last numbers is $50\div2=\boxed{\textbf{(B) } 25}.$
+
+~MRENTHUSIASM

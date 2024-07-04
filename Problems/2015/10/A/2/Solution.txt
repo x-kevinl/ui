@@ -1,0 +1,13 @@
+==Solution==
+
+Let $a$ be the amount of triangular tiles and $b$ be the amount of square tiles.
+
+Triangles have $3$ edges and squares have $4$ edges, so we have a system of equations.
+
+We have $a + b$ tiles total, so $a + b = 25$.
+
+We have $3a + 4b$ edges total, so $3a + 4b = 84$.
+
+Multiplying the first equation by $3$ on both sides gives $3a + 3b = 3(25) = 75$.
+
+Second equation minus the first equation gives $b = 9$, so the answer is $\boxed{\textbf{(D) }9}$.

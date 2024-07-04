@@ -1,0 +1,35 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(200);
+draw(polygon(6));
+pair A, B, C, D, E, F, X, Y, Z, M, N, O, P, Q, R;
+A = dir(120);
+B = dir(60);
+C = dir(0);
+D = dir(300);
+E = dir(240);
+F = dir(180);
+X = midpoint(A--B);
+Y = midpoint(C--D);
+Z = midpoint(E--F);
+M = intersectionpoint(A--E,X--Z);
+N = intersectionpoint(A--C,X--Y);
+O = intersectionpoint(C--E,Y--Z);
+P = intersectionpoint(A--C,X--Z);
+Q = intersectionpoint(C--E,X--Y);
+R = intersectionpoint(A--E,Y--Z);
+fill(M--P--N--Q--O--R--cycle,mediumgray);
+dot("$A$",A,1.5*dir(A),linewidth(4));
+dot("$B$",B,1.5*dir(B),linewidth(4));
+dot("$C$",C,1.5*dir(C),linewidth(4));
+dot("$D$",D,1.5*dir(D),linewidth(4));
+dot("$E$",E,1.5*dir(E),linewidth(4));
+dot("$F$",F,1.5*dir(F),linewidth(4));
+dot("$X$",X,1.5*dir(X),linewidth(4));
+dot("$Y$",Y,1.5*dir(Y),linewidth(4));
+dot("$Z$",Z,1.5*dir(Z),linewidth(4));
+dot(M^^N^^O^^P^^Q^^R,linewidth(4));
+draw(A--C--E--cycle^^X--Y--Z--cycle);
+</asy>
+~MRENTHUSIASM

@@ -1,0 +1,35 @@
+== Solution 1==
+
+The image below shows the two curves for $k=4$. The blue curve is $x^2+y^2=k^2$, which is clearly a circle with radius $k$, and the red curve is a part of the curve $xy=k$.
+
+<asy>
+import graph;
+size(200);
+
+real f(real x) {return 4/x;};
+real g1(real x) {return sqrt(4*4-x*x);};
+real g2(real x) {return -sqrt(4*4-x*x);};
+draw(graph(f,-20./3,-0.6),red);
+draw(graph(f,0.6,20./3),red);
+draw(graph(g1,-4,4),blue);
+draw(graph(g2,-4,4),blue);
+axes("$x$","$y$");
+</asy>
+
+In the special case $k=0$ the blue curve is just the point $(0,0)$, and as $0\cdot 0=0$, this point is on the red curve as well, hence they intersect. 
+
+The case $k<0$ is symmetric to $k>0$: the blue curve remains the same and the red curve is flipped according to the $x$ axis. Hence we just need to focus on $k>0$.
+
+Clearly, on the red curve there will always be points arbitrarily far from the origin: for example, as $x$ approaches 0, $y$ approaches $\infty$. Hence the red curve intersects the blue one if and only if it contains a point whose distance from the origin is at most $k$.
+
+
+At this point we can guess that on the red curve the point where $x=y$ is always closest to the origin, and skip the rest of this solution.
+
+
+For an exact solution, fix $k$ and consider any point $(x,y)$ on the red curve. Its distance from the origin is $\sqrt{ x^2 + (k/x)^2 }$. To minimize this distance, it is enough to minimize $x^2 + (k/x)^2$. By the [[Arithmetic Mean-Geometric Mean Inequality]] we get that this value is at least $2k$, and that equality holds whenever $x^2 = (k/x)^2$, i.e., $x=\pm\sqrt k$.
+
+
+Now recall that the red curve intersects the blue one if and only if its closest point is at most $k$ from the origin. We just computed that the distance between the origin and the closest point on the red curve is $\sqrt{2k}$. Therefore, we want to find all positive integers $k$ such that $\sqrt{2k} > k$.
+
+Clearly the only such integer is $k=1$, hence the two curves are only disjoint for $k=1$ and $k=-1$. 
+This is a total of $\boxed{2\ \textbf{(C)}}$ values.

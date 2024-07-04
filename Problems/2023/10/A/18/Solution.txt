@@ -1,0 +1,8 @@
+==Solution 1==
+
+Note Euler's formula where $\text{Vertices}+\text{Faces}-\text{Edges}=2$. 
+There are $12$ faces.
+There are $24$ edges, because there are 12 faces each with four edges and each edge is shared by two faces. 
+Now we know that there are $2-12+24=14$ vertices. 
+Now note that the sum of the degrees of all the points is $2$(the number of edges). Let $x=$ the number of vertices with $3$ edges. Now we know $\frac{3x+4(14-x)}{2}=24$. Solving this equation gives $x = \boxed{\textbf{(D) }8}$.
+~aiden22gao ~zgahzlkw (LaTeX) ~ESAOPS (Simplified)

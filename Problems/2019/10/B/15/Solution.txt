@@ -1,0 +1,15 @@
+==Solution 1==
+
+First of all, let the two sides which are congruent be $x$ and $y$, where $y > x$. The only way that the conditions of the problem can be satisfied is if $x$ is the shorter leg of $T_{2}$ and the longer leg of $T_{1}$, and $y$ is the longer leg of $T_{2}$ and the hypotenuse of $T_{1}$.
+
+Notice that this means the value we are looking for is the square of $\sqrt{x^{2}+y^{2}} \cdot \sqrt{y^{2}-x^{2}} = \sqrt{y^{4}-x^{4}}$, which is just $y^{4}-x^{4}$.
+
+The area conditions give us two equations: $\frac{xy}{2} = 2$ and $\frac{x\sqrt{y^{2}-x^{2}}}{2} = 1$.
+
+This means that $y = \frac{4}{x}$ and that $\frac{4}{x^{2}} = y^{2} - x^{2}$.
+
+Taking the second equation, we get $x^{2}y^{2} - x^{4} = 4$, so since $xy = 4$, $x^{4} = 12$.
+
+Since $y = \frac{4}{x}$, we get $y^{4} = \frac{256}{12} = \frac{64}{3}$.
+
+The value we are looking for is just $y^{4}-x^{4} = \frac{64-36}{3} = \frac{28}{3}$ so the answer is $\boxed{\textbf{(A) }\frac{28}{3}}$.

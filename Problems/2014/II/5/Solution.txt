@@ -1,0 +1,9 @@
+==Solution 1==
+Because the coefficient of <math>x^2</math> in both <math>p(x)</math> and <math>q(x)</math> is 0, the remaining root of <math>p(x)</math> is <math>-(r+s)</math>, and the remaining root of <math>q(x)</math> is <math>-(r+s+1)</math>. The coefficients of <math>x</math> in <math>p(x)</math> and <math>q(x)</math> are both equal to <math>a</math>, and equating the two coefficients gives
+<cmath>rs-(r+s)^2 = (r+4)(s-3)-(r+s+1)^2 </cmath>from which <math>s = \tfrac 12 (5r+13)</math>. The product of the roots of <math>p(x)</math> differs from that of <math>q(x)</math> by <math>240</math>, so<cmath>(r+4)\cdot \tfrac 12 (5r+7)\cdot \tfrac 12(7r+15)- r\cdot \tfrac 12 (5r+13)\cdot \tfrac 12(7r+13)=240</cmath>from which <math>r^2+4r-5 =0</math>, with roots <math>r=1</math> and <math>r=-5</math>.
+
+If <math>r = 1</math>, then the roots of <math>p(x)</math> are <math>r=1</math>, <math>s=9</math>, and <math>-(r+s)=-10</math>, and <math>b=-rst=90</math>. 
+
+If <math>r = -5</math>, then the roots of <math>p(x)</math> are <math>r=-5</math>, <math>s=-6</math>, and <math>-(r+s)=11</math>, and <math>b=-rst=-330</math>. 
+
+Therefore the requested sum is <math>|- 330| + |90| = \boxed{420}</math>.

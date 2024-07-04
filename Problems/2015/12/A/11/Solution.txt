@@ -1,0 +1,3 @@
+==Solution==
+
+Isabella can get $0$ lines if the circles are concentric, $1$ if internally tangent, $2$ if overlapping, $3$ if externally tangent, and $4$ if non-overlapping and not externally tangent. There are $\boxed{\textbf{(D)}\ 5}$ values of $k$.

@@ -1,0 +1,4 @@
+==Solution==
+Writing each equation in slope-intercept form, we get $y=\frac{a}{2}x-\frac{1}{2}c$ and $y=-\frac{2}{b}x-\frac{c}{b}$. We observe the slope of each equation is $\frac{a}{2}$ and $-\frac{2}{b}$, respectively. Because the slope of a line perpendicular to a line with slope $m$ is $-\frac{1}{m}$, we see that $\frac{a}{2}=-\frac{1}{-\frac{2}{b}}$ because it is given that the two lines are perpendicular. This equation simplifies to $a=b$.
+
+Because $(1, -5)$ is a solution of both equations, we deduce $a \times 1-2 \times -5=c$ and $2 \times 1+b \times -5=-c$. Because we know that $a=b$, the equations reduce to $a+10=c$ and $2-5a=-c$. Solving this system of equations, we get $c=\boxed{\textbf{(E)}\ 13}$

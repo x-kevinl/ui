@@ -1,0 +1,2 @@
+==Solution 1==
+Note that all the coefficients of odd-powered terms is an odd number of odd degree terms multiplied together, and all coefficients of even-powered terms have an even number of odd degree terms multiplied together. Since every odd degree term is negative, and every even degree term is positive, the sum is just equal to <math>Q(-1)=P(-1)^{5}=\left( \dfrac{3}{2}\right)^{5}=\dfrac{243}{32}</math>, so the desired answer is <math>243+32=\boxed{275}</math>.

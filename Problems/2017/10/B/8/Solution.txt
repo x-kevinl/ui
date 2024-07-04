@@ -1,0 +1,17 @@
+==Solution 1==
+Since $AB = AC$, then $\triangle ABC$ is isosceles, so $BD = CD$. Therefore, the coordinates of $C$ are $(-1 - 3, 3 + 6) = \boxed{\textbf{(C) } (-4,9)}$.
+
+<asy>
+pair A,B,C,D;
+A=(11,9);
+B=(2,-3);
+C=(-4,9);
+D=(-1,3);
+draw(A--B--C--cycle);
+draw(A--D);
+draw(rightanglemark(A,D,B));
+label("$A$",A,E);
+label("$B$",B,S);
+label("$D$",D,W);
+label("$C$",C,N);
+</asy>

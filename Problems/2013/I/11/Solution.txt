@@ -1,0 +1,23 @@
+==Solution 1==
+<math>N</math> must be some multiple of <math>\text{lcm}(14, 15, 16)= 2^{4}\cdot 3\cdot 5\cdot 7</math> ; this <math>lcm</math> is hereby denoted <math>k</math> and <math>N = qk</math>.
+
+<math>1</math>, <math>2</math>, <math>3</math>, <math>4</math>, <math>5</math>, <math>6</math>, <math>7</math>, <math>8</math>, <math>10</math>, and <math>12</math> all divide <math>k</math>, so <math>x, y, z = 9, 11, 13</math>
+
+We have the following three modulo equations:
+
+<math>nk\equiv 3\pmod{9}</math>
+
+<math>nk\equiv 3\pmod{11}</math>
+
+<math>nk\equiv 3\pmod{13}</math>
+
+To solve the equations, you can notice the answer must be of the form <math>9\cdot 11\cdot 13\cdot m + 3</math> where <math>m</math> is an integer. 
+
+This must be divisible by <math>lcm</math> <math>(14, 15, 16)</math>, which is <math>560\cdot 3</math>. 
+
+Therefore, <math>\frac{9\cdot 11\cdot 13\cdot m + 3}{560\cdot 3} = q</math>, which is an integer. Factor out <math>3</math> and divide to get <math>\frac{429m+1}{560} = q</math>. 
+Therefore, <math>429m+1=560q</math>. We can use [[Bezout's Lemma|Bezout's Identity]] or a [[Euclidean algorithm]] bash to solve for the least of <math>m</math> and <math>q</math>. 
+
+We find that the least <math>m</math> is <math>171</math> and the least <math>q</math> is <math>131</math>. 
+
+Since we want to factor <math>1680\cdot q</math>, don't multiply: we already know that the prime factors of <math>1680</math> are <math>2</math>, <math>3</math>, <math>5</math>, and <math>7</math>, and since <math>131</math> is prime, we have <math>2 + 3 + 5 + 7 + 131 = \boxed{148}</math>.

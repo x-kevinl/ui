@@ -1,0 +1,13 @@
+==Solution 1==
+Notice that we must have <cmath>\frac{f(f(z))-f(z)}{f(z)-z}=-\frac{f(f(z))-f(z)}{z-f(z)}\in i\mathbb R .</cmath>However, <math>f(t)-t=t(t-20)</math>, so
+<cmath>
+\begin{align*}
+\frac{f(f(z))-f(z)}{f(z)-z}&=\frac{(z^2-19z)(z^2-19z-20)}{z(z-20)}\\
+&=\frac{z(z-19)(z-20)(z+1)}{z(z-20)}\\
+&=(z-19)(z+1)\\
+&=(z-9)^2-100.
+\end{align*}
+</cmath>
+Then, the real part of <math>(z-9)^2</math> is <math>100</math>. Since <math>\text{Im}(z-9)=\text{Im}(z)=11</math>, let <math>z-9=a+11i</math>. Then, <cmath>100=\text{Re}((a+11i)^2)=a^2-121\implies a=\pm\sqrt{221}.</cmath>It follows that <math>z=9+\sqrt{221}+11i</math>, and the requested sum is <math>9+221=\boxed{230}</math>.
+
+(Solution by TheUltimate123)

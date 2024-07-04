@@ -1,0 +1,5 @@
+== Problem ==
+An organization has $30$ employees, $20$ of whom have a brand A computer while the other $10$ have a brand B computer. For security, the computers can only be connected to each other and only by cables. The cables can only connect a brand A computer to a brand B computer. Employees can communicate with each other if their computers are directly connected by a cable or by relaying messages through a series of connected computers. Initially, no computer is connected to any other. A technician arbitrarily selects one computer of each brand and installs a cable between them, provided there is not already a cable between that pair. The technician stops once every employee can communicate with each other. What is the maximum possible number of cables used?
+
+$\textbf{(A)}\ 190  \qquad\textbf{(B)}\  191 \qquad\textbf{(C)}\  192 \qquad\textbf{(D)}\
+ 195 \qquad\textbf{(E)}\ 196$

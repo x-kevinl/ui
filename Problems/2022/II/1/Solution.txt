@@ -1,0 +1,4 @@
+==Solution 1==
+Let <math>x</math> be the number of people at the party before the bus arrives. We know that <math>x\equiv 0\pmod {12}</math>, as <math>\frac{5}{12}</math> of people at the party before the bus arrives are adults. Similarly, we know that <math>x + 50 \equiv 0 \pmod{25}</math>, as <math>\frac{11}{25}</math> of the people at the party are adults after the bus arrives. <math>x + 50 \equiv 0 \pmod{25}</math> can be reduced to <math>x \equiv 0 \pmod{25}</math>, and since we are looking for the minimum amount of people, <math>x</math> is <math>300</math>. That means there are <math>350</math> people at the party after the bus arrives, and thus there are <math>350 \cdot \frac{11}{25} = \boxed{154}</math> adults at the party.
+
+~eamo

@@ -1,0 +1,2 @@
+==Solution==
+Let $m$ be the cost of a muffin and $b$ be the cost of a banana. From the given information, $$2m+16b=2(4m+3b)=8m+6b\Rightarrow 10b=6m\Rightarrow m=\frac{10}{6}b=\boxed{\frac{5}{3}\rightarrow \text{(B)}}$$.

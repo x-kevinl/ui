@@ -1,0 +1,5 @@
+==Problem==
+
+When the World Wide Web first became popular in the $1990$s, download speeds reached a maximum of about $56$ kilobits per second. Approximately how many minutes would the download of a $4.2$-megabyte song have taken at that speed? (Note that there are $8000$ kilobits in a megabyte.)
+
+$\textbf{(A) } 0.6 \qquad \textbf{(B) } 10 \qquad \textbf{(C) } 1800 \qquad \textbf{(D) } 7200 \qquad \textbf{(E) } 36000$

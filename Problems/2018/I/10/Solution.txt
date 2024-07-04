@@ -1,0 +1,25 @@
+==Solution 1==
+We divide this up into casework.  The "directions" the bug can go are <math>\text{Clockwise}</math>, <math>\text{Counter-Clockwise}</math>, and <math>\text{Switching}</math>.  Let an <math>I</math> signal going clockwise (because it has to be in the ''inner'' circle), an <math>O</math> signal going counter-clockwise, and an <math>S</math> switching between inner and outer circles.  An example string of length fifteen that gets the bug back to <math>A</math> would be <math>ISSIIISOOSISSII</math>.
+For the bug to end up back at <math>A</math>, the difference between the number of <math>I</math>'s and <math>O</math>'s must be a multiple of <math>5</math>.
+;Case 1  --  There are 15 more <math>I</math>'s than <math>O</math>'s.
+:There is clearly <math>1</math> way for this to happen.
+
+;Case 2  --  There are <math>5</math> more <math>I</math>'s than <math>O</math>'s.
+:We split this case up into several sub-cases based on the number of <math>S</math>'s.
+:;Sub-case 1  --  There are <math>10</math> <math>S</math>'s and <math>5</math> <math>I</math>'s.
+::Notice that the number of ways to order the <math>I</math>'s and <math>O</math>'s are independent assortments because the <math>I</math>'s must be in the "even" spaces between <math>S</math>'s (i.e. before the 1st <math>S</math>, between the 2nd and 3rd <math>S</math>'s, etc.), while the <math>O</math>'s must be in the "odd" spaces.
+
+::There are <math>6</math> places to put the <math>I</math>'s (after the 0th, 2nd, 4th, 6th, 8th, and 10th <math>S</math>'s), and <math>4</math> places to put the (0) <math>O</math>'s.  We use stars and bars to get an answer of <math>\binom{10}{5}\binom{4}{0}</math>
+:;Sub-case 2  --  There are <math>8</math> <math>S</math>'s, <math>6</math> <math>I</math>'s, and <math>1</math> <math>O</math>.
+::Similarly and by using stars and bars, we get an amount of <math>\binom{10}{4}\binom{4}{1}</math>
+:All the other  sub-cases are similar, with a total of <math>\binom{10}{5}\binom{4}{0}+\binom{10}{4}\binom{4}{1}+\cdots+\binom{10}{1}\binom{4}{4}=\binom{14}{5}=2002</math> by [https://artofproblemsolving.com/wiki/index.php?title=Combinatorial_identity#Vandermonde.27s_Identity Vandermonde's Identity].
+
+;Case 3  --  There are <math>5</math> more <math>O</math>'s than <math>I</math>'s.
+:This case is similar to the other case.
+:Here is an example of a sub-case for this case.
+:;Sub-case:  There are <math>10</math> <math>S</math>'s and <math>5</math> <math>O</math>'s.
+::There are <math>\binom{9}{4}\binom{5}{0}</math> ways to do this.
+:We can see now that the pattern is going to be <math>\binom{9}{4}\binom{5}{0}+\binom{9}{3}\binom{5}{1}+\cdots+\binom{9}{0}\binom{5}{4}=\binom{14}{4}=1001</math>.
+
+
+So, the total number of ways is <math>1+2002+1001=3004</math> which gives <math>\boxed{004}</math> as the answer.

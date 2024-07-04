@@ -1,0 +1,29 @@
+==Solution 1==
+Answer: (D)
+
+$\frac{x + y}{2} = 10 a+b$ for some $1\le a\le 9 $, $0\le b\le 9$.
+
+$\sqrt{xy} = 10 b+a$
+
+Squaring the first and second equations, $\frac{x^2 + 2xy + y^2}{4}=100 a^2 + 20 ab + b^2$
+
+$xy = 100b^2 + 20ab + a^2$
+
+Subtracting the previous two equations, $\frac{x^2 + 2xy + y^2}{4} - xy = \frac{x^2 - 2xy + y^2}{4} = \left(\frac{x-y}{2}\right)^2 = 99 a^2 - 99 b^2 = 99(a^2 - b^2)$
+
+
+<br />
+$|x-y| = 2\sqrt{99(a^2 - b^2)}=6\sqrt{11(a^2 - b^2)}$
+
+Note that for x-y to be an integer, $(a^2 - b^2)$ has to be $11n$ for some perfect square $n$. Since $a$ is at most $9$, $n = 1$ or $4$
+
+If $n = 1$, $|x-y| = 66$, if $n = 4$, $|x-y| = 132$. In AMC, we are done. Otherwise, we need to show that $n=4$, or $a^2 -b^2 = 44$ is impossible.
+
+$(a-b)(a+b) = 44$ -> $a-b = 1$, or $2$ or $4$ and $a+b = 44$, $22$, $11$ respectively. And since $a+b \le 18$, $a+b = 11$, $a-b = 4$, but there is no integer solution for $a$, $b$.
+
+===Short Cut===
+
+We can arrive at $|x-y| = 6\sqrt{11(a^2 - b^2)}$ using the method above. Because we know that $|x-y|$ is an integer, it must be a multiple of 6 and 11. Hence the answer is $66.$
+
+In addition:
+Note that $11n$ with $n = 1$ may be obtained with $a = 6$ and $b = 5$ as $a^2 - b^2 = 36 - 25 = 11$.

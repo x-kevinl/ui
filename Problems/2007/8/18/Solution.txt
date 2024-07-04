@@ -1,0 +1,9 @@
+==Solution==
+We can first make a small example to find out $A$ and $B$. So, 
+
+$303\times505=153015 $
+
+The ones digit plus thousands digit is $5+3=8$.
+
+Note that the ones and thousands digits are, added together, $8$. (and so on...) So the answer is $\boxed{\textbf{(D)}\ 8}$
+This is a direct multiplication way.

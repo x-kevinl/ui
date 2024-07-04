@@ -1,0 +1,10 @@
+== Solution 1 ==
+
+There are two possibilities regarding the parents.
+
+1) Both are in the same store. In this case, we can treat them both as a single bunny, and they can go in any of the 4 stores. The 3 baby bunnies can go in any of the remaining 3 stores. There are $4 \cdot 3^3 = 108$ combinations.
+
+
+2) The two are in different stores. In this case, one can go in any of the 4 stores, and the other can go in any of the 3 remaining stores. The 3 baby bunnies can each go in any of the remaining 2 stores. There are $4 \cdot 3 \cdot 2^3 = 96$ combinations.
+
+Adding up, we get $108 + 96 = 204$ combinations.

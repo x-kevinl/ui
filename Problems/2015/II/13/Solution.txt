@@ -1,0 +1,15 @@
+==Solution 1==
+
+If <math>n = 1</math>, <math>a_n = \sin(1) > 0</math>.  Then if <math>n</math> satisfies <math>a_n < 0</math>, <math>n \ge 2</math>, and
+<cmath>a_n = \sum_{k=1}^n \sin(k) = \cfrac{1}{\sin{1}} \sum_{k=1}^n\sin(1)\sin(k) = \cfrac{1}{2\sin{1}} \sum_{k=1}^n\cos(k - 1) - \cos(k + 1) = \cfrac{1}{2\sin(1)} [\cos(0) + \cos(1) - \cos(n) - \cos(n + 1)].</cmath>
+Since <math>2\sin 1</math> is positive, it does not affect the sign of <math>a_n</math>.  Let <math>b_n = \cos(0) + \cos(1) - \cos(n) - \cos(n + 1)</math>.  Now since <math>\cos(0) + \cos(1) = 2\cos\left(\cfrac{1}{2}\right)\cos\left(\cfrac{1}{2}\right)</math> and <math>\cos(n) + \cos(n + 1) = 2\cos\left(n + \cfrac{1}{2}\right)\cos\left(\cfrac{1}{2}\right)</math>, <math>b_n</math> is negative if and only if <math>\cos\left(\cfrac{1}{2}\right) < \cos\left(n + \cfrac{1}{2}\right)</math>, or when <math>n \in [2k\pi - 1, 2k\pi]</math>.  Since <math>\pi</math> is irrational, there is always only one integer in the range, so there are values of <math>n</math> such that <math>a_n < 0</math> at <math>2\pi, 4\pi, \cdots</math>.  Then the hundredth such value will be when <math>k = 100</math> and <math>n = \lfloor 200\pi \rfloor = \lfloor 628.318 \rfloor = \boxed{628}</math>.
+===Clearer Explanation for the End===
+Notice that we want <math>\cos(n+1/2)>\cos(1/2).</math>
+
+Notice that the only interval in which this is true, is where <math>-1/2 < n + 1/2 < 1/2.</math>
+
+Thus, we need <math>-1<n<0.</math> So we have <math>-1+2\pi k <n <0+2\pi k.</math>
+
+But we want the 100th solution. Which means <math>n</math> is in between <math>200\pi - 1 < n < 200 \pi.</math> So n = 628.
+
+~mathboy282

@@ -1,0 +1,7 @@
+==Solution==
+Since the sum of the first <math>2011</math> terms is <math>200</math>, and the sum of the first <math>4022</math> terms is <math>380</math>, the sum of the second <math>2011</math> terms is <math>180</math>.
+This is decreasing from the first 2011, so the common ratio is less than one.
+
+Because it is a geometric sequence and the sum of the first 2011 terms is <math>200</math>, second <math>2011</math> is <math>180</math>, the ratio of the second <math>2011</math> terms to the first <math>2011</math> terms is <math>\frac{9}{10}</math>. Following the same pattern, the sum of the third <math>2011</math> terms is <math>\frac{9}{10}*180 = 162</math>.
+
+Thus, <math>200+180+162=542</math>, so the sum of the first <math>6033</math> terms is <math>\boxed{542}</math>.

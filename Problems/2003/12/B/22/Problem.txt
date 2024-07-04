@@ -1,0 +1,26 @@
+== Problem ==
+Let $ABCD$ be a [[rhombus]] with $AC = 16$ and $BD = 30$. Let $N$ be a point on $\overline{AB}$, and let $P$ and $Q$ be the feet of the perpendiculars from $N$ to $\overline{AC}$ and $\overline{BD}$, respectively. Which of the following is closest to the minimum possible value of $PQ$?
+
+<center><asy>
+size(200);
+defaultpen(0.6);
+pair O = (15*15/17,8*15/17), C = (17,0), D = (0,0), P = (25.6,19.2), Q = (25.6, 18.5);
+pair A = 2*O-C, B = 2*O-D;
+pair P = (A+O)/2, Q=(B+O)/2, N=(A+B)/2;
+draw(A--B--C--D--cycle);
+draw(A--O--B--O--C--O--D);
+draw(P--N--Q);
+label("\(A\)",A,WNW);
+label("\(B\)",B,ESE);
+label("\(C\)",C,ESE);
+label("\(D\)",D,SW);
+label("\(P\)",P,SSW);
+label("\(Q\)",Q,SSE);
+label("\(N\)",N,NNE);
+</asy></center>
+
+$\mathrm{(A)}\ 6.5
+\qquad\mathrm{(B)}\ 6.75 
+\qquad\mathrm{(C)}\ 7
+\qquad\mathrm{(D)}\ 7.25
+\qquad\mathrm{(E)}\ 7.5$

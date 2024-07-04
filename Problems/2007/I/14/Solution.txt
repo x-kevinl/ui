@@ -1,0 +1,157 @@
+==Solutions==
+
+=== Solution 1 ===
+Define a function <math>f(n)</math> on the non-negative integers, as <cmath>f(n) = \frac{a_n^2 + a_{n+1}^2}{a_na_{n+1}} = \frac{a_n}{a_{n+1}}+\frac{a_{n+1}}{a_{n}}</cmath>
+We want <math>\left\lfloor f(2006) \right\rfloor</math>. 
+
+Consider the relation <math>a_{n+1}a_{n-1}=a_{n}^{2}+2007</math>. Dividing through by <math>a_{n}a_{n-1}</math>, we get 
+<cmath>.\phantom{------------} \frac{a_{n+1}}{a_{n}} = \frac{a_{n}}{a_{n-1}} + \frac{2007}{a_{n}a_{n-1}} \phantom{------------} (1)</cmath>
+and dividing through by <math>a_{n}a_{n+1}</math>, we get 
+<cmath>.\phantom{------------} \frac{a_{n-1}}{a_{n}} = \frac{a_{n}}{a_{n+1}} + \frac{2007}{a_{n}a_{n+1}} \phantom{------------} (2)</cmath>
+Adding LHS of <math>(1)</math> with RHS of <math>(2)</math> (and vice-versa), we get
+<cmath>\frac{a_{n+1}}{a_{n}} + \frac{a_{n}}{a_{n+1}} + \frac{2007}{a_{n}a_{n+1}} = \frac{a_{n}}{a_{n-1}} + \frac{a_{n-1}}{a_{n}} + \frac{2007}{a_{n}a_{n-1}} </cmath>
+i.e.
+<cmath>f(n)+ \frac{2007}{a_{n}a_{n+1}} = f(n-1) + \frac{2007}{a_{n}a_{n-1}}</cmath>
+Summing over <math>n=1</math> to <math>n=2006</math>, we notice that most of the terms on each side cancel against the corresponding term on the other side. We are left with
+<cmath>f(2006) + \frac{2007}{a_{2006}a_{2007}} = f(0) + \frac{2007}{a_{1}a_{0}} </cmath>
+We have <math>f(0) = 2</math>, and <math>2007/a_0a_1 = 2007/9 = 223</math>. So
+<cmath>f(2006) = 2 + 223 - \frac{2007}{a_{2006}a_{2007}} = 224 + \left( 1 - \frac{2007}{a_{2006}a_{2007}}\right)</cmath>
+Since all the <math>a_i</math> are positive, <math>(1)</math> tells us that the ratio <math>a_{n+1}/a_n</math> of successive terms is increasing. Since this ratio starts with <math>a_1/a_0 = 1</math>, this means that the sequence <math>(a_n)</math> is increasing. Since <math>a_3=672</math> already, we must have <math>a_{2006}a_{2007} > 672^2 > 2007</math>. It follows that <math>\left\lfloor f(2006) \right\rfloor = \boxed{224}</math>.
+
+=== Solution 2 ===
+We are given that
+
+<math>a_{n+1}a_{n-1}= a_{n}^{2}+2007</math>,
+<math>a_{n-1}^{2}+2007 = a_{n}a_{n-2}</math>.
+
+Add these two equations to get
+
+:<math>a_{n-1}(a_{n-1}+a_{n+1}) = a_{n}(a_{n}+a_{n-2})</math>
+
+:<math>\frac{a_{n+1}+a_{n-1}}{a_{n}}= \frac{a_{n}+a_{n-2}}{a_{n-1}}</math>.
+
+This is an [[invariant]]. Defining <math>b_{i}= \frac{a_{i}}{a_{i-1}}</math> for each <math>i \ge 2</math>, the above equation means
+
+<math>b_{n+1}+\frac{1}{b_{n}}= b_{n}+\frac{1}{b_{n-1}}</math>.
+
+We can thus calculate that <math>b_{2007}+\frac{1}{b_{2006}}= b_{3}+\frac{1}{b_{2}}= 225</math>. Using the equation <math>a_{2007}a_{2005}=a_{2006}^{2}+2007</math> and dividing both sides by <math>a_{2006}a_{2005}</math>, notice that <math>b_{2007}= \frac{a_{2007}}{a_{2006}}= \frac{a_{2006}^{2}+2007}{a_{2006}a_{2005}}> \frac{a_{2006}}{a_{2005}}= b_{2006}</math>. This means that
+
+<math>b_{2007}+\frac{1}{b_{2007}}< b_{2007}+\frac{1}{b_{2006}}= 225</math>. It is only a tiny bit less because all the <math>b_i</math> are greater than <math>1</math>, so we conclude that the floor of <math>\frac{a_{2007}^{2}+a_{2006}^{2}}{a_{2007}a_{2006}}= b_{2007}+\frac{1}{b_{2007}}</math> is <math>\boxed{224}</math>.
+
+=== Solution 3 ===
+The equation <math>a_{n+1}a_{n-1}-a_n^2=2007</math> looks like the determinant <cmath>\left|\begin{array}{cc}a_{n+1}&a_n\\a_n&a_{n-1}\end{array}\right|=2007.</cmath>
+Therefore, the determinant of this matrix is invariant. Guessing that this sequence might be a linear recursion because of the matrix form given below, we define the sequence <math>b_n</math> defined by <math>b_1=b_2=3</math> and <math>b_{n+1}=\alpha b_n+\beta b_{n-1}</math> for <math>n\ge 2</math>. We wish to find <math>\alpha</math> and <math>\beta</math> such that <math>a_n=b_n</math> for all <math>n\ge 1</math>. To do this, we use the following matrix form of a linear recurrence relation
+
+<cmath>\left(\begin{array}{cc}b_{n+1}&b_n\\b_n&b_{n-1}\end{array}\right)=\left(\begin{array}{cc}\alpha&\beta\\1&0\end{array}\right)\left(\begin{array}{cc}b_{n}&b_{n-1}\\b_{n-1}&b_{n-2}\end{array}\right).</cmath> 
+
+When we take determinants, this equation becomes
+
+<cmath>\text{det}\left(\begin{array}{cc}b_{n+1}&b_n\\b_n&b_{n-1}\end{array}\right)=\text{det}\left(\begin{array}{cc}\alpha&\beta\\1&0\end{array}\right)\text{det}\left(\begin{array}{cc}b_{n}&b_{n-1}\\b_{n-1}&b_{n-2}\end{array}\right).</cmath>
+
+We want <cmath>\text{det}\left(\begin{array}{cc}b_{n+1}&b_n\\b_n&b_{n-1}\end{array}\right)=2007</cmath> for all <math>n</math>. Therefore, we replace the two matrices by <math>2007</math> to find that 
+
+<cmath>2007=\text{det}\left(\begin{array}{cc}\alpha&\beta\\1&0\end{array}\right)\cdot 2007</cmath>
+<cmath>1=\text{det}\left(\begin{array}{cc}\alpha&\beta\\1&0\end{array}\right)=-\beta.</cmath>
+Therefore, <math>\beta=-1</math>. Computing that <math>a_3=672</math>, and using the fact that <math>b_3=\alpha b_2-b_1</math>, we conclude that <math>\alpha=225</math>. Clearly, <math>a_1=b_1</math>, <math>a_2=b_2</math>, and <math>a_3=b_3</math>. We claim that <math>a_n=b_n</math> for all <math>n\ge 1</math>. We proceed by [[induction]]. If <math>a_k=b_k</math> for all <math>k\le n</math>, then clearly, <cmath>b_nb_{n-2}-b_{n-1}^2=a_na_{n-2}-a_{n-1}^2=2007.</cmath> We also know by the definition of <math>b_{n+1}</math> that
+
+<cmath>\text{det}\left(\begin{array}{cc}b_{n+1}&b_n\\b_n&b_{n-1}\end{array}\right)=\text{det}\left(\begin{array}{cc}\alpha&\beta\\1&0\end{array}\right)\text{det}\left(\begin{array}{cc}b_{n}&b_{n-1}\\b_{n-1}&b_{n-2}\end{array}\right).</cmath>
+
+We know that the RHS is <math>2007</math> by previous work. Therefore, <math>b_{n+1}b_{n-1}-b_n^2=2007</math>. After substuting in the values we know, this becomes <math>b_{n+1}a_{n-1}-a_n^2=2007</math>.  Thinking of this as a linear equation in the variable <math>b_{n+1}</math>, we already know that this has the solution <math>b_{n+1}=a_{n+1}</math>. Therefore, by induction, <math>a_n=b_n</math> for all <math>n\ge 1</math>. We conclude that <math>a_n</math> satisfies the linear recurrence <math>a_{n+1}=225a_n-a_{n-1}</math>.
+
+It's easy to prove that <math>a_n</math> is a strictly increasing sequence of integers for <math>n\ge 3</math>. Now 
+
+<cmath>\frac{a_{2007}^2+a_{2006}^2}{a_{2007}a_{2006}}=\frac{a_{2007}}{a_{2006}}+\frac{a_{2006}}{a_{2007}}=\frac{225a_{2006}-a_{2005}}{a_{2006}}+\frac{a_{2006}}{a_{2007}}.</cmath>
+
+<cmath>=225+\frac{a_{2006}}{a_{2007}}-\frac{a_{2005}}{a_{2006}}=225+\frac{a_{2006}^2-a_{2005}a_{2007}}{a_{2005}a_{2006}}.</cmath>
+
+<cmath>=225-\frac{2007}{a_{2005}a_{2006}}.</cmath>
+
+The sequence certainly grows fast enough such that <math>\frac{2007}{a_{2005}a_{2006}}<1</math>. Therefore, the largest integer less than or equal to this value is <math>\boxed{224}</math>.
+
+===Solution 4 ( generalized )===
+This is a more elementary and rigorous solution to a slightly generalized version. The defining recursive sequence is generalized to 
+
+<cmath>
+a_{n+1}a_{n-1} = a_n^2 + 9k, ---------(1)
+</cmath>
+where <math> k </math> is a positive integer and <math> a_0 = a_1 = 3. </math>
+
+Lemma 1  : For <math>n \geq 1</math>,
+<cmath>
+ a_{n+1} = ( k + 2)a_n - a_{n-1}. ---------(2)
+</cmath>
+We shall prove by induction. From (1), <math> a_2 = 3k + 3 </math>. From the lemma, <math>a_2 = (k + 2) 3 - 3 = 3k + 3.</math> Base case proven. Assume that the lemma is true for some <math> t \geq 1 </math>. Then, eliminating the <math>a_{t-1}</math> using (1) and (2) gives
+
+<cmath>
+ (k+2)a_ta_{t+1} = a_t^2 + a_{t+1}^2 + 9k. ---------(3)
+</cmath>
+
+It follows from (2) that 
+
+<cmath>
+(k+2)a_{t+1} - a_t  =\frac{(k+2)a_{t+1}a_t - a_t^2}{a_t}  =\frac{a_{t+1}^2 + 9k}{a_t} =a_{t+2},
+</cmath>
+
+where the last line followed from (1) for case <math> n = t+1 </math>.
+
+Lemma 2 : For <math>n \geq 0,</math>
+<cmath>
+a_{n+1} \geq a_{n}.
+</cmath>
+Base case is obvious. Assume that <math>a_{t+1} \geq a_{t}</math> for some <math>t \geq 0</math>. Then it follows that 
+<cmath>
+a_{t+2} =\frac{a_{t+1}^2 + 9k}{a_t}  = a_{t+1}(\frac{a_{t+1}}{a_t} ) + 9k \geq a_{t+1} + 9k  > a_{t+1}.
+</cmath>
+
+This completes the induction.
+
+Lemma 3 : For <math>n \geq 1,</math>
+<cmath>
+a_n a_{n+1} > 9k
+</cmath>
+
+Using (1) and Lemma 2, for <math>n \geq 1,</math> 
+<cmath>
+a_{n+1}a_n \geq a_{n+1}a_{n-1}  = a_n^2 + 9k  > 9k 
+</cmath>
+
+Finally, using (3), for <math>n \geq 1, </math>
+<cmath>
+\frac{a_n^2 + a_{n+1}^2}{a_n a_{n+1}} =\frac{(k+2)a_n a_{n+1} - 9k}{a_n a_{n+1}} = k+2 -\frac{9k}{a_n a_{n+1}}.
+</cmath>
+Using lemma 3, the largest integer less than or equal to this value would be <math>k + 1</math>.
+
+=== Solution 5 (pure algebra)===
+We will try to manipulate <math>\frac{a_0^2+a_1^2}{a_0a_1}</math> to get <math>\frac{a_1^2+a_2^2}{a_1a_2}</math>. 
+
+<math>\frac{a_0^2+a_1^2}{a_0a_1} = \frac{a_0+\frac{a_1^2}{a_0}}{a_1} = \frac{a_0+\frac{a_1^2+2007}{a_0}-\frac{2007}{a_0}}{a_1}</math>
+Using the recurrence relation, 
+<math>= \frac{a_0+a_2-\frac{2007}{a_0}}{a_1}  = \frac{a_0a_2+a_2^2-\frac{2007a_2}{a_0}}{a_1a_2}</math>
+Applying the relation to <math>a_0a_2</math>, 
+<math>= \frac{a_1^2+2007+a_2^2-\frac{2007a_2}{a_0}}{a_1a_2} = \frac{a_1^2+a_2^2}{a_1a_2}+\frac{2007}{a_1a_2}-\frac{2007}{a_0a_1}</math>
+
+We can keep on using this method to get that 
+<math>\frac{a_0^2+a_1^2}{a_0a_1} = \frac{a_{2006}^2+a_{2007}^2}{a_{2006}a_{2007}}+\frac{2007}{a_{2006}a_{2007}}-\frac{2007}{a_{2005}a_{2006}}+\frac{2007}{a_{2005}a_{2006}}-\ldots-\frac{2007}{a_{0}a_{1}}</math>
+
+This telescopes to 
+<math>\frac{a_0^2+a_1^2}{a_0a_1} = \frac{a_{2006}^2+a_{2007}^2}{a_{2006}a_{2007}}+\frac{2007}{a_{2006}a_{2007}}-\frac{2007}{a_{0}a_{1}}</math>
+
+or 
+<math>\frac{a_{2006}^2+a_{2007}^2}{a_{2006}a_{2007}} = \frac{a_0^2+a_1^2}{a_0a_1}+\frac{2007}{a_{0}a_{1}}-\frac{2007}{a_{2006}a_{2007}}</math>
+
+Finding the first few values, we notice that they increase rapidly, so <math>\frac{2007}{a_{2006}a_{2007}} < 1</math>. Calculating the other values, 
+<math>\frac{a_{2006}^2+a_{2007}^2}{a_{2006}a_{2007}} = 2+223-\frac{2007}{a_{2006}a_{2007}}</math>.
+
+The greatest number that does not exceed this is <math>\boxed{224}</math>
+
+=== Solution 6 (using limits) ===
+
+Let's start by computing the first couple terms of the given sequence so we know what we're working with. It's given that <math>a_0 = a_1 = 0</math>, and solving for <math>a_2</math> and <math>a_3</math> using the given relation we get <math>a_2 = 672 = 3(224)</math> and <math>a_3 = 3(224^{2} + 223)</math>, respectively. It will be clear why I decided to factor these expressions as I did momentarily. 
+
+Next, let's see what the expression <math>\frac{a_{n}^{2}+a_{n + 1}^{2}}{a_{n}a_{n + 1}}</math> looks like for small values of <math>n</math>. For <math>n = 1</math>, we get <math>\frac{1 + 224^2}{224}</math>, the floor of which is clearly <math>224</math> because the <math>1</math> in the numerator is insignificant. Repeating the procedure for <math>n + 1</math> is somewhat messier, but we end up getting <math>\frac{224^4 + 224^2\cdot223\cdot2 + 224^2 + 223^2}{224^3 + 224\cdot223}</math>. It's not too hard to see that <math>224^4</math> is much larger than the sum of the remaining terms in the numerator, and that <math>224^3</math> is similarly a lot greater than the other term in the denominator. In fact, the second-largest term in the numerator is only barely larger than <math>224^3</math>, while the second-largest term in the denominator is smaller than <math>224^2</math>. Thus, the floor of this expression will come out to be <math>224</math> as well.
+
+Now we must consider whether this finding holds true for the rest of the sequence we're examining. First of all, notice that each time <math>n</math> increases by <math>1</math>, the degrees of both the numerator and denominator increase by <math>2</math>, because we are squaring the <math>n+1th</math> term in the numerator while the same term, appearing in the denominator, is being generated in part by squaring the term before it (seen in the relation <math>a_{n+1}^2 = (\frac{a_{n}^2 + 2007}{a_{n-1}})^2</math>). Thus, the degree of the numerator will always be one greater than the degree of the denominator; we have only to show that the other terms in the expression remain sufficiently small enough so as not to disturb the <math>\approx224:1</math> ratio between the two. 
+
+For the non-greatest terms in the expression to offset this ratio for values of <math>n</math> in the ballpark of <math>2006</math>, they would have to have massive coefficients, because or else they are dwarfed by the additional <math>224</math> attached to the leading term. Thankfully, this is not the case. Since we are simply squaring previous terms repeatedly to get new terms, we end up getting a sequence that is approximately equal to <math>\frac{224^k+224^{k-1}+224^{k-2} . . . }{224^{k-1}+224^{k-2} . . . }</math> for all <math>k\geq2</math>, whose <math>\lim_{k\to\infty}=</math> <math>\boxed{224}</math>.
+
+~anellipticcurveoverq

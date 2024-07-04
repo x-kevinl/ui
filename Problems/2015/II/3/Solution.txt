@@ -1,0 +1,31 @@
+==Solution 1==
+The three-digit integers divisible by <math>17</math>, and their digit sum: <cmath>
+\begin{array}{c|c}
+m & s(m)\\ \hline
+102 & 3 \\
+119 & 11\\
+136 & 10\\
+153 & 9\\
+170 & 8\\
+187 & 16\\
+204 & 6\\
+221 & 5\\
+238 & 13\\
+255 & 12\\
+272 & 11\\
+289 & 19\\
+306 & 9\\
+323 & 8\\
+340 & 7\\
+357 & 15\\
+374 & 14\\
+391 & 13\\
+408 & 12\\
+425 & 11\\
+442 & 10\\
+459 & 18\\
+476 & 17
+\end{array}
+</cmath>
+
+Thus the answer is <math>\boxed{476}</math>.

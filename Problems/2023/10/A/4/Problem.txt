@@ -1,0 +1,4 @@
+==Problem==
+A quadrilateral has all integer sides lengths, a perimeter of $26$, and one side of length $4$. What is the greatest possible length of one side of this quadrilateral?
+
+$\textbf{(A) }9\qquad\textbf{(B) }10\qquad\textbf{(C) }11\qquad\textbf{(D) }12\qquad\textbf{(E) }13$

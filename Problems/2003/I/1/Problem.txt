@@ -1,0 +1,6 @@
+== Problem ==
+Given that
+
+<center><math> \frac{((3!)!)!}{3!} = k \cdot n!, </math></center>
+
+where <math> k </math> and <math> n </math> are [[positive integer]]s and <math> n </math> is as large as possible, find <math> k + n. </math>

@@ -1,0 +1,20 @@
+==Solution 1==
+
+Every cubic with real coefficients has to have either three real roots or one real and two nonreal roots which are conjugates. This follows from [[Vieta's formulas]]. 
+
+*Case 1:  <math>f(z)=(z-r)(z-\omega)(z-\omega^*)</math>, where <math>r\in \mathbb{R}</math>,  <math>\omega</math> is nonreal, and <math>\omega^*</math> is the complex conjugate of omega (note that we may assume that <math>\Im(\omega)>0</math>).
+
+The real root <math>r</math> must be one of <math>-20</math>, <math>20</math>, <math>-13</math>, or <math>13</math>. By Viète's formulas, <math>a=-(r+\omega+\omega^*)</math>, <math>b=|\omega|^2+r(\omega+\omega^*)</math>, and <math>c=-r|\omega|^2</math>. But <math>\omega+\omega^*=2\Re{(\omega)}</math> (i.e., adding the conjugates cancels the imaginary part). Therefore, to make <math>a</math> an integer, <math>2\Re{(\omega)}</math> must be an integer. Conversely, if <math>\omega+\omega^*=2\Re{(\omega)}</math> is an integer, then <math>a,b,</math> and <math>c</math> are clearly integers. Therefore <math>2\Re{(\omega)}\in \mathbb{Z}</math> is equivalent to the desired property. Let <math>\omega=\alpha+i\beta</math>.
+
+*Subcase 1.1: <math>|\omega|=20</math>.
+In this case, <math>\omega</math> lies on a circle of radius <math>20</math> in the complex plane. As <math>\omega</math> is nonreal, we see that <math>\beta\ne 0</math>.  Hence <math>-20<\Re{(\omega)}< 20</math>, or rather <math>-40<2\Re{(\omega)}< 40</math>. We count <math>79</math> integers in this interval, each of which corresponds to a unique complex number on the circle of radius <math>20</math> with positive imaginary part.
+
+*Subcase 1.2: <math>|\omega|=13</math>.
+In this case, <math>\omega</math> lies on a circle of radius <math>13</math> in the complex plane. As <math>\omega</math> is nonreal, we see that <math>\beta\ne 0</math>.  Hence <math>-13<\Re{(\omega)}< 13</math>, or rather <math>-26<2\Re{(\omega)}< 26</math>. We count <math>51</math> integers in this interval, each of which corresponds to a unique complex number on the circle of radius <math>13</math> with positive imaginary part.
+
+Therefore, there are <math>79+51=130</math> choices for <math>\omega</math>. We also have <math>4</math> choices for <math>r</math>, hence there are <math>4\cdot 130=520</math> total polynomials in this case.
+
+*Case 2: <math>f(z)=(z-r_1)(z-r_2)(z-r_3)</math>, where <math>r_1,r_2,r_3</math> are all real.
+In this case, there are four possible real roots, namely <math>\pm 13, \pm20</math>. Let <math>p</math> be the number of times that <math>13</math> appears among <math>r_1,r_2,r_3</math>, and define <math>q,r,s</math> similarly for <math>-13,20</math>, and <math>-20</math>, respectively. Then <math>p+q+r+s=3</math> because there are three roots. We wish to find the number of ways to choose nonnegative integers <math>p,q,r,s</math> that satisfy that equation. By balls and urns, these can be chosen in <math>\binom{6}{3}=20</math> ways.
+
+Therefore, there are a total of <math>520+20=\boxed{540}</math> polynomials with the desired property.

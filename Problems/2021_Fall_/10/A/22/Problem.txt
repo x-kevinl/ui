@@ -1,0 +1,4 @@
+== Problem ==
+Inside a right circular cone with base radius $5$ and height $12$ are three congruent spheres with radius $r$. Each sphere is tangent to the other two spheres and also tangent to the base and side of the cone. What is $r$?
+
+$\textbf{(A)}\ \frac{3}{2} \qquad\textbf{(B)}\ \frac{90-40\sqrt{3}}{11} \qquad\textbf{(C)}\ 2 \qquad\textbf{(D)}\ \frac{144-25\sqrt{3}}{44} \qquad\textbf{(E)}\ \frac{5}{2}$

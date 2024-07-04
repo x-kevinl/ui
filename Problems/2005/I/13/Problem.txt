@@ -1,0 +1,9 @@
+== Problem ==
+A particle moves in the [[Cartesian plane]] according to the following rules:
+
+# From any lattice point <math> (a,b), </math> the particle may only move to <math> (a+1,b), (a,b+1), </math> or <math>(a+1,b+1). </math>
+# There are no right angle turns in the particle's path.
+
+How many different paths can the particle take from <math> (0,0) </math> to <math> (5,5) </math>?
+
+__TOC__

@@ -1,0 +1,7 @@
+==Problem==
+Let <math>M_n</math> be the <math>n \times n</math> [[matrix]] with entries as follows: for <math>1 \le i \le n</math>, <math>m_{i,i} = 10</math>; for <math>1 \le i \le n - 1</math>, <math>m_{i+1,i} = m_{i,i+1} = 3</math>; all other entries in <math>M_n</math> are zero. Let <math>D_n</math> be the [[determinant]] of matrix <math>M_n</math>. Then <math>\sum_{n=1}^{\infty} \frac{1}{8D_n+1}</math> can be represented as <math>\frac{p}{q}</math>, where <math>p</math> and <math>q</math> are [[relatively prime]] positive integers. Find <math>p + q</math>.
+
+Note: The determinant of the <math>1 \times 1</math> matrix <math>[a]</math> is <math>a</math>, and the determinant of the <math>2 \times 2</math> matrix <math>\left[ {\begin{array}{cc}
+ a & b  \\
+ c & d  \\
+ \end{array} } \right] = ad - bc</math>; for <math>n \ge 2</math>, the determinant of an <math>n \times n</math> matrix with first row or first column <math>a_1</math> <math>a_2</math> <math>a_3</math> <math>\dots</math> <math>a_n</math> is equal to <math>a_1C_1 - a_2C_2 + a_3C_3 - \dots + (-1)^{n+1}a_nC_n</math>, where <math>C_i</math> is the determinant of the <math>(n - 1) \times (n - 1)</math> matrix formed by eliminating the row and column containing <math>a_i</math>.

@@ -1,0 +1,37 @@
+==Solution 1==
+Reinterpret the problem in the following manner. Equilateral triangle <math>ABC</math> has a point <math>X</math> on the interior such that <math>AX = 5,</math> <math>BX = 4,</math> and <math>CX = 3.</math> A <math>60^\circ</math> counter-clockwise rotation about vertex <math>A</math> maps <math>X</math> to <math>X'</math> and <math>B</math> to <math>C.</math> 
+<center><asy>import cse5;
+size(200);
+defaultpen(linewidth(0.4)+fontsize(8));
+
+pair O = origin;
+pair A,B,C,Op,Bp,Cp;
+path c3,c4,c5;
+c3 = CR(O,3);
+c4 = CR(O,4);
+c5 = CR(O,5);
+draw(c3^^c4^^c5, gray+0.25);
+A = 5*dir(96.25);
+Op = rotate(60,A)*O;
+B = OP(CR(Op,4),c3);
+Bp = IP(CR(Op,4),c3);
+C = rotate(-60,A)*B;
+Cp = rotate(-60,A)*Bp;
+draw(A--B--C--A, black+0.8);
+draw(A--Bp--Cp--A, royalblue+0.8);
+draw(CR(Op,4), heavygreen+0.25);
+dot("$A$",A,N);
+dot("$X$",O,E);
+dot("$X'$",Op,E);
+dot("$C$",B,SE);
+dot("$C'$",Bp,NE);
+dot("$B$",C,2*SW);
+dot("$B'$",Cp,2*S);
+</asy></center>
+Note that angle <math>XAX'</math> is <math>60</math> and <math>XA = X'A = 5</math> which tells us that triangle <math>XAX'</math> is equilateral and that <math>XX' = 5.</math> We now notice that <math>XC = 3</math> and <math>X'C = 4</math> which tells us that angle <math>XCX'</math> is <math>90</math> because there is a <math>3</math>-<math>4</math>-<math>5</math> Pythagorean triple. Now note that <math>\angle ABC + \angle ACB = 120^\circ</math> and <math>\angle XCA + \angle XBA = 90^\circ,</math> so <math>\angle XCB+\angle XBC = 30^\circ</math> and <math>\angle BXC = 150^\circ.</math> Applying the law of cosines on triangle <math>BXC</math> yields
+
+<cmath>BC^2 = BX^2+CX^2 - 2 \cdot BX \cdot CX \cdot \cos150^\circ = 4^2+3^2-24 \cdot \frac{-\sqrt{3}}{2} = 25+12\sqrt{3}</cmath>
+
+and thus the area of <math>ABC</math> equals <cmath>\frac{\sqrt{3}}{4}\cdot BC^2 = 25\frac{\sqrt{3}}{4}+9.</cmath>
+
+so our final answer is <math>3+4+25+9 = \boxed{041}.</math>

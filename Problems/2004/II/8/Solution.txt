@@ -1,0 +1,10 @@
+== Solution 1 ==
+The [[prime factorization]] of 2004 is <math>2^2\cdot 3\cdot 167</math>.  Thus the prime factorization of <math>2004^{2004}</math> is <math>2^{4008}\cdot 3^{2004}\cdot 167^{2004}</math>.
+
+We can [[divisor function | count the number of divisors]] of a number by multiplying together one more than each of the [[exponentiation | exponents]] of the prime factors in its prime factorization.  For example, the number of divisors of <math>2004=2^2\cdot 3^1\cdot 167^1</math> is <math>(2+1)(1+1)(1+1)=12</math>.  
+
+A positive integer divisor of <math>2004^{2004}</math> will be of the form <math>2^a\cdot 3^b\cdot 167^c</math>.  Thus we need to find how many <math>(a,b,c)</math> satisfy 
+
+<center><math>(a+1)(b+1)(c+1)=2^2\cdot 3\cdot 167.</math></center>  
+
+We can think of this as [[partition]]ing the exponents to <math>a+1,</math>  <math>b+1,</math> and  <math>c+1</math>.  So let's partition the 2's first.  There are two 2's so this is equivalent to partitioning two items in three containers.  We can do this in <math>{4 \choose 2} = 6</math> ways.  We can partition the 3 in three ways and likewise we can partition the 167 in three ways.  So we have <math>6\cdot 3\cdot 3 = \boxed{54}</math> as our answer.

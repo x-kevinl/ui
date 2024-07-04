@@ -1,0 +1,35 @@
+==Solutions==
+
+===Solution 1===
+
+The area of $\triangle ABC$ is equal to half the product of its base and height.  By the Pythagorean Theorem, we find its height is $\sqrt{1^2+2^2}=\sqrt{5}$, and its base is $\sqrt{2^2+4^2}=\sqrt{20}$.  We multiply these and divide by $2$ to find the area of the triangle is $\frac{\sqrt{5 \cdot 20}}2=\frac{\sqrt{100}}2=\frac{10}2=5$.  Since the grid has an area of $30$, the fraction of the grid covered by the triangle is $\frac 5{30}=\boxed{\textbf{(A) }\frac{1}{6}}$.
+
+===Solution 2===
+Note angle $\angle ACB$ is right; thus, the area is $\sqrt{1^2+3^2} \times \sqrt{1^2+3^2}\times \dfrac{1}{2}=10 \times \dfrac{1}{2}=5$; thus, the fraction of the total is $\dfrac{5}{30}=\boxed{\textbf{(A)}~\dfrac{1}{6}}$.
+
+===Solution 3===
+By the [[Shoelace Theorem]], the area of $\triangle ABC=|\dfrac{1}{2}(15+4+4-1-20-12)|=|\dfrac{1}{2}(-10)|=5$.
+
+This means the fraction of the total area is $\dfrac{5}{30}=\boxed{\textbf{(A)}~\dfrac{1}{6}}$.
+
+===Solution 4===
+
+The smallest rectangle that follows the grid lines and completely encloses $\triangle ABC$ has an area of $12$, where $\triangle ABC$ splits the rectangle into four triangles. The area of $\triangle ABC$ is therefore $12 - (\frac{4 \cdot 2}{2}+\frac{3 \cdot 1}{2}+\frac{3 \cdot 1}{2}) = 12 - (4 + \frac{3}{2} + \frac{3}{2}) = 12 - 7 = 5$. That means that $\triangle ABC$ takes up $\frac{5}{30} = \boxed{\textbf{(A)}~\frac{1}{6}}$ of the grid.
+
+===Solution 5 (Very much recommended to learn this)===
+
+Using [[Pick's Theorem]], the area of the triangle is $4 + \dfrac{4}{2} - 1=5$. Therefore, the triangle takes up $\dfrac{5}{30}=\boxed{\textbf{(A)}~\frac{1}{6}}$ of the grid.
+
+===Solution 6 (Heron's Formula, Not Recommended)===
+
+We can find the lengths of the sides by using the [[Pythagorean Theorem]]. Then, we apply [[Heron's Formula]] to find the area. 
+$$ \sqrt{\left(\frac{\sqrt{10}+\sqrt{10}+2\sqrt{5}}{2}\right)\left(\frac{\sqrt{10}+\sqrt{10}+2\sqrt{5}}{2}-\sqrt{10}\right)\left(\frac{\sqrt{10}+\sqrt{10}+2\sqrt{5}}{2}-\sqrt{10}\right)\left(\frac{\sqrt{10}+\sqrt{10}+2\sqrt{5}}{2}-2\sqrt{5}\right)}. $$
+This simplifies to
+$$ \sqrt{\left(\sqrt{10}+\sqrt{5}\right)\left(\sqrt{10}+\sqrt{5}-\sqrt{10}\right)\left(\sqrt{10}+\sqrt{5}-\sqrt{10}\right)\left(\sqrt{10}+\sqrt{5}-2\sqrt{5}\right)}. $$
+Again, we simplify to get
+$$ \sqrt{\left(\sqrt{10}+\sqrt{5}\right)\left(\sqrt{5}\right)\left(\sqrt{5}\right)\left(\sqrt{10}-\sqrt{5}\right)}. $$
+The middle two terms inside the square root multiply to $ 5 $, and the first and last terms inside the square root multiply to $ \sqrt{10}^2-\sqrt{5}^2=10-5=5. $ This means that the area of the triangle is
+$$ \sqrt{5\cdot 5}=5. $$
+The area of the grid is $ 6\cdot 5=30. $ Thus, the answer is $ \frac{5}{30}=\boxed{\textbf{(A) }\frac{1}{6}} $.
+
+-BorealBear

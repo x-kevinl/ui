@@ -1,0 +1,5 @@
+==Solution 1==
+
+At the beginning of the problem, the Unicorns had played $y$ games and they had won $x$ of these games. From the information given in the problem, we can say that $\frac{x}{y}=0.45.$ Next, the Unicorns win 6 more games and lose 2 more, for a total of $6+2=8$ games played during district play. We are told that they end the season having won half of their games, or $0.5 $ of their games. We can write another equation: $\frac{x+6}{y+8}=0.5.$ This gives us a system of equations:
+$\frac{x}{y}=0.45$ and $\frac{x+6}{y+8}=0.5.$
+We first multiply both sides of the first equation by $y$ to get $x=0.45y.$ Then, we multiply both sides of the second equation by $(y+8)$ to get $x+6=0.5(y+8).$ Applying the Distributive Property gives yields $x+6=0.5y+4.$ Now we substitute $0.45y$ for $x$ to get $0.45y+6=0.5y+4.$ Solving gives us $y=40.$ Since the problem asks for the total number of games, we add on the last 8 games to get the solution $\boxed{\textbf{(A)}\ 48}$.

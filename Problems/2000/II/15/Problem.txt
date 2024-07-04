@@ -1,0 +1,2 @@
+== Problem ==
+Find the least positive integer <math>n</math> such that <center><math>\frac 1{\sin 45^\circ\sin 46^\circ}+\frac 1{\sin 47^\circ\sin 48^\circ}+\cdots+\frac 1{\sin 133^\circ\sin 134^\circ}=\frac 1{\sin n^\circ}.</math></center>

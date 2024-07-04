@@ -1,0 +1,7 @@
+==Problem==
+
+<i>Wind chill</i> is a measure of how cold people feel when exposed to wind outside. A good estimate for wind chill can be found using this calculation
+$$(\text{wind chill}) = (\text{air temperature}) - 0.7 \times (\text{wind speed}),$$
+where temperature is measured in degrees Fahrenheit $(^{\circ}\text{F})$ and the wind speed is measured in miles per hour (mph). Suppose the air temperature is $36^{\circ}\text{F} $ and the wind speed is $18$ mph. Which of the following is closest to the approximate wind chill?
+
+$\textbf{(A)}\ 18 \qquad \textbf{(B)}\ 23 \qquad \textbf{(C)}\ 28 \qquad \textbf{(D)}\ 32 \qquad \textbf{(E)}\ 35$

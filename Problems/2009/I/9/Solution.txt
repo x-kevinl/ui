@@ -1,0 +1,22 @@
+== Solution ==
+[Clarification: You are supposed to find the number of all possible tuples of prices, <math>(A, B, C)</math>, that could have been on that day.]
+
+Since we have three numbers, consider the number of ways we can put these three numbers together in a string of 7 digits. For example, if <math>A=113, B=13, C=31</math>, then the string is
+
+<cmath>1131331.</cmath>
+
+Since the strings have seven digits and three threes, there are <math>\binom{7}{3}=35</math> arrangements of all such strings.
+
+In order to obtain all combination of A,B,C, we partition all the possible strings into 3 groups.
+
+Let's look at the example. We have to partition it into 3 groups with each group having at least 1 digit. In other words, we need to find the solution to
+
+<cmath>x+y+z=7, x,y,z>0.</cmath>
+
+This gives us
+
+<cmath>\binom{6}{2}=15</cmath>
+
+ways by balls and urns. But we have counted the one with 5 digit numbers; that is, <math>(5,1,1),(1,1,5),(1,5,1)</math>.
+
+Thus, each arrangement has <cmath>\binom{6}{2}-3=12</cmath> ways per arrangement, and there are <math>12\times35=\boxed{420}</math> ways.

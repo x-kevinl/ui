@@ -1,0 +1,5 @@
+==Problem==
+
+In January $1980$ the Mauna Loa Observatory recorded carbon dioxide $(CO2)$ levels of $338$ ppm (parts per million). Over the years the average $CO2$ reading has increased by about $1.515$ ppm each year. What is the expected $CO2$ level in ppm in January $2030$? Round your answer to the nearest integer. 
+
+$\textbf{(A)}\ 399\qquad \textbf{(B)}\ 414\qquad \textbf{(C)}\ 420\qquad \textbf{(D)}\ 444\qquad \textbf{(E)}\ 459$

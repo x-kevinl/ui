@@ -1,0 +1,23 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(300);
+pair A, B, C, D, E, F;
+D = origin;
+A = 6*dir(46);
+C = (6,0);
+B = C + (A-D);
+E = midpoint(C--D);
+F = foot(A,B,E);
+dot("$A$",A,1.5*NW,linewidth(5));
+dot("$B$",B,1.5*NE,linewidth(5));
+dot("$C$",C,1.5*SE,linewidth(5));
+dot("$D$",D,1.5*SW,linewidth(5));
+dot("$E$",E,1.5*S,linewidth(5));
+dot("$F$",F,1.5*dir(-20),linewidth(5));
+markscalefactor=0.04;
+draw(rightanglemark(A,F,B),red);
+draw(A--B--C--D--cycle^^A--F--C^^B--E);
+label("$46^{\circ}$",D,3*dir(26),red);
+</asy>
+~MRENTHUSIASM

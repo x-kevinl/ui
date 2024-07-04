@@ -1,0 +1,2 @@
+==Problem==
+Let <math>P</math> be a point chosen uniformly at random in the interior of the unit square with vertices at <math>(0,0), (1,0), (1,1)</math>, and <math>(0,1)</math>. The probability that the slope of the line determined by <math>P</math> and the point <math>\left(\frac58, \frac38 \right)</math> is greater than or equal to <math>\frac12</math> can be written as <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

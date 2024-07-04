@@ -1,0 +1,2 @@
+==Problem==
+What is the value of$$2^{1+2+3}-(2^1+2^2+2^3)?$$$\textbf{(A) }0 \qquad \textbf{(B) }50 \qquad \textbf{(C) }52 \qquad \textbf{(D) }54 \qquad \textbf{(E) }57$

@@ -1,0 +1,4 @@
+==Problem==
+At the 2013 Winnebago County Fair a vendor is offering a "fair special" on sandals. If you buy one pair of sandals at the regular price of \$50, you get a second pair at a 40% discount, and a third pair at half the regular price. Javier took advantage of the "fair special" to buy three pairs of sandals. What percentage of the \$150 regular price did he save?
+
+$\textbf{(A)}\ 25 \qquad \textbf{(B)}\ 30 \qquad \textbf{(C)}\ 33 \qquad \textbf{(D)}\ 40 \qquad \textbf{(E)}\ 45$

@@ -1,0 +1,37 @@
+== Solution 1==
+<asy>
+import three; 
+currentprojection = perspective(-2,9,4);
+triple A = (6,0,0), B = (0,4,0), C = (0,0,2), D = (0,0,0);
+triple E = (2/3,0,0), F = (0,2/3,0), G = (0,0,2/3), L = (0,2/3,2/3), M = (2/3,0,2/3), N = (2/3,2/3,0);
+triple I = (2/3,2/3,2/3);
+triple J = (6/7,20/21,26/21);
+draw(C--A--D--C--B--D--B--A--C);
+draw(L--F--N--E--M--G--L--I--M--I--N--I--J);
+label("$I$",I,W);
+label("$A$",A,S);
+label("$B$",B,S);
+label("$C$",C,W*-1);
+label("$D$",D,W*-1);
+</asy>
+
+The center <math>I</math> of the insphere must be located at <math>(r,r,r)</math> where <math>r</math> is the sphere's radius.
+<math>I</math> must also be a distance <math>r</math> from the plane <math>ABC</math>
+
+The signed distance between a plane and a point <math>I</math> can be calculated as <math>\frac{(I-G) \cdot P}{|P|}</math>, where G is any point on the plane, and P is a vector perpendicular to ABC.
+
+A vector <math>P</math> perpendicular to plane <math>ABC</math> can be found as <math>V=(A-C)\times(B-C)=\langle 8, 12, 24 \rangle</math>
+
+Thus <math>\frac{(I-C) \cdot P}{|P|}=-r</math> where the negative comes from the fact that we want <math>I</math> to be in the opposite direction of <math>P</math>
+
+<cmath>\begin{align*}\frac{(I-C) \cdot P}{|P|}&=-r\\
+\frac{(\langle r, r, r \rangle-\langle 0, 0, 2 \rangle) \cdot P}{|P|}&=-r\\
+\frac{\langle r, r, r-2 \rangle \cdot \langle 8, 12, 24 \rangle}{\langle 8, 12, 24 \rangle}&=-r\\
+\frac{44r -48}{28}&=-r\\
+44r-48&=-28r\\
+72r&=48\\
+r&=\frac{2}{3}
+\end{align*}</cmath>
+
+
+Finally <math>2+3=\boxed{005}</math>

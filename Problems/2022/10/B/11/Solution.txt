@@ -1,0 +1,11 @@
+==Solution 1==
+Let $B$ denote a school that is bigger than Euclid HS, and $M$ denote a school that sold more T-shirts than Euclid HS.
+
+It follows that $\neg B$ denotes a school that is <b>not bigger than</b> Euclid HS, and $\neg M$ denotes a school that <b>did not sell more</b> T-shirts than Euclid HS.
+
+Converting everything to conditional statements (if-then form), the given statement becomes $$B\implies\neg M.$$
+Its contrapositive is $M\implies\neg B,$ which is $\boxed{\textbf{(B)}}.$
+
+Note that "not bigger than" does not mean "smaller than", and "not selling more" does not mean "selling fewer". There is an equality case. Therefore, none of the other answer choices is equivalent to $B\implies\neg M.$
+
+~MRENTHUSIASM

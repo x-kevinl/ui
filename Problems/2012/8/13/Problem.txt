@@ -1,0 +1,5 @@
+==Problem 13==
+Jamar bought some pencils costing more than a penny each at the school bookstore and paid $ 
+\textdollar 1.43 $. Sharona bought some of the same pencils and paid $ \textdollar 1.87 $. How many more pencils did Sharona buy than Jamar?
+
+$ \textbf{(A)}\hspace{.05in}2\qquad\textbf{(B)}\hspace{.05in}3\qquad\textbf{(C)}\hspace{.05in}4\qquad\textbf{(D)}\hspace{.05in}5\qquad\textbf{(E)}\hspace{.05in}6 $

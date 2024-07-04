@@ -1,0 +1,8 @@
+==Solution 1(algebra solution)==
+
+Let $x$ be the number of pages in the book. After the first day, Hui had $\frac{4x}{5}-12$ pages left to read. After the second, she had $\left(\frac{3}{4}\right)\left(\frac{4x}{5}-12\right)-15 = \frac{3x}{5}-24$ left. After the third, she had $\left(\frac{2}{3}\right)\left(\frac{3x}{5}-24\right)-18=\frac{2x}{5}-34$ left. This is equivalent to $62.$
+
+$$\begin{align*} \frac{2x}{5}-34&=62\\
+2x - 170 &= 310\\
+2x &= 480\\
+x &= \boxed{\textbf{(C)}\ 240} \end{align*}$$

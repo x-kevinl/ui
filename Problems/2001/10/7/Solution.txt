@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+If $x$ is the number, then moving the decimal point four places to the right is the same as multiplying $x$ by $10000$. This gives us:  
+$$10000x=4\cdot\frac{1}{x} \implies x^2=\frac{4}{10000}$$ 
+Since $$x>0\implies x=\frac{2}{100}=\boxed{\textbf{(C)}\ 0.02}$$

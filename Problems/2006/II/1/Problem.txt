@@ -1,0 +1,2 @@
+== Problem ==
+In [[convex polygon|convex]] [[hexagon]] <math>ABCDEF</math>, all six sides are congruent, <math>\angle A</math> and <math>\angle D</math> are [[right angle]]s, and <math>\angle B, \angle C, \angle E,</math> and <math>\angle F</math> are [[congruent]]. The area of the hexagonal region is <math>2116(\sqrt{2}+1).</math> Find <math>AB</math>.

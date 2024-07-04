@@ -1,0 +1,6 @@
+==Problem==
+
+How many $ 3$-digit positive integers have digits whose product equals $ 24$?
+
+
+$ \textbf{(A)}\ 12 \qquad \textbf{(B)}\ 15 \qquad \textbf{(C)}\ 18 \qquad \textbf{(D)}\ 21 \qquad \textbf{(E)}\ 24$

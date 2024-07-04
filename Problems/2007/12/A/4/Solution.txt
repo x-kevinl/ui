@@ -1,0 +1,3 @@
+== Solution ==
+$$16 \cdot \frac{30}{60}+4\cdot\frac{90}{60}=14$$
+$$\frac{14}2=7\Rightarrow\boxed{A}$$

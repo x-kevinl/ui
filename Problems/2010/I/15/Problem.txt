@@ -1,0 +1,2 @@
+== Problem ==
+In <math>\triangle{ABC}</math> with <math>AB = 12</math>, <math>BC = 13</math>, and <math>AC = 15</math>, let <math>M</math> be a point on <math>\overline{AC}</math> such that the [[incircle]]s of <math>\triangle{ABM}</math> and <math>\triangle{BCM}</math> have equal [[inradius|radii]]. Then <math>\frac{AM}{CM} = \frac{p}{q}</math>, where <math>p</math> and <math>q</math> are relatively prime positive integers. Find <math>p + q</math>.

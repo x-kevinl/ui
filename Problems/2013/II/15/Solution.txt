@@ -1,0 +1,110 @@
+==Solutions==
+
+===Solution 1===
+Let's draw the triangle. Since the problem only deals with angles, we can go ahead and set one of the sides to a convenient value. Let <math>BC = \sin{A}</math>.
+
+By the Law of Sines, we must have <math>CA = \sin{B}</math> and <math>AB = \sin{C}</math>.
+
+Now let us analyze the given:
+
+<cmath>\begin{align*}
+\cos^2A + \cos^2B + 2\sin A\sin B\cos C &= 1-\sin^2A + 1-\sin^2B + 2\sin A\sin B\cos C \\
+&= 2-(\sin^2A + \sin^2B - 2\sin A\sin B\cos C)
+\end{align*}</cmath>
+
+Now we can use the Law of Cosines to simplify this:
+
+<cmath>= 2-\sin^2C</cmath>
+
+
+Therefore: <cmath>\sin C = \sqrt{\dfrac{1}{8}},\cos C = \sqrt{\dfrac{7}{8}}.</cmath> Similarly, <cmath>\sin A = \sqrt{\dfrac{4}{9}},\cos A = \sqrt{\dfrac{5}{9}}.</cmath> Note that the desired value is equivalent to <math>2-\sin^2B</math>, which is <math>2-\sin^2(A+C)</math>. All that remains is to use the sine addition formula and, after a few minor computations, we obtain a result of <math>\dfrac{111-4\sqrt{35}}{72}</math>. Thus, the answer is <math>111+4+35+72 = \boxed{222}</math>.
+
+Note that the problem has a flaw because <math>\cos B < 0</math> which contradicts with the statement that it's an acute triangle. Would be more accurate to state that <math>A</math> and <math>C</math> are smaller than 90. -Mathdummy
+
+===Solution 2===
+Let us use the identity <math>\cos^2A+\cos^2B+\cos^2C+2\cos A \cos B \cos C=1</math> .
+
+Add <cmath>\begin{align*} \cos^2 C+2(\cos A\cos B-\sin A \sin B)\cos C \end{align*}</cmath> to both sides of the first given equation. 
+
+
+
+
+Thus, as <cmath>\begin{align*} \cos A\cos B-\sin A\sin B=\cos (A+B)=-\cos C ,\end{align*}</cmath> 
+we have <cmath>\begin{align*} \dfrac{15}{8}-2\cos^2 C +\cos^2 C=1, 
+\end{align*}</cmath> so <math>\cos C</math> is <math>\sqrt{\dfrac{7}{8}}</math> and therefore <math> \sin C</math> is <math>\sqrt{\dfrac{1}{8}}</math>. 
+
+Similarily, we have <math>\sin A =\dfrac{2}{3}</math> and <math>\cos A=\sqrt{\dfrac{14}{9}-1}=\sqrt{\dfrac{5}{9}}</math> and the rest of the solution proceeds as above.
+
+===Solution 3===
+
+Let 
+<cmath> \begin{align*}
+\cos^2 A + \cos^2 B + 2 \sin A \sin B \cos C &= \frac{15}{8} \text{     ------ (1)}\\
+\cos^2 B + \cos^2 C + 2 \sin B \sin C \cos A &= \frac{14}{9} \text{     ------ (2)}\\
+\cos^2 C + \cos^2 A + 2 \sin C \sin A \cos B &= x \text{                        ------ (3)}\\
+\end{align*} </cmath>
+
+Adding (1) and (3) we get:
+<cmath> 2 \cos^2 A + \cos^2 B + \cos^2 C + 2 \sin A( \sin B \cos C +  \sin C \cos B)  = \frac{15}{8} + x</cmath>   or
+<cmath> 2 \cos^2 A + \cos^2 B + \cos^2 C + 2 \sin A \sin (B+C)  = \frac{15}{8} + x</cmath>    or
+<cmath> 2 \cos^2 A + \cos^2 B + \cos^2 C + 2 \sin ^2 A = \frac{15}{8} + x</cmath>    or
+<cmath> \cos^2 B + \cos^2 C =  x - \frac{1}{8}     \text{     ------ (4)}</cmath>
+
+Similarly adding (2) and (3) we get:
+<cmath> \cos^2 A + \cos^2 B =  x - \frac{4}{9}     \text{     ------ (5)} </cmath>
+Similarly adding (1) and (2) we get:
+<cmath> \cos^2 A + \cos^2 C =  \frac{14}{9}  - \frac{1}{8}     \text{     ------ (6)} </cmath>
+
+And (4) - (5) gives:
+<cmath> \cos^2 C - \cos^2 A =  \frac{4}{9}  - \frac{1}{8}    \text{     ------ (7)} </cmath>
+
+Now (6) - (7) gives:
+<math> \cos^2 A  =  \frac{5}{9} </math> or
+<math>\cos A = \sqrt{\dfrac{5}{9}}</math> and <math>\sin A = \frac{2}{3} </math>
+so <math>\cos C</math> is <math>\sqrt{\dfrac{7}{8}}</math> and therefore <math> \sin C</math> is <math>\sqrt{\dfrac{1}{8}}</math>
+
+Now <math>\sin B = \sin(A+C)</math> can be computed first and then <math>\cos^2 B</math> is easily found.
+
+Thus <math>\cos^2 B</math> and <math>\cos^2 C</math> can be plugged into (4) above to give x =  <math>\dfrac{111-4\sqrt{35}}{72}</math>.
+
+Hence the answer is = <math>111+4+35+72 = \boxed{222}</math>.
+
+Kris17
+
+=== Solution 4 ===
+
+Let's take the first equation <math>\cos^2 A + \cos^2 B + 2 \sin A \sin B \cos C = \frac{15}{8}</math>. Substituting <math>180 - A - B</math> for C, given A, B, and C form a triangle, and that <math>\cos C = \cos(A + B)</math>, gives us:
+
+<math>\cos^2 A + \cos^2 B + 2 \sin A \sin B \cos (A+B) = \frac{15}{8}</math>
+
+Expanding out gives us <math>\cos^2 A + \cos^2 B + 2 \sin^2 A \sin^2 B - 2 \sin A \sin B \cos A \cos B = \frac{15}{8}</math>. 
+
+Using the double angle formula <math>\cos^2 k = \frac{\cos (2k) + 1}{2}</math>, we can substitute for each of the squares <math>\cos^2 A</math> and <math>\cos^2 B</math>. Next we can use the Pythagorean identity on the <math>\sin^2 A</math> and <math>\sin^2 B</math> terms. Lastly we can use the sine double angle to simplify.
+
+<math>\cos^2 A + \cos^2 B + 2(1 - \cos^2 A)(1 - \cos^2 B) - \frac{1}{2} \cdot \sin 2A \sin 2B = \frac{15}{8}</math>. 
+
+Expanding and canceling yields, and again using double angle substitution, 
+
+<math>1 + 2 \cdot \frac{\cos (2A) + 1}{2} \cdot \frac{\cos (2B) + 1}{2} - \frac{1}{2} \cdot \sin 2A \sin 2B = \frac{15}{8}</math>. 
+
+Further simplifying yields:
+
+<math>\frac{3}{2} + \frac{\cos 2A \cos 2B - \sin 2A \sin 2B}{2} = \frac{15}{8}</math>. 
+
+Using cosine angle addition formula and simplifying further yields, and applying the same logic to Equation <math>2</math> yields:
+
+<math>\cos (2A + 2B) = \frac{3}{4}</math> and <math>\cos (2B + 2C) = \frac{1}{9}</math>.
+
+Substituting the identity <math>\cos (2A + 2B) = \cos(2C)</math>, we get:
+
+<math>\cos (2C) = \frac{3}{4}</math> and <math>\cos (2A) = \frac{1}{9}</math>.
+
+Since the third expression simplifies to the expression <math>\frac{3}{2} + \frac{\cos (2A + 2C)}{2}</math>, taking inverse cosine and using the angles in angle addition formula yields the answer, <math>\frac{111 - 4\sqrt{35}}{72}</math>, giving us the answer <math>\boxed{222}</math>.
+
+===Solution 5===
+We will use the sum to product formula to simply these equations. Recall <cmath>2\sin{\frac{\alpha+\beta}{2}}\sin{\frac{\alpha-\beta}{2}} = \cos{\alpha}+\cos{\beta}.</cmath> Using this, let's rewrite the first equation: <cmath>\cos^2(A) + \cos^2(B) + 2 \sin(A) \sin(B) \cos(C) = \frac{15}{8}</cmath> <cmath>\cos^2(A) + \cos^2(B) + (\cos(A+B)+\cos(A-B))\cos(C).</cmath> Now, note that <math>\cos(C)=-\cos(A+B)</math>. <cmath>\cos^2(A) + \cos^2(B) + (\cos(A+B)+\cos(A-B))(-\cos(A+B))</cmath> <cmath>\cos^2(A) + \cos^2(B) - \cos(A+B)\cos(A-B)+cos^2(A+B)=\frac{15}{8}.</cmath> We apply the sum to product formula again. <cmath>\cos^2(A) + \cos^2(B) - \frac{\cos(2A)+\cos(2B)}{2}+cos^2(A+B)=\frac{15}{8}.</cmath> Now, recall that <math>\cos(2\alpha)=2\cos^2(\alpha)-1</math>. We apply this and simplify our expression to get: <cmath>\cos^2(A+B)=\frac{7}{8}</cmath> <cmath>\cos^2(C)=\frac{7}{8}.</cmath> Analogously, <cmath>\cos^2(A)=\frac{5}{9}.</cmath> <cmath>\cos^2(A+C)=\frac{p-q\sqrt{r}}{s}-1.</cmath> We can find this value easily by angle sum formula. After a few calculations, we get <math>\frac{111 - 4\sqrt{35}}{72}</math>, giving us the answer <math>\boxed{222}</math>.
+~superagh
+
+===Solution 6===
+According to LOC <math>a^2+b^2-2ab\cos{\angle{c}}=c^2</math>, we can write it into <math>\sin^2{\angle{A}}+\sin^2{\angle{B}}-2\sin{\angle{A}}\sin{\angle{B}}\cos{\angle{C}}=\sin^2{\angle{C}}</math>. <math>\sin^2{\angle{A}}+\sin^2{\angle{B}}-2\sin{\angle{A}}\sin{\angle{B}}\cos{\angle{C}}+cos^2A+cos^2B+2sinAsinBcosC=\frac{15}{8}+sin^2C</math> We can simplify to <math>2=sin^2C+\frac{15}{8}</math>. Similarly, we can generalize <math>2=sin^2A+\frac{14}{9}</math>. After solving, we can get that <math>sinA=\frac{2}{3}; cosA=\frac{\sqrt{5}}{3}; sinC=\frac{\sqrt{2}}{4}; cosC=\frac{\sqrt{14}}{4}</math>
+Assume the value we are looking for is <math>x</math>, we get <math>sin^2B+x=2</math>, while <math>sinB=sin(180^{\circ}-A-C)=sin(A+C)</math> which is <math>\frac{2\sqrt{14}+\sqrt{10}}{12}</math>, so <math>x=\frac{111 - 4\sqrt{35}}{72}</math>, giving us the answer <math>\boxed{222}</math>.~bluesoul

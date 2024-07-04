@@ -1,0 +1,6 @@
+==Solution 1 (PIE)==
+By [[PIE]] (Property of Inclusion/Exclusion), we have
+
+$|A_1 \cup A_2 \cup A_3| = \sum |A_i| - \sum |A_i \cap A_j| + |A_1 \cap A_2 \cap A_3|.$
+Number of people in at least two sets is $\sum |A_i \cap A_j| - 2|A_1 \cap A_2 \cap A_3| = 9.$
+So, $20 = (10 + 13 + 9) - (9 + 2x) + x,$ which gives $x = \boxed{\textbf{(C) } 3}.$

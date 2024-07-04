@@ -1,0 +1,8 @@
+==Solution==
+
+If the lower cells contain $A, B$ and $C$, then the second row will contain
+$A + B$ and $B + C$, and the top cell will contain $A + 2B + C$. To obtain the
+smallest sum, place $1$ in the center cell and $2$ and $3$ in the outer ones. The top
+number will be $7$. For the largest sum, place $9$ in the center cell and $7$ and $8$ in
+the outer ones. This top number will be $33$. The difference is $33 - 7 = \boxed{\textbf{(D)}\ 26
+}$.

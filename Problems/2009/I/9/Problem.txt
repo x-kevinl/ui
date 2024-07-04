@@ -1,0 +1,2 @@
+== Problem ==
+A game show offers a contestant three prizes A, B and C, each of which is worth a whole number of dollars from <math>\$ 1</math> to <math>\$ 9999</math> inclusive. The contestant wins the prizes by correctly guessing the price of each prize in the order A, B, C. As a hint, the digits of the three prices are given. On a particular day, the digits given were <math>1, 1, 1, 1, 3, 3, 3</math>. Find the total number of possible guesses for all three prizes consistent with the hint.

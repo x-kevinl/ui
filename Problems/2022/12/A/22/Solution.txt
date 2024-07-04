@@ -1,0 +1,66 @@
+==Solution 1==
+
+Because $c$ is real, $z_2 = \bar z_1$.
+We have
+$$
+\begin{align*}
+10 & = z_1 z_2 \\
+& = z_1 \bar z_1 \\
+& = |z_1|^2 ,
+\end{align*}
+$$
+where the first equality follows from Vieta's formula.
+
+Thus, $|z_1| = \sqrt{10}$.
+
+We have
+$$
+\begin{align*}
+c & = z_1 + z_2 \\
+& = z_1 + \bar z_1 \\
+& = 2 {\rm Re}(z_1),
+\end{align*}
+$$
+where the first equality follows from Vieta's formula.
+
+Thus, ${\rm Re}(z_1) = \frac{c}{2}$.
+
+We have
+$$
+\begin{align*}
+\frac{1}{z_1} & = \frac{1}{10}\cdot\frac{10}{z_1} \\
+& = \frac{1}{10}\cdot\frac{z_1 z_2}{z_1} \\
+& = \frac{z_2}{10} \\
+& = \frac{\bar z_1}{10}.
+\end{align*}
+$$
+where the second equality follows from Vieta's formula.
+
+We have
+$$
+\begin{align*}
+\frac{1}{z_2} & = \frac{1}{10}\cdot\frac{10}{z_2} \\
+& = \frac{1}{10}\cdot\frac{z_1 z_2}{z_2} \\
+& = \frac{z_1}{10}.
+\end{align*}
+$$
+where the second equality follows from Vieta's formula.
+
+Therefore,
+$$
+\begin{align*}
+{\rm Area} \ Q
+& = \frac{1}{2} \left| {\rm Re}(z_1) \right|
+\cdot 2 \left| {\rm Im}(z_1) \right|
+\cdot \left( 1 - \frac{1}{10^2} \right) \\
+& = \frac{1}{2} |c| \sqrt{10 - \frac{c^2}{4}} \left( 1 - \frac{1}{10^2} \right) \\
+& = \frac{1 - \frac{1}{10^2}}{4}
+\sqrt{c^2 \left( 40 - c^2 \right)} \\
+& \leq \frac{1 - \frac{1}{10^2}}{4} \cdot \frac{c^2 + \left( 40 - c^2 \right)}{2} \\
+& = \frac{1 - \frac{1}{10^2}}{4} \cdot 20 ,
+\end{align*}
+$$
+where the inequality follows from the AM-GM inequality, and it is augmented to an equality if and only if $c^2 = 40 - c^2$.
+Thus, $|c| = 2 \sqrt{5} \approx \boxed{\textbf{(A) 4.5}}$.
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)

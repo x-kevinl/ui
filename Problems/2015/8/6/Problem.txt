@@ -1,0 +1,5 @@
+==Problem==
+
+In $\bigtriangleup ABC$, $AB=BC=29$, and $AC=42$. What is the area of $\bigtriangleup ABC$?
+
+$\textbf{(A) }100\qquad\textbf{(B) }420\qquad\textbf{(C) }500\qquad\textbf{(D) }609\qquad \textbf{(E) }701$

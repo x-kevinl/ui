@@ -1,0 +1,25 @@
+==Solution==
+<asy>
+pair B=(0,0), A=(6*dir(60)), C=(6,0);
+pair D=A+C;
+
+draw(A--B--C--D--A);
+draw(A--(3,0));
+
+label("\(A\)",A,NW);label("\(B\)",B,SW);label("\(C\)",C,SE);label("\(D\)",D,NE);
+label("\(6\)",A/2,NW);
+label("\(\theta\)",(.8,.5));
+label("\(h\)",(3,2.6),E);
+</asy>
+
+$V_{\mathrm{Cylinder}} = \pi r^2 h$
+
+Where $C = 2\pi r = 6$ and $h=6\sin\theta$
+
+$r = \frac{3}{\pi}$
+
+$V = \pi \left(\frac{3}{\pi}\right)^2\cdot 6\sin\theta$
+
+$6 = \frac{9}{\pi} \cdot 6\sin\theta$
+
+$\sin\theta = \frac{\pi}{9} \Rightarrow \mathrm{(A)}$

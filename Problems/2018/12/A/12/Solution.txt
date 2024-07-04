@@ -1,0 +1,6 @@
+== Solution 1 ==
+We start with $2$ because $1$ is not an answer choice. We would have to include every odd number except $1$ to fill out the set, but then $3$ and $9$ would violate the rule, so that won't work.
+
+Experimentation with $3$ shows it's likewise impossible. You can include $7,11,$ and either $5$ or $10$ (which are always safe). But after adding either $4$ or $8$ we have no more valid numbers.
+
+Finally, starting with $4,$ we find that the sequence $4,5,6,7,9,11$ works, giving us $\boxed{\textbf{(C)}\ 4}.$

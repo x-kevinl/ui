@@ -1,0 +1,2 @@
+==Problem==
+Rectangle <math>ABCD</math> has side lengths <math>AB=84</math> and <math>AD=42</math>. Point <math>M</math> is the midpoint of <math>\overline{AD}</math>, point <math>N</math> is the trisection point of <math>\overline{AB}</math> closer to <math>A</math>, and point <math>O</math> is the intersection of <math>\overline{CM}</math> and <math>\overline{DN}</math>. Point <math>P</math> lies on the quadrilateral <math>BCON</math>, and <math>\overline{BP}</math> bisects the area of <math>BCON</math>. Find the area of <math>\triangle CDP</math>.

@@ -1,0 +1,5 @@
+==Solution==
+
+Consider what happens each time he puts a coin in. If he puts in a quarter, he gets five nickels back, so the amount of money he has doesn't change. Similarly, if he puts a nickel in the machine, he gets five pennies back and the money value doesn't change. However, if he puts a penny in, he gets five quarters back, increasing the amount of money he has by $124$ cents. 
+
+This implies that the only possible values, in cents, he can have are the ones one more than a multiple of $124$. Of the choices given, the only one is $\boxed{\text{D}}$

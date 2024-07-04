@@ -1,0 +1,12 @@
+== Solution 1 ==
+$4x-4a=y$
+
+$4x-4a=\frac{1}{4}x+b$
+
+$4\cdot1-4a=\frac{1}{4}\cdot1+b=2$
+
+$a=\frac{1}{2}$
+
+$b=\frac{7}{4}$
+
+$a+b=\frac{9}{4} \Rightarrow \text{(E)}$

@@ -1,0 +1,19 @@
+==Solution 1==
+Let the <math>k</math>th number in the <math>n</math>th row be <math>a(n,k)</math>. Writing out some numbers, we find that <math>a(n,k) = 2^{n-1}(n+2k-2)</math>.{{ref|1}}
+
+We wish to find all <math>(n,k)</math> such that <math>67| a(n,k) = 2^{n-1} (n+2k-2)</math>. Since <math>2^{n-1}</math> and <math>67</math> are [[relatively prime]], it follows that <math>67|n+2k-2</math>. Since every row has one less element than the previous row, <math>1 \le k \le 51-n</math> (the first row has <math>50</math> elements, the second <math>49</math>, and so forth; so <math>k</math> can range from <math>1</math> to <math>50</math> in the first row, and so forth). Hence 
+
+<center><math>n+2k-2 \le n + 2(51-n) - 2 = 100 - n \le 100,</math></center>
+
+it follows that <math>67| n - 2k + 2</math> implies that <math>n-2k+2 = 67</math> itself.
+
+Now, note that we need <math>n</math> to be odd, and also that <math>n+2k-2 = 67 \le 100-n \Longrightarrow n \le 33</math>.
+
+We can check that all rows with odd <math>n</math> satisfying <math>1 \le n \le 33</math> indeed contains one entry that is a multiple of <math>67</math>, and so the answer is <math>\frac{33+1}{2} = \boxed{017}</math>.
+
+
+<br />
+
+{{note|1}} Proof: Indeed, note that <math>a(1,k) = 2^{1-1}(1+2k-2)=2k-1</math>, which is the correct formula for the first row. We claim the result by [[induction]] on <math>n</math>. By definition of the array, <math>a(n,k) = a(n-1,k)+a(n-1,k+1)</math>, and by our inductive hypothesis, 
+<cmath>\begin{align*}a(n,k) &= a(n-1,k)+a(n-1,k+1)\\ &= 2^{n-2}(n-1+2k-2)+2^{n-2}(n-1+2(k+1)-2)\\&=2^{n-2}(2n+4k-4)\\&=2^{n-1}(n+2k-2)\end{align*}</cmath>
+thereby completing our induction.

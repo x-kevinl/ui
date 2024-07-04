@@ -1,0 +1,80 @@
+== Solutions ==
+
+=== Solution 1 ===
+
+There are many almost equivalent approaches that lead to summing a geometric series. For example, we can compute the probability of the opposite event. Let <math>p</math> be the probability that Dave will make at least two more throws than Linda. Obviously, <math>p</math> is then also the probability that Linda will make at least two more throws than Dave, and our answer will therefore be <math>1-2p</math>.
+
+How to compute <math>p</math>? 
+
+Suppose that Linda made exactly <math>t</math> throws. The probability that this happens is <math>(5/6)^{t-1}\cdot (1/6)</math>, as she must make <math>t-1</math> unsuccessful throws followed by a successful one. In this case, we need Dave to make at least <math>t+2</math> throws. This happens if his first <math>t+1</math> throws are unsuccessful, hence the probability is <math>(5/6)^{t+1}</math>.
+
+Thus for a fixed <math>t</math> the probability that Linda makes <math>t</math> throws and Dave at least <math>t+2</math> throws is <math>(5/6)^{2t} \cdot (1/6)</math>.
+
+Then, as the events for different <math>t</math> are disjoint, <math>p</math> is simply the sum of these probabilities over all <math>t</math>. Hence:
+
+<cmath>
+\begin{align*}
+p & = \sum_{t=1}^\infty \left(\frac 56\right)^{2t} \cdot \frac 16
+\\
+& = \frac 16 \cdot \left(\frac 56\right)^2 \cdot \sum_{x=0}^\infty \left(\frac{25}{36}\right)^x
+\\
+& = \frac 16 \cdot \frac{25}{36} \cdot \frac 1{1 - \dfrac{25}{36}}
+\\
+& = \frac 16 \cdot \frac{25}{36} \cdot \frac{36}{11}
+\\
+& = \frac {25}{66}
+\end{align*}
+</cmath>
+
+Hence the probability we were supposed to compute is <math>1 - 2p = 1 - 2\cdot \frac{25}{66} = 1 - \frac{25}{33} = \frac 8{33}</math>, and the answer is <math>8+33 = \boxed{041}</math>.
+
+=== Solution 2 ===
+
+Let <math>p</math> be the probability that the number of times Dave rolls his die is equal to or within one of the number of times Linda rolls her die. (We will call this event "a win", and the opposite event will be "a loss".)
+
+Let both players roll their first die. 
+
+With probability <math>\frac 1{36}</math>, both throw a six and we win.
+
+With probability <math>\frac{10}{36}</math> exactly one of them throws a six. In this case, we win if the remaining player throws a six in their next throw, which happens with probability <math>\frac 16</math>.
+
+Finally, with probability <math>\frac{25}{36}</math> none of them throws a six. Now comes the crucial observation: At this moment, we are in exactly the same situation as in the beginning. Hence in this case we will win with probability <math>p</math>.
+
+We just derived the following linear equation:
+<cmath>
+p = \frac 1{36} + \frac{10}{36} \cdot \frac 16 + \frac{25}{36} \cdot p
+</cmath>
+
+Solving for <math>p</math>, we get <math>p=\frac 8{33}</math>, hence the answer is <math>8+33 = \boxed{041}</math>.
+
+===Solution 3===
+Let's write out the probabilities with a set number of throws that Linda rolls before getting a 6. The probability of Linda rolling once and gets 6 right away is <math>\frac{1}{6}</math>. The probability that Dave will get a six in the same, one less, or one more throw is <math>\frac{1}{6} + \frac{5}{6} * \frac{5}{6}</math>. Thus the combined probability is <math>\frac{11}{216}</math>. 
+
+Let's do the same with the probability that Linda rolls twice and getting a six. This time it is <math>\frac{5}{6} * \frac{1}{6}</math>. The probability that Dave meets the requirements set is <math>\frac{1}{6} + \frac{5}{6} * \frac{1}{6} + \frac{5}{6} * \frac{5}{6} * \frac{1}{6}</math>. Combine the probabilities again to get <math>\frac{455}{7776}</math>. (or not, because you can simplify without calculating later)
+
+It's clear that as the number of rolls before getting a six increases, the probability that Dave meets the requirements is multiplied by <math>\frac{5}{6} * \frac{5}{6}</math>. We can use this pattern to solve for the sum of an infinite geometric series.
+
+
+First, set the case where Linda rolls only once aside. It doesn't fit the same pattern as the rest, so we'll add it separately at the end. Next, let <math>a = (\frac{5}{6} * \frac{1}{6}) * (\frac{1}{6} + \frac{5}{6} * \frac{1}{6} + \frac{5}{6} * \frac{5}{6} * \frac{1}{6}) = \frac{455}{7776}</math> as written above. Each probability where the number of tosses Linda makes increases by one will be <math>a * (\frac{25}{36})^{n+1}</math>. Let <math>S</math> be the sum of all these probabilities. 
+
+<math>S = a + a * \frac{25}{36} + a * (\frac{25}{36})^2...</math>
+
+<math>S * \frac{25}{36} = a * \frac{25}{36} + a * (\frac{25}{36})^2 + a * (\frac{25}{36})^3...</math>
+
+Subtract the second equation from the first to get
+
+<math>S * \frac{11}{36} = a</math>
+
+<math>S = a * \frac{36}{11}</math>
+
+<math>S = \frac{455}{2376}</math>
+
+Don't forget to add the first case where Linda rolls once.
+
+<math>\frac{455}{2376} + \frac{11}{216} = \frac{8}{33}</math>
+
+<math>8 + 33 = \boxed{41}</math>
+
+-jackshi2006
+
+Note: this is equivalent to computing <math>\frac{1}{36}(\sum_{n=1}^{\infty} (\frac{5}{6})^n((\frac{5}{6})^{n-1}+(\frac{5}{6})^{n}+(\frac{5}{6})^{n+1})+1+\frac{5}{6})</math>

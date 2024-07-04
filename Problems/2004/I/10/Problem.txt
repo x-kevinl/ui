@@ -1,0 +1,4 @@
+== Problem ==
+A [[circle]] of [[radius]] 1 is randomly placed in a 15-by-36 [[rectangle]] <math> ABCD </math> so that the circle lies completely within the rectangle. Given that the [[probability]] that the circle will not touch diagonal <math> AC </math> is <math> m/n, </math> where <math> m </math> and <math> n </math> are relatively prime positive integers. Find <math> m + n. </math>
+
+__TOC__

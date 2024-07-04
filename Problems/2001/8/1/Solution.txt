@@ -1,0 +1,4 @@
+==Solution==
+It will take him $300\cdot2=600$ seconds to paint all the dimples. 
+
+This is equivalent to $\frac{600}{60}=10$ minutes $\Rightarrow \boxed{D}$.

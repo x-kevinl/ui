@@ -1,0 +1,23 @@
+==Solution 1==
+
+One method of approach is to find a recurrence for $S(n)$. 
+
+Let us define $A(n)$ as the number of sequences of length $n$ ending with an $A$, and $B(n)$ as the number of sequences of length $n$ ending in $B$. Note that $A(n) = B(n)$ and $S(n) = A(n) + B(n)$, so $S(n) = 2A(n)$.
+
+For a sequence of length $n$ ending in $A$, it must be a string of $A$s appended onto a sequence ending in $B$ of length $n-1, n-2, \text{or}\ n-3$. So we have the recurrence: $$A(n) = B(n-1) + B(n-2) + B(n-3) = A(n-1) + A(n-2) + A(n-3)$$
+
+We can thus begin calculating values of $A(n)$. We see that the sequence goes (starting from $A(0) = 1$): $1,1,2,4,7,13,24...$ 
+
+A problem arises though: the values of $A(n)$ increase at an exponential rate. Notice however, that we need only find $S(2015)\ \text{mod}\ 12$. In fact, we can use the fact that $S(n) = 2A(n)$ to only need to find $A(2015)\ \text{mod}\ 6$. Going one step further, we need only find $A(2015)\ \text{mod}\ 2$ and $A(2015)\ \text{mod}\ 3$ to find $A(2015)\ \text{mod}\ 6$.
+
+Here are the values of $A(n)\ \text{mod}\ 2$, starting with $A(0)$: $$1,1,0,0,1,1,0,0...$$
+
+Since the period is $4$ and $2015 \equiv 3\ \text{mod}\ 4$, $A(2015) \equiv 0\ \text{mod}\ 2$.
+
+Similarly, here are the values of $A(n)\ \text{mod}\ 3$,  starting with $A(0)$: $$1,1,2,1,1,1,0,2,0,2,1,0,0,1,1,2...$$
+
+Since the period is $13$ and $2015 \equiv 0\ \text{mod}\ 13$, $A(2015) \equiv 1\ \text{mod}\ 3$.
+
+Knowing that $A(2015) \equiv 0\ \text{mod}\ 2$ and $A(2015) \equiv 1\ \text{mod}\ 3$, we see that $A(2015) \equiv 4\ \text{mod}\ 6$, and $S(2015) \equiv 8\ \text{mod}\ 12$. Hence, the answer is $\textbf{(D)}$.
+
+* Note that instead of introducing $A(n)$ and $B(n)$, we can simply write the relation $S(n)=S(n-1)+S(n-2)+S(n-3),$ and proceed as above.

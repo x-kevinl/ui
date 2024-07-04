@@ -1,0 +1,23 @@
+==Solution 1==
+Let $x$ denote the number of guppies in the first tank.
+
+Then, we have the following for the number of guppies in the rest of the tanks:
+
+*$x + 1 =$ the number of guppies in the second tank
+*$x + 1 + 2 =$ the number of guppies in the third tank
+*$x + 1 + 2 + 3 =$ the number of guppies in the fourth tank
+
+The number of guppies in all of the tanks combined is 90, so we can write the equation
+
+$x + x + 1 + x + 1 + 2 + x + 1 + 2 + 3 = 90$.
+
+Simplifying the equation gives
+
+$4x + 10 = 90$.
+
+Solving the resulting equation gives $x = 20$, so the number of guppies in the fourth tank is $20 + 1 + 2 + 3 = 26$.
+
+Therefore, the correct answer is $\boxed{\textbf{(E)}\ 26}$.
+
+- C. Ren
+~andliu766 (Minor edits)

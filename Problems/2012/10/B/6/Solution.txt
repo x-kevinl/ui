@@ -1,0 +1,9 @@
+== Solution ==
+
+Let's define $z$ as the amount rounded up by and down by.
+
+The problem statement tells us that Xiaoli performed the following computation:
+
+$\left(x+z\right) - \left(y-z\right) = x+z-y+z = x-y+2z$
+
+We can see that $x-y+2z$ is greater than $x-y$, and so the answer is $\boxed{\textbf{(A) } \text{Her estimate is larger than } x-y}$.

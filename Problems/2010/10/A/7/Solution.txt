@@ -1,0 +1,17 @@
+==Solution 1==
+
+
+Crystal first runs north for one mile. Changing directions, she runs northeast for another mile. The angle difference between north and northeast is 45 degrees. She then switches directions to southeast, meaning a 90 degree angle change. The distance now from traveling north for one mile, and her current destination is $\sqrt{2}$ miles, because it is the hypotenuse of a 45-45-90 triangle with side length one (mile). Therefore, Crystal's distance from her starting position, x, is equal to $\sqrt{((\sqrt{2})^2+1^2)}$, which is equal to $\sqrt{3}$. The answer is $\boxed{C}$
+
+
+<asy>
+import olympiad;
+draw((0,0)--(0,1));
+draw((0,1)--(0,1.7071067811865476), dotted);
+draw((0,1)--(0.7071067811865476, 1.7071067811865476));
+draw((0.7071067811865476, 1.7071067811865476)--(1.4142135623730951,1));
+draw(anglemark((0.7071067811865476, 1.7071067811865476),(0,1),(0,1.7071067811865476)));
+label("$45^{\circ}$", (0,1.25), NE);
+draw((0, 1)--(1.4142135623730951,1), dotted);
+draw((1.4142135623730951,1)--(0,0), green);
+</asy>

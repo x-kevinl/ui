@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>K</math> be the product of all factors <math>(b-a)</math> (not necessarily distinct) where <math>a</math> and <math>b</math> are integers satisfying <math>1\le a < b \le 20</math>. Find the greatest positive [[integer]] <math>n</math> such that <math>2^n</math> divides <math>K</math>.

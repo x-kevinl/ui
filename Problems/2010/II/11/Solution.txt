@@ -1,0 +1,84 @@
+== Solution ==
+
+=== Solution 1 ===
+The <i>T-grid</i> can be considered as a tic-tac-toe board: five <math>1</math>'s (or X's) and four <math>0</math>'s (or O's). 
+
+There are only <math>\dbinom{9}{5} = 126</math>  ways to fill the board with five <math>1</math>'s and four <math>0</math>'s. Now we just need to subtract the number of bad grids. Bad grids are ones with more than one person winning, or where someone has won twice.
+
+Let three-in-a-row/column/diagonal be a "win" and let player <math>0</math> be the one that fills in <math>0</math> and player <math>1</math> fills in <math>1</math>.
+
+<b>Case <math>1</math>:</b> Each player wins once. 
+
+If player X takes a diagonal, player Y cannot win. If either takes a row, all the columns are blocked, and visa versa. Therefore, they either both take a row or they both take a column.
+
+<OL>
+<LI>Both take a row: 
+
+<UL>
+<LI>There are <math>3</math> ways for player <math>1</math> to pick a row, </LI>
+
+<LI><math>2</math> ways for player <math>0</math> to pick a row and, </LI>
+
+<LI><math>3</math> ways for player <math>0</math> to take a single box in the remaining row. </LI>
+</UL>
+
+Therefore, there are <math>3 \cdot 2 \cdot 3=18</math> cases.
+</LI>
+
+<LI>Both take a column: 
+
+Using similar reasoning, there are <math>18</math> cases.
+</OL>
+
+Case <math>1</math>: <math>36</math> cases
+
+<br/>
+
+<b>Case <math>2</math>:</b> Player <math>1</math> wins twice. (Player <math>0</math> cannot win twice because he only has 4 moves.)
+
+<OL>
+<LI>Player <math>1</math> picks a row and a column.
+<UL>
+<LI>There are <math>3</math> ways to pick the row</LI>
+<LI>and <math>3</math> ways to pick the column. </LI>
+So there are <math>9</math> cases.
+</UL></LI>
+
+<LI>Player <math>1</math> picks a row/column and a diagonal.
+<UL>
+<LI>There are <math>6</math> ways to pick the row/column </LI>
+<LI>and <math>2</math> to pick the diagonal, </LI>
+</UL>
+so there are <math>12</math> cases
+</LI>
+
+<LI>2 diagonals
+<UL>
+<LI>It is clear that there is only <math>1</math> case. (Make a X).</LI>
+</UL>
+</LI>
+</OL>
+
+Case <math>2</math> total: <math>22</math>
+
+<br/>
+
+Thus, the answer is <math>126-22-36=\boxed{68}</math>
+
+=== Solution 2 ===
+
+We can use [[generating functions]] to compute the case that no row or column is completely filled with <math>1</math>'s. Given a row, let <math>a</math>, <math>b</math>, <math>c</math> be the events that the first, second, third respective squares are <math>1</math>'s. Then the generating function representing the possible events that exclude a row of <math>1,1,1</math> or <math>0,0,0</math> from occuring is
+<cmath>ab+bc+ca+a+b+c.</cmath>
+Therefore, the generating function representing the possible grids where no row is filled with <math>0</math>'s and <math>1</math>'s is
+<cmath>P(a,b,c)=((ab+bc+ca)+(a+b+c))^3.</cmath>
+We expand this by the Binomial Theorem to find
+<cmath>P(a,b,c)=(ab+bc+ca)^3+3(ab+bc+ca)^2(a+b+c)+3(ab+bc+ca)(a+b+c)^2+(a+b+c)^3.</cmath>
+Recall that our grid has five <math>1</math>'s, hence we only want terms where the sum of the exponents is <math>5</math>. This is given by
+<cmath>3(ab+bc+ca)^2(a+b+c).</cmath>
+When we expand this, we find
+<cmath>3(2abc(a+b+c)+a^2b^2+b^2c^2+c^2a^2)(a+b+c).</cmath>
+We also want to make sure that each of <math>a</math>, <math>b</math>, <math>c</math> appears at least once (so there is no column filled with <math>0</math>'s) and the power of each of <math>a</math>, <math>b</math>, <math>c</math> is not greater than or equal to <math>3</math> (so there is no column filled with <math>1</math>'s). The sum of the coefficients of the above polynomial is clearly <math>81</math> (using <math>a,b,c=1</math>), and the sum of the coefficients of the terms <math>a^3bc</math>, <math>ab^3c</math>, and <math>abc^3</math> is <math>6+6+6+3+3+3+3+3+3=36</math>, hence the sum of the coefficients of the desired terms is <math>81-36=45</math>. This counts the number of grids where no column or row is filled with	<math>0</math>'s or <math>1</math>'s. However, we could potentially have both diagonals filled with <math>1</math>'s, but this is the only exception to our <math>45</math> possibilities, hence the number of <math>T</math>-grids with no row or column filled with the same digit is <math>44</math>.
+
+On the other hand, if a row (column) is filled with <math>0</math>'s, then by the Pigeonhole Principle, another row (column) must be filled with <math>1</math>'s. Hence this is impossible, so all other	possible <math>T</math>-grids have a row (column) filled with <math>1</math>'s. If the top row is filled with <math>1</math>'s, then we have two <math>1</math>'s left to place. Clearly they cannot go in the same row, because then the other row is filled with <math>0</math>'s. They also cannot appear in the same column. This leaves <math>3\cdot 2</math> arrangements--3 choices for the location of the <math>1</math> in the second row, and 2 choices for the location of the <math>1</math> in the last row. However, two of these arrangements will fill a diagonal with <math>1</math>'s. Hence there are only <math>4</math> <math>T</math>-grids where the top row is filled with <math>1</math>'s. The same argument applies if any other row or column is filled with <math>1</math>'s. Hence there are <math>4\cdot 6=24</math> such <math>T</math>-grids.
+
+Thus the answer is <math>44+24=\boxed{68}</math>.

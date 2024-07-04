@@ -1,0 +1,4 @@
+== Solution 1 ==
+For the points made from two-point shots and from three-point shots to be equal, the numbers of made shots are in a $3:2$ ratio. Therefore, assume they made $3x$ and $2x$ two- and three- point shots, respectively, and thus $3x+1$ free throws. The total number of points is $$2 \times (3x) + 3 \times (2x) + 1 \times (3x+1) = 15x+1$$
+
+Set that equal to $61$, we get $x = 4$, and therefore the number of free throws they made $3 \times 4 + 1 = 13 \Rightarrow \boxed{A}$

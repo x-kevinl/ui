@@ -1,0 +1,3 @@
+== Solution 1==
+
+Let the smallest side length be $x$. Then the volume is $x \cdot 3x \cdot 4x =12x^3$. If $x=2$, then $12x^3 = 96 \implies \boxed{\textbf{(D) } 96.}$

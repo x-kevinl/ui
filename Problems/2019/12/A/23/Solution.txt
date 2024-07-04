@@ -1,0 +1,13 @@
+==Solution 1==
+
+By definition, the recursion becomes $a_n = \left(n^{\frac1{\log_7(n-1)}}\right)^{\log_7(a_{n-1})}=n^{\frac{\log_7(a_{n-1})}{\log_7(n-1)}}$.  By the change of base formula, this reduces to $a_n = n^{\log_{n-1}(a_{n-1})}$.  Thus, we have $\log_n(a_n) = \log_{n-1}(a_{n-1})$.  Thus, for each positive integer $m \geq 3$, the value of $\log_m(a_m)$ must be some constant value $k$.  
+
+We now compute $k$ from $a_3$.  It is given that $a_3 = 3\,\heartsuit\,2 = 3^{\frac1{\log_7(2)}}$, so $k = \log_3(a_3) = \log_3\left(3^{\frac1{\log_7(2)}}\right) = \frac1{\log_7(2)} = \log_2(7)$.
+
+Now, we must have $\log_{2019}(a_{2019}) = k = \log_2(7)$. At this point, we simply switch some bases around. For those who are unfamiliar with logarithms, we can turn the logarithms into fractions which are less intimidating to work with.
+
+$\frac{\log{a_{2019}}}{\log{2019}} = \frac{\log{7}}{\log{2}}\implies
+\frac{\log{a_{2019}}}{\log{7}} = \frac{\log{2019}}{\log{2}}\implies
+\log_7(a_{2019}) =\log_2(2019)$
+
+We conclude that $\log_7(a_{2019}) = \log_2(2019) \approx \boxed{11}$, or choice $\boxed{\text{D}}$.

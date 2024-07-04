@@ -1,0 +1,16 @@
+== Solution ==
+Let the intersection of <math>\overline{AD}</math> and <math>\overline{CE}</math> be <math>F</math>. Since <math>AB \parallel CE, BC \parallel AD, </math> it follows that <math>ABCF</math> is a [[parallelogram]], and so <math>\triangle ABC \cong \triangle CFA</math>. Also, as <math>AC \parallel DE</math>, it follows that <math>\triangle ABC \sim \triangle EFD</math>. 
+
+<center><asy>
+pointpen = black; pathpen = black+linewidth(0.7);
+
+pair D=(0,0), E=(15,0), F=IP(CR(D, 75/7), CR(E, 45/7)), A=D+ (5+(75/7))/(75/7) * (F-D), C = E+ (3+(45/7))/(45/7) * (F-E), B=IP(CR(A,3), CR(C,5));
+
+D(MP("A",A,(1,0))--MP("B",B,N)--MP("C",C,NW)--MP("D",D)--MP("E",E)--cycle); D(D--A--C--E); D(MP("F",F)); MP("5",(B+C)/2,NW); MP("3",(A+B)/2,NE); MP("15",(D+E)/2);
+</asy></center>
+
+By the [[Law of Cosines]], <math>AC^2 = 3^2 + 5^2 - 2 \cdot 3 \cdot 5 \cos 120^{\circ} = 49 \Longrightarrow AC = 7</math>. Thus the length similarity ratio between <math>\triangle ABC</math> and <math>\triangle EFD</math> is <math>\frac{AC}{ED} = \frac{7}{15}</math>. 
+
+Let <math>h_{ABC}</math> and <math>h_{BDE}</math> be the lengths of the [[altitude]]s in <math>\triangle ABC, \triangle BDE</math> to <math>AC, DE</math> respectively. Then, the ratio of the areas <math>\frac{[ABC]}{[BDE]} = \frac{\frac 12 \cdot h_{ABC} \cdot AC}{\frac 12 \cdot h_{BDE} \cdot DE} = \frac{7}{15} \cdot \frac{h_{ABC}}{h_{BDE}}</math>. 
+
+However, <math>h_{BDE} = h_{ABC} + h_{CAF} + h_{EFD}</math>, with all three heights oriented in the same direction. Since <math>\triangle ABC \cong \triangle CFA</math>, it follows that <math>h_{ABC} = h_{CAF}</math>, and from the similarity ratio, <math>h_{EFD} = \frac{15}{7}h_{ABC}</math>. Hence <math>\frac{h_{ABC}}{h_{BDE}} = \frac{h_{ABC}}{2h_{ABC} + \frac {15}7h_{ABC}} = \frac{7}{29}</math>, and the ratio of the areas is <math>\frac{7}{15} \cdot \frac 7{29} = \frac{49}{435}</math>. The answer is <math>m+n = \boxed{484}</math>.

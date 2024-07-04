@@ -1,0 +1,22 @@
+==Solution 1: Guess & Check==
+We can eliminate answer choices $ {\textbf{(A)}\ 5} $ and $ {\textbf{(C)}\ 7} $, because of the above statement. Now we need to test the remaining answer choices.
+
+Case 1: $ x = 6 $
+
+Mode: $ 6 $
+
+Median: $ 6 $
+
+Mean: $ \frac{37}{7} $
+
+Since the mean does not equal the median or mode, $ {\textbf{(B)}\ 6} $ can also be eliminated.
+
+Case 2: $ x = 11 $
+
+Mode: $ 6 $
+
+Median: $ 6 $
+
+Mean: $ 6 $
+
+We are done with this problem, because we have found when $ x = 11 $, the condition is satisfied. Therefore, the answer is $ \boxed{{\textbf{(D)}\ 11}} $.

@@ -1,0 +1,4 @@
+== Solution 1 ==
+$ \sqrt{\frac{x}{1-\frac{x-1}{x}}} =  \sqrt{\frac{x}{\frac{x}{x}-\frac{x-1}{x}}} = \sqrt{\frac{x}{\frac{x-(x-1)}{x}}} = \sqrt{\frac{x}{\frac{1}{x}}} = \sqrt{x^2} = |x|$
+
+Since $x<0,|x|= \boxed{\textbf{(A)}-x} $

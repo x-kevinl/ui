@@ -1,0 +1,59 @@
+== Solution ==
+
+=== The "obvious" substitution === 
+
+An obvious way how to get the <math>4^n</math> from under the square root is to use the substitution <math>a_n = 2^n b_n</math>. Then the square root simplifies as follows:
+<math>\sqrt{4^n - a_n^2} = \sqrt{4^n - (2^n b_n)^2} = \sqrt{4^n - 4^n b_n^2} = 2^n \sqrt{1 - b_n^2}</math>.
+
+The new recurrence then becomes <math>b_0=0</math> and <math>b_{n+1} = \frac45 b_n + \frac 35\sqrt{1 - b_n^2}</math>.
+
+=== Solution 1 ===
+
+We can now simply start to compute the values <math>b_i</math> by hand:
+
+<cmath>
+\begin{align*}
+b_1 & = \frac 35
+\\
+b_2 & = \frac 45\cdot \frac 35 + \frac 35 \sqrt{1 - \left(\frac 35\right)^2} = \frac{24}{25}
+\\
+b_3 & = \frac 45\cdot \frac {24}{25} + \frac 35 \sqrt{1 - \left(\frac {24}{25}\right)^2} = \frac{96}{125} + \frac 35\cdot\frac 7{25} = \frac{117}{125}
+\\
+b_4 & = \frac 45\cdot \frac {117}{125} + \frac 35 \sqrt{1 - \left(\frac {117}{125}\right)^2} = \frac{468}{625} + \frac 35\cdot\frac {44}{125} = \frac{600}{625} = \frac{24}{25}
+\end{align*}
+</cmath>
+
+We now discovered that <math>b_4=b_2</math>. And as each <math>b_{i+1}</math> is uniquely determined by <math>b_i</math>, the sequence becomes periodic. In other words, we have <math>b_3=b_5=b_7=\cdots=\frac{117}{125}</math>, and <math>b_2=b_4=\cdots=b_{10}=\cdots=\frac{24}{25}</math>.
+
+Therefore the answer is 
+
+<cmath>
+\begin{align*}
+\lfloor a_{10} \rfloor & = \left\lfloor 2^{10} b_{10} \right\rfloor = \left\lfloor \dfrac{1024\cdot 24}{25} \right\rfloor 
+= \left\lfloor \dfrac{1025\cdot 24}{25} - \dfrac{24}{25} \right\rfloor 
+\\
+& 
+= \left\lfloor 41\cdot 24 - \dfrac{24}{25} \right\rfloor = 41\cdot 24 - 1 = \boxed{983}
+\end{align*}
+</cmath>
+
+=== Solution 2 ===
+
+After we do the substitution, we can notice the fact that <math>\left( \frac 35 \right)^2 + \left( \frac 45 \right)^2 = 1</math>, which may suggest that the formula may have something to do with the unit circle. Also, the expression <math>\sqrt{1-x^2}</math> often appears in trigonometry, for example in the relationship between the sine and the cosine. Both observations suggest that the formula may have a neat geometric interpretation.
+
+Consider the equation:
+<cmath>y = \frac45 x + \frac 35\sqrt{1 - x^2}</cmath>
+
+Note that for <math>t=\sin^{-1} \frac 35</math> we have <math>\sin t=\frac 35</math> and <math>\cos t = \frac 45</math>. Now suppose that we have <math>x=\sin s</math> for some <math>s</math>. Then our equation becomes:
+
+<cmath>y=\cos t \cdot \sin s + \sin t \cdot |\cos s|</cmath>
+
+Depending on the sign of <math>\cos s</math>, this is either the angle addition, or the angle subtraction formula for sine. In other words, if <math>\cos s \geq 0</math>, then <math>y=\sin(s+t)</math>, otherwise <math>y=\sin(s-t)</math>.
+
+We have <math>b_0=0=\sin 0</math>. Therefore <math>b_1 = \sin(0+t) = \sin t</math>, <math>b_2 = \sin(t+t) = \sin (2t)</math>, and so on. (Remember that <math>t</math> is the constant defined as <math>t=\sin^{-1} \frac 35</math>.)
+
+This process stops at the first <math>b_k = \sin (kt)</math>, where <math>kt</math> exceeds <math>\frac{\pi}2</math>. Then we'll have <math>b_{k+1} = \sin(kt - t) = \sin ((k-1)t) = b_{k-1}</math> and the sequence will start to oscillate.
+
+Note that <math>\sin \frac{\pi}6 = \frac 12 < \frac 35</math>, and <math>\sin \frac{\pi}4 = \frac{\sqrt 2}2 > \frac 35</math>, hence <math>t</math> is strictly between <math>\frac{\pi}6</math> and <math>\frac{\pi}4</math>. Then <math>2t\in\left(\frac{\pi}3,\frac{\pi}2 \right)</math>, and <math>3t\in\left( \frac{\pi}2, \frac{3\pi}4 \right)</math>. Therefore surely <math>2t < \frac{\pi}2 < 3t</math>. 
+
+Hence the process stops with <math>b_3 = \sin (3t)</math>, we then have <math>b_4 = \sin (2t) = b_2</math>. As in the previous solution, we conclude that <math>b_{10}=b_2</math>, and that the answer is <math>\lfloor a_{10} \rfloor  = \left\lfloor 2^{10} b_{10} \right\rfloor = \boxed{983}</math>.

@@ -1,0 +1,2 @@
+==Solution 1==
+The trip was $240$ miles long and took $\dfrac{120}{30}+\dfrac{120}{20}=4+6=10$ gallons. Therefore, the average mileage was $\dfrac{240}{10}= \boxed{\textbf{(B) }24}$

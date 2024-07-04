@@ -1,0 +1,25 @@
+==Diagram==
+<asy>
+pair A = (0, 0), B = (16, 0), C = (20, 0), D = (8, 8*sqrt(3)), EE = (18, 2*sqrt(3)), M = (9, sqrt(3)), NN = (14, 4*sqrt(3));
+draw(A--B--D--cycle);
+draw(B--C--EE--cycle);
+draw(A--EE);
+draw(C--D);
+draw(B--M--NN--cycle);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(EE);
+dot(M);
+dot(NN);
+label("A", A, SW);
+label("B", B, S);
+label("C", C, SE);
+label("D", D, N);
+label("E", EE, N);
+label("M", M, NW);
+label("N", NN, NE);
+</asy>
+
+Diagram by [[User:RedFireTruck|<font color="#FF0000">RedFireTruck</font>]] ([[User talk:RedFireTruck|<font color="#FFFFFF">talk</font>]])

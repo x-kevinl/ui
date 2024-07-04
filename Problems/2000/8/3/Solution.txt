@@ -1,0 +1,3 @@
+==Solution 1 ==
+
+The smallest whole number in the interval is $2$ because $5/3$ is more than $1$ but less than $2$. The largest whole number in the interval is $6$ because $2\pi$ is more than $6$ but less than $7$. There are five whole numbers in the interval. They are $2$, $3$, $4$, $5$, and $6$, so the answer is $\boxed{\text{(D)}\ 5}$.   slayy bestie

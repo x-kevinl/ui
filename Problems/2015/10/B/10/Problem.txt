@@ -1,0 +1,8 @@
+==Problem==
+What are the sign and units digit of the product of all the odd negative integers strictly greater than $-2015$?
+<br>
+$\textbf{(A) }$ It is a negative number ending with a 1. <br>
+$\textbf{(B) }$ It is a positive number ending with a 1. <br>
+$\textbf{(C) }$ It is a negative number ending with a 5. <br>
+$\textbf{(D) }$ It is a positive number ending with a 5. <br>
+$\textbf{(E) }$ It is a negative number ending with a 0. <br>

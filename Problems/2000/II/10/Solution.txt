@@ -1,0 +1,12 @@
+== Solution 1==
+Call the [[center]] of the circle <math>O</math>. By drawing the lines from <math>O</math> tangent to the sides and from <math>O</math> to the vertices of the quadrilateral, four pairs of congruent [[right triangle]]s are formed.
+
+Thus, <math>\angle{AOP}+\angle{POB}+\angle{COQ}+\angle{QOD}=180</math>, or <math>(\arctan(\tfrac{19}{r})+\arctan(\tfrac{26}{r}))+(\arctan(\tfrac{37}{r})+\arctan(\tfrac{23}{r}))=180</math>.
+
+Take the <math>\tan</math> of both sides and use the identity for <math>\tan(A+B)</math> to get <cmath>\tan(\arctan(\tfrac{19}{r})+\arctan(\tfrac{26}{r}))+\tan(\arctan(\tfrac{37}{r})+\arctan(\tfrac{23}{r}))=n\cdot0=0.</cmath>
+
+Use the identity for <math>\tan(A+B)</math> again to get <cmath>\frac{\tfrac{45}{r}}{1-19\cdot\tfrac{26}{r^2}}+\frac{\tfrac{60}{r}}{1-37\cdot\tfrac{23}{r^2}}=0.</cmath>
+
+Solving gives <math>r^2=\boxed{647}</math>.
+
+Note: the equation may seem nasty at first, but once you cancel the <math>r</math>s and other factors, you are just left with <math>r^2</math>. That gives us <math>647</math> quite easily.

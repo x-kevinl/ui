@@ -1,0 +1,16 @@
+== Problem ==
+Equilateral $ \triangle ABC$ has side length $2$, $ M$ is the midpoint of $ \overline{AC}$, and $ C$ is the midpoint of $ \overline{BD}$. What is the area of $ \triangle CDM$?
+<asy>defaultpen(linewidth(.8pt)+fontsize(8pt));
+
+pair B = (0,0);
+pair A = 2*dir(60);
+pair C = (2,0);
+pair D = (4,0);
+pair M = midpoint(A--C);
+
+label("$A$",A,NW);label("$B$",B,SW);label("$C$",C, SE);label("$M$",M,NE);label("$D$",D,SE);
+
+draw(A--B--C--cycle);
+draw(C--D--M--cycle);</asy>
+
+$ \textbf{(A) }\ \frac {\sqrt {2}}{2}\qquad \textbf{(B) }\ \frac {3}{4}\qquad \textbf{(C) }\ \frac {\sqrt {3}}{2}\qquad \textbf{(D) }\ 1\qquad \textbf{(E) }\ \sqrt {2}$

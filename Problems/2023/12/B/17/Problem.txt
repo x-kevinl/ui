@@ -1,0 +1,4 @@
+==Problem==
+Triangle $ABC$ has side lengths in arithmetic progression, and the smallest side has length $6.$ If the triangle has an angle of $120^\circ,$ what is the area of $ABC$?
+
+$\textbf{(A) }12\sqrt{3}\qquad\textbf{(B) }8\sqrt{6}\qquad\textbf{(C) }14\sqrt{2}\qquad\textbf{(D) }20\sqrt{2}\qquad\textbf{(E) }15\sqrt{3}$

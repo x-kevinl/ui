@@ -1,0 +1,13 @@
+==Problem==
+A figure is constructed from unit cubes. Each cube shares at least one face with another cube. What is the minimum number of cubes needed to build a figure with the front and side views shown?
+
+<asy>
+defaultpen(linewidth(0.8));
+path p=unitsquare;
+draw(p^^shift(0,1)*p^^shift(1,0)*p);
+draw(shift(4,0)*p^^shift(5,0)*p^^shift(5,1)*p);
+label("FRONT", (1,0), S);
+label("SIDE", (5,0), S);
+</asy>
+
+$ \textbf{(A)}\ 3\qquad\textbf{(B)}\ 4\qquad\textbf{(C)}\ 5\qquad\textbf{(D)}\ 6\qquad\textbf{(E)}\ 7 $

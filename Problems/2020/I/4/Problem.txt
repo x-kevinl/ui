@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>S</math> be the set of positive integers <math>N</math> with the property that the last four digits of <math>N</math> are <math>2020,</math> and when the last four digits are removed, the result is a divisor of <math>N.</math> For example, <math>42,020</math> is in <math>S</math> because <math>4</math> is a divisor of <math>42,020.</math> Find the sum of all the digits of all the numbers in <math>S.</math> For example, the number <math>42,020</math> contributes <math>4+2+0+2+0=8</math> to this total.

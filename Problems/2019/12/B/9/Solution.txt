@@ -1,0 +1,12 @@
+==Solution==
+
+For these lengths to form a triangle of positive area, the Triangle Inequality tells us that we need $$\log_2{x} + \log_4{x} > 3$$ $$\log_2{x} + 3 > \log_4{x}$$ $$\log_4{x} + 3 > \log_2{x}.$$ The second inequality is redundant, as it's always less restrictive than the last inequality. 
+
+Let's raise the first inequality to the power of $4$. This gives $4^{\log_2{x}} \cdot 4^{\log_4{x}} > 64 \Rightarrow \left(2^2\right)^{\log_2{x}} \cdot x > 64 \Rightarrow x^2 \cdot x > 64$. Thus, $x > 4$. 
+
+Doing the same for the second inequality gives $4^{\log_4{x}} \cdot 64 > 4^{\log_2{x}} \Rightarrow 64x > x^2 \Rightarrow x < 64$ (where we are allowed to divide both sides by $x$ since $x$ must be positive in order for the logarithms given in the problem statement to even have real values).
+
+Combining our results, $x$ is an integer strictly between $4$ and $64$, so the number of possible values of $x$ is $64 - 4 - 1 = \boxed{\textbf{(B) } 59}$.
+
+
+~Minor edits by BakedPotato66

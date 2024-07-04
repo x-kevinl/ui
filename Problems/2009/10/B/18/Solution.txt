@@ -1,0 +1,3 @@
+== Solution 1 (Coordinate Geometry)==
+
+Set $A$ to $(0,0)$. Since $M$ is the midpoint of the diagonal, it would be $(4,3)$. The diagonal $AC$ would be the line $y = \frac{3x}{4}$. Since $ME$ is perpendicular to $AC$, its line would be in the form $y = -\frac{4x}{3} + b$. Plugging in $4$ and $3$ for $x$ and $y$ would give $b = \frac{25}{3}$. To find the x-intercept of $y = -\frac{4x}{3} + \frac{25}{3}$ we plug in $0$ for $y$ and get $x = \frac{25}{4}$. Then, using the Shoelace Formula for $(0,0)$ , $(4,3)$, and $(\frac{25}{4}, 0)$, we find the area is $\frac{75}{8}$.

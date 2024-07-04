@@ -1,0 +1,7 @@
+== Solution 1 ==
+The number $10^n+1$ is divisible by 101 if and only if $10^n\equiv -1\pmod{101}$. We note that $(10,10^2,10^3,10^4)\equiv (10,-1,-10,1)\pmod{101}$, so the powers of 10 are 4-periodic mod 101.
+
+It follows that $10^n\equiv -1\pmod{101}$ if and only if $n\equiv 2\pmod 4$.
+
+In the given list, $10^2+1,10^3+1,10^4+1,\dots,10^{2019}+1$, the desired exponents are $2,6,10,\dots,2018$, and there are $\dfrac{2020}{4}=\boxed{\textbf{(C) } 505}$ numbers in that list.
+<br>

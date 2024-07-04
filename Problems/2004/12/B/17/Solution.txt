@@ -1,0 +1,6 @@
+== Solution ==
+Let the three roots be $x_1,x_2,x_3$. 
+$$\log_2 x_1 + \log_2 x_2 + \log_2 x_3 = \log_2 x_1x_2x_3= 5 \Longrightarrow x_1x_2x_3 = 32$$
+By [[Vieta’s formulas]],
+$$8(x-x_1)(x-x_2)(x-x_3) = 8x^3 + 4ax^2 + 2bx + a$$
+gives us that $a = -8x_1x_2x_3 = -256 \Rightarrow \mathrm{(A)}$.

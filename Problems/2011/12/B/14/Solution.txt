@@ -1,0 +1,10 @@
+== Solution  1==
+Name the directrix of the parabola $l$. Define $d(X,k)$ to be the distance between a point $X$ and a line $k$.
+
+Now we remember the geometric definition of a parabola: given any line $l$ (called the directrix) and any point $F$ (called the focus), the ''parabola'' corresponding to the given directrix and focus is the locus of the points that are equidistant from $F$ and $l$. Therefore $FV=d(V,l)$. Let this distance be $d$. Now note that $d(F,l)=2d$, so $d(A,l)=d(B,l)=2d$. Therefore $AF=BF=2d$. We now use the [[Pythagorean Theorem]] on triangle $AFV$; $AV=\sqrt{AF^2+FV^2}=d\sqrt{5}$. Similarly, $BV=d\sqrt{5}$. We now use the [[Law of Cosines]]:
+
+$$AB^2=AV^2+VB^2-2AV\cdot VB\cos{\angle AVB}\Rightarrow 16d^2=10d^2-10d^2\cos{\angle AVB}$$
+
+$$\Rightarrow \cos{\angle AVB}=-\frac{3}{5}$$
+
+This shows that the answer is $\boxed{\textbf{(D)}}$.

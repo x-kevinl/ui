@@ -1,0 +1,12 @@
+== Solution 1==
+
+We know that the domain of <math>\text{arcsin}</math> is <math>[-1, 1]</math>, so <math>-1 \le \log_m nx \le 1</math>. Now we can apply the definition of logarithms:
+<cmath>m^{-1} = \frac1m \le nx \le m</cmath> <cmath>\implies \frac{1}{mn} \le x \le \frac{m}{n}</cmath>
+Since the domain of <math>f(x)</math> has length <math>\frac{1}{2013}</math>, we have that
+<cmath>\frac{m}{n} - \frac{1}{mn} = \frac{1}{2013}</cmath> <cmath>\implies \frac{m^2 - 1}{mn} = \frac{1}{2013}</cmath>
+
+A larger value of <math>m</math> will also result in a larger value of <math>n</math> since <math> \frac{m^2 - 1}{mn} \approx  \frac{m^2}{mn}=\frac{m}{n}</math> meaning <math>m</math> and <math>n</math> increase about linearly for large <math>m</math> and <math>n</math>. So we want to find the smallest value of <math>m</math> that also results in an integer value of <math>n</math>. The problem states that <math>m > 1</math>. Thus, first we try <math>m = 2</math>:
+<cmath>\frac{3}{2n} = \frac{1}{2013} \implies 2n = 3 \cdot 2013 \implies n \notin \mathbb{Z} </cmath>  
+Now, we try <math>m=3</math>:
+<cmath>\frac{8}{3n} = \frac{1}{2013} \implies 3n = 8 \cdot 2013 \implies n = 8 \cdot 671 = 5368</cmath>
+Since <math>m=3</math> is the smallest value of <math>m</math> that results in an integral <math>n</math> value, we have minimized <math>m+n</math>, which is <math>5368 + 3 = 5371 \equiv \boxed{371} \pmod{1000}</math>.

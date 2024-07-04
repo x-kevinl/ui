@@ -1,0 +1,24 @@
+==Solution 1==
+
+When given a sequence problem, one good thing to do is to check if the sequence repeats itself or if there is a pattern.
+
+After computing more values of the sequence, it can be observed that the sequence repeats itself every 10 terms starting at <math>a_{0}</math>.
+
+<math>a_{0} = 2</math>,
+<math>a_{1} = 5</math>,
+<math>a_{2} = 8</math>,
+<math>a_{3} = 5</math>,
+<math>a_{4} = 6</math>,
+<math>a_{5} = 10</math>,
+<math>a_{6} = 7</math>,
+<math>a_{7} = 4</math>,
+<math>a_{8} = 7</math>,
+<math>a_{9} = 6</math>,
+<math>a_{10} = 2</math>,
+<math>a_{11} = 5</math>,
+<math>a_{12} = 8</math>,
+<math>a_{13} = 5</math>
+
+We can simplify the expression we need to solve to <math>a_{8}\cdot a_{10} \cdot a_{2}</math>.
+
+Our answer is <math>7 \cdot 2 \cdot 8</math> <math>= \boxed{112}</math>.

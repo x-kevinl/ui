@@ -1,0 +1,45 @@
+==Solution 1==
+The radius of the circle is $\frac{\sqrt{3}}{3} = \sqrt{\frac{1}{3}}$. Half the diagonal of the square is $\frac{\sqrt{1^2+1^2}}{2} = \frac{\sqrt{2}}{2} = \sqrt{\frac12}$. We can see that the circle passes outside the square, but the square is NOT completely contained in the circle. Therefore the picture will look something like this:
+
+<center><asy>
+unitsize(5cm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+dotfactor=3;
+
+real r=sqrt(1/3);
+pair O=(0,0);
+pair W=(0.5,0.5), X=(0.5,-0.5), Y=(-0.5,-0.5), Z=(-0.5,0.5);
+pair A=(-sqrt(1/12),0.5), B=(sqrt(1/12),0.5);
+pair V=(0,0.5);
+path outer=Circle(O,r);
+draw(outer);
+draw(W--X--Y--Z--cycle);
+draw(O--A);
+draw(O--B);
+draw(V--O);
+
+pair[] ps={A,B,V,O};
+dot(ps);
+
+label("$O$",O,SW);
+label("$\frac{\sqrt{3}}{3}$",O--B,SE);
+label("$A$",A,NW);
+label("$B$",B,NE);
+label("$X$",V,NW);
+label("$a$",B--V,S);
+label("$\frac12$",O--V,W);
+</asy></center>
+
+Then we proceed to find: 4 $\cdot$ (area of sector marked off by the two radii - area of the triangle with sides on the square and the two radii).
+
+First we realize that the radius perpendicular to the side of the square between the two radii marking off the sector splits $AB$ in half. Let this half-length be $a$. Also note that $OX=\frac12$ because it is half the side length of the square. Because this is a right triangle, we can use the [[Pythagorean Theorem]] to solve for $a.$
+
+$$a^2+\left( \frac12 \right) ^2 = \left( \frac{\sqrt{3}}{3} \right) ^2$$
+
+Solving, $a= \frac{\sqrt{3}}{6}$ and $2a=\frac{\sqrt{3}}{3}$. Since $AB=AO=BO$, $\triangle AOB$ is an equilateral triangle and the central angle is $60^{\circ}$. Therefore the sector has an area $\pi \left( \frac{\sqrt{3}}{3} \right) ^2 \left( \frac{60}{360} \right) = \frac{\pi}{18}$.
+
+Now we turn to the triangle. Since it is equilateral, we can use the formula for the [[area of an equilateral triangle]] which is
+
+$$\frac{s^2\sqrt{3}}{4} = \frac{\frac13 \sqrt{3}}{4} = \frac{\sqrt{3}}{12}$$
+
+Putting it together, we get the answer to be $4\cdot\left( \frac{\pi}{18}-\frac{\sqrt{3}}{12} \right)= \boxed{\textbf{(B)}\ \frac{2\pi}{9}-\frac{\sqrt{3}}{3}}$

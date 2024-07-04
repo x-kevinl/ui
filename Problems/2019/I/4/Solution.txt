@@ -1,0 +1,6 @@
+==Solution 1 (Recursion)==
+There are <math>0-3</math> substitutions. The number of ways to sub any number of times must be multiplied by the previous number. This is defined recursively. The case for <math>0</math> subs is <math>1</math>, and the ways to reorganize after <math>n</math> subs is the product of the number of new subs (<math>12-n</math>) and the players that can be ejected (<math>11</math>). The formula for <math>n</math> subs is then <math>a_n=11(12-n)a_{n-1}</math> with <math>a_0=1</math>. 
+
+Summing from <math>0</math> to <math>3</math> gives <math>1+11^2+11^{3}\cdot 10+11^{4}\cdot 10\cdot 9</math>. Notice that <math>10+9\cdot11\cdot10=10+990=1000</math>. Then, rearrange it into <math>1+11^2+11^3\cdot (10+11\cdot10\cdot9)= 1+11^2+11^3\cdot (1000)</math>. When taking modulo <math>1000</math>, the last term goes away. What is left is <math>1+11^2=\boxed{122}</math>.
+
+~BJHHar

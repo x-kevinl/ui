@@ -1,0 +1,6 @@
+==Solution 1==
+Notice that the area of the shaded region is $(2^2\pi-1^2\pi)+(4^2\pi-3^2\pi)+(6^2\pi-5^2\pi)+ \cdots + (n^2\pi-(n-1)^2 \pi)$ for any even number $n$.
+
+Using the difference of squares, this simplifies to $(1+2+3+4+\cdots+n) \pi$. So, we are basically finding the smallest $n$ such that $\frac{n(n+1)}{2}>2023 \Rightarrow n(n+1) > 4046$. Since $60(61) > 60^2=3600$, the only option higher than $60$ is $\boxed{\textbf{(E) } 64}$.
+
+~MrThinker

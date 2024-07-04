@@ -1,0 +1,6 @@
+==Solution 1==
+Notice that either a woman stays in her own seat after the rearrangement, or two adjacent women swap places. Thus, our answer is counting the number of ways to arrange 1x1 and 2x1 blocks to form a 1x10 rectangle. This can be done via casework depending on the number of 2x1 blocks. The cases of 0, 1, 2, 3, 4, 5 2x1 blocks correspond to 10, 8, 6, 4, 2, 0 1x1 blocks, and so the sum of the cases is
+$$\binom{10}{0} + \binom{9}{1} + \binom{8}{2} + \binom{7}{3} + \binom{6}{4} + \binom{5}{5} = 1 + 9 + 28 + 35 + 15 + 1 = \boxed{89}.$$
+
+===Solution 1 Shortcut===
+Recall that the number of ways to arrange 1x1 and 2x1 blocks to form a 1xn rectangle results in [[Fibonacci numbers]]. Clearly, $\boxed{89}$ is the only fibonacci number, so no calculation is needed for this problem.

@@ -1,0 +1,2 @@
+==Solution 1==
+Notice that we can rewrite $N^{16}$ as $(N^{4})^4$. By [[Fermat's Little Theorem]], we know that $N^{(5-1)} \equiv 1 \pmod {5}$  if $N \not \equiv 0 \pmod {5}$. Therefore for all $N \not \equiv 0 \pmod {5}$ we have $N^{16} \equiv (N^{4})^4 \equiv 1^4 \equiv 1 \pmod 5$. Since  $1\leq N \leq 2020$, and $2020$ is divisible by $5$, $\frac{1}{5}$ of the possible $N$ are divisible by $5$. Therefore, $N^{16} \equiv 1 \pmod {5}$ with probability $1-\frac{1}{5},$ or $\boxed{\textbf{(D) } \frac 45}$.

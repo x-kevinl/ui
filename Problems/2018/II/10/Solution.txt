@@ -1,0 +1,17 @@
+==Solution 1==
+
+Just to visualize solution 1. If we list all possible <math>(x,f(x))</math>, from <math>{1,2,3,4,5}</math> to <math>{1,2,3,4,5}</math> in a specific order, we get <math>5 \cdot 5 = 25</math> different <math>(x,f(x))</math> 's.
+Namely:
+
+<cmath>(1,1) (1,2) (1,3) (1,4) (1,5)</cmath>
+<cmath>(2,1) (2,2) (2,3) (2,4) (2,5)</cmath> 
+<cmath>(3,1) (3,2) (3,3) (3,4) (3,5)</cmath> 
+<cmath>(4,1) (4,2) (4,3) (4,4) (4,5)</cmath>
+<cmath>(5,1) (5,2) (5,3) (5,4) (5,5)</cmath>
+
+To list them in this specific order makes it a lot easier to solve this problem. We notice, In order to solve this problem at least one pair of <math>(x,x)</math> where <math>x\in{1,2,3,4,5}</math> must exist.In this case I rather "go backwards". First fixing <math>5</math> pairs <math>(x,x)</math>, (the diagonal of our table) and map them to the other fitting pairs <math>(x,f(x))</math>. You can do this in <math>\frac{5!}{5!} = 1</math> way. Then fixing <math>4</math> pairs <math>(x,x)</math> (The diagonal minus <math>1</math>) and map them to the other fitting pairs <math>(x,f(x))</math>. You can do this in 
+<math>4\cdot\frac{5!}{4!} = 20</math> ways. Then fixing <math>3</math> pairs <math>(x,x)</math> (The diagonal minus <math>2</math>) and map them to the other fitting pairs <math>(x,f(x))</math>. You can do this in <math>\tfrac{(5\cdot4\cdot3\cdot6\cdot3)}{3!2!} + \tfrac{(5\cdot4\cdot3\cdot6\cdot1)}{3!} = 150</math> ways.
+Fixing <math>2</math> pairs <math>(x,x)</math> (the diagonal minus <math>3</math>) and map them to the other fitting pairs <math>(x,f(x))</math>. You can do this in <math>\frac{(5\cdot4\cdot6\cdot4\cdot2)}{2!3!} + \frac{(5\cdot4\cdot6\cdot4\cdot2)}{2!2!} + \frac{(5\cdot4\cdot6\cdot2\cdot1)}{2!2!} = 380</math> ways.
+Lastly, fixing <math>1</math> pair <math>(x,x)</math> (the diagonal minus <math>4</math>) and map them to the other fitting pairs <math>(x,f(x))</math>. You can do this in <math>\tfrac{5!}{4!} + 4\cdot\tfrac{5!}{3!} + 5! = 205</math> ways.
+
+So <math>1 + 20 + 150 + 380 + 205 = \framebox{756}</math>

@@ -1,0 +1,4 @@
+==Problem==
+Harold tosses a coin four times. The probability that he gets at least as many heads as tails is
+
+$ \text{(A)}\ \frac{5}{16}\qquad\text{(B)}\ \frac{3}{8}\qquad\text{(C)}\ \frac{1}{2}\qquad\text{(D)}\ \frac{5}{8}\qquad\text{(E)}\ \frac{11}{16} $

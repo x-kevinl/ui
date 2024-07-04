@@ -1,0 +1,2 @@
+== Problem ==
+Maya lists all the positive divisors of <math>2010^2</math>. She then randomly selects two distinct divisors from this list. Let <math>p</math> be the [[probability]] that exactly one of the selected divisors is a [[perfect square]]. The probability <math>p</math> can be expressed in the form <math>\frac {m}{n}</math>, where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. Find <math>m + n</math>.

@@ -1,0 +1,2 @@
+==Solution==
+Given that these are the only math teachers at Euclid Middle School and we are told how many from each class are taking the AMC 8, we simply add the three numbers to find the total. $11+8+9=\boxed{\textbf{(C)}\ 28}$

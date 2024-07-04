@@ -1,0 +1,11 @@
+==Solution 1==
+
+Note that $\triangle APB \cong \triangle BQC$ by ASA. ($\angle PAB = \angle QBC = 90^\circ, AB=CB,$ and $\angle PBA = \angle QCB.$) Then, it follows that $\overline{PB} \cong \overline{QC}.$ Thus, $QC = PB = PR + RB = 7 + 6 = 13.$ Define $x$ to be the length of side $CR,$ then $RQ = 13-x.$ Because $\overline{BR}$ is the altitude of the triangle, we can use the property that $QR \cdot RC = BR^2.$ Substituting the given lengths, we have $$(13-x) \cdot x = 36.$$ Solving, gives $RQ = 4$ and $RC = 9.$ We eliminate the possibility of $x=4$ because $RC > QR.$ Thus, the side length of the square, by Pythagorean Theorem, is $$\sqrt{9^2 +6^2} = \sqrt{81+36} = \sqrt{117}.$$ Thus, the area of the square is $(\sqrt{117})^2 = 117,$ so the answer is $\boxed{\textbf{(D) }117}.$ 
+
+Note that there is another way to prove that $CR = 4$ is impossible. If $CR = 4,$ then the side length would be $\sqrt{4^2 + 6^2} = \sqrt{52},$ and the area would be $52,$ but that isn't in the answer choices. Thus, $CR$ must be $9.$
+
+~NH14 ~sl_hc
+
+Extra Note: Another way to prove $4$ is impossible. The side length of the square, $S$, is equal to $\sqrt{4^2 + 6^2} = \sqrt{52}$. Because $x = 4$, $RQ = 9$. Because $QB = \sqrt{RB^2 + RQ^2} = \sqrt{6^2 + 9^2} = \sqrt{117}$ and $QB < S$ but $\sqrt{117} > \sqrt{52}$, we have proof by contradiction. And so $x = 9$.
+
+~ Wiselion (Extra Note)

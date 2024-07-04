@@ -1,0 +1,15 @@
+== Solution 1 ==
+
+As the unique mode is $8$, there are at least two $8$s.
+
+As the range is $8$ and one of the numbers is $8$, the largest one can be at most $16$.
+
+If the largest one is $16$, then the smallest one is $8$, and thus the mean is strictly larger than $8$, which is a contradiction.
+
+If we have 2 8's we can add find the numbers 4, 6, 7, 8, 8, 9, 10, 12.
+This is a possible solution but has not reached the maximum.
+
+If we have 4 8's we can find the numbers 6, 6, 6, 8, 8, 8, 8, 14.
+
+We can also see that they satisfy the need for the mode, median, and range to be 8. This means that the answer will be
+$\boxed{\text{(D)}\ 14 }$. ~By QWERTYUIOPASDFGHJKLZXCVBNM

@@ -1,0 +1,4 @@
+==Problem==
+In how many ways can the sequence $1,2,3,4,5$ be rearranged so that no three consecutive terms are increasing and no three consecutive terms are decreasing?
+
+$\textbf{(A)} ~10\qquad\textbf{(B)} ~18\qquad\textbf{(C)} ~24 \qquad\textbf{(D)} ~32 \qquad\textbf{(E)} ~44$

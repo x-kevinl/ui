@@ -1,0 +1,2 @@
+== Problem ==
+[[Square]] <math>ABCD</math> is inscribed in a [[circle]]. Square <math>EFGH</math> has vertices <math>E</math> and <math>F</math> on <math>\overline{CD}</math> and vertices <math>G</math> and <math>H</math> on the circle. If the area of square <math>ABCD</math> is <math>1</math>, then the area of square <math>EFGH</math> can be expressed as <math>\frac {m}{n}</math> where <math>m</math> and <math>n</math> are relatively prime positive integers and <math>m < n</math>. Find <math>10n + m</math>.

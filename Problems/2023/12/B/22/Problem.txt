@@ -1,0 +1,5 @@
+==Problem==
+
+A real-valued function $f$ has the property that for all real numbers $a$ and $b,$ $$f(a + b)  + f(a - b) = 2f(a) f(b).$$ Which one of the following cannot be the value of $f(1)?$
+
+$\textbf{(A) } 0 \qquad \textbf{(B) } 1 \qquad \textbf{(C) } -1 \qquad \textbf{(D) } 2 \qquad \textbf{(E) } -2$

@@ -1,0 +1,2 @@
+==Solution==
+There are $2! = 2$ ways to order the boys on the ends, and there are $3!=6$ ways to order the girls in the middle. We get the answer to be $2 \cdot 6 = \boxed{\textbf{(E) }12}$.

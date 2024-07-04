@@ -1,0 +1,2 @@
+==Problem 4==
+In <math>\triangle ABC, AB = AC = 10</math> and <math>BC = 12</math>. Point <math>D</math> lies strictly between <math>A</math> and <math>B</math> on <math>\overline{AB}</math> and point <math>E</math> lies strictly between <math>A</math> and <math>C</math> on <math>\overline{AC}</math> so that <math>AD = DE = EC</math>. Then <math>AD</math> can be expressed in the form <math>\dfrac{p}{q}</math>, where <math>p</math> and <math>q</math> are relatively prime positive integers. Find <math>p+q</math>.

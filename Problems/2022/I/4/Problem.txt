@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>w = \dfrac{\sqrt{3} + i}{2}</math> and <math>z = \dfrac{-1 + i\sqrt{3}}{2},</math> where <math>i = \sqrt{-1}.</math> Find the number of ordered pairs <math>(r,s)</math> of positive integers not exceeding <math>100</math> that satisfy the equation <math>i \cdot w^r = z^s.</math>

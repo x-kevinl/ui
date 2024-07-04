@@ -1,0 +1,11 @@
+==Solution 1 (Minimal Casework)==
+Define <math>f(x)</math> to be the number of subsets of <math>\{1, 2, 3, 4, \ldots x\}</math> that have <math>0</math> consecutive element pairs, and <math>f'(x)</math> to be the number of subsets that have <math>1</math> consecutive pair.
+
+Using casework on where the consecutive element pair is, there is a unique consecutive element pair that satisfies the conditions. It is easy to see that <cmath>f'(10) = 2f(7) + 2f(6) + 2f(1)f(5) + 2f(2)f(4) + f(3)^2.</cmath>
+
+We see that <math>f(1) = 2</math>, <math>f(2) = 3</math>, and <math>f(n) = f(n-1) + f(n-2)</math>. This is because if the element <math>n</math> is included in our subset, then there are <math>f(n-2)</math> possibilities for the rest of the elements (because <math>n-1</math> cannot be used), and otherwise there are <math>f(n-1)</math> possibilities. Thus, by induction, <math>f(n)</math> is the <math>n+1</math>th Fibonacci number.
+
+This means that <math>f'(10) = 2(34) + 2(21) + 2(2)(13) + 2(3)(8) + 5^2 = \boxed{235}</math>.
+
+
+~mathboy100

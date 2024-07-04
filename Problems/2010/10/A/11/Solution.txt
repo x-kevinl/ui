@@ -1,0 +1,31 @@
+== Solution 1 ==
+
+Since we are given the range of the solutions, we must re-write the inequalities so that we have $ x $ in terms of $ a $ and $ b $. 
+
+$ a\le 2x+3\le b $
+
+Subtract $ 3 $ from all of the quantities:
+
+$ a-3\le 2x\le b-3 $
+
+Divide all of the quantities by $ 2 $.
+
+$ \frac{a-3}{2}\le x\le \frac{b-3}{2} $
+
+Since we have the range of the solutions, we can make it equal to $ 10 $.
+
+$ \frac{b-3}{2}-\frac{a-3}{2} = 10 $
+
+Multiply both sides by 2.
+
+$ (b-3) - (a-3) = 20 $
+
+Re-write without using parentheses.
+
+$ b-3-a+3 = 20 $
+
+Simplify.
+
+$ b-a = 20 $
+
+We need to find $ b - a $ for the problem, so the answer is $ \boxed{20\ \textbf{(D)}} $

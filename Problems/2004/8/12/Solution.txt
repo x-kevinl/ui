@@ -1,0 +1,2 @@
+==Solution==
+When not being used, the cell phone uses up $\frac{1}{24}$ of its battery per hour. When being used, the cell phone uses up $\frac{1}{3}$ of its battery per hour. Since Niki's phone has been on for $9$ hours, of those $8$ simply on and $1$ being used to talk, $8(\frac{1}{24}) + 1(\frac{1}{3}) = \frac{2}{3}$ of its battery has been used up. To drain the remaining $\frac{1}{3}$ the phone can last for $\frac{\frac{1}{3}}{\frac{1}{24}}=\boxed{\textbf{(B)}\ 8}$ more hours without being used.

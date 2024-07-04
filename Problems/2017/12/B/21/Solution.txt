@@ -1,0 +1,4 @@
+==Solution 1(FAST)==
+First, remove all the 90s, since they make no impact. So, we have numbers from $1$ to $10$. Then, $5$ is the 7th number. Let the sum of the first $6$ numbers be $k$. Then, $k\equiv 0 \mod 6$ and $k\equiv 3 \mod 7$. We easily solve this as $k \equiv 24 \mod 42$. Clearly, the sum of the first $6$ numbers must be $570$. In order for the first $5$ numbers to sum to a multiple of $5$, the sixth number must also be a multiple of $5$, since $30$ is a multiple of $5$. Thus, the only option is the sixth number is $10$, which gives $10+90=  \boxed{\textbf{(E) }100}$
+
+~ firebolt360

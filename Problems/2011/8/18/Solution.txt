@@ -1,0 +1,4 @@
+==Solution==
+There are $6\cdot6=36$ ways to roll the two dice, and 6 of them result in two of the same number. Out of the remaining $36-6=30$ ways, the number of rolls where the first dice is greater than the second should be the same as the number of rolls where the second dice is greater than the first. In other words, there are $30/2=15$ ways the first roll can be greater than the second. The probability the first number is greater than or equal to the second number is
+
+$$\frac{15+6}{36}=\frac{21}{36}=\boxed{\textbf{(D)}\ \frac{7}{12}}$$

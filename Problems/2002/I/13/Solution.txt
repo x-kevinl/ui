@@ -1,0 +1,22 @@
+== Solution 1==
+<center><asy>
+size(150); pathpen = linewidth(0.7); pointpen = black; pen f = fontsize(8); pair A=(0,0), B=(24,0), E=(A+B)/2, C=IP(CR(A,3*70^.5),CR(E,27)), D=(B+C)/2, F=IP(circumcircle(A,B,C),E--C+2*(E-C));
+D(D(MP("A",A))--D(MP("B",B))--D(MP("C",C,NW))--cycle); D(circumcircle(A,B,C)); D(MP("F",F)); D(A--D); D(C--F); D(A--F--B); D(MP("E",E,NE)); D(MP("D",D,NE)); MP("12",(A+E)/2,SE,f);MP("12",(B+E)/2,f); MP("27",(C+E)/2,SW,f); MP("18",(A+D)/2,SE,f);
+</asy></center>
+
+Applying [[Stewart's Theorem]] to medians <math>AD, CE</math>, we have:
+<center>
+<cmath>\begin{align*}
+BC^2 + 4 \cdot 18^2 &= 2\left(24^2 + AC^2\right) \\
+24^2 + 4 \cdot 27^2 &= 2\left(AC^2 + BC^2\right) 
+\end{align*}</cmath>
+</center>
+Substituting the first equation into the second and simplification yields <math>24^2 = 2\left(3AC^2 + 2 \cdot 24^2 - 4 \cdot 18^2\right)- 4 \cdot 27^2</math> <math> \Longrightarrow AC = \sqrt{2^5 \cdot 3 + 2 \cdot 3^5 + 2^4 \cdot 3^3 - 2^7 \cdot 3} = 3\sqrt{70}</math>. 
+
+By the [[Power of a Point Theorem]] on <math>E</math>, we get <math>EF = \frac{12^2}{27} = \frac{16}{3}</math>. The [[Law of Cosines]] on <math>\triangle ACE</math> gives 
+<center>
+<cmath>\begin{align*}
+\cos \angle AEC = \left(\frac{12^2 + 27^2 - 9 \cdot 70}{2 \cdot 12 \cdot 27}\right) = \frac{3}{8}
+\end{align*}</cmath>
+</center>
+Hence <math>\sin \angle AEC = \sqrt{1 - \cos^2 \angle AEC} = \frac{\sqrt{55}}{8}</math>. Because <math>\triangle AEF, BEF</math> have the same height and equal bases, they have the same area, and <math>[ABF] = 2[AEF] = 2 \cdot \frac 12 \cdot AE \cdot EF \sin \angle AEF = 12 \cdot \frac{16}{3} \cdot \frac{\sqrt{55}}{8} = 8\sqrt{55}</math>, and the answer is <math>8 + 55 = \boxed{063}</math>.

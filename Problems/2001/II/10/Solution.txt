@@ -1,0 +1,7 @@
+== Solution 1 ==
+The [[prime factorization]] of <math>1001 = 7\times 11\times 13</math>. We have <math>7\times 11\times 13\times k = 10^j - 10^i = 10^i(10^{j - i} - 1)</math>. Since <math>\text{gcd}\,(10^i = 2^i \times 5^i, 7 \times 11 \times 13) = 1</math>, we require that <math>1001 = 10^3 + 1 | 10^{j-i} - 1</math>. From the factorization <math>10^6 - 1 = (10^3 + 1)(10^{3} - 1)</math>, we see that <math>j-i = 6</math> works; also, <math>a-b | a^n - b^n</math> implies that <math>10^{6} - 1 | 10^{6k} - 1</math>, and so any <math>\boxed{j-i \equiv 0 \pmod{6}}</math> will work. 
+
+<!-- I cannot make sense of this, so I commented it: - azjps - we require that <math>10^{j - i} - 1\equiv 0 \mod 1001</math>. By [[Euler's totient theorem]], <math>j - i\equiv 0\mod 6</math>. -->
+To show that no other possibilities work, suppose <math>j-i \equiv a \pmod{6},\ 1 \le a \le 5</math>, and let <math>j-i-a = 6k</math>. Then we can write <math>10^{j-i} - 1 = 10^{a} (10^{6k} - 1) + (10^{a} - 1)</math>, and we can easily verify that <math>10^6 - 1 \nmid 10^a - 1</math> for <math>1 \le a \le 5</math>.
+
+If <math>j - i = 6, j\leq 99</math>, then we can have solutions of <math>10^6 - 10^0, 10^7 - 10^1, \dots\implies 94</math> ways. If <math>j - i = 12</math>, we can have the solutions of <math>10^{12} - 10^{0},\dots\implies 94 - 6 = 88</math>, and so forth. Therefore, the answer is <math>94 + 88 + 82 + \dots + 4\implies 16\left(\dfrac{98}{2}\right) = \boxed{784}</math>.

@@ -1,0 +1,4 @@
+==Solution 1==
+Let's first work out the slope-intercept form of all three lines:
+$(x,y)=(2,2)$ and $y=\frac{x}{2} + b$ implies $2=\frac{2}{2} +b=1+b$ so $b=1$, while $y=2x + c$ implies $2= 2 \cdot 2+c=4+c$ so $c=-2$. Also, $x+y=10$ implies $y=-x+10$. Thus the lines are $y=\frac{x}{2} +1, y=2x-2,$ and $y=-x+10$. 
+Now we find the intersection points between each of the lines with $y=-x+10$, which are $(6,4)$ and $(4,6)$. Using the distance formula and then the Pythagorean Theorem, we see that we have an isosceles triangle with base $2\sqrt{2}$ and height $3\sqrt{2}$, whose area is $\boxed{\textbf{(C) }6}$.

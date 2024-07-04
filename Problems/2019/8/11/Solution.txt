@@ -1,0 +1,14 @@
+==Solution 1==
+Let $x$ be the number of students taking both a math and a foreign language class.
+
+By P-I-E, we get $70 + 54 - x$ = $93$. 
+
+Solving gives us $x = 31$.
+
+But we want the number of students taking only a math class,
+
+which is $70 - 31 = 39$.
+
+$\boxed{\textbf{(D)}\ 39}$
+
+~phoenixfire

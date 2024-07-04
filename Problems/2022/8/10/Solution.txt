@@ -1,0 +1,15 @@
+==Solution 1 (Analysis)==
+
+Note that:
+<ul style="list-style-type:square;">
+  <li><b>At $\boldsymbol{8 \, \footnotesize\textbf{AM},}$ Ling's car was $\boldsymbol{0}$ miles from her house.</b></li><p>
+  <li>From $8 \, \textsc{am}$ to $10 \, \textsc{am},$ Ling drove to the hiking trail at a constant speed of $45$ miles per hour. <p>
+<b>It follows that at $\boldsymbol{10 \, \footnotesize\textbf{AM},}$ Ling's car was $\boldsymbol{45\cdot2=90}$ miles from her house.</b></li><p>
+  <li>From $10 \, \textsc{am}$ to $1 \, \textsc{pm},$ Ling did not move her car. <p>
+<b>It follows that at $\boldsymbol{1 \, \footnotesize\textbf{PM},}$ Ling's car was still $\boldsymbol{90}$ miles from her house.</b></li><p>
+  <li>From $1 \, \textsc{pm},$ Ling drove home at a constant speed of $60$ miles per hour. So, she arrived home $90\div60=1.5$ hour later. <p>
+<b>It follows that at $\boldsymbol{2:30 \, \footnotesize\textbf{PM},}$ Ling's car was $\boldsymbol{0}$ miles from her house.</b></li><p>
+</ul>
+Therefore, the answer is $\boxed{\textbf{(E)}}.$
+
+~MRENTHUSIASM

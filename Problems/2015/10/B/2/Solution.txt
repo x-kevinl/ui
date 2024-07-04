@@ -1,0 +1,2 @@
+==Solution==
+Marie finishes $2$ tasks in $1$ hour and $40$ minutes. Therefore, one task should take $50$ minutes to finish. $50$ minutes after $2\!:\!40$ PM is $3\!:\!30$ PM, so our answer is $\boxed{\textbf{(B) }\text{3:30 PM}}$

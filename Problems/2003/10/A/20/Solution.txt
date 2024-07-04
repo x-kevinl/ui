@@ -1,0 +1,26 @@
+== Solution ==
+To be a three digit number in base-10:  
+
+$10^{2} \leq n \leq 10^{3}-1$
+
+$100 \leq n \leq 999$ 
+
+Thus there are $900$ three-digit numbers in base-10
+
+To be a three-digit number in base-9:  
+
+$9^{2} \leq n \leq 9^{3}-1$
+
+$81 \leq n \leq 728$
+
+To be a three-digit number in base-11:  
+
+$11^{2} \leq n \leq 11^{3}-1$
+
+$121 \leq n \leq 1330$
+
+So, $121 \leq n \leq 728$ 
+
+Thus, there are $608$ base-10 three-digit numbers that are three digit numbers in base-9 and base-11. 
+
+Therefore the desired probability is $\frac{608}{900}\approx 0.7 \Rightarrow\boxed{\mathrm{(E)}\ 0.7}$.

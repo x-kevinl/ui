@@ -1,0 +1,4 @@
+==Solution 1==
+We note that the only thing that affects the parity of the factor are the powers of 2. There are $10+5+2+1 = 18$ factors of 2 in the number. Thus, there are $18$ cases in which a factor of $21!$ would be even (have a factor of $2$ in its prime factorization), and $1$ case in which a factor of $21!$ would be odd. Therefore, the answer is $\boxed{\textbf{(B)} \frac 1{19}}$.
+
+Note from Williamgolly: To see why symmetry occurs here, we group the factors of 21! into 2 groups, one with powers of 2 and the others odd factors. For each power of 2, the factors combine a certain number of 2's from the first group and numbers from the odd group. That is why symmetry occurs here.

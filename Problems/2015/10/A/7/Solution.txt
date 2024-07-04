@@ -1,0 +1,7 @@
+==Solution 1==
+
+$73-13 = 60$, so the amount of terms in the sequence $13$, $16$, $19$, $\dotsc$, $70$, $73$ is the same as in the sequence $0$, $3$, $6$, $\dotsc$, $57$, $60$. 
+
+In this sequence, the terms are the multiples of $3$ going up to $60$, and there are $20$ multiples of $3$ in $60$. 
+
+However, the number 0 must also be included, adding another multiple. So, the answer is $\boxed{\textbf{(B)}\ 21}$.

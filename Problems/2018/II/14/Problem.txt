@@ -1,0 +1,3 @@
+==Problem==
+
+The incircle <math>\omega</math> of triangle <math>ABC</math> is tangent to <math>\overline{BC}</math> at <math>X</math>. Let <math>Y \neq X</math> be the other intersection of <math>\overline{AX}</math> with <math>\omega</math>. Points <math>P</math> and <math>Q</math> lie on <math>\overline{AB}</math> and <math>\overline{AC}</math>, respectively, so that <math>\overline{PQ}</math> is tangent to <math>\omega</math> at <math>Y</math>. Assume that <math>AP = 3</math>, <math>PB = 4</math>, <math>AC = 8</math>, and <math>AQ = \dfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

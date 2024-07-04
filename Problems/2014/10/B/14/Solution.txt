@@ -1,0 +1,4 @@
+==Solution 1==
+Let $h$ be the number of hours Danica drove. Note that $abc$ can be expressed as $100\cdot a+10\cdot b+c$. From the given information, we have $100a+10b+c+55h=100c+10b+a$. This can be simplified into $99a+55h=99c$ by subtraction, which can further be simplified into $9a+5h=9c$ by dividing both sides by $11$. Thus we must have $h\equiv0\pmod9$. However, if $h\ge 15$, then $\text{min}\{c\}\ge\frac{9+5(15)}{9}>9$, which is impossible since $c$ must be a digit. The only value of $h$ that is divisible by $9$ and less than or equal to $14$ is $h=9$. 
+
+From this information, $9a+5(9)=9c\Rightarrow a+5=c$. Combining this with the inequalities $a+b+c\le7$ and $a\ge1$, we have $a+b+a+5\le7\Rightarrow 2a+b\le2$, which implies $a=1$, so $b=0$, and $c=6$. Thus $a^2+b^2+c^2=1+0+36=\fbox{37 \textbf{(D)}}$

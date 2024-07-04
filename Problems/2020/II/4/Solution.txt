@@ -1,0 +1,3 @@
+==Solution==
+After sketching, it is clear a <math>90^{\circ}</math> rotation is done about <math>(x,y)</math>. Looking between <math>A</math> and <math>A'</math>, <math>x+y=18</math>. Thus <math>90+18=\boxed{108}</math>.
+~mn28407

@@ -1,0 +1,22 @@
+==Solution 1==
+
+<asy>
+unitsize(4);
+pair A, B, C, E, P;
+A=(-20, 0);
+B=origin;
+C=(0,21);
+E=(-21, 20);
+P=extension(B,E, A, C);
+draw(A--B--C--cycle);
+draw(B--P);
+dot("$A$", A, SW);
+dot("$B$", B, SE);
+dot("$C$", C, NE);
+dot("$P$", P, NW);
+</asy>
+
+As the problem has no diagram, we draw a diagram. The hypotenuse has length $29$. Let $P$ be the foot of the altitude from $B$ to $AC$. Note that $BP$ is the shortest possible length of any segment. Writing the area of the triangle in two ways, we can solve for $BP=\dfrac{20\cdot  21}{29}$, which is between $14$ and $15$. 
+
+Let the line segment be $BX$, with $X$ on $AC$. As you move $X$ along the hypotenuse from $A$ to $P$, the length of $BX$ strictly decreases, hitting all the integer values from $20, 19, \dots 15$ (IVT). Similarly, moving $X$ from $P$ to $C$ hits all the integer values from $15, 16, \dots, 21$. This is a total of $\boxed{(D) 13}$ distinct line segments.
+(asymptote diagram added by elements2015)

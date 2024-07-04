@@ -1,0 +1,2 @@
+==Problem==
+The terms of an arithmetic sequence add to <math>715</math>. The first term of the sequence is increased by <math>1</math>, the second term is increased by <math>3</math>, the third term is increased by <math>5</math>, and in general, the <math>k</math>th term is increased by the <math>k</math>th odd positive integer. The terms of the new sequence add to <math>836</math>. Find the sum of the first, last, and middle terms of the original sequence.

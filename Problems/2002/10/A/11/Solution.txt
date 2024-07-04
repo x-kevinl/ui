@@ -1,0 +1,7 @@
+==Solution==
+
+A $0.8$ MB file can either be on its own disk, or share it with a $0.4$ MB. Clearly it is better to pick the second possibility. Thus we will have $3$ disks, each with one $0.8$ MB file and one $0.4$ MB file.
+
+We are left with $12$ files of $0.7$ MB each, and $12$ files of $0.4$ MB each. Their total size is $12\cdot (0.7 + 0.4) = 13.2$ MB. The total capacity of $9$ disks is $9\cdot 1.44 = 12.96$ MB, hence we need at least $10$ more disks. And we can easily verify that $10$ disks are indeed enough: six of them will carry two $0.7$ MB files each, and four will carry three $0.4$ MB files each.
+
+Thus our answer is $3+10 = \boxed{\textbf{(B) }13 }$.

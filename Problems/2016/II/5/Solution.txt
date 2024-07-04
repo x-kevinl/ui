@@ -1,0 +1,7 @@
+==Solution 1==
+
+Do note that by counting the area in 2 ways, the first altitude is <math>x = \frac{ab}{c}</math>. By similar triangles, the common ratio is <math>\rho = \frac{a}{c}</math> for each height, so by the geometric series formula, we have 
+<cmath>\begin{align}
+    6p=\frac{x}{1-\rho} = \frac{ab}{c-a}.
+\end{align}</cmath>
+Writing <math>p=a+b+c</math> and clearing denominators, we get <cmath>13a=6p .</cmath>Thus <math>p=13q</math>, <math>a=6q</math>, and <math>b+c=7q</math>, i.e. <math>c=7q-b</math>. Plugging these into <math>(1)</math>, we get <math>78q(q-b)=6bq</math>, i.e., <math>14b=13q</math>. Thus <math>q=14r</math> and <math>p=182r</math>, <math>b=13r</math>, <math>a=84r</math>, <math>c=85r</math>. Taking <math>r=1</math> (since <math>a,b,c</math> are relatively prime) we get <math>p=\boxed{182}</math>.

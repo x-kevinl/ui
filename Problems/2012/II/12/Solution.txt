@@ -1,0 +1,16 @@
+== Solution ==
+
+We see that a number <math>n</math> is <math>p</math>-safe if and only if the residue of <math>n \mod p</math> is greater than <math>2</math> and less than <math>p-2</math>; thus, there are <math>p-5</math> residues <math>\mod p</math> that a <math>p</math>-safe number can have. Therefore, a number <math>n</math> satisfying the conditions of the problem can have <math>2</math> different residues <math>\mod 7</math>, <math>6</math> different residues <math>\mod 11</math>, and <math>8</math> different residues <math>\mod 13</math>. The Chinese Remainder Theorem states that for a number <math>x</math> that is
+<math>a</math> (mod b)
+<math>c</math> (mod d)
+<math>e</math> (mod f)
+has one solution if <math>\gcd(b,d,f)=1</math>. For example, in our case, the number <math>n</math> can be:
+3 (mod 7)
+3 (mod 11)
+7 (mod 13)
+so since <math>\gcd(7,11,13)</math>=1, there is 1 solution for n for this case of residues of <math>n</math>.
+
+This means that by the Chinese Remainder Theorem, <math>n</math> can have <math>2\cdot 6 \cdot 8 = 96</math> different residues mod <math>7 \cdot 11 \cdot 13 = 1001</math>. Thus, there are <math>960</math> values of <math>n</math> satisfying the conditions in the range <math>0 < n \le 10010</math>. However, we must now remove any values greater than <math>10000</math> that satisfy the conditions. By checking residues, we easily see that the only such values are <math>10006</math> and <math>10007</math>, so there remain <math>\fbox{958}</math> values satisfying the conditions of the problem.
+
+
+*We can also say <math>\frac{2}{7}</math> of all numbers are 7-safe, <math>\frac{6}{11}</math> of all numbers are 11-safe, and <math>\frac{8}{13}</math> of all numbers are 13-safe. We can multiply these to get that <math>\frac{96}{1001}</math> of all numbers are simultaneously 7-safe, 11-safe, and 13-safe.

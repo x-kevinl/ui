@@ -1,0 +1,30 @@
+==Solution 1==
+
+Draw a $7 \times 7$ square.
+
+$$ \begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+K & J & H & G & H & J & K \\
+\hline
+J & F & E & D & E & F & J \\
+\hline
+H & E & C & B & C & E & H \\
+\hline
+G & D & B & A & B & D & G \\
+\hline
+H & E & C & B & C & E & H \\
+\hline
+J & F & E & D & E & F & J \\
+\hline
+K & J & H & G & H & J & K \\
+\hline
+\end{tabular} $$
+
+Start from the center and label all protruding cells symmetrically. (Note that "I" is left out of this labelling, so there are only 10 labels, not 11, as ending in K would suggest!)
+
+More specifically, since there are $4$ given lines of symmetry ($2$ diagonals, $1$ vertical, $1$ horizontal) and they split the plot into $8$ equivalent sections, we can take just one-eighth and study it in particular. Each of these sections has $10$ distinct sub-squares, whether partially or in full. So since each can be colored either white or black, we choose $2^{10}=1024$ but then subtract the $2$ cases where all are white or all are black. That leaves us with $\fbox{\textbf{(B)} \text{ 1022}}$.
+
+There are only ten squares we get to actually choose, and two independent choices for each, for a total of $2^{10} = 1024$ codes. Two codes must be subtracted (due to the rule that there must be at least one square of each color) for an answer of $\fbox{\textbf{(B) }1022}$.
+
+
+Note that this problem is very similar to the 1996 AIME Problem 7 https://artofproblemsolving.com/wiki/index.php/1996_AIME_Problems/Problem_7.

@@ -1,0 +1,28 @@
+== Solution 1==
+Let the smaller angle between the <math>x</math>-axis and the line <math>y=mx</math> be <math>\theta</math>. Note that the centers of the two circles lie on the angle bisector of the angle between the <math>x</math>-axis and the line <math>y=mx</math>. Also note that if <math>(x,y)</math> is on said angle bisector, we have that <math>\frac{y}{x}=\tan{\frac{\theta}{2}}</math>.  Let <math>\tan{\frac{\theta}{2}}=m_1</math>, for convenience. Therefore if <math>(x,y)</math> is on the angle bisector, then <math>x=\frac{y}{m_1}</math>. Now let the centers of the two relevant circles be <math>(a/m_1 , a)</math> and <math>(b/m_1 , b)</math> for some positive reals <math>a</math> and <math>b</math>. These two circles are tangent to the <math>x</math>-axis, so the radii of the circles are <math>a</math> and <math>b</math> respectively. We know that the point <math>(9,6)</math> is a point on both circles, so we have that
+
+<cmath>(9-\frac{a}{m_1})^2+(6-a)^2=a^2</cmath>
+
+<cmath>(9-\frac{b}{m_1})^2+(6-b)^2=b^2</cmath>
+
+Expanding these and manipulating terms gives
+
+<cmath>\frac{1}{m_1^2}a^2-[(18/m_1)+12]a+117=0</cmath>
+
+<cmath>\frac{1}{m_1^2}b^2-[(18/m_1)+12]b+117=0</cmath>
+
+It follows that <math>a</math> and <math>b</math> are the roots of the quadratic
+
+<cmath>\frac{1}{m_1^2}x^2-[(18/m_1)+12]x+117=0</cmath>
+
+It follows from Vieta's Formulas that the product of the roots of this quadratic is <math>117m_1^2</math>, but we were also given that the product of the radii was 68. Therefore <math>68=117m_1^2</math>, or <math>m_1^2=\frac{68}{117}</math>. Note that the half-angle formula for tangents is
+
+<cmath>\tan{\frac{\theta}{2}}=\sqrt{\frac{1-\cos{\theta}}{1+\cos{\theta}}}</cmath>
+
+Therefore
+
+<cmath>\frac{68}{117}=\frac{1-\cos{\theta}}{1+\cos{\theta}}</cmath>
+
+Solving for <math>\cos{\theta}</math> gives that <math>\cos{\theta}=\frac{49}{185}</math>. It then follows that <math>\sin{\theta}=\sqrt{1-\cos^2{\theta}}=\frac{12\sqrt{221}}{185}</math>.
+
+It then follows that <math>m=\tan{\theta}=\frac{12\sqrt{221}}{49}</math>. Therefore <math>a=12</math>, <math>b=221</math>, and <math>c=49</math>. The desired answer is then <math>12+221+49=\boxed{282}</math>.

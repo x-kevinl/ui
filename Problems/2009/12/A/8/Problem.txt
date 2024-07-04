@@ -1,0 +1,15 @@
+== Problem ==
+Four congruent rectangles are placed as shown. The area of the outer square is $4$ times that of the inner square. What is the ratio of the length of the longer side of each rectangle to the length of its shorter side?
+<center><asy>
+unitsize(6mm);
+defaultpen(linewidth(.8pt));
+
+path p=(1,1)--(-2,1)--(-2,2)--(1,2);
+draw(p);
+draw(rotate(90)*p);
+draw(rotate(180)*p);
+draw(rotate(270)*p);
+</asy></center>
+
+$\textbf{(A)}\ 3 \qquad \textbf{(B)}\ \sqrt {10} \qquad \textbf{(C)}\ 2 + \sqrt2 \qquad \textbf{(D)}\ 2\sqrt3 \qquad \textbf{(E)}\ 4$
+[[Category: Introductory Geometry Problems]]

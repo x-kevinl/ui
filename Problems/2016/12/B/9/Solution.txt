@@ -1,0 +1,4 @@
+==Solution==
+By Albert471
+
+To start, use algebra to determine the number of posts on each side. You have (the long sides count for $2$ because there are twice as many) $6x = 20 + 4$ (each corner is double counted so you must add $4$) Making the shorter end have $4$, and the longer end have $8$.  $((8-1)*4)*((4-1)*4) = 28*12 = 336$. Therefore, the answer is $\boxed{\textbf{(B)}\ 336}$

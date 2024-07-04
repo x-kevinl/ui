@@ -1,0 +1,2 @@
+==Problem==
+Complex numbers <math>a,</math> <math>b,</math> and <math>c</math> are zeros of a polynomial <math>P(z) = z^3 + qz + r,</math> and <math>|a|^2 + |b|^2 + |c|^2 = 250.</math> The points corresponding to <math>a,</math> <math>b,</math> and <math>c</math> in the complex plane are the vertices of a right triangle with hypotenuse <math>h.</math> Find <math>h^2.</math>

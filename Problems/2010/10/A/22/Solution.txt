@@ -1,0 +1,3 @@
+==Solution==
+
+To choose a chord, we know that two points must be chosen. This implies that for three chords to create a triangle and not intersect at a single point, six points need to be chosen. We also know that for any six points we pick, there is only $1$ way to connect the points such that a triangle is formed in the circle's interior (this is because we want no two chords to be nonintersecting ~Williamgolly). Therefore, the answer is ${{8}\choose{6}}$, which is equivalent to $\boxed{\textbf{(A) }28}$.

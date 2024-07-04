@@ -1,0 +1,11 @@
+== Solution 1 ==
+
+Since $x$ is the mean,
+$$\begin{align*}
+x&=\frac{60+100+x+40+50+200+90}{7}\\
+&=\frac{540+x}{7}.
+\end{align*}$$
+
+Therefore, $7x=540+x$, so $x=\boxed{\textbf{(D) }90}.$
+
+Note: if the mean of a set is in the set, it can be discarded and the mean of the remaining numbers will be the same. This means that if using the mean in your reasoning, you can just take the mean of the other 6 numbers, and it'll solve it marginally faster. -[[User:Integralarefun|Integralarefun]] ([[User talk:Integralarefun|talk]]) 18:19, 27 September 2023 (EDT)

@@ -1,0 +1,15 @@
+==Solution 1==
+
+Let <math>a</math>, <math>b</math>, and <math>c</math> be the vertex of a triangle that satisfies this problem, where <math>a > b > c</math>.
+<cmath>a - b = p_1</cmath>
+<cmath>b - c = p_2</cmath>
+<cmath>a - c = p_3</cmath>
+
+<math>p_3 = a - c = a - b + b - c = p_1 + p_2</math>. Because <math>p_3</math> is the sum of two primes, <math>p_1</math> and <math>p_2</math>, <math>p_1</math> or <math>p_2</math> must be <math>2</math>. Let <math>p_1 = 2</math>, then <math>p_3 = p_2 + 2</math>. There are only <math>8</math> primes less than <math>20</math>: <math>2, 3, 5, 7, 11, 13, 17, 19</math>. Only <math>3, 5, 11, 17</math> plus <math>2</math> equals another prime. <math>p_2 \in \{ 3, 5, 11, 17 \}</math>.
+
+Once <math>a</math> is determined, <math>a = b+2</math> and <math>b = c + p_2</math>. There are <math>18</math> values of <math>a</math> where <math>a+2 \le 20</math>, and <math>4</math> values of <math>p_2</math>. Therefore the answer is <math>18 \cdot 4 = \boxed{\textbf{072}}</math>
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen]
+
+===Note: This solution seems incorrect.===
+Although the answer is correct, solution 2 below is a more accurate way to approach this problem. I agree, I don't get how <math>a + 2 \leq 20</math>.

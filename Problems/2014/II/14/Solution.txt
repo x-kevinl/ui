@@ -1,0 +1,13 @@
+==Diagram==
+<asy>
+unitsize(20);
+pair A = MP("A",(-5sqrt(3),0)), B = MP("B",(0,5),N), C = MP("C",(5,0)), M = D(MP("M",0.5(B+C),NE)), D = MP("D",IP(L(A,incenter(A,B,C),0,2),B--C),N), H = MP("H",foot(A,B,C),N), N = MP("N",0.5(H+M),NE), P = MP("P",IP(A--D,L(N,N-(1,1),0,10)));
+D(A--B--C--cycle);
+D(B--H--A,blue+dashed);
+D(A--D);
+D(P--N);
+markscalefactor = 0.05;
+D(rightanglemark(A,H,B));
+D(rightanglemark(P,N,D));
+MP("10",0.5(A+B)-(-0.1,0.1),NW);
+</asy>

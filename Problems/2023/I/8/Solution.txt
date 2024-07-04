@@ -1,0 +1,33 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM; inspired by Math Jams. */
+
+size(300);
+pair A, B, C, D, O, P, R, S, T;
+A = origin;
+B = (125/4,0);
+C = B + 125/4 * dir((3,4));
+D = A + 125/4 * dir((3,4));
+O = (25,25/2);
+P = (15,5);
+R = foot(P,A,D);
+S = foot(P,A,B);
+T = foot(P,B,C);
+
+markscalefactor=0.15;
+draw(rightanglemark(P,R,D)^^rightanglemark(P,S,B)^^rightanglemark(P,T,C),red);
+draw(Circle(O,25/2)^^A--B--C--D--cycle^^B--T);
+draw(P--R^^P--S^^P--T,red+dashed);
+dot("$A$",A,1.5*dir(225),linewidth(4.5));
+dot("$B$",B,1.5*dir(-45),linewidth(4.5));
+dot("$C$",C,1.5*dir(45),linewidth(4.5));
+dot("$D$",D,1.5*dir(135),linewidth(4.5));
+dot("$P$",P,1.5*dir(60),linewidth(4.5));
+dot(R^^S^^T,linewidth(4.5));
+dot(O,linewidth(4.5));
+
+label("$9$",midpoint(P--R),dir(A-D),red);
+label("$5$",midpoint(P--S),dir(180),red);
+label("$16$",midpoint(P--T),dir(A-D),red);
+</asy>
+~MRENTHUSIASM

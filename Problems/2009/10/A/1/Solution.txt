@@ -1,0 +1,2 @@
+== Solution 1 ==
+$10$ cans would hold $120$ ounces, but $128>120$, so $11$ cans are required. Thus, the answer is $\mathrm{\boxed{(E)}}$.

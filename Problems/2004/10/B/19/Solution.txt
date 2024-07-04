@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+We already know that $a_1=2001$, $a_2=2002$, $a_3=2003$, and $a_4=2000$. Let's compute the next few terms to get the idea how the sequence behaves. We get $a_5 = 2002+2003-2000 = 2005$, $a_6=2003+2000-2005=1998$, $a_7=2000+2005-1998=2007$, and so on.
+
+We can now discover the following pattern: $a_{2k+1} = 2001+2k$ and $a_{2k}=2004-2k$. This is easily proved by induction. It follows that $a_{2004}=a_{2\cdot 1002} = 2004 - 2\cdot 1002 = \boxed{0}$.

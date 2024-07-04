@@ -1,0 +1,4 @@
+==Solution 1==
+For $\log_{7x}2023\cdot \log_{289x}2023=\log_{2023x}2023$, transform it into $\dfrac{\ln 289+\ln 7}{\ln 7 + \ln x}\cdot \dfrac{\ln 289+\ln 7}{\ln 289 + \ln x}=\dfrac{\ln 289+\ln 7}{\ln 289+\ln 7+\ln x}$. Replace $\ln x$ with $y$. Because we want to find the product of all solutions of $x$, it is equivalent to finding the exponential of the sum of all solutions of $y$. Change the equation to standard quadratic equation form, the term with 1 power of $y$ is canceled.  By using Vieta, we see that since there does not exist a $by$ term, $\sum y=0$ and $\prod x=e^0=\boxed{\textbf{(C)} 1}$.
+
+~plasta

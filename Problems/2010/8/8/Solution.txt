@@ -1,0 +1,8 @@
+==Solution==
+Because they are both moving in the same direction, Emily is riding relative to Emerson $12-8=4$ mph. Now we can look at it as if Emerson is not moving at all [on his skateboard] and Emily is riding at $4$ mph. It takes her
+
+$$\frac12 \ \text{mile} \cdot \frac{1\ \text{hour}}{4\ \text{miles}} = \frac18\ \text{hour}$$
+
+to ride the $1/2$ mile to reach him, and then the same amount of time to be $1/2$ mile ahead of him. This totals to
+
+$$2 \cdot \frac18 \ \text{hour} \cdot \frac{60\ \text{minutes}}{1\ \text{hour}} = \boxed{\textbf{(D)}\ 15}\ \text{minutes}$$

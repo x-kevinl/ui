@@ -1,0 +1,25 @@
+== Solution ==
+=== Video Solution ===
+
+https://youtu.be/3dfbWzOfJAI?t=222
+~pi_is_3.14
+
+=== Solution 1 ===
+A [[quadratic equation]] always has two roots, unless it has a double root. That means we can write the quadratic as a square, and the coefficients 4 and 9 suggest this. [[Completing the square]], $0 = (2x \pm 3)^2 = 4x^2 \pm 12x + 9$, so $\pm 12 = a + 8 \Longrightarrow a = 4, -20$. The sum of these is $-20 + 4 = -16 \Rightarrow \mathrm{(A)}$.
+
+=== Solution 2 ===
+Another method would be to use the quadratic formula, since our $x^2$ coefficient is given as 4, the $x$ coefficient is $a+8$ and the constant term is $9$. Hence, $x = \frac{-(a+8) \pm \sqrt {(a+8)^2-4(4)(9)}}{2(4)}$ Because we want only a single solution for $x$, the determinant must equal 0. Therefore, we can write $(a+8)^2 - 144 = 0$ which factors to $a^2 + 16a - 80 = 0$; using [[Vieta's formulas]] we see that the sum of the solutions for $a$ is the opposite of the coefficient of $a$, or $-16 \Rightarrow \mathrm{ (A)}$.
+
+=== Solution 3 ===
+Using the [[discriminant]], the result must equal $0$.
+$D = b^2 - 4ac$
+$  = (a+8)^2 - 4(4)(9)$
+$  = a^2 + 16a + 64 - 144$
+$  = a^2 + 16a - 80 = 0 \Rightarrow$
+$   (a + 20)(a - 4) = 0$
+Therefore, $a = -20$ or $a = 4$, giving a sum of $-16 \Rightarrow \mathrm{ (A)}$.
+
+===Solution 4===
+First, notice that for there to be only $1$ root to a quadratic, the quadratic must be a square. Then, notice that the quadratic and linear terms are both squares. Thus, the value of $a$ must be such that both $(2x+3)^2$ and $(2x-3)^2$. Clearly, $a=4$ or $a=-20$. Hence $-20 + 4 = -16 \Rightarrow \mathrm{(A)}$.
+
+Solution by franzliszt

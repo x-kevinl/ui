@@ -1,0 +1,5 @@
+==Solution 1 (Area and Perimeter of Square)==
+
+The area of this square is equal to $6 + 8 + 30 + 14 + 6 = 64$, and thus its side lengths are $8$. The sum of the dimensions of the rectangles are $2 + 7 + 5 + 6 + 2 + 3 + 1 + 6 + 2 + 4 = 38$. Thus, because the perimeter of the rectangle is $32$, the rectangle on the inside must have a perimeter of $6 \cdot 2 = 12$. The only rectangle that works is $\boxed{\textbf{(B) }B}$.
+
+~mathboy100

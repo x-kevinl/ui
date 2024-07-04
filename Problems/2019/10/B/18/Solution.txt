@@ -1,0 +1,10 @@
+==Solution 1==
+Let the two points that Henry walks in between be $P$ and $Q$, with $P$ being closer to home. As given in the problem statement, the distances of the points $P$ and $Q$ from his home are $A$ and $B$ respectively. By symmetry, the distance of point $Q$ from the gym is the same as the distance from home to point $P$. 
+
+Thus, $A = 2 - B$. 
+
+In addition, when he walks from point $Q$ to home, he walks $\frac{3}{4}$ of the distance, ending at point $P$. Therefore, we know that $B - A = \frac{3}{4}B$. 
+
+By substituting, we get $B - (2-B) = \frac{3}{4}\cdot B$ and we solve to get $B=\dfrac{8}{5}$, so $A=2-\dfrac{8}{5}=\dfrac{2}{5}$. 
+
+$|A-B|=\left|\dfrac{2}{5}-\dfrac{8}{5} \right|=\frac{6}{5}=\boxed{\textbf{(C) } 1 \frac{1}{5}}$.

@@ -1,0 +1,8 @@
+==Solution 1==
+We can consider two cases: when the three vertices are on one base, and when the vertices are on two bases.
+
+Case 1: vertices are on one base. Then we can call one of the vertices <math>A</math> for distinction. Either the triangle can have sides <math>1, 1, \sqrt{3}</math> with 6 cases or <math>\sqrt{3}, \sqrt{3}, \sqrt{3}</math> with 2 cases. This can be repeated on the other base for <math>16</math> cases.
+
+Case 2: The vertices span two bases. WLOG call the only vertex on one of the bases <math>X</math>. Call the closest vertex on the other base <math>B</math>, and label clockwise <math>C, D, E, F, G</math>. We will multiply the following scenarios by <math>12</math>, because the top vertex can have <math>6</math> positions and the top vertex can be on the other base. We can have <math>XCG, XDF</math>, but we are not done! Don't forget that the problem statement implies that the longest diagonal in a base is <math>2</math> and the height is <math>2</math>, so <math>XBE</math> is also correct! Those are the only three cases, so there are <math>12*3=36</math> cases for this case.
+
+In total there's <math>\boxed{052}</math> cases.

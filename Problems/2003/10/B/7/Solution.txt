@@ -1,0 +1,5 @@
+==Solution==
+
+The first three values in the sum are equal to $1,$ the next five equal to $2,$ the next seven equal to $3,$ and the last one equal to $4.$ For example, since $2^2=4$ any square root of a number less than $4$ must be less than $2.$ Sum them all together to get
+
+$$3\cdot1 + 5\cdot2 + 7\cdot3 + 1\cdot4 = 3+10+21+4 = \boxed{\textbf{(B) \ } 38}$$

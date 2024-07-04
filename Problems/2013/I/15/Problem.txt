@@ -1,0 +1,6 @@
+==Problem ==
+Let <math>N</math> be the number of ordered triples <math>(A,B,C)</math> of integers satisfying the conditions 
+(a) <math>0\le A<B<C\le99</math>, 
+(b) there exist integers <math>a</math>, <math>b</math>, and <math>c</math>, and prime <math>p</math> where <math>0\le b<a<c<p</math>, 
+(c) <math>p</math> divides <math>A-a</math>, <math>B-b</math>, and <math>C-c</math>, and 
+(d) each ordered triple <math>(A,B,C)</math> and each ordered triple <math>(b,a,c)</math> form arithmetic sequences. Find <math>N</math>.

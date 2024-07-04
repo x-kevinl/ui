@@ -1,0 +1,7 @@
+== Problem ==
+
+Suppose $x$ and $y$ are positive real numbers such that
+$$x^y=2^{64}\text{ and }(\log_2{x})^{\log_2{y}}=2^{7}.$$
+What is the greatest possible value of $\log_2{y}$?
+
+$\textbf{(A) }3 \qquad \textbf{(B) }4 \qquad \textbf{(C) }3+\sqrt{2} \qquad \textbf{(D) }4+\sqrt{3} \qquad \textbf{(E) }7$

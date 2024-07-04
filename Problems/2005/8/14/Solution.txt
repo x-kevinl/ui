@@ -1,0 +1,2 @@
+==Solution==
+Within each division, there are $\binom {6}{2} = 15$ pairings, and each of these games happens twice. The same goes for the other division so that there are $4(15)=60$ games within their own divisions. The number of games between the two divisions is $(6)(6)=36$. Together there are $60+36=\boxed{\textbf{(B)}\ 96}$ conference games.

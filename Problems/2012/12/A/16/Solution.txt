@@ -1,0 +1,28 @@
+==Diagram==
+<asy>
+size(8cm,8cm);
+path circ1, circ2;
+circ1=circle((0,0),5);
+circ2=circle((3,4),3);
+pair O, Z;
+O=(3,4);
+Z=(3,-4);
+pair [] x=intersectionpoints(circ1,circ2);
+pair [] y=intersectionpoints(x[1]--Z,circ2);
+pair B;
+B=midpoint(x[1]--y[0]);
+draw(B--O);
+draw(x[0]--Z);
+draw(O--Z);
+draw(x[1]--Z);
+draw(O--x[0]);
+draw(circ1);
+draw(circ2);
+draw(rightanglemark(Z,B,O,15));
+draw(x[1]--O--y[0]);
+label("$O$",O,NE);
+label("$Y$",x[0],SE);
+label("$X$",x[1],NW);
+label("$Z$",Z,S);
+label("$A$",y[0],SW);
+label("$B$",B,SW);</asy>

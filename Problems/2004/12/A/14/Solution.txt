@@ -1,0 +1,2 @@
+== Solution 1 ==
+Let $d$ be the common difference. Then $9$, $9+d+2=11+d$, $9+2d+20=29+2d$ are the terms of the geometric progression. Since the middle term is the [[geometric mean]] of the other two terms, $(11+d)^2 = 9(2d+29)$ $\Longrightarrow d^2 + 4d - 140$ $= (d+14)(d-10) = 0$. The smallest possible value occurs when $d = -14$, and the third term is $2(-14) + 29 = 1\Rightarrow\boxed{\mathrm{(A)}\ 1}$.

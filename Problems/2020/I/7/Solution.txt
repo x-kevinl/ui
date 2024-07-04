@@ -1,0 +1,6 @@
+== Solution 1 ==
+
+Let <math>k</math> be the number of women selected. Then, the number of men not selected is <math>11-(k-1)=12-k</math>.
+Note that the sum of the number of women selected and the number of men not selected is constant at <math>12</math>. Each combination of women selected and men not selected corresponds to a committee selection. Since choosing 12 individuals from the total of 23 would give <math>k</math> women and <math>12-k</math> men, the number of committee selections is <math>\binom{23}{12}</math>. 
+The answer is <math>\boxed{081}</math>.
+~awang11's sol

@@ -1,0 +1,2 @@
+== Problem ==
+Positive integers <math>a</math>, <math>b</math>, <math>c</math>, and <math>d</math> satisfy <math>a > b > c > d</math>, <math>a + b + c + d = 2010</math>, and <math>a^2 - b^2 + c^2 - d^2 = 2010</math>. Find the number of possible values of <math>a</math>.

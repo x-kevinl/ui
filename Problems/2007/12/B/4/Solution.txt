@@ -1,0 +1,2 @@
+== Solution ==
+$18$ bananas cost the same as $12$ apples, and $12$ apples cost the same as $8$ oranges, so $18$ bananas cost the same as $8 \Rightarrow \mathrm {(B)}$ oranges.

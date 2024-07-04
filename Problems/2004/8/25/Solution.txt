@@ -1,0 +1,6 @@
+==Solution 1==
+If the circle was shaded in, the intersection of the two squares would be a smaller square with half the sidelength, $2$. The area of this region would be the two larger squares minus the area of the intersection, the smaller square. This is $4^2 + 4^2 - 2^2 = 28$.
+
+The diagonal of this smaller square created by connecting the two points of intersection of the squares is the diameter of the circle. This value can be found with Pythagorean or a $45^\circ - 45^\circ - 90^\circ$ circle to be $2\sqrt{2}$. The radius is half the diameter, $\sqrt{2}$. The area of the circle is $\pi r^2 = \pi (\sqrt{2})^2 = 2\pi$.
+
+The area of the shaded region is the area of the two squares minus the area of the circle which is $\boxed{\textbf{(D)}\ 28-2\pi}$.

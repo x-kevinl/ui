@@ -1,0 +1,8 @@
+==Problem==
+When the roots of the polynomial 
+
+$$P(x)  = (x-1)^1 (x-2)^2 (x-3)^3 \cdot \cdot \cdot (x-10)^{10}$$
+
+are removed from the number line, what remains is the union of $11$ disjoint open intervals. On how many of these intervals is $P(x)$ positive?
+
+$\textbf{(A)}~3\qquad\textbf{(B)}~7\qquad\textbf{(C)}~6\qquad\textbf{(D)}~4\qquad\textbf{(E)}~5$

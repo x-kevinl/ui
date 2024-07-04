@@ -1,0 +1,38 @@
+==Solution 1 (Easy to Understand)==
+
+Let's try out for small values of <math>n</math> to get a feel for the problem. When <math>n=1, S_n</math> is obviously <math>1</math>. The problem states that for <math>n=2, S_n</math> is <math>4</math>. Let's try it out for <math>n=3</math>. 
+
+Let's perform casework on the number of elements in <math>A, B</math>. 
+
+<math>\textbf{Case 1:} |A| = |B| = 1</math>
+
+In this case, the only possible equivalencies will be if they are the exact same element, which happens <math>3</math> times.
+
+<math>\textbf{Case 2:} |A| = |B| = 2</math>
+ 
+In this case, if they share both elements, which happens <math>3</math> times, we will get <math>2</math> for each time, and if they share only one element, which also happens <math>6</math> times, we will get <math>1</math> for each time, for a total of <math>12</math> for this case.
+
+<math>\textbf{Case 3:} |A| = |B| = 3</math>
+
+In this case, the only possible scenario is that they both are the set <math>\{1,2,3\}</math>, and we have <math>3</math> for this case.
+
+
+In total, <math>S_3 = 18</math>.
+
+Now notice, the number of intersections by each element <math>1 \ldots 3</math>, or in general, <math>1 \ldots n</math> is equal for each element because of symmetry - each element when <math>n=3</math> adds <math>6</math> to the answer. Notice that <math>6 = \binom{4}{2}</math> - let's prove that <math>S_n = n \cdot \binom{2n-2}{n-1}</math> (note that you can assume this and answer the problem if you're running short on time in the real test).
+
+Let's analyze the element <math>k</math> - to find a general solution, we must count the number of these subsets that <math>k</math> appears in. For <math>k</math> to be in both <math>A</math> and <math>B</math>, we need both sets to contain <math>k</math> and another subset of <math>1</math> through <math>n</math> not including <math>k</math>. (<math>A = \{k\} \cup A'| A' \subset \{1,2,\ldots,n\} \land A' \not \subset \{k\} </math> and 
+<math>B = \{k\} \cup B'| B' \subset \{1,2,\ldots,n\} \land B' \not \subset \{k\} </math>)
+
+For any <math>0\leq l \leq n-1</math> that is the size of both <math>A'</math> and <math>B'</math>, the number of ways to choose the subsets <math>A'</math> and <math>B'</math> is <math>\binom{n-1}{l}</math> for both subsets, so the total number of ways to choose the subsets are <math>\binom{n-1}{l}^2</math>.
+Now we sum this over all possible <math>l</math>'s to find the total number of ways to form sets <math>A</math> and <math>B</math> that contain <math>k</math>. This is equal to <math>\sum_{l=0}^{n-1} \binom{n-1}{l}^2</math>. This is a simplification of Vandermonde's identity, which states that <math>\sum_{k=0}^{r} \binom{m}{k} \cdot \binom{n}{r-k} = \binom{m+n}{r}</math>. Here, <math>m</math>, <math>n</math> and <math>r</math> are all <math>n-1</math>, so this sum is equal to <math>\binom{2n-2}{n-1}</math>. Finally, since we are iterating over all <math>k</math>'s for <math>n</math> values of <math>k</math>, we have <math>S_n = n \cdot \binom{2n-2}{n-1}</math>, proving our claim.
+
+We now plug in <math>S_n</math> to the expression we want to find. This turns out to be <math>\frac{2022 \cdot \binom{4042}{2021}}{2021 \cdot \binom{4040}{2020}}</math>. Expanding produces <math>\frac{2022 \cdot 4042!\cdot 2020! \cdot 2020!}{2021 \cdot 4040! \cdot 2021! \cdot 2021!}</math>.
+
+After cancellation, we have <cmath>\frac{2022 \cdot 4042 \cdot 4041}{2021 \cdot 2021 \cdot 2021} \implies \frac{4044\cdot 4041}{2021 \cdot 2021}</cmath>
+
+<math>4044</math> and <math>4041</math> don't have any common factors with <math>2021</math>, so we're done with the simplification. We want to find <math>4044 \cdot 4041 + 2021^2 \pmod{1000} \equiv 44 \cdot 41 + 21^2 \pmod{1000} \equiv 1804+441 \pmod{1000} \equiv 2245 \pmod{1000} \equiv \boxed{245}</math>
+
+
+~KingRavi
+~Edited by MY-2

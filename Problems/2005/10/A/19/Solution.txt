@@ -1,0 +1,18 @@
+==Solution==
+
+Consider the rotated middle square shown in the figure. It will drop until length $DE$ is 1 inch. Then, because $DEC$ is a $45^{\circ}-45^{\circ}-90^{\circ}$ triangle, $EC=\frac{\sqrt{2}}{2}$, and $FC=\frac{1}{2}$. We know that $BC=\sqrt{2}$, so the distance from $B$ to the line is 
+
+$BC-FC+1=\sqrt{2}-\frac{1}{2}+1=\boxed{\textbf{(D) }\sqrt{2}+\dfrac{1}{2}}$.
+
+[[File:AMC10200519Sol.png]]
+
+
+===Note===
+
+(Refer to Diagram Above)
+
+After deducing that $BC=\sqrt{2}$, we can observe that the length from $C$ to the baseline is $\frac{1}{2}$. This can be obtained by subtracting $FC$ from the side length of the square(s), which is $1$.
+
+Adding these up, we see that our answer is $\boxed{\textbf{(D) }\sqrt{2}+\dfrac{1}{2}}$.
+
+- sdk652

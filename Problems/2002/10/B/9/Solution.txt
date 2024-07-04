@@ -1,0 +1,2 @@
+== Solution 1 ==
+There are $4!\cdot 4$ "words" beginning with each of the first four letters alphabetically. From there, there are $3!\cdot 3$ with $U$ as the first letter and each of the first three letters alphabetically. After that, the next "word" is $USAMO$, hence our answer is $4\cdot 4!+3\cdot 3!+1=\boxed{115\Rightarrow\text{(D)}}$.

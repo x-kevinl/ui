@@ -1,0 +1,39 @@
+==Solution 1==
+
+<asy>
+pair A=(cos(pi/5)-sin(pi/10),cos(pi/10)+sin(pi/5)), B=(2*cos(pi/5)-sin(pi/10),cos(pi/10)), C=(1,0), D=(0,0), E1=(-sin(pi/10),cos(pi/10));
+//(0,0) is a convenient point
+//E1 to prevent conflict with direction E(ast)
+pair F=intersectionpoints(D--A,E1--B)[0], G=intersectionpoints(A--C,E1--B)[0], H=intersectionpoints(B--D,A--C)[0], I=intersectionpoints(C--E1,D--B)[0], J=intersectionpoints(E1--C,D--A)[0];
+draw(A--B--C--D--E1--A);
+draw(A--D--B--E1--C--A);
+draw(F--I--G--J--H--F);
+label("$A$",A,N);
+label("$B$",B,E);
+label("$C$",C,SE);
+label("$D$",D,SW);
+label("$E$",E1,W);
+label("$F$",F,NW);
+label("$G$",G,NE);
+label("$H$",H,E);
+label("$I$",I,S);
+label("$J$",J,W);
+</asy>
+
+Triangle $AFG$ is isosceles, so $AG=AF=1$. $FJ = FG$ since $\triangle FGJ$ is also isosceles. Using the symmetry of pentagon $FGHIJ$, notice that $\triangle JHG \cong \triangle AFG$. Therefore, $JH=AF=1$.
+
+Since $\triangle AJH \sim \triangle AFG$, 
+$$\frac{JH}{AF+FJ}=\frac{FG}{FA}$$
+$$\frac{1}{1+FG} = \frac{FG}1$$
+$$1 = FG^2 + FG$$
+$$FG^2+FG-1 = 0$$
+$$FG = \frac{-1 \pm \sqrt{5} }{2}$$
+
+So, $FG=\frac{-1 + \sqrt{5}}{2}$ since $FG$ must be greater than 0.
+
+Notice that $CD = AE = AJ = AF + FJ = 1 + \frac{-1 + \sqrt{5}}{2} = \frac{1 + \sqrt{5}}{2}$.
+
+Therefore, $FG+JH+CD=\frac{-1+\sqrt5}2+1+\frac{1+\sqrt5}2=\boxed{\mathbf{(D)}\ 1+\sqrt{5}\ }$
+
+
+Note by Fasolinka: Alternatively, extend $FI$ and call its intersection with $DC$ $K$. It is not hard to see that quadrilaterals $FGCK$ and $JHKD$ are parallelograms, so $DC=DK+KC=JH+FG=1+\frac{-1+\sqrt{5}}{2}$, and the same result is achieved.

@@ -1,0 +1,4 @@
+==Solution==
+There are $5\times8=40$ oranges on the $1^{\text{st}}$ layer of the stack. The $2^{\text{nd}}$ layer that is added on top of the first will be a layer of $4\times7=28$ oranges.  When the third layer is added on top of the $2^{\text{nd}}$, it will be a layer of $3\times6=18$ oranges, etc.
+
+Therefore, there are $5\times8+4\times7+3\times6+2\times5+1\times4=40+28+18+10+4=100$ oranges in the stack. $\boxed{\mathrm{(C)}\ 100}$

@@ -1,0 +1,2 @@
+== Solution 1 ==
+Since $\overline{AB}$ is tangent to the circle, $\triangle OAB$ is a right triangle. This means that $OA = 1$, $AB = \tan \theta$ and $OB = \sec \theta$. By the [[Angle Bisector Theorem]], $$ \frac{OB}{OC} = \frac{AB}{AC} \Longrightarrow AC \sec \theta = OC \tan \theta $$ We multiply both sides by $\cos \theta$ to simplify the trigonometric functions, $$ AC=OC \sin \theta $$ Since $AC + OC = 1$, $1 - OC = OC \sin \theta \Longrightarrow$ $OC = \dfrac{1}{1+\sin \theta}$. Therefore, the answer is $\boxed{\textbf{(D)} \dfrac{1}{1+\sin \theta}}$.

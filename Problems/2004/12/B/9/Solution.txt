@@ -1,0 +1,18 @@
+== Solution ==
+
+The entire situation is in the picture below. The correct answer is $\boxed{\mathrm{(E)}\ (3,2)}$.
+
+<asy>
+unitsize(1cm);
+defaultpen(0.8);
+pair A=(-3,2), B=rotate(-90)*A, C=(3,2);
+dot(A); dot(B); dot(C);
+draw( A -- (0,0) -- B -- C, Dotted );
+draw( (-3,-3) -- (4,4), dashed );
+label("$A=(-3,2)$", A, NW );
+label("$B=(2,3)$", B, N );
+label("$C=(3,2)$", C, E );
+label("$x=y$",(4,4),NE);
+dot((0,0));
+label("$(0,0)$", (0,0), SE);
+</asy>

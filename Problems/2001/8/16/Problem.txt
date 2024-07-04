@@ -1,0 +1,10 @@
+==Problem==
+
+A square piece of paper, 4 inches on a side, is folded in half vertically. Both layers are then cut in half parallel to the fold. Three new rectangles are formed, a large one and two small ones. What is the ratio of the perimeter of one of the small rectangles to the perimeter of the large rectangle?
+
+<asy>
+draw((0,8)--(0,0)--(4,0)--(4,8)--(0,8)--(3.5,8.5)--(3.5,8));
+draw((2,-1)--(2,9),dashed);
+</asy>
+
+$\text{(A)}\ \dfrac{1}{3} \qquad \text{(B)}\ \dfrac{1}{2} \qquad \text{(C)}\ \dfrac{3}{4} \qquad \text{(D)}\ \dfrac{4}{5} \qquad \text{(E)}\ \dfrac{5}{6}$

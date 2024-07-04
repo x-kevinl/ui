@@ -1,0 +1,5 @@
+==Solution 1 (Generalized Distance)==
+Let $2d$ miles be the distance from the trailhead to the fire tower, where $d>0.$ When Chantal meets Jean, the two have traveled for $$\frac d4 + \frac d2 + \frac d3 = d\left(\frac 14 + \frac 12 + \frac 13\right)
+=d\left(\frac{3}{12} + \frac{6}{12} + \frac{4}{12}\right)=\frac{13}{12}d$$ hours. At that point, Jean has traveled for $d$ miles, so his average speed is $\frac{d}{\frac{13}{12}d}=\boxed{\textbf{(A)} ~\frac{12}{13}}$ miles per hour.
+
+~MRENTHUSIASM

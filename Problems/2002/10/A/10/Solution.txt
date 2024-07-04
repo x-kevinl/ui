@@ -1,0 +1,2 @@
+==Solution 1==
+We expand to get $2x^2-8x+3x-12+2x^2-12x+3x-18=0$ which is $4x^2-14x-30=0$ after combining like terms. Using the quadratic part of [[Vieta's Formulas]], we find the sum of the roots is $\frac{14}4 = \boxed{\textbf{(A) }7/2}$.

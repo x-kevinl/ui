@@ -1,0 +1,25 @@
+==Solution==
+
+We let $c, e,$ and $m$ be the probability of reaching a corner before an edge when starting at an "inside corner" (e.g. $(1, 1)$), an "inside edge" (e.g. $(1, 0)$), and the middle respectively.
+
+Starting in the middle, there is a $\frac{4}{8}$ chance of moving to an inside edge and a $\frac{4}{8}$ chance of moving to an inside corner, so
+
+$$m = \frac{1}{2}e + \frac{1}{2}c.$$
+
+Starting at an inside edge, there is a $\frac{2}{8}$ chance of moving to another inside edge, a $\frac{2}{8}$ chance of moving to an inside corner, a $\frac{1}{8}$ chance of moving into the middle, and a $\frac{3}{8}$ chance of reaching an outside edge and stopping. Therefore,
+
+$$e = \frac{1}{4}e + \frac{1}{4}c + \frac{1}{8}m + \frac{3}{8}\cdot 0 = \frac{1}{4}e + \frac{1}{4}c + \frac{1}{8}m.$$
+
+Starting at an inside corner, there is a $\frac{2}{8}$ chance of moving to an inside edge, a $\frac{1}{8}$ chance of moving into the middle, a $\frac{4}{8}$ chance of moving to an outside edge and stopping, and finally a $\frac{1}{8}$ chance of reaching that elusive outside corner. This gives
+
+$$c = \frac{1}{4}e + \frac{1}{8}m + \frac{1}{2}0 + \frac{1}{8}\cdot 1 = \frac{1}{4}e + \frac{1}{8}m + \frac{1}{8}.$$
+
+Solving this system of equations gives
+
+$$m = \frac{4}{35},$$
+$$e = \frac{1}{14},$$
+$$c = \frac{11}{70}.$$
+
+Since the particle starts at $(0, 0),$ it is $m$ we are looking for, so the final answer is
+
+$$4 + 35 = \boxed{\textbf{(E) }39}.$$

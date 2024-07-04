@@ -1,0 +1,25 @@
+==Solution 1==
+
+From $|a-b|=2$ we get that $a=b\pm 2$
+
+Similarly, $b=c\pm3$ and $c=d\pm4$.
+
+Substitution gives $a=d\pm 4\pm 3\pm 2$. This gives $|a-d|=|\pm 4\pm 3\pm 2|$. There are $2^3=8$ possibilities for the value of $\pm 4\pm 3\pm2$:
+
+$4+3+2=9$, 
+
+$4+3-2=5$, 
+
+$4-3+2=3$, 
+
+$-4+3+2=1$, 
+
+$4-3-2=-1$, 
+
+$-4+3-2=-3$, 
+
+$-4-3+2=-5$, 
+
+$-4-3-2=-9$
+
+Therefore, the only possible values of $|a-d|$ are $9$, $5$, $3$, and $1$. Their sum is $\boxed{\textbf{(D) } 18}$.

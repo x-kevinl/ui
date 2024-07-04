@@ -1,0 +1,12 @@
+==Solution 1 (Complementary Counting)==
+There are $ 6 $ points in the figure, and $ 3 $ of them are needed to form a triangle, so there are $ {6\choose{3}} =20 $ possible triplets of the $ 6 $ points. However, some of these created congruent triangles, and some don't even make triangles at all.
+
+'''Case 1: Triangles congruent to $ \triangle RST $''' There is obviously only $ 1 $ of these: $ \triangle RST $ itself.
+
+'''Case 2: Triangles congruent to $ \triangle SYZ $''' There are $ 4 $ of these: $ \triangle SYZ, \triangle RXY, \triangle TXZ, $ and $ \triangle XYZ $.
+
+'''Case 3: Triangles congruent to $ \triangle RSX $''' There are $ 6 $ of these: $ \triangle RSX, \triangle TSX, \triangle STY, \triangle RTY, \triangle RSZ, $ and $ \triangle RTZ $.
+
+'''Case 4: Triangles congruent to $ \triangle SYX $''' There are again $ 6 $ of these: $ \triangle SYX, \triangle SZX, \triangle TYZ, \triangle TYX, \triangle RXZ, $ and $ \triangle RYZ $.
+
+However, if we add these up, we accounted for only $ 1+4+6+6=17 $ of the $ 20 $ possible triplets. We see that the remaining triplets don't even form triangles; they are $ SYR, RXT, $ and $ TZS $. Adding these $ 3 $ into the total yields for all of the possible triplets, so we see that there are only $ 4 $ possible non-congruent, non-degenerate triangles, $ \boxed{\text{D}} $

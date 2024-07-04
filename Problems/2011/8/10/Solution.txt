@@ -1,0 +1,9 @@
+==Solution 1 (Algebra)==
+Let $x$ be the number of miles you ride. The number of miles you ride after the first half mile is $x-0.5.$ We can write this equation:
+
+
+
+$$\begin{align*} 10 &= 2.4 + 0.2 \times \frac{x-0.5}{0.1} + 2\\
+5.6 &= 2(x-0.5)\\
+2.8 &= x-0.5\\
+x &= \boxed{\textbf{(C)}\ 3.3}\end{align*}$$

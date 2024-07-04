@@ -1,0 +1,10 @@
+==Solution 1==
+On one team they play $3N$ games in their division and $4M$ games in the other.  This gives $3N+4M=76$.
+
+Since $M>4$ we start by trying M=5. This doesn't work because $56$ is not divisible by $3$.
+
+Next, $M=6$ does not work because $52$ is not divisible by $3$.
+
+We try $M=7$ does work by giving $N=16$ ,$~M=7$ and thus $3\times 16=\boxed{\textbf{(B)}~48}$ games in their division.
+
+$M=10$ seems to work, until we realize this gives $N=12$, but $N>2M$ so this will not work.

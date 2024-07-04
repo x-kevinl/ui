@@ -1,0 +1,2 @@
+== Solution ==
+If the second size has length x, then the first side has length 3x, and we have the third side which has length 15. By the triangle inequality, we have: $$\\ x+15>3x \Rightarrow 2x<15 \Rightarrow x<7.5$$ Now, since we want the greatest perimeter, we want the greatest integer x, and if $x<7.5$ then $x=7$. Then, the first side has length $3*7=21$, the second side has length $7$, the third side has length $15$, and so the perimeter is $21+7+15=43 \Rightarrow \boxed{\text {(A)}}$.

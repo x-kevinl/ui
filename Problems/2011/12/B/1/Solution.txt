@@ -1,0 +1,6 @@
+== Solutions ==
+=== Solution 1 ===
+Add up the numbers in each fraction to get $\frac{12}{9} - \frac{9}{12}$, which equals $\frac{4}{3} - \frac{3}{4}$. Doing the subtraction yields $\boxed{\frac{7}{12}\   \textbf{(C)}}$
+
+=== Solution 2 ===
+Notice that the numerators and denominators of each expression are 3-term arithmetic series. The sum of an arithmetic series is the middle term multiplied with the number of terms. Since each of the arithmetic series have the same number of terms, we can replace the fractions with the middle terms, which gives us $\frac{4}{3} - \frac{3}{4} = \frac{7}{12}$

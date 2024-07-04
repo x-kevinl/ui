@@ -1,0 +1,5 @@
+==Solution 1==
+
+Since the donkey hiccupped the 1st hiccup at $4:00$, he hiccupped for $5 \cdot (700-1) = 3495$ seconds, which is $58$ minutes and $15$ seconds, so the answer is $\boxed{\textbf{(A) }15 \text{ seconds after } 4:58}$.
+
+~MrThinker

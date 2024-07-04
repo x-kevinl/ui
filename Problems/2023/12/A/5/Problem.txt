@@ -1,0 +1,4 @@
+==Problem==
+Janet rolls a standard $6$-sided die $4$ times and keeps a running total of the numbers she rolls. What is the probability that at some point, her running total will equal $3$?
+
+$\textbf{(A) }\frac{2}{9}\qquad\textbf{(B) }\frac{49}{216}\qquad\textbf{(C) }\frac{25}{108}\qquad\textbf{(D) }\frac{17}{72}\qquad\textbf{(E) }\frac{13}{54}$

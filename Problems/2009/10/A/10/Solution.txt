@@ -1,0 +1,12 @@
+== Solution 1==
+
+It is a well-known fact that in any right triangle $ABC$ with the right angle at $B$ and $D$ the foot of the altitude from $B$ onto $AC$ we have $BD^2 = AD\cdot CD$. (See below for a proof.) Then $BD = \sqrt{ 3\cdot 4 } = 2\sqrt 3$, and the area of the triangle $ABC$ is $\frac{AC\cdot BD}2 = 7\sqrt3\Rightarrow\boxed{\text{(B)}}$.
+
+''Proof'': Consider the [[Pythagorean theorem]] for each of the triangles $ABC$, $ABD$, and $CBD$. We get:
+# $AB^2 + BC^2 = AC^2 = (AD+DC)^2 = AD^2 + DC^2 + 2 \cdot AD \cdot DC$.
+# $AB^2 = AD^2 + BD^2$
+# $BC^2 = BD^2 + CD^2$
+
+Substituting equations 2 and 3 into the left hand side of equation 1, we get $BD^2 =  AD \cdot DC$. 
+
+Alternatively, note that $\triangle ABD \sim \triangle BCD \Longrightarrow \frac{AD}{BD} = \frac{BD}{CD}$.

@@ -1,0 +1,10 @@
+== Solution 1 ==
+Since we are dealing with acute angles, <math>\tan(\arctan{a}) = a</math>.
+
+Note that <math>\tan(\arctan{a} + \arctan{b}) = \dfrac{a + b}{1 - ab}</math>, by tangent addition. Thus, <math>\arctan{a} + \arctan{b} = \arctan{\dfrac{a + b}{1 - ab}}</math>.
+
+Applying this to the first two terms, we get <math>\arctan{\dfrac{1}{3}} + \arctan{\dfrac{1}{4}} = \arctan{\dfrac{7}{11}}</math>.
+
+Now, <math>\arctan{\dfrac{7}{11}} + \arctan{\dfrac{1}{5}} = \arctan{\dfrac{23}{24}}</math>.
+
+We now have <math>\arctan{\dfrac{23}{24}} + \arctan{\dfrac{1}{n}} = \dfrac{\pi}{4} = \arctan{1}</math>. Thus, <math>\dfrac{\dfrac{23}{24} + \dfrac{1}{n}}{1 - \dfrac{23}{24n}} = 1</math>; and simplifying, <math>23n + 24 = 24n - 23 \Longrightarrow n = \boxed{47}</math>.

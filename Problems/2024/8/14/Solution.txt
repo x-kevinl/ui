@@ -1,0 +1,4 @@
+==Note / Warning==
+As tempting as it may seem, these diagrams are not drawn to scale. What may visually look like the shortest distance may not be the shortest in terms of the distance shown. I know it may be obvious after some time, but many people are at first lured to path $A \rightarrow M \rightarrow C \rightarrow Z$ just because visually it looks like the shortest distance. This could potentially lead to the incorrect answer $\textbf{(E)}\ 32$.
+
+~s.khunti

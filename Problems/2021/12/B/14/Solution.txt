@@ -1,0 +1,50 @@
+==Solution 1==
+Let $MA=a$ and $MD=d.$ It follows that $MC=a+2$ and $MB=a+4.$
+
+As shown below, note that $\triangle MAD$ and $\triangle MBC$ are both right triangles.
+<asy>
+size(300);
+import graph3;
+import solids;
+
+currentprojection=orthographic((0.5,-0.25,-0.5));
+triple A, B, C, D, M;
+A = (-2sqrt(10),0,0);
+B = (-2sqrt(10),-6sqrt(2),0);
+C = (0,-6sqrt(2),0);
+D = (0,0,0);
+M = (0,0,3);
+draw(surface(M--A--D--cycle),yellow);
+draw(surface(M--B--C--cycle),yellow);
+draw(D--A--B--C^^A--M^^B--M^^C--M^^D--M);
+draw(C--D,dashed);
+dot(A^^B^^C^^D^^M,linewidth(4.5));
+label("$A$",A,2*dir(A-B));
+label("$B$",B,2*dir(B-A));
+label("$C$",C,2*dir(C-D));
+label("$D$",D,2*dir(D-C));
+label("$M$",M,2*dir((1,1,0)));
+label("$a$",midpoint(M--A),2*dir((-1,-1,0)),red);
+label("$d$",midpoint(M--D),2*dir((1,1,0)),red);
+label("$a+2$",midpoint(M--C),2*dir((1,-1,0)),red);
+label("$a+4$",midpoint(M--B),2*dir((-1,1,0)),red);
+</asy>
+By the Pythagorean Theorem, we have
+$$\begin{alignat*}{6}
+AD^2 &= MA^2 - MD^2 &&= a^2 - d^2, \\
+BC^2 &= MB^2 - MC^2 &&= (a+4)^2 - (a+2)^2.
+\end{alignat*}$$
+Since $AD=BC$ in rectangle $ABCD,$ we equate the expressions for $AD^2$ and $BC^2,$ then rearrange and factor:
+$$\begin{align*}
+a^2 - d^2 &= (a+4)^2 - (a+2)^2 \\
+a^2 - d^2 &= 4a + 12 \\
+a^2 - 4a - d^2 &= 12 \\
+(a-2)^2 - d^2 &= 16 \\
+(a+d-2)(a-d-2) &= 16.
+\end{align*}$$
+As $a+d-2$ and $a-d-2$ have the same parity, we get $a+d-2=8$ and $a-d-2=2,$ from which $(a,d)=(7,3).$
+
+Applying the Pythagorean Theorem to right $\triangle MAD$ and right $\triangle MCD,$ we obtain $AD=2\sqrt{10}$ and $CD=6\sqrt2,$ respectively.
+
+Let the brackets denote areas. Together, the volume of pyramid $MABCD$ is $$\frac13\cdot [ABCD]\cdot MD = \frac13\cdot (AD\cdot CD)\cdot MD = \boxed{\textbf{(A) }24\sqrt5}.$$
+~Lopkiloinm ~MRENTHUSIASM

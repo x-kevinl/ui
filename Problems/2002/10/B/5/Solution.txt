@@ -1,0 +1,5 @@
+==Solution==
+
+A line going through the centers of the two smaller circles also goes through the diameter. The length of this line within the circle is $3+3+2+2=10.$ Because this is the length of the larger circle's diameter, the length of its radius is $5.$
+
+The area of the large circle is $25\pi$, and the area of the two smaller circles is $9\pi + 4\pi = 13\pi.$ To find the area of the shaded region, subtract the area of the two smaller circles from the area of the large circle. $\longrightarrow 25\pi - 13\pi = \boxed{\mathrm{(E) \ } 12\pi}$

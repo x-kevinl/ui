@@ -1,0 +1,2 @@
+== Problem ==
+Find the sum of the values of <math> x </math> such that <math> \cos^3 3x+ \cos^3 5x = 8 \cos^3 4x \cos^3 x </math>, where <math> x </math> is measured in degrees and <math> 100< x< 200. </math>

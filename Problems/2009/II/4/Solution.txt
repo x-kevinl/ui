@@ -1,0 +1,36 @@
+== Solution ==
+
+=== Resolving the ambiguity ===
+
+The problem statement is confusing, as it can be interpreted in two ways: Either as "there is a <math>k>1</math> such that the child in <math>k</math>-th place had eaten  <math>n+2-2k</math> grapes", or "for all <math>k</math>, the child in <math>k</math>-th place had eaten  <math>n+2-2k</math> grapes".
+
+The second meaning was apparrently the intended one. Hence we will restate the problem statement in this way:
+
+A group of <math>c</math> children held a grape-eating contest. When the contest was over, the following was true: There was a <math>n</math> such that for each <math>k</math> between <math>1</math> and <math>c</math>, inclusive, the child in <math>k</math>-th place had eaten exactly <math>n+2-2k</math> grapes. The total number of grapes eaten in the contest was <math>2009</math>. Find the smallest possible value of <math>n</math>.
+
+=== Solution 1 ===
+
+The total number of grapes eaten can be computed as the sum of the arithmetic progression with initial term <math>n</math> (the number of grapes eaten by the child in <math>1</math>-st place), difference <math>d=-2</math>, and number of terms <math>c</math>. We can easily compute that this sum is equal to <math>c(n-c+1)</math>.
+
+Hence we have the equation <math>2009=c(n-c+1)</math>, and we are looking for a solution <math>(n,c)</math>, where both <math>n</math> and <math>c</math> are positive integers, <math>n\geq 2(c-1)</math>, and <math>n</math> is minimized. (The condition <math>n\geq 2(c-1)</math> states that even the last child had to eat a non-negative number of grapes.)
+
+The prime factorization of <math>2009</math> is <math>2009=7^2 \cdot 41</math>. Hence there are <math>6</math> ways how to factor <math>2009</math> into two positive terms <math>c</math> and <math>n-c+1</math>:
+
+* <math>c=1</math>, <math>n-c+1=2009</math>, then <math>n=2009</math> is a solution.
+* <math>c=7</math>, <math>n-c+1=7\cdot 41=287</math>, then <math>n=293</math> is a solution.
+* <math>c=41</math>, <math>n-c+1=7\cdot 7=49</math>, then <math>n=89</math> is a solution.
+* In each of the other three cases, <math>n</math> will obviously be less than <math>2(c-1)</math>, hence these are not valid solutions.
+
+The smallest valid solution is therefore <math>c=41</math>, <math>n=\boxed{089}</math>.
+
+=== Solution 2 ===
+
+If the first child ate <math>n=2m</math> grapes, then the maximum number of grapes eaten by all the children together is <math>2m + (2m-2) + (2m-4) + \cdots + 4 + 2 = m(m+1)</math>. Similarly, if the first child ate <math>2m-1</math> grapes, the maximum total number of grapes eaten is <math>(2m-1)+(2m-3)+\cdots+3+1 = m^2</math>.
+
+For <math>m=44</math> the value <math>m(m+1)=44\cdot 45 =1980</math> is less than <math>2009</math>. Hence <math>n</math> must be at least <math>2\cdot 44+1=89</math>. For <math>n=89</math>, the maximum possible sum is <math>45^2=2025</math>. And we can easily see that <math>2009 = 2025 - 16 = 2025 - (1+3+5+7)</math>, hence <math>2009</math> grapes can indeed be achieved for <math>n=89</math> by dropping the last four children.
+
+Hence we found a solution with <math>n=89</math> and <math>45-4=41</math> kids, and we also showed that no smaller solution exists. Therefore the answer is <math>\boxed{089}</math>.
+
+=== Solution 3 (similar to solution 1) ===
+If the winner ate n grapes, then 2nd place ate <math>n+2-4=n-2</math> grapes, 3rd place ate <math>n+2-6=n-4</math> grapes, 4th place ate <math>n-6</math> grapes, and so on. Our sum can be written as <math>n+(n-2)+(n-4)+(n-6)\dots</math>. If there are x places, we can express this sum as <math>(x+1)n-x(x+1)</math>, as there are <math>(x+1)</math> occurrences of n, and <math>(2+4+6+\dots)</math> is equal to <math>x(x+1)</math>. This can be factored as <math>(x+1)(n-x)=2009</math>. Our factor pairs are (1,2009), (7,287), and (41,49). To minimize n we take (41,49). If <math>x+1=41</math>, then <math>x=40</math> and <math>n=40+49=\boxed{089}</math>. (Note we would have come upon the same result had we used <math>x+1=49</math>.)
+~MC413551

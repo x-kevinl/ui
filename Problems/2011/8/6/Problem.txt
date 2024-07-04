@@ -1,0 +1,4 @@
+==Problem==
+In a town of $351$ adults, every adult owns a car, motorcycle, or both. If $331$ adults own cars and $45$ adults own motorcycles, how many of the car owners do not own a motorcycle?
+
+$\textbf{(A)}\ 20 \qquad \textbf{(B)}\ 25 \qquad \textbf{(C)}\ 45 \qquad \textbf{(D)}\ 306 \qquad \textbf{(E)}\ 351$

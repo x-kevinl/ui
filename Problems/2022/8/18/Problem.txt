@@ -1,0 +1,6 @@
+==Problem==
+
+The midpoints of the four sides of a rectangle are $(-3,0), (2,0), (5,4),$ and $(0,4).$ What is the
+area of the rectangle? 
+
+$\textbf{(A) } 20 \qquad \textbf{(B) } 25 \qquad \textbf{(C) } 40 \qquad \textbf{(D) } 50 \qquad \textbf{(E) } 80$

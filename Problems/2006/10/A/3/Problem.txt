@@ -1,0 +1,4 @@
+== Problem ==
+The ratio of Mary's age to Alice's age is $3:5$. Alice is $30$ years old. How old is Mary?
+
+$\textbf{(A)}\ 15\qquad\textbf{(B)}\ 18\qquad\textbf{(C)}\ 20\qquad\textbf{(D)}\ 24\qquad\textbf{(E)}\  50$

@@ -1,0 +1,57 @@
+== Solution 1 ==
+Let <math>X</math> be the intersection of <math>\overline{CP}</math> and <math>\overline{AB}</math>. 
+
+<asy>
+size(10cm);
+pair A,B,C,D,E,X,P,Q,R; 
+A=(0,0); 
+B=(8,0); 
+C=(1.9375,3.4994); 
+D=(3.6696,2.4996); 
+E=(1.4531,2.6246); 
+X=(4.3636,0); 
+P=(2.9639,2.0189); 
+Q=(1.8462,0); 
+R=(6.4615,0); 
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(E);
+dot(X);
+dot(P);
+dot(Q);
+dot(R);
+label("$A$",A,WSW);
+label("$B$",B,ESE);
+label("$C$",C,NNW);
+label("$D$",D,NE);
+label("$E$",E,WNW);
+label("$X$",X,SSE);
+label("$P$",P,NNE);
+label("$Q$",Q,SSW);
+label("$R$",R,SE);
+draw(A--B--C--cycle);
+draw(P--Q--R--cycle);
+draw(A--D);
+draw(B--E);
+draw(C--X);
+</asy>
+
+Since <math>\overline{PQ} \parallel \overline{CA}</math> and <math>\overline{PR} \parallel \overline{CB}</math>, <math>\angle CAB = \angle PQR</math> and <math>\angle CBA = \angle PRQ</math>. So <math>\Delta ABC \sim \Delta QRP</math>, and thus, <math>\frac{[\Delta PQR]}{[\Delta ABC]} = \left(\frac{PX}{CX}\right)^2</math>. 
+
+Using [[mass points]]: 
+
+[[WLOG]], let <math>W_C=15</math>. 
+
+Then: 
+
+<math>W_A = \left(\frac{CE}{AE}\right)W_C = \frac{1}{3}\cdot15=5</math>.
+
+<math>W_B = \left(\frac{CD}{BD}\right)W_C = \frac{2}{5}\cdot15=6</math>. 
+
+<math>W_X=W_A+W_B=5+6=11</math>. 
+
+<math>W_P=W_C+W_X=15+11=26</math>. 
+
+Thus, <math>\frac{PX}{CX}=\frac{W_C}{W_P}=\frac{15}{26}</math>. Therefore, <math>\frac{[\Delta PQR]}{[\Delta ABC]} = \left( \frac{15}{26} \right)^2 = \frac{225}{676}</math>, and <math>m+n=\boxed{901}</math>. Note we can just use mass points to get  <math>\left( \frac{15}{26} \right)^2= \frac{225}{676}</math> which is <math>\boxed{901}</math>.

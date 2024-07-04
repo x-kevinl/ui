@@ -1,0 +1,4 @@
+==Problem==
+What is the tens digit of $7^{2011}$?
+
+$ \textbf{(A) }0\qquad\textbf{(B) }1\qquad\textbf{(C) }3\qquad\textbf{(D) }4\qquad\textbf{(E) }7 $

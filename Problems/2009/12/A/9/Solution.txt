@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+As $f(x)=ax^2 + bx + c$, we have $f(1)=a\cdot 1^2 + b\cdot 1 + c = a+b+c$. 
+
+To compute $f(1)$, set $x=-2$ in the first formula. We get $f(1) = f(-2+3) = 3(-2)^2 + 7(-2) + 4 = 12 - 14 + 4 = \boxed{2}$.

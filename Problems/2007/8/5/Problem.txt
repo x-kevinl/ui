@@ -1,0 +1,9 @@
+== Problem ==
+
+Chandler wants to buy a $500$ dollar mountain bike. For his birthday, his grandparents
+send him $50$ dollars, his aunt sends him $35$ dollars and his cousin gives him $15$ dollars. He earns
+$16$ dollars per week for his paper route. He will use all of his birthday money and all
+of the money he earns from his paper route. In how many weeks will he be able
+to buy the mountain bike?
+
+$\mathrm{(A)}\ 24 \qquad\mathrm{(B)}\ 25 \qquad\mathrm{(C)}\ 26 \qquad\mathrm{(D)}\ 27 \qquad\mathrm{(E)}\ 28$

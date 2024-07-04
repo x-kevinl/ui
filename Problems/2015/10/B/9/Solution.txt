@@ -1,0 +1,2 @@
+==Solution==
+The area of the shark's fin falcata is just the area of the quarter-circle minus the area of the semicircle. The quarter-circle has radius $3$ so it has area $\dfrac{9\pi}{4}$. The semicircle has radius $\dfrac{3}{2}$ so it has area $\dfrac{9\pi}{8}$. Thus, the shaded area is $\dfrac{9\pi}{4}-\dfrac{9\pi}{8}=\boxed{\mathbf{(B)}\ \dfrac{9\pi}{8}}$

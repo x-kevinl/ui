@@ -1,0 +1,17 @@
+==Solution 1 (Two Variables)==
+At noon on a certain day, let $M$ and $L$ be the temperatures (in degrees) in Minneapolis and St. Louis, respectively. It follows that $M=L+N.$
+
+At $4{:}00,$ we get
+$$\begin{align*}
+|(M-5)-(L+3)| &= 2 \\
+|M-L-8| &= 2 \\
+|N-8| &= 2.
+\end{align*}$$
+We have two cases:
+<ol style="margin-left: 1.5em;">
+  <li>If $N-8=2,$ then $N=10.$</li><p>
+  <li>If $N-8=-2,$ then $N=6.$</li><p>
+</ol>
+Together, the product of all possible values of $N$ is $10\cdot6=\boxed{\textbf{(C)} \: 60}.$
+
+~Wilhelm Z ~KingRavi ~MRENTHUSIASM

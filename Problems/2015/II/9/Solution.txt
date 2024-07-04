@@ -1,0 +1,19 @@
+==Solution 1==
+
+Our aim is to find the volume of the part of the cube submerged in the cylinder. 
+In the problem, since three edges emanate from each vertex, the boundary of the cylinder touches the cube at three points.  Because the space diagonal of the cube is vertical, by the symmetry of the cube, the three points form an equilateral triangle.  Because the radius of the circle is <math>4</math>, by the Law of Cosines, the side length s of the equilateral triangle is
+
+<cmath>s^2 = 2\cdot(4^2) - 2\cdot(4^2)\cos(120^{\circ}) = 3(4^2)</cmath>
+
+so <math>s = 4\sqrt{3}</math>.* Again by the symmetry of the cube, the volume we want to find is the volume of a tetrahedron with right angles on all faces at the submerged vertex, so since the lengths of the legs of the tetrahedron are <math>\frac{4\sqrt{3}}{\sqrt{2}} = 2\sqrt{6}</math> (the three triangular faces touching the submerged vertex are all <math>45-45-90</math> triangles) so 
+
+<cmath>v = \frac{1}{3}(2\sqrt{6})\left(\frac{1}{2} \cdot (2\sqrt{6})^2\right) = \frac{1}{6} \cdot 48\sqrt{6} = 8\sqrt{6}</cmath>
+
+so 
+
+<cmath>v^2 = 64 \cdot 6 = \boxed{384}.</cmath>
+
+In this case, our base was one of the isosceles triangles (not the larger equilateral one). To calculate volume using the latter, note that the height would be <math>2\sqrt{2}</math>.
+
+*Note that in a 30-30-120 triangle, side length ratios are <math>1:1:\sqrt{3}</math>.
+*Or, note that the altitude and the centroid of an equilateral triangle are the same point, so since the centroid is 4 units from the vertex (which is <math>\frac{2}{3}</math> the length of the median), the altitude is 6, which gives a hypotenuse of <math>\frac{12}{\sqrt{3}}=4\sqrt{3}</math> by <math>1:\frac{\sqrt{3}}{2}:\frac{1}{2}</math> relationship for 30-60-90 triangles.

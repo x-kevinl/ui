@@ -1,0 +1,9 @@
+==Solution==
+An equilateral triangle has $3$ lines of symmetry.
+A non-square rhombus has $2$ lines of symmetry.
+A non-square rectangle has $2$ lines of symmetry.
+An isosceles trapezoid has $1$ line of symmetry.
+A square has $4$ lines of symmetry.
+
+
+Therefore, the answer is $\boxed{ \textbf{(E)}\ \text{square} }$.

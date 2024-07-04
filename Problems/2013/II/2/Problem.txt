@@ -1,0 +1,4 @@
+==Problem 2==
+Positive integers <math>a</math> and <math>b</math> satisfy the condition
+<cmath>\log_2(\log_{2^a}(\log_{2^b}(2^{1000}))) = 0.</cmath>
+Find the sum of all possible values of <math>a+b</math>.

@@ -1,0 +1,6 @@
+== Solution 1 ==
+Between any two consecutive powers of $5$ there are either $2$ or $3$ powers of $2$ (because $2^2<5^1<2^3$). Consider the intervals $(5^0,5^1),(5^1,5^2),\dots (5^{866},5^{867})$. We want the number of intervals with $3$ powers of $2$.
+
+From the given that $2^{2013}<5^{867}<2^{2014}$, we know that these $867$ intervals together have $2013$ powers of $2$. Let $x$ of them have $2$ powers of $2$ and $y$ of them have $3$ powers of $2$. Thus we have the system
+$$x+y=867$$$$2x+3y=2013$$
+from which we get $y=279$, so the answer is $\boxed{\textbf{(B)}}$.

@@ -1,0 +1,21 @@
+==Solution 1 (Algebra)==
+For all integers $n \geq 7,$ note that
+$$\begin{align*}
+f(n)&=f(n-1)-f(n-2)+n \\
+&=[f(n-2)-f(n-3)+n-1]-f(n-2)+n \\
+&=-f(n-3)+2n-1 \\
+&=-[f(n-4)-f(n-5)+n-3]+2n-1 \\
+&=-f(n-4)+f(n-5)+n+2 \\
+&=-[f(n-5)-f(n-6)+n-4]+f(n-5)+n+2 \\
+&=f(n-6)+6.
+\end{align*}$$
+It follows that
+$$\begin{align*}
+f(2018)&=f(2012)+6 \\
+&=f(2006)+12 \\
+&=f(2000)+18 \\
+& \ \vdots \\
+&=f(2)+2016 \\
+&=\boxed{\textbf{(B) } 2017}.
+\end{align*}$$
+~MRENTHUSIASM

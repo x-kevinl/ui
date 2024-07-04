@@ -1,0 +1,19 @@
+== Solution ==
+
+Suppose that $P$ is a point in the rhombus $ABCD$ and let $\ell_{BC}$ be the [[perpendicular bisector]] of $\overline{BC}$. Then $PB < PC$ if and only if $P$ is on the same side of $\ell_{BC}$ as $B$. The line $\ell_{BC}$ divides the plane into two half-planes; let $S_{BC}$ be the half-plane containing $B$. Let us define similarly $\ell_{BD},S_{BD}$ and $\ell_{BA},S_{BA}$. Then $R$ is equal to $ABCD \cap S_{BC} \cap S_{BD} \cap S_{BA}$. The region turns out to be an irregular pentagon. We can make it easier to find the area of this region by dividing it into four triangles:
+
+<asy>
+unitsize(8mm);
+defaultpen(linewidth(0.8pt)+fontsize(10pt));
+dotfactor=4;
+
+pair A=(4,0), B=(2,2sqrt(3)), C=(-2,2sqrt(3)), D=(0,0), E=(B+C)/2, F=(B+C+D)/3, G=(A+C)/2, H=(A+B+D)/3, I=(A+B)/2;
+fill((0,2sqrt(3))--B--(3,sqrt(3))--(2,(2sqrt(3))/3)--(0,(4sqrt(3))/3)--cycle,gray);
+draw(A--B--C--D--cycle);
+draw(D--(0,2sqrt(3))); draw(D--(3,sqrt(3))); draw(A--C); draw(F--B--H); draw(B--G);
+
+label("$A$",A,SE);label("$B$",B,NE);label("$C$",C,NW);label("$D$",D,SW);
+label("$E$",E,N);label("$F$",F,SW);label("$G$",G,SW);label("$H$",H,S);label("$I$",I,NE);
+label("$2$",(D--C),SW);
+</asy>
+Since $\triangle BCD$ and $\triangle BAD$ are equilateral, $\ell_{BC}$ contains $D$, $\ell_{BD}$ contains $A$ and $C$, and $\ell_{BA}$ contains $D$. Then $\triangle BEF \cong \triangle BGF \cong \triangle BGH \cong \triangle BIH$ with $BE = 1$ and $EF = \frac{1}{\sqrt{3}}$ so $[BEF] = \frac{1}{2}\cdot 1 \cdot \frac{\sqrt{3}}{3}$. Multiply this by 4 and it turns out that the pentagon has area $\boxed{(C)\frac{2\sqrt{3}}{3}}$.

@@ -1,0 +1,2 @@
+==Solution==
+The prime factorization of $27000$ is $2^3*3^3*5^3$. These three factors are pairwise relatively prime, so the sum is $2^3+3^3+5^3=8+27+125=$ $\boxed{\textbf{(D) }160}$

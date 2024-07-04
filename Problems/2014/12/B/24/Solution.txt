@@ -1,0 +1,45 @@
+== Solution 1 ==
+Let $BE=a$, $AD=b$, and $AC=CE=BD=c$. Let $F$ be on $AE$ such that $CF \perp AE$. 
+<asy>
+size(200);
+defaultpen(linewidth(0.4)+fontsize(10));
+pen s = linewidth(0.8)+fontsize(8);
+
+pair O,A,B,C,D,E0,F;
+O=origin;
+A= dir(198);
+path c = CR(O,1);
+real r = 0.13535;
+B = IP(c, CR(A,3*r));
+C = IP(c, CR(B,10*r));
+D = IP(c, CR(C,3*r));
+E0 = OP(c, CR(D,10*r));
+F = foot(C,A,E0);
+
+dot("$A$", A, A-O);
+dot("$B$", B, B-O);
+dot("$C$", C, C-O);
+dot("$D$", D, D-O);
+dot("$E$", E0, E0-O);
+dot("$F$", F, F-C);
+label("$c$",A--C,S);
+label("$c$",E0--C,W);
+label("$7$",F--E0,S);
+label("$7$",F--A,S);
+label("$3$",A--B,2*W);
+label("$10$",B--C,2*N);
+label("$3$",C--D,2*NE);
+label("$10$",D--E0,E);
+draw(A--B--C--D--E0--A, black+0.8);
+
+draw(CR(O,1), s);
+draw(A--C--E0, royalblue);
+draw(C--F, royalblue+dashed);
+draw(rightanglemark(E0,F,C,2));
+MA("\theta",A,B,C,0.075);
+MA("\pi-\theta",C,E0,A,0.1);
+</asy>
+In $\triangle CFE$ we have $\cos\theta = -\cos(\pi-\theta)=-7/c$. We use the [[Law of Cosines]] on $\triangle ABC$ to get $60\cos\theta = 109-c^2$.  Eliminating $\cos\theta$ we get $c^3-109c-420=0$ which factorizes as 
+$$(c+7)(c+5)(c-12)=0.$$Discarding the negative roots we have $c=12$. Thus $BD=AC=CE=12$. For $BE=a$, we use Ptolemy's theorem on cyclic quadrilateral $ABCE$ to get $a=44/3$. For $AD=b$, we use [[Ptolemy's theorem]] on cyclic quadrilateral $ACDE$ to get $b=27/2$.
+
+The sum of the lengths of the diagonals is $12+12+12+\tfrac{44}{3}+\tfrac{27}{2} = \tfrac{385}{6}$ so the answer is $385 + 6 = \fbox{\textbf{(D) }391}$

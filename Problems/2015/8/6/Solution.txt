@@ -1,0 +1,7 @@
+==Solutions==
+===Solution 1===
+We know the semi-perimeter of $\triangle ABC$ is $\frac{29+29+42}{2}=50$. Next, we use Heron's Formula to find that the area of the triangle is just $\sqrt{50(50-29)^2(50-42)}=\sqrt{50 \cdot 21^2 \cdot 8}=\boxed{\textbf{(B) }420}$.
+
+===Solution 2 (easier)===
+Splitting the isosceles triangle in half, we get a right triangle with hypotenuse $29$ and leg $21$. Using the Pythagorean Theorem , we know the height is $\sqrt{29^2-21^2}=20$. Now that we know the height, the area is
+$\dfrac{(20)(42)}{2} = \boxed{\textbf{(B)}~420}$.

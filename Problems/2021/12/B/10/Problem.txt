@@ -1,0 +1,4 @@
+==Problem==
+Two distinct numbers are selected from the set $\{1,2,3,4,\dots,36,37\}$ so that the sum of the remaining $35$ numbers is the product of these two numbers. What is the difference of these two numbers?
+
+$\textbf{(A) }5 \qquad \textbf{(B) }7 \qquad \textbf{(C) }8\qquad \textbf{(D) }9 \qquad \textbf{(E) }10$

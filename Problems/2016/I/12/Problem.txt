@@ -1,0 +1,2 @@
+==Problem ==
+Find the least positive integer <math>m</math> such that <math>m^2 - m + 11</math> is a product of at least four not necessarily distinct primes.

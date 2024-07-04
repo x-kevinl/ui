@@ -1,0 +1,6 @@
+==Solution 1==
+[[Completing the square]], <math>y^2 = x^2 + 84x + 2008 = (x+42)^2 + 244</math>. Thus <math>244 = y^2 - (x+42)^2 = (y - x - 42)(y + x + 42)</math> by [[difference of squares]]. 
+
+Since <math>244</math> is even, one of the factors is even. A [[parity]] check shows that if one of them is even, then both must be even. Since <math>244 = 2^2 \cdot 61</math>, the factors must be <math>2</math> and <math>122</math>. Since <math>x,y > 0</math>, we have <math>y - x - 42 = 2</math> and <math>y + x + 42 = 122</math>; the latter equation implies that <math>x + y = \boxed{080}</math>. 
+
+Indeed, by solving, we find <math>(x,y) = (18,62)</math> is the unique solution.

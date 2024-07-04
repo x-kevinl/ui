@@ -1,0 +1,17 @@
+==Solution 1==
+We see that both sequences have equal numbers of terms, so reformat the sequence to look like: 
+
+$$\begin{align*}
+Y = \ &12 + 14 + \cdots + 100 + 102\\
+X = 10 \ + \ &12 +  14 + \cdots + 100\\
+\end{align*}$$
+From here it is obvious that $Y - X = 102 - 10 = \boxed{92 \ \mathbf{(A)}}$.
+
+===Note===
+Another way to see this is to let the sum $12+14+16+...+100=x.$ So, the sequences become
+$$\begin{align*}
+X = 10+x \\
+Y= x+102 \\
+\end{align*}$$
+
+Like before, the difference between the two sequences is $Y-X=102-12=92.$

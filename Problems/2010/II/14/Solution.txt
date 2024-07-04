@@ -1,0 +1,30 @@
+== Solution 1==
+Let <math>O</math> be the [[circumcenter]] of <math>ABC</math> and let the intersection of <math>CP</math> with the [[circumcircle]] be <math>D</math>. It now follows that <math>\angle{DOA} = 2\angle ACP = \angle{APC} = \angle{DPB}</math>. Hence <math>ODP</math> is isosceles and <math>OD = DP = 2</math>. 
+
+Denote <math>E</math> the projection of <math>O</math> onto <math>CD</math>. Now <math>CD = CP + DP = 3</math>. By the [[Pythagorean Theorem]], <math>OE = \sqrt {2^2 - \frac {3^2}{2^2}} = \sqrt {\frac {7}{4}}</math>. Now note that <math>EP = \frac {1}{2}</math>. By the Pythagorean Theorem, <math>OP = \sqrt {\frac {7}{4} + \frac {1^2}{2^2}} = \sqrt {2}</math>. Hence it now follows that,
+
+<cmath>\frac {AP}{BP} = \frac {AO + OP}{BO - OP} = \frac {2 + \sqrt {2}}{2 - \sqrt {2}} = 3 + 2\sqrt {2}</cmath>
+
+This gives that the answer is <math>\boxed{007}</math>.
+
+An alternate finish for this problem would be to use Power of a Point on <math>BA</math> and <math>CD</math>. By Power of a Point Theorem, <math>CP\cdot PD=1\cdot 2=BP\cdot PA</math>. Since <math>BP+PA=4</math>, we can solve for <math>BP</math> and <math>PA</math>, giving the same values and answers as above. 
+
+<center><asy>   /* geogebra conversion, see azjps userscripts.org/scripts/show/72997 */
+import graph; defaultpen(linewidth(0.7)+fontsize(10)); size(250); real lsf = 0.5; /* changes label-to-point distance */
+pen xdxdff = rgb(0.49,0.49,1); pen qqwuqq = rgb(0,0.39,0); pen fftttt = rgb(1,0.2,0.2);
+
+  /* segments and figures */
+draw((0.2,0.81)--(0.33,0.78)--(0.36,0.9)--(0.23,0.94)--cycle,qqwuqq); draw((0.81,-0.59)--(0.93,-0.54)--(0.89,-0.42)--(0.76,-0.47)--cycle,qqwuqq); draw(circle((2,0),2)); draw((0,0)--(0.23,0.94),linewidth(1.6pt)); draw((0.23,0.94)--(4,0),linewidth(1.6pt)); draw((0,0)--(4,0),linewidth(1.6pt)); draw((0.23,(+0.55-0.94*0.23)/0.35)--(4.67,(+0.55-0.94*4.67)/0.35));
+
+  /* points and labels */
+label("$1$", (0.26,0.42), SE*lsf); draw((1.29,-1.87)--(2,0)); label("$2$", (2.91,-0.11), SE*lsf); label("$2$", (1.78,-0.82), SE*lsf); pair parametricplot0_cus(real t){
+ return (0.28*cos(t)+0.23,0.28*sin(t)+0.94);
+}
+draw(graph(parametricplot0_cus,-1.209429202888189,-0.24334747753738661)--(0.23,0.94)--cycle,fftttt); pair parametricplot1_cus(real t){
+ return (0.28*cos(t)+0.59,0.28*sin(t)+0);
+}
+draw(graph(parametricplot1_cus,0.0,1.9321634507016043)--(0.59,0)--cycle,fftttt); label("$\theta$", (0.42,0.77), SE*lsf); label("$2\theta$", (0.88,0.38), SE*lsf); draw((2,0)--(0.76,-0.47)); pair parametricplot2_cus(real t){
+ return (0.28*cos(t)+2,0.28*sin(t)+0);
+}
+draw(graph(parametricplot2_cus,-1.9321634507016048,0.0)--(2,0)--cycle,fftttt); label("$2\theta$", (2.18,-0.3), SE*lsf); dot((0,0)); label("$B$", (-0.21,-0.2),NE*lsf); dot((4,0)); label("$A$", (4.03,0.06),NE*lsf); dot((2,0)); label("$O$", (2.04,0.06),NE*lsf); dot((0.59,0)); label("$P$", (0.28,-0.27),NE*lsf); dot((0.23,0.94)); label("$C$", (0.07,1.02),NE*lsf); dot((1.29,-1.87)); label("$D$", (1.03,-2.12),NE*lsf); dot((0.76,-0.47)); label("$E$", (0.56,-0.79),NE*lsf); clip((-0.92,-2.46)--(-0.92,2.26)--(4.67,2.26)--(4.67,-2.46)--cycle);
+</asy></center>

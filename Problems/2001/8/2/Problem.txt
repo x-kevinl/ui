@@ -1,0 +1,5 @@
+==Problem==
+
+I'm thinking of two whole numbers. Their product is 24 and their sum is 11. What is the larger number?
+
+$\text{(A)}\ 3 \qquad \text{(B)}\ 4 \qquad \text{(C)}\ 6 \qquad \text{(D)}\ 8 \qquad \text{(E)}\ 12$

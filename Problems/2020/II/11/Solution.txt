@@ -1,0 +1,16 @@
+==Solution 1==
+Let <math>Q(x) = x^2 + ax + 2</math> and <math>R(x) = x^2 + bx + c</math>.  We can write the following:
+<cmath>P + Q = 2x^2 + (a - 3)x - 5</cmath>
+<cmath>P + R = 2x^2 + (b - 3)x + (c - 7)</cmath>
+<cmath>Q + R = 2x^2 + (a + b)x + (c + 2)</cmath>
+Let the common root of <math>P+Q,P+R</math> be <math>r</math>; <math>P+R,Q+R</math> be <math>s</math>; and <math>P+Q,Q+R</math> be <math>t</math>.  We then have that the roots of <math>P+Q</math> are <math>r,t</math>, the roots of <math>P + R</math> are <math>r, s</math>, and the roots of <math>Q + R</math> are <math>s,t</math>.
+
+By Vieta's, we have:
+<cmath> r + t = \dfrac{3 - a}{2}\tag{1}</cmath>
+<cmath>r + s = \dfrac{3 - b}{2}\tag{2}</cmath>
+<cmath>s + t = \dfrac{-a - b}{2}\tag{3}</cmath>
+<cmath>rt = \dfrac{-5}{2}\tag{4}</cmath>
+<cmath>rs = \dfrac{c - 7}{2}\tag{5}</cmath>
+<cmath>st = \dfrac{c + 2}{2}\tag{6}</cmath>
+
+Subtracting <math>(3)</math> from <math>(1)</math>, we get <math>r - s = \dfrac{3 + b}{2}</math>.  Adding this to <math>(2)</math>, we get <math>2r = 3 \implies r = \dfrac{3}{2}</math>.  This gives us that <math>t = \dfrac{-5}{3}</math> from <math>(4)</math>.  Substituting these values into <math>(5)</math> and <math>(6)</math>, we get <math>s = \dfrac{c-7}{3}</math> and <math>s = \dfrac{-3c - 6}{10}</math>.  Equating these values, we get <math>\dfrac{c-7}{3} = \dfrac{-3c-6}{10} \implies c = \dfrac{52}{19} = R(0)</math>.  Thus, our answer is <math>52 + 19 = \boxed{071}</math>. ~ TopNotchMath

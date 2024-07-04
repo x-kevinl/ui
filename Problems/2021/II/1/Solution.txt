@@ -1,0 +1,4 @@
+==Solution 1==
+Recall that the arithmetic mean of all the <math>n</math> digit palindromes is just the average of the largest and smallest <math>n</math> digit palindromes, and in this case the <math>2</math> palindromes are <math>101</math> and <math>999</math> and <math>\frac{101+999}{2}=\boxed{550},</math> which is the final answer.
+
+~ math31415926535

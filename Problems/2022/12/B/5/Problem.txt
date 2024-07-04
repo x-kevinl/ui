@@ -1,0 +1,4 @@
+== Problem ==
+The point $(-1, -2)$ is rotated $270^{\circ}$ counterclockwise about the point $(3, 1)$. What are the coordinates of its new position?
+
+$\textbf{(A)}\ (-3, -4) \qquad \textbf{(B)}\ (0,5) \qquad \textbf{(C)}\ (2,-1) \qquad \textbf{(D)}\ (4,3) \qquad \textbf{(E)}\ (6,-3)$

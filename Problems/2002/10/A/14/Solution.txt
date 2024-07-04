@@ -1,0 +1,5 @@
+==Solution==
+
+Consider a general quadratic with the coefficient of $x^2$ being $1$ and the roots being $r$ and $s$. It can be factored as $(x-r)(x-s)$ which is just $x^2-(r+s)x+rs$. Thus, the sum of the roots is the negative of the coefficient of $x$ and the product is the constant term. (In general, this leads to [[Vieta's Formulas]]).
+
+We now have that the sum of the two roots is $63$ while the product is $k$. Since both roots are primes, one must be $2$, otherwise, the sum would be even. That means the other root is $61$ and the product must be $122$. Hence, our answer is $\boxed{\text{(B)}\ 1 }$.

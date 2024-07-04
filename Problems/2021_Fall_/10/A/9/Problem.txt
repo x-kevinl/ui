@@ -1,0 +1,5 @@
+==Problem==
+When a certain unfair die is rolled, an even number is $3$ times as likely to appear as an odd number. The die is rolled twice. What is the probability that the sum of the numbers rolled is even?
+
+$\textbf{(A)}\ \frac{3}{8}  \qquad\textbf{(B)}\  \frac{4}{9} \qquad\textbf{(C)}\  \frac{5}{9} \qquad\textbf{(D)}\
+ \frac{9}{16} \qquad\textbf{(E)}\ \frac{5}{8}$

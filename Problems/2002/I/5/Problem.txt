@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>A_1,A_2,A_3,\cdots,A_{12}</math> be the vertices of a regular dodecagon. How many distinct squares in the plane of the dodecagon have at least two vertices in the set <math>\{A_1,A_2,A_3,\cdots,A_{12}\} ?</math>

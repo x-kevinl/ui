@@ -1,0 +1,2 @@
+== Solution ==
+The brick has volume $8000 cm^3$. The base of the aquarium has area $4000 cm^2$. For every inch the water rises, the volume increases by $4000 cm^3$; therefore, when the volume increases by $8000 cm^3$, the water level rises $2 cm \Rightarrow\fbox{D}$

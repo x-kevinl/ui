@@ -1,0 +1,5 @@
+== Problem 7 ==
+
+Circle $ X $ has a radius of $ \pi $. Circle $ Y $ has a circumference of $ 8 \pi $. Circle $ Z $ has an area of $ 9 \pi $. List the circles in order from smallest to the largest radius. 
+
+$ \textbf{(A)}\ X, Y, Z\qquad\textbf{(B)}\ Z, X, Y\qquad\textbf{(C)}\ Y, X, Z\qquad\textbf{(D)}\ Z, Y, X\qquad\textbf{(E)}\ X, Z, Y $

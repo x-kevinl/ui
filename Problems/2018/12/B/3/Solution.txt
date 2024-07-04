@@ -1,0 +1,2 @@
+== Solution 1 ==
+Using point slope form, we get the equations $y-30 = 6(x-40)$ and $y-30 = 2(x-40)$. Simplifying, we get $6x-y=210$ and $2x-y=50$. Letting $y=0$ in both equations and solving for $x$ gives the $x$-intercepts: $x=35$ and $x=25$, respectively. Thus the distance between them is $35-25=\boxed{\textbf{(B) } 10}$.

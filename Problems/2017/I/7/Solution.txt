@@ -1,0 +1,2 @@
+==Major Note==
+Most solutions use committee forming (except for the bash solution). To understand more about the techniques used, visit the [[committee forming]] page for more information.

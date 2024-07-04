@@ -1,0 +1,20 @@
+== Solution 1==
+
+Note that if the altitude of the triangle is at most <math>10</math>, then the maximum area of the intersection of the triangle and the square is <math>5\cdot10=50</math>.
+This implies that vertex G must be located outside of square <math>AIME</math>.
+
+<center><asy>
+pair E=(0,0), M=(10,0), I=(10,10), A=(0,10);
+draw(A--I--M--E--cycle);
+pair G=(5,25);
+draw(G--E--M--cycle);
+label("\(G\)",G,N);
+label("\(A\)",A,NW);
+label("\(I\)",I,NE);
+label("\(M\)",M,NE);
+label("\(E\)",E,NW);
+label("\(10\)",(M+E)/2,S);
+</asy></center>
+Let <math>GE</math> meet <math>AI</math> at <math>X</math> and let <math>GM</math> meet <math>AI</math> at <math>Y</math>. Clearly, <math>XY=6</math> since the area of [[trapezoid]] <math>XYME</math> is <math>80</math>. Also, <math>\triangle GXY \sim \triangle GEM</math>.
+
+Let the height of <math>GXY</math> be <math>h</math>. By the similarity, <math>\dfrac{h}{6} = \dfrac{h + 10}{10}</math>, we get <math>h = 15</math>. Thus, the height of <math>GEM</math> is <math>h + 10 = \boxed{025}</math>.

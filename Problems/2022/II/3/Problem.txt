@@ -1,0 +1,3 @@
+==Problem==
+
+A right square pyramid with volume <math>54</math> has a base with side length <math>6.</math> The five vertices of the pyramid all lie on a sphere with radius <math>\frac mn</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

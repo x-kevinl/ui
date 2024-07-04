@@ -1,0 +1,2 @@
+==Solution==
+The six equilateral triangular extensions fit perfectly into the hexagon meaning the answer is $\boxed{\textbf{(A) }1:1}$

@@ -1,0 +1,23 @@
+==Solution 1==
+
+Since points on the graph make the equation true, substitute $\sqrt{\pi}$ in to the equation and then solve to find $a$ and $b$.
+
+$y^2 + \sqrt{\pi}^4 = 2\sqrt{\pi}^2 y + 1$
+
+$y^2 + \pi^2 = 2\pi y + 1$
+
+$y^2 - 2\pi y + \pi^2 = 1$
+
+$(y-\pi)^2 = 1$
+
+$y-\pi = \pm 1$
+
+$y = \pi + 1$ 
+
+$y = \pi - 1$
+
+There are only two solutions to the equation $(y-\pi)^2 = 1$, so one of them is the value of $a$ and the other is $b$. The order does not matter because of the absolute value sign.
+
+$| (\pi + 1) - (\pi - 1) | = 2$
+
+The answer is $\boxed{\textbf{(C) }2}$

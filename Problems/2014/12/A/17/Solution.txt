@@ -1,0 +1,7 @@
+==Solution 1==
+
+Let $A$ be the point in the same plane as the centers of the top spheres equidistant from said centers. Let $B$ be the analogous point for the bottom spheres, and let $C$ be the midpoint of $\overline{AB}$ and the center of the large sphere. Let $D$ and $E$ be the points at which line $AB$ intersects the top of the box and the bottom, respectively.
+
+Let $O$ be the center of any of the top spheres (you choose!). We have $AO=1\cdot\sqrt{2}$, and $CO=3$, so $AC=\sqrt{3^2-\left(\sqrt2\right)^2}=\sqrt{7}$. Similarly, $BC=\sqrt{7}$. $\overline{AD}$ and $\overline{BE}$ are clearly equal to the radius of the small spheres, $1$. Thus the total height is $AD+AC+BC+BE=2+2\sqrt7$, or $\boxed{\textbf{(A)}}$.
+
+~AwesomeToad

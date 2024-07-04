@@ -1,0 +1,9 @@
+== Solution ==
+
+=== Solution 1 ===
+
+Multiplying $18$ and $2$ by $4$ we get $72$ students and $8$ rabbits. We then subtract: $72 - 8 = \boxed{\textbf{(C)}\ 64}.$
+
+=== Solution 2 ===
+
+In each class, there are $18-2=16$ more students than rabbits. So for all classrooms, the difference between students and rabbits is $16 \times 4 = \boxed{\textbf{(C)}\ 64}$

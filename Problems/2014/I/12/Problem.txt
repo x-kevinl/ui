@@ -1,0 +1,2 @@
+== Problem 12 ==
+Let <math>A=\{1,2,3,4\}</math>, and <math>f</math> and <math>g</math> be randomly chosen (not necessarily distinct) functions from <math>A</math> to <math>A</math>. The probability that the range of <math>f</math> and the range of <math>g</math> are disjoint is <math>\tfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m</math>.

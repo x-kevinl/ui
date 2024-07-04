@@ -1,0 +1,42 @@
+== Solution ==
+=== Solution 1 ===
+The length of the path (the number of times the particle moves) can range from <math>l = 5</math> to <math>9</math>; notice that <math>d = 10-l</math> gives the number of diagonals. Let <math>R</math> represent a move to the right, <math>U</math> represent a move upwards, and <math>D</math> to be a move that is diagonal. [[Casework]] upon the number of diagonal moves:
+
+*'''Case ''' <math>d = 1</math>: It is easy to see only <math>2</math> cases. 
+*'''Case ''' <math>d = 2</math>: There are two diagonals. We need to generate a string with <math>3</math> <math>R</math>'s, <math>3</math> <math>U</math>'s, and <math>2</math> <math>D</math>'s such that no two <math>R</math>'s or <math>U</math>'s are adjacent. The <math>D</math>'s split the string into three sections (<math>-D-D-</math>): by the [[Pigeonhole principle]] all of at least one of the two letters must be all together (i.e., stay in a row). 
+:If both <math>R</math> and <math>U</math> stay together, then there are <math>3 \cdot 2=6</math> ways. 
+:If either <math>R</math> or <math>U</math> splits, then there are <math>3</math> places to put the letter that splits, which has <math>2</math> possibilities. The remaining letter must divide into <math>2</math> in one section and <math>1</math> in the next, giving <math>2</math> ways. This totals <math>6 + 3\cdot 2\cdot 2 = 18</math> ways.
+*'''Case ''' <math>d = 3</math>: Now <math>2</math> <math>R</math>'s, <math>2</math> <math>U</math>'s, and <math>3</math> <math>D</math>'s, so the string is divided into <math>4</math> partitions (<math>-D-D-D-</math>). 
+:If the <math>R</math>'s and <math>U</math>'s stay together, then there are <math>4 \cdot 3 = 12</math> places to put them. 
+:If one of them splits and the other stays together, then there are <math>4 \cdot {3\choose 2}</math> places to put them, and <math>2</math> ways to pick which splits, giving <math>4 \cdot 3 \cdot 2 = 24</math> ways.
+:If both groups split, then there are <math>{4\choose 2}=6</math> ways to arrange them. These add up to <math>12 + 24 + 6 = 42</math> ways.
+*'''Case ''' <math>d = 4</math>: Now <math>1</math> <math>R</math>, <math>1</math> <math>U</math>, <math>4</math> <math>D</math>'s (<math>-D-D-D-D-</math>). There are <math>5</math> places to put <math>R</math>, <math>4</math> places to put <math>U</math>, giving <math>20</math> ways.
+*'''Case ''' <math>d = 5</math>: It is easy to see only <math>1</math> case.
+
+Together, these add up to <math>2 + 18 + 42 + 20 + 1 = \boxed{083}</math>.
+
+=== Solution 2 ===
+Another possibility is to use block-walking and [[recursion]]: for each vertex, the number of ways to reach it is <math>a + b + c</math>, where <math>a</math> is the number of ways to reach the vertex from the left (without having come to ''that'' vertex (the one on the left) from below), <math>b</math> is the number of ways to reach the vertex from the vertex diagonally down and left, and <math>c</math> is the number of ways to reach the vertex from below (without having come to ''that'' vertex (the one below) from the left).
+
+Assign to each point <math>(i,j)</math> the triplet <math>(a_{i,j}, b_{i,j}, c_{i,j})</math>. Let <math>s(i,j) = a_{i,j}+ b_{i,j}+ c_{i,j}</math>. Let all lattice points that contain exactly one negative coordinate be assigned to <math>(0,0,0)</math>. This leaves the lattice points of the first quadrant, the positive parts of the <math>x</math> and <math>y</math> axes, and the origin unassigned. As a seed, assign to <math>(0,1,0)</math>. (We will see how this correlates with the problem.) Then define for each lattice point <math>(i,j)</math> its triplet thus:
+<cmath>\begin{align*}
+a_{i,j} &= s(i-1,j) - c_{i-1,j}\\
+b_{i,j} &= s(i-1,j-1) \\
+c_{i,j} &= s(i,j-1) - a_{i,j-1}.
+\end{align*}</cmath>
+It is evident that <math>s(i,j)</math> is the number of ways to reach <math>(i,j)</math> from <math>(0,0)</math>. Therefore we compute vertex by vertex the triplets <math>(a_{i,j}, b_{i,j}, c_{i,j})</math> with <math>0 \leq i, j \leq 5</math>. 
+<asy>
+defaultpen(fontsize(8)+0.8+heavyblue); size(250);
+
+for(int i = 0; i<6; ++i) { draw((0,i)--(5,i)^^(i,0)--(i,5), gray+0.25); }
+label("$(0,0,0)$", (0,0), N);
+for(int i = 1; i<6; ++i) { label("$(0,0,1)$", (0,i), N); label("$(1,0,0)$", (i,0), N); label("$({"+string(i-1)+"},1,0)$", (i,1), N); label("$(0,1,{"+string(i-1)+"})$", (1,i), N);}
+real[] val={1,2,4,7};
+for(int i = 2; i<6; ++i) { label("$(1,{"+string(i-1)+"}, {"+string(val[i-2])+"})$", (2,i), N); label("$({"+string(val[i-2])+"},{"+string(i-1)+"}, 1)$", (i,2), N);}
+
+label("$(3,3,3)$", (3,3), N); label("$(9,9,9)$", (4,4), N); label("$(28,27,28)$", (5,5), N);
+label("$(4,5,6)$", (3,4), N); label("$(6,5,4)$", (4,3), N); 
+label("$(5,8,11)$", (3,5), N); label("$(11,8,5)$", (5,3), N);
+label("$(13,15,18)$", (4,5), N); label("$(18,15,13)$", (5,4), N);
+</asy>
+Finally, after simple but tedious calculations, we find that <math>(a_{5,5}, b_{5,5}, c_{5,5}) = (28,27,28)</math>, so <math>s(i,j)=28+27+28 = \boxed{083}</math>.

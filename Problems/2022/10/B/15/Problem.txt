@@ -1,0 +1,5 @@
+==Problem==
+
+Let $S_n$ be the sum of the first $n$ terms of an arithmetic sequence that has a common difference of $2$. The quotient $\frac{S_{3n}}{S_n}$ does not depend on $n$. What is $S_{20}$?
+
+$\textbf{(A) } 340 \qquad \textbf{(B) } 360 \qquad \textbf{(C) } 380 \qquad \textbf{(D) } 400 \qquad \textbf{(E) } 420$

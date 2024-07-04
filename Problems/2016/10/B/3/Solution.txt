@@ -1,0 +1,4 @@
+==Solution 1==
+Substituting carefully, $\Bigg\vert\Big\vert 2016-(-2016)\Big\vert-2016\Bigg\vert-(-2016)$
+
+becomes $|4032-2016|+2016=2016+2016=4032$ which is $\boxed{\textbf{(D)}}$.

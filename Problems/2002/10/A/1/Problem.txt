@@ -1,0 +1,4 @@
+==Problem==
+The ratio $\frac{10^{2000}+10^{2002}}{10^{2001}+10^{2001}}$ is closest to which of the following numbers?
+
+$\textbf{(A)}\ 0.1 \qquad \textbf{(B)}\ 0.2 \qquad \textbf{(C)}\ 1 \qquad \textbf{(D)}\ 5 \qquad \textbf{(E)}\ 10$

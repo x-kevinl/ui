@@ -1,0 +1,4 @@
+==Solution 1==
+The triangle has base $6,$ which means its height satisfies
+$$\dfrac{6h}{2}=3h=12.$$
+This means that $h=4, $ so the answer is $7+4=\boxed{(D) 11}$

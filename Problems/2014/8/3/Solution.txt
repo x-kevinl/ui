@@ -1,0 +1,2 @@
+==Solution==
+Isabella read $3\cdot 36+3\cdot 44$ pages in the first 6 days. Although this can be calculated directly, it is simpler to calculate it as $3\cdot (36+44)=3\cdot 80$, which gives that she read $240$ pages. On her last day, she read $10$ more pages for a total of $240+10=\boxed{\textbf{(B)}~250}$ pages.

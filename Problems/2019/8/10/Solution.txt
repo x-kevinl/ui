@@ -1,0 +1,4 @@
+==Solution==
+On Monday, $20$ people come. On Tuesday, $26$ people come. On Wednesday, $16$ people come. On Thursday, $22$ people come. Finally, on Friday, $16$ people come. $20+26+16+22+16=100$, so the mean is $20$. The median is $(16, 16, 20, 22, 26)$ $20$. The coach figures out that actually $21$ people come on Wednesday. The new mean is $21$, while the new median is $(16, 20, 21, 22, 26)$ $21$. Also, the median increases by $1$ because now the median is $21$ instead of $20$. The median and mean both change, so the answer is $\boxed{\textbf{(B)}}$.
+
+Another way to compute the change in mean is to notice that the sum increased by $5$ with the correction. So, the average increased by $5/5 = 1$.

@@ -1,0 +1,5 @@
+== Solution ==
+ 
+In this solution we refer to moving to the left as decreasing the year or date number and moving to the right as  increasing the year or date number. Every non-leap year we move to the right results in moving one day to the right because $365\equiv 1\pmod 7$.  Every leap year we move to the right results in moving $2$ days to the right since $366\equiv 2\pmod 7$. A leap year is usually every four years, so 200 years would have $\frac{200}{4}$ = $50$ leap years, but the problem says that 1900 does not count as a leap year.
+
+Therefore there would be 151 regular years and 49 leap years, so $1(151)+2(49)$ = $249$ days back.  Since $249 \equiv 4\ (\text{mod}\ 7)$, four days back from Tuesday would be $\boxed{\textbf{(A)}\ \text{Friday}}$.

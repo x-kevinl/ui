@@ -1,0 +1,6 @@
+==Problem==
+A bus takes $2$ minutes to drive from one stop to the next, and waits $1$ minute at each stop to let passengers board. Zia takes $5$ minutes to walk from one bus stop to the next. As Zia reaches a bus stop, if the bus is at the previous stop or has already left the previous stop, then she will wait for the bus. Otherwise she will start walking toward the next stop. Suppose the bus and Zia start at the same time toward the library, with the bus $3$ stops behind. After how many minutes will Zia board the bus?
+
+[[File:2022 AMC 8 Problem 22 Diagram.png|750px|center]]
+
+$\textbf{(A) } 17 \qquad \textbf{(B) } 19 \qquad \textbf{(C) } 20 \qquad \textbf{(D) } 21 \qquad \textbf{(E) } 23$

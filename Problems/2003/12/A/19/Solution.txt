@@ -1,0 +1,10 @@
+==Solution 1==
+
+If we take the parabola $ax^2 + bx + c$ and reflect it over the x - axis, we have the parabola $-ax^2 - bx - c$. Without loss of generality, let us say that the parabola is translated 5 units to the left, and the reflection to the right. Then:
+ 
+$$ \begin{align*} f(x) = a(x+5)^2 + b(x+5) + c = ax^2 + (10a+b)x + 25a + 5b + c \\  g(x)  = -a(x-5)^2 - b(x-5) - c = -ax^2 + 10ax -bx - 25a + 5b - c \end{align*} $$ 
+
+Adding them up produces: 
+$$ \begin{align*} (f + g)(x) = ax^2 + (10a+b)x + 25a + 5b + c - ax^2 + 10ax -bx - 25a + 5b - c = 20ax + 10b \end{align*}$$ 
+
+This is a line with slope $20a$. Since $a$ cannot be $0$ (because $ax^2 + bx + c$ would be a line) we end up with $\boxed{\textbf{(D)} \text{ a non-horizontal line }}$

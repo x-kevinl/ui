@@ -1,0 +1,31 @@
+==Solution 1==
+
+<asy>
+unitsize(5mm);
+defaultpen(linewidth(.8pt));
+dotfactor=2;
+
+for(int a=0; a<=10; ++a)
+for(int b=0; b<=10; ++b)
+ {
+  dot((a,b));
+ };
+
+draw((4,0)--(0,5)--(3,4)--(10,10)--cycle);
+draw((0,0)--(10,0)--(10,10)--(3,4)--(0,5)--cycle);
+draw((10,4)--(0,4)--cycle);
+
+dot("$A$", (0,5), W);
+dot("$B$", (3,4), N);
+dot("$C$", (10,10), NE);
+dot("$D$", (0,4), W);
+dot("$E$", (10,4), E);
+dot("$F$", (0,0), SW);
+dot("$G$", (10,0), SE);
+dot("$H$", (4,0), S);
+</asy>
+
+Divide the shape up as above. 
+$$Area = [DEGF] + [ABD] + [BCE] - [AFH] - [CGH] = 4 \cdot 10 + \frac12 \cdot 1 \cdot 3 + \frac12 \cdot 7 \cdot 6 - \frac12 \cdot 5 \cdot 4 - \frac12 \cdot 6 \cdot 10 = 40 + \frac32 + 21 - 10 - 30 = \boxed{\textbf{(C)}\ 22\frac12}$$
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen]

@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>P </math> be the product of the first <math>100</math> [[positive integer | positive]] [[odd integer]]s. Find the largest integer <math>k </math> such that <math>P </math> is divisible by <math>3^k .</math>

@@ -1,0 +1,3 @@
+== Solution 1==
+View the palindrome as some number with form (decimal representation):
+$a_3 \cdot 10^3 + a_2 \cdot 10^2 + a_1 \cdot 10 + a_0$. But because the number is a palindrome, $a_3 = a_0, a_2 = a_1$. Recombining this yields $1001a_3 + 110a_2$. 1001 is divisible by 7, which means that as long as $a_2 = 0$, the palindrome will be divisible by 7. This yields 9 palindromes out of 90 ($9 \cdot 10$) possibilities for palindromes. However, if $a_2 = 7$, then this gives another case in which the palindrome is divisible by 7. This adds another 9 palindromes to the list, bringing our total to $18/90 = \boxed {\frac{1}{5} } = \boxed {E}$

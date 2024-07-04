@@ -1,0 +1,9 @@
+== Solution 1 ==
+
+At the moment when the numbers are in the bag, imagine that each of them has a different color. Clearly the situation is symmetric at this moment. Hence after we draw them, attach them and throw the dice, the probability of getting some pair of colors is the same for any two colors.
+
+There are ${12 \choose 2} = 66$ ways to pick two of the colors. We now have to count the ways where the two chosen numbers will have a sum of $7$. 
+
+A sum of $7$ can be obtained as $1+6$, $2+5$, or $3+4$. Each number in the bag has two different colors, hence each of these three options corresponds to four pairs of colors. 
+
+Out of the $66$ pairs of colors we can get when throwing the dice, $3\cdot 4=12$ will give us the sum $7$. Hence the probability that this will happen is $\frac{12}{66} = \boxed{\textbf{(D) }\frac 2{11}}$.

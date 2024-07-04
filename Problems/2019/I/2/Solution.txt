@@ -1,0 +1,6 @@
+==Solution 1==
+<math>B-J \ne 0</math> because <math>B \ne J</math>, so the probability that <math>B-J < 0</math> is <math>\frac{1}{2}</math> by symmetry.
+
+The probability that <math>B-J = 1</math> is <math>\frac{19}{20 \times 19} = \frac{1}{20}</math> because there are 19 pairs: <math>(B,J) = (2,1), \ldots, (20,19)</math>.
+
+The probability that <math>B-J \ge 2</math> is <math>1-\frac{1}{2}-\frac{1}{20} = \frac{9}{20} \implies \boxed{029}</math>

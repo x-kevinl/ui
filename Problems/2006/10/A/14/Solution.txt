@@ -1,0 +1,2 @@
+== Solution 1 ==
+The inside diameters of the rings are the positive integers from $1$ to $18$.  The total distance needed is the sum of these values plus $2$ for the top of the first ring and the bottom of the last ring. Using the formula for the sum of an [[arithmetic series]], the answer is $\frac{18 \cdot 19}{2} + 2 = \boxed{\textbf{(B) }173}$.

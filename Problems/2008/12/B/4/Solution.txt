@@ -1,0 +1,4 @@
+==Solution==
+$\angle COD = \angle AOB - \angle AOC - \angle BOD = 180^\circ - 30^\circ - 45^\circ = 105^\circ$. 
+
+Since a circle has $360^\circ$, the desired ratio is $\frac{105^\circ}{360^\circ}=\frac{7}{24} \Rightarrow D$.

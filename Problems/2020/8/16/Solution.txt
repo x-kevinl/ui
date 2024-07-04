@@ -1,0 +1,5 @@
+== Solution 1 ==
+We can form the following expressions for the sum along each line:
+$$\begin{dcases}A+B+C\\A+E+F\\C+D+E\\B+D\\B+F\end{dcases}$$
+Adding these together, we must have $2A+3B+2C+2D+2E+2F=47$, i.e. $2(A+B+C+D+E+F)+B=47$. Since $A,B,C,D,E,F$ are unique integers between $1$ and $6$, we obtain $A+B+C+D+E+F=1+2+3+4+5+6=21$ (where the order doesn't matter as addition is commutative), so our equation simplifies to $42 + B = 47$. This means $B = \boxed{\textbf{(E) }5}$.
+~RJ5303707

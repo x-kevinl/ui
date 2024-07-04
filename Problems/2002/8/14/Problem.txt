@@ -1,0 +1,6 @@
+== Problem ==
+
+A merchant offers a large group of items at $30\%$ off. Later, the merchant takes $20\%$ off these sale prices. The total discount is
+
+
+$ \text{(A)}\ 35\%\qquad\text{(B)}\ 44\%\qquad\text{(C)}\ 50\%\qquad\text{(D)}\ 56\%\qquad\text{(E)}\ 60\% $

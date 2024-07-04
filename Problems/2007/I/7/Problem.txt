@@ -1,0 +1,5 @@
+== Problem ==
+Let 
+<math>N = \sum_{k = 1}^{1000} k ( \lceil \log_{\sqrt{2}} k \rceil  - \lfloor \log_{\sqrt{2}} k \rfloor )</math>
+
+Find the [[remainder]] when <math>N</math> is divided by 1000.  (<math>\lfloor{k}\rfloor</math> is the [[floor function|greatest integer]] less than or equal to <math>k</math>, and <math>\lceil{k}\rceil</math> is the [[ceiling function|least integer]] greater than or equal to <math>k</math>.)

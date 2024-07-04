@@ -1,0 +1,32 @@
+==Solution 1==
+
+From Vieta's formulas, we know that <math>a+b+c = 0</math>, and <math>ab+bc+ac = -2011</math>. Thus <math>a = -(b+c)</math>. All three of <math>a</math>, <math>b</math>, and <math>c</math> are non-zero: say, if <math>a=0</math>, then <math>b=-c=\pm\sqrt{2011}</math> (which is not an integer). <math>\textsc{wlog}</math>, let <math>|a| \ge |b| \ge |c|</math>. If <math>a > 0</math>, then <math>b,c < 0</math> and if <math>a < 0</math>, then <math>b,c > 0</math>. We have <cmath>-2011=ab+bc+ac = a(b+c)+bc = -a^2+bc</cmath>
+Thus <math>a^2 = 2011 + bc</math>. We know that <math>b</math>, <math>c</math> have the same sign. So <math>|a| \ge 45 = \lceil \sqrt{2011} \rceil</math>. 
+
+Also, if we fix <math>a</math>, <math>b+c</math> is fixed, so <math>bc</math> is maximized when <math>b = c</math> . Hence, <cmath>2011 = a^2 - bc > \tfrac{3}{4}a^2 \qquad \Longrightarrow \qquad a ^2 < \tfrac{4}{3}\cdot 2011 = 2681+\tfrac{1}{3}</cmath>
+So <math>|a| \le 51</math>. Thus we have bounded <math>a</math> as <math>45\le |a| \le 51</math>, i.e. <math>45\le |b+c| \le 51</math> since <math>a=-(b+c)</math>. Let's analyze <math>bc=(b+c)^2-2011</math>. Here is a table: 
+
+<table border = 1 cellspacing = 0 cellpadding = 5 style = "text-align:center;">
+
+<tr><th><math>|a|</math></th><th><math>bc=a^2-2011</math></th></tr>
+
+<tr><td><math>45</math></td><td><math>14</math></td></tr>
+<tr><td><math>46</math></td><td><math>105</math></td></tr>
+<tr><td><math>47</math></td><td><math>198</math></td></tr>
+<tr><td><math>48</math></td><td><math>293</math></td></tr>
+<tr><td><math>49</math></td><td><math>390</math></td></tr>
+</table>
+<br />
+
+We can tell we don't need to bother with <math>45</math>, 
+
+<math>105 = (3)(5)(7)</math>, So <math>46</math> won't work. <math>198/47 > 4</math>, 
+
+<math>198</math> is not divisible by <math>5</math>, <math>198/6 = 33</math>, which is too small to get <math>47</math>.
+
+<math>293/48 > 6</math>, <math>293</math> is not divisible by <math>7</math> or <math>8</math> or <math>9</math>, we can clearly tell that <math>10</math> is too much.
+
+
+Hence, <math>|a| = 49</math>, <math>a^2 -2011 = 390</math>. <math>b = 39</math>, <math>c = 10</math>.
+
+Answer: <math>\boxed{098}</math>

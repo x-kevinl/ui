@@ -1,0 +1,4 @@
+== Problem ==
+Let $M$ be the least common multiple of all the integers $10$ through $30,$ inclusive. Let $N$ be the least common multiple of $M,32,33,34,35,36,37,38,39,$ and $40.$ What is the value of $\frac{N}{M}?$
+
+$\textbf{(A)}\ 1 \qquad\textbf{(B)}\ 2 \qquad\textbf{(C)}\ 37 \qquad\textbf{(D)}\ 74 \qquad\textbf{(E)}\ 2886$

@@ -1,0 +1,65 @@
+== Solutions ==
+
+=== Solution 1 ===
+
+The situation is shown in the picture below.
+
+<asy>
+unitsize(0.6cm);
+defaultpen(0.8);
+pair A=(0,0), B=(4,0), C=(4,3), D=(0,3);
+pair EF=rotate(90)*(D-B);
+pair E=intersectionpoint( (0,-100)--(0,100), (B-100*EF)--(B+100*EF) );
+pair F=intersectionpoint( (-100,3)--(100,3), (B-100*EF)--(B+100*EF) );
+draw(A--B--C--D--cycle);
+draw(B--D, dashed);
+draw(E--F);
+draw(A--E, dashed);
+draw(C--F, dashed);
+label("$A$",A,W);
+label("$B$",B,SE);
+label("$C$",C,N);
+label("$D$",D,NW);
+label("$E$",E,SW);
+label("$F$",F,NE);
+label("$3$",A--D,W);
+label("$4$",C--D,N);
+</asy>
+
+From the [[Pythagorean theorem]] we have $BD=5$.
+
+Triangle $EAB$ is similar to $BAD$, as they have the same angles. Segment $BA$ is perpendicular to $DA$, meaning that angle $DAB$ and $BAE$ are right angles and congruent. Also, angle $DBE$ is a right angle. Because it is a rectangle, angle $BDC$ is congruent to $DBA$ and angle $ADC$ is also a right angle. By the transitive property:
+
+$mADB + mBDC = mDBA + mABE$
+
+$mBDC = mDBA$
+
+$mADB + mBDC = mBDC + mABE$
+
+$mADB = mABE$
+
+Next, because every triangle has a degree measure of $180$, angle $BEA$ and angle $DBA$ are similar. 
+
+
+Hence $BE/AB = DB/AD$, and therefore $BE = AB\cdot DB/AD = 20/3$.
+
+Also triangle $CBF$ is similar to $ABD$. Hence $BF/BC = DB/AB$, and therefore $BF=BC\cdot DB / AB = 15/4$.
+
+We then have $EF = EB+BF = \frac{20}3 + \frac{15}4 = \frac{80 + 45}{12} = \boxed{\frac{125}{12}}$.
+
+=== Solution 2 ===
+
+Since $BD$ is the altitude from $D$ to $EF$, we can use the equation $BD^2 = EB\cdot BF$. 
+
+Looking at the angles, we see that triangle $BDE$ is similar to $DCB$. Because of this, $\frac{AB}{CB} = \frac{EB}{DB}$. From the given information and the [[Pythagorean theorem]], $AB=4$, $CB=3$, and $DB=5$. Solving gives $EB=20/3$. 
+
+We can use the above formula to solve for $BF$. $BD^2 = 20/3\cdot BF$. Solve to obtain $BF=15/4$. 
+
+We now know $EB$ and $BF$. $EF = EB+BF = \frac{20}3 + \frac{15}4 = \frac{80 + 45}{12} = \boxed{\frac{125}{12}}$.
+
+===Solution 3(Coordinate Bash)===
+To keep things simple, we will use coordinates in only the first quadrant. The picture will look like the diagram above reflected over the $x$-axis.It is also worth noting the $F$ will lie on the $x$ axis and $E$ on the $y$. Let $D$ be the origin, $A(3,0)$, $C(4,0)$, and  $B(4,3)$. We can express segment $DB$ as the line $y=\frac{3x}{4}$. 
+Since $EF$ is perpendicular to $DB$, and we know that $(4,3)$ lies on it, we can use this information to find that segment $EF$
+is on the line $y=\frac{-4x}{3}+\frac{25}{3}$. Since $E$ and $F$ are on the $y$ and $x$ axis, respectively, we plug in $0$ for $x$
+and $y$, we find that point $E$ is at $(0,\frac{25}{3})$, and point $F$ is at $(\frac{25}{4},0)$. Applying the distance formula,
+we obtain that $EF$= $\boxed{\frac{125}{12}}$.

@@ -1,0 +1,6 @@
+== Problem ==
+Patio blocks that are hexagons <math>1</math> unit on a side are used to outline a garden by placing the blocks edge to edge with <math>n</math> on each side. The diagram indicates the path of blocks around the garden when <math>n=5</math>.
+
+[[Image:AIME 2002 II Problem 4.gif]]
+
+If <math>n=202</math>, then the area of the garden enclosed by the path, not including the path itself, is <math>m\left(\sqrt3/2\right)</math> square units, where <math>m</math> is a positive integer. Find the remainder when <math>m</math> is divided by <math>1000</math>.

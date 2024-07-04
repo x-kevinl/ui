@@ -1,0 +1,4 @@
+==Problem==
+A disk of radius $1$ rolls all the way around the inside of a square of side length $s>4$ and sweeps out a region of area $A$. A second disk of radius $1$ rolls all the way around the outside of the same square and sweeps out a region of area $2A$. The value of $s$ can be written as $a+\frac{b\pi}{c}$, where $a,b$, and $c$ are positive integers and $b$ and $c$ are relatively prime. What is $a+b+c$?
+
+$\textbf{(A)} ~10\qquad\textbf{(B)} ~11\qquad\textbf{(C)} ~12\qquad\textbf{(D)} ~13\qquad\textbf{(E)} ~14$

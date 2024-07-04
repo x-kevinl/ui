@@ -1,0 +1,50 @@
+==Solution 1==
+
+We start by trying to prove a function of $n$, and then we can apply the function and equate it to $936$ to find the value of $n$.
+
+It is helpful to think of this problem in the format $(1+2+3+4+5+6) \cdot (1+2+3+4+5+6) \dots$. Note that if we represent the scenario in this manner, we can think of picking a $1$ for one factor and then a $5$ for another factor to form their product - this is similar thinking to when we have the factorized form of a polynomial. Unfortunately this is not quite accurate to the problem because we can reach the same product in many ways: for example for $n=2$, $4$ can be reached by picking $1$ and $4$ or $2$ and $2$. However, this form gives us insights that will be useful later in the problem.
+
+Note that there are only $3$ primes in the set $\{1,2,3,4,5,6\}$: $2,3,$ and $5$. Thus if we're forming the product of possible values of a dice roll, the product has to be written in the form $2^h \cdot 3^i \cdot 5^j$ (the choice of variables will become clear later), for integer nonnegative values $h,i,j$. So now the problem boils down to how many distinct triplets $(h,i,j)$ can be formed by taking the product of $n$ dice values. 
+
+We start our work on representing $j$: the powers of $5$, because it is the simplest in this scenario because there is only one factor of $5$ in the set. Because of this, having $j$ fives in our prime factorization of the product is equivalent to picking $j$ factors from the polynomial $(1+\dots + 6) \cdots$ and choosing each factor to be a $5$. Now that we've selected $j$ factors, there are $n-j$ factors remaining to choose our powers of $3$ and $2$. 
+
+Suppose our prime factorization of this product contains $i$ powers of $3$. These powers of $3$ can either come from a $3$ factor or a $6$ factor, but since both $3$ and $6$ contain only one power of $3$, this means that a product with $i$ powers of $3$ corresponds directly to picking $i$ factors from the polynomial, each of which is either $3$ or $6$ (but this distinction doesn't matter when we consider only the powers of $3$. 
+
+Now we can reframe the problem again. Our method will be as follows: Suppose we choose an arbitrary pair $(i,j)$ that match the requirements, corresponding to the number of $3$'s and the number of $5$'s our product will have. Then how many different $h$ values for the powers of $2$ are possible?
+
+In the $i+j$ factors we have already chosen, we obviously can't have any factors of $2$ in the $j$ factors with $5$. However, we can have a factor of $2$ pairing with factors of $3$, if we choose a $6$. The maximal possible power of $2$ in these $i$ factors is thus $2^i$, which occurs when we pick every factor to be $6$. 
+
+We now have $n-i-j$ factors remaining, and we want to allocate these to solely powers of $2$. For each of these factors, we can choose either a $1,2,$ or $4$. Therefore the maximal power of $2$ achieved in these factors is when we pick $4$ for all of them, which is equivalent to $2^{2\cdot (n-i-j)}$.
+
+Now if we multiply this across the total $n$ factors (or $n$ dice) we have a total of $2^{2n-2i-2j} \cdot 2^i = 2^{2n-i-2j}$, which is the maximal power of $2$ attainable in the product for a pair $(i,j)$. Now note that every power of $2$ below this power is attainable: we can simply just take away a power of $2$ from an existing factor by dividing by $2$. Therefore the powers of $2$, and thus the $h$ value ranges from $h=0$ to $h=2n-i-2j$, so there are a total of $2n+1-i-2j$ distinct values for $h$ for a given pair $(i,j)$. 
+
+Now to find the total number of distinct triplets, we must sum this across all possible $i$s and $j$s. Lets take note of our restrictions on $i,j$: the only restriction is that $i+j \leq n$, since we're picking factors from $n$ dice.
+
+$$ \sum_{i+j\leq n}^{} 2n+1-i-2j = \sum_{i+j \leq n}^{} 2n+1 - \sum_{i+j \leq n}^{} i+2j$$
+
+We start by calculating the first term. $2n+1$ is constant, so we just need to find out how many pairs there are such that $i+j \leq n$. Set $i$ to $0$: $j$ can range from $0$ to $n$, then set $i$ to $1$: $j$ can range from $0$ to $n-1$, etc. The total number of pairs is thus $n+1+n+n-1+\dots+1 = \frac{(n+1)(n+2)}{2}$. Therefore the left summation evaluates to $$\frac{(2n+1)(n+1)(n+2)}{2}$$
+
+Now we calculate $\sum_{i+j \leq n}^{} i+2j$. This simplifies to $\sum_{i+j \leq n}^{} i + 2 \cdot \sum_{i+j \leq n}^{} j$. Note that because $i+j = n$ is symmetric with respect to $i,j$, the sum of $i$ in all of the pairs will be equal to the sum of $j$ in all of the pairs. Thus this is equal to calculating $3 \cdot \sum_{i+j \leq n}^{} i$.
+
+In the pairs, $i=1$ appears for $j$ ranging between $0$ and $n-1$ so the sum here is $1 \cdot (n)$. Similarly $i=2$ appears for $j$ ranging from $0$ to $n-2$, so the sum is $2 \cdot (n-1)$. If we continue the pattern, the sum overall is $(n)+2 \cdot (n-1) + 3 \cdot (n-2) + \dots + (n) \cdot 1$. We can rearrange this as $((n)+(n-1)+ \dots + 1) + ((n-1)+(n-2)+ \dots + 1)+ ((n-2)+(n-3)+ \dots + 1) + \dots + 1)$
+
+$$ = \frac{(n)(n+1)}{2} + \frac{(n-1)(n)}{2}+ \dots + 1$$
+
+We can write this in easier terms as $\sum_{k=0}^{n} \frac{(k)(k+1)}{2} = \frac{1}{2} \cdot \sum_{k=0}^{n} k^2+k$
+$$=\frac{1}{2} \cdot( \sum_{k=0}^{n} k^2 + \sum_{k=0}^{n} k)$$
+$$= \frac{1}{2} \cdot ( \frac{(n)(n+1)(2n+1)}{6} + \frac{(n)(n+1)}{2})$$
+$$= \frac{1}{2} \cdot ( \frac{(n)(n+1)(2n+1)}{6} + \frac{3n(n+1)}{6}) = \frac{1}{2} \cdot \frac{n(n+1)(2n+4)}{6}$$
+$$ = \frac{n(n+1)(n+2)}{6}$$
+
+We multiply this by $3$ to obtain that $$\sum_{i+j \leq n}^{} i+2j = \frac{n(n+1)(n+2)}{2}$$
+
+Thus our final answer for the number of distinct triplets $(h,i,j)$ is:
+$$\sum_{i+j\leq n}^{} 2n+1-i-2j = \frac{(2n+1)(n+1)(n+2)}{2} - \frac{n(n+1)(n+2)}{2}$$
+$$ = \frac{(n+1)(n+2)}{2} \cdot (2n+1-n) = \frac{(n+1)(n+2)}{2} \cdot (n+1)$$
+$$ = \frac{(n+1)^2(n+2)}{2}$$
+
+Now most of the work is done. We set this equal to $936$ and prime factorize. $936 = 12 \cdot 78 = 2^3 \cdot 3^2 \cdot 13$, so $(n+1)^2(n+2) = 936 \cdot 2 = 2^4 \cdot 3^2 \cdot 13$. Clearly $13$ cannot be anything squared and $2^4 \cdot 3^2$ is a perfect square, so $n+2 = 13$ and $n = 11 = \boxed{A}$
+
+
+
+~KingRavi

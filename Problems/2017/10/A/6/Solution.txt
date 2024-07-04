@@ -1,0 +1,13 @@
+==Solution 1 (Using the Contrapositive)==
+Rewriting the given statement: "if someone got all the multiple choice questions right on the upcoming exam then he or she would receive an A on the exam."
+If that someone is Lewis the statement becomes: "if Lewis got all the multiple choice questions right, then he would receive an A on the exam."
+
+The contrapositive: "If Lewis did ''not'' receive an A, then he did ''not'' get all of them right"
+
+The contrapositive (in other words): "If Lewis did not get an A, then he got at least one of the multiple choice questions wrong".
+
+B is also equivalent to the contrapositive of the original statement, which implies that it must be true, so the answer is $\boxed{\textbf{(B)}\text{ If Lewis did not receive an A, then he got at least one of the multiple choice questions wrong.}}$.
+
+* Note that answer choice (B) is the contrapositive of the given statement. (That is, it has been negated as well as reversed.) We know that the contrapositive is always true if the given statement is true.
+
+~minor edits by BakedPotato66

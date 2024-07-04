@@ -1,0 +1,2 @@
+== Problem ==
+In [[triangle]] <math>ABC</math> the [[median]]s <math>\overline{AD}</math> and <math>\overline{CE}</math> have lengths <math>18</math> and <math>27</math>, respectively, and <math>AB=24</math>. Extend <math>\overline{CE}</math> to intersect the [[circumcircle]] of <math>ABC</math> at <math>F</math>. The area of triangle <math>AFB</math> is <math>m\sqrt{n}</math>, where <math>m</math> and <math>n</math> are positive integers and <math>n</math> is not divisible by the square of any prime. Find <math>m+n</math>.

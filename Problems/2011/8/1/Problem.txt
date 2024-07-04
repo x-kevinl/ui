@@ -1,0 +1,4 @@
+==Problem==
+Margie bought $ 3 $ apples at a cost of $ 50 $ cents per apple. She paid with a 5-dollar bill. How much change did Margie receive?
+
+$\textbf{(A)}\ \textdollar 1.50 \qquad \textbf{(B)}\ \textdollar 2.00 \qquad \textbf{(C)}\ \textdollar 2.50 \qquad \textbf{(D)}\ \textdollar 3.00 \qquad \textbf{(E)}\ \textdollar 3.50$

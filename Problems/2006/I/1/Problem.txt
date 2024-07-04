@@ -1,0 +1,2 @@
+== Problem ==
+In [[quadrilateral]] <math> ABCD</math>, <math>\angle B </math> is a [[right angle]], [[diagonal]] <math>\overline{AC}</math> is [[perpendicular]] to <math>\overline{CD}</math>, <math>AB=18</math>, <math>BC=21</math>, and <math>CD=14</math>. Find the [[perimeter]] of <math>ABCD</math>.

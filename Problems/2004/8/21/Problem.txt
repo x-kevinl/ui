@@ -1,0 +1,19 @@
+==Problem==
+Spinners $A$ and $B$ are spun. On each spinner, the arrow is equally likely to land on each number. What is the probability that the product of the two spinners' numbers is even?
+
+<asy>
+pair A=(0,0); pair B=(3,0);
+draw(Circle(A,1)); draw(Circle(B,1));
+
+draw((-1,0)--(1,0)); draw((0,1)--(0,-1));
+draw((3,0)--(3,1)); draw((3+sqrt(3)/2,-.5)--(3,0)); draw((3,0)--(3-sqrt(3)/2,-.5)); 
+
+label("$A$",(-1,1));
+label("$B$",(2,1));
+
+label("$1$",(-.4,.4)); label("$2$",(.4,.4)); label("$3$",(.4,-.4)); label("$4$",(-.4,-.4));
+label("$1$",(2.6,.4)); label("$2$",(3.4,.4)); label("$3$",(3,-.5));
+
+</asy>
+
+$\textbf{(A)}\ \frac14\qquad \textbf{(B)}\ \frac13\qquad \textbf{(C)}\ \frac12\qquad \textbf{(D)}\ \frac23\qquad \textbf{(E)}\ \frac34$

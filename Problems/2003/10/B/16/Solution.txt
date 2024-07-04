@@ -1,0 +1,9 @@
+==Solution 1==
+
+Let $m$ be the number of main courses the restaurant serves, so $2m$ is the number of appetizers. Then the number of dinner combinations is $2m\times m\times3=6m^2$. Since the customer wants to eat a different dinner in all $365$ days of $2003$, we must have
+
+$$\begin{align*}
+6m^2 &\geq 365\\
+m^2 &\geq 60.83\ldots.\end{align*}$$
+Also, year 2003 is not a leap year, because 2003 divided by 4 does not equal an integer.
+The smallest integer value that satisfies this is $\boxed{\textbf{(E)}\ 8}$.

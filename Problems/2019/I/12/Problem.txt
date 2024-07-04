@@ -1,0 +1,2 @@
+==Problem==
+Given <math>f(z) = z^2-19z</math>, there are complex numbers <math>z</math> with the property that <math>z</math>, <math>f(z)</math>, and <math>f(f(z))</math> are the vertices of a right triangle in the complex plane with a right angle at <math>f(z)</math>. There are positive integers <math>m</math> and <math>n</math> such that one such value of <math>z</math> is <math>m+\sqrt{n}+11i</math>. Find <math>m+n</math>.

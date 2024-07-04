@@ -1,0 +1,12 @@
+==Solution 1==
+Let <math>a=z^{120}</math>. This simplifies the problem constraint to <math>a^6-a \in \mathbb{R}</math>. This is true if <math>\text{Im}(a^6)=\text{Im}(a)</math>. Let <math>\theta</math> be the angle <math>a</math> makes with the positive x-axis. Note that there is exactly one <math>a</math> for each angle <math>0\le\theta<2\pi</math>. We are given <math>\sin\theta = \sin{6\theta}</math>. Note that <math>\sin \theta = \sin (\pi - \theta)</math> and <math>\sin \theta = \sin (\theta + 2\pi)</math>. We can use these facts to create two types of solutions: 
+
+<cmath>\sin \theta = \sin ((2m + 1)\pi - \theta)</cmath>
+
+which implies that <math>(2m+1)\pi-\theta = 6\theta</math> and reduces to <math>\frac{(2m + 1)\pi}{7} = \theta</math>. There are 7 solutions for this.
+
+<cmath>\sin \theta = \sin (2n\pi + \theta)</cmath>
+
+which implies that <math>2n\pi+\theta=6\theta</math> and reduces to <math>\frac{2n\pi}{5} = \theta</math>. There are 5 solutions for this, totaling 12 values of <math>a</math>.
+
+For each of these solutions for <math>a</math>, there are necessarily <math>120</math> solutions for <math>z</math>. Thus, there are <math>12\cdot 120=1440</math> solutions for <math>z</math>, yielding an answer of <math>\boxed{440}</math>.

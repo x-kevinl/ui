@@ -1,0 +1,47 @@
+==Solution 1==
+<asy>
+unitsize(20);
+pair B = (0,0);
+pair A = (2,sqrt(45));
+pair C = (8,0);
+draw(circumcircle(A,B,(-17/8,0)),rgb(.7,.7,.7));
+draw(circumcircle(A,C,(49/8,0)),rgb(.7,.7,.7));
+draw(B--A--C--cycle);
+label("$A$",A,dir(105));
+label("$B$",B,dir(-135));
+label("$C$",C,dir(-75));
+dot((2.68,2.25));
+label("$K$",(2.68,2.25),2*down);
+label("$\omega_1$",(-4.5,1));
+label("$\omega_2$",(12.75,6));
+label("$7$",(A+B)/2,dir(140));
+label("$8$",(B+C)/2,dir(-90));
+label("$9$",(A+C)/2,dir(60));
+</asy>
+-Diagram by Brendanb4321
+
+
+Note that from the tangency condition that the supplement of <math>\angle CAB</math> with respects to lines <math>AB</math> and <math>AC</math> are equal to <math>\angle AKB</math> and <math>\angle AKC</math>, respectively, so from tangent-chord, <cmath>\angle AKC=\angle AKB=180^{\circ}-\angle BAC</cmath> Also note that <math>\angle ABK=\angle KAC</math><math>^{(*)}</math>, so <math>\triangle AKB\sim \triangle CKA</math>. Using similarity ratios, we can easily find <cmath>AK^2=BK*KC</cmath> However, since <math>AB=7</math> and <math>CA=9</math>, we can use similarity ratios to get <cmath>BK=\frac{7}{9}AK, CK=\frac{9}{7}AK</cmath> 
+
+*Now we use Law of Cosines on <math>\triangle AKB</math>: From reverse Law of Cosines, <math>\cos{\angle BAC}=\frac{11}{21}\implies \cos{(180^{\circ}-\angle BAC)}=\angle AKB=-\frac{11}{21}</math>
+Giving us <cmath>AK^2+\frac{49}{81}AK^2+\frac{22}{27}AK^2=49</cmath> <cmath>\implies \frac{196}{81}AK^2=49</cmath> <cmath>AK=\frac{9}{2}</cmath> so our answer is <math>9+2=\boxed{011}</math>.
+
+<math>^{(*)}</math> Let <math>O</math> be the center of <math>\omega_1</math>. Then <math>\angle KAC = 90 - \angle OAK = 90 - \frac{1}{2}(180 - \angle AOK) = \frac{\angle AOK}{2} = \angle ABK</math>. Thus, <math>\angle ABK = \angle KAC</math>
+
+-franchester; <math>^{(*)}</math> by firebolt360
+===Supplement===
+*In order to get to the Law of Cosines first, we first apply the LOC to <math>\triangle{ABC},</math> obtaining <math>\angle{BAC}.</math>
+*We angle chase before applying the law of cosines to <math>\angle{AKB}.</math> 
+
+Note that <math>\angle{ABK}=\angle{KAC}</math> and <math>\angle{KCA}=\angle{KAB}</math> from tangent-chord. 
+
+Thus, <math>\angle{AKC}=\angle{AKB}=180^{\circ}-(\angle{ABK}+\angle{KAB}).</math> 
+
+However from our tangent chord, note that:
+<cmath>\angle{ABK}+\angle{KAB}=\angle{KAC}+\angle{KAB}=\angle{BAC}.</cmath>
+Thus, <math>\angle{AKB}=180^\circ-\angle{BAC}.</math> 
+
+*As an alternative approach, note that the sum of the angles in quadrilateral <math>ABKC</math> is <math>360^{\circ}</math> and we can find <math>\angle{AKB}=\frac12</math> of convex <math>\angle{BKC},</math> which is just:
+<cmath>\frac12 \left(360^{\circ}-2(\angle{KAB}+\angle{KBA}\right) = 180^\circ - \angle{BAC}.</cmath>
+
+~mathboy282

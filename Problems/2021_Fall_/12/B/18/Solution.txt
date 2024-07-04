@@ -1,0 +1,29 @@
+==Solution 1==
+
+Note that terms of the sequence $(u_k)$ lie in the interval $\left(0,\frac12\right),$ strictly increasing.
+
+Since the sequence $(u_k)$ tends to the limit $L,$ we set $u_{k+1}=u_k=L>0.$
+
+The given equation becomes $$L=2L-2L^2,$$ from which $L=\frac12.$
+
+The given inequality becomes $$\frac12-\frac{1}{2^{1000}} \leq u_k \leq \frac12+\frac{1}{2^{1000}},$$ and we only need to consider $\frac12-\frac{1}{2^{1000}} \leq u_k.$
+
+We have
+$$\begin{alignat*}{8}
+u_0 &= \phantom{1}\frac14 &&= \frac{2^1-1}{2^2}, \\
+u_1 &= \phantom{1}\frac38 &&= \frac{2^2-1}{2^3}, \\
+u_2 &= \ \frac{15}{32} &&= \frac{2^4-1}{2^5}, \\
+u_3 &= \frac{255}{512} &&= \frac{2^8-1}{2^9}, \\
+& \phantom{1111} \vdots
+\end{alignat*}$$
+By induction, it can be proven that $$u_k=\frac{2^{2^k}-1}{2^{2^k+1}}=\frac12-\frac{1}{2^{2^k+1}}.$$
+We substitute this into the inequality, then solve for $k:$
+$$\begin{align*}
+\frac12-\frac{1}{2^{1000}} &\leq \frac12-\frac{1}{2^{2^k+1}} \\
+-\frac{1}{2^{1000}} &\leq -\frac{1}{2^{2^k+1}} \\
+2^{1000} &\leq 2^{2^k+1} \\
+1000 &\leq 2^k+1.
+\end{align*}$$
+Therefore, the least such value of $k$ is $\boxed{\textbf{(A)}\: 10}.$
+
+~MRENTHUSIASM

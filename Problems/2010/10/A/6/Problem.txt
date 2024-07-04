@@ -1,0 +1,18 @@
+== Problem 6 ==
+For positive numbers $x$ and $y$ the operation $\spadesuit (x,y)$ is defined as 
+
+$$\spadesuit (x,y) = x-\dfrac{1}{y}$$
+
+What is $\spadesuit (2,\spadesuit (2,2))$?
+
+$
+\mathrm{(A)}\ \dfrac{2}{3}
+\qquad
+\mathrm{(B)}\ 1
+\qquad
+\mathrm{(C)}\ \dfrac{4}{3}
+\qquad
+\mathrm{(D)}\ \dfrac{5}{3}
+\qquad
+\mathrm{(E)}\ 2
+$

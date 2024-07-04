@@ -1,0 +1,22 @@
+== Solution ==
+For simplicity, we translate the points so that <math>A</math> is on the origin and <math>D = (1,7)</math>. Suppose <math>B</math> has integer coordinates; then <math>\overrightarrow{AB}</math> is a [[vector]] with integer parameters (vector knowledge is not necessary for this solution). We construct the [[perpendicular]] from <math>A</math> to <math>\overline{CD}</math>, and let <math>D' = (a,b)</math> be the reflection of <math>D</math> across that perpendicular. Then <math>ABCD'</math> is a [[parallelogram]], and <math>\overrightarrow{AB} = \overrightarrow{D'C}</math>. Thus, for <math>C</math> to have integer coordinates, it suffices to let <math>D'</math> have integer coordinates.{{ref|1}}  
+
+<center><asy>
+pathpen = linewidth(0.7);
+pair A=(0,0), D=(1,7), Da = MP("D'",D((-7,1)),N), B=(-8,-6), C=B+Da, F=foot(A,C,D);
+D(MP("A",A)--MP("B",B)--MP("C",C,N)--MP("D",D,N)--cycle); D(F--A--Da,linetype("4 4")); 
+</asy></center>
+
+Let the slope of the perpendicular be <math>m</math>. Then the [[midpoint]] of <math>\overline{DD'}</math> lies on the line <math>y=mx</math>, so <math>\frac{b+7}{2} = m \cdot \frac{a+1}{2}</math>. Also, <math>AD = AD'</math> implies that <math>a^2 + b^2 = 1^2 + 7^2 = 50</math>. Combining these two equations yields
+
+<cmath>a^2 + \left(7 - (a+1)m\right)^2 = 50</cmath>
+
+Since <math>a</math> is an integer, then <math>7-(a+1)m</math> must be an integer. There are <math>12</math> pairs of integers whose squares sum up to <math>50,</math> namely <math>( \pm 1, \pm 7), (\pm 7, \pm 1), (\pm 5, \pm 5)</math>. We exclude the cases <math>(\pm 1, \pm 7)</math> because they lead to degenerate trapezoids (rectangle, line segment, vertical and horizontal sides). Thus we have
+
+<cmath>7 - 8m = \pm 1, \quad 7 + 6m = \pm 1, \quad 7 - 6m = \pm 5, 7 + 4m = \pm 5</cmath>
+
+These yield <math>m = 1, \frac 34, -1, -\frac 43, 2, \frac 13, -3, - \frac 12</math>. Therefore, the corresponding slopes of <math>\overline{AB}</math> are <math>-1, -\frac 43, 1, \frac 34, -\frac 12, -3, \frac 13</math>, and <math>2</math>.  The sum of their absolute values is <math>\frac{119}{12}</math>. The answer is <math>m+n= \boxed{131}</math>
+
+
+<br />
+{{note|1}} <font style="font-size:85%">In other words, since <math>ABCD'</math> is a parallelogram, the difference between the x-coordinates and the y-coordinates of <math>C</math> and <math>D'</math> are, respectively, the difference between the x-coordinates and the y-coordinates of <math>A</math> and <math>B</math>. But since the latter are integers, then the former are integers also, so <math>C</math> has integer coordinates [[iff]] <math>D'</math> has integer coordinates.</font>

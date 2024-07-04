@@ -1,0 +1,14 @@
+==Solution==
+In order to obtain an odd sum, exactly one out of the two dice must have an odd number. We can easily find the total probability using casework.
+
+'''Case 1''': The first die is odd and the second die is even.
+
+The probability of this happening is $\dfrac{4}{6}\times\dfrac{4}{6}=\dfrac{16}{36}=\dfrac{4}{9}$
+
+'''Case 2''': The first die is even and the second die is odd.
+
+The probability of this happening is $\dfrac{2}{6}\times\dfrac{2}{6}=\dfrac{4}{36}=\dfrac{1}{9}$
+
+Adding these two probabilities will give us our final answer. $\dfrac{4}{9}+\dfrac{1}{9}=\boxed{\textbf{(D) }\dfrac{5}{9}}$
+
+If you run out of time, you can see it is obviously greater than $\frac{1}{2}$ so it narrows guesses.

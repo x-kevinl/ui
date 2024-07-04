@@ -1,0 +1,57 @@
+==Solutions==
+===Solution 1===
+Be wary of "position" versus "number" in the solution!
+
+Each POSITION in the 30-position permutation is uniquely defined by an ordered triple <math>(i, j, k)</math>. The <math>n</math>th position is defined by this ordered triple where <math>i</math> is <math>n \mod 2</math>, <math>j</math> is <math>n \mod 3</math>, and <math>k</math> is <math>n \mod 5</math>. There are 2 choices for <math>i</math>, 3 for <math>j</math>, and 5 for <math>k</math>, yielding <math>2 \cdot 3 \cdot 5=30</math> possible triples. Because the least common multiple of 2, 3, and 5 is 30, none of these triples are repeated and all are used. By the conditions of the problem, if <math>i</math> is the same in two different triples, then the two numbers in these positions must be equivalent mod 2. If <math>j</math> is the same, then the two numbers must be equivalent <math>\mod 3</math>, and if <math>k</math> is the same, the two numbers must be equivalent mod 5. Take care to note that that doesn't mean that the number 1 has to have <math>1 \mod 2</math>! It's that the POSITION which NUMBER 1 occupies has <math>1 \mod 2</math>!
+
+The ordered triple (or position) in which 1 can be placed has 2 options for i, 3 for j, and 5 for k, resulting in 30 different positions of placement.
+
+The ordered triple where 2 can be placed in is somewhat constrained by the placement of 1. Because 1 is not equivalent to 2 in terms of mod 2, 3, or 5, the i, j, and k in their ordered triples must be different. Thus, for the number 2, there are (2-1) choices for i, (3-1) choices for j, and (5-1) choices for k. Thus, there are 1*2*4=8 possible placements for the number two once the number one is placed.
+
+Because 3 is equivalent to 1 mod 2, it must have the same i as the ordered triple of 1. Because 3 is not equivalent to 1 or 2 in terms of mod 3 or 5, it must have different j and k values. Thus, there is 1 choice for i, (2-1) choices for j, and (4-1) choices for k, for a total of <math>1\cdot 1 \cdot 3=3</math> choices for the placement of 3.
+
+As above, 4 is even, so it must have the same value of i as 2. It is also 1 mod 3, so it must have the same j value of 1. 4 is not equivalent to 1, 2, or 3 mod 5, so it must have a different k value than that of 1, 2, and 3. Thus, there is 1 choice for i, 1 choice for j, and (3-1) choices for k, yielding a total of <math>1 \cdot 1 \cdot 2=2</math> possible placements for 4.
+
+5 is odd and is equivalent to 2 mod 3, so it must have the same i value as 1 and the same j value of 2. 5 is not equivalent to 1, 2, 3, or 4 mod 5, so it must have a different k value from 1, 2, 3, and 4. However, 4 different values of k are held by these four numbers, so 5 must hold the one remaining value. Thus, only one possible triple is found for the placement of 5.
+
+All numbers from 6 to 30 are also fixed in this manner. All values of i, j, and k have been used, so every one of these numbers will have a unique triple for placement, as above with the number five. Thus, after 1, 2, 3, and 4 have been placed, the rest of the permutation is fixed. 
+
+Thus, <math>N = 30 \cdot 8 \cdot 3 \cdot 2=30 \cdot 48=1440</math>. Thus, the remainder when <math>N</math> is divided by <math>1000</math> is <math>\boxed{440}.</math>
+
+===Solution 2===
+We observe that the condition on the permutations means that two numbers with indices congruent <math>\mod m</math> are themselves congruent <math>\mod m</math> for <math>m \in \{ 2,3,5\}.</math> Furthermore, suppose that <math>a_n \equiv k \mod m.</math> Then, there are <math>30/m</math> indices congruent to <math>n \mod m,</math> and <math>30/m</math> numbers congruent to <math>k \mod m,</math> because 2, 3, and 5 are all factors of 30. Therefore, since every index congruent to <math>n</math> must contain a number congruent to <math>k,</math> and no number can appear twice in the permutation, only the indices congruent to <math>n</math> contain numbers congruent to <math>k.</math> In other words, <math>a_i \equiv a_j \mod m \iff i \equiv j \mod m.</math> But it is not necessary that <math>\textcolor{red}{(a_i\equiv i)\cup (a_j\equiv j)\mod m}</math>. In fact, if that were the case, there would only be one way to assign the indices, since <math>2,3,5</math> are relatively prime to each other and <math>30=\text{lcm}(2,3,5)</math>: <math>\{a_1,a_2,\dots a_{30}\}\in\{1,2,\dots 30\}\text{ }respectively</math>.
+
+This tells us that in a valid permutation, the congruence classes <math>\mod m</math> are simply swapped around, and if the set <math>S</math> is a congruence class <math>\mod m</math> for <math>m = </math> 2, 3, or 5, the set <math>\{ a_i \vert i \in S \}</math> is still a congruence class <math>\mod m.</math> Clearly, each valid permutation of the numbers 1 through 30 corresponds to exactly one permutation of the congruence classes modulo 2, 3, and 5. Also, if we choose some permutations of the congruence classes modulo 2, 3, and 5, they correspond to exactly one valid permutation of the numbers 1 through 30. This can be shown as follows: First of all, the choice of permutations of the congruence classes gives us every number in the permutation modulo 2, 3, and 5, so by the Chinese Remainder Theorem, it gives us every number <math>\mod 2\cdot 3\cdot 5 = 30.</math> Because the numbers must be between 1 and 30 inclusive, it thus uniquely determines what number goes in each index. Furthermore, two different indices cannot contain the same number. We will prove this by contradiction, calling the indices <math>a_i</math> and <math>a_j</math> for <math>i \neq j.</math> If <math>a_i=a_j,</math> then they must have the same residues modulo 2, 3, and 5, and so <math>i \equiv j</math> modulo 2, 3, and 5. Again using the Chinese Remainder Theorem, we conclude that <math>i \equiv j \mod 30,</math> so because <math>i</math> and <math>j</math> are both between 1 and 30 inclusive, <math>i = j,</math> giving us a contradiction. Therefore, every choice of permutations of the congruence classes modulo 2, 3, and 5 corresponds to exactly one valid permutation of the numbers 1 through 30.
+
+In other words, each set of assignment from <math>a_j\rightarrow j\mod (2,3,5)</math> determines a unique string of <math>30</math> numbers. For example:
+
+<math>\left[(0,1)\rightarrow (1,0)\right]\cap\left[(0,1,2)\rightarrow (0,2,1)\right]\cap\left[(0,1,2,3,4)\rightarrow (4,2,3,0,1)\right]</math>:
+<cmath>\begin{array}{|c||c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+2&1&0&1&0&1&0&1&0&1&0&1&0&1&0&1&0&1&0&1&0&1&0&1&0&1&0&1&0&1&0\\ \hline
+3&0&2&1&0&2&1&0&2&1&0&2&1&0&2&1&0&2&1&0&2&1&0&2&1&0&2&1&0&2&1\\ \hline
+5&4&2&3&0&1&4&2&3&0&1&4&2&3&0&1&4&2&3&0&1&4&2&3&0&1&4&2&3&0&1\\ \hline\hline
+30&9&2&13&0&11&4&27&8&25&6&29&22&3&20&1&24&17&28&15&26&19&12&23&10&21&14&7&18&5&16\\ \hline
+\end{array} </cmath>
+
+We have now established a bijection between valid permutations of the numbers 1 through 30 and permutations of the congruence classes modulo 2, 3, and 5, so <math>N</math> is equal to the number of permutations of congruence classes. There are always <math>m</math> congruence classes <math>\mod m,</math> so <math>N = 2! \cdot 3! \cdot 5! = 2 \cdot 6 \cdot 120 = 1440 \equiv \framebox[1.3\width]{440} \mod 1000.</math>
+
+===Solution 3 (2-sec solve)===
+Note that <math>30=2\cdot 3\cdot 5</math>. Since <math>\gcd(2, 3, 5)=1</math>, by CRT, for each value <math>k=0\ldots 29</math> modulo <math>30</math> there exists a unique ordered triple of values <math>(a, b, c)</math> such that <math>k\equiv a\pmod{2}</math>, <math>k\equiv b\pmod{3}</math>, and <math>k\equiv c\pmod{5}</math>. Therefore, we can independently assign the residues modulo <math>2, 3, 5</math>, so <math>N=2!\cdot 3!\cdot 5!=1440</math>, and the answer is <math>\boxed{440}</math>.
+
+-vockey
+
+===Solution 4( Better explanation of Solution 3) ===
+First let's look at the situation when <math>m</math> is equal to 2. It isn't too difficult to see the given conditions are satisfied iff the sequences  <math>S_1 = a_1,a_3,a_5,a_7...</math> and <math>S_2 =a_2,a_4,a_6...</math> each are assigned either <math>\equiv 0 \pmod 2</math> or <math>\equiv 1 \pmod 2</math>. Another way to say this is each element in the sequence <math>a_1,a_3,a_5,a_7...</math> would be the same mod 2, and similarly for the other sequence. There are 2! = 2 ways to assign the mods to the sequences.
+
+Now when <math>m</math> is equal to 3, the sequences are <math>T_1 = a_1, a_4,a_7..</math>, <math>T_2 = a_2,a_5,a_8,a_11...</math>, and <math>T_3 = a_3,a_6,a_9...</math>. Again, for each sequence, all of its elements are congruent either <math>0</math>,<math>1</math>, or <math>2</math> mod <math>3</math>. There are <math>3! = 6</math> ways to assign the mods to the sequences.
+
+Finally do the same thing for <math>m = 5</math>. There are <math>5!</math> ways. In total there are <math>2 * 6*120 = 1440</math> and the answer is <math>\boxed{440}</math>.
+
+Why does this method work? Its due to CRT.
+
+-MathLegend27
+
+Note: the explanation is not complete without mentioning that 2*3*5 = 30, therefore CRT guarantees there is only 1 permutation for every combination of mod selections. If the problem asked for permutations of <math>{1,2,...,60}</math>, the answer would have been <math>2!3!5!2!2!2!</math>. 
+
+-Mathdummy

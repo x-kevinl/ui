@@ -1,0 +1,4 @@
+==Solution 1==
+Instead of finding n, we find $x=\frac{n}{3}$. We want $x$ and $9x$ to be three-digit whole numbers. The smallest three-digit whole number is $100$, so that is our minimum value for $x$, since if $x \in \mathbb{Z^+}$, then $9x \in \mathbb{Z^+}$. The largest three-digit whole number divisible by $9$ is $999$, so our maximum value for $x$ is $\frac{999}{9}=111$. There are $12$ whole numbers in the closed set $\left[100,111\right]$ , so the answer is $\boxed{\textbf{(A)}\ 12}$.
+
+- ColtsFan10

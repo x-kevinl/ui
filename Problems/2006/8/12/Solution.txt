@@ -1,0 +1,9 @@
+== Solution ==
+
+$ 70 \% \cdot 10=7 $
+
+$ 80 \% \cdot 20=16 $
+
+$ 90 \% \cdot 30=27 $
+
+Adding them up gets $ 7+16+27=50 $. The overall percentage correct would be $ \frac{50}{60}=\frac{5}{6}=5 \cdot 16.\overline{6}=83.\overline{3} \approx \boxed{\textbf{(D)}\ 83} $.

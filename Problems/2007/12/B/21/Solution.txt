@@ -1,0 +1,40 @@
+==Solution==
+
+$2007_{10} = 2202100_{3}$
+
+All numbers of six or less digits in base 3 have been written.
+
+The form of each palindrome is as follows
+
+1 digit  - $a$
+
+2 digits - $aa$
+
+3 digits - $aba$
+
+4 digits - $abba$
+
+5 digits - $abcba$
+
+6 digits - $abccba$
+
+Where $a,b,c$ are base 3 digits
+
+Since $a \neq 0$, this gives a total of $2 + 2 + 2\cdot 3 + 2\cdot 3 + 2\cdot 3^2 + 2\cdot 3^2 = 52$ palindromes so far.
+
+7 digits - $abcdcba$, but not all of the numbers are less than $2202100_{3}$
+
+Case: $a=1$
+
+All of these numbers are less than $2202100_3$ giving $3^3$ more palindromes
+
+Case: $a=2$, $b\neq 2$
+
+All of these numbers are also small enough, giving $2\cdot 3^2$ more palindromes
+
+Case: $a=2$, $b=2$
+
+It follows that $c=0$, since any other $c$ would make the value too large. This leaves the number as $220d022_3$. Checking each value of d, all of the three are small enough, so that gives $3$ more palindromes.
+
+Summing our cases there are
+$52 + 3^3 + 2\cdot 3^2 + 3 = 100 \Rightarrow \mathrm{(A)}$

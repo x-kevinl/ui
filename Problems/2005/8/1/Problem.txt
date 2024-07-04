@@ -1,0 +1,4 @@
+==Problem==
+Connie multiplies a number by $2$ and gets $60$ as her answer. However, she should have divided the number by $2$ to get the correct answer. What is the correct answer?
+
+$ \textbf{(A)}\ 7.5\qquad\textbf{(B)}\ 15\qquad\textbf{(C)}\ 30\qquad\textbf{(D)}\ 120\qquad\textbf{(E)}\ 240 $

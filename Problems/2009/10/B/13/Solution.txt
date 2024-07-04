@@ -1,0 +1,10 @@
+== Solution ==
+
+The perimeter of the polygon is $3+4+6+3+7 = 23$. Hence as we roll the polygon to the right, every $23$ units the side $\overline{AB}$ will be the bottom side.
+
+We have $2009 = 23 \times 87 + 8$. Thus at some point in time we will get the situation when $A=(2001,0)$ and $\overline{AB}$ is the bottom side. Obviously, at this moment $B=(2004,0)$. 
+
+After that, the polygon rotates around $B$ until point $C$ hits the $x$ axis at $(2008,0)$.
+
+And finally, the polygon rotates around $C$ until point $D$ hits the $x$ axis at $(2014,0)$.
+At this point the side $\boxed{\overline{CD}}$ touches the point $(2009,0)$. So the answer is $\boxed{C}$

@@ -1,0 +1,15 @@
+== Solution ==
+The circumference of a circle is obtained by simply multiplying the radius by $2\pi$. So, the C-coordinate (in this case, it is the x-coordinate) will increase at a steady rate. The area, however, is obtained by squaring the radius and multiplying it by $\pi$. Since squares do not increase in an evenly spaced arithmetic sequence, the increase in the A-coordinates ( aka the y- coordinates) will be much more significant. The answer is $\boxed{\textbf{(A)}}, 
+$<asy>
+size(75);
+pair A= (1.5,2) ,
+B= (3,4) ,
+C= (4.5,7) ,
+D= (6,11) ,
+E= (7.5,16) ;
+draw((0,-1)--(0,16));
+draw((-1,0)--(16,0));
+dot(A^^B^^C^^D^^E);
+label("$A$", (0,8), W);
+label("$C$", (8,0), S);</asy>.
+-RBANDA

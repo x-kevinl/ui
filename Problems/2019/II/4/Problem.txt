@@ -1,0 +1,2 @@
+==Problem==
+A standard six-sided fair die is rolled four times. The probability that the product of all four numbers rolled is a perfect square is <math>\tfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

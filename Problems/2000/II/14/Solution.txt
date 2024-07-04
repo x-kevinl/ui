@@ -1,0 +1,57 @@
+== Solution ==
+=== Solution 1 ===
+Note that <math>1+\sum_{k=1}^{n-1} {k\cdot k!} = 1+\sum_{k=1}^{n-1} {((k+1)\cdot k!- k!)} = 1+\sum_{k=1}^{n-1} {((k+1)!- k!)} = 1 + ((2! - 1!) + (3! - 2!) + \cdots + (n! - (n-1)!)) = n!</math>.
+
+Thus for all <math>m\in\mathbb{N}</math>,
+
+<math>(32m+16)!-(32m)! = \left(1+\sum_{k=1}^{32m+15} {k\cdot k!}\right)-\left(1+\sum_{k=1}^{32m-1} {k\cdot k!}\right) = \sum_{k=32m}^{32m+15}k\cdot k!.</math>
+
+So now,
+
+<cmath>
+\begin{align*}
+16!-32!+48!-64!+\cdots+1968!-1984!+2000!&=16!+(48!-32!)+(80!-64!)\cdots+(2000!-1984!)\\
+&=16! +\sum_{m=1}^{62}(32m+16)!-(32m)!\\
+&=16! +\sum_{m=1}^{62}\sum_{k=32m}^{32m+15}k\cdot k!
+\end{align*}
+</cmath>
+
+Therefore we have <math>f_{16} = 1</math>, <math>f_k=k</math> if <math>32m\le k \le 32m+15</math> for some <math>m=1,2,\ldots,62</math>, and <math>f_k = 0</math> for all other <math>k</math>.
+
+Therefore we have:
+
+<cmath>
+\begin{align*}
+f_1-f_2+f_3-f_4+\cdots+(-1)^{j+1}f_j &= (-1)^{17}\cdot 1 + \sum_{m=1}^{62}\sum_{k=32m}^{32m+15}(-1)^{k+1}k\\
+&= -1 + \sum_{m=1}^{62}\left[\sum_{j=16m}^{16m+7}(-1)^{2j+1}2j+\sum_{j=16m}^{16m+7}(-1)^{2j+2}(2j+1)\right]\\
+&= -1 + \sum_{m=1}^{62}\sum_{j=16m}^{16m+7}[(-1)^{2j+1}2j+(-1)^{2j+2}(2j+1)]\\
+&= -1 + \sum_{m=1}^{62}\sum_{j=16m}^{16m+7}[-2j+(2j+1)]\\
+&= -1 + \sum_{m=1}^{62}\sum_{j=16m}^{16m+7}1\\
+&= -1 + \sum_{m=1}^{62}8\\
+&= -1 + 8\cdot 62\\
+&= \boxed{495}
+\end{align*}
+</cmath>
+
+=== Solution 2 (informal)===
+This is equivalent to Solution 1. I put up this solution merely for learners to see the intuition.
+
+Let us consider a base <math>n</math> number system. It’s a well known fact that when we take the difference of two integral powers of <math>n</math>, (such as <math>10000_{10} - 100_{10}</math>) the result will be an integer in base <math>n</math> composed only of the digits <math>n - 1</math> and <math>0</math> (in this example, <math>9900</math>). More specifically, the difference <math>(n^k)_n - (n^j)_n</math>, <math>j<k</math> , is an integer <math>k</math> digits long (note that <math>(n^k)_n</math> has <math>k + 1</math> digits). This integer is made up of <math>(k-j)</math> <math>(n - 1)</math>’s followed by <math>j</math> <math>0</math>’s.
+
+It should make sense that this fact carries over to the factorial base, albeit with a modification. Whereas in the general base <math>n</math>, the largest digit value is <math>n - 1</math>, in the factorial base, the largest digit value is the argument of the factorial in that place. (for example, <math>321_!</math> is a valid factorial base number, as is <math>3210_!</math>. However, <math>31_!</math> is not, as <math>3</math> is greater than the argument of the second place factorial, <math>2</math>. <math>31_!</math> should be represented as <math>101_!</math>, and is <math>7_{10}</math>.) Therefore, for example, <math>1000000_! - 10000_!</math> is not <math>990000_!</math>, but rather is <math>650000_!</math>. Thus, we may add or subtract factorials quite easily by converting each factorial to its factorial base expression, with a <math>1</math> in the argument of the factorial’s place and <math>0</math>’s everywhere else, and then using a standard carry/borrow system accounting for the place value. 
+
+With general intuition about the factorial base system out of the way, we may tackle the problem. We use the associative property of addition to regroup the terms as follows: <math>(2000! - 1984!) + (1968! - 1952!) + \cdots + (48! - 32!) + 16!</math> we now apply our intuition from paragraph 2. <math>2000!_{10}</math> is equivalent to <math>1</math> followed by <math>1999</math> <math>0</math>’s in the factorial base, and <math>1984!</math> is <math>1</math> followed by <math>1983</math> <math>0</math>’s, and so on. Therefore, <math>2000! - 1984! = (1999)(1998)(1997)\cdots(1984)</math> followed by <math>1983</math> <math>0</math>’s in the factorial base. <math>1968! - 1952! = (1967)(1966)\cdots(1952)</math> followed by <math>1951</math> <math>0</math>’s, and so on for the rest of the terms, except <math>16!</math>, which will merely have a <math>1</math> in the <math>16!</math> place followed by <math>0</math>’s. To add these numbers, no carrying will be necessary, because there is only one non-zero value for each place value in the sum. Therefore, the factorial base place value <math>f_k</math> is <math>k</math> for all <math>32m \leq k \leq 32m+15</math> if <math>1\leq m \in\mathbb{Z} \leq 62</math>, <math>f_{16} = 1</math>, and 
+<math>f_k = 0</math> for all other <math>k</math>. 
+
+Therefore, to answer, we notice that <math>1999 - 1998 = 1997 - 1996 = 1</math>, and this will continue. Therefore, <math>f_{1999} - f_{1998} + \cdots - f_{1984} = 8</math>. We have 62 sets that sum like this, and each contains <math>8</math> pairs of elements that sum to <math>1</math>, so our answer is almost <math>8 \cdot 62</math>. However, we must subtract the <math>1</math> in the <math>f_{16}</math> place, and our answer is <math>8 \cdot 62 - 1 = \boxed{495}</math>.
+
+=== Solution 3 (less formality) ===
+Let <math>S = 16!-32!+\cdots-1984!+2000!</math>. Note that since <math>|S - 2000!| << 2000!</math> (or <math>|S - 2000!| = 1984! + \cdots</math> is significantly smaller than <math>2000!</math>), it follows that <math>1999! < S < 2000!</math>. Hence <math>f_{2000} = 0</math>. Then <math>2000! = 2000 \cdot 1999! = 1999 \cdot 1999! + 1999!</math>, and as <math>S - 2000! << 1999!</math>, it follows that <math>1999 \cdot 1999! < S < 2000 \cdot 1999!</math>. Hence <math>f_{1999} = 1999</math>, and we now need to find the factorial base expansion of 
+
+<cmath>S_2 = S - 1999 \cdot 1999! = 1999! - 1984! + 1962! - 1946! + \cdots + 16!</cmath>
+
+Since <math>|S_2 - 1999!| << 1999!</math>, we can repeat the above argument recursively to yield <math>f_{1998} = 1998</math>, and so forth down to <math>f_{1985} = 1985</math>. Now <math>S_{16} = 1985! - 1984! + 1962! + \cdots = 1984 \cdot 1984! + 1962! + \cdots</math>, so <math>f_{1984} = 1984</math>. 
+
+The remaining sum is now just <math>1962! - 1946! + \cdots + 16!</math>. We can repeatedly apply the argument from the previous two paragraphs to find that <math>f_{16} = 1</math>, and <math>f_k=k</math> if <math>32m\le k \le 32m+15</math> for some <math>m=1,2,\ldots,62</math>, and <math>f_k = 0</math> for all other <math>k</math>.
+
+Now for each <math>m</math>, we have <math>-f_{32m} + f_{32m+1} - f_{32m+2} + \cdots + f_{32m + 31}</math> <math> = -32m + (32m + 1) - (32m + 2) + \cdots - (32m - 30) + (32 m + 31)</math> <math>= 1 + 1 + \cdots + 1 + 1</math> <math>= 8</math>. Thus, our answer is <math>-f_{16} + 8 \cdot 62 = \boxed{495}</math>.

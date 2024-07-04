@@ -1,0 +1,16 @@
+== Solution ==
+Let $x$ be the length of the first side. 
+
+The lengths of the sides are: $x$, $3x$, and $15$. 
+
+By the [[Triangle Inequality]],
+
+$ 3x < x + 15 $ 
+
+$ 2x < 15 $
+
+$ x < \frac{15}{2} $
+
+The greatest integer satisfying this inequality is $7$.
+
+So the greatest possible perimeter is $ 7 + 3\cdot7 + 15 =\boxed{\textbf{(A) } 43}$

@@ -1,0 +1,16 @@
+==Solution==
+First, note that $PQ$ lies on the radical axis of any of the pairs of circles. Suppose that $O_1$ and $O_2$ are the centers of two circles $C_1$ and $C_2$ that intersect exactly at $P$ and $Q$, with $O_1$ and $O_2$ lying on the same side of $PQ$, and $O_1 O_2=39$. Let $x=O_1 R$, $y=O_2 R$, and suppose that the radius of circle $C_1$ is $r$ and the radius of circle $C_2$ is $\tfrac{5}{8}r$.
+
+Then the power of point $R$ with respect to $C_1$ is
+
+$$(r+x)(r-x) = r^2 - x^2 = 24^2$$
+
+and the power of point $R$ with respect to $C_2$ is
+
+$$\left(\frac{5}{8}r + y\right) \left(\frac{5}{8}r - y\right) = \frac{25}{64}r^2 - y^2 = 24^2.$$
+ 
+Also, note that $x-y=39$.
+
+Subtract the above two equations to find that $\tfrac{39}{64}r^2 - x^2 + y^2 = 0$ or $39 r^2 = 64(x^2-y^2)$. As $x-y=39$, we find that $r^2=64(x+y) = 64(2y+39)$. Plug this into an earlier equation to find that $25(2y+39)-y^2=24^2$. This is a quadratic equation with solutions $y=\tfrac{50 \pm 64}{2}$, and as $y$ is a length, it is positive, hence $y=57$, and $x=y+39=96$. This is the only possibility if the two centers lie on the same side of their radical axis.
+
+On the other hand, if they lie on opposite sides, then it is clear that there is only one possibility, and then it is clear that $O_1 R + O_2 R = O_1 O_2 = 39$. Therefore, we obtain exactly four possible centers, and the sum of the desired lengths is $57+96+39 = \boxed{\textbf{(D)}\; 192}$.

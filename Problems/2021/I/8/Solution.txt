@@ -1,0 +1,65 @@
+==Solution 1 (Piecewise Function: Analysis and Graph)==
+We take cases for the outermost absolute value, then rearrange: <cmath>\left|20|x|-x^2\right|=c\pm21.</cmath>
+Let <math>f(x)=\left|20|x|-x^2\right|.</math> We rewrite <math>f(x)</math> as a piecewise function without using absolute values:
+<cmath>f(x) = \begin{cases}
+\left|-20x-x^2\right| & \mathrm{if} \ x \le 0 
+\begin{cases}
+20x+x^2 & \mathrm{if} \ x\le-20 \\
+-20x-x^2 & \mathrm{if} \ -20<x\leq0
+\end{cases} \\
+\left|20x-x^2\right| & \mathrm{if} \ x > 0
+\begin{cases}
+20x-x^2 & \mathrm{if} \ 0<x\leq20 \\
+-20x+x^2 & \mathrm{if} \ x>20
+\end{cases}
+\end{cases}.</cmath>
+We graph <math>y=f(x)</math> with all extremum points labeled, as shown below. The fact that <math>f(x)</math> is an even function (<math>f(x)=f(-x)</math> holds for all real numbers <math>x,</math> so the graph of <math>y=f(x)</math> is symmetric about the <math>y</math>-axis) should facilitate the process of graphing.
+<asy>
+/* Made by MRENTHUSIASM */
+size(1200,300); 
+
+real xMin = -65;
+real xMax = 65;
+real yMin = -50;
+real yMax = 125;
+
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$x$",(xMax,0),(2,0));
+label("$y$",(0,yMax),(0,2));
+
+real f(real x) { return abs(20*abs(x)-x^2); }
+real g(real x) { return 21; }
+real h(real x) { return -21; }
+draw(graph(f,-25,25),red,"$y=\left|20|x|-x^2\right|$");
+draw(graph(g,-65,65),blue,"$y=\pm21$");
+draw(graph(h,-65,65),blue);
+
+pair A[];
+A[0] = (-20,0);
+A[1] = (-10,100);
+A[2] = (0,0);
+A[3] = (10,100);
+A[4] = (20,0);
+
+for(int i = 0; i <= 4; ++i) {
+dot(A[i],red+linewidth(4.5)); 
+}
+
+label("$(-20,0)$",A[0],(-1.5,-1.5),red,UnFill);
+label("$(-10,100)$",A[1],(-1.5,1.5),red);
+label("$(0,0)$",A[2],(0,-1.5),red,UnFill);
+label("$(10,100)$",A[3],(1.5,1.5),red);
+label("$(20,0)$",A[4],(1.5,-1.5),red,UnFill);
+
+add(legend(),point(E),40E,UnFill);
+</asy>
+Since <math>f(x)=c\pm21</math> has <math>12</math> distinct real solutions, it is clear that each case has <math>6</math> distinct real solutions geometrically. We shift the graphs of <math>y=\pm21</math> up <math>c</math> units, where <math>c\geq0:</math>
+
+* For <math>f(x)=c+21</math> to have <math>6</math> distinct real solutions, we need <math>0\leq c<79.</math>
+
+* For <math>f(x)=c-21</math> to have <math>6</math> distinct real solutions, we need <math>21<c<121.</math>
+
+Taking the intersection of these two cases gives <math>21<c<79,</math> from which there are <math>79-21-1=\boxed{057}</math> such integers <math>c.</math>
+
+~MRENTHUSIASM

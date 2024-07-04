@@ -1,0 +1,4 @@
+== Solution ==
+Let $r$ be the common radius of the sphere and the cone, and $h$ be the cone’s height. Then
+$$75\% \cdot \left(\frac 43 \pi r^3\right) = \frac 13 \pi r^2 h \Longrightarrow h = 3r$$
+Thus $h:r = 3:1$ and the answer is $\boxed{B}$.

@@ -1,0 +1,9 @@
+==Solution 1==
+Define <math>a</math> to be <math>\log_{20x} (22x) = \log_{2x} (202x)</math>, what we are looking for. Then, by the definition of the logarithm,
+<cmath>\begin{cases} 
+(20x)^{a} &= 22x \\
+(2x)^{a} &= 202x. 
+\end{cases}</cmath>
+Dividing the first equation by the second equation gives us <math>10^a = \frac{11}{101}</math>, so by the definition of logs, <math>a = \log_{10} \frac{11}{101}</math>. This is what the problem asked for, so the fraction <math>\frac{11}{101}</math> gives us <math>m+n = \boxed{112}</math>.
+
+~ihatemath123

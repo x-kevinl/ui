@@ -1,0 +1,2 @@
+==Solution==
+The interquartile range is defined as $Q3 - Q1$, which is $43 - 33 = 10$. $1.5$ times this value is $15$, so all values more than $15$ below $Q1$ = $33 - 15 = 18$ is an outlier. The only one that fits this is $6$. All values more than $15$ above $Q3 = 43 + 15 = 58$ are also outliers, of which there are none so there is only $\boxed{\textbf{(B) 1}}$ outlier in total.

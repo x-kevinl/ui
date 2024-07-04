@@ -1,0 +1,28 @@
+== Solution ==
+
+We have <math>\log m - \log k = \log \left( \frac mk \right)</math>, hence we can rewrite the inequality as follows:
+<cmath>
+- \log n < \log \left( \frac mk \right) < \log n
+</cmath>
+We can now get rid of the logarithms, obtaining:
+<cmath>
+\frac 1n < \frac mk < n
+</cmath>
+And this can be rewritten in terms of <math>k</math> as
+<cmath>
+\frac mn < k < mn
+</cmath>
+
+From <math>k<mn</math> it follows that the <math>50</math> solutions for <math>k</math> must be the integers <math>mn-1, mn-2, \dots, mn-50</math>. 
+This will happen if and only if the lower bound on <math>k</math> is in a suitable range -- we must have <math>mn-51 \leq \frac mn < mn-50</math>.
+
+Obviously there is no solution for <math>n=1</math>. For <math>n>1</math> the left inequality can be rewritten as <math>m\leq\dfrac{51n}{n^2-1}</math>, and the right one as <math>m > \dfrac{50n}{n^2-1}</math>.
+
+Remember that we must have <math>m\geq n</math>. However, for <math>n\geq 8</math> we have <math>\dfrac{51n}{n^2-1} < n</math>, and hence <math>m<n</math>, which is a contradiction.
+This only leaves us with the cases <math>n\in\{2,3,4,5,6,7\}</math>.
+
+* For <math>n=2</math> we have <math>\dfrac{100}3 < m \leq \dfrac{102}3</math> with a single integer solution <math>m=\dfrac{102}3=34</math>.
+* For <math>n=3</math> we have <math>\dfrac{150}8 < m \leq \dfrac{153}8</math> with a single integer solution <math>m=\dfrac{152}8=19</math>.
+* For <math>n=4,5,6,7</math> our inequality has no integer solutions for <math>m</math>.
+
+Therefore the answer is <math>34\cdot 2 + 19\cdot 3 = 68 + 57 = \boxed{125}</math>.

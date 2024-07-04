@@ -1,0 +1,5 @@
+==Problem==
+
+Let $L_{1}=1, L_{2}=3$, and $L_{n+2}=L_{n+1}+L_{n}$ for $n\geq 1$. How many terms in the sequence $L_{1}, L_{2}, L_{3},...,L_{2023}$ are even?
+
+$\textbf{(A) }673\qquad\textbf{(B) }1011\qquad\textbf{(C) }675\qquad\textbf{(D) }1010\qquad\textbf{(E) }674$

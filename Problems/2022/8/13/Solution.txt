@@ -1,0 +1,7 @@
+==Solution==
+
+Let $m$ and $n$ be positive integers such that $m>n$ and $m+n=28.$ It follows that $m=2n+d$ for some positive integer $d.$ We wish to find the number of possible values for $d.$
+
+By substitution, we have $(2n+d)+n=28,$ from which $d=28-3n.$ Note that $n=1,2,3,\ldots,9$ each generate a positive integer for $d,$ so there are $\boxed{\textbf{(D) } 9}$ possible values for $d.$
+
+~MRENTHUSIASM

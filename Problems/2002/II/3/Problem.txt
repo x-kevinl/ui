@@ -1,0 +1,2 @@
+== Problem ==
+It is given that <math>\log_{6}a + \log_{6}b + \log_{6}c = 6,</math> where <math>a,</math> <math>b,</math> and <math>c</math> are [[positive]] [[integer]]s that form an increasing [[geometric sequence]] and <math>b - a</math> is the [[Perfect square|square]] of an integer. Find <math>a + b + c.</math>

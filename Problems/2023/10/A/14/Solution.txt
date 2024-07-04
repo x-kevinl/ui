@@ -1,0 +1,15 @@
+==Solution 1==
+
+In order for the divisor chosen to be a multiple of $11$, the original number chosen must also be a multiple of $11$. Among the first $100$ positive integers, there are 9 multiples of 11; 11, 22, 33, 44, 55, 66, 77, 88, 99. We can now perform a little casework on the probability of choosing a divisor which is a multiple of 11 for each of these 9, and see that the probability is 1/2 for each. The probability of choosing these 9 multiples in the first place is $\frac{9}{100}$, so the final probability is $\frac{9}{100} \cdot \frac{1}{2} = \frac{9}{200}$, so the answer is $\boxed{\textbf{(B)}~\frac{9}{200}}.$
+
+$11 = 11 - \frac{1}{2}\\
+22 = 2 \times 11: 11, 22 - \frac{1}{2}\\
+33 = 3 \times 11: 11, 33 - \frac{1}{2}\\
+44 = 2^2 \times 11: 11, 22, 44 - \frac{1}{2}\\
+55 = 5 \times 11: 11, 55 - \frac{1}{2}\\
+66 = 2 \times 3 \times 11: 11, 22, 33, 66 - \frac{1}{2}\\
+77 = 7 \times 11: 11, 77 - \frac{1}{2}\\
+88 = 2^3 \times 11: 11, 22, 44, 88 - \frac{1}{2}\\
+99 = 3^2 \times 11: 11, 33, 99 - \frac{1}{2}$
+
+~vaisri ~walmartbrian ~Shontai ~(minor formatting changes by Marshall_Huang)

@@ -1,0 +1,2 @@
+==Solution==
+First, we must find the prime factorization of $2010$. $2010=2\cdot 3 \cdot 5 \cdot 67$. We add the factors up to get $\boxed{\textbf{(C)}\ 77}$

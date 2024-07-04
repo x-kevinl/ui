@@ -1,0 +1,21 @@
+==Problem==
+A square of area $2$ is inscribed in a square of area $3$, creating four congruent triangles, as shown below. What is the ratio of the shorter leg to the longer leg in the shaded right triangle?
+<asy>
+size(200);
+defaultpen(linewidth(0.6pt)+fontsize(10pt));
+real y = sqrt(3);
+pair A,B,C,D,E,F,G,H;
+A = (0,0);
+B = (0,y);
+C = (y,y);
+D = (y,0);
+E = ((y + 1)/2,y);
+F = (y, (y - 1)/2);
+G = ((y - 1)/2, 0);
+H = (0,(y + 1)/2);
+fill(H--B--E--cycle, gray);
+draw(A--B--C--D--cycle);
+draw(E--F--G--H--cycle);
+</asy>
+
+$\textbf{(A) }\frac15\qquad\textbf{(B) }\frac14\qquad\textbf{(C) }2-\sqrt3\qquad\textbf{(D) }\sqrt3-\sqrt2\qquad\textbf{(E) }\sqrt2-1$

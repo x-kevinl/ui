@@ -1,0 +1,4 @@
+== Problem ==
+It is known that, for all positive integers <math>k</math>,
+<center><math>1^2+2^2+3^2+\ldots+k^{2}=\frac{k(k+1)(2k+1)}6</math>.</center>
+Find the smallest positive integer <math>k</math> such that <math>1^2+2^2+3^2+\ldots+k^2</math> is a multiple of <math>200</math>.

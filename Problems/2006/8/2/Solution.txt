@@ -1,0 +1,2 @@
+== Solution ==
+As the AMC 8 only rewards 1 point for each correct answer, everything is irrelevant except the number Billy answered correctly, $ \boxed{\textbf{(C)}\ 13} $.

@@ -1,0 +1,2 @@
+==Solution 1==
+Since $a=1.5b$, that means $b=\frac{a}{1.5}$. We multiply by $3$ to get a $3b$ term, yielding $3b=2a$, and $2a$ is $\boxed{\textbf{(D) }200\%}$ of $a$.

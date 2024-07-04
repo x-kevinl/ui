@@ -1,0 +1,6 @@
+==Solution==
+
+The areas of the five regions from greatest to least are $21,20,15,6$ and $4$.
+
+If we want to minimize the cost, we want to maximize the area of the cheapest flower and minimize the area of the most expensive flower. Doing this, the cost is $1\cdot21+1.50\cdot20+2\cdot15+2.50\cdot6+3\cdot4$, which simplifies to $ \ $$108$.
+Therefore the answer is $\boxed{\textbf{(A) } 108}$.

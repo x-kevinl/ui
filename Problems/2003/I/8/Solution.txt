@@ -1,0 +1,44 @@
+== Solution ==
+Denote the first term as <math>a</math>, and the common difference between the first three terms as <math>d</math>. The four numbers thus are in the form <math>a,\ a+d,\ a+2d,\ \frac{(a + 2d)^2}{a + d}</math>. 
+
+Since the first and fourth terms differ by <math>30</math>, we have that <math>\frac{(a + 2d)^2}{a + d} - a = 30</math>. Multiplying out by the denominator, 
+<cmath>(a^2 + 4ad + 4d^2) - a(a + d) = 30(a + d).</cmath> 
+This simplifies to <math>3ad + 4d^2 = 30a + 30d</math>, which upon rearranging yields <math>2d(2d - 15) = 3a(10 - d)</math>.
+
+Both <math>a</math> and <math>d</math> are positive integers, so <math>2d - 15</math> and <math>10 - d</math> must have the same sign. Try if they are both [[positive]] (notice if they are both [[negative]], then <math>d > 10</math> and <math>d < \frac{15}{2}</math>, which is a contradiction). Then, <math>d = 8, 9</math>. Directly substituting and testing shows that <math>d \neq 8</math>, but that if <math>d = 9</math> then <math>a = 18</math>. Alternatively, note that <math>3|2d</math> or <math>3|2d-15</math> implies that <math>3|d</math>, so only <math>9</math> may work. Hence, the four terms are <math>18,\ 27,\ 36,\ 48</math>, which indeed fits the given conditions. Their sum is <math>\boxed{129}</math>.
+
+
+Postscript
+
+As another option, <math>3ad + 4d^2 = 30a + 30d</math> could be rewritten as follows:
+
+
+<math>d(3a + 4d) = 30(a + d)</math>
+
+
+<math>d(3a + 3d)+ d^2 = 30(a + d)</math>
+
+
+
+<math>3d(a + d)+ d^2 = 30(a + d)</math>
+
+
+<math>(3d - 30)(a + d)+ d^2 = 0</math>
+
+
+<math>3(d - 10)(a + d)+ d^2 = 0</math>
+
+
+This gives another way to prove <math>d<10</math>, and when rewritten one last time:
+
+
+<math>3(10 -d)(a + d) = d^2</math>
+
+
+shows that <math>d</math> must contain a factor of 3.
+
+
+-jackshi2006
+
+EDIT by NealShrestha:
+Note that once we reach <math>3ad + 4d^2 = 30a + 30d</math> this implies <math>3|d</math> since all other terms are congruent to <math>0\mod 3</math>.

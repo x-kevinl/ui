@@ -1,0 +1,4 @@
+==Problem==
+Suppose m and n are positive odd integers. Which of the following must also be an odd integer?
+
+$ \textbf{(A)}\ m+3n\qquad\textbf{(B)}\ 3m-n\qquad\textbf{(C)}\ 3m^2 + 3n^2\qquad\textbf{(D)}\ (nm + 3)^2\qquad\textbf{(E)}\ 3mn $

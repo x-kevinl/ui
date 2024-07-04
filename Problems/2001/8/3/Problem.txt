@@ -1,0 +1,5 @@
+==Problem==
+
+Granny Smith has \$63. Elberta has \$2 more than Anjou and Anjou has one-third as much as Granny Smith. How many dollars does Elberta have?
+
+$\text{(A)}\ 17 \qquad \text{(B)}\ 18 \qquad \text{(C)}\ 19 \qquad \text{(D)}\ 21 \qquad \text{(E)}\ 23$

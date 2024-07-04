@@ -1,0 +1,21 @@
+==Solution 1==
+
+We know that, for the games where they scored an odd number of runs, they cannot have scored twice as many runs as their opponents, as odd numbers are not divisible by $2$.  Thus, from this, we know that the five games where they lost by one run were when they scored $1$, $3$, $5$, $7$, and $9$ runs, and the others are where they scored twice as many runs.  We can make the following chart:
+
+$\begin{tabular}{|l|l|}
+\hline
+Them & Opponent \\ \hline
+1 & 2 \\
+2 & 1 \\
+3 & 4 \\
+4 & 2 \\
+5 & 6 \\
+6 & 3 \\
+7 & 8 \\
+8 & 4 \\
+9 & 10 \\
+10 & 5 \\
+\hline
+\end{tabular}$
+
+The sum of their opponent's scores is $2 + 1 + 4 + 2 + 6 + 3 + 8 + 4 + 10 + 5 = \boxed{\textbf{(C) }45}$

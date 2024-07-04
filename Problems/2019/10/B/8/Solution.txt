@@ -1,0 +1,8 @@
+==Solution 1==
+We notice that the square can be split into $4$ congruent smaller squares, with the altitude of the equilateral triangle being the side of this smaller square. Note that area of shaded part in a quarter square is the total area of quarter square minus a white triangle (which has already been split in half).
+
+When we split an equilateral triangle in half, we get two $30^{\circ}-60^{\circ}-90^{\circ}$ triangles. Therefore, the altitude, which is also the side length of one of the smaller squares, is $\sqrt{3}$. We can then compute the area of the two triangles as $2 \cdot \frac{1 \cdot \sqrt{3}}{2} = \sqrt{3}$.
+
+The area of the each small squares is the square of the side length, i.e. $\left(\sqrt{3}\right)^2 = 3$. Therefore, the area of the shaded region in each of the four squares is $3 - \sqrt{3}$.
+
+Since there are $4$ of these squares, we multiply this by $4$ to get $4\left(3 - \sqrt{3}\right) = \boxed{\textbf{(B) } 12 - 4\sqrt{3}}$ as our answer.

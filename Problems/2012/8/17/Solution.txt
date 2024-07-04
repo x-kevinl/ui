@@ -1,0 +1,2 @@
+==Solution==
+The first answer choice $ {\textbf{(A)}\ 3} $, can be eliminated since there must be $ 10 $ squares with integer side lengths. We then test the next smallest sidelength which is $ 4 $. The square with area $ 16 $ can be partitioned into $ 8 $ squares with area $ 1 $ and two squares with area $ 4 $, which satisfies all the conditions of the problem. Therefore, the smallest possible value of the length of the side of the original square is $ \boxed{\textbf{(B)}\ 4} $.

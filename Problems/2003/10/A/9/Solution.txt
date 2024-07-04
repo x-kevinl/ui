@@ -1,0 +1,6 @@
+== Solution 1 ==
+$\sqrt[3]{x\sqrt{x}}=\sqrt[3]{(\sqrt{x})^{2}\cdot\sqrt{x}}=\sqrt[3]{(\sqrt{x})^{3}}=\sqrt{x}$. 
+
+Therefore: 
+
+$\sqrt[3]{x\sqrt[3]{x\sqrt[3]{x\sqrt{x}}}}=\sqrt[3]{x\sqrt[3]{x\sqrt{x}}}=\sqrt[3]{x\sqrt{x}}= \sqrt{x} \Rightarrow \boxed{\mathrm{(A)}\ \sqrt{x}}$

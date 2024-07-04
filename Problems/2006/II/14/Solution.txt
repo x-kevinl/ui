@@ -1,0 +1,9 @@
+== Solution ==
+Let <math>K = \sum_{i=1}^{9}{\frac{1}{i}}</math>.  Examining the terms in <math>S_1</math>, we see that <math>S_1 = K + 1</math> since each digit <math>n</math> appears once and 1 appears an extra time.  Now consider writing out <math>S_2</math>.  Each term of <math>K</math> will appear 10 times in the units place and 10 times in the tens place (plus one extra 1 will appear), so <math>S_2 = 20K + 1</math>.
+
+In general, we will have that
+<center><math>S_n = (n10^{n-1})K + 1</math></center>
+
+because each digit will appear <math>10^{n - 1}</math> times in each place in the numbers <math>1, 2, \ldots, 10^{n} - 1</math>, and there are <math>n</math> total places.  
+
+The denominator of <math>K</math> is <math>D = 2^3\cdot 3^2\cdot 5\cdot 7</math>.  For <math>S_n</math> to be an integer, <math>n10^{n-1}</math> must be divisible by <math>D</math>.  Since <math>10^{n-1}</math> only contains the factors <math>2</math> and <math>5</math> (but will contain enough of them when <math>n \geq 3</math>), we must choose <math>n</math> to be [[divisible]] by <math>3^2\cdot 7</math>.  Since we're looking for the smallest such <math>n</math>, the answer is <math>\boxed{063}</math>.

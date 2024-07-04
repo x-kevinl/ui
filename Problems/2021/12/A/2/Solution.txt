@@ -1,0 +1,4 @@
+==Solution 1 (Algebra)==
+One can square both sides to get $a^{2}+b^{2}=a^{2}+2ab+b^{2}$. Then, $0=2ab\implies ab=0$. Also, it is clear that both sides of the equation must be nonnegative. The answer is $\boxed{\textbf{(D)}}$.
+
+~Jhawk0224

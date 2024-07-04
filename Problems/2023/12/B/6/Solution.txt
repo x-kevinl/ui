@@ -1,0 +1,4 @@
+==Solution 1==
+The expressions to the power of even powers are always positive, so we don't need to care about those. We only need to care about $(x-1)^1(x-3)^3(x-5)^5(x-7)^7(x-9)^9$. We need 0, 2, or 4 of the expressions to be negative. The 9 through 10 interval and 10 plus interval make all of the expressions positive. The 5 through 6 and 6 through 7 intervals make two of the expressions negative. The 1 through 2 and 2 through 3 intervals make four of the expressions negative. There are $\boxed{\textbf{(C) 6}}$ intervals.
+
+~Aopsthedude

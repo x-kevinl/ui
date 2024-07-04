@@ -1,0 +1,2 @@
+==Solution 1==
+Notice that, for a small cube which does not form part of the bottom face, it will have exactly $2$ faces with icing on them only if it is one of the $2$ center cubes of an edge of the larger cube. There are $12-4 = 8$ such edges (as we exclude the $4$ edges of the bottom face), so this case yields $2 \cdot 8 = 16$ small cubes. As for the bottom face, we can see that only the $4$ corner cubes have exactly $2$ faces with icing, so the total is $16+4 = \boxed{\textbf{(D) }20}$.

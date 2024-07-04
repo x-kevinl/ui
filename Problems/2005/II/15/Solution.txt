@@ -1,0 +1,40 @@
+== Solution 1 ==
+Rewrite the given equations as <math>(x+5)^2 + (y-12)^2 = 256</math> and <math>(x-5)^2 + (y-12)^2 = 16</math>.
+
+Let <math>w_3</math> have center <math>(x,y)</math> and radius <math>r</math>.  Now, if two circles with radii <math>r_1</math> and <math>r_2</math> are externally tangent, then the distance between their centers is <math>r_1 + r_2</math>, and if they are internally tangent, it is <math>|r_1 - r_2|</math>.  So we have
+
+<cmath>\begin{align*}
+r + 4 &= \sqrt{(x-5)^2 + (y-12)^2} \\
+16 - r &= \sqrt{(x+5)^2 + (y-12)^2} \end{align*} </cmath>
+
+Solving for <math>r</math> in both equations and setting them equal, then simplifying, yields
+
+<cmath>\begin{align*}
+20 - \sqrt{(x+5)^2 + (y-12)^2} &= \sqrt{(x-5)^2 + (y-12)^2} \\
+20+x &= 2\sqrt{(x+5)^2 + (y-12)^2}
+\end{align*} </cmath>
+
+Squaring again and canceling yields <math>1 = \frac{x^2}{100} + \frac{(y-12)^2}{75}.</math>
+
+So the locus of points that can be the center of the circle with the desired properties is an [[ellipse]].
+
+<center><asy>
+size(220); pointpen = black; pen d = linewidth(0.7); pathpen = d; 
+pair A = (-5, 12), B = (5, 12), C = (0, 0);
+D(CR(A,16));D(CR(B,4));D(shift((0,12)) * yscale(3^.5 / 2) * CR(C,10), linetype("2 2") + d + red);
+D((0,30)--(0,-10),Arrows(4));D((15,0)--(-25,0),Arrows(4));D((0,0)--MP("y=ax",(14,14 * (69/100)^.5),E),EndArrow(4));
+
+void bluecirc (real x) {
+ pair P = (x, (3 * (25 - x^2 / 4))^.5 + 12); dot(P, blue);
+ D(CR(P, ((P.x - 5)^2 + (P.y - 12)^2)^.5 - 4) , blue + d + linetype("4 4"));
+}
+
+bluecirc(-9.2); bluecirc(-4); bluecirc(3);
+</asy></center>
+
+Since the center lies on the line <math>y = ax</math>, we substitute for <math>y</math> and expand: 
+<cmath>1 = \frac{x^2}{100} + \frac{(ax-12)^2}{75} \Longrightarrow (3+4a^2)x^2 - 96ax + 276 = 0.</cmath>
+
+We want the value of <math>a</math> that makes the line <math>y=ax</math> tangent to the ellipse, which will mean that for that choice of <math>a</math> there is only one solution to the most recent equation. But a quadratic has one solution [[iff]] its discriminant is <math>0</math>, so <math>(-96a)^2 - 4(3+4a^2)(276) = 0</math>.
+
+Solving yields <math>a^2 = \frac{69}{100}</math>, so the answer is <math>\boxed{169}</math>.

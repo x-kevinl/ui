@@ -1,0 +1,12 @@
+==Solution 1==
+
+Using the point-slope form, the equation of each line is
+
+$$y-15=3(x-10) \longrightarrow y=3x-15$$
+$$y-15=5(x-10) \longrightarrow y=5x-35$$
+
+Substitute in $y=0$ to find the $x$-intercepts.
+
+$$0=3x-15\longrightarrow x=5$$
+$$0=5x-35\longrightarrow x=7$$
+The difference between them is $7-5=\boxed{\textbf{(A) \ } 2}$.

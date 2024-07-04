@@ -1,0 +1,28 @@
+==Diagram==
+<asy>
+size(200);
+defaultpen(linewidth(0.4)+fontsize(10));
+pen s = linewidth(0.8)+fontsize(8);
+
+pair A,B,C,D,E0,F,G;
+A = origin;
+C = (15,0);
+B = IP(CR(A,13),CR(C,14));
+D = foot(A,C,B);
+E0 = foot(D,A,C);
+F = OP(CR((A+B)/2,length(B-A)/2), D--E0);
+draw(A--C--B--A, black+0.8);
+draw(B--F--A--D--E0);
+dot("$A$",A,W);
+dot("$B$",B,N);
+dot("$C$",C,E);
+dot("$D$",D,NE);
+dot("$E$",E0,S);
+dot("$F$",F,E);
+draw(rightanglemark(B,D,A,15));
+draw(rightanglemark(B,F,A,15));
+draw(rightanglemark(D,E0,A,15));
+label("$5$",D--B,NE);
+label("$9$",D--C,NE);
+label(Label("$13$",Rotate(B-A)), B--A);
+</asy>

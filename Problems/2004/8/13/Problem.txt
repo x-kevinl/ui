@@ -1,0 +1,9 @@
+==Problem==
+Amy, Bill and Celine are friends with different ages. Exactly one of the following statements is true.
+ I. Bill is the oldest.
+ II. Amy is not the oldest.
+ III. Celine is not the youngest.
+Rank the friends from the youngest to oldest.
+
+$\textbf{(A)}\ \text{Bill, Amy, Celine}\qquad \textbf{(B)}\ \text{Amy, Bill, Celine}\qquad \textbf{(C)}\ \text{Celine, Amy, Bill}\\
+\textbf{(D)}\ \text{Celine, Bill, Amy} \qquad \textbf{(E)}\ \text{Amy, Celine, Bill}$

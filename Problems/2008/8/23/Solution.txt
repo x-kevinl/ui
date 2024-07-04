@@ -1,0 +1,27 @@
+==Solution 1==
+The area of $\triangle BFD$ is the area of square $ABCE$ subtracted by the the area of the three triangles around it. Arbitrarily assign the side length of the square to be $6$.
+
+<asy>
+size((100));
+pair A=(0,9), B=(9,9), C=(9,0), D=(3,0), E=(0,0), F=(0,3);
+pair[] ps={A,B,C,D,E,F};
+dot(ps);
+draw(A--B--C--E--cycle);
+draw(B--F--D--cycle);
+label("$A$",A, NW);
+label("$B$",B, NE);
+label("$C$",C, SE);
+label("$D$",D, S);
+label("$E$",E, SW);
+label("$F$",F, W);
+label("$6$",A--B,N);
+label("$6$",(10,4.5),E);
+label("$4$",D--C,S);
+label("$2$",E--D,S);
+label("$2$",E--F,W);
+label("$4$",F--A,W);
+</asy>
+
+The ratio of the area of $\triangle BFD$ to the area of $ABCE$ is
+
+$$\frac{36-12-12-2}{36} = \frac{10}{36} = \boxed{\textbf{(C)}\ \frac{5}{18}}$$

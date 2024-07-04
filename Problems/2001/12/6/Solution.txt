@@ -1,0 +1,11 @@
+== Solution ==
+
+We start by noting that there are $10$ letters, meaning there are $10$ digits in total. Listing them all out, we have $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$. Clearly, the most restrictive condition is the consecutive odd digits, so we create casework based on that.
+
+Case 1: $G$, $H$, $I$, and $J$ are $7$, $5$, $3$, and $1$ respectively. 
+
+A cursory glance allows us to deduce that the smallest possible sum of $A + B + C$ is $11$ when $D$, $E$, and $F$ are $8$, $6$, and $4$ respectively, so this is out of the question.
+
+Case 2: $G$, $H$, $I$, and $J$ are $3$, $5$, $7$, and $9$ respectively. 
+
+A cursory glance allows us to deduce the answer. Clearly, when $D$, $E$, and $F$ are $6$, $4$, and $2$ respectively, $A + B + C$ is $9$ when $A$, $B$, and $C$ are $8$, $1$, and $0$ respectively, giving us a final answer of $\boxed{\textbf{(E)}\ 8}$

@@ -1,0 +1,15 @@
+==Solution 1==
+We want to find the number of positive integers <math>n<1000</math> which can be written in the form <math>n = 2^a - 2^b</math> for some non-negative integers <math>a > b \ge 0</math> (note that if <math>a=b</math>, then <math>2^a-2^b = 0</math>). We first observe <math>a</math> must be at most 10; if <math>a \ge 11</math>, then <math>2^a - 2^b \ge 2^{10} > 1000</math>. As <math>2^{10} = 1024 \approx 1000</math>, we can first choose two different numbers <math>a > b</math> from the set <math>\{0,1,2,\ldots,10\}</math> in <math>\binom{11}{2}=55</math> ways. This includes <math>(a,b) = (10,0)</math>, <math>(10,1)</math>, <math>(10,2)</math>, <math>(10,3)</math>, <math>(10,4)</math> which are invalid as <math>2^a - 2^b > 1000</math> in this case. For all other choices <math>a</math> and <math>b</math>, the value of <math>2^a - 2^b</math> is less than 1000.
+
+We claim that for all other choices of <math>a</math> and <math>b</math>, the values of <math>2^a - 2^b</math> are pairwise distinct. More specifically, if <math>(a_1,b_1) \neq (a_2,b_2)</math> where <math>10 \ge a_1 > b_1 \ge 0</math> and <math>10 \ge a_2 > b_2 \ge 0</math>, we must show that <math>2^{a_1}-2^{b_1} \neq 2^{a_2} - 2^{b_2}</math>. Suppose otherwise for sake of contradiction; rearranging yields <math>2^{a_1}+2^{b_2} = 2^{a_2}+2^{b_1}</math>. We use the fact that every positive integer has a unique binary representation:
+
+If <math>a_1 \neq b_2</math> then <math>\{a_1,b_2\} = \{a_2,b_1\}</math>; from here we can deduce either <math>a_1=a_2</math> and <math>b_1=b_2</math> (contradicting the assumption that <math>(a_1,b_1) \neq (a_2,b_2)</math>, or <math>a_1=b_1</math> and <math>a_2=b_2</math> (contradicting the assumption <math>a_1>b_1</math> and <math>a_2>b_2</math>).
+
+If <math>a_1 = b_2</math> then <math>2^{a_1}+2^{b_2} = 2 \times 2^{a_1}</math>, and it follows that <math>a_1=a_2=b_1=b_2</math>, also contradicting the assumption <math>(a_1,b_1) \neq (a_2,b_2)</math>. Hence we obtain contradiction.*
+
+Then there are <math>\binom{11}{2}-5</math> choices for <math>(a,b)</math> for which <math>2^a - 2^b</math> is a positive integer less than 1000; by the above claim, each choice of <math>(a,b)</math> results in a different positive integer <math>n</math>. Then there are <math>55-5 = \boxed{050}</math> integers which can be expressed as a difference of two powers of 2.
+
+
+*Note: The uniqueness of binary representation could be rather easily proven, but if you cannot convince yourself on the spot that this is the case, consider the following alternative proof. Let <math>(a_1,b_1) \neq (a_2,b_2)</math> where <math>10 \ge a_1 > b_1 \ge 0</math> and <math>10 \ge a_2 > b_2 \ge 0</math> and <math>2^{a_1}-2^{b_1} = 2^{a_2} - 2^{b_2}</math>, for the sake of contradiction. Therefore <math>\deg_{2}(2^{a_1}-2^{b_1})=\deg_{2}(2^{a_2}-2^{b_2})</math>, or <math>b_1=b_2</math>. Plugging in, we see that <math>2^{a_1}=2^{a_2}</math>, or <math>a_1=a_2</math>, contradiction.
+
+Note by Ross Gao

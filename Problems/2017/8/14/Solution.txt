@@ -1,0 +1,8 @@
+==Solution 1==
+
+Let the number of questions that they solved alone be $x$. Let the percentage of problems they correctly solve together be $a$%. 
+As given, $$\frac{80x}{100} + \frac{ax}{100} = \frac{2 \cdot 88x}{100}$$. 
+
+Hence, $a = 96$. 
+
+Zoe got $\frac{90x}{100} + \frac{ax}{100} = \frac{186x}{100}$ problems right out of $2x$. Therefore, Zoe got $\frac{\frac{186x}{100}}{2x} = \frac{93}{100} = \boxed{\textbf{(C) } 93}$ percent of the problems correct.

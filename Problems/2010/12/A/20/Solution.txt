@@ -1,0 +1,41 @@
+== Solution ==
+
+=== Solution 1 ===
+Since $\left(a_n\right)$ and $\left(b_n\right)$ have integer terms with $a_1=b_1=1$, we can write the terms of each sequence as
+
+$$\begin{align*}&\left(a_n\right) \Rightarrow \{1, x+1, 2x+1, 3x+1, ...\}\\
+&\left(b_n\right) \Rightarrow \{1, y+1, 2y+1, 3y+1, ...\}\end{align*}$$
+
+where $x$ and $y$ ($x\leq y$) are the common differences of each, respectively.
+
+
+Since
+
+$$\begin{align*}a_n &= (n-1)x+1\\
+b_n &= (n-1)y+1\end{align*}$$
+
+it is easy to see that
+
+$a_n \equiv b_n \equiv 1 \mod{(n-1)}$.
+
+
+Hence, we have to find the largest $n$ such that $\frac{a_n-1}{n-1}$ and $\frac{b_n-1}{n-1}$ are both integers; equivalently, we want to maximize $\gcd(a_n-1, b_n-1)$.
+
+
+The prime factorization of $2010$ is $2\cdot{3}\cdot{5}\cdot{67}$. We list out all the possible pairs that have a product of $2010$, noting that these are the possible values of $(a_n, b_n)$ and we need $a_n \leq b_n$:
+
+$$(2,1005), (3, 670), (5,402), (6,335), (10,201),(15,134),(30,67)$$
+
+and soon find that the largest $n-1$ value is $7$ for the pair $(15, 134)$, and so the largest $n$ value is $\boxed{8\ \textbf{(C)}}$.
+
+=== Solution 2 ===
+
+As above, let $a_n=(n-1)x+1$ and $b_n=(n-1)y+1$ for some $1\leq x\leq y$.
+
+Now we get $2010 = a_n b_n = (n-1)^2xy + (n-1)(x+y) + 1$, hence $2009 = (n-1)( (n-1)xy + x + y )$. Therefore $n-1$ divides $2009 = 7^2 \cdot 41$. And as the second term is greater than the first one, we only have to consider the options $n-1\in\{1,7,41\}$.
+
+For $n=42$ we easily see that for $x=y=1$ the right side is less than $49$ and for any other $(x,y)$ it is way too large.
+
+For $n=8$ we are looking for $(x,y)$ such that $7xy + x + y = 2009/7 = 7\cdot 41$. Note that $x+y$ must be divisible by $7$. We can start looking for the solution by trying the possible values for $x+y$, and we easily discover that for $x+y=21$ we get $xy + 3 = 41$, which has a suitable solution $(x,y)=(2,19)$.
+
+Hence $n=8$ is the largest possible $n$. (There is no need to check $n=2$ anymore.)

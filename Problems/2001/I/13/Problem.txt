@@ -1,0 +1,2 @@
+== Problem ==
+In a certain [[circle]], the [[chord]] of a <math>d</math>-degree arc is <math>22</math> centimeters long, and the chord of a <math>2d</math>-degree arc is <math>20</math> centimeters longer than the chord of a <math>3d</math>-degree arc, where <math>d < 120.</math>  The length of the chord of a <math>3d</math>-degree arc is <math>- m + \sqrt {n}</math> centimeters, where <math>m</math> and <math>n</math> are positive integers.  Find <math>m + n.</math>

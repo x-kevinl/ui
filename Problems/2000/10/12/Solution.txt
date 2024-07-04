@@ -1,0 +1,2 @@
+== Solution 1 ==
+We can attempt $0^2+1^2=1$ and $1^2+2^2=5$, so the pattern here looks like the number of squares in the $n$-th figure is $n^2+(n+1)^2$. When we plug in 100 for $n$, we get $100^2+101^2=10000+10201=20201$, or option $\textbf{(C)}$.

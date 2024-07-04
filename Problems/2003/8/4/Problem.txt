@@ -1,0 +1,4 @@
+==Problem==
+A group of children riding on bicycles and tricycles rode past Billy Bob's house. Billy Bob counted $7$ children and $19$ wheels. How many tricycles were there?
+
+$\mathrm{(A)}\ 2 \qquad\mathrm{(B)}\ 4 \qquad\mathrm{(C)}\ 5 \qquad\mathrm{(D)}\ 6 \qquad\mathrm{(E)}\ 7$

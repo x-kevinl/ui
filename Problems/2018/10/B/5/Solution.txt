@@ -1,0 +1,7 @@
+==Solution 1 - Complementary Counting==
+
+We use complementary counting, or 
+
+$\text{total - what we don't want = what we want}$. 
+
+There are a total of $2^8$ ways to create subsets (consider including or excluding each number) and there are a total of $2^4$ subsets only containing composite numbers (the composite numbers are $4, 6, 8, 9$). Therefore, there are $2^8-2^4=240$ total ways to have at least one prime in a subset.

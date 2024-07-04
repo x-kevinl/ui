@@ -1,0 +1,4 @@
+== Solution ==
+Let each pair of two sets have one element in common. Label the common elements as <math>x</math>, <math>y</math>, <math>z</math>. Set <math>A</math> will have elements <math>x</math> and <math>y</math>, set <math>B</math> will have <math>y</math> and <math>z</math>, and set <math>C</math> will have <math>x</math> and <math>z</math>. There are <math>7 \cdot 6 \cdot 5 = 210</math> ways to choose values of <math>x</math>, <math>y</math> and <math>z</math>. There are <math>4</math> unpicked numbers, and each number can either go in the first set, second set, third set, or none of them. Since we have <math>4</math> choices for each of <math>4</math> numbers, that gives us <math>4^4 = 256</math>.
+
+Finally, <math>256 \cdot 210 = 53760</math>, so the answer is <math>\fbox{760}</math>.

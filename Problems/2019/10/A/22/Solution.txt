@@ -1,0 +1,35 @@
+==Solution 1==
+
+There are several cases depending on what the first coin flip is when determining $x$ and what the first coin flip is when determining $y$.
+
+The four cases are:
+
+'''Case 1''': $x$ is either $0$ or $1$, and $y$ is either $0$ or $1$.
+
+'''Case 2''': $x$ is either $0$ or $1$, and $y$ is chosen from the interval $[0,1]$.
+
+'''Case 3''': $x$ is is chosen from the interval $[0,1]$, and $y$ is either $0$ or $1$.
+
+'''Case 4''': $x$ is is chosen from the interval $[0,1]$, and $y$ is also chosen from the interval $[0,1]$.
+
+Each case has a $\frac{1}{4}$ chance of occurring (as it requires two coin flips).
+
+For Case 1, we need $x$ and $y$ to be different. Therefore, the probability for success in Case 1 is $\frac{1}{2}$.
+
+For Case 2, if $x$ is 0, we need $y$ to be in the interval $\left(\frac{1}{2}, 1\right]$. If $x$ is 1, we need $y$ to be in the interval $\left[0, \frac{1}{2}\right)$. Regardless of what $x$ is, the probability for success for Case 2 is $\frac{1}{2}$.
+
+By symmetry, Case 3 has the same success rate as Case 2.
+
+For Case 4, we must use geometric probability because there are an infinite number of pairs $(x, y)$ that can be selected, whether they satisfy the inequality or not. Graphing $|x-y| > \tfrac{1}{2}$ gives us the following picture where the shaded area is the set of all the points that fulfill the inequality:
+
+<asy>
+filldraw((0,0)--(0,1)--(1/2,1)--(0,1/2)--cycle,black+linewidth(1));
+filldraw((0,0)--(1,0)--(1,1/2)--(1/2,0)--cycle,black+linewidth(1));
+draw((0,0)--(0,1)--(1,1)--(1,0)--cycle);
+</asy>
+
+The shaded area is $\frac{1}{4}$, which means the probability for success for case 4 is $\frac{1}{4}$ (since the total area of the bounding square, containing all possible pairs, is $1$).
+
+Adding up the success rates from each case, we get:
+
+$\left(\frac{1}{4}\right) \cdot \left(\frac{1}{2} + \frac{1}{2} + \frac{1}{2} + \frac{1}{4}\right) = \boxed{\textbf{(B) }\frac{7}{16}}$.

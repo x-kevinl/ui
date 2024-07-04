@@ -1,0 +1,18 @@
+== Solution 1==
+Since the heights of both trapezoids are equal, and the area of $ABEF$ is twice the area of $FECD$, 
+
+$\frac{AB+EF}{2}=2\left(\frac{DC+EF}{2}\right)$.
+
+$\frac{AB+EF}{2}=DC+EF$, so
+
+$AB+EF=2DC+2EF$.
+
+$EF$ is exactly halfway between $AB$ and $DC$, so $EF=\frac{AB+DC}{2}$. 
+
+$AB+\frac{AB+DC}{2}=2DC+AB+DC$, so
+
+$\frac{3}{2}AB+\frac{1}{2}DC=3DC+AB$, and 
+
+$\frac{1}{2}AB=\frac{5}{2}DC$.
+
+$\frac{AB}{DC} = \boxed{\textbf{(C) }5}$.

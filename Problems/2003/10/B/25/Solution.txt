@@ -1,0 +1,78 @@
+==Solution==
+===Solution 1 (Slow)===
+To test if a number is divisible by three, you add up the digits of the number. If the sum is divisible by three, then the original number is a multiple of three. If the sum is too large, you can repeat the process until you can tell whether it is a multiple of three. This is the basis for the solution. Since the last two digits are $ 23 $, the sum of the digits is $ 2+3 = 5 $ (therefore it is not divisible by three). However certain numbers can be added to make the sum of the digits a multiple of three.
+
+$ 5+1 = 6 $,
+
+$ 5+4 = 9 $, and so on. 
+
+However since the largest four-digit number ending with $ 23 $ is $ 9923 $, the maximum sum is
+
+$ 5+18 = 23 $.
+
+Using that process we can fairly quickly compile a list of the sum of the first two digits of the number. 
+
+$$ \{1, 4, 7, 10, 13, 16\} $$
+
+Now we find all the two-digit numbers that have any of the sums shown above. We can do this by listing all the two digit numbers $ xy $ in separate cases.
+
+$$  I. x+y = 1, \{10\} = 1  $$
+$$ II. x+y = 4, \{13, 22, 31, 40\} = 4 $$
+$$ III. x+y = 7, \{16, 25, 34, 43, 52, 61, 70\} = 7 $$
+$$ IV. x+y = 10, \{19, 28, 37, 46, 55, 64, 73, 82, 91\} = 9 $$
+$$ V. x+y = 13, \{49, 58, 67, 76, 85, 94\} = 6 $$
+$$ VI. x+y = 16, \{79, 88, 97\} = 3 $$
+
+And finally, we add the number of elements in each set.
+
+$$ 1+4+7+9+6+3 = \boxed{\textbf{(B)}\ 30} $$
+
+===Solution 2 (Medium)===
+A number divisible by $3$ has all its digits add to a multiple of $3.$ The last two digits are $2$ and $3$ and add up to $5 \equiv 2\ (\text{mod}\ 3).$ Therefore the first two digits must add up to $1\ (\text{mod}\ 3).$ $4$ digits (including $0$) are $0\ (\text{mod}\ 3),$ $3$ are $1\ (\text{mod}\ 3),$ and $3$ are $2\ (\text{mod}\ 3).$ The following combinations are equivalent to $1\ (\text{mod}\ 3)$:
+
+$$ 0\ (\text{mod}\ 3)+1\ (\text{mod}\ 3) \equiv 1\ (\text{mod}\ 3)+0\ (\text{mod}\ 3) \equiv 2\ (\text{mod}\ 3) +2\ (\text{mod}\ 3)$$
+
+Let the first term in each combination represent the thousands digit and the second term represent the hundreds digit. We can use this to find the total amount of four-digit numbers.
+
+$$3\cdot3 + 3\cdot4 + 3\cdot3 = 9 + 12 + 9 = \boxed{\textbf{(B)}\ 30}$$
+
+===Solution 3 (Fast)===
+
+We have the following: $ n \equiv 0 \pmod{3}$ and $n \equiv 23\pmod{100}$. Then $n = 3a = 100b+23$ for some integers $a$ and $b$.  Taking mod 3 gives:
+$0 \equiv b+2 \pmod 3 \implies b\equiv 1\pmod 3$ so $b=3c+1 $ for some integer $c$.  But $N = 100b+23 = 100(3c+1)+23$ so $n = 300c+123$.  Bounding this gives us:
+$999 < 300c+123 < 10000$ so $876 < 300c < 9877$.  Dividing by $300$ gives $2.92 < c < 32.9222$ so $3\le c \le 32$.  This gives $32-3+1 = \boxed{\textbf{(B)} \ 30 }$
+
+===Solution 4 (Extremely Fast)===
+
+The number is in the form $xy23$
+
+Notice that the number is divisible by $3$ if the sum of the digits of $xy23$ is divisible by $3$
+
+Our first number that is divisible by $3$ is $1023$, next is $1323$..
+Notice $xy$ goes from $10\implies 97$
+
+Hence, there are $\frac{97-10}{3}+1=30$ distinct four digit numbers.
+
+=== Solution 5 (Even Faster than Extremely Fast) ===
+
+Following the form $xy23$ in Solution 4, notice that $x+y \equiv 1 \pmod 3$ to satisfy our condition. Choose a value of $x$ from 1 to 9. For $x=1, 4, 7$, there are exactly 4 values of $y: 0, 3, 6, 9$. For the remaining 6 digits, there are 3 choices for y. So our answer is $(3)(4)+(6)(3)=30$.
+
+=== Solution 6 (Even Faster than Even Faster than Extremely Fast)===
+There are $9 \cdot 10 = 90$ possible values for the first two digits. $\frac{1}{3}$ of them yield a multiple of $3$, so the answer is $\frac{90}{3} = \boxed{\textbf{(B)}\ 30}$
+
+=== Solution 7 (Easy to understand) ===
+Denote the four digit number by $ab23_{10}$. Then it is well known the sum of the digits of an integer $N$ determine whether or not they are divisible by $3$. Thus we want $a + b + 2 + 3 \equiv 0 \pmod 3$.
+
+$\underline{a = 1}: \implies$ $b \equiv 0 \pmod 3 \implies b = 0, 3, 6, 9$.
+
+$\underline{a = 2}: \implies$ $b \equiv 2 \pmod 3 \implies b = 2, 5, 8$.
+
+$\underline{a = 3}: \implies$ $b \equiv 1 \pmod 3 \implies b = 1, 4, 7$.
+
+
+Now we have that when $a = 4$ this is the same case as $a = 1$ as $4 \equiv 1 \pmod 3$. Hence if we count the above number of solutions and multiply by $3$ (as $1 \leq a \leq 9$), we are home free. There are $4 + 3 + 3 = 10$ solutions. Multiplying this by $3$ yields $\boxed{30}$. $\blacksquare$
+
+=== Solution 8 (Very very inefficient and slow) ===
+Don't do this on a test unless you have lots of time left.
+
+Pounding out all of the possible numbers and counting them, we get $\boxed{\textbf{(B)}\ 30}.$

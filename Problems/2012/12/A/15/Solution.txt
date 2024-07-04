@@ -1,0 +1,17 @@
+== Solution 1==
+First, look for invariants. The center, unaffected by rotation, must be black. So automatically, the chance is less than $\frac{1}{2}.$ Note that a $90^{\circ}$ rotation requires that black squares be across from each other across a vertical or horizontal axis. 
+
+
+As such, $2$ squares directly across from each other must be black in the $4$ edge squares. Since there are $2$ configurations for this to be possible (top and bottom, right and left), this is a chance of
+$$ \left (\frac{1}{2} \cdot \frac{1}{2} \right )+ \left (\frac{1}{2} \cdot \frac{1}{2} \right )=\frac{1}{2}$$ 
+
+
+However, by [[PIE]], subtract the chance all 4 are black and both configurations are met: $\frac{1}{2}- \left (\frac{1}{2} \cdot \frac{1}{2} \right ) \cdot \left (\frac{1}{2} \cdot \frac{1}{2} \right )=\frac{7}{16}$. Through symmetrical reasoning, the corners also have a $\frac{7}{16}$ chance of having a configuration that yields all black corners. 
+
+Then, the chance that all squares black is the intersection of all these probabilities: $\frac{1}{2} \left (\frac{7}{16} \right ) \left (\frac{7}{16} \right ) = \boxed{\textbf{(A)}\ \frac{49}{512}}$ 
+
+
+
+~BJHHar
+
+Also, if you have little to no time and are guessing, notice there are a total of $2^9 = 512$ ways to permutate the colors on the square (Each square can be white or black, so there are 2 possibilities for each of the 9 squares). Thus, the answer must be in some form of $\frac{\text{the number of good cases}}{\text{the total number of cases}}$, so E is not possible. Also, since the number of good cases must be an integer, C is not possible. From there, your chances of guessing the right answer are slightly higher. ~Extremelysupercooldude

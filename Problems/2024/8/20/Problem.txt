@@ -1,0 +1,28 @@
+==Problem==
+
+Any three vertices of the cube $PQRSTUVW$, shown in the figure below, can be connected to form a triangle. (For example, vertices $P$, $Q$, and $R$ can be connected to form isosceles $\triangle PQR$.) How many of these triangles are equilateral and contain $P$ as a vertex?
+
+<asy>
+unitsize(4);
+pair P,Q,R,S,T,U,V,W;
+P=(0,30); Q=(30,30); R=(40,40); S=(10,40); T=(10,10); U=(40,10); V=(30,0); W=(0,0);
+draw(W--V); draw(V--Q); draw(Q--P); draw(P--W); draw(T--U); draw(U--R); draw(R--S); draw(S--T); draw(W--T); draw(P--S); draw(V--U); draw(Q--R);
+dot(P);
+dot(Q);
+dot(R);
+dot(S);
+dot(T);
+dot(U);
+dot(V);
+dot(W);
+label("$P$",P,NW);
+label("$Q$",Q,NW);
+label("$R$",R,NE);
+label("$S$",S,N);
+label("$T$",T,NE);
+label("$U$",U,NE);
+label("$V$",V,SE);
+label("$W$",W,SW);
+</asy>
+
+$\textbf{(A)}0 \qquad \textbf{(B) }1 \qquad \textbf{(C) }2 \qquad \textbf{(D) }3 \qquad \textbf{(E) }6$

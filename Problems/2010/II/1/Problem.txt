@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>N</math> be the greatest integer multiple of <math>36</math> all of whose digits are even and no two of whose digits are the same. Find the remainder when <math>N</math> is divided by <math>1000</math>.

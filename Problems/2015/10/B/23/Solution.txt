@@ -1,0 +1,11 @@
+==Solution 1==
+A trailing zero requires a factor of two and a factor of five. Since factors of two occur more often than factors of five, we can focus on the factors of five. We make a chart of how many trailing zeros factorials have:
+
+$$\begin{array}{c|c|c|c|c|c|c}
+\mathrm{Factorial}&0!-4!&5!-9!&10!-14!&15!-19!&20!-24!&25!-29!\\\hline
+\mathrm{Zeros}&0&1&2&3&4&6
+\end{array}$$
+
+We first look at the case when $n!$ has $1$ zero and $(2n)!$ has $3$ zeros. If $n=5,6,7$, $(2n)!$ has only $2$ zeros. But for $n=8,9$, $(2n)!$ has $3$ zeros. Thus, $n=8$ and $n=9$ work.
+
+Secondly, we look at the case when $n!$ has $2$ zeros and $(2n)!$ has $6$ zeros. If $n=10,11,12$, $(2n)!$ has only $4$ zeros. But for $n=13,14$, $(2n)!$ has $6$ zeros. Thus, the smallest four values of $n$ that work are $n=8,9,13,14$, which sum to $44$. The sum of the digits of $44$ is $\boxed{\mathbf{(B)\ }8}$

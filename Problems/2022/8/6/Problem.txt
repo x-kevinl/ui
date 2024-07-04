@@ -1,0 +1,5 @@
+==Problem==
+
+Three positive integers are equally spaced on a number line. The middle number is $15,$ and the largest number is $4$ times the smallest number. What is the smallest of these three numbers? 
+
+$\textbf{(A) } 4 \qquad \textbf{(B) } 5 \qquad \textbf{(C) } 6 \qquad \textbf{(D) } 7 \qquad \textbf{(E) } 8$

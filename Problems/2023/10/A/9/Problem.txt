@@ -1,0 +1,4 @@
+==Problem==
+A digital display shows the current date as an $8$-digit integer consisting of a $4$-digit year, followed by a $2$-digit month, followed by a $2$-digit date within the month. For example, Arbor Day this year is displayed as 20230428. For how many dates in $2023$ will each digit appear an even number of times in the 8-digital display for that date?
+
+$\textbf{(A)}~5\qquad\textbf{(B)}~6\qquad\textbf{(C)}~7\qquad\textbf{(D)}~8\qquad\textbf{(E)}~9$

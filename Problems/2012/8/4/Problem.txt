@@ -1,0 +1,4 @@
+==Problem==
+Peter's family ordered a 12-slice pizza for dinner. Peter ate one slice and shared another slice equally with his brother Paul. What fraction of the pizza did Peter eat?
+
+$ \textbf{(A)}~\frac{1}{24}\qquad\textbf{(B)}~\frac{1}{12}\qquad\textbf{(C)}~\frac{1}{8}\qquad\textbf{(D)}~\frac{1}{6}\qquad\textbf{(E)}~\frac{1}{4} $

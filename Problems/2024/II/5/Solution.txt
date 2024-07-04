@@ -1,0 +1,4 @@
+==Solution 1==
+(Sorry i have zero idea how to make drawings)
+Draw a good diagram!
+Let <math>AB \cap DC</math>, <math>CD \cap FE</math>, and <math>BA \cap EF</math> be P, Q, and R, respectively. Let <math>QR=200, RP=300, PQ=240</math>. Notice that all smaller triangles formed are all similar to the larger <math>(200,240,300)</math> triangle. Let the side length of the hexagon be x. Triangle <math> \triangle BCP \sim \triangle RQP</math>, so <math>\frac{BC}{BP} =\frac{x}{BP} =\frac{200}{300} \implies BP=\frac{3x}{2}</math>. Triangle <math>\triangle AFR \sim \triangle PQR</math>, so <math>\frac{AF}{AR}=\frac{x}{AR} = \frac{240}{300} \implies AR=\frac{5x}{4}</math>. We know <math>RA+AB+BP=300</math>, so <math>\frac{5}{4}x + x + \frac{3}{2}x = 300</math>. Solving, we get <math>x=\boxed{080}</math>. -westwoodmonster

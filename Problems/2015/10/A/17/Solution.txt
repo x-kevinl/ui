@@ -1,0 +1,11 @@
+==Solution 1==
+
+Since the triangle is equilateral and one of the sides is a vertical line, the triangle must have a horizontal line of symmetry, and therefore the other two sides will have opposite slopes. The slope of the other given line is $\frac{\sqrt{3}}{3}$ (can be find out easily by using 60 degree angle of the triangle) so the third must be $-\frac{\sqrt{3}}{3}$. Since this third line passes through the origin, its equation is simply $y = -\frac{\sqrt{3}}{3}x$. To find two vertices of the triangle, plug in $x=1$ to both the other equations. 
+
+$y = -\frac{\sqrt{3}}{3}$
+
+$y = 1 + \frac{\sqrt{3}}{3}$
+
+We now have the coordinates of two vertices, $\left(1, -\frac{\sqrt{3}}{3}\right)$ and $\left(1, 1 + \frac{\sqrt{3}}{3}\right)$. The length of one side is the distance between the y-coordinates, or $1 +  \frac{2\sqrt{3}}{3}$.
+
+The perimeter of the triangle is thus $3\left(1 +  \frac{2\sqrt{3}}{3}\right)$, so the answer is $\boxed{\textbf{(D) }3 + 2\sqrt{3}}$

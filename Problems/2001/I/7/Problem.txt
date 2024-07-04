@@ -1,0 +1,4 @@
+== Problem ==
+[[Triangle]] <math>ABC</math> has <math>AB=21</math>, <math>AC=22</math> and <math>BC=20</math>. Points <math>D</math> and <math>E</math> are located on <math>\overline{AB}</math> and <math>\overline{AC}</math>, respectively, such that <math>\overline{DE}</math> is [[parallel]] to <math>\overline{BC}</math> and contains the center of the [[incircle|inscribed circle]] of triangle <math>ABC</math>. Then <math>DE=m/n</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.
+
+__TOC__

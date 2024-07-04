@@ -1,0 +1,6 @@
+== Solution ==
+
+By the [[Logarithms#Logarithmic Properties|change of base]] formula, $a_n = \frac{1}{\frac{\log 2002}{\log n}} = \left(\frac{1}{\log 2002}\right) \log n $. Thus 
+$$\begin{align*}b- c &= \left(\frac{1}{\log 2002}\right)(\log 2 + \log 3 + \log 4 + \log 5 - \log 10 - \log 11 - \log 12 - \log 13 - \log 14)\\
+&= \left(\frac{1}{\log 2002}\right)\left(\log \frac{2 \cdot 3 \cdot 4 \cdot 5}{10 \cdot 11 \cdot 12 \cdot 13 \cdot 14}\right)\\ 
+&= \left(\frac{1}{\log 2002}\right) \log 2002^{-1} = -\left(\frac{\log 2002}{\log 2002}\right) = -1 \Rightarrow \mathrm{(B)}\end{align*}$$

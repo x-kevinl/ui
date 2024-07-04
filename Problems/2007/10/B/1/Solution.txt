@@ -1,0 +1,7 @@
+==Solution==
+
+There are four walls in each bedroom (she can't paint floors or ceilings). Therefore, we calculate the number of square feet of walls there is in one bedroom:
+$$2\cdot(12\cdot8+10\cdot8)-60=2\cdot176-60=292$$
+We have three bedrooms, so she must paint $292\cdot3=\boxed{\textbf{(E) }876}$ square feet of walls.
+
+~MathFun1000

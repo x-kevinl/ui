@@ -1,0 +1,11 @@
+==Solution 1==
+
+The large triangle $ABC$ has sides of length $4$.  The medium triangle has sides of length $2$.  The small triangle has sides of length $1$.  There are $3$ segment sizes, and all segments depicted are one of these lengths.
+
+Starting at $A$ and going clockwise, the perimeter is:
+
+$AB + BC + CD + DE + EF + FG + GA$
+
+$4 + 4 + 2 + 2 + 1 + 1 + 1$
+
+$15$, thus the answer is $\boxed{C}$

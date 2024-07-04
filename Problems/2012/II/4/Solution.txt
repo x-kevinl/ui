@@ -1,0 +1,27 @@
+==Solution 1 (bash)==
+
+<asy>draw((1.2,0)--(0,0)--(0,1.4)--(6,1.4)--(6,0)--(1.2,0)--(6,1.4));
+label("$D$", (1.2,0),dir(-90));
+dot((6,1.4));
+dot((1.2,0));
+label("$a$", (0.6,0),dir(-90));
+label("$b$", (3.6,0),dir(-90));
+label("$c$", (6,0.7),dir(0));</asy>
+
+Let <math>a,b,c</math> be the labeled lengths as shown in the diagram. Also, assume WLOG the time taken is <math>1</math> second. 
+
+Observe that <math>\dfrac{2a+b+c}{8.6}=1</math> or <math>2a+b+c=8.6</math>, and <math>\dfrac{b+c}{6.2}=1</math> or <math>b+c=6.2</math>. Subtracting the second equation from the first gives <math>2a=2.4</math>, or <math>a=1.2</math>.
+
+Now, let us solve <math>b</math> and <math>c</math>. Note that <math>\dfrac{\sqrt{b^2+c^2}}{5}=1</math>, or <math>b^2+c^2=25</math>. We also have <math>b+c=6.2</math>.
+
+We have a system of equations: <cmath>\left\{\begin{array}{l}b+c=6.2\\ b^2+c^2=25\end{array}\right.</cmath>
+
+Squaring the first equation gives <math>b^2+2bc+c^2=38.44</math>, and subtracting the second from this gives <math>2bc=13.44</math>. Now subtracting this from <math>b^2+c^2=25</math> gives <math>b^2-2bc+c^2=(b-c)^2=11.56</math>, or <math>b-c=3.4</math>. Now we have the following two equations:
+
+<cmath>\left\{\begin{array}{l}b+c=6.2\\ b-c=3.4\end{array}\right.</cmath>
+
+Adding the equations and dividing by two gives <math>b=4.8</math>, and it follows that <math>c=1.4</math>.
+
+The ratios we desire are therefore <math>1.4:6:4.8=7:30:24</math>, and our answer is <math>7+30+24=\boxed{061}</math>.
+
+Note that in our diagram, we labeled the part of the bottom <math>b</math> and the side <math>c</math>. However, these labels are interchangeable. We can cancel out the case where the side is <math>4.8</math> and the part of the bottom is <math>1.4</math> by noting a restriction of the problem: "...a rectangular field whose longer side runs due west." If we had the side be <math>4.8</math>, then the entire bottom would be <math>1.2+1.4=2.6</math>, clearly less than <math>4.8</math> and therefore violating our restriction.

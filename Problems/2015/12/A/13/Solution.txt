@@ -1,0 +1,3 @@
+==Solution 1==
+We can eliminate answer choices $\textbf{(A)}$ and $\textbf{(B)}$ because there are an even number of scores, so if one is false, the other must be false too. Answer choice $\textbf{(C)}$ must be true since every team plays every other team, so it is impossible for two teams to lose every game. Answer choice $\textbf{(D)}$ must be true since each game gives out a total of two points, and there are $\binom{12}{2} = 66$ games, for a total of $132$ points. Answer choice $\boxed{\textbf{(E)}}$ is false. If everyone draws each of their 11 games, then every team will tie for first place with 11 points each.<li>
+Quick question, why does the answer key say 3?

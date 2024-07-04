@@ -1,0 +1,21 @@
+== Solution 1 ==
+
+<center><asy>
+unitsize(1.5mm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+dotfactor=4;
+
+pair O=(0,0), A=(0,-20), B=(0,-10), C=(10sqrt(3),-10);
+real r=20;
+path ferriswheel=Circle(O,r);
+draw(ferriswheel);
+draw(O--A); draw(O--C); draw(B--C); draw(A--C);
+pair[] ps={A,B,C,O}; dot(ps);
+label("$O$",O,N); label("$A$",A,S); label("$B$",B,W); label("$C$",C,SE);
+label("$10$",(O--B),W);
+label("$10$",(A--B),W);
+label("$20$",(O--C),NE);
+
+</asy></center>
+
+We can let this circle represent the ferris wheel with center $O,$ and $C$ represent the desired point $10$ feet above the bottom. Draw a diagram like the one above. We find out $\triangle OBC$ is a $30-60-90$ triangle. That means $\angle BOC = 60^\circ$ and the ferris wheel has made $\frac{60}{360} = \frac{1}{6}$ of a revolution. Therefore, the time it takes to travel that much of a distance is $\frac{1}{6}\text{th}$ of a minute, or $10$ seconds. The answer is $\boxed{\mathrm{(D) \ } 10}$. Alternatively, we could also say that $\triangle ABC$ is congruent to $\triangle OBC$ by SAS, so $AC$ is 20, and $\triangle AOC$ is equilateral, and $\angle BOC = 60^\circ$

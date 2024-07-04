@@ -1,0 +1,2 @@
+==Solution 1==
+First assign each face the letters $a,b,c,d,e,f$. The sum of the product of the faces is $abc+acd+ade+aeb+fbc+fcd+fde+feb$. We can factor this into $(a+f)(b+c)(d+e)$ which is the product of the sum of each pair of opposite faces. In order to maximize $(a+f)(b+c)(d+e)$  we use the numbers $(7+2)(6+3)(5+4)$ or $\boxed{\textbf{(D)}\ 729 }$.

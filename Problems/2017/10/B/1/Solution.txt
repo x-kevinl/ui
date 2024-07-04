@@ -1,0 +1,10 @@
+==Solution 1==
+Let her $2$-digit number be $x$. Multiplying by $3$ makes it a multiple of $3$, meaning that the sum of its digits is divisible by $3$. Adding on $11$ increases the sum of the digits by $1+1 = 2,$ (we can ignore numbers such as $39+11=50$) and reversing the digits keeps the sum of the digits the same; this means that the resulting number must be $2$ more than a multiple of $3$. There are two such numbers between $71$ and $75$: $71$ and $74.$ Now that we have narrowed down the choices, we can simply test the answers to see which one will provide a two-digit number when the steps are reversed:
+$$$$
+For $71,$ we reverse the digits, resulting in $17.$ Subtracting $11$, we get $6.$ We can already see that dividing this by $3$ will not be a two-digit number, so $71$ does not meet our requirements.
+$$$$
+Therefore, the answer must be the reversed steps applied to $74.$ We have the following:
+$$$$
+$74\rightarrow47\rightarrow36\rightarrow12$
+$$$$
+Therefore, our answer is $\boxed{\bold{(B)} 12}$.

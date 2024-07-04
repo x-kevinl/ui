@@ -1,0 +1,9 @@
+==Solution 1==
+
+The third condition implies that the list's size must be an even number, as if it were an odd number, the median of hte list would surely appear in the list itself.
+
+Therefore, we can casework on what even numbers work.
+
+Say the size is 2. Clearly, this doesn't work as the only list would be <math>\{9, 9\}</math>, which doesn't satisfy condition 1.
+
+If the size is 4, then we can have two <math>9</math>s, and a remaining sum of <math>12</math>. Since the other two values in the list must be distinct, and their sum must equal <math>30-18=12</math>, we have that the two numbers are in the form <math>a</math> and <math>12-a</math>. Note that we cannot have both values greater than <math>9</math>, and we cannot have only one value greater than <math>9</math>, because this would make the median <math>9</math>, which violates condition 3. Since the median of the list is a positive integer, this means that the greater of <math>a</math> and <math>12-a</math> must be an odd number. The only valid solution to this is <math>a=5</math>. Thus, our answer is <math>5^2+7^2+9^2+9^2 = \boxed{236}</math>. ~akliu

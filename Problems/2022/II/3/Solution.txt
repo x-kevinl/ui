@@ -1,0 +1,27 @@
+==Diagram==
+
+<asy>
+import three;
+import settings;
+leftbutton=new string[] {"rotate","zoom","shift","pan"};
+middlebutton=new string[] {""};
+rightbutton=new string[] {"zoom","rotateX","rotateY","rotateZ"};
+wheelup=new string[] {"zoomin"};
+wheeldown=new string[] {"zoomout"};
+import three;
+pen p = rgb("00FF80")+opacity(0.25);
+pen q = rgb("FF8000")+opacity(0.75);
+triple A = (-3,-3,0);
+triple B = (-3,3,0);
+triple C = (3,3,0);
+triple D = (3,-3,0);
+triple F = (0,0,9/2);
+surface sphere = shift((0,0,1/4))*scale3(17/4)*unitsphere;
+draw(sphere,p);
+draw(A--B--C--D--A--F--B--F--C--F--D--F--A,q);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(F);
+</asy>

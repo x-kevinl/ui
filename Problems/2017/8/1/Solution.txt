@@ -1,0 +1,16 @@
+==Solution 1==
+We will compute each expression.
+
+A) $2 + 0 + 1 + 7 = 10$
+
+B) $2 \times 0 + 1 + 7 = 8$
+
+C) $2 + 0 \times 1 + 7 = 9$
+
+D) $2 + 0 + 1 \times 7 = 9$
+
+E) $2 \times 0 \times 1 \times 7 = 0$
+
+Ordering these, we get $10, 8, 9, 9, 0$. Out of these, $10$ is the largest number and option $(A)$ adds up to $10$. Therefore, the answer is $\boxed{\textbf{(A) } 2+0+1+7}$.
+
+- SBose

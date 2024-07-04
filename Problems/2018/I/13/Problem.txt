@@ -1,0 +1,2 @@
+==Problem==
+Let <math>\triangle ABC</math> have side lengths <math>AB=30</math>, <math>BC=32</math>, and <math>AC=34</math>. Point <math>X</math> lies in the interior of <math>\overline{BC}</math>, and points <math>I_1</math> and <math>I_2</math> are the incenters of <math>\triangle ABX</math> and <math>\triangle ACX</math>, respectively. Find the minimum possible area of <math>\triangle AI_1I_2</math> as <math>X</math> varies along <math>\overline{BC}</math>.

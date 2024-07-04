@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+Let the smaller of the two numbers be $x$. Then, the problem states that $ (x+1)+x<100$. $ (x+1)^2-x^2=x^2+2x+1-x^2=2x+1 $. $ 2x+1 $ is obviously odd, so only answer choices C and E need to be considered.
+
+$ 2x+1=131 $ contradicts the fact that $ 2x+1<100 $, so the answer is $ \boxed{\mathrm{(C)} 79} $

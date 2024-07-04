@@ -1,0 +1,8 @@
+==Solution 1==
+
+One of the ways to solve this problem is to make this parallelogram a straight line.
+So the whole length of the line is <math>APC</math>(<math>AMC</math> or <math>ANC</math>), and <math>ABC</math> is <math>1000x+2009x=3009x.</math>
+
+<math>AP</math>(<math>AM</math> or <math>AN</math>) is <math>17x.</math>
+
+So the answer is <math>3009x/17x = \boxed{177}</math>

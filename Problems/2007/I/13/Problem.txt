@@ -1,0 +1,4 @@
+== Problem ==
+A square pyramid with base <math>ABCD</math> and vertex <math>E</math> has eight edges of length <math>4</math>.  A plane passes through the midpoints of <math>AE</math>, <math>BC</math>, and <math>CD</math>.  The plane's intersection with the pyramid has an area that can be expressed as <math>\sqrt{p}</math>.  Find <math>p</math>.
+
+[[Image:AIME I 2007-13.png]]

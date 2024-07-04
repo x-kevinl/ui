@@ -1,0 +1,22 @@
+==Solution 1==
+If we list the rows by iterations, then we get 
+
+$1,2,3,4$
+
+$6,7,8,9,10$
+
+$13,14,15,16,17,18$ etc.
+
+so that the $500,000$th number is the $506$th number on the $997$th row because $4+5+6+7......+999 = 499,494$. The last number of the $996$th row (when including the numbers skipped) is $499,494 + (1+2+3+4.....+996)= 996,000$, (we add the $1-996$ because of the numbers we skip) so our answer is $996,000 + 506 = \boxed{\textbf{(A) }996,506}$.
+
+===Note===
+One may also note we simply need to add the number of skipped numbers to $500,000$ to get our answer. The number of skipped numbers is $\frac{996\cdot 997}{2}$ which has a units digit of $6$. Looking at the answer choices, it becomes apparent that the answer is $\boxed{\textbf{(A) }996,506}$
+
+~firebolt360
+
+===Note 2 (A little bit of clarification if the solution wasn't entirely clear at the beginning)===
+Since it looks kind of weird to pick $999$ as the end of the sum, the intuition behind it is that the sum of $n$ terms is $4+5+6+7+...+n+3=\frac{n(n+7)}{2}$, since $$4+5+6+7+...+n+3$$ $$=(1+3)+(2+3)+(3+3)+(4+3)+...+(n-3+3)$$ $$=(1+2+3+4+...+n)+3n$$ $$=\frac{n(n+1)}{2}+3n$$ $$=\frac{n(n+7)}{2}$$
+Since we want the $500,000$th number, we can write our equation as an approximation. $$\frac{n(n+7)}{2} \approx 500,000$$ $$n(n+7) \approx 1,000,000$$
+Since $n(n+7) \approx n^2$, $n^2 \approx 1,000,000$, meaning $n \approx 1,000$. $n(n+7)=n^2+7n$, so $n \approx 1,000$ yields $1,000,000+7,000 \approx 1,000,000$, prompting us to lower the value of $n$ by around $3$ or $4$ since we want to lower our answer by $7,000$ and the term below $n^2$ is $(n-1)^2$, which is $2n-1$ lower than $n^2$. Thus, through a little bit of guess and checking, we get $4+5+6+7+...+999=499,494.$ This is also similar to the Solution 3, the AOPS video transcript.
+
+~Wesserwes7254

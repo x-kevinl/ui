@@ -1,0 +1,10 @@
+== Solution ==
+
+===Solution 1===
+Add the three equations to get <math>a^3 + b^3 + c^3 = 28 + 3abc</math>.  Now, let <math>abc = p</math>.  <math>a = \sqrt [3]{p + 2}</math>, <math>b = \sqrt [3]{p + 6}</math> and <math>c = \sqrt [3]{p + 20}</math>, so <math>p = abc = (\sqrt [3]{p + 2})(\sqrt [3]{p + 6})(\sqrt [3]{p + 20})</math>.  Now [[cube]] both sides; the <math>p^3</math> terms cancel out.  Solve the remaining [[quadratic]] to get <math>p = - 4, - \frac {15}{7}</math>.  To maximize <math>a^3 + b^3 + c^3</math> choose <math>p = - \frac {15}{7}</math> and so the sum is <math>28 - \frac {45}{7} = \frac {196 - 45}{7}</math> giving <math>151 + 7 = \fbox{158}</math>.
+
+===Solution 2===
+This is almost the same as solution 1. Note <math>a^3 + b^3 + c^3 = 28 + 3abc</math>. Next, let <math>k = a^3</math>. Note that <math>b = \sqrt [3]{k + 4}</math> and  <math>c = \sqrt [3]{k + 18}</math>, so we have <math>28 + 3\sqrt [3]{k(k+4)(k+18)} = 28+3abc=a^3+b^3+c^3=3k+22</math>. Move 28 over, divide both sides by 3, then cube to get <math>k^3-6k^2+12k-8 = k^3+22k^2+18k</math>. The <math>k^3</math> terms cancel out, so solve the quadratic to get <math>k = -2, -\frac{1}{7}</math>. We maximize <math>abc</math> by choosing <math>k = -\frac{1}{7}</math>, which gives us <math>a^3+b^3+c^3 = 3k + 22 = \frac{151}{7}</math>. Thus, our answer is <math>151+7=\boxed{158}</math>.
+
+===Solution 3===
+We have that <math>x^3 = 2 + xyz</math>, <math>y^3 = 6 + xyz</math>, and <math>z^3 = 20 + xyz</math>. Multiplying the three equations, and letting <math>m = xyz</math>, we have that <math>m^3 = (2+m)(6+m)(20+m)</math>, and reducing, that <math>7m^2 + 43m + 60 = 0</math>, which has solutions <math>m = -\frac{15}{7}, -4</math>. Adding the three equations and testing both solutions, we find the answer of <math>\frac{151}{7}</math>, so the desired quantity is <math>151 + 7 = \fbox{158}</math>.

@@ -1,0 +1,2 @@
+==Problem==
+For every subset <math>T</math> of <math>U = \{ 1,2,3,\ldots,18 \}</math>, let <math>s(T)</math> be the sum of the elements of <math>T</math>, with <math>s(\emptyset)</math> defined to be <math>0</math>. If <math>T</math> is chosen at random among all subsets of <math>U</math>, the probability that <math>s(T)</math> is divisible by <math>3</math> is <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m</math>.

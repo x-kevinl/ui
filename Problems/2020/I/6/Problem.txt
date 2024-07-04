@@ -1,0 +1,2 @@
+== Problem ==
+A flat board has a circular hole with radius <math>1</math> and a circular hole with radius <math>2</math> such that the distance between the centers of the two holes is <math>7.</math> Two spheres with equal radii sit in the two holes such that the spheres are tangent to each other. The square of the radius of the spheres is <math>\tfrac{m}{n},</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n.</math>

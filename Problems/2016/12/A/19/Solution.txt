@@ -1,0 +1,9 @@
+==Solution 1==
+
+For $6$ to $8$ heads, we are guaranteed to hit $4$ heads, so the sum here is $\binom{8}{2}+\binom{8}{1}+\binom{8}{0}=28+8+1=37$.
+
+For $4$ heads, you have to hit the $4$ heads at the start so there's only one way, $1$.
+
+For $5$ heads, we either start off with $4$ heads, which gives us $_4\text{C}_1=4$ ways to arrange the other flips, or we start off with five heads and one tail, which has $6$ ways minus the $2$ overlapping cases, $\text{HHHHHTTT}$ and $\text{HHHHTHTT}$. Total ways: $8$.
+
+Then we sum to get $46$. There are a total of $2^8=256$ possible sequences of $8$ coin flips, so the probability is $\frac{46}{256}=\frac{23}{128}$. Summing, we get $23+128=\boxed{\textbf{(B) }151}$.

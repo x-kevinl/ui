@@ -1,0 +1,3 @@
+==Problem==
+
+In equiangular octagon <math>CAROLINE</math>, <math>CA = RO = LI = NE =</math> <math>\sqrt{2}</math> and <math>AR = OL = IN = EC = 1</math>. The self-intersecting octagon <math>CORNELIA</math> encloses six non-overlapping triangular regions. Let <math>K</math> be the area enclosed by <math>CORNELIA</math>, that is, the total area of the six triangular regions. Then <math>K =</math> <math>\dfrac{a}{b}</math>, where <math>a</math> and <math>b</math> are relatively prime positive integers. Find <math>a + b</math>.

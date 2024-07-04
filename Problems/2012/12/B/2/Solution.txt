@@ -1,0 +1,2 @@
+== Solution ==
+If the radius is $5$, then the width is $10$, hence the length is $20$. $10\times20= \boxed{\textbf{(E)}\ 200}.$

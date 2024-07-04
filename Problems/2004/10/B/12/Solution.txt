@@ -1,0 +1,4 @@
+==Solution==
+The area of the large circle is $\pi b^2$, the area of the small one is $\pi c^2$, hence the shaded area is $\pi(b^2-c^2)$.
+
+From the [[Pythagorean Theorem]] for the right triangle $OXZ$ we have $a^2 + c^2 = b^2$, hence $b^2-c^2=a^2$ and thus the shaded area is $\boxed{\mathrm{(A)\ }\pi a^2}$.

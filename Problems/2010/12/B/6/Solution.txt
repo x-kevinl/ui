@@ -1,0 +1,2 @@
+== Solution ==
+Clearly, the minimum possible value would be $70 - 50 = 20\%$. The maximum possible value would be $30 + 50 = 80\%$. The difference is $80 - 20 = \boxed{\textbf{(D) }60}$.

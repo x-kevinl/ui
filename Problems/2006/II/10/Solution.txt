@@ -1,0 +1,52 @@
+== Solution ==
+=== Solution 1 ===
+The results of the five remaining games are independent of the first game, so by symmetry, the probability that <math>A</math> scores higher than <math>B</math> in these five games is equal to the probability that <math>B</math> scores higher than <math>A</math>. We let this probability be <math>p</math>; then the probability that <math>A</math> and <math>B</math> end with the same score in these five games is <math>1-2p</math>.
+
+Of these three cases (<math>|A| > |B|, |A| < |B|, |A|=|B|</math>), the last is the easiest to calculate (see solution 2 for a way to directly calculate the other cases). 
+
+There are <math>{5\choose k}</math> ways to <math>A</math> to have <math>k</math> victories, and <math>{5\choose k}</math> ways for <math>B</math> to have <math>k</math> victories. Summing for all values of <math>k</math>,
+<center><math>1-2p = \frac{1}{2^{5} \times 2^{5}}\left(\sum_{k=0}^{5} {5\choose k}^2\right) = \frac{1^2+5^2+10^2+10^2+5^2+1^2}{1024} = \frac{126}{512}.</math></center>
+Thus <math>p = \frac 12 \left(1-\frac{126}{512}\right) = \frac{193}{512}</math>. The desired probability is the sum of the cases when <math>|A| \ge |B|</math>, so the answer is <math>\frac{126}{512} + \frac{193}{512} = \frac{319}{512}</math>, and <math>m+n = \boxed{831}</math>.
+
+=== Solution 2 ===
+You can break this into cases based on how many rounds <math>A</math> wins out of the remaining <math>5</math> games.
+
+*If <math>A</math> wins 0 games, then <math>B</math> must win 0 games and the probability of this is <math> \frac{{5 \choose 0}}{2^5} \frac{{5 \choose 0}}{2^5} = \frac{1}{1024} </math>.
+
+*If <math>A</math> wins 1 games, then <math>B</math> must win 1 or less games and the probability of this is <math> \frac{{5 \choose 1}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}}{2^5} = \frac{30}{1024} </math>.
+
+*If <math>A</math> wins 2 games, then <math>B</math> must win 2 or less games and the probability of this is <math> \frac{{5 \choose 2}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}}{2^5} = \frac{160}{1024} </math>.
+
+*If <math>A</math> wins 3 games, then <math>B</math> must win 3 or less games and the probability of this is <math> \frac{{5 \choose 3}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}+{5 \choose 3}}{2^5} = \frac{260}{1024} </math>.
+
+*If <math>A</math> wins 4 games, then <math>B</math> must win 4 or less games and the probability of this is <math> \frac{{5 \choose 4}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}+{5 \choose 3}+{5 \choose 4}}{2^5} = \frac{155}{1024} </math>.
+
+*If <math>A</math> wins 5 games, then <math>B</math> must win 5 or less games and the probability of this is <math> \frac{{5 \choose 5}}{2^5} \frac{{5 \choose 0}+{5 \choose 1}+{5 \choose 2}+{5 \choose 3}+{5 \choose 4}+{5 \choose 5}}{2^5} = \frac{32}{1024} </math>.
+
+Summing these 6 cases, we get <math> \frac{638}{1024} </math>, which simplifies to <math> \frac{319}{512} </math>, so our answer is <math>319 + 512 = \boxed{831}</math>.
+
+===Solution 3===
+
+We can apply the concept of generating functions here. 
+
+The generating function for <math>B</math> is <math> (1 + 0x^{1}) </math> for the first game where <math>x^{n}</math> is winning n games. Since <math>B</math> lost the first game, the coefficient for <math>x^{1}</math> is 0. The generating function for the next 5 games is <math>(1 + x)^{5}</math>. Thus, the total generating function for number of games he wins is
+
+ <math>{(1 + 0x)(1 + x)^{5}} = (1 + 5x^{1} + 10x^{2} + 10x^{3} + 5x^{4} + x^{5})</math>.
+
+The generating function for <math>A</math> is the same except that it is multiplied by <math>x</math> instead of <math>(1+0x)</math>. 
+Thus, the generating function for <math>A</math> is 
+
+<math>1x + 5x^{2} + 10x^{3} + 10x^{4} + 5x^{5} + x^{6}</math>. 
+
+The probability that <math>B</math> wins 0 games is <math>\frac{1}{32}</math>. Since the coefficients for all <math>x^{n}</math> where 
+
+<math>n \geq 1</math> sums to 32, the probability that <math>A</math> wins more games is <math>\frac{32}{32}</math>. 
+
+Thus, the probability that <math>A</math> has more wins than <math>B</math> is <math>\frac{1}{32} \times \frac{32}{32} + \frac{5}{32} \times \frac{31}{32} + \frac{10}{32} \times \frac{26}{32} + \frac{10}{32} \times \frac{16}{32} + \frac{5}{32} \times \frac{6}{32} +\frac{1}{32} \times \frac{1}{32} = \frac{638}{1024} = \frac{319}{512}</math>.
+
+Thus, <math>319 + 512 = \boxed{831} </math>.
+
+=== Solution 4 ===
+After the first game, there are <math>10</math> games we care about-- those involving <math>A</math> or <math>B</math>. There are <math>3</math> cases of these <math>10</math> games: <math>A</math> wins more than <math>B</math>, <math>B</math> wins more than <math>A</math>, or <math>A</math> and <math>B</math> win the same number of games. Also, there are <math>2^{10} = 1024</math> total outcomes. By symmetry, the first and second cases are equally likely, and the third case occurs <math>\binom{5}{0}^2+\binom{5}{1}^2+\binom{5}{2}^2+\binom{5}{3}^2+\binom{5}{4}^2+\binom{5}{5}^2 = \binom{10}{5} = 252</math> times, by [[Combinatorial identity#Another Identity|a special case of Vandermonde's Identity]]. There are therefore <math>\frac{1024-252}{2} = 386</math> possibilities for each of the other two cases.
+
+If <math>B</math> has more wins than <math>A</math> in its <math>5</math> remaining games, then <math>A</math> cannot beat <math>B</math> overall. However, if <math>A</math> has more wins or if <math>A</math> and <math>B</math> are tied, <math>A</math> will beat <math>B</math> overall. Therefore, out of the <math>1024</math> possibilites, <math>386+252 = 638</math> ways where <math>A</math> wins, so the desired probability is <math>\frac{638}{1024} = \frac{319}{512}</math>, and <math>m+n=\boxed{831}</math>.

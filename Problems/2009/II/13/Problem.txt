@@ -1,0 +1,4 @@
+== Problem ==
+
+
+Let <math>A</math> and <math>B</math> be the endpoints of a semicircular arc of radius <math>2</math>. The arc is divided into seven congruent arcs by six equally spaced points <math>C_1</math>, <math>C_2</math>, <math>\dots</math>, <math>C_6</math>. All chords of the form <math>\overline {AC_i}</math> or <math>\overline {BC_i}</math> are drawn. Let <math>n</math> be the product of the lengths of these twelve chords. Find the remainder when <math>n</math> is divided by <math>1000</math>.

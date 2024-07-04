@@ -1,0 +1,2 @@
+==Solution 1==
+The one digit prime numbers are $2$, $3$, $5$, and $7$. So there are a total of $4\cdot4=16$ ways to choose a two digit number with both digits as primes and $4$ ways to choose a one digit prime, for a total of $4+16=20$ ways. Out of these $2$, $3$, $5$, $7$, $23$, $37$, $53$, and $73$ are prime. Thus the probability is $\dfrac{8}{20}=\boxed{\textbf{(B)} \dfrac{2}{5}}$.

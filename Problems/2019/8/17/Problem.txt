@@ -1,0 +1,6 @@
+==Problem==
+What is the value of the product 
+
+$$\left(\frac{1\cdot3}{2\cdot2}\right)\left(\frac{2\cdot4}{3\cdot3}\right)\left(\frac{3\cdot5}{4\cdot4}\right)\cdots\left(\frac{97\cdot99}{98\cdot98}\right)\left(\frac{98\cdot100}{99\cdot99}\right)?$$
+
+$\textbf{(A) }\frac{1}{2}\qquad\textbf{(B) }\frac{50}{99}\qquad\textbf{(C) }\frac{9800}{9801}\qquad\textbf{(D) }\frac{100}{99}\qquad\textbf{(E) }50$

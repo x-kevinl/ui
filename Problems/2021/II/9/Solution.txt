@@ -1,0 +1,40 @@
+==Solution 1==
+This solution refers to the <b>Remarks</b> section.
+
+By the Euclidean Algorithm, we have <cmath>\gcd\left(2^m+1,2^m-1\right)=\gcd\left(2,2^m-1\right)=1.</cmath>
+We are given that <math>\gcd\left(2^m+1,2^n-1\right)>1.</math> Multiplying both sides by <math>\gcd\left(2^m-1,2^n-1\right)</math> gives
+<cmath>\begin{align*}
+\gcd\left(2^m+1,2^n-1\right)\cdot\gcd\left(2^m-1,2^n-1\right)&>\gcd\left(2^m-1,2^n-1\right) \\
+\gcd\left(\left(2^m+1\right)\left(2^m-1\right),2^n-1\right)&>\gcd\left(2^m-1,2^n-1\right) \hspace{12mm} &&\text{by }\textbf{Claim 1} \\
+\gcd\left(2^{2m}-1,2^n-1\right)&>\gcd\left(2^m-1,2^n-1\right) \\
+2^{\gcd(2m,n)}-1&>2^{\gcd(m,n)}-1 &&\text{by }\textbf{Claim 2} \\
+\gcd(2m,n)&>\gcd(m,n),
+\end{align*}</cmath>
+which implies that <math>n</math> must have more factors of <math>2</math> than <math>m</math> does.
+
+We construct the following table for the first <math>30</math> positive integers:
+<cmath>\begin{array}{c|c|c}
+&& \\ [-2.5ex]
+\boldsymbol{\#}\textbf{ of Factors of }\boldsymbol{2} & \textbf{Numbers} & \textbf{Count} \\
+\hline
+&& \\ [-2.25ex] 
+0 & 1,3,5,7,9,11,13,15,17,19,21,23,25,27,29 & 15 \\ 
+&& \\ [-2.25ex] 
+1 & 2,6,10,14,18,22,26,30 & 8 \\
+&& \\ [-2.25ex] 
+2 & 4,12,20,28 & 4 \\   
+&& \\ [-2.25ex] 
+3 & 8,24 & 2 \\ 
+&& \\ [-2.25ex] 
+4 & 16 & 1 \\
+\end{array}</cmath>
+To count the ordered pairs <math>(m,n),</math> we perform casework on the number of factors of <math>2</math> that <math>m</math> has:
+<ol style="margin-left: 1.5em;">
+  <li>If <math>m</math> has <math>0</math> factors of <math>2,</math> then <math>m</math> has <math>15</math> options and <math>n</math> has <math>8+4+2+1=15</math> options. So, this case has <math>15\cdot15=225</math> ordered pairs.</li><p>
+  <li>If <math>m</math> has <math>1</math> factor of <math>2,</math> then <math>m</math> has <math>8</math> options and <math>n</math> has <math>4+2+1=7</math> options. So, this case has <math>8\cdot7=56</math> ordered pairs.</li><p>
+  <li>If <math>m</math> has <math>2</math> factors of <math>2,</math> then <math>m</math> has <math>4</math> options and <math>n</math> has <math>2+1=3</math> options. So, this case has <math>4\cdot3=12</math> ordered pairs.</li><p>
+  <li>If <math>m</math> has <math>3</math> factors of <math>2,</math> then <math>m</math> has <math>2</math> options and <math>n</math> has <math>1</math> option. So, this case has <math>2\cdot1=2</math> ordered pairs.</li>
+</ol>
+Together, the answer is <math>225+56+12+2=\boxed{295}.</math>
+
+~Lcz ~MRENTHUSIASM

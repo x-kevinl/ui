@@ -1,0 +1,5 @@
+==Problem==
+
+Keiko tosses one penny and Ephraim tosses two pennies. The probability that Ephraim gets the same number of heads that Keiko gets is
+
+$ \text{(A)}\ \frac{1}{4}\qquad\text{(B)}\ \frac{3}{8}\qquad\text{(C)}\ \frac{1}{2}\qquad\text{(D)}\ \frac{2}{3}\qquad\text{(E)}\ \frac{3}{4} $

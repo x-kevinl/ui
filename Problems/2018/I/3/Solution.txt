@@ -1,0 +1,22 @@
+==Solution 1==
+
+We have <math>2+4\cdot 2</math> cases total.
+
+The two are all red and all green. Then, you have 4 of one, 1 of other. 3 of one, 2 of other. 2 of one, 3 of other. 1 of one, 4 of other. Then flip the order, so times two.
+
+Obviously the denominator is <math>10\cdot 9\cdot 8\cdot 7\cdot 6</math>, since we are choosing a card without replacement.
+
+Then, we have for the numerator for the two of all red and green: <cmath>5\cdot 4\cdot 3\cdot 2\cdot 1.</cmath>
+
+For the 4 and 1, we have: <cmath>5\cdot 4\cdot 3\cdot 2\cdot 5.</cmath>
+
+For the 3 and 2, we have: <cmath>5\cdot 4\cdot 3\cdot 5\cdot 4.</cmath>
+
+For the 2 and 3, we have: <cmath>5\cdot 4\cdot 5\cdot 4\cdot 3.</cmath>
+
+For the 1 and 4, we have: <cmath>5\cdot 5\cdot 4\cdot 3\cdot 2.</cmath>
+
+Adding up and remembering to double all of them, since they can be reversed and the 5's can be red or green, we get, after simplifying: <math>\dfrac{31}{126}</math>
+
+Thus the answer is <math>31 + 126 = \boxed{157}</math>.
+-gorefeebuddie

@@ -1,0 +1,36 @@
+==Solution 1 (graph theory)==
+Note that of the $12$ cities, $6$ of them ($2$ on the top, $2$ on the bottom, and $1$ on each side) have $3$ edges coming into/out of them (i.e., in graph theory terms, they have degree $3$). Therefore, at least $1$ edge connecting to each of these cities cannot be used. Additionally, the same applies to the start and end points, since we don't want to return to them. Thus there are $6+2=8$ vertices that we know have $1$ unused edge, and we have $17-13=4$ unused edges to work with (since there are $17$ edges in total, and we must use exactly $13$ of them). It is not hard to find that there is only one configuration satisfying these conditions:
+
+''Note:'' $\text{X}$s represent unused edges.
+
+<asy>
+import olympiad;
+unitsize(50);
+for (int i = 0; i < 3; ++i) {
+for (int j = 0; j < 4; ++j) {
+pair A = (j,i);
+dot(A);
+
+}
+}
+for (int i = 0; i < 3; ++i) {
+for (int j = 0; j < 4; ++j) {
+if (j != 3) {
+draw((j,i)--(j+1,i));
+}
+if (i != 2) {
+draw((j,i)--(j,i+1));
+}
+}
+}
+label("$A$", (0,2), W);
+label("$L$", (3,0), E); 
+label("X", (0, 1.5));
+label("X", (1.5, 2));
+label("X", (1.5, 0));
+label("X", (3, 0.5));
+label("O", (1,1), NE);
+label("O", (2,1), NE);
+</asy>
+
+Observe that at each of the $2$ cities marked with an $\text{O}$ on a path, there are $2$ possibilities: we can either continue straight and cross back over the path later, or we can make a left turn, then turn right when we approach the junction again. This gives us a total of $2\cdot 2 = \boxed{\textbf{(E) } 4}$ valid paths.

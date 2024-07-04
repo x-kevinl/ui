@@ -1,0 +1,10 @@
+==Solution 1 (Algebra)==
+Note that $$4000\cdot \left(\frac{2}{5}\right)^n=\left(2^5\cdot5^3\right)\cdot \left(\frac{2}{5}\right)^n=2^{5+n}\cdot5^{3-n}.$$
+Since this expression is an integer, we need: 
+<ol style="margin-left: 1.5em;">
+  <li>$5+n\geq0,$ from which $n\geq-5.$</li><p>
+  <li>$3-n\geq0,$ from which $n\leq3.$</li><p>
+</ol>
+Taking the intersection gives $-5\leq n\leq3.$ So, there are $3-(-5)+1=\boxed{\textbf{(E) }9}$ integer values of $n.$
+
+~MRENTHUSIASM

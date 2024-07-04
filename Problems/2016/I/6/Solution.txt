@@ -1,0 +1,32 @@
+==Solution 1==
+Suppose we label the angles as shown below.
+<asy>
+size(150);
+import olympiad;
+real c=8.1,a=5*(c+sqrt(c^2-64))/6,b=5*(c-sqrt(c^2-64))/6;
+pair A=(0,0),B=(c,0),D=(c/2,-sqrt(25-(c/2)^2));
+pair C=intersectionpoints(circle(A,b),circle(B,a))[0];
+pair I=incenter(A,B,C);
+pair L=extension(C,D,A,B);
+dot(I^^A^^B^^C^^D);
+draw(C--D);
+path midangle(pair d,pair e,pair f) {return e--e+((f-e)/length(f-e)+(d-e)/length(d-e))/2;}
+draw(A--B--D--cycle);
+draw(circumcircle(A,B,D));
+draw(A--C--B);
+draw(A--I--B^^C--I);
+draw(incircle(A,B,C));
+label("$A$",A,SW,fontsize(8));
+label("$B$",B,SE,fontsize(8));
+label("$C$",C,N,fontsize(8));
+label("$D$",D,S,fontsize(8));
+label("$I$",I,NE,fontsize(8));
+label("$L$",L,SW,fontsize(8));
+label("$\alpha$",A,5*dir(midangle(C,A,I)),fontsize(8));
+label("$\alpha$",A,5*dir(midangle(I,A,B)),fontsize(8));
+label("$\beta$",B,12*dir(midangle(A,B,I)),fontsize(8));
+label("$\beta$",B,12*dir(midangle(I,B,C)),fontsize(8));
+label("$\gamma$",C,5*dir(midangle(A,C,I)),fontsize(8));
+label("$\gamma$",C,5*dir(midangle(I,C,B)),fontsize(8));
+</asy>
+As <math>\angle BCD</math> and <math>\angle BAD</math> intercept the same arc, we know that <math>\angle BAD=\gamma</math>. Similarly, <math>\angle ABD=\gamma</math>. Also, using <math>\triangle ICA</math>, we find <math>\angle CIA=180-\alpha-\gamma</math>. Therefore, <math>\angle AID=\alpha+\gamma</math>. Therefore, <math>\angle DAI=\angle AID=\alpha+\gamma</math>, so <math>\triangle AID</math> must be isosceles with <math>AD=ID=5</math>. Similarly, <math>BD=ID=5</math>. Then <math>\triangle DLB \sim \triangle ALC</math>, hence <math>\frac{AL}{AC} = \frac{3}{5}</math>. Also, <math>AI</math> bisects <math>\angle LAC</math>, so by the Angle Bisector Theorem <math>\frac{CI}{IL} =\frac{AC}{AL}= \frac{5}{3}</math>. Thus <math>CI = \frac{10}{3}</math>, and the answer is <math>\boxed{013}</math>.

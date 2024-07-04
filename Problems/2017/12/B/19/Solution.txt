@@ -1,0 +1,11 @@
+==Solution 1==
+
+We will consider this number $\bmod\ 5$ and $\bmod\ 9$. By looking at the last digit, it is obvious that the number is $\equiv 4\bmod\ 5$. To calculate the number $\bmod\ 9$, note that
+
+$$123456\cdots 4344 \equiv 1+2+3+4+5+6+7+8+9+(1+0)+(1+1)+\cdots+(4+3)+(4+4) \equiv 1+2+\cdots+44 \bmod\ 9,$$
+
+so it is equivalent to
+
+$$\frac{44\cdot 45}{2} = 22\cdot 45 \equiv 0\bmod\ 9.$$
+
+Let $x$ be the remainder when this number is divided by $45$. We know that $x\equiv 0 \pmod {9}$ and $x\equiv 4 \pmod {5}$, so by the Chinese remainder theorem, since $9(-1)\equiv 1 \pmod{5}$, $x\equiv 5(0)+9(-1)(4) \pmod {5\cdot 9}$, or $x\equiv -36 \equiv 9 \pmod {45}$. So the answer is $\boxed {\textbf {(C)}}$.

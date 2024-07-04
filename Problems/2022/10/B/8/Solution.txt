@@ -1,0 +1,14 @@
+==Solution 1 (Casework)==
+We apply casework to this problem. The only sets that contain two multiples of seven are those for which:
+
+<ol style="margin-left: 1.5em;">
+  <li>The multiples of $7$ are $1\pmod{10}$ and $8\pmod{10}.$ That is, the first and eighth elements of such sets are multiples of $7.$</li><p>
+The first element is $1+10k$ for some integer $0\leq k\leq99.$ It is a multiple of $7$ when $k=2,9,16,\ldots,93.$
+  <li>The multiples of $7$ are $2\pmod{10}$ and $9\pmod{10}.$ That is, the second and ninth elements of such sets are multiples of $7.$</li><p>
+The second element is $2+10k$ for some integer $0\leq k\leq99.$ It is a multiple of $7$ when $k=4,11,18,\ldots,95.$
+  <li>The multiples of $7$ are $3\pmod{10}$ and $0\pmod{10}.$ That is, the third and tenth elements of such sets are multiples of $7.$</li><p>
+The third element is $3+10k$ for some integer $0\leq k\leq99.$ It is a multiple of $7$ when $k=6,13,20,\ldots,97.$
+</ol>
+Each case has $\left\lfloor\frac{100}{7}\right\rfloor=14$ sets. Therefore, the answer is $14\cdot3=\boxed{\textbf{(B)}\ 42}.$
+
+~MRENTHUSIASM

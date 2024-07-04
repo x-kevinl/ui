@@ -1,0 +1,44 @@
+==Solution 1 (Similar Triangles and PoP)==
+
+Start off by (of course) drawing a diagram! Let <math>I</math> and <math>O</math> be the incenter and circumcenters of triangle <math>ABC</math>, respectively. Furthermore, extend <math>AI</math> to meet <math>BC</math> at <math>L</math> and the circumcircle of triangle <math>ABC</math> at <math>D</math>.
+
+<asy>
+size(300);
+import olympiad;
+real c=8.1,a=5*(c+sqrt(c^2-64))/6,b=5*(c-sqrt(c^2-64))/6;
+pair B=(0,0),C=(c,0), D = (c/2-0.01, -2.26);
+pair A = (c/3,8.65*c/10);
+draw(circumcircle(A,B,C));
+pair I=incenter(A,B,C);
+pair O=circumcenter(A,B,C);
+pair L=extension(A,I,C,B);
+dot(I^^O^^A^^B^^C^^D^^L);
+draw(A--L);
+draw(A--D);
+path midangle(pair d,pair e,pair f) {return e--e+((f-e)/length(f-e)+(d-e)/length(d-e))/2;}
+draw(C--B--D--cycle);
+draw(A--C--B);
+draw(A--B);
+draw(B--I--C^^A--I);
+draw(incircle(A,B,C));
+label("$B$",B,SW);
+label("$C$",C,SE);
+label("$A$",A,N);
+label("$D$",D,S);
+label("$I$",I,NW);
+label("$L$",L,SW);
+label("$O$",O,E);
+label("$\alpha$",B,5*dir(midangle(A,B,I)),fontsize(8));
+label("$\alpha$",B,5*dir(midangle(I,B,C)),fontsize(8));
+label("$\beta$",C,12*dir(midangle(B,C,I)),fontsize(8));
+label("$\beta$",C,12*dir(midangle(I,C,A)),fontsize(8));
+label("$\gamma$",A,5*dir(midangle(B,A,I)),fontsize(8));
+label("$\gamma$",A,5*dir(midangle(I,A,C)),fontsize(8));
+
+draw(I--O);
+draw(A--O);
+draw(rightanglemark(A,I,O));
+</asy>
+
+
+We'll tackle the initial steps of the problem in two different manners, both leading us to the same final calculations.

@@ -1,0 +1,7 @@
+== Solution 1 ==
+Let the two disjoint subsets be <math>A</math> and <math>B</math>, and let <math>C = \mathcal{S}-(A+B)</math>. For each <math>i \in \mathcal{S}</math>, either <math>i \in A</math>, <math>i \in B</math>, or <math>i \in C</math>. So there are <math>3^{10}</math> ways to organize the elements of <math>S</math> into disjoint <math>A</math>, <math>B</math>, and <math>C</math>. 
+
+However, there are <math>2^{10}</math> ways to organize the elements of <math>\mathcal{S}</math> such that <math>A = \emptyset</math> and <math>\mathcal{S} = B+C</math>, and there are <math>2^{10}</math> ways to organize the elements of <math>\mathcal{S}</math> such that <math>B = \emptyset</math> and <math>\mathcal{S} = A+C</math>. 
+But, the combination such that <math>A = B = \emptyset</math> and <math>\mathcal{S} = C</math> is counted twice. 
+
+Thus, there are <math>3^{10}-2\cdot2^{10}+1</math> ordered pairs of sets <math>(A,B)</math>. But since the question asks for the number of unordered sets <math>\{ A,B \}</math>, <math>n = \frac{1}{2}(3^{10}-2\cdot2^{10}+1) = 28501 \equiv \boxed{501} \pmod{1000}</math>.

@@ -1,0 +1,13 @@
+== Solution 1 ==
+Note that the fractions of the form $\frac{1}{2^a3^b5^c},$ where $a,b,$ and $c$ are nonnegative integers, span all terms of the infinite sum.
+
+Therefore, the infinite sum becomes
+$$\begin{align*}
+\sum_{a=0}^{\infty}\sum_{b=0}^{\infty}\sum_{c=0}^{\infty}\frac{1}{2^a3^b5^c} &= \left(\sum_{a=0}^{\infty}\frac{1}{2^a}\right)\cdot\left(\sum_{b=0}^{\infty}\frac{1}{3^b}\right)\cdot\left(\sum_{c=0}^{\infty}\frac{1}{5^c}\right) \\
+&= \frac{1}{1-\frac12}\cdot\frac{1}{1-\frac13}\cdot\frac{1}{1-\frac15} \\
+&= 2\cdot\frac32\cdot\frac54 \\
+&= \frac{15}{4}
+\end{align*}$$
+by a product of geometric series, from which the answer is $15+4=\boxed{\textbf{(C) } 19}.$
+
+~athens2016 ~MRENTHUSIASM

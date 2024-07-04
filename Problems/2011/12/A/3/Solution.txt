@@ -1,0 +1,2 @@
+== Solution 1 ==
+To find how many small bottles we need, we can simply divide $500$ by $35$. This simplifies to $\frac{100}{7}=14 \frac{2}{7}. $ Since the answer must be an integer greater than $14$, we have to round up to $15$ bottles, or $\boxed{\textbf{E}}$

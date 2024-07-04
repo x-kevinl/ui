@@ -1,0 +1,31 @@
+== Solution 1 (Trigonometry) ==
+Let one of the mats be $ABCD$, and the center be $O$ as shown: 
+
+<asy>unitsize(8mm);
+defaultpen(linewidth(.8)+fontsize(8));
+draw(Circle((0,0),4));
+path mat=(-2.687,-1.5513)--(-2.687,1.5513)--(-3.687,1.5513)--(-3.687,-1.5513)--cycle;
+draw(mat);
+draw(rotate(60)*mat);
+draw(rotate(120)*mat);
+draw(rotate(180)*mat);
+draw(rotate(240)*mat);
+draw(rotate(300)*mat);
+label("\(x\)",(-1.55,2.1),E);
+label("\(x\)",(0.03,1.5),E);
+label("\(A\)",(-3.6,2.5513),E);
+label("\(B\)",(-3.15,1.35),E);
+label("\(C\)",(0.05,3.20),E);
+label("\(D\)",(-0.75,4.15),E);
+label("\(O\)",(0.00,-0.10),E);
+label("\(1\)",(-0.1,3.8),S);
+label("\(4\)",(-0.4,2.2),S);
+draw((0,0)--(0,3.103));
+draw((0,0)--(-2.687,1.5513));
+draw((0,0)--(-0.5,3.9686));</asy>
+
+Since there are $6$ mats, $\Delta BOC$ is [[equilateral]] (the hexagon with side length $x$ is regular). So, $BC=CO=x$. Also, $\angle OCD = \angle OCB + \angle BCD = 60^\circ+90^\circ=150^\circ$. 
+
+By the [[Law of Cosines]]: $4^2=1^2+x^2-2\cdot1\cdot x \cdot \cos(150^\circ) \Rightarrow x^2 + x\sqrt{3} - 15 = 0 \Rightarrow x = \frac{-\sqrt{3}\pm 3\sqrt{7}}{2}$. 
+
+Since $x$ must be positive, $x = \frac{3\sqrt{7}-\sqrt{3}}{2} \Rightarrow (C)$.

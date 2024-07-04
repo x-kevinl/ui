@@ -1,0 +1,4 @@
+==Solution==
+
+We try to find the worst case scenario where we can find the maximum number of balls that can be drawn while getting $<15$ of each color by applying the [[pigeonhole principle]] and through this we get a perfect guarantee. 
+Namely, we can draw up to $14$ red balls, $14$ green balls, $14$ yellow balls, $13$ blue balls, $11$ white balls, and $9$ black balls, for a total of $75$ balls, without drawing $15$ balls of any one color. Drawing one more ball guarantees that we will get $15$ balls of one color — either red, green, or yellow. Thus, the answer is $75 + 1 = \boxed{\textbf{(B) } 76}$.

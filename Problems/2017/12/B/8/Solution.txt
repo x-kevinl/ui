@@ -1,0 +1,4 @@
+==Solution 1: Cross-Multiplication==
+Let $a$ be the short side of the rectangle, and $b$ be the long side of the rectangle. The diagonal, therefore, is $\sqrt{a^2 + b^2}$. We can get the equation $\frac{a}{b} = \frac{b}{\sqrt{a^2 + b^2}}$. Cross-multiplying, we get $a\sqrt{a^2 + b^2} = b^2$. Squaring both sides of the equation, we get $a^2 (a^2 + b^2) = b^4$, which simplifies to $a^4 + a^2b^2 - b^4 = 0$. Solving for a quadratic in $a^2$, using the quadratic formula we get $a^2 = \frac{-b^2 \pm \sqrt{5b^4}}{2}$ which gives us $\frac{a^2}{b^2} = \frac{-1 \pm \sqrt{5}}{2}$. We know that the square of the ratio must be positive (the square of any real number is positive), so the solution is $\boxed{\textbf{(C)} \frac{\sqrt{5}-1}{2}}$.
+
+Solution by: vedadehhc

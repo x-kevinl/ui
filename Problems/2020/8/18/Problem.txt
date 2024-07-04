@@ -1,0 +1,7 @@
+==Problem==
+Rectangle $ABCD$ is inscribed in a semicircle with diameter $\overline{FE},$ as shown in the figure. Let $DA=16,$ and let $FD=AE=9.$ What is the area of $ABCD?$
+
+<asy> 
+draw(arc((0,0),17,180,0)); draw((-17,0)--(17,0)); fill((-8,0)--(-8,15)--(8,15)--(8,0)--cycle, 1.5*grey); draw((-8,0)--(-8,15)--(8,15)--(8,0)--cycle); dot("$A$",(8,0), 1.25*S); dot("$B$",(8,15), 1.25*N); dot("$C$",(-8,15), 1.25*N); dot("$D$",(-8,0), 1.25*S); dot("$E$",(17,0), 1.25*S); dot("$F$",(-17,0), 1.25*S); label("$16$",(0,0),N); label("$9$",(12.5,0),N); label("$9$",(-12.5,0),N); 
+</asy>
+$\textbf{(A) }240 \qquad \textbf{(B) }248 \qquad \textbf{(C) }256 \qquad \textbf{(D) }264 \qquad \textbf{(E) }272$

@@ -1,0 +1,2 @@
+== Solution ==
+Rotating square $ABCD$ counterclockwise $45^\circ$ so that the line of symmetry $BD$ is a vertical line makes it easier to see that $\boxed{\textbf{(D)}\ 4}$ squares need to be colored to match its corresponding square.

@@ -1,0 +1,2 @@
+==Solution 1==
+After paying his taxes, he has $0.8*0.9=0.72$ of his earnings left. Since $10500$ is $0.28$ of his income, he got a total of $\frac{10500}{0.28}=37500\  \mathrm{(D)}$.

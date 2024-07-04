@@ -1,0 +1,17 @@
+==Problem==
+A round table has radius $4$. Six rectangular place mats are placed on the table. Each place mat has width $1$ and length $x$ as shown. They are positioned so that each mat has two corners on the edge of the table, these two corners being end points of the same side of length $x$. Further, the mats are positioned so that the inner corners each touch an inner corner of an adjacent mat. What is $x$?
+
+<asy>unitsize(4mm);
+defaultpen(linewidth(.8)+fontsize(8));
+draw(Circle((0,0),4));
+path mat=(-2.687,-1.5513)--(-2.687,1.5513)--(-3.687,1.5513)--(-3.687,-1.5513)--cycle;
+draw(mat);
+draw(rotate(60)*mat);
+draw(rotate(120)*mat);
+draw(rotate(180)*mat);
+draw(rotate(240)*mat);
+draw(rotate(300)*mat);
+label("\(x\)",(-1.55,2.1),E);
+label("\(1\)",(-0.5,3.8),S);</asy>
+
+$\mathrm{(A)}\ 2\sqrt{5}-\sqrt{3}\qquad\mathrm{(B)}\ 3\qquad\mathrm{(C)}\ \frac{3\sqrt{7}-\sqrt{3}}{2}\qquad\mathrm{(D)}\ 2\sqrt{3}\qquad\mathrm{(E)}\ \frac{5+2\sqrt{3}}{2}$

@@ -1,0 +1,93 @@
+==Solution 1==
+First, let's consider a section <math>\mathcal{P} </math> of the solids, along the axis.
+By some 3D-Geomerty thinking, we can simply know that the axis crosses the sphere center. So, that is saying, the <math>\mathcal{P} </math> we took crosses one of the equator of the sphere.
+
+Here I drew two graphs, the first one is the case when <math>T</math> is internally tangent to <math>S</math>,
+
+<asy>
+unitsize(0.35cm);
+pair O = (0, 0);
+real r1 = 11;
+real r2 = 3;
+draw(circle(O, r1));
+pair A = O + (0, -r1);
+pair B = O + (0, r1);
+draw(A--B);
+pair C = O + (0, -1.25*r1);
+pair D = O + (0, 1.25*r1);
+draw(C--D, dashed);
+dot(O);
+pair E = (2 * r2, -sqrt((r1 - r2) * (r1 - r2) - 4 * r2 * r2));
+pair F = (0, -sqrt((r1 - r2) * (r1 - r2) - 4 * r2 * r2));
+pair G = (-r2 * O + r1 * E) / (r1 - r2);
+pair H = (-r2 * O + r1 * F) / (r1 - r2);
+draw(circle(E, r2));
+draw(circle((-2 * r2, -sqrt((r1 - r2) * (r1 - r2) - 4 * r2 * r2)), r2));
+draw(O--G, dashed);
+draw(F--E, dashed);
+draw(G--H, dashed);
+label("$O$", O, SW);
+label("$A$", A, SW);
+label("$B$", B, NW);
+label("$C$", C, NW);
+label("$D$", D, SW);
+label("$E_i$", E, NE);
+label("$F_i$", F, W);
+label("$G_i$", G, SE);
+label("$H_i$", H, W);
+label("$r_i$", 0.5 * H + 0.5 * G, NE);
+label("$3$", 0.5 * E + 0.5 * G, NE);
+label("$11$", 0.5 * O + 0.5 * G, NE);
+</asy>
+
+and the second one is when <math>T</math> is externally tangent to <math>S</math>.
+
+<asy>
+unitsize(0.35cm);
+pair O = (0, 0);
+real r1 = 11;
+real r2 = 3;
+draw(circle(O, r1));
+pair A = O + (0, -r1);
+pair B = O + (0, r1);
+draw(A--B);
+pair C = O + (0, -1.25*(r1 + r2));
+pair D = O + (0, 1.25*r1);
+draw(C--D, dashed);
+dot(O);
+pair E = (2 * r2, -sqrt((r1 + r2) * (r1 + r2) - 4 * r2 * r2));
+pair F = (0, -sqrt((r1 + r2) * (r1 + r2) - 4 * r2 * r2));
+pair G = (r2 * O + r1 * E) / (r1 + r2);
+pair H = (r2 * O + r1 * F) / (r1 + r2);
+draw(circle(E, r2));
+draw(circle((-2 * r2, -sqrt((r1 + r2) * (r1 + r2) - 4 * r2 * r2)), r2));
+draw(O--E, dashed);
+draw(F--E, dashed);
+draw(G--H, dashed);
+label("$O$", O, SW);
+label("$A$", A, SW);
+label("$B$", B, NW);
+label("$C$", C, NW);
+label("$D$", D, SW);
+label("$E_o$", E, NE);
+label("$F_o$", F, SW);
+label("$G_o$", G, S);
+label("$H_o$", H, W);
+label("$r_o$", 0.5 * H + 0.5 * G, NE);
+label("$3$", 0.5 * E + 0.5 * G, NE);
+label("$11$", 0.5 * O + 0.5 * G, NE);
+</asy>
+
+For both graphs, point <math>O</math> is the center of sphere <math>S</math>, and points <math>A</math> and <math>B</math> are the intersections of the sphere and the axis. Point <math>E</math> (ignoring the subscripts) is one of the circle centers of the intersection of torus <math>T</math> with section <math>\mathcal{P} </math>. Point <math>G</math> (again, ignoring the subscripts) is one of the tangents between the torus <math>T</math> and sphere <math>S</math> on section <math>\mathcal{P} </math>. <math>EF\bot CD</math>, <math>HG\bot CD</math>.
+
+And then, we can start our calculation.
+
+In both cases, we know <math>\Delta OEF\sim \Delta OGH\Longrightarrow \frac{EF}{OE} =\frac{GH}{OG}</math>.
+
+Hence, in the case of internal tangent, <math>\frac{E_iF_i}{OE_i} =\frac{G_iH_i}{OG_i}\Longrightarrow \frac{6}{11-3} =\frac{r_i}{11}\Longrightarrow r_i=\frac{33}{4} </math>.
+
+In the case of external tangent, <math>\frac{E_oF_o}{OE_o} =\frac{G_oH_o}{OG_o}\Longrightarrow \frac{6}{11+3} =\frac{r_o}{11}\Longrightarrow r_o=\frac{33}{7} </math>.
+
+Thereby, <math>r_i-r_o=\frac{33}{4}-\frac{33}{7}=\frac{99}{28}</math>. And there goes the answer, <math>99+28=\boxed{\mathbf{127} }</math>
+
+~Prof_Joker

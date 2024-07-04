@@ -1,0 +1,3 @@
+== Solution ==
+
+When <math>1</math> is subtracted from a binary number, the number of digits will remain constant if and only if the original number ended in <math>10.</math> Therefore, every subtraction involving two numbers from <math>B</math> will necessarily involve exactly one number ending in <math>10.</math> To solve the problem, then, we can simply count the instances of such numbers. With the <math>10</math> in place, the seven remaining <math>1</math>'s can be distributed in any of the remaining <math>11</math> spaces, so the answer is <math>{11 \choose 7} = \boxed{330}</math>.

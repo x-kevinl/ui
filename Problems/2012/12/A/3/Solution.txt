@@ -1,0 +1,2 @@
+==Solution==
+The first box has volume $2\times3\times5=30\text{ cm}^3$, and the second has volume $(2\times2)\times(3\times3)\times(5)=180\text{ cm}^3$.  The second has a volume that is $6$ times greater, so it holds $6\times40=\boxed{\textbf{(D)}\ 240}$ grams.

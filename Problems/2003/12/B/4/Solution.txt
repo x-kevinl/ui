@@ -1,0 +1,3 @@
+==Solution==
+
+Since the swath Moe actually mows is $24$ inches, or $2$ feet wide, he mows $10000$ square feet in one hour. His lawn has an area of $13500$, so it will take Moe $1.35$ hours to finish mowing the lawn. Thus the answer is $\boxed{\textbf{(C) } 1.35}$.

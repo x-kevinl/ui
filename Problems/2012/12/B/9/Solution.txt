@@ -1,0 +1,2 @@
+==Solution 1==
+She walks at a rate of $x$ units per second to travel a distance $y$. As $vt=d$, we find $60x=y$ and $24*(x+k)=y$, where $k$ is the speed of the escalator. Setting the two equations equal to each other, $60x=24x+24k$, which means that $k=1.5x$. Now we divide $60$ by $1.5$ because you add the speed of the escalator but remove the walking, leaving the final answer that it takes to ride the escalator alone as $\boxed{\textbf{(B)}\ 40}$

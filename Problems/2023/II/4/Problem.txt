@@ -1,0 +1,8 @@
+== Problem ==
+Let <math>x,y,</math> and <math>z</math> be real numbers satisfying the system of equations
+<cmath>\begin{align*}
+xy + 4z &= 60 \\
+yz + 4x &= 60 \\
+zx + 4y &= 60.
+\end{align*}</cmath>
+Let <math>S</math> be the set of possible values of <math>x.</math> Find the sum of the squares of the elements of <math>S.</math>

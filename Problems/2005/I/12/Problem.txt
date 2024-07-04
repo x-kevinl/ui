@@ -1,0 +1,4 @@
+== Problem ==
+For [[positive integer]]s <math> n, </math> let <math> \tau (n) </math> denote the number of positive integer [[divisor]]s of <math> n, </math> including 1 and <math> n. </math> For example, <math> \tau (1)=1 </math> and <math> \tau(6) =4. </math> Define <math> S(n) </math> by <math> S(n)=\tau(1)+ \tau(2) + \cdots + \tau(n). </math> Let <math> a </math> denote the number of positive integers <math> n \leq 2005 </math> with <math> S(n) </math> [[odd integer | odd]], and let <math> b </math> denote the number of positive integers <math> n \leq 2005 </math> with <math> S(n) </math> [[even integer | even]]. Find <math> |a-b|. </math>
+
+__TOC__

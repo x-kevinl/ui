@@ -1,0 +1,4 @@
+==Problem==
+Four friends do yardwork for their neighbors over the weekend, earning $\$15, \$20, \$25,$ and $\$40,$ respectively. They decide to split their earnings equally among themselves. In total, how much will the friend who earned $\$40$ give to the others?
+
+$\textbf{(A) }\$5 \qquad \textbf{(B) }\$10 \qquad \textbf{(C) }\$15 \qquad \textbf{(D) }\$20 \qquad \textbf{(E) }\$25$

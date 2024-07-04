@@ -1,0 +1,13 @@
+==Solution 1==
+
+First consider the area of the two figures.  Assume that the pegs are $1$ unit apart.  Divide region I into two triangles by drawing a horizontal line on the second row from the top.  Shifting the bottom triangle up one unit will create a square, and this square has the same area as region I.  Thus, region I has an area of $1$ square unit.
+
+Draw a horizontal line on figure II on the fourth row from the top to divide the figure into two triangles.  Temporarily move the top of the higher triangle one peg to the left.  This will preserve the area of the triangle, as you are keeping both the height and the base of the triangle equal.  Now you have two congruent triangles that are half of the area of a unit square.  Thus, region II also has an area of $1$ square unit, and the areas are equal.
+
+To compare the perimeters, note that region I has two different side lengths: two sides are $1$ unit apart, and the other two sides are $\sqrt{2}$ apart, as they are the diagonal of a unit square.  The total perimeter is $2 + 2\sqrt{2}$.
+
+Note that region II has three different side lengths.  One side is a unit length, while two sides are $\sqrt{2}$.  For the perimeters to be equal, the last side must be of unit length.  But the last side in region II is clearly longer than $1$ unit, so we can say that the perimeter of region II is greater than the perimeter of region I without calculating it.
+
+Thus, the correct answer is $\boxed{E}$.
+
+(The perimeter of region II is $1 + 2\sqrt{2} + \sqrt{5}$, since the last side is the diagonal of a 2 by 1 rectangle, and can be found with the pythagorean theorem as $\sqrt{2^2 + 1^2} = \sqrt{5}$.  This does not need to be found for this problem, as you can do a one-to-one correspondance with three of the four sides of the figure as outlined, and just compare the last remaining side of each figure.)

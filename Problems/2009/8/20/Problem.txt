@@ -1,0 +1,13 @@
+==Problem==
+How many non-congruent triangles have vertices at three of the eight points in the array shown below?
+
+<asy>dot((0,0));
+dot((.5,.5));
+dot((.5,0));
+dot((.0,.5));
+dot((1,0));
+dot((1,.5));
+dot((1.5,0));
+dot((1.5,.5));</asy>
+
+$ \textbf{(A)}\ 5 \qquad \textbf{(B)}\ 6 \qquad \textbf{(C)}\ 7 \qquad \textbf{(D)}\ 8 \qquad \textbf{(E)}\ 9$

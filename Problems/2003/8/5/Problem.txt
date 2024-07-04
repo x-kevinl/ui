@@ -1,0 +1,4 @@
+==Problem==
+If $20\%$ of a number is $12$, what is $30\%$ of the same number? 
+
+$ \textbf{(A)}\ 15\qquad\textbf{(B)}\ 18\qquad\textbf{(C)}\ 20\qquad\textbf{(D)}\ 24\qquad\textbf{(E)}\ 30 $

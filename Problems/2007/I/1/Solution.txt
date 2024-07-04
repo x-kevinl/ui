@@ -1,0 +1,3 @@
+== Solution ==
+The [[prime factorization]] of <math>24</math> is <math>2^3\cdot3</math>. Thus, each square must have at least <math>3</math> factors of <math>2</math> and <math>1</math> factor of <math>3</math> and its square root must have <math>2</math> factors of <math>2</math> and <math>1</math> factor of <math>3</math>.
+This means that each square is in the form <math>(12c)^2</math>, where <math>12 c</math> is a positive integer less than <math>\sqrt{10^6}</math>. There are <math>\left\lfloor \frac{1000}{12}\right\rfloor = \boxed{083}</math> solutions.

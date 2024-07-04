@@ -1,0 +1,9 @@
+==Solution==
+
+Let $r$ be the radius of both the cone and the sphere of ice cream, and let $h$ be the height of the cone. The cone can hold a maximum of $\pi r^2h/3$ melted ice cream. The volume of the frozen ice cream is $4\pi r^3/3.$ The volume of the melted ice cream is $75 \%$ of that, which is $\pi r^3.$ Since the melted ice cream fills the cone exactly,
+
+$$\begin{align*}\pi r^3&=\pi r^2h/3\\
+r&=h/3\\
+3&=h/r\end{align*}$$
+
+Then the ratio of the cone's height to its radius is $h:r=\boxed{\textbf{(B)}\ 3:1}$

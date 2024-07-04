@@ -1,0 +1,2 @@
+==Problem 7==
+A group of clerks is assigned the task of sorting <math>1775</math> files. Each clerk sorts at a constant rate of <math>30</math> files per hour. At the end of the first hour, some of the clerks are reassigned to another task; at the end of the second hour, the same number of the remaining clerks are also reassigned to another task, and a similar assignment occurs at the end of the third hour. The group finishes the sorting in <math>3</math> hours and <math>10</math> minutes. Find the number of files sorted during the first one and a half hours of sorting.

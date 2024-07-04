@@ -1,0 +1,8 @@
+==Problem==
+In Theresa's first $8$ basketball games, she scored $7, 4, 3, 6, 8, 3, 1$ and $5$ points. In her ninth game, she scored fewer than $10$ points and her points-per-game average for the nine games was an integer. Similarly in her tenth game, she scored fewer than $10$ points and her points-per-game average for the $10$ games was also an integer. What is the product of the number of points she scored in the ninth and tenth games?
+
+$\textbf{(A)}\ 35\qquad
+\textbf{(B)}\ 40\qquad
+\textbf{(C)}\ 48\qquad
+\textbf{(D)}\ 56\qquad
+\textbf{(E)}\ 72$

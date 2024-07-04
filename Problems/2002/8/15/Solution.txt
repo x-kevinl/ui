@@ -1,0 +1,2 @@
+==Solution==
+Each polygon can be partitioned into unit squares and right triangles with sidelength $1$. Count the number of boxes enclosed by each polygon, with the unit square being $1$, and the triangle being being $.5$. A has 5, B has 5, C has 5, D has 4.5, and E has 5.5. Therefore, the polygon with the largest area is $\boxed{\textbf{(E)}\ \text{E}}$.

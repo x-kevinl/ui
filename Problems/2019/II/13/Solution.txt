@@ -1,0 +1,40 @@
+==Solution 1==
+The actual size of the diagram doesn't matter. To make calculation easier, we discard the original area of the circle, \(1\), and assume the side length of the octagon is \(2\). 
+
+Let \(r\) denote the radius of the circle, \(O\) be the center of the circle. Then:
+<cmath>r^2= 1^2 + \left(\sqrt{2}+1\right)^2= 4+2\sqrt{2}.</cmath>
+
+Now, we need to find the "D" shape, the small area enclosed by one side of the octagon and \(\frac{1}{8}\) of the circumference of the circle: 
+<cmath>
+D= \frac{1}{8} \pi r^2 - [A_1 A_2 O]=\frac{1}{8} \pi \left(4+2\sqrt{2}\right)- \left(\sqrt{2}+1\right)
+</cmath>
+
+Let \(PU\) be the height of \(\triangle A_1 A_2 P\), \(PV\) be the height of \(\triangle A_3 A_4 P\), \(PW\) be the height of \(\triangle A_6 A_7 P\). From the \(\frac{1}{7}\) and \(\frac{1}{9}\) condition we have 
+<cmath>
+\triangle P A_1 A_2= \frac{\pi r^2}{7} - D= \frac{1}{7} \pi \left(4+2\sqrt{2}\right)-\left(\frac{1}{8} \pi \left(4+2\sqrt{2}\right)- \left(\sqrt{2}+1\right)\right)
+</cmath>
+<cmath>
+\triangle P A_3 A_4= \frac{\pi r^2}{9} - D= \frac{1}{9} \pi \left(4+2\sqrt{2}\right)-\left(\frac{1}{8} \pi \left(4+2\sqrt{2}\right)- \left(\sqrt{2}+1\right)\right)
+</cmath>
+which gives \(PU= \left(\frac{1}{7}-\frac{1}{8}\right) \pi \left(4+ 2\sqrt{2}\right) + \sqrt{2}+1\) and \(PV= \left(\frac{1}{9}-\frac{1}{8}\right) \pi \left(4+ 2\sqrt{2}\right) + \sqrt{2}+1\). 
+
+Now, let \(A_1 A_2\) intersects \(A_3 A_4\) at \(X\), \(A_1 A_2\) intersects \(A_6 A_7\) at \(Y\),\(A_6 A_7\) intersects \(A_3 A_4\) at \(Z\). 
+
+Clearly, \(\triangle XYZ\) is an isosceles right triangle, with right angle at \(X\) and the height with regard to which shall be \(3+2\sqrt2\). Now \(\frac{PU}{\sqrt{2}} + \frac{PV}{\sqrt{2}} + PW = 3+2\sqrt2\) which gives:
+
+\begin{align*}
+PW&= 3+2\sqrt2-\frac{PU}{\sqrt{2}} - \frac{PV}{\sqrt{2}} \\
+&=3+2\sqrt{2}-\frac{1}{\sqrt{2}}\left(\left(\frac{1}{7}-\frac{1}{8}\right) \pi \left(4+ 2\sqrt{2}\right) + \sqrt{2}+1+\left(\frac{1}{9}-\frac{1}{8}\right) \pi \left(4+ 2\sqrt{2}\right) + \sqrt{2}+1\right)\\
+&=1+\sqrt{2}- \frac{1}{\sqrt{2}}\left(\frac{1}{7}+\frac{1}{9}-\frac{1}{4}\right)\pi\left(4+2\sqrt{2}\right)
+\end{align*}
+
+Now, we have the area for \(D\) and the area for \(\triangle P A_6 A_7\), so we add them together:
+
+\begin{align*}
+\text{Target Area} &= \frac{1}{8} \pi \left(4+2\sqrt{2}\right)- \left(\sqrt{2}+1\right) + \left(1+\sqrt{2}\right)- \frac{1}{\sqrt{2}}\left(\frac{1}{7}+\frac{1}{9}-\frac{1}{4}\right)\pi\left(4+2\sqrt{2}\right)\\
+&=\left(\frac{1}{8} - \frac{1}{\sqrt{2}}\left(\frac{1}{7}+\frac{1}{9}-\frac{1}{4}\right)\right)\text{Total Area}
+\end{align*}
+
+The answer should therefore be \(\frac{1}{8}- \frac{\sqrt{2}}{2}\left(\frac{16}{63}-\frac{16}{64}\right)=\frac{1}{8}- \frac{\sqrt{2}}{504}\). The answer is \(\boxed{504}\).
+
+'''SpecialBeing2017'''

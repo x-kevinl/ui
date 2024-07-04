@@ -1,0 +1,8 @@
+== Solution 1 (Parking Functions) == 
+For some $n$, let there be $n+1$ parking spaces counterclockwise in a circle. Consider a string of $n$ integers $c_1c_2 \ldots c_n$ each between $0$ and $n$, and let $n$ cars come into this circle so that the $i$th car tries to park at spot $c_i$, but if it is already taken then it instead keeps going counterclockwise and takes the next available spot. After this process, exactly one spot will remain empty.
+
+Then the strings of $n$ numbers between $0$ and $n-1$ that contain at least $k$ integers $<k$ for $1 \leq k \leq n$ are exactly the set of strings that leave spot $n$ empty. Also note for any string $c_1c_2 \ldots c_n$, we can add $1$ to each $c_i$ (mod $n+1$) to shift the empty spot counterclockwise, meaning for each string there exists exactly one $j$ with $0 \leq j \leq n$ so that $(c_1+j)(c_2+j) \ldots (c_n+j)$ leaves spot $n$ empty. This gives there are $\frac{(n+1)^{n}}{n+1} = (n+1)^{n-1}$ such strings. 
+
+Plugging in $n = 5$ gives $\boxed{\textbf{(E) }1296}$ such strings.
+
+~oh54321

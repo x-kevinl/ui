@@ -1,0 +1,11 @@
+==Solution 1==
+Drawing $\overline{PA}$, $\overline{PB}$, and $\overline{PC}$, $\triangle ABC$ is split into three smaller triangles. The altitudes of these triangles are given in the problem as $PQ$, $PR$, and $PS$.
+
+Summing the areas of each of these triangles and equating it to the area of the entire triangle, we get:
+
+$$\frac{s}{2} + \frac{2s}{2} + \frac{3s}{2} = \frac{s^2\sqrt{3}}{4}$$
+where $s$ is the length of a side of the equilateral triangle
+
+$$s = \boxed{\mathrm{(D) \ } 4\sqrt{3}}$$
+
+*Note - This is called [[Viviani's Theorem]].

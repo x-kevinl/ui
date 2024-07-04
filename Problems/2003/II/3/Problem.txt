@@ -1,0 +1,2 @@
+== Problem ==
+Define a <math>\text{good~word}</math> as a sequence of letters that consists only of the letters <math>A</math>, <math>B</math>, and <math>C</math> - some of these letters may not appear in the sequence - and in which <math>A</math> is never immediately followed by <math>B</math>, <math>B</math> is never immediately followed by <math>C</math>, and <math>C</math> is never immediately followed by <math>A</math>. How many seven-letter good words are there?

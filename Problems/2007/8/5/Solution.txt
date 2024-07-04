@@ -1,0 +1,15 @@
+== Solution ==
+
+Let $x$ be the number of weeks.
+
+Thus, we have the equation $50 + 35 + 15 + 16x = 500$.
+
+Simplify,
+
+$100 + 16x = 500$
+
+$16x = 400$
+
+$x = 25$
+
+The answer is $ \boxed{\textbf{(B)}\ 25} $

@@ -1,0 +1,14 @@
+== Solution 1 ==
+We compute the percentage increases:
+
+#$\frac{66 - 60}{60} = 10\%$
+#$\frac{70 - 66}{66} \approx 6\%$
+#$\frac{76-70}{70} \approx 8.6\%$
+#$\frac{78-76}{76} \approx 2.6\%$
+#$\frac{85-78}{78} \approx 9\%$
+
+The answer is $\mathrm{(A)}$. 
+
+In fact, the answer follows directly from examining the differences between each year. The largest differences are $6$ and $7$. Due to the decreased starting number of students between $2002$ and $2003$, that interval will be our answer.
+
+~edited by mobius247

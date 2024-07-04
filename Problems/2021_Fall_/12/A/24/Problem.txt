@@ -1,0 +1,4 @@
+==Problem==
+Convex quadrilateral $ABCD$ has $AB = 18, \angle{A} = 60^\circ,$ and $\overline{AB} \parallel \overline{CD}.$ In some order, the lengths of the four sides form an arithmetic progression, and side $\overline{AB}$ is a side of maximum length. The length of another side is $a.$ What is the sum of all possible values of $a$?
+
+$\textbf{(A) } 24 \qquad \textbf{(B) } 42 \qquad \textbf{(C) } 60 \qquad \textbf{(D) } 66 \qquad \textbf{(E) } 84$

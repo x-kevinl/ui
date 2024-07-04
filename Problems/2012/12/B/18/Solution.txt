@@ -1,0 +1,10 @@
+== Solution 1==
+Let $1\leq k\leq 10$. Assume that $a_1=k$. If $k<10$, the first number appear after $k$ that is greater than $k$ must be $k+1$, otherwise if it is any number $x$ larger than $k+1$, there will be neither $x-1$ nor $x+1$ appearing before $x$. Similarly, one can conclude that if $k+1<10$, the first number appear after $k+1$ that is larger than $k+1$ must be $k+2$, and so forth.
+
+On the other hand, if $k>1$, the first number appear after $k$ that is less than $k$ must be $k-1$, and then $k-2$, and so forth.
+
+To count the number of possibilities when $a_1=k$ is given, we set up $9$ spots after $k$, and assign $k-1$ of them to the numbers less than $k$ and the rest to the numbers greater than $k$. The number of ways in doing so is $9$ choose $k-1$.
+
+Therefore, when summing up the cases from $k=1$ to $10$, we get
+
+$$\binom{9}{0} + \binom{9}{1} + \cdots + \binom{9}{9} = 2^9=512 ...... \framebox{B}$$

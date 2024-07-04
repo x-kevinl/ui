@@ -1,0 +1,8 @@
+==Problem==
+If February is a month that contains Friday the $13^{\text{th}}$, what day of the week is February 1?
+
+$\textbf{(A)}\ \text{Sunday} \qquad
+\textbf{(B)}\ \text{Monday} \qquad
+\textbf{(C)}\ \text{Wednesday} \qquad
+\textbf{(D)}\ \text{Thursday}\qquad
+\textbf{(E)}\ \text{Saturday} $

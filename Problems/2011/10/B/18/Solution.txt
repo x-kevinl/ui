@@ -1,0 +1,48 @@
+==Solution 1==
+
+<center><asy>
+unitsize(10mm);
+defaultpen(linewidth(.5pt)+fontsize(10pt));
+dotfactor=3;
+
+pair A=(0,3), B=(6,3), C=(6,0), D=(0,0);
+pair M=(0.80385,3);
+
+draw(A--B--C--D--cycle);
+draw(M--C);
+draw(M--D);
+draw(anglemark(A,M,D));
+draw(anglemark(D,M,C));
+draw(anglemark(C,D,M));
+
+pair[] ps={A,B,C,D,M};
+dot(ps);
+label("$A$",A,NW);
+label("$B$",B,NE);
+label("$C$",C,SE);
+label("$D$",D,SW);
+label("$M$",M,N);
+label("$6$",midpoint(C--M),SW);
+label("$3$",midpoint(B--C),E);
+label("$6$",midpoint(C--D),S);
+
+</asy>
+</center>
+
+It is given that $\angle AMD \sim \angle CMD$. Since $\angle AMD$ and $\angle CDM$ are alternate interior angles and $\overline{AB} \parallel \overline{DC}$, $\angle AMD \cong \angle CDM \longrightarrow \angle CMD \cong \angle CDM$. Use the [[Base Angle Theorem]] to show $\overline{DC} \cong \overline{MC}$. We know that $ABCD$ is a [[rectangle]], so it follows that $\overline{MC} = 6$. We notice that $\triangle BMC$ is a $30-60-90$ triangle, and $\angle BMC = 30^{\circ}$. If we let $x$ be the measure of $\angle AMD,$ then
+$$\begin{align*}
+2x + 30 &= 180\\
+2x &= 150\\
+x &= \boxed{\textbf{(E)} 75}
+\end{align*}$$
+
+===Easier Way to Continue===
+After finding $MC = 6,$ we can continue using trigonometry as follows. 
+
+We know that $\angle{BMC} = 180-2x$ and so $\sin (180-2x) = \frac{3}{6} = \frac{1}{2}$
+
+It is obvious that $\sin (30) = \frac{1}{2}$ and so $180-2x=30.$
+
+Solving, we have $x = \boxed{75}$
+
+~mathboy282

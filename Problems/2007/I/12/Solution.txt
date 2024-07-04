@@ -1,0 +1,95 @@
+== Solution ==
+
+<asy>
+defaultpen(fontsize(12)+0.6); size(300);
+var theta=15;
+pair A=origin, B=(20,0), C=extension(A,dir(75),B/2,bisectorpoint(A,B)), Cp=rotate(theta,A)*C, Bp=rotate(theta,A)*B, X=extension(A,Bp,B,C), Y=extension(B,C,Bp,Cp);
+draw(A--B--C--A); draw(A--Bp--Cp--A, royalblue);
+markscalefactor=0.1;
+draw(rightanglemark(Y,X,A));
+dot("$A$",A,dir(210)); dot("$B$",B,dir(-20)); dot("$C$",C,up); dot("$B'$",Bp,dir(-10)); dot("$C'$",Cp,dir(100)); 
+MA("60^\circ",Bp,A,C,2); MA("15^\circ",B,A,Bp,5); MA("75^\circ",C,B,A,2); MA("30^\circ",A,C,B,4); MA("30^\circ",A,Cp,Bp,4); MA("45^\circ",A,extension(A,C,Bp,Cp),Bp,3); MA("15^\circ",C,Y,Cp,8);  MA("15^\circ",C,A,Cp,9); 
+</asy>
+
+
+=== Solution 1 ===
+Let the new triangle be <math>\triangle AB'C'</math> (<math>A</math>, the origin, is a vertex of both triangles). Let <math>\overline{B'C'}</math> intersect with <math>\overline{AC}</math> at point <math>D</math>, <math>\overline{BC}</math> intersect with <math>\overline{B'C'}</math> at <math>E</math>, and <math>\overline{BC}</math> intersect with <math>\overline{AB'}</math> at <math>F</math>. The region common to both triangles is the [[quadrilateral]] <math>ADEF</math>. Notice that <math>[ADEF] = [\triangle ADB'] - [\triangle EFB']</math>, where we let <math>[\ldots]</math> denote area. 
+
+<center>To find <math>[\triangle ADB']</math>:</center>
+
+Since <math>\angle B'AC'</math> and <math>\angle BAC</math> both have measures <math>75^{\circ}</math>, both of their [[complement]]s are <math>15^{\circ}</math>, and <math>\angle DAB' = 90 - 2(15) = 60^{\circ}</math>. We know that <math>\angle DB'A = 75^{\circ}</math>, so <math>\angle ADB' = 180 - 60 - 75 = 45^{\circ}</math>.
+
+Thus <math>\triangle ADB'</math> is a <math>45 - 60 - 75 \triangle</math>. It can be solved by drawing an [[altitude]] splitting the <math>75^{\circ}</math> angle into <math>30^{\circ}</math> and <math>45^{\circ}</math> angles, forming a <math>30-60-90</math> [[right triangle]] and a <math>45-45-90</math> isosceles right triangle. Since we know that <math>AB' = 20</math>, the base of the <math>30-60-90</math> triangle is <math>10</math>, the base of the <math>45-45-90</math> is <math>10\sqrt{3}</math>, and their common height is <math>10\sqrt{3}</math>. Thus, the total area of <math>[\triangle ADB'] = \frac{1}{2}(10\sqrt{3})(10\sqrt{3} + 10) = \boxed{150 + 50\sqrt{3}}</math>.
+
+<center>To find <math>[\triangle EFB']</math>:</center>
+
+Since <math>\triangle AFB</math> is also a <math>15-75-90</math> triangle,
+<center><math>AF = 20\sin 75 = 20 \sin (30 + 45) = 20\left(\frac{\sqrt{2} + \sqrt{6}}4\right) = 5\sqrt{2} + 5\sqrt{6}</math></center>
+and
+<center><math>FB' = AB' - AF = 20 - 5\sqrt{2} - 5\sqrt{6}</math></center>
+Since <math>[\triangle EFB'] = \frac{1}{2} (FB' \cdot EF) = \frac{1}{2} (FB') (FB' \tan 75^{\circ})</math>. With some horrendous [[algebra]], we can calculate
+<cmath>\begin{align*}
+[\triangle EFB'] &= \frac{1}{2}\tan (30 + 45) \cdot (20 - 5\sqrt{2} - 5\sqrt{6})^2 \\
+&= 25 \left(\frac{\frac{1}{\sqrt{3}} + 1}{1 - \frac{1}{\sqrt{3}}}\right) \left(8 - 2\sqrt{2} - 2\sqrt{6} - 2\sqrt{2} + 1 + \sqrt{3} - 2\sqrt{6} + \sqrt{3} + 3\right) \\
+&= 25(2 + \sqrt{3})(12 - 4\sqrt{2} - 4\sqrt{6} + 2\sqrt{3}) \\
+[\triangle EFB'] &= \boxed{- 500\sqrt{2} + 400\sqrt{3} - 300\sqrt{6} +750}.
+\end{align*}</cmath>
+
+To finish,
+<cmath>\begin{align*}
+[ADEF] &= [\triangle ADB'] - [\triangle EFB']\\
+       &= \left(150 + 50\sqrt{3}\right) - \left(-500\sqrt{2} + 400\sqrt{3} - 300\sqrt{6} + 750\right)\\
+       &=500\sqrt{2} - 350\sqrt{3} + 300\sqrt{6} - 600\\ \end{align*}</cmath>
+Hence, <math>\frac{p-q+r-s}{2} = \frac{500 + 350 + 300 + 600}2 = \frac{1750}2 = \boxed{\boxed{875}}</math>.
+
+=== Solution 2 ===
+Redefine the points in the same manner as the last time (<math>\triangle AB'C'</math>, intersect at <math>D</math>, <math>E</math>, and <math>F</math>). This time, notice that <math>[ADEF] = [\triangle AB'C'] - ([\triangle ADC'] + [\triangle EFB'])</math>.
+
+The area of <math>[\triangle AB'C'] = [\triangle ABC]</math>. The [[altitude]] of <math>\triangle ABC</math> is clearly <math>10 \tan 75 = 10 \tan (30 + 45)</math>. The [https://artofproblemsolving.com/wiki/index.php/Trigonometric_identities#Angle_addition_identities tangent addition rule] yields <math>10(2 + \sqrt{3})</math> (see above). Thus, <math>[\triangle ABC] = \frac{1}{2} 20 \cdot (20 + 10\sqrt{3}) = 200 + 100\sqrt{3}</math>. 
+
+The area of <math>[\triangle ADC']</math> (with a side on the y-axis) can be found by splitting it into two triangles, <math>30-60-90</math> and <math>15-75-90</math> [[right triangle]]s. <math>AC' = AC = \frac{10}{\sin 15}</math>. The [[trigonometric identity|sine subtraction rule]] shows that <math>\frac{10}{\sin 15} = \frac{10}{\frac{\sqrt{6} - \sqrt{2}}4} = \frac{40}{\sqrt{6} - \sqrt{2}} = 10(\sqrt{6} + \sqrt{2})</math>. <math>AC'</math>, in terms of the height of <math>\triangle ADC'</math>, is equal to <math>h(\sqrt{3} + \tan 75) = h(\sqrt{3} + 2 + \sqrt{3})</math>. 
+<cmath>\begin{align*}
+[ADC'] &= \frac 12 AC' \cdot h \\
+&= \frac 12 (10\sqrt{6} + 10\sqrt{2})\left(\frac{10\sqrt{6} + 10\sqrt{2}}{2\sqrt{3} + 2}\right) \\
+&= \frac{(800 + 400\sqrt{3})}{(2 + \sqrt{3})}\cdot\frac{2 - \sqrt{3}}{2-\sqrt{3}} \\
+&= \frac{400\sqrt{3} + 400}8 = 50\sqrt{3} + 50
+\end{align*}</cmath>
+
+The area of <math>[\triangle EFB']</math> was found in the previous solution to be <math>- 500\sqrt{2} + 400\sqrt{3} - 300\sqrt{6} +750</math>. 
+
+Therefore, <math>[ADEF] </math> <math>= (200 + 100\sqrt{3}) - \left((50 + 50\sqrt{3}) + (-500\sqrt{2} + 400\sqrt{3} - 300\sqrt{6} +750)\right)</math> <math>= 500\sqrt{2} - 350\sqrt{3} + 300\sqrt{6} - 600</math>, and our answer is <math>\boxed{875}</math>.
+
+=== Solution 3 ===
+[[Image:I-07-12.png|250px|left]] 
+
+Call the points of the intersections of the triangles <math>D</math>, <math>E</math>, and <math>F</math> as noted in the diagram (the points are different from those in the diagram for solution 1). <math>\overline{AD}</math> [[bisect]]s <math>\angle EDE'</math>.
+
+Through [https://artofproblemsolving.com/wiki/index.php/Congruent_(geometry)#HL_Congruence HL] congruency, we can find that <math>\triangle AED</math> is [[congruent]] to <math>\triangle AE'D</math>. This divides the region <math>AEDF</math> (which we are trying to solve for) into two congruent triangles and an [[isosceles triangle|isosceles]] [[right triangle]].  
+<center><math>AE = 20 \cos 15 = 20 \cos (45 - 30) = 20 \cdot \frac{\sqrt{6} + \sqrt{2}}{4} = 5\sqrt{6} + 5\sqrt{2}</math></center>
+Since <math>FE' = AE' = AE</math>, we find that <math>[AE'F] = \frac 12 (5\sqrt{6} + 5\sqrt{2})^2 = 100 + 50\sqrt{3}</math>.
+
+Now, we need to find <math>[AED] = [AE'D]</math>. The acute angles of the triangles are <math>\frac{15}{2}</math> and <math>90 - \frac{15}{2}</math>. By repeated application of the [[trigonometric identity|half-angle formula]], we can find that <math>\tan \frac{15}{2} = \sqrt{2} - \sqrt{3} + \sqrt{6} - 2</math>.
+
+The area of <math>[AED] = \frac 12 \left(20 \cos 15\right)^2 \left(\tan \frac{15}{2}\right)</math>. Thus, <math>[AED] + [AE'D] = 2\left(\frac 12((5\sqrt{6} + 5\sqrt{2})^2 \cdot (\sqrt{2} - \sqrt{3} + \sqrt{6} - 2))\right)</math>, which eventually simplifies to <math>500\sqrt{2} - 350\sqrt{3} + 300\sqrt{6} - 600</math>. 
+
+Adding them together, we find that the solution is <math>[AEDF] = [AE'F] + [AED] + [AE'D]</math> <math>= 100 + 50\sqrt{3} + 500\sqrt{2} - 350\sqrt{3} + 300\sqrt{6} - 600=</math> <math>= 500\sqrt{2} - 350\sqrt{3} + 300\sqrt{6} - 600</math>, and the answer is <math>\boxed{875}</math>.
+
+=== Solution 4 ===
+From the given information, calculate the coordinates of all the points (by finding the equations of the lines, equating). Then, use the [[shoelace]] method to calculate the area of the intersection.
+
+*<math>\overline{AC}</math>: <math>y = (\tan 75) x = (2 + \sqrt{3})x</math>
+*<math>\overline{AB'}</math>: <math>y = (\tan 15) x = (2 - \sqrt{3})x</math>
+*<math>\overline{BC}</math>: It passes thru <math>(20,0)</math>, and has a slope of <math>-\tan75 = -(2 + \sqrt{3})</math>. The equation of its line is  <math>y = (2+\sqrt{3})(20 - x)</math>. 
+*<math>\overline{B'C'}</math>: <math>AC' = AC = \frac{10}{\cos 75} = 10\sqrt{6} + 10\sqrt{2}</math>, so it passes thru point <math>(0, 10\sqrt{6} + 10\sqrt{2})</math>. It has a slope of <math>-\tan 60 = -\sqrt{3}</math>. So the equation of its line is <math>y = -\sqrt{3}x + 10(\sqrt{6} + \sqrt{2})</math>.
+
+Now, we can equate the equations to find the intersections of all the points.
+
+*<math>A (0,0)</math>
+
+*<math>D</math> is the intersection of <math>\overline{BC},\ \overline{B'C'}</math>. <math>(2+\sqrt{3})(20-x) = -\sqrt{3}x + 10(\sqrt{6} + \sqrt{2})</math>. Therefore, <math>x = 5(4 + 2\sqrt{3}-\sqrt{6}-\sqrt{2})</math>, <math>y = 5(3\sqrt{6} + 5\sqrt{2}-4\sqrt{3}-6)</math>.
+
+*<math>E</math> is the intersection of <math>\overline{AB'},\ \overline{BC}</math>. <math>(2 - \sqrt{3})x =(2+\sqrt{3})(20-x) </math>. Therefore, <math>x = 5(2+\sqrt{3})</math>, <math>y = 5</math>.
+
+*<math>F</math> is the intersection of <math>\overline{AC},\ \overline{B'C'}</math>. <math>(2+\sqrt{3})x = -\sqrt{3}x + 10(\sqrt{6} + \sqrt{2})</math>. Therefore, <math>x = 5\sqrt{2}</math>, <math>y = 10\sqrt{2}+ 5\sqrt{6}</math>.
+
+We take these points and tie them together by shoelace, and the answer should come out to be <math>\boxed{875}</math>.

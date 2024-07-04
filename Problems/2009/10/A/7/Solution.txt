@@ -1,0 +1,4 @@
+==Solution==
+Rewording the question, we are being asked "$2$ is $40\%$ less than what number?"
+If $x$ represents the number we are looking for, then $40\%$ less than the number would be represented by $x-0.4x$ or $0.6x$.
+Thus $0.6x=2$; solving for $x$, we get $x=\frac{10}{3}$ $\longrightarrow \fbox{C}$

@@ -1,0 +1,2 @@
+==Problem==
+Call a positive integer <math>n</math> <math>k</math>-<i>pretty</i> if <math>n</math> has exactly <math>k</math> positive divisors and <math>n</math> is divisible by <math>k</math>. For example, <math>18</math> is <math>6</math>-pretty. Let <math>S</math> be the sum of positive integers less than <math>2019</math> that are <math>20</math>-pretty. Find <math>\tfrac{S}{20}</math>.

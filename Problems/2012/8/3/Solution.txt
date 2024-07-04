@@ -1,0 +1,4 @@
+==Solution 1==
+The problem wants us to find the time of sunset and gives us the length of daylight and time of sunrise. So all we have to do is add the length of daylight to the time of sunrise to obtain the answer. Convert 10 hours and 24 minutes into $10:24$ in order to add easier.
+
+Adding, we find that the time of sunset is $ 6:57\textsc{am} + 10:24 \implies 17:21 \implies  \boxed{\textbf{(B)}\ 5:21\textsc{pm}}$.

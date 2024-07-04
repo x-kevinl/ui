@@ -1,0 +1,9 @@
+== Solution ==
+
+In any regular polygon with side length $2$, consider the isosceles triangle formed by the center of the polygon $S$ and two consecutive vertices $X$ and $Y$. We are given that $XY=2$. Obviously $SX=SY=r$, where $r$ is the radius of the circumcircle. Let $T$ be the midpoint of $XY$. Then $XT=TY=1$, and $TS=\rho$, where $\rho$ is the radius of the incircle.
+
+Applying the [[Pythagorean theorem]] on the triangle $STX$, we get that $\rho^2 + 1 = r^2$.
+
+Then the area between the circumcircle and the incircle can be computed as $\pi r^2 - \pi \rho^2 = \pi r^2 - \pi (r^2 - 1) = \pi$.
+
+Hence $A=\pi$, $B=\pi$, and therefore $\boxed{\textbf{(C) }A=B}$.

@@ -1,0 +1,20 @@
+== Solution 1 ==
+We can count the total number of ways to distribute the candies (ignoring the restrictions), and then subtract the overcount to get the answer.
+
+Each candy has three choices; it can go in any of the three bags.
+
+Since there are seven candies, that makes the '''total distribution''' $3^7=2187$
+
+
+To find the overcount, we calculate the number of invalid distributions: the red or blue bag is empty. 
+
+The number of distributions such that the red bag is empty is equal to $2^7$, since it's equivalent to distributing the $7$ candies into $2$ bags.
+
+We know that the number of distributions with the blue bag is empty will be the same number because of the symmetry, so it's also $2^7$. 
+
+The case where both the red and the blue bags are empty (all $7$ candies are in the white bag) are included in both of the above calculations, and this case has only $1$ distribution.
+
+'''The total overcount is $2^7+2^7-1=2^8-1$'''
+
+
+The final answer will be $\text{total}-\text{overcount}=2187-(2^8-1) = 2187-256+1=1931+1=\boxed{\textbf{(C)}\ 1932}$

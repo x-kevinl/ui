@@ -1,0 +1,7 @@
+==Solution 1==
+All the desired terms are in the form $a^xb^yc^zd^w1^t$, where $x + y + z + w + t = N$ (the $1^t$ part is necessary to make stars and bars work better.)
+Since $x$, $y$, $z$, and $w$ must be at least $1$ ($t$ can be $0$), let $x' = x - 1$, $y' = y - 1$, $z' = z - 1$, and $w' = w - 1$, so $x' + y' + z' + w' + t = N - 4$. Now, we use [[stars and bars]] (also known as ball and urn) to see that there are $\binom{(N-4)+4}{4}$ or $\binom{N}{4}$ solutions to this equation. We notice that $1001=7\cdot11\cdot13$, which leads us to guess that $N$ is around these numbers. This suspicion proves to be correct, as we see that $\binom{14}{4} = 1001$, giving us our answer of $\boxed{\textbf{(B) }14.}$
+
+Note: An alternative is instead of making the transformation, we "give" the variables $x, y, z, w$ 1, and then proceed as above.
+
+~ Mathkiddie(minor edits by vadava_lx)

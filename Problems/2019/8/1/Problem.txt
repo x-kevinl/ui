@@ -1,0 +1,6 @@
+== Problem 1 ==
+Ike and Mike go into a sandwich shop with a total of $\$30.00$ to spend. Sandwiches cost $\$4.50$ each and soft drinks cost $\$1.00$ each. Ike and Mike plan to buy as many sandwiches as they can,
+and use any remaining money to buy soft drinks. Counting both sandwiches and soft drinks, how
+many items will they buy?
+
+$\textbf{(A) }6\qquad\textbf{(B) }7\qquad\textbf{(C) }8\qquad\textbf{(D) }9\qquad\textbf{(E) }10$

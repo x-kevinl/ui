@@ -1,0 +1,4 @@
+==Solution 1==
+
+Here's a cheapshot: 
+Obviously, $\frac{1}{2}+\frac{2}{3}$ is greater than $1$. Therefore, its reciprocal is less than $1$, and the answer must be $\boxed{\frac{6}{7}}$.

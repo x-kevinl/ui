@@ -1,0 +1,10 @@
+== Problem ==
+Find the smallest integer <math>k</math> for which the conditions
+
+(1) <math>a_1,a_2,a_3\cdots</math> is a nondecreasing sequence of positive integers
+
+(2) <math>a_n=a_{n-1}+a_{n-2}</math> for all <math>n>2</math>
+
+(3) <math>a_9=k</math>
+
+are satisfied by more than one sequence.

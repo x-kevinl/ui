@@ -1,0 +1,191 @@
+== Solutions ==
+
+===Solution 1 (Easiest)===
+Let <math>P_n</math> represent the probability that the bug is at its starting vertex after <math>n</math> moves. If the bug is on its starting vertex after <math>n</math> moves, then it must be not on its starting vertex after <math>n-1</math> moves. At this point it has <math>\frac{1}{2}</math> chance of reaching the starting vertex in the next move. Thus <math>P_n=\frac{1}{2}(1-P_{n-1})</math>. 
+<math>P_0=1</math>, so now we can build it up:
+
+<math>P_1=0</math>,
+<math>P_2=\frac{1}{2}</math>,
+<math>P_3=\frac{1}{4}</math>,
+<math>P_4=\frac{3}{8}</math>,
+<math>P_5=\frac{5}{16}</math>,
+<math>P_6=\frac{11}{32}</math>,
+<math>P_7=\frac{21}{64}</math>,
+<math>P_8=\frac{43}{128}</math>,
+<math>P_9=\frac{85}{256}</math>,
+<math>P_{10}=\frac{171}{512}</math>,
+
+Thus the answer is <math>171+512=</math><math>\boxed{683}</math>
+
+===Solution 2 (also easiest)===
+Consider there to be a clockwise and a counterclockwise direction around the triangle.  Then, in order for the ant to return to the original vertex, the net number of clockwise steps must be a multiple of 3, i.e., <math>\#CW - \#CCW \equiv 0 \pmod{3}</math>.  Since <math>\#CW + \#CCW = 10</math>, it is only possible that <math>(\#CW,\, \#CCW) = (5,5), (8,2), (2,8)</math>.
+
+In the first case, we pick <math>5</math> out of the ant's <math>10</math> steps to be clockwise, for a total of <math>{10 \choose 5}</math> paths.  In the second case, we choose <math>8</math> of the steps to be clockwise, and in the third case we choose <math>2</math> to be clockwise.  Hence the total number of ways to return to the original vertex is <math>{10 \choose 5} + {10 \choose 8} + {10 \choose 2} = 252 + 45 + 45 = 342</math>.  Since the ant has two possible steps at each point, there are <math>2^{10}</math> routes the ant can take, and the probability we seek is <math>\frac{342}{2^{10}} = \frac{171}{512}</math>, and the answer is <math>\boxed{683}</math>.
+
+===Solution 3===
+Label the vertices of the triangle <math>A,B,C</math> with the ant starting at <math>A</math>. We will make a table of the number of ways to get to <math>A,B,C</math> in <math>n</math> moves <math>n\leq10</math>. The values of the table are calculated from the fact that the number of ways from a vertex say <math>A</math> in <math>n</math> steps equals the number of ways to get to <math>B</math> in <math>n-1</math> steps plus the number of ways to get to <math>C</math> in <math>n-1</math> steps.
+
+
+
+
+<cmath>\begin{array}{|l|ccc|}
+\multicolumn{4}{c}{\text{Table}}\\\hline
+\text{Step}&A&B&C \\\hline
+1 &0 &1 &1 \\
+2 &2 &1 &1 \\
+3 &2 &3 &3\\
+\vdots &\vdots&\vdots&\vdots \\
+10 &342 &341 &341 \\\hline
+\end{array}</cmath>
+Therefore, our answer is <math>512+171=\boxed{683}.</math>
+
+
+
+Notice the pattern that there are <math>\left\lceil\frac{2^n}{3}\right\rceil</math> way to get to <math>A</math> for even <math>n</math> moves. Thus, there are <math>\left\lceil\frac{2^{10}}{3}\right\rceil=342</math> ways.
+
+===Solution 4===
+Notice that this problem can be converted into a Markov Chain transition matrix.
+
+The transition matrix is { {0,1,1}, {1,0,1} , {1,1,0} } * (1/2) . Then use the exponentiation method of squaring ( A*A---(A^2)*(A^2)---(A^4*A^4)--(A^8*A^2) to get the transition value of 342. Divide by 2^10 for the probability, reduce fractions, for the result of 171+512 = 683.
+
+===Solution 4.1 (solution 4 but rigorized and generalized)===
+
+As a note, do NOT do this on the exam as it will eat up your time, but feel free to experiment around with this if you have a good enough understanding of linear algebra. This writeup will be extremely lengthy because I am assuming just very basic concepts of linear algebra. The concepts here extend to higher levels of mathematics, so feel free to explore more in depth so that you can end up solving almost any variation of this classic problem.
+
+====4.1.1: Conceptual Setup====
+There are a possible of 3 states for this problem, so we can model the problem as a stochastic process. The resulting process has a transition matrix of:
+
+<cmath>\hat{T} = \begin{bmatrix}
+0 & 0.5 & 0.5\\
+0.5 & 0 & 0.5\\
+0.5 & 0.5 & 0
+\end{bmatrix}</cmath>
+
+We aim to diagonalize this transition matrix to make it easier to exponentiate by converting it into what's known as it's Jordan Canonical Form. 
+====4.1.2: Eigenvalue/vector bash====
+In order to do this, we must extract the eigenvalues and eigenvectors of the matrix. The eigenpolynomial for this matrix is obtained by calculating this matrix's determinant with <math>0-\lambda</math> about it's main diagonal like so:
+<cmath>\hat{T}_{\lambda} = \begin{bmatrix}
+0-\lambda & 0.5 & 0.5\\
+0.5 & 0-\lambda & 0.5\\
+0.5 & 0.5 & 0-\lambda
+\end{bmatrix}</cmath>
+
+We have the matrix's eigenpolynomial to be <math>\lambda^3 - \frac{3\lambda}{4} + \frac{1}{4}</math>, and extracting eigenvalues by setting the polynomial equal to <math>0</math>, we have 2 eigenvalues: <math>\lambda_1 = 1</math> of multiplicity 1, and <math>\lambda_2 = -\frac{1}{2}</math> of multiplicity 2. To extract the eigenvectors, we must assess the kernel of this matrix (also known as the null space), or the linear subspace of the domain of <math>\hat{T}</math> where everything gets mapped to the null vector. 
+
+We first do this for <math>\lambda_1</math>. Taking <math>-\lambda_1</math> across the diagonals to get <math>\hat{T}_{\lambda_1} = \begin{bmatrix}
+-1 & 0.5 & 0.5\\
+0.5 & -1 & 0.5\\
+0.5 & 0.5 & -1
+\end{bmatrix}</math>, we first reduce it to reduced row echelon form, which is <math>\begin{bmatrix}
+1 & 0 & -1\\
+0 & 1 & -1\\
+0 & 0 & 0
+\end{bmatrix}</math>. From here, we compute the kernel by setting  <cmath>\begin{bmatrix}
+1 & 0 & -1\\
+0 & 1 & -1\\
+0 & 0 & 0
+\end{bmatrix} \begin{bmatrix}
+x_1\\
+x_2\\
+x_3 
+\end{bmatrix} = 0</cmath>. So if we take our free variable <math>x_3 = 0 = t</math>, then that means that in the same fashion, <math>x_1 - x_1 = x_2 - x_2 = 0 = t</math>, so hence, the kernel of <math>\hat{T}_{\lambda} = \begin{bmatrix}
+t\\
+t\\
+t
+\end{bmatrix}</math>, or more simply, <math>t\begin{bmatrix}
+1\\
+1\\
+1
+\end{bmatrix}</math>. <math>\begin{bmatrix}
+1\\
+1\\
+1
+\end{bmatrix}</math> is the eigenvector corresponding to <math>\lambda_1</math>. We do the same computations for our second unique eigenvalue, but I will save the computation to you. There are actually 2 eigenvectors for <math>\lambda_2</math>, because the reduced row echelon form for <math>\hat{T}_{\lambda_2}</math> has 2 free variables instead of 1, so our eigenvectors for <math>\lambda_2</math> are <math>\begin{bmatrix}
+-1\\
+1\\
+0
+\end{bmatrix}, \begin{bmatrix}
+-1\\
+0\\
+1
+\end{bmatrix}</math>. We are now ready to begin finding the Jordan canonical form
+====4.1.3 Jordan Canonical Form====
+In linear algebra, the JCF (which also goes by the name of Jordan Normal Form) is an upper triangular matrix representing a linear transformation over a finite-dimensional complex vector space. Any square matrix that has a Jordan Canonical Form has its field of coefficients extended into a field containing all it's eigenvalues. You can find more information about them on google, as well as exactly how to find them but for now let's get on with the problem. I will skip the computation in this step, largley because this writeup is already gargantuan for a simple AIME problem, and because there are countless resources explaining how to do so.
+
+We aim to decompose <math>\hat{T}</math> into the form <math>\hat{T} = SJS^{-1}</math>, where <math>S</math> is a matrix whose columns consist of the eigenvectors of <math>\hat{T}</math>, <math>J</math> is the Jordan matrix, and <math>S^{-1}</math> is, well, the inverse of <math>S</math>. We have 1 eigenvalue of multiplicity 1, and 1 of multiplicity 2, so based on this info, we set our eigenvalues along the diagonals like so.
+We have:
+<cmath>J = \begin{bmatrix}
+-\frac{1}{2} & 0 & 0\\
+0 & -\frac{1}{2} & 0\\
+0 & 0 & 1
+\end{bmatrix}, S = \begin{bmatrix}
+-1 & -1 & 1\\
+0 & 1 & 1\\
+1 & 0 & 1
+\end{bmatrix}, S^{-1} = \frac{1}{3}\begin{bmatrix}
+-1 & -1 & 2\\
+-1 & 2 & -1\\
+1 & 1 & 1
+\end{bmatrix}</cmath>
+and so:
+<cmath>\hat{T} = \begin{bmatrix}
+0 & 0.5 & 0.5\\
+0.5 & 0 & 0.5\\
+0.5 & 0.5 & 0
+\end{bmatrix} = SJS^{-1} = \begin{bmatrix}
+-1 & -1 & 1\\
+0 & 1 & 1\\
+1 & 0 & 1
+\end{bmatrix}\begin{bmatrix}
+-\frac{1}{2} & 0 & 0\\
+0 & -\frac{1}{2} & 0\\
+0 & 0 & 1
+\end{bmatrix}\begin{bmatrix}
+-\frac{1}{3} & -\frac{1}{3} & \frac{2}{3}\\
+-\frac{1}{3} & \frac{2}{3} & -\frac{1}{3}\\
+\frac{1}{3} & \frac{1}{3} & \frac{1}{3}
+\end{bmatrix}</cmath>
+Now that we have converted to Jordan Canonical Form, it is extremely easy to compute <math>\hat{T}^n</math>.
+====4.1.4: Using the JCF to calculate the transition matrix to the power of any n, large or small====
+It is an important fact that for any matrix <math>K</math> with Jordan decomposition <math>SJ_kS^{-1}</math>, we have that <math>K^n = S(J_k)^nS^{-1}</math>
+Using this fact, we aim to find the general solution for the problem. 
+<math>J^n = \begin{bmatrix}
+\left(-\frac{1}{2}\right)^n & 0 & 0\\
+0 & \left(-\frac{1}{2}\right)^n & 0\\
+0 & 0 & 1
+\end{bmatrix}</math>, and using the laws of matrix multiplication, <cmath>SJ^n = \begin{bmatrix}
+(-1)^{n+1}\left(\frac{1}{2}\right)^n & (-1)^{n+1}\left(\frac{1}{2}\right)^n & 1\\
+0 & \left(-\frac{1}{2}\right)^n & 1\\
+\left(-\frac{1}{2}\right)^n & 0 & 1
+\end{bmatrix}</cmath>
+So finally, our final, generalized transition matrix after any number of steps <math>n</math> is:
+<cmath>\hat{T}^n = \begin{bmatrix}
+\frac{1}{3} - \frac{1}{3}(-1)^{1+n}(2)^{1-n} & \frac{1}{3} + \frac{1}{3}(-1)^{n+1}(2)^{1-(1+n)} & \frac{1}{3} + \frac{1}{3}(-1)^{n+1}(2)^{1-(1+n)}\\
+\frac{1}{3} + \frac{1}{3}(-1)^{n+1}(2)^{1-(1+n)} & \frac{1}{3} - \frac{1}{3}(-1)^{1+n}(2)^{1-n} & \frac{1}{3} + \frac{1}{3}(-1)^{n+1}(2)^{1-(1+n)}\\
+\frac{1}{3} + \frac{1}{3}(-1)^{n+1}(2)^{1-(1+n)} & \frac{1}{3} + \frac{1}{3}(-1)^{n+1}(2)^{1-(1+n)} & \frac{1}{3} - \frac{1}{3}(-1)^{1+n}(2)^{1-n}
+\end{bmatrix}</cmath>
+====4.1.5 just plugging in for this problem lol====
+For the sake of this problem, we seek the top left element, which is <math>\frac{1}{3} - \frac{1}{3}(-1)^{1+n}(2)^{1-n}</math>. Substituting <math>n=10</math> readily gives the probability of the bug reaching it's starting position within 10 moves to be <math>\frac{171}{512} \implies m+n = \boxed{683}</math>
+
+And we have also derived formulae for the bug reaching any state within <math>n</math> moves as a byproduct!
+
+~RedFlame2112
+
+===Solution 5 (guess & check)===
+This method does not rigorously get the answer, but it works. As the bug makes more and more moves, the probability of it going back to the origin approaches closer and closer to 1/3. Therefore, after 10 moves, the probability gets close to <math>341.33/1024</math>. We can either round up or down. If we round down, we see <math>341/1024</math> cannot be reduced any further and because the only answers on the AIME are below 1000, this cannot be the right answer. However, if we round up, <math>342/1024</math> can be reduced to <math>171/512</math> where the sum 171+512= <math>\boxed{683}</math> is an accepted answer.
+
+===Solution 6 (generating functions)===
+The generating function for this is <math>(x+x^2)</math> since an ant on any vertex of the equilateral triangle can go <math>120</math> degrees or <math>240</math> degrees to a side and simplifying <math>(x^{120}+x^{240})</math> gets you <math>(x+x^2)</math>. Since <math>360</math> degrees brings you back to the original vertex then we must find the sum of the coefficients that share a variable with a power divisible by <math>3</math>.
+
+Since we take this rotation <math>10</math> times, our function becomes <math>(x+x^2)^{10}</math> which is the same as <math>x^{10}(x+1)^{10}</math>. This completely simplified is <math>x(x+1)^{10}</math> and since your maximum power is <math>11</math>, we only have to find the coefficients for <math>3</math>, <math>6</math>, and <math>9</math> (<math>0</math> would apply here but the <math>x</math> is the lowest power there is).
+
+For <math>x^9</math>, the coefficient is <math>{10 \choose 2}</math> , and the same goes for <math>x^3</math>. For <math>x^6</math>, the coefficient is <math>{10 \choose 5}</math> and the final sum for the numerator is <math>2*{10 \choose 2} + {10 \choose 5}</math> . The total sum is <math>90+252=342</math> and for the denominator, it was simply <math>2^{10}</math> and this simplified was <math>171/512</math>. Therefore the sum is <math>683</math>.
+
+===Solution 7 (trees)===
+Start of with any vertex, say <math>A</math>. Denote <math>a_n</math> the number of paths ending where it started. Then notice that for a path to end in the vertex you started on, you must have for the <math>(n-1)</math> case that of the <math>2^{n-1}</math> total paths, we must take away the paths that end in the <math>(n-1)</math>-st term where it started off. (Because imagine on the <math>(n-1)</math> move that it landed on vertex <math>A</math>. Then if we wanted to find the number of length <math>n</math> paths that end at <math>A</math>, we would be able to find that path, because on the <math>(n-1)</math>-st move it landed at <math>A</math>. You can't go from <math>A</math> to <math>A</math>). Hence we have the recursion <math>a_n=2^{n-1}-a_{n-1}</math>, with <math>a_3 = 2</math>. Now reiterating gives us <math>a_{10} = 342</math>, so that the probability is <math>\frac{342}{2^{10}} = \frac{171}{512}</math>. So we have <math>171 + 512 = \boxed{683}</math>.
+~th1nq3r
+
+(Note: One might be confused because you might think maybe "But we only did it for case <math>A</math>. Now for <math>B</math> and <math>C</math>. Oh wait they are symmetric. So then if this is the correct answer, why am I wrong, or what happened to that factor of <math>3</math>?" Well truth be told, I skipped a somewhat major step. Notice that the total amount <math>2^n</math> only comes from if we START OFF at vertex <math>A</math>. So we really need to multiply <math>2^n</math> by <math>3</math> to get <math>3(2^n)</math> as the TRUE total amount. However this factor of <math>3</math> doesn't matter because now that we do case work, let <math>a_n</math> once again denote the number of paths starting at vertex <math>A</math>. Then abusing symmetry, we have that the number of paths ending where it started as <math>3(a_n)=3(2^{n-1}-a_{n-1})</math>. So now when we take the probability, we cancel the factor of <math>3</math>, and obtain the same answer as if it were for all three vertices).
+
+===Video Solution by Sal Khan===
+https://www.youtube.com/watch?v=vKMNRcctwL4&list=PLSQl0a2vh4HCtW1EiNlfW_YoNAA38D0l4&index=20 - AMBRIGGS

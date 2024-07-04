@@ -1,0 +1,4 @@
+==Problem==
+On Monday Taye has $\$2$. Every day, he either gains $\$3$ or doubles the amount of money he had on the previous day. How many different dollar amounts could Taye have on Thursday, $3$ days later?
+
+$\textbf{(A) } 3\qquad\textbf{(B) } 4\qquad\textbf{(C) } 5\qquad\textbf{(D) } 6\qquad\textbf{(E) } 7$

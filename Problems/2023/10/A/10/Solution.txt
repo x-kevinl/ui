@@ -1,0 +1,22 @@
+==Solution 1==
+
+Let $a$ represent the amount of tests taken previously and $x$ the mean of the scores taken previously. 
+
+We can write the following equations:
+
+$$\frac{ax+11}{a+1}=x+1\qquad (1)$$
+$$\frac{ax+33}{a+3}=x+2\qquad (2)$$
+
+Multiplying $(x+1)$ by $(a+1)$ and solving, we get:
+$$ax+11=ax+a+x+1$$
+$$11=a+x+1$$
+$$a+x=10\qquad (3)$$
+
+Multiplying $(2)$ by $(a+3)$ and solving, we get:
+$$ax+33=ax+2a+3x+6$$
+$$33=2a+3x+6$$
+$$2a+3x=27\qquad (4)$$
+
+Solving the system of equations for $(3)$ and $(4)$, we find that $a=3$ and $x=\boxed{\textbf{(D) }7}$.
+
+~walmartbrian ~Shontai ~andyluo ~megaboy6679

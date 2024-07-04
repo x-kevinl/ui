@@ -1,0 +1,29 @@
+== Solution 1 ==
+
+Let the centers of the smaller and larger circles be $O_1$ and $O_2$ , respectively.
+Let their tangent points to $\triangle ABC$ be $D$ and $E$, respectively.
+We can then draw the following diagram:
+
+<!-- [[Image:2006_AMC10A-16a.png]] -->
+<asy>
+size(200); pathpen = linewidth(0.7); pointpen = black; pointfontpen = fontsize(10);
+real t=2^0.5;
+D((0,0)--(4*t,0)--(2*t,8)--cycle); 
+D(CR(D((2*t,2)),2));
+D(CR(D((2*t,5)),1));
+D('B', (0,0),SW); D('C',(4*t,0), SE); D('A', (2*t, 8), N);
+pair A = foot((2*t,2),(2*t,8),(4*t,0)), B = foot((2*t,5),(2*t,8),(4*t,0));
+D((2*t,0)--(2*t,8)); D((2*t,2)--D(A)); D((2*t,5)--D(B)); D(rightanglemark((2*t,2),A,(4*t,0))); D(rightanglemark((2*t,5),B,(4*t,0)));
+MP('2', (2*t,3), W); MP('1',(2*t, 5.5), W); MP("F",(2*t,0)); MP("O_1",(2*t,5),W); MP("O_2",(2*t,2),W); MP("D",B,NE); MP("E",A,NE); </asy>
+
+We see that $\triangle ADO_1 \sim \triangle AEO_2 \sim \triangle AFC$. Using the first pair of [[similar triangles]], we write the proportion:
+
+<div style="text-align:center;">$\frac{AO_1}{AO_2} = \frac{DO_1}{EO_2} \Longrightarrow \frac{AO_1}{AO_1 + 3} = \frac{1}{2} \Longrightarrow AO_1 = 3$</div>
+
+By the [[Pythagorean Theorem]], we have $AD = \sqrt{3^2-1^2} = \sqrt{8}$.
+
+Now using $\triangle ADO_1 \sim \triangle AFC$,
+
+<div style="text-align:center;">$\frac{AD}{AF} = \frac{DO_1}{FC} \Longrightarrow \frac{2\sqrt{2}}{8} = \frac{1}{FC} \Longrightarrow FC = 2\sqrt{2}$</div>
+
+Hence, the area of the triangle is $$\frac{1}{2}\cdot AF \cdot BC = \frac{1}{2}\cdot AF \cdot (2\cdot CF) = AF \cdot CF = 8\left(2\sqrt{2}\right) = \boxed{\textbf{(D) } 16\sqrt{2}}$$

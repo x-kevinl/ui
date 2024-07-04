@@ -1,0 +1,8 @@
+==Solution 1==
+The area of the octagon can be divided up into $5$ squares with side $\frac{\sqrt2}2$ and $4$ right triangles, which are half the area of each of the squares.
+
+Therefore, the area of the octagon is equal to the area of $5+4\left(\frac12\right)=7$ squares.
+
+The area of each square is $\left(\frac{\sqrt2}2\right)^2=\frac12$, so the area of $7$ squares is $\boxed{\textbf{(A) }\frac72}$.
+
+<asy> pair A=(0.5, 0), B=(0, 0.5), C=(0, 1.5), D=(0.5, 2), E=(1.5, 2), F=(2, 1.5), G=(2, 0.5), H=(1.5, 0); draw(A--B); draw(B--C); draw(C--D); draw(D--E);draw(E--F);draw(F--G); draw(G--H);  draw(H--A);draw(A--F, blue);draw(E--B,blue);draw(C--H, blue); draw(D--G,blue);dot(A);dot(B);dot(C);dot(D);dot(E);dot(F);dot(G);dot(H); </asy>

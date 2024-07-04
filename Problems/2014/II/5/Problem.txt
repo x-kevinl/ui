@@ -1,0 +1,2 @@
+==Problem==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>Real numbers <math>r</math> and <math>s</math> are roots of <math>p(x)=x^3+ax+b</math>, and <math>r+4</math> and <math>s-3</math> are roots of <math>q(x)=x^3+ax+b+240</math>. Find the sum of all possible values of <math>|b|</math>.<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>

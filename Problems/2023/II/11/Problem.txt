@@ -1,0 +1,3 @@
+==Problem==
+
+Find the number of collections of <math>16</math> distinct subsets of <math>\{1,2,3,4,5\}</math> with the property that for any two subsets <math>X</math> and <math>Y</math> in the collection, <math>X \cap Y \not= \emptyset.</math>

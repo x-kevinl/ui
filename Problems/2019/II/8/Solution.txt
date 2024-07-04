@@ -1,0 +1,11 @@
+==Solution 1==
+We have <math>\frac{1+\sqrt{3}i}{2} = \omega</math> where <math>\omega = e^{\frac{i\pi}{3}}</math> is a primitive 6th root of unity. Then we have
+
+<cmath>\begin{align*}
+f(\omega) &= a\omega^{2018} + b\omega^{2017} + c\omega^{2016}\\
+&= a\omega^2 + b\omega + c
+\end{align*}</cmath>
+
+We wish to find <math>f(1) = a+b+c</math>. We first look at the real parts. As <math>\text{Re}(\omega^2) = -\frac{1}{2}</math> and <math>\text{Re}(\omega) = \frac{1}{2}</math>, we have <math>-\frac{1}{2}a + \frac{1}{2}b + c = 2015 \implies -a+b + 2c = 4030</math>. Looking at imaginary parts, we have <math>\text{Im}(\omega^2) = \text{Im}(\omega) = \frac{\sqrt{3}}{2}</math>, so <math>\frac{\sqrt{3}}{2}(a+b) = 2019\sqrt{3} \implies a+b = 4038</math>. As <math>a</math> and <math>b</math> do not exceed 2019, we must have <math>a = 2019</math> and <math>b = 2019</math>. Then <math>c = \frac{4030}{2} = 2015</math>, so <math>f(1) = 4038 + 2015 = 6053 \implies f(1) \pmod{1000} = \boxed{053}</math>.
+
+-scrabbler94

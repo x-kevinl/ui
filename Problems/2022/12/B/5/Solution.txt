@@ -1,0 +1,4 @@
+== Solution 1 (Cartesian Plane) ==
+$(-1,-2)$ is $4$ units west and $3$ units south of $(3,1)$. Performing a counterclockwise rotation of $270^{\circ}$, which is equivalent to a clockwise rotation of $90^{\circ}$, the answer is $3$ units west and $4$ units north of $(3,1)$, or $\boxed{\textbf{(B)}\ (0,5)}$.
+
+~[[User: Bxiao31415 | Bxiao31415]]

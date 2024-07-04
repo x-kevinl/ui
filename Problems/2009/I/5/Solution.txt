@@ -1,0 +1,22 @@
+==Diagram==
+<center><asy>
+import markers;
+defaultpen(fontsize(8));
+size(300);
+pair A=(0,0), B=(30*sqrt(331),0), C, K, L, M, P;
+C = intersectionpoints(Circle(A,450), Circle(B,300))[0];
+K =  midpoint(A--C);
+L = (3*B+2*A)/5;
+P = extension(B,K,C,L);
+M = 2*K-P;
+draw(A--B--C--cycle);
+draw(C--L);draw(B--M--A);
+markangle(n=1,radius=15,A,C,L,marker(markinterval(stickframe(n=1),true)));
+markangle(n=1,radius=15,L,C,B,marker(markinterval(stickframe(n=1),true)));
+dot(A^^B^^C^^K^^L^^M^^P);
+label("$A$",A,(-1,-1));label("$B$",B,(1,-1));label("$C$",C,(1,1));
+label("$K$",K,(0,2));label("$L$",L,(0,-2));label("$M$",M,(-1,1));
+label("$P$",P,(1,1));
+label("$180$",(A+M)/2,(-1,0));label("$180$",(P+C)/2,(-1,0));label("$225$",(A+K)/2,(0,2));label("$225$",(K+C)/2,(0,2));
+label("$300$",(B+C)/2,(1,1));
+</asy></center>

@@ -1,0 +1,4 @@
+== Problem ==
+How many numbers between $1$ and $2005$ are integer multiples of $3$ or $4$ but not $12$?
+
+$\textbf{(A) } 501 \qquad \textbf{(B) } 668 \qquad \textbf{(C) } 835 \qquad \textbf{(D) } 1002 \qquad \textbf{(E) } 1169 $

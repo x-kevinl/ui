@@ -1,0 +1,4 @@
+== Problem ==
+For each [[integer]] $n>1$, let $F(n)$ be the number of solutions to the [[equation]] $\sin{x}=\sin{(nx)}$ on the interval $[0,\pi]$. What is $\sum_{n=2}^{2007} F(n)$?
+	
+$\mathrm{(A)}\ 2014524\qquad\mathrm{(B)}\ 2015028\qquad\mathrm{(C)}\ 2015033\qquad\mathrm{(D)}\ 2016532\qquad\mathrm{(E)}\ 2017033$

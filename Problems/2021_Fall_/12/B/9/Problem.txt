@@ -1,0 +1,6 @@
+==Problem==
+
+Triangle $ABC$ is equilateral with side length $6$. Suppose that $O$ is the center of the inscribed
+circle of this triangle. What is the area of the circle passing through $A$, $O$, and $C$?
+
+$\textbf{(A)} \: 9\pi \qquad\textbf{(B)} \: 12\pi \qquad\textbf{(C)} \: 18\pi \qquad\textbf{(D)} \: 24\pi \qquad\textbf{(E)} \: 27\pi$

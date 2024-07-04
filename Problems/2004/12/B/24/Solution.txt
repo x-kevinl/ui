@@ -1,0 +1,10 @@
+== Solution ==
+Let $\alpha = DBC$. Then the first condition tells us that
+$$
+\tan^2 DBE = \tan(DBE - \alpha)\tan(DBE + \alpha) = \frac {\tan^2 DBE - \tan^2 \alpha}{1 - \tan ^2 DBE \tan^2 \alpha},
+$$
+and multiplying out gives us $(\tan^4 DBE - 1) \tan^2 \alpha = 0$. Since $\tan\alpha \neq 0$, we have $\tan^4 DBE = 1 \Longrightarrow \angle DBE = 45^{\circ}$. 
+
+The second condition tells us that $2\cot (45 - \alpha) = 1 + \cot \alpha$. Expanding, we have $1 + \cot \alpha = 2\left[\frac {\cot \alpha + 1}{\cot \alpha - 1}\right] \Longrightarrow (\cot \alpha - 3)(\cot \alpha + 1) = 0$. Evidently $\cot \alpha \neq - 1$, so we get $\cot \alpha = 3$.
+
+Now $BD = 5\sqrt {2}$ and $AC = \frac {2BD} {\cot \alpha} = \frac {10\sqrt {2}}{3}$. Thus, $[ABC] = \frac {1}{2} \cdot 5\sqrt {2} \cdot \frac {10\sqrt {2}}{3} = \frac {50}{3}\ \mathrm{(B)}$.

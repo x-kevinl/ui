@@ -1,0 +1,3 @@
+==Solution 1 (Diophantine Equation)==
+
+The problem can be restated as an equation of the form $300p + 210g = x$, where $p$ is the number of pigs, $g$ is the number of goats, and $x$ is the positive debt. The problem asks us to find the lowest ''x'' possible. ''$p$'' and ''$g$'' must be integers, which makes the equation a [[Diophantine equation]].  [[Bezout%27s Lemma]] tells us that the smallest $c$ for the Diophantine equation $am + bn = c$ to have solutions is when $c$ is the GCD ([[greatest common divisor]]) of $a$ and $b$. Therefore, the answer is $gcd(300,210)=\boxed{\textbf{(C) }30}.$

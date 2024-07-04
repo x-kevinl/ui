@@ -1,0 +1,4 @@
+==Problem==
+Bill walks $\tfrac12$ mile south, then $\tfrac34$ mile east, and finally $\tfrac12$ mile south. How many miles is he, in a direct line, from his starting point?
+
+$ \textbf{(A)}\ 1\qquad\textbf{(B)}\ 1\tfrac14\qquad\textbf{(C)}\ 1\tfrac12\qquad\textbf{(D)}\ 1\tfrac34\qquad\textbf{(E)}\ 2 $

@@ -1,0 +1,15 @@
+== Problem ==
+
+
+One-inch squares are cut from the corners of this 5 inch square.  What is the area in square inches of the largest square that can be fitted into the remaining space?
+
+<asy>
+size(75);
+draw((0,0)--(0,5)--(5,5)--(5,0)--cycle);
+filldraw((0,4)--(1,4)--(1,5)--(0,5)--cycle, gray);
+filldraw((0,0)--(1,0)--(1,1)--(0,1)--cycle, gray);
+filldraw((4,0)--(4,1)--(5,1)--(5,0)--cycle, gray);
+filldraw((4,4)--(4,5)--(5,5)--(5,4)--cycle, gray);
+</asy>
+
+$\textbf{(A)  } 9\qquad \textbf{(B)  } 12\frac{1}{2}\qquad \textbf{(C)  } 15\qquad \textbf{(D)  } 15\frac{1}{2}\qquad \textbf{(E)  } 17$

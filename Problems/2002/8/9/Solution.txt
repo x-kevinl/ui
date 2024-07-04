@@ -1,0 +1,2 @@
+==Solution==
+Brazil 50s and 60s total 11 stamps with each 6 cents, Peru 50s and 60s total 10 stamps with each 4 cents. So total $11*0.06+10*0.04 = \boxed{\text{(B)}\ \$1.06}$

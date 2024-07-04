@@ -1,0 +1,17 @@
+==Solution 1==
+
+We are given that $$2^m\cdot\sqrt{\frac{1}{4096}} = 2\cdot\sqrt[m]{\frac{1}{4096}}.$$
+Converting everything into powers of $2,$ we have
+$$\begin{align*}
+2^m\cdot(2^{-12})^{\frac12} &= 2\cdot (2^{-12})^{\frac1m} \\
+2^{m-6} &= 2^{1-\frac{12}{m}} \\
+m-6 &= 1-\frac{12}{m}.
+\end{align*}$$
+We multiply both sides by $m$, then rearrange as $$m^2-7m+12=0.$$
+By Vieta's Formulas, the sum of such values of $m$ is $\boxed{\textbf{(C) } 7}.$
+
+Note that $m=3$ or $m=4$ from the quadratic equation above.
+
+~MRENTHUSIASM
+
+~KingRavi

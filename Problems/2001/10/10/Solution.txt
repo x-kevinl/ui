@@ -1,0 +1,5 @@
+== Solution 1==
+
+The first two equations in the problem are $xy=24 $ and $xz=48$. Since $xyz \ne 0$, we have $\frac{xy}{xz}=\frac{24}{48} \implies 2y=z $. We can substitute $ z = 2y $ into the third equation $yz = 72$ to obtain $ 2y^2=72 \implies y=6 $ and $ 2y=z=12 $. We replace $y$ into the first equation to obtain $ x=4 $.
+
+Since we know every variable's value, we can substitute them in to find $ x+y+z = 4+6+12 = \boxed{\textbf{(D) }22} $.

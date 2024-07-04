@@ -1,0 +1,21 @@
+==Solution==
+
+<center><asy>
+unitsize(6mm);
+defaultpen(linewidth(.8pt)+fontsize(9pt));
+dotfactor=4;
+
+real r1=1, r2=2, r3=3, r4=4;
+pair O1=(0,0), O2=(0,-0.5), O3=(0,-1), O4=(0,-1.5);
+path circleA=Circle(O1,r1); draw(circleA);
+path circleB=Circle(O2,r2); draw(circleB);
+path circleC=Circle(O3,r3); draw(circleC);
+path circleD=Circle(O4,r4); draw(circleD);
+
+label("$Crups$",(0,-.5));
+label("$Dramps$",(0,-2));
+label("$Arogs$",(0,-3.5));
+label("$Brafs$",(0,-5));
+</asy></center>
+
+It may be easier to visualize this by drawing some sort of diagram. From the first statement, you can draw an Arog circle inside of the Braf circle, since all Arogs are Brafs, but not all Brafs are Arogs. Ignore the second statement for now, and draw a Dramp circle in the Arog circle and a Crup circle in the Dramp circle. You can see the second statement is already true because all Crups are Arogs. As you can see, the only statement that is true is $\boxed{\mathrm{(D)}}$

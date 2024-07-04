@@ -1,0 +1,10 @@
+==Solution==
+If we plug in $n=4$, we get 
+
+<center>$128=2u_5+u_4.$</center> 
+
+By plugging in $n=3$, we get 
+
+<center>$u_5=2u_4+9.$</center>
+
+This is a system of two equations with two unknowns. Multiplying the second equation by 2 and substituting into the first equation gives $128=5u_4+18 \Longrightarrow u_4=22$, therefore $u_5=\frac{128-22}{2}=53 \longrightarrow \textbf{\boxed{(B)}}$.

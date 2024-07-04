@@ -1,0 +1,28 @@
+==Solution 1==
+
+By working backwards, we can multiply 5-digit palindromes $ABCBA$ by $11$, giving a 6-digit palindrome:
+
+$\overline{A (A+B) (B+C) (B+C) (A+B) A}$
+
+Note that if $A + B >= 10$ or $B + C >= 10$, then the symmetry will be broken by carried 1s
+
+Simply count the combinations of $(A, B, C)$ for which $A + B < 10$ and $B + C < 10$
+
+$A = 1$ implies $9$ possible $B$ (0 through 8), for each of which there are $10, 9, 8, 7, 6, 5, 4, 3, 2$ possible C, respectively. There are $54$ valid palindromes when $A = 1$
+
+$A = 2$ implies $8$ possible $B$ (0 through 7), for each of which there are $10, 9, 8, 7, 6, 5, 4, 3$ possible C, respectively. There are $52$ valid palindromes when $A = 2$
+
+Following this pattern, the total is
+
+$54 + 52 + 49 + 45 + 40 + 34 + 27 + 19 + 10 = 330$
+
+6-digit palindromes are of the form $XYZZYX$, and the first digit cannot be a zero, so there are $9 \cdot 10  \cdot 10 = 900$ combinations of $(X, Y, Z)$
+
+So, the probability is $\frac{330}{900} = \frac{11}{30}$
+
+===Note===
+
+You can more easily count the number of triples $(A, B, C)$ by noticing that there are $9 - B$ possible values for $A$ and $10 - B$ possible values for $C$ once $B$ is chosen. Summing over all $B$, the number is $$9\cdot 10 + 8\cdot 9 + \ldots + 1\cdot 2 = 2\left(\binom{2}{2} + \binom{3}{2} + \ldots + \binom{10}{2}\right).$$
+By the hockey-stick identity, it is $2\binom{11}{3} = 330$.
+
+~rayfish

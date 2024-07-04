@@ -1,0 +1,2 @@
+==Solution==
+Margie can afford $20/4=5$ gallons of gas. She can go $32\cdot5=\boxed{\textbf{(C)}~160}$ miles on this amount of gas.

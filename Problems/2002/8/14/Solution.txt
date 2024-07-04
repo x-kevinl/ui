@@ -1,0 +1,6 @@
+==Solution==
+Let's assume that each item is $100$ dollars. First we take off $30\%$ off of $100$ dollars. $100\cdot0.7=70$
+
+Next, we take off the extra $20\%$ as asked by the problem. $70\cdot0.80=56$
+
+So the final price of an item is \$56. We have to do $100-56$ because $56$ was the final price and we wanted the discount. So the final answer is $44\%$, which is answer choice $\boxed{(B) 44 \%}$.

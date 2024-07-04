@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>ABCD</math> be a square, and let <math>E</math> and <math>F</math> be points on <math>\overline{AB}</math> and <math>\overline{BC},</math> respectively. The line through <math>E</math> parallel to <math>\overline{BC}</math> and the line through <math>F</math> parallel to <math>\overline{AB}</math> divide <math>ABCD</math> into two squares and two nonsquare rectangles. The sum of the areas of the two squares is <math>\frac{9}{10}</math> of the area of square <math>ABCD.</math> Find <math>\frac{AE}{EB} + \frac{EB}{AE}.</math>

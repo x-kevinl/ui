@@ -1,0 +1,14 @@
+== Solution 1 (Pythagorean Theorem) ==
+<center><asy>
+size(220);
+pointpen = black; pathpen = black + linewidth(0.7);
+pair O=(0,0),A=(-15,0),B=(-6,0),C=(15,0),D=(0,8);
+D(D(MP("A",A))--D(MP("C",C))--D(MP("D",D,NE))--cycle);
+D(D(MP("B",B))--D); D((0,-4)--(0,12),linetype("4 4")+linewidth(0.7));
+MP("6",B/2); MP("15",C/2); MP("9",(A+B)/2);
+</asy></center> <!-- Asymptote replacement for Image:2003_I_AIME-7.png by azjps -->
+
+Denote the height of <math>\triangle ACD</math> as <math>h</math>, <math>x = AD = CD</math>, and <math>y = BD</math>. Using the [[Pythagorean theorem]], we find that <math>h^2 = y^2 - 6^2</math> and <math>h^2 = x^2 - 15^2</math>. Thus, <math>y^2 - 36 = x^2 - 225 \Longrightarrow x^2 - y^2 = 189</math>. The LHS is [[difference of squares]], so <math>(x + y)(x - y) = 189</math>. As both <math>x,\ y</math> are integers, <math>x+y,\ x-y</math> must be integral divisors of <math>189</math>. 
+
+The pairs of divisors of <math>189</math> are <math>(1,189)\ (3,63)\ (7,27)\ (9,21)</math>. This yields the four potential sets for <math>(x,y)</math> as <math>(95,94)\ (33,30)\ (17,10)\ (15,6)</math>. The last is not a possibility since it simply [[degenerate]]s into a [[line]]. The sum of the three possible perimeters of <math>
+\triangle ACD</math> is equal to <math>3(AC) + 2(x_1 + x_2 + x_3) = 90 + 2(95 + 33 + 17) = \boxed{380}</math>.

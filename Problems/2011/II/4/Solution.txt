@@ -1,0 +1,9 @@
+== Solution 1 ==
+<asy>
+pointpen = black; pathpen = linewidth(0.7);
+
+pair A = (0,0), C= (11,0), B=IP(CR(A,20),CR(C,18)), D = IP(B--C,CR(B,20/31*abs(B-C))), M = (A+D)/2, P = IP(M--2*M-B, A--C), D2 = IP(D--D+P-B, A--C);
+
+D(MP("A",D(A))--MP("B",D(B),N)--MP("C",D(C))--cycle); D(A--MP("D",D(D),NE)--MP("D'",D(D2))); D(B--MP("P",D(P))); D(MP("M",M,NW)); MP("20",(B+D)/2,ENE); MP("11",(C+D)/2,ENE);
+
+</asy> Let <math>D'</math> be on <math>\overline{AC}</math> such that <math>BP \parallel DD'</math>. It follows that <math>\triangle BPC \sim \triangle DD'C</math>, so <cmath>\frac{PC}{D'C} = 1 + \frac{BD}{DC} = 1 + \frac{AB}{AC} = \frac{31}{11}</cmath> by the [[Angle Bisector Theorem]]. Similarly, we see by the Midline Theorem that <math>AP = PD'</math>. Thus, <cmath>\frac{CP}{PA} = \frac{1}{\frac{PD'}{PC}} = \frac{1}{1 - \frac{D'C}{PC}} = \frac{31}{20},</cmath> and <math>m+n = \boxed{51}</math>.

@@ -1,0 +1,2 @@
+== Problem ==
+For integers <math>a,b,c</math> and <math>d,</math> let <math>f(x)=x^2+ax+b</math> and <math>g(x)=x^2+cx+d.</math> Find the number of ordered triples <math>(a,b,c)</math> of integers with absolute values not exceeding <math>10</math> for which there is an integer <math>d</math> such that <math>g(f(2))=g(f(4))=0.</math>

@@ -1,0 +1,5 @@
+== Solution 1 ==
+Let $\overline{AC}$ and $\overline{BD}$ intersect at $O$. Since $ABCD$ is a rhombus, then $\overline{AC}$ and $\overline{BD}$ are [[perpendicular bisector]]s. Thus $\angle POQ = 90^{\circ}$, so $OPNQ$ is a [[rectangle]]. Since the diagonals of a rectangle are of equal length, $PQ = ON$, so we want to minimize $ON$. It follows that we want $ON \perp AB$.
+
+Finding the area in two different ways,
+$$\frac{1}{2}   AO \cdot BO = 60 = \frac{1}{2} ON \cdot AB = \frac{\sqrt{8^2 + 15^2}}{2} \cdot ON \Longrightarrow ON = \frac{120}{17} \approx 7.06 \Rightarrow \mathrm{(C)}$$

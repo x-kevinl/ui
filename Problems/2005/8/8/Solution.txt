@@ -1,0 +1,2 @@
+==Solution==
+Assume [[WLOG]] that $m$ and $n$ are both $1$. Plugging into each of the choices, we get $4, 2, 6, 16,$ and $3$. The only odd integer is $\boxed{\textbf{(E)}\ 3mn}$.

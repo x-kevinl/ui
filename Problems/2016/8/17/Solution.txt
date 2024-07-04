@@ -1,0 +1,10 @@
+==Solutions==
+===Solution 1===
+For the first three digits, there are $10^3-1=999$ combinations since $911$ is not allowed. For the final digit, any of the $10$ numbers are allowed. $999 \cdot 10 = 9990 \rightarrow \boxed{\textbf{(D)}\ 9990}$.
+
+~CHECKMATE2021
+
+===Solution 2===
+Counting the prohibited cases, we find that there are 10 of them. This is because, when we start with 9,1, and 1, we can have any of the 10 digits for the last digit. So, our answer is $10^4-10=\boxed{\textbf{(D)}\ 9990}.$
+
+~CHECKMATE2021

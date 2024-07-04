@@ -1,0 +1,2 @@
+== Problem ==
+In <math>\triangle ABC</math> with <math>AB=AC,</math> point <math>D</math> lies strictly between <math>A</math> and <math>C</math> on side <math>\overline{AC},</math> and point <math>E</math> lies strictly between <math>A</math> and <math>B</math> on side <math>\overline{AB}</math> such that <math>AE=ED=DB=BC.</math> The degree measure of <math>\angle ABC</math> is <math>\tfrac{m}{n},</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n.</math>

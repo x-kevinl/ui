@@ -1,0 +1,4 @@
+==Problem==
+Ricardo has $2020$ coins, some of which are pennies ($1$-cent coins) and the rest of which are nickels ($5$-cent coins). He has at least one penny and at least one nickel. What is the difference in cents between the greatest possible and least amounts of money that Ricardo can have?
+
+$\textbf{(A) }\text{806} \qquad \textbf{(B) }\text{8068} \qquad \textbf{(C) }\text{8072} \qquad \textbf{(D) }\text{8076}\qquad \textbf{(E) }\text{8082}$

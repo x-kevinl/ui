@@ -1,0 +1,3 @@
+==Solution==
+
+Days of the week have a cycle that repeats every $7$ days.  Thus, after $100$ cycles, or $700$ days, it will be Saturday again.  Six more days will make it $\text{Friday} \rightarrow \boxed{C}$

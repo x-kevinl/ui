@@ -1,0 +1,21 @@
+==Solution==
+===Solution 1===
+
+Let $s$ be Keiko's speed in meters per second, $a$ be the length of the straight parts of the track, $b$ be the radius of the smaller circles, and $b+6$ be the radius of the larger circles. The length of the inner edge will be $2a+2b \pi $ and the length of the outer edge will be $2a+2\pi (b+6).$ Since it takes $36$ seconds longer for Keiko to walk on the outer edge,
+
+$$ \begin{align*}
+\frac{2a+2b \pi}{s} + 36 &= \frac{2a+2\pi (b+6)}{s}\\
+2a+2b\pi +36s &= 2a+2b\pi +12\pi\\
+36s&=12\pi\\
+s&=\boxed{\textbf{(A)} \frac{\pi}{3}}
+\end{align*} $$
+
+===Solution 2===
+
+It is basically the same as Solution 1 except you can completely disregard the straight edges of the track since it will take Keiko the same time to walk that length for both inner and outer circles. Instead, focus on the circular part. If the diameter of the smaller circle were $r,$ then the length of the smaller circle would be $r \pi$ and the length of the larger circle would be $(r+12) \pi.$ Since it still takes $36$ seconds longer,
+
+$$ \begin{align*}
+\frac{r \pi}{s} + 36 &= \frac{(r+12)\pi}{s}\\
+r \pi + 36s &= r \pi + 12 \pi\\
+s&=\boxed{\textbf{(A)} \frac{\pi}{3}}
+\end{align*} $$

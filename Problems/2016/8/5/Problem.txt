@@ -1,0 +1,12 @@
+== Problem ==
+
+The number $N$ is a two-digit number.
+
+• When $N$ is divided by $9$, the remainder is $1$.
+
+• When $N$ is divided by $10$, the remainder is $3$.
+
+What is the remainder when $N$ is divided by $11$?
+
+
+$\textbf{(A) }0\qquad\textbf{(B) }2\qquad\textbf{(C) }4\qquad\textbf{(D) }5\qquad \textbf{(E) }7$

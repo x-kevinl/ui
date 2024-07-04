@@ -1,0 +1,2 @@
+== Solution 1==
+Each triangle has leg length $\frac 12 \cdot (25 - 15) = 5$ meters and area $\frac 12 \cdot 5^2 = \frac {25}{2}$ square meters.  Thus the flower beds have a total area of $25$ square meters.  The entire yard has length $25$ m and width $5$ m, so its area is $125$ square meters.  The fraction of the yard occupied by the flower beds is $\frac {25}{125} = \boxed{\frac15}$.  The answer is $\mathrm{(C)}$.

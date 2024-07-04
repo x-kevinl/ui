@@ -1,0 +1,3 @@
+== Problem ==
+
+Triangle <math>ABC</math> has <math>AC = 450</math> and <math>BC = 300</math>. Points <math>K</math> and <math>L</math> are located on <math>\overline{AC}</math> and <math>\overline{AB}</math> respectively so that <math>AK = CK</math>, and <math>\overline{CL}</math> is the angle bisector of angle <math>C</math>. Let <math>P</math> be the point of intersection of <math>\overline{BK}</math> and <math>\overline{CL}</math>, and let <math>M</math> be the point on line <math>BK</math> for which <math>K</math> is the midpoint of <math>\overline{PM}</math>. If <math>AM = 180</math>, find <math>LP</math>.

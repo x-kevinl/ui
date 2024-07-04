@@ -1,0 +1,25 @@
+== Solution ==
+The first step is to notice that the 4 on the right hand side can simplify the terms on the left hand side. If we distribute 1 to <math>\frac{3}{x-3}</math>, then the fraction becomes of the form <math>\frac{x}{x - 3}</math>. A similar cancellation happens with the other four terms. If we assume <math>x = 0</math> is not the highest solution (which is true given the answer format) we can cancel the common factor of <math>x</math> from both sides of the equation.
+
+<math>\frac{1}{x - 3} + \frac{1}{x - 5} + \frac{1}{x - 17} + \frac{1}{x - 19} = x - 11</math>
+
+Then, if we make the substitution <math>y = x - 11</math>, we can further simplify.
+
+<math>\frac{1}{y + 8} + \frac{1}{y + 6} + \frac{1}{y - 6} + \frac{1}{y - 8} =y </math>
+
+If we group and combine the terms of the form  <math>y - n</math> and   <math> y + n</math>, we get this equation:
+
+<math>\frac{2y}{y^2 - 64} + \frac{2y}{y^2 - 36} = y</math>
+
+Then, we can cancel out a <math>y</math> from both sides, knowing that <math>x = 11</math> is not a possible solution given the answer format.
+After we do that, we can make the final substitution <math>z = y^2</math>.
+
+<math>\frac{2}{z - 64} + \frac{2}{z - 36} = 1</math>
+ 
+<math>2z - 128 + 2z - 72 = (z - 64)(z - 36)</math>
+ 
+<math>4z -  200 = z^2 - 100z + 64(36)</math>
+ 
+<math>z^2 - 104z + 2504 = 0</math>
+
+Using the quadratic formula, we get that the largest solution for <math>z</math> is <math>z = 52 + 10\sqrt{2}</math>. Then, repeatedly substituting backwards, we find that the largest value of <math>x</math> is <math>11 + \sqrt{52 + \sqrt{200}}</math>. The answer is thus <math>11 + 52 + 200 = \boxed{263}</math>

@@ -1,0 +1,19 @@
+==Solution 1 (Ptolemy's Theorem)==
+
+[[Ptolemy's theorem]] states that for cyclic quadrilateral <math>WXYZ</math>, <math>WX\cdot YZ + XY\cdot WZ = WY\cdot XZ</math>.
+
+We may assume that <math>P</math> is between <math>B</math> and <math>C</math>. Let <math>PA = a</math>, <math>PB = b</math>, <math>PC = c</math>, <math>PD = d</math>, and <math>AB = s</math>. We have <math>a^2 + c^2 = AC^2 = 2s^2</math>, because <math>AC</math> is a diameter of the circle. Similarly, <math>b^2 + d^2 = 2s^2</math>. Therefore, <math>(a+c)^2 = a^2 + c^2 + 2ac = 2s^2 + 2(56) = 2s^2 + 112</math>. Similarly, <math>(b+d)^2 = 2s^2 + 180</math>. 
+
+By Ptolemy's Theorem on <math>PCDA</math>, <math>as + cs = ds\sqrt{2}</math>, and therefore <math>a + c = d\sqrt{2}</math>. By Ptolemy's on <math>PBAD</math>, <math>bs + ds = as\sqrt{2}</math>, and therefore <math>b + d = a\sqrt{2}</math>. By squaring both equations, we obtain
+<cmath>\begin{alignat*}{8}
+2d^2 &= (a+c)^2 &&= 2s^2 + 112, \\
+2a^2 &= (b+d)^2 &&= 2s^2 + 180.
+\end{alignat*}</cmath>
+Thus, <math>a^2 = s^2 + 90</math>, and <math>d^2 = s^2 + 56</math>. Plugging these values into <math>a^2 + c^2 = b^2 + d^2 = 2s^2</math>, we obtain <math>c^2 = s^2 - 90</math>, and <math>b^2 = s^2 - 56</math>. Now, we can solve using <math>a</math> and <math>c</math> (though using <math>b</math> and <math>d</math> yields the same solution for <math>s</math>).
+<cmath>\begin{align*}
+ac = (\sqrt{s^2 - 90})(\sqrt{s^2 + 90}) &= 56 \\
+(s^2 + 90)(s^2 - 90) &= 56^2 \\
+s^4 &= 90^2 + 56^2 = 106^2 \\
+s^2 &= \boxed{106}.
+\end{align*}</cmath>
+~mathboy100

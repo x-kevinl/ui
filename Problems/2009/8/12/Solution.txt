@@ -1,0 +1,10 @@
+==Solution==
+The possible sums are
+$$\begin{tabular}{c|ccc}
+& 1 & 3 & 5 \\ \hline
+2 & 3 & 5 & 7 \\
+4 & 5 & 7 & 9 \\
+6 & 7 & 9 & 11
+\end{tabular}$$
+
+Only $9$ is not prime, so there are $7$ prime numbers and $9$ total numbers for a probability of $\boxed{\textbf{(D)}\ \frac79}$.

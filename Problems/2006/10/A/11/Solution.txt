@@ -1,0 +1,6 @@
+== Solution ==
+Expanding the left side, we have
+
+$x^2+2xy+y^2=x^2+y^2\Longrightarrow 2xy=0\Longrightarrow xy=0\Longrightarrow x = 0 \textrm{ or } y = 0$
+
+Thus there are two [[line]]s described in this graph, the horizontal line $y = 0$ and the vertical line $x=0$. Thus, our answer is $\boxed{\textbf{(C) }\textrm{two\,lines}}$.

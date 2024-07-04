@@ -1,0 +1,13 @@
+==Solution==
+
+In order to minimize the amount of cubes needed, we must match up as many squares of our given figures with each other to make different sides of the same cube.  One example of the solution with $\boxed{\textbf{(B)}\ 4}$ cubes. Notice the corner cube cannot be removed for a figure of 3 cubes because each face of a cube must be touching another face.
+
+<asy>
+import three;
+defaultpen(linewidth(0.8));
+real r=0.5;
+currentprojection=orthographic(3/4,8/15,7/15);
+draw(unitcube, white, thick(), nolight);
+draw(shift(1,-1,0)*unitcube, white, thick(), nolight);
+draw(shift(1,0,0)*unitcube, white, thick(), nolight);
+draw(shift(1,0,1)*unitcube, white, thick(), nolight);</asy>

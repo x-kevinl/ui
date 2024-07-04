@@ -1,0 +1,12 @@
+== Solution (Basic Casework and Combinations) ==
+Suppose <math>n</math> is such an [[integer]]. Because <math>n</math> has <math>3</math> proper divisors, it must have <math>4</math> divisors,, so <math>n</math> must be in the form <math>n=p\cdot q</math> or <math>n=p^3</math> for distinct [[prime number]]s <math>p</math> and <math>q</math>. 
+
+In the first case, the three proper divisors of <math>n</math> are <math>1</math>, <math>p</math> and <math>q</math>.  Thus, we need to pick two prime numbers less than <math>50</math>. There are fifteen of these (<math>2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43</math> and <math>47</math>) so there are <math> {15 \choose 2} =105</math> ways to choose a pair of primes from the list and thus <math>105</math> numbers of the first type.
+
+In the second case, the three proper divisors of <math>n</math> are 1, <math>p</math> and <math>p^2</math>.  Thus we need to pick a prime number whose square is less than <math>50</math>.  There are four of these (<math>2, 3, 5,</math> and <math>7</math>) and so four numbers of the second type. 
+
+Thus there are <math>105+4=\boxed{109}</math> integers that meet the given conditions.
+
+
+~lpieleanu (Minor editing)
+~ rollover2020 (extremely minor editing)

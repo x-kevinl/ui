@@ -1,0 +1,5 @@
+==Diagram==
+<asy>
+size(120); pathpen = linewidth(0.7); pointpen = black; pen f = fontsize(10); pair B=(0,0), A=(5,0), C=(0,13), E=(-5,0), O = incenter(E,C,A), D=IP(A -- A+3*(O-A),E--C); D(A--B--C--cycle); D(A--D--C); D(D--E--B, linetype("4 4")); MP("5", (A+B)/2, f); MP("13", (A+C)/2, NE,f); MP("A",D(A),f); MP("B",D(B),f); MP("C",D(C),N,f); MP("A'",D(E),f); MP("D",D(D),NW,f); D(rightanglemark(C,B,A,20)); D(anglemark(D,A,E,35));D(anglemark(C,A,D,30));
+</asy>
+-asjpz

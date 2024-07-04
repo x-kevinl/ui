@@ -1,0 +1,6 @@
+==Solution 1==
+This is a $d=st$ problem, so let $x$ be the time it takes to meet. We can write the following equation:
+$$12x+18x=45$$
+Solving gives us $x=1.5$. The $18x$ is Alicia so $18\times1.5=\boxed{\textbf{(E) 27}}$
+
+~zhenghua

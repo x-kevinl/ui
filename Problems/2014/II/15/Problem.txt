@@ -1,0 +1,2 @@
+==Problem==
+For any integer <math>k\geq 1</math>, let <math>p(k)</math> be the smallest prime which does not divide <math>k.</math> Define the integer function <math>X(k)</math> to be the product of all primes less than <math>p(k)</math> if <math>p(k)>2</math>, and <math>X(k)=1</math> if <math>p(k)=2.</math> Let <math>\{x_n\}</math> be the sequence defined by <math>x_0=1</math>, and <math>x_{n+1}X(x_n)=x_np(x_n)</math> for <math>n\geq 0.</math> Find the smallest positive integer <math>t</math> such that <math>x_t=2090.</math>

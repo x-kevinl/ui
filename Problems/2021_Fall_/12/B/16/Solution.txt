@@ -1,0 +1,41 @@
+== Solution 1 (Observation) ==
+Because $a + b + c$ is odd, $a$, $b$, $c$ are either one odd and two evens or three odds.
+
+$\textbf{Case 1}$: $a$, $b$, $c$ have one odd and two evens.
+
+Without loss of generality, we assume $a$ is odd and $b$ and $c$ are even.
+
+Hence, ${\rm gcd} \left( a , b \right)$ and ${\rm gcd} \left( a , c \right)$ are odd, and ${\rm gcd} \left( b , c \right)$ is even.
+Hence, ${\rm gcd} \left( a , b \right) + {\rm gcd} \left( b , c \right) + {\rm gcd} \left( c , a \right)$ is even. This violates the condition given in the problem.
+
+Therefore, there is no solution in this case.
+
+$\textbf{Case 2}$: $a$, $b$, $c$ are all odd.
+
+In this case, ${\rm gcd} \left( a , b \right)$, ${\rm gcd} \left( a , c \right)$, ${\rm gcd} \left( b , c \right)$ are all odd.
+
+Without loss of generality, we assume
+$$
+\[
+{\rm gcd} \left( a , b \right) \leq {\rm gcd} \left( b , c \right) \leq {\rm gcd} \left( c , a \right) .
+\]
+$$
+$\textbf{Case 2.1}$: ${\rm gcd} \left( a , b \right) = 1$, ${\rm gcd} \left( b , c \right) = 1$, ${\rm gcd} \left( c , a \right) = 7$.
+
+The only solution is $(a, b, c) = (7, 9, 7)$.
+
+Hence, $a^2 + b^2 + c^2 = 179$.
+
+$\textbf{Case 2.2}$: ${\rm gcd} \left( a , b \right) = 1$, ${\rm gcd} \left( b , c \right) = 3$, ${\rm gcd} \left( c , a \right) = 5$.
+
+The only solution is $(a, b, c) = (5, 3, 15)$.
+
+Hence, $a^2 + b^2 + c^2 = 259$.
+
+$\textbf{Case 2.3}$: ${\rm gcd} \left( a , b \right) = 3$, ${\rm gcd} \left( b , c \right) = 3$, ${\rm gcd} \left( c , a \right) = 3$.
+
+There is no solution in this case.
+
+Therefore, putting all cases together, the answer is $179 + 259 = \boxed{\textbf{(B)} \: 438}$.
+
+~Steven Chen (www.professorchenedu.com)

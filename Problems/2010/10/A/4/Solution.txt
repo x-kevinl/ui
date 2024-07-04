@@ -1,0 +1,3 @@
+==Solution==
+
+Assuming that there are fractions of compact discs, it would take $412/56 ~= 7.357$ CDs to have equal reading time. However, since the number of discs must be a whole number, there are at least 8 CDs, in which case there would be $412/8 = 51.5$ minutes of reading on each of the 8 discs. The answer is $\boxed{B}$.

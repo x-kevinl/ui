@@ -1,0 +1,14 @@
+== Solution ==
+First, we find the probability both are green, then the probability both are blue, and add the two probabilities. The sum should be equal to <math>0.58</math>. 
+
+The probability both are green is <math>\frac{4}{10}\cdot\frac{16}{16+N}</math>, and the probability both are blue is <math>\frac{6}{10}\cdot\frac{N}{16+N}</math>, so 
+<cmath> \frac{4}{10}\cdot\frac{16}{16+N}+\frac{6}{10}\cdot\frac{N}{16+N}=\frac{29}{50}</cmath>
+Solving this equation, 
+<cmath>20\left(\frac{16}{16+N}\right)+30\left(\frac{N}{16+N}\right)=29</cmath>
+Multiplying both sides by <math>16+N</math>, we get
+
+<cmath>\begin{align*}
+20\cdot16+30\cdot N&=29(16+N)\\
+320+30N&=464+29N\\
+N&=\boxed{144}
+\end{align*}</cmath>

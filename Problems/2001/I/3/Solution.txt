@@ -1,0 +1,10 @@
+== Solution 1 ==
+From [[Vieta's formulas]], in a [[polynomial]] of the form <math>a_nx^n + a_{n-1}x^{n-1} + \cdots + a_0 = 0</math>, then the sum of the roots is <math>\frac{-a_{n-1}}{a_n}</math>. 
+
+From the [[Binomial Theorem]], the first term of <math>\left(\frac 12-x\right)^{2001}</math> is <math>-x^{2001}</math>, but <math>x^{2001}+-x^{2001}=0</math>, so the term with the largest degree is <math>x^{2000}</math>. So we need the coefficient of that term, as well as the coefficient of <math>x^{1999}</math>.
+
+<cmath>\begin{align*}\binom{2001}{1} \cdot (-x)^{2000} \cdot \left(\frac{1}{2}\right)^1&=\frac{2001x^{2000}}{2}\\
+\binom{2001}{2} \cdot (-x)^{1999} \cdot \left(\frac{1}{2}\right)^2 &=\frac{-x^{1999}*2001*2000}{8}=-2001 \cdot 250x^{1999}
+\end{align*}</cmath>
+
+Applying Vieta's formulas, we find that the sum of the roots is <math>-\frac{-2001 \cdot 250}{\frac{2001}{2}}=250 \cdot 2=\boxed{500}</math>.

@@ -1,0 +1,16 @@
+==Solution 1==
+We can set up a system of equations where $a$ is the sets of twins, $b$ is the sets of triplets, and $c$ is the sets of quadruplets.
+$$\begin{split}
+2a + 3b + 4c & = 1000 \\
+b & = 4c \\
+a & = 3b
+\end{split}$$
+
+Solving for $c$ and $a$ in the second and third equations and substituting into the first equation yields
+$$\begin{split}
+2 (3b) + 3b + 4 (0.25b) & = 1000 \\
+6b + 3b + b & = 1000 \\
+b & = 100
+\end{split}$$
+
+Since we are trying to find the number of babies and '''NOT''' the number of sets of quadruplets, the solution is not $c$, but rather $4c$. Therefore, we strategically use the second initial equation to realize that $b$ $=$ $4c$, leaving us with the number of babies born as quadruplets equal to $\boxed{\textbf{(D)}\ 100}$.

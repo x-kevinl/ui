@@ -1,0 +1,4 @@
+== Solution 1==
+Since $\frac 12 + \frac 13 + \frac 17  = \frac {41}{42}$, $0 < \lim_{n \rightarrow \infty} \left(\frac{41}{42} + \frac{1}{n}\right) < \frac {41}{42} + \frac 1n < \frac{41}{42} + \frac 11 < 2$
+
+From which it follows that $\frac{41}{42} + \frac 1n = 1$ and $n = 42$. The only answer choice that is not true is $\boxed{\mathrm{(E)}\ n>84}$.

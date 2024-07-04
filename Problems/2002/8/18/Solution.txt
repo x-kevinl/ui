@@ -1,0 +1,2 @@
+==Solution 1==
+Converting into minutes and adding, we get that she skated $75*5+90*3+x = 375+270+x = 645+x$ minutes total, where $x$ is the amount she skated on day $9$. Dividing by $9$ to get the average, we get $\frac{645+x}{9}=85$. Solving for $x$, $$645+x=765$$ $$x=120$$ Now we convert back into hours and minutes to get $\boxed{\text{(E)}\ 2\ \text{hr}}$.

@@ -1,0 +1,8 @@
+==Solution 1 (Stars and Bars/Sticks and Stones)==
+
+Note: This solution uses the non-negative version for stars and bars. A solution using the positive version of stars is similar (first removing an apple from each person instead of 2).
+
+This method uses the counting method of stars and bars (non-negative version). Since each person must have at least $2$ apples, we can remove $2*3$ apples from the total that need to be sorted. With the remaining $18$ apples, we can use stars and bars to determine the number of possibilities. Assume there are $18$ stars in a row, and $2$ bars, which will be placed to separate the stars into groups of $3$. In total, there are $18$ spaces for stars $+ 2$ spaces for bars, for a total of $20$ spaces. We can now do $20 \choose 2$. This is because if we choose distinct $2$ spots for the bars to be placed, each combo of $3$ groups will be different, and all apples will add up to $18$. We can also do this because the apples are indistinguishable. $20 \choose 2$ is $190$, therefore the answer is $\boxed{\textbf{(C) }190}$.
+ 
+
+~goofytaipan91

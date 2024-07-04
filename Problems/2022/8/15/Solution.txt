@@ -1,0 +1,65 @@
+==Solution==
+
+<asy>
+//diagram by pog
+size(5.5cm);
+usepackage("mathptmx");
+defaultpen(mediumgray*0.5+gray*0.5+linewidth(0.63));
+add(grid(6,6));
+label(scale(0.7)*"$1$", (1,-0.3), black);
+label(scale(0.7)*"$2$", (2,-0.3), black);
+label(scale(0.7)*"$3$", (3,-0.3), black);
+label(scale(0.7)*"$4$", (4,-0.3), black);
+label(scale(0.7)*"$5$", (5,-0.3), black);
+label(scale(0.7)*"$1$", (-0.3,1), black);
+label(scale(0.7)*"$2$", (-0.3,2), black);
+label(scale(0.7)*"$3$", (-0.3,3), black);
+label(scale(0.7)*"$4$", (-0.3,4), black);
+label(scale(0.7)*"$5$", (-0.3,5), black);
+label(scale(0.8)*rotate(90)*"Price (dollars)", (-1,3.2), black);
+label(scale(0.8)*"Weight (ounces)", (3.2,-1), black);
+draw((0,0)--(6,5),red);
+
+dot((1,1.2),black);
+dot((1,1.7),black);
+dot((1,2),black);
+dot((1,2.8),black);
+
+dot((1.5,2.1),black);
+dot((1.5,3),black);
+dot((1.5,3.3),black);
+dot((1.5,3.75),black);
+
+dot((2,2),black);
+dot((2,2.9),black);
+dot((2,3),black);
+dot((2,4),black);
+dot((2,4.35),black);
+dot((2,4.8),black);
+
+dot((2.5,2.7),black);
+dot((2.5,3.7),black);
+dot((2.5,4.2),black);
+dot((2.5,4.4),black);
+
+dot((3,2.5),blue);
+dot((3,3.4),black);
+dot((3,4.2),black);
+
+dot((3.5,3.8),black);
+dot((3.5,4.5),black);
+dot((3.5,4.8),black);
+
+dot((4,3.9),black);
+dot((4,5.1),black);
+
+dot((4.5,4.75),black);
+dot((4.5,5),black);
+
+dot((5,4.5),black);
+dot((5,5),black);
+</asy>
+
+We are looking for a black point, that when connected to the origin, yields the lowest slope. The slope represents the price per ounce. We can visually find that the point with the lowest slope is the blue point. Furthermore, it is the only one with a price per ounce significantly less than $1$. Finally, we see that the blue point is in the category with a weight of $\boxed{\textbf{(C) } 3}$ ounces.
+
+~MathFun1000

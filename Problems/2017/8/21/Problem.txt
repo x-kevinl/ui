@@ -1,0 +1,5 @@
+==Problem==
+
+Suppose $a$, $b$, and $c$ are nonzero real numbers, and $a+b+c=0$. What are the possible value(s) for $\frac{a}{|a|}+\frac{b}{|b|}+\frac{c}{|c|}+\frac{abc}{|abc|}$?
+
+$\textbf{(A) }0\qquad\textbf{(B) }1\text{ and }-1\qquad\textbf{(C) }2\text{ and }-2\qquad\textbf{(D) }0,2,\text{ and }-2\qquad\textbf{(E) }0,1,\text{ and }-1$

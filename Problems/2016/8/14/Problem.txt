@@ -1,0 +1,5 @@
+==Problem==
+
+Karl's car uses a gallon of gas every $35$ miles, and his gas tank holds $14$ gallons when it is full. One day, Karl started with a full tank of gas, drove $350$ miles, bought $8$ gallons of gas, and continued driving to his destination. When he arrived, his gas tank was half full. How many miles did Karl drive that day? 
+
+$\textbf{(A) }525\qquad\textbf{(B) }560\qquad\textbf{(C) }595\qquad\textbf{(D) }665\qquad \textbf{(E) }735$

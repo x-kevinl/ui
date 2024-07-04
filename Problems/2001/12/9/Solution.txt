@@ -1,0 +1,2 @@
+== Solution 1 ==
+Letting $x = 500$ and $y = \dfrac65$ in the given equation, we get $f(500\cdot\frac65) = \frac3{\frac65} = \frac52$, or $f(600) = \boxed{\textbf{(C) } \frac52}$.

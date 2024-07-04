@@ -1,0 +1,34 @@
+== Solution ==
+
+Let each point <math>P_i</math> be in column <math>c_i</math>. The numberings for <math>P_i</math> can now be defined as follows.
+<cmath>\begin{align*}x_i &= (i - 1)N + c_i\\
+y_i &= (c_i - 1)5 + i
+\end{align*}</cmath>
+
+We can now convert the five given equalities.
+<cmath>\begin{align}x_1&=y_2 & \Longrightarrow & & c_1 &= 5 c_2-3\\
+x_2&=y_1 & \Longrightarrow & & N+c_2 &= 5 c_1-4\\
+x_3&=y_4 & \Longrightarrow & & 2 N+c_3 &= 5 c_4-1\\
+x_4&=y_5 & \Longrightarrow & & 3 N+c_4 &= 5 c_5\\
+x_5&=y_3 & \Longrightarrow & & 4 N+c_5 &= 5 c_3-2
+\end{align}</cmath>
+Equations <math>(1)</math> and <math>(2)</math> combine to form
+<cmath>N = 24c_2 - 19</cmath>
+Similarly equations <math>(3)</math>, <math>(4)</math>, and <math>(5)</math> combine to form
+<cmath>117N +51 = 124c_3</cmath>
+Take this equation modulo 31
+<cmath>24N+20\equiv 0 \pmod{31}</cmath>
+And substitute for N
+<cmath>24 \cdot 24 c_2 - 24 \cdot 19 +20\equiv 0 \pmod{31}</cmath>
+<cmath>18 c_2 \equiv 2 \pmod{31}</cmath>
+
+Thus the smallest <math>c_2</math> might be is <math>7</math> and by substitution <math>N = 24 \cdot 7 - 19 = 149</math>
+
+The column values can also easily be found by substitution
+<cmath>\begin{align*}c_1&=32\\
+c_2&=7\\
+c_3&=141\\
+c_4&=88\\
+c_5&=107
+\end{align*}</cmath>
+As these are all positive and less than <math>N</math>, <math>\boxed{149}</math> is the solution.

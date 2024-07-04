@@ -1,0 +1,14 @@
+== Problem ==
+Find the number of five-digit positive integers, <math>n</math>, that satisfy the following conditions:
+
+<UL>
+(a) the number <math>n</math> is divisible by <math>5,</math>
+</UL>
+
+<UL>
+(b) the first and last digits of <math>n</math> are equal, and
+</UL>
+
+<UL>
+(c) the sum of the digits of <math>n</math> is divisible by <math>5.</math>
+</UL>

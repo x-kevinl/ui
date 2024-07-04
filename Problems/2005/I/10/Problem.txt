@@ -1,0 +1,10 @@
+== Problem ==
+[[Triangle]] <math> ABC </math> lies in the [[cartesian plane]] and has an [[area]] of <math>70</math>. The coordinates of <math> B </math> and <math> C </math> are <math> (12,19) </math> and <math> (23,20), </math> respectively, and the coordinates of <math> A </math> are <math> (p,q). </math> The [[line]] containing the [[median of a triangle | median]] to side <math> BC </math> has [[slope]] <math> -5. </math> Find the largest possible value of <math> p+q. </math>
+
+<center><asy>defaultpen(fontsize(8));
+size(170);
+pair A=(15,32), B=(12,19), C=(23,20), M=B/2+C/2, P=(17,22);
+draw(A--B--C--A);draw(A--M);draw(B--P--C);
+label("A (p,q)",A,(1,1));label("B (12,19)",B,(-1,-1));label("C (23,20)",C,(1,-1));label("M",M,(0.2,-1));
+label("(17,22)",P,(1,1));
+dot(A^^B^^C^^M^^P);</asy></center>

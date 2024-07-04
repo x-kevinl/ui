@@ -1,0 +1,4 @@
+== Problem ==
+The greatest prime number that is a divisor of $16{,}384$ is $2$ because $16{,}384 = 2^{14}$. What is the sum of the digits of the greatest prime number that is a divisor of $16{,}383$?
+
+$\textbf{(A)} \: 3\qquad\textbf{(B)} \: 7\qquad\textbf{(C)} \: 10\qquad\textbf{(D)} \: 16\qquad\textbf{(E)} \: 22$

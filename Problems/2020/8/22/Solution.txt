@@ -1,0 +1,4 @@
+==Solution 1==
+We start with final output of $1$ and work backward, taking cares to consider all possible inputs that could have resulted in any particular output. This produces following set of possibilities each stage:
+$$\{1\}\rightarrow\{2\}\rightarrow\{4\}\rightarrow\{1,8\}\rightarrow\{2,16\}\rightarrow\{4,5,32\}\rightarrow\{1,8,10,64\}$$
+where, for example, $2$ must come from $4$ (as there is no integer $n$ satisfying $3n+1=2$), but $16$ could come from $32$ or $5$ (as $\frac{32}{2} = 3 \cdot 5 + 1 = 16$, and $32$ is even while $5$ is odd). By construction, last set in this sequence contains all the numbers which will lead to number $1$ to end of the $6$-step process, and sum is $1+8+10+64=\boxed{\textbf{(E) }83}$.

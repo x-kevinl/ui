@@ -1,0 +1,2 @@
+==Problem==
+In the Cartesian plane let <math>A = (1,0)</math> and <math>B = \left( 2, 2\sqrt{3} \right)</math>.  Equilateral triangle <math>ABC</math> is constructed so that <math>C</math> lies in the first quadrant.  Let <math>P=(x,y)</math> be the center of <math>\triangle ABC</math>.  Then <math>x \cdot y</math> can be written as <math>\tfrac{p\sqrt{q}}{r}</math>, where <math>p</math> and <math>r</math> are relatively prime positive integers and <math>q</math> is an integer that is not divisible by the square of any prime.  Find <math>p+q+r</math>.

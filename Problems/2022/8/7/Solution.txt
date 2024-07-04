@@ -1,0 +1,9 @@
+==Solution 1==
+
+Notice that the number of kilobits in this song is $4.2 \cdot 8000 = 8 \cdot 7 \cdot 6 \cdot 100.$
+
+We must divide this by $56$ in order to find out how many seconds this song would take to download: $\frac{\cancel{8}\cdot\cancel{7}\cdot6\cdot100}{\cancel{56}} = 600.$
+
+Finally, we divide  this number by $60$ because this is the number of <i><b>seconds</b></i> to get the answer $\frac{600}{60}=\boxed{\textbf{(B) } 10}.$
+
+~wamofan

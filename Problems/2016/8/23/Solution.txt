@@ -1,0 +1,8 @@
+==Solutions==
+===Solution 1===
+Observe that $\triangle{EAB}$ is equilateral. Therefore, $m\angle{AEB}=m\angle{EAB}=m\angle{EBA} = 60^{\circ}$. Since $CD$ is a straight line, we conclude that $m\angle{EBD} = 180^{\circ}-60^{\circ}=120^{\circ}$. Since $BE=BD$ (both are radii of the same circle), $\triangle{BED}$ is isosceles, meaning that $m\angle{BED}=m\angle{BDE}=30^{\circ}$. Similarly, $m\angle{AEC}=m\angle{ACE}=30^{\circ}$. 
+
+Now, $\angle{CED}=m\angle{AEC}+m\angle{AEB}+m\angle{BED} = 30^{\circ}+60^{\circ}+30^{\circ} = 120^{\circ}$. Therefore, the answer is $\boxed{\textbf{(C) }\ 120}$.
+
+===Solution 2===
+We know that $\triangle{EAB}$ is equilateral, because all of its sides are congruent radii. Because point $A$ is the center of a circle, $C$ is at the border of a circle, and $E$ and $B$ are points on the edge of that circle, $m\angle{ECB}=\frac{1}{2}\cdot m\angle{EAB}=\frac{1}{2}\cdot60^{\circ}=30^{\circ}$. Since $\triangle{CED}$ is isosceles, angle $\angle{CED}=180^{\circ}-2\cdot30^{\circ}=\boxed{\text{(C)}\; 120}$ degrees -SweetMango77.

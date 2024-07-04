@@ -1,0 +1,2 @@
+== Problem ==
+The workers in a factory produce widgets and whoosits. For each product, production time is constant and identical for all workers, but not necessarily equal for the two products. In one hour, <math>100</math> workers can produce <math>300</math> widgets and <math>200</math> whoosits. In two hours, <math>60</math> workers can produce <math>240</math> widgets and <math>300</math> whoosits. In three hours, <math>50</math> workers can produce <math>150</math> widgets and <math>m</math> whoosits. Find <math>m</math>.

@@ -1,0 +1,2 @@
+==Solution==
+Let $b$ be the base of the isosceles triangles, and let $a$ be the lengths of the other legs. From this, $2a+b=23$ and $b=23-2a$. From triangle inequality, $2a>b$, then plug in the value from the previous equation to get $2a>23-2a$ or $a>5.75$. The maximum value of $a$ occurs when $b=1$, in which from the first equation $a=11$. Thus, $a$ can have integer side lengths from $6$ to $11$, and there are $\boxed{\textbf{(C)}\ 6}$ triangles.

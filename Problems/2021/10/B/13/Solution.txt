@@ -1,0 +1,20 @@
+==Solution 1==
+We can start by setting up an equation to convert $\underline{32d}$ base $n$ to base 10. To convert this to base 10, it would be $3{n}^2+2n+d.$ Because it is equal to 263, we can set this equation to 263. Finally, subtract $d$ from both sides to get $3{n}^2+2n = 263-d$.
+
+We can also set up equations to convert $\underline{324}$ base $n$ and $\underline{11d1}$ base 6 to base 10. The equation to covert $\underline{324}$ base $n$ to base 10 is $3{n}^2+2n+4.$ The equation to convert $\underline{11d1}$ base 6 to base 10 is ${6}^3+{6}^2+6d+1.$
+
+Simplify ${6}^3+{6}^2+6d+1$ so it becomes $6d+253.$ Setting the above equations equal to each other, we have 
+$$3{n}^2+2n+4 = 6d+253.$$ 
+Subtracting 4 from both sides gets $3{n}^2+2n = 6d+249.$
+
+We can then use equations
+$$3{n}^2+2n = 263-d$$
+$$3{n}^2+2n = 6d+249$$
+to solve for $d$. Set $263-d$ equal to $6d+249$ and solve to find that $d=2$.
+
+Plug $d=2$ back into the equation $3{n}^2+2n = 263-d$. Subtract 261 from both sides to get your final equation of $3{n}^2+2n-261 = 0.$ We solve using the quadratic formula to find that the solutions are $9$ and $-29/3.$ Because the base must be positive, $n=9.$
+
+Adding 2 to 9 gets $\boxed{\textbf{(B)} ~11}$
+
+-Zeusthemoose (edited for readability)
+-solution corrected by Billowingsweater

@@ -1,0 +1,8 @@
+== Official Solution (MAA)==
+
+<center><asy>defaultpen(fontsize(10)); size(200); pen p=fontsize(8);
+pair A,B,C,P,Q;
+B=MP("B",origin,down+left); C=MP("C",20*right,right+down); A=MP("A",extension(B,dir(80),C,C+dir(100)),up); Q=MP("Q",20*dir(80),left); P=MP("P",Q+(20*dir(60)),right); 
+draw(A--B--C--A, black+1);draw(B--P--Q); MP("x",B,20*dir(75),p); MP("x",P,17*dir(245),p); MP("2x",Q,15*dir(70),p); MP("2x",A,15*dir(-90),p); MP("2y",P,2*left,p); MP("3x",P,10*dir(-95),p); MP("x+y",C,5*dir(135),p); MP("y",B,5*dir(40),p);
+</asy></center> 
+Let <math>\angle QPB=x^\circ</math>. Because <math>\angle AQP</math> is exterior to isosceles triangle <math>PQB</math> its measure is <math>2x</math> and <math>\angle PAQ</math> has the same measure. Because <math>\angle BPC</math> is exterior to  <math>\triangle BPA</math> its measure is <math>3x</math>. Let <math>\angle PBC = y^\circ</math>. It follows that <math>\angle ACB = x+y</math> and that <math>4x+2y=180^\circ</math>. Two of the angles of triangle <math>APQ</math> have measure <math>2x</math>, and thus the measure of <math>\angle APQ</math> is <math>2y</math>. It follows that <math>AQ=2\cdot AP\cdot \sin y</math>. Because <math>AB=AC</math> and <math>AP=QB</math>, it also follows that <math>AQ=PC</math>. Now apply the Law of Sines to triangle <math>PBC</math> to find <cmath>\frac{\sin 3x}{BC}=\frac{\sin y}{PC}=\frac{\sin y}{2\cdot AP\cdot \sin y}= \frac{1}{2\cdot BC}</cmath>because <math>AP=BC</math>. Hence <math>\sin 3x = \tfrac 12</math>. Since <math>4x<180</math>, this implies that <math>3x=30</math>, i.e. <math>x=10</math>. Thus <math>y=70</math> and <cmath>r=\frac{10+70}{2\cdot 70}=\frac 47,</cmath>which implies that <math>1000r = 571 + \tfrac 37</math>. So the answer is <math>\boxed{571}</math>.

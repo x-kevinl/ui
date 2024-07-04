@@ -1,0 +1,8 @@
+== Problem ==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>Four distinct [[circle]]s are drawn in a [[plane]]. What is the maximum number of points where at least two of the circles intersect?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+$\mathrm{(A)}\ 8
+\qquad\mathrm{(B)}\ 9
+\qquad\mathrm{(C)}\ 10
+\qquad\mathrm{(D)}\ 12
+\qquad\mathrm{(E)}\ 16$

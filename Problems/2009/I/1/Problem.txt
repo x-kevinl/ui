@@ -1,0 +1,3 @@
+== Problem ==
+
+Call a <math>3</math>-digit number ''geometric'' if it has <math>3</math> distinct digits which, when read from left to right, form a geometric sequence.  Find the difference between the largest and smallest geometric numbers.

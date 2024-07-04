@@ -1,0 +1,6 @@
+== Solution ==
+The base price of Michelle's cell phone plan is $20$ dollars. 
+If she sent $100$ text messages and it costs $5$ cents per text, then she must have spent $500$ cents for texting, or $5$ dollars. She talked for $30.5$ hours, but $30.5-30$ will give us the amount of time exceeded past 30 hours.
+$30.5-30=.5$ hours $=30$ minutes.
+Since the price for phone calls is $10$ cents per minute, the additional amount Michelle has to pay for phone calls is $30*10=300$ cents, or $3$ dollars.
+Adding $20+5+3$ dollars $\boxed{\$28 \textbf{ (D)}}$.

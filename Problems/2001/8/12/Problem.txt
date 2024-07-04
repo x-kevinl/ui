@@ -1,0 +1,5 @@
+==Problem==
+
+If $a\otimes b = \dfrac{a + b}{a - b}$, then $(6\otimes 4)\otimes 3 = $
+
+$\text{(A)}\ 4 \qquad \text{(B)}\ 13 \qquad \text{(C)}\ 15 \qquad \text{(D)}\ 30 \qquad \text{(E)}\ 72$

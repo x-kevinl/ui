@@ -1,0 +1,4 @@
+==Solution 1==
+We see that half the area of the octagon is $5$. We see that the triangle area is $5-1 = 4$. That means that $\frac{5h}{2} = 4 \rightarrow h=\frac{8}{5}$.
+$$\text{QY}=\frac{8}{5} - 1 = \frac{3}{5}$$
+Meaning, $\frac{\frac{2}{5}}{\frac{3}{5}} = \boxed{\textbf{(D) }\frac{2}{3}}$

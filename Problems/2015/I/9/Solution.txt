@@ -1,0 +1,26 @@
+==Solution 1==
+Let <math>a_1=x, a_2=y, a_3=z</math>. First note that if any absolute value equals 0, then <math>a_n=0</math>.
+Also note that if at any position, <math>a_n=a_{n-1}</math>, then <math>a_{n+2}=0</math>.
+Then, if any absolute value equals 1, then <math>a_n=0</math>.
+Therefore, if either <math>|y-x|</math> or <math>|z-y|</math> is less than or equal to 1, then that ordered triple meets the criteria.
+Assume that to be the only way the criteria is met.
+To prove, let <math>|y-x|>1</math>, and <math>|z-y|>1</math>. Then, <math>a_4 \ge 2z</math>, <math>a_5 \ge 4z</math>, and <math>a_6 \ge 4z</math>.
+However, since the minimum values of <math>a_5</math> and <math>a_6</math> are equal, there must be a scenario where the criteria was met that does not meet our earlier scenarios. Calculation shows that to be <math>z=1</math>, <math>|y-x|=2</math>. Again assume that any other scenario will not meet criteria.
+To prove, divide the other scenarios into two cases: <math>z>1</math>, <math>|y-x|>1</math>, and <math>|z-y|>1</math>; and <math>z=1</math>, <math>|y-x|>2</math>, and <math>|z-y|>1</math>.
+For the first one, <math>a_4 \ge 2z</math>, <math>a_5 \ge 4z</math>, <math>a_6 \ge 8z</math>, and <math>a_7 \ge 16z</math>, by which point we see that this function diverges.
+For the second one, <math>a_4 \ge 3</math>, <math>a_5 \ge 6</math>, <math>a_6 \ge 18</math>, and <math>a_7 \ge 54</math>, by which point we see that this function diverges.
+
+
+Therefore, the only scenarios where <math>a_n=0</math> is when any of the following are met:
+<math>|y-x|<2</math> (280 options)
+<math>|z-y|<2</math> (280 options, 80 of which coincide with option 1)
+<math>z=1</math>, <math>|y-x|=2</math>. (16 options, 2 of which coincide with either option 1 or option 2)
+Adding the total number of such ordered triples yields <math>280+280-80+16-2=\boxed{494}</math>.
+
+*Note to author: 
+
+Because <math>a_4 \ge 2z</math>, <math>a_5 \ge 4z</math>, <math>a_6 \ge 8z</math>, and <math>a_7 \ge 16z</math> doesn't mean the function diverges. What if <math>z = 7</math>, <math>a_4 = 60</math>, and <math>a_5 = 30</math> too?
+
+*Note to the Note to author:
+
+This isn't possible because the difference between is either 0, 1, or some number greater than 1. If <math>a_4 = 63</math> (since it must be a multiple of <math>z</math>), then a_5 is either 0, 63, or some number greater than 63.

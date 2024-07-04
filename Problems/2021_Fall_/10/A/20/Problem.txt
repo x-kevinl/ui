@@ -1,0 +1,5 @@
+== Problem ==
+
+For how many ordered pairs $(b,c)$ of positive integers does neither $x^2+bx+c=0$ nor $x^2+cx+b=0$ have two distinct real solutions?
+
+$\textbf{(A) } 4 \qquad \textbf{(B) } 6 \qquad \textbf{(C) } 8 \qquad \textbf{(D) } 12 \qquad \textbf{(E) } 16 \qquad$

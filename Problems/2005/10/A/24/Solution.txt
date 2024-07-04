@@ -1,0 +1,22 @@
+==Solution 1==
+If $ P(n) = \sqrt{n} $, then $ n = p_{1}^{2} $, where $ p_{1} $ is a [[prime number]].
+
+If $ P(n+48) = \sqrt{n+48} $, then $n + 48$ is a square, but we know that n is $p_{1}^{2} $.
+
+
+This means we just have to check for squares of primes, add $48$ and look whether the root is a prime number.
+We can easily see that the difference between two consecutive square after $576$ is greater than or equal to $49$,
+Hence we have to consider only the prime numbers till $23$.
+
+Squaring prime numbers below $23$ including $23$ we get the following list.
+
+$4 , 9 , 25 , 49 , 121, 169 , 289 , 361 , 529$
+
+But adding $48$ to a number ending with $9$ will result in a number ending with $7$, but we know that a perfect square does not end in $7$, so we can eliminate those cases to get the new list.
+
+$4 , 25 , 121 , 361$
+
+Adding $48$, we get $121$ as the only possible solution.
+Hence the answer is $\boxed{\textbf{(B) }1}$.
+
+edited by mobius247

@@ -1,0 +1,33 @@
+== Solution 1==
+
+Let $D$ be the origin. $A$ is the point $(0,4)$ and $M$ is the point $(2,0)$. We are given the radius of the quarter circle and semicircle as $4$ and $2$, respectively, so their equations, respectively, are:
+
+$x^2 + (y-4)^2 = 4^2$
+
+$(x-2)^2 + y^2 = 2^2$
+
+Subtract the second equation from the first:
+
+$x^2 + (y - 4)^2 - (x - 2)^2 - y^2 = 12$
+
+$4x - 8y + 12 = 12$
+
+$x = 2y.$
+
+Then substitute:
+
+$(2y)^2 + (y - 4)^2 = 16$
+
+$4y^2 + y^2 - 8y + 16 = 16$
+
+$5y^2 - 8y = 0$
+
+$y(5y - 8) = 0.$
+
+Thus $y = 0$ and $y = \frac{8}{5}$ making $x = 0$ and $x = \frac{16}{5}$.
+
+The first value of $0$ is obviously referring to the x-coordinate of the point where the circles intersect at the origin, $D$, so the second value must be referring to the x coordinate of $P$. Since $\overline{AD}$ is the y-axis, the distance to it from $P$ is the same as the x-value of the coordinate of $P$, so the distance from $P$ to $\overline{AD}$ is $\frac{16}{5} \Rightarrow \boxed{B}.$
+
+-mathbeast9
+
+(JK lol)

@@ -1,0 +1,2 @@
+== Solution 1 ==
+Since $(x-a)(x-b) = x^2 - (a+b)x + ab = x^2 + ax + b = 0$, it follows by comparing [[coefficient]]s that $-a - b = a$ and that $ab = b$. Since $b$ is nonzero, $a = 1$, and $-1 - b = 1 \Longrightarrow b = -2$. Thus $(a,b) = \boxed{\mathrm{(C)}\ (1,-2)}$.

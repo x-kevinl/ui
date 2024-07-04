@@ -1,0 +1,24 @@
+==Problem==
+Equilateral triangle <math>ABC</math> has side length <math>840</math>. Point <math>D</math> lies on the same side of line <math>BC</math> as <math>A</math> such that <math>\overline{BD} \perp \overline{BC}</math>. The line <math>\ell</math> through <math>D</math> parallel to line <math>BC</math> intersects sides <math>\overline{AB}</math> and <math>\overline{AC}</math> at points <math>E</math> and <math>F</math>, respectively. Point <math>G</math> lies on <math>\ell</math> such that <math>F</math> is between <math>E</math> and <math>G</math>, <math>\triangle AFG</math> is isosceles, and the ratio of the area of <math>\triangle AFG</math> to the area of <math>\triangle BED</math> is <math>8:9</math>. Find <math>AF</math>.
+<asy>
+pair A,B,C,D,E,F,G;
+B=origin;
+A=5*dir(60);
+C=(5,0);
+E=0.6*A+0.4*B;
+F=0.6*A+0.4*C;
+G=rotate(240,F)*A;
+D=extension(E,F,B,dir(90));
+draw(D--G--A,grey);
+draw(B--0.5*A+rotate(60,B)*A*0.5,grey);
+draw(A--B--C--cycle,linewidth(1.5));
+dot(A^^B^^C^^D^^E^^F^^G);
+label("$A$",A,dir(90));
+label("$B$",B,dir(225));
+label("$C$",C,dir(-45));
+label("$D$",D,dir(180));
+label("$E$",E,dir(-45));
+label("$F$",F,dir(225));
+label("$G$",G,dir(0));
+label("$\ell$",midpoint(E--F),dir(90));
+</asy>

@@ -1,0 +1,9 @@
+==Solution==
+We can represent the amount of gold with $g$ and the amount of chests with $c$. We can use the problem to make the following equations:
+$$9c-18 = g$$
+$$6c+3 = g$$
+
+We do this because for 9 chests there are 2 empty and if 9 were in each 9 multiplied by 2 is 18 left.
+
+Therefore, $6c+3 = 9c-18.$ This implies that $c = 7.$ We therefore have $g = 45.$ So, our answer is $\boxed{\textbf{(C)}\ 45}$.
+~CHECKMATE2021

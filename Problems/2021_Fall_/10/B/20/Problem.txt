@@ -1,0 +1,4 @@
+==Problem 20==
+In a particular game, each of $4$ players rolls a standard $6{ }$-sided die. The winner is the player who rolls the highest number. If there is a tie for the highest roll, those involved in the tie will roll again and this process will continue until one player wins. Hugo is one of the players in this game. What is the probability that Hugo's first roll was a $5,$ given that he won the game?
+
+$(\textbf{A})\: \frac{61}{216}\qquad(\textbf{B}) \: \frac{367}{1296}\qquad(\textbf{C}) \: \frac{41}{144}\qquad(\textbf{D}) \: \frac{185}{648}\qquad(\textbf{E}) \: \frac{11}{36}$

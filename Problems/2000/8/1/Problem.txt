@@ -1,0 +1,4 @@
+== Problem ==
+Aunt Anna is $42$ years old. Caitlin is $5$ years younger than Brianna, and Brianna is half as old as Aunt Anna. How old is Caitlin?
+
+$\mathrm{(A)}\ 15\qquad\mathrm{(B)}\ 16\qquad\mathrm{(C)}\ 17\qquad\mathrm{(D)}\ 21\qquad\mathrm{(E)}\ 37$

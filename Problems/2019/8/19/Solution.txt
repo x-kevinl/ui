@@ -1,0 +1,8 @@
+==Solution 1== 
+This isn't finished
+to another. This gives equality, as each team wins once and loses once as well. For a win, we have $3$ points, so a team gets $3\times2=6$ points if they each win a game and lose a game. This case brings a total of $18+6=24$ points. 
+
+Therefore, we use Case 2  since it brings the greater amount of points, or $\boxed {\textbf {(C) }24}$.
+
+--------------------------
+Note that case 2 can be easily seen to be better as follows. Let $x_A$ be the number of points $A$ gets, $x_B$ be the number of points $B$ gets, and $x_C$ be the number of points $C$ gets. Since $x_A = x_B = x_C$, to maximize $x_A$, we can just maximize $x_A + x_B + x_C$. But in each match, if one team wins then the total sum increases by $3$ points, whereas if they tie, the total sum increases by $2$ points. So, it is best if there are the fewest ties possible.

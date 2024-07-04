@@ -1,0 +1,6 @@
+== Problem ==
+The equations $2x + 7 = 3$ and $bx - 10 = - 2$ have the same solution. What is the value of $b$?
+
+$
+\textbf {(A)} -8 \qquad \textbf{(B)} -4 \qquad \textbf {(C) } 2 \qquad \textbf {(D) } 4 \qquad \textbf {(E) } 8
+$

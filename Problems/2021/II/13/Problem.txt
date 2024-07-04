@@ -1,0 +1,2 @@
+==Problem==
+Find the least positive integer <math>n</math> for which <math>2^n + 5^n - n</math> is a multiple of <math>1000</math>.

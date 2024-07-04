@@ -1,0 +1,7 @@
+==Problem==
+
+The infinite product
+$$\sqrt[3]{10} \cdot \sqrt[3]{\sqrt[3]{10}} \cdot \sqrt[3]{\sqrt[3]{\sqrt[3]{10}}} \cdots$$
+evaluates to a real number. What is that number?
+
+$\textbf{(A) }\sqrt{10}\qquad\textbf{(B) }\sqrt[3]{100}\qquad\textbf{(C) }\sqrt[4]{1000}\qquad\textbf{(D) }10\qquad\textbf{(E) }10\sqrt[3]{10}$

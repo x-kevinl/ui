@@ -1,0 +1,3 @@
+==Solution 1==
+
+The cost of a rose is odd, hence we need an even number of roses. Let there be $2r$ roses for some $r\geq 0$. Then we have $50-3\cdot 2r = 50-6r$ dollars left. We can always reach the sum exactly $50$ by buying $(50-6r)/2 = 25-3r$ carnations. Of course, the number of roses must be such that the number of carnations is non-negative. We get the inequality $25-3r \geq 0$ which solves to $r\leq 8 \frac13$. $r$ must be an integer, so there are $\boxed{9 \text{ (C)}}$ possible values of $r$, and each gives us one solution.

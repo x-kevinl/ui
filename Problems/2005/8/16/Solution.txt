@@ -1,0 +1,2 @@
+==Solution==
+The Martian can pull out $12$ socks, $4$ of each color, without having $5$ of the same kind yet. However, the next one he pulls out must be the fifth of one of the colors so he must remove $\boxed{\textbf{(D)}\ 13}$ socks.

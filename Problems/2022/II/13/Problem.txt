@@ -1,0 +1,3 @@
+==Problem==
+
+There is a polynomial <math>P(x)</math> with integer coefficients such that<cmath>P(x)=\frac{(x^{2310}-1)^6}{(x^{105}-1)(x^{70}-1)(x^{42}-1)(x^{30}-1)}</cmath>holds for every <math>0<x<1.</math> Find the coefficient of <math>x^{2022}</math> in <math>P(x)</math>.

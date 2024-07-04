@@ -1,0 +1,9 @@
+== Solution 1==
+
+First consider the first two runners. The faster runner will lap the slower runner exactly once, or run 500 meters farther. Let $x$ be the time these runners run in seconds.
+
+$$4.8x-4.4x=500 \Rightarrow x=1250$$
+
+Because $4.4(1250)=5500$ is a multiple of 500, it turns out they just meet back at the start line.
+
+Now we must find a time that is a multiple of $1250$ and results in the 5.0 m/s runner to end up on the start line. Every $1250$ seconds, that fastest runner goes $5.0(1250)=6250$ meters. In $2(1250)=2500$ seconds, he goes $5.0(2500)=12500$ meters. Therefore the runners run $\boxed{\textbf{(C)}\ 2,500}$ seconds.

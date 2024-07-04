@@ -1,0 +1,2 @@
+== Solution ==
+$2x + 7 = 3 \Longrightarrow x = -2, \quad -2b - 10 = -2 \Longrightarrow -2b = 8 \Longrightarrow b = \boxed{\textbf{(B)}-4}$

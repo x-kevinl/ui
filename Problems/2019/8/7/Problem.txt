@@ -1,0 +1,4 @@
+==Problem 7==
+Shauna takes five tests, each worth a maximum of $100$ points. Her scores on the first three tests are $76$ , $94$ , and $87$ . In order to average $81$ for all five tests, what is the lowest score she could earn on one of the other two tests?
+
+$\textbf{(A) }48\qquad\textbf{(B) }52\qquad\textbf{(C) }66\qquad\textbf{(D) }70\qquad\textbf{(E) }74$

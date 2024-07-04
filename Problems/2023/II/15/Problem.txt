@@ -1,0 +1,2 @@
+==Problem==
+For each positive integer <math>n</math> let <math>a_n</math> be the least positive integer multiple of <math>23</math> such that <math>a_n \equiv 1 \pmod{2^n}.</math> Find the number of positive integers <math>n</math> less than or equal to <math>1000</math> that satisfy <math>a_n = a_{n+1}.</math>

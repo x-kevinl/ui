@@ -1,0 +1,9 @@
+==Solution 1==
+Every integer value of $y$ leads to an integer solution for $x$
+Since $y$ must be positive, $y\geq 1$
+
+Also, $y = \frac{100-x}{2}$
+Since $x$ must be positive, $y < 50$
+
+$1 \leq y < 50$
+This leaves $49$ values for y, which mean there are $49$ solutions to the equation $\Rightarrow \mathrm{(B)}$

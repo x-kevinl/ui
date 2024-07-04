@@ -1,0 +1,6 @@
+== Solution 1 ==
+We see that every $35$ minutes the clock passes, the watch passes $30$ minutes. That means that the clock is $\frac{7}{6}$ as fast the watch, so we can set up proportions. 
+$\dfrac{\text{car clock}}{\text{watch}}=\dfrac{7}{6}=\dfrac{7 \text{ hours}}{x \text{ hours}}$. Cross-multiplying we get $x=6$. Now, this is obviously redundant, because we could just eyeball it to see that the watch would have passed $6$ hours. But this method is better when the numbers are a bit more complex, which makes it both easier and reliable. Either way, our answer is $\boxed{\textbf{(B) }6:00}$.
+
+--BakedPotato66
+--Rishi09

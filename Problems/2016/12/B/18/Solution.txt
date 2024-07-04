@@ -1,0 +1,9 @@
+==Solution==
+Consider the case when $x \geq 0$, $ y \geq 0$. 
+$$x^2+y^2=x+y$$ 
+$$(x - \frac{1}{2})^2+(y - \frac{1}{2})^2=\frac{1}{2}$$
+Notice the circle intersect the axes at points $(0, 1)$ and $(1, 0)$. Find the area of this circle in the first quadrant. The area is made of a semi-circle with radius of $\frac{\sqrt{2}}{2}$ and a triangle:
+$$A = \frac{\pi}{4} +\frac{1}{2}$$ 
+<asy>draw((0,-1.5)--(0,1.5),EndArrow);draw((-1.5,0)--(1.5,0),EndArrow);draw((0,1)--(1,0)--(0,-1)--(-1,0)--cycle,dotted);draw(arc((1/2,1/2),sqrt(2)/2,135, 315),dotted);for(int i=0;i<4;++i){draw(rotate(i*90,(0,0))*arc((1/2,1/2),sqrt(2)/2,-45,135)); dot(rotate(i*90,(0,0))*(1/2,1/2));}</asy>
+Because of symmetry, the area is the same in all four quadrants.
+The answer is $\boxed{\textbf{(B)}\ \pi + 2}$

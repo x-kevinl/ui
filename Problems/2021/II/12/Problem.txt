@@ -1,0 +1,2 @@
+==Problem==
+A convex quadrilateral has area <math>30</math> and side lengths <math>5, 6, 9,</math> and <math>7,</math> in that order. Denote by <math>\theta</math> the measure of the acute angle formed by the diagonals of the quadrilateral. Then <math>\tan \theta</math> can be written in the form <math>\tfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m + n</math>.

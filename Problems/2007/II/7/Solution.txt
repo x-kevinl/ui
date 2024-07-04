@@ -1,0 +1,14 @@
+==Solution==
+=== Solution 1===
+For <math>x = 1</math>, we see that <math>\sqrt[3]{1} \ldots \sqrt[3]{7}</math> all work, giving 7 integers. For <math>x=2</math>, we see that in <math>\sqrt[3]{8} \ldots \sqrt[3]{26}</math>, all of the [[even]] numbers work, giving 10 integers. For <math>x = 3</math>, we get 13, and so on. We can predict that at <math>x = 22</math> we get 70.
+
+To prove this, note that all of the numbers from <math>\sqrt[3]{x^3} \ldots \sqrt[3]{(x+1)^3 - 1}</math> divisible by <math>x</math> work. Thus, <math>\frac{(x+1)^3 - 1 - x^3}{x} + 1  = \frac{3x^2 + 3x + 1 - 1}{x} + 1 = 3x + 4</math> (the one to be inclusive) integers will fit the conditions. <math>3k + 4 = 70 \Longrightarrow k = 22</math>.
+
+The maximum value of <math>n_i = (x + 1)^3 - 1</math>. Therefore, the solution is <math>\frac{23^3 - 1}{22} = \frac{(23 - 1)(23^2 + 23 + 1)}{22} = 529 + 23 + 1 = 553</math>.
+
+===Solution 2===
+Obviously <math>k</math> is positive. Then, we can let <math>n_1</math> equal <math>k^3</math> and similarly let <math>n_i</math> equal <math>k^3 + (i - 1)k</math>. 
+
+The wording of this problem (which uses "exactly") tells us that <math>k^3+69k<(k+1)^3 = k^3 + 3k^2 + 3k+1 \leq k^3+70k</math>. Taking away <math>k^3</math> from our inequality results in <math>69k<3k^2+3k+1\leq 70k</math>. Since <math>69k</math>, <math>3k^2+3k+1</math>, and <math>70k</math> are all integers, this inequality is equivalent to <math>69k\leq 3k^2+3k<70k</math>. Since <math>k</math> is positive, we can divide the inequality by <math>k</math> to get <math>69 \leq 3k+3 < 70</math>. Clearly the only <math>k</math> that satisfies is <math>k=22</math>. 
+
+Then, <math>\frac{n_{70}}{k}=k^2+69=484+69=\boxed{553}</math> is the maximum value of <math>\frac{n_i}{k}</math>. (Remember we set <math>n_i</math> equal to <math>k^3 + (i - 1)k</math>!)

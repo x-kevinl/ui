@@ -1,0 +1,2 @@
+==Problem 6==
+Find the least positive integer <math>N</math> such that the set of <math>1000</math> consecutive integers beginning with <math>1000\cdot N</math> contains no square of an integer.

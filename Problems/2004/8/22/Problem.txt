@@ -1,0 +1,4 @@
+==Problem==
+At a party there are only single women and married men with their wives. The probability that a randomly selected woman is single is $\frac25$. What fraction of the people in the room are married men?
+
+$\textbf{(A)}\ \frac13\qquad \textbf{(B)}\ \frac38\qquad \textbf{(C)}\ \frac25\qquad \textbf{(D)}\ \frac{5}{12}\qquad \textbf{(E)}\ \frac35$

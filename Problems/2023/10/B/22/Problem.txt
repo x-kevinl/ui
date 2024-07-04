@@ -1,0 +1,6 @@
+== Problem ==
+
+How many distinct values of $x$ satisfy
+$\lfloor{x}\rfloor^2-3x+2=0$, where $\lfloor{x}\rfloor$ denotes the largest integer less than or equal to $x$?
+
+$\textbf{(A) } \text{an infinite number} \qquad \textbf{(B) } 4 \qquad \textbf{(C) } 2 \qquad \textbf{(D) } 3 \qquad \textbf{(E) } 0$

@@ -1,0 +1,8 @@
+== Solution ==
+We start by looking at the answers. Examining statement C, we notice:
+
+$ x \heartsuit 0 = |x-0| = |x| $ 
+
+$|x| \neq x$ when $x<0$, but statement C says that it does for all $x$. 
+
+Therefore the statement that is not true is $\boxed{\mathrm{(C)}\ x\heartsuit 0=x\ \text{for all}\ x}$

@@ -1,0 +1,9 @@
+==Solution==
+
+There are $2$ cases to consider:
+
+Case $1$: $2$ of $a$, $b$, and $c$ are positive and the other is negative. Without loss of generality (WLOG), we can assume that $a$ and $b$ are positive and $c$ is negative. In this case, we have that $$\frac{a}{|a|}+\frac{b}{|b|}+\frac{c}{|c|}+\frac{abc}{|abc|}=1+1-1-1=0.$$
+
+Case $2$: $2$ of $a$, $b$, and $c$ are negative and the other is positive. WLOG, we can assume that $a$ and $b$ are negative and $c$ is positive. In this case, we have that $$\frac{a}{|a|}+\frac{b}{|b|}+\frac{c}{|c|}+\frac{abc}{|abc|}=-1-1+1+1=0.$$
+
+Note these are the only valid cases, for neither $3$ negatives nor $3$ positives would work as they cannot sum up to $0$. In both cases, we get that the given expression equals $\boxed{\textbf{(A)}\ 0}$.

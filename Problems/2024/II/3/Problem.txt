@@ -1,0 +1,10 @@
+==Problem==
+
+Find the number of ways to place a digit in each cell of a 2x3 grid so that the sum of the two numbers formed by reading left to right is <math>999</math>, and the sum of the three numbers formed by reading top to bottom is <math>99</math>. The grid below is an example of such an arrangement because <math>8+991=999</math> and <math>9+9+81=99</math>.
+
+<cmath>
+\begin{array}{|c|c|c|} \hline
+0 & 0 & 8 \\ \hline
+9 & 9 & 1 \\ \hline
+\end{array}
+</cmath>

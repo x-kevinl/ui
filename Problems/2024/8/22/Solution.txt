@@ -1,0 +1,5 @@
+==Solution 1==
+
+The roll of tape is $1/0.015=$66 layers thick. In order to find the total length, we have to find the average of each concentric circle and multiply it by $66$. Since the diameter of the small circle is $2$ inches and the diameter of the large one is $4$ inches, the "middle value" is $3$. Therefore, the average circumference is $3\pi$. Multiplying $3\pi \cdot 66$ gives $(B) \boxed{600}$.
+
+-ILoveMath31415926535

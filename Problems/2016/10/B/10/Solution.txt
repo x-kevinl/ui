@@ -1,0 +1,6 @@
+==Solution 1==
+We can solve this problem by using similar triangles, since two equilateral triangles are always similar. We can then use
+
+$\left(\frac{3}{5}\right)^2=\frac{12}{x}$.
+
+We can then solve the equation to get $x=\frac{100}{3}$ which is closest to $\boxed{\textbf{(D)}\ 33.3}$

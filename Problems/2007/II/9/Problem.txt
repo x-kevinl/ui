@@ -1,0 +1,2 @@
+== Problem ==
+[[Rectangle]] <math>ABCD</math> is given with <math>AB=63</math> and <math>BC=448.</math> Points <math>E</math> and <math>F</math> lie on <math>AD</math> and <math>BC</math> respectively, such that <math>AE=CF=84.</math> The [[inscribed circle]] of [[triangle]] <math>BEF</math> is [[tangent]] to <math>EF</math> at point <math>P,</math> and the inscribed circle of triangle <math>DEF</math> is tangent to <math>EF</math> at [[point]] <math>Q.</math> Find <math>PQ.</math>

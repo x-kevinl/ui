@@ -1,0 +1,4 @@
+== Problem ==
+Let <math>x,</math> <math>y,</math> and <math>z</math> be positive real numbers that satisfy
+<cmath>2\log_{x}(2y) = 2\log_{2x}(4z) = \log_{2x^4}(8yz) \ne 0.</cmath>
+The value of <math>xy^5z</math> can be expressed in the form <math>\frac{1}{2^{p/q}},</math> where <math>p</math> and <math>q</math> are relatively prime positive integers. Find <math>p+q.</math>

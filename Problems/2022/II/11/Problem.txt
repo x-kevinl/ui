@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>ABCD</math> be a convex quadrilateral with <math>AB=2, AD=7,</math> and <math>CD=3</math> such that the bisectors of acute angles <math>\angle{DAB}</math> and <math>\angle{ADC}</math> intersect at the midpoint of <math>\overline{BC}.</math> Find the square of the area of <math>ABCD.</math>

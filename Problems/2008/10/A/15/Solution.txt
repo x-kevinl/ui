@@ -1,0 +1,16 @@
+==Solution 1==
+Set the time Ian traveled as $I$, and set Han's speed as $H$. Therefore, Jan's speed is $H+5.$
+
+We get the following equation for how much Han is ahead of Ian:
+$H+5I = 70.$
+
+The expression for how much Jan is ahead of Ian is:
+$2(H+5)+10I.$
+
+This simplifies to: $2H+10+10I.$
+
+However, this is just $2(H+5I)+10.$
+
+Substitute, from the first equation, $H+5I$ as $70.$
+
+Therefore, the answer is $140 + 10$, which is $150$, or $\boxed{\mathrm{(D)}}$

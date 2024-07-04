@@ -1,0 +1,11 @@
+== Solution 1==
+
+If we pick $4$ indistinguishable real coins from the set of $8$ real coins, there are $\binom{8}{4}$ ways to pick the coins.  If we then place the coins in four distinguishable slots on the scale, there are $4!$ ways to arrange them, giving $4!\cdot \binom{8}{4}$ ways to choose and place $8$ real coins.  This gives $1680$ desirable combinations.
+
+If we pick $2$ real coins and $2$ fake coins, there are $\binom{8}{2}\binom{2}{2}$ ways to choose the coins.  There are $4$ choices for the first slot on the left side of the scale.  Whichever type of coin is placed in that first slot, there are $2$ choices for the second slot on the left side of the scale, since it must be of the opposite type of coin.  There are $2$ choices for the first slot on the right side of the scale and only $1$ choice for the last slot on the right side.
+
+Thus, there are $4\cdot 2\cdot 2\cdot 1 = 16$ ways to arrange the coins, and $\binom{8}{2}\binom{2}{2} = 28$ sets of possible coins, for a total of $16\cdot 28 = 448$ combinations that are legal, yet undesirable.
+
+The overall probability is thus $\frac{1680}{1680 + 448} = \boxed{\frac{15}{19} \ \mathbf{(D)}}$.
+
+Note that in this solution, all four slots on the scale are deemed to be distinguishable.  In essence, this "overcounts" all numbers by a factor of $8$, since you can switch the coins on the left side, you can switch the coins on the right side, or you can switch sides of the scale.  But since all numbers are increased 8-fold, it will cancel out when calculating the probability.

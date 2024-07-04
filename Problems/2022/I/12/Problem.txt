@@ -1,0 +1,13 @@
+== Problem ==
+For any finite set <math>X</math>, let <math>| X |</math> denote the number of elements in <math>X</math>. Define
+<cmath>
+S_n = \sum | A \cap B | ,
+</cmath>
+where the sum is taken over all ordered pairs <math>(A, B)</math> such that <math>A</math> and <math>B</math> are subsets of <math>\left\{ 1 , 2 , 3,  \cdots , n \right\}</math> with <math>|A| = |B|</math>.
+For example, <math>S_2 = 4</math> because the sum is taken over the pairs of subsets
+<cmath>
+(A, B) \in \left\{ (\emptyset, \emptyset) , ( \{1\} , \{1\} ), ( \{1\} , \{2\} ) , ( \{2\} , \{1\} ) , ( \{2\} , \{2\} ) , ( \{1 , 2\} , \{1 , 2\} ) \right\} ,
+</cmath>
+giving <math>S_2 = 0 + 1 + 0 + 0 + 1 + 2 = 4</math>.
+Let <math>\frac{S_{2022}}{S_{2021}} = \frac{p}{q}</math>, where <math>p</math> and <math>q</math> are relatively prime positive integers. Find the remainder when <math>p + q</math> is divided by
+1000.

@@ -1,0 +1,19 @@
+==Solution 1==
+
+Since one of the terms was either $1$  more or $1$ less than it should have been, the sum should have been $222-1=221$ or $222+1=223.$ 
+
+The formula for an arithmetic series is $an+d\left(\dfrac{(n-1)n}2\right)=\dfrac n2\left(2a+d(n-1)\right).$ This can quickly be rederived by noticing that the sequence goes $a,a+d,a+2d,a+3d,\dots,a+(n-1)d$, and grouping terms. 
+
+We know that $\dfrac n2(2a+d(n-1))=221$ or $223$. Let us now show that $223$ is not possible. 
+
+If $\dfrac n2(2a+d(n-1))=223$, we can simplify this to be $n(2a+d(n-1))=223\cdot2.$ Since every expression in here should be an integer, we know that either $n=2$ and $2a+d(n-1)=223$ or $n=223$ and $2a+d(n-1)=2.$ The latter is not possible, since $n\ge3,d>1,$ and $a>0.$ The former is also impossible, as $n\ge3.$ Thus, $\dfrac n2(2a+d(n-1))\neq223\implies\dfrac n2(2a+d(n-1))=221$. 
+
+We can factor $221$ as $13\cdot17$. Using similar reasoning, we see that $221\cdot2$ can not be paired as $2$ and $221$, but rather must be paired as $13$ and $17$ with a factor of $2$ somewhere. 
+
+Let us first try $n=13.$ Our equation simplifies to $2a+12d=34\implies a+6d=17.$ We know that $d>1,$ so we try the smallest possible value: $d=2.$ This would give us $a=17-2\cdot6=17-12=5.$ (Indeed, this is the only possible $d$.)
+
+There is nothing wrong with the values we have achieved, so it is reasonable to assume that this is the only valid solution (or all solutions sum to the same thing), so we answer $a+d+n=5+2+13=\boxed{\textbf{(B) }20.}$ 
+
+For the sake of completeness, we can explore $n=17.$ It turns out that we reach a contradiction in this case, so we are done. 
+
+~Technodoggo

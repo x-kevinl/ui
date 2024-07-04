@@ -1,0 +1,13 @@
+==Solution==
+<asy>import graph;size(7cm,IgnoreAspect);
+real f(real x) {return x*x;}
+draw((0,0)--(4,16)--(-4,16)--cycle,blue);
+draw(graph(f,-5,5,operator ..),gray);
+xaxis("$x$");yaxis("$y$",-1);
+label("$y=x^2$",(4.5,20.25),E);
+draw((4.2,0)--(4.2,16),Arrows);
+label("$r^2$",(4.2,0)--(4.2,16),E);
+draw((0,17)--(4,17),Arrows);
+label("$r$",(0,17)--(4,17),N);
+</asy>
+The area of the triangle is $\frac{(2r)(r^2)}{2} = r^3$, so $r^3=64\implies r=4$, giving a total distance across the top of $8$, which is answer $\textbf{(C)}$.

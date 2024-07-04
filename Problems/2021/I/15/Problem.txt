@@ -1,0 +1,2 @@
+==Problem==
+Let <math>S</math> be the set of positive integers <math>k</math> such that the two parabolas<cmath>y=x^2-k~~\text{and}~~x=2(y-20)^2-k</cmath>intersect in four distinct points, and these four points lie on a circle with radius at most <math>21</math>. Find the sum of the least element of <math>S</math> and the greatest element of <math>S</math>.

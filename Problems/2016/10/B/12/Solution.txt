@@ -1,0 +1,6 @@
+==Solution 1==
+The product will be even if at least one selected number is even, and odd if none are. Using complementary counting, the chance that both numbers are odd is $\frac{\tbinom32}{\tbinom52}=\frac3{10}$, so the answer is $1-0.3$ which is $\boxed{\textbf{(D) }0.7}$.
+
+An alternate way to finish:
+Since it is odd if none are even, the probability is $1-(\frac{3}{5} \cdot \frac{2}{4})=1-\frac{3}{10}=0.7 \Longrightarrow \boxed{\textbf{(D) }0.7}$.
+~Alternate solve by JH. L

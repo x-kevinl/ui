@@ -1,0 +1,8 @@
+==Solution 1==
+
+Note that since set <math>A</math> has <math>m</math> consecutive integers that sum to <math>2m</math>, the middle integer (i.e., the median) must be <math>2</math>.  Therefore, the largest element in <math>A</math> is <math>2 + \frac{m-1}{2}</math>. 
+
+Further, we see that the median of set <math>B</math> is <math>0.5</math>, which means that the "middle two" integers of set <math>B</math> are <math>0</math> and <math>1</math>.  Therefore, the largest element in <math>B</math> is <math>1 + \frac{2m-2}{2} = m</math>.  <math>2 + \frac{m-1}{2} > m</math> if <math>m < 3</math>, which is clearly not possible, thus <math>2 + \frac{m-1}{2} < m</math>.
+
+Solving, we get <cmath>\begin{align*}
+m - 2 - \frac{m-1}{2} &= 99\\ m-\frac{m}{2}+\frac{1}{2}&=101\\ \frac{m}{2}&=100\frac{1}{2}.\\ m &= \boxed{201}\end{align*}</cmath>

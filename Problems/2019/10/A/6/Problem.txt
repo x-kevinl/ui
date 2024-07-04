@@ -1,0 +1,10 @@
+==Problem==
+
+For how many of the following types of quadrilaterals does there exist a point in the plane of the quadrilateral that is equidistant from all four vertices of the quadrilateral?
+*a square
+*a rectangle that is not a square
+*a rhombus that is not a square
+*a parallelogram that is not a rectangle or a rhombus
+*an isosceles trapezoid that is not a parallelogram
+
+$\textbf{(A) } 0 \qquad\textbf{(B) } 2 \qquad\textbf{(C) } 3 \qquad\textbf{(D) } 4 \qquad\textbf{(E) } 5$

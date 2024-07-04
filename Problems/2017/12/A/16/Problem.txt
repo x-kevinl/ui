@@ -1,0 +1,20 @@
+==Problem==
+
+In the figure below, semicircles with centers at $A$ and $B$ and with radii 2 and 1, respectively, are drawn in the interior of, and sharing bases with, a semicircle with diameter $JK$. The two smaller semicircles are externally tangent to each other and internally tangent to the largest semicircle. A circle centered at $P$ is drawn externally tangent to the two smaller semicircles and internally tangent to the largest semicircle. What is the radius of the circle centered at $P$?
+
+<asy>
+size(5cm);
+draw(arc((0,0),3,0,180));
+draw(arc((2,0),1,0,180));
+draw(arc((-1,0),2,0,180));
+draw((-3,0)--(3,0));
+pair P = (-1,0)+(2+6/7)*dir(36.86989);
+draw(circle(P,6/7));
+dot((-1,0)); dot((2,0)); dot(P);
+</asy>
+
+$ \textbf{(A)}\ \frac{3}{4}
+\qquad \textbf{(B)}\ \frac{6}{7}
+\qquad\textbf{(C)}\ \frac{\sqrt{3}}{2}
+\qquad\textbf{(D)}\ \frac{5}{8}\sqrt{2}
+\qquad\textbf{(E)}\ \frac{11}{12} $

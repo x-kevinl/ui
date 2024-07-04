@@ -1,0 +1,8 @@
+==Solution 1==
+Let the fifth sock be arbitrary; the probability that the sixth sock matches in color is <math>\dfrac{1}{9}</math>. 
+
+Assuming this, then let the first sock be arbitrary; the probability that the second sock does not match is <math>\dfrac{6}{7}.</math>
+
+The only "hard" part is the third and fourth sock. But that is simple casework. If the third sock's color matches the color of one of the first two socks (which occurs with probability <math>\dfrac{2}{6} = \dfrac{1}{3}</math>), then the fourth sock can be arbitrary. Otherwise (with probability <math>\dfrac{2}{3}</math>), the fourth sock can be chosen with probability <math>\dfrac{4}{5}</math> (5 socks left, 1 sock that can possibly match the third sock's color). The desired probability is thus
+<cmath>\frac{1}{9} \cdot \frac{6}{7} \cdot \left(\dfrac{1}{3} + \dfrac{2}{3} \cdot \dfrac{4}{5}\right) = \frac{26}{315}.</cmath>
+The sum is therefore <math>26+315=\boxed{341}.</math>

@@ -1,0 +1,15 @@
+==Solution 1==
+
+One approach is to write a table of all $36$ possible outcomes, do the sums, and count good outcomes.
+
+      1  3  4  5  6  8
+    ------------------
+ 1 |  2  4  5  6  7  9
+ 2 |  3  5  6  7  8 10
+ 2 |  3  5  6  7  8 10
+ 3 |  4  6  7  8  9 11
+ 3 |  4  6  7  8  9 11
+ 4 |  5  7  8  9 10 12
+
+We see that out of $36$ possible outcomes, $4$ give the sum of $5$, $6$ the sum of $7$, and $4$ the sum of $9$, hence the resulting probability is 
+$\frac{4+6+4}{36}=\frac{14}{36}=\boxed{\frac{7}{18}}$.

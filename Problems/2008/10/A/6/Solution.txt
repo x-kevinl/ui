@@ -1,0 +1,6 @@
+==Solution==
+Let $d$ be the length of one segment of the race.
+
+Average speed is total distance divided by total time. The total distance is $3d$, and the total time is $\frac{d}{3}+\frac{d}{20}+\frac{d}{10}=\frac{29d}{60}$.
+
+Thus, the average speed is $3d\div\left(\frac{29d}{60}\right)=\frac{180}{29}$. This is closest to $6$, so the answer is $\mathrm{(D)}$.

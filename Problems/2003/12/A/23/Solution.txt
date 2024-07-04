@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+We want to find the number of perfect square factors in the product of all the factorials of numbers from $1 - 9$. We can write this out and take out the factorials, and then find a prime factorization of the entire product. We can also find this prime factorization by finding the number of times each factor is repeated in each factorial. This comes out to be equal to $2^{30} \cdot 3^{13} \cdot 5^5 \cdot 7^3$. To find the amount of perfect square factors, we realize that each exponent in the prime factorization must be even: $2^{15} \cdot 3^{6}\cdot 5^2 \cdot 7^1$. To find the total number of possibilities, we add $1$ to each exponent and multiply them all together. This gives us $16 \cdot 7 \cdot 3 \cdot 2 = 672$ $\Rightarrow\boxed{\mathrm{(B)}}$.

@@ -1,0 +1,4 @@
+== Solution ==
+Suppose that the <math>n</math>th term of the sequence <math>S_k</math> is <math>2005</math>. Then <math>1+(n-1)k=2005</math> so <math>k(n-1)=2004=2^2\cdot 3\cdot 167</math>.  The [[ordered pair]]s <math>(k,n-1)</math> of positive integers that satisfy the last equation are <math>(1,2004)</math>,<math>(2,1002)</math>, <math>(3,668)</math>, <math>(4,501)</math>, <math>(6,334)</math>, <math>(12,167)</math>, <math>(167,12)</math>,<math>(334,6)</math>, <math>(501,4)</math>, <math>(668,3)</math>, <math>(1002,2)</math> and <math>(2004,1)</math>, and each of these gives a possible value of <math>k</math>. Thus the requested number of values is <math>12</math>, and the answer is <math>\boxed{012}</math>.
+
+Alternatively, notice that the formula for the number of [[divisor]]s states that there are <math>(2 + 1)(1 + 1)(1 + 1) = 12</math> divisors of <math>2^2\cdot 3^1\cdot 167^1</math>.

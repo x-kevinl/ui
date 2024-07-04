@@ -1,0 +1,17 @@
+==Solution 1==
+
+Note that the sum of the numbers on each face must be 18, because $\frac{1+2+\cdots+8}{2}=18$. 
+
+So now consider the opposite edges (two edges which are parallel but not on same face of the cube);
+they must have the same sum value too.
+Now think about the points $1$ and $8$. If they are not on the same edge, they must be endpoints of opposite edges, and we should have $1+X=8+Y$. However, this scenario would yield no solution for $[7,2]$, which is a contradiction. (Try drawing out the cube if it doesn't make sense to you.)
+
+The points $1$ and $8$ are therefore on the same side and all edges parallel must also sum to $9$.
+
+Now we have $4$ parallel sides $1-8, 2-7, 3-6, 4-5$.
+Thinking about $4$ endpoints, we realize they need to sum to $18$.
+It is easy to notice only $1-7-6-4$ and $8-2-3-5$ would work.
+
+So if we fix one direction $1-8 ($or $8-1)$ all other $3$ parallel sides must lay in one particular direction. $(1-8,7-2,6-3,4-5)$ or $(8-1,2-7,3-6,5-4)$
+
+Now, the problem is the same as arranging $4$ points in a two-dimensional square, which is $\frac{4!}{4}=\boxed{\textbf{(C) }6.}$

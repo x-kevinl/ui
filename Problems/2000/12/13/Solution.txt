@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+Let $c$ be the total amount of coffee, $m$ of milk, and $p$ the number of people in the family. Then each person drinks the same total amount of coffee and milk (8 ounces), so 
+$$\left(\frac{c}{6} + \frac{m}{4}\right)p = c + m$$
+Regrouping, we get $2c(6-p)=3m(p-4)$. Since both $c,m$ are positive, it follows that $6-p$ and $p-4$ are also positive, which is only possible when $p = 5\ \mathrm{(C)}$.

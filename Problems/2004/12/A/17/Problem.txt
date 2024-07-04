@@ -1,0 +1,10 @@
+== Problem ==
+Let $f$ be a function with the following properties:
+
+(i) $f(1) = 1$, and
+
+(ii) $f(2n) = n \cdot f(n)$ for any positive integer $n$.
+
+What is the value of $f(2^{100})$?
+
+$\textbf {(A)}\ 1 \qquad \textbf {(B)}\ 2^{99} \qquad \textbf {(C)}\ 2^{100} \qquad \textbf {(D)}\ 2^{4950} \qquad \textbf {(E)}\ 2^{9999}$

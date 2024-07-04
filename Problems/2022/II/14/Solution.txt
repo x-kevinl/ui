@@ -1,0 +1,53 @@
+==Solution==
+
+Notice that we must have <math>a = 1</math>; otherwise <math>1</math> cent stamp cannot be represented. At least <math>b-1</math> numbers of <math>1</math> cent stamps are needed to represent the values less than <math>b</math>. Using at most <math>c-1</math> stamps of value <math>1</math> and <math>b</math>, it can have all the values from <math>1</math> to <math>c-1</math> cents. Plus <math>\lfloor \frac{999}{c} \rfloor</math> stamps of value <math>c</math>, every value up to <math>1000</math> can be represented. 
+
+===Correction:===
+
+This should be <math>\lfloor \frac{1000}{c} \rfloor</math>. The current function breaks when <math>c \mid 1000</math> and <math>b \mid c</math>. Take <math>c = 200</math> and <math>b = 20</math>. Then, we have <math>\lfloor \frac{999}{200} \rfloor = 4</math> stamps of value 200, <math>\lfloor \frac{199}{20} \rfloor = 9</math> stamps of value b, and 19 stamps of value 1. The maximum such a collection can give is <math>200 \cdot 4 + 20 \cdot 9 +19 \cdot 1 = 999</math>, just shy of the needed 1000. As for the rest of solution, proceed similarly, except use <math>1000</math> instead of <math>999</math>.
+
+Also, some explanation: <math>b-1</math> one cent stamps cover all residues module <math>b</math>. Having <math>\lfloor \frac{c-1}{b} \rfloor</math> stamps of value b covers all residue classes modulo <math>c</math>. Finally, we just need <math>\lfloor \frac{1000}{c} \rfloor</math> to cover everything up to 1000.
+
+In addition, note that this function sometimes may not always minimize the number of stamps required. This is due to the fact that the stamps of value <math>b</math> and of value <math>1</math> have the capacity to cover values greater than or equal to <math>c</math> (which occurs when <math>c-1</math> has a remainder less than <math>b-1</math> when divided by <math>b</math>). Thus, in certain cases, not all <math>\lfloor \frac{1000}{c} \rfloor</math> stamps of value c may be necessary, because the stamps of value <math>b</math> and 1 can replace one <math>c</math>.
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Crazyvideogamez CrazyVideoGamez]
+
+————————————————————————————————————
+
+Therefore using <math>\lfloor \frac{999}{c} \rfloor</math> stamps of value <math>c</math>, <math>\lfloor \frac{c-1}{b} \rfloor</math> stamps of value <math>b</math>, and <math>b-1</math> stamps of value <math>1</math>, all values up to <math>1000</math> can be represented in sub-collections, while minimizing the number of stamps.
+
+So, <math>f(a, b, c) = \lfloor \frac{999}{c} \rfloor + \lfloor \frac{c-1}{b} \rfloor + b-1</math>.
+
+<math>\lfloor \frac{999}{c} \rfloor + \lfloor \frac{c-1}{b} \rfloor + b-1 = 97</math>. We can get the answer by solving this equation.
+
+<math>c > \lfloor \frac{c-1}{b} \rfloor + b-1</math>
+
+<math>\frac{999}{c} + c > \lfloor \frac{999}{c} \rfloor + \lfloor \frac{c-1}{b} \rfloor + b-1 = 97</math>
+
+<math>c^2 - 97c + 999 > 0</math>, <math>c > 85.3</math> or <math>c < 11.7</math>
+
+<math>\lfloor \frac{999}{c} \rfloor + \lfloor \frac{c-1}{b} \rfloor + b-1 > \frac{999}{c}</math>
+
+<math>97 > \frac{999}{c}</math>, <math>c>10.3</math>
+
+ <math>\text{Case } 1:</math> <math>10.3 < c < 11.7 \rightarrow c = 11 \rightarrow \lfloor \frac{999}{11} \rfloor + \lfloor \frac{10}{b} \rfloor + b-1 = 97</math>
+ <math>\lfloor \frac{10}{b} \rfloor + b = 8</math>, <math>b=7</math>
+
+ <math>\text{Case } 2: c>85.3</math>
+
+ <math>c = 86 \rightarrow</math> <math>\lfloor \frac{999}{86} \rfloor + \lfloor \frac{85}{b} \rfloor + b-1 = 97</math>
+ <math>\lfloor \frac{85}{b} \rfloor + b = 87</math>, <math>b=87 > c \rightarrow \text{no solution}</math>
+
+ <math>c = 87 \rightarrow</math> <math>\lfloor \frac{999}{87} \rfloor + \lfloor \frac{86}{b} \rfloor + b-1 = 97</math>
+ <math>\lfloor \frac{86}{b} \rfloor + b = 87</math>, <math>b=86</math> or <math>1</math>. <math>\text{We cannot have }b=1 \text{ since it doesn't satisfy } a<b \text{, and note that if } b=86 \text{ we can have 10 coins of value } c, 1 \text{ of } b, \text{ and } 85</math> <math>\text{of } a \text{ for a total of 96 coins and still be able to make every value from 1 to 1000. Thus } c=87 \text{ yields no solution.}</math>
+
+ <math>c = 88 \rightarrow</math> <math>\lfloor \frac{999}{88} \rfloor + \lfloor \frac{87}{b} \rfloor + b-1 = 97</math>
+ <math>\lfloor \frac{87}{b} \rfloor + b = 87</math>, <math>b=86</math>
+
+ <math>c = 89 \rightarrow</math> <math>\lfloor \frac{999}{89} \rfloor + \lfloor \frac{88}{b} \rfloor + b-1 = 97</math>
+ <math>\lfloor \frac{88}{b} \rfloor + b = 87</math>, <math>b=86</math>
+
+The <math>3</math> least values of <math>c</math> are <math>11</math>, <math>88</math>, <math>89</math>. <math>11 + 88+ 89 = \boxed{\textbf{188}}</math>
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen]
+~edited by bobjoebilly

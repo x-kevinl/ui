@@ -1,0 +1,30 @@
+== Solution ==
+=== Solution 1 ===
+Embed the tetrahedron in 4-space to make calculations easier.
+Its vertices are
+<math>(1,0,0,0)</math>, <math>(0,1,0,0)</math>, <math>(0,0,1,0)</math>, <math>(0,0,0,1)</math>.
+
+To get the center of any face, we take the average of the three coordinates of that face. The vertices of the center of the faces are:
+<math>(\frac{1}{3}, \frac{1}{3}, \frac{1}{3}, 0)</math>,<math>(\frac{1}{3}, \frac{1}{3},0, \frac{1}{3})</math>,<math>(\frac{1}{3},0, \frac{1}{3}, \frac{1}{3})</math>,<math>(0,\frac{1}{3}, \frac{1}{3}, \frac{1}{3})</math>.
+
+The side length of the large tetrahedron is <math>\sqrt{2}</math> by the distance formula.
+The side length of the smaller tetrahedron is <math>\frac{\sqrt{2}}{3}</math> by the distance formula.
+
+Their ratio is <math>1:3</math>, so the ratio of their volumes is <math>\left(\frac{1}{3}\right)^3 = \frac{1}{27}</math>.
+
+<math>m+n = 1 + 27 = \boxed{28}</math>.
+
+=== Solution 2 ===
+
+Let the large tetrahedron be <math>ABCD</math>, and the small tetrahedron be <math>WXYZ</math>, with <math>W</math> on <math>ABC</math>, <math>X</math> on <math>BCD</math>, <math>Y</math> on <math>ACD</math>, and <math>Z</math> on <math>ABD</math>. Clearly, the two regular tetrahedrons are similar, so if we can find the ratio of the sides, we can find the ratio of the volumes. Let <math>AB=1</math>, for our convenience. Dropping an altitude from <math>W</math> to <math>BC</math>, and calling the foot <math>M</math>, we have <math>WM=XM=\frac{\sqrt3}{6}</math>. Since <math>\cos\angle{WMX}=\cos\angle{AMX}=MX/AM=1/3</math>. By Law of Cosines, we have <math>WX=\sqrt{1/12+1/12-2(1/12)(1/3)}=1/3</math>. Hence, the ratio of the volumes is <math>\left(\frac{1}{3}\right)^3=1/27</math>. <math>m+n=1+27=\boxed{028}</math>
+
+===Solution 3===
+
+Consider the large tetrahedron <math>ABCD</math> and the smaller tetrahedron <math>WXYZ</math>.  Label the points as you wish, but dropping an altitude from the top vertex of <math>ABCD</math>, we see it hits the center of the base face of <math>ABCD</math>.  This center is also one vertex of <math>WXYZ</math>.  Consider a "side" face of <math>ABCD</math>, and the center of that face, which is another vertex of <math>WXYZ</math>.  Draw the altitude of this side face (which is an equilateral triangle).  These two altitudes form a right triangle.  Since the center of the Side face splits the altitude of the side face into segments in the ratio of <math>2:1</math> (centroid), and since the bases of <math>WXYZ</math> and <math>ABCD</math> are parallel, we can say that the altitudes of tetrahedron <math>ABCD</math> and <math>WXYZ</math> are in the ratio <math>3:1</math>.  Thus we compute <math>\left(\frac{1}{3}\right)^3</math>, and find <math>\frac{1}{27}</math>.  The sum of the numerator and denominator is thus <math>28</math>.
+
+===Video Solution by Sal Khan===
+Part 1: https://www.youtube.com/watch?v=gXnHodHNusg&list=PLSQl0a2vh4HCtW1EiNlfW_YoNAA38D0l4&index=15
+
+Part 2: https://www.youtube.com/watch?v=wQ34EIfd-5A&list=PLSQl0a2vh4HCtW1EiNlfW_YoNAA38D0l4&index=21
+
+- AMBRIGGS

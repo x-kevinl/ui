@@ -1,0 +1,4 @@
+==Problem==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>Before the district play, the Unicorns had won $45$% of their basketball games. During district play, they won six more games and lost two, to finish the season having won half their games. How many games did the Unicorns play in all?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+$ \textbf{(A)}\ 48\qquad\textbf{(B)}\ 50\qquad\textbf{(C)}\ 52\qquad\textbf{(D)}\ 54\qquad\textbf{(E)}\ 60 $

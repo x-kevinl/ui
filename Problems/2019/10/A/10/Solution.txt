@@ -1,0 +1,10 @@
+==Solution 1==
+The number of tiles the bug visits is equal to $1$ plus the number of times it crosses a horizontal or vertical line.  As it must cross $16$ horizontal lines and $9$ vertical lines, it must be that the bug visits a total of $16+9+1 = \boxed{\textbf{(C) }26}$ squares.
+
+''Note'': The general formula for this is $a+b-\gcd(a,b)$, because it is the number of vertical/horizontal lines crossed minus the number of corners crossed (to avoid double counting). In this particular problem, it was $16 + 9 - 1$ (since $\text{gcd}(16,9) = 1$), which is $24$, but then you add $2$ because the first tile and the last tile are counted, which in the general formula are not counted.
+
+One can see why it is gcd(a,b) due to slope
+~Williamgolly
+
+''Comment'': The above note defines a, b incorrectly. One counter example is 17x9 grid, which should result in 25 tiles. However, $\text{gcd}(16, 8) = 8$. Here $a+b-\gcd(a,b)$ is correct when a = 17 and b = 10.
+~aliciawu

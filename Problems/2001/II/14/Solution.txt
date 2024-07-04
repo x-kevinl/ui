@@ -1,0 +1,14 @@
+==Solution==
+
+<math>z</math> can be written in the form <math> \text{cis\,}\theta</math>. Rearranging, we find that  <math> \text{cis\,}{28}\theta = \text{cis\,}{8}\theta+1</math>
+
+Since the real part of <math>\text{cis\,}{28}\theta</math> is one more than the real part of <math>\text{cis\,} {8}\theta</math> and their imaginary parts are equal, it is clear that either <math>\text{cis\,}{28}\theta = \frac{1}{2}+\frac {\sqrt{3}}{2}i</math> and <math>\text{cis\,} {8}\theta =  -\frac{1}{2}+\frac {\sqrt{3}}{2}i</math>, or <math>\text{cis\,}{28}\theta = \frac{1}{2} - \frac{\sqrt{3}}{2}i</math> and  <math>\text{cis\,} {8}\theta =  -\frac{1}{2}- \frac{\sqrt{3}}{2}i</math>
+
+*Case 1  : <math>\text{cis\,}{28}\theta = \frac{1}{2}+ \frac{\sqrt{3}}{2}i</math> and <math>\text{cis\,} {8}\theta =  -\frac{1}{2}+\frac{\sqrt{3}}{2}i</math>
+Setting up and solving equations, <math>Z^{28}= \text{cis\,}{60^\circ}</math> and <math>Z^8= \text{cis\,}{120^\circ}</math>, we see that the solutions common to both equations have arguments <math>15^\circ , 105^\circ, 195^\circ, </math> and <math>\ 285^\circ</math>. We can figure this out by adding 360 repeatedly to the number 60 to try and see if it will satisfy what we need. We realize that it does not work in the integer values.
+
+*Case 2  : <math>\text{cis\,}{28}\theta = \frac{1}{2} -\frac {\sqrt{3}}{2}i</math> and <math>\text{cis\,} {8}\theta =  -\frac {1}{2} -\frac{\sqrt{3}}{2}i</math>
+
+Again setting up equations (<math>Z^{28}= \text{cis\,}{300^\circ}</math> and <math>Z^{8} = \text{cis\,}{240^\circ}</math>) we see that the common solutions have arguments of  <math>75^\circ, 165^\circ, 255^\circ, </math> and <math>345^\circ</math>
+
+Listing all of these values, we find that <math>\theta_{2} + \theta_{4} + \ldots + \theta_{2n}</math> is equal to <math>(75 + 165 + 255 + 345) ^\circ</math> which is equal to <math>\boxed {840}</math> degrees. We only want the sum of a certain number of theta, not all of it.

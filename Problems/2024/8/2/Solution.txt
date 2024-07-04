@@ -1,0 +1,11 @@
+==Solution 1== 
+
+We see that $\frac{44}{11}$ is $4$; 
+$\frac{110}{44}$ simplifies to $\frac{5}{2}$, which is $2.5$; 
+
+and $\frac{44}{1100}$ simplifies to $\frac{1}{25}$, which is $0.04$; 
+
+$4+2.5+0.04$ reveals $$\frac{44}{11} + \frac{110}{44} + \frac{44}{1100}$$ is $\boxed{\textbf{(C)\ 6.54}}$. 
+~ le_petit_chouetteur from TSMV
+
+~Minor Formatting by GreenPlanet2050

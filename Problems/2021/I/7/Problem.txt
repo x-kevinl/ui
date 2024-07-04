@@ -1,0 +1,2 @@
+==Problem==
+Find the number of pairs <math>(m,n)</math> of positive integers with <math>1\le m<n\le 30</math> such that there exists a real number <math>x</math> satisfying <cmath>\sin(mx)+\sin(nx)=2.</cmath>

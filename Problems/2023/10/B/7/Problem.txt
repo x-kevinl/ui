@@ -1,0 +1,7 @@
+==Problem==
+Square $ABCD$ is rotated $20^{\circ}$ clockwise about its center to obtain square $EFGH$, as shown below.
+[[Image:IMG 1031.jpeg]]
+
+What is the degree measure of $\angle EAB$?
+
+$\text{(A)}\ 24^{\circ} \qquad \text{(B)}\ 35^{\circ} \qquad \text{(C)}\ 30^{\circ} \qquad \text{(D)}\ 32^{\circ} \qquad \text{(E)}\ 20^{\circ}$

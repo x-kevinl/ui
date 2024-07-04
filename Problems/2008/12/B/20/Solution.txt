@@ -1,0 +1,44 @@
+==Solution 1==
+
+Pick a coordinate system where Michael's starting pail is $0$ and the one where the truck starts is $200$.
+Let $M(t)$ and $T(t)$ be the coordinates of Michael and the truck after $t$ seconds.
+Let $D(t)=T(t)-M(t)$ be their (signed) distance after $t$ seconds.
+Meetings occur whenever $D(t)=0$.
+We have $D(0)=200$. 
+
+The truck always moves for $20$ seconds, then stands still for $30$. During the first $20$ seconds of the cycle the truck moves by $200$ feet and Michael by $100$, hence during the first $20$ seconds of the cycle $D(t)$ increases by $100$.
+During the remaining $30$ seconds $D(t)$ decreases by $150$.
+
+From this observation it is obvious that after four full cycles, i.e. at $t=200$, we will have $D(t)=0$ for the first time.
+
+During the fifth cycle, $D(t)$ will first grow from $0$ to $100$, then fall from $100$ to $-50$. Hence Michael overtakes the truck while it is standing at the pail. 
+
+During the sixth cycle, $D(t)$ will first grow from $-50$ to $50$, then fall from $50$ to $-100$. Hence the truck starts moving, overtakes Michael on their way to the next pail, and then Michael overtakes the truck while it is standing at the pail. 
+
+During the seventh cycle, $D(t)$ will first grow from $-100$ to $0$, then fall from $0$ to $-150$. Hence the truck meets Michael at the moment when it arrives to the next pail.
+
+Obviously, from this point on $D(t)$ will always be negative, meaning that Michael is already too far ahead. Hence we found all $\boxed{5 \Longrightarrow B}$ meetings.
+
+The movement of Michael and the truck is plotted below: Michael in blue, the truck in red.
+
+<asy>
+import graph;
+
+size(400,300,IgnoreAspect);
+
+real[] xt = new real[21];
+real[] yt = new real[21];
+for (int i=0; i<11; ++i) xt[2*i]=50*i;
+for (int i=0; i<10; ++i) xt[2*i+1]=50*i+20;
+for (int i=0; i<11; ++i) yt[2*i]=200*(i+1);
+for (int i=0; i<10; ++i) yt[2*i+1]=200*(i+2);
+
+real[] xm={0,500};
+real[] ym={0,2500};
+
+draw(graph(xt,yt),red);
+draw(graph(xm,ym),blue);
+
+xaxis("$\mathrm{time}$",Bottom,LeftTicks);
+yaxis("$\mathrm{position}$",Left,LeftTicks);
+</asy>

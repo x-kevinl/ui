@@ -1,0 +1,17 @@
+==Solution 1==
+
+Label the six sides of the cube by numbers $1$ to $6$ as on a classic dice. Then the "four vertical faces" can be: $\{1,2,5,6\}$, $\{1,3,4,6\}$, or $\{2,3,4,5\}$.
+
+Let $A$ be the set of colorings where $1,2,5,6$ are all of the same color, similarly let $B$ and $C$ be the sets of good colorings for the other two sets of faces.
+
+There are $2^6=64$ possible colorings, and there are $|A\cup B\cup C|$ good colorings. Thus the result is $\frac{|A\cup B\cup C|}{64}$. We need to compute $|A\cup B\cup C|$. 
+
+Using the [[Principle of Inclusion-Exclusion]] we can write
+$$|A\cup B\cup C| = |A|+|B|+|C| - |A\cap B| - |A\cap C| - |B\cap C| + |A\cap B\cap C|$$
+
+Clearly $|A|=|B|=|C|=2^3=8$, as we have two possibilities for the common color of the four vertical faces, and two possibilities for each of the horizontal faces.
+
+What is $A\cap B$? The faces $1,2,5,6$ must have the same color, and at the same time faces $1,3,4,6$ must have the same color. It turns out that $A\cap B=A\cap C=B\cap C= A\cap B\cap C =$ the set containing just the two cubes where all six faces have the same color.
+
+Therefore
+$|A\cup B\cup C| = 8+8+8-2-2-2+2 = 20$, and the result is $\frac{20}{64}=\boxed{\frac{5}{16}}$.

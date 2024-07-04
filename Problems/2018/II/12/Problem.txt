@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>ABCD</math> be a convex quadrilateral with <math>AB = CD = 10</math>, <math>BC = 14</math>, and <math>AD = 2\sqrt{65}</math>. Assume that the diagonals of <math>ABCD</math> intersect at point <math>P</math>, and that the sum of the areas of triangles <math>APB</math> and <math>CPD</math> equals the sum of the areas of triangles <math>BPC</math> and <math>APD</math>. Find the area of quadrilateral <math>ABCD</math>.

@@ -1,0 +1,2 @@
+== Solution ==
+By careful inspection and common sense, the answer is $\textbf{(E)}$.

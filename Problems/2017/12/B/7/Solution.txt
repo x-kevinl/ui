@@ -1,0 +1,2 @@
+==Solution==
+Start by noting that $\cos(-x)=\cos(x)$. Then realize that under this function, the negative sine values yield the same as their positive value, so take the absolute value of the sine function to get the new period. This has period $\pi$, so the answer is $\boxed{(B)}$.

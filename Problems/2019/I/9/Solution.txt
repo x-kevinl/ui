@@ -1,0 +1,19 @@
+==Solution==
+In order to obtain a sum of <math>7</math>, we must have:
+* either a number with <math>5</math> divisors (''a fourth power of a prime'') and a number with <math>2</math> divisors (''a prime''), or
+* a number with <math>4</math> divisors (''a semiprime or a cube of a prime'') and a number with <math>3</math> divisors (''a square of a prime''). (No integer greater than <math>1</math> can have fewer than <math>2</math> divisors.)
+Since both of these cases contain a number with an odd number of divisors, that number must be an even power of a prime. These can come in the form of a square-like <math>3^2</math> with <math>3</math> divisors, or a fourth power like <math>2^4</math> with <math>5</math> divisors. We then find the smallest such values by hand.
+* <math>2^2</math> has two possibilities: <math>3</math> and <math>4</math> or <math>4</math> and <math>5</math>. Neither works.
+* <math>3^2</math> has two possibilities: <math>8</math> and <math>9</math> or <math>9</math> and <math>10</math>. <math>\boxed{(8,9)}</math> and <math>\boxed{(9,10)}</math> both work.
+* <math>2^4</math> has two possibilities: <math>15</math> and <math>16</math> or <math>16</math> and <math>17</math>. Only <math>\boxed{(16,17)}</math> works.
+* <math>5^2</math> has two possibilities: <math>24</math> and <math>25</math> or <math>25</math> and <math>26</math>. Only <math>\boxed{(25,26)}</math> works.
+* <math>7^2</math> has two possibilities: <math>48</math> and <math>49</math> or <math>49</math> and <math>50</math>. Neither works.
+* <math>3^4</math> has two possibilities: <math>80</math> and <math>81</math> or <math>81</math> and <math>82</math>. Neither works.
+* <math>11^2</math> has two possibilities: <math>120</math> and <math>121</math> or <math>121</math> and <math>122</math>. Only <math>\boxed{(121,122)}</math> works.
+* <math>13^2</math> has two possibilities: <math>168</math> and <math>169</math> or <math>169</math> and <math>170</math>. Neither works.
+* <math>17^2</math> has two possibilities: <math>288</math> and <math>289</math> or <math>289</math> and <math>290</math>. Neither works.
+* <math>19^2</math> has two possibilities: <math>360</math> and <math>361</math> or <math>361</math> and <math>362</math>. Only <math>\boxed{(361,362)}</math> works.
+Having computed the working possibilities, we take the sum of the corresponding values of <math>n</math>: <math>8+9+16+25+121+361 = \boxed{\textbf{540}}</math>. ~Kepy.
+
+
+Possible improvement: since all primes <math>>2</math> are odd, their fourth powers are odd as well, which cannot be adjacent to any primes because both of the adjacent numbers will be even. Thus, we only need to check <math>16</math> for the fourth power case. - mathleticguyyy

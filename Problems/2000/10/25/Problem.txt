@@ -1,0 +1,4 @@
+== Problem ==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>In year $N$, the $300^{\text{th}}$ day of the year is a Tuesday. In year $N+1$, the $200^{\text{th}}$ day is also a Tuesday. On what day of the week did the $100$<sup>th</sup> day of year $N-1$ occur?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+$\text {(A)}\ \text{Thursday} \qquad \text {(B)}\ \text{Friday}\qquad \text {(C)}\ \text{Saturday}\qquad \text {(D)}\ \text{Sunday}\qquad \text {(E)}\ \text{Monday}$

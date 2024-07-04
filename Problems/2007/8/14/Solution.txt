@@ -1,0 +1,6 @@
+== Solution ==
+
+The area of a triangle is shown by $\frac{1}{2}bh$. We set the base equal to $24$, and the area equal to $60$, and we get the height, or altitude, of the triangle to be $5$. In this isosceles triangle, the height bisects the base, so by using the Pythagorean Theorem, $a^2+b^2=c^2$, we can solve for one of the legs of the triangle (it will be the the hypotenuse, $c$).
+$a = 12$, $b = 5$,
+$c = 13$.
+The answer is $\boxed{\textbf{(C)}\ 13}$

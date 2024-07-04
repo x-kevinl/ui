@@ -1,0 +1,2 @@
+==Solution==
+Count the number of sides that are not exposed, where a cube is connected to another cube and subtract it from the total number of faces. There are $5$ places with two adjacent cubes, covering $10$ sides, and $(6)(6)=36$ faces. The exposed surface area is $36-10 = \boxed{\text{(C)}\ 26}$.

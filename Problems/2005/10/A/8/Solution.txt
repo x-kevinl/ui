@@ -1,0 +1,13 @@
+==Solution==
+We see that side $BE$, which we know is $1$, is also the shorter leg of one of the four right triangles (which are congruent, I won’t prove this). So, $AH = 1$. Then $HB = HE + BE = HE + 1$, and $HE$ is one of the sides of the square whose area we want to find. So:
+
+$$1^2 + (HE+1)^2=\sqrt{50}^2$$
+
+$$1 + (HE+1)^2=50$$
+
+$$(HE+1)^2=49$$
+
+$$HE+1=7$$
+
+$$HE=6$$ 
+So, the area of the square is $6^2=\boxed{\textbf{(C) }36}$

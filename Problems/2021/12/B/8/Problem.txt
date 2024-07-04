@@ -1,0 +1,4 @@
+==Problem==
+Three equally spaced parallel lines intersect a circle, creating three chords of lengths $38,38,$ and $34$. What is the distance between two adjacent parallel lines?
+
+$\textbf{(A) }5\frac12 \qquad \textbf{(B) }6 \qquad \textbf{(C) }6\frac12 \qquad \textbf{(D) }7 \qquad \textbf{(E) }7\frac12$

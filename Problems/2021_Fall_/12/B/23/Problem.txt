@@ -1,0 +1,5 @@
+==Problem==
+What is the average number of pairs of consecutive integers in a randomly selected subset of $5$ distinct integers chosen from the set $\{ 1, 2, 3, …, 30\}$? (For example the set $\{1, 17, 18, 19, 30\}$ has $2$ pairs of consecutive integers.)
+
+$\textbf{(A)}\ \frac{2}{3} \qquad\textbf{(B)}\ \frac{29}{36} \qquad\textbf{(C)}\ \frac{5}{6} \qquad\textbf{(D)}\
+\frac{29}{30} \qquad\textbf{(E)}\ 1$

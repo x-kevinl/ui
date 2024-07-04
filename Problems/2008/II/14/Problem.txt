@@ -1,0 +1,6 @@
+== Problem ==
+Let <math>a</math> and <math>b</math> be positive real numbers with <math>a\ge b</math>. Let <math>\rho</math> be the maximum possible value of <math>\frac {a}{b}</math> for which the system of equations
+<cmath>
+a^2 + y^2 = b^2 + x^2 = (a - x)^2 + (b - y)^2
+</cmath>
+has a solution in <math>(x,y)</math> satisfying <math>0\le x < a</math> and <math>0\le y < b</math>. Then <math>\rho^2</math> can be expressed as a fraction <math>\frac {m}{n}</math>, where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. Find <math>m + n</math>.

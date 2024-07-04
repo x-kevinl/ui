@@ -1,0 +1,9 @@
+==Solution 1 (Algebra)==
+
+The units digit of a multiple of $10$ will always be $0$. We add a $0$ whenever we multiply by $10$. So, removing the units digit is equal to dividing by $10$.
+
+Let the smaller number (the one we get after removing the units digit) be $a$. This means the bigger number would be $10a$.
+
+We know the sum is $10a+a = 11a$ so $11a=17402$. So $a=1582$. The difference is $10a-a = 9a$. So, the answer is $9(1582) = \boxed{\textbf{(D)} ~14{,}238}$.
+
+~abhinavg0627

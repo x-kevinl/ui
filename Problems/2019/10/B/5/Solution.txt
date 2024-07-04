@@ -1,0 +1,14 @@
+==Solution==
+Let's analyze all of the options separately. 
+
+$\textbf{(A)}$: Clearly $\textbf{(A)}$ is true, because a point in the first quadrant will have non-negative $x$- and $y$-coordinates, and so its reflection, with the coordinates swapped, will also have non-negative $x$- and $y$-coordinates.
+
+$\textbf{(B)}$: The triangles have the same area, since $\triangle ABC$ and $\triangle A'B'C'$ are the same triangle (congruent). More formally, we can say that area is ''invariant'' under reflection.
+
+$\textbf{(C)}$: If point $A$ has coordinates $(p,q)$, then $A'$ will have coordinates $(q,p)$. The gradient is thus $\frac{p-q}{q-p} = -1$, so this is true. (We know $p \neq q$ since the question states that none of the points $A$, $B$, or $C$ lies on the line $y=x$, so there is no risk of division by zero).
+
+$\textbf{(D)}$: Repeating the argument for $\textbf{(C)}$, we see that both lines have slope $-1$, so this is also true.
+
+$\textbf{(E)}$: This is the only one left, presumably the answer. To prove: if point $A$ has coordinates $(p,q)$ and point $B$ has coordinates $(r,s)$, then $A'$ and $B'$ will, respectively, have coordinates $(q,p)$ and $(s,r)$. The product of the gradients of $AB$ and $A'B'$ is $\frac{s-q}{r-p} \cdot \frac{r-p}{s-q} = 1 \neq -1$, so in fact these lines are '''never''' perpendicular to each other (using the "negative reciprocal" condition for perpendicularity).
+
+Thus the answer is $\boxed{\textbf{(E)}}$.

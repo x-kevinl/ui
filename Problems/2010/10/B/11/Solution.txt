@@ -1,0 +1,18 @@
+==Solution==
+Let the listed price be $(100 + p)$, where $p > 0$
+ 
+Coupon A saves us: $0.15(100+p) = (0.15p + 15)$
+
+Coupon B saves us: $30$
+
+Coupon C saves us: $0.25p$
+
+Now, the condition is that A has to be greater than or equal to either B or C which gives us the following inequalities:
+
+$A \geq B \Rightarrow 0.15p + 15 \geq 30 \Rightarrow p \geq 100$
+
+$A \geq C \Rightarrow 0.15p + 15 \geq 0.25p \Rightarrow p \leq 150$
+
+We see here that the greatest possible value for $p$ is $ 150 $, thus $ y = 100 + 150 = 250 $ and the smallest value for $p$ is $ 100 $ so $ x = 100 + 100 = 200 $. 
+
+The difference between $y$ and $x$ is $y - x = 250 - 200 = \boxed{\textbf{(A)}\ 50}$

@@ -1,0 +1,8 @@
+==Solution (Super Fast!)==
+
+Note that this is the same as finding how many numbers with up to three digits do not contain 1.
+
+Since there are 10 total possible digits, and only one of them is not allowed (1), each place value has its choice of 9 digits, for a total of $9*9*9=729$ such numbers. However, we overcounted by one; 0 is not between 1 and 1000, so there are $\boxed{\textbf{(D)}\ 728}$ numbers.
+
+
+Note: As stated above, 020 is equivalent to 20, but 000 is not between 1 and 1000.

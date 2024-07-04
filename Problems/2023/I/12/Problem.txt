@@ -1,0 +1,2 @@
+==Problem==
+Let <math>\triangle ABC</math> be an equilateral triangle with side length <math>55.</math> Points <math>D,</math> <math>E,</math> and <math>F</math> lie on <math>\overline{BC},</math> <math>\overline{CA},</math> and <math>\overline{AB},</math> respectively, with <math>BD = 7,</math> <math>CE=30,</math> and <math>AF=40.</math> Point <math>P</math> inside <math>\triangle ABC</math> has the property that <cmath>\angle AEP = \angle BFP = \angle CDP.</cmath> Find <math>\tan^2(\angle AEP).</math>

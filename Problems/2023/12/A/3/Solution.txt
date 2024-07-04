@@ -1,0 +1,4 @@
+==Solution 2 (slightly refined)==
+Since $\left \lfloor{\sqrt{2023}}\right \rfloor = 44$, there are $\left \lfloor{\frac{44}{5}}\right \rfloor = \boxed{\textbf{(A) 8}}$ perfect squares less than 2023.
+
+~not_slay

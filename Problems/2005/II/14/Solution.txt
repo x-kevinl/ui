@@ -1,0 +1,33 @@
+== Solution 1==
+<center><asy>
+import olympiad; import cse5; import geometry; size(150);
+defaultpen(fontsize(10pt));
+defaultpen(0.8);
+dotfactor = 4;
+pair A = origin;
+pair C = rotate(15,A)*(A+dir(-50));
+pair B = rotate(15,A)*(A+dir(-130));
+pair D = extension(A,A+dir(-68),B,C);
+pair E = extension(A,A+dir(-82),B,C);
+label("$A$",A,N);
+label("$B$",B,SW);
+label("$D$",D,SE);
+label("$E$",E,S);
+label("$C$",C,SE);
+draw(A--B--C--cycle);
+draw(A--E);
+draw(A--D);
+draw(anglemark(B,A,E,5));
+draw(anglemark(D,A,C,5));
+</asy></center>
+
+By the [[Law of Sines]] and since <math>\angle BAE = \angle CAD, \angle BAD = \angle CAE</math>, we have
+
+<cmath>\begin{align*}
+ \frac{CD \cdot CE}{AC^2} &= \frac{\sin CAD}{\sin ADC} \cdot \frac{\sin CAE}{\sin AEC}  \\
+&= \frac{\sin BAE \sin BAD}{\sin ADB \sin AEB} \\
+&= \frac{\sin BAE}{\sin AEB} \cdot \frac{\sin BAD}{\sin ADB}\\ &= \frac{BE \cdot BD}{AB^2}
+\end{align*}
+</cmath>
+
+Substituting our knowns, we have <math>\frac{CE}{BE} = \frac{3 \cdot 14^2}{2 \cdot 13^2} = \frac{BC - BE}{BE} = \frac{15}{BE} - 1 \Longrightarrow BE = \frac{13^2 \cdot 15}{463}</math>. The answer is <math>q = \boxed{463}</math>.

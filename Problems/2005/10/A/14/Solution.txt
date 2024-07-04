@@ -1,0 +1,24 @@
+==Solution 1==
+If the middle digit is the average of the first and last digits, twice the middle digit must be equal to the sum of the first and last digits. 
+
+Doing some [[casework]]: 
+
+If the middle digit is $1$, possible numbers range from $111$ to $210$. So there are $2$ numbers in this case. 
+
+If the middle digit is $2$, possible numbers range from $123$ to $420$. So there are $4$ numbers in this case. 
+
+If the middle digit is $3$, possible numbers range from $135$ to $630$. So there are $6$ numbers in this case. 
+
+If the middle digit is $4$, possible numbers range from $147$ to $840$. So there are $8$ numbers in this case. 
+
+If the middle digit is $5$, possible numbers range from $159$ to $951$. So there are $9$ numbers in this case. 
+
+If the middle digit is $6$, possible numbers range from $369$ to $963$. So there are $7$ numbers in this case. 
+
+If the middle digit is $7$, possible numbers range from $579$ to $975$. So there are $5$ numbers in this case. 
+
+If the middle digit is $8$, possible numbers range from $789$ to $987$. So there are $3$ numbers in this case. 
+
+If the middle digit is $9$, the only possible number is $999$. So there is $1$ number in this case. 
+
+So the total number of three-digit numbers that satisfy the property is $2+4+6+8+9+7+5+3+1=\boxed{\textbf{(E) }45}$

@@ -1,0 +1,19 @@
+==Solution==
+
+Let $AD = x$, and $AG = y$. We want to find $DE + FG$, which is nothing but $x+y$.
+
+Based on the fact that $ADE$, $DEFG$, and $BCFG$ have the same perimeters, we can say the following:
+
+$3x = x + 2(y-x) + y = y + 2(1-y) + 1$
+
+Simplifying, we can find that
+
+$3x = 3y-x = 3-y$
+
+Since $3-y = 3x$, $y = 3-3x$.
+
+After substitution, we find that $9-10x = 3x$, and $x$ = $\frac{9}{13}$.
+
+Again substituting, we find $y$ = $\frac{12}{13}$.
+
+Therefore, $x+y$ = $\frac{21}{13}$, which is $C$

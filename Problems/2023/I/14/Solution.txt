@@ -1,0 +1,34 @@
+==Solution 1 (Drawing the Grid)==
+
+This problem is, in essence, the following:  A <math>12\times12</math> coordinate grid is placed on a (flat) torus; how many loops are there that pass through each point while only moving up or right?  In other words, Felix the frog starts his journey at <math>(0,0)</math> in the coordinate plane.  Every second, he jumps either to the right or up, until he reaches an <math>x</math>- or <math>y</math>-coordinate of <math>12</math>.  At this point, if he tries to jump to a coordinate outside the square from <math>(0,0)</math> to <math>(11,11)</math>, he "wraps around" and ends up at an <math>x</math>- or <math>y</math>- coordinate of <math>0</math>.  How many ways are there for Felix to jump on every grid point in this square, so that he ends at <math>(0,0)</math>?  This is consistent with the construction of the flat torus as <math>\mathbb Z^2/12\mathbb Z^2</math> (2-dimensional modular arithmetic.  <math>(\mathbb{Z}_{12})^2</math>)
+
+Moving on, define a <math>\textit{path}</math> from point <math>A</math> to point <math>B</math> to be a sequence of "up"s and "right"s that takes Felix from <math>A</math> to <math>B</math>.  The <math>\textit{distance}</math> from <math>A</math> to <math>B</math> is the length of the shortest path from <math>A</math> to <math>B</math>.  At the crux of this problem is the following consideration:  The points <math>A_i=(i,12-i), i\in{0,...,11}</math> are pairwise equidistant, each pair having distance of <math>12</math> in both directions. 
+
+<asy>
+size(7cm);
+for (int x=0; x<12; ++x){
+for (int y=0; y<12; ++y){
+fill(circle((x,y),0.05));}}
+for (int i=0; i<12; ++i){
+fill(circle((i,11-i),0.1),red);}
+pen p=green+dashed;
+path u=(3,8)--(4,8)--(4,9)--(4,10)--(4,11)--(5,11)--(5,11.5);
+path v=(5,-0.5)--(5,0)--(5,1)--(6,1)--(6,2)--(6,3)--(6,4)--(7,4);
+draw(u,p);
+draw(v,p);
+pen p=blue+dashed;
+path u=(4,7)--(5,7)--(5,8)--(5,9)--(5,10)--(6,10)--(6,11)--(6,11.5);
+path v=(6,-0.5)--(6,0)--(7,0)--(7,1)--(7,2)--(7,3)--(8,3);
+draw(u,p);
+draw(v,p);
+</asy>
+
+A valid complete path then joins two <math>A_i</math>'s, say <math>A_i</math> and <math>A_j</math>.  In fact, a link between some <math>A_i</math> and <math>A_j</math> fully determines the rest of the cycle, as the path from <math>A_{i+1}</math> must "hug" the path from <math>A_i</math>, to ensure that there are no gaps.  We therefore see that if <math>A_0</math> leads to <math>A_k</math>, then <math>A_i</math> leads to <math>A_{i+k}</math>.  Only the values of <math>k</math> relatively prime to <math>12</math> result in solutions, though, because otherwise <math>A_0</math> would only lead to <math>\{A_i:\exists n\in \mathbb Z:i\equiv kn\quad\text{mod 12}\}</math>.  The number of paths from <math>A_0</math> to <math>A_k</math> is <math>{12\choose k}</math>, and so the answer is
+
+<cmath>{12\choose1}+{12\choose5}+{12\choose7}+{12\choose11}=1\boxed{608}.</cmath>
+
+Notes:
+
+- One can prove that the path from <math>A_{i+1}</math> must "hug" the path from <math>A_i</math> by using techniques similar to those in Solution 2.
+
+- One can count the paths as follows:  To get from <math>A_0</math> to <math>A_i</math>, Felix takes <math>k</math> rights and <math>12-k</math> ups, which can be done in  <math>{12\choose k}</math> ways.

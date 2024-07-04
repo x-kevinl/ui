@@ -1,0 +1,2 @@
+==Problem==
+There is a unique angle <math>\theta</math> between <math>0^{\circ}</math> and <math>90^{\circ}</math> such that for nonnegative integers <math>n</math>, the value of <math>\tan{\left(2^{n}\theta\right)}</math> is positive when <math>n</math> is a multiple of <math>3</math>, and negative otherwise. The degree measure of <math>\theta</math> is <math>\tfrac{p}{q}</math>, where <math>p</math> and <math>q</math> are relatively prime integers. Find <math>p+q</math>.

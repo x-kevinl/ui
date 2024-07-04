@@ -1,0 +1,14 @@
+== Problem ==
+For <math>\pi \le \theta < 2\pi</math>, let
+
+<cmath>\begin{align*}
+P &= \frac12\cos\theta - \frac14\sin 2\theta - \frac18\cos 3\theta + \frac{1}{16}\sin 4\theta + \frac{1}{32} \cos 5\theta - \frac{1}{64} \sin 6\theta - \frac{1}{128} \cos 7\theta + \cdots
+\end{align*}</cmath>
+
+and
+
+<cmath>\begin{align*}
+Q &= 1 - \frac12\sin\theta -\frac14\cos 2\theta + \frac18 \sin 3\theta + \frac{1}{16}\cos 4\theta - \frac{1}{32}\sin 5\theta - \frac{1}{64}\cos 6\theta +\frac{1}{128}\sin 7\theta + \cdots
+\end{align*}</cmath>
+
+so that <math>\frac{P}{Q} = \frac{2\sqrt2}{7}</math>. Then <math>\sin\theta = -\frac{m}{n}</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

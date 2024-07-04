@@ -1,0 +1,2 @@
+==Solution 1==
+Suppose that his old car runs at $x$ km per liter. Then his new car runs at $\frac{3}{2}x$ km per liter, or $x$ km per $\frac{2}{3}$ of a liter. Let the cost of the old car's fuel be $c$, so the trip in the old car takes $xc$ dollars, while the trip in the new car takes $\frac{2}{3}\cdot\frac{6}{5}xc = \frac{4}{5}xc$. He saves $\frac{\frac{1}{5}xc}{xc} = \boxed{\textbf{(A)}\ 20\%}$.

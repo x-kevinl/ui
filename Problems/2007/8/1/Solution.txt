@@ -1,0 +1,16 @@
+== Solution 1 ==
+
+
+
+
+
+Let $x$ be the number of hours she must work for the final week. We are looking for the average, so  
+$$\frac{8 + 11 + 7 + 12 + 10 + x}{6} = 10$$  
+Solving gives:
+$$\frac{48 + x}{6} = 10$$ 
+ 
+$$48 + x = 60$$
+
+$$x = 12$$
+
+So, the answer is $ \boxed{\textbf{(D)}\ 12} $

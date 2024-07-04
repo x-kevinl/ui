@@ -1,0 +1,5 @@
+==Solutions==
+
+===Solution 1===
+
+The prime factorization is $2016=2^5\times3^2\times7$.  Since the problem is only asking us for the distinct prime factors, we have $2,3,7$.  Their desired sum is then $\boxed{\textbf{(B) }12}$.

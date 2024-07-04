@@ -1,0 +1,32 @@
+== Solution 1 ==
+<center><asy>
+size(200);
+import three; pointpen=black;pathpen=black+linewidth(0.65);pen ddash = dashed+linewidth(0.65);
+currentprojection = perspective(1,-10,3.3);
+triple O=(0,0,0),T=(0,0,5),C=(0,3,0),A=(-3*3^.5/2,-3/2,0),B=(3*3^.5/2,-3/2,0);
+triple M=(B+C)/2,S=(4*A+T)/5;
+draw(T--S--B--T--C--B--S--C);draw(B--A--C--A--S,ddash);draw(T--O--M,ddash);
+label("$T$",T,N);label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,NE);label("$S$",S,NW);label("$O$",O,SW);label("$M$",M,NE);
+label("$4$",(S+T)/2,NW);label("$1$",(S+A)/2,NW);label("$5$",(B+T)/2,NE);label("$4$",(O+T)/2,W);
+dot(S);dot(O);
+</asy></center>
+
+We will use <math>[...]</math> to denote volume (four letters), area (three letters) or length (two letters).
+
+Let <math>T</math> be the top of the tripod, <math>A,B,C</math> are end points of three legs. Let <math>S</math> be the point on <math>TA</math> such that <math>[TS] = 4</math> and <math>[SA] = 1</math>. Let <math>O</math> be the center of the base [[equilateral triangle]] <math>ABC</math>. Let <math>M</math> be the [[midpoint]] of segment <math>BC</math>. Let <math>h</math> be the distance from <math>T</math> to the triangle <math>SBC</math> (<math>h</math> is what we want to find).
+
+We have the volume ratio <math>\frac {[TSBC]}{[TABC]} = \frac {[TS]}{[TA]} = \frac {4}{5}</math>.
+
+So <math>\frac {h\cdot [SBC]}{[TO]\cdot [ABC]} = \frac {4}{5}</math>.
+
+We also have the [[area ratios|area ratio]] <math>\frac {[SBC]}{[ABC]} = \frac {[SM]}{[AM]}</math>.
+
+The triangle <math>TOA</math> is a <math>3-4-5</math> [[right triangle]] so <math>[AM] = \frac {3}{2}\cdot[AO] = \frac {9}{2}</math> and <math>\cos{\angle{TAO}} = \frac {3}{5}</math>.
+
+Applying [[Law of Cosines]] to the triangle <math>SAM</math> with <math>[SA] = 1</math>, <math>[AM] = \frac {9}{2}</math> and <math>\cos{\angle{SAM}} = \frac {3}{5}</math>, we find:
+
+<center><math>[SM] = \frac {\sqrt {5\cdot317}}{10}.</math></center>
+
+Putting it all together, we find <math>h = \frac {144}{\sqrt {5\cdot317}}</math>.
+
+<center><math> \lfloor 144+\sqrt{5 \cdot 317}\rfloor =144+ \lfloor \sqrt{5 \cdot 317}\rfloor =144+\lfloor \sqrt{1585} \rfloor =144+39=\boxed{183}</math>.</center>

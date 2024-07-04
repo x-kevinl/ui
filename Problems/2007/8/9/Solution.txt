@@ -1,0 +1,3 @@
+== Solution ==
+
+The number in the first row, last column must be a $3$ due to the fact if a $3$ was in the first row, second column, there would be two threes in that column. By the same reasoning, the number in the second row, last column has to be a $1$. Therefore the number in the lower right-hand square is $\boxed{\textbf{(B)}\ 2}$.

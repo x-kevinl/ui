@@ -1,0 +1,12 @@
+==Solution==
+By: dragonfly
+
+We can solve this problem by using similar triangles, since two equilateral triangles are always similar. We can then use
+
+$\left(\frac{3}{5}\right)^2=\frac{12}{x}$.
+
+We can then solve the equation to get $x=\frac{100}{3}$ which is closest to $\boxed{\textbf{(D)}\ 33.3}$
+
+
+
+Sidenote - If we didn't know that $\left(\frac{a}{b}\right)^2$ for an equilateral triangle, using the area formula, $\frac{1}{4}\sqrt{3}a^2$, in proportion $\frac{1/4(\sqrt{3}a^2)}{1/4(\sqrt{3}b^2)}$, just cancel and simplify to get $\frac{a^2}{b^2}$.

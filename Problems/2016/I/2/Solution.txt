@@ -1,0 +1,4 @@
+==Solution==
+It is easier to think of the dice as <math>21</math> sided dice with <math>6</math> sixes, <math>5</math> fives, etc.  Then there are <math>21^2=441</math> possible rolls. There are <math>2\cdot(1\cdot 6+2\cdot 5+3\cdot 4)=56</math> rolls that will result in a seven.  The odds are therefore <math>\frac{56}{441}=\frac{8}{63}</math>.  The answer is <math>8+63=\boxed{071}</math>
+
+See also [[2006 AMC 12B Problems/Problem 17]]

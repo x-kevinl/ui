@@ -1,0 +1,12 @@
+== Solution 1 ==
+
+<center><asy>
+pointpen = black; pathpen = black+linewidth(0.7);
+pair B=(0,0), C=(20,0), A=IP(CR(B,21),CR(C,22)), I=incenter(A,B,C), D=IP((0,I.y)--(20,I.y),A--B), E=IP((0,I.y)--(20,I.y),A--C);
+D(MP("A",A,N)--MP("B",B)--MP("C",C)--cycle); D(MP("I",I,NE)); D(MP("E",E,NE)--MP("D",D,NW));
+// D((A.x,0)--A,linetype("4 4")+linewidth(0.7)); D((I.x,0)--I,linetype("4 4")+linewidth(0.7)); D(rightanglemark(B,(A.x,0),A,30));
+D(B--I--C);
+MP("20",(B+C)/2); MP("21",(A+B)/2,NW); MP("22",(A+C)/2,NE);
+</asy></center>
+
+Let <math>I</math> be the [[incenter]] of <math>\triangle ABC</math>, so that <math>BI</math> and <math>CI</math> are [[angle bisector]]s of <math>\angle ABC</math> and <math>\angle ACB</math> respectively. Then, <math>\angle BID = \angle CBI = \angle DBI,</math> so <math>\triangle BDI</math> is [[Isosceles triangle|isosceles]], and similarly <math>\triangle CEI</math> is isosceles. It follows that <math>DE = DB + EC</math>, so the perimeter of <math>\triangle ADE</math> is <math>AD + AE + DE = AB + AC = 43</math>. Hence, the ratio of the perimeters of <math>\triangle ADE</math> and <math>\triangle ABC</math> is <math>\frac{43}{63}</math>, which is the scale factor between the two similar triangles, and thus <math>DE = \frac{43}{63} \times 20 = \frac{860}{63}</math>. Thus, <math>m + n = \boxed{923}</math>.

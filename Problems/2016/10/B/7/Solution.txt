@@ -1,0 +1,12 @@
+==Solution 1==
+
+We can set up a system of equations where $x$ and $y$ are the two acute angles. WLOG, assume that $x$ $<$ $y$ in order for the complement of $x$ to be greater than the complement of $y$. Therefore, $5x$ $=$ $4y$ and $90$ $-$ $x$ $=$ $2$ $(90$ $-$ $y)$. Solving for $y$ in the first equation and substituting into the second equation yields
+$$\begin{split}
+90 - x & = 2 (90 - 1.25x) \\
+1.5x & = 90 \\
+x & = 60
+\end{split}$$
+
+Substituting this $x$ value back into the first equation yields $y$ $=$ $75$, leaving $x$ $+$ $y$ equal to $\boxed{\textbf{(C)}\ 135}$.
+
+(Solution by akaashp11)

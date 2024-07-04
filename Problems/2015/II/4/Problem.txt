@@ -1,0 +1,3 @@
+==Problem==
+
+In an isosceles trapezoid, the parallel bases have lengths <math>\log 3</math> and <math>\log 192</math>, and the altitude to these bases has length <math>\log 16</math>. The perimeter of the trapezoid can be written in the form <math>\log 2^p 3^q</math>, where <math>p</math> and <math>q</math> are positive integers. Find <math>p + q</math>.

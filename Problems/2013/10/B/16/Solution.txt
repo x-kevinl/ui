@@ -1,0 +1,3 @@
+==Solution 1==
+Let us use mass points:
+Assign $B$ mass $1$.  Thus, because $E$ is the midpoint of $AB$, $A$ also has a mass of $1$.  Similarly, $C$ has a mass of $1$.  $D$ and $E$ each have a mass of $2$ because they are between $B$ and $C$ and $A$ and $B$ respectively.  Note that the mass of $D$ is twice the mass of $A$, so $AP$ must be twice as long as $PD$.  PD has length $2$, so $AP$ has length $4$ and $AD$ has length $6$.  Similarly, $CP$ is twice $PE$ and $PE=1.5$, so $CP=3$ and $CE=4.5$.  Now note that triangle $PED$ is a $3-4-5$ right triangle with the right angle $DPE$. Since the diagonals of quadrilaterals $AEDC$, $AD$ and $CE$, are perpendicular, the area of $AEDC$ is $\frac{6 \times 4.5}{2}=\boxed{\textbf{(B)} 13.5}$

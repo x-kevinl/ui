@@ -1,0 +1,8 @@
+==Solution 1==
+Without loss of generality (WLOG) note that if a point in the first quadrant satisfies the equation, so do its corresponding points in the other three quadrants. Therefore, we can assume that $x, y \ge 0$, which implies that $|x|=x$ and $|y|=y$, and multiply by $4$ at the end.
+
+We can rearrange the equation to get $x^2-x+y^2-y=0 \Rightarrow (x-\tfrac12)^2+(y-\tfrac12)^2=(\tfrac{\sqrt2}{2})^2$, which describes a circle with center $(\tfrac12, \tfrac12)$ and radius $\tfrac{\sqrt2}{2}.$ It's clear we now want to find the union of four equal areas.
+
+<asy>draw((0,-1.5)--(0,1.5),EndArrow);draw((-1.5,0)--(1.5,0),EndArrow);draw((0,1)--(1,0)--(0,-1)--(-1,0)--cycle,dotted);
+for(int i=0;i<4;++i){draw(rotate(i*90,(0,0))*arc((1/2,1/2),sqrt(1/2),-45,135));dot(rotate(i*90,(0,0))*(1/2,1/2));}</asy>
+There are several ways to find the area, but note that if you connect $(0, 1)$ to its other three respective points in the other three quadrants, you get a square of area $2$, along with four half-circles of diameter $\sqrt{2}$, for a total area of $2+2\cdot(\tfrac{\sqrt2}{2})^2\pi = \pi + 2$ which is $\boxed{\textbf{(B)}}$.

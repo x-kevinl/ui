@@ -1,0 +1,2 @@
+== Solution ==
+Every pair of [[vertex | vertices]] of the [[polyhedron]] determines either an [[edge]], a face [[diagonal]] or a space diagonal.  We have <math>{26 \choose 2} = \frac{26\cdot25}2 = 325</math> total [[line segment]]s determined by the vertices.  Of these, <math>60</math> are edges.  Each [[triangle|triangular]] face has <math>0</math> face diagonals and each [[quadrilateral]] face has <math>2</math>, so there are <math>2 \cdot 12 = 24</math> face diagonals.  This leaves <math>325 - 60 - 24 = \boxed{241}</math> segments to be the space diagonals.

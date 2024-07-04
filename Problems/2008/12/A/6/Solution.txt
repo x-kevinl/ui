@@ -1,0 +1,14 @@
+==Solution==
+===Solution 1===
+Let the sticker price be $x$.
+
+The price of the computer is $0.85x-90$ at store $A$ and $0.75x$ at store $B$.
+
+Heather saves $\$15$ at store $A$, so $0.85x-90+15=0.75x$.
+
+Solving, we find $x=750$, and thus the answer is $\mathrm{(A)}$.
+
+===Solution 2===
+The $\$ 90$ at store $A$ is $\$ 15$ greater than the additional $25\%-15\% = 10\%$ off at store $B$.
+
+Thus the $10\%$ off is equal to $\$ 90$ $-$ $\$ 15$ $=$ $\$ 75$, and therefore the sticker price is $\$ 750$.

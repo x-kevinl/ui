@@ -1,0 +1,13 @@
+==Problem==
+
+In the figure below, choose point $D$ on $\overline{BC}$ so that $\triangle ACD$ and $\triangle ABD$ have equal perimeters. What is the area of $\triangle ABD$?
+
+<asy>draw((0,0)--(4,0)--(0,3)--(0,0));
+label("$A$", (0,0), SW);
+label("$B$", (4,0), ESE);
+label("$C$", (0, 3), N);
+label("$3$", (0, 1.5), W);
+label("$4$", (2, 0), S);
+label("$5$", (2, 1.5), NE);</asy>
+
+$\textbf{(A) }\frac{3}{4}\qquad\textbf{(B) }\frac{3}{2}\qquad\textbf{(C) }2\qquad\textbf{(D) }\frac{12}{5}\qquad\textbf{(E) }\frac{5}{2}$

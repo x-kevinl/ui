@@ -1,0 +1,6 @@
+==Problem==
+
+What is the sum of all possible values of $t$ between $0$ and $360$ such that the triangle in the coordinate plane whose vertices are $$(\cos 40^\circ,\sin 40^\circ), (\cos 60^\circ,\sin 60^\circ), \text{ and } (\cos t^\circ,\sin t^\circ)$$
+is isosceles? 
+
+$\textbf{(A)} \: 100 \qquad\textbf{(B)} \: 150 \qquad\textbf{(C)} \: 330 \qquad\textbf{(D)} \: 360 \qquad\textbf{(E)} \: 380$

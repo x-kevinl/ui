@@ -1,0 +1,44 @@
+==Solution 1 (Best)==
+
+<asy>
+import olympiad;
+unitsize(50);
+pair A,B,C,D,E,F,O;
+A = origin; B = (-0.5,0.866025); C=(0,1.7320508); D=(1,1.7320508); E=(1.5,0.866025); F=(1,0);
+draw(A--B--C--D--E--F--cycle);
+draw(Circle((0.5,0.866025),1));
+draw(A--D);
+draw(B--E);
+draw(C--F);
+
+</asy>
+
+This is the graph of the original Hexagon. After reflecting each minor arc over the sides of the hexagon it will look like this;
+
+<asy>
+import olympiad;
+unitsize(50);
+pair A,B,C,D,E,F,O;
+A = origin; B = (-0.5,0.866025); C=(0,1.7320508); D=(1,1.7320508); E=(1.5,0.866025); F=(1,0);
+draw(A--B--C--D--E--F--cycle);
+draw(arc((0.5,2.598076), C, D));
+draw(arc((2,1.7320508), D, E));
+draw(arc((2,0), E, F));
+draw(arc((0.5,-0.866025), F, A));
+draw(arc((-1,0), A, B));
+draw(arc((-1,1.7320508), B, C));
+draw(A--D);
+draw(B--E);
+draw(C--F);
+
+</asy>
+
+This bounded region is the same as the area of the hexagon minus the area of each of the reflect arcs. From the first diagram, the area of each arc is the area of the $60^{\circ}$ sector minus the area of the equilateral triangle, so each arc has an area of $\frac{\pi r^2}{6} - \frac{s^2\sqrt{3}}{4} \implies \frac{\pi}{6} - \frac{\sqrt{3}}{4}$.
+
+There are 6 total arcs, so the total area of the arcs is $6\cdot (\frac{\pi}{6} - \frac{\sqrt{3}}{4}) = \pi - \frac{3\sqrt{3}}{2}$.
+
+The area of the hexagon is $6\cdot \frac{\sqrt{3}}{4} = \frac{3\sqrt{3}}{2}$, so the area of the bounded region is:
+$\frac{3\sqrt{3}}{2} - (\pi - \frac{3\sqrt{3}}{2}) = 3\sqrt{3} - \pi = \boxed{B}$
+
+
+~KingRavi

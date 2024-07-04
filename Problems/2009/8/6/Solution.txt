@@ -1,0 +1,2 @@
+==Solution==
+Each of the four hoses hose fills $24,000/4 = 6,000$ gallons of water. At the rate it goes at it will take $6,000/2.5 = 2400$ minutes, or $\boxed{\textbf{(A)}\ 40}$ hours.

@@ -1,0 +1,17 @@
+==Solution 1==
+
+Let $n$ be the number of steps. We have
+
+$$\left\lceil \frac{n}{2} \right\rceil - 19 = \left\lceil \frac{n}{5} \right\rceil$$
+
+We will proceed to solve this equation via casework.
+
+Case $1$: $\left\lceil \frac{n}{2} \right\rceil = \frac{n}{2}$
+
+Our equation becomes $\frac{n}{2} - 19 = \frac{n}{5} + \frac{j}{5}$, where $j \in \{0,1,2,3,4\}$ Using the fact that $n$ is an integer, we quickly find that $j=1$ and $j=4$ yield $n=64$ and $n=66$, respectively.
+
+<br>
+
+Case $2$: $\left\lceil \frac{n}{2} \right\rceil = \frac{n}{2}+\frac{1}{2}$
+
+Our equation becomes $\frac{n}{2} +\frac{1}{2} - 19 = \frac{n}{5} + \frac{j}{5}$, where $j \in \{0,1,2,3,4\}$ Using the fact that $n$ is an integer, we quickly find that $j=2$ yields $n=63$. Summing up we get $63+64+66=193$. The sum of the digits is $\boxed{\textbf{(D)}\; 13}$.

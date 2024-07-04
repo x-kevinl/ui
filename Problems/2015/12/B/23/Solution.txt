@@ -1,0 +1,14 @@
+==Solution 1==
+
+We need $$abc = 2(ab+bc+ac) \quad \text{ or } \quad (a-2)bc = 2a(b+c).$$
+Since $a\le b$ and $a,b,c$ are all positive$,ac \le bc$. From the first equation we get $abc \le 6bc$. Thus $a\le 6$. From the second equation we see that $a > 2$. Thus $a\in \{3, 4, 5, 6\}$. 
+
+*If $a=3$ we need $bc = 6(b+c) \Rightarrow (b-6)(c-6)=36$. We get '''five''' roots $\{(3, 7, 42), (3, 8, 24), (3,9,18), (3, 10, 15), (3,12,12)\}$.
+
+*If $a=4$ we need $2bc = 8(b+c) \Rightarrow bc = 4(b+c) \Rightarrow (b-4)(c-4)=16$. We get '''three''' roots $\{(4,5,20), (4,6,12), (4,8,8)\}$.
+
+*If $a=5$ we need $3bc = 10(b+c) \Rightarrow 9bc=30(b+c) \Rightarrow (3b-10)(3c-10)=100$. We get '''one''' root $\{(5,5,10)\}$.
+ 
+*If $a=6$ we need $4bc = 12(b+c) \Rightarrow bc = 3(b+c) \Rightarrow (b-3)(c-3)=9$. We get ''' one''' root $\{(6,6,6)\}$.
+
+Thus, there are $5+3+1+1 = \boxed{\textbf{(B)}\; 10}$ solutions.

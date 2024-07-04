@@ -1,0 +1,4 @@
+==Solution 1==
+
+
+Let $C_1$ be the reflection of $C$ across $\overline{AB}$, and let $C_2$ be the reflection of $C_1$ across $\overline{AC}$.  Then it is well-known that the quantity $BE+DE+CD$ is minimized when it is equal to $C_2B$.  (Proving this is a simple application of the triangle inequality; for an example of a simpler case, see Heron's Shortest Path Problem.)  As $A$ lies on both $AB$ and $AC$, we have $C_2A=C_1A=CA=6$.  Furthermore, $\angle CAC_1=2\angle CAB=80^\circ$ by the nature of the reflection, so $\angle C_2AB=\angle C_2AC+\angle CAB=80^\circ+40^\circ=120^\circ$.  Therefore by the Law of Cosines $$BC_2^2=6^2+10^2-2\cdot 6\cdot 10\cos 120^\circ=196\implies BC_2=\boxed{\textbf{(D) }14}.$$

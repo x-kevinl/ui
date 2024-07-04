@@ -1,0 +1,6 @@
+==Solution==
+The ratio of the Shark's victories to games played is $\frac{1}{3}$. For $N$ to be at its smallest, the Sharks must win all the subsequent games because $\frac{1}{3} < \frac{95}{100}$. Then we can write the equation
+
+$$\frac{1+N}{3+N}=\frac{95}{100}=\frac{19}{20}$$
+
+Cross-multiplying yields $20(1+N)=19(3+N)$, and we find that $N=\fbox{\textbf{(B)}\; 37}$.

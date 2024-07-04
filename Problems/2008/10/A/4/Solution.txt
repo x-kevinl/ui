@@ -1,0 +1,2 @@
+==Solution== 
+If $\frac{2}{3}\cdot10\ \text{bananas}=8\ \text{oranges}$, then $\frac{1}{2}\cdot5\ \text{bananas}=\left(\frac{1}{2}\cdot 5\ \text{bananas}\right)\cdot\left(\frac{8\ \text{oranges}}{\frac{2}{3}\cdot10\ \text{bananas}}\right)=3\ \text{oranges}\Longrightarrow\mathrm{(C)}$.

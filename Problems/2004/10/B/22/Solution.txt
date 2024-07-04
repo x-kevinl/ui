@@ -1,0 +1,41 @@
+==Solution 1==
+
+<asy>
+import geometry;
+
+unitsize(0.6 cm);
+
+pair A, B, C, D, E, F, I, O;
+
+A = (5^2/13,5*12/13);
+B = (0,0);
+C = (13,0);
+I = incenter(A,B,C);
+D = (I + reflect(B,C)*(I))/2;
+E = (I + reflect(C,A)*(I))/2;
+F = (I + reflect(A,B)*(I))/2;
+O = (B + C)/2;
+
+draw(A--B--C--cycle);
+draw(incircle(A,B,C));
+draw(I--D);
+draw(I--E);
+draw(I--F);
+draw(I--O);
+
+label("$A$", A, N);
+label("$B$", B, SW);
+label("$C$", C, SE);
+dot("$D$", D, S);
+dot("$E$", E, NE);
+dot("$F$", F, NW);
+dot("$I$", I, N);
+dot("$O$", O, S);
+</asy>
+This is a right triangle. Pick a coordinate system so that the right angle is at $(0,0)$ and the other two vertices are at $(12,0)$ and $(0,5)$.
+
+As this is a right triangle, the center of the circumcircle is in the middle of the hypotenuse, at $(6,2.5)$.
+
+The radius $r$ of the inscribed circle can be computed using the well-known identity $\frac{rP}2=S$, where $S$ is the area of the triangle and $P$ its perimeter. In our case, $S=\frac{5\cdot 12}{2}=30$ and $P=5+12+13=30$. Thus, $r=2$. As the inscribed circle touches both legs, its center must be at $(r,r)=(2,2)$.
+
+The distance of these two points is then $\sqrt{ (6-2)^2 + (2.5-2)^2 } = \sqrt{16.25} = \sqrt{\frac{65}4} = \boxed{\frac{\sqrt{65}}2}$.

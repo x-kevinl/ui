@@ -1,0 +1,18 @@
+==Solution 1==
+
+We can substitute <math>y = \sin^2{x}</math>. Since we know that <math>\cos^2{x}=1-\sin^2{x}</math>, we can do some simplification. 
+
+This yields <math>y^5+(1-y)^5=\frac{11}{36}</math>. From this, we can substitute again to get some cancellation through binomials. If we let <math>z=\frac{1}{2}-y</math>, we can simplify the equation to:
+<cmath>\left(\frac{1}{2}+z\right)^5+\left(\frac{1}{2}-z\right)^5=\frac{11}{36}.</cmath> 
+After using binomial theorem, this simplifies to:
+<cmath>\frac{1}{16}(80z^4+40z^2+1)=\frac{11}{36}.</cmath>
+If we use the quadratic formula, we obtain  <math>z^2=\frac{1}{12}</math>, so <math>z=\pm\frac{1}{2\sqrt{3}}</math> (observe that either choice of <math>z</math> doesn't matter). Substituting <math>z,</math> we get:
+
+<cmath>\sin^{12}{x}+\cos^{12}{x}=\left(\frac{1}{2}-z\right)^6+\left(\frac{1}{2}+z\right)^6=2z^6 + \frac{15z^4}{2} + \frac{15z^2}{8} + \frac{1}{32}=\frac{13}{54}.</cmath>
+
+Therefore, the answer is <math>13+54=\boxed{067}</math>.
+
+-eric2020, inspired by Tommy2002
+===Motivation===
+The motivation to substitute <math>z=\frac{1}{2}-y</math> comes so that after applying the binomial theorem to <math>y^5+(1-y)^5=\left(\frac{1}{2}+z\right)^5+\left(\frac{1}{2}-z\right)^5,</math> a lot of terms will cancel out. Note that all the terms with odd exponents in <math>\left(\frac{1}{2}+z\right)^5</math> will cancel out, while the terms with even exponents will be doubled. 
+'''mathboy282'''

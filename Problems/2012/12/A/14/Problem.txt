@@ -1,0 +1,33 @@
+== Problem 14 ==
+
+The closed curve in the figure is made up of 9 congruent circular arcs each of length $\frac{2\pi}{3}$, where each of the centers of the corresponding circles is among the vertices of a regular hexagon of side 2. What is the area enclosed by the curve?
+
+<asy>
+defaultpen(fontsize(6pt));
+dotfactor=4;
+label("$\circ$",(0,1));
+label("$\circ$",(0.865,0.5));
+label("$\circ$",(-0.865,0.5));
+label("$\circ$",(0.865,-0.5));
+label("$\circ$",(-0.865,-0.5));
+label("$\circ$",(0,-1));
+dot((0,1.5));
+dot((-0.4325,0.75));
+dot((0.4325,0.75));
+dot((-0.4325,-0.75));
+dot((0.4325,-0.75));
+dot((-0.865,0));
+dot((0.865,0));
+dot((-1.2975,-0.75));
+dot((1.2975,-0.75));
+draw(Arc((0,1),0.5,210,-30));
+draw(Arc((0.865,0.5),0.5,150,270));
+draw(Arc((0.865,-0.5),0.5,90,-150));
+draw(Arc((0.865,-0.5),0.5,90,-150));
+draw(Arc((0,-1),0.5,30,150));
+draw(Arc((-0.865,-0.5),0.5,330,90));
+draw(Arc((-0.865,0.5),0.5,-90,30));
+</asy>
+
+$\textbf{(A)}\ 2\pi+6\qquad\textbf{(B)}\ 2\pi+4\sqrt{3}\qquad\textbf{(C)}\ 3\pi+4\qquad\textbf{(D)}\ 2\pi+3\sqrt{3}+2\qquad\textbf{(E)}\ \pi+6\sqrt{3}$
+[[Category: Introductory Geometry Problems]]

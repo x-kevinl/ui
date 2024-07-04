@@ -1,0 +1,2 @@
+==Solution 1==
+Let the lowest value be $L$ and the highest $G$, and let the sum be $Z$ and the amount of numbers $n$. We have $\frac{Z-G}{n-1}=32$, $\frac{Z-L-G}{n-2}=35$, $\frac{Z-L}{n-1}=40$, and $G=L+72$. Clearing denominators gives $Z-G=32n-32$, $Z-L-G=35n-70$, and $Z-L=40n-40$. We use $G=L+72$ to turn the first equation into $Z-L=32n+40$. Since $Z-L=40(n-1)$ we substitute it into the equation which gives $n=10$. Turning the second into $Z-2L=35n+2$ using $G=L+72$ we see $L=8$ and $Z=368$ so the average is $\frac{Z}{n}=\boxed{\textbf{(D) }36.8}$ ~aop2014

@@ -1,0 +1,10 @@
+==Problem==
+
+The length of a rectangle is increased by $ 10\%$ percent and the width is decreased by $ 10\%$ percent. What percent of the old area is the new area?
+
+
+$ \textbf{(A)}\  90  \qquad
+\textbf{(B)}\   99  \qquad
+\textbf{(C)}\   100  \qquad
+\textbf{(D)}\   101  \qquad
+\textbf{(E)}\   110$

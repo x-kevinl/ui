@@ -1,0 +1,2 @@
+==Solution==
+Mahdi does basketball on Monday and golf on Wednesday. Since there are four consecutive days between Wednesday and Monday exclusive, he must run on Tuesday. Thus, he must also run on Thursday and Saturday or Friday and Sunday. He can't run on Thursday and Saturday because he would have to do tennis after running, which is not allowed. Thus, he runs on Friday and Sunday, so he must do tennis on Thursday, so he swims on $\boxed{\mathbf{(E)}\ \mathrm{Saturday}}$

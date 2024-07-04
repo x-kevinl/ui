@@ -1,0 +1,2 @@
+==Problem 8==
+For a permutation <math>p = (a_1,a_2,\ldots,a_9)</math> of the digits <math>1,2,\ldots,9</math>, let <math>s(p)</math> denote the sum of the three <math>3</math>-digit numbers <math>a_1a_2a_3</math>, <math>a_4a_5a_6</math>, and <math>a_7a_8a_9</math>. Let <math>m</math> be the minimum value of <math>s(p)</math> subject to the condition that the units digit of <math>s(p)</math> is <math>0</math>. Let <math>n</math> denote the number of permutations <math>p</math> with <math>s(p) = m</math>. Find <math>|m - n|</math>.

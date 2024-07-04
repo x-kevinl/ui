@@ -1,0 +1,2 @@
+== Solution ==
+$31 \equiv 3 \pmod {7}$ so the week cannot start with Saturday, Sunday, Tuesday or Wednesday as that would result in an unequal number of Mondays and Wednesdays. Therefore, Monday, Thursday, and Friday are valid so the answer is $\boxed{B}$.

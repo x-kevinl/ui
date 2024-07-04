@@ -1,0 +1,20 @@
+==Solution 1==
+<asy>
+defaultpen(fontsize(8)+0.8); size(100);
+pair A=(0,0);
+pair B=(1.732,3);
+pair C=(3,3);
+pair D=(3,1.732);
+draw(A--(0,3)--C--(3,0)--A, lightgray+dashed);
+draw(A--B--C--A);
+draw(A--D--C, gray);
+label("$A$",A,W);
+label("$B$",B,N);
+label("$C$",C,NE);
+label("$D$",D,E);
+label("$E$",(0,3),NW);
+label("$F$",(3,0),E);
+</asy>
+The $24$-sided polygon is made out of $24$ shapes like $\triangle ABC$. Then $\angle BAC=360^\circ/24=15^\circ$, and $\angle EAC = 45^\circ$, so  $\angle{EAB} = 30^{\circ}$. Then $EB=AE\tan 30^\circ = \sqrt{3}$; therefore $BC=EC-EB=3-\sqrt{3}$. Thus
+$$[ABC] = \frac{BC}{EC}\cdot [ACE] = \frac{3-\sqrt{3}}{3}\cdot \frac 92 $$and the required area is $24\cdot[ABC] =108-36\sqrt{3}$. Finally $108+36+3=\boxed{(\textbf{E})\ 147}$. 
+~lopkiloinm

@@ -1,0 +1,30 @@
+== Diagram ==
+<asy>
+/* Made by MRENTHUSIASM */
+
+size(200);
+pair A, B, C, P;
+
+A = origin;
+B = (0,10*sqrt(5));
+C = (10*sqrt(5),0);
+P = intersectionpoints(Circle(A,10),Circle(C,20))[0];
+
+dot("$A$",A,1.5*SW,linewidth(4));
+dot("$B$",B,1.5*NW,linewidth(4));
+dot("$C$",C,1.5*SE,linewidth(4));
+dot("$P$",P,1.5*NE,linewidth(4));
+
+markscalefactor=0.125;
+draw(rightanglemark(B,A,C,10),red);
+draw(anglemark(P,A,B,25),red);
+draw(anglemark(P,B,C,25),red);
+draw(anglemark(P,C,A,25),red);
+add(pathticks(anglemark(P,A,B,25), n = 1, r = 0.1, s = 10, red));
+add(pathticks(anglemark(P,B,C,25), n = 1, r = 0.1, s = 10, red));
+add(pathticks(anglemark(P,C,A,25), n = 1, r = 0.1, s = 10, red));
+
+draw(A--B--C--cycle^^P--A^^P--B^^P--C);
+label("$10$",midpoint(A--P),dir(-30),blue);
+</asy>
+~MRENTHUSIASM

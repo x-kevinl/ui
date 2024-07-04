@@ -1,0 +1,3 @@
+==Solution==
+Jordan has $10$ high top sneakers, and $6$ white sneakers. We would want as many white high-top sneakers as possible, so we set $6$ high-top sneakers to be white. Then, we have $10-6=4$ red high-top sneakers, so the answer is $\boxed{\dfrac{4}{15}}.$
+~andliu766

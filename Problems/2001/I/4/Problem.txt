@@ -1,0 +1,3 @@
+==Problem==
+
+In triangle <math>ABC</math>, angles <math>A</math> and <math>B</math> measure <math>60</math> degrees and <math>45</math> degrees, respectively. The bisector of angle <math>A</math> intersects <math>\overline{BC}</math> at <math>T</math>, and <math>AT=24</math>. The area of triangle <math>ABC</math> can be written in the form <math>a+b\sqrt{c}</math>, where <math>a</math>, <math>b</math>, and <math>c</math> are positive integers, and <math>c</math> is not divisible by the square of any prime. Find <math>a+b+c</math>.

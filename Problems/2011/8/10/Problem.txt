@@ -1,0 +1,4 @@
+==Problem==
+The taxi fare in Gotham City is <nowiki>$2.40</nowiki> for the first $\frac12$ mile and additional mileage charged at the rate <nowiki>$0.20</nowiki> for each additional 0.1 mile. You plan to give the driver a <nowiki>$2</nowiki> tip. How many miles can you ride for <nowiki>$10</nowiki>?
+
+$ \textbf{(A) }3.0\qquad\textbf{(B) }3.25\qquad\textbf{(C) }3.3\qquad\textbf{(D) }3.5\qquad\textbf{(E) }3.75 $

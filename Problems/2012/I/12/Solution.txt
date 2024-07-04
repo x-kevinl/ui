@@ -1,0 +1,30 @@
+== Solution 1 ==
+We have <math>\angle BCE = \angle ECD = \angle ECA = \tfrac 13 \cdot 90^\circ = 30^\circ</math>. Drop the altitude from <math>D</math> to <math>CB</math> and call the foot <math>F</math>. 
+<center><asy>import cse5;size(200);
+defaultpen(linewidth(0.4)+fontsize(8));
+
+pair A,B,C,D,E0,F;
+C=origin;
+B=(10,0);
+A=(0,5);
+E0=extension(C,dir(30),A,B);
+D=extension(C,dir(60),A,B);
+F=foot(D,C,B);
+
+draw(A--B--C--A, black+0.8);
+draw(C--D--F^^C--E0, gray);
+dot("$A$",A,N);
+dot("$B$",B,SE);
+dot("$C$",C,SW);
+dot("$D$",D,NE);
+dot("$E$",E0,2*NE);
+dot("$F$",F,S);
+
+label("$8$",D--E0,2*NE);
+label("$15$",E0--B,2*NE);
+label("$11a$",C--B,2*S);
+label(rotate(60)*"$8a$",C--D,2*NW);
+label(rotate(-90)*"$4\sqrt{3}a$",D--F, E);
+label("$4a$",C--F,2*S);
+</asy></center>
+Let <math>CD = 8a</math>. Using angle bisector theorem on <math>\triangle CDB</math>, we get <math>CB = 15a</math>. Now <math>CDF</math> is a <math>30</math>-<math>60</math>-<math>90</math> triangle, so <math>CF = 4a</math>, <math>FD = 4a\sqrt{3}</math>, and <math>FB = 11a</math>.  Finally, <math>\tan{B} = \tfrac{DF}{FB}=\tfrac{4\sqrt{3}a}{11a} = \tfrac{4\sqrt{3}}{11}</math>. Our final answer is <math>4 + 3 + 11 = \boxed{018}</math>.

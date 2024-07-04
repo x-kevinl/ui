@@ -1,0 +1,2 @@
+== Problem ==
+Consider the [[set]] of [[point]]s that are inside or within one unit of a [[rectangular prism|rectangular parallelepiped]] (box) that measures <math>3</math> by <math>4</math> by <math>5</math> units. Given that the [[volume]] of this set is <math>\frac{m + n\pi}{p}, </math> where <math> m, n, </math> and <math> p </math> are positive [[integer]]s, and <math> n </math> and <math> p </math> are [[relatively prime]], find <math> m + n + p. </math>

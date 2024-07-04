@@ -1,0 +1,17 @@
+==Solution 1==
+
+
+From the second bullet point, we know that the second digit must be $3$, for a number divisible by $10$ ends in zero. Since there is a remainder of $1$ when $N$ is divided by $9$, the multiple of $9$ must end in a $2$ for it to have the desired remainder$\pmod {10}.$ We now look for this one: 
+
+$9(1)=9\\
+9(2)=18\\
+9(3)=27\\
+9(4)=36\\
+9(5)=45\\
+9(6)=54\\
+9(7)=63\\
+9(8)=72$
+
+The number $72+1=73$ satisfies both conditions. We subtract the biggest multiple of $11$ less than $73$ to get the remainder. Thus, $73-11(6)=73-66=\boxed{\textbf{(E) }7}$.
+
+~CHECKMATE2021

@@ -1,0 +1,15 @@
+==Solution 1==
+
+We can use recursion to solve this problem: 
+
+<b>1.</b> Fix 7 points on <math>\ell_A</math>, then put one point <math>B_1</math> on <math>\ell_B</math>. Now, introduce a function <math>f(x)</math> that indicates the number of regions created, where x is the number of points on <math>\ell_B</math>. For example, <math>f(1) = 6</math> because there are 6 regions.
+
+<b>2.</b> Now, put the second point <math>B_2</math> on <math>\ell_B</math>. Join <math>A_1~A_7</math> and <math>B_2</math> will create <math>7</math> new regions (and we are not going to count them again), and split the existing regions. Let's focus on the spliting process: line segment formed between <math>B_2</math> and <math>A_1</math> intersect lines <math>\overline{B_1A_2}</math>, <math>\overline{B_1A_3}</math>, ..., <math>\overline{B_1A_7}</math> at <math>6</math> points <math>\Longrightarrow</math> creating <math>6</math> regions (we already count one region at first), then <math>5</math> points <math>\Longrightarrow</math> creating <math>5</math> regions (we already count one region at first), 4 points, etc. So, we have: <cmath>f(2) = f(1) + 7 + (6+5+...+1) = 34.</cmath>
+
+<b>3.</b> If you still need one step to understand this: <math>A_1~A_7</math> and <math>B_3</math> will still create <math>7</math> new regions. Intersecting <cmath>\overline{A_2B_1}, \overline{A_2B_2};</cmath> <cmath>\overline{A_3B_1}, \overline{A_3B_2};</cmath> <cmath> ...</cmath> <cmath>\overline{A_7B_1}, \overline{A_7B_2}</cmath> at <math>12</math> points, creating <math>12</math> regions, etc. Thus, we have: <cmath>f(3) = f(2)+7+(12+10+8+...+2)=34+7+6\cdot 7=83.</cmath>
+
+Yes, you might already notice that: <cmath>f(n+1) = f(n)+7+(6+5+...+1)\cdot n = f(n) + 7 + 21n.</cmath>
+
+<b>5.</b> Finally, we have <math>f(4) = 153</math>, and <math>f(5)=244</math>. Therefore, the answer is <math>\boxed{244}</math>.
+
+Note: we could deduce a general formula of this recursion: <math>f(n+1)=f(n)+N_a+\frac{n\cdot (N_a) \cdot (N_a-1)}{2}</math>, where <math>N_a</math> is the number of points on <math>\ell_A</math>

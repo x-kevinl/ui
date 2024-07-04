@@ -1,0 +1,8 @@
+==Problem==
+For complex number $u = a+bi$ and $v = c+di$ (where $i=\sqrt{-1}$), define the binary operation
+
+$u \otimes v = ac + bdi$
+
+Suppose $z$ is a complex number such that $z\otimes z = z^{2}+40$. What is $|z|$?
+
+$\textbf{(A) }2\qquad\textbf{(B) }5\qquad\textbf{(C) }\sqrt{5}\qquad\textbf{(D) }\sqrt{10}\qquad\textbf{(E) }5\sqrt{2}$

@@ -1,0 +1,29 @@
+== Problem ==
+A circle centered at $O$ has radius $1$ and contains the point $A$. The segment $AB$ is tangent to the circle at $A$ and $\angle AOB = \theta$. If point $C$ lies on $\overline{OA}$ and $\overline{BC}$ bisects $\angle ABO$, then $OC =$
+
+<asy>
+import olympiad;
+size(6cm);
+unitsize(1cm);
+defaultpen(fontsize(8pt)+linewidth(.8pt));
+labelmargin=0.2;
+dotfactor=3;
+pair O=(0,0);
+pair A=(1,0);
+pair B=(1,1.5);
+pair D=bisectorpoint(A,B,O);
+pair C=extension(B,D,O,A);
+draw(Circle(O,1));
+draw(O--A--B--cycle);
+draw(B--C);
+label("$O$",O,SW);
+dot(O);
+label("$\theta$",(0.1,0.05),ENE);
+dot(C);
+label("$C$",C,S);
+dot(A);
+label("$A$",A,E);
+dot(B);
+label("$B$",B,E);</asy>
+
+$\text {(A)}\ \sec^2 \theta - \tan \theta \qquad \text {(B)}\ \frac 12 \qquad \text {(C)}\ \frac{\cos^2 \theta}{1 + \sin \theta}\qquad \text {(D)}\ \frac{1}{1+\sin\theta} \qquad \text {(E)}\ \frac{\sin \theta}{\cos^2 \theta}$

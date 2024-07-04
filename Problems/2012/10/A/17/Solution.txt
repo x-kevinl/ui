@@ -1,0 +1,3 @@
+==Solution 1 (Quick Insight)==
+
+Since $a$ and $b$ are relatively prime, $a^3-b^3$ and $(a-b)^3$ are both integers as well. Then, for the given fraction to simplify to $\frac{73}{3}$, the denominator $(a-b)^3$ must be a multiple of $3.$ Thus, $a-b$ is a multiple of $3$. Looking at the answer choices, the only multiple of $3$ is $\boxed{\textbf{(C)}\ 3}$.

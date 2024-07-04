@@ -1,0 +1,16 @@
+== Solution 1 ==
+The peanut butter and jam for each sandwich costs $4B\cent+5J\cent$, so the peanut butter and jam for $N$ sandwiches costs $N(4B+5J)\cent$. 
+
+Setting this equal to $253\cent$:
+
+$N(4B+5J)=253=11\cdot23$
+
+The only possible positive integer pairs $(N , 4B+5J)$ whose product is $253$ are: $ (1,253) ; (11,23) ; (23,11) ; (253,1) $
+
+The first pair violates $N>1$ and the third and fourth pairs have no positive integer solutions for $B$ and $J$. 
+
+So, $N=11$ and $4B+5J=23$.
+
+The only integer solutions for $B$ and $J$ are $B=2$ and $J=3$.
+
+Therefore, the cost of the jam Elmo uses to make the sandwiches is $3\cdot5\cdot11=165\cent$  $=  \$1.65 \Rightarrow \boxed{\mathrm{D}}$

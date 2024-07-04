@@ -1,0 +1,4 @@
+== Problem ==
+What is the tens digit in the sum $ 7!+8!+9!+...+2006!$
+
+$ \textbf{(A) } 1\qquad \textbf{(B) } 3\qquad \textbf{(C) } 4\qquad \textbf{(D) } 6\qquad \textbf{(E) } 9 $

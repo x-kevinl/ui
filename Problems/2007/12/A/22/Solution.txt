@@ -1,0 +1,20 @@
+== Solution 1 ==
+For the sake of notation, let $T(n) = n + S(n) + S(S(n))$. Obviously $n<2007$. Then the maximum value of $S(n) + S(S(n))$ is when $n = 1999$, and the sum becomes $28 + 10 = 38$. So the minimum bound is $2007-38=1969$. We do [[casework]] upon the tens digit:
+
+Case 1: $196u \Longrightarrow u = 9$. Easy to directly disprove.
+
+Case 2: $197u$. $S(n) = 1 + 9 + 7 + u = 17 + u$, and $S(S(n)) = 8+u$ if $u \le 2$ and $S(S(n)) = 2 + (u-3) = u-1$ otherwise. 
+
+:Subcase a: $T(n) = 1970 + u + 17 + u + 8 + u = 1995 + 3u = 2007 \Longrightarrow u = 4$. This exceeds our bounds, so no solution here.
+:Subcase b: $T(n) = 1970 + u + 17 + u + u - 1 = 1986 + 3u = 2007 \Longrightarrow u = 7$. First solution.
+
+Case 3: $198u$. $S(n) = 18 + u$, and $S(S(n)) = 9 + u$ if $u \le 1$ and $2 + (u-2) = u$ otherwise.
+
+:Subcase a: $T(n) = 1980 + u + 18 + u + 9 + u = 2007 + 3u = 2007 \Longrightarrow u = 0$. Second solution.
+:Subcase b: $T(n) = 1980 + u + 18 + u + u = 1998 + 3u = 2007 \Longrightarrow u = 3$. Third solution. 
+
+Case 4: $199u$. But $S(n) > 19$, and $n + S(n)$ clearly sum to $> 2007$.
+
+Case 5: $200u$. So $S(n) = 2 + u$ and $S(S(n)) = 2 + u$ (recall that $n < 2007 $), and $2000 + u + 2 + u + 2 + u = 2004 + 3u = 2007 \Longrightarrow u = 1$. Fourth solution.
+
+In total we have $4 \mathrm{(D)}$ solutions, which are $1977, 1980, 1983, $ and $2001$.

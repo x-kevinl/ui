@@ -1,0 +1,54 @@
+==Solution 1==
+Let $\text{Day
+}1$ to $\text{Day\\ }2$ denote a day where one coupon is redeemed and the day when the second coupon is redeemed. 
+
+If she starts on a $\text{Monday}$, she redeems her next coupon on $\text{Thursday}$. 
+
+$\text{Thursday}$ to $\text{Sunday}$.
+
+Thus, $\textbf{(A)}\ \text{Monday}$ is incorrect.
+
+
+If she starts on a $\text{Tuesday}$, she redeems her next coupon on $\text{Friday}$.
+
+$\text{Friday}$ to $\text{Monday}$.
+
+$\text{Monday}$ to $\text{Thursday}$.
+
+$\text{Thursday}$ to $\text{Sunday}$.
+
+Thus $\textbf{(B)}\ \text{Tuesday}$ is incorrect.
+
+
+If she starts on a $\text{Wednesday}$, she redeems her next coupon on $\text{Saturday}$.
+
+$\text{Saturday}$ to $\text{Tuesday}$.
+
+$\text{Tuesday}$ to $\text{Friday}$.
+
+$\text{Friday}$ to $\text{Monday}$.
+
+$\text{Monday}$ to $\text{Thursday}$.
+
+And on $\text{Thursday}$, she redeems her last coupon. 
+
+
+No Sunday occured; thus, $\boxed{\textbf{(C)}\ \text{Wednesday}}$ is correct. 
+
+
+Checking for the other options, 
+
+
+If she starts on a $\text{Thursday}$, she redeems her next coupon on $\text{Sunday}$.
+
+Thus, $\textbf{(D)}\ \text{Thursday}$ is incorrect.
+
+
+If she starts on a $\text{Friday}$, she redeems her next coupon on $\text{Monday}$.
+
+$\text{Monday}$ to $\text{Thursday}$.
+
+$\text{Thursday}$ to $\text{Sunday}$.
+
+
+Checking for the other options gave us negative results; thus, the answer is $\boxed{\textbf{(C)}\ \text{Wednesday}}$.

@@ -1,0 +1,2 @@
+==Solution==
+The favorable responses are either they both show a green bean or they both show a red bean. The probability that both show a green bean is $\frac{1}{2}\cdot\frac{1}{4}=\frac{1}{8}$. The probability that both show a red bean is $\frac{1}{2}\cdot\frac{2}{4}=\frac{1}{4}$. Therefore the probability is $\frac{1}{4}+\frac{1}{8}=\boxed{\textbf{(C)}\ \frac{3}{8}}$

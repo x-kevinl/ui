@@ -1,0 +1,15 @@
+== Solution ==
+$x$ is negative, so we can just place a negative value into each expression and find the one that is positive. Suppose we use $-1$.
+
+$\textbf{(A)} \Rightarrow \frac{-1}{|-1|} = -1$
+
+$\textbf{(B)} \Rightarrow -(-1)^2 = -1$
+
+$\textbf{(C)} \Rightarrow -2^{(-1)} = -\frac{1}{2}$
+
+$\textbf{(D)} \Rightarrow -(-1)^{(-1)} = 1$
+
+$\textbf{(E)} \Rightarrow \sqrt[3]{-1} = -1$
+
+
+Obviously only $\boxed{\textbf{(D)}}$ is positive.

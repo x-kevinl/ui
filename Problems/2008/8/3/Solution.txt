@@ -1,0 +1,2 @@
+==Solution==
+We can go backwards by days, but we can also backwards by weeks. If we go backwards by weeks, we see that February 6 is a Friday. If we now go backwards by days, February 1 is a $\boxed{\textbf{(A)}\ \text{Sunday}}$

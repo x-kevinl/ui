@@ -1,0 +1,28 @@
+== Solutions ==
+=== Solution 1 ===
+Out of the soccer players, $40\%$ swim. As the soccer players are $60\%$ of the whole, the swimming soccer players are $0.4 \cdot 0.6 = 0.24 = 24\%$ of all children.
+
+The non-swimming soccer players then form $60\% - 24\% = 36\%$ of all the children.
+
+Out of all the children, $30\%$ swim. We know that $24\%$ of all the children swim and play soccer, hence $30\%-24\% = 6\%$ of all the children swim and don't play soccer.
+
+Finally, we know that $70\%$ of all the children are non-swimmers. And as $36\%$ of all the children do not swim but play soccer, $70\% - 36\% = 34\%$ of all the children do not engage in any activity.
+
+A quick summary of what we found out:
+* $24\%$: swimming yes, soccer yes
+* $36\%$: swimming no, soccer yes
+* $6\%$: swimming yes, soccer no
+* $34\%$: swimming no, soccer no
+
+Now we can compute the answer. Out of all children, $70\%$ are non-swimmers, and again out of all children $36\%$ are non-swimmers that play soccer. Hence the percent of non-swimmers that play soccer is $\frac{36}{70} \approx 51\% \Rightarrow \boxed{D}$.
+
+=== Solution 2 ===
+Let us set the total number of children as $100$. So $60$ children play soccer, $30$ swim, and $0.4\times60=24$ play soccer and swim. 
+
+Thus, $60-24=36$ children only play soccer.
+
+So our numerator is $36$.
+
+Our denominator is simply $100-\text{Swimmers}=100-30=70$
+
+And so we get $\frac{36}{70}$ which is roughly $51.4\% \Rightarrow \boxed{\text{D}}$

@@ -1,0 +1,14 @@
+== Solution ==
+Suppose $x$ is the price of an adult ticket. The price of a child ticket would be $\frac{x}{2}$.
+
+$$\begin{eqnarray*}
+5x + 4(x/2) = 7x &=& 24.50\\
+x &=& 3.50\\
+\end{eqnarray*}$$
+
+Plug in for 8 adult tickets and 6 child tickets.
+
+$$\begin{eqnarray*}
+8x + 6(x/2) &=& 8(3.50) + 3(3.50)\\ 
+&=&\boxed{\textbf{(B)}\ \ 38.50}\\
+\end{eqnarray*}$$

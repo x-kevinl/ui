@@ -1,0 +1,14 @@
+==Solution==
+
+By Vieta's formulas, $z_1z_2+z_1z_3+\dots+z_3z_4=3$, and $B=(4i)^2\left(\overline{z}_1\,\overline{z}_2+\overline{z}_1\,\overline{z}_3+\dots+\overline{z}_3\,\overline{z}_4\right).$
+
+Since $\overline{a}\cdot\overline{b}=\overline{ab},$ 
+$$B=(4i)^2\left(\overline{z_1z_2}+\overline{z_1z_3}+\overline{z_1z_4}+\overline{z_2z_3}+\overline{z_2z_4}+\overline{z_3z_4}\right).$$
+Since $\overline{a}+\overline{b}=\overline{a+b},$
+$$B=(4i)^2\left(\overline{z_1z_2+z_1z_3+\dots+z_3z_4}\right)=-16(\overline{3})=-48$$
+
+Also, $z_1z_2z_3z_4=1,$ and $$D=(4i)^4\left(\overline{z}_1\,\overline{z}_2\,\overline{z}_3\,\overline{z}_4\right)=256\left(\overline{z_1z_2z_3z_4}\right)=256(\overline{1})=256.$$
+
+Our answer is $B+D=256-48=\boxed{(\textbf{D}) \: 208}.$
+
+~kingofpineapplz

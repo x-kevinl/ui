@@ -1,0 +1,36 @@
+==Solution 1==
+We can list the first few numbers in the form $8 \cdot (8....8)$
+
+(Hard problem to do without the multiplication, but you can see the pattern early on)
+
+$8 \cdot 8 = 64$
+
+$8 \cdot 88 = 704$
+
+$8 \cdot 888 = 7104$
+
+$8 \cdot 8888 = 71104$
+
+$8 \cdot 88888 = 711104$
+
+By now it's clear that the numbers will be in the form $7$, $k-2$ $1$'s, and $04$. We want to make the numbers sum to 1000, so $7+4+(k-2) = 1000$. Solving, we get $k = 991$, meaning the answer is $\fbox{(D)}$
+
+Another way to proceed is that we know the difference between the sum of the digits of each product and $k$ is always $9$, so we just do $1000-9=\boxed{\textbf{(D) } 991}$.
+
+===Proof of Solution 1===
+
+Since this solution won't fly on a proof-based competition, here's a proof that it's valid:
+
+We will call $x_k=8(888\dots8)$ with exactly $k$ $8$s. We then rewrite this more formally, as:
+
+$$x_k=8\biggr(\sum_{n=0}^{k-1}8(10)^n\biggr)$$
+$$=64\biggr(\sum_{n=0}^{k-1}(10)^n\biggr)$$
+$$=64\frac{10^{k}-1}{9}$$
+
+Then, finding a recursive formula, we get:
+
+$$x_{k+1}=64\times 10^{k}+x_k$$
+
+We will now use induction, Our base case will be $k=2$. It's easy to see that this becomes $x_2=704$. Then, the $k+1$ case: let $x_k=7111\dots104$ with $k-2$ $1$s. Then $x_{k+1}=64000\dots000+7111\dots104$. Adding these numbers, we get $x_{k+1}=71111\dots104$. 
+
+Summing these digits, we have $4+7+(k-2)=1000$, giving us $k=991$.

@@ -1,0 +1,14 @@
+==Problem==
+Suppose that $a$, $b$, $c$ and $d$ are positive integers satisfying all of the following relations.
+
+$$abcd=2^6\cdot 3^9\cdot 5^7$$
+$$\text{lcm}(a,b)=2^3\cdot 3^2\cdot 5^3$$
+$$\text{lcm}(a,c)=2^3\cdot 3^3\cdot 5^3$$
+$$\text{lcm}(a,d)=2^3\cdot 3^3\cdot 5^3$$
+$$\text{lcm}(b,c)=2^1\cdot 3^3\cdot 5^2$$
+$$\text{lcm}(b,d)=2^2\cdot 3^3\cdot 5^2$$
+$$\text{lcm}(c,d)=2^2\cdot 3^3\cdot 5^2$$
+
+What is $\text{gcd}(a,b,c,d)$?
+
+$\textbf{(A)}~30\qquad\textbf{(B)}~45\qquad\textbf{(C)}~3\qquad\textbf{(D)}~15\qquad\textbf{(E)}~6$

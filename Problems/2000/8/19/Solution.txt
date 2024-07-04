@@ -1,0 +1,16 @@
+== Solutions ==
+=== Solution 1 ===
+Draw two squares:  one that has opposing corners at $A$ and $B$, and one that has opposing corners at $A$ and $D$.  These squares share side $\overline{AO}$, where $O$ is the center of the large semicircle.  
+
+These two squares have a total area of $2 \cdot 5^2$, but have two quarter circle "bites" of radius $5$ that must be removed.  Thus, the bottom part of the figure has area 
+
+$2\cdot 25 - 2 \cdot \frac{1}{4}\pi \cdot 5^2$
+
+$50 - \frac{25\pi}{2}$
+
+This is the area of the part of the figure underneath $\overline{BD}$.  The part of the figure over $\overline{BD}$ is just a semicircle with radius $5$, which has area of $\frac{1}{2}\pi\cdot 5^2 = \frac{25\pi}{2}$
+
+Adding the two areas gives a total area of $\boxed{(c)50}$
+
+=== Solution 2 ===
+Draw line $\overline{BD}$.  Then draw $\overline {CO}$, where $O$ is the center of the semicircle.  You have two quarter circles on top, and two quarter circle-sized "bites" on the bottom.  Move the pieces from the top to fit in the bottom like a jigsaw puzzle.  You now have a rectangle with length $\overline {BD}$ and height $\overline {AO}$, which are equal to $10$ and $5$, respectively.  Thus, the total area is $50$, and the answer is $\boxed{C}$.

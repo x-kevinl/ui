@@ -1,0 +1,16 @@
+==Solution 1==
+By: dragonfly
+
+First of all, lets plug in all of the $x$'s into the equation.
+
+$\bigg|$ $||-2016|-(-2016)|-|-2016|$ $\bigg|$ $-(-2016)$
+
+Then we simplify to get
+
+$\bigg|$ $|2016+2016|-2016$ $\bigg|$ $+2016$
+
+which simplifies into
+
+$\bigg|$ $2016$ $\bigg|$ $+2016$
+
+and finally we get $\boxed{\textbf{(D)}\ 4032}$

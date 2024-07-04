@@ -1,0 +1,2 @@
+==Solution==
+Let $k$ be any positive integer so that $13k$ is a multiple of $13$. For the smallest three-digit number, $13k>100$ and $k>\frac{100}{13} \approx 7.7$. For the greatest three-digit number, $13k<999$ and $k<\frac{999}{13} \approx 76.8$. The number $k$ can range from $8$ to $76$ so there are $\boxed{\textbf{(C)}\ 69}$ three-digit numbers.

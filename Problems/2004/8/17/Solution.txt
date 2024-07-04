@@ -1,0 +1,7 @@
+==Solution 1==
+For each person to have at least one pencil, assign one pencil to each of the three friends so that you have $3$ left. In partitioning the remaining $3$ pencils into $3$ distinct groups, use [[Ball-and-urn]] to find the number of possibilities is $\binom{3+3-1}{3-1} = \binom{5}{2} = \boxed{\textbf{(D)}\ 10}$.
+
+Solution by [[User:phoenixfire|phoenixfire]]
+ Minor Edits by [[User:Yuvag|Yuvag]] : "... is $\binom{3+3-1}{3} = \binom{5}{3} = \boxed{\textbf{(D)}\ 10}$." to "... is $\binom{3+3-1}{3-1} = \binom{5}{2} = \boxed{\textbf{(D)}\ 10}$."
+
+All credit still goes to phoenixfire.

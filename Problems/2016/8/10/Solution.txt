@@ -1,0 +1,2 @@
+==Solution 1==
+Let us plug in $(5 * x)=1$ into $3a-b$. Thus it would be $3(5)-x$. Now we have $2*(15-x)=1$. Plugging $2*(15-x)$ into $3a-b$, we have $6-15+x=1$. Solving for $x$ we have $$-9+x=1$$$$x=\boxed{\textbf{(D)}   \,        10}$$

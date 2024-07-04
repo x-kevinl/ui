@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>N</math> be the greatest integer multiple of 8, no two of whose digits are the same. What is the remainder when <math>N</math> is divided by 1000?

@@ -1,0 +1,6 @@
+==Solution==
+The price of all the stamps in the '70s together over the total number of stamps is equal to the average price.
+
+$$\frac{(12)(0.06)+(12)(0.06)+(6)(0.04)+(13)(0.05)}{12+12+6+13}\\
+= \frac{0.72+0.72+0.24+0.65}{43}\\
+= \frac{2.33}{43} \approx \boxed{\text{(E)}\ 5.5\ \text{cents}}$$

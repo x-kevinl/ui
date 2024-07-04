@@ -1,0 +1,4 @@
+== Solution 1 ==
+Consider positive integers $a, b$ with a difference of $20$. Suppose $b = a-20$. Then, we have $(a)(a-20) = n$. If there is another pair of two integers that multiply to $n$ but have a difference of 23, one integer must be greater than $a$, and the other must be smaller than $a-20$. We can create two cases and set both equal. We have $(a)(a-20) = (a+1)(a-22)$, and $(a)(a-20) = (a+2)(a-21)$ (under the requirement that one of the variables in the second case must be smaller than $a-20$). Starting with the first case, we have $a^2-20a = a^2-21a-22$,or $0=-a-22$, which gives $a=-22$, which is not possible. The other case is $a^2-20a = a^2-19a-42$, so $a=42$. Thus, our product is $(42)(22) = (44)(21)$, so $c = 924$. Adding the digits, we have $9+2+4 = \boxed{\textbf{(C) } 15}$.
+
+-Sepehr2010, minor edits by the_eaglercraft_grinder

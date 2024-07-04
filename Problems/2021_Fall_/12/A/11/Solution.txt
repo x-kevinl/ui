@@ -1,0 +1,30 @@
+==Solution 1 (Pythagorean Theorem)==
+
+Label the center of both circles $O$. Label the chord in the larger circle as $\overline{ABCD}$, where $A$ and $D$ are on the larger circle and $B$ and $C$ are on the smaller circle. Construct the radius perpendicular to the chord and label their intersection as $M$. Because a radius that is perpendicular to a chord bisects the chord, $M$ is the midpoint of the chord. 
+
+Construct segments $\overline{AO}$ and $\overline{BO}$. These are radii with lengths 17 and 19 respectively. 
+
+Then, use the [[Pythagorean Theorem]]. In $\triangle OMA$, we have
+$$
+\begin{align*}
+OM^2 & = OA^2 - AM^2 \\
+& = OA^2 - \left( \frac{AD}{2} \right)^2 \\
+& = 19^2 - \frac{AD^2}{4} .
+\end{align*}
+$$
+
+In $\triangle OMB$, we have
+$$
+\begin{align*}
+OM^2 & = OB^2 - BM^2 \\
+& = OB^2 - \left( \frac{BC}{2} \right)^2 \\
+& = OB^2 - \left( \frac{AD}{4} \right)^2 \\
+& = 17^2 - \frac{AD^2}{16} .
+\end{align*}
+$$
+
+Equating these two expressions, we get 
+$$19^2 - \frac{AD^2}{4} = 17^2 - \frac{AD^2}{16}$$
+and $AD=\boxed{\textbf{(E) }8 \sqrt{6}}$.
+
+~eisthefifthletter and [https://www.professorchenedu.com Steven Chen]

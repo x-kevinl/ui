@@ -1,0 +1,14 @@
+==Solution 1==
+ 
+[[File:CubeAndStel.gif]]
+
+A regular unit tetrahedron can be split into eight tetrahedra that have lengths of $\frac{1}{2}$. 
+The volume of a regular tetrahedron can be found using base area and height:
+
+For a tetrahedron of side length 1, its base area is $\frac{\sqrt{3}}{4}$, and its height can be found using Pythagoras' Theorem.  Its height is $\sqrt{1^2-\left(\frac{\sqrt3}{3}\right)^2}=\frac{\sqrt2}{\sqrt3}$.  Its volume is $\frac13\times\frac{\sqrt{3}}{4}\times\frac{\sqrt2}{\sqrt3}=\frac{\sqrt{2}}{12}$.
+
+The tetrahedron actually has side length $\sqrt2$, so the actual volume is $\frac{\sqrt{2}}{12}\times\sqrt2^3=\frac13$.
+
+On the eight small tetrahedra, the four tetrahedra on the corners of the large tetrahedra are not inside the other large tetrahedra.  Thus, $\frac{4}{8}=\frac{1}{2}$ of the large tetrahedra will not be inside the other large tetrahedra.
+
+The intersection of the two tetrahedra is thus $\frac12\times\frac13=\frac{1}{6}=\boxed{\text{(D)}}$.

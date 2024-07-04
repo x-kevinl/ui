@@ -1,0 +1,4 @@
+==Problem==
+How many three-digit numbers are divisible by 13?
+
+$ \textbf{(A)}\ 7\qquad\textbf{(B)}\ 67\qquad\textbf{(C)}\ 69\qquad\textbf{(D)}\ 76\qquad\textbf{(E)}\ 77$

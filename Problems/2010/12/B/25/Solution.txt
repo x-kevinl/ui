@@ -1,0 +1,4 @@
+== Solution == 
+Because 67 is the largest prime factor of 2010, it means that in the prime factorization of $\prod_{n=2}^{5300}\text{pow}(n)$, there'll be $p_1 ^{e_1} \cdot p_2 ^{e_2} \cdot .... 67^x ...$ where $x$ is the desired value we are looking for. Thus, to find this answer, we need to look for the number of times $67$ is incorporated into the giant product.
+
+All numbers $n=67 \cdot x$, given $x = p_1 ^ {e_1} \cdot p_2 ^{e_2} \cdot ... \cdot p_m ^ {e_m}$ such that for any integer $x$ between $1$ and $m$, prime $p_x$ must be less than $67$, contributes a 67 to the product. Considering $67 \cdot 79 < 5300 < 67 \cdot 80$, the possible values of x are $1,2,...,70,72,74,...78$, since $x=71,73,79$ are primes that are greater than 67. However, $\text{pow}\left(67^2\right)$ contributes two $67$s to the product, so we must count it twice. Therefore, the answer is $70 + 1 + 6 = \boxed{77} \Rightarrow \boxed{D}$.

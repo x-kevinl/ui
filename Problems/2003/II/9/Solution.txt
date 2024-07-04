@@ -1,0 +1,21 @@
+== Solution ==
+When we use long division to divide <math>P(x)</math> by <math>Q(x)</math>, the remainder is <math>x^2-x+1</math>.
+
+So, since <math>z_1</math> is a root, <math>P(z_1)=(z_1)^2-z_1+1</math>.
+
+Now this also follows for all roots of <math>Q(x)</math>
+Now <cmath>P(z_2)+P(z_1)+P(z_3)+P(z_4)=z_1^2-z_1+1+z_2^2-z_2+1+z_3^2-z_3+1+z_4^2-z_4+1</cmath>
+
+Now by [[Vieta's formulas|Vieta's]] we know that <math>-z_4-z_3-z_2-z_1=-1</math>,
+so by [[Newton's Sums]] we can find <math>z_1^2+z_2^2+z_3^2+z_4^2</math>
+
+<math>a_ns_2+a_{n-1}s_1+2a_{n-2}=0</math>
+
+<math>(1)(s_2)+(-1)(1)+2(-1)=0</math>
+
+<math>s_2-1-2=0</math>
+
+<math>s_2=3</math>
+
+So finally
+<math>P(z_2)+P(z_1)+P(z_3)+P(z_4)=3+4-1=\boxed{006}.</math>

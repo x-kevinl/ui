@@ -1,0 +1,2 @@
+==Solution==
+On a cube, there are $ 12 $ edges, $ 8 $ corners, and $ 6 $ faces. Adding them up gets $ 12+8+6= \boxed{\mathrm{(E)}\ 26} $.

@@ -1,0 +1,59 @@
+== Solution ==
+
+=== Solution 1===
+<center><asy>
+pair A=(0,10), B=(0,0), C=(14,0), D=(14,10), Q=(0,5);
+draw (A--B--C--D--cycle);
+pair E=(7,10);
+draw (B--E);
+draw (A--C);
+pair F=(6.7,6.7);
+label("\(E\)",E,N);
+label("\(A\)",A,NW);
+label("\(B\)",B,SW);
+label("\(C\)",C,SE);
+label("\(D\)",D,NE);
+label("\(F\)",F,W);
+label("\(100\)",Q,W);
+</asy></center>
+From the problem, <math>AB=100</math> and triangle <math>FBA</math> is a right triangle. As <math>ABCD</math> is a rectangle, triangles <math>BCA</math>, and <math>ABE</math> are also right triangles. By <math>AA</math>, <math>\triangle FBA \sim \triangle BCA</math>, and <math>\triangle FBA \sim \triangle ABE</math>, so <math>\triangle ABE \sim \triangle BCA</math>. This gives <math>\frac {AE}{AB}= \frac {AB}{BC}</math>. <math>AE=\frac{AD}{2}</math> and <math>BC=AD</math>, so <math>\frac {AD}{2AB}= \frac {AB}{AD}</math>, or <math>(AD)^2=2(AB)^2</math>, so <math>AD=AB \sqrt{2}</math>, or <math>100 \sqrt{2}</math>, so the answer is <math>\boxed{141}</math>.
+
+=== Solution 2===
+Let <math>x</math> be the ratio of <math>BC</math> to <math>AB</math>. On the coordinate plane, plot <math>A=(0,0)</math>, <math>B=(100,0)</math>, <math>C=(100,100x)</math>, and <math>D=(0,100x)</math>. Then <math>E=(0,50x)</math>. Furthermore, the slope of <math>\overline{AC}</math> is <math>x</math> and the slope of <math>\overline{BE}</math> is <math>-x/2</math>. They are perpendicular, so they multiply to <math>-1</math>, that is,
+<cmath>x\cdot-\frac{x}{2}=-1,</cmath>
+which implies that <math>-x^2=-2</math> or <math>x=\sqrt 2</math>. Therefore <math>AD=100\sqrt 2\approx 141.42</math> so <math>\lfloor AD\rfloor=\boxed{141}</math>.
+
+=== Solution 3 ===
+Similarly to Solution 2, let the positive x-axis be in the direction of ray <math>BC</math> and let the positive y-axis be in the direction of ray <math>BA</math>. Thus, the vector <math>BE=(x,100)</math> and the vector <math>AC=(2x,-100)</math> are perpendicular and thus have a dot product of 0. Thus, calculating the dot product:
+
+<cmath> x\cdot2x+(100)\cdot(-100)=2x^2-10000=0 </cmath>
+<cmath> 2x^2-10000=0\rightarrow x^2=5000</cmath>
+
+Substituting AD/2 for x:
+<cmath>(AD/2)^2=5000\rightarrow AD^2=20000</cmath>
+<cmath>AD=100\sqrt2</cmath>
+
+===Solution 4===
+<center><asy>
+pair A=(0,10), B=(0,0), C=(14,0), D=(14,10), Q=(0,5),X=(21,0);
+draw (A--B--C--D--cycle);
+pair E=(7,10);
+draw (B--E);
+draw (A--C);
+draw(C--X--E);
+label("\(E\)",E,N);
+label("\(A\)",A,NW);
+label("\(B\)",B,SW);
+label("\(C\)",C,SE);
+label("\(D\)",D,NE);
+label("\(X\)",X,S);
+label("\(100\)",Q,W);
+</asy></center>
+Draw <math>CX</math> and <math>EX</math> to form a parallelogram <math>AEXC</math>. Since <math>EX \parallel AC</math>, <math>\angle BEX=90^\circ</math> by the problem statement, so <math>\triangle BEX</math> is right. 
+Letting <math>AE=y</math>, we have <math>BE=\sqrt{100^2+y^2}</math> and <math>AC=EX=\sqrt{100^2+(2y)^2}</math>. Since <math>CX=EA</math>, <math>\sqrt{100^2+y^2}^2+\sqrt{100^2+(2y)^2}=(3y)^2</math>. Solving this, we have 
+<cmath> 100^2+ 100^2 + y^2 + 4y^2 = 9y^2</cmath>
+<cmath> 2\cdot 100^2 = 4y^2</cmath>
+<cmath>\frac{100^2}{2}=y^2</cmath>
+<cmath>\frac{100}{\sqrt{2}}=y</cmath>
+<cmath>\frac{100\sqrt{2}}{2}=y</cmath>
+<cmath>100\sqrt{2}=2y=AD</cmath>, so the answer is <math>\boxed{141}</math>.

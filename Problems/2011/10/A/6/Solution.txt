@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+$A \cup B$ will be smallest if $B$ is completely contained in $A$, in which case all the elements in $B$ would be counted for in $A$. So the total would be the number of elements in $A$, which is $\boxed{20 \ \mathbf{(C)}}$.

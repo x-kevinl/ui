@@ -1,0 +1,5 @@
+==Problem==
+
+How many different combinations of \$5 bills and \$2 bills can be used to make a total of \$17? Order does not matter in this problem.
+
+$\text {(A)}\ 2 \qquad \text {(B)}\ 3 \qquad \text {(C)}\ 4 \qquad \text {(D)}\ 5 \qquad \text {(E)}\ 6$

@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>P(x)</math> be a [[quadratic]] polynomial with real coefficients satisfying <math>x^2 - 2x + 2 \le P(x) \le 2x^2 - 4x + 3</math> for all real numbers <math>x</math>, and suppose <math>P(11) = 181</math>. Find <math>P(16)</math>.

@@ -1,0 +1,37 @@
+==Solution 1 (Casework on the Center's Color Chip's Configurations)==
+Call the different colors A,B,C. There are $3!=6$ ways to rearrange these colors to these three letters, so $6$ must be multiplied after the letters are permuted in the grid. 
+WLOG assume that A is in the center. 
+$$\begin{tabular}{ c c c }
+ ? & ? & ? \\ 
+ ? & A & ? \\  
+ ? & ? & ?    
+\end{tabular}$$
+In this configuration, there are two cases, either all the A's lie on the same diagonal:
+$$\begin{tabular}{ c c c }
+ ? & ? & A \\ 
+ ? & A & ? \\  
+ A & ? & ?    
+\end{tabular}$$
+or all the other two A's are on adjacent corners:
+$$\begin{tabular}{ c c c }
+ A & ? & A \\ 
+ ? & A & ? \\  
+ ? & ? & ?    
+\end{tabular}$$
+In the first case there are two ways to order them since there are two diagonals, and in the second case there are four ways to order them since there are four pairs of adjacent corners.
+
+In each case there is only one way to put the three B's and the three C's as shown in the diagrams. 
+$$\begin{tabular}{ c c c }
+  C & B & A \\ 
+  B & A & C \\  
+  A & C & B    
+\end{tabular}$$
+$$\begin{tabular}{ c c c }
+ A & B & A \\ 
+ C & A & C \\  
+ B & C & B    
+\end{tabular}$$
+This means that there are $4+2=6$ ways to arrange A,B, and C in the grid, and there are $6$ ways to rearrange the colors. Therefore, there are $6\cdot6=36$ ways in total, which is 
+$\boxed{\textbf{(E)} ~36}$.
+
+-happykeeper

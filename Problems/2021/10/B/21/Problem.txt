@@ -1,0 +1,28 @@
+==Problem==
+A square piece of paper has side length $1$ and vertices $A,B,C,$ and $D$ in that order. As shown in the figure, the paper is folded so that vertex $C$ meets edge $\overline{AD}$ at point $C'$, and edge $\overline{BC}$ intersects edge $\overline{AB}$ at point $E$. Suppose that $C'D = \frac{1}{3}$. What is the perimeter of triangle $\bigtriangleup AEC' ?$
+
+$\textbf{(A)} ~2 \qquad\textbf{(B)} ~1+\frac{2}{3}\sqrt{3} \qquad\textbf{(C)} ~\frac{13}{6} \qquad\textbf{(D)} ~1 + \frac{3}{4}\sqrt{3} \qquad\textbf{(E)} ~\frac{7}{3}$
+<asy>
+/* Made by samrocksnature */
+pair A=(0,1);
+pair CC=(0.666666666666,1);
+pair D=(1,1);
+pair F=(1,0.440062);
+pair C=(1,0);
+pair B=(0,0);
+pair G=(0,0.22005);
+pair H=(-0.13,0.41);
+pair E=(0,0.5);
+dot(A^^CC^^D^^C^^B^^E);
+draw(E--A--D--F);
+draw(G--B--C--F, dashed);
+fill(E--CC--F--G--H--E--CC--cycle, gray);
+draw(E--CC--F--G--H--E--CC);
+label("A",A,NW);
+label("B",B,SW);
+label("C",C,SE);
+label("D",D,NE);
+label("E",E,NW);
+label("C'",CC,N);
+label("F",F,NE);
+</asy>

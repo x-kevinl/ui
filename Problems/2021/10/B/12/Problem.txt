@@ -1,0 +1,4 @@
+==Problem==
+Let $N = 34 \cdot 34 \cdot 63 \cdot 270$. What is the ratio of the sum of the odd divisors of $N$ to the sum of the even divisors of $N$?
+
+$\textbf{(A)} ~1 : 16 \qquad\textbf{(B)} ~1 : 15 \qquad\textbf{(C)} ~1 : 14 \qquad\textbf{(D)} ~1 : 8 \qquad\textbf{(E)} ~1 : 3$

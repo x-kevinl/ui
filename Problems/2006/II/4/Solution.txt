@@ -1,0 +1,3 @@
+== Solution ==
+
+Clearly, <math>a_6=1</math>.  Now, consider selecting <math>5</math> of the remaining <math>11</math> values.  Sort these values in descending order, and sort the other <math>6</math> values in ascending order.  Now, let the <math>5</math> selected values be <math>a_1</math> through <math>a_5</math>, and let the remaining <math>6</math> be <math>a_7</math> through <math>{a_{12}}</math>.  It is now clear that there is a [[bijection]] between the number of ways to select <math>5</math> values from <math>11</math> and ordered 12-tuples <math>(a_1,\ldots,a_{12})</math>.  Thus, there will be <math>{11 \choose 5}=\boxed{462}</math> such ordered 12-tuples.

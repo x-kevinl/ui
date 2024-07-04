@@ -1,0 +1,7 @@
+== Solution ==
+
+Let <math>r</math> represent the rate Tom swims in miles per minute. Then we have
+
+<math>\frac{1/2}{r} + \frac{8}{5r} + \frac{30}{10r} = 255</math>
+
+Solving for <math>r</math>, we find <math>r = 1/50</math>, so the time Tom spends biking is <math>\frac{30}{(10)(1/50)} = \boxed{150}</math> minutes.

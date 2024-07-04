@@ -1,0 +1,10 @@
+==Solution 1==
+
+The center of the first circle is $(4,0)$.
+The center of the second circle is $(0,10)$.
+Thus, the slope of the line that passes through these two centers is $- \frac{10}{4} = - \frac{5}{2}$.
+
+Because this line is the perpendicular bisector of the line that passes through two intersecting points of two circles, the slope of the latter line is $\frac{-1}{- \frac{5}{2}} = \boxed{\textbf{(E) } \frac{2}{5}}$.
+
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)

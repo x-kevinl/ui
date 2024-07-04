@@ -1,0 +1,2 @@
+== Problem ==
+Let <math> P </math> be the product of the nonreal roots of <math> x^4-4x^3+6x^2-4x=2005. </math> Find <math> \lfloor P\rfloor. </math>

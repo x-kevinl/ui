@@ -1,0 +1,2 @@
+==Solution 1==
+Since $20\% = \frac{1}{5}$, multiplying the given condition by $5$ shows that $y$ is $15 \cdot 5 = \boxed{\textbf{(C) }75}$ percent of $x$.

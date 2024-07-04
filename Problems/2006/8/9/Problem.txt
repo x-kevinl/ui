@@ -1,0 +1,5 @@
+== Problem ==
+
+What is the product of $ \frac{3}{2}\times\frac{4}{3}\times\frac{5}{4}\times\cdots\times\frac{2006}{2005} $ ?
+
+$ \textbf{(A)}\ 1\qquad\textbf{(B)}\ 1002\qquad\textbf{(C)}\ 1003\qquad\textbf{(D)}\ 2005\qquad\textbf{(E)}\ 2006 $

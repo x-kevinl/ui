@@ -1,0 +1,2 @@
+== Problem ==
+Find the area of rhombus <math>ABCD</math> given that the circumradii of triangles <math>ABD</math> and <math>ACD</math> are <math>12.5</math> and <math>25</math>, respectively.

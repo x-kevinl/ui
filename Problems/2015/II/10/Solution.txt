@@ -1,0 +1,18 @@
+==Solution==
+
+The simple recurrence can be found.
+
+When inserting an integer <math>n</math> into a string with <math>n - 1</math> integers, we notice that the integer <math>n</math> has 3 spots where it can go: before <math>n - 1</math>, before <math>n - 2</math>, and at the very end.
+
+Ex. Inserting 4 into the string 123:
+4 can go before the 2 (1423), before the 3 (1243), and at the very end (1234).
+
+Only the addition of the next number, <math>n</math>, will change anything.
+
+Thus the number of permutations with <math>n</math> elements is three times the number of permutations with <math>n-1</math> elements. 
+
+Start with <math>n=3</math> since all <math>6</math> permutations work. And go up: <math>18, 54, 162, 486</math>.
+
+Thus for <math>n=7</math> there are <math>2*3^5=\boxed{486}</math> permutations.
+
+When you are faced with a brain-fazing equation and combinatorics is part of the problem, use recursion! This same idea appeared on another AIME with an 8-box problem.

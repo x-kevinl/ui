@@ -1,0 +1,2 @@
+==Problem==
+Squares <math>ABCD</math> and <math>EFGH</math> have a common center and <math>\overline{AB} || \overline{EF}</math>. The area of <math>ABCD</math> is 2016, and the area of <math>EFGH</math> is a smaller positive integer. Square <math>IJKL</math> is constructed so that each of its vertices lies on a side of <math>ABCD</math> and each vertex of <math>EFGH</math> lies on a side of <math>IJKL</math>. Find the difference between the largest and smallest positive integer values for the area of <math>IJKL</math>.

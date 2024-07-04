@@ -1,0 +1,5 @@
+== Solution 1==
+Let $m$ be the mean of the three numbers. Then the least of the numbers is $m-10$
+and the greatest is $m + 15$. The middle of the three numbers is the median, $5$. So
+$\dfrac{1}{3}[(m-10) + 5 + (m + 15)] = m$, which can be solved to get $m=10$.
+Hence, the sum of the three numbers is $3\cdot 10 = \boxed{\textbf{(D) }30}$.

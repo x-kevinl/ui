@@ -1,0 +1,9 @@
+==Solution==
+
+Without the loss of generality, let $\mathcal T$ have vertices $A$, $B$, $C$, and $D$, with $AB = r$ and $CD = s$. Also denote by $P$ the point in the interior of $\mathcal T$.
+
+Let $X$ and $Y$ be the feet of the perpendiculars from $P$ to $AB$ and $CD$, respectively. Observe that $PX = \tfrac 8r$ and $PY = \tfrac 4s$. Now using the formula for the area of a trapezoid yields
+$$14 = \frac12\cdot XY\cdot (AB+CD) = \frac12\left(\frac 8r + \frac 4s\right)(r+s) = 6 + 2\cdot\frac rs + 4\cdot\frac sr.$$
+Thus, the ratio $\rho := \tfrac rs$ satisfies $\rho + 2\rho^{-1} = 4$; solving yields $\rho = \boxed{\textbf{(B)}\: 2+\sqrt{2}}$.
+
+(Observe that the given areas of $3$ and $5$ are irrelevant to the ratio $\frac{AB}{CD}$.)

@@ -1,0 +1,37 @@
+==Solution 1 (Comprehensive Explanation of Logic)==
+We are given that
+$$\begin{align*}
+\text{happy}&\Longrightarrow\text{can add}, &(1) \\
+\text{purple}&\Longrightarrow\text{cannot subtract}, \hspace{15mm} &(2) \\
+\text{cannot subtract}&\Longrightarrow\text{cannot add}. &(3)
+\end{align*}$$
+Two solutions follow from here:
+
+===Solution 1.1 (Intuitive)===
+Combining $(2)$ and $(3)$ gives
+$$\begin{align*}
+\text{happy}&\Longrightarrow\text{can add}, &(1) \\
+\lefteqn{\underbrace{\phantom{\text{purple}\Longrightarrow\text{cannot subtract}}}_{(2)}}\text{purple}&\Longrightarrow\overbrace{\text{cannot subtract}\Longrightarrow\text{cannot add}}^{(3)}. \hspace{2.5mm} &(*)
+\end{align*}$$
+Clearly, the answer is $\boxed{\textbf{(D)}}.$
+
+~MRENTHUSIASM (credit given to abhinavg0627)
+
+===Solution 1.2 (Rigorous)===
+<i><b>Recall that every conditional statement $\boldsymbol{p\Longrightarrow q}$ is always logically equivalent to its contrapositive $\boldsymbol{\lnot q\Longrightarrow\lnot p.}$</b></i>
+
+Combining $(1),(2)$ and $(3)$ gives $$\lefteqn{\underbrace{\phantom{\text{purple}\Longrightarrow\text{cannot subtract}}}_{(2)}}\text{purple}\Longrightarrow\overbrace{\text{cannot subtract}\Longrightarrow\lefteqn{\underbrace{\phantom{\text{cannot add}\Longrightarrow\text{not happy}}}_{\text{Contrapositive of }(1)}}\text{cannot add}}^{(3)}\Longrightarrow\text{not happy}. \hspace{15mm}(**)$$ Applying the hypothetical syllogism to $(**),$ we conclude that $$\text{purple}\Longrightarrow\text{not happy},$$ whose contrapositive is $$\text{happy}\Longrightarrow\text{not purple}.$$ Therefore, the answer is $\boxed{\textbf{(D)}}.$
+
+<u><b>Remark</b></u>
+
+The conclusions in the other choices do not follow from $(**):$
+
+$\textbf{(A) }\text{purple}\Longrightarrow\text{can add}$
+
+$\textbf{(B) }\text{purple}\Longrightarrow\text{happy}$
+
+$\textbf{(C) }\text{can add}\Longrightarrow\text{purple}$
+
+$\textbf{(E) }\text{happy}\Longrightarrow\text{cannot subtract}$
+
+~MRENTHUSIASM

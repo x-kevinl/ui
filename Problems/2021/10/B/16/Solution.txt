@@ -1,0 +1,4 @@
+==Solution 1==
+The divisibility rule of $15$ is that the number must be congruent to $0$ mod $3$ and congruent to $0$ mod $5$. Being divisible by $5$ means that it must end with a $5$ or a $0$. We can rule out the case when the number ends with a $0$ immediately because the only integer that is uphill and ends with a $0$ is $0$ which is not positive. So now we know that the number ends with a $5$. Looking at the answer choices, the answer choices are all pretty small, so we can generate all of the numbers that are uphill and are divisible by $3$. These numbers are $15, 45, 135, 345, 1245, 12345$, or $\boxed{\textbf{(C)} ~6}$ numbers.
+
+~ilikemath40

@@ -1,0 +1,11 @@
+== Solution 1==
+There are $1+3+5+...+2003=1002^{2}=1004004$ small equilateral triangles. 
+
+Each small equilateral triangle needs $3$ toothpicks to make it. 
+
+But, each toothpick that isn't one of the $1002\cdot3=3006$ toothpicks on the outside of the large equilateral triangle is a side for $2$ small equilateral triangles. 
+
+So, the number of toothpicks on the inside of the large equilateral triangle is $\frac{10040004\cdot3-3006}{2}=1504503$
+
+Therefore the total number of toothpicks is $1504503+3006=\boxed{\mathrm{(C)}\ 1,507,509}$ 
+~dolphin7

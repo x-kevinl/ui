@@ -1,0 +1,18 @@
+== Solution 1==
+Notice that if the consecutive positive integers have a sum of $15$, then their average (which could be a fraction) must be a divisor of $15$. If the number of integers in the list is odd, then the average must be either $1, 3, $ or $5$, and $1$ is clearly not possible. The other two possibilities both work:
+
+*$1 + 2 + 3 + 4 + 5 = 15$
+*$4 + 5 + 6 = 15$
+
+If the number of integers in the list is even, then the average will have a $\frac{1}{2}$. The only possibility is $\frac{15}{2}$, from which we get:
+
+*$15 = 7 + 8$
+
+Thus, the correct answer is $\boxed{\textbf{(C) }3}.$
+
+
+Question: (RealityWrites) Is it possible that the answer is $4$, because $0+1+2+3+4+5$ should technically count, right?
+
+Answer: (IMGROOT2) It isn't possible because the question asks for positive integers, and this means that negative integers or zero aren't allowed.
+
+Note to readers: make sure to always read the problem VERY carefully before attempting; it could mean the difference of making the cutoff.

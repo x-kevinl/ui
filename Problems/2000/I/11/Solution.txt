@@ -1,0 +1,6 @@
+== Solution 1 ==
+Since all divisors of <math>1000 = 2^35^3</math> can be written in the form of <math>2^{m}5^{n}</math>, it follows that <math>\frac{a}{b}</math> can also be expressed in the form of <math>2^{x}5^{y}</math>, where <math>-3 \le x,y \le 3</math>. Thus every number in the form of <math>a/b</math> will be expressed one time in the product
+
+<cmath>(2^{-3} + 2^{-2} + 2^{-1} + 2^{0} + 2^{1} + 2^2 + 2^3)(5^{-3} + 5^{-2} +5^{-1} + 5^{0} + 5^{1} + 5^2 + 5^3)</cmath>
+
+Using the formula for a [[geometric series]], this reduces to <math>S = \frac{2^{-3}(2^7 - 1)}{2-1} \cdot \frac{5^{-3}(5^{7} - 1)}{5-1} = \frac{127 \cdot 78124}{4000} = 2480 + \frac{437}{1000}</math>, and <math>\left\lfloor \frac{S}{10} \right\rfloor = \boxed{248}</math>.

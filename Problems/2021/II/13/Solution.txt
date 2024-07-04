@@ -1,0 +1,30 @@
+==Solution 1==
+
+Recall that <math>1000</math> divides this expression if <math>8</math> and <math>125</math> both divide it. It should be fairly obvious that <math>n \geq 3</math>; so we may break up the initial condition into two sub-conditions.
+
+(1) <math>5^n \equiv n \pmod{8}</math>. Notice that the square of any odd integer is <math>1</math> modulo <math>8</math> (proof by plugging in <math>1^2,3^2,5^2,7^2</math> into modulo <math>8</math>), so the LHS of this expression goes <math>5,1,5,1,\ldots</math>, while the RHS goes <math>1,2,3,4,5,6,7,8,1,\ldots</math>. The cycle length of the LHS is <math>2</math>, RHS is <math>8</math>, so the cycle length of the solution is <math>\operatorname{lcm}(2,8)=8</math>. Indeed, the <math>n</math> that solve this congruence are exactly those such that <math>n \equiv 5 \pmod{8}</math>.
+
+(2) <math>2^n \equiv n \pmod{125}</math>. This is extremely computationally intensive if we try to calculate all <math>2^1,2^2,\ldots,2^{100} \pmod{125}</math>, so we take a divide-and-conquer approach instead. In order for this expression to be true, <math>2^n \equiv n \pmod{5}</math> is necessary; it shouldn't take too long for us to go through the <math>20</math> possible LHS-RHS combinations, considering that <math>n</math> must be odd. We only need to test <math>10</math> values of <math>n</math> and obtain <math>n \equiv 3 \pmod{20}</math> or <math>n \equiv 17 \pmod{20}</math>.
+
+With this in mind we consider <math>2^n \equiv n \pmod{25}</math>. By the Generalized Fermat's Little Theorem, <math>2^{20} \equiv 1 \pmod{25}</math>, but we already have <math>n</math> modulo <math>20</math>. Our calculation is greatly simplified. The LHS's cycle length is <math>20</math> and the RHS's cycle length is <math>25</math>, from which their least common multiple is <math>100</math>. In this step we need to test all the numbers between <math>1</math> to <math>100</math> that <math>n \equiv 3 \pmod{20}</math> or <math>n \equiv 17 \pmod{20}</math>. In the case that <math>n \equiv 3 \pmod{20}</math>, the RHS goes <math>3,23,43,63,83</math>, and we need <math>2^n \equiv n \equiv 2^3 \pmod{25}</math>; clearly <math>n \equiv 83 \pmod{100}</math>. In the case that <math>n \equiv 17 \pmod{20}</math>, by a similar argument, <math>n \equiv 97 \pmod{100}</math>. 
+
+In the final step, we need to calculate <math>2^{97}</math> and <math>2^{83}</math> modulo <math>125</math>:
+
+Note that <math>2^{97}\equiv2^{-3}</math>; because <math>8\cdot47=376\equiv1\pmod{125},</math> we get <math>2^{97} \equiv 47\pmod{125}</math>. 
+
+Note that <math>2^{83}</math> is <math>2^{-17}=2^{-16}\cdot2^{-1}</math>. We have
+<cmath>\begin{align*}
+2^{-1}&\equiv63, \\
+2^{-2}&\equiv63^2=3969\equiv-31, \\
+2^{-4}&\equiv(-31)^2=961\equiv-39, \\
+2^{-8}&\equiv1521\equiv21, \\
+2^{-16}&\equiv441, \\
+2^{-17}&\equiv63\cdot441\equiv7\cdot(-31)=-217\equiv33.
+\end{align*}</cmath> 
+This time, LHS cycle is <math>100</math>, RHS cycle is <math>125</math>, so we need to figure out <math>n</math> modulo <math>500</math>. It should be <math>n \equiv 283,297 \pmod{500}</math>.
+
+Put everything together. By the second subcondition, the only candidates less than <math>1000</math> are <math>283,297,783,797</math>. Apply the first subcondition, <math>n=\boxed{797}</math> is the desired answer.
+
+~Ross Gao (Solution)
+
+~MRENTHUSIASM (Minor Reformatting)

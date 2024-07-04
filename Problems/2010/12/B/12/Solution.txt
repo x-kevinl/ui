@@ -1,0 +1,12 @@
+== Solution 1==
+$$ \log_{\sqrt{2}}\sqrt{x} + \log_2x + \log_4(x^2) + \log_8(x^3) + \log_{16}(x^4)  = 40 $$
+
+$$ \frac{1}{2} \frac{\log_2x}{\log_2\sqrt{2}} + \log_2x + \frac{2\log_2x}{\log_24} + \frac{3\log_2x}{\log_28} + \frac{4\log_2x}{\log_216}  = 40 $$
+
+$$ \log_2x + \log_2x + \log_2x + \log_2x + \log_2x = 40 $$
+
+$$ 5\log_2x = 40 $$
+
+$$ \log_2x = 8 $$
+
+$$ x = 256 \;\; (D) $$

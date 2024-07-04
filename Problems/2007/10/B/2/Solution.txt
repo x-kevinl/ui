@@ -1,0 +1,4 @@
+==Solution 1==
+
+Substitute and simplify.
+$$(3+5)5 - (5+3)3 = (3+5)2 = 8\cdot2 = \boxed{\textbf{(E) }16}$$

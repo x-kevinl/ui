@@ -1,0 +1,22 @@
+==Solution==
+
+<center>[[File:2008_AMC_12B_25.jpg‎]]</center>
+
+Note: In the image AB and CD have been swapped from their given lengths in the problem. However, this doesn't affect any of the solving.
+
+Drop perpendiculars to $CD$ from $A$ and $B$, and call the intersections $X,Y$ respectively. Now, $DA^2-BC^2=(7-5)(7+5)=DX^2-CY^2$ and $DX+CY=19-11=8$. Thus, $DX-CY=3$.
+We conclude $DX=\frac{11}{2}$ and $CY=\frac{5}{2}$.
+To simplify things even more, notice that $90^{\circ}=\frac{\angle D+\angle A}{2}=180^{\circ}-\angle APD$, so $\angle P=\angle Q=90^{\circ}$.
+
+Also, $$\sin(\angle PAD)=\sin(\frac12\angle XDA)=\sqrt{\frac{1-\cos(\angle XDA)}{2}}=\sqrt{\frac{3}{28}}$$
+So the area of $\triangle APD$ is: $$R\cdot c\sin a\sin b =\frac{7\cdot7}{2}\sqrt{\frac{3}{28}}\sqrt{1-\frac{3}{28}}=\frac{35}{8}\sqrt{3}$$
+
+Over to the other side: $\triangle BCY$ is $30-60-90$, and is therefore congruent to $\triangle BCQ$. So $[BCQ]=\frac{5\cdot5\sqrt{3}}{8}$.
+
+The area of the hexagon is clearly 
+$$\begin{align*}
+[ABCD]-([BCQ]+[APD]) &=\frac{15\cdot5\sqrt{3}}{2}-\frac{60\sqrt{3}}{8}\\
+&=30\sqrt{3}\implies\boxed{\mathrm{B}} \end{align*}$$
+
+Note: Once $DY$ is found, there is no need to do the trig. Notice that the hexagon consists of two trapezoids, $ABPQ$ and $CDPQ$. $PQ = \frac{19-7-5 +11}{2} = 9$. The height is one half of $BY$ which is $\frac{5\sqrt{3}}{4}$. So the area is 
+$$\frac{1}{2} \cdot \frac{5\sqrt{3}}{4}(19+9+11+9)=30\sqrt{3}$$

@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+Isabella had $60+d$ Canadian dollars. Setting up an equation we get $d=\frac{7}{10}\cdot(60+d)$, which solves to $d=140$, and the sum of digits of $d$ is $\boxed{\mathrm{(A)}\ 5}$.

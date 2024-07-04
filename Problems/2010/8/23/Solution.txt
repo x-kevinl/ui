@@ -1,0 +1,2 @@
+==Solution==
+By the Pythagorean Theorem, the radius of the larger circle turns out to be $\sqrt{1^2 + 1^2} = \sqrt{2}$. Therefore, the area of the larger circle is $(\sqrt{2})^2\pi = 2\pi $. Using the coordinate plane given, we find that the radius of each of the two semicircles to be 1. So, the area of the two semicircles is $1^2\pi=\pi$. Finally, the ratio of the combined areas of the two semicircles to the area of circle $O$ is $\boxed{\textbf{(B)}\ \frac{1}{2}}$.

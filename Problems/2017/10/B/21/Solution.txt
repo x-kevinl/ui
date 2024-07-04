@@ -1,0 +1,2 @@
+==Solution 1==
+We note that by the converse of the Pythagorean Theorem, $\triangle ABC$ is a right triangle with a right angle at $A$. Therefore, $AD = BD = CD = 5$, and $[ADB] = [ADC] = 12$. Since $A = rs,$ we have $r = \frac As$, so the inradius of $\triangle ADB$ is $\frac{12}{(5+5+6)/2} = \frac 32$, and the inradius of $\triangle ADC$  is $\frac{12}{(5+5+8)/2} = \frac 43$. Adding the two together, we have $\boxed{\textbf{(D) } \frac{17}6}$.

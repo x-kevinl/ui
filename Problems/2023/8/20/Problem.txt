@@ -1,0 +1,4 @@
+== Problem ==
+Two integers are inserted into the list $3, 3, 8, 11, 28$ to double its range. The mode and median remain unchanged. What is the maximum possible sum of the two additional numbers?
+
+$\textbf{(A) } 56 \qquad \textbf{(B) } 57 \qquad \textbf{(C) } 58 \qquad \textbf{(D) } 60 \qquad \textbf{(E) } 61$

@@ -1,0 +1,2 @@
+== Problem ==
+In triangle <math>ABC,</math> <math>AB = 13,</math> <math>BC = 14,</math> <math>AC = 15,</math> and point <math>G</math> is the intersection of the medians. Points <math>A',</math> <math>B',</math> and <math>C',</math> are the images of <math>A,</math> <math>B,</math> and <math>C,</math> respectively, after a <math>180^\circ</math> rotation about <math>G.</math> What is the area of the union of the two regions enclosed by the triangles <math>ABC</math> and <math>A'B'C'?</math>

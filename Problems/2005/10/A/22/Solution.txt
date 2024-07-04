@@ -1,0 +1,8 @@
+==Solution==
+Since the [[least common multiple]] $\mathrm{lcm}(4,6)=12$, the [[element]]s that are common to $S$ and $T$ must be [[multiple]]s of $12$. 
+
+Since $4\cdot2005=8020$ and $6\cdot2005=12030$, several multiples of $12$ that are in $T$ won't be in $S$, but all multiples of $12$ that are in $S$ will be in $T$. So we just need to find the number of multiples of $12$ that are in $S$. 
+
+Since $4\cdot3=12$, every $3$rd element of $S$ will be a multiple of $12$.
+
+Therefore the answer is $\left \lfloor\frac{2005}{3} \right \rfloor=\boxed{\textbf{(D) }  668}$

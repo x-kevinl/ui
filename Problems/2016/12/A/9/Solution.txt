@@ -1,0 +1,7 @@
+==Solution==
+
+Let $s$ be the side length of the small squares.
+
+The diagonal of the big square can be written in two ways: $\sqrt{2}$ and $s \sqrt{2} + s + s \sqrt{2}$.
+
+Solving for $s$, we get $s = \frac{4 - \sqrt{2}}{7}$, so our answer is $4 + 7 \Rightarrow \boxed{\textbf{(E) } 11}$

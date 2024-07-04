@@ -1,0 +1,9 @@
+==Problem ==
+
+Let $ f(n) = \left( \frac{-1+i\sqrt{3}}{2} \right)^n + \left( \frac{-1-i\sqrt{3}}{2} \right)^n $, where $i = \sqrt{-1}$. What is $f(2022)$?
+
+$ \textbf{(A)}\ -2 \qquad
+\textbf{(B)}\ -1 \qquad
+\textbf{(C)}\ 0 \qquad
+\textbf{(D)}\ \sqrt{3} \qquad
+\textbf{(E)}\ 2$

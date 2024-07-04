@@ -1,0 +1,2 @@
+==Problem 5==
+A rational number written in base eight is <math>\underline{ab} . \underline{cd}</math>, where all digits are nonzero. The same number in base twelve is <math>\underline{bb} . \underline{ba}</math>. Find the base-ten number <math>\underline{abc}</math>.

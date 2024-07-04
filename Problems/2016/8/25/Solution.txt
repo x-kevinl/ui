@@ -1,0 +1,2 @@
+==Note==
+There are many solutions here, and all of them are equally good. For your own benefit, look at all of the solutions, as they employ many unique techniques to get to the final answer.

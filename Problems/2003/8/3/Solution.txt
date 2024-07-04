@@ -1,0 +1,2 @@
+==Solution==
+There are $ 30 $ grams of filler, so there are $ 120-30= 90 $ grams that aren't filler. $ \frac{90}{120}=\frac{3}{4}=\boxed{\mathrm{(D)}\ 75\%} $.

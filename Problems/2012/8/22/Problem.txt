@@ -1,0 +1,4 @@
+==Problem==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>Let $R$  be a set of nine distinct integers. Six of the elements are $2$, $3$, $4$, $6$, $9$, and $14$. What is the number of possible values of the median of $R$?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+$ \textbf{(A)}\hspace{.05in}4\qquad\textbf{(B)}\hspace{.05in}5\qquad\textbf{(C)}\hspace{.05in}6\qquad\textbf{(D)}\hspace{.05in}7\qquad\textbf{(E)}\hspace{.05in}8 $

@@ -1,0 +1,3 @@
+== Problem ==
+
+Recall that a palindrome is a number that reads the same forward and backward. Find the greatest integer less than <math>1000</math> that is a palindrome both when written in base ten and when written in base eight, such as <math>292 = 444_{\text{eight}}.</math>

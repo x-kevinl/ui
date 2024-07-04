@@ -1,0 +1,13 @@
+== Problem ==
+Eight [[circle]]s of [[diameter]] 1 are packed in the first [[quadrant]] of the [[coordinate plane]] as shown. Let region <math> \mathcal{R} </math> be the union of the eight circular regions. Line <math> l, </math> with slope 3, divides <math> \mathcal{R} </math> into two regions of equal area. Line <math> l </math>'s equation can be expressed in the form <math> ax=by+c, </math> where <math> a, b, </math> and <math> c </math> are positive integers whose [[greatest common divisor]] is 1. Find <math> a^2+b^2+c^2. </math> 
+<asy>
+size(150);defaultpen(linewidth(0.7));
+draw((6.5,0)--origin--(0,6.5), Arrows(5));
+int[] array={3,3,2};
+int i,j;
+for(i=0; i<3; i=i+1) {
+for(j=0; j<array[i]; j=j+1) {
+draw(Circle((1+2*i,1+2*j),1));
+}}
+label("x", (7,0));
+label("y", (0,7));</asy>

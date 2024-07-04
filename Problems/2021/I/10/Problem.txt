@@ -1,0 +1,4 @@
+==Problem==
+Consider the sequence <math>(a_k)_{k\ge 1}</math> of positive rational numbers defined by <math>a_1 = \frac{2020}{2021}</math> and for <math>k\ge 1</math>, if <math>a_k = \frac{m}{n}</math> for relatively prime positive integers <math>m</math> and <math>n</math>, then
+
+<cmath>a_{k+1} = \frac{m + 18}{n+19}.</cmath>Determine the sum of all positive integers <math>j</math> such that the rational number <math>a_j</math> can be written in the form <math>\frac{t}{t+1}</math> for some positive integer <math>t</math>.

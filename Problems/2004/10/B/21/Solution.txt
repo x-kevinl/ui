@@ -1,0 +1,14 @@
+==Solution 1==
+The two sets of terms are $A=\{ 3k+1 : 0\leq k < 2004 \}$ and $B=\{ 7l+9 : 0\leq l<2004\}$. 
+
+Now $S=A\cup B$. We can compute $|S|=|A\cup B|=|A|+|B|-|A\cap B|=4008-|A\cap B|$. We will now find $|A\cap B|$. 
+
+Consider the numbers in $B$. We want to find out how many of them lie in $A$. In other words, we need to find out the number of valid values of $l$ for which $7l+9\in A$.
+
+The fact "$7l+9\in A$" can be rewritten as "$1\leq 7l+9 \leq 3\cdot 2003 + 1$, and $7l+9\equiv 1\pmod 3$".
+
+The first condition gives $0\leq l\leq 857$, the second one gives $l\equiv 1\pmod 3$.
+
+Thus the good values of $l$ are $\{1,4,7,\dots,856\}$, and their count is $858/3 = 286$.
+
+Therefore $|A\cap B|=286$, and thus $|S|=4008-|A\cap B|=\boxed{(A) 3722}$.

@@ -1,0 +1,5 @@
+==Solution 1==
+
+Assign a variable to the number of eggs Mia has, say $m$.  Then, because we are given that Sofia has twice the number of eggs Mia has, Sofia has $2m$ eggs, and Pablo, having three times the number of eggs as Sofia, has $6m$ eggs.
+
+For them to all have the same number of eggs, they must each have $\frac{m+2m+6m}{3} = 3m$ eggs.  This means Pablo must give $2m$ eggs to Mia and $m$ eggs to Sofia, so the answer is $\frac{m}{6m} = \boxed{\textbf{(B) }\frac{1}{6}}$

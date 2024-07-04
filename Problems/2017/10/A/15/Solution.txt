@@ -1,0 +1,5 @@
+==Solution 1==
+Denote "winning" to mean "picking a greater number".
+There is a $\frac{1}{2}$ chance that Laurent chooses a number in the interval $[2017, 4034]$. In this case, Chloé cannot possibly win, since the maximum number she can pick is $2017$. Otherwise, if Laurent picks a number in the interval $[0, 2017]$, with probability $\frac{1}{2}$, then the two people are symmetric, and each has a $\frac{1}{2}$ chance of winning. Then, the total probability is $\frac{1}{2}\times1 + \frac{1}{2}\times\frac{1}{2} = \boxed{\textbf{(C)}\ \frac{3}{4}}.$
+
+~Small grammar mistake corrected by virjoy2001 (missing period), small error corrected by Terribleteeth

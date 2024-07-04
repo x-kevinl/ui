@@ -1,0 +1,3 @@
+==Problem==
+
+Given a circle of radius <math>\sqrt{13}</math>, let <math>A</math> be a point at a distance <math>4 + \sqrt{13}</math> from the center <math>O</math> of the circle. Let <math>B</math> be the point on the circle nearest to point <math>A</math>. A line passing through the point <math>A</math> intersects the circle at points <math>K</math> and <math>L</math>. The maximum possible area for <math>\triangle BKL</math> can be written in the form <math>\frac{a - b\sqrt{c}}{d}</math>, where <math>a</math>, <math>b</math>, <math>c</math>, and <math>d</math> are positive integers, <math>a</math> and <math>d</math> are relatively prime, and <math>c</math> is not divisible by the square of any prime. Find <math>a+b+c+d</math>.

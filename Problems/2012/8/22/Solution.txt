@@ -1,0 +1,36 @@
+==Solution 1==
+First, we find that the minimum value of the median of $ R $ will be $ 3 $. 
+
+We then experiment with sequences of numbers to determine other possible medians.
+
+Median: $ 3 $
+
+Sequence: $ -2, -1, 0, 2, 3, 4, 6, 9, 14 $
+
+Median: $ 4 $
+
+Sequence: $ -1, 0, 2, 3, 4, 6, 9, 10, 14 $
+
+Median: $ 5 $
+
+Sequence: $ 0, 2, 3, 4, 5, 6, 9, 10, 14 $
+
+Median: $ 6 $
+
+Sequence: $ 0, 2, 3, 4, 6, 9, 10, 14, 15 $
+
+Median: $ 7 $
+
+Sequence: $ 2, 3, 4, 6, 7, 8, 9, 10, 14 $
+
+Median: $ 8 $
+
+Sequence: $ 2, 3, 4, 6, 8, 9, 10, 14, 15 $
+
+Median: $ 9 $
+
+Sequence: $ 2, 3, 4, 6, 9, 14, 15, 16, 17 $
+
+Any number greater than $ 9 $ also cannot be a median of set $ R $. 
+
+Therefore, the answer is $7\implies \textbf{(D)}.$

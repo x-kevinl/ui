@@ -1,0 +1,9 @@
+==Solution 1==
+
+Let the length of $AD$ be $x$, so that the length of $AB$ is $2x$ and $\text{[}ABCD\text{]}=2x^2$. 
+
+Because $ABCD$ is a rectangle, $\angle ADC=90^{\circ}$, and so $\angle ADE=\angle EDF=\angle FDC=30^{\circ}$. Thus $\triangle DAE$ is a $30-60-90$ right triangle; this implies that $\angle DEF=180^{\circ}-60^{\circ}=120^{\circ}$, so $\angle EFD=180^{\circ}-(120^{\circ}+30^{\circ})=30^{\circ}$. Now drop the altitude from $E$ of $\triangle DEF$, forming two $30-60-90$ triangles. 
+
+Because the length of $AD$ is $x$, from the properties of a $30-60-90$ triangle the length of $AE$ is $\frac{x\sqrt{3}}{3}$ and the length of $DE$ is thus $\frac{2x\sqrt{3}}{3}$. Thus the altitude of $\triangle DEF$ is $\frac{x\sqrt{3}}{3}$, and its base is $2x$, so its area is $\frac{1}{2}(2x)\left(\frac{x\sqrt{3}}{3}\right)=\frac{x^2\sqrt{3}}{3}$.
+
+To finish, $\frac{\text{[}\triangle DEF\text{]}}{\text{[}ABCD\text{]}}=\frac{\frac{x^2\sqrt{3}}{3}}{2x^2}=\boxed{\textbf{(A) }\frac{\sqrt{3}}{6}}$.

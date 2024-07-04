@@ -1,0 +1,15 @@
+== Solution 1 ==
+<center><asy>
+size(250); pointpen = black; pathpen = black + linewidth(0.65); pen s = fontsize(8);
+pair A=(0,0),B=(-3^.5,-3),C=(3^.5,-3),D=13*expi(-2*pi/3),E1=11*expi(-pi/3),F=E1+D;
+path O = CP((0,-2),A); pair G = OP(A--F,O);
+D(MP("A",A,N,s)--MP("B",B,W,s)--MP("C",C,E,s)--cycle);D(O);
+D(B--MP("D",D,W,s)--MP("F",F,s)--MP("E",E1,E,s)--C);
+D(A--F);D(B--MP("G",G,SW,s)--C);
+MP("11",(A+E1)/2,NE);MP("13",(A+D)/2,NW);MP("l_1",(D+F)/2,SW);MP("l_2",(E1+F)/2,SE);
+</asy></center><!-- Asymptote replacement for Image:Aime2006-2-11.JPG]]-->
+Notice that <math>\angle{E} = \angle{BGC} = 120^\circ</math> because <math>\angle{A} = 60^\circ</math>. Also, <math>\angle{GBC} = \angle{GAC} = \angle{FAE}</math> because they both correspond to arc <math>{GC}</math>. So <math>\Delta{GBC} \sim \Delta{EAF}</math>.
+
+<cmath>[EAF] = \frac12 (AE)(EF)\sin \angle AEF  = \frac12\cdot11\cdot13\cdot\sin{120^\circ} = \frac {143\sqrt3}4.</cmath>
+
+Because the ratio of the area of two similar figures is the square of the ratio of the corresponding sides, <math>[GBC] = \frac {BC^2}{AF^2}\cdot[EAF] = \frac {12}{11^2 + 13^2 - 2\cdot11\cdot13\cdot\cos120^\circ}\cdot\frac {143\sqrt3}4 = \frac {429\sqrt3}{433}</math>. Therefore, the answer is <math>429+433+3=\boxed{865}</math>.

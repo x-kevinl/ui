@@ -1,0 +1,2 @@
+==Solution==
+We evaluate the given expression to get that $$2^{1+2+3}-(2^1+2^2+2^3)=2^6-(2^1+2^2+2^3)=64-2-4-8=50 \implies \boxed{\text{(B)}}$$

@@ -1,0 +1,6 @@
+==Solution 1 (Principle of Inclusion-Exclusion)==
+We use Principle of Inclusion-Exclusion. There are $365$ days in the year, and we subtract the days that she gets at least $1$ phone call, which is $$ \left \lfloor \frac{365}{3} \right \rfloor +  \left \lfloor \frac{365}{4} \right \rfloor +  \left \lfloor \frac{365}{5} \right \rfloor.$$
+
+To this result we add the number of days where she gets at least $2$ phone calls in a day because we double subtracted these days, which is $$\left \lfloor \frac{365}{12} \right \rfloor +  \left \lfloor \frac{365}{15} \right \rfloor +  \left \lfloor \frac{365}{20} \right \rfloor.$$
+
+We now subtract the number of days where she gets three phone calls, which is $\left \lfloor \frac{365}{60} \right \rfloor.$ Therefore, our answer is $$365 - \left( \left \lfloor \frac{365}{3} \right \rfloor +  \left \lfloor \frac{365}{4} \right \rfloor +  \left \lfloor \frac{365}{5} \right \rfloor \right) +  \left( \left \lfloor \frac{365}{12} \right \rfloor +  \left \lfloor \frac{365}{15} \right \rfloor +  \left \lfloor \frac{365}{20} \right \rfloor \right) - \left \lfloor \frac{365}{60} \right \rfloor = 365 - 285+72 - 6 = \boxed{\textbf{(D) }146}.$$

@@ -1,0 +1,19 @@
+==Solution==
+===Solution 1===
+Let the time he needs to get there in be $t$ and the distance he travels be $d$. From the given equations, we know that $d=\left(t+\frac{1}{20}\right)40$ and $d=\left(t-\frac{1}{20}\right)60$. Setting the two equal, we have $40t+2=60t-3$ and we find $t=\frac{1}{4}$ of an hour. Substituting t back in, we find $d=12$. From $d=rt$, we find that $r$, our answer, is $\boxed{\textbf{(B) }48 }$.
+
+===Solution 2===
+Since either time he arrives at is $3$ minutes from the desired time, the answer is merely the [[harmonic mean]] of 40 and 60. 
+Substituting $t=\frac ds$ and dividing both sides by $d$, we get $\frac 2s = \frac 1{40} + \frac 1{60}$ hence $s=\boxed{\textbf{(B) }48}$.
+
+(Note that this approach would work even if the time by which he is late was different from the time by which he is early in the other case - we would simply take a weighted sum in step two, and hence obtain a weighted harmonic mean in step three.)
+
+===Solution 3===
+Let x be equal to the total amount of distance he needs to cover. Let y be equal to the amount of time he would travel correctly.
+Setting up a system of equations, $\frac x{40} -3 = y$ and $\frac x{60} +3 = y$
+
+Solving, we get x = 720 and y = 15. 
+
+We divide x by y to get the average speed, $\frac {720}{15} = 48$. Therefore, the answer is $\boxed{\textbf{(B) }48}$.
+
+~MathKatana

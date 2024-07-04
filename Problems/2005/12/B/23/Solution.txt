@@ -1,0 +1,6 @@
+== Solution 1 ==
+Let $x + y = s$ and $x^2 + y^2 = t$.   
+Then, $\log(s)=z$ implies $\log(10s) = z+1= \log(t)$,so $t=10s$.   
+Therefore, $x^3 + y^3 = s\cdot\dfrac{3t-s^2}{2} = s(15s-\dfrac{s^2}{2})$.  
+Since $s = 10^z$, we find that $x^3 + y^3 = 15\cdot10^{2z} - (1/2)\cdot10^{3z}$.  
+Thus, $a+b = \frac{29}{2}$ $\Rightarrow$ $\boxed{B}$

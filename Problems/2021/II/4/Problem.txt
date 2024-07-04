@@ -1,0 +1,2 @@
+==Problem==
+There are real numbers <math>a, b, c,</math> and <math>d</math> such that <math>-20</math> is a root of <math>x^3 + ax + b</math> and <math>-21</math> is a root of <math>x^3 + cx^2 + d.</math> These two polynomials share a complex root <math>m + \sqrt{n} \cdot i,</math> where <math>m</math> and <math>n</math> are positive integers and <math>i = \sqrt{-1}.</math> Find <math>m+n.</math>

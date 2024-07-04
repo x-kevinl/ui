@@ -1,0 +1,3 @@
+==Problem==
+
+The number <math>n</math> can be written in base <math>14</math> as <math>\underline{a}\text{ }\underline{b}\text{ }\underline{c}</math>, can be written in base <math>15</math> as <math>\underline{a}\text{ }\underline{c}\text{ }\underline{b}</math>, and can be written in base <math>6</math> as <math>\underline{a}\text{ }\underline{c}\text{ }\underline{a}\text{ }\underline{c}\text{ }</math>, where <math>a > 0</math>. Find the base-<math>10</math> representation of <math>n</math>.

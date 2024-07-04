@@ -1,0 +1,6 @@
+==Solution 1==
+$g(x)$ is defined if $f(x + 1)$ is defined. Thus the domain is all $x| x + 1 \in [0,2] \rightarrow x \in [ - 1,1]$. 
+
+Since $f(x + 1) \in [0,1]$, $- f(x + 1) \in [ - 1,0]$. Thus $g(x) = 1 - f(x + 1) \in [0,1]$ is the range of $g(x)$. 
+
+Thus the answer is $[- 1,1],[0,1] \longrightarrow \boxed{B}$.

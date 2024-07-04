@@ -1,0 +1,5 @@
+==Problem==
+
+Each of the $5{ }$ sides and the $5{ }$ diagonals of a regular pentagon are randomly and independently colored red or blue with equal probability. What is the probability that there will be a triangle whose vertices are among the vertices of the pentagon such that all of its sides have the same color?
+
+$(\textbf{A})\: \frac23\qquad(\textbf{B}) \: \frac{105}{128}\qquad(\textbf{C}) \: \frac{125}{128}\qquad(\textbf{D}) \: \frac{253}{256}\qquad(\textbf{E}) \: 1$

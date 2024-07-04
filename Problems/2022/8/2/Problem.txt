@@ -1,0 +1,10 @@
+==Problem==
+
+Consider these two operations:
+$$\begin{align*}
+a \, \blacklozenge \, b &= a^2 - b^2\\
+a \, \bigstar \, b &= (a - b)^2
+\end{align*}$$
+What is the output of $(5 \, \blacklozenge \, 3) \, \bigstar \, 6?$
+
+$\textbf{(A) } {-}20 \qquad \textbf{(B) } 4 \qquad \textbf{(C) } 16 \qquad \textbf{(D) } 100 \qquad \textbf{(E) } 220$

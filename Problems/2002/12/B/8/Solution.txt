@@ -1,0 +1,10 @@
+== Solution 1 ==
+If there are five Mondays, there are only three possibilities for their dates: $(1,8,15,22,29)$, $(2,9,16,23,30)$, and $(3,10,17,24,31)$. 
+
+In the first case August starts on a Thursday, and there are five Thursdays, Fridays, and Saturdays in August. 
+
+In the second case August starts on a Wednesday, and there are five Wednesdays, Thursdays, and Fridays in August.
+
+In the third case August starts on a Tuesday, and there are five Tuesdays, Wednesdays, and Thursdays in August.
+
+The only day of the week that is guaranteed to appear five times is therefore $\boxed{\textrm{(D)}\ \text{Thursday}}$.

@@ -1,0 +1,2 @@
+== Solution 1==
+The only way to get a total of \$$20$ or more is if you pick a twenty and another bill, or if you pick both tens. There are a total of $\dbinom{8}{2}=\dfrac{8\times7}{2\times1}=28$ ways to choose $2$ bills out of $8$. There are $12$ ways to choose a twenty and some other non-twenty bill. There is $1$ way to choose both twenties, and also $1$ way to choose both tens. Adding these up, we find that there are a total of $14$ ways to attain a sum of $20$ or greater, so there is a total probability of $\dfrac{14}{28}=\boxed{\textbf{(D) }\frac{1}{2}}$.

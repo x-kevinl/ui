@@ -1,0 +1,5 @@
+==Problem==
+
+If the degree measures of the angles of a triangle are in the ratio $3:3:4$, what is the degree measure of the largest angle of the triangle?
+
+$\textbf{(A) }18\qquad\textbf{(B) }36\qquad\textbf{(C) }60\qquad\textbf{(D) }72\qquad\textbf{(E) }90$

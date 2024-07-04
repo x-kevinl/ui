@@ -1,0 +1,4 @@
+==Problem==
+A whole number larger than $2$ leaves a remainder of $2$ when divided by each of the numbers $3, 4, 5,$ and $6$. The smallest such number lies between which two numbers?
+
+$\textbf{(A)}\ 40\ \text{and}\ 49 \qquad \textbf{(B)}\ 60 \text{ and } 79 \qquad \textbf{(C)}\ 100\ \text{and}\ 129 \qquad \textbf{(D)}\ 210\ \text{and}\ 249\qquad \textbf{(E)}\ 320\ \text{and}\ 369$

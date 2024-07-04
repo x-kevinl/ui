@@ -1,0 +1,2 @@
+==Solution==
+$(2^0-1+5^2-0)^{-1}\times5 = (1-1+25-0)^{-1} \times 5 = 25^{-1} \times 5 = \frac{1}{25} \times 5 = \boxed{\textbf{(C) } \, \frac{1}{5}}$.

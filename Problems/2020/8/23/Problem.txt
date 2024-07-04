@@ -1,0 +1,4 @@
+==Problem==
+Five different awards are to be given to three students. Each student will receive at least one award. In how many different ways can the awards be distributed? 
+
+$\textbf{(A) }120 \qquad \textbf{(B) }150 \qquad \textbf{(C) }180 \qquad \textbf{(D) }210 \qquad \textbf{(E) }240$

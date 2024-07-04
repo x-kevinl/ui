@@ -1,0 +1,16 @@
+== Solutions ==
+<center><asy>
+import three; currentprojection = perspective(4,-15,4); defaultpen(linewidth(0.7));
+draw(box((-1,-1,-1),(1,1,1)));
+draw((-3,0,0)--(0,0,3)--(0,-3,0)--(-3,0,0)--(0,0,-3)--(0,-3,0)--(3,0,0)--(0,0,-3)--(0,3,0)--(0,0,3)--(3,0,0)--(0,3,0)--(-3,0,0));
+</asy></center>
+
+=== Solution 1 ===
+
+Let the side of the octahedron be of length <math>s</math>.  Let the [[vertex |vertices]] of the octahedron be <math>A, B, C, D, E, F</math> so that <math>A</math> and <math>F</math> are opposite each other and <math>AF = s\sqrt2</math>.  The height of the square pyramid <math>ABCDE</math> is <math>\frac{AF}2 = \frac s{\sqrt2}</math> and so it has volume <math>\frac 13 s^2 \cdot \frac s{\sqrt2} = \frac {s^3}{3\sqrt2}</math> and the whole octahedron has volume <math>\frac {s^3\sqrt2}3</math>.  
+
+Let <math>M</math> be the midpoint of <math>BC</math>, <math>N</math> be the midpoint of <math>DE</math>, <math>G</math> be the [[centroid]] of <math>\triangle ABC</math> and <math>H</math> be the centroid of <math>\triangle ADE</math>.  Then <math>\triangle AMN \sim \triangle AGH</math> and the symmetry ratio is <math>\frac 23</math> (because the [[triangle median |medians]] of a triangle are trisected by the centroid), so <math>GH = \frac{2}{3}MN = \frac{2s}3</math>.  <math>GH</math> is also a diagonal of the cube, so the cube has side-length <math>\frac{s\sqrt2}3</math> and volume <math>\frac{2s^3\sqrt2}{27}</math>.  The ratio of the volumes is then <math>\frac{\left(\frac{2s^3\sqrt2}{27}\right)}{\left(\frac{s^3\sqrt2}{3}\right)} = \frac29</math> and so the answer is <math>\boxed{011}</math>.
+
+=== Solution 2 ===
+
+Let the octahedron have vertices <math>(\pm 3, 0, 0), (0, \pm 3, 0), (0, 0, \pm 3)</math>.  Then the vertices of the cube lie at the centroids of the faces, which have coordinates <math>(\pm 1, \pm 1, \pm 1)</math>.  The cube has volume 8.  The region of the octahedron lying in each octant is a [[tetrahedron]] with three edges mutually perpendicular and of length 3.  Thus the octahedron has volume <math>8 \cdot \left(\frac 16 \cdot3^3\right) = 36</math>, so the ratio is <math>\frac 8{36} = \frac 29</math> and so the answer is <math>\boxed{011}</math>.

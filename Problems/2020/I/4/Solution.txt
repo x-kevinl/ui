@@ -1,0 +1,7 @@
+== Solution 1 ==
+
+We note that any number in <math>S</math> can be expressed as <math>a(10,000) + 2,020</math> for some integer <math>a</math>. The problem requires that <math>a</math> divides this number, and since we know <math>a</math> divides <math>a(10,000)</math>, we need that <math>a</math> divides 2020. Each number contributes the sum of the digits of <math>a</math>, as well as <math>2 + 0 + 2 +0 = 4</math>. Since <math>2020</math> can be prime factorized as <math>2^2 \cdot 5 \cdot 101</math>, it has <math>(2+1)(1+1)(1+1) = 12</math> factors. So if we sum all the digits of all possible <math>a</math> values, and add <math>4 \cdot 12 = 48</math>, we obtain the answer.
+
+Now we list out all factors of <math>2,020</math>, or all possible values of <math>a</math>. <math>1,2,4,5,10,20,101,202,404,505,1010,2020</math>. If we add up these digits, we get <math>45</math>, for a final answer of <math>45+48=\boxed{093}</math>.
+
+-molocyxu

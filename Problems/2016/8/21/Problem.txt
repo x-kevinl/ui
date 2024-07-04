@@ -1,0 +1,5 @@
+==Problem==
+
+A top hat contains 3 red chips and 2 green chips. Chips are drawn randomly, one at a time without replacement, until all 3 of the reds are drawn or until both green chips are drawn. What is the probability that the 3 reds are drawn?
+
+$\textbf{(A) }\dfrac{3}{10}\qquad\textbf{(B) }\dfrac{2}{5}\qquad\textbf{(C) }\dfrac{1}{2}\qquad\textbf{(D) }\dfrac{3}{5}\qquad \textbf{(E) }\dfrac{7}{10}$

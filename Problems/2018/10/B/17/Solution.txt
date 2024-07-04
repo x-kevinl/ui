@@ -1,0 +1,9 @@
+== Solution 1==
+
+Let $AP=BQ=x$. Then $AB=8-2x$.
+
+Now notice that since $CD=8-2x$ we have $QC=DR=x-1$.
+
+Thus by the Pythagorean Theorem we have $x^2+(x-1)^2=(8-2x)^2$ which becomes $2x^2-30x+63=0\implies x=\dfrac{15-3\sqrt{11}}{2}$.
+
+Our answer is $8-(15-3\sqrt{11})=3\sqrt{11}-7\implies \boxed{\text{(B)}~7}$. (Mudkipswims42)

@@ -1,0 +1,19 @@
+== Solution ==
+Let $x$ be the [[probability]] of rolling a $1$. The probabilities of rolling a 
+$2$, $3$, $4$, $5$, and $6$ are $2x$, $3x$, $4x$, $5x$, and $6x$, respectively.
+
+The sum of the probabilities of rolling each number must equal 1, so
+
+$x+2x+3x+4x+5x+6x=1$
+
+$21x=1$
+
+$x=\frac{1}{21}$
+
+So the probabilities of rolling a $1$, $2$, $3$, $4$, $5$, and $6$ are respectively $\frac{1}{21}, \frac{2}{21}, \frac{3}{21}, \frac{4}{21}, \frac{5}{21}$, and $\frac{6}{21}$. 
+
+The possible combinations of two rolls that total $7$ are: $ (1,6) ; (2,5) ; (3,4) ; (4,3) ; (5,2) ; (6,1) $
+
+The probability P of rolling a total of $7$ on the two dice is equal to the sum of the probabilities of rolling each combination. 
+
+$ P = \frac{1}{21}\cdot\frac{6}{21}+\frac{2}{21}\cdot\frac{5}{21}+\frac{3}{21}\cdot\frac{4}{21}+\frac{4}{21}\cdot\frac{3}{21}+\frac{5}{21}\cdot\frac{2}{21}+\frac{6}{21}\cdot\frac{1}{21}=\frac{8}{63} \Rightarrow C $

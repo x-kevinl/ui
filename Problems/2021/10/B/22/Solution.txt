@@ -1,0 +1,24 @@
+==Solution 1 (Principle of Inclusion-Exclusion)==
+Let our denominator be $(5!)^3$, so we consider all possible distributions.
+
+We use PIE (Principle of Inclusion and Exclusion) to count the successful ones.
+
+When we have at $1$ box with all $3$ balls the same color in that box, there are $_{5} C _{1} \cdot _{5} P _{1} \cdot (4!)^3$ ways for the distributions to occur ($_{5} C _{1}$ for selecting one of the five boxes for a uniform color, $_{5} P _{1}$ for choosing the color for that box, $4!$ for each of the three people to place their remaining items).
+
+However, we overcounted those distributions where two boxes had uniform color, and there are $_{5} C _{2} \cdot _{5} P _{2} \cdot (3!)^3$ ways for the distributions to occur ($_{5} C _{2}$ for selecting two of the five boxes for a uniform color, $_{5} P _{2}$ for choosing the color for those boxes, $3!$ for each of the three people to place their remaining items).
+
+Again, we need to re-add back in the distributions with three boxes of uniform color... and so on so forth.
+
+Our success by PIE is $$_{5} C _{1} \cdot _{5} P _{1} \cdot (4!)^3 - _{5} C _{2} \cdot _{5} P _{2} \cdot (3!)^3 + _{5} C _{3} \cdot _{5} P _{3} \cdot (2!)^3 - _{5} C _{4} \cdot _{5} P _{4} \cdot (1!)^3 + _{5} C _{5} \cdot _{5} P _{5} \cdot (0!)^3 = 120 \cdot 2556.$$
+$$\frac{120 \cdot 2556}{120^3}=\frac{71}{400},$$ yielding an answer of $\boxed{\textbf{(D) }471}$.
+
+=== Alternate Simplification ===
+As In Solution 1, the probability is
+$$\frac{\binom{5}{1}\cdot 5\cdot (4!)^3 - \binom{5}{2}\cdot 5\cdot 4\cdot (3!)^3 + \binom{5}{3}\cdot 5\cdot 4\cdot 3\cdot (2!)^3 - \binom{5}{4}\cdot 5\cdot 4\cdot 3\cdot 2\cdot (1!)^3 + \binom{5}{5}\cdot 5\cdot 4\cdot 3\cdot 2\cdot 1}{(5!)^3}$$
+$$ = \frac{5\cdot 5\cdot (4!)^3 - 10\cdot 5\cdot 4\cdot (3!)^3 + 10\cdot 5\cdot 4\cdot 3\cdot (2!)^3 - 5\cdot 5! + 5!}{(5!)^3}.$$
+Dividing by $5!$, we get
+$$\frac{5\cdot (4!)^2 - 10\cdot (3!)^2 + 10\cdot (2!)^2 - 5 + 1}{(5!)^2}.$$
+Dividing by $4$, we get
+$$\frac{5\cdot 6\cdot 24 - 10\cdot 9 + 10 - 1}{30\cdot 120}.$$
+Dividing by $9$, we get
+$$\frac{5\cdot 2\cdot 8 - 10 + 1}{10\cdot 40} = \frac{71}{400} \implies \boxed{\textbf{(D) }471}$$.

@@ -1,0 +1,2 @@
+==Problem==
+Let <math>ABC</math> be a triangle inscribed in circle <math>\omega</math>. Let the tangents to <math>\omega</math> at <math>B</math> and <math>C</math> intersect at point <math>D</math>, and let <math>\overline{AD}</math> intersect <math>\omega</math> at <math>P</math>. If <math>AB=5</math>, <math>BC=9</math>, and <math>AC=10</math>, <math>AP</math> can be written as the form <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime integers. Find <math>m + n</math>.

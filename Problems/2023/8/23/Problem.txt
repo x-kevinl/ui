@@ -1,0 +1,33 @@
+==Problem==
+Each square in a $3 \times 3$ grid is randomly filled with one of the $4$ gray and white tiles shown below on the right. 
+<asy>
+size(5.663333333cm);
+draw((0,0)--(3,0)--(3,3)--(0,3)--cycle,gray);
+draw((1,0)--(1,3)--(2,3)--(2,0),gray);
+draw((0,1)--(3,1)--(3,2)--(0,2),gray);
+
+fill((6,.33)--(7,.33)--(7,1.33)--cycle,mediumgray);
+draw((6,.33)--(7,.33)--(7,1.33)--(6,1.33)--cycle,gray);
+fill((6,1.67)--(7,2.67)--(6,2.67)--cycle,mediumgray);
+draw((6,1.67)--(7,1.67)--(7,2.67)--(6,2.67)--cycle,gray);
+fill((7.33,.33)--(8.33,.33)--(7.33,1.33)--cycle,mediumgray);
+draw((7.33,.33)--(8.33,.33)--(8.33,1.33)--(7.33,1.33)--cycle,gray);
+fill((8.33,1.67)--(8.33,2.67)--(7.33,2.67)--cycle,mediumgray);
+draw((7.33,1.67)--(8.33,1.67)--(8.33,2.67)--(7.33,2.67)--cycle,gray);
+</asy>
+What is the probability that the tiling will contain a large gray diamond in one of the smaller $2 \times 2$ grids? Below is an example of such tiling. 
+<asy>
+size(2cm);
+
+fill((1,0)--(0,1)--(0,2)--(1,1)--cycle,mediumgray);
+fill((2,0)--(3,1)--(2,2)--(1,1)--cycle,mediumgray);
+fill((1,2)--(1,3)--(0,3)--cycle,mediumgray);
+fill((1,2)--(2,2)--(2,3)--cycle,mediumgray);
+fill((3,2)--(3,3)--(2,3)--cycle,mediumgray);
+
+draw((0,0)--(3,0)--(3,3)--(0,3)--cycle,gray);
+draw((1,0)--(1,3)--(2,3)--(2,0),gray);
+draw((0,1)--(3,1)--(3,2)--(0,2),gray);
+</asy>
+
+$\textbf{(A) } \frac{1}{1024} \qquad \textbf{(B) } \frac{1}{256} \qquad \textbf{(C) } \frac{1}{64} \qquad \textbf{(D) } \frac{1}{16} \qquad \textbf{(E) } \frac{1}{4}$

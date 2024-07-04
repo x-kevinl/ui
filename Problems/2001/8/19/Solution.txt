@@ -1,0 +1,2 @@
+==Solution 1 ==
+Since car N has twice the speed, it must be twice as high on the speed axis. Also, since cars M and N travel at the same distance but car N has twice the speed, car N must take half the time. Therefore, line N must be half the size of line M. Since the speeds are constant, both lines are horizontal. Reviewing the graphs, we see that the only one satisfying these conditions is graph $ \boxed{\text{D}} $.

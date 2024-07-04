@@ -1,0 +1,20 @@
+==Problem==
+In the figure shown below, $ABCDE$ is a regular pentagon and $AG=1$. What is $FG + JH + CD$?
+<asy>
+pair A=(cos(pi/5)-sin(pi/10),cos(pi/10)+sin(pi/5)), B=(2*cos(pi/5)-sin(pi/10),cos(pi/10)), C=(1,0), D=(0,0), E1=(-sin(pi/10),cos(pi/10));
+pair F=intersectionpoints(D--A,E1--B)[0], G=intersectionpoints(A--C,E1--B)[0], H=intersectionpoints(B--D,A--C)[0], I=intersectionpoints(C--E1,D--B)[0], J=intersectionpoints(E1--C,D--A)[0];
+draw(A--B--C--D--E1--A);
+draw(A--D--B--E1--C--A);
+draw(F--I--G--J--H--F);
+label("$A$",A,N);
+label("$B$",B,E);
+label("$C$",C,SE);
+label("$D$",D,SW);
+label("$E$",E1,W);
+label("$F$",F,NW);
+label("$G$",G,NE);
+label("$H$",H,E);
+label("$I$",I,S);
+label("$J$",J,W);
+</asy>
+$\textbf{(A) } 3 \qquad\textbf{(B) } 12-4\sqrt5 \qquad\textbf{(C) } \dfrac{5+2\sqrt5}{3} \qquad\textbf{(D) } 1+\sqrt5 \qquad\textbf{(E) } \dfrac{11+11\sqrt5}{10} $

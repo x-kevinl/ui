@@ -1,0 +1,20 @@
+== Problem 4 ==
+
+Quadrilateral $ABCD$ is a rhombus with perimeter $52$ meters. The length of diagonal $\overline{AC}$ is $24$ meters. What is the area in square meters of rhombus $ABCD$?
+
+<asy>
+draw((-13,0)--(0,5));
+draw((0,5)--(13,0));
+draw((13,0)--(0,-5));
+draw((0,-5)--(-13,0));
+dot((-13,0));
+dot((0,5));
+dot((13,0));
+dot((0,-5));
+label("A",(-13,0),W);
+label("B",(0,5),N);
+label("C",(13,0),E);
+label("D",(0,-5),S);
+</asy>
+
+$\textbf{(A) }60\qquad\textbf{(B) }90\qquad\textbf{(C) }105\qquad\textbf{(D) }120\qquad\textbf{(E) }144$

@@ -1,0 +1,4 @@
+==Problem==
+Two-thirds of the people in a room are seated in three-fourths of the chairs. The rest of the people are standing. If there are $6$ empty chairs, how many people are in the room?
+
+$\textbf{(A)}\ 12\qquad \textbf{(B)}\ 18\qquad \textbf{(C)}\ 24\qquad \textbf{(D)}\ 27\qquad \textbf{(E)}\ 36$

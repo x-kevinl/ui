@@ -1,0 +1,20 @@
+== Solution 1 ==
+
+Consider 2 --
+there are odd number of 2's in $2!\cdot3!\cdot4!\cdot5!...16!$  (We're not counting 3 2's in 8, 2 3's in 9, etc).
+
+There are even number of 3's in 
+...etc,
+
+
+So, we can reduce our original expression to
+$$
+\begin{align*}
+m \cdot 2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 \cdot 12 \cdot 14 \cdot 16 &\equiv m \cdot 2^8 \cdot (1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8)\\
+&\equiv m \cdot (2 \cdot 3) \cdot (2 \cdot 2) \cdot 5  \cdot (2 \cdot 3)  \cdot 7  \cdot 2  \cdot (2 \cdot 2)\\
+&\equiv m  \cdot 2 \cdot 5  \cdot 7\\
+m &= 2 \cdot 5 \cdot 7 = 70
+\end{align*}
+$$
+
+~Technodoggo ~minor edits by lucaswujc &sravya_m18

@@ -1,0 +1,6 @@
+==Solution==
+Substitute $a=5$ and $b=10$ into the expression for $a @ b$ to get:
+
+$5 @ 10 = \frac{5\times 10}{5+10} = \frac{50}{15} = \frac{10}{3}$
+
+Thus, answer choice $\boxed{\textbf{(D)}\ \frac{10}{3}}$ is correct.

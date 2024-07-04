@@ -1,0 +1,4 @@
+==Problem==
+Suzanne went to the bank and withdrew $\$800$. The teller gave her this amount using $\$20$ bills, $\$50$ bills, and $\$100$ bills, with at least one of each denomination. How many different collections of bills could Suzanne have received?
+
+$\textbf{(A) } 45 \qquad \textbf{(B) } 21 \qquad \text{(C) } 36 \qquad \text{(D) } 28 \qquad \text{(E) } 32$

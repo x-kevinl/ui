@@ -1,0 +1,3 @@
+== Solution ==
+
+The minimum dimensions of the rectangle are $1.5$ inches by $2.5$ inches. The minimum area is $1.5\times2.5=\boxed{\mathrm{(A) \ } 3.75}$ square inches.

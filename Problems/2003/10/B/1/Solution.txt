@@ -1,0 +1,12 @@
+==Solution==
+
+The numbers in the numerator and denominator can be grouped like this:
+
+$$
+\begin{align*}
+2+(-4+6)+(-8+10)+(-12+14)&=2*4\\
+3+(-6+9)+(-12+15)+(-18+21)&=3*4\\
+\frac{2*4}{3*4}&=\frac{2}{3} \Rightarrow \text {(C)}
+\end{align*}$$
+
+Alternatively, notice that each term in the numerator is $\frac{2}{3}$ of a term in the denominator, so the quotient has to be $\frac{2}{3}$.

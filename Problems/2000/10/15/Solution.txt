@@ -1,0 +1,4 @@
+==Solution 1==
+$\frac {a}{b} + \frac {b}{a} - ab = \frac{a^2 + b^2}{ab} - (a - b) = \frac{a^2 + b^2}{a-b} - \frac{(a-b)^2}{(a-b)} = \frac{2ab}{a-b} = \frac{2(a-b)}{a-b} =2 \Rightarrow \boxed{\text{E}}$. 
+
+Another way is to solve the equation for $b,$ giving $b = \frac{a}{a+1};$ then substituting this into the expression and simplifying gives the answer of $2.$

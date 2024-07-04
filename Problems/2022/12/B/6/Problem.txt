@@ -1,0 +1,12 @@
+==Problem==
+Consider the following $100$ sets of $10$ elements each:
+$$\begin{align*}
+&\{1,2,3,\ldots,10\}, \\
+&\{11,12,13,\ldots,20\},\\
+&\{21,22,23,\ldots,30\},\\
+&\vdots\\
+&\{991,992,993,\ldots,1000\}.
+\end{align*}$$
+How many of these sets contain exactly two multiples of $7$?
+
+$\textbf{(A)}\ 40\qquad\textbf{(B)}\ 42\qquad\textbf{(C)}\ 43\qquad\textbf{(D)}\ 49\qquad\textbf{(E)}\ 50$

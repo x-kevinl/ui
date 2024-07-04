@@ -1,0 +1,7 @@
+==Solution 1==
+
+If you place a king in any of the $4$ corners, they will have $5$ spots to go and there are $4$ corners, so $5 \times 4=20$.
+If you place a king in any of the $3$ corners, they will have $3$ spots to go and there are $4$ sides so, $3 \times 4=12$. 
+That gives us $20+12=32$ spots to go into totally.
+So $\boxed{\textbf{(E)} 32}$ is the answer.
+~andliu766, captaindiamond868 (minor edits)

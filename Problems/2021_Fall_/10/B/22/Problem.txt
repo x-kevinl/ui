@@ -1,0 +1,4 @@
+==Problem==
+For each integer $ n\geq 2 $, let $ S_n $ be the sum of all products $ jk $, where $ j $ and $ k $ are integers and $ 1\leq j<k\leq n $. What is the sum of the 10 least values of $ n $ such that $ S_n $ is divisible by $ 3 $?
+
+$\textbf{(A)}\ 196\qquad\textbf{(B)}\ 197\qquad\textbf{(C)}\ 198\qquad\textbf{(D)}\ 199\qquad\textbf{(E)}\ 200$

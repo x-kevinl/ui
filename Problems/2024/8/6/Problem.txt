@@ -1,0 +1,7 @@
+==Problem==
+
+Sergai skated around an ice rink, gliding along different paths. The gray lines in the figures below show four of the paths labeled P, Q, R, and S. What is the sorted order of the four paths from shortest to longest?
+
+[[Image:2024_AMC_8-Problem_6.png|500px]]
+
+$\textbf{(A)}\ P,Q,R,S \qquad \textbf{(B)}\ P,R,S,Q \qquad \textbf{(C)}\ Q,S,P,R \qquad \textbf{(D)}\ R,P,S,Q \qquad \textbf{(E)}\ R,S,P,Q$

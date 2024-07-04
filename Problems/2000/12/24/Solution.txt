@@ -1,0 +1,3 @@
+== Solutions ==
+=== Solution 2 (Pythagorean Theorem) ===
+First, note the triangle $ABC$ is equilateral. Next, notice that since the arc $BC$ has length 12, it follows that we can find the radius of the sector centered at $A$. $\frac {1}{6}({2}{\pi})AB=12 \implies AB=36/{\pi}$. Next, connect the center of the circle to side $AB$, and call this length $r$, and call the foot $M$. Since $ABC$ is equilateral, it follows that $MB=18/{\pi}$, and $OA$ (where O is the center of the circle) is $36/{\pi}-r$.  By the Pythagorean Theorem, you get $r^2+(18/{\pi})^2=(36/{\pi}-r)^2 \implies r=27/2{\pi}$. Finally, we see that the circumference is $2{\pi}\cdot 27/2{\pi}=\boxed{(D)27}$.

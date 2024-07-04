@@ -1,0 +1,12 @@
+== Solution ==
+There are $100$ integers in the set. 
+
+Since every $2^{\text{nd}}$ integer is divisible by $2$, there are $\lfloor\frac{100}{2}\rfloor=50$ integers divisible by $2$ in the set. 
+
+To be divisible by both $2$ and $3$, a number must be divisible by $(2,3)=6$.
+
+Since every $6^{\text{th}}$ integer is divisible by $6$, there are $\lfloor\frac{100}{6}\rfloor=16$ integers divisible by both $2$ and $3$ in the set. 
+
+So there are $50-16=34$ integers in this set that are divisible by $2$ and not divisible by $3$. 
+
+Therefore, the desired probability is $\frac{34}{100}=\frac{17}{50}\Rightarrow\boxed{\mathrm{(C)}\ \frac{17}{50}}$

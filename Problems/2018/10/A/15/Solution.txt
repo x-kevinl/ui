@@ -1,0 +1,22 @@
+==Solution==
+
+<asy>
+draw(circle((0,0),13));
+draw(circle((5,-6.25),5));
+draw(circle((-5,-6.25),5));
+label("$A$", (-8.125,-10.15), S);
+label("$B$", (8.125,-10.15), S);
+draw((0,0)--(-8.125,-10.15));
+draw((0,0)--(8.125,-10.15));
+draw((-5,-6.25)--(5,-6.25));
+draw((-8.125,-10.15)--(8.125,-10.15));
+label("$X$", (0,0), N);
+label("$Y$", (-5,-6.25),NW);
+label("$Z$", (5,-6.25),NE);
+</asy>
+
+Let the center of the surrounding circle be $X$. The circle that is tangent at point $A$ will have point $Y$ as the center. Similarly, the circle that is tangent at point $B$ will have point $Z$ as the center. Connect $AB$, $YZ$, $XA$, and $XB$. Now observe that $\triangle XYZ$ is similar to $\triangle XAB$ by SAS.
+
+Writing out the ratios, we get
+$$\frac{XY}{XA}=\frac{YZ}{AB} \Rightarrow \frac{13-5}{13}=\frac{5+5}{AB} \Rightarrow \frac{8}{13}=\frac{10}{AB} \Rightarrow AB=\frac{65}{4}.$$
+Therefore, our answer is $65+4= \boxed{\textbf{(D) } 69}$.

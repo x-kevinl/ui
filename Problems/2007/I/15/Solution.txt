@@ -1,0 +1,18 @@
+== Solution ==
+[[Image:AIME I 2007-15.png]]
+
+Denote the length of a side of the triangle <math>x</math>, and of <math>\overline{AE}</math> as <math>y</math>. The area of the entire equilateral triangle is <math>\frac{x^2\sqrt{3}}{4}</math>. Add up the areas of the triangles using the <math>\frac{1}{2}ab\sin C</math> formula (notice that for the three outside triangles, <math>\sin 60 = \frac{\sqrt{3}}{2}</math>): <math>\frac{x^2\sqrt{3}}{4} = \frac{\sqrt{3}}{4}(5 \cdot y + (x - 2)(x - 5) + 2(x - y)) + 14\sqrt{3}</math>. This simplifies to <math>\frac{x^2\sqrt{3}}{4} = \frac{\sqrt{3}}{4}(5y + x^2 - 7x + 10 + 2x - 2y + 56)</math>. Some terms will cancel out, leaving <math>y = \frac{5}{3}x - 22</math>.
+
+<math>\angle FEC</math> is an [[exterior angle]] to <math>\triangle AEF</math>, from which we find that <math>60 + \angle CED = 60 + \angle AFE</math>, so <math>\angle CED = \angle AFE</math>. Similarly, we find that <math>\angle EDC = \angle AEF</math>. Thus, <math>\triangle AEF \sim \triangle CDE</math>. Setting up a [[ratio]] of sides, we get that <math>\frac{5}{x-y} = \frac{y}{2}</math>. Using the previous relationship between <math>x</math> and <math>y</math>, we can solve for <math>x</math>.
+ 
+<div style="text-align:center;">
+<math>xy - y^2 = 10</math>
+
+<math>\frac{5}{3}x^2 - 22x - \left(\frac{5}{3}x - 22\right)^2 - 10 = 0</math>
+
+<math>\frac{5}{3}x^2 - \frac{25}{9}x^2 - 22x + 2 \cdot \frac{5 \cdot 22}{3}x - 22^2 - 10= 0</math>
+
+<math>10x^2 - 462x + 66^2 + 90 = 0</math>
+</div>
+
+Use the [[quadratic formula]], though we only need the root of the [[discriminant]]. This is <math>\sqrt{(7 \cdot 66)^2 - 4 \cdot 10 \cdot (66^2 + 90)} = \sqrt{49 \cdot 66^2 - 40 \cdot 66^2 - 4 \cdot 9 \cdot 100}</math><math> = \sqrt{9 \cdot 4 \cdot 33^2 - 9 \cdot 4 \cdot 100} = 6\sqrt{33^2 - 100}</math>. The answer is <math>\boxed{989}</math>.

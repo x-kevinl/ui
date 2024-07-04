@@ -1,0 +1,23 @@
+== Solution 1==
+If we get rid of the absolute values, we are left with the following 4 equations (using the logic that if $|a|=b$, then $a$ is either $b$ or $-b$):
+
+$$\begin{align*} 3x+4y=12 \\ -3x+4y=12 \\ 3x-4y=12 \\ -3x-4y=12 \end{align*}$$
+
+We can then put these equations in slope-intercept form in order to graph them.
+
+$$\begin{align*} 3x+4y=12 \,\implies\, y=-\dfrac{3}{4}x+3\\ -3x+4y=12\,\implies\, y=\dfrac{3}{4}x+3\\ 3x-4y=12\,\implies\, y=\dfrac{3}{4}x-3\\ -3x-4y=12\,\implies\, y=-\dfrac{3}{4}x-3\end{align*}$$
+
+Now you can graph the lines to find the shape of the graph:
+
+<asy>
+Label f; 
+f.p=fontsize(6); 
+xaxis(-8,8,Ticks(f, 4.0)); 
+yaxis(-6,6,Ticks(f, 3.0)); 
+fill((0,-3)--(4,0)--(0,3)--(-4,0)--cycle,grey);
+draw((-4,-6)--(8,3), Arrows(4));
+draw((4,-6)--(-8,3), Arrows(4));
+draw((-4,6)--(8,-3), Arrows(4));
+draw((4,6)--(-8,-3), Arrows(4));</asy>
+
+We can easily see that it is a rhombus with diagonals of $6$ and $8$. The area is $\dfrac{1}{2}\times 6\times8$, or $\boxed{\mathrm{(D)}\ 24}$

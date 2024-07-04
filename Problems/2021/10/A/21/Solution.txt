@@ -1,0 +1,27 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(250);
+path P1, P2;
+P1 = scale(16sqrt(3))*polygon(3);
+P2 = shift(3,3)*scale(36)*rotate(180)*polygon(3);
+draw(P1, dashed+black);
+draw(P2, dashed+black);
+pair A, B, C, D, E, F;
+E = intersectionpoints(P1,P2)[0];
+F = intersectionpoints(P1,P2)[1];
+A = intersectionpoints(P1,P2)[2];
+B = intersectionpoints(P1,P2)[3];
+C = intersectionpoints(P1,P2)[4];
+D = intersectionpoints(P1,P2)[5];
+filldraw(A--B--C--D--E--F--cycle,yellow);
+dot("$E$",E,1.5*dir(0),linewidth(4));
+dot("$F$",F,1.5*dir(60),linewidth(4));
+dot("$A$",A,1.5*dir(120),linewidth(4));
+dot("$B$",B,1.5*dir(180),linewidth(4));
+dot("$C$",C,1.5*dir(-120),linewidth(4));
+dot("$D$",D,1.5*dir(-60),linewidth(4));
+dot(16sqrt(3)*dir(90)^^16sqrt(3)*dir(210)^^16sqrt(3)*dir(330),linewidth(4));
+dot((3,3)+36*dir(30)^^(3,3)+36*dir(150)^^(3,3)+36*dir(270),linewidth(4));
+</asy>
+~MRENTHUSIASM

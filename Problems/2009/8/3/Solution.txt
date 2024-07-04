@@ -1,0 +1,2 @@
+==Solution==
+Suzanna's speed is $\frac{1}{5}$. This means she runs $\frac{1}{5} \cdot 30 = \boxed{ \textbf{(C) }6 }$

@@ -1,0 +1,9 @@
+==Problem==
+There are positive integers <math>x</math> and <math>y</math> that satisfy the system of equations 
+<cmath>
+\begin{align*}
+\log_{10} x + 2 \log_{10} (\text{gcd}(x,y)) &= 60\\
+\log_{10} y + 2 \log_{10} (\text{lcm}(x,y)) &= 570.
+\end{align*}
+</cmath>
+Let <math>m</math> be the number of (not necessarily distinct) prime factors in the prime factorization of <math>x</math>, and let <math>n</math> be the number of (not necessarily distinct) prime factors in the prime factorization of <math>y</math>. Find <math>3m+2n</math>.

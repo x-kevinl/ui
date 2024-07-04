@@ -1,0 +1,11 @@
+== Problem ==
+
+Jeremy's father drives him to school in rush hour traffic in 20 minutes. One day there is no traffic, so his father can drive him 18 miles per hour faster and gets him to school in 12 minutes. How far in miles is it to school?
+
+$
+\textbf{(A) } 4 \qquad
+\textbf{(B) } 6 \qquad
+\textbf{(C) } 8 \qquad
+\textbf{(D) } 9 \qquad
+\textbf{(E) } 12
+$

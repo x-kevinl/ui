@@ -1,0 +1,12 @@
+== Solution ==
+Suppose that the common perimeter is $P$.
+Then, the side lengths of the square and triangle, respectively, are $\frac{P}{4}$ and $\frac{P}{3}$
+The circle circumscribed about the square has a diameter equal to the diagonal of the square, which is $\frac{P\sqrt{2}}{4}$
+Therefore, the radius is $\frac{P\sqrt{2}}{8}$ and the area of the circle is
+$\pi \cdot \left(\frac{P\sqrt{2}}{8}\right)^2 = \pi \cdot \frac{2P^2}{64}=\frac{P^2 \pi}{32}=A$
+
+Now consider the circle circumscribed around the equilateral triangle. Due to symmetry, the circle must share a center with the equilateral triangle. The radius of the circle is simply the distance from the center of the triangle to a vertex.
+This distance is $\frac{2}{3}$ of an altitude. By $30-60-90$ right triangle properties, the altitude is $\frac{\sqrt{3}}{2} \cdot s$ where s is the side.
+So, the radius is $\frac{2}{3} \cdot \frac{\sqrt{3}}{2} \cdot \frac{P}{3} = \frac{P\sqrt{3}}{9}$
+The area of the circle is $\pi \cdot \left(\frac{P\sqrt{3}}{9}\right)^2=\pi \cdot \frac{3P^2}{81}=\frac{P^2\pi}{27}=B$
+So, $\frac{A}{B}=\frac{\frac{P^2 \pi}{32}}{\frac{P^2 \pi}{27}}=\frac{P^2 \pi}{32} \cdot \frac{27}{P^2\pi}=\boxed{\frac{27}{32} \implies \mathrm{(C) \ } \frac{27}{32}}$

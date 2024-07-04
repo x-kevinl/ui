@@ -1,0 +1,2 @@
+==Problem==
+Let <math>ABCD</math> be an isosceles trapezoid with <math>AD=BC</math> and <math>AB<CD.</math> Suppose that the distances from <math>A</math> to the lines <math>BC,CD,</math> and <math>BD</math> are <math>15,18,</math> and <math>10,</math> respectively. Let <math>K</math> be the area of <math>ABCD.</math> Find <math>\sqrt2 \cdot K.</math>

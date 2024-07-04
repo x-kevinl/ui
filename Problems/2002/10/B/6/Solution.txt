@@ -1,0 +1,2 @@
+== Solution 1 ==
+Factoring, we get $n^2 - 3n + 2 = (n-2)(n-1)$. Either $n-1$ or $n-2$ is odd, and the other is even.  Their product must yield an even number.  The only prime that is even is $2$, which is when $n$ is $3$ or $0$. Since $0$ is not a positive number, the answer is $\boxed{\mathrm{(B)}\ \text{one}}$.

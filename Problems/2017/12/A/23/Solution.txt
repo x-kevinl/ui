@@ -1,0 +1,34 @@
+==Solution==
+
+Let $r_1,r_2,$ and $r_3$ be the roots of $g(x)$. Let $r_4$ be the additional root of $f(x)$. Then from Vieta's formulas on the quadratic term of $g(x)$ and the cubic term of $f(x)$, we obtain the following:
+
+$$\begin{align*}
+r_1+r_2+r_3&=-a \\ 
+r_1+r_2+r_3+r_4&=-1
+\end{align*}$$
+
+Thus $r_4=a-1$.
+
+Now applying Vieta's formulas on the constant term of $g(x)$, the linear term of $g(x)$, and the linear term of $f(x)$, we obtain:
+
+$$\begin{align*}
+r_1r_2r_3  & = -10\\
+r_1r_2+r_2r_3+r_3r_1 &= 1\\ 
+r_1r_2r_3+r_2r_3r_4+r_3r_4r_1+r_4r_1r_2  & = -100\\
+\end{align*}$$
+
+Substituting for $r_1r_2r_3$ in the bottom equation and factoring the remainder of the expression, we obtain:
+
+$$-10+(r_1r_2+r_2r_3+r_3r_1)r_4=-10+r_4=-100$$
+
+It follows that $r_4=-90$. But $r_4=a-1$ so $a=-89$
+
+Now we can factor $f(x)$ in terms of $g(x)$ as
+
+$$f(x)=(x-r_4)g(x)=(x+90)g(x)$$
+
+Then $f(1)=91g(1)$ and
+
+$$g(1)=1^3-89\cdot 1^2+1+10=-77$$
+
+Hence $f(1)=91\cdot(-77)=\boxed{\textbf{(C)}\,-7007}$.

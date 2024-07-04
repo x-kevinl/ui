@@ -1,0 +1,23 @@
+== Solution ==
+<center><asy>
+size(200);
+pathpen=black;pointpen=black;pen f=fontsize(9);
+real r=44-6*35^.5;
+pair A=(0,96),B=(-28,0),C=(28,0),X=C-(64/3,0),Y=B+(4*r/3,0),P=X+(0,16),Q=Y+(0,r),M=foot(Q,X,P);
+path PC=CR(P,16),QC=CR(Q,r);
+D(A--B--C--cycle); D(Y--Q--P--X); D(Q--M); D(P--C,dashed);
+D(PC); D(QC); 
+MP("A",A,N,f);MP("B",B,f);MP("C",C,f);MP("X",X,f);MP("Y",Y,f);D(MP("P",P,NW,f));D(MP("Q",Q,NW,f));
+</asy></center>
+
+Let <math>X</math> and <math>Y</math> be the feet of the [[perpendicular]]s from <math>P</math> and <math>Q</math> to <math>BC</math>, respectively. Let the radius of <math>\odot Q</math> be <math>r</math>. We know that <math>PQ = r + 16</math>. From <math>Q</math> draw segment <math>\overline{QM} \parallel \overline{BC}</math> such that <math>M</math> is on <math>PX</math>. Clearly, <math>QM = XY</math> and <math>PM = 16-r</math>. Also, we know <math>QPM</math> is a right triangle.
+
+To find <math>XC</math>, consider the right triangle <math>PCX</math>. Since <math>\odot P</math> is tangent to <math>\overline{AC},\overline{BC}</math>, then <math>PC</math> [[bisect]]s <math>\angle ACB</math>. Let <math>\angle ACB = 2\theta</math>; then <math>\angle PCX = \angle QBX = \theta</math>. Dropping the altitude from <math>A</math> to <math>BC</math>, we recognize the <math>7 - 24 - 25</math> [[right triangle]], except scaled by <math>4</math>.
+
+So we get that <math>\tan(2\theta) = 24/7</math>. From the [[trigonometric identity|half-angle identity]], we find that <math>\tan(\theta) = \frac {3}{4}</math>. Therefore, <math>XC = \frac {64}{3}</math>. By similar reasoning in triangle <math>QBY</math>, we see that <math>BY = \frac {4r}{3}</math>.
+
+We conclude that <math>XY = 56 - \frac {4r + 64}{3} = \frac {104 - 4r}{3}</math>.
+
+So our right triangle <math>QPM</math> has sides <math>r + 16</math>, <math>r - 16</math>, and <math>\frac {104 - 4r}{3}</math>.
+
+By the [[Pythagorean Theorem]], simplification, and the [[quadratic formula]], we can get <math>r = 44 - 6\sqrt {35}</math>, for a final answer of <math>\fbox{254}</math>.

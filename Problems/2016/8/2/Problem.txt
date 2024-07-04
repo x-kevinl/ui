@@ -1,0 +1,14 @@
+== Problem ==
+
+In rectangle $ABCD$, $AB=6$ and $AD=8$. Point $M$ is the midpoint of $\overline{AD}$. What is the area of $\triangle AMC$?
+
+<asy>draw((0,4)--(0,0)--(6,0)--(6,8)--(0,8)--(0,4)--(6,8)--(0,0));
+label("$A$", (0,0), SW);
+label("$B$", (6, 0), SE);
+label("$C$", (6,8), NE);
+label("$D$", (0, 8), NW);
+label("$M$", (0, 4), W);
+label("$4$", (0, 2), W);
+label("$6$", (3, 0), S);</asy>
+
+$\textbf{(A) }12\qquad\textbf{(B) }15\qquad\textbf{(C) }18\qquad\textbf{(D) }20\qquad \textbf{(E) }24$

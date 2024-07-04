@@ -1,0 +1,6 @@
+== Solution ==
+Let us say that there are $f$ fifth graders. According to the given information, there must be $2f$ fourth graders and $4f$ third graders. The average time run by each student is equal to the total amount of time run divided by the number of students. This gives us $\frac{12\cdot 4f + 15\cdot 2f + 10\cdot f}{4f + 2f + f} = \frac{88f}{7f} = \frac{88}{7} \Rightarrow \boxed{C}$
+
+
+
+If you want to simplify the problem even more, just imagine/assume that only $1$ fifth grader existed. Then you can simply get rid of the variables.

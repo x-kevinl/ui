@@ -1,0 +1,7 @@
+== Solution 1 ==
+Let our number be <math>10a + b</math>, <math>a,b \neq 0</math>. Then we have two conditions: <math>10a + b \equiv 10a \equiv 0 \pmod{b}</math> and <math>10a + b \equiv b \pmod{a}</math>, or <math>a</math> divides into <math>b</math> and <math>b</math> divides into <math>10a</math>. Thus <math>b = a, 2a,</math> or <math>5a</math> (note that if <math>b = 10a</math>, then <math>b</math> would not be a digit).  
+
+*For <math>b = a</math>, we have <math>n = 11a</math> for nine possibilities, giving us a sum of <math>11 \cdot \frac {9(10)}{2} = 495</math>.  
+*For <math>b = 2a</math>, we have <math>n = 12a</math> for four possibilities (the higher ones give <math>b > 9</math>), giving us a sum of <math>12 \cdot \frac {4(5)}{2} = 120</math>.
+*For <math>b = 5a</math>, we have <math>n = 15a</math> for one possibility (again, higher ones give <math>b > 9</math>), giving us a sum of <math>15</math>. 
+If we ignore the case <math>b = 0</math> as we have been doing so far, then the sum is <math>495 + 120 + 15 = \boxed{630}</math>.

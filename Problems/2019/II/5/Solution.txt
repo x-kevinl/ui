@@ -1,0 +1,10 @@
+==Solution 1==
+Let us first consider the <math>4</math> ambassadors and the <math>6</math> even-numbered chairs. If we consider only their relative positions, they can sit in one of <math>3</math> distinct ways: Such that the <math>2</math> empty even-numbered chairs are adjacent, such that they are separated by one occupied even-numbered chair, and such that they are opposite each other. For each way, there are <math>4!=24</math> ways to assign the <math>4</math> ambassadors to the <math>4</math> selected seats.
+
+In the first way, there are <math>6</math> distinct orientations. The <math>4</math> advisors can be placed in any of the <math>5</math> odd-numbered chairs adjacent to the ambassadors, and for each placement, there is exactly one way to assign them to the ambassadors. This means that there are <math>24\cdot6\cdot\binom{5}{4}=720</math> total seating arrangements for this way.
+
+In the second way, there are <math>6</math> distinct orientations. <math>3</math> advisors can be placed in any of the <math>4</math> chairs adjacent to the "chunk" of <math>3</math> ambassadors, and <math>1</math> advisor can be placed in either of the <math>2</math> chairs adjacent to the "lonely" ambassador. Once again, for each placement, there is exactly one way to assign the advisors to the ambassadors. This means that there are <math>24\cdot6\cdot\binom{4}{3}\cdot\binom{2}{1}=1152</math> total seating arrangements for this way.
+
+In the third way, there are <math>3</math> distinct orientations. For both "chunks" of <math>2</math> ambassadors, <math>2</math> advisors can be placed in any of the <math>3</math> chairs adjacent to them, and once again, there is exactly one way to assign them for each placement. This means that there are <math>24\cdot3\cdot\binom{3}{2}\cdot\binom{3}{2}=648</math> total seating arrangements for this way.
+
+Totalling up the arrangements, there are <math>720+1152+648=2520</math> total ways to seat the people, and the remainder when <math>2520</math> is divided by <math>1000</math> is <math>\boxed{520}</math>. ~[[User:emerald_block|emerald_block]]

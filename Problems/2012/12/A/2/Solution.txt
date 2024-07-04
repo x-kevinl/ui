@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+Cagney can frost one in $20$ seconds, and Lacey can frost one in $30$ seconds. Working together, they can frost one in $\frac{20\cdot30}{20+30} = \frac{600}{50} = 12$ seconds. In $300$ seconds ($5$ minutes), they can frost $\boxed{\textbf{(D)}\ 25}$ cupcakes.

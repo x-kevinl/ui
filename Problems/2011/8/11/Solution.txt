@@ -1,0 +1,2 @@
+==Solution==
+Average the differences between each day. We get $10, -10,\text{ } 20,\text{ } 30,-20$. We find the average of this list to get $\boxed{\textbf{(A)}\ 6}$. ( In case you were wondering, the way to calculate the average is $\frac{(10+(-10)+20+30+(-20))}{5} = \frac{ 30}{5} = 6$. So the answer is indeed  $\boxed{\textbf{(A)}\ 6}$)

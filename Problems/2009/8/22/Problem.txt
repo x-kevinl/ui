@@ -1,0 +1,5 @@
+==Problem==
+
+How many whole numbers between 1 and 1000 do '''not''' contain the digit 1?
+
+$ \textbf{(A)}\ 512 \qquad \textbf{(B)}\ 648 \qquad \textbf{(C)}\ 720 \qquad \textbf{(D)}\ 728 \qquad \textbf{(E)}\ 800$

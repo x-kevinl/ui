@@ -1,0 +1,21 @@
+==Solution==
+
+After chasing angles, <math>\angle ATC=75^{\circ}</math> and <math>\angle TCA=75^{\circ}</math>, meaning <math>\triangle TAC</math> is an isosceles triangle and <math>AC=24</math>.
+
+Using law of sines on <math>\triangle ABC</math>, we can create the following equation:
+
+<math>\frac{24}{\sin(\angle ABC)}</math> <math>=</math> <math>\frac{BC}{\sin(\angle BAC)}</math>
+
+<math>\angle ABC=45^{\circ}</math> and <math>\angle BAC=60^{\circ}</math>, so <math>BC = 12\sqrt{6}</math>.
+
+We can then use the Law of Sines area formula <math>\frac{1}{2} \cdot BC \cdot AC \cdot \sin(\angle BCA)</math> to find the area of the triangle.
+
+<math>\sin(75)</math> can be found through the sin addition formula.
+
+<math>\sin(75)</math> <math>=</math> <math>\frac{\sqrt{6} + \sqrt{2}}{4}</math>
+
+Therefore, the area of the triangle is <math>\frac{\sqrt{6} + \sqrt{2}}{4}</math> <math>\cdot</math> <math>24</math> <math>\cdot</math> <math>12\sqrt{6}</math> <math>\cdot</math> <math>\frac{1}{2}</math>
+
+<math>72\sqrt{3} + 216</math>
+
+<math>72 + 3 + 216 =</math> <math>\boxed{291}</math>

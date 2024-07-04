@@ -1,0 +1,24 @@
+== Solution ==
+
+The angle $APB$ is obtuse if and only if $P$ lies inside the circle with diameter $AB$. (This follows for example from the fact that the inscribed angle is half of the central angle for the same arc.)
+
+<asy>
+defaultpen(0.8);
+real pi=3.14159265359;
+pair A=(0,2), B=(4,0), C=(2*pi+1, 0), D=(2*pi+1,4), E=(0,4), F=(0,0);
+draw(A--B--C--D--E--cycle);
+draw(circle((A+B)/2,length(B-A)/2));
+label("$A$",A,W);
+label("$B$",B,SE);
+label("$C$",C,SE);
+label("$D$",D,NE);
+label("$E$",E,NW);
+label("$F$",F,SW);
+draw(A--F--B,dashed);
+</asy>
+
+The area of $AFB$ is $[AFB] = \frac {AF\cdot FB}2 = 4$, and the area of $ABCDE$ is $CD\cdot DE - [AFB] = 4\cdot (2\pi+1) - 4 = 8\pi$.
+
+From the [[Pythagorean theorem]] the length of $AB$ is $\sqrt{2^2 + 4^2} = 2\sqrt{5}$, thus the radius of the circle is $\sqrt{5}$, and the area of the half-circle that is inside $ABCDE$ is $\frac{ 5\pi }2$. 
+
+Therefore the probability that $APB$ is obtuse is $\frac{ \frac{ 5\pi }2 }{ 8\pi } = \boxed{\text{(C) } \frac 5{16}}$.

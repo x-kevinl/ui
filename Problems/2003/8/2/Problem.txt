@@ -1,0 +1,4 @@
+==Problem==
+Which of the following numbers has the smallest prime factor?
+
+$\mathrm{(A)}\ 55 \qquad\mathrm{(B)}\ 57 \qquad\mathrm{(C)}\ 58 \qquad\mathrm{(D)}\ 59 \qquad\mathrm{(E)}\ 61$

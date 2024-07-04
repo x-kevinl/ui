@@ -1,0 +1,24 @@
+== Solution 1 ==
+Note that <math>\cos{3C}=-\cos{(3A+3B)}</math>. Thus, our expression is of the form <math>\cos{3A}+\cos{3B}-\cos{(3A+3B)}=1</math>. Let <math>\cos{3A}=x</math> and <math>\cos{3B}=y</math>.
+
+Using the fact that <math>\cos(3A+3B)=\cos 3A\cos 3B-\sin 3A\sin 3B=xy-\sqrt{1-x^2}\sqrt{1-y^2}</math>, we get <math>x+y-xy+\sqrt{1-x^2}\sqrt{1-y^2}=1</math>, or <math>\sqrt{1-x^2}\sqrt{1-y^2}=xy-x-y+1=(x-1)(y-1)</math>. 
+
+Squaring both sides, we get <math>(1-x^2)(1-y^2) = [(x-1)(y-1)]^2</math>. Cancelling factors, <math>(1+x)(1+y) = (1-x)(1-y)</math>.
+
+*Notice here that we cancelled out one factor of (x-1) and (y-1), which implies that (x-1) and (y-1) were not 0. If indeed they were 0 though, we would have 
+
+<math>cos(3A)-1=0, cos(3A)=1</math> 
+
+For this we could say that A must be 120 degrees for this to work. This is one case. The B case follows in the same way, where B must be equal to 120 degrees. This doesn't change the overall solution though, as then the other angles are irrelevant (this is the largest angle, implying that this will have the longest side and so we would want to have the 120 degreee angle opposite of the unknown side).
+
+Expanding, <math>1+x+y+xy=1-x-y+xy\rightarrow x+y=-x-y</math>. 
+
+Simplification leads to <math>x+y=0</math>.
+
+Therefore, <math>\cos(3C)=1</math>. So <math>\angle C</math> could be <math>0^\circ</math> or <math>120^\circ</math>. We eliminate <math>0^\circ</math> and use law of cosines to get our answer: 
+
+<cmath>m=10^2+13^2-2\cdot 10\cdot 13\cos\angle C</cmath>
+<cmath>\rightarrow m=269-260\cos 120^\circ=269-260\left(\text{-}\frac{1}{2}\right)</cmath>
+<cmath>\rightarrow m=269+130=399</cmath>
+ 
+<math>\framebox{399}</math>

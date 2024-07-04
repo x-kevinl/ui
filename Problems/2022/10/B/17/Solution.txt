@@ -1,0 +1,49 @@
+==Solution 1 (Modular Arithmetic)==
+
+For $\textbf{(A)}$ modulo $3,$
+$$
+\begin{align*}
+2^{606} - 1 & \equiv (-1)^{606} - 1 \\
+& \equiv 1 - 1 \\
+& \equiv 0 .
+\end{align*}
+$$
+Thus, $2^{606} - 1$ is divisible by $3.$
+
+For $\textbf{(B)}$ modulo $5,$
+$$
+\begin{align*}
+2^{606} + 1 & \equiv 2^{{\rm Rem} ( 606, \phi(5) )} + 1 \\
+& \equiv 2^{{\rm Rem} ( 606, 4 )} + 1 \\
+& \equiv 2^2 + 1 \\
+& \equiv 0 .
+\end{align*}
+$$
+Thus, $2^{606} + 1$ is divisible by $5.$
+
+For $\textbf{(D)}$ modulo $3,$
+$$
+\begin{align*}
+2^{607} + 1 & \equiv (-1)^{607} + 1 \\
+& \equiv - 1 + 1 \\
+& \equiv 0 .
+\end{align*}
+$$
+Thus, $2^{607} + 1$ is divisible by $3.$
+
+For $\textbf{(E)}$ modulo $5,$
+$$
+\begin{align*}
+2^{607} + 3^{607}
+& \equiv 2^{607} + (-2)^{607} \\
+& \equiv 2^{607} - 2^{607} \\
+& \equiv 0 .
+\end{align*}
+$$
+Thus, $2^{607} + 3^{607}$ is divisible by $5.$
+
+Therefore, the answer is $\boxed{\textbf{(C) }2^{607} - 1}.$
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)
+
+~MrThinker (LaTeX Error)

@@ -1,0 +1,2 @@
+==Solution==
+The first two tasks took $\text{2:40 PM}-\text{1:00 PM}=100$ minutes. Thus, each task takes $100\div 2=50$ minutes. So the third task finishes at $\text{2:40 PM}+50$ minutes $=\fbox{\textbf{(B)}\; \text{3:30 PM}}$.

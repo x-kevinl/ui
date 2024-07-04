@@ -1,0 +1,9 @@
+==Solution 1==
+
+We can find the possible values of the common difference by finding the numbers which satisfy the conditions. To do this, we find the minimum of the last two: $241-20=221$, and the maximum–$250-13=237$. There is a difference of $13$ between them, so only $17$ and $18$ work, as $17\cdot13=221$, so $17$ satisfies $221\leq 13x\leq237$. The number $18$ is similarly found. $19$, however, is too much.
+
+Now, we check with the first and last equations using the same method. We know $241-10\leq 14x\leq250-1$. Therefore, $231\leq 14x\leq249$. We test both values we just got, and we can realize that $18$ is too large to satisfy this inequality. On the other hand, we can now find that the difference will be $17$, which satisfies this inequality.
+
+The last step is to find the first term. We know that the first term can only be from $1$ to $3$ since any larger value would render the second inequality invalid. Testing these three, we find that only $a_1=3$ will satisfy all the inequalities. Therefore, $a_{14}=13\cdot17+3=224$. The sum of the digits is therefore $\boxed{\textbf{(A)}\ 8}$.
+
+~apex304, SohumUttamchandani, wuwang2002, TaeKim, Cxrupptedpat

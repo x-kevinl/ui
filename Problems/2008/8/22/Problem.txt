@@ -1,0 +1,8 @@
+==Problem==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>For how many positive integer values of $n$ are both $\frac{n}{3}$ and $3n$ three-digit whole numbers?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+$\textbf{(A)}\ 12\qquad
+\textbf{(B)}\ 21\qquad
+\textbf{(C)}\ 27\qquad
+\textbf{(D)}\ 33\qquad
+\textbf{(E)}\ 34$

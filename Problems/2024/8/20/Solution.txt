@@ -1,0 +1,6 @@
+==Solution 1==
+
+The only equilateral triangles that can be formed are through the diagonals of the faces of the square. From P you have $3$ possible vertices that are possible to form a diagonal through one of the faces. Therefore, there are $3$ possible triangles. So the answer is $\boxed{\textbf{(D) }3}$
+~Math645
+~andliu766
+~e___

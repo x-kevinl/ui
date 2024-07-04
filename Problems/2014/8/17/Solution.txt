@@ -1,0 +1,2 @@
+==Solution 1==
+Note that on a normal day, it takes him $1/3$ hour to get to school. However, today it took $\frac{1/2 \text{ mile}}{2 \text{ mph}}=1/4$ hour to walk the first $1/2$ mile. That means that he has $1/3 -1/4 = 1/12$ hours left to get to school, and $1/2$ mile left to go. Therefore, his speed must be $\frac{1/2 \text{ mile}}{1/12 \text { hour}}=\boxed{6 \text{ mph}}$, so $\boxed{\text{(B) }6}$ is the answer.

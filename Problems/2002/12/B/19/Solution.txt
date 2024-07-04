@@ -1,0 +1,2 @@
+== Solution ==
+Adding up the three equations gives $2(ab + bc + ca) = 152 + 162 + 170 = 484 \Longrightarrow ab + bc + ca = 242$. Subtracting each of the above equations from this yields, respectively, $bc = 90, ca = 80, ab = 72$. Taking their product, $ab \cdot bc \cdot ca = a^2b^2c^2 = 90 \cdot 80 \cdot 72 = 720^2 \Longrightarrow abc = \boxed{720} \Rightarrow \mathrm{(D)}$.

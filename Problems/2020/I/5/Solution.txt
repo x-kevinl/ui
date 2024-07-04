@@ -1,0 +1,6 @@
+== Solution 1 ==
+Realize that any sequence that works (ascending) can be reversed for descending, so we can just take the amount of sequences that satisfy the ascending condition and multiply by two.
+
+If we choose any of the numbers <math>1</math> through <math>6</math>, there are five other spots to put them, so we get <math>6 \cdot 5 = 30</math>. However, we overcount some cases. Take the example of <math>132456</math>. We overcount this case because we can remove the <math>3</math> or the <math>2</math>. Therefore, any cases with two adjacent numbers swapped is overcounted, so we subtract <math>5</math> cases (namely, <math>213456, 132456, 124356, 123546, 123465</math>,) to get <math>30-5=25</math>, but we have to add back one more for the original case, <math>123456</math>. Therefore, there are <math>26</math> cases. Multiplying by <math>2</math> gives the desired answer, <math>\boxed{052}</math>.
+
+~molocyxu

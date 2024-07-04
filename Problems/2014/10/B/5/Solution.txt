@@ -1,0 +1,3 @@
+==Solution==
+
+We note that the total length must be the same as the total height, as it is given in the problem. Calling the width of each small rectangle $2x$, and the height $5x$, we can see that the length is composed of $4$ widths and $5$ bars of length $2$. This is equal to two heights of the small rectangles as well as $3$ bars of $2$. Thus, $4(2x) + 5(2) = 2(5x) + 3(2)$. We quickly find that $x = 2$. The total side length is  $4(4) + 5(2) = 2(10) + 3(2) = 26$, or $\boxed{\textbf{(A)}}$.

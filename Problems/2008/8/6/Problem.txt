@@ -1,0 +1,18 @@
+== Problem ==
+In the figure, what is the ratio of the area of the gray squares to the area of the white squares?
+
+<asy>
+size((70));
+draw((10,0)--(0,10)--(-10,0)--(0,-10)--(10,0));
+draw((-2.5,-7.5)--(7.5,2.5));
+draw((-5,-5)--(5,5));
+draw((-7.5,-2.5)--(2.5,7.5));
+draw((-7.5,2.5)--(2.5,-7.5));
+draw((-5,5)--(5,-5));
+draw((-2.5,7.5)--(7.5,-2.5));
+fill((-10,0)--(-7.5,2.5)--(-5,0)--(-7.5,-2.5)--cycle, gray);
+fill((-5,0)--(0,5)--(5,0)--(0,-5)--cycle, gray);
+fill((5,0)--(7.5,2.5)--(10,0)--(7.5,-2.5)--cycle, gray);
+</asy>
+
+$ \textbf{(A)}\ 3:10 \qquad\textbf{(B)}\ 3:8 \qquad\textbf{(C)}\ 3:7 \qquad\textbf{(D)}\ 3:5 \qquad\textbf{(E)}\ 1:1 $

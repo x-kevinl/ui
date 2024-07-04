@@ -1,0 +1,11 @@
+==Solution==
+
+(a) Triangles $ABP$ and $MNP$ are similar, and since $PM=\frac{1}{2}AP$, $MN=\frac{1}{2}AB$.
+
+(b) We see the perimeter changes. For example, imagine if P was extremely far to the left.
+
+(c) The area clearly doesn't change, as both the base $AB$ and its corresponding height remain the same.
+
+(d) The bases $AB$ and $MN$ do not change, and neither does the height, so the area of the trapezoid remains the same.
+
+Only $1$ quantity changes, so the correct answer is $\boxed{\text{B}}$.

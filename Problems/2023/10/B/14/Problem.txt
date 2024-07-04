@@ -1,0 +1,4 @@
+==Problem==
+How many ordered pairs of integers $(m, n)$ satisfy the equation $m^2+mn+n^2 = m^2n^2$?
+
+$\textbf{(A) }7\qquad\textbf{(B) }1\qquad\textbf{(C) }3\qquad\textbf{(D) }6\qquad\textbf{(E) }5$

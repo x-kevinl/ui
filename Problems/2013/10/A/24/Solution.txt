@@ -1,0 +1,56 @@
+==Solution 1==
+
+Let us label the players of the first team $A$, $B$, and $C$, and those of the second team, $X$, $Y$, and $Z$. 
+
+$\textbf{1}$. One way of scheduling all six distinct rounds could be:
+
+Round 1: $AX$ $BY$ $CZ$
+
+Round 2: $AX$ $BZ$ $CY$
+
+Round 3: $AY$ $BX$ $CZ$
+
+Round 4: $AY$ $BZ$ $CX$
+
+Round 5: $AZ$ $BX$ $CY$
+
+Round 6: $AZ$ $BY$ $CX$
+
+
+The above mentioned schedule ensures that each player of one team plays twice with each player from another team. Now you can generate a completely new schedule by permutating those $6$ rounds and that can be done in $6!=720$ ways.
+
+$\textbf{2}$. One can also make the schedule in such a way that two rounds are repeated.  
+
+(a)
+
+Round 1: $AX$ $BZ$ $CY$
+
+Round 2: $AX$ $BZ$ $CY$
+
+Round 3: $AY$ $BX$ $CZ$
+
+Round 4: $AY$ $BX$ $CZ$
+
+Round 5: $AZ$ $BY$ $CX$
+
+Round 6: $AZ$ $BY$ $CX$
+
+(b)
+
+Round 1: $AX$ $BY$ $CZ$
+
+Round 2: $AX$ $BY$ $CZ$
+
+Round 3: $AY$ $BZ$ $CX$
+
+Round 4: $AY$ $BZ$ $CX$
+
+Round 5: $AZ$ $BX$ $CY$
+
+Round 6: $AZ$ $BX$ $CY$
+
+As mentioned earlier any permutation of (a) and (b) will also give us a new schedule. For both (a) and (b) the number of permutations are
+$\frac{6!}{2!2!2!}$ = $90$
+
+
+So the total number of schedules is $720+90+90$ =$\boxed{\textbf{(E)} 900}$.

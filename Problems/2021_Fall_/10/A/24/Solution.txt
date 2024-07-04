@@ -1,0 +1,261 @@
+==Solution 1==
+For simplicity, we will name this cube $ABCDEFGH$ by vertices, as shown below.
+<asy>
+/* Made by MRENTHUSIASM */
+size(150);
+
+pair A, B, C, D, E, F, G, H;
+A = (0,1);
+B = (1,1);
+C = (1,0);
+D = (0,0);
+E = (0.3,1.3);
+F = (1.3,1.3);
+G = (1.3,0.3);
+H = (0.3,0.3);
+
+draw(A--B--C--D--cycle^^A--E^^B--F^^C--G^^E--F--G);
+draw(H--D^^H--E^^H--G,dashed);
+
+dot("$A$",A,1.5*W,linewidth(4));
+dot("$B$",B,1.5*(1,0),linewidth(4));
+dot("$C$",C,1.5*SE,linewidth(4));
+dot("$D$",D,1.5*SW,linewidth(4));
+dot("$E$",E,1.5*NW,linewidth(4));
+dot("$F$",F,1.5*NE,linewidth(4));
+dot("$G$",G,1.5*NE,linewidth(4));
+dot("$H$",H,1.5*NW,linewidth(4));
+</asy>
+Note that for each face of this cube, two edges are labeled $0,$ and two edges are labeled $1.$ For all twelve edges of this cube, we conclude that six edges are labeled $0,$ and six edges are labeled $1.$
+
+We apply casework to face $ABCD.$ Recall that there are $\binom42=6$ ways to label its edges:
+<ol style="margin-left: 1.5em;">
+  <li><b>Opposite edges have the same label.</b></li><p>
+There are $2$ ways to label the edges of $ABCD.$ We will consider one of the ways, then multiply the count by $2.$ Without loss of generality, we assume that $\overline{AB},\overline{BC},\overline{CD},\overline{DA}$ are labeled $1,0,1,0,$ respectively:<p>
+We apply casework to the label of $\overline{AE},$ as shown below.
+<asy>
+/* Made by MRENTHUSIASM */
+size(1200,150);
+
+pair A, B, C, D, E, F, G, H, A1, B1, C1, D1, E1, F1, G1, H1, V;
+A = (0,1);
+B = (1,1);
+C = (1,0);
+D = (0,0);
+E = (0.3,1.3);
+F = (1.3,1.3);
+G = (1.3,0.3);
+H = (0.3,0.3);
+V = (3,0);
+A1 = A+V;
+B1 = B+V;
+C1 = C+V;
+D1 = D+V;
+E1 = E+V;
+F1 = F+V;
+G1 = G+V;
+H1 = H+V;
+
+draw(A--B--C--D--cycle^^A--E^^B--F^^C--G^^E--F--G);
+draw(H--D^^H--E^^H--G,dashed);
+draw(A1--B1--C1--D1--cycle^^A1--E1^^B1--F1^^C1--G1^^E1--F1--G1);
+draw(H1--D1^^H1--E1^^H1--G1,dashed);
+
+dot("$A$",A,1.5*W,linewidth(4));
+dot("$B$",B,1.5*(1,0),linewidth(4));
+dot("$C$",C,1.5*SE,linewidth(4));
+dot("$D$",D,1.5*SW,linewidth(4));
+dot("$E$",E,1.5*NW,linewidth(4));
+dot("$F$",F,1.5*NE,linewidth(4));
+dot("$G$",G,1.5*NE,linewidth(4));
+dot("$H$",H,1.5*NW,linewidth(4));
+dot("$A$",A1,1.5*W,linewidth(4));
+dot("$B$",B1,1.5*(1,0),linewidth(4));
+dot("$C$",C1,1.5*SE,linewidth(4));
+dot("$D$",D1,1.5*SW,linewidth(4));
+dot("$E$",E1,1.5*NW,linewidth(4));
+dot("$F$",F1,1.5*NE,linewidth(4));
+dot("$G$",G1,1.5*NE,linewidth(4));
+dot("$H$",H1,1.5*NW,linewidth(4));
+
+label("$1$",midpoint(A--B),red,Fill(1.5,2,white));
+label("$0$",midpoint(B--C),red,Fill(1.5,2,white));
+label("$1$",midpoint(C--D),red,Fill(1.5,2,white));
+label("$0$",midpoint(D--A),red,Fill(1.5,2,white));
+label("$1$",midpoint(A1--B1),red,Fill(1.5,2,white));
+label("$0$",midpoint(B1--C1),red,Fill(1.5,2,white));
+label("$1$",midpoint(C1--D1),red,Fill(1.5,2,white));
+label("$0$",midpoint(D1--A1),red,Fill(1.5,2,white));
+
+label("$0$",midpoint(A--E),blue,Fill(1.5,2,white));
+label("$1$",midpoint(E--H),blue,Fill(1.5,2,white));
+label("$1$",midpoint(H--D),blue,Fill(1.5,2,white));
+label("$0$",midpoint(G--C),blue,Fill(1.5,2,white));
+label("$0$",midpoint(G--H),blue,Fill(1.5,2,white));
+label("$1$",midpoint(B--F),blue,Fill(1.5,2,white));
+label("$1$",midpoint(F--G),blue,Fill(1.5,2,white));
+label("$0$",midpoint(E--F),blue,Fill(1.5,2,white));
+
+label("$1$",midpoint(A1--E1),blue,Fill(1.5,2,white));
+label("$0$",midpoint(E1--F1),blue,Fill(1.5,2,white));
+label("$0$",midpoint(B1--F1),blue,Fill(1.5,2,white));
+label("$1$",midpoint(F1--G1),blue,Fill(1.5,2,white));
+label("$1$",midpoint(G1--C1),blue,Fill(1.5,2,white));
+label("$0$",midpoint(G1--H1),blue,Fill(1.5,2,white));
+label("$0$",midpoint(H1--D1),blue,Fill(1.5,2,white));
+label("$1$",midpoint(E1--H1),blue,Fill(1.5,2,white));
+
+label("The label of $\overline{AE}$ is $0.$",(D.x-0.25,D.y-0.5),blue,align=right);
+label("The label of $\overline{AE}$ is $1.$",(D1.x-0.25,D1.y-0.5),blue,align=right);
+</asy>
+We have $2\cdot2=4$ such labelings for this case.
+  <li><b>Opposite edges have different labels.</b></li><p>
+There are $4$ ways to label the edges of $ABCD.$ We will consider one of the ways, then multiply the count by $4.$ Without loss of generality, we assume that $\overline{AB},\overline{BC},\overline{CD},\overline{DA}$ are labeled $1,1,0,0,$ respectively:<p>
+We apply casework to the labels of $\overline{AE}$ and $\overline{BF},$ as shown below.
+<asy>
+/* Made by MRENTHUSIASM */
+size(1200,150);
+
+pair A, B, C, D, E, F, G, H, A1, B1, C1, D1, E1, F1, G1, H1, A2, B2, C2, D2, E2, F2, G2, H2, A3, B3, C3, D3, E3, F3, G3, H3, V;
+A = (0,1);
+B = (1,1);
+C = (1,0);
+D = (0,0);
+E = (0.3,1.3);
+F = (1.3,1.3);
+G = (1.3,0.3);
+H = (0.3,0.3);
+V = (3,0);
+A1 = A+V;
+B1 = B+V;
+C1 = C+V;
+D1 = D+V;
+E1 = E+V;
+F1 = F+V;
+G1 = G+V;
+H1 = H+V;
+A2 = A1+V;
+B2 = B1+V;
+C2 = C1+V;
+D2 = D1+V;
+E2 = E1+V;
+F2 = F1+V;
+G2 = G1+V;
+H2 = H1+V;
+A3 = A2+V;
+B3 = B2+V;
+C3 = C2+V;
+D3 = D2+V;
+E3 = E2+V;
+F3 = F2+V;
+G3 = G2+V;
+H3 = H2+V;
+
+draw(A--B--C--D--cycle^^A--E^^B--F^^C--G^^E--F--G);
+draw(H--D^^H--E^^H--G,dashed);
+draw(A1--B1--C1--D1--cycle^^A1--E1^^B1--F1^^C1--G1^^E1--F1--G1);
+draw(H1--D1^^H1--E1^^H1--G1,dashed);
+draw(A2--B2--C2--D2--cycle^^A2--E2^^B2--F2^^C2--G2^^E2--F2--G2);
+draw(H2--D2^^H2--E2^^H2--G2,dashed);
+draw(A3--B3--C3--D3--cycle^^A3--E3^^B3--F3^^C3--G3^^E3--F3--G3);
+draw(H3--D3^^H3--E3^^H3--G3,dashed);
+
+dot("$A$",A,W,linewidth(4));
+dot("$B$",B,(1,0),linewidth(4));
+dot("$C$",C,SE,linewidth(4));
+dot("$D$",D,SW,linewidth(4));
+dot("$E$",E,NW,linewidth(4));
+dot("$F$",F,NE,linewidth(4));
+dot("$G$",G,NE,linewidth(4));
+dot("$H$",H,NW,linewidth(4));
+dot("$A$",A1,W,linewidth(4));
+dot("$B$",B1,(1,0),linewidth(4));
+dot("$C$",C1,SE,linewidth(4));
+dot("$D$",D1,SW,linewidth(4));
+dot("$E$",E1,NW,linewidth(4));
+dot("$F$",F1,NE,linewidth(4));
+dot("$G$",G1,NE,linewidth(4));
+dot("$H$",H1,NW,linewidth(4));
+dot("$A$",A2,W,linewidth(4));
+dot("$B$",B2,(1,0),linewidth(4));
+dot("$C$",C2,SE,linewidth(4));
+dot("$D$",D2,SW,linewidth(4));
+dot("$E$",E2,NW,linewidth(4));
+dot("$F$",F2,NE,linewidth(4));
+dot("$G$",G2,NE,linewidth(4));
+dot("$H$",H2,NW,linewidth(4));
+dot("$A$",A3,W,linewidth(4));
+dot("$B$",B3,(1,0),linewidth(4));
+dot("$C$",C3,SE,linewidth(4));
+dot("$D$",D3,SW,linewidth(4));
+dot("$E$",E3,NW,linewidth(4));
+dot("$F$",F3,NE,linewidth(4));
+dot("$G$",G3,NE,linewidth(4));
+dot("$H$",H3,NW,linewidth(4));
+
+label("$1$",midpoint(A--B),red,Fill(1.5,2,white));
+label("$1$",midpoint(B--C),red,Fill(1.5,2,white));
+label("$0$",midpoint(C--D),red,Fill(1.5,2,white));
+label("$0$",midpoint(D--A),red,Fill(1.5,2,white));
+label("$1$",midpoint(A1--B1),red,Fill(1.5,2,white));
+label("$1$",midpoint(B1--C1),red,Fill(1.5,2,white));
+label("$0$",midpoint(C1--D1),red,Fill(1.5,2,white));
+label("$0$",midpoint(D1--A1),red,Fill(1.5,2,white));
+label("$1$",midpoint(A2--B2),red,Fill(1.5,2,white));
+label("$1$",midpoint(B2--C2),red,Fill(1.5,2,white));
+label("$0$",midpoint(C2--D2),red,Fill(1.5,2,white));
+label("$0$",midpoint(D2--A2),red,Fill(1.5,2,white));
+label("$1$",midpoint(A3--B3),red,Fill(1.5,2,white));
+label("$1$",midpoint(B3--C3),red,Fill(1.5,2,white));
+label("$0$",midpoint(C3--D3),red,Fill(1.5,2,white));
+label("$0$",midpoint(D3--A3),red,Fill(1.5,2,white));
+
+label("$0$",midpoint(A--E),blue,Fill(0,0,white));
+label("$0$",midpoint(B--F),blue,Fill(0,0,white));
+label("$1$",midpoint(E--F),blue,Fill(1.5,2,white));
+label("$1$",midpoint(E--H),blue,Fill(1.5,2,white));
+label("$1$",midpoint(D--H),blue,Fill(0,0,white));
+label("$0$",midpoint(F--G),blue,Fill(1.5,2,white));
+label("$0$",midpoint(G--H),blue,Fill(1.5,2,white));
+label("$1$",midpoint(G--C),blue,Fill(0,0,white));
+
+label("$0$",midpoint(A1--E1),blue,Fill(0,0,white));
+label("$1$",midpoint(B1--F1),blue,Fill(0,0,white));
+label("$0$",midpoint(E1--F1),blue,Fill(1.5,2,white));
+label("$1$",midpoint(E1--H1),blue,Fill(1.5,2,white));
+label("$1$",midpoint(D1--H1),blue,Fill(0,0,white));
+label("$0$",midpoint(F1--G1),blue,Fill(1.5,2,white));
+label("$1$",midpoint(G1--H1),blue,Fill(1.5,2,white));
+label("$0$",midpoint(G1--C1),blue,Fill(0,0,white));
+
+label("$1$",midpoint(A2--E2),blue,Fill(0,0,white));
+label("$0$",midpoint(B2--F2),blue,Fill(0,0,white));
+label("$0$",midpoint(E2--F2),blue,Fill(1.5,2,white));
+label("$1$",midpoint(E2--H2),blue,Fill(1.5,2,white));
+label("$0$",midpoint(D2--H2),blue,Fill(0,0,white));
+label("$0$",midpoint(F2--G2),blue,Fill(1.5,2,white));
+label("$1$",midpoint(G2--H2),blue,Fill(1.5,2,white));
+label("$1$",midpoint(G2--C2),blue,Fill(0,0,white));
+
+label("$1$",midpoint(A3--E3),blue,Fill(0,0,white));
+label("$0$",midpoint(B3--F3),blue,Fill(0,0,white));
+label("$0$",midpoint(E3--F3),blue,Fill(1.5,2,white));
+label("$0$",midpoint(E3--H3),blue,Fill(1.5,2,white));
+label("$1$",midpoint(D3--H3),blue,Fill(0,0,white));
+label("$1$",midpoint(F3--G3),blue,Fill(1.5,2,white));
+label("$1$",midpoint(G3--H3),blue,Fill(1.5,2,white));
+label("$0$",midpoint(G3--C3),blue,Fill(0,0,white));
+
+label("The label of $\overline{AE}$ is $0.$",(D.x-0.25,D.y-0.5),blue,align=right);
+label("The label of $\overline{BF}$ is $0.$",(D.x-0.25,D.y-0.75),blue,align=right);
+label("The label of $\overline{AE}$ is $0.$",(D1.x-0.25,D1.y-0.5),blue,align=right);
+label("The label of $\overline{BF}$ is $1.$",(D1.x-0.25,D1.y-0.75),blue,align=right);
+draw(brace((G3.x+0.25,-0.5),(D2.x-0.25,-0.5),.3),blue);
+label("The label of $\overline{AE}$ is $1.$",(G2.x-0.25,D2.y-1),blue,align=right);
+label("The label of $\overline{BF}$ is $0.$",(G2.x-0.25,D2.y-1.25),blue,align=right);
+</asy>
+We have $4\cdot4=16$ such labelings for this case.
+</ol>
+Therefore, we have $4+16=\boxed{\textbf{(E) } 20}$ such labelings in total.
+
+~MRENTHUSIASM

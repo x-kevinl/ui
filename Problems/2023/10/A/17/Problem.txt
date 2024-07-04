@@ -1,0 +1,4 @@
+==Problem==
+Let $ABCD$ be a rectangle with $AB = 30$ and $BC = 28$. Point $P$ and $Q$ lie on $\overline{BC}$ and $\overline{CD}$ respectively so that all sides of $\triangle{ABP}, \triangle{PCQ},$ and $\triangle{QDA}$ have integer lengths. What is the perimeter of $\triangle{APQ}$?
+
+$\textbf{(A) } 84 \qquad \textbf{(B) } 86 \qquad \textbf{(C) } 88 \qquad \textbf{(D) } 90 \qquad \textbf{(E) } 92$

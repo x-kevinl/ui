@@ -1,0 +1,2 @@
+==Solution 1==
+WLOG, let there be $100$ students. $60$ of them like dancing, and $40$ do not. Of those who like dancing, $20\%$, or $12$ of them say they dislike dancing. Of those who dislike dancing, $90\%$, or $36$ of them say they dislike it. Thus, $\frac{12}{12+36} = \frac{12}{48} = \frac{1}{4} = 25\% \boxed{\textbf{(D)}}$

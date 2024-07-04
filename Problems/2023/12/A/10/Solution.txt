@@ -1,0 +1,4 @@
+== Solution 1==
+Because $y^3=x^2$, set $x=a^3$, $y=a^2$ ($a\neq 0$). Put them in $(y-x)^2=4y^2$ we get $(a^2(a-1))^2=4a^4$ which implies $a^2-2a+1=4$. Solve the equation to get $a=3$ or $-1$. Since $x$ and $y$ are positive, $a=3$ and $x+y=3^3+3^2=\boxed{\textbf{(D)} 36}$.
+
+~plasta

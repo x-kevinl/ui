@@ -1,0 +1,21 @@
+== Solution ==
+
+Any point outside the square with side length <math>\frac{1}{3}</math> that has the same center and orientation as the unit square and inside the square with side length <math>\frac{3}{5}</math> that has the same center and orientation as the unit square has <math>\frac{1}{5}\le d(P)\le\frac{1}{3}</math>.
+
+<center><asy>
+unitsize(1mm);
+defaultpen(linewidth(.8pt));
+
+draw((0,0)--(0,30)--(30,30)--(30,0)--cycle);
+draw((6,6)--(6,24)--(24,24)--(24,6)--cycle);
+draw((10,10)--(10,20)--(20,20)--(20,10)--cycle);
+fill((6,6)--(6,24)--(24,24)--(24,6)--cycle,gray);
+fill((10,10)--(10,20)--(20,20)--(20,10)--cycle,white);
+
+</asy></center>
+
+Since the area of the unit square is <math>1</math>, the probability of a point <math>P</math> with <math>\frac{1}{5}\le d(P)\le\frac{1}{3}</math> is the area of the shaded region, which is the difference of the area of two squares.
+
+<math>\left(\frac{3}{5}\right)^2-\left(\frac{1}{3}\right)^2=\frac{9}{25}-\frac{1}{9}=\frac{56}{225}</math>
+
+Thus, the answer is <math>56 + 225 = \boxed{281}.</math>

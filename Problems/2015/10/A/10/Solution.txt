@@ -1,0 +1,12 @@
+==Solution 1==
+The first thing one would want to do is place a possible letter that works and then stem off of it.  For example, if we start with an $a$, we can only place a $c$ or $d$ next to it.  Unfortunately, after that step, we can't do too much, since:
+
+$acbd$ is not allowed because of the $cb$, and $acdb$ is not allowed because of the $cd$. 
+
+We get the same problem if we start with a $d$, since a $b$ will have to end up in the middle, causing it to be adjacent to an $a$ or $c$.
+
+If we start with a $b$, the next letter would have to be a $d$, and since we can put an $a$ next to it and then a $c$ after that, this configuration works.  The same approach applies if we start with a $c$.
+
+So the solution must be the two solutions that were allowed, one starting from a $b$ and the other with a $c$, giving us:
+
+$$1 + 1 = \boxed{\textbf{(C)}\ 2}.$$

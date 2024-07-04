@@ -1,0 +1,2 @@
+==Solution 1==
+Suppose Laurent's number is in the interval $ [ 0, 2017 ] $. Then, by symmetry, the probability of Laurent's number being greater is $\dfrac{1}{2}$. Next, suppose Laurent's number is in the interval $ [ 2017, 4034 ] $. Then Laurent's number will be greater with a probability of $1$. Since each case is equally likely, the probability of Laurent's number being greater is $\dfrac{1 + \frac{1}{2}}{2} = \dfrac{3}{4}$, so the answer is $ \boxed{C}$.

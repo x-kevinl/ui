@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+If $m$ is the probability Mel wins and $c$ is the probability Chelsea wins, $m=2c$ and $m+c=\frac12$. From this we get $m=\frac13$ and $c=\frac16$. For Alex to win three, Mel to win two, and Chelsea to win one, in that order, is $\frac{1}{2^3\cdot3^2\cdot6}=\frac{1}{432}$. Multiply this by the number of permutations (orders they can win) which is $\frac{6!}{3!2!1!}=60.$
+
+$$\frac{1}{432}\cdot60=\frac{60}{432}=\boxed{\textbf{(B)}\ \frac{5}{36}}$$

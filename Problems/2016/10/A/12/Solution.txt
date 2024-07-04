@@ -1,0 +1,4 @@
+==Solution 1==
+For the product to be odd, all three factors have to be odd. The probability of this is $\frac{1008}{2016} \cdot \frac{1007}{2015} \cdot \frac{1006}{2014}$.
+
+$\frac{1008}{2016} = \frac{1}{2}$, but $\frac{1007}{2015}$ and $\frac{1006}{2014}$ are slightly less than $\frac{1}{2}$. Thus, the whole product is slightly less than $\frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{8}$, so $\boxed{\textbf{(A) }p<\dfrac{1}{8}}$.

@@ -1,0 +1,2 @@
+==Problem==
+There exist real numbers <math>x</math> and <math>y</math>, both greater than 1, such that <math>\log_x\left(y^x\right)=\log_y\left(x^{4y}\right)=10</math>. Find <math>xy</math>.

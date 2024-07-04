@@ -1,0 +1,4 @@
+==Solution==
+Since $d=rt$, Eric takes $\frac{\frac{1}{4}}{2}=\frac{1}{8}$ hours for the swim. Then, he takes $\frac{3}{6}=\frac{1}{2}$ hours for the run. 
+
+So he needs to take $2-\frac{5}{8}=\frac{11}{8}$ hours for the $15$ mile bike. This is $\frac{15}{\frac{11}{8}}=\frac{120}{11} \frac{\text{miles}}{\text{hour}}$$\longrightarrow \fbox{A}$

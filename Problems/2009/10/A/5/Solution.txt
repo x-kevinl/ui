@@ -1,0 +1,2 @@
+==Solution 1==
+Using the standard multiplication algorithm, $111,111,111^2=12,345,678,987,654,321,$ whose digit sum is $\boxed{(E)\text{ }81.}$

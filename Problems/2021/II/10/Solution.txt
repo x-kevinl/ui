@@ -1,0 +1,40 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(275);
+import graph3;
+import solids;
+
+currentprojection=orthographic((1,1/2,0));
+triple O1, O2, O3, T1, T2, T3, A, L1, L2;
+O1 = (0,-36,0);
+O2 = (0,36,0);
+O3 = (0,0,-sqrt(1105));
+T1 = (864*sqrt(1105)/1105,-36,-828*sqrt(1105)/1105);
+T2 = (864*sqrt(1105)/1105,36,-828*sqrt(1105)/1105);
+T3 = (24*sqrt(1105)/85,0,-108*sqrt(1105)/85);
+A = (0,0,-36*sqrt(1105)/23);
+L1 = shift(0,-80,0)*A;
+L2 = shift(0,80,0)*A;
+
+draw(surface(L1--L2--(-T2.x,L2.y,T2.z)--(-T1.x,L1.y,T1.z)--cycle),pink);
+draw(shift(O1)*rotate(90,O1,O2)*scale3(36)*unitsphere,yellow,light=White);
+draw(shift(O2)*rotate(90,O1,O2)*scale3(36)*unitsphere,yellow,light=White);
+draw(shift(O3)*rotate(90,O1,O2)*scale3(13)*unitsphere,red,light=White);
+draw(surface(L1--L2--(T2.x,L2.y,T2.z)--(T1.x,L1.y,T1.z)--cycle),palegreen);
+draw(surface(L1--L2--(-T2.x,L2.y,L2.z-abs(T2.z))--(-T1.x,L1.y,L2.z-abs(T1.z))--cycle),palegreen);
+draw(surface(L1--L2--(T2.x,L2.y,L2.z-abs(T1.z))--(T1.x,L1.y,L1.z-abs(T2.z))--cycle),pink);
+draw(L1--L2,L=Label("$\ell$",position=EndPoint,align=3*E),red);
+
+label("$\mathcal{P}$",midpoint(L1--(T1.x,L1.y,T1.z)),(0,-3,0),heavygreen);
+label("$\mathcal{Q}$",midpoint(L1--(T1.x,L1.y,L1.z-abs(T2.z))),(0,-3,0),heavymagenta);
+
+dot(O1,linewidth(4.5));
+dot(O2,linewidth(4.5));
+dot(O3,linewidth(4.5));
+dot(T1,heavygreen+linewidth(4.5));
+dot(T2,heavygreen+linewidth(4.5));
+dot(T3,heavygreen+linewidth(4.5));
+dot(A,red+linewidth(4.5));
+</asy>
+~MRENTHUSIASM

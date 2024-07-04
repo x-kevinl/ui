@@ -1,0 +1,5 @@
+==Problem==
+
+In some countries, automobile fuel efficiency is measured in liters per $100$ kilometers while other countries use miles per gallon. Suppose that 1 kilometer equals $m$ miles, and $1$ gallon equals $l$ liters. Which of the following gives the fuel efficiency in liters per $100$ kilometers for a car that gets $x$ miles per gallon?
+
+$\textbf{(A) } \frac{x}{100lm} \qquad \textbf{(B) } \frac{xlm}{100} \qquad \textbf{(C) } \frac{lm}{100x} \qquad \textbf{(D) } \frac{100}{xlm} \qquad \textbf{(E) } \frac{100lm}{x}$

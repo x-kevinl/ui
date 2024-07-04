@@ -1,0 +1,5 @@
+==Solution 1==
+
+First, we need to find the sum of each group when split. This is the total sum of all the elements divided by the # of groups. $1 + 2 \cdots + 9 = \frac{9(10)}{2} = 45$. Then, dividing by $3$, we have $\frac{45}{3} = 15$, so each group of $3$ must have a sum of 15. To make the counting easier, we will just see the possible groups 9 can be with. The possible groups 9 can be with 2 distinct numbers are $(9, 2, 4)$ and $(9, 1, 5)$. Going down each of these avenues, we will repeat the same process for $8$ using the remaining elements in the list. Where there is only 1 set of elements getting the sum of $7$, $8$ needs in both cases. After $8$ is decided, the remaining 3 elements are forced in a group, yielding us an answer of $\boxed{\textbf{(C)}\ 2}$ as our sets are $(9, 1, 5) (8, 3, 4) (7, 2, 6)$ and $(9, 2, 4) (8, 1, 6) (7, 3 ,5)$
+
+~CHECKMATE2021, apex304, SohumUttamchandani, wuwang2002, TaeKim, Cxrupptedpat

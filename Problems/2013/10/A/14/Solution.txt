@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+We can use Euler's polyhedron formula that says that $F+V=E+2$.  We know that there are originally $6$ faces on the cube, and each corner cube creates $3$ more.  $6+8(3) = 30$.  In addition, each cube creates $7$ new vertices while taking away the original $8$, yielding $8(7) = 56$ vertices.  Thus $E+2=56+30$, so $E=\boxed{\textbf{(D) }84}$

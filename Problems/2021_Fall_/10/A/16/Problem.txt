@@ -1,0 +1,5 @@
+==Problem==
+The graph of $$f(x) = |\lfloor x \rfloor| - |\lfloor 1 - x \rfloor|$$ is symmetric about which of the following? (Here $\lfloor x \rfloor$ is the greatest integer not exceeding $x$.)
+
+$\textbf{(A) }\text{the }y\text{-axis}\qquad \textbf{(B) }\text{the line }x = 1\qquad \textbf{(C) }\text{the origin}\qquad
+\textbf{(D) }\text{ the point }\left(\dfrac12, 0\right)\qquad \textbf{(E) }\text{the point }(1,0)$

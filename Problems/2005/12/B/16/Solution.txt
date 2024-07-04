@@ -1,0 +1,3 @@
+== Solution ==
+
+The eight spheres are formed by shifting spheres of radius $1$ and center $(0, 0, 0)$ $\pm 1$ in the $x, y, z$ directions. Hence, the centers of the spheres are $(\pm 1, \pm 1, \pm 1)$. For a sphere centered at the origin to contain all eight spheres, its radius must be greater than or equal to the longest distance from the origin to one of these spheres. This length is the sum of the distance from $(\pm 1, \pm 1, \pm 1)$ to the origin and the radius of the spheres, or $\sqrt{3} + 1$. To verify this is the longest length, we can see from the triangle inequality that the length from the origin to any other point on the spheres is strictly smaller. Thus, the answer is $\boxed{\mathrm{D}}$.

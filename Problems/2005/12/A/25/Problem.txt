@@ -1,0 +1,4 @@
+== Problem ==
+Let $S$ be the [[set]] of all [[point]]s with [[coordinate]]s $(x,y,z)$, where $x$, $y$, and $z$ are each chosen from the set $\{0,1,2\}$. How many [[equilateral]] [[triangle]]s all have their [[vertices]] in $S$?
+
+$(\mathrm {A}) \ 72\qquad (\mathrm {B}) \ 76 \qquad (\mathrm {C})\ 80 \qquad (\mathrm {D}) \ 84 \qquad (\mathrm {E})\ 88$

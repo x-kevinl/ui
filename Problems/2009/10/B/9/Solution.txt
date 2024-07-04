@@ -1,0 +1,9 @@
+== Solution ==
+
+$\triangle ABC$ is isosceles, hence $\angle ACB = \angle CAB$. 
+
+The sum of internal angles of $\triangle ABC$ can now be expressed as $\angle B + \frac 52 \angle B + \frac 52 \angle B = 6\angle B$, hence $\angle B = 30^\circ$, and each of the other two angles is $75^\circ$. 
+
+Now we know that $\angle DCE = \angle ACB = 75^\circ$.
+
+Finally, $\triangle CDE$ is isosceles, hence each of the two remaining angles ($\angle D$ and $\angle E$) is equal to $\frac{180^\circ - 75^\circ}2 = \frac{105^\circ}2 = \boxed{52.5}$.

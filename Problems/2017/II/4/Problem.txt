@@ -1,0 +1,2 @@
+==Problem==
+Find the number of positive integers less than or equal to <math>2017</math> whose base-three representation contains no digit equal to <math>0</math>.

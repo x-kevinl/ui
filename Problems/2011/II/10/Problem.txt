@@ -1,0 +1,2 @@
+== Problem 10 ==
+A [[circle]] with center <math>O</math> has radius 25. [[Chord]] <math>\overline{AB}</math> of length 30 and chord <math>\overline{CD}</math> of length 14 intersect at point <math>P</math>. The distance between the [[midpoint]]s of the two chords is 12. The quantity <math>OP^2</math> can be represented as <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. Find the remainder when <math>m + n</math> is divided by 1000.

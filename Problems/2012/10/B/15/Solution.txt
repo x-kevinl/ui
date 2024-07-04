@@ -1,0 +1,11 @@
+==Solution 1==
+The total number of games (and wins) in the tournament is $\frac{6 \times 5}{2}= 15$. A six-way tie is impossible as this would imply each team has 2.5 wins, so the maximum number of tied teams is five. Here's a chart of 15 games where five teams each have 3 wins:
+ |  1  2  3  4  5  6 |
+ |1 X  W  L  W  L  W |
+ |2 L  X  W  L  W  W |
+ |3 W  L  X  W  L  W |
+ |4 L  W  L  X  W  W |
+ |5 W  L  W  L  X  W |
+ |6 L  L  L  L  L  X |
+The "X's" are for when it is where a team is set against itself, which cannot happen. The chart says that Team 6 has lost all of its matches, which means that each of the other teams won against it. Then, alternating Wins and Losses were tried. It shows that it is possible for 5 teams to tie for the same amount of wins, which in this case is 3 wins.
+Thus, the answer is $\boxed{\textbf{(D)}\ 5}$.

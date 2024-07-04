@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>f(x)</math> be a [[polynomial]] with real [[coefficient]]s such that <math>f(0) = 1,</math> <math>f(2)+f(3)=125,</math> and for all <math>x</math>, <math>f(x)f(2x^{2})=f(2x^{3}+x).</math> Find <math>f(5).</math>

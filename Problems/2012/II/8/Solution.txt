@@ -1,0 +1,20 @@
+== Solution ==
+Multiplying the two equations together gives us <cmath>zw + 32i - \frac{240}{zw} = -30 + 46i</cmath> and multiplying by <math>zw</math> then gives us a quadratic in <math>zw</math>: <cmath>(zw)^2 + (30-14i)zw - 240 =0.</cmath> Using the quadratic formula, we find the two possible values of <math>zw</math> to be <math>7i-15 \pm \sqrt{(15-7i)^2 + 240}</math> = <math>6+2i,</math> <math>12i - 36.</math> The smallest possible value of <math>\vert zw\vert^2</math> is then obviously <math>6^2 + 2^2 = \boxed{040}</math>.
+===Note===
+A key thing to note here is that <math>|zw|^2=|z|^2\cdot|w|^2,</math> which can be proved as follows:
+
+Proof: Using the values for <math>z</math> and <math>w</math> that we used above, we get:
+
+\begin{align*}
+|zw|^2&=|(ac-bd)+i(bc+ad)|^2\\
+&=(ac-bd)^2+(bc+ad)^2\\
+&=a^2c^2+b^2d^2+b^2c^2+a^2d^2-2abcd+2abc\\
+&=a^2c^2+b^2d^2+b^2c^2+a^2d^2
+\end{align*}
+Also, <math>|z|^2=a^2+b^2</math> and <math>|w|^2=c^2+d^2</math>. Therefore: 
+<cmath>|z|^2\cdot|w|^2=(a^2+b^2)(c^2+d^2)=a^2c^2+a^2d^2+b^2c^2+b^2d^2</cmath>
+and our proof is complete.
+
+Now, also note that we found <math>\sqrt{416-210i}</math> by letting <math>416-210i=(a-bi)^2</math> and solving for <math>a</math> and <math>b</math> by considering real and imaginary parts. Then, we substitute that into <math>a-bi</math> which is the value of <math>\sqrt{416-210i}</math> and continue from there.
+
+'''mathboy282'''

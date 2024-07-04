@@ -1,0 +1,4 @@
+== Problem ==
+Given that <math> O </math> is a regular [[octahedron]], that <math> C </math> is the [[cube (geometry) | cube]] whose vertices are the centers of the faces of <math> O, </math> and that the ratio of the volume of <math> O </math> to that of <math> C </math> is <math> \frac mn, </math> where <math> m </math> and <math> n </math> are relatively prime integers, find <math> m+n. </math>
+
+__TOC__

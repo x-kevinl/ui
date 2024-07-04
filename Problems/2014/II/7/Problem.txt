@@ -1,0 +1,4 @@
+==Problem==
+
+Let <math>f(x)=(x^2+3x+2)^{\cos(\pi x)}</math>. Find the sum of all positive integers <math>n</math> for which 
+<cmath>\left |\sum_{k=1}^n\log_{10}f(k)\right|=1.</cmath>

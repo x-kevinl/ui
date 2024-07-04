@@ -1,0 +1,2 @@
+==Problem==
+Convex pentagon <math>ABCDE</math> has side lengths <math>AB=5</math>, <math>BC=CD=DE=6</math>, and <math>EA=7</math>. Moreover, the pentagon has an inscribed circle (a circle tangent to each side of the pentagon). Find the area of <math>ABCDE</math>.

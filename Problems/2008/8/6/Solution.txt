@@ -1,0 +1,2 @@
+== Solution ==
+Dividing the gray square into four smaller squares, there are $6$ gray tiles and $10$ white tiles, giving a ratio of $\boxed{\textbf{(D)}\ 3:5}$.

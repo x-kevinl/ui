@@ -1,0 +1,12 @@
+==Solution 1 (One Variable)==
+Let $x$ be the number of $5$-cent coins that Joe has. Therefore, he must have $(x+3) \ 10$-cent coins and $(23-(x+3)-x) \ 25$-cent coins. Since the total value of his collection is $320$ cents, we can write
+$$\begin{align*}
+5x + 10(x+3) + 25(23-(x+3)-x) &= 320 \\
+5x + 10x + 30 + 500 - 50x &= 320 \\
+35x &= 210 \\
+x &= 6.
+\end{align*}$$ 
+Joe has six $5$-cent coins, nine $10$-cent coins, and eight $25$-cent coins. Thus, our answer is 
+$8-6 = \boxed{\textbf{(C) } 2}.$
+
+~Nivek

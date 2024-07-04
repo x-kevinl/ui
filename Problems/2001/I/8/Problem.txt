@@ -1,0 +1,2 @@
+== Problem ==
+Call a positive integer <math>N</math> a ''7-10 double'' if the digits of the base-<math>7</math> representation of <math>N</math> form a base-<math>10</math> number that is twice <math>N</math>. For example, <math>51</math> is a 7-10 double because its base-<math>7</math> representation is <math>102</math>. What is the largest 7-10 double?

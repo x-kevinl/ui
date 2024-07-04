@@ -1,0 +1,3 @@
+== Solution ==
+
+We have a rectangle of side lengths $a-(-b)=a+b$ and $d-(-c)=c+d.$ Thus the area of this rectangle is $(a + b)(c + d) = \boxed{\textbf{(A)}\ ac + ad + bc + bd}$.

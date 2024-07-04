@@ -1,0 +1,4 @@
+==Solution==
+Notice that we don't need to find what $A, B,$ and $C$ actually are, just their average. In other words, if we can find $A+B+C$, we will be done. 
+
+Adding up the equations gives $1001(A+B+C)=9009=1001(9)$ so $A+B+C=9$ and the average is $\frac{9}{3}=3$. Our answer is $\boxed{\textbf{(B) }3}$.

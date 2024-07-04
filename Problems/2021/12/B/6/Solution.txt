@@ -1,0 +1,10 @@
+==Solution 1==
+The volume of a cone is $\frac{1}{3} \cdot\pi \cdot r^2 \cdot h$ where $r$ is the base radius and $h$ is the height. The water completely fills up the cone so the volume of the water is $\frac{1}{3}\cdot18\cdot144\pi = 6\cdot144\pi$.
+
+The volume of a cylinder is $\pi \cdot r^2 \cdot h$ so the volume of the water in the cylinder would be $24\cdot24\cdot\pi\cdot h$.
+
+We can equate these two expressions because the water volume stays the same like this $24\cdot24\cdot\pi\cdot h = 6\cdot144\pi$. We get $4h = 6$ and $h=\frac{6}{4}$.
+
+So the answer is $\boxed{\textbf{(A)} ~1.5}.$
+
+~abhinavg0627

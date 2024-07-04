@@ -1,0 +1,4 @@
+==Problem==
+The base-nine representation of the number $N$ is $27{,}006{,}000{,}052_{\text{nine}}.$ What is the remainder when $N$ is divided by $5?$
+
+$\textbf{(A) } 0\qquad\textbf{(B) } 1\qquad\textbf{(C) } 2\qquad\textbf{(D) } 3\qquad\textbf{(E) }4$

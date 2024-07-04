@@ -1,0 +1,2 @@
+== Problem ==
+The digits of a positive integer <math> n </math> are four consecutive integers in decreasing order when read from left to right. What is the sum of the possible remainders when <math> n </math> is divided by <math>37</math>?

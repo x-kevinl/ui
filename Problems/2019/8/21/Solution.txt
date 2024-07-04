@@ -1,0 +1,17 @@
+==Solution 1==
+First, we need to find the coordinates where the graphs intersect. 
+
+We want the points x and y to be the same. Thus, we set $5=x+1,$ and get $x=4.$ Plugging this into the equation, $y=1-x,$ 
+$y=5$, and $y=1+x$ intersect at $(4,5)$, we call this line x.
+
+Doing the same thing, we get $x=-4.$ Thus, $y=5$. Also,
+$y=5$ and $y=1-x$ intersect at $(-4,5)$, and we call this line y.
+
+It's apparent the only solution to $1-x=1+x$ is $0.$ Thus, $y=1.$
+$y=1-x$ and $y=1+x$ intersect at $(0,1)$, we call this line z.
+
+Using the [[Shoelace Theorem]] we get: $$\left(\frac{(20-4)-(-20+4)}{2}\right)=\frac{32}{2}$$ $=$ So, our answer is $\boxed{\textbf{(E)}\ 16.}$
+
+We might also see that the lines $y$ and $x$ are mirror images of each other. This is because, when rewritten, their slopes can be multiplied by $-1$ to get the other. As the base is horizontal, this is a isosceles triangle with base 8, as the intersection points have distance 8. The height is $5-1=4,$ so $\frac{4\cdot 8}{2} = \boxed{\textbf{(E)} 16.}$
+
+Warning: Do not use the distance formula for the base then use Heron's formula. It will take you half of the time you have left!

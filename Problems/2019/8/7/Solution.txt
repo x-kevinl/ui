@@ -1,0 +1,4 @@
+==Solution 1==
+We should notice that we can turn the information we are given into a linear equation and just solve for our set variables. I'll use the variables $x$ and $y$ for the scores on the last two tests. $$\frac{76+94+87+x+y}{5} = 81,$$ $$\frac{257+x+y}{5} = 81.$$ We can now cross multiply to get rid of the denominator. $$257+x+y = 405,$$ $$x+y = 148.$$ Now that we have this equation, we will assign $y$ as the lowest score of the two other tests, and so: $$x = 100,$$ $$y=48.$$ Now we know that the lowest score on the two other tests is $\boxed{48}$.
+
+~ aopsav

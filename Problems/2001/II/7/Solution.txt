@@ -1,0 +1,47 @@
+== Solution ==
+=== Solution 1 (analytic) ===
+<center><asy>
+pointpen = black; pathpen = black + linewidth(0.7);
+
+pair P = (0,0), Q = (90, 0), R = (0, 120), S=(0, 60), T=(45, 60), U = (60,0), V=(60, 40), O1 = (30,30), O2 = (15, 75), O3 = (70, 10);
+D(MP("P",P)--MP("Q",Q)--MP("R",R,W)--cycle); D(MP("S",S,W) -- MP("T",T,NE)); D(MP("U",U) -- MP("V",V,NE)); D(O2 -- O3, rgb(0.2,0.5,0.2)+ linewidth(0.7) + linetype("4 4"));
+D(CR(D(O1), 30)); D(CR(D(O2), 15)); D(CR(D(O3), 10));
+</asy></center>
+
+Let <math>P = (0,0)</math> be at the origin. Using the formula <math>A = rs</math> on <math>\triangle PQR</math>, where <math>r_{1}</math> is the [[inradius]] (similarly define <math>r_2, r_3</math> to be the radii of <math>C_2, C_3</math>), <math>s = \frac{PQ + QR + RP}{2} = 180</math> is the [[semiperimeter]], and <math>A = \frac 12 bh = 5400</math> is the area, we find <math>r_{1} = \frac As = 30</math>. Or, the inradius could be directly by using the formula <math>\frac{a+b-c}{2}</math>, where <math>a</math> and <math>b</math> are the legs of the right triangle and <math>c</math> is the hypotenuse. (This formula should be used ''only for right triangles''.) Thus <math>ST, UV</math> lie respectively on the lines <math>y = 60, x = 60</math>, and so <math>RS = 60, UQ = 30</math>.  
+
+Note that <math>\triangle PQR \sim \triangle STR \sim \triangle UQV</math>. Since the ratio of corresponding lengths of similar figures are the same, we have 
+
+<cmath>\frac{r_{1}}{PR} = \frac{r_{2}}{RS} \Longrightarrow r_{2} = 15\ \text{and} \ \frac{r_{1}}{PQ} = \frac{r_{3}}{UQ} \Longrightarrow r_{3} = 10.</cmath>
+
+Let the centers of <math>\odot C_2, C_3</math> be <math>O_2 = (0 + r_{2}, 60 + r_{2}) = (15, 75), O_3 = (60 + r_{3}, 0 + r_{3}) = (70,10)</math>, respectively; then by the [[distance formula]] we have <math>O_2O_3 = \sqrt{55^2 + 65^2} = \sqrt{10 \cdot 725}</math>. Therefore, the answer is <math>n = \boxed{725}</math>.
+
+=== Solution 2 (synthetic) ===
+<center><asy>
+pointpen = black; pathpen = black + linewidth(0.7);
+
+pair P = (0,0), Q = (90, 0), R = (0, 120), S=(0, 60), T=(45, 60), U = (60,0), V=(60, 40), O1 = (30,30), O2 = (15, 75), O3 = (70, 10);
+D(MP("P",P)--MP("Q",Q)--MP("R",R,W)--cycle); D(MP("S",S,W) -- MP("T",T,NE)); D(MP("U",U) -- MP("V",V,NE)); D(O2 -- O3, rgb(0.2,0.5,0.2)+ linewidth(0.7) + linetype("4 4"));
+D(CR(D(O1), 30)); D(CR(D(O2), 15)); D(CR(D(O3), 10));
+
+pair A2 = IP(incircle(R,S,T), Q--R), A3 = IP(incircle(Q,U,V), Q--R);
+D(D(MP("A_2",A2,NE)) -- O2, linetype("4 4")+linewidth(0.6)); D(D(MP("A_3",A3,NE)) -- O3 -- foot(O3, A2, O2), linetype("4 4")+linewidth(0.6));
+</asy></center>
+
+We compute <math>r_1 = 30, r_2 = 15, r_3 = 10</math> as above. Let <math>A_1, A_2, A_3</math> respectively the points of tangency of <math>C_1, C_2, C_3</math> with <math>QR</math>. 
+
+By the [[Two Tangent Theorem]], we find that <math>A_{1}Q = 60</math>, <math>A_{1}R = 90</math>. Using the similar triangles, <math>RA_{2} = 45</math>, <math>QA_{3} = 20</math>, so <math>A_{2}A_{3} = QR - RA_2 - QA_3 = 85</math>. Thus <math>(O_{2}O_{3})^{2} = (15 - 10)^{2} + (85)^{2} = 7250\implies n=\boxed{725}</math>.
+
+
+===Solution 3===
+
+The radius of an incircle is <math> r=A_t/\text{semiperimeter} </math>. The area of the triangle is equal to <math> \frac{90\times120}{2} = 5400</math> and the semiperimeter is equal to <math> \frac{90+120+150}{2} = 180</math>. The radius, therefore, is equal to <math>\frac{5400}{180} = 30</math>. Thus using similar triangles the dimensions of the triangle circumscribing the circle with center <math>C_2</math> are equal to <math>120-2(30) = 60</math>, <math>\frac{1}{2}(90) = 45</math>, and <math>\frac{1}{2}\times150 = 75</math>. The radius of the circle inscribed in this triangle with dimensions <math>45\times60\times75</math> is found using the formula mentioned at the very beginning. The radius of the incircle is equal to <math>15</math>. 
+
+
+Defining <math>P</math> as <math>(0,0)</math>, <math>C_2</math> is equal to <math>(60+15,15)</math> or <math>(75,15)</math>. Also using similar triangles, the dimensions of the triangle circumscribing the circle with center <math>C_3</math> are equal to <math>90-2(30)</math>, <math>\frac{1}{3}\times120</math>, <math>\frac{1}{3}\times150</math> or <math> 30,40,50</math>. The radius of <math>C_3</math> by using the formula mentioned at the beginning  is <math>10</math>. Using <math>P</math> as <math>(0,0)</math>, <math>C_3</math> is equal to <math>(10, 60+10)</math> or <math>(10,70)</math>. Using the distance formula, the distance between <math>C_2</math> and <math>C_3</math>: <math>\sqrt{(75-10)^2 +(15-70)^2}</math> this equals <math>\sqrt{7250}</math> or <math>\sqrt{725\times10}</math>, thus <math>n</math> is <math>\boxed{725}</math>.
+
+===Note===
+The problem can be reduced to a <math>3-4-5</math> triangle for the initial calculations, where <math>C_2</math> is calculated to be (<math>\frac{5}{2}, \frac{1}{2})</math>, and <math>C_3</math> is calculated to be (<math>\frac{1}{3}, \frac{7}{3})</math>. After we find the incenters the points can be scaled up by a factor of <math>30</math> for the final distance calculation.
+
+=== Solution 4 (easy but hard to see) ===
+We can calculate the inradius of each triangle as with the previous solutions. Now, notice that the hexagon <math>PSTVU</math> is a square with its corner cut off. We literally complete the square and mark the last corner as point X. Now, construct right triangle with <math>C_3C_2</math> as its hypotenuse. The right angle will be at point <math>Y</math>. We will now find the length of each leg and use the Pythagorean Theorem to compute the desired length. We see that the length of <math>C_3Y</math> is <math>50 + 15 = 65</math>, as seen by the inradius of <math>C_2</math> and <math>10</math> less than the square's side length. <math>C_2Y</math> is <math>45 + 10 = 55</math>, which is <math>15</math> less than the square plus the inradius of <math>C_3</math>. Our final answer is <math>\sqrt{65^2 + 55^2} = \sqrt{7250} = \sqrt{(10)(725)} \rightarrow \boxed{725}</math>.

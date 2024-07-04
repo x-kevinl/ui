@@ -1,0 +1,2 @@
+==Solution==
+France and Spain are European countries. The number of '80s stamps from France is $15$ and the number of '80s stamps from Spain is $9$. The total number of stamps is $15+9=\boxed{\text{(D)}\ 24}$.

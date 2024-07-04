@@ -1,0 +1,22 @@
+==Solution 1==
+
+Let <math>z = a + 164i</math>.
+
+Then
+<cmath>\frac {a + 164i}{a + 164i + n} = 4i</cmath>
+and
+<cmath>a + 164i = \left (4i \right ) \left (a + n + 164i \right ) = 4i \left (a + n \right ) - 656.</cmath>
+
+By comparing coefficients, equating the real terms on the leftmost and rightmost side of the equation, 
+
+we conclude that
+<cmath>a = -656.</cmath>
+
+By equating the imaginary terms on each side of the equation,
+
+we conclude that
+<cmath>164i = 4i \left (a + n \right ) = 4i \left (-656 + n \right ).</cmath>
+
+We now have an equation for <math>n</math>: <cmath>4i \left (-656 + n \right ) = 164i,</cmath>
+
+and this equation shows that <math>n = \boxed{697}.</math>

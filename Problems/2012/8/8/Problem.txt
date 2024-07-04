@@ -1,0 +1,4 @@
+==Problem==
+A shop advertises everything is "half price in today's sale." In addition, a coupon gives a 20% discount on sale prices. Using the coupon, the price today represents what percentage off the original price?
+
+$ \textbf{(A)}\hspace{.05in}10\qquad\textbf{(B)}\hspace{.05in}33\qquad\textbf{(C)}\hspace{.05in}40\qquad\textbf{(D)}\hspace{.05in}60\qquad\textbf{(E)}\hspace{.05in}70 $

@@ -1,0 +1,21 @@
+==Diagram==
+
+<asy>
+size(250);
+defaultpen(fontsize(9pt));
+picture pic;
+pair A,B,C,D,E,M,N,P,Q;
+B=MP("B",origin, SW);
+C=MP("C", (12.5,0), SE);
+A=MP("A", IP(CR(C,10),CR(B,15)), dir(90));
+N=MP("N", (A+B)/2, dir(180));
+M=MP("M", midpoint(C--A), dir(70));
+D=MP("D", extension(B,incenter(A,B,C),A,C), dir(C-B));
+E=MP("E", extension(C,incenter(A,B,C),A,B), dir(90));
+P=MP("P", OP(circumcircle(A,M,N),circumcircle(A,D,E)), dir(-70));
+Q = MP("Q", extension(A,P,B,C),dir(-90));
+draw(B--C--A--B^^M--P--N^^D--P--E^^A--Q);
+draw(circumcircle(A,M,N), gray);
+draw(circumcircle(A,D,E), heavygreen);
+dot(A);dot(B);dot(C);dot(D);dot(E);dot(P);dot(Q);dot(M);dot(N);
+</asy>

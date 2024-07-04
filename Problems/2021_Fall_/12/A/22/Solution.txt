@@ -1,0 +1,32 @@
+== Solution ==
+We need to find out the number of configurations with 3 $O$ and 3 $X$ with 3 $O$ in a row, and 3 $X$ not in a row.
+
+$\textbf{Case 1}$: 3 $O$ are in a horizontal row or a vertical row.
+
+Step 1: We determine the row that 3 $O$ occupy.
+
+The number of ways is 6.
+
+Step 2: We determine the configuration of 3 $X$.
+
+The number of ways is $\binom{6}{3} - 2 = 18$.
+
+In this case, following from the rule of product, the number of ways is $6 \cdot 18 = 108$.
+
+$\textbf{Case 2}$: 3 $O$ are in a diagonal row.
+
+Step 1: We determine the row that 3 $O$ occupy.
+
+The number of ways is 2.
+
+Step 2: We determine the configuration of 3 $X$.
+
+The number of ways is $\binom{6}{3}  = 20$.
+
+In this case, following from the rule of product, the number of ways is $2 \cdot 20 = 40$.
+
+Putting all cases together, the total number of ways is $108 + 40 = 148$.
+
+Therefore, the answer is $\boxed{\textbf{(D) }148}$.
+
+~Steven Chen (www.professorchenedu.com)

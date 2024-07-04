@@ -1,0 +1,4 @@
+== Problem ==
+A circle is inscribed in a square, then a square is inscribed in this circle, and finally, a circle is inscribed in this square. What is the ratio of the area of the smallest circle to the area of the largest square?
+
+$\textbf{(A) } \frac{\pi}{16} \qquad \textbf{(B) } \frac{\pi}{8} \qquad \textbf{(C) } \frac{3\pi}{16} \qquad \textbf{(D) } \frac{\pi}{4} \qquad \textbf{(E) } \frac{\pi}{2} $

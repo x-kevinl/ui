@@ -1,0 +1,34 @@
+== Solution ==
+
+<asy>
+unitsize(1cm);
+defaultpen(0.8);
+pair[] A = new pair[8];
+A[0]=(0,0);
+for (int i=1; i<8; ++i) A[i] = A[i-1] + 2*dir(45*(i-1));
+draw( A[0]--A[1]--A[2]--A[3]--A[4]--A[5]--A[6]--A[7]--cycle );
+label("$A$",A[0],SW);
+label("$B$",A[1],SE);
+label("$C$",A[2],SE);
+label("$D$",A[3],NE);
+label("$E$",A[4],NE);
+label("$F$",A[5],NW);
+label("$G$",A[6],NW);
+label("$H$",A[7],SW);
+filldraw( A[0]--A[3]--A[6]--cycle, lightgray, black );
+pair P = intersectionpoint( A[3]--A[6], A[0]--A[5] );
+draw( A[0]--P );
+draw( P -- A[5], dashed );
+label("$P$",P,NE);
+draw( A[1]--A[4], dashed );
+pair Q = intersectionpoint( A[3]--A[6], A[1]--A[4] );
+label("$Q$",Q,NW);
+</asy>
+
+The area of the triangle $ADG$ can be computed as $\frac{DG \cdot AP}2$. We will now find $DG$ and $AP$.
+
+Clearly, $PFG$ is a right isosceles triangle with hypotenuse of length $2$, hence $PG=\sqrt 2$. 
+The same holds for triangle $QED$ and its leg $QD$. The length of $PQ$ is equal to $FE=2$.
+Hence $GD = 2 + 2\sqrt 2$, and $AP = PD = 2 + \sqrt 2$.
+
+Then the area of $ADG$ equals $\frac{DG \cdot AP}2 = \frac{(2+2\sqrt 2)(2+\sqrt 2)}2 = \frac{8+6\sqrt 2}2 = \boxed{\textbf{(C)}=4+3\sqrt 2}$.

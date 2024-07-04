@@ -1,0 +1,10 @@
+==Solution==
+We can substitute $5$, $3$, and $6$ into the functions' definitions:
+$$\begin{align*}
+(5 \, \blacklozenge \, 3) \, \bigstar \, 6 &= \left(5^2-3^2\right) \, \bigstar \, 6 \\
+(5 \, \blacklozenge \, 3) \, \bigstar \, 6 &= \left(25-9\right) \, \bigstar \, 6 \\
+&= 16 \, \bigstar \, 6 \\
+&= (16-6)^2 \\
+&= \boxed{\textbf{(D) } 100}.
+\end{align*}$$
+<i>~pog</i> ~MathFun1000 (Minor Edits)

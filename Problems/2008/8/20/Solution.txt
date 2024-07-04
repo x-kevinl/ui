@@ -1,0 +1,6 @@
+==Solution==
+Let $b$ be the number of boys and $g$ be the number of girls.
+
+$$\frac23 b = \frac34 g \Rightarrow b = \frac98 g$$
+
+For $g$ and $b$ to be integers, $g$ must cancel out with the denominator, and the smallest possible value is $8$. This yields $9$ boys. The minimum number of students is $8+9=\boxed{\textbf{(B)}\ 17}$.

@@ -1,0 +1,5 @@
+==Solution 1==
+There are $2^3 = 8$ ways to flip the coins, in order.
+There are two ways to get exactly two consecutive heads: HHT and THH.
+There is only one way to get three consecutive heads: HHH.
+Therefore, the probability of flipping at least two consecutive heads is $\boxed{\textbf{(C)}\frac{3}{8}}$.

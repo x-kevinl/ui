@@ -1,0 +1,2 @@
+== Solution ==
+We know that $n^2 = k^3$ and $ n^3 = m^2 $. Cubing and squaring the equalities respectively gives $ n^6 = k^9 = m^4 $. Let $a = n^6$. Now we know $a$ must be a perfect $36$-th power because $lcm(9,4) = 36$, which means that $n$ must be a perfect $6$-th power. The smallest number whose sixth power is a multiple of $20$ is $10$, because the only prime factors of $20$ are $2$ and $5$, and $10 = 2 \times 5$. Therefore our is equal to number $10^6 = 1000000$, with $7$ digits $\Rightarrow \boxed {E}$.

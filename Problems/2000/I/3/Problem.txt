@@ -1,0 +1,2 @@
+== Problem ==
+In the expansion of <math>(ax + b)^{2000},</math> where <math>a</math> and <math>b</math> are [[relatively prime]] positive integers, the [[coefficient]]s of <math>x^{2}</math> and <math>x^{3}</math> are equal. Find <math>a + b</math>.

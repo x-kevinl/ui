@@ -1,0 +1,7 @@
+==Solution 1==
+
+We note that by changing a digit to <math>1</math> for the number <math>\overline{abcd}</math>, we are subtracting the number by either <math>1000(a-1)</math>, <math>100(b-1)</math>, <math>10(c-1)</math>, or <math>d-1</math>. Thus, <math>1000a + 100b + 10c + d \equiv 1000(a-1) \equiv 100(b-1) \equiv 10(c-1) \equiv d-1 \pmod{7}</math>. We can casework on <math>a</math> backwards, finding the maximum value.
+
+(Note that computing <math>1000 \equiv 6 \pmod{7}, 100 \equiv 2 \pmod{7}, 10 \equiv 3 \pmod{7}</math> greatly simplifies computation).
+
+Applying casework on <math>a</math>, we can eventually obtain a working value of <math>\overline{abcd} = 5694 \implies \boxed{699}</math>. ~akliu

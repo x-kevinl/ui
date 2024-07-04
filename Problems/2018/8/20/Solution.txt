@@ -1,0 +1,5 @@
+==Solution 1==
+
+By similar triangles, we have $[ADE] = \frac{1}{9}[ABC]$. Similarly, we see that [mathjax][BEF] = \dfrac{4}{9}[ABC][/mathjax]. Using this information, we get $$[ACFE] = \frac{5}{9}[ABC].$$ Then, since $[ADE] = \frac{1}{9}[ABC]$, it follows that the [mathjax][CDEF] = \dfrac{4}{9}[ABC][/mathjax]. Thus, the answer would be $\boxed{\textbf{(A) } \frac{4}{9}}$.
+
+Sidenote: [mathjax][ABC][/mathjax] denotes the area of triangle [mathjax]ABC[/mathjax]. Similarly, [mathjax][ABCD][/mathjax] denotes the area of figure [mathjax]ABCD[/mathjax].

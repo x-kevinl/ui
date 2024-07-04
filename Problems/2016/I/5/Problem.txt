@@ -1,0 +1,2 @@
+==Problem 5==
+Anh read a book. On the first day she read <math>n</math> pages in <math>t</math> minutes, where <math>n</math> and <math>t</math> are positive integers. On the second day Anh read <math>n + 1</math> pages in <math>t + 1</math> minutes. Each day thereafter Anh read one more page than she read on the previous day, and it took her one more minute than on the previous day until she completely read the <math>374</math> page book. It took her a total of <math>319</math> minutes to read the book. Find <math>n + t</math>.

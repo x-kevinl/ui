@@ -1,0 +1,2 @@
+==Problem==
+Let <math>\mathcal{B}</math> be the set of rectangular boxes with surface area <math>54</math> and volume <math>23</math>. Let <math>r</math> be the radius of the smallest sphere that can contain each of the rectangular boxes that are elements of <math>\mathcal{B}</math>. The value of <math>r^2</math> can be written as <math>\frac{p}{q}</math>, where <math>p</math> and <math>q</math> are relatively prime positive integers. Find <math>p+q</math>.

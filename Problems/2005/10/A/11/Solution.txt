@@ -1,0 +1,12 @@
+==Solution==
+Since there are $n^2$ little [[face]]s on each face of the big wooden [[cube (geometry) | cube]], there are $6n^2$ little faces painted red. 
+
+Since each unit cube has $6$ faces, there are $6n^3$ little faces total. 
+
+Since one-fourth of the little faces are painted red, 
+
+$\frac{6n^2}{6n^3}=\frac{1}{4}$
+
+$\frac{1}{n}=\frac{1}{4}$
+
+$n=\boxed{\textbf{(B) }4}$

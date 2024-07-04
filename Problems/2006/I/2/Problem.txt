@@ -1,0 +1,2 @@
+== Problem ==
+Let [[set]] <math> \mathcal{A} </math> be a 90-[[element]] [[subset]] of <math> \{1,2,3,\ldots,100\}, </math> and let <math> S </math> be the sum of the elements of <math> \mathcal{A}. </math> Find the number of possible values of <math> S. </math>

@@ -1,0 +1,15 @@
+==Solution==
+===Solution 1===
+Since there are five types of squares: $1 \times 1, 2 \times 2, 3 \times 3, 4 \times 4,$ and $5 \times 5.$ We must find how many of each square contain the black shaded square in the center. 
+
+If we list them, we get that 
+*There is $1$ of all $1\times 1$ squares, containing the black square
+*There are $4$ of all $2\times 2$ squares, containing the black square
+*There are $9$ of all $3\times 3$ squares, containing the black square
+*There are $4$ of all $4\times 4$ squares, containing the black square
+*There is $1$ of all $5\times 5$ squares, containing the black square
+
+Thus, the answer is $1+4+9+4+1=19\Rightarrow\boxed{\mathrm{(D)}\ 19}$.
+
+===Solution 2===
+We use complementary counting. There are only $2\times2$ and $1\times1$ squares that do not contain the black square. Counting, there are $12$-$2\times2$ squares, and $25-1 = 24$ $1\times1$ squares that do not contain the black square. That gives $12+24=36$ squares that don't contain it. There are a total of $25+16+9+4+1 = 55$ squares possible $(25$ - $1\times1$ squares $16$ - $2\times2$ squares $9$ - $3\times3$ squares $4$ - $4\times4$ squares and $1$ - $5\times5$ square), therefore there are $55-36 = 19$ squares that contain the black square, which is $\boxed{\mathrm{(D)}\ 19}$.

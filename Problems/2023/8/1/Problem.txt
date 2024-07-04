@@ -1,0 +1,5 @@
+==Problem==
+
+What is the value of $(8 \times 4 + 2) - (8 + 4 \times 2)$?
+
+$\textbf{(A)}\ 0 \qquad \textbf{(B)}\ 6 \qquad \textbf{(C)}\ 10 \qquad \textbf{(D)}\ 18 \qquad \textbf{(E)}\ 24$

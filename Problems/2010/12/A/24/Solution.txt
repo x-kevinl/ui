@@ -1,0 +1,25 @@
+== Solution 1==
+The question asks for the number of disjoint open intervals, which means we need to find the number of disjoint intervals such that the function is defined within them.
+
+We note that since all of the $\sin$ factors are inside a logarithm, the function is undefined where the inside of the logarithm is less than or equal to $0$.
+
+First, let us find the number of zeros of the inside of the logarithm.
+
+$$\begin{align*}\sin(\pi x) \cdot \sin(2 \pi x) \cdot \sin (3 \pi x) \cdots \sin(8 \pi x) &= 0\\
+\sin(\pi x) &= 0\\
+x &= 0, 1\\
+\sin(2 \pi x) &= 0\\
+x &= 0, \frac{1}{2}, 1\\
+\sin(3 \pi x) &= 0\\
+x &= 0, \frac{1}{3}, \frac{2}{3}, 1\\
+\sin(4 \pi x) &= 0\\
+x &= 0, \frac{1}{4}, \frac{2}{4}, \frac{3}{4}, 1\\
+&\cdots\end{align*}$$
+
+After counting up the number of zeros for each factor and eliminating the excess cases we get $23$ zeros and $22$ intervals.
+
+In order to find which intervals are negative, we must first realize that at every zero of each factor, the sign changes. We also have to be careful, as some zeros are doubled, or even tripled, quadrupled, etc.
+
+The first interval $\left(0, \frac{1}{8}\right)$ is obviously positive. This means the next interval $\left(\frac{1}{8}, \frac{1}{7}\right)$ is negative. Continuing the pattern and accounting for doubled roots (which do not flip sign), we realize that there are $5$ negative intervals from $0$ to $\frac{1}{2}$. Since the function is symmetric, we know that there are also $5$ negative intervals from $\frac{1}{2}$ to $1$.
+
+And so, the total number of disjoint open intervals is $22 - 2\cdot{5} = \boxed{12\ \textbf{(B)}}$

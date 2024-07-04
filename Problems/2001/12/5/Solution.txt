@@ -1,0 +1,4 @@
+==Solution==
+$1 \cdot 3 \cdot 5 \cdots 9999 = \dfrac{1 \cdot 2 \cdot 3 \cdot 4 \cdots 10000}{2 \cdot 4 \cdot 6 \cdots 10000}= \dfrac{10000!}{2^{5000} \cdot 1 \cdot 2 \cdot 3 \cdots 5000}= \dfrac{10000!}{2^{5000}\cdot5000!}$
+
+Therefore the answer is $\boxed{\textbf{(D)} \dfrac{10000!}{2^{5000} \cdot 5000!}}$.

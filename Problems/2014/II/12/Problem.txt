@@ -1,0 +1,2 @@
+== Problem ==
+Suppose that the angles of <math>\triangle ABC</math> satisfy <math>\cos(3A)+\cos(3B)+\cos(3C)=1.</math> Two sides of the triangle have lengths 10 and 13. There is a positive integer <math>m</math> so that the maximum possible length for the remaining side of <math>\triangle ABC</math> is <math>\sqrt{m}.</math> Find <math>m.</math>

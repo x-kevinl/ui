@@ -1,0 +1,3 @@
+==Solution 1==
+
+Grouping the first and last terms and two middle terms gives $(x^2+5x+4)(x^2+5x+6)+2019$, which can be simplified to $(x^2+5x+5)^2-1+2019$. Noting that squares are nonnegative, and verifying that $x^2+5x+5=0$ for some real $x$, the answer is $\boxed{\textbf{(B) } 2018}$.

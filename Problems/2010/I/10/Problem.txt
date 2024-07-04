@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>N</math> be the number of ways to write <math>2010</math> in the form <math>2010 = a_3 \cdot 10^3 + a_2 \cdot 10^2 + a_1 \cdot 10 + a_0</math>, where the <math>a_i</math>'s are integers, and <math>0 \le a_i \le 99</math>. An example of such a representation is <math>1\cdot 10^3 + 3\cdot 10^2 + 67\cdot 10^1 + 40\cdot 10^0</math>. Find <math>N</math>.

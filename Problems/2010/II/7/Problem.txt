@@ -1,0 +1,2 @@
+== Problem 7 ==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>Let <math>P(z)=z^3+az^2+bz+c</math>, where a, b, and c are real. There exists a complex number <math>w</math> such that the three roots of <math>P(z)</math> are <math>w+3i</math>, <math>w+9i</math>, and <math>2w-4</math>, where <math>i^2=-1</math>. Find <math>|a+b+c|</math>.<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>

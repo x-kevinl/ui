@@ -1,0 +1,3 @@
+==Solution==
+
+We can ignore most of the problem statement. The only important information is that immediately before the last step blue marbles formed $\frac{1}{5}$ of the marbles in the bag. This means that there were $x$ blue and $4x$ other marbles, for some $x$. When we double the number of blue marbles, there will be $2x$ blue and $4x$ other marbles, hence blue marbles now form $\boxed{\mathrm{(C)\ }\frac{1}{3}}$ of all marbles in the bag.

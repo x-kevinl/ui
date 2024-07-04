@@ -1,0 +1,6 @@
+== Solution ==
+Taking the seventh root of both sides, we get $(7x)^2=14x$.
+
+Simplifying the LHS gives $49x^2=14x$, which then simplifies to $7x=2$.
+
+Thus, $x=\boxed{\textbf{(B) }\frac{2}{7}}$.

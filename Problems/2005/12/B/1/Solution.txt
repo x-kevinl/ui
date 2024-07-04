@@ -1,0 +1,9 @@
+== Solution ==
+$$
+\begin{align*}
+\mbox{Expenses} &= 1000 \cdot \frac25 = 400 \\
+\mbox{Revenue}  &= 1000 \cdot \frac12 = 500 \\
+\mbox{Profit}   &= \mbox{Revenue} - \mbox{Expenses} = 500-400 = \boxed{\textbf{(A) }100}.
+\end{align*}
+$$
+Note: Revenue is a gain.

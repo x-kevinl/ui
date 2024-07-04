@@ -1,0 +1,5 @@
+==Solution 1==
+
+Using the formula for the volume of a cylinder, we get Alex, $108\pi$, and Felicia, $216\pi$. We can quickly notice that $\pi$ cancels out on both sides and that Alex's volume is $1/2$ of Felicia's leaving $1/2 = \boxed{1:2}$ as the answer. 
+
+~aopsav

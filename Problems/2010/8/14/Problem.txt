@@ -1,0 +1,4 @@
+==Problem==
+What is the sum of the prime factors of $2010$?
+
+$ \textbf{(A)}\ 67\qquad\textbf{(B)}\ 75\qquad\textbf{(C)}\ 77\qquad\textbf{(D)}\ 201\qquad\textbf{(E)}\ 210 $

@@ -1,0 +1,2 @@
+==Solution 1 (Trigonometry)==
+Note that $\tan 15^\circ=2-\sqrt{3}=\frac{EC}{10} \Rightarrow EC=20-10 \sqrt 3$. (It is important to memorize the sin, cos, and tan values of $15^\circ$ and $75^\circ$.) Therefore, we have $DE=10\sqrt 3$. Since $ADE$ is a $30-60-90$ triangle, $AE=2 \cdot AD=2 \cdot 10=\boxed{\textbf{(E)} \: 20}$

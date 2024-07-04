@@ -1,0 +1,4 @@
+==Problem==
+Suppose that $P(z), Q(z)$, and $R(z)$ are polynomials with real coefficients, having degrees $2$, $3$, and $6$, respectively, and constant terms $1$, $2$, and $3$, respectively. Let $N$ be the number of distinct complex numbers $z$ that satisfy the equation $P(z) \cdot Q(z)=R(z)$. What is the minimum possible value of $N$?
+
+$\textbf{(A)}\: 0\qquad\textbf{(B)} \: 1\qquad\textbf{(C)} \: 2\qquad\textbf{(D)} \: 3\qquad\textbf{(E)} \: 5$

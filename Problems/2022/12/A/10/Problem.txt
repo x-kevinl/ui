@@ -1,0 +1,5 @@
+==Problem==
+
+How many ways are there to split the integers $1$ through $14$ into $7$ pairs such that in each pair, the greater number is at least $2$ times the lesser number?
+
+$\textbf{(A) } 108 \qquad \textbf{(B) } 120 \qquad \textbf{(C) } 126 \qquad \textbf{(D) } 132 \qquad \textbf{(E) } 144$

@@ -1,0 +1,7 @@
+== Solution ==
+
+We first notice that tile III has a $0$ on the bottom and a $5$ on the right side. Since no other tile has a $0$ or a $5$, Tile III must be in rectangle $D$. Tile III also has a $1$ on the left, so Tile IV must be in Rectangle $C$.
+
+The answer is $\boxed{\textbf{(D)}}$
+
+<center>[[Image:AMC8_2007_11S.png]]</center>

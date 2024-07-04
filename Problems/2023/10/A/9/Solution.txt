@@ -1,0 +1,13 @@
+==Solution 1 (Casework)==
+Do careful casework by each month. In the month and the date, we need a $0$, a $3$, and two digits repeated (which has to be $1$ and $2$ after consideration). After the casework, we get $\boxed{\textbf{(E)}~9}$.
+For curious readers, the numbers (in chronological order) are:
+
+ 20230113
+ 20230131
+ 20230223
+ 20230311
+ 20230322
+ 20231013
+ 20231031
+ 20231103
+ 20231130

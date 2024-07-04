@@ -1,0 +1,9 @@
+== Solution ==
+
+===Solution 1===
+The sum of the first 20 numbers is $20 \cdot 30$ and the sum of the other 30 numbers is $30\cdot 20$. Hence the overall average is $\frac{20 \cdot 30 + 30 \cdot 20}{50} = 24 \ \mathrm{(B)}$.
+
+===Solution 2===
+This is just the harmonic mean. Answer is $\frac{2*20*30}{20+30}=24 \ \mathrm{(B)}$.
+
+Solution by franzliszt

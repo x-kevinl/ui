@@ -1,0 +1,12 @@
+==Solution 1==
+Noting that <math>\angle OQP</math> and <math>\angle ORP</math> are right angles, we realize that we can draw a semicircle with diameter <math>\overline{OP}</math> and points <math>Q</math> and <math>R</math> on the semicircle. Since the radius of the semicircle is <math>100</math>, if <math>\overline{QR} \leq 100</math>, then <math>\overarc{QR}</math> must be less than or equal to <math>60^{\circ}</math>.
+
+This simplifies the problem greatly. Since the degree measure of an angle on a circle is simply half the degree measure of its subtended arc, the problem is simply asking:
+
+Given <math>a, b</math> such that <math>0<a, b<75</math>, what is the probability that <math>|a-b| \leq 30</math>? 
+Through simple geometric probability, we get that <math>P = \frac{16}{25}</math>.
+
+The answer is <math>16+25=\boxed{041}</math>
+
+~IYN~
+Note: The Geometric probability can be easily be found through graphic through the x-y plane.

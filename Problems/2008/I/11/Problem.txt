@@ -1,0 +1,2 @@
+== Problem ==
+Consider sequences that consist entirely of <math>A</math>'s and <math>B</math>'s and that have the property that every run of consecutive <math>A</math>'s has even length, and every run of consecutive <math>B</math>'s has odd length. Examples of such sequences are <math>AA</math>, <math>B</math>, and <math>AABAA</math>, while <math>BBAB</math> is not such a sequence. How many such sequences have length 14?

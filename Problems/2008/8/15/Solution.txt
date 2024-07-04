@@ -1,0 +1,2 @@
+==Solution==
+The total number of points from the first $8$ games is $7+4+3+6+8+3+1+5=37$. We have to make this a multiple of $9$ by scoring less than $10$ points. The closest multiple of $9$ is $45$. $45-37=8$. Now we have to add a number to get a multiple of 10. The next multiple is $50$ we added $5$, multiplying these together you get $8\cdot5$ is $40$. The answer is $\boxed{\textbf{(B)}\ 40}$.

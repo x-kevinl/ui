@@ -1,0 +1,2 @@
+==Solution==
+The first ring around the middle tile has $6$ tiles, and the second has $12$. From this pattern, the third ring has $18$ tiles. Of these, $6+18=24$ are white and $1+12=13$ are black, with a difference of $24-13 = \boxed{\textbf{(C)}\ 11}$.

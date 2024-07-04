@@ -1,0 +1,40 @@
+==Solution 1==
+
+Let's split the triangle down the middle and label it:
+
+<asy>
+
+import olympiad;
+pair A,B,C,D,E,F,G,H,I,J,K;
+A = origin; B = (0.5,0); C=(2.5,0); D=(3,0); E = (0.5,2); F=(0.83333333333,2); G=(2.166666666667,2); H=(2.5,2); I=(0.83333333333,3.333333333333); J=(2.166666666667,3.3333333333); K=(1.5,6);
+draw(A--D--K--cycle);
+draw(B--E);
+draw(C--H);
+draw(F--I);
+draw(G--J);
+draw(I--J);
+draw(E--H);
+draw(K--(1.5,0));
+label("$A$",(1.5,0),S);
+label("$B$",(1.5,2),SW);
+label("$C$",(1.5,3.3333333),SW);
+label("$D$",D,SE);
+label("$E$",H,SE);
+label("$F$",J,SE);
+label("$G$",K,N);
+
+
+
+</asy>
+
+We see that $\bigtriangleup ADG \sim \bigtriangleup BEG \sim \bigtriangleup CFG$ by AA similarity. 
+$BE =  \frac{3}{2}$ because $AG$ cuts the side length of the square in half; similarly, $CF = 1$. Let $CG = h$: then by side ratios,
+
+$$\frac{h+2}{h} =  \frac{\frac{3}{2}}{1} \implies 2(h+2) = 3h \implies h = 4$$.
+
+Now the height of the triangle is $AG = 4+2+3 =  9$. By side ratios, 
+$$\frac{9}{4} = \frac{AD}{1} \implies AD = \frac{9}{4}$$. 
+
+The area of the triangle is $AG\cdot AD = 9 \cdot \frac{9}{4}  = \frac{81}{4} = \boxed{\textbf{(B) }20 \frac{1}{4}}$
+
+~KingRavi

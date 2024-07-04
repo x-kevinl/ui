@@ -1,0 +1,13 @@
+== Solution ==
+We have 
+$$\begin{align*}
+\boxed{\boxed{11}}&=\boxed{1+11} \\
+&=\boxed{12} \\
+&=1+2+3+4+6+12 \\
+&=28,
+\end{align*}$$
+from which the answer is $\boxed{\textbf{(D)}\ 28}.$
+
+~Aplus95 (Fundamental Logic)
+
+~MRENTHUSIASM (Reconstruction)

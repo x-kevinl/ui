@@ -1,0 +1,2 @@
+==Solution==
+Suppose the small size costs $\textdollar 1$ and the large size has $10$ oz. The medium size then costs $\textdollar 1.50$ and has $8$ oz. The small size has $5$ oz and the large size costs $\textdollar 1.95$. The small, medium, and large size cost respectively, $0.200, 0.188, 0.195$ dollars per oz. The sizes from best to worst buy are $\boxed{\textbf{(E)}\ \text{MLS}}$.

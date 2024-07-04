@@ -1,0 +1,14 @@
+==Problem==
+
+The area of rectangle $ABCD$ is $72$ units squared. If point $A$ and the midpoints of $ \overline{BC} $ and $ \overline{CD} $ are joined to form a triangle, the area of that triangle is
+
+<asy>
+pair A,B,C,D;
+A = (0,8); B = (9,8); C = (9,0); D = (0,0);
+draw(A--B--C--D--A--(9,4)--(4.5,0)--cycle);
+label("$A$",A,NW);
+label("$B$",B,NE);
+label("$C$",C,SE);
+label("$D$",D,SW);</asy>
+
+$ \text{(A)}\ 21\qquad\text{(B)}\ 27\qquad\text{(C)}\ 30\qquad\text{(D)}\ 36\qquad\text{(E)}\ 40 $

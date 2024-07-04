@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>S</math> be the sum of all numbers of the form <math>a/b,</math> where <math>a</math> and <math>b</math> are [[relatively prime]] positive [[divisor]]s of <math>1000.</math> What is the [[floor function|greatest integer]] that does not exceed <math>S/10</math>?

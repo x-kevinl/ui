@@ -1,0 +1,3 @@
+==Solution==
+
+Since Ott gets equal amounts of money from each friend, we can say that he gets $x$ dollars from each friend. This means that Moe has $5x$ dollars, Loki has $4x$ dollars, and Nick has $3x$ dollars. The total amount is $12x$ dollars, and since Ott gets $3x$ dollars total, $\frac{3x}{12x}= \frac{3}{12} = \boxed{\text{(B)}\ \frac14}$.

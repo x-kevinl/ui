@@ -1,0 +1,4 @@
+==Problem==
+Carlos Montado was born on Saturday, November 9, 2002. On what day of the week will Carlos be 706 days old? 
+
+$ \text{(A)}\ \text{Monday}\qquad\text{(B)}\ \text{Wednesday}\qquad\text{(C)}\ \text{Friday}\qquad\text{(D)}\ \text{Saturday}\qquad\text{(E)}\ \text{Sunday} $

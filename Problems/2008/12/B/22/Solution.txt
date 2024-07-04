@@ -1,0 +1,5 @@
+==Solution==
+Auntie Em won't be able to park only when none of the four available spots touch. We can form a [[bijection]] between all such cases and the number of ways to pick four spots out of 13: since none of the spots touch, remove a spot from between each of the cars. From the other direction, given four spots out of 13, simply add a spot between each.
+So the probability she can park is $$1-\frac{{13 \choose 4}}{{16 \choose 4}}=1-\frac{13\cdot12\cdot11\cdot10}{16\cdot15\cdot14\cdot13}=1-\frac{11}{28}={\textbf{(E)}\frac{17}{28}}.$$
+
+(Bijection: When elements of two sets are perfectly paired with each other, i.e. each and every element from both sets has exactly one match in the other, and no elements are left out. In the context of this problem, this means the number of distinct ways to order the cars such that no two spaces are adjacent is exactly the number of ways to pick 4 spots out of 13.)

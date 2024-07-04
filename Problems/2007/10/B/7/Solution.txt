@@ -1,0 +1,20 @@
+==Solution==
+
+<center>
+<asy>
+unitsize(1.5cm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+pair A=(0,2), B=(0,0), C=(2,0), D=(2+sqrt(3),1), E=(2,2);
+draw(A--B--C--D--E--cycle);
+draw(E--C,gray);
+draw(rightanglemark(B,A,E));
+draw(rightanglemark(A,B,C));
+label("$A$",A,NW);
+label("$B$",B,SW);
+label("$C$",C,SE);
+label("$D$",D,E);
+label("$E$",E,NE);
+</asy></center>
+
+$AB = EC$ because they are opposite sides of a square. Also, $ED = DC = AB$ because all sides of the convex pentagon are of equal length. Since $ABCE$ is a square and $\triangle CED$ is an equilateral triangle, $\angle AEC = 90$ and $\angle CED = 60.$ Use angle addition:
+$$\angle E = \angle AEC + \angle CED = 90 + 60 = \boxed{\textbf{(E)} 150}$$

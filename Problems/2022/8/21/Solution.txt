@@ -1,0 +1,5 @@
+==Solution 1 (Inequalities)==
+
+Let $x$ be the number of shots that Candace made in the first half, and let $y$ be the number of shots Candace made in the second half. Since Candace and Steph took the same number of attempts, with an equal percentage of baskets scored, we have $x+y=10+15=25.$ In addition, we have the following inequalities: $$\frac{x}{12}<\frac{15}{20} \implies x<9,$$ and $$\frac{y}{18}<\frac{10}{10} \implies y<18.$$ Pairing this up with $x+y=25$ we see the <i><b>only</b></i> possible solution is $(x,y)=(8,17),$ for an answer of $17-8 = \boxed{\textbf{(C) } 9}.$
+
+~wamofan

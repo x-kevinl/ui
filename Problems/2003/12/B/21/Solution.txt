@@ -1,0 +1,8 @@
+== Solution 1 (Trigonometry) ==
+By the [[Law of Cosines]],
+$$\begin{align*}
+AB^2 + BC^2 - 2 AB \cdot BC \cos \alpha = 89 - 80 \cos \alpha = AC^2 &< 49\\
+\cos \alpha &> \frac 12\\
+\end{align*}$$
+
+It follows that $0 < \alpha < \frac {\pi}3$, and the probability is $\frac{\pi/3}{\pi} = \frac 13 \Rightarrow \mathrm{(D)}$.

@@ -1,0 +1,9 @@
+==Solution 1==
+
+Let $a$ be the bigger number and $b$ be the smaller.
+
+$a + b = 5(a - b)$.
+
+Multiplying out gives $a + b = 5a - 5b$ and rearranging gives $4a = 6b$ and factorised into $2a = 3b$ and then solving gives
+
+$\frac{a}{b} = \frac32$, so the answer is $\boxed{\textbf{(B) }\frac32}$.

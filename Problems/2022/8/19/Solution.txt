@@ -1,0 +1,13 @@
+== Solution ==
+
+We set up our cases as solution 1 showed, realizing that only the second case is possible. 
+
+We notice that $13$ students have scores under $85$ currently and only $5$ have scores over $85$. We find the median of these two numbers, getting:
+
+$$13-5=8$$
+$$\frac{8}{2}=4$$
+$$13-4=9$$
+
+Thus, we realize that $4$ students must have their score increased by $5$.
+
+So, the correct answer is $\boxed{(C)4}$.

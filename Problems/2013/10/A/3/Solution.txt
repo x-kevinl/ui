@@ -1,0 +1,14 @@
+== Solution ==
+We are given that the area of $\triangle ABE$ is $40$, and that $AB = 10$.
+
+The area of a triangle is:
+
+$A = \frac{bh}{2}$
+
+Using $AB$ as the height of $\triangle ABE$,
+
+$40 = \frac{10b}{2}$
+
+and solving for $b$,
+
+$b = 8$, which is $\boxed{\textbf{(E)}}$

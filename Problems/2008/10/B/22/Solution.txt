@@ -1,0 +1,9 @@
+==Solution 1 (Order Matters)==
+There are two ways to arrange the red beads, where $ R $ represents a red bead and $ - $ represents a blank space.
+
+$1. R - R - R - $
+
+$2. R - - R - R $
+
+In the first, there are three ways to place a bead in the first free space, two for the second free space, and one for the third, so there are $6$ arrangements.
+In the second, a white bead must be placed in the third free space, so there are two possibilities for the third space, two for the second, and one for the first. That makes $4$ arrangements. There are $6+4=10$ arrangements in total. The two cases above can be reversed, so we double $10$ to get $20$ arrangements. Also, in each case, there are three ways to place the first red bead, two for the second, and one for the third, so we multiply by $6$ to get $20\cdot 6 = 120$ arrangements. There are $6! = 720$ total arrangements so the answer is $120/720 = \boxed{1/6}$.

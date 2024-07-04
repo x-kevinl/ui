@@ -1,0 +1,2 @@
+== Problem==
+Find the number of positive integers with three not necessarily distinct digits, <math>abc</math>, with <math>a \neq 0</math> and <math>c \neq 0</math> such that both <math>abc</math> and <math>cba</math> are multiples of <math>4</math>.

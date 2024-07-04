@@ -1,0 +1,3 @@
+==Problem==
+
+For positive integers <math>a</math>, <math>b</math>, and <math>c</math> with <math>a < b < c</math>, consider collections of postage stamps in denominations <math>a</math>, <math>b</math>, and <math>c</math> cents that contain at least one stamp of each denomination. If there exists such a collection that contains sub-collections worth every whole number of cents up to <math>1000</math> cents, let <math>f(a, b, c)</math> be the minimum number of stamps in such a collection. Find the sum of the three least values of <math>c</math> such that <math>f(a, b, c) = 97</math> for some choice of <math>a</math> and <math>b</math>.

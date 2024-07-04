@@ -1,0 +1,2 @@
+== Solution ==
+Losing three cans of paint corresponds to being able to paint five fewer rooms. So $\frac 35 \cdot 25 = \boxed{15}$.  The answer is $\mathrm{(C)}$.

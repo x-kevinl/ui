@@ -1,0 +1,4 @@
+==Solution==
+The number of blue marbles is $\frac{4}{5}r$, the number of green marbles is $\frac{8}{5}r$, and the number of red marbles is $r$.
+
+Thus, the total number of marbles is $\frac{4}{5}r+\frac{8}{5}r+r=3.4r$, and the answer is $\mathrm{(C)}$.

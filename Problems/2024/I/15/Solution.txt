@@ -1,0 +1,24 @@
+==Solution 1==
+Observe that the "worst" possible box is one of the maximum possible length. 
+By symmetry, the height and the width are the same in this antioptimal box. (If the height and width weren't the same, the extra difference between them could be used to make the length longer.) Thus, let the width and height be of length <math>a</math> and the length be <math>L</math>. 
+
+We're given that the volume is <math>23</math>; thus, <math>a^2L=23</math>. We're also given that the surface area is <math>54=2\cdot27</math>; thus, <math>a^2+2aL=27</math>. 
+
+From the first equation, we can get <math>L=\dfrac{23}{a^2}</math>. We do a bunch of algebra: 
+
+\begin{align*}
+L&=\dfrac{23}{a^2} \\
+27&=a^2+2aL \\
+&=a^2+2a\left(\dfrac{23}{a^2}\right) \\
+&=a^2+\dfrac{46}a \\
+27a&=a^3+46 \\
+a^3-27a+46&=0. \\
+\end{align*}
+
+We can use the Rational Root Theorem and test a few values. It turns out that <math>a=2</math> works. We use synthetic division to divide by <math>a-2</math>: 
+
+[[Image:Asdf.png]]
+
+As we expect, the remainder is <math>0</math>, and we are left with the polynomial <math>x^2+2x-23</math>. We can now simply use the quadratic formula and find that the remaining roots are <math>\dfrac{-2\pm\sqrt{4-4(-23)}}2=\dfrac{-2\pm\sqrt{96}}2=\dfrac{-2\pm4\sqrt{6}}2=-1\pm2\sqrt6</math>. We want the smallest <math>a</math> to maximize <math>L</math>, and it turns out that <math>a=2</math> is in fact the smallest root. Thus, we let <math>a=2</math>. Substituting this into <math>L=\dfrac{23}{a^2}</math>, we find that <math>L=\dfrac{23}4</math>. However, this is not our answer! This is simply the length of the box; we want the radius of the sphere enclosing it. We know that the diameter of the sphere is the diagonal of the box, and the 3D Pythagorean Theorem can give us the space diagonal. Applying it, we find that the diagonal has length <math>\sqrt{2^2+2^2+\left(\dfrac{23}4\right)^2}=\sqrt{8+\dfrac{529}{16}}=\sqrt{\dfrac{128+529}{16}}=\dfrac{\sqrt{657}}4</math>. This is the diameter; we halve it to find the radius, <math>\dfrac{\sqrt{657}}8</math>. We then square this and end up with <math>\dfrac{657}{64}</math>, giving us an answer of <math>657+64=\boxed{721}</math>. 
+
+~Technodoggo

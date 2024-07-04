@@ -1,0 +1,2 @@
+==Solution==
+With the digits listed from least to greatest, the $3$-digit integers are $138,146,226,234$. $226$ can be arranged in $\frac{3!}{2!} = 3$ ways, and the other three can be arranged in $3!=6$ ways. There are $3+6(3) = \boxed{\textbf{(D)}\ 21}$ $3$-digit positive integers.

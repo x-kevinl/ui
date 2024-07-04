@@ -1,0 +1,5 @@
+==Problem 16 ==
+
+Minh enters the numbers $1$ through $81$ into the cells of a $9 \times 9$ grid in some order. She calculates the product of the numbers in each row and column. What is the least number of rows and columns that could have a product divisible by $3$?
+
+$\textbf{(A) } 8\qquad\textbf{(B) } 9\qquad\textbf{(C) } 10\qquad\textbf{(D) } 11\qquad\textbf{(E) } 12$

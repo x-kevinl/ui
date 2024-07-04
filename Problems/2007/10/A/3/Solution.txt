@@ -1,0 +1,2 @@
+== Solution ==
+The volume of the brick is $40 \times 20 \times 10 = 8000$. Thus the water volume rose $8000 = 100 \times 40 \times h \Longrightarrow h = 2\ \mathrm{(D)}$.

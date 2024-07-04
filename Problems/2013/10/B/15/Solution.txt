@@ -1,0 +1,3 @@
+==Solution 1==
+
+Using the area formulas for an equilateral triangle $\left(\frac{{s}^{2}\sqrt{3}}{4}\right)$ and regular hexagon $\left(\frac{3{s}^{2}\sqrt{3}}{2}\right)$ with side length $s$, plugging $\frac{a}{3}$ and $\frac{b}{6}$ into each equation, we find that $\frac{{a}^{2}\sqrt{3}}{36}=\frac{{b}^{2}\sqrt{3}}{24}$. Simplifying this, we get $\frac{a}{b}=\boxed{\textbf{(B)} \frac{\sqrt{6}}{2}}$

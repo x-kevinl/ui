@@ -1,0 +1,2 @@
+==Problem==
+A bug walks all day and sleeps all night. On the first day, it starts at point <math>O</math>, faces east, and walks a distance of <math>5</math> units due east. Each night the bug rotates <math>60^\circ</math> counterclockwise. Each day it walks in this new direction half as far as it walked the previous day. The bug gets arbitrarily close to the point <math>P</math>. Then <math>OP^2=\tfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

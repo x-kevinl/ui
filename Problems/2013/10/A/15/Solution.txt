@@ -1,0 +1,6 @@
+==Solution 1 (Process of Elimination)==
+
+The shortest side length has the longest altitude perpendicular to it. The average of the two altitudes given will be between the lengths of the two altitudes,
+therefore the length of the side perpendicular to that altitude will be between $10$ and $15$. The only answer choice that meets this requirement is $\boxed{\textbf{(D) }12}$.
+'''
+[[Category: Introductory Geometry Problems]]

@@ -1,0 +1,20 @@
+==Solution 1==
+−	
+We can rewrite the expression as $$222,222-(22,222+2,222+222+22+2).$$
+ 
+−	
+ 
+ 
+−	
+We note that the units digit of the addition is $0$ because all the units digits of the five numbers are $2$ and $5*2=10$, which has a units digit of $0$.
+ 
+−	
+ 
+ 
+−	
+Now, we have something with a units digit of $0$ subtracted from $222,222$. The units digit of this expression is obviously $2$, and we get $\boxed{B}$ as our answer.
+ 
+−	
+ 
+ 
+−

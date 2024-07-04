@@ -1,0 +1,5 @@
+==Problem==
+
+What is the measure of the acute angle formed by the hands of the clock at 4:20 PM?
+
+$\textbf{(A)}\ 0 \qquad \textbf{(B)}\ 5 \qquad \textbf{(C)}\ 8 \qquad \textbf{(D)}\ 10 \qquad \textbf{(E)}\ 12$

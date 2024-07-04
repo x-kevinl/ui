@@ -1,0 +1,2 @@
+== Solution ==
+Since $AB \parallel CD$, $\angle AMD = \angle CDM$, so $\angle AMD = \angle CMD = \angle CDM$, so $\bigtriangleup CMD$ is isosceles, and hence $CM=CD=6$.  Therefore, $\triangle BMC$ is a 30-60-90 triangle with $\angle BMC = 30^\circ$.  Therefore $\angle AMD=\boxed{\mathrm{(E)}\ 75^\circ}$

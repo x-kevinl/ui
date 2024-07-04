@@ -1,0 +1,6 @@
+==Solution==
+===Solution 1===
+Notice that $ 99 $ players need to be eliminated for there to be declared a winner. Notice also that every match eliminates exactly one person. Therefore, $ 99 $ matches are needed to eliminate $ 99 $ people and therefore declare a winner. The rest of the information is irrelevant. Therefore, the total number of matches is $ \text{divisible by 11}, \boxed{\text{E}} $.
+
+===Solution 2===
+28 people receive byes, so in the first round there are $36$ matches played. In the second round there are $28 + 36 = 64$ people, so there are 32 matches. In the subsequent rounds, there are $16, 8, 4, 2, 1$ matches played, for a total of $36 + 32 + 16 + 8 + 4 + 2 + 1 = 99$ matches. Therefore, the answer is $\rightarrow\textbf{(E) }\text{divisible by 11.}$

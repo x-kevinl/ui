@@ -1,0 +1,3 @@
+==Solution==
+Let <math>t_n=\frac{s_n}{5}</math>. Then, we have <math>s_n=\frac{s_{n-1}+1}{s_{n-2}}</math> where <math>s_1 = 100</math> and <math>s_2 = 105</math>. By substitution, we find <math>s_3 = \frac{53}{50}</math>, <math>s_4=\frac{103}{105\cdot50}</math>, <math>s_5=\frac{101}{105}</math>, <math>s_6=100</math>, and <math>s_7=105</math>. So <math>s_n</math> has a period of <math>5</math>. Thus <math>s_{2020}=s_5=\frac{101}{105}</math>. So, <math>\frac{101}{105\cdot 5}\implies 101+525=\boxed{626}</math>.
+~mn28407

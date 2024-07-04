@@ -1,0 +1,4 @@
+==Problem==
+For which of the following integers $b$ is the base-$b$ number $2021_b - 221_b$ not divisible by $3$?
+
+$\textbf{(A)} ~3 \qquad\textbf{(B)} ~4\qquad\textbf{(C)} ~6\qquad\textbf{(D)} ~7\qquad\textbf{(E)} ~8$

@@ -1,0 +1,30 @@
+==Solution 1==
+<asy>
+unitsize(20);filldraw(circle((0,0),2*sqrt(3)+1),rgb(0.5,0.5,0.5));filldraw(circle((-2,0),1),white);filldraw(circle((0,0),1),white);filldraw(circle((2,0),1),white);filldraw(circle((1,sqrt(3)),1),white);filldraw(circle((3,sqrt(3)),1),white);filldraw(circle((-1,sqrt(3)),1),white);filldraw(circle((-3,sqrt(3)),1),white);filldraw(circle((1,-1*sqrt(3)),1),white);filldraw(circle((3,-1*sqrt(3)),1),white);filldraw(circle((-1,-1*sqrt(3)),1),white);filldraw(circle((-3,-1*sqrt(3)),1),white);filldraw(circle((0,2*sqrt(3)),1),white);filldraw(circle((0,-2*sqrt(3)),1),white);
+
+pair O,A,B,C,H;
+O=(0,0);
+A=(-1,sqrt(3));
+B=(1,sqrt(3));
+C=(0,sqrt(3)*2);
+H=(0,sqrt(3));
+draw(O--A);
+draw(A--C);
+draw(B--C);
+draw(O--B);
+draw(A--B);
+draw(O--C);
+dot(A);
+dot(B);
+dot(C);
+dot(O);
+label("A",A, W);
+label("O",O,S);
+label("B",B,E);
+label("C",C, N);
+label("H",H, NE);
+</asy>
+
+In the diagram above, notice that triangle $OAB$ and triangle $ABC$ are congruent and equilateral with side length $2$. We can see the radius of the larger circle is $2\overline{OH} + 1$. Using $30^{\circ}-60^{\circ}-90^{\circ}$ triangles, we know $\overline{OH} = \sqrt{3}$. Therefore, the radius of the larger circle is $2\sqrt{3}+1$.
+
+The area of the larger circle is thus $\left(2\sqrt{3}+1\right)^2 \pi = \left(13+4\sqrt{3}\right)\pi$, and the sum of the areas of the smaller circles is $13\pi$, so the area of the dark region is $\left(13+4\sqrt{3}\right)\pi-13\pi = \boxed{\textbf{(A) } 4 \pi \sqrt{3}}$.

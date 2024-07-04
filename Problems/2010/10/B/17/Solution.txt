@@ -1,0 +1,2 @@
+== Solution 1 ==
+There are $x$ schools. This means that there are $3x$ people. Because no one's score was the same as another person's score, that means that there could only have been $1$ median score. This implies that $x$ is an odd number. $x$ cannot be less than $23$, because there wouldn't be a $64$th place if x was. $x$ cannot be greater than $23$ either, because that would tie Andrea and Beth or Andrea's place would be worse than Beth's. Thus, the only possible answer is $23 \Rightarrow \boxed{B}$.

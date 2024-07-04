@@ -1,0 +1,4 @@
+==Quickest Method of Solving==
+This is a combination of Solutions 1 and 2.
+
+First, draw <math>O_1P,O_2P,BP,DP</math>. Then, observe that <math>\angle BAP=45</math> implies that <math>\angle BO_1P=90</math>. So, <math>\triangle BO_1P</math> is a <math>45-90-45</math> triangle. Similarly, observe that <math>DO_2P</math> is too. So, a rotation of <math>\angle O_1PO_2</math> to <math>\angle BPO_2</math> adds <math>45</math> degrees. Then, moving to <math>BPD</math> subtracts <math>45</math> degrees. Hence, <math>\angle BPD=120</math>. Let the intersection of <math>BD</math> and <math>AC</math> be <math>Q</math>. Then <math>BQP</math> is a <math>30-90-60</math> triangle, hence <math>QP=\frac{6\sqrt{2}}{\sqrt{3}}</math> (We know that <math>BQ</math> is <math>6\sqrt{2}</math>), or <math>QP=2\sqrt{6}</math> Finally, <math>AP=QP+AQ=2\sqrt{6}+6\sqrt{2}=\sqrt{24}+\sqrt{72} \Rightarrow \boxed{096}</math>

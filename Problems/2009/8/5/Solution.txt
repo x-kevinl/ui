@@ -1,0 +1,4 @@
+==Solution==
+List them out, adding the three previous numbers to get the next number,
+
+$$1,2,3,6,11,20,37,\boxed{\textbf{(D)}\ 68}$$

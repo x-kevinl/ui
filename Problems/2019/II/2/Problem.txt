@@ -1,0 +1,3 @@
+==Problem==
+
+Lilypads <math>1,2,3,\ldots</math> lie in a row on a pond. A frog makes a sequence of jumps starting on pad <math>1</math>. From any pad <math>k</math> the frog jumps to either pad <math>k+1</math> or pad <math>k+2</math> chosen randomly with probability <math>\tfrac{1}{2}</math> and independently of other jumps. The probability that the frog visits pad <math>7</math> is <math>\tfrac{p}{q}</math>, where <math>p</math> and <math>q</math> are relatively prime positive integers. Find <math>p+q</math>.

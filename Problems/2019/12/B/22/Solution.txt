@@ -1,0 +1,47 @@
+== Solution 1 ==
+We first prove that $x_n > 4$ for all $n \ge 0$, by induction. Observe that
+$$
+x_{n+1} - 4 = \frac{x_n^2 + 5x_n + 4 - 4(x_n+6)}{x_n+6} = \frac{(x_n - 4)(x_n+5)}{x_n+6}.
+$$
+so (since $x_n$ is clearly positive for all $n$, from the initial definition), $x_{n+1} > 4$ if and only if $x_{n} > 4$.
+
+We similarly prove that $x_n$ is decreasing:
+$$
+x_{n+1} - x_n = \frac{x_n^2 + 5x_n + 4 - x_n(x_n+6)}{x_n+6} = \frac{4-x_n}{x_n+6} < 0.
+$$
+
+Now we need to estimate the value of $x_{n+1}-4$, which we can do using the rearranged equation:
+$$
+x_{n+1} - 4 = (x_n-4)\cdot\frac{x_n + 5}{x_n+6}. 
+$$
+Since $x_n$ is decreasing, $\frac{x_n + 5}{x_n+6}$ is also decreasing, so we have
+$$
+\frac{9}{10} < \frac{x_n + 5}{x_n+6} \le \frac{10}{11}
+$$
+and
+$$
+\frac{9}{10}(x_n-4) < x_{n+1} - 4 \le \frac{10}{11}(x_n-4).
+$$
+
+This becomes
+$$
+\left(\frac{9}{10}\right)^n = \left(\frac{9}{10}\right)^n \left(x_0-4\right) < x_{n} - 4 \le \left(\frac{10}{11}\right)^n \left(x_0-4\right) = \left(\frac{10}{11}\right)^n.
+$$
+The problem thus reduces to finding the least value of $n$ such that
+$$
+\left(\frac{9}{10}\right)^n < x_{n} - 4 \le \frac{1}{2^{20}} \text{  and  } 
+\left(\frac{10}{11}\right)^{n-1} > x_{n-1} - 4 > \frac{1}{2^{20}}.
+$$
+
+Taking logarithms, we get
+$n \ln \frac{9}{10} < -20 \ln 2$ and $(n-1)\ln \frac{10}{11} > -20 \ln 2$, i.e.
+
+$$
+n > \frac{20\ln 2}{\ln\frac{10}{9}} \text{  and  }  n-1 < \frac{20\ln 2}{\ln\frac{11}{10}}
+.$$
+
+As approximations, we can use $\ln\frac{10}{9} \approx \frac{1}{9}$, $\ln\frac{11}{10} \approx \frac{1}{10}$, and $\ln 2\approx 0.7$. These approximations allow us to estimate
+$$
+            126 < n < 141,
+$$
+which gives $\boxed{\textbf{(C) } [81,242]}$.

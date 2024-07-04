@@ -1,0 +1,3 @@
+== Solution (not a proof, but good enough for AMCs) ==
+Testing the first two (or three) positive integers instead of 2009, $k$ seems to always be 4 more. Put E and go on to tackle #25 :)
+~ dolphin7

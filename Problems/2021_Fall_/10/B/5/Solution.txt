@@ -1,0 +1,4 @@
+==Solution 1==
+We have $$n=8^{2022}=  \left(8^\frac{2}{3}\right)^{3033}=4^{3033}.$$
+Therefore, $$\frac{n}4=\boxed{\textbf{(E)} \: 4^{3032}}.$$
+~kingofpineapplz

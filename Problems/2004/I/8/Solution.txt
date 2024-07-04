@@ -1,0 +1,32 @@
+== Solution ==
+We use the [[Principle of Inclusion-Exclusion]] (PIE).
+
+If we join the adjacent vertices of the  regular <math>n</math>-star, we get a regular <math>n</math>-gon. We number the vertices of this <math>n</math>-gon in a counterclockwise direction: <math>0, 1, 2, 3, \ldots, n-1.</math>
+
+A regular <math>n</math>-star will be formed if we choose a vertex number <math>m</math>, where <math>0 \le m \le n-1</math>, and then form the line segments by joining the following pairs of vertex numbers:
+<math>(0 \mod{n}, m \mod{n}),</math>
+<math>(m \mod{n}, 2m \mod{n}),</math>
+<math>(2m \mod{n}, 3m \mod{n}),</math>
+<math>\cdots,</math>
+<math>((n-2)m \mod{n}, (n-1)m \mod{n}),</math>
+<math>((n-1)m \mod{n}, 0 \mod{n}).</math>
+
+If <math>\gcd(m,n) > 1</math>, then the star degenerates into a regular <math>\frac{n}{\gcd(m,n)}</math>-gon or a (2-vertex) line segment if
+<math>\frac{n}{\gcd(m,n)}= 2</math>. Therefore, we need to find all <math>m</math> such that <math>\gcd(m,n) = 1</math>.
+
+Note that <math>n = 1000 = 2^{3}5^{3}.</math>
+
+Let <math>S = \{1,2,3,\ldots, 1000\}</math>, and <math>A_{i}= \{i \in S \mid i\, \textrm{ divides }\,1000\}</math>. The number of <math>m</math>'s that are not relatively prime to <math>1000</math> is:
+<math>\mid A_{2}\cup A_{5}\mid = \mid A_{2}\mid+\mid A_{5}\mid-\mid A_{2}\cap A_{5}\mid</math>
+<math>= \left\lfloor \frac{1000}{2}\right\rfloor+\left\lfloor \frac{1000}{5}\right\rfloor-\left\lfloor \frac{1000}{2 \cdot 5}\right\rfloor</math>
+<math>= 500+200-100 = 600.</math>
+
+Vertex numbers <math>1</math> and <math>n-1=999</math> must be excluded as values for <math>m</math> since otherwise a regular n-gon, instead of an n-star, is formed.
+
+The cases of a 1st line segment of (0, m) and (0, n-m) give the same star. Therefore we should halve the count to get non-similar stars.
+
+Therefore, the number of non-similar 1000-pointed stars is <math>\frac{1000-600-2}{2}= \boxed{199}.</math>
+
+----
+
+Note that in general, the number of <math>n</math>-pointed stars is given by <math>\frac{\phi(n)}{2} - 1</math> (dividing by <math>2</math> to remove the reflectional symmetry, subtracting <math>1</math> to get rid of the <math>1</math>-step case), where <math>\phi(n)</math> is the [[Euler's totient function]]. It is well-known that <math>\phi(n) = n\left(1-\frac{1}{p_1}\right)\left(1-\frac{1}{p_2}\right)\cdots \left(1-\frac{1}{p_n}\right)</math>, where <math>p_1,\,p_2,\ldots,\,p_n</math> are the distinct prime factors of <math>n</math>. Thus <math>\phi(1000) = 1000\left(1 - \frac 12\right)\left(1 - \frac 15\right) = 400</math>, and the answer is <math>\frac{400}{2} - 1 = 199</math>.

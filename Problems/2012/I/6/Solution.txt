@@ -1,0 +1,3 @@
+==Solution==
+
+Substituting the first equation into the second, we find that <math>(z^{13})^{11} = z</math> and thus <math>z^{143} = z.</math> We know that <math>z \neq 0,</math> because we are given the imaginary part of <math>z,</math> so we can divide by <math>z</math> to get <math>z^{142} = 1.</math> So, <math>z</math> must be a <math>142</math>nd root of unity, and thus, by De Moivre's theorem, the imaginary part of <math>z</math> will be of the form <math>\sin{\frac{2k\pi}{142}} = \sin{\frac{k\pi}{71}},</math> where <math>k \in \{1, 2, \ldots, 70\}.</math> Note that <math>71</math> is prime and <math>k<71</math> by the conditions of the problem, so the denominator in the argument of this value will always be <math>71.</math> Thus, <math>n = \boxed{071}.</math>

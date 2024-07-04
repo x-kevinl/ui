@@ -1,0 +1,7 @@
+== Solution ==
+From the given, we know that 
+
+$253=N(4B+5J)$ 
+(The numbers are in cents)
+
+since $253=11\cdot23$, and since $N$ is an integer, then $4B+5J=11$ or $23$. It is easily deduced that $11$ is impossible to make with $B$ and $J$ integers, so $N=11$ and $4B+5J=23$. Then, it can be guessed and checked quite simply that if $B=2$ and $J=3$, then $4B+5J=4(2)+5(3)=23$. The problem asks for the total cost of jam, or $N(5J)=11(15)=165$ cents, or $1.65\implies\mathrm{(D)}$

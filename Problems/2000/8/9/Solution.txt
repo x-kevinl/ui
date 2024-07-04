@@ -1,0 +1,4 @@
+== Solution ==
+The $3$-digit powers of $5$ are $125$ and $625$, so space $2$ is filled with a $2$.
+The only $3$-digit power of $2$ beginning with $2$ is $256$, so the outlined block is filled with
+a $\boxed{\text{(D) 6}}$.

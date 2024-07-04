@@ -1,0 +1,5 @@
+==Problem==
+
+What is the product of all real numbers $x$ such that the distance on the number line between $\log_6x$ and $\log_69$ is twice the distance on the number line between $\log_610$ and $1$?
+
+$\textbf{(A) } 10 \qquad \textbf{(B) } 18 \qquad \textbf{(C) } 25 \qquad \textbf{(D) } 36 \qquad \textbf{(E) } 81$

@@ -1,0 +1,39 @@
+==Solution 1==
+
+We rewrite <math>w</math> and <math>z</math> in polar form:
+<cmath>\begin{align*}
+w &= e^{i\cdot\frac{\pi}{6}}, \\
+z &= e^{i\cdot\frac{2\pi}{3}}.
+\end{align*}</cmath>
+The equation <math>i \cdot w^r = z^s</math> becomes
+<cmath>\begin{align*}
+e^{i\cdot\frac{\pi}{2}} \cdot \left(e^{i\cdot\frac{\pi}{6}}\right)^r &= \left(e^{i\cdot\frac{2\pi}{3}}\right)^s \\
+e^{i\left(\frac{\pi}{2}+\frac{\pi}{6}r\right)} &= e^{i\left(\frac{2\pi}{3}s\right)} \\
+\frac{\pi}{2}+\frac{\pi}{6}r &= \frac{2\pi}{3}s+2\pi k \\
+3+r &= 4s+12k \\
+3+r &= 4(s+3k).
+\end{align*}</cmath>
+for some integer <math>k.</math> 
+
+Since <math>4\leq 3+r\leq 103</math> and <math>4\mid 3+r,</math> we conclude that
+<cmath>\begin{align*}
+3+r &\in \{4,8,12,\ldots,100\}, \\
+s+3k &\in \{1,2,3,\ldots,25\}.
+\end{align*}</cmath>
+Note that the values for <math>s+3k</math> and the values for <math>r</math> have one-to-one correspondence.
+
+We apply casework to the values for <math>s+3k:</math>
+<ol style="margin-left: 1.5em;">
+  <li><math>s+3k\equiv0\pmod{3}</math></li><p>
+There are <math>8</math> values for <math>s+3k,</math> so there are <math>8</math> values for <math>r.</math> It follows that <math>s\equiv0\pmod{3},</math> so there are <math>33</math> values for <math>s.</math> <p>
+There are <math>8\cdot33=264</math> ordered pairs <math>(r,s)</math> in this case.
+  <li><math>s+3k\equiv1\pmod{3}</math></li><p>
+There are <math>9</math> values for <math>s+3k,</math> so there are <math>9</math> values for <math>r.</math> It follows that <math>s\equiv1\pmod{3},</math> so there are <math>34</math> values for <math>s.</math> <p>
+There are <math>9\cdot34=306</math> ordered pairs <math>(r,s)</math> in this case.
+  <li><math>s+3k\equiv2\pmod{3}</math></li><p>
+There are <math>8</math> values for <math>s+3k,</math> so there are <math>8</math> values for <math>r.</math> It follows that <math>s\equiv2\pmod{3},</math> so there are <math>33</math> values for <math>s.</math> <p>
+There are <math>8\cdot33=264</math> ordered pairs <math>(r,s)</math> in this case.
+</ol>
+Together, the answer is <math>264+306+264=\boxed{834}.</math>
+
+~MRENTHUSIASM

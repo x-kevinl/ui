@@ -1,0 +1,10 @@
+==Solution 1==
+Rearranging the [[inequality]] we get <math>d-c > b-a</math>. Let <math>e = 11</math>, then <math>(a, b-a, c-b, d-c, e-d)</math> is a partition of 11 into 5 positive integers or equivalently:
+<math>(a-1, b-a-1, c-b-1, d-c-1, e-d-1)</math> is a [[partition]] of 6 into 5 non-negative integer parts. Via a standard stars and bars argument, the number of ways to partition 6 into 5 non-negative parts is <math>\binom{6+4}4 = \binom{10}4 = 210</math>. The interesting quadruples correspond to partitions where the second number is less than the fourth. By symmetry, there are as many partitions where the fourth is less than the second. So, if <math>N</math> is the number of partitions where the second element is equal to the fourth, our answer is <math>(210-N)/2</math>.
+
+We find <math>N</math> as a sum of 4 cases:
+* two parts equal to zero, <math>\binom82 = 28</math> ways,
+* two parts equal to one, <math>\binom62 = 15</math> ways,
+* two parts equal to two, <math>\binom42 = 6</math> ways,
+* two parts equal to three, <math>\binom22 = 1</math> way.
+Therefore, <math>N = 28 + 15 + 6 + 1 = 50</math> and our answer is <math>(210 - 50)/2 = \fbox{080}</math>

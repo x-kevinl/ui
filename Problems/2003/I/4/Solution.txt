@@ -1,0 +1,14 @@
+== Solution 1 ==
+Using the properties of [[logarithm]]s, we can simplify the first equation to <math>\log_{10} \sin x + \log_{10} \cos x = \log_{10}(\sin x \cos x) = -1 </math>. Therefore, <cmath> \sin x \cos x = \frac{1}{10}.\qquad (*)</cmath>
+
+Now, manipulate the second equation.
+<cmath>\begin{align*}
+\log_{10} (\sin x + \cos x) &= \frac{1}{2}(\log_{10} n - \log_{10} 10) \\
+\log_{10} (\sin x + \cos x) &= \left(\log_{10} \sqrt{\frac{n}{10}}\right) \\
+\sin x + \cos x &= \sqrt{\frac{n}{10}} \\
+(\sin x + \cos x)^{2} &= \left(\sqrt{\frac{n}{10}}\right)^2 \\
+\sin^2 x + \cos^2 x +2 \sin x \cos x &= \frac{n}{10} \\
+\end{align*}
+</cmath>
+
+By the Pythagorean identities, <math>\sin ^2 x + \cos ^2 x = 1</math>, and we can substitute the value for <math>\sin x \cos x</math> from <math>(*)</math>. <math>1 + 2\left(\frac{1}{10}\right) = \frac{n}{10} \Longrightarrow n = \boxed{012} </math>.

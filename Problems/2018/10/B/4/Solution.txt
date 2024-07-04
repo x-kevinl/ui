@@ -1,0 +1,6 @@
+==Solution 1==
+
+Let $X$ be the length of the shortest dimension and $Z$ be the length of the longest dimension. Thus, $XY = 24$, $YZ = 72$, and $XZ = 48$.
+Divide the first two equations to get $\frac{Z}{X} = 3$. Then, multiply by the last equation to get $Z^2 = 144$, giving $Z = 12$. Following, $X = 4$ and $Y = 6$.
+
+The final answer is $4 + 6 + 12 = 22$. $\boxed{B}$

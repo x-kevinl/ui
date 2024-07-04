@@ -1,0 +1,2 @@
+==Problem==
+A right prism with height <math>h</math> has bases that are regular hexagons with sides of length <math>12</math>. A vertex <math>A</math> of the prism and its three adjacent vertices are the vertices of a triangular pyramid. The dihedral angle (the angle between the two planes) formed by the face of the pyramid that lies in a base of the prism and the face of the pyramid that does not contain <math>A</math> measures <math>60</math> degrees. Find <math>h^2</math>.

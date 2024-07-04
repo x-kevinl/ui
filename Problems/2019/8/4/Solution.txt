@@ -1,0 +1,43 @@
+== Solution 1 ==
+<asy>
+draw((-12,0)--(0,5));
+draw((0,5)--(12,0));
+draw((12,0)--(0,-5));
+draw((0,-5)--(-12,0));
+draw((0,0)--(12,0));
+draw((0,0)--(0,5));
+draw((0,0)--(-12,0));
+draw((0,0)--(0,-5));
+dot((-12,0));
+dot((0,5));
+dot((12,0));
+dot((0,-5));
+label("A",(-12,0),W);
+label("B",(0,5),N);
+label("C",(12,0),E);
+label("D",(0,-5),S);
+label("E",(0,0),SW);
+</asy>
+
+A rhombus has sides of equal length. Because the perimeter of the rhombus is $52$, each side is $\frac{52}{4}=13$. In a rhombus, diagonals are perpendicular and bisect each other, which means $\overline{AE}$ = $12$ = $\overline{EC}$.
+
+Consider one of the right triangles:
+
+<asy>
+draw((-12,0)--(0,5));
+draw((0,0)--(-12,0));
+draw((0,0)--(0,5));
+dot((-12,0));
+dot((0,5));
+label("A",(-12,0),W);
+label("B",(0,5),N);
+label("E",(0,0),SE);
+</asy>
+
+$\overline{AB}$ = $13$, and $\overline{AE}$ = $12$. Using the Pythagorean theorem, we find that $\overline{BE}$ = $5$.
+You know the Pythagorean triple, (5, 12, 13).
+
+Thus the values of the two diagonals are $\overline{AC}$ = $24$ and $\overline{BD}$ = $10$.
+The area of a rhombus is = $\frac{d_1\cdot{d_2}}{2}$ = $\frac{24\cdot{10}}{2}$ = $120$
+
+$\boxed{\textbf{(D)}\ 120}$

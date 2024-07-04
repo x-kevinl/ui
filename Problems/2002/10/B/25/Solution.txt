@@ -1,0 +1,2 @@
+== Solution 1==
+Let $x$ be the sum of the integers and $y$ be the number of elements in the list. Then we get the equations $\dfrac{x+15}{y+1}=\dfrac{x}{y}+2$ and $\dfrac{x+15+1}{y+1+1}=\dfrac{x+16}{y+2}=\frac{x}{y}+2-1=\frac{x}{y}+1$. With a lot of algebra, the solution is found to be $y= \boxed{\textbf{(A)}\ 4} $.

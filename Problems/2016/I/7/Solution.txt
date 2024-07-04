@@ -1,0 +1,23 @@
+==Solution== 
+
+We consider two cases:
+
+'''Case 1:'''  <math>ab \ge -2016</math>.  
+
+In this case, if
+<cmath>0 = \text{Im}\left({\frac{\sqrt{ab+2016}}{ab+100}-\left({\frac{\sqrt{|a+b|}}{ab+100}}\right)i}\right) = -\frac{\sqrt{|a+b|}}{ab+100}</cmath>
+then <math>ab \ne -100</math> and <math>|a + b| = 0 = a + b</math>.  Thus <math>ab = -a^2</math> so <math>a^2 < 2016</math>.  Thus <math>a = -44,-43, ... , -1, 0, 1, ..., 43, 44</math>, yielding <math>89</math> values. However since <math>ab = -a^2 \ne -100</math>,  we have <math>a \ne \pm 10</math>.  Thus there are <math>87</math> allowed tuples <math>(a,b)</math> in this case.
+
+'''Case 2:'''  <math>ab < -2016</math>. 
+
+In this case, we want
+<cmath>0 = \text{Im}\left({\frac{\sqrt{ab+2016}}{ab+100}-\left({\frac{\sqrt{|a+b|}}{ab+100}}\right)i}\right) = \frac{\sqrt{-ab-2016} - \sqrt{|a+b|}}{ab+100}</cmath>
+Squaring, we have the equations <math>ab \ne -100</math> (which always holds in this case) and 
+<cmath>-(ab + 2016)= |a + b|.</cmath>
+Then if <math>a > 0</math> and <math>b < 0</math>, let <math>c = -b</math>.  If <math>c > a</math>, 
+<cmath>ac - 2016 = c - a \Rightarrow (a - 1)(c + 1) = 2015 \Rightarrow (a,b) = (2, -2014), (6, -402), (14, -154), (32, -64). </cmath>
+Note that <math>ab < -2016</math> for every one of these solutions.  If <math>c < a</math>, then
+<cmath>ac - 2016 = a - c \Rightarrow (a + 1)(c - 1) = 2015 \Rightarrow (a,b) = (2014, -2), (402, -6), (154, -14), (64, -32). </cmath>
+Again, <math>ab < -2016</math> for every one of the above solutions. This yields <math>8</math> solutions.  Similarly, if <math>a < 0</math> and <math>b > 0</math>, there are <math>8</math> solutions.  Thus, there are a total of <math>16</math> solutions in this case.
+
+Thus, the answer is <math>87 + 16 = \boxed{103}</math>.

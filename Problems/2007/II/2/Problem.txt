@@ -1,0 +1,2 @@
+== Problem ==
+Find the number of ordered triples <math>(a,b,c)</math> where <math>a</math>, <math>b</math>, and <math>c</math> are positive [[integer]]s, <math>a</math> is a [[factor]] of <math>b</math>, <math>a</math> is a factor of <math>c</math>, and <math>a+b+c=100</math>.

@@ -1,0 +1,11 @@
+== Solution ==
+*The mean is $\frac{10+2+5+2+4+2+x}{7} = \frac{25+x}{7}$.
+*Arranged in increasing order, the list is $2,2,2,4,5,10$, so the median is either $2,4$ or $x$ depending upon the value of $x$.
+*The mode is $2$, since it appears three times.
+
+We apply casework upon the median:
+*If the median is $2$ ($x \le 2$), then the arithmetic progression must be constant.
+*If the median is $4$ ($x \ge 4$), because the mode is $2$, the mean can either be $0,3,6$ to form an arithmetic progression. Solving for $x$ yields $-25,-4,17$ respectively, of which only $17$ works because it is larger than $4$.
+*If the median is $x$ ($2 \le x \le 4$), we must have the arithmetic progression $2, x, \frac{25+x}{7}$.  Thus, we find that $2x=2+\frac{25+x}{7}$ so $x=3$. 
+
+The answer is $3 + 17 = 20\ \mathrm{(E)}$.

@@ -1,0 +1,4 @@
+== Solution 1 ==
+Note that the number $\underline{xy} = 10x + y.$ By the problem statement, $$10x + y = x + y^2 \implies 9x = y^2 - y \implies 9x = y(y-1).$$ From this we see that $y(y-1)$ must be divisible by $9.$ This only happens when $y=9.$ Then, $x=8.$ Thus, there is only $\boxed{\textbf{(B) }1}$ cuddly number, which is $89.$
+
+~NH14

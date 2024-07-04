@@ -1,0 +1,25 @@
+==Solution==
+===Solution 1===
+The base-<math>3</math> representation of <math>2017_{10}</math> is <math>2202201_3</math>. Because any <math>7</math>-digit base-<math>3</math> number that starts with <math>22</math> and has no digit equal to <math>0</math> must be greater than <math>2017_{10}</math>, all <math>7</math>-digit numbers that have no digit equal to <math>0</math> must start with <math>21</math> or <math>1</math> in base <math>3</math>. Of the base-<math>3</math> numbers that have no digit equal to <math>0</math>, there are <math>2^5</math> <math>7</math>-digit numbers that start with <math>21</math>, <math>2^6</math> <math>7</math>-digit numbers that start with <math>1</math>, <math>2^6</math> <math>6</math>-digit numbers, <math>2^5</math> <math>5</math>-digit numbers, <math>2^4</math> <math>4</math>-digit numbers, <math>2^3</math> <math>3</math>-digit numbers, <math>2^2</math> <math>2</math>-digit numbers, and <math>2^1</math> <math>1</math>-digit numbers. Summing these up, we find that the answer is <math>2^5+2^6+2^6+2^5+2^4+2^3+2^2+2^1=\boxed{222}</math>.
+
+===Solution 2===
+
+Note that <math>2017=2202201_{3}</math>, and <math>2187=3^7=10000000_{3}</math>. There can be a <math>1,2,...,7</math> digit number less than <math>2187</math>, and each digit can either be <math>1</math> or <math>2</math>. So <math>2^1</math> one digit numbers and so on up to <math>2^7</math> <math>7</math> digit.
+
+
+Now we have to subtract out numbers from <math>2018</math> to <math>2187</math>
+
+Then either the number must begin <math>221...</math> or <math>222...</math> with  four more digits at the end
+
+Using <math>1</math>s and <math>2</math>s there are <math>2^4</math> options for each so:
+
+<math>2+4+8+16+32+64+128-2*16=256-2-32=\boxed{222}</math>
+
+===Solution 3 (Casework)===
+Since the greatest power of <math>3</math> that can be used is <math>3^6</math>, we can do these cases.
+
+Coefficient of <math>3^6=0</math>: Then if the number has only <math>3^0</math>, it has 2 choices (1 or 2). Likewise if the number has both a <math>3^1</math> and <math>3^0</math> term, there are 4 choices, and so on until <math>3^5</math>, so the sum is <math>2+4+...+64=127-1=126</math>.
+
+Coefficient of <math>3^6=1</math>: Any combination of <math>1</math> or <math>2</math> for the remaining coefficients works, so <math>2^6=64</math>. Why is this less than <math>126</math>? Because the first time around, leading zeroes didn't count. But this time, all coefficients <math>3^n</math> of <math>n<6</math> need 1 and 2.
+
+Coefficient of <math>3^6=2</math>: Look at <math>3^5</math> coefficient. If 1, all of them work because <math>3^7=2187-3^5=243<<2017</math>. That's 32 cases. Now of this coefficient is 2, then at the coefficient of <math>3^4=81</math> is at least 1. However, <math>3^6*2+3^5*2+3^4>>2017</math>, so our answer is <math>126+64+32=\boxed{222}</math>.

@@ -1,0 +1,8 @@
+==Problem==
+Two angles of an isosceles triangle measure $ 70^\circ$ and $ x^\circ$. What is the sum of the three possible values of $ x$?
+
+$ \textbf{(A)}\   95    \qquad
+\textbf{(B)}\    125   \qquad
+\textbf{(C)}\    140   \qquad
+\textbf{(D)}\    165   \qquad
+\textbf{(E)}\     180$

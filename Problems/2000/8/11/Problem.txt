@@ -1,0 +1,9 @@
+==Problem==
+
+The number $64$ has the property that it is divisible by its unit digit. How many whole numbers between 10 and 50 have this property? 
+
+$\textbf{(A)}\ 15 \qquad
+\textbf{(B)}\ 16 \qquad
+\textbf{(C)}\ 17 \qquad
+\textbf{(D)}\ 18 \qquad
+\textbf{(E)}\ 20$

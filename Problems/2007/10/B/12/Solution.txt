@@ -1,0 +1,8 @@
+==Solution==
+
+Tom's age $N$ years ago was $T-N$. The sum of the ages of his three children $N$ years ago was $T-3N,$ since there are three children. If his age $N$ years ago was twice the sum of the children's ages then,
+$$\begin{align*}T-N&=2(T-3N)\\
+T-N&=2T-6N\\
+T&=5N\\
+T/N&=\boxed{\mathrm{(D) \ } 5}\end{align*}$$
+Note that actual values were not found.

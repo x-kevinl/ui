@@ -1,0 +1,2 @@
+== Solution ==
+Since triangle $ ABD $ is congruent to triangle $ ECD $ and $ \overline{CE} =11 $, $ \overline{AB}=11 $. Since $ \overline{AB}=\overline{BC}$,  $ \overline{BC}=11 $. Because point $ D $ is the midpoint of $ \overline{BC} $, $ \overline{BD}=\frac{\overline{BC}}{2}=\frac{11}{2}=\boxed{\textbf{(D)}\ 5.5} $.

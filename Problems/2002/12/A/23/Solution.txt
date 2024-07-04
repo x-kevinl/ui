@@ -1,0 +1,19 @@
+==Solution 1==
+<asy>
+unitsize(0.25 cm);
+pair A, B, C, D, M;
+A = (0,0);
+B = (88/9, 28*sqrt(5)/9);
+C = (16,0);
+D = 9/16*C;
+M = (B + C)/2;
+draw(A--B--C--cycle);
+draw(B--D--M);
+label("$A$", A, SW);
+label("$B$", B, N);
+label("$C$", C, SE);
+label("$D$", D, S);
+</asy>
+Looking at the triangle $BCD$, we see that its perpendicular bisector reaches the vertex, therefore implying it is isosceles. Let $x = \angle C$, so that $B=2x$ from given and the previous deducted. Then $\angle ABD=x, \angle ADB=2x$ because any exterior angle of a triangle has a measure that is the sum of the two interior angles that are not adjacent to the exterior angle. That means $ \triangle ABD$ and $\triangle ACB$ are [[Similarity (geometry)|similar]], so $\frac {16}{AB}=\frac {AB}{9} \Longrightarrow AB=12$.
+
+Then by using [[Heron's Formula]] on $ABD$ (with sides $12,7,9$), we have $[\triangle ABD]= \sqrt{14(2)(7)(5)} = 14\sqrt5 \Longrightarrow \boxed{\text{D}}$.

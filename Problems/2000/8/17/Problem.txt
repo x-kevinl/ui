@@ -1,0 +1,5 @@
+==Problem==
+
+The operation $ \otimes $ is defined for all nonzero numbers by $ a\otimes b =\frac{a^{2}}{b} $. Determine $ [(1\otimes 2)\otimes 3]-[1\otimes (2\otimes 3)] $.
+
+$ \text{(A)}\ -\frac{2}{3}\qquad\text{(B)}\ -\frac{1}{4}\qquad\text{(C)}\ 0\qquad\text{(D)}\ \frac{1}{4}\qquad\text{(E)}\ \frac{2}{3} $

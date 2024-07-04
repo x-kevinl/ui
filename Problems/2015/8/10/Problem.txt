@@ -1,0 +1,5 @@
+==Problem==
+
+How many integers between $1000$ and $9999$ have four distinct digits?
+
+$\textbf{(A) }3024\qquad\textbf{(B) }4536\qquad\textbf{(C) }5040\qquad\textbf{(D) }6480\qquad \textbf{(E) }6561$

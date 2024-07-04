@@ -1,0 +1,9 @@
+== Solution ==
+Let $x$ be the number of points scored by the Cougars, and $y$ be the number of points scored by the Panthers. The problem is asking for the value of $y$. 
+$$\begin{align*}
+x+y &= 34 \\
+x-y &= 14 \\
+2x &= 48 \\
+x &= 24 \\
+y &= \boxed{\textbf{(A) }10} \\
+\end{align*}$$

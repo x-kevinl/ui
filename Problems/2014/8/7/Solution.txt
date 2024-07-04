@@ -1,0 +1,2 @@
+==Solution 1==
+Let $g$ being the number of girls in the class. The number of boys in the class is equal to $g-4$. Since the total number of students is equal to $28$, we get $g+g-4=28$. Solving this equation, we get $g=16$. There are $16-4=12$ boys in our class, and our answer is $16:12=\boxed{\textbf{(B)}~4:3}$.

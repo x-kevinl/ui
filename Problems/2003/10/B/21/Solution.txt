@@ -1,0 +1,15 @@
+==Solution==
+
+We can divide the case of all beads in the bag being red after three replacements into three cases. 
+
+The first case is in which the two green beads are the first two beads to be chosen. The probability for this is
+$$\frac{2}{4} \times \frac{1}{4} \times \frac{4}{4} = \frac{1}{8}$$ 
+
+The second case is in which the green beads are chosen first and third. The probability for this is
+$$\frac{2}{4} \times \frac{3}{4} \times \frac{1}{4} = \frac{3}{32}$$
+
+The third case is in which the green beads are chosen second and third. The probability for this is
+$$\frac{2}{4} \times \frac{2}{4} \times \frac{1}{4} = \frac{1}{16}$$
+
+Add all these cases together
+$$\frac{1}{8}+\frac{3}{32}+\frac{1}{16} = \frac{4}{32}+\frac{3}{32}+\frac{2}{32} = \boxed{\textbf{(C) \ } \frac{9}{32}}$$

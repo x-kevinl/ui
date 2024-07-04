@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>(a,b,c)</math> be the [[real number|real]] solution of the system of equations <math>x^3 - xyz = 2</math>, <math>y^3 - xyz = 6</math>, <math>z^3 - xyz = 20</math>. The greatest possible value of <math>a^3 + b^3 + c^3</math> can be written in the form <math>\frac {m}{n}</math>, where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. Find <math>m + n</math>.

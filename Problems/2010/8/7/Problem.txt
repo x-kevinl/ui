@@ -1,0 +1,4 @@
+==Problem==
+Using only pennies, nickels, dimes, and quarters, what is the smallest number of coins Freddie would need so he could pay any amount of money less than a dollar?
+
+$\textbf{(A)}\ 6 \qquad\textbf{(B)}\ 10\qquad\textbf{(C)}\ 15\qquad\textbf{(D)}\ 25\qquad\textbf{(E)}\ 99$

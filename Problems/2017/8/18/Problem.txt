@@ -1,0 +1,6 @@
+==Problem==
+In the non-convex quadrilateral $ABCD$ shown below, $\angle BCD$ is a right angle, $AB=12$, $BC=4$, $CD=3$, and $AD=13$. What is the area of quadrilateral $ABCD$?
+
+<asy>draw((0,0)--(2.4,3.6)--(0,5)--(12,0)--(0,0)); label("$B$", (0, 0), SW); label("$A$", (12, 0), ESE); label("$C$", (2.4, 3.6), SE); label("$D$", (0, 5), N);</asy>
+
+$\textbf{(A) }12 \qquad \textbf{(B) }24 \qquad \textbf{(C) }26 \qquad \textbf{(D) }30 \qquad \textbf{(E) }36$

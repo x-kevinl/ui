@@ -1,0 +1,10 @@
+==Problem==
+Let <math>a, b, c,</math> and <math>d</math> be real numbers that satisfy the system of equations
+<cmath>\begin{align*}
+a + b &= -3, \\
+ab + bc + ca &= -4, \\
+abc + bcd + cda + dab &= 14, \\
+abcd &= 30.
+\end{align*}</cmath>
+There exist relatively prime positive integers <math>m</math> and <math>n</math> such that
+<cmath>a^2 + b^2 + c^2 + d^2 = \frac{m}{n}. </cmath>Find <math>m + n</math>.

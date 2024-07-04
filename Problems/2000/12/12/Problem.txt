@@ -1,0 +1,4 @@
+== Problem ==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>Let [mathjax]A, M,[/mathjax] and [mathjax]C[/mathjax] be [[nonnegative integer]]s such that [mathjax]A + M + C=12[/mathjax]. What is the maximum value of [mathjax]A \cdot M \cdot C + A \cdot M + M \cdot C + A \cdot C[/mathjax]?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+[katex] \mathrm{(A) \ 62 } \qquad \mathrm{(B) \ 72 } \qquad \mathrm{(C) \ 92 } \qquad \mathrm{(D) \ 102 } \qquad \mathrm{(E) \ 112 }  [/katex]

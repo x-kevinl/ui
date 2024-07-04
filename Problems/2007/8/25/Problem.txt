@@ -1,0 +1,17 @@
+==Problem==
+On the dart board shown in the figure below, the outer circle has radius $6$ and the inner circle has radius $3$. Three radii divide each circle into three congruent regions, with point values shown. The probability that a dart will hit a given region is proportional to the area of the region. When two darts hit this board, the score is the sum of the point values of the regions hit. What is the probability that the score is odd?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+<center><asy>
+draw(circle((0,0),6));
+draw(circle((0,0),3));
+draw((0,0)--(0,6));
+draw((0,0)--(rotate(120)*(0,6)));
+draw((0,0)--(rotate(-120)*(0,6)));
+label('1',(rotate(60)*(0,3/2)));
+label('2',(rotate(-60)*(0,3/2)));
+label('2',(0,-3/2));
+label('2',(rotate(60)*(0,9/2)));
+label('1',(rotate(-60)*(0,9/2)));
+label('1',(0,-9/2));
+</asy></center>
+$\mathrm{(A)} \frac{17}{36} \qquad \mathrm{(B)} \frac{35}{72} \qquad \mathrm{(C)} \frac{1}{2} \qquad \mathrm{(D)} \frac{37}{72} \qquad \mathrm{(E)} \frac{19}{36}$

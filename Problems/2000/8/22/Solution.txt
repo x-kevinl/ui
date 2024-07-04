@@ -1,0 +1,9 @@
+==Solution==
+
+The original cube has $6$ faces, each with an area of $2\cdot 2 = 4$ square units.  Thus the original figure had a total surface area of $24$ square units.
+
+The new figure has the original surface, with $6$ new faces that each have an area of $1$ square unit, for a total surface area of of $6$ additional square units added to it.  But $1$ square unit of the top of the bigger cube, and $1$ square unit on the bottom of smaller cube, is not on the surface, and does not count towards the surface area.
+
+The total surface area is therefore $24 + 6 - 1 - 1 = 28$ square units.
+
+The percent increase in surface area is $\frac{SA_{new} - SA_{old}}{SA_{old}}\cdot 100\% = \frac{28-24}{24}\cdot 100\% \approx 16.67\%$, giving the closest answer as $\boxed{C}$.

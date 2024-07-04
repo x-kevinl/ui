@@ -1,0 +1,4 @@
+==Solution==
+Note that the slope of $PQ$ is $\frac{a-b}{b-a}=-1$ and the slope of $PS$ is $\frac{b+a}{a+b}=1$.  Hence, $PQ\perp PS$ and we can similarly prove that the other angles are right angles.  This means that $PQRS$ is a rectangle. By distance formula we have $(a-b)^2+(b-a)^2*2*(a+b)^2 = 256$. Simplifying we get $(a-b)(a+b) = 8$. Thus $a+b$ and $a-b$ have to be a factor of 8. The only way for them to be factors of $8$ and remain integers is if $a+b = 4$ and $a-b = 2$. So the answer is $\boxed{\textbf{(A)}\ 4}$
+
+Solution by I_Dont_Do_Math

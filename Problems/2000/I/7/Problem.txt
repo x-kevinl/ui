@@ -1,0 +1,5 @@
+== Problem ==
+Suppose that <math>x,</math> <math>y,</math> and <math>z</math> are three positive numbers that satisfy the equations <math>xyz = 1,</math> <math>x + \frac {1}{z} = 5,</math> and <math>y + \frac {1}{x} = 29.</math> Then <math>z + \frac {1}{y} = \frac {m}{n},</math> where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. Find <math>m + n</math>.
+
+
+note: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques

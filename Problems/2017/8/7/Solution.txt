@@ -1,0 +1,6 @@
+==Solution 1 (detailed explanation)==
+To check, if a number is divisible by 19, take its unit digit and multiply it by 2, then add the result to the rest of the number, and repeat this step until the number is reduced to two digits. If the result is divisible by 19, then the original number is also divisible by 19. Or we could just try to divide the example number the problem gave us by 19. 
+
+After we got 19 eliminated, we can see that the other options have a lot of 1's in them. The divisibility rule for 11 is add alternating digits up, then take the difference of them. The example number works like that. If we add variables, ABCDEF to make number ABCABC, we can see that (A+C+B) - (B+A+C) = 0. Which is divisible by 11, so our answer choice is $\boxed{\textbf{(A)}\ 11}$.
+
+by: CHECKMATE2021 (edited by CHECKMATE2021)

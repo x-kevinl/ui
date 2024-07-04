@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>m</math> be the number of solutions in positive integers to the equation <math>4x+3y+2z=2009</math>, and let <math>n</math> be the number of solutions in positive integers to the equation <math>4x+3y+2z=2000</math>. Find the remainder when <math>m-n</math> is divided by <math>1000</math>.

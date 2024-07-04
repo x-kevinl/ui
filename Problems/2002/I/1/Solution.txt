@@ -1,0 +1,5 @@
+== Solution 1 ==
+Consider the three-digit arrangement, <math>\overline{aba}</math>. There are <math>10</math> choices for <math>a</math> and <math>10</math> choices for <math>b</math> (since it is possible for <math>a=b</math>), and so the probability of picking the palindrome is <math>\frac{10 \times 10}{10^3} = \frac 1{10}</math>. Similarly, there is a <math>\frac 1{26}</math> probability of picking the three-letter palindrome.  
+
+By the [[Principle of Inclusion-Exclusion]], the total probability is
+<center><math>\frac{1}{26}+\frac{1}{10}-\frac{1}{260}=\frac{35}{260}=\frac{7}{52}\quad\Longrightarrow\quad7+52=\boxed{059}</math></center>

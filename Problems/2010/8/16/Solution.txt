@@ -1,0 +1,4 @@
+== Solution ==
+Let the side length of the square be $s$, and let the radius of the circle be $r$. Thus we have $s^2=r^2\pi$. Dividing each side by $r^2$, we get $\frac{s^2}{r^2}=\pi$. Since $\left(\frac{s}{r}\right)^2=\frac{s^2}{r^2}$, we have $\frac{s}{r}=\sqrt{\pi}\Rightarrow \boxed{\textbf{(B)}\ \sqrt{\pi}}$
+
+niggers a niggers fr fr

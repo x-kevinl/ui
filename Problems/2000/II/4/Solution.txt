@@ -1,0 +1,6 @@
+== Solution 1==
+We use the fact that the number of divisors of a number <math>n = p_1^{e_1}p_2^{e_2} \cdots p_k^{e_k}</math> is <math>(e_1 + 1)(e_2 + 1) \cdots (e_k + 1)</math>. If a number has <math>18 = 2 \cdot 3 \cdot 3</math> factors, then it can have at most <math>3</math> distinct primes in its factorization. 
+
+Dividing the greatest power of <math>2</math> from <math>n</math>, we have an odd integer with six positive divisors, which indicates that it either is (<math>6 = 2 \cdot 3</math>) a prime raised to the <math>5</math>th power, or two primes, one of which is squared. The smallest example of the former is <math>3^5 = 243</math>, while the smallest example of the latter is <math>3^2 \cdot 5 = 45</math>. 
+
+Suppose we now divide all of the odd factors from <math>n</math>; then we require a power of <math>2</math> with <math>\frac{18}{6} = 3</math> factors, namely <math>2^{3-1} = 4</math>. Thus, our answer is <math>2^2 \cdot 3^2 \cdot 5 = \boxed{180}</math>.

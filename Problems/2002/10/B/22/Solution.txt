@@ -1,0 +1,16 @@
+== Solution 1 == 
+[[Image:2002_12B_AMC-20.png]]
+
+Let $OM = x$, $ON = y$. By the [[Pythagorean Theorem]] on $\triangle XON, MOY$ respectively,
+$$\begin{align*}
+(2x)^2 + y^2 &= 19^2\\
+x^2 + (2y)^2 &= 22^2\end{align*}
+$$
+
+Summing these gives $5x^2 + 5y^2 = 845 \Longrightarrow x^2 + y^2 = 169$. 
+
+By the Pythagorean Theorem again, we have 
+
+$$(2x)^2 + (2y)^2 = XY^2 \Longrightarrow XY = \sqrt{4(x^2 + y^2)} = \sqrt{4(169)} = \sqrt{676} = \boxed{\mathrm{(B)}\ 26}$$
+
+Alternatively, we could note that since we found $x^2 + y^2 = 169$, segment $MN=13$. Right triangles $\triangle MON$ and $\triangle XOY$ are similar by Leg-Leg with a ratio of $\frac{1}{2}$, so $XY=2(MN)=\boxed{\mathrm{(B)}\ 26}$

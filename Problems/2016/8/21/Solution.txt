@@ -1,0 +1,21 @@
+==Solutions==
+===Solution 1===
+We put five chips randomly in order and then pick the chips from the left to the right. To find the number of ways to rearrange the three red chips and two green chips, we solve for $\binom{5}{2} = 10$. However, we notice that whenever the last chip we draw is red, we pick both green chips before we pick the last red chip. Similarly, when the last chip is green, we pick all three red chips before the last green chip. This means that the last chip must be green in all the situations that work. This means we are left with finding the number of ways to rearrange three red chips and one green chip, which is $\binom{4}{3} = 4$. Because a green chip will be last $4$ out of the $10$ situations, our answer is $\boxed{\textbf{(B) } \frac{2}{5}}$.
+
+===Solution 2===
+There are two ways of ending the game: either you picked out all the red chips or you picked out all the green chips. We can pick out $3$ red chips, $3$ red chips and $1$ green chip, $2$ green chips, $2$ green chips and $1$ red chip, and $2$ green chips and $2$ red chips. Because order is important in this problem, there are $1+4+1+3+6=15$ ways to pick out the chip. But we noticed that if you pick out the three red chips before you pick out the green chip, the game ends. So, we need to subtract cases like that to get the total number of ways a game could end, which is $15-5=10$. Out of the 10 ways to end the game, 4 of them end with a green chip. The answer is $\frac{4}{10} = \boxed{\textbf{(B) } \frac{2}{5}}$.
+
+===Solution 3===
+Assume that after you draw the three red chips in a row without drawing both green chips, you continue drawing for the next turn. The last/fifth chip that is drawn must be a green chip because if both green chips were drawn before, we would've already completed the game. So technically, the problem is asking for the probability that the "fifth draw" is a green chip. This probability is symmetric to the probability that the first chip drawn is green, which is $\frac{2}{5}$. So the probability is $\boxed{\textbf{(B) } \frac{2}{5}}$. 
+
+Note: This problem is almost identical to 2001 AMC 10 Problem #23.
+
+===Solution 4===
+If we list all possibilities where the $3$ red chips are drawn , where R represents Red and G represents Green, they are RRR, GRRR, RGRR, and RRGR, because the last chip drawn must be red. This means that there are 4 possibilities for it to be red. The only other outcome is that it ends in green, which if we represent them the same way we did for red, we get, GG, GRG, RGG, RRGG, RGRG, and GRRG, or $6$ outcomes. This means there are $4+6=10$ possible outcomes, and 4 outcomes that result in $3$ red being drawn, so the probability is $\frac{4}{10} = \frac{2}{5}$, and the answer is $\boxed{\textbf{(B) } \frac{2}{5}}$
+
+~~DaLegendaryTaco72
+
+===Solution 5===
+We can use basic probability to find the answer to this question. The probability of the first chip being red is $\frac{3}{5}$ because there are $3$ red chips and $5$ chips in total. The probability of the second chip being red is $\frac{2}{4}$ because there are now $2$ red chips and $4$ total chips. The probability of the third chip being red is $\frac{1}{3}$ because there are now $1$ red chips and $3$ total chips. If we multiply these fractions, we get $\frac{1}{10}$. To get the answer of $\frac{2}{5}$ we need to multiply this product by $4$ because there are $4$ different draws that these red chips can be chosen on. They can be chosen on the $\text{1st 2nd, 3rd, or 4th}$ draws because if a red chip was chosen on the $\text{5th}$ draw, $2$ green chips would have already been chosen. So our answer is $\frac{1}{10}$ multiplied by $4$ which would leave us with the answer of $\boxed{\textbf{(B) } \frac{2}{5}}$.
+
+~ThatCarGuy3

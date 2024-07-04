@@ -1,0 +1,70 @@
+== Solutions ==
+=== Solution 1 ===
+The first number is divisible by $1$.
+
+The sum of the first two numbers is even.
+
+The sum of the first three numbers is divisible by $3.$
+
+The sum of the first four numbers is divisible by $4.$
+
+The sum of the first five numbers is $400.$
+
+Since $400$ is divisible by $4,$ the last score must also be divisible by $4.$ Therefore, the last score is either $76$ or $80.$
+
+Case 1: $76$ is the last number entered.
+
+Since $400\equiv 76\equiv 1\pmod{3}$, the fourth number must be divisible by $3,$ but none of the scores are divisible by $3.$
+
+Case 2: $80$ is the last number entered.
+
+Since $80\equiv 2\pmod{3}$, the fourth number must be $2\pmod{3}$. The only number which satisfies this is $71$. The next number must be $91$ since the sum of the first two numbers is even. So the only arrangement of the scores $76, 82, 91, 71, 80$ or $82, 76, 91, 71, 80$ $\Rightarrow \text{(C)}$
+
+=== Solution 2 ===
+We know the first sum of the first three numbers must be divisible by $3,$ so we write out all $5$ numbers $\pmod{3}$, which gives $2,1,2,1,1,$ respectively. Clearly, the only way to get a number divisible by $3$ by adding three of these is by adding the three ones. So those must go first. Now we have an odd sum, and since the next average must be divisible by $4, 71$ must be next. That leaves $80$ for last, so the answer is $\mathrm{C}$.
+
+=== Solution 3 ===
+
+we know that the average of the scores is an integer 
+
+so that means s1+s2+s3+s4 must be an even number divisible by 4 
+
+we have 3 even scores and 2 odd scores
+
+which means that the last score cannot be odd because otherwise, we would get an odd number divided by an even number in the denominator.
+
+so we have answers that are even 
+
+76,80,82
+
+We see 3 cases 
+where 76 is the last score, 80 is the last score, and 82 is the last score  
+76= 1 mod(5)
+which means 
+80+82+71+91= 0 mod(4)
+80+82+71+91= 4 mod(5)
+
+80= 0 mod(5)
+76+82+71+91= 0 mod(5)
+76+82+71+91= 0 mod(4)
+
+82= 2 mod(5)
+76+80+71+91= 0 mod(4)
+76+80+71+91= 3 mod(5)
+
+Case 1: 76
+324 is divisible by 4 
+324 divided by 5 is 1
+which means 76 is not the last number
+
+case 2:
+324-4=320
+320 is divisible by 4 
+320 is divisible by 5 
+which means this case is true. 
+
+case 3:
+320-2=318
+318 is not divisible by 4 which makes it incorrect even though 
+
+it has a remainder of 3 when divided by 5

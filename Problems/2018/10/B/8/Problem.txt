@@ -1,0 +1,20 @@
+== Problem ==
+Sara makes a staircase out of toothpicks as shown:
+
+<asy>
+size(150);
+defaultpen(linewidth(0.8));
+path h = ellipse((0.5,0),0.45,0.015), v = ellipse((0,0.5),0.015,0.45);
+for(int i=0;i<=2;i=i+1)
+{
+for(int j=0;j<=3-i;j=j+1)
+{
+filldraw(shift((i,j))*h,black);
+filldraw(shift((j,i))*v,black);
+}
+}
+</asy>
+
+This is a 3-step staircase and uses 18 toothpicks. How many steps would be in a staircase that used 180 toothpicks?
+
+$\textbf{(A)}\ 10\qquad\textbf{(B)}\ 11\qquad\textbf{(C)}\ 12\qquad\textbf{(D)}\ 24\qquad\textbf{(E)}\ 30$

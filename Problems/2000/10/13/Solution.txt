@@ -1,0 +1,47 @@
+==Solution==
+
+In each column there must be one yellow peg. In particular, in the rightmost column, there is only one peg spot, therefore a yellow peg must go there. 
+
+In the second column from the right, there are two spaces for pegs. One of them is in the same row as the corner peg, so there is only one remaining choice left for the yellow peg in this column.
+
+By similar logic, we can fill in the yellow pegs as shown:
+
+<asy>
+unitsize(20);
+dot((0,0));
+dot((1,0));
+dot((2,0));
+dot((3,0));
+label("Y",(4,-.35),N);
+dot((0,1));
+dot((1,1));
+dot((2,1));
+label("Y",(3,.6),N);
+dot((0,2));
+dot((1,2));
+label("Y",(2,1.6),N);
+dot((0,3));
+label("Y",(1,2.6),N);
+label("Y",(0,3.6),N);
+</asy>
+
+After this we can proceed to fill in the whole pegboard, so there is only $1$ arrangement of the pegs. The answer is $\boxed{\text{B}}$
+
+<asy>
+unitsize(20);
+label("O",(0,-.35),N);
+label("B",(1,-.35),N);
+label("G",(2,-.35),N);
+label("R",(3,-.35),N);
+label("Y",(4,-.35),N);
+label("B",(0,.6),N);
+label("G",(1,.6),N);
+label("R",(2,.6),N);
+label("Y",(3,.6),N);
+label("G",(0,1.6),N);
+label("R",(1,1.6),N);
+label("Y",(2,1.6),N);
+label("R",(0,2.6),N);
+label("Y",(1,2.6),N);
+label("Y",(0,3.6),N);
+</asy>

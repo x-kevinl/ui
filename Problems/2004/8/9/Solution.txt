@@ -1,0 +1,2 @@
+== Solution ==
+Let the $5$ numbers be $a, b, c, d$, and $e$. Thus $\frac{a+b+c+d+e}{5}=54$ and $a+b+c+d+e=270$. Since $\frac{a+b}{2}=48$, $a+b=96$. Substituting back into our original equation, we have $96+c+d+e=270$ and $c+d+e=174$. Dividing by $3$ gives the average of $\boxed{\textbf{(D)}\ 58}$.

@@ -1,0 +1,4 @@
+==Solution 1==
+From the tangency condition we have <math>\let\angle BCD = \let\angle CBD = \let\angle A</math>. With LoC we have <math>\cos(A) = \frac{25+100-81}{2*5*10} = \frac{11}{25}</math> and <math>\cos(B) = \frac{81+25-100}{2*9*5} = \frac{1}{15}</math>. Then, <math>CD = \frac{\frac{9}{2}}{\cos(A)} = \frac{225}{22}</math>. Using LoC we can find <math>AD</math>: <math>AD^2 = AC^2 + CD^2 - 2(AC)(CD)\cos(A+C) = 10^2+(\frac{225}{22})^2 + 2(10)\frac{225}{22}\cos(B) = 100 + \frac{225^2}{22^2} + 2(10)\frac{225}{22}*\frac{1}{15} = \frac{5^4*13^2}{484}</math>. Thus, <math>AD = \frac{5^2*13}{22}</math>. By Power of a Point, <math>DP*AD = CD^2</math> so <math>DP*\frac{5^2*13}{22} = (\frac{225}{22})^2</math> which gives <math>DP = \frac{5^2*9^2}{13*22}</math>. Finally, we have <math>AP = AD - DP = \frac{5^2*13}{22} - \frac{5^2*9^2}{13*22} = \frac{100}{13} \rightarrow \boxed{113}</math>.
+
+~angie.

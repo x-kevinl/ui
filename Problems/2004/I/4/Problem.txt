@@ -1,0 +1,2 @@
+== Problem ==
+[[square (geometry) | Square]] <math>ABCD</math> has sides of length 2.  [[Set]] <math> S  </math> is the set of all [[line segment]]s that have length 2 and whose [[endpoint]]s are on adjacent sides of the square. The [[midpoint]]s of the line segments in set <math> S </math> enclose a region whose [[area]] to the nearest hundredth is <math>k</math>.  Find <math> 100k</math>.

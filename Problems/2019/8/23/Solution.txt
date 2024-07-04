@@ -1,0 +1,4 @@
+==Solution 1==
+Given the information above, we start with the equation $\frac{t}{4}+\frac{2t}{7} + 15 + x = t$,where $t$ is the total number of points scored and $x\le 14$ is the number of points scored by the remaining 7 team members, we can simplify to obtain the Diophantine equation $x+15 = \frac{13}{28}t$, or $28x+28\cdot 15=13t$. Since $t$ is necessarily divisible by 28, let $t=28u$ where $u \ge 0$ and divide by 28 to obtain $x + 15 = 13u$. Then, it is easy to see $u=2$ ($t=56$) is the only candidate remaining, giving $x=\boxed{\textbf{(B)} 11}$. 
+
+-scrabbler94

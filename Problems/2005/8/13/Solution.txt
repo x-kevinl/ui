@@ -1,0 +1,6 @@
+== Solution ==
+Notice that $AF + DE = BC$, so $DE=4$. Let $O$ be the intersection of the extensions of $AF$ and $DC$, which makes rectangle $ABCO$. The area of the polygon is the area of $FEDO$ subtracted from the area of $ABCO$.
+
+$$\text{Area} = 52 = 8 \cdot 9- EF \cdot 4$$
+
+Solving for the unknown, $EF=5$, therefore $DE+EF=4+5=\boxed{\textbf{(C)}\ 9}$.

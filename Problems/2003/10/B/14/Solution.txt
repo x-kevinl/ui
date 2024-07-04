@@ -1,0 +1,5 @@
+==Solution==
+
+$$3^8\cdot5^2 = (3^4)^2\cdot5^2 = (3^4\cdot5)^2 = 405^2$$
+
+$405$ is not a perfect power, so the smallest possible value of $a+b$ is $405+2=\boxed{\textbf{(D)}\ 407}$.

@@ -1,0 +1,35 @@
+==Solution 1 (Casework)==
+Let $M_1=\begin{bmatrix}a_1 & b_1 & c_1\end{bmatrix}, M_2=\begin{bmatrix}a_2 & b_2 & c_2\end{bmatrix},$ and $M_3=\begin{bmatrix}a_3 & b_3 & c_3\end{bmatrix}.$ 
+
+We wish to count the ordered triples $(M_1,M_2,M_3)$ of row matrices. We perform casework:
+<ol style="margin-left: 1.5em;">
+  <li>$M_1=M_2=M_3.$</li><p>
+There are $2^3=8$ options for $M_1.$ Once $M_1$ is chosen, $M_2$ and $M_3$ are uniquely determined. <p>
+<b>In this case, we have $\boldsymbol{8}$ ordered triples $\boldsymbol{(M_1,M_2,M_3).}$</b><p> 
+  <li>Exactly two of $M_1,M_2,$ and $M_3$ are equal.</li><p>
+For $M_1=M_2\neq M_3,$ there are $2^3=8$ options for $M_1.$ Once $M_1$ is chosen, $M_2$ is uniquely determined, and $M_3$ has $2^3-1=7$ options. So, there are $8\cdot7=56$ ordered triples $(M_1,M_2,M_3).$<p>
+Similarly, for each of $M_1=M_3\neq M_2$ and $M_2=M_3\neq M_1,$ there are $56$ ordered triples $(M_1,M_2,M_3).$<p>
+<b>In this case, we have $\boldsymbol{56\cdot3=168}$ ordered triples $\boldsymbol{(M_1,M_2,M_3).}$</b><p>
+  <li>All of $M_1,M_2,$ and $M_3$ are different.</li><p>
+There are two subcases: <p>
+     <ol style="margin-left: 1.5em;" type="A">
+       <li>Exactly one of $M_1,M_2,$ and $M_3$ is $\begin{bmatrix}0 & 0 & 0\end{bmatrix}.$</li><p>
+For $M_1=\begin{bmatrix}0 & 0 & 0\end{bmatrix},$ there are $2^3-1=7$ options for $M_2$ and $2^3-2=6$ options for $M_3.$ So, there are $7\cdot6=42$ ordered triples $(M_1,M_2,M_3).$<p>
+Similarly, for each of $M_2=\begin{bmatrix}0 & 0 & 0\end{bmatrix}$ and $M_3=\begin{bmatrix}0 & 0 & 0\end{bmatrix},$ there are $42$ ordered triples $(M_1,M_2,M_3).$<p>
+<b>In this subcase, we have $\boldsymbol{42\cdot3=126}$ ordered triples $\boldsymbol{(M_1,M_2,M_3).}$</b><p>
+       <li>The sum of two of $M_1,M_2,$ and $M_3$ is equal to the third matrix.</li><p>
+For $M_1+M_2=M_3:$
+<ul style="list-style-type:square;">
+  <li>If $M_1=\begin{bmatrix}1 & 0 & 0\end{bmatrix},$ then $M_2\in\{\begin{bmatrix}0 & 1 & 1\end{bmatrix},\begin{bmatrix}0 & 1 & 0\end{bmatrix},\begin{bmatrix}0 & 0 & 1\end{bmatrix}\}.$</li><p>
+More generally, if $M_1$ consists of one $1$ and two $0$'s, then $M_2$ has $3$ options, and $M_3$ is uniquely determined. So, there are $\binom31\cdot3=9$ ordered triples $(M_1,M_2,M_3).$<p>
+  <li>If $M_1=\begin{bmatrix}1 & 1 & 0\end{bmatrix},$ then $M_2=\begin{bmatrix}0 & 0 & 1\end{bmatrix}.$</li><p>
+More generally, if $M_1$ consists of two $1$'s and one $0,$ then $M_2$ and $M_3$ are uniquely determined. So, there are $\binom32=3$ ordered triples $(M_1,M_2,M_3).$
+</ul><p>
+There are $9+3=12$ ordered triples $(M_1,M_2,M_3).$ <p>
+Similarly, for each of $M_1+M_3=M_2$ and $M_2+M_3=M_1,$ there are $12$ ordered triples $(M_1,M_2,M_3).$<p>
+<b>In this subcase, we have $\boldsymbol{12\cdot3=36}$ ordered triples $\boldsymbol{(M_1,M_2,M_3).}$</b><p>
+     </ol>
+</ol>
+Together, the answer is $8+168+126+36=\boxed{\textbf{(B)}\ 338}.$
+
+~MRENTHUSIASM

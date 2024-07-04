@@ -1,0 +1,15 @@
+==Solution 1==
+
+<math>n</math> can either be <math>0</math> or <math>1</math> (mod <math>2</math>).
+
+Case 1: <math>n \equiv 0 \pmod{2}</math>
+
+Then, <math>n \equiv 2 \pmod{4}</math>, which implies <math>n \equiv 1 \pmod{3}</math> and <math>n \equiv 4 \pmod{6}</math>, and therefore <math>n \equiv 3 \pmod{5}</math>. Using [[Chinese Remainder Theorem|CRT]], we obtain <math>n \equiv 58 \pmod{60}</math>, which gives <math>16</math> values for <math>n</math>.
+
+Case 2: <math>n \equiv 1 \pmod{2}</math>
+
+<math>n</math> is then <math>3 \pmod{4}</math>. If <math>n \equiv 0 \pmod{3}</math>, <math>n \equiv 3 \pmod{6}</math>, a contradiction. Thus, <math>n \equiv 2 \pmod{3}</math>, which implies <math>n \equiv 5 \pmod{6}</math>. <math>n</math> can either be <math>0 \pmod{5}</math>, which implies that <math>n \equiv 35 \pmod{60}</math> by CRT, giving <math>17</math> cases; or <math>4 \pmod{5}</math>, which implies that <math>n \equiv 59 \pmod{60}</math> by CRT, giving <math>16</math> cases.
+
+The total number of extra-distinct numbers is thus <math>16 + 16 + 17 = \boxed{049}</math>.
+
+~mathboy100

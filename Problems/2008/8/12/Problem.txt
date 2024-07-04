@@ -1,0 +1,8 @@
+==Problem==
+A ball is dropped from a height of $3$ meters. On its first bounce it rises to a height of $2$ meters. It keeps falling and bouncing to $\frac{2}{3}$ of the height it reached in the previous bounce. On which bounce will it not rise to a height of $0.5$ meters?
+
+$\textbf{(A)}\  3 \qquad
+\textbf{(B)}\  4 \qquad
+\textbf{(C)}\ 5 \qquad
+\textbf{(D)}\ 6 \qquad
+\textbf{(E)}\ 7$

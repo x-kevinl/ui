@@ -1,0 +1,5 @@
+==Problem==
+
+Each of two boxes contains three chips numbered $1$, $2$, $3$. A chip is drawn randomly from each box and the numbers on the two chips are multiplied. What is the probability that their product is even? 
+
+$\textbf{(A) }\frac{1}{9}\qquad\textbf{(B) }\frac{2}{9}\qquad\textbf{(C) }\frac{4}{9}\qquad\textbf{(D) }\frac{1}{2}\qquad \textbf{(E) }\frac{5}{9}$

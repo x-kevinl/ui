@@ -1,0 +1,3 @@
+== Solution ==
+
+We have $161 = 7 \cdot 23.$ Since $a$ has two digits, the factors must be $23$ and $7,$ so $a = 32$ and $b = 7.$ Then, $ab = 7 \times 32 = \boxed{\mathrm{\textbf{(E)}\ } 224}.$

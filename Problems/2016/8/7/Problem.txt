@@ -1,0 +1,5 @@
+==Problem==
+
+Which of the following numbers is not a perfect square?
+
+$\textbf{(A) }1^{2016}\qquad\textbf{(B) }2^{2017}\qquad\textbf{(C) }3^{2018}\qquad\textbf{(D) }4^{2019}\qquad \textbf{(E) }5^{2020}$

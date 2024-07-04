@@ -1,0 +1,2 @@
+== Solution ==
+After you draw $4$ socks, you can have one of each color, so (according to the [[pigeonhole principle]]), if you pull $\boxed{\textbf{(C)}\ 5}$ then you will be guaranteed a matching pair.

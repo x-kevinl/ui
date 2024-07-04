@@ -1,0 +1,3 @@
+==Solution 1==
+
+The circumference of the clock is twice that of the disk. So, a quarter way around the clock (3:00), the point halfway around the disk will be tangent. The arrow will point to the left. We can see the disk made a 75% rotation from 12 to 3, and 3 is 75% of 4, so it would make 100% rotation from 12 to 4. The answer is $\boxed{\textbf{(C) }4 \ \text{o' clock}}$. Similarly, the arrow would be pointing downward at 6:00. It would already have completed three 180 degree turns. Therefore, two 180 degree turns would be completed at 4:00.

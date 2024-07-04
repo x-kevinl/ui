@@ -1,0 +1,3 @@
+==Solution==
+
+Let the pizza have $60$ slices, since the least common multiple of $(5,3,4)=60$.  Therefore, Alex ate $\frac{1}{5}\times60=12$ slices, Beth ate $\frac{1}{3}\times60=20$ slices, and Cyril ate $\frac{1}{4}\times60=15$ slices.  Dan must have eaten $60-(12+20+15)=13$ slices.  In decreasing order, we see the answer is $\boxed{\textbf{(C) }\text{Beth, Cyril, Dan, Alex}}$.

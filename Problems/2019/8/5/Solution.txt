@@ -1,0 +1,7 @@
+==Solution 1 - Using the answers==
+First, the tortoise walks at a constant rate, ruling out $(D)$
+Second, when the hare is resting, the distance will stay the same, ruling out $(E)$ and $(C)$.
+Third, the tortoise wins the race, meaning that the non-constant one should go off the graph last, ruling out $(A)$.
+Therefore, the answer $\boxed{\textbf{(B)}}$ is the only one left.
+
+$\phantom{Note to the original author of this solution: "we shouldn't be able to edit" is incorrect (if its definition is what I think it is), because I was able to edit. Also, I deleted that, (but did nothing else) }$

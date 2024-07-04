@@ -1,0 +1,17 @@
+==Solution 1==
+Notice that \(41=4^2+5^2\), \(89=5^2+8^2\), and \(80=8^2+4^2\), let \(A~(0,0,0)\), \(B~(4,5,0)\), \(C~(0,5,8)\), and \(D~(4,0,8)\). Then the plane \(BCD\) has a normal
+\begin{equation*}
+\mathbf n:=\frac14\overrightarrow{BC}\times\overrightarrow{CD}=\frac14\begin{pmatrix}-4\\0\\8\end{pmatrix}\times\begin{pmatrix}4\\-5\\0\end{pmatrix}=\begin{pmatrix}10\\8\\5\end{pmatrix}.
+\end{equation*}
+Hence, the distance from \(A\) to plane \(BCD\), or the height of the tetrahedron, is
+\begin{equation*}
+h:=\frac{\mathbf n\cdot\overrightarrow{AB}}{|\mathbf n|}=\frac{10\times4+8\times5+5\times0}{\sqrt{10^2+8^2+5^2}}=\frac{80\sqrt{21}}{63}.
+\end{equation*}
+Each side of the tetrahedron has the same area due to congruency by "S-S-S", and we call it \(S\). Then by the volume formula for cones,
+\begin{align*}
+\frac13Sh&=V_{D\text-ABC}=V_{I\text-ABC}+V_{I\text-BCD}+V_{I\text-CDA}+V_{I\text-DAB}\\
+&=\frac13Sr\cdot4.
+\end{align*}
+Hence, \(r=\tfrac h4=\tfrac{20\sqrt{21}}{63}\), and so the answer is \(20+21+63=\boxed{104}\).
+
+<font size=2>Solution by Quantum-Phantom</font>

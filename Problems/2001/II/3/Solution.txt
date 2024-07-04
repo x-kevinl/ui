@@ -1,0 +1,11 @@
+== Solution ==
+We find that <math>x_5 = 267</math> by the recursive formula. Summing the [[recursion]]s
+
+<cmath>\begin{align*}
+x_{n}&=x_{n-1}-x_{n-2}+x_{n-3}-x_{n-4} \\
+x_{n-1}&=x_{n-2}-x_{n-3}+x_{n-4}-x_{n-5}
+\end{align*}</cmath>
+
+yields <math>x_{n} = -x_{n-5}</math>. Thus <math>x_n = (-1)^k x_{n-5k}</math>. Since <math>531 = 106 \cdot 5 + 1,\ 753 = 150 \cdot 5 + 3,\ 975 = 194 \cdot 5 + 5</math>, it follows that
+
+<cmath>x_{531} + x_{753} + x_{975} = (-1)^{106} x_1 + (-1)^{150} x_3 + (-1)^{194} x_5 = 211 + 420 + 267 = \boxed{898}.</cmath>

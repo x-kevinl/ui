@@ -1,0 +1,8 @@
+==Solution==
+Rewrite $\frac{(x+y)}x$ as $\frac{x}x+\frac{y}x=1+\frac{y}x$.
+
+We also know that $\frac{y}x<0$ because $x$ and $y$ are of opposite sign.
+
+Therefore, $1+\frac{y}x$ is maximized when $|\frac{y}x|$ is minimized, which occurs when $|x|$ is the largest and $|y|$ is the smallest.
+
+This occurs at $(-4,2)$, so $\frac{x+y}x=1-\frac12=\frac12\Rightarrow\boxed{\mathrm{(D)}\ \frac{1}{2}}$.

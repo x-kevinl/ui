@@ -1,0 +1,8 @@
+== Solution ==
+In base <math>3</math>, we find that <math>\overline{2008}_{10} = \overline{2202101}_{3}</math>. In other words,
+<center><math>2008 = 2 \cdot 3^{6} + 2 \cdot 3^{5} + 2 \cdot 3^3 + 1 \cdot 3^2 + 1 \cdot 3^0</math></center>
+In order to rewrite as a sum of perfect powers of <math>3</math>, we can use the fact that <math>2 \cdot 3^k = 3^{k+1} - 3^k</math>:
+<center><math>2008 = (3^7 - 3^6) + (3^6-3^5) + (3^4 - 3^3) + 3^2 + 3^0 = 3^7 - 3^5 + 3^4 - 3^3 + 3^2 + 3^0</math></center>
+The answer is <math>7+5+4+3+2+0 = \boxed{021}</math>.
+
+Note : Solution by bounding is also possible, namely using the fact that <math>1+3+3^2 + \cdots + 3^{n} = \displaystyle\frac{3^{n+1}-1}{2}.</math>

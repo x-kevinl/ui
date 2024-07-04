@@ -1,0 +1,70 @@
+== Solution ==
+=== Solution 1 ===
+Examine <math>F - 32</math> modulo 9.
+
+*If <math>F - 32 \equiv 0 \pmod{9}</math>, then we can define <math>9x = F - 32</math>. This shows that <math>F = \left[\frac{9}{5}\left[\frac{5}{9}(F-32)\right] + 32\right] \Longrightarrow F = \left[\frac{9}{5}(5x) + 32\right] \Longrightarrow F = 9x + 32</math>. This case works.
+* If <math>F - 32 \equiv 1 \pmod{9}</math>, then we can define <math>9x + 1 = F - 32</math>. This shows that <math>F = \left[\frac{9}{5}\left[\frac{5}{9}(F-32)\right] + 32\right] \Longrightarrow F = \left[\frac{9}{5}(5x + 1) + 32\right] \Longrightarrow</math><math>F = \left[9x + \frac{9}{5}+ 32 \right] \Longrightarrow F = 9x + 34</math>. So this case doesn't work. 
+
+Generalizing this, we define that <math>9x + k = F - 32</math>. Thus, <math>F = \left[\frac{9}{5}\left[\frac{5}{9}(9x + k)\right] + 32\right] \Longrightarrow F = \left[\frac{9}{5}(5x + \left[\frac{5}{9}k\right]) + 32\right] \Longrightarrow F = \left[\frac{9}{5} \left[\frac{5}{9}k \right] \right] + 9x + 32</math>. We need to find all values <math>0 \le k \le 8</math> that <math>\left[ \frac{9}{5} \left[ \frac{5}{9} k \right] \right] = k</math>. Testing every value of <math>k</math> shows that <math>k = 0, 2, 4, 5, 7</math>, so <math>5</math> of every <math>9</math> values of <math>k</math> work.
+
+There are <math>\lfloor \frac{1000 - 32}{9} \rfloor = 107</math> cycles of <math>9</math>, giving <math>5 \cdot 107 = 535</math> numbers that work. Of the remaining <math>6</math> numbers from <math>995</math> onwards, <math>995,\ 997,\ 999,\ 1000</math> work, giving us <math>535 + 4 = \boxed{539}</math> as the solution.
+
+=== Solution 2 ===
+Notice that <math>\left[ \frac{9}{5} \left[ \frac{5}{9} k \right] \right] = k</math> holds if <math>k=\left[ \frac{9}{5}x\right]</math> for some integer <math>x</math>.
+Thus, after translating from <math>F\to F-32</math> we want count how many values of <math>x</math> there are such that <math>k=\left[ \frac{9}{5}x\right]</math> is an integer from <math>0</math> to <math>968</math>. This value is computed as <math>\left[968*\frac{5}{9}\right]+1 = \boxed{539}</math>, adding in the extra solution corresponding to <math>0</math>.
+
+==== Note ====
+Proof that <math>\left[ \frac{9}{5} \left[ \frac{5}{9} k \right] \right] = k</math> iff <math>k=\left[ \frac{9}{5}x\right]</math> for some integer <math>x</math>:
+
+First assume that <math>k</math> cannot be written in the form <math>k=\left[ \frac{9}{5}x\right]</math> for any integer <math>x</math>. Let <math>z = \left[ \frac{5}{9}k\right]</math>. Our equation simplifies to <math>k = \left[ \frac{9}{5}z\right]</math>. However, this equation is not possible, as we defined <math>k</math> such that it could not be written in this form. Therefore, if <math>k \neq \left[ \frac{9}{5}x\right]</math>, then <math>\left[ \frac{9}{5} \left[ \frac{5}{9} k \right] \right] \neq k</math>.
+
+Now we will prove that if <math>k = \left[ \frac{9}{5}x\right]</math>, <math>\left[ \frac{9}{5} \left[ \frac{5}{9} k \right] \right] = k</math>. We realize that because of the 5 in the denominator of <math>\left[ \frac{9}{5}x \right]</math>, <math>\left[ \frac{9}{5}x \right]</math> will be at most <math>\frac{2}{5}</math> away from <math>\frac{9}{5}x</math>. Let <math>z = \left[ \frac{9}{5}x \right]- \frac{9}{5}x</math>, meaning that <math>-\frac{2}{5} \leq z \leq \frac{2}{5}</math>. Now we substitute this into our equation:
+
+<cmath>\left[ \frac{9}{5} \left[ \frac{5}{9} k \right] \right] = \left[ \frac{9}{5} \left[ \frac{5}{9} \left[ \frac{9}{5}x\right] \right] \right] = \left[ \frac{9}{5} \left[ \frac{5}{9} (\frac{9}{5}x + z) \right] \right] = \left[ \frac{9}{5} \left[ \frac{5}{9} (\frac{9}{5}x + z) \right] \right] = \left[ \frac{9}{5} \left[ x+ \frac{5}{9}z \right] \right]</cmath>.
+
+Now we use the fact that <math>-\frac{2}{5} \leq z \leq \frac{2}{5}</math>
+
+<cmath>\left[ \frac{9}{5} \left[ x - \frac{5}{9}(\frac{2}{5}) \right] \right] \leq \left[ \frac{9}{5} \left[ x + \frac{5}{9}(z) \right] \right] \leq \left[ \frac{9}{5} \left[ x + \frac{5}{9}(\frac{2}{5}) \right] \right]</cmath>
+
+<cmath>\left[ \frac{9}{5} x \right] \leq \left[ \frac{9}{5} \left[ x + \frac{5}{9}(z) \right] \right] = \left[ \frac{9}{5} \left[ \frac{5}{9}k \right] \right] \leq \left[ \frac{9}{5}x \right]</cmath>
+
+Hence <math>\left[ \frac{9}{5} \left[ \frac{5}{9}k \right] \right] = \left[ \frac{9}{5}x \right] = k</math> and we are done.
+
+- mako17
+
+=== Solution 3 ===
+Let <math>c</math> be a degree Celsius, and <math>f=\frac 95c+32</math> rounded to the nearest integer. Since <math>f</math> was rounded to the nearest integer we have <math>|f-((\frac 95)c+32)|\leq 1/2</math>, which is equivalent to <math>|(\frac 59)(f-32)-c|\leq \frac 5{18}</math> if we multiply by <math>5/9</math>. Therefore, it must round to <math>c</math> because <math>\frac 5{18}<\frac 12</math> so <math>c</math> is the closest integer. Therefore there is one solution per degree celcius in the range from <math>0</math> to <math>(\frac 59)(1000-32) + 1=(\frac 59)(968) + 1=538.8</math>, meaning there are <math>539</math> solutions.
+
+=== Solution 4 ===
+Start listing out values for <math>F</math> and their corresponding values of <math>C</math>. You will soon find that every 9 values starting from <math>F</math> = 32, there is a pattern:
+
+<math>F=32</math>: Works
+
+<math>F=33</math>: Doesn't work
+
+<math>F=34</math>: work
+
+<math>F=35</math>: Doesn’t work
+
+<math>F=36</math>: Works
+
+<math>F=37</math>: Works
+
+<math>F=38</math>: Doesn’t work
+
+<math>F=39</math>: Works
+
+<math>F=40</math>: Doesn’t work
+
+<math>F=41</math>: Works
+
+There are <math>969</math> numbers between <math>32</math> and <math>1000</math>, inclusive. This is <math>107</math> sets of <math>9</math>, plus <math>6</math> extra numbers at the end. In each set of <math>9</math>, there are <math>5</math> “Works,” so we have <math>107\cdot5 = 535</math> values of <math>F</math> that work.
+
+Now we must add the <math>6</math> extra numbers. The number of “Works” in the first <math>6</math> terms of the pattern is <math>4</math>, so our final answer is <math>535 + 4 = 539</math> solutions that work.
+
+Submitted by warriorcats
+
+=== Solution 5(similar to solution 3 but faster solution if you have no time) ===
+Notice that every <math>C</math> value corresponds to exactly one <math>F</math> value but multiple <math>F</math> values can correspond to a <math>C</math> value. Thus, the smallest <math>C</math> value is <math>0</math> and the largest <math>C</math> value is <math>538</math> yielding <math>\boxed{539}</math> solutions.
+
+-alanisawesome2018

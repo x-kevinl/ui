@@ -1,0 +1,101 @@
+== Solutions ==
+=== Solution 1 ===
+Recast the problem entirely as a block-walking problem.  Call the respective dice <math>a, b, c, d</math>.  In the diagram below, the lowest <math>y</math>-coordinate at each of <math>a</math>, <math>b</math>, <math>c</math>, and <math>d</math> corresponds to the value of the roll.
+
+[[File:AIME01IN6.png]]
+
+The red path corresponds to the sequence of rolls <math>2, 3, 5, 5</math>.  This establishes a [[bijection]] between valid dice roll sequences and block walking paths.  
+
+The solution to this problem is therefore <math>\dfrac{\binom{9}{4}}{6^4} = {\dfrac{7}{72}}</math>. So the answer is <math>\boxed{079}</math>.
+
+=== Solution 2 ===
+Let <math>a, b, c,</math> and <math>d</math> be the results of rolling the four dice respectively. We have the range <math>1\leq a\leq b\leq c\leq d\leq 6</math>, and there are <math>6^4=1296</math> total outcomes from rolling the dice. To transfer the inequality into a strictly increasing inequality, we can transform it into <math>1\leq a<b+1<c+2<d+3\leq 9</math>. Now, lets suppose <math>a'=a, b'=b+1, c'=c+2,</math> and <math>d'=d+3</math>. Then, <math>1\leq a'<b'<c'<d' \leq 9</math>. Clearly, there are <math>\binom{9}{4}=126</math> values that satisfy this equation, so our answer is <math>\dfrac{\binom{9}{4}}{6^4} = {\dfrac{7}{72}}\implies \boxed{079}</math>.
+
+~Mathkiddie
+
+=== Solution 3 ===
+
+If we take any [[combination]] of four numbers, there is only one way to order them in a non-decreasing order. It suffices now to find the number of combinations for four numbers from <math>\{1,2,3,4,5,6\}</math>. We can visualize this as taking the four dice and splitting them into 6 slots (each slot representing one of {1,2,3,4,5,6}), or dividing them amongst 5 separators. Thus, there are <math>{9\choose4} = 126</math> outcomes of four dice. The solution is therefore <math>\frac{126}{6^4} = \frac{7}{72}</math>, and <math>7 + 72 = \boxed{079}</math>.
+
+=== Solution 4 ===
+Call the dice rolls <math>a, b, c, d</math>. The difference between the <math>a</math> and <math>d</math> distinguishes the number of possible rolls there are. 
+
+*If <math>a - d = 0</math>, then the values of <math>b,\ c</math> are set, and so there are <math>6</math> values for <math>a,\ d</math>.
+*If <math>a - d = 1</math>, then there are <math>{3\choose2} = 3</math> ways to arrange for values of <math>b,\ c</math>, but only <math>5</math> values for <math>a,\ d</math>.
+*If <math>a - d = 2</math>, then there are <math>{4\choose2} = 6</math> ways to arrange <math>b, c</math>, and there are only <math>6 - 2 = 4</math> values for <math>a, d</math>.
+
+Continuing, we see that the sum is equal to <math>\sum_{i = 0}^{5}{i+2\choose2}(6 - i) = 6 + 15 + 24 + 30 + 30 + 21 = 126</math>. The requested probability is <math>\frac{126}{6^4} = \frac{7}{72}</math> and our answer is <math>\boxed{79}</math>.
+
+=== Solution 5 ===
+The dice rolls can be in the form 
+
+<div style="text-align:center;">
+ABCD<br />
+AABC<br />
+AABB<br />
+AAAB<br />
+AAAA
+</div>
+
+where A, B, C, D are some possible value of the dice rolls. (These forms are not keeping track of whether or not the dice are in ascending order, just the possible outcomes.) 
+
+#Now, for the first case, there are <math>{6\choose4} = 15</math> ways for this. We do not have to consider the order because the combination counts only one of the permutations; we can say that it counts the correct (ascending order) permutation. 
+#Second case: <math>{6\choose3} = 20</math> ways to pick 3 numbers, <math>{3\choose1}</math> ways to pick 1 of those 3 to duplicate. A total of 60 for this case. 
+#Third case: <math>{6\choose2}=15</math> ways to pick 2 numbers. We will duplicate both, so nothing else in this case matters. 
+#Fourth case: <math>{6\choose2} = 15</math> ways to pick 2 numbers. We pick one to duplicate with <math>{2\choose1} = 2</math>, so there are a total of 30 in this case. 
+#Fifth case: <math>{6\choose1} = 6</math>; all get duplicated so nothing else matters. 
+
+There are a total of <math>6^4</math> possible dice rolls. 
+
+Thus, 
+
+<div style="text-align:center;"><math>\frac{m}{n} = \frac{15 + 60 + 15 + 30 + 6}{6^4} = \frac{126}{6^4} = \frac{7}{72}</math></div>
+
+Therefore, our answer is <math>\boxed{079}</math>
+
+=== Solution 6 ===
+Consider the number of possible dice roll combinations which work after <math>1</math> roll, after <math>2</math> rolls, and so on. There is 6 possible rolls for the first dice. If the number rolled is a 1, then there are 6 further values that are possible for the second dice; if the number rolled is a 2, then there are 5 further values that are possible for the second dice, and so on. 
+
+Suppose we generalize this as a function, say <math>f(l,r)</math> return the number of possible combinations after <math>l</math> rolls and <math>r</math> being the beginning value of the first roll. It becomes clear that from above, <math>f(1,r) = 1</math>; every value of <math>l</math> after that is equal to the sum of the number of combinations of <math>l - 1</math> rolls that have a starting value of at least <math>r</math>. If we slowly count through and add up all the possible combinations we get <math>\frac{7}{72}</math> possibilities.
+
+=== Solution 7 ===
+In a manner similar to the above solution, instead consider breaking it down into two sets of two dice rolls. The first [[subset]] must have a maximum value which is <math>\le</math> the minimum value of the second subset. 
+
+*If the first subset ends in a 1, there is <math>1</math> such subset and there are <math>6 + 5 + 4 + 3 + 2 + 1 = \frac{6}{2}(6 + 1) = 21</math> ways of making the second subset.
+*If the first subset ends in a 2, there is <math>2</math> such subsets and there are <math>5 + \ldots + 1 = \frac{5}{2}(5 + 1) = 15</math> ways of making the second subset.
+
+Thus, the number of combinations is <math>\sum_{i=1}^6 i \cdot \left(\frac{(7 - i)(8 - i)}{2}\right) = 21 + 30 + 30 + 24 + 15 + 6 = 126</math>, and the probability again is <math>\frac7{72}</math>, giving <math>m+n=\boxed{079}</math>.
+
+=== Solution 8 Recursion Formula ===
+If you're too tired to think about any of the above smart transformations of the problem, a recursion formula can be a robust way to the correct answer. 
+
+We just need to work out the valid cases for each roll. Denote by <math>N_{k}(n)</math> the number of valid cases in the <math>k+1</math>-th roll when the number <math>n</math> is rolled, for <math>k=1,2,3</math> and <math>1 <= n <= 6</math>. Then we have the following recursion formula:
+<cmath> N_{1}(n) = n</cmath>
+<cmath> N_{2}(n) = N_{1}(1) + N_{1}(2) + ... + N_{1}(n)=N_{2}(n-1)+N_{1}(n)</cmath>
+<cmath> N_{3}(n) = N_{2}(1) + N_{2}(2) + ... + N_{2}(n)=N_{3}(n-1)+N_{2}(n)</cmath>
+The logic is that, if <math>n</math> is rolled, then the number of valid cases is the subtotal of valid cases in the preceding roll for the outcome of 1 to <math>n</math>.  The recursion can be easily calculated by hand when <math>N_k(n)</math> are put in columns side by side, given the fact that te numbers are smaller than 100. 
+Finally, the total number of cases is
+<cmath> N = \sum_{n=1}^{6} N_{3}(n)</cmath>
+and
+<cmath> P = \frac{N}{6^4}</cmath>
+
+===Solution 9: Observation of each case===
+Lets try casework and observe the cases. Notice that if the last roll is a <math>1</math>, then the only dice rolls may be <math>1-1-1-1</math>, which is only <math>1</math> possibility. Observe that if the last roll is <math>2</math>, then there are <math>4 = 1 + 3</math> possibilities. When the last roll is a <math>3</math>, there are <math>10 = 1 + 3 + 6</math> possibilities. Notice when the last roll is <math>n</math>, the number of cases is the sum of the first <math>n</math> positive triangular numbers. This is easily provable when observing the numbers of possibilities after assigning a value to the last and second to last rolls.
+So there are a total of <math>1 + 1 + 3 + 1 + 3 + 6 + 1 + 3 + 6 + 10 + 1 + 3 + 6 + 10 + 15 + 1 + 3 + 6 + 10 + 15 + 21 = 126</math> possibilities. So the probability is <math>\frac{126}{6^4} = \frac{7}{72}</math> and <math> 7 + 72 = \boxed{079}</math>. ~skyscraper
+
+===Solution 10: Distributions===
+
+This is equivalent to picking a four-element sequence of <math>\{1, 2, 3, 4, 5, 6\}</math> with repetition. Notice that once the sequence is picked, there is one and only one way to order these so that they form a sequence of rolls satisfying our conditions. 
+
+Now count the number of such four-element sequences, let <math>a</math> be the number of <math>1</math>s in the sequence, <math>b</math> be the number of <math>2</math>s, <math>c</math> <math>3</math>s, <math>d</math> <math>4</math>s, <math>e</math> <math>5</math>s, and <math>f</math> <math>6</math>s. Now we see that we must have <cmath>a + b + c + d + e + f = 4</cmath> with <math>a, b, c, d, e, f</math> being nonnegative integers since there are a total of <math>4</math> numbers picked. The number of solutions to this is <math>\dbinom{9}{4},</math> so our total number is equal to <math>\dfrac{\binom{9}{4}}{6^4} = \dfrac{7}{72},</math> making our answer <math>\boxed{079}.</math> 
+
+~Ilikeapos
+
+===Solution 11: Stars and Bars===
+Let the rolls be <math>a,b,c</math> and <math>d\newline</math> let <math>z=a-1, e=b-a, f=c-b, g=d-c, h=6-d\newline</math> <math>z+e+f+g+h=5\newline</math> This equation has <math>C(5+5-1, 5-1)=126</math> integer solutions<math>\newline</math> <math>126/1296=7/72\newline</math> <math>7+72=\boxed{79}</math>
+~ryanbear
+
+===Solution 12===
+
+Let's say the four dice values are all different. These can only be arranged in one way to satisfy our conditions, so there are <math>\binom{6}{4}=15</math> ways. If there are three different values, there are <math>\binom{6}{3}</math> to choose the numbers and <math>\binom{3}{1}</math> to choose which number will have the repeat, so <math>20\cdot3=60</math> ways. If there are two different values, there are <math>\binom{6}{2}</math> ways to choose the numbers. If there are two of each, then there is one way. If there are three of one and one of another, then there are <math>\binom{2}{1}</math> ways. Therefore <math>15\cdot(1+2)=45</math>. Now if all the numbers are the same, there are <math>\binom{6}{1}=6</math> ways. Altogether we have <math>15+60+45+6=126</math> ways. <math>\frac{126}{6^4}=\frac{21}{216}=\frac{7}{72}</math>. <math>7+72=\boxed{79}</math>. 
+~MC413551

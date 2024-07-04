@@ -1,0 +1,2 @@
+==Problem==
+Find the arithmetic mean of all the three-digit palindromes. (Recall that a palindrome is a number that reads the same forward and backward, such as <math>777</math> or <math>383</math>.)

@@ -1,0 +1,12 @@
+==Solutions==
+===Solution 1===
+There are <math>12 \cdot 11 = 132</math> possible situations (<math>12</math> choices for the initially assigned gate, and <math>11</math> choices for which gate Dave's flight was changed to). We are to count the situations in which the two gates are at most <math>400</math> feet apart.
+
+If we number the gates <math>1</math> through <math>12</math>, then gates <math>1</math> and <math>12</math> have four other gates within <math>400</math> feet, gates <math>2</math> and <math>11</math> have five, gates <math>3</math> and <math>10</math> have six, gates <math>4</math> and <math>9</math> have have seven, and gates <math>5</math>, <math>6</math>, <math>7</math>, <math>8</math> have eight. Therefore, the number of valid gate assignments is <cmath>2\cdot(4+5+6+7)+4\cdot8 = 2 \cdot 22 + 4 \cdot 8 = 76</cmath> so the probability is <math>\frac{76}{132} = \frac{19}{33}</math>. The answer is <math>19 + 33 = \boxed{052}</math>.
+
+===Solution 2===
+As before, derive that there are <math>132</math> possibilities for Dave's original and replacement gates.
+
+Now suppose that Dave has to walk <math>100k</math> feet to get to his new gate.  This means that Dave's old and new gates must be <math>k</math> gates apart.  (For example, a <math>100</math> foot walk would consist of the two gates being adjacent to each other.)  There are <math>12-k</math> ways to pick two gates which are <math>k</math> gates apart, and <math>2</math> possibilities for gate assignments, for a total of <math>2(12-k)</math> possible assignments for each <math>k</math>.
+
+As a result, the total number of valid gate arrangements is <cmath>2\cdot 11 + 2\cdot 10 + 2\cdot 9 + 2\cdot 8 = 76</cmath> and so the requested probability is <math>\tfrac{19}{33}</math> for a final answer of <math>\boxed{052}</math>.

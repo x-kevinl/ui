@@ -1,0 +1,16 @@
+== Solution 1 ==
+
+Clearly, $m=0,n=0$ is one of the solutions. However, we can be quite sure that there are more, so we apply [https://artofproblemsolving.com/wiki/index.php/Simon%27s_Favorite_Factoring_Trick Simon's Favorite Factoring Trick] to get the following: 
+
+$$\begin{align*}
+m^2+mn+n^2 &= m^2n^2\\
+m^2+mn+n^2 +mn &= m^2n^2 +mn\\
+(m+n)^2 &= m^2n^2 +mn\\
+(m+n)^2 &= mn(mn+1).\\
+\end{align*}$$
+
+Essentially, this says that the product of two consecutive numbers $mn,mn+1$ must be a perfect square. This is practically impossible except $mn=0$ or $mn+1=0$. 
+$mn=0$ gives $(0,0)$.
+$mn=-1$ gives $(1,-1), (-1,1)$. Answer: $\boxed{\textbf{(C) 3}}.$
+
+~Technodoggo ~minor edits by lucaswujc

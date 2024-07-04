@@ -1,0 +1,5 @@
+==Problem==
+
+How many whole numbers lie in the interval between $\frac{5}{3}$ and $2\pi$?
+
+$\text{(A)}\ 2 \qquad \text{(B)}\ 3 \qquad \text{(C)}\ 4 \qquad \text{(D)}\ 5 \qquad \text{(E)}\ \text{infinitely many}$

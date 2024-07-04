@@ -1,0 +1,2 @@
+==Problem==
+The sequences of positive integers <math>1,a_2, a_3,...</math> and <math>1,b_2, b_3,...</math> are an increasing arithmetic sequence and an increasing geometric sequence, respectively. Let <math>c_n=a_n+b_n</math>. There is an integer <math>k</math> such that <math>c_{k-1}=100</math> and <math>c_{k+1}=1000</math>. Find <math>c_k</math>.

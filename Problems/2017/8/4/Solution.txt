@@ -1,0 +1,2 @@
+==Solution==
+We can approximate $7,928,564$ to $8,000,000$ and $0.000315$ to $0.0003.$ Multiplying the two yields $2400.$ Thus, it shows our answer is $\boxed{\textbf{(D)}\ 2400}.$

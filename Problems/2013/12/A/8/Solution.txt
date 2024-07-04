@@ -1,0 +1,9 @@
+==Solution 1==
+
+$ x+\tfrac{2}{x}= y+\tfrac{2}{y} $
+
+Since $x\not=y$, we may assume that $x=\frac{2}{y}$ and/or, equivalently, $y=\frac{2}{x}$.
+
+Cross multiply in either equation, giving us $xy=2$.
+
+$\boxed{\textbf{(D) }{2}}$

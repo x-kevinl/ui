@@ -1,0 +1,28 @@
+==Solution 1==
+
+Let $a$ and $b$ be the two legs of the triangle.
+
+We have $\frac{1}{2}ab = 3(a+b+c)$.
+
+Then $ab=6 \left(a+b+\sqrt {a^2 + b^2}\right)$.
+
+We can complete the square under the root, and we get, $ab=6 \left(a+b+\sqrt {(a+b)^2 - 2ab}\right)$.
+
+Let $ab=p$ and $a+b=s$, we have $p=6 \left(s+ \sqrt {s^2 - 2p}\right)$.
+
+After rearranging, squaring both sides, and simplifying, we have $p=12s-72$.
+
+
+Putting back $a$ and $b$, and after factoring using Simon's Favorite Factoring Trick, we've got $(a-12)(b-12)=72$.
+
+
+Factoring 72, we get 6 pairs of $a$ and $b$
+
+
+$(13, 84), (14, 48), (15, 36), (16, 30), (18, 24), (20, 21).$
+
+
+And this gives us $6$ solutions $\Rightarrow \mathrm{(A)}$.
+
+
+Alternatively, note that $72 = 2^3 \cdot 3^2$. Then 72 has $(3+1)(2+1) = (4)(3) = 12$ factors. However, half of these are repeats, so we have $\frac{12}{2} = 6$ solutions.

@@ -1,0 +1,6 @@
+==Solution 1==
+
+If all lines satisfy the condition, then we can just plug in values for $a$, $b$, and $c$ that form an arithmetic progression. Let's use $a=1$, $b=2$, $c=3$, and $a=1$, $b=3$, $c=5$. Then the two lines we get are: $$x+2y=3$$ $$x+3y=5$$
+Use elimination to deduce $$y = 2$$ and plug this into one of the previous line equations. We get $$x+4 = 3 \Rightarrow x=-1$$ Thus the common point is $\boxed{\textbf{(A) } (-1,2)}$.
+
+~IronicNinja

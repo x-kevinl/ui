@@ -1,0 +1,6 @@
+==Problem==
+A $3 \times 7$ rectangle is covered without overlap by 3 shapes of tiles: $2 \times 2$, $1\times4$, and $1\times1$, shown below. What is the minimum possible number of $1\times1$ tiles used?
+
+[[File:2024-AMC8-q7.png|center]]
+
+$\textbf{(A) } 1\qquad\textbf{(B)} 2\qquad\textbf{(C) } 3\qquad\textbf{(D) } 4\qquad\textbf{(E) } 5$

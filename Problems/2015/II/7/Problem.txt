@@ -1,0 +1,5 @@
+==Problem==
+
+Triangle <math>ABC</math> has side lengths <math>AB = 12</math>, <math>BC = 25</math>, and <math>CA = 17</math>. Rectangle <math>PQRS</math> has vertex <math>P</math> on <math>\overline{AB}</math>, vertex <math>Q</math> on <math>\overline{AC}</math>, and vertices <math>R</math> and <math>S</math> on <math>\overline{BC}</math>. In terms of the side length <math>PQ = \omega</math>, the area of <math>PQRS</math> can be expressed as the quadratic polynomial <cmath>Area(PQRS) = \alpha \omega - \beta \omega^2.</cmath>
+
+Then the coefficient <math>\beta = \frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

@@ -1,0 +1,2 @@
+==Problem==
+Let <math>x</math> be a real number such that <math>\sin^{10}x+\cos^{10} x = \tfrac{11}{36}</math>. Then <math>\sin^{12}x+\cos^{12} x = \tfrac{m}{n}</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

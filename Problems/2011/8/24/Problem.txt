@@ -1,0 +1,5 @@
+==Problem==
+
+In how many ways can $10001$ be written as the sum of two primes?
+
+$ \textbf{(A) }0\qquad\textbf{(B) }1\qquad\textbf{(C) }2\qquad\textbf{(D) }3\qquad\textbf{(E) }4 $

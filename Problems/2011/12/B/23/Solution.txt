@@ -1,0 +1,26 @@
+==Solution==
+We declare a point $(x, y)$ to make up for the extra steps that the bug has to move. If the point $(x, y)$ satisfies the property that $|x - 3| + |y + 2| + |x + 3| + |y - 2| \le 20$, then it is in the desirable range because $|x - 3| + |y + 2|$ is the length of the shortest path from $(x,y)$ to $(3, -2)$ and $|x + 3| + |y - 2|$ is the length of the shortest path from $(x,y)$ to $(-3, 2)$.
+
+
+If $-3\le x \le 3$, then $-7\le y \le 7$ satisfy the property. there are $15 \times 7 = 105$ lattice points here.
+
+else let $3< x \le 8$ (and for $-8 \le x < -3$ because it is symmetrical) We set 8 as the upper bound for x because the shortest distance from $(-3, 2)$ to $(x, y)$ added to the shortest distance from $(x, y)$ to $(3, -2)$ is $|x - 3| + |y + 2| + |x + 3| + |y - 2|$. Since the minimum value for the difference between the y-coordinates is at $y = 0$, we get $2x + 4 = 20$ or $-2x + 4 = 20$. Thus, the upper and lower bounds for $x$ are $8$ and $-8$, respectively.
+
+Now we test each value for x satisfying $3< x \le 8$ and double the result because of symmetry.
+
+For $x = 4$, the possibles values of y are such that $|2y| \le 12$ for a total of $13$ lattice points,
+
+for $x = 5$, the possibles values of y are such that $|2y| \le 10$ for a total of $11$ lattice points,
+
+for $x = 6$, the possibles values of y are such that $|2y| \le 8$ for a total of $9$ lattice points,
+
+for $x = 7$, the possibles values of y are such that $|2y| \le 6$ for a total of $7$ lattice points,
+
+for $x = 8$, the possibles values of y are such that $|2y| \le 4$ for a total of $5$ lattice points,
+<br />
+
+Hence, there are a total of $105 + 2 ( 13 + 11 + 9 + 7 + 5) = \boxed{(C) 195}$ lattice points.
+
+One may also obtain the result by using Pick's Theorem(how?).
+
+$i = a - \frac{b}{2} - 1$ (Suggestion)

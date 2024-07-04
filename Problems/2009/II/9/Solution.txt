@@ -1,0 +1,55 @@
+== Solution ==
+
+=== Solution 1 ===
+
+It is actually reasonably easy to compute <math>m</math> and <math>n</math> exactly.
+
+First, note that if <math>4x+3y+2z=2009</math>, then <math>y</math> must be odd. Let <math>y=2y'-1</math>. We get <math>4x + 6y' - 3 + 2z = 2009</math>, which simplifies to <math>2x + 3y' + z = 1006</math>. For any pair of positive integers <math>(x,y')</math> such that <math>2x + 3y' < 1006</math> we have exactly one <math>z</math> such that the equality holds. Hence we need to count the pairs <math>(x,y')</math>. 
+
+For a fixed <math>y'</math>, <math>x</math> can be at most <math>\left\lfloor \dfrac{1005-3y'}2 \right\rfloor</math>. Hence the number of solutions is 
+
+<cmath>
+\begin{align*}
+m
+& =
+\sum_{y'=1}^{334} \left\lfloor \dfrac{1005-3y'}2 \right\rfloor 
+\\
+& = 
+501 + 499 + 498 + 496 + \cdots + 6 + 4 + 3 + 1 
+\\
+& =
+1000 + 994 + \cdots + 10 + 4
+\\
+& =
+83834
+\end{align*}
+</cmath>
+
+Similarly, we can compute that <math>n=82834</math>, hence <math>m-n = 1000 \equiv \boxed{000} \pmod{1000}</math>.
+
+=== Solution 2 ===
+
+We can avoid computing <math>m</math> and <math>n</math>, instead we will compute <math>m-n</math> directly.
+
+Note that <math>4x+3y+2z=2009</math> if and only if <math>4(x-1)+3(y-1)+2(z-1)=2000</math>. Hence there is an almost 1-to-1 correspondence between the positive integer solutions of the two equations. The only exceptions are the solutions of the first equation in which at least one of the variables is equal to <math>1</math>. The value <math>m-n</math> is the number of such solutions.
+
+If <math>x=1</math>, we get the equation <math>3y+2z=2005</math>. The variable <math>y</math> must be odd, and it must be between <math>1</math> and <math>667</math>, inclusive. For each such <math>y</math> there is exactly one valid <math>z</math>. Hence in this case there are <math>334</math> valid solutions.
+
+If <math>y=1</math>, we get the equation <math>4x+2z=2006</math>, or equivalently <math>2x+z=1003</math>. The variable <math>x</math> must be between <math>1</math> and <math>501</math>, inclusive, and for each such <math>x</math> there is exactly one valid <math>z</math>. Hence in this case there are <math>501</math> valid solutions.
+
+If <math>z=1</math>, we get the equation <math>4x+3y=2007</math>. The variable <math>y</math> must be odd, thus let <math>y=2u-1</math>. We get <math>4x+6u=2010</math>, or equivalently, <math>2x+3u=1005</math>. Again, we see that <math>u</math> must be odd, thus let <math>u=2v-1</math>. We get <math>2x+6v=1008</math>, which simplifies to <math>x+3v=504</math>. Now, we see that <math>v</math> must be between <math>1</math> and <math>167</math>, inclusive, and for each such <math>v</math> we have exactly one valid <math>x</math>. Hence in this case there are <math>167</math> valid solutions.
+
+Finally, we must note that there are two special solutions: one with <math>x=y=1</math>, and one with <math>y=z=1</math>. We counted each of them twice, hence we have to subtract two from the total.
+
+Therefore <math>m-n = 334 + 501 + 167 - 2 = 1000</math>, and the answer is <math>1000\bmod 1000 = \boxed{000}</math>.
+
+=== Solution 3 ===
+In this solution we will perform a similar operation as in Solution 2, but only on <math>y</math>: <math>4x+3y+2z=2009</math> if and only if <math>4x+3(y-3)+2z=2000</math>. There is a one-to-one correspondence between the solutions of these two equations. Let <math>y'=y-3</math> and require <math>y'</math> to be positive as well. Then the second equation becomes <math>4x+3y'+2z=2000</math>. Notice that there are several "extra" solutions in the first equation that cannot be included in the second equation (since that would make <math>y'</math> non-positive). The value <math>m-n</math> is therefore the number of "extra" solutions.
+
+Since <math>y'=y-3</math>, in order for <math>y'</math> to be non-positive <math>1 \leq y \leq 3</math>. However, equation (1) requires y to be odd, so we have two cases to consider: <math>y=1</math> and <math>y=3</math>. This results in the two equations <math>4x+3+2z=2009</math> and <math>4x+9+2z=2009</math>.
+
+<math>4x+3+2z=2009</math> simplifies to <math>2x+z=1003</math>. There is exactly one valid <math>z</math> for each <math>x</math>; <math>x</math> must be between <math>1</math> and <math>501</math> (inclusive) to obtain positive integer solutions. Therefore, there are <math>501</math> solutions in this case. 
+
+<math>4x+9+2z=2009</math> simplifies to <math>2x+z=1000</math>. There is exactly one valid <math>z</math> for each <math>x</math>; <math>x</math> must be between <math>1</math> and <math>499</math> (inclusive) to obtain positive integer solutions. Therefore, there are <math>499</math> solutions in this case. 
+
+Thus, <math>m-n = 501 + 499 = 1000; 1000 \equiv \boxed{000} \pmod{1000}</math>.

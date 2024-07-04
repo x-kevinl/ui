@@ -1,0 +1,10 @@
+==Solution 1==
+In order to maximize the sum of the numbers, the numbers must have their digits ordered in decreasing value. There are only two numbers from the answer choices with this property: $ 76531 $ and $ 87431 $. To determine the answer we will have to use estimation and the first two digits of the numbers.
+
+For $ 76531 $ the number that would maximize the sum would start with $ 98 $. The first two digits of $ 76531 $ (when rounded) are  $ 77 $. Adding $ 98 $ and $ 77 $, we find that the first three digits of the sum of the two numbers would be $ 175 $.
+
+For $ 87431 $ the number that would maximize the sum would start with $ 96 $. The first two digits of $ 87431 $ (when rounded) are $ 87 $. Adding $ 96 $ and $ 87 $, we find that the first three digits of the sum of the two numbers would be $ 183 $.
+
+From the estimations, we can say that the answer to this problem is $ \boxed{\textbf{(C)}\ 87431} $.
+
+p.s. USE INTUITION, see answer choices before solving any question -litttle_master

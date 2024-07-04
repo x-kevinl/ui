@@ -1,0 +1,4 @@
+==Problem==
+Points $A$ and $B$ lie on the graph of $y=\log_{2}x$. The midpoint of $\overline{AB}$ is $(6, 2)$. What is the positive difference between the $x$-coordinates of $A$ and $B$?
+
+$\textbf{(A)}~2\sqrt{11}\qquad\textbf{(B)}~4\sqrt{3}\qquad\textbf{(C)}~8\qquad\textbf{(D)}~4\sqrt{5}\qquad\textbf{(E)}~9$

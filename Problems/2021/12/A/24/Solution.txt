@@ -1,0 +1,23 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(300);
+pair O, X, A, B, P, Q, R;
+O = (0,0);
+X = (4,3);
+A = (-7,0);
+B = (7,0);
+P = (4,0);
+Q = intersectionpoints(Circle(O,7),Circle(X,3))[0];
+R = intersectionpoints(Circle(O,7),Circle(X,3))[1];
+filldraw(P--Q--R--cycle,yellow);
+dot("$\Gamma$",O,S);
+dot("$\Omega$",X,E);
+dot("$A$",A,SW);
+dot("$B$",B,SE);
+dot("$P$",P,S);
+dot("$Q$",Q,E);
+dot("$R$",R,N);
+draw(arc(O, 7, 0, 180)^^A--B^^Circle(X,3));
+</asy>
+~MRENTHUSIASM

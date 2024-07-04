@@ -1,0 +1,13 @@
+==Problem==
+
+Convex quadrilateral $ ABCD $ has $ AB=3 $, $ BC=4 $, $ CD=13 $, $ AD=12 $, and $ \angle ABC=90^{\circ} $, as shown. What is the area of the quadrilateral?
+
+<asy>
+pair A=(0,0), B=(-3,0), C=(-3,-4), D=(48/5,-36/5);
+draw(A--B--C--D--A); 
+label("$A$",A,N); label("$B$",B,NW); label("$C$",C,SW); label("$D$",D,E);
+draw(rightanglemark(A,B,C,25));
+</asy>
+
+$ \textbf{(A)}\ 30\qquad\textbf{(B)}\ 36\qquad\textbf{(C)}\ 40\qquad\textbf{(D)}\ 48\qquad\textbf{(E)}\ 58.5 $
+[[Category: Introductory Geometry Problems]]

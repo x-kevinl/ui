@@ -1,0 +1,10 @@
+== Solution 1==
+If we work with the problem for a little bit, we quickly see that there is no direct combinatorics way to calculate <math>m/n</math>. The [[Principle of Inclusion-Exclusion]] still requires us to find the individual probability of each box.
+
+Let <math>a, b</math> represent the number of marbles in each box, and [[without loss of generality]] let <math>a>b</math>. Then, <math>a + b = 25</math>, and since the <math>ab</math> may be reduced to form <math>50</math> on the denominator of <math>\frac{27}{50}</math>, <math>50|ab</math>. It follows that <math>5|a,b</math>, so there are 2 pairs of <math>a</math> and <math>b: (20,5),(15,10)</math>.
+
+*'''Case 1''': Then the product of the number of black marbles in each box is <math>54</math>, so the only combination that works is <math>18</math> black in first box, and <math>3</math> black in second. Then, <math>P(\text{both white}) = \frac{2}{20} \cdot \frac{2}{5} = \frac{1}{25},</math> so <math>m + n = 26</math>.
+
+*'''Case 2''': The only combination that works is 9 black in both. Thus, <math>P(\text{both white}) = \frac{1}{10}\cdot \frac{6}{15} = \frac{1}{25}</math>. <math>m + n = 26</math>.
+
+Thus, <math>m + n = \boxed{026}</math>.

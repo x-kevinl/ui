@@ -1,0 +1,16 @@
+==Solution 1==
+The difference between $acb$ and $abc$ is given by
+
+$(100a + 10c + b) - (100a + 10b + c) = 9(c-b)$
+
+The difference between the two squares is three times this amount or
+
+$27(c-b)$
+
+The difference between two consecutive squares is always an odd number, therefore $c-b$ is odd. We will show that $c-b$ must be 1. Otherwise we would be looking for two consecutive squares that are at least 81 apart. But already the equation $(x+1)^2-x^2 = 27\cdot 3$ solves to $x=40$, and $40^2$ has more than three digits.
+
+The consecutive squares with common difference $27$ are $13^2=169$ and $14^2=196$. One third of the way between them is $178$ and two thirds of the way is $187$.
+
+This gives $a=1$, $b=7$, $c=8$.
+
+$a+b+c = 16 \Rightarrow \mathrm{(C)}$

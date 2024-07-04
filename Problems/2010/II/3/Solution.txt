@@ -1,0 +1,39 @@
+== Solution ==
+In general, there are <math>20-n</math> pairs of integers <math>(a, b)</math> that differ by <math>n</math> because we can let <math>b</math> be any integer from <math>n+1</math> to <math>20</math> and set <math>a</math> equal to <math>b-n</math>. Thus, the product is <math>(1^{19})(2^{18})\cdots(19^1)</math> (or alternatively, <math>19! \cdot 18! \cdots 1!</math>.)
+
+When we count the number of factors of <math>2</math>, we have 4 groups, factors that are divisible by <math>2</math> at least once, twice, three times and four times.
+
+<br/>
+
+*Numbers that are divisible by <math>2</math> at least once: <math>2, 4, \cdots, 18</math>
+
+:Exponent corresponding to each one of them <math>18, 16, \cdots 2</math>
+
+:Sum <math>=2+4+\cdots+18=\frac{(20)(9)}{2}=90</math>
+<br/>
+
+*Numbers that are divisible by <math>2</math> at least twice: <math>4, 8, \cdots, 16</math>
+
+:Exponent corresponding to each one of them <math>16, 12, \cdots 4</math>
+
+:Sum <math>=4+8+\cdots+16=\frac{(20)(4)}{2}=40</math> 
+
+<br/>
+
+*Numbers that are divisible by <math>2</math> at least three times: <math>8,16</math>
+
+:Exponent corresponding to each one of them <math>12, 4</math>
+
+:Sum <math>=12+4=16</math> 
+
+<br/>
+
+*Number that are divisible by <math>2</math> at least four times: <math>16</math>
+
+:Exponent corresponding to each one of them <math>4</math>
+
+:Sum <math>=4</math> 
+
+<br/>
+
+Summing these give an answer of <math>\boxed{150}</math>.

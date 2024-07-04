@@ -1,0 +1,5 @@
+==Solution 1==
+We start by defining a triangle. The two small sides MUST add to a larger sum than the long side. We are given <math>4</math> and <math>10</math> as the sides, so we know that the <math>3</math>rd side is between <math>6</math> and <math>14</math>, exclusive. We also have to consider the word OBTUSE triangles. That means that the two small sides squared is less than the <math>3</math>rd side. So the triangles' sides are between <math>6</math> and <math>\sqrt{84}</math> exclusive, and the larger bound is between <math>\sqrt{116}</math> and <math>14</math>, exclusive. The area of these triangles are from <math>0</math> (straight line) to <math>2\sqrt{84}</math> on the first "small bound" and the larger bound is between <math>0</math> and <math>20</math>. 
+<math>0 < s < 2\sqrt{84}</math> is our first equation, and <math>0 < s < 20</math> is our <math>2</math>nd equation. Therefore, the area is between <math>\sqrt{336}</math> and <math>\sqrt{400}</math>, so our final answer is <math>\boxed{736}</math>.
+
+~ARCTICTURN

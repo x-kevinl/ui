@@ -1,0 +1,4 @@
+==Problem==
+Zara has a collection of $4$ marbles: an Aggie, a Bumblebee, a Steelie, and a Tiger. She wants to display them in a row on a shelf, but does not want to put the Steelie and the Tiger next to one another. In how many ways can she do this?
+
+$\textbf{(A) }6 \qquad \textbf{(B) }8 \qquad \textbf{(C) }12 \qquad \textbf{(D) }18 \qquad \textbf{(E) }24$

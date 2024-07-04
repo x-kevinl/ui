@@ -1,0 +1,12 @@
+== Solution ==
+===Solution 1===
+$x$ is at most $999$, so $x+32$ is at most $1031$. The minimum value of $x+32$ is $1000$. However, the only palindrome between $1000$ and $1032$ is $1001$, which means that $x+32$ must be $1001$.
+
+It follows that $x$ is $969$, so the sum of the digits is $\boxed{\textbf{(E)}\ 24}$.
+
+===Solution 2===
+For $x+32$ to be a four-digit number, $x$ is in between $968$ and $999$. The palindromes in this range are $969$, $979$, $989$, and $999$, so the sum of the digits of $x$ can be $24$, $25$, $26$, or $27$. Only $\boxed{\textbf{(E)}\ 24}$ is an option, and upon checking, $x+32=1001$ is indeed a palindrome.
+
+===Solution 3===
+Since we know $x+32$ to be $1 a a 1$ and the only palindrome that works is $0 = a$, that means $x+32 = 1001$, and so $x = 1001 - 32 = 969$. So, $9$ + $6$ + $9$ = $\boxed{\textbf{(E)}\ 24}$.
+~songmath20

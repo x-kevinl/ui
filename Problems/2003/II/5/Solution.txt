@@ -1,0 +1,2 @@
+== Solution ==
+The volume of the wedge is half the volume of a cylinder with height <math>12</math> and radius <math>6</math>. (Imagine taking another identical wedge and sticking it to the existing one).  Thus, <math>V=\dfrac{6^2\cdot 12\pi}{2}=216\pi</math>, so <math>n=\boxed{216}</math>.

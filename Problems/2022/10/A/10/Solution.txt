@@ -1,0 +1,48 @@
+== Solution 1 ==
+<asy>
+/* Edited by MRENTHUSIASM */
+size(250);
+real x, y;
+x = 6;
+y = 3;
+draw((0,0)--(x,0));
+draw((0,0)--(0,y));
+draw((0,y)--(x,y));
+draw((x,0)--(x,y));
+draw((0.5,0)--(0.5,0.5)--(0,0.5));
+draw((x-0.5,y)--(x-0.5,y-0.5)--(x,y-0.5));
+draw((0.5,0.5)--(x-0.5,y-0.5),dashed,Arrows());
+draw((x,0)--(0,y),dashed,Arrows());
+label("$1$",(x-0.5,y-0.25),W);
+label("$1$",(x-0.25,y-0.5),S);
+label("$8$",midpoint((0.5,y-0.5)--(x/2,y/2)),(0,2.5));
+label("$4\sqrt{2}$",midpoint((0.5,0.5)--(x/2,y/2)),S);
+label("$A$",(0,0),SW);
+label("$E$",(0,0.5),W);
+label("$F$",(0.5,0),S);
+label("$I$",(0.5,0.5),N);
+label("$D$",(x,y),NE);
+label("$G$",(x-0.5,y),N);
+label("$H$",(x,y-0.5),E);
+label("$J$",(x-0.5,y-0.5),S);
+Label L1 = Label("$w$", align=(0,0), position=MidPoint, filltype=Fill(3,0,white));
+Label L2 = Label("$\ell$", align=(0,0), position=MidPoint, filltype=Fill(0,3,white));
+draw((0,-1)--(x,-1), L=L1, arrow=Arrows(),bar=Bars(15));
+draw((x+1,0)--(x+1,y), L=L2, arrow=Arrows(),bar=Bars(15));
+</asy>
+Label the bottom left corner of the larger rectangle (without the square cut out) as $A$ and the top right as $D$. $w$ is the width of the rectangle and $\ell$ is the length. Now we have vertices $E, F, G, H$ as vertices of the irregular octagon created by cutting out the squares. Let $I, J$ be the two closest vertices formed by the squares.
+The distance between the two closest vertices of the squares is thus $IJ=\left(4\sqrt{2}\right).$
+Substituting, we get 
+
+$$(IJ)^2 = (w-2)^2 + (\ell-2)^2 = \left(4\sqrt{2}\right)^2 = 32 \implies w^2+\ell^2-4w-4\ell = 24.$$
+Using the fact that the diagonal of the rectangle is $8,$ we get 
+$$w^2+\ell^2 = 64.$$
+Subtracting the first equation from the second equation, we get $$4w+4\ell=40 \implies w+\ell = 10.$$
+Squaring yields $$w^2 + 2w\ell + \ell^2 = 100.$$
+Subtracting the second equation from this, we get $2w\ell = 36,$ and thus area of the original rectangle is $w\ell = \boxed{\textbf{(E) } 18}.$
+
+~USAMO333
+
+Edits and Diagram by ~KingRavi and ~MRENTHUSIASM
+
+Minor edit by yanes04

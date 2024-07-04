@@ -1,0 +1,5 @@
+==Problem==
+
+There are 24 four-digit whole numbers that use each of the four digits 2, 4, 5 and 7 exactly once. Only one of these four-digit numbers is a multiple of another one. Which of the following is it?
+
+$\textbf{(A)}\ 5724 \qquad \textbf{(B)}\ 7245 \qquad \textbf{(C)}\ 7254 \qquad \textbf{(D)}\ 7425 \qquad \textbf{(E)}\ 7542$

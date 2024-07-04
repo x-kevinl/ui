@@ -1,0 +1,6 @@
+== Problem ==
+
+The average age of $5$ people in a room is $30$ years. An $18$-year-old person leaves
+the room. What is the average age of the four remaining people?
+
+$\mathrm{(A)}\ 25 \qquad\mathrm{(B)}\ 26 \qquad\mathrm{(C)}\ 29 \qquad\mathrm{(D)}\ 33 \qquad\mathrm{(E)}\ 36$

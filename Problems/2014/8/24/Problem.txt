@@ -1,0 +1,4 @@
+==Problem==
+One day the Beverage Barn sold $252$ cans of soda to $100$ customers, and every customer bought at least one can of soda. What is the maximum possible median number of cans of soda bought per customer on that day?
+
+$\textbf{(A) }2.5\qquad\textbf{(B) }3.0\qquad\textbf{(C) }3.5\qquad\textbf{(D) }4.0\qquad \textbf{(E) }4.5$

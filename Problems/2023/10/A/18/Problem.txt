@@ -1,0 +1,4 @@
+==Problem==
+A rhombic dodecahedron is a solid with $12$ congruent rhombus faces. At every vertex, $3$ or $4$ edges meet, depending on the vertex. How many vertices have exactly $3$ edges meet?
+
+$\textbf{(A) }5\qquad\textbf{(B) }6\qquad\textbf{(C) }7\qquad\textbf{(D) }8\qquad\textbf{(E) }9$

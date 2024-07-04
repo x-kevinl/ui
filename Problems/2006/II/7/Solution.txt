@@ -1,0 +1,64 @@
+== Solution ==
+=== Solution 1 ===
+There are <math>\left\lfloor\frac{999}{10}\right\rfloor = 99</math> numbers up to 1000 that have 0 as their units digit. All of the other excluded possibilities are when <math>a</math> or <math>b</math> have a 0 in the tens digit, and since the equation is symmetric, we will just count when <math>a</math> has a 0 in the tens digit and multiply by 2 (notice that the only time both <math>a</math> and <math>b</math> can have a 0 in the tens digit is when they are divisible by 100, which falls into the above category, so we do not have to worry about [[Principle of Inclusion-Exclusion|overcounting]]). 
+
+Excluding the numbers divisible by 100, which were counted already, there are <math>9</math> numbers in every hundred numbers that have a tens digit of 0 (this is true from 100 to 900), totaling <math>9 \cdot 9 = 81</math> such numbers; considering <math>b</math> also and we have <math>81 \cdot 2 = 162</math>. Therefore, there are <math>999 - (99 + 162) = \boxed{738}</math> such ordered pairs.
+
+=== Solution 2 ===
+Let <math>a = \overline{cde}</math> and <math>b = \overline{fgh}</math> be 3 digit numbers:
+
+  cde
+ +fgh
+ ----
+ 1000
+
+<math>e</math> and <math>h</math> must add up to <math>10</math>, <math>d</math> and <math>g</math> must add up to <math>9</math>, and <math>c</math> and <math>f</math> must add up to <math>9</math>. Since none of the digits can be 0, there are <math>9 \times 8 \times 8=576</math> possibilites if both numbers are three digits.
+
+There are two other scenarios. <math>a</math> and <math>b</math> can be a three digit number and a two digit number, or a three digit number and a one digit number. For the first scenario, there are <math>9 \times 8 \times 2=144</math> possibilities (the two accounting for whether <math>a</math> or <math>b</math> has three digits) and for the second case there are <math>9 \times 2=18</math> possibilities. Thus, thus total possibilities for <math>(a,b)</math> is <math>576+144+18=738</math>.
+
+=== Solution 3 ===
+We first must notice that we can find all the possible values of <math>a</math> between <math>1</math> and <math>500</math> and then double that result. 
+
+When <math>1 < a < 100</math> there are <math>9\times9 = 81</math> possible solution for <math>a</math> so that neither <math>a</math> nor <math>b</math> has a zero in it, counting <math>1</math> through <math>9</math>, <math>11</math> through <math>19</math>, ..., <math>81</math> through <math>89</math>.
+When <math>100 < a < 200</math> there are <math>9\times8 =72</math> possible solution for a so that neither a nor b has a zero in it, counting  <math>111</math> through <math>119</math>, <math>121</math> through <math>129</math>, ..., <math>181</math> through <math>189</math>.
+This can clearly be extended to <math>100k < a < 100(k+1)</math> where <math>k</math> is an integer and <math>0 <k < 9</math>. 
+Thus for <math>100 < a < 500</math> there are <math>72\times4</math> = <math>288</math> possible values of <math>a</math>.
+
+Thus when <math>1 < a < 500</math> there are <math>288 + 81 =369</math> possible values of <math>a</math> and <math>b</math>. 
+
+Doubling this yields <math>369\times2= 738</math>.
+
+=== Solution 4 (Similar to Solution 2)=== 
+We proceed by casework on the number of digits of <math>a.</math> 
+
+Case 1: Both <math>a</math> and <math>b</math> have three digits
+
+We now use constructive counting. For the hundreds digit of <math>a,</math> we see that there are <math>8</math> options - the numbers <math>1</math> through <math>8.</math> (If <math>a = 9,</math> that means that <math>b</math> will be a two digit number, and if <math>a = 0,</math> <math>a</math> will have two digits). Similarly, the tens digit can be <math>1-8</math> as well because a tens digit of <math>0</math> is obviously prohibited and a tens digit of <math>9</math> will lead to a tens digit of <math>0</math> in the other number. The units digit can be anything from <math>1-9.</math> Hence, there are <math>8 \cdot 8 \cdot 9 = 576</math> possible values in this case. 
+
+Case 2: <math>a</math> (or <math>b</math>) has two digits 
+
+If <math>a</math> has two digits, the only restrictions are that the units digit must not be <math>0</math> and the tens digit must not be <math>9</math> (because then that would lead to <math>b</math> beginning with <math>90...</math>). There thus are <math>8 \cdot 9 = 72</math> possibilities for <math>a,</math> and we have to multiply by <math>2</math> because there are the same number of possibilities for <math>b.</math> Thus, there are <math>72 \cdot 2 = 144</math> possible values in this case. 
+
+Case 3: <math>a</math> (or <math>b</math>) has one digit
+
+This is easy -- <math>a</math> can be anything from <math>1</math> to <math>9,</math> for a total of <math>9</math> possible values. We multiply this by <math>2</math> to account for the single digit <math>b</math> values, so we have <math>9 \cdot 2 = 18</math> possible values for this case. 
+
+Adding them all up, we get <math>576 + 144 + 18 = \boxed{738},</math> and we're done. 
+
+Solution by Ilikeapos
+
+=== Solution 5=== 
+For every <math>a \in [1, 999]</math>, <math>(a, 1000 - a)</math> is a potential candidate for a solution, barring the cases where <math>a</math> or <math>1000 -a </math> has zero digits.
+
+First, let's consider all viable <math>a</math> that do not have a zero digit. As there are 9 non-zero digits, we have:
+* <math>9^1</math> 1-digit numbers without a zero digit
+* <math>9^2</math> 2-digit numbers without a zero digit
+* <math>9^3</math> 3-digit numbers without a zero digit
+
+However, we have still overlooked the cases where <math>1000 - a</math> contains zero digits:
+* '''Case 1''': If the one's digit of <math>1000 - a</math> is zero, then <math>a</math> will trivially end in a zero, which we've already excluded.
+* '''Case 2''': If the ten's digit of <math>1000 - a</math> is zero, with digital representation <math>\overline{X0Y}</math>, then <math>a</math> has the digital representation <math>\overline{[9-X]9[10-Y]}</math>. <math>X</math> and <math>Y</math> can each take on any value in <math>[1, 9]</math> to produce a value in our set of potential <math>a</math>. There are thus <math>9^2</math> cases that we overlooked, where <math>a</math> had no zero digits, but <math>1000 - a</math> did.
+
+Adding up the cases with <math>a \in [1, 999]</math> with no zero digits and removing the cases with <math>1000 - a</math> with zero digits gives us <cmath>(9^1 + 9^2 + 9^3) - 9^2 = \boxed{738}</cmath>
+
+~SaifHakim

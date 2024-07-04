@@ -1,0 +1,2 @@
+==Solution==
+Since there are 6 players, a total of $\frac{6(6-1)}{2}=15$ games are played. So far, $4+3+2+2+2=13$ games finished (one person won from each game), so Monica needs to win $15-13 = \boxed{\textbf{(C)}\ 2}$.

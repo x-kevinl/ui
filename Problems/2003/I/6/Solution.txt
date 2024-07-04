@@ -1,0 +1,38 @@
+== Solution ==
+<center>
+<asy>
+size(120);
+import three;
+unitsize(1cm);
+draw((0,0,0)--(1,0,0)--(1,1,0)--(0,1,0)--(0,0,0)--(0,0,1)--(0,1,1)--(1,1,1)--(1,0,1)--(0,0,1));
+draw((0,1,1)--(0,1,0)); draw((1,1,1)--(1,1,0)); draw((1,0,1)--(1,0,0));
+draw((1,1,1)--(1,0,0)--(1,1,0)--(1,1,1), blue);
+</asy>
+
+<asy>
+size(120);
+import three;
+unitsize(1cm);
+draw((0,0,0)--(1,0,0)--(1,1,0)--(0,1,0)--(0,0,0)--(0,0,1)--(0,1,1)--(1,1,1)--(1,0,1)--(0,0,1));
+draw((0,1,1)--(0,1,0)); draw((1,1,1)--(1,1,0)); draw((1,0,1)--(1,0,0));
+draw((0,1,1)--(1,0,0)--(1,1,0)--(0,1,1), blue);
+</asy>
+
+<asy>
+size(120);
+import three;
+unitsize(1cm);
+draw((0,0,0)--(1,0,0)--(1,1,0)--(0,1,0)--(0,0,0)--(0,0,1)--(0,1,1)--(1,1,1)--(1,0,1)--(0,0,1));
+draw((0,1,1)--(0,1,0)); draw((1,1,1)--(1,1,0)); draw((1,0,1)--(1,0,0));
+draw((1,0,0)--(0,1,0)--(1,1,1)--(1,0,0), blue);
+</asy>
+</center>
+Since there are <math>8</math> [[vertex | vertices]] of a [[cube (geometry) | cube]], there are <math>{8 \choose 3} = 56</math> total [[triangle]]s to consider.  They fall into three categories: there are those which are entirely contained within a single [[face]] of the cube (whose sides are two [[edge]]s and one face [[diagonal]]), those which lie in a [[plane]] [[perpendicular]] to one face of the cube (whose sides are one edge, one face diagonal and one space diagonal of the cube) and those which lie in a plane [[oblique]] to the edges of the cube, whose sides are three face diagonals of the cube.  
+
+Each face of the cube contains <math>{4\choose 3} = 4</math> triangles of the first type, and there are <math>6</math> faces, so there are <math>24</math> triangles of the first type. Each of these is a [[right triangle]] with legs of length <math>1</math>, so each triangle of the first type has area <math>\frac 12</math>.
+
+Each edge of the cube is a side of exactly <math>2</math> of the triangles of the second type, and there are <math>12</math> edges, so there are <math>24</math> triangles of the second type. Each of these is a right triangle with legs of length <math>1</math> and <math>\sqrt 2</math>, so each triangle of the second type has area <math>\frac{\sqrt{2}}{2}</math>.
+
+Each vertex of the cube is associated with exactly one triangle of the third type (whose vertices are its three neighbors), and there are <math>8</math> vertices of the cube, so there are <math>8</math> triangles of the third type. Each of the these is an [[equilateral triangle]] with sides of length <math>\sqrt 2</math>, so each triangle of the third type has area <math>\frac{\sqrt 3}2</math>.
+
+Thus the total area of all these triangles is <math>24 \cdot \frac12 + 24\cdot\frac{\sqrt2}2 + 8\cdot\frac{\sqrt3}2 = 12 + 12\sqrt2 + 4\sqrt3 = 12 + \sqrt{288} + \sqrt{48}</math> and the answer is <math>12 + 288 + 48 = \boxed{348}</math>.

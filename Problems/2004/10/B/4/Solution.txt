@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+The product of all six numbers is $6!=720$. The products of numbers that can be visible are $720/1$, $720/2$, ..., $720/6$.
+The answer to this problem is their greatest common divisor -- which is $720/L$, where $L$ is the least common multiple of $\{1,2,3,4,5,6\}$.
+Clearly $L=60$ and the answer is $720/60=\boxed{\mathrm{(B)}\ 12}$.

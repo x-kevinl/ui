@@ -1,0 +1,10 @@
+==Solution==
+Let the first term be $ a $ and the common ratio be $ r $. Therefore, 
+
+$$ar=2\ \ (1) \qquad \text{and} \qquad ar^3=6\ \ (2)$$
+
+Dividing $(2)$ by $(1)$ eliminates the $ a $, yielding $ r^2=3 $, so $ r=\pm\sqrt{3} $.
+
+Now, since $ ar=2 $, $ a=\frac{2}{r} $, so $ a=\frac{2}{\pm\sqrt{3}}=\pm\frac{2\sqrt{3}}{3} $.
+
+We therefore see that $ \boxed{\textbf{(B)}\ -\frac{2\sqrt{3}}{3}} $ is a possible first term.

@@ -1,0 +1,30 @@
+==Solution==
+
+Let <math>A</math> be Azar, <math>C</math> be Carl, <math>J</math> be Jon, and <math>S</math> be Sergey. The <math>4</math> circles represent the <math>4</math> players, and the arrow is from the winner to the loser with the winning probability as the label.
+
+[[File:2022AIMEIIP2.png|400px]]
+
+This problem can be solved by using <math>2</math> cases.
+
+<math>\textbf{Case 1:}</math> <math>C</math>'s opponent for the semifinal is <math>A</math>
+
+The probability <math>C</math>'s opponent is <math>A</math> is <math>\frac13</math>. Therefore the probability <math>C</math> wins the semifinal in this case is <math>\frac13 \cdot \frac13</math>. The other semifinal game is played between <math>J</math> and <math>S</math>, it doesn't matter who wins because <math>C</math> has the same probability of winning either one. The probability of <math>C</math> winning in the final is <math>\frac34</math>, so the probability of <math>C</math> winning the tournament in case 1 is <math>\frac13 \cdot \frac13 \cdot \frac34</math>
+
+
+<math>\textbf{Case 2:}</math> <math>C</math>'s opponent for the semifinal is <math>J</math> or <math>S</math>
+
+It doesn't matter if <math>C</math>'s opponent is <math>J</math> or <math>S</math> because <math>C</math> has the same probability of winning either one. The probability <math>C</math>'s opponent is <math>J</math> or <math>S</math> is <math>\frac23</math>. Therefore the probability <math>C</math> wins the semifinal in this case is <math>\frac23 \cdot \frac34</math>. The other semifinal game is played between <math>A</math> and <math>J</math> or <math>S</math>. In this case it matters who wins in the other semifinal game because the probability of <math>C</math> winning <math>A</math> and <math>J</math> or <math>S</math> is different. 
+
+<math>\textbf{Case 2.1:}</math> <math>C</math>'s opponent for the final is <math>A</math>
+
+For this to happen, <math>A</math> must have won <math>J</math> or <math>S</math> in the semifinal, the probability is <math>\frac34</math>. Therefore, the probability that <math>C</math> won <math>A</math> in the final is <math>\frac34 \cdot \frac13</math>.
+
+<math>\textbf{Case 2.2:}</math> <math>C</math>'s opponent for the final is <math>J</math> or <math>S</math>
+
+For this to happen, <math>J</math> or <math>S</math> must have won <math>A</math> in the semifinal, the probability is <math>\frac14</math>. Therefore, the probability that <math>C</math> won <math>J</math> or <math>S</math> in the final is <math>\frac14 \cdot \frac34</math>.
+
+In Case 2 the probability of <math>C</math> winning the tournament is <math>\frac23 \cdot \frac34 \cdot (\frac34 \cdot \frac13 + \frac14 \cdot \frac34)</math>
+
+Adding case 1 and case 2 together we get <math>\frac13 \cdot \frac13 \cdot \frac34 + \frac23 \cdot \frac34 \cdot (\frac34 \cdot \frac13 + \frac14 \cdot \frac34) = \frac{29}{96},</math> so the answer is <math>29 + 96 = \boxed{\textbf{125}}</math>.
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen]

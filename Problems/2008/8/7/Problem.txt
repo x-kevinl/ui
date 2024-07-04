@@ -1,0 +1,8 @@
+==Problem==
+If $\frac{3}{5}=\frac{M}{45}=\frac{60}{N}$, what is $M+N$?
+
+$\textbf{(A)}\ 27\qquad
+\textbf{(B)}\ 29 \qquad
+\textbf{(C)}\ 45 \qquad
+\textbf{(D)}\ 105\qquad
+\textbf{(E)}\ 127$

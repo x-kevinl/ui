@@ -1,0 +1,13 @@
+==Solution 1==
+
+Since 3 out of 6 of the numbers are even, there is a $\frac36$ chance that the first number we choose is even. 
+
+Since the number rolled first is irrelevant, we don't have to consider it. Therefore there are 2 even numbers out of the 5 choices left. There is a $\frac{2}{5}$ chance that the next number that is distinct from the first is even. 
+
+There is a $\frac{1}{4}$ chance that the next number distinct from the first two is even. (There is only one even integer left.
+)
+With all the even integers taken, the next integer rolled must be odd.
+
+$\frac{3}{6} \cdot \frac{2}{5} \cdot \frac{1}{4} = \frac{1}{20}$, so the answer is $\boxed{\textbf{(C) }\frac{1}{20}}.$
+
+~Tucker

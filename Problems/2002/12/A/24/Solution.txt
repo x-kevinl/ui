@@ -1,0 +1,9 @@
+== Solution 1 ==
+
+Let $s=\sqrt{a^2+b^2}$ be the magnitude of $a+bi$. Then the magnitude of $(a+bi)^{2002}$ is $s^{2002}$, while the magnitude of $a-bi$ is $s$. We get that $s^{2002}=s$, hence either $s=0$ or $s=1$.
+
+For $s=0$ we get a single solution $(a,b)=(0,0)$.
+
+Let's now assume that $s=1$. Multiply both sides by $a+bi$. The left hand side becomes $(a+bi)^{2003}$, the right hand side becomes $(a-bi)(a+bi)=a^2 + b^2 = 1$. Hence the solutions for this case are precisely all the $2003$rd complex roots of unity, and there are $2003$ of those.
+
+The total number of solutions is therefore $1+2003 = \boxed{2004}$.

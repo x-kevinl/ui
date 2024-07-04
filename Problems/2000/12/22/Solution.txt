@@ -1,0 +1,9 @@
+== Solution ==
+Note that there are 3 maxima/minima. Hence we know that the rest of the graph is greater than 10. We approximate each of the above expressions:
+# According to the graph, $P(-1) > 4$
+# The product of the roots is $d$ by [[Vieta’s formulas]]. Also, $d = P(0) > 5$ according to the graph.
+# The product of the real roots is $>5$, and the total product is $<6$ (from above), so the product of the non-real roots is $< \frac{6}{5}$.
+# The sum of the coefficients is $P(1) > 2.5$
+# The sum of the real roots is $> 5$.
+
+Clearly $\mathrm{(C)}$ is the smallest.

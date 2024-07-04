@@ -1,0 +1,2 @@
+==Solution 0==
+By the Law of Cosines on <math>\triangle ABC</math>, we have: <cmath>\cos(A) = \frac{10^2+10^2-12^2}{2*10*10}  = \frac{7}{25}</cmath> By the Law of Cosines on <math>\triangle ADE</math>, then <cmath>\frac{7}{25} = \frac{10-x}{2x} \iff x =\frac{250}{39}</cmath> So, our answer is <math>250+39=\boxed{289}</math>.

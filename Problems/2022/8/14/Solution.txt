@@ -1,0 +1,6 @@
+==Solution==
+
+All valid arrangements of the letters must be of the form $$\textbf{E\underline{\hspace{3mm}}E\underline{\hspace{3mm}}E\underline{\hspace{3mm}}E\underline{\hspace{3mm}}E}.$$
+The problem is equivalent to counting the arrangements of $\textbf{B},\textbf{K},\textbf{P},$ and $\textbf{R}$ into the four blanks, in which there are $4!=\boxed{\textbf{(D) } 24}$ ways.
+
+~MRENTHUSIASM

@@ -1,0 +1,2 @@
+== Problem ==
+There exist unique positive integers <math>x</math> and <math>y</math> that satisfy the equation <math>x^2 + 84x + 2008 = y^2</math>. Find <math>x + y</math>.

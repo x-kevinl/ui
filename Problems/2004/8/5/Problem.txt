@@ -1,0 +1,4 @@
+== Problem ==
+Ms. Hamilton's eighth-grade class wants to participate in the annual three-person-team basketball tournament. The losing team of each game is eliminated from the tournament. If sixteen teams compete, how many games will be played to determine the winner?
+
+$ \textbf{(A)}\ 4\qquad\textbf{(B)}\ 7\qquad\textbf{(C)}\ 8\qquad\textbf{(D)}\ 15\qquad\textbf{(E)}\ 16 $

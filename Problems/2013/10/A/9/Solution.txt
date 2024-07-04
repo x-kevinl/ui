@@ -1,0 +1,5 @@
+==Solution 1==
+
+Let the number of attempted three-point shots be $x$ and the number of attempted two-point shots be $y$.  We know that $x+y=30$, and we need to evaluate $3(0.2x) + 2(0.3y)$, as we know that the three-point shots are worth $3$ points and that she made $20$% of them and that the two-point shots are worth $2$ and that she made $30$% of them.
+
+Simplifying, we see that this is equal to $0.6x + 0.6y = 0.6(x+y)$.  Plugging in $x+y=30$, we get $0.6(30) = \boxed{\textbf{(B) }18}$

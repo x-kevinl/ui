@@ -1,0 +1,4 @@
+==Problem==
+How many positive integer factors of $2020$ have more than $3$ factors? (As an example, $12$ has $6$ factors, namely $1,2,3,4,6,$ and $12.$)
+
+$\textbf{(A) }6 \qquad \textbf{(B) }7 \qquad \textbf{(C) }8 \qquad \textbf{(D) }9 \qquad \textbf{(E) }10$

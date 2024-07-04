@@ -1,0 +1,4 @@
+==Problem==
+Abe holds 1 green and 1 red jelly bean in his hand. Bob holds 1 green, 1 yellow, and 2 red jelly beans in his hand. Each randomly picks a jelly bean to show the other. What is the probability that the colors match?
+
+$\textbf{(A)}\ \frac14 \qquad \textbf{(B)}\ \frac13 \qquad \textbf{(C)}\ \frac38 \qquad \textbf{(D)}\ \frac12 \qquad \textbf{(E)}\ \frac23$

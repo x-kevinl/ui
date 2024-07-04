@@ -1,0 +1,10 @@
+== Solution 1 ==
+Let the roots be $r,s,r + s$, and let $t = rs$. Then
+
+<center>$(x - r)(x - s)(x - (r + s))$ $= x^3 - (r + s + r + s) x^2 + (rs + r(r + s) + s(r + s))x - rs(r + s) = 0$</center>
+
+and by matching coefficients, $2(r + s) = 2004 \Longrightarrow r + s = 1002$. Then our polynomial looks like 
+$$x^3 - 2004x^2 + (t + 1002^2)x - 1002t = 0$$
+and we need the number of possible products $t = rs = r(1002 - r)$. Because $m=t+1002^2$ is an integer, we also note that $t$ must be an integer. 
+
+Since $r > 0$ and $t > 0$, it follows that $0 < t = r(1002-r) < 501^2 = 251001$, with the endpoints not achievable because the roots must be distinct and positive. Because neither $r$ nor $1002-r$ can be an integer, there are $251,000 - 500 = \boxed{\textbf{(C) } 250,500}$ possible values of $n = -1002t$.

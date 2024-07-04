@@ -1,0 +1,2 @@
+== Problem ==
+A [[sequence]] is defined as follows <math> a_1=a_2=a_3=1, </math> and, for all positive integers <math> n, a_{n+3}=a_{n+2}+a_{n+1}+a_n. </math> Given that <math> a_{28}=6090307, a_{29}=11201821, </math> and <math> a_{30}=20603361, </math> find the [[remainder]] when <math>\sum^{28}_{k=1} a_k </math> is divided by 1000.

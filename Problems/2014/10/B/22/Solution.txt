@@ -1,0 +1,24 @@
+==Solution== 
+We connect the centers of the circle and one of the semicircles, then draw the perpendicular from the center of the middle circle to that side, as shown.
+
+<asy>
+scale(200);
+draw(scale(.5)*((-1,-1)--(1,-1)--(1,1)--(-1,1)--cycle));
+path p = arc((.25,-.5),.25,0,180)--arc((-.25,-.5),.25,0,180);
+draw(p);
+p=rotate(90)*p; draw(p);
+p=rotate(90)*p; draw(p);
+p=rotate(90)*p; draw(p);
+draw(scale((sqrt(5)-1)/4)*unitcircle);
+pair OO=(0,0);
+pair XX=(-.25,-.5);
+pair YY=(0,-.5);
+draw(YY--OO--XX--cycle,black+1bp);
+label("$\frac12$",.5*(XX+YY),S);
+label("$1$",.5*YY,E);
+</asy>
+
+We will start by creating an equation by the Pythagorean theorem: $$\sqrt{1^2 + \left(\frac12\right)^2} = \sqrt{\frac54} = \frac{\sqrt5}{2}.$$
+
+
+Let's call $r$ as the radius of the circle that we want to find. We see that the hypotenuse of the bold right triangle is $\dfrac{1}{2}+r$, and thus $r$ is $\boxed{\textbf{(B)} \frac{\sqrt{5}-1}{2}}$.

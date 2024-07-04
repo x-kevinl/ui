@@ -1,0 +1,44 @@
+== Solution 1 (Euclidean) ==
+Define <math>m</math> as the number of minutes they swim for.
+
+Let their meeting point be <math>A</math>. Melanie is swimming against the current, so she must aim upstream from point <math>A</math>, to compensate for this; in particular, since she is swimming for <math>m</math> minutes, the current will push her <math>14m</math> meters downstream in that time, so she must aim for a point <math>B</math> that is <math>14m</math> meters upstream from point <math>A</math>. Similarly, Sherry is swimming downstream for <math>m</math> minutes, so she must also aim at point <math>B</math> to compensate for the flow of the current.
+
+If Melanie and Sherry were to both aim at point <math>B</math> in a <i>currentless</i> river with the same dimensions, they would still both meet at that point simultaneously. Since there is no current in this scenario, the distances that Melanie and Sherry travel, respectively, are <math>80m</math> and <math>60m</math> meters. We can draw out this new scenario, with the dimensions that we have:
+<asy>
+unitsize(0.02cm);
+draw((0,0)--(0,264)--(550,264)--(550,0)--cycle);
+pair B = (198,264);
+dot(B^^(0,0)^^(550,0),linewidth(5));
+draw((0,0)--B,dashed);
+draw((550,0)--B,dashed);
+
+label("$60m$", (0,0)--B, E);
+label("$80m$", (550,0)--B, W);
+label("$264$", (0,0)--(0,264), W);
+label("$\frac{D}{2} - 14m$", (0,264)--B, N);
+label("$\frac{D}{2} + 14m$", B--(550,264), N);
+label("$D$", (0,0)--(550,0), S);
+label("$B$", B, N);
+
+label("Downstream", (350,325), E);
+label("Upstream", (200,325), W);
+draw((225,325)--(325,325), Arrows);
+</asy>
+(While it is indeed true that the triangle above with side lengths <math>60m</math>, <math>80m</math> and <math>D</math> is a right triangle, we do not know this yet, so we cannot assume this based on the diagram.)
+
+By the Pythagorean Theorem, we have
+<cmath>\begin{align*}
+264^{2} + \left( \frac{D}{2} - 14m \right) ^{2} &= 3600m^{2} \\
+264^{2} + \left( \frac{D}{2} + 14m \right) ^{2} &= 6400m^{2}.
+\end{align*}</cmath>
+
+Subtracting the first equation from the second gives us <math>28Dm = 2800m^{2}</math>, so <math>D = 100m</math>. Substituting this into our first equation, we have that
+<cmath>\begin{align*}264^{2} + 36^{2} m^{2} &= 60^{2}m^{2} \\
+264^{2} &= 96 \cdot 24 \cdot m^{2} \\
+11^{2} &= 4 \cdot m^{2} \\
+m &= \frac{11}{2}.
+\end{align*}</cmath>
+
+So <math>D = 100m = \boxed{550}</math>.
+
+~ihatemath123

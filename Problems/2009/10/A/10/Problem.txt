@@ -1,0 +1,38 @@
+== Problem ==
+
+Triangle $ABC$ has a right angle at $B$. Point $D$ is the foot of the altitude from $B$, $AD=3$, and $DC=4$. What is the area of $\triangle ABC$?
+
+<asy>
+unitsize(5mm);
+defaultpen(linewidth(.8pt)+fontsize(8pt));
+dotfactor=4;
+
+pair B=(0,0), C=(sqrt(28),0), A=(0,sqrt(21));
+pair D=foot(B,A,C);
+pair[] ps={B,C,A,D};
+
+draw(A--B--C--cycle);
+draw(B--D);
+draw(rightanglemark(B,D,C));
+
+dot(ps);
+label("$A$",A,NW);
+label("$B$",B,SW);
+label("$C$",C,SE);
+label("$D$",D,NE);
+label("$3$",midpoint(A--D),NE);
+label("$4$",midpoint(D--C),NE);
+</asy>
+
+$
+\mathrm{(A)}\ 4\sqrt3
+\qquad
+\mathrm{(B)}\ 7\sqrt3
+\qquad
+\mathrm{(C)}\ 21
+\qquad
+\mathrm{(D)}\ 14\sqrt3 
+\qquad
+\mathrm{(E)}\ 42
+$
+[[Category: Introductory Geometry Problems]]

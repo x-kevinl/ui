@@ -1,0 +1,9 @@
+== Problem ==
+
+The average cost of a long-distance call in the USA in $1985$ was
+$41$ cents per minute, and the average cost of a long-distance
+call in the USA in $2005$ was $7$ cents per minute. Find the
+approximate percent decrease in the cost per minute of a long-
+distance call.
+
+$\mathrm{(A)}\ 7 \qquad\mathrm{(B)}\ 17 \qquad\mathrm{(C)}\ 34 \qquad\mathrm{(D)}\ 41 \qquad\mathrm{(E)}\ 80$

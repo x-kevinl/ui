@@ -1,0 +1,2 @@
+==Solution 1==
+The only time when $ad-bc$ is even is when $ad$ and $bc$ are of the same [[parity]]. The chance of $ad$ being odd is $\frac 12 \cdot \frac 12 = \frac 14$, since the only way to have $ad$ be odd is to have both $a$ and $d$ be odd. As a result, $ad$ has a $\frac 34$ probability of being even. $bc$ also has a $\frac 14$ chance of being odd and a $\frac34$ chance of being even. Therefore, the probability that $ad-bc$ will be even is $\left(\frac 14\right)^2+\left(\frac 34\right)^2=\boxed {\mathrm{(E )} \frac 58\ }$.

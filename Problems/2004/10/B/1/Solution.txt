@@ -1,0 +1,2 @@
+==Solution==
+There are $22-12+1=11$ rows of $33$ seats, giving $11\times 33=\boxed{\mathrm{(C)}\ 363}$ seats.

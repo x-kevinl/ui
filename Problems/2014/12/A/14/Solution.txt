@@ -1,0 +1,5 @@
+==Solution 1==
+
+We have $b-a=c-b$, so $a=2b-c$. Since $a,c,b$ is geometric, $c^2=ab=(2b-c)b \Rightarrow 2b^2-bc-c^2=(2b+c)(b-c)=0$. Since $a<b<c$, we can't have $b=c$ and thus $c=-2b$. Then our arithmetic progression is $4b,b,-2b$. Since $4b < b < -2b$, $b < 0$. The smallest possible value of $c=-2b$ is $(-2)(-1)=2$, or $\boxed{\textbf{(C)}}$.
+
+(Solution by AT)

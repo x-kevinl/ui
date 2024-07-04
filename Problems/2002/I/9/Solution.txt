@@ -1,0 +1,22 @@
+== Solution ==
+=== Solution 1 ===
+Note that it is impossible for any of <math>h,t,u</math> to be <math>1</math>, since then each picket will have been painted one time, and then some will be painted more than once.  
+
+<math>h</math> cannot be <math>2</math>, or that will result in painting the third picket twice. If <math>h=3</math>, then <math>t</math> may not equal anything not divisible by <math>3</math>, and the same for <math>u</math>. Now for fourth and fifth pickets to be painted, <math>t</math> and <math>u</math> must be <math>3</math> as well. This configuration works, so <math>333</math> is paintable.
+
+If <math>h</math> is <math>4</math>, then <math>t</math> must be even. The same for <math>u</math>, except that it can't be <math>2 \mod 4</math>. Thus <math>u</math> is <math>0 \mod 4</math> and <math>t</math> is <math>2 \mod 4</math>. Since this is all <math>\mod 4</math>, <math>t</math> must be <math>2</math> and <math>u</math> must be <math>4</math>, in order for <math>5,6</math> to be paint-able. Thus <math>424</math> is paintable.
+
+<math>h</math> cannot be greater than <math>4</math>, since if that were the case then the answer would be greater than <math>999</math>, which would be impossible for the AIME.
+
+Thus the sum of all paintable numbers is <math>\boxed{757}</math>.
+
+=== Solution 2 ===
+Again, note that <math>h,t,u \neq 1</math>. The three conditions state that no picket number <math>n</math> may satisfy any two of the conditions: <math>n \equiv 1 \pmod{h},\ n \equiv 2 \pmod{t},\ n \equiv 3 \pmod{u}</math>. By the [[Chinese Remainder Theorem]], the [[greatest common divisor]] of any pair of the three numbers <math>\{h,t,u\}</math> cannot be <math>1</math> (since otherwise [[without loss of generality]] consider <math>\text{gcd}\,(h,t) = 1</math>; then there will be a common solution <math>\pmod{h \times t}</math>). 
+
+Now for <math>4</math> to be paint-able, we require either <math>h = 3</math> or <math>t=2</math>, but not both. 
+*In the former condition, since <math>\text{gcd}\,(h,t),\ \text{gcd}\,(h,u) \neq 1</math>, it follows that <math>3|t,u</math>. For <math>5</math> and <math>6</math> to be paint-able, we require <math>t = u = 3</math>, and it is easy to see that <math>333</math> works.
+*In the latter condition, similarly we require that <math>2|h,u</math>. All even numbers are painted. We now renumber the remaining odd pickets to become the set of all positive integers (<math>1,3,5, \ldots \rightarrow 1',2',3', \ldots</math>, where <math>n' = \frac{n+1}{2}</math>), which requires the transformation <math>h' = h/2,\ u' = u/2</math>, and with the painting starting respectively at <math>1',2'</math>. Our new number system retains the same conditions as above, except without <math>t</math>. We thus need <math>\text{gcd}\, (h',u') \neq 1, h',u' \neq 1</math>. Then for <math>3',4'</math> to be painted, we require <math>h' = u' = 2</math>. This translates to <math>424</math>, which we see works.   
+
+Thus the answer is <math>333+424 = \boxed{757}</math>.
+=== Solution 3 ===
+The three conditions state that no picket number <math>n</math> may satisfy any two of the conditions: <math>n \equiv 1 \pmod{h},\ n \equiv 2 \pmod{t},\ n \equiv 3 \pmod{u}</math>. Note that the smallest number, <math>min \{ h,t,u \}, </math> divides the other <math>2</math>, and the next smallest divide the largest number, otherwise there is a common solution by the [[Chinese Remainder Theorem]]. It is also a necessary condition so that it paints exactly once. Note that the smallest number can't be at least <math>5</math>, otherwise not all picket will be painted. We are left with few cases (we could also exclude <math>1</math> as the possibility) which could be done quickly. Thus the answer is <math>333+424 = \boxed{757}</math>.

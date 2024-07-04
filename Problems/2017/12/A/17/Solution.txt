@@ -1,0 +1,7 @@
+==Solution 1==
+
+Note that these $z$ such that $z^{24}=1$ are $e^{\frac{ni\pi}{12}}$ for integer $0\leq n<24$. So
+
+$z^6=e^{\frac{ni\pi}{2}}$
+
+This is real if $\frac{n}{2}\in \mathbb{Z} \Leftrightarrow (n$ is even$)$. Thus, the answer is the number of even $0\leq n<24$ which is $\boxed{(D)=\ 12}$.

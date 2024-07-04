@@ -1,0 +1,9 @@
+==Solution 1==
+
+For simplicity purposes, we consider two arrangements different even if they only differ by rotations or reflections. In this way, there are <math>14!</math> arrangements without restrictions.
+
+First, there are <math>\binom{7}{5}</math> ways to choose the man-woman diameters. Then, there are <math>10\cdot8\cdot6\cdot4\cdot2</math> ways to place the five men each in a man-woman diameter. Finally, there are <math>9!</math> ways to place the nine women without restrictions.
+
+Together, the requested probability is <cmath>\frac{\tbinom{7}{5}\cdot(10\cdot8\cdot6\cdot4\cdot2)\cdot9!}{14!} = \frac{21\cdot(10\cdot8\cdot6\cdot4\cdot2)}{14\cdot13\cdot12\cdot11\cdot10} = \frac{48}{143},</cmath> from which the answer is <math>48+143 = \boxed{191}.</math>
+
+~MRENTHUSIASM

@@ -1,0 +1,36 @@
+==Solution 1==
+Draw the following four lines as shown:
+<asy>
+usepackage("mathptmx");
+defaultpen(linewidth(0.5));
+size(5cm);
+defaultpen(fontsize(14pt));
+label("$\textbf{Math}$", (2.1,3.7)--(3.9,3.7));
+label("$\textbf{Team}$", (2.1,3)--(3.9,3));
+filldraw((1,2)--(2,1)--(3,2)--(4,1)--(5,2)--(4,3)--(5,4)--(4,5)--(3,4)--(2,5)--(1,4)--(2,3)--(1,2)--cycle, mediumgray*0.5 + lightgray*0.5);
+
+draw((0,0)--(6,0), gray);
+draw((0,1)--(6,1), gray);
+draw((0,2)--(6,2), gray);
+draw((0,3)--(6,3), gray);
+draw((0,4)--(6,4), gray);
+draw((0,5)--(6,5), gray);
+draw((0,6)--(6,6), gray);
+
+draw((0,0)--(0,6), gray);
+draw((1,0)--(1,6), gray);
+draw((2,0)--(2,6), gray);
+draw((3,0)--(3,6), gray);
+draw((4,0)--(4,6), gray);
+draw((5,0)--(5,6), gray);
+draw((6,0)--(6,6), gray);
+
+draw((3,4)--(4,3), red);
+draw((4,3)--(3,2), red);
+draw((3,2)--(2,3), red);
+draw((2,3)--(3,4), red);
+</asy>
+
+We see these lines split the figure into five squares with side length $\sqrt2$. Thus, the area is $5\cdot\left(\sqrt2\right)^2=5\cdot 2 = \boxed{\textbf{(A) } 10}$.
+
+~pog ~wamofan

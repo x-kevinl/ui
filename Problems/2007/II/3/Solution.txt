@@ -1,0 +1,71 @@
+== Solution ==
+
+===Solution 1===
+
+Let <math>\angle FCD = \alpha</math>, so that <math>FB = \sqrt{12^2 + 13^2 + 2\cdot12\cdot13\sin(\alpha)} = \sqrt{433}</math>. By the diagonal, <math>DB = 13\sqrt{2}, DB^2 = 338</math>. 
+
+<b>The sum of the squares of the sides of a parallelogram is the sum of the squares of the diagonals.</b>
+<cmath>EF^2 = 2\cdot(5^2 + 433) - 338 = 578.</cmath>
+
+=== Solution 2 ===
+
+Extend <math>\overline{AE}, \overline{DF}</math> and <math>\overline{BE}, \overline{CF}</math> to their points of intersection. Since <math>\triangle ABE \cong \triangle CDF</math> and are both <math>5-12-13</math> [[right triangle]]s, we can come to the conclusion that the two new triangles are also congruent to these two (use [https://artofproblemsolving.com/wiki/index.php/Congruent_(geometry)#ASA_Congruence ASA], as we know all the sides are <math>13</math> and the angles are mostly complementary). Thus, we create a [[square]] with sides <math>5 + 12 = 17</math>.
+
+<asy>unitsize(0.25 cm);
+
+pair A, B, C, D, E, F, G, H;
+
+A = (0,13);
+B = (13,13);
+C = (13,0);
+D = (0,0);
+E = A + (12*12/13,5*12/13);
+F = D + (5*5/13,-5*12/13);
+G = rotate(90,(A + C)/2)*(E);
+H = rotate(90,(A + C)/2)*(F);
+
+draw(A--B--C--D--cycle);
+draw(E--G--F--H--cycle);
+
+dot("$A$", A, N);
+dot("$B$", B, dir(0));
+dot("$C$", C, S);
+dot("$D$", D, W);
+dot("$E$", E, N);
+dot("$F$", F, S);
+dot("$G$", G, W);
+dot("$H$", H, dir(0));</asy>
+
+<math>\overline{EF}</math> is the diagonal of the square, with length <math>17\sqrt{2}</math>; the answer is <math>EF^2 = (17\sqrt{2})^2 = 578</math>.
+
+=== Solution 3 ===
+A slightly more analytic/brute-force approach:
+
+[[Image:AIME II prob10 bruteforce.PNG ]]
+
+Drop perpendiculars from <math>E</math> and <math>F</math> to <math>I</math> and <math>J</math>, respectively; construct right triangle <math>EKF</math> with right angle at K and <math>EK || BC</math>. Since <math>2[CDF]=DF*CF=CD*JF</math>, we have <math>JF=5\times12/13 = \frac{60}{13}</math>. Similarly, <math>EI=\frac{60}{13}</math>. Since <math>\triangle DJF \sim \triangle DFC</math>, we have <math>DJ=\frac{5JF}{12}=\frac{25}{13}</math>.
+
+Now, we see that <math>FK=DC-(DJ+IB)=DC-2DJ=13-\frac{50}{13}=\frac{119}{13}</math>. Also, <math>EK=BC+(JF+IE)=BC+2JF=13+\frac{120}{13}=\frac{289}{13}</math>. By the Pythagorean Theorem, we have <math>EF=\sqrt{\left(\frac{289}{13}\right)^2+\left(\frac{119}{13} \right)^2}=\frac{\sqrt{(17^2)(17^2+7^2)}}{13}</math><math>=\frac{17\sqrt{338}}{13}=\frac{17(13\sqrt{2})}{13}=17\sqrt{2}</math>. Therefore, <math>EF^2=(17\sqrt{2})^2=578</math>.
+
+===Solution 4===
+Based on the symmetry, we know that <math>F</math> is a reflection of <math>E</math> across the center of the square, which we will denote as <math>O</math>. Since <math>\angle BEA</math> and <math>\angle AOB</math> are right, we can conclude that figure <math>AOBE</math> is a cyclic quadrilateral. Pythagorean Theorem yields that <math>BO=AO=\frac{13\sqrt{2}}{2}</math>. Now, using Ptolemy's Theorem, we get that 
+<cmath>AO\cdot BE + BO\cdot AE = AB\cdot AO</cmath>
+<cmath>\frac{13\sqrt{2}}{2}\cdot 5+\frac{13\sqrt{2}}{2}\cdot 12 = 13\cdot OE</cmath>
+<cmath>OE=\frac{17\sqrt{2}}{2}</cmath>
+Now, since we stated in the first step that <math>F</math> is a reflection of <math>E</math> across <math>O</math>, we can say that <math>EF=2EO=17\sqrt{2}</math>. This gives that <cmath>EF^2=(17\sqrt{2})^2=578</cmath> AWD with this bash solution
+
+===Solution 5 (Ptolemy's Theorem)===
+Drawing <math>EF</math>, it clearly passes through the center of <math>ABCD</math>. Letting this point be <math>P</math>, we note that <math>AEBP</math> and <math>CFDP</math> are congruent cyclic quadrilaterals, and that <math>AP=BP=CP=DP=\frac{13}{\sqrt{2}}.</math> Now, from Ptolemy's, <math>13\cdot EP=\frac{13}{\sqrt{2}}(12+5)\implies EP=\frac{17\sqrt{2}}{2}</math>. Since <math>EF=EP+FP=2\cdot EP</math>, the answer is <math>(17\sqrt{2})^2=\boxed{578}.</math>
+
+===Solution 6===
+Coordinate bash
+
+=== Solution 7 (Trig Bash) ===
+
+We first see that the whole figure is symmetrical and reflections across the center that we will denote as <math>O</math> bring each half of the figure to the other half. Thus we consider a single part of the figure, namely <math>EO.</math>
+
+First note that <math>\angle BAO = 45^{\circ}</math> since <math>O</math> is the center of square <math>ABCD.</math> Also note that <math>\angle EAB = \arccos{\left(\frac{12}{13}\right)}</math> or <math>\arcsin{\left(\frac{5}{13}\right)}.</math> Finally, we know that <math>AO =\frac{13\sqrt{2}}{2}.</math> Now we apply laws of cosines on <math>\bigtriangleup AEO.</math> 
+
+We have <math>EO^2 = 12^2 + (\frac{13\sqrt{2}}{2})^2 - 2 \cdot 12 \cdot \left(\frac{13\sqrt{2}}{2}\right) \cdot \cos{\angle EAO}.</math> We know that <math>\angle EAO = 45^{\circ} + \arccos{\left(\frac{12}{13}\right)}.</math> Thus we have <math>\cos{\angle EAO} = \cos\left(45^{\circ} + \arccos{\left(\frac{12}{13}\right)}\right)</math> which applying the cosine sum identity yields <math>\cos{45^{\circ}}\cos{\arccos\frac{12}{13}} - \sin{45^{\circ}}\sin\arcsin{\frac{5}{12}} =\frac{12\sqrt{2}}{26} -\frac{5\sqrt{2}}{26} =\frac{7\sqrt{2}}{26}.</math> 
+
+Note that we are looking for <math>4EO^2</math> so we multiply <math>EO^2 = 12^2 + \left(\frac{13\sqrt{2}}{2}\right)^2 - 2 \cdot 12 \cdot \left(\frac{13\sqrt{2}}{2}\right) \cdot \cos{\angle EAO}</math> by <math>4</math> obtaining <math>4EO^2 = 576 + 338 - 8 \cdot\left(\frac{13\sqrt{2}}{2}\right) \cdot 12 \cdot\frac{7\sqrt{2}}{26} = 576 + 338 - 4  \cdot 12 \cdot  7 = \boxed{578}.</math>

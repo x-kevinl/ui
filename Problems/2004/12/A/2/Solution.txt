@@ -1,0 +1,2 @@
+==Solution==
+She gets $8*2.5=20$ points for the problems she didn't answer. She must get $\left\lceil \frac{100-20}{6} \right\rceil =14 \Rightarrow \text {(C)}$ problems right to score at least 100.

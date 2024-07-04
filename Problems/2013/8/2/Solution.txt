@@ -1,0 +1,2 @@
+==Solution==
+50% off the price of half a pound of fish is \$3, so 100%, the regular price, of a half pound of fish is \$6. If half a pound of fish costs \$6, then a whole pound of fish is $\boxed{\textbf{(D)}\ 12}$ dollars.

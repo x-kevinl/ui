@@ -1,0 +1,7 @@
+==Solution 1==
+
+For each digit $a=1,2,\ldots,9$ there are $10\cdot10$ (ways of choosing $b$ and $c$) palindromes. So the $a$s contribute $(1+2+\cdots+9)(100)(10^4+1)$ to the sum.
+For each digit $b=0,1,2,\ldots,9$ there are $9\cdot10$ (since $a \neq 0$) palindromes. So the $b$s contribute $(0+1+2+\cdots+9)(90)(10^3+10)$ to the sum.
+Similarly, for each $c=0,1,2,\ldots,9$ there are $9\cdot10$ palindromes, so the $c$ contributes $(0+1+2+\cdots+9)(90)(10^2)$ to the sum.
+
+It just so happens that $$ (1+2+\cdots+9)(100)(10^4+1)+(1+2+\cdots+9)(90)(10^3+10)+(1+2+\cdots+9)(90)(10^2)=49500000 $$ so the sum of the digits of the sum is $\boxed{\textbf{(B)}\; 18}$.

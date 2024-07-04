@@ -1,0 +1,2 @@
+==Solution 1==
+We have that $(x^2-5)^2 = 16$ if and only if $x^2-5 = \pm 4$. If $x^2-5 = 4$, then $x^2 = 9 \implies x = \pm 3$, giving 2 solutions. If $x^2-5 = -4$, then $x^2 = 1 \implies x = \pm 1$, giving 2 more solutions. All four of these solutions work, so the answer is $\boxed{\textbf{(D) }4}$. Further, the equation is a [[quartic Equation|quartic]] in $x$, so by the [https://artofproblemsolving.com/wiki/index.php/Fundamental_Theorem_of_Algebra Fundamental Theorem of Algebra], there can be at most four real solutions.

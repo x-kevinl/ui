@@ -1,0 +1,16 @@
+==Solution 1==
+Note that $f(x) - x^2$ has roots $2, 3$, and $4$. Therefore, we may write $f(x) = a(x-2)(x-3)(x-4) +x^2$. Now we find that lines $AB$, $AC$, and $BC$ are defined by the equations $y = 5x - 6$, $y= 6x-8$, and $y=7x-12$ respectively. 
+
+Since we want to find the $x$-coordinates of the intersections of these lines and $f(x)$, we set each of them to $f(x)$ and synthetically divide by the solutions we already know exist. 
+
+In the case of line $AB$, we may write $a(x-2)(x-3)(x-4)+x^2-5x+6 = a(x-2)(x-3)(x-r_1)$ for some real number $r_1$. Dividing both sides by $(x-2)(x-3)$ gives $a(x-4)+1 = a(x-r_1)$ or $r_1 = \frac {4a-1}{a}$.
+
+For line $AC$, we have $a(x-2)(x-3)(x-4)+x^2-6x+8 = a(x-2)(x-4)(x-r_2)$ for some real number $r_2$, which gives $a(x-3)+1 = a(x-r_2)$ or $r_2 = \frac {3a-1}{a}$.
+
+For line $BC$, we have $a(x-2)(x-3)(x-4)+x^2-7x+12 = a(x-3)(x-4)(x-r_3)$ for some real number $r_3$, which gives $a(x-2)+1 = a(x-r_3)$ or $r_3 = \frac {2a-1}{a}$.
+
+Since $r_1 + r_2 + r_3 = 24$, we have $ \frac {4a-1}{a} + \frac {3a-1}{a} + \frac {2a-1}{a} = 24$ or $ \frac {9a-3}{a} = 24$. Solving for $a$ gives $a = - \frac{1}{5}$.
+
+Substituting this back into the original equation, we get $f(x) = -\frac{1}{5}(x-2)(x-3)(x-4) + x^2$, and $f(0) = -\frac{1}{5}(-2)(-3)(-4) + 0 = \boxed{\textbf{(D)}\frac{24}{5}}$
+
+Solution by vedadehhc

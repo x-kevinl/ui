@@ -1,0 +1,4 @@
+== Solution 1==
+Let <math>x</math> denote the common side length of the rhombi.
+Let <math>y</math> denote one of the smaller interior [[angle]]s of rhombus <math> \mathcal{P} </math>. Then <math>x^2\sin(y)=\sqrt{2006}</math>.  We also see that <math>K=x^2\sin(2y) \Longrightarrow K=2x^2\sin y \cdot \cos y \Longrightarrow K = 2\sqrt{2006}\cdot \cos y</math>.  Thus <math>K</math> can be any positive integer in the [[interval]] <math>(0, 2\sqrt{2006})</math>. 
+<math>2\sqrt{2006} = \sqrt{8024}</math> and <math>89^2 = 7921 < 8024 < 8100 = 90^2</math>, so <math>K</math> can be any [[integer]] between 1 and 89, inclusive.  Thus the number of positive values for <math>K</math> is <math>\boxed{089}</math>.

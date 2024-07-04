@@ -1,0 +1,2 @@
+==Solution==
+Assuming excesses of the other ingredients, the chocolate can make $\frac52 \cdot 5=12.5$ servings, the sugar can make $\frac{2}{1/4} \cdot 5 = 40$ servings, the water can make unlimited servings, and the milk can make $\frac74 \cdot 5 = 8.75$ servings. Limited by the amount of milk, Jordan can make at most $\boxed{\textbf{(D)}\ 8 \frac34}$ servings.

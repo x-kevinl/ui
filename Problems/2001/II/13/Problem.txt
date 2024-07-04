@@ -1,0 +1,2 @@
+== Problem ==
+In [[quadrilateral]] <math>ABCD</math>, <math>\angle{BAD}\cong\angle{ADC}</math> and <math>\angle{ABD}\cong\angle{BCD}</math>, <math>AB = 8</math>, <math>BD = 10</math>, and <math>BC = 6</math>. The length <math>CD</math> may be written in the form <math>\frac {m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m + n</math>.

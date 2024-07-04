@@ -1,0 +1,4 @@
+==Solution 1==
+We write the given expression as a single fraction: $$\frac{2021}{2020} - \frac{2020}{2021} = \frac{2021\cdot2021-2020\cdot2020}{2020\cdot2021}$$ by cross multiplication. Then by factoring the numerator, we get $$\frac{2021\cdot2021-2020\cdot2020}{2020\cdot2021}=\frac{(2021-2020)(2021+2020)}{2020\cdot2021}.$$ The question is asking for the numerator, so our answer is $2021+2020=4041,$ giving $\boxed{\textbf{(E) }4041}$.
+
+~[[User:Aops-g5-gethsemanea2|Aops-g5-gethsemanea2]]

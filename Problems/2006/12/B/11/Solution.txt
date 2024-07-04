@@ -1,0 +1,6 @@
+== Solution ==
+Joe has 2 ounces of cream, as stated in the problem.
+
+JoAnn had 14 ounces of liquid, and drank $\frac{1}{7}$ of it. Therefore, she drank $\frac{1}{7}$ of her cream, leaving her $2*\frac{6}{7}$.
+
+$\frac{2}{2*\frac{6}{7}}=\frac{7}{6} \Rightarrow \boxed{\text{(E)}}$

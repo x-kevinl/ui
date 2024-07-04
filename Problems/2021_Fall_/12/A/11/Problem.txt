@@ -1,0 +1,4 @@
+==Problem==
+Consider two concentric circles of radius $17$ and $19.$ The larger circle has a chord, half of which lies inside the smaller circle. What is the length of the chord in the larger circle?
+
+$\textbf{(A)}\ 12\sqrt{2} \qquad\textbf{(B)}\ 10\sqrt{3} \qquad\textbf{(C)}\ \sqrt{17 \cdot 19} \qquad\textbf{(D)}\ 18 \qquad\textbf{(E)}\ 8\sqrt{6}$

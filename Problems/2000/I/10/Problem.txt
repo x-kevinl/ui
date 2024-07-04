@@ -1,0 +1,2 @@
+== Problem ==
+A [[sequence]] of numbers <math>x_{1},x_{2},x_{3},\ldots,x_{100}</math> has the property that, for every [[integer]] <math>k</math> between <math>1</math> and <math>100,</math> inclusive, the number <math>x_{k}</math> is <math>k</math> less than the sum of the other <math>99</math> numbers. Given that <math>x_{50} = m/n,</math> where <math>m</math> and <math>n</math> are relatively prime positive integers, find <math>m + n</math>.

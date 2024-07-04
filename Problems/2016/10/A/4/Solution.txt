@@ -1,0 +1,11 @@
+==Solution 1==
+
+The value, by definition, is $$\begin{align*}
+\text{rem}\left(\frac{3}{8},-\frac{2}{5}\right)
+&= \frac{3}{8}-\left(-\frac{2}{5}\right)\left\lfloor\frac{\frac{3}{8}}{-\frac{2}{5}}\right\rfloor \\
+&= \frac{3}{8}-\left(-\frac{2}{5}\right)\left\lfloor\frac{3}{8}\times\frac{-5}{2}\right\rfloor \\
+&= \frac{3}{8}-\left(-\frac{2}{5}\right)\left\lfloor\frac{-15}{16}\right\rfloor\\
+&= \frac{3}{8}-\left(-\frac{2}{5}\right)\left(-1\right)\\
+&= \frac{3}{8}-\frac{2}{5}\\
+&= \boxed{\textbf{(B) } -\frac{1}{40}}.
+\end{align*}$$

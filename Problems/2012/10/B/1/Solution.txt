@@ -1,0 +1,2 @@
+== Solution==
+In each class, there are $18-2=16$ more students than rabbits. So for all classrooms, the difference between students and rabbits is $16 \times 4 = \boxed{\textbf{(C)}\ 64}$

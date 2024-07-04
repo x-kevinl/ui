@@ -1,0 +1,16 @@
+== Solution 1 ==
+Since the 5 members of each planet committee are distinct we get that the number of arrangement of sittings is in the form <math>N*(5!)^3</math> because for each <math>M, V, E</math> sequence we have <math>5!</math> arrangements within the Ms, Vs, and Es.
+
+Pretend the table only seats <math>3</math> "people", with <math>1</math> "person" from each planet. Counting clockwise, only the arrangement M, V, E satisfies the given constraints. Therefore, in the actual problem, the members must sit in cycles of M, V, E, but not necessarily with one M, one V, and one E in each cycle(for example, MMVVVE, MVVVEEE, MMMVVVEE all count as cycles). These cycles of MVE must start at seat <math>1</math>, since an M is at seat <math>1</math>. We simply count the number of arrangements through casework.
+
+1. The entire arrangement is one cycle- There is only one way to arrange this, MMMMMVVVVVEEEEE
+
+2. Two cycles - There are 3 Ms, Vs and Es left to distribute among the existing MVEMVE. Using stars and bars, we get <math>\binom{4}{1}=4</math> ways for the members of each planet. Therefore, there are <math>4^3=64</math> ways in total.
+
+3. Three cycles - 2 Ms, Vs, Es left, so <math>\binom{4}{2}=6</math>, making there <math>6^3=216</math> ways total.
+
+4. Four cycles - 1 M, V, E left, each M can go to any of the four MVE cycles and likewise for V and E, <math>4^3=64</math> ways total
+ 
+5. Five cycles - MVEMVEMVEMVEMVE is the only possibility, so there is just <math>1</math> way.
+
+Combining all these cases, we get <math>1+1+64+64+216= \boxed{346}</math>

@@ -1,0 +1,20 @@
+==Solutions==
+
+===Solution 1===
+
+Using the triangle area formula for triangles: $A = \frac{bh}{2},$ where $A$ is the area, $b$ is the base, and $h$ is the height. This equation gives us $A = \frac{4 \cdot 6}{2} = \frac{24}{2} =\boxed{\textbf{(A) } 12}$.
+
+===Solution 2===
+
+A triangle with the same height and base as a rectangle is half of the rectangle's area.  This means that a triangle with half of the base of the rectangle and also the same height means its area is one quarter of the rectangle's area.  Therefore, we get $\frac{48}{4} =\boxed{\textbf{(A) } 12}$.
+
+===Solution 3(a check)===
+We can find the area of the entire rectangle, DCBA to be $8 \cdot 6=48$ and find DCM area to be $\frac{6 \cdot 4}{2} = 12$ and BCA to be $\frac{6 \cdot 8}{2}=24$, $48-12-24=$ $\boxed{\textbf{(A) } 12}$.
+
+===Solution 4===
+A triangle is half of a rectangle. So since M is the midpoint of DA, we can see that triangle DAC is half of the whole rectangle. And it is also true that triangle MAC is half of triangle DAC, so triangle MAC would just be 1/4 of the whole rectangle. Since the rectangle's area is 48, 1/4 of 48 would be 12. Which gives us the answer $\boxed{\textbf{(A) } 12}$.
+
+===Solution 5 (complicated way)===
+We can subtract the total areas of triangles DCM and ABC from the rectangle ABCD. For triangle DCM, the base is 4 and the height is 6, so we multiply 4 and 6, then divide by 2 to get 12. For triangle ABC, the base is 4 and the height is 8, so we multiply 4 and 8, then divide by 2 to get 24. We add 24 and 12 to get 36. Then, we calculate the area of rectangle ABCD, which is 48. We subtract 36 from 48, resulting in $\boxed{\textbf{(A) } 12}$.
+
+-BananaBall00

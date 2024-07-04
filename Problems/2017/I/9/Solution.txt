@@ -1,0 +1,6 @@
+==Solution 1==
+Writing out the recursive statement for <math>a_n, a_{n-1}, \dots, a_{10}</math> and summing them gives <cmath>a_n+\dots+a_{10}=100(a_{n-1}+\dots+a_{10})+n+\dots+10</cmath>
+Which simplifies to <cmath>a_n=99(a_{n-1}+\dots+a_{10})+\frac{1}{2}(n+10)(n-9)</cmath>
+Therefore, <math>a_n</math> is divisible by 99 if and only if <math>\frac{1}{2}(n+10)(n-9)</math> is divisible by 99, so <math>(n+10)(n-9)</math> needs to be divisible by 9 and 11. Assume that <math>n+10</math> is a multiple of 11. Writing out a few terms, <math>n=12, 23, 34, 45</math>, we see that <math>n=45</math> is the smallest <math>n</math> that works in this case. Next, assume that <math>n-9</math> is a multiple of 11. Writing out a few terms, <math>n=20, 31, 42, 53</math>, we see that <math>n=53</math> is the smallest <math>n</math> that works in this case. The smallest <math>n</math> is <math>\boxed{045}</math>.
+
+Note that we can also construct the solution using CRT by assuming either <math>11</math> divides <math>n+10</math> and <math>9</math> divides <math>n-9</math>, or <math>9</math> divides <math>n+10</math> and <math>11</math> divides <math>n-9</math>, and taking the smaller solution.

@@ -1,0 +1,5 @@
+== Solution ==
+
+Draw the altitude from $O$ onto $DP$ and call the point $H$. Because $\angle OAD$ and $\angle ADP$ are right angles due to being tangent to the circles, and the altitude creates $\angle OHD$ as a right angle. $ADHO$ is a rectangle with $OH$ bisecting $DP$. The length $OP$ is $4+2$ and $HP$ has a length of $2$, so by pythagorean's, $OH$ is $\sqrt{32}$.
+
+$2 \cdot \sqrt{32} + \frac{1}{2}\cdot2\cdot \sqrt{32} = 3\sqrt{32} = 12\sqrt{2}$, which is half the area of the hexagon, so the area of the entire hexagon is $2\cdot12\sqrt{2} = \boxed{(B)24\sqrt{2}}$

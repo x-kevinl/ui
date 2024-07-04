@@ -1,0 +1,8 @@
+==Solution 1 (Inequalities)==
+
+Let $d$ be the next divisor written to the right of $323.$
+
+If $\gcd(323,d)=1,$ then $$n\geq323d>323^2>100^2=10000,$$ which contradicts the precondition that $n$ is a $4$-digit number.
+
+It follows that $\gcd(323,d)>1.$ Since $323=17\cdot19,$ the smallest possible value of $d$ is $17\cdot20=\boxed{\textbf{(C) } 340},$ from which $$n=\operatorname{lcm}(323,d)=17\cdot19\cdot20=6460.$$
+~MRENTHUSIASM ~tdeng

@@ -1,0 +1,5 @@
+==Solution 1==
+
+Reflect each of the triangles over its respective side.  Then since the areas of the triangles total to the area of the equilateral triangle, it can be seen that the triangles fill up the equilateral one and the vertices of these triangles concur at the circumcenter of the equilateral triangle.  Hence the desired answer is just its circumradius, or $\boxed{\dfrac{\sqrt3}3\textbf{ (B)}}$.
+
+(Solution by djmathman)

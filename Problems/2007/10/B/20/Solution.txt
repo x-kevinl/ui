@@ -1,0 +1,11 @@
+==Solution 1==
+
+There are $25$ ways to choose the first square. The four remaining squares in its row and column and the square you chose exclude nine squares from being chosen next time.
+
+There are $16$ remaining blocks to be chosen for the second square. The three remaining spaces in its row and column and the square you chose must be excluded from being chosen next time.
+
+Finally, the last square has $9$ remaining choices.
+
+The number of ways to choose $3$ squares is $25 \cdot 16 \cdot 9,$ but the order in which you chose the squares does not matter as the blocks are indistinguishable, so we divide by $3!$.
+
+$$\frac{25 \cdot 16 \cdot 9}{3 \cdot 2 \cdot 1} = 25 \cdot 8 \cdot 3 = 100 \cdot 6 = \boxed{\mathrm{(C) \ } 600}$$

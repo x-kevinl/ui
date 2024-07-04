@@ -1,0 +1,8 @@
+==Problem==
+What is the correct ordering of the three numbers, $10^8$, $5^{12}$, and $2^{24}$?
+
+$ \textbf{(A)}\ 2^{24}<10^8<5^{12}\\
+\textbf{(B)}\ 2^{24}<5^{12}<10^8 \\
+ \textbf{(C)}\ 5^{12}<2^{24}<10^8 \\
+\textbf{(D)}\ 10^8<5^{12}<2^{24} \\
+\textbf{(E)}\ 10^8<2^{24}<5^{12} $

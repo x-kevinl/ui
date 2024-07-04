@@ -1,0 +1,3 @@
+==Problem==
+For distinct complex numbers <math>z_1,z_2,\dots,z_{673}</math>, the polynomial
+<cmath> (x-z_1)^3(x-z_2)^3 \cdots (x-z_{673})^3 </cmath>can be expressed as <math>x^{2019} + 20x^{2018} + 19x^{2017}+g(x)</math>, where <math>g(x)</math> is a polynomial with complex coefficients and with degree at most <math>2016</math>. The sum <cmath> \left| \sum_{1 \le j <k \le 673} z_jz_k \right| </cmath> can be expressed in the form <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

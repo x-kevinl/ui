@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>P(x)</math> be a quadratic polynomial with complex coefficients whose <math>x^2</math> coefficient is <math>1.</math> Suppose the equation <math>P(P(x))=0</math> has four distinct solutions, <math>x=3,4,a,b.</math> Find the sum of all possible values of <math>(a+b)^2.</math>

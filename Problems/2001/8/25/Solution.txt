@@ -1,0 +1,5 @@
+==Solution 1==
+
+There are only 5 options for the problem so we can just try them. It is easy since that we only need try to use $2$, $3$ to divide them. Even $5$ will leads to a solution start with $1$ which we don't need.
+
+$5724/2=2862$, $5724/3=1908$. $7245/3=2415$. $7254/2=3612$, $7254/3=2418$. $7425/3=2475$. The answer is $\boxed{\textbf{(D)}}$. You can obtain the answer in only 6 calculations.

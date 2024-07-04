@@ -1,0 +1,4 @@
+==Solution 1==
+Note that the square root of any number squared is always the absolute value of the squared number because the square root function will only return a nonnegative number. By squaring both $3$ and $2\sqrt{3}$, we see that $2\sqrt{3}>3$, thus $3-2\sqrt{3}$ is negative, so we must take the absolute value of $3-2\sqrt{3}$, which is just $2\sqrt{3}-3$. Knowing this, the first term in the expression equals $2\sqrt{3}-3$ and the second term is $3+2\sqrt3$, and summing the two gives $\boxed{\textbf{(D)} ~4\sqrt{3}}$.
+
+~bjc, abhinavg0627 and JackBocresion

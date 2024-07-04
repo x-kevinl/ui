@@ -1,0 +1,2 @@
+== Problem ==
+A [[convex]] polyhedron <math> P </math> has <math>26</math> vertices, <math>60</math> edges, and <math>36</math> faces, <math>24</math> of which are triangular and <math>12</math> of which are quadrilaterals. A space diagonal is a line segment connecting two non-adjacent vertices that do not belong to the same face. How many space diagonals does <math> P </math> have?

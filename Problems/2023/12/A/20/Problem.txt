@@ -1,0 +1,25 @@
+==Problem==
+Rows 1, 2, 3, 4, and 5 of a triangular array of integers are shown below.
+
+<asy>
+size(4.5cm);
+label("$1$", (0,0));
+label("$1$", (-0.5,-2/3));
+label("$1$", (0.5,-2/3));
+label("$1$", (-1,-4/3));
+label("$3$", (0,-4/3));
+label("$1$", (1,-4/3));
+label("$1$", (-1.5,-2));
+label("$5$", (-0.5,-2));
+label("$5$", (0.5,-2));
+label("$1$", (1.5,-2));
+label("$1$", (-2,-8/3));
+label("$7$", (-1,-8/3));
+label("$11$", (0,-8/3));
+label("$7$", (1,-8/3));
+label("$1$", (2,-8/3));
+</asy>
+
+Each row after the first row is formed by placing a 1 at each end of the row, and each interior entry is 1 greater than the sum of the two numbers diagonally above it in the previous row. What is the units digits of the sum of the 2023 numbers in the 2023rd row?
+
+$\textbf{(A) } 1 \qquad \textbf{(B) } 3 \qquad \textbf{(C) } 5 \qquad \textbf{(D) } 7 \qquad \textbf{(E) } 9$

@@ -1,0 +1,4 @@
+==Solution 1==
+Note that for this restriction to be true, there must be $3$ balls of each color. There are a total of $2^6 = 64$ ways to color the balls, and there are ${6 \choose 3} = 20$ ways for three balls chosen to be painted white.  Thus, the answer is $\frac{20}{64} = \boxed{\textbf{(D) } \frac{5}{16}}$.
+
+-Aidensharp

@@ -1,0 +1,17 @@
+== Problem ==
+
+Daniel finds a rectangular index card and measures its diagonal to be $8$ centimeters.
+Daniel then cuts out equal squares of side $1$ cm at two opposite corners of the index card and measures the distance between the two closest vertices of these squares to be $4\sqrt{2}$ centimeters, as shown below. What is the area of the original index card?
+<asy>
+// Diagram by MRENTHUSIASM, edited by Djmathman
+size(200);
+defaultpen(linewidth(0.6));
+draw((489.5,-213) -- (225.5,-213) -- (225.5,-185) -- (199.5,-185) -- (198.5,-62) -- (457.5,-62) -- (457.5,-93) -- (489.5,-93) -- cycle);
+draw((206.29,-70.89) -- (480.21,-207.11), linetype ("6 6"),Arrows(size=4,arrowhead=HookHead));
+draw((237.85,-182.24) -- (448.65,-95.76),linetype ("6 6"),Arrows(size=4,arrowhead=HookHead));
+label("$1$",(450,-80));
+label("$1$",(475,-106));
+label("$8$",(300,-103));
+label("$4\sqrt 2$",(300,-173));
+</asy>
+$\textbf{(A) } 14 \qquad \textbf{(B) } 10\sqrt{2} \qquad \textbf{(C) } 16 \qquad \textbf{(D) } 12\sqrt{2} \qquad \textbf{(E) } 18$

@@ -1,0 +1,12 @@
+==Solution 1==
+If we have 1 as the first number, then the only possible list is $(1,2,3,4,5,6,7,8,9,10)$. 
+
+If we have 2 as the first number, then we have 9 ways to choose where the $1$ goes, and the numbers ascend from the first number, $2$, with the exception of the $1$.
+For example, $(2,3,1,4,5,6,7,8,9,10)$, or $(2,3,4,1,5,6,7,8,9,10)$. There are $\dbinom{9}{1}$ ways to do so.
+
+If we use 3 as the first number, we need to choose 2 spaces to be 2 and 1, respectively. There are $\dbinom{9}{2}$ ways to do this.
+
+In the same way, the total number of lists is:
+$\dbinom{9}{0} +\dbinom{9}{1} + \dbinom{9}{2} + \dbinom{9}{3} + \dbinom{9}{4}.....\dbinom{9}{9}$
+ 
+By the [[binomial theorem]], this is $2^{9}$ = $512$, or $\boxed{\textbf{(B)}}$

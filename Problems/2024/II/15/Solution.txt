@@ -1,0 +1,109 @@
+==Solution 1==
+By Furaken
+
+There are two kinds of such rectangles: those whose sides are parallel to some edges of the regular 12-gon (Case 1, and those whose sides are not (Case 2).
+
+For Case 1, WLOG assume that the rectangle's sides are horizontal and vertical (don't forget to multiply by 3 at the end of Case 1). Then the rectangle's sides coincide with these segments as shown in the diagram.
+<asy>
+real r = pi/6;
+pair A1 = (cos(r),sin(r));
+pair A2 = (cos(2r),sin(2r));
+pair A3 = (cos(3r),sin(3r));
+pair A4 = (cos(4r),sin(4r));
+pair A5 = (cos(5r),sin(5r));
+pair A6 = (cos(6r),sin(6r));
+pair A7 = (cos(7r),sin(7r));
+pair A8 = (cos(8r),sin(8r));
+pair A9 = (cos(9r),sin(9r));
+pair A10 = (cos(10r),sin(10r));
+pair A11 = (cos(11r),sin(11r));
+pair A12 = (cos(12r),sin(12r));
+dot(A1);
+dot(A2);
+dot(A3);
+dot(A4);
+dot(A5);
+dot(A6);
+dot(A7);
+dot(A8);
+dot(A9);
+dot(A10);
+dot(A11);
+dot(A12);
+pair B1 = (0.5,0.5);
+pair B2 = (-0.5,0.5);
+pair B3 = (-0.5,-0.5);
+pair B4 = (0.5,-0.5);
+dot(B1);
+dot(B2);
+dot(B3);
+dot(B4);
+draw(A1--A5--A7--A11--cycle);
+draw(A2--A4--A8--A10--cycle);
+draw(A3--A9);
+draw(A6--A12);
+label("$A_1$", A1, NE);
+label("$A_2$", A2, NE);
+label("$A_3$", A3, N);
+label("$A_4$", A4, NW);
+label("$A_5$", A5, NW);
+label("$A_6$", A6, W);
+label("$A_7$", A7, SW);
+label("$A_8$", A8, SW);
+label("$A_9$", A9, S);
+label("$A_{10}$", A10, SE);
+label("$A_{11}$", A11, SE);
+label("$A_{12}$", A12, E);
+label("$B_1$", B1, SW);
+label("$B_2$", B2, SE);
+label("$B_3$", B3, NE);
+label("$B_4$", B4, NW);
+</asy>
+We use inclusion-exclusion for this. There are 30 valid rectangles contained in <math>A_1A_5A_7A_{11}</math>, as well as 30 in <math>A_2A_4A_8A_{10}</math>. However, the 9 rectangles contained in <math>B_1B_2B_3B_4</math> have been counted twice, so we subtract 9 and we have 51 rectangles in the diagram. Multiplying by 3, we get 153 rectangles for Case 1.
+
+For Case 2, we have this diagram. To be honest, you can count the rectangles here in whatever way you like.
+<asy>
+real r = pi/6;
+pair A1 = (cos(r),sin(r));
+pair A2 = (cos(2r),sin(2r));
+pair A3 = (cos(3r),sin(3r));
+pair A4 = (cos(4r),sin(4r));
+pair A5 = (cos(5r),sin(5r));
+pair A6 = (cos(6r),sin(6r));
+pair A7 = (cos(7r),sin(7r));
+pair A8 = (cos(8r),sin(8r));
+pair A9 = (cos(9r),sin(9r));
+pair A10 = (cos(10r),sin(10r));
+pair A11 = (cos(11r),sin(11r));
+pair A12 = (cos(12r),sin(12r));
+dot(A1);
+dot(A2);
+dot(A3);
+dot(A4);
+dot(A5);
+dot(A6);
+dot(A7);
+dot(A8);
+dot(A9);
+dot(A10);
+dot(A11);
+dot(A12);
+draw(A1--A6--A7--A12--cycle);
+draw(A3--A4--A9--A10--cycle);
+draw(A2--A5--A8--A11--cycle);
+label("$A_1$", A1, NE);
+label("$A_2$", A2, NE);
+label("$A_3$", A3, N);
+label("$A_4$", A4, NW);
+label("$A_5$", A5, NW);
+label("$A_6$", A6, W);
+label("$A_7$", A7, SW);
+label("$A_8$", A8, SW);
+label("$A_9$", A9, S);
+label("$A_{10}$", A10, SE);
+label("$A_{11}$", A11, SE);
+label("$A_{12}$", A12, E);
+</asy>
+There are 36 rectangles contained within <math>A_2A_5A_8A_{11}</math>, and 18 that use points outside <math>A_2A_5A_8A_{11}</math>. So we get a total of <math>3(36+18)=162</math> rectangles for Case 2.
+
+Adding the two cases together, we get the answer <math>\boxed{315}</math>.

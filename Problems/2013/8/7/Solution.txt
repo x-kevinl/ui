@@ -1,0 +1,6 @@
+==Solution 1==
+Clearly, for every $5$ seconds, $3$ cars pass. It's more convenient to have everything in seconds: $2$ minutes and $45$ seconds$=2\cdot60 + 45 = 165$ seconds. We then set up a ratio: $$\frac{3}{5}=\frac{x}{165}$$
+$$3(165)=5x$$
+$$x=3(33)=99\approx\boxed{\textbf{(C)}\ 100}.$$
+
+~megaboy6679 ~MiracleMaths

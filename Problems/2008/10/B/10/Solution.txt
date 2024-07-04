@@ -1,0 +1,13 @@
+==Solution==
+Let the center of the circle be $O$, and let $D$ be the intersection of $\overline{AB}$ and $\overline{OC}$ (then $D$ is the midpoint of $\overline{AB}$). $OA=OB=5$, since they are both radii of the circle.
+
+By the [[Pythagorean Theorem]], $OD = \sqrt{OA^2 - DA^2} = 4$, and by subtraction, $CD=OC - OD = 1$.
+
+Using the Pythagorean Theorem again, $AC= \sqrt{AD^2 + CD^2} = \sqrt{3^2+1^2}=\sqrt{10} \Longrightarrow \textbf{(A)}$.
+
+<center><asy>
+pen d = linewidth(0.7); pathpen = d; pointpen = black; pen f = fontsize(9);
+path p = CR((0,0),5);
+pair O = (0,0), A=(5,0), B = IP(p,CR(A,6)), C = IP(p,CR(A,3)), D=IP(A--B,O--C);
+D(p); D(MP("A",A,E)--D(MP("O",O))--MP("B",B,NE)--cycle); D(A--MP("C",C,ENE),dashed+d); D(O--C,dashed+d); D(rightanglemark(O,D(MP("D",D,W)),A)); MP("5",(A+O)/2); MP("3",(A+D)/2,SW);
+</asy></center>

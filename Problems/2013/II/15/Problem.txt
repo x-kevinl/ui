@@ -1,0 +1,7 @@
+==Problem 15==
+Let <math>A,B,C</math> be angles of a triangle with
+<cmath> \begin{align*}
+\cos^2 A + \cos^2 B + 2 \sin A \sin B \cos C &= \frac{15}{8} \text{ and} \\
+\cos^2 B + \cos^2 C + 2 \sin B \sin C \cos A &= \frac{14}{9}
+\end{align*} </cmath>
+There are positive integers <math>p</math>, <math>q</math>, <math>r</math>, and <math>s</math> for which <cmath> \cos^2 C + \cos^2 A + 2 \sin C \sin A \cos B = \frac{p-q\sqrt{r}}{s}, </cmath> where <math>p+q</math> and <math>s</math> are relatively prime and <math>r</math> is not divisible by the square of any prime.  Find <math>p+q+r+s</math>.

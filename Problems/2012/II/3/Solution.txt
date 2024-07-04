@@ -1,0 +1,13 @@
+== Solution ==
+
+There are two cases:
+
+Case 1: One man and one woman is chosen from each department.
+
+Case 2: Two men are chosen from one department, two women are chosen from another department, and one man and one woman are chosen from the third department.
+
+For the first case, in each department there are <math>{{2}\choose{1}} \times {{2}\choose{1}} = 4</math> ways to choose one man and one woman. Thus there are <math>4^3 = 64</math> total possibilities conforming to case 1.
+
+For the second case, there is only <math>{{2}\choose{2}} = 1</math> way to choose two professors of the same gender from a department, and again there are <math>4</math> ways to choose one man and one woman. Thus there are <math>1 \cdot 1 \cdot 4 = 4</math> ways to choose two men from one department, two women from another department, and one man and one woman from the third department. However, there are <math>3! = 6</math> different department orders, so the total number of possibilities conforming to case 2 is <math>4 \cdot 6 = 24</math>.
+
+Summing these two values yields the final answer: <math>64 + 24 = \boxed{088}</math>.

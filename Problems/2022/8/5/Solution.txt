@@ -1,0 +1,9 @@
+==Solution==
+
+Five years ago, Bella was $6$ years old, and the kitten was $0$ years old.
+
+Today, Bella is $11$ years old, and the kitten is $5$ years old. It follows that Anna is $30-11-5=14$ years old.
+
+Therefore, Anna is $14-11=\boxed{\textbf{(C) } 3}$ years older than Bella.
+
+~MRENTHUSIASM

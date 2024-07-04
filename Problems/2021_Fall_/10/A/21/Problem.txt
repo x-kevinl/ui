@@ -1,0 +1,5 @@
+==Problem==
+Each of the $20$ balls is tossed independently and at random into one of the $5$ bins. Let $p$ be the probability that some bin ends up with $3$ balls, another with $5$ balls, and the other three with $4$ balls each. Let $q$ be the probability that every bin ends up with $4$ balls. What is $\frac{p}{q}$?
+
+$\textbf{(A)}\ 1 \qquad\textbf{(B)}\  4 \qquad\textbf{(C)}\  8 \qquad\textbf{(D)}\
+ 12 \qquad\textbf{(E)}\ 16$

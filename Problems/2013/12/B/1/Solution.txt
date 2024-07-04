@@ -1,0 +1,2 @@
+==Solution==
+Let $L$ be the low temperature. The high temperature is $L+16$. The average is $\frac{L+(L+16)}{2}=3$. Solving for $L$, we get $L=\boxed{\textbf{(C)} \  -5}$

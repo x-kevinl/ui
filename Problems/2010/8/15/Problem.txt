@@ -1,0 +1,4 @@
+==Problem==
+A jar contains $5$ different colors of gumdrops. $30\%$ are blue, $20\%$ are brown, $15\%$ are red, $10\%$ are yellow, and other $30$ gumdrops are green. If half of the blue gumdrops are replaced with brown gumdrops, how many gumdrops will be brown?
+
+$ \textbf{(A)}\ 35\qquad\textbf{(B)}\ 36\qquad\textbf{(C)}\ 42\qquad\textbf{(D)}\ 48\qquad\textbf{(E)}\ 64 $

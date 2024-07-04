@@ -1,0 +1,14 @@
+==Solution==
+Let us take some cases. Since <math>m</math> and <math>n</math> are odds, and <math>200</math> is in the top row and <math>2000</math> in the bottom, <math>m</math> has to be <math>3</math>, <math>5</math>, <math>7</math>, or <math>9</math>. Also, taking a look at the diagram, the slope of the line connecting those centers has to have an absolute value of <math> < 1</math>. Therefore, <math>m < 1800 \mod n < 1800-m</math>. 
+
+If <math>m=3</math>, <math>n</math> can range from <math>667</math> to <math>999</math>. However, <math>900</math> divides <math>1800</math>, so looking at mods, we can easily eliminate <math>899</math> and <math>901</math>. Now, counting these odd integers, we get <math>167 - 2 = 165</math>.
+
+Similarly, let <math>m=5</math>. Then <math>n</math> can range from <math>401</math> to <math>499</math>. However, <math>450|1800</math>, so one can remove <math>449</math> and <math>451</math>. Counting odd integers, we get <math>50 - 2 = 48</math>.
+
+Take <math>m=7</math>. Then, <math>n</math> can range from <math>287</math> to <math>333</math>. However, <math>300|1800</math>, so one can verify and eliminate <math>299</math> and <math>301</math>. Counting odd integers, we get <math>24 - 2 = 22</math>.
+
+Let <math>m = 9</math>. Then <math>n</math> can vary from <math>223</math> to <math>249</math>. However, <math>225|1800</math>. Checking that value and the values around it, we can eliminate <math>225</math>. Counting odd integers, we get <math>14 - 1 = 13</math>.
+
+Add all of our cases to get <cmath> 165+48+22+13 = \boxed{248} </cmath>
+
+-Solution by thanosaops

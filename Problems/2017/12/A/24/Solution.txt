@@ -1,0 +1,22 @@
+==Diagram==
+
+<asy>
+size(8cm);
+real r = 4.01754;
+draw(circle((0,0), r));
+pair C = r * dir(-30), B = r * dir(28.83-30), A = r * dir(72.68-30), D = r * dir(241.98-30);
+draw(A--B--C--D--cycle); draw(B--D);
+pair X = B * 1/4 + D * 3/4, Y = B * 25/36 + D * 11/36;
+label("A", A, N); label("B", B, NE); label ("C", C, E); label("D", D, S);
+label("Y", Y, N); label("X", X, N);
+pair G = X * 1.445 - C*0.445;
+label("G", G, NW);
+pair E = Y + (D - A) * 1.48;
+draw(Y--E);
+draw(A--E);
+label("E", E, S);
+pair F = E + (A - C)  * 1.45;
+draw(C--F--E);
+label("F",F,NW);
+</asy>
+~raxu, put in by fuzimiao2013

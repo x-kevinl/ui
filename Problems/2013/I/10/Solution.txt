@@ -1,0 +1,33 @@
+== Solution==
+
+Since <math>r+si</math> is a root, by the Complex Conjugate Root Theorem, <math>r-si</math> must be the other imaginary root. Using <math>q</math> to represent the real root, we have
+
+<math>(x-q)(x-r-si)(x-r+si) = x^3 -ax^2 + bx -65</math>
+
+Applying difference of squares, and regrouping, we have
+
+<math>(x-q)(x^2 - 2rx + (r^2 + s^2)) = x^3 -ax^2 + bx -65</math>
+
+So matching coefficients, we obtain
+
+<math>q(r^2 + s^2) = 65</math>
+
+<math>b = r^2 + s^2 + 2rq</math>
+
+<math>a = q + 2r</math>
+
+By Vieta's each <math> {p}_{a,b} = a </math> so we just need to find the values of <math> a </math> in each pair.
+We proceed by determining possible values for <math>q</math>, <math>r</math>, and <math>s</math> and using these to determine <math>a</math> and <math>b</math>.
+
+If <math>q = 1</math>, <math>r^2 + s^2 = 65</math>
+so (r, s) = <math>(\pm1, \pm 8), (\pm8, \pm 1), (\pm4, \pm 7), (\pm7, \pm 4)</math>
+
+Similarly, for <math>q = 5</math>, <math>r^2 + s^2 = 13</math> so the pairs <math>(r,s)</math> are
+<math>(\pm2, \pm 3), (\pm3, \pm 2)</math>
+
+For <math>q = 13</math>, <math>r^2 + s^2 = 5</math> so the pairs <math> (r,s)</math> are
+<math>(\pm2, \pm 1), (\pm1, \pm 2)</math>
+
+Now we can disregard the plus minus signs for s because those cases are included as complex conjugates of the counted cases.
+The positive and negative values of r will cancel, so the sum of the  <math> {p}_{a,b} = a </math> for <math>q = 1</math> is <math>q</math> times the number of distinct <math>r</math> values (as each value of <math>r</math> generates a pair <math>(a,b)</math>).
+Our answer is then <math>(1)(8) + (5)(4) + (13)(4) = \boxed{080}</math>.

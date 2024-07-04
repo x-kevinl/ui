@@ -1,0 +1,4 @@
+==Problem==
+At noon on a certain day, Minneapolis is $N$ degrees warmer than St. Louis. At $4{:}00$ the temperature in Minneapolis has fallen by $5$ degrees while the temperature in St. Louis has risen by $3$ degrees, at which time the temperatures in the two cities differ by $2$ degrees. What is the product of all possible values of $N?$
+
+$\textbf{(A)}\: 10\qquad\textbf{(B)} \: 30\qquad\textbf{(C)} \: 60\qquad\textbf{(D)} \: 100\qquad\textbf{(E)} \: 120$

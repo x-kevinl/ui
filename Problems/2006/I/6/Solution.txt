@@ -1,0 +1,2 @@
+== Solution 1 ==
+Numbers of the form <math>0.\overline{abc}</math> can be written as <math>\frac{abc}{999}</math>. There are <math>10\times9\times8=720</math> such numbers. Each digit will appear in each place value <math>\frac{720}{10}=72</math> times, and the sum of the digits, 0 through 9, is 45. So the sum of all the numbers is <math>\frac{45\times72\times111}{999}= \boxed{360} </math>.

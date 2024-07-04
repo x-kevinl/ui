@@ -1,0 +1,8 @@
+== Solution 1 ==
+The total cost of the pencils can be found by $(\text{students}\cdot\text{pencils purchased by each}\cdot\text{price of each pencil})$.
+
+Since $1771$ is the product of three sets of values, we can begin with prime factorization, since it gives some insight into the values: $7, 11, 23$. Since neither $(C)$ nor $(E)$ are any of these factors, they can be eliminated immediately, leaving $(A)$, $(B)$, and $(D)$.
+
+Beginning with $(A) 7$, we see that the number of pencils purchased by each student must be either $11$ or $23$. However, the problem states that the price of each pencil must exceed the number of pencils purchased, so we can eliminate this.
+
+Continuing with $(B) 11$, we can conclude that the only case that fulfils the restrictions are that there are $23$ students who each purchased $7$ such pencils, so the answer is $\boxed{B}$. We can apply the same logic to $(E)$ as we applied to $(A)$ if one wants to make doubly sure.

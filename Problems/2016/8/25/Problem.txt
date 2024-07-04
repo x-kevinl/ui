@@ -1,0 +1,7 @@
+==Problem 25==
+A semicircle is inscribed in an isosceles triangle with base $16$ and height $15$ so that the diameter of the semicircle is contained in the base of the triangle as shown. What is the radius of the semicircle?
+
+<asy>draw((0,0)--(8,15)--(16,0)--(0,0));
+draw(arc((8,0),7.0588,0,180));</asy>
+
+$\textbf{(A) }4 \sqrt{3}\qquad\textbf{(B) } \dfrac{120}{17}\qquad\textbf{(C) }10\qquad\textbf{(D) }\dfrac{17\sqrt{2}}{2}\qquad \textbf{(E)} \dfrac{17\sqrt{3}}{2}$

@@ -1,0 +1,2 @@
+== Problem ==
+Let <math> S </math> be the [[set]] of [[integer]]s between <math>1</math> and <math> 2^{40} </math> whose binary expansions have exactly two <math>1</math>'s. If a number is chosen at random from <math> S, </math> the [[probability]] that it is divisible by <math>9</math> is <math> p/q, </math> where <math> p </math> and <math> q </math> are relatively prime positive integers. Find <math> p+q. </math>

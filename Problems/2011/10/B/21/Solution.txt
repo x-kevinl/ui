@@ -1,0 +1,38 @@
+== Solution 1 ==
+The largest difference, $9,$ must be between $w$ and $z.$
+
+The smallest difference, $1,$ must be directly between two integers. This also means the differences directly between the other two should add up to $8.$ The only remaining differences that would make this possible are $3$ and $5.$ However, those two differences can't be right next to each other because they would make a difference of $8,$ which isn't given as a possibility in the problem. This means $1$ must be the difference between $y$ and $x.$ We can express the possible configurations as the lines.
+
+
+<center><asy>
+unitsize(14mm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+dotfactor=4;
+
+pair Z1=(0,1), Y1=(1,1), X1=(2,1), W1=(3,1);
+pair Z4=(4,1), Y4=(5,1), X4=(6,1), W4=(7,1);
+
+draw(Z1--W1); draw(Z4--W4);
+
+pair[] ps={W1,W4,X1,X4,Y1,Y4,Z1,Z4};
+dot(ps);
+label("$z$",Z1,N); label("$y$",Y1,N); label("$x$",X1,N); label("$w$",W1,N);
+label("$z$",Z4,N); label("$y$",Y4,N); label("$x$",X4,N); label("$w$",W4,N);
+
+label("$1$",(X1--Y1),N); label("$1$",(X4--Y4),N);
+label("$3$",(Y1--Z1),N); label("$3$",(W4--X4),N); label("$5$",(X1--W1),N); label("$5$",(Y4--Z4),N);
+
+</asy>
+</center>
+
+If we look at the first number line, you can express $x$ as $w-5,$ $y$ as $w-6,$ and $z$ as $w-9.$ Since the sum of all these integers equal $44$,
+$$\begin{align*}
+w+w-5+w-6+w-9&=44\\
+4w&=64\\
+w&=16 \end{align*}$$
+You can do something similar to this with the second number line to find the other possible value of $w.$
+$$\begin{align*}
+w+w-3+w-4+w-9&=44\\
+4w&=60\\
+w&=15 \end{align*}$$
+The sum of the possible values of $w$ is $16+15 = \boxed{\textbf{(B) }31}$

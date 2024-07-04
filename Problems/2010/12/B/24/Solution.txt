@@ -1,0 +1,14 @@
+== Solution 1==
+Because the right side of the inequality is a horizontal line, the left side can be translated horizontally by any value and the intervals will remain the same. For simplicity of calculation, we will find the intervals where $$\frac{1}{x+1}+\frac{1}{x}+\frac{1}{x-1}\ge1$$
+We shall say that $f(x)=\frac{1}{x+1}+\frac{1}{x}+\frac{1}{x-1}$. $f(x)$ has three vertical asymptotes at $x=\{-1,0,1\}$. As the sum of decreasing hyperbolas, the function is decreasing at all intervals. Values immediately to the left of each asymptote approach negative infinity, and values immediately to the right of each asymptote approach positive infinity. In addition, the function has a horizontal asymptote at $y=0$. The function intersects $1$ at some point from $x=-1$ to $x=0$, and at some point from $x=0$ to $x=1$, and at some point to the right of $x=1$. The intervals where the function is greater than $1$ are between the points where the function equals $1$ and the vertical asymptotes.
+
+If $p$, $q$, and $r$ are values of x where $f(x)=1$, then the sum of the lengths of the intervals is $(p-(-1))+(q-0)+(r-1)=p+q+r$.
+
+$$\frac{1}{x+1}+\frac{1}{x}+\frac{1}{x-1}=1$$
+$$\implies x(x-1)+(x-1)(x+1)+x(x+1)=x(x-1)(x+1)$$
+$$\implies x^3-3x^2-x+1=0$$
+
+And now our job is simply to find the sum of the roots of $x^3-3x^2-x+1$.
+Using [[Vieta's formulas]], we find this to be $3$ $\Rightarrow\boxed{C}$.
+
+''NOTE''': For the AMC, one may note that the transformed inequality should not yield solutions that involve big numbers like 67 or 134, and immediately choose $C$.

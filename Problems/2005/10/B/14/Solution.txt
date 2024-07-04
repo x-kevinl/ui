@@ -1,0 +1,26 @@
+== Solutions ==
+===Solution 1 (trig) ===
+The area of a triangle can be given by $\frac12 ab \sin C$. $MC=1$ because it is the midpoint of a side, and $CD=2$ because it is the same length as $BC$. Each angle of an equilateral triangle is $60^\circ$ so $\angle MCD = 120^\circ$. The area is $\frac12 (1)(2) \sin
+ 120^\circ = \boxed{\textbf{(C)}\ \frac{\sqrt{3}}{2}}$.
+Note: Even if you don't know the value of $\sin 120^\circ$, you can use the fact that  $\sin x = \sin (180^\circ - x)$, so $\sin 120^\circ = \sin 60^\circ$.
+You can easily calculate $\sin 60^\circ$ to be $\frac{\sqrt3}{2}$ using equilateral triangles.
+
+~Minor Edits by doulai1
+
+===Solution 2===
+In order to calculate the area of $\triangle CDM$, we can use the formula $A=\dfrac{1}{2}bh$, where $\overline{CD}$ is the base. We already know that $\overline{CD}=2$, so the formula becomes $A=h$. We can drop verticals down from $A$ and $M$ to points $E$ and $F$, respectively. We can see that $\triangle AEC \sim \triangle MFC$. Now, we establish the relationship that $\dfrac{AE}{MF}=\dfrac{AC}{MC}$. We are given that $\overline{AC}=2$, and $M$ is the midpoint of $\overline{AC}$, so $\overline{MC}=1$. Because $\triangle AEB$ is a $30-60-90$ triangle and the ratio of the sides opposite the angles are $1-\sqrt{3}-2$ $\overline{AE}$ is $\sqrt{3}$. Plugging those numbers in, we have $\dfrac{\sqrt{3}}{MF}=\dfrac{2}{1}$. Cross-multiplying, we see that $2\times\overline{MF}=\sqrt{3}\times1\implies \overline{MF}=\dfrac{\sqrt{3}}{2}$ Since $\overline{MF}$ is the height $\triangle CDM$, the area is $\boxed{\textbf{(C) }\frac{\sqrt{3}}{2}}$.
+
+===Solution 3===
+Draw a line from $M$ to the midpoint of $\overline{BC}$. Call the midpoint of $\overline{BC}$ $P$. This is an equilateral triangle, since the two segments $\overline{PC}$ and $\overline{MC}$ are identical, and $\angle C$ is $60^{\circ}$. Using the [[Pythagorean Theorem]], point $M$ to $\overline{BC}$ is $\dfrac{\sqrt{3}}{2}$. Also, the length of $\overline{CD}$ is 2, since $C$ is the midpoint of $\overline{BD}$. So, our final equation is $\frac{\sqrt{3}}{2}\times2\over2$, which just leaves us with $\boxed{\textbf{(C) }\dfrac{\sqrt{3}}{2}}$.
+
+===Solution 4 ===
+Drop a vertical down from $M$ to $BC$. Let us call the point of intersection $X$ and the midpoint of $BC$, $Y$. We can observe that $\triangle AYC$ and $\bigtriangleup MXC$ are similar. By the [[Pythagorean theorem]], $AY$ is $\sqrt3$.
+
+Since $AC:MC=2:1,$ we find $MX=\frac{\sqrt3}{2}.$ Because $C$ is the midpoint of $BD,$ and $BC=2,$ $CD=2.$ Using the area formula, $\frac{CD*MX}{2}=\boxed{\textbf{(C) }\dfrac{\sqrt{3}}{2}}.$
+
+~ sdk652
+
+===Solution 5 ===
+Think of $\triangle ABC$ and $\triangle MCD$ being independent. Now to find area's we just solve for ratios between the triangles that we can plug in the value of $2$ (for a side of $\triangle ABC$) for. Looking at the information, we see that $C$ is the midpoint of $\overline{BD}$, and this means that it bisects $\overline{BD}$ which results in $BC=CD$. Now for the height, we can see that $M$ is the midpoint of $\overline{AC}$ which means that $AM=CM$, and in turn means that the height of $\triangle MCD$ is half of that of $\triangle ABC$, and now plugging the ratios of the bases being the same while the height is half of the other triangle, we end up with the area of $\triangle MCD$ being half of that of $\triangle ABC$. Now all that's left is to find the area of $\triangle ABC$, and for that, we plug in $2$ which leads us to the answer of $3$, but since we need to divide by two, our final answer is $\boxed{\textbf{(C) }\dfrac{\sqrt{3}}{2}}.$
+
+~$\LaTeX$ help by vadava_lx

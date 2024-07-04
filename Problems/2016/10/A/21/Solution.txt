@@ -1,0 +1,56 @@
+==Solution 1== 
+
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+pair P,Q,R,Pp,Qp,Rp;
+pair A,B;
+
+//Variable Definitions
+A=(-5, 0);
+B=(8, 0);
+P=(-2.828,1);
+Q=(0,2);
+R=(4.899,3);
+Pp=foot(P,A,B);
+Qp=foot(Q,A,B);
+Rp=foot(R,A,B);
+path PQR = P--Q--R--cycle;
+//Initial Diagram
+dot(P);
+dot(Q);
+dot(R);
+dot(Pp);
+dot(Qp);
+dot(Rp);
+draw(Circle(P, 1), linewidth(0.8));
+draw(Circle(Q, 2), linewidth(0.8));
+draw(Circle(R, 3), linewidth(0.8));
+draw(A--B,Arrows);
+label("$P$",P,N);
+label("$Q$",Q,N);
+label("$R$",R,N);
+label("$P'$",Pp,S);
+label("$Q'$",Qp,S);
+label("$R'$",Rp,S);
+label("$l$",B,E);
+
+//Added lines
+draw(PQR);
+draw(P--Pp);
+draw(Q--Qp);
+draw(R--Rp);
+
+//Angle marks
+draw(rightanglemark(P,Pp,B));
+draw(rightanglemark(Q,Qp,B));
+draw(rightanglemark(R,Rp,B));
+</asy>
+
+Notice that we can find $[P'PQRR']$ in two different ways: $[P'PQQ']+[Q'QRR']$ and $[PQR]+[P'PRR'].$ Since we want $[PQR],$ we use the latter method, so we have $[P'PQQ']+[Q'QRR']=[PQR]+[P'PRR'].$      
+$\break$
+
+$P'Q'=\sqrt{PQ^2-(QQ'-PP')^2}=\sqrt{3^2-1^2}=\sqrt{8}=2\sqrt{2}$. Additionally, $Q'R'=\sqrt{QR^2-(RR'-QQ')^2}=\sqrt{5^2-1^2}=\sqrt{24}=2\sqrt{6}$. Therefore, $[P'PQQ']=\frac{P'P+Q'Q}{2}*2\sqrt{2}=\frac{1+2}{2}*2\sqrt{2}=3\sqrt{2}$. Similarly, $[Q'QRR']=5\sqrt6$. We can calculate $[P'PRR']$ easily because $P'R'=P'Q'+Q'R'=2\sqrt{2}+2\sqrt{6}$. $[P'PRR']=4\sqrt{2}+4\sqrt{6}$. $\newline$
+
+Plugging into first equation, the two sums of areas, $3\sqrt{2}+5\sqrt{6}=4\sqrt{2}+4\sqrt{6}+[PQR],$ so therefore $[PQR]=\boxed{\textbf{(D) }\sqrt{6}-\sqrt{2}.}$

@@ -1,0 +1,4 @@
+== Problem ==
+Elmer the emu takes $44$ equal strides to walk between consecutive telephone poles on a rural road. Oscar the ostrich can cover the same distance in $12$ equal leaps. The telephone poles are evenly spaced, and the $41$st pole along this road is exactly one mile ($5280$ feet) from the first pole. How much longer, in feet, is Oscar's leap than Elmer's stride?
+
+$\textbf{(A) }6\qquad\textbf{(B) }8\qquad\textbf{(C) }10\qquad\textbf{(D) }11\qquad\textbf{(E) }15$

@@ -1,0 +1,8 @@
+==Solution==
+Since $-5>-2015$, the product must end with a $5$.
+
+The multiplicands are the odd negative integers from $-1$ to $-2013$. There are $\frac{|-2013+1|}2+1=1006+1$ of these numbers. Since $(-1)^{1007}=-1$, the product is negative.
+
+Therefore, the answer must be $\boxed{\text{(\textbf C) It is a negative number ending with a 5.}}$
+
+Alternatively, we can calculate the units digit of each group of 5 odd numbers using modular arithmetic.

@@ -1,0 +1,43 @@
+==Solutions==
+===Solution 1===
+
+Choose side "lengths" $a,b,c$ for the triangle, where "length" is how many vertices of the octagon are skipped between vertices of the triangle, starting from the shortest side, and going clockwise, and choosing $a=b$ if the triangle is isosceles: $a+b+c=5$, where either [$a\leq b$ and $a < c$] or [$a=b=c$ (but this is impossible in an octagon)].
+
+Options are: $a=0$ with $b,c$ in { 0,5 ; 1,4 ; 2,3 ; 3,2 ; 4,1 }, and $a=1$ with { 1,3 ;  2,2}  $5/7$ of these have a side with length 1, which corresponds to an edge of the octagon. So, our answer is $\boxed{\textbf{(D) } \frac 57}$
+
+===Solution 2===
+We will use constructive counting to solve this. There are $2$ cases: Either all $3$ points are adjacent, or exactly $2$ points are adjacent.
+
+If all $3$ points are adjacent, then we have $8$ choices. If we have exactly $2$ adjacent points, then we will have $8$ places to put the adjacent points and $4$ places to put the remaining point, so we have $8\cdot4$ choices. The total amount of choices is ${8 \choose 3} = 8\cdot7$.
+
+Thus, our answer is $\frac{8+8\cdot4}{8\cdot7}= \frac{1+4}{7}=\boxed{\textbf{(D) } \frac 57}$.
+
+===Solution 3===
+We can decide $2$ adjacent points with $8$ choices. The remaining point will have $6$ choices. However, we have counted the case with $3$ adjacent points twice, so we need to subtract this case once. The case with the $3$ adjacent points has $8$ arrangements, so our answer is 
+
+$\frac{8\cdot6-8}{{8 \choose 3 }}$$=\frac{8\cdot6-8}{8 \cdot 7 \cdot 6 \div 6}\Longrightarrow\boxed{\textbf{(D) } \frac 57}$.
+
+===Solution 4 (Stars and Bars)===
+Let $1$ point of the triangle be fixed at the top. Then, there are ${7 \choose 2} = 21$ ways to choose the other $2$ points. There must be $3$ spaces in the points and $3$ points themselves. This leaves $2$ extra points to be placed anywhere. By stars and bars, there are $3$ triangle points ($n$) and $2$ extra points ($k-1$) distributed so by the stars and bars formula, ${n+k-1 \choose k-1}$, there are ${4 \choose 2} = 6$ ways to arrange the bars and stars. Thus, the probability is $\frac{(21 - 6)}{21} = \boxed{\textbf{(D) } \frac 57}$.
+
+===Solution 5 (Casework)===
+We select a vertex of the octagon; this will be the first vertex of our triangle. Define the $distance$ of a vertex from another to be the minimum number of edges that one must travel on to get from one vertex to the other. There are three distinct cases; the second vertex is a distance of 1 away from the selected vertex (i.e. they are adjacent), the second vertex is a distance of 2 away from the selected vertex, or the second vertex is a distance of 3 or more away from the selected vertex. We consider each of these cases separately.
+
+Case 1: The first two chosen vertices are adjacent.
+
+There is a $\frac{2}{7}$ chance of selecting a point that is adjacent to the one we have chosen. In this case, any choice of the third vertex will result in a triangle that shares at least one side with the given octagon. Thus, this case has a $\frac{2}{7}$ case of giving us a triangle that fulfills the conditions given in the problem.
+
+
+Case 2: There is a distance of 2 between the first two chosen vertices.
+
+There is a $\frac{2}{7}$ chance of selecting a vertex that is a distance of 2 away from the first vertex. In this case, there are three vertices that will create a triangle that satisfies the condition in the problem (the one that is adjacent to both of the first two selected vertices and the two that are adjacent to only one of the first two selected vertices). There is a $\frac{1}{2}$ chance of selecting one of these three vertices from the remaining six. Thus, this case has a $\frac{2}{7} \cdot \frac{1}{2} = \frac{1}{7}$ chance of giving us a triangle that fulfills the conditions given in the problem.
+
+
+Case 3: There is a distance of 3 or more between the first two chosen vertices.
+
+There is a $\frac{3}{7}$ chance of selecting a vertex that is a distance of 3 or more away from the first vertex. In this case, there are four vertices (the two adjacent to each of the first two vertices) that may be chosen to satisfy the problem's condition. There is a $\frac{2}{3}$ chance of selecting one of these four vertices from the remaining six. Thus, this case has a $\frac{3}{7} \cdot \frac{2}{3} = \frac{2}{7}$ chance of giving us a triangle that fulfills the conditions given in the problem.
+
+
+Summing the probabilities from each of the individual cases, we find that there is a $\frac{1}{7} + \frac{2}{7} + \frac{2}{7} = \boxed{\textbf{(D) } \frac 57}$ chance of acquiring a triangle which shares at least one side with the octagon.
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Cxsmi cxsmi]

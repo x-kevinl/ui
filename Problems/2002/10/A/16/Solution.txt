@@ -1,0 +1,2 @@
+==Solution 1==
+Let $x=a + 1 = b + 2 = c + 3 = d + 4 = a + b + c + d + 5$. Since one of the sums involves $a, b, c,$ and $d,$ it makes sense to consider $4x$. We have $4x=(a+1)+(b+2)+(c+3)+(d+4)=a+b+c+d+10=4(a+b+c+d)+20$. Rearranging, we have $3(a+b+c+d)=-10$, so $a+b+c+d=\frac{-10}{3}$. Thus, our answer is $\boxed{\text{(B)}\ -10/3}$.

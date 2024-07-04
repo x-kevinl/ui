@@ -1,0 +1,2 @@
+==Problem==
+Triangle <math>ABC</math> is inscribed in circle <math>\omega</math>. Points <math>P</math> and <math>Q</math> are on side <math>\overline{AB}</math> with <math>AP<AQ</math>. Rays <math>CP</math> and <math>CQ</math> meet <math>\omega</math> again at <math>S</math> and <math>T</math> (other than <math>C</math>), respectively. If <math>AP=4,PQ=3,QB=6,BT=5,</math> and <math>AS=7</math>, then <math>ST=\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

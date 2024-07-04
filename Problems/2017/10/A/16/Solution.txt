@@ -1,0 +1,2 @@
+==Solution 1 (Classical Way)==
+If we have horses, $a_1, a_2, \ldots, a_n$, then any number that is a multiple of all those numbers is a time when all horses will meet at the starting point. The least of these numbers is the LCM. To minimize the LCM, we need the smallest primes, and we need to repeat them a lot. By inspection, we find that $\text{LCM}(1,2,3,2\cdot2,2\cdot3) = 12$. Finally, $1+2 = \boxed{\textbf{(B) }3}$.

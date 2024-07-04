@@ -1,0 +1,8 @@
+==Solutions==
+=== Solution 1 ===
+
+75% of the total birds were not swans. Out of that 75%, there was $30\% / 75\% = \boxed{40\%\text{\textbf{ (C)}}}$ of the birds that were not swans that were geese.
+
+=== Solution 2 ===
+
+WLOG, suppose there were 100 birds in total living on Town Lake, then 30 were geese, 25 were swans, 10 were herons, and 35 were ducks. $100-25 = 75$ of the birds are not swans and 30 of these are geese, so the answer is $\frac{30}{75} \times 100 = \boxed{40 \%(C)}$.

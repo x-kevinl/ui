@@ -1,0 +1,2 @@
+==Problem 9==
+Triangle <math>ABC</math> has <math>AB=40,AC=31,</math> and <math>\sin{A}=\frac{1}{5}</math>. This triangle is inscribed in rectangle <math>AQRS</math> with <math>B</math> on <math>\overline{QR}</math> and <math>C</math> on <math>\overline{RS}</math>. Find the maximum possible area of <math>AQRS</math>.

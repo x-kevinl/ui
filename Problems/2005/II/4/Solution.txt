@@ -1,0 +1,16 @@
+== Solution 1 ==
+<math>10^{10} = 2^{10}\cdot 5^{10}</math> so <math>10^{10}</math> has <math>11\cdot11 = 121</math> [[divisor]]s.
+
+<math>15^7 = 3^7\cdot5^7</math> so <math>15^7</math> has <math>8\cdot8 = 64</math> divisors.
+
+<math>18^{11} = 2^{11}\cdot3^{22}</math> so <math>18^{11}</math> has <math>12\cdot23 = 276</math> divisors.
+
+Now, we use the [[Principle of Inclusion-Exclusion]].  We have <math>121 + 64 + 276</math> total potential divisors so far, but we've overcounted those factors which divide two or more of our three numbers.  Thus, we must subtract off the divisors of their pair-wise [[greatest common divisor]]s.
+
+<math>\gcd(10^{10},15^7) = 5^7 </math> which has 8 divisors.
+
+<math>\gcd(15^7, 18^{11}) = 3^7 </math> which has 8 divisors.
+
+<math>\gcd(18^{11}, 10^{10}) = 2^{10} </math> which has 11 divisors.
+
+So now we have <math>121 + 64 + 276 - 8 -8 -11</math> potential divisors.  However, we've now undercounted those factors which divide all three of our numbers.  Luckily, we see that the only such factor is 1, so we must add 1 to our previous sum to get an answer of <math>121 + 64 + 276 - 8 - 8 - 11 + 1 = \boxed{435}</math>.

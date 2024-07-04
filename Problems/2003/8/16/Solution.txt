@@ -1,0 +1,2 @@
+==Solution==
+There are only $2$ people who can go in the driver's seat--Bonnie and Carlo. Any of the $3$ remaining people can go in the front passenger seat. There are $2$ people who can go in the first back passenger seat, and the remaining person must go in the last seat. Thus, there are $2\cdot3\cdot2$ or $12$ ways. The answer is then $\boxed{\textbf{(D)}\ 12}$.

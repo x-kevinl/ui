@@ -1,0 +1,3 @@
+==Solution==
+
+After the $ 4 $ minutes of Homer peeling alone, he had peeled $ 4\times3=12 $ potatoes. This means that there are $ 44-12=32 $ potatoes left. Once Christen joins him, the two are peeling potatoes at a rate of $ 3+5=8 $ potatoes per minute. So, they finish peeling after another $ \frac{32}{8}=4 $ minutes. In these $ 4 $ minutes, Christen peeled $ 4\times5=20 $ potatoes, $ \boxed{\text{A}} $

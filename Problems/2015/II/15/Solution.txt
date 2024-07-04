@@ -1,0 +1,2 @@
+==Hint==
+<math>[ABC] = \frac{1}{2}ab \text{sin} C</math> is your friend for a quick solve. If you know about homotheties, go ahead, but you'll still need to do quite a bit of computation. If you're completely lost and you have a lot of time left in your mocking of this AIME, go ahead and use analytic geometry.

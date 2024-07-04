@@ -1,0 +1,12 @@
+==Problem==
+A straight one-mile stretch of highway, 40 feet wide, is closed. Robert rides his bike on a path composed of semicircles as shown. If he rides at 5 miles per hour, how many hours will it take to cover the one-mile stretch?
+<asy>size(10cm); pathpen=black; pointpen=black;
+D(arc((-2,0),1,300,360));
+D(arc((0,0),1,0,180));
+D(arc((2,0),1,180,360));
+D(arc((4,0),1,0,180));
+D(arc((6,0),1,180,240));
+D((-1.5,-1)--(5.5,-1));</asy>
+Note: 1 mile = 5280 feet
+
+$ \textbf{(A) }\frac{\pi}{11}\qquad\textbf{(B) }\frac{\pi}{10}\qquad\textbf{(C) }\frac{\pi}{5}\qquad\textbf{(D) }\frac{2\pi}{5}\qquad\textbf{(E) }\frac{2\pi}{3} $

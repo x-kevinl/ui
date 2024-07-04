@@ -1,0 +1,5 @@
+==Problem==
+
+A right rectangular prism whose surface area and volume are numerically equal has edge lengths $\log_{2}x, \log_{3}x,$ and $\log_{4}x.$ What is $x?$
+
+$\textbf{(A)}\ 2\sqrt{6} \qquad\textbf{(B)}\ 6\sqrt{6} \qquad\textbf{(C)}\ 24 \qquad\textbf{(D)}\ 48 \qquad\textbf{(E)}\ 576$

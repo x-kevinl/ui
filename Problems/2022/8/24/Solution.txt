@@ -1,0 +1,7 @@
+==Solution==
+
+While imagining the folding, $\overline{AB}$ goes on $\overline{BC},$ $\overline{AH}$ goes on $\overline{CI},$ and $\overline{EF}$ goes on $\overline{FG}.$ So, $BJ=CI=8$ and $FG=BC=8.$ Also, $\overline{HJ}$ becomes an edge parallel to $\overline{FG},$ so that means $HJ=8.$
+
+Since $GH=14,$ then $JG=14-8=6.$ So, the area of $\triangle BJG$ is $\frac{8\cdot6}{2}=24.$ If we let $\triangle BJG$ be the base, then the height is $FG=8.$ So, the volume is $24\cdot8=\boxed{\textbf{(C)} ~192}.$
+
+~aops-g5-gethsemanea2

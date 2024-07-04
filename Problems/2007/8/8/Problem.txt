@@ -1,0 +1,20 @@
+== Problem ==
+
+In trapezoid $ABCD$, $\overline{AD}$ is perpendicular to $\overline{DC}$,
+$AD = AB = 3$, and $DC = 6$. In addition, $E$ is on $\overline{DC}$, and $\overline{BE}$ is parallel to $\overline{AD}$. Find the area of $\triangle BEC$.
+<asy>
+defaultpen(linewidth(0.7));
+pair A=(0,3), B=(3,3), C=(6,0), D=origin, E=(3,0);
+draw(E--B--C--D--A--B);
+draw(rightanglemark(A, D, C));
+label("$A$", A, NW);
+label("$B$", B, NW);
+label("$C$", C, SE);
+label("$D$", D, SW);
+label("$E$", E, NW);
+label("$3$", A--D, W);
+label("$3$", A--B, N);
+label("$6$", E, S);
+</asy>
+
+$\textbf{(A)}\ 3 \qquad \textbf{(B)}\ 4.5 \qquad \textbf{(C)}\ 6 \qquad \textbf{(D)}\ 9 \qquad \textbf{(E)}\ 18$

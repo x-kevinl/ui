@@ -1,0 +1,2 @@
+==Solution==
+In a 3x3x3 cube, there are $8$ cubes with three faces showing, $12$ with two faces showing and $6$ with one face showing. The smallest sum with three faces showing is $1+2+3=6$, with two faces showing is $1+2=3$, and with one face showing is $1$. Hence, the smallest possible sum is $8(6)+12(3)+6(1)=48+36+6=90$. Our answer is thus $\boxed{\text{(D)}\ 90} $.

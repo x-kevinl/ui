@@ -1,0 +1,5 @@
+== Problem ==
+
+What is the sum of the two smallest prime factors of $250$?
+
+$\mathrm{(A)}\ 2 \qquad\mathrm{(B)}\ 5 \qquad\mathrm{(C)}\ 7 \qquad\mathrm{(D)}\ 10 \qquad\mathrm{(E)}\ 12$

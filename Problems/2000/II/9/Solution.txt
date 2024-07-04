@@ -1,0 +1,12 @@
+== Solution ==
+Using the quadratic equation on <math>z^2 - (2 \cos 3 )z + 1 = 0</math>, we have <math>z = \frac{2\cos 3 \pm \sqrt{4\cos^2 3 - 4}}{2} = \cos 3 \pm i\sin 3 = \text{cis}\,3^{\circ}</math>.
+
+There are other ways we can come to this conclusion. Note that if <math>z</math> is on the [[unit circle]] in the complex plane, then <math>z = e^{i\theta} = \cos \theta + i\sin \theta</math>  and <math>\frac 1z= e^{-i\theta} = \cos \theta - i\sin \theta</math>. We have <math>z+\frac 1z = 2\cos \theta = 2\cos 3^\circ</math> and <math>\theta = 3^\circ</math>. Alternatively, we could let <math>z = a + bi</math> and solve to get <math>z=\cos 3^\circ + i\sin 3^\circ</math>.
+
+
+Using [[De Moivre's Theorem]] we have <math>z^{2000} = \cos 6000^\circ + i\sin 6000^\circ</math>, <math>6000 = 16(360) + 240</math>, so 
+<math>z^{2000} = \cos 240^\circ + i\sin 240^\circ</math>.
+
+We want <math>z^{2000}+\frac 1{z^{2000}} = 2\cos 240^\circ = -1</math>.
+
+Finally, the least integer greater than <math>-1</math> is <math>\boxed{000}</math>.

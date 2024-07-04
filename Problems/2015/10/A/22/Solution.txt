@@ -1,0 +1,20 @@
+==Solution 1==
+We will count how many valid standing arrangements there are (counting rotations as distinct), and divide by $2^8 = 256$ at the end. We casework on how many people are standing.
+
+Case $1:$ $0$ people are standing. This yields $1$ arrangement.
+
+Case $2:$ $1$ person is standing. This yields $8$ arrangements.
+
+Case $3:$ $2$ people are standing. This yields $\dbinom{8}{2} - 8 = 20$ arrangements, because the two people cannot be next to each other.
+
+Case $5:$ $4$ people are standing. Then the people must be arranged in stand-sit-stand-sit-stand-sit-stand-sit fashion, yielding $2$ possible arrangements.
+
+More difficult is:
+
+Case $4:$ $3$ people are standing. First, choose the location of the first person standing ($8$ choices). Next, choose $2$ of the remaining people in the remaining $5$ legal seats to stand, amounting to $6$ arrangements considering that these two people cannot stand next to each other. However, we have to divide by $3,$ because there are $3$ ways to choose the first person given any three. This yields $\dfrac{8 \cdot 6}{3} = 16$ arrangements for Case $5.$
+
+Alternate Case $4:$ Use complementary counting. Total number of ways to choose 3 people from 8 which is $\dbinom{8}{3}$. Sub-case $1:$ three people are next to each other which is $\dbinom{8}{1}$. Sub-case $2:$ two people are next to each other and the third person is not $\dbinom{8}{1}$ $\dbinom{4}{1}$. This yields $\dbinom{8}{3} - \dbinom{8}{1} - \dbinom{8}{1} \dbinom{4}{1} = 16$ 
+
+Summing gives $1 + 8 + 20 + 2 + 16 = 47,$ and so our probability is $\boxed{\textbf{(A) } \dfrac{47}{256}}$.
+
+Alternate: (Quicksolve) - We know that for case 5, there are 8 ways to choose the first person, and 3 ways to choose the first person given any 3 - which means that for the case, there is 8 * something divided by 3. The sum of the other cases is 31/256. Thus, add a multiple of 8 to 31 to get an answer. The options are 31 + 8 = 39, 31 + 16 = 47, 31 + 24 = 55, etc. The only possible answer is 47/256.

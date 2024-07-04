@@ -1,0 +1,9 @@
+== Solution 1==
+We have to evaluate the answer choices and use process of elimination:
+
+*$\mathrm{(A)}$: We are given that $a_1 = b_1 = 0$, so $z_1 = 0$. If one of the roots is zero, then $P(0) = c_0 = 0$. 
+*$\mathrm{(B)}$: By [[Vieta's formulas]], we know that $-\frac{c_{2003}}{c_{2004}}$ is the sum of all of the roots of $P(x)$. Since that is real, $ \sum_{k = 1}^{2004}{b_k}=0=\sum_{k = 1}^{2004}{a_k}$, and $\frac{c_{2003}}{c_{2004}}=0$, so $c_{2003}=0$.
+*$\mathrm{(C)}$: All of the coefficients are real. For sake of contradiction suppose none of $b_{2\ldots 2004}$ are zero. Then for each complex root $z_k$, its [[complex conjugate]] $\overline{z_k} = a_k - b_k i$ is also a root. So the roots should pair up, but we have an odd number of imaginary roots! (Remember that $b_1 = 0$.) This gives us the contradiction, and therefore the product is equal to zero.
+*$\mathrm{(D)}$: We are given that $\sum_{k = 1}^{2004}{a_k} = \sum_{k = 1}^{2004}{b_k}$. Since the coefficients are real, it follows that if a root is complex, its conjugate is also a root; and the sum of the imaginary parts of complex conjugates is zero. Hence the RHS is zero.
+
+There is, however, no reason to believe that $\boxed{\mathrm{E}}$ should be zero (in fact, that quantity is $P(1)$, and there is no evidence that $1$ is a root of $P(x)$).

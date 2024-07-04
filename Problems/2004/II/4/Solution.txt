@@ -1,0 +1,10 @@
+== Solution ==
+First, let's count numbers with only a single digit.  We have nine of these for each length, and four lengths, so 36 total numbers.
+
+Now, let's count those with two distinct digits.  We handle the cases "0 included" and "0 not included" separately.
+
+There are <math>{9 \choose 2}</math> ways to choose two digits, <math>A</math> and <math>B</math>.  Given two digits, there are <math>2^n - 2</math> ways to arrange them in an <math>n</math>-digit number, for a total of <math>(2^1 - 2) + (2^2 - 2) + (2^3 -2) + (2^4 - 2) = 22</math> such numbers (or we can list them: <math>AB, BA, AAB, ABA, BAA, ABB, BAB, BBA, AAAB, AABA, ABAA,</math> <math>BAAA, AABB, ABAB, BAAB, ABBA, BABA, BBAA, ABBB, BABB, BBAB, BBBA</math>).  Thus, we have <math>{9 \choose 2} \cdot 22 = 36\cdot22 = 792</math> numbers of this form.
+
+Now, suppose 0 is one of our digits.  We have nine choices for the other digit.  For each choice, we have <math>2^{n - 1} - 1</math> <math>n</math>-digit numbers we can form, for a total of <math>(2^0 - 1) + (2^1 - 1) + (2^2 - 1) + (2^3 - 1) = 11</math> such numbers (or we can list them: <math>A0, A00, A0A, AA0, A000, AA00, A0A0, A00A, AAA0, AA0A, A0AA</math>).  This gives us <math>9\cdot 11 = 99</math> numbers of this form.
+
+Thus, in total, we have <math>36 + 792 + 99 = \boxed{927}</math> such numbers.

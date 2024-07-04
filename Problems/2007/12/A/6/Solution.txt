@@ -1,0 +1,9 @@
+==Solution 1==
+[[Image:2007_AMC12A-6.png]]
+
+We angle chase and find out that:
+* $\angle DAC=\frac{180-140}{2} = 20$
+* $\angle BAC=\frac{180-40}{2} = 70$
+* $\angle BAD=\angle BAC- \angle DAC=50\ \mathrm{(D)}$
+
+~minor edits by mobius247

@@ -1,0 +1,3 @@
+==Problem==
+
+Find the sum of all positive integers <math>b < 1000</math> such that the base-<math>b</math> integer <math>36_{b}</math> is a perfect square and the base-<math>b</math> integer <math>27_{b}</math> is a perfect cube.

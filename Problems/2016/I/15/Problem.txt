@@ -1,0 +1,3 @@
+==Problem ==
+
+Circles <math>\omega_1</math> and <math>\omega_2</math> intersect at points <math>X</math> and <math>Y</math>. Line <math>\ell</math> is tangent to <math>\omega_1</math> and <math>\omega_2</math> at <math>A</math> and <math>B</math>, respectively, with line <math>AB</math> closer to point <math>X</math> than to <math>Y</math>. Circle <math>\omega</math> passes through <math>A</math> and <math>B</math> intersecting <math>\omega_1</math> again at <math>D \neq A</math> and intersecting <math>\omega_2</math> again at <math>C \neq B</math>. The three points <math>C</math>, <math>Y</math>, <math>D</math> are collinear, <math>XC = 67</math>, <math>XY = 47</math>, and <math>XD = 37</math>. Find <math>AB^2</math>.

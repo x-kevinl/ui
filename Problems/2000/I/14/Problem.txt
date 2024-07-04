@@ -1,0 +1,4 @@
+== Problem ==
+In triangle <math>ABC,</math> it is given that angles <math>B</math> and <math>C</math> are [[congruent (geometry)|congruent]]. Points <math>P</math> and <math>Q</math> lie on <math>\overline{AC}</math> and <math>\overline{AB},</math> respectively, so that <math>AP = PQ = QB = BC.</math> Angle <math>ACB</math> is <math>r</math> times as large as angle <math>APQ,</math> where <math>r</math> is a positive real number. Find <math>\lfloor 1000r \rfloor</math>.
+
+__TOC__

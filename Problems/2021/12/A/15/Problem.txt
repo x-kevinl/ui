@@ -1,0 +1,4 @@
+==Problem==
+A choir director must select a group of singers from among his $6$ tenors and $8$ basses. The only requirements are that the difference between the number of tenors and basses must be a multiple of $4$, and the group must have at least one singer. Let $N$ be the number of different groups that could be selected. What is the remainder when $N$ is divided by $100$?
+
+$\textbf{(A) } 47\qquad\textbf{(B) } 48\qquad\textbf{(C) } 83\qquad\textbf{(D) } 95\qquad\textbf{(E) } 96\qquad$

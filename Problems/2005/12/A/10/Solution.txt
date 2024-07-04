@@ -1,0 +1,4 @@
+== Solution ==
+There are $6n^3$ sides total on the unit cubes, and $6n^2$ are painted red.
+
+$\dfrac{6n^2}{6n^3}=\dfrac{1}{4} \Rightarrow n=4 \rightarrow \mathrm {B}$

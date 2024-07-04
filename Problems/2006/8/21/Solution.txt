@@ -1,0 +1,2 @@
+==Solution==
+The water level will rise $1$cm for every $100 \cdot 40 = 4000\text{cm}^2$. Since $1000$ is $\frac{1}{4}$ of $4000$, the water will rise $\frac{1}{4}\cdot1 = \boxed{\textbf{(A)}\ 0.25}$

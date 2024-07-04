@@ -1,0 +1,48 @@
+== Diagram ==
+<asy>
+            import geometry;
+            unitsize(2cm);
+
+			real arg(pair p) {
+              return atan2(p.y, p.x) * 180/pi;
+            }
+
+            pair G=(0,0),E=(1,0),A=(1/2,sqrt(3)/2),D=1.5*G-0.5*A,C=2*E-A,B=2*D-C;
+
+            pair t(pair p) {
+                return rotate(-arg(dir(B--C)))*p;
+            }
+
+
+            path t(path p) {
+                return rotate(-arg(dir(B--C)))*p;
+            }
+
+            void d(path p, pen q = black+linewidth(1.5)) {
+                draw(t(p),q);
+            }
+
+            void o(pair p, pen q = 5+black) {
+                dot(t(p),q);
+            }
+
+            void l(string s, pair p, pair d) {
+                label(s, t(p),d);
+            }
+            
+            d(A--B--C--cycle);
+            d(A--D);
+            d(B--E);
+            o(A);
+            o(B);
+            o(C);
+            o(D);
+            o(E);
+            o(G);
+            l("$A$",A,N);
+            l("$B$",B,SW);
+            l("$C$",C,SE);
+            l("$D$",D,S);
+            l("$E$",E,NE);
+            l("$G$",G,NW);
+</asy>

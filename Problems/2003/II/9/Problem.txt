@@ -1,0 +1,2 @@
+== Problem ==
+Consider the polynomials <math>P(x) = x^{6} - x^{5} - x^{3} - x^{2} - x</math> and <math>Q(x) = x^{4} - x^{3} - x^{2} - 1.</math> Given that <math>z_{1},z_{2},z_{3},</math> and <math>z_{4}</math> are the roots of <math>Q(x) = 0,</math> find <math>P(z_{1}) + P(z_{2}) + P(z_{3}) + P(z_{4}).</math>

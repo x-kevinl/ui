@@ -1,0 +1,53 @@
+== Solution 1 (Very Thorough) ==
+First, we note that $f(1) = 1$, since the only divisor of $1$ is itself.   
+
+
+Then, let's look at $f(p)$ for $p$ a prime. We see that
+$$\sum_{d \mid p} d \cdot f\left(\frac{p}{d}\right) = 1$$
+$$1 \cdot f(p) + p \cdot f(1) = 1$$
+$$f(p) = 1 - p \cdot f(1)$$
+$$f(p) = 1-p$$
+Nice.   
+
+Now consider $f(p^k)$, for $k \in \mathbb{N}$. 
+$$\sum_{d \mid p^k} d \cdot f\left(\frac{p^k}{d}\right) = 1$$
+$$1 \cdot f(p^k) + p \cdot f(p^{k-1}) + p^2 \cdot f(p^{k-2}) + \dotsc + p^k f(1) = 1$$.  
+
+
+It can be (strongly) inductively shown that $f(p^k) = f(p) = 1-p$. Here's how.    
+
+We already showed $k=1$ works. Suppose it holds for $k = n$, then
+
+$$1 \cdot f(p^n) + p \cdot f(p^{n-1}) + p^2 \cdot f(p^{n-2}) + \dotsc + p^n f(1) = 1 \implies f(p^m) = 1-p \; \forall \; m \leqslant n$$
+
+For $k = n+1$, we have
+
+$$1 \cdot f(p^{n+1}) + p \cdot f(p^{n}) + p^2 \cdot f(p^{n-1}) + \dotsc + p^{n+1} f(1) = 1$$, then using $f(p^m) = 1-p \; \forall \; m \leqslant n$, we simplify to
+
+$$1 \cdot f(p^{n+1}) + p \cdot (1-p) + p^2 \cdot (1-p) + \dotsc + p^n \cdot (1-p) + p^{n+1} f(1) = 1$$
+$$f(p^{n+1}) + \sum_{i=1}^n p^i (1-p) + p^{n+1} = 1$$
+$$f(p^{n+1}) + p(1 - p^n) + p^{n+1} = 1$$
+$$f(p^{n+1}) + p = 1 \implies f(p^{n+1}) = 1-p$$.   
+
+Very nice! Now, we need to show that this function is multiplicative, i.e. $f(pq) = f(p) \cdot f(q)$ for $\textbf{distinct}$ $p,q$ prime.
+It's pretty standard, let's go through it quickly.
+$$\sum_{d \mid pq} d \cdot f\left(\frac{pq}{d}\right) = 1$$
+$$1 \cdot f(pq) + p \cdot f(q) + q \cdot f(p) + pq \cdot f(1) = 1$$
+Using our formulas from earlier, we have
+$$f(pq) + p(1-q) + q(1-p) + pq = 1 \implies f(pq) = 1 - p(1-q) - q(1-p) - pq = (1-p)(1-q) = f(p) \cdot f(q)$$
+
+Great! We're almost done now. 
+Let's actually plug in $2023 = 7 \cdot 17^2$ into the original formula. 
+$$\sum_{d \mid 2023} d \cdot f\left(\frac{2023}{d}\right) = 1$$
+$$1 \cdot f(2023) + 7 \cdot f(17^2) + 17 \cdot f(7 \cdot 17) + 7 \cdot 17 \cdot f(17) + 17^2 \cdot f(7) + 7 \cdot 17^2 \cdot f(1) = 1$$
+Let's use our formulas! We know 
+$$f(7) = 1-7 = -6$$
+$$f(17) = 1-17 = -16$$
+$$f(7 \cdot 17) = f(7) \cdot f(17) = (-6) \cdot (-16) = 96$$
+$$f(17^2) = f(17) = -16$$
+
+So plugging ALL that in, we have
+$$f(2023) = 1 - \left(7 \cdot (-16) + 17 \cdot (-6) \cdot (-16) + 7 \cdot 17 \cdot (-16) + 17^2 \cdot (-6) + 7 \cdot 17^2\right)$$
+which, be my guest simplifying, is $\boxed{\textbf{(B)} \ 96}$
+
+~ $\color{magenta} zoomanTV$

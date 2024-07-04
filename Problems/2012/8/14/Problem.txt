@@ -1,0 +1,4 @@
+==Problem==
+In the BIG N, a middle school football conference, each team plays every other team exactly once. If a total of 21 conference games were played during the 2012 season, how many teams were members of the BIG N conference?
+
+$ \textbf{(A)}\hspace{.05in}6\qquad\textbf{(B)}\hspace{.05in}7\qquad\textbf{(C)}\hspace{.05in}8\qquad\textbf{(D)}\hspace{.05in}9\qquad\textbf{(E)}\hspace{.05in}10 $

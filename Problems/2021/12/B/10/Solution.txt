@@ -1,0 +1,22 @@
+==Solution==
+The sum of the first $n$ integers is given by $\frac{n(n+1)}{2}$, so $\frac{37(37+1)}{2}=703$.
+
+Therefore, $703-x-y=xy$
+
+Rearranging, $xy+x+y=703$. We can factor this equation by [[SFFT]] to get
+
+$(x+1)(y+1)=704$
+
+Looking at the possible divisors of $704 = 2^6\cdot11$, $22$ and $32$ are within the constraints of $0 < x \leq y \leq 37$ so we try those:
+
+$(x+1)(y+1) = 22\cdot32$
+
+$x+1=22, y+1 = 32$
+
+$x = 21, y = 31$
+
+Therefore, the difference $y-x=31-21=\boxed{\textbf{(E) }10}$.
+
+~ SoySoy4444
+
+~MathFun1000 ($\LaTeX$ help)

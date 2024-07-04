@@ -1,0 +1,5 @@
+==Solution 1==
+Let $X$ denote the intersection point of the diagonals $AC$ and $BD$. Remark that by symmetry $X$ is the midpoint of both $\overline{PQ}$ and $\overline{RS}$, so $XP = XQ = 3$ and $XR = XS = 4$. Now note that since $\angle APB = \angle ARB = 90^\circ$, quadrilateral $ARPB$ is cyclic, and so
+$$XR\cdot XA = XP\cdot XB,$$which implies $\tfrac{XA}{XB} = \tfrac{XP}{XR} = \tfrac34$.
+
+Thus let $x> 0$ be such that $XA = 3x$ and $XB = 4x$. Then Pythagorean Theorem on $\triangle APX$ yields $AP = \sqrt{AX^2 - XP^2} = 3\sqrt{x^2-1}$, and so$$[ABCD] = 2[ABD] = AP\cdot BD = 3\sqrt{x^2-1}\cdot 8x = 24x\sqrt{x^2-1}=15$$Solving this for $x^2$ yields $x^2 = \tfrac12 + \tfrac{\sqrt{41}}8$, and so$$(8x)^2 = 64x^2 = 64\left(\tfrac12 + \tfrac{\sqrt{41}}8\right) = 32 + 8\sqrt{41}.$$The requested answer is $32 + 8 + 41 = \boxed{\textbf{(A)} ~81}$.

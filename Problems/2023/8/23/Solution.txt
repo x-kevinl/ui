@@ -1,0 +1,29 @@
+==Solution 1==
+There are $4$ cases that the tiling will contain a large gray diamond in one of the smaller $2 \times 2$ grids, as shown below:
+<asy>
+size(375);
+
+fill((1,1)--(2,2)--(1,3)--(0,2)--cycle,mediumgray);
+draw((0,0)--(3,0)--(3,3)--(0,3)--cycle,gray);
+draw((1,0)--(1,3)--(2,3)--(2,0),gray);
+draw((0,1)--(3,1)--(3,2)--(0,2),gray);
+
+fill(shift(7,0)*((1,1)--(2,2)--(1,3)--(0,2)--cycle),mediumgray);
+draw(shift(6,0)*((0,0)--(3,0)--(3,3)--(0,3)--cycle),gray);
+draw(shift(6,0)*((1,0)--(1,3)--(2,3)--(2,0)),gray);
+draw(shift(6,0)*((0,1)--(3,1)--(3,2)--(0,2)),gray);
+
+fill(shift(12,-1)*((1,1)--(2,2)--(1,3)--(0,2)--cycle),mediumgray);
+draw(shift(12,0)*((0,0)--(3,0)--(3,3)--(0,3)--cycle),gray);
+draw(shift(12,0)*((1,0)--(1,3)--(2,3)--(2,0)),gray);
+draw(shift(12,0)*((0,1)--(3,1)--(3,2)--(0,2)),gray);
+
+fill(shift(19,-1)*((1,1)--(2,2)--(1,3)--(0,2)--cycle),mediumgray);
+draw(shift(18,0)*((0,0)--(3,0)--(3,3)--(0,3)--cycle),gray);
+draw(shift(18,0)*((1,0)--(1,3)--(2,3)--(2,0)),gray);
+draw(shift(18,0)*((0,1)--(3,1)--(3,2)--(0,2)),gray);
+</asy>
+There are $4^5$ ways to decide the $5$ white squares for each case, and the cases do not have any overlap.
+
+So, the requested probability is $$\frac{4\cdot4^5}{4^9} = \frac{4^6}{4^9} = \frac{1}{4^3} = \boxed{\textbf{(C) } \frac{1}{64}}.$$
+~apex304, TaeKim, MRENTHUSIASM

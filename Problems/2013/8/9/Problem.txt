@@ -1,0 +1,5 @@
+==Problem==
+
+The Incredible Hulk can double the distance he jumps with each succeeding jump. If his first jump is 1 meter, the second jump is 2 meters, the third jump is 4 meters, and so on, then on which jump will he first be able to jump more than 1 kilometer (1,000 meters)?
+
+$\textbf{(A)}\ 9^\text{th} \qquad \textbf{(B)}\ 10^\text{th} \qquad \textbf{(C)}\ 11^\text{th} \qquad \textbf{(D)}\ 12^\text{th} \qquad \textbf{(E)}\ 13^\text{th}$

@@ -1,0 +1,21 @@
+==Solution 1==
+One way of approaching this is drawing the next circle of boxes around the current square.
+<asy>
+filldraw((-1,-1)--(6,-1)--(6,6)--(-1,6)--cycle,mediumgray,black);
+filldraw((0,0)--(5,0)--(5,5)--(0,5)--cycle,white,black);
+filldraw((1,1)--(4,1)--(4,4)--(1,4)--cycle,mediumgray,black);
+filldraw((2,2)--(3,2)--(3,3)--(2,3)--cycle,white,black);
+draw((4,-1)--(4,6));
+draw((3,-1)--(3,6));
+draw((2,-1)--(2,6));
+draw((1,-1)--(1,6));
+draw((-1,4)--(6,4));
+draw((-1,3)--(6,3));
+draw((-1,2)--(6,2));
+draw((-1,1)--(6,1));
+draw((0,-1)--(0,6));
+draw((-1,5)--(6,5));
+draw((-1,0)--(6,0));
+draw((5,-1)--(5,6));
+</asy>
+We can now count the number of black and white tiles; 32 black tiles and 17 white tiles. This means the answer is $\boxed{\textbf{(D) }32:17}$.

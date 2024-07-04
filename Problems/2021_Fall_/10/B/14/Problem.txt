@@ -1,0 +1,4 @@
+==Problem==
+Una rolls $6$ standard $6$-sided dice simultaneously and calculates the product of the $6{ }$ numbers obtained. What is the probability that the product is divisible by $4?$
+
+$\textbf{(A)}\: \frac34\qquad\textbf{(B)} \: \frac{57}{64}\qquad\textbf{(C)} \: \frac{59}{64}\qquad\textbf{(D)} \: \frac{187}{192}\qquad\textbf{(E)} \: \frac{63}{64}$

@@ -1,0 +1,4 @@
+==Problem==
+In the following list of numbers, the integer $n$ appears $n$ times in the list for $1 \leq n \leq 200$.$$1, 2, 2, 3, 3, 3, 4, 4, 4, 4, \ldots, 200, 200, \ldots , 200$$What is the median of the numbers in this list?
+
+$\textbf{(A)} ~100.5 \qquad\textbf{(B)} ~134 \qquad\textbf{(C)} ~142 \qquad\textbf{(D)} ~150.5 \qquad\textbf{(E)} ~167$

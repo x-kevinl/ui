@@ -1,0 +1,4 @@
+== Solution ==
+$4\spadesuit 5=-9$
+
+$3\spadesuit -9=-72 \Rightarrow \text{(A)}$

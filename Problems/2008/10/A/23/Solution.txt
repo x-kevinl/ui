@@ -1,0 +1,28 @@
+==Solution==
+===Solution 1===
+First, choose the two letters to be repeated in each set.  $\dbinom{5}{2}=10$.  Now we have three remaining elements that we wish to place into two separate subsets. There are $2^3 = 8 $ ways to do so because each of the three remaining letters can be placed either into the first or second subset. Both of those subsets contain the two chosen elements, so their intersection is the two chosen elements). Unfortunately, we have over-counted  (Take for example $S_{1} = \{a,b,c,d \}$ and $S_{2} = \{a,b,e \}$). Notice how $S_{1}$ and $S_{2}$ are interchangeable. Division by two will fix this problem. Thus we have:
+
+$ \dfrac{10 \times 8}{2} = 40 \implies \boxed{\text{B}} $
+
+===Solution 2===
+Another way of looking at this problem is to break it down into cases.
+
+First, our two subsets can have 2 and 5 elements. The 5-element subset (aka the set) will contain the 2-element subset. There are $\dbinom{5}{2}=10$ ways to choose the 2-element subset. Thus, there are $10$ ways to create these sets.
+
+
+Second, the subsets can have 3 and 4 elements. $3+4=7$ non-distinct elements. $7-5=2$ elements in the intersection. There are $\dbinom{5}{3}=10$ ways to choose the 3-element subset. For the 4-element subset, two of the elements must be the remaining elements (not in the 3-element subset). The other two have to be a subset of the 3-element subset. There are $\dbinom{3}{2}=3$ ways to choose these two elements, which means there are 3 ways to choose the 4-element subset. Therefore, there are $10\cdot3=30$ ways to choose these sets.
+
+
+This leads us to the answer:
+
+$ 10+30=40 \implies \boxed{\textbf{(B) 40}} $
+
+===Solution 3 ===
+We label the subsets subset 1 and subset 2. Suppose the first subset has $k$ elements where $k<5.$ The second element has $5-k$ elements which the first subset does not contain (in order for the union to be the whole set). Additionally, the second set has 2 elements in common with the first subset. Therefore the number of ways to choose these sets is $\binom{5}{k} \cdot \binom{k}{2}.$ Computing for $k<5$ we have $10+30+30+10=80.$ Divide by 2 as order does not matter to get $40.$
+
+===Solution 4 (Stars And Bars) [Isn't actually a valid solution]===
+There are $\dbinom{5}{2}=10$ ways to choose the 2 shared elements. We now must place the 3 remaining elements into the subsets. Using stars and bars, we can notate this as: $I I I X \rightarrow \dbinom{4}{3}=4$. Thus, $4*10=\boxed{\textbf{(B) 40}} $
+
+Note from harryhero:
+
+This actually doesn't work for higher cases. In the 6-case, for example, we obtain an incorrect answer of $50$ using this method when it should be $80.$ This occurs due to the lack of order for the three elements - for example, having a, b on one side and d on another is different from b, c on one side and e on another, but we've counted both cases equally in the stars-and-bars method.

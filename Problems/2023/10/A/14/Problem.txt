@@ -1,0 +1,5 @@
+==Problem==
+
+A number is chosen at random from among the first $100$ positive integers, and a positive integer divisor of that number is then chosen at random. What is the probability that the chosen divisor is divisible by $11$?
+
+$\textbf{(A)}~\frac{4}{100}\qquad\textbf{(B)}~\frac{9}{200} \qquad \textbf{(C)}~\frac{1}{20} \qquad\textbf{(D)}~\frac{11}{200}\qquad\textbf{(E)}~\frac{3}{50}$

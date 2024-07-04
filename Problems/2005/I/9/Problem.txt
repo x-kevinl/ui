@@ -1,0 +1,4 @@
+== Problem ==
+Twenty seven unit [[cube (geometry) | cube]]s are painted orange on a set of four [[face]]s so that two non-painted faces share an [[edge]]. The 27 cubes are randomly arranged to form a <math> 3\times 3 \times 3 </math> cube. Given the [[probability]] of the entire [[surface area]] of the larger cube is orange is <math> \frac{p^a}{q^br^c}, </math> where <math> p,q, </math> and <math> r </math> are distinct [[prime number | prime]]s and <math> a,b, </math> and <math> c </math> are [[positive integer]]s, find <math> a+b+c+p+q+r. </math>
+
+__TOC__

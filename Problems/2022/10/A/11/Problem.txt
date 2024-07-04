@@ -1,0 +1,5 @@
+==Problem==
+
+Ted mistakenly wrote $2^m\cdot\sqrt{\frac{1}{4096}}$ as $2\cdot\sqrt[m]{\frac{1}{4096}}.$ What is the sum of all real numbers $m$ for which these two expressions have the same value?
+
+$\textbf{(A) } 5 \qquad \textbf{(B) } 6 \qquad \textbf{(C) } 7 \qquad \textbf{(D) } 8 \qquad \textbf{(E) } 9$

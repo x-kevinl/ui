@@ -1,0 +1,2 @@
+==Problem==
+Find the number of subsets of <math>\{1,2,3,\ldots,10\}</math> that contain exactly one pair of consecutive integers. Examples of such subsets are <math>\{\mathbf{1},\mathbf{2},5\}</math> and <math>\{1,3,\mathbf{6},\mathbf{7},10\}.</math>

@@ -1,0 +1,5 @@
+==Problem==
+
+In triangle $ABC$ we have $AB=7$, $AC=8$, $BC=9$. Point $D$ is on the circumscribed circle of the triangle so that $AD$ bisects angle $BAC$. What is the value of $\frac{AD}{CD}$? 
+
+$\text{(A) } \dfrac{9}{8} \qquad \text{(B) } \dfrac{5}{3} \qquad \text{(C) } 2 \qquad \text{(D) } \dfrac{17}{7} \qquad \text{(E) } \dfrac{5}{2}$

@@ -1,0 +1,5 @@
+== Problem ==
+
+Antonette gets $ 70 \% $ on a 10-problem test, $ 80 \% $ on a 20-problem test and $ 90 \% $ on a 30-problem test. If the three tests are combined into one 60-problem test, which percent is closest to her overall score? 
+
+$ \textbf{(A)}\ 40\qquad\textbf{(B)}\ 77\qquad\textbf{(C)}\ 80\qquad\textbf{(D)}\ 83\qquad\textbf{(E)}\ 87 $

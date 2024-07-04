@@ -1,0 +1,10 @@
+==Solution==
+In order to solve this problem, use of the tangent-tangent intersection theorem (Angle of intersection between two tangents dividing a circle into arc length A and arc length B = 1/2 (Arc A° - Arc B°).
+
+In order to utilize this theorem, the degree measures of the arcs must be found.  First, set A (Arc length A) equal to 3d, and B (Arc length B) equal to 2d.  
+
+Setting 3d+2d = 360° will find d = 72°, and so therefore Arc length A in degrees will equal 216° and arc length B will equal 144°.
+
+Finally, simply plug the two arc lengths into the tangent-tangent intersection theorem, and the answer:
+
+1/2 (216°-144°) = 1/2 (72°) $ =\boxed{36 \textbf{(C)}}. $

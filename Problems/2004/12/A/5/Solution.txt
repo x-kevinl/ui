@@ -1,0 +1,4 @@
+==Solution==
+The line appears to have a slope of $-\dfrac{1}{2}$ and y-intercept of $\dfrac{4}{5}$ up.
+
+$\dfrac{4}{5}\cdot \dfrac{-1}{2}=\dfrac{-4}{10} \Rightarrow \mathrm {(B)}$

@@ -1,0 +1,4 @@
+== Problem ==
+For how many positive integers $n$ less than or equal to $24$ is $n!$ evenly divisible by $1 + 2 + \cdots + n?$ 
+
+$\textbf{(A) } 8 \qquad \textbf{(B) } 12 \qquad \textbf{(C) } 16 \qquad \textbf{(D) } 17 \qquad \textbf{(E) } 21 $

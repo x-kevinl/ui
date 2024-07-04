@@ -1,0 +1,4 @@
+==Solution 1==
+Since the number of tiles lying on both diagonals is $37$, counting one tile twice, there are $37=2x-1\implies x=19$ tiles on each side. Therefore, our answer is $19^2=361=\boxed{\textbf{(C)}\ 361}$.
+
+~AllezW

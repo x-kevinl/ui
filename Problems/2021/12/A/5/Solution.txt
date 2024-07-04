@@ -1,0 +1,12 @@
+==Solution 1==
+We are given that $66\Bigl(\underline{1}.\overline{\underline{a} \ \underline{b}}\Bigr)-0.5=66\Bigl(\underline{1}.\underline{a} \ \underline{b}\Bigr),$ from which
+$$\begin{align*}
+66\Bigl(\underline{1}.\overline{\underline{a} \ \underline{b}}\Bigr)-66\Bigl(\underline{1}.\underline{a} \ \underline{b}\Bigr)&=0.5 \\
+66\Bigl(\underline{1}.\overline{\underline{a} \ \underline{b}} - \underline{1}.\underline{a} \ \underline{b}\Bigr)&=0.5 \\
+66\Bigl(\underline{0}.\underline{0} \ \underline{0} \ \overline{\underline{a} \ \underline{b}}\Bigr)&=0.5 \\
+66\left(\frac{1}{100}\cdot\underline{0}.\overline{\underline{a} \ \underline{b}}\right)&=\frac12 \\
+\underline{0}.\overline{\underline{a} \ \underline{b}}&=\frac{25}{33} \\
+\underline{0}.\overline{\underline{a} \ \underline{b}}&=0.\overline{75} \\
+\underline{a} \ \underline{b}&=\boxed{\textbf{(E) }75}.
+\end{align*}$$
+~MRENTHUSIASM

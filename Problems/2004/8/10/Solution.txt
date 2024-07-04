@@ -1,0 +1,2 @@
+==Solution==
+Let's convert everything to minutes and add them together. On Monday he worked for $\frac54 \cdot 60 = 75$ minutes. On Tuesday he worked $50$ minutes. On Wednesday he worked for $2$ hours $25$ minutes, or $2(60)+25=145$ minutes. On Friday he worked $\frac{60}{2}=30$ minutes. This adds up to $75+50+145+30=300$ minutes, or $300/60=5$ hours and $5\cdot 3 = \boxed{\textbf{(E)}\ \textdollar 15}$.

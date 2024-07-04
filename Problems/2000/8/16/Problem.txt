@@ -1,0 +1,5 @@
+==Problem==
+
+In order for Mateen to walk a kilometer (1000m) in his rectangular backyard, he must walk the length 25 times or walk its perimeter 10 times. What is the area of Mateen's backyard in square meters?
+
+$\text{(A)}\ 40 \qquad \text{(B)}\ 200 \qquad \text{(C)}\ 400 \qquad \text{(D)}\ 500 \qquad \text{(E)}\ 1000$

@@ -1,0 +1,103 @@
+== Solution ==
+<center><asy>
+pointpen = black; pathpen = black + linewidth(0.7);
+path e = xscale(2)*unitcircle; real x = -8/13*3^.5;
+D((-3,0)--(3,0)); D((0,-2)--(0,2)); /* axes */
+D(e); D(D((0,1))--(x,x*3^.5+1)--(-x,x*3^.5+1)--cycle);
+</asy></center>
+=== Solution 1 ===
+Denote the vertices of the triangle <math>A,B,</math> and <math>C,</math> where <math>B</math> is in [[quadrant]] 4 and <math>C</math> is in quadrant <math>3.</math>
+
+Note that the slope of <math>\overline{AC}</math> is <math>\tan 60^\circ = \sqrt {3}.</math> Hence, the equation of the line containing <math>\overline{AC}</math> is
+<cmath>
+y = x\sqrt {3} + 1.
+</cmath>
+This will intersect the ellipse when
+<cmath>
+\begin{eqnarray*}4 = x^{2} + 4y^{2} & = & x^{2} + 4(x\sqrt {3} + 1)^{2} \\
+& = & x^{2} + 4(3x^{2} + 2x\sqrt {3} + 1) \implies x(13x+8\sqrt 3)=0\implies x = \frac { - 8\sqrt {3}}{13}. \end{eqnarray*}
+</cmath>
+We ignore the <math>x=0</math> solution because it is not in quadrant 3.
+
+Since the triangle is symmetric with respect to the y-axis, the coordinates of <math>B</math> and <math>C</math> are now <math>\left(\frac {8\sqrt {3}}{13},y_{0}\right)</math> and <math>\left(\frac { - 8\sqrt {3}}{13},y_{0}\right),</math> respectively, for some value of <math>y_{0}.</math>
+
+It is clear that the value of <math>y_{0}</math> is irrelevant to the length of <math>BC</math>. Our answer is
+<cmath>
+BC = 2*\frac {8\sqrt {3}}{13}=\sqrt {4\left(\frac {8\sqrt {3}}{13}\right)^{2}} = \sqrt {\frac {768}{169}}\implies m + n = \boxed{937}.
+</cmath>
+
+=== Solution 2 ===
+Solving for <math>y</math> in terms of <math>x</math> gives <math>y=\sqrt{4-x^2}/2</math>, so the two other points of the triangle are <math>(x,\sqrt{4-x^2}/2)</math> and <math>(-x,\sqrt{4-x^2}/2)</math>, which are a distance of <math>2x</math> apart. Thus <math>2x</math> equals the distance between <math>(x,\sqrt{4-x^2}/2)</math> and <math>(0,1)</math>, so by the distance formula we have 
+
+<cmath>2x=\sqrt{x^2+(1-\sqrt{4-x^2}/2)^2}.</cmath> 
+
+Squaring both sides and simplifying through algebra yields <math>x^2=192/169</math>, so <math>2x=\sqrt{768/169}</math> and the answer is <math>\boxed{937}</math>.
+
+=== Solution 3 ===
+Since the altitude goes along the <math>y</math> axis, this means that the base is a horizontal line, which means that the endpoints of the base are <math>(x,y)</math> and <math>(-x,y)</math>, and WLOG, we can say that <math>x</math> is positive.
+
+Now, since all sides of an equilateral triangle are the same, we can do this (distance from one of the endpoints of the base to the vertex and the length of the base):
+
+<math>\sqrt{x^2 + (y-1)^2} = 2x</math>
+
+Square both sides,
+
+<math>x^2 + (y-1)^2 = 4x^2\implies (y-1)^2 = 3x^2</math>
+
+Now, with the equation of the ellipse:
+<math>x^2 + 4y^2 = 4</math>
+
+<math>x^2 = 4-4y^2</math>
+
+<math>3x^2 = 12-12y^2</math>
+
+Substituting, 
+
+<math>12-12y^2 = y^2 - 2y +1</math>
+
+Moving stuff around and solving:
+
+<math>y = \frac{-11}{13}, 1</math>
+
+The second is found to be extraneous, so, when we go back and figure out <math>x</math> and then <math>2x</math>  (which is the side length), we find it to be:
+
+<math>\sqrt{\frac{768}{169}}</math> 
+
+and so we get the desired answer of <math>\boxed{937}</math>.
+
+===Solution 4===
+
+Denote <math>(0,1)</math> as vertex <math>A,</math> <math>B</math> as the vertex to the left of the <math>y</math>-axis and <math>C</math> as the vertex to the right of the <math>y</math>-axis. Let <math>D</math> be the intersection of <math>BC</math> and the <math>y</math>-axis.
+
+Let <math>x_0</math> be the <math>x</math>-coordinate of <math>C.</math> This implies
+<cmath>C=\left(x_0 , \sqrt{\frac{4-x_0^2}{4}}\right)</cmath>
+and 
+<cmath>B=\left(-x_0 , \sqrt{\frac{4-x_0^2}{4}}\right).</cmath>
+Note that <math>BC=2x_0</math> and 
+<cmath>\frac{BC}{\sqrt3}=AD=1-\sqrt{\frac{4-x_0^2}{4}}.</cmath>
+This yields
+<cmath>\frac{2x_0}{\sqrt3}=1-\sqrt{\frac{4-x_0^2}{4}}.</cmath>
+Re-arranging and squaring, we have
+<cmath>\frac{4-x_0^2}{4}=\frac{4x_0^2}{3}-\frac{4x_0}{\sqrt3} +1.</cmath>
+Simplifying and solving for <math>x_0</math>, we have
+<cmath>x_0=\frac{48}{13\sqrt 3}.</cmath>
+As the length of each side is <math>2x_0,</math> our desired length is
+<cmath>4x_0^2=\frac{768}{169}</cmath>
+which means our desired answer is
+<cmath>768+169=\boxed{937}</cmath>
+
+~ASAB
+
+===Solution 5===
+
+Notice that <math>x^2+4y^2=4</math> can be rewritten as <math>(x)^2+(2y)^2=2^2</math>. The points of the triangle are <math>(0, 1)</math>, <math>(-x, 1-x\sqrt{3})</math>, and <math>(x, 1-x\sqrt{3})</math>. When plugging the second coordinate into the equation, we get <math>x^2+4-8x\sqrt{3}+12x^2=4</math>, which equals <math>13x^2-8x\sqrt{3}=0</math>. 
+This yields <math>x(13x-8\sqrt{3})=0</math>. Obviously x can't be 0, so <math>x=\frac{8\sqrt{3}}{13}</math>. The side length of the equilateral triangle is twice of this, so <math>\frac{16\sqrt{3}}{13}</math>.
+This can be rewritten as <math>\sqrt{\frac{256\cdot3}{169}}=\sqrt{\frac{768}{169}}</math>. 
+<math>768+169=\boxed{937}</math>.
+~ MC413551
+
+===Solution 6===
+Consider the transformation <math>(x,y)</math> to <math>(x/2, y).</math> This sends the ellipse to the unit circle. If we let <math>n</math> be one-fourth of the side length of the triangle, the equilateral triangle is sent to an isosceles triangle with side lengths <math>2n, n\sqrt{13}, n\sqrt{13}.</math> Let the triangle be <math>ABC</math> such that <math>AB=AC.</math> Let the foot of the altitude from A be <math>X.</math> Then <math>BX=n,</math> and <math>AX=2n\sqrt{3}.</math> Let <math>C</math> be a point such that <math>AC</math> is a diameter of the unit circle. Then <math>XC=2-2n\sqrt{3}.</math> Using power of a point on X,
+<cmath>n^2=2n\sqrt{3}(2-2n\sqrt{3})</cmath>
+Simplifying gets us to <math>13n^2=4n\sqrt{3}.</math> Then, <math>n=\dfrac{4\sqrt{3}}{13}</math> which means the side length is <math>\dfrac{16\sqrt{3}}{13}=\sqrt{\dfrac{768}{169}}.</math>
+Thus, the answer is <math>768+169=\boxed{937}.</math>

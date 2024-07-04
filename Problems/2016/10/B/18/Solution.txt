@@ -1,0 +1,10 @@
+==Solution 1==
+Factor $345=3\cdot 5\cdot 23$.
+
+Suppose we take an odd number $k$ of consecutive integers, with the median as $m$. Then $mk=345$ with $\tfrac12k<m$.
+Looking at the factors of $345$, the possible values of $k$ are $3,5,15,23$ with medians as $115,69,23,15$ respectively.
+
+Suppose instead we take an even number $2k$ of consecutive integers, with median being the average of $m$ and $m+1$. Then $k(2m+1)=345$ with $k\le m$.
+Looking again at the factors of $345$, the possible values of $k$ are $1,3,5$ with medians $(172,173),(57,58),(34,35)$ respectively.
+
+Thus the answer is $\boxed{\textbf{(E) }7}$.

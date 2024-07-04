@@ -1,0 +1,6 @@
+==Solution 1==
+You could just make out all of the patterns that make the top positive. In this case, you would have the following patterns: 
+
++−−+, −++−, −−−−, ++++, −+−+, +−+−, ++−−, −−++. There are 8 patterns and so the answer is $\boxed{\textbf{(C) } 8}$.
+
+-NinjaBoi2000

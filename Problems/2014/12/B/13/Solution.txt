@@ -1,0 +1,13 @@
+==Solution 1==
+
+Notice that $1>\frac{1}{a}>\frac{1}{b}$.  Using the triangle inequality, we find 
+$$a+1 > b \implies a>b-1$$
+$$\frac{1}{a}+\frac{1}{b} > 1$$
+In order for us the find the lowest possible value for $b$, we try to create two degenerate triangles where the sum of the smallest two sides equals the largest side.
+Thus we get $$a=b-1$$ and $$\frac{1}{a} + \frac{1}{b}=1$$
+Substituting, we get
+$$\frac{1}{b-1}+\frac{1}{b}=\frac{b+b-1}{b(b-1)}=1$$
+$$\frac{2b-1}{b(b-1)} = 1$$
+$$2b-1=b^2-b$$
+Solving for $b$ using the quadratic equation, we get
+$$b^2-3b+1=0 \implies b = \boxed{\textbf{(C)} \ \frac{3+\sqrt{5}}{2}}$$

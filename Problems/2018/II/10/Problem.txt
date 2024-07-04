@@ -1,0 +1,3 @@
+==Problem==
+
+Find the number of functions <math>f(x)</math> from <math>\{1, 2, 3, 4, 5\}</math> to <math>\{1, 2, 3, 4, 5\}</math> that satisfy <math>f(f(x)) = f(f(f(x)))</math> for all <math>x</math> in <math>\{1, 2, 3, 4, 5\}</math>.

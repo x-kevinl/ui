@@ -1,0 +1,59 @@
+== Solution 1 ==
+A long, but straightforward bash:
+
+Define $P(N)$ to be the probability that the frog survives starting from pad N.
+
+Then note that by symmetry, $P(5) = 1/2$, since the probabilities of the frog moving subsequently in either direction from pad 5 are equal.
+
+We therefore seek to rewrite $P(1)$ in terms of $P(5)$, using the fact that
+
+$P(N) = \frac {N} {10}P(N - 1) + \frac {10 - N} {10}P(N + 1)$
+
+as said in the problem.
+
+Hence $P(1) = \frac {1} {10}P(0) + \frac {9} {10}P(2) = \frac {9} {10}P(2)$
+
+$\Rightarrow P(2) = \frac {10} {9}P(1)$
+
+Returning to our original equation:
+
+$P(1) = \frac {9} {10}P(2) = \frac {9} {10}\left(\frac{2} {10}P(1) + \frac{8} {10}P(3)\right)$
+
+$= \frac {9} {50}P(1) + \frac {18} {25}P(3) \Rightarrow P(1) - \frac {9} {50}P(1)$ 
+$= \frac {18} {25}P(3)$
+
+$\Rightarrow P(3) = \frac {41} {36}P(1)$
+
+Returning to our original equation:
+
+$P(1) = \frac {9} {50}P(1) + \frac {18} {25}\left(\frac {3} {10}P(2) + \frac {7} {10}P(4)\right)$
+
+$= \frac {9} {50}P(1) + \frac {27} {125}P(2) + \frac {63} {125}P(4)$
+
+$= \frac {9} {50}P(1) + \frac {27} {125}\left(\frac {10} {9}P(1)\right) + \frac {63} {125}\left(\frac {4} {10}P(3) + \frac {6} {10}P(5)\right)$
+
+Cleaing up the coefficients, we have: 
+
+$= \frac {21} {50}P(1) + \frac {126} {625}P(3) + \frac {189} {625}P(5)$
+
+$= \frac {21} {50}P(1) + \frac {126} {625}\left(\frac {41} {36}P(1)\right) + \frac {189} {625}\left(\frac {1} {2}\right)$
+
+Hence, $P(1) = \frac {525} {1250}P(1) + \frac {287} {1250}P(1) + \frac {189} {1250}$
+
+$\Rightarrow P(1) - \frac {812} {1250}P(1) = \frac {189} {1250} \Rightarrow P(1) = \frac {189} {438}$
+
+$= \boxed{\frac {63} {146}\, (C)}$
+
+Or set $P(1)=a,P(2)=b,P(3)=c,P(4)=d,P(5)=e=1/2$:
+$$a=0.1\emptyset+0.9b,b=0.2a+0.8c,c=0.3b+0.7d,d=0.4c+0.6e$$
+$$10a=\emptyset+9b,10b=2a+8c,10c=3b+7d,10d=4c+6e$$
+$$\implies b=\frac{10a-\emptyset}{9},c=\frac{5b-a}{4},d=\frac{10c-3b}{7},e=\frac{5d-2c}{3}=1/2$$
+$b=\frac{10a}{9}$
+
+$c=\frac{5\left(\frac{10a}{9}\right)-a}{4}=\frac{\frac{50a}{9}-a}{9}=\frac{41a}{36}$
+
+$d=\frac{10\left(\frac{41a}{36}\right)-3\left(\frac{30a}{9}\right)}{7}=\frac{\frac{205a}{18}-\frac{10a}{3}}{7}=\frac{145a}{126}$
+
+$e=\frac{5\left(\frac{145a}{126}\right)-2\left(\frac{41a}{36}\right)}{3}=\frac{\frac{725a}{126}-\frac{41a}{18}}{3}=\frac{73a}{63}$
+
+Since $e=\frac{1}{2}$, $\frac{73a}{63}=\frac{1}{2}\implies a=\boxed{\textbf{(C) }\frac{63}{146}}$.

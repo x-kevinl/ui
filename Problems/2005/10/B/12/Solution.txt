@@ -1,0 +1,2 @@
+== Solution 1 ==
+In order for the product of the numbers to be prime, $11$ of the dice have to be a $1$, and the other die has to be a prime number. There are $3$ prime numbers ($2$, $3$, and $5$), and there is only one $1$, and there are $\dbinom{12}{1}$ ways to choose which die will have the prime number, so the probability is $\dfrac{3}{6}\times\left(\dfrac{1}{6}\right)^{11}\times\dbinom{12}{1} = \dfrac{1}{2}\times\left(\dfrac{1}{6}\right)^{11}\times12=\left(\dfrac{1}{6}\right)^{11}\times6=\boxed{\textbf{(E) }\left(\dfrac{1}{6}\right)^{10}}$.

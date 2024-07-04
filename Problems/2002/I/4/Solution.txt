@@ -1,0 +1,20 @@
+== Solution 1 ==
+<math>\dfrac{1}{k^2+k}=\dfrac{1}{k(k+1)}=\dfrac{1}{k}-\dfrac{1}{k+1}</math>. Thus,
+
+<math>a_m+a_{m+1}+\cdots +a_{n-1}=\dfrac{1}{m}-\dfrac{1}{m+1}+\dfrac{1}{m+1}-\dfrac{1}{m+2}+\cdots +\dfrac{1}{n-1}-\dfrac{1}{n}=\dfrac{1}{m}-\dfrac{1}{n}</math>
+
+Which means that
+
+<math>\dfrac{n-m}{mn}=\dfrac{1}{29}</math>
+
+Since we need a factor of 29 in the denominator, we let <math>n=29t</math>.* Substituting, we get
+
+<math>29t-m=mt</math>
+
+so
+
+<math>\frac{29t}{t+1} = m</math>
+
+Since <math>m</math> is an integer, <math>t+1 = 29</math>, so <math>t=28</math>. It quickly follows that <math>n=29(28)</math> and <math>m=28</math>, so <math>m+n = 30(28) = \fbox{840}</math>.
+
+ *If <math>m=29t</math>, a similar argument to the one above implies <math>m=29(28)</math> and <math>n=28</math>, which implies <math>m>n</math>. This is impossible since <math>n-m>0</math>.

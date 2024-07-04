@@ -1,0 +1,9 @@
+==Solution 1==
+
+We first create a similar sequence where <math>a_1=1</math> and <math>a_2=2</math>. Continuing the sequence,
+
+<cmath>1, 2,4,6,9,12,16,20,25,30,36,42,49,\cdots</cmath>
+
+Here we can see a pattern; every second term (starting from the first) is a square, and every second term (starting from the third) is the end of a geometric sequence. This can be proven by induction. Similarly, <math>a_{13}</math> would also need to be the end of a geometric sequence (divisible by a square). We see that <math>2016</math> is <math>2^5 \cdot 3^2 \cdot 7</math>, so the squares that would fit in <math>2016</math> are <math>1^2=1</math>, <math>2^2=4</math>, <math>3^2=9</math>, <math>2^4=16</math>, <math>2^2 \cdot 3^2 = 36</math>, and <math>2^4 \cdot 3^2 = 144</math>. By simple inspection <math>144</math> is the only plausible square, since the other squares in the sequence don't have enough elements before them to go all the way back to <math>a_1</math> while still staying as positive integers. <math>a_{13}=2016=14\cdot 144</math>, so <math>a_1=14\cdot 36=\fbox{504}</math>.
+
+~IYN~

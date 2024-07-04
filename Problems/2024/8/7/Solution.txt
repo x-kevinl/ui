@@ -1,0 +1,3 @@
+==Solution 1==
+
+We can eliminate B, C, and D, because they are not $21$ subtracted by any multiple of $4$. Finally, we see that there is no way to have A, so the solution is $\boxed{\textbf{(E)\ 5}}$.

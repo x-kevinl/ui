@@ -1,0 +1,2 @@
+==Problem==
+A triangle has vertices <math>A(0,0)</math>, <math>B(12,0)</math>, and <math>C(8,10)</math>. The probability that a randomly chosen point inside the triangle is closer to vertex <math>B</math> than to either vertex <math>A</math> or vertex <math>C</math> can be written as <math>\frac{p}{q}</math>, where <math>p</math> and <math>q</math> are relatively prime positive integers. Find <math>p+q</math>.

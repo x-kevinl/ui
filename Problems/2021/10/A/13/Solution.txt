@@ -1,0 +1,4 @@
+==Solution 1 (Three Right Triangles)==
+Drawing the tetrahedron out and testing side lengths, we realize that the $\triangle ACD, \triangle ABC,$ and $\triangle ABD$ are right triangles by the Converse of the Pythagorean Theorem. It is now easy to calculate the volume of the tetrahedron using the formula for the volume of a pyramid. If we take $\triangle ADC$ as the base, then $\overline{AB}$ must be the altitude. The volume of tetrahedron $ABCD$ is $\dfrac{1}{3} \cdot \dfrac{3 \cdot 4}{2} \cdot 2=\boxed{\textbf{(C)} ~4}.$
+
+~Icewolf10 ~Bakedpotato66 ~MRENTHUSIASM

@@ -1,0 +1,19 @@
+== Solution ==
+[[Image:2005_I_AIME-14.png|center]]
+
+=== Solution 1 ===
+Consider a point <math>E</math> such that <math>AE</math> is [[perpendicular]] to <math>BD</math>, <math>AE</math> intersects <math>BD</math>, and <math>AE = BD</math>. E will be on the same side of the square as point <math>C</math>.
+
+Let the coordinates of <math>E</math> be <math>(x_E,y_E)</math>. Since <math>AE</math> is perpendicular to <math>BD</math>, and <math>AE = BD</math>, we have <math>9 - 7 = x_E - 0</math> and <math>10 - ( - 4) = 12 - y_E</math>
+The coordinates of <math>E</math> are thus <math>(2, - 2)</math>.
+
+Now, since <math>E</math> and <math>C</math> are on the same side, we find the slope of the sides going through <math>E</math> and <math>C</math> to be <math>\frac { - 2 - 0}{2 - 8} = \frac {1}{3}</math>. Because the other two sides are perpendicular, the slope of the sides going through <math>B</math> and <math>D</math> are now <math>- 3</math>.
+
+Let <math>A_1,B_1,C_1,D_1</math> be the vertices of the square so that <math>A_1B_1</math> contains point <math>A</math>, <math>B_1C_1</math> contains point <math>B</math>, and etc. Since we know the slopes and a point on the line for each side of the square, we use the point slope formula to find the linear equations. Next, we use the equations to find <math>2</math> vertices of the square, then apply the distance formula. 
+
+We find the coordinates of <math>C_1</math> to be <math>(12.5,1.5)</math> and the coordinates of <math>D_1</math> to be <math>( - 0.7, - 2.9)</math>. Applying the distance formula, the side length of our square is <math>\sqrt {\left( \frac {44}{10} \right)^2 + \left( \frac {132}{10} \right)^2} = \frac {44}{\sqrt {10}}</math>.
+
+Hence, the area of the square is <math>K = \frac {44^2}{10}</math>. The remainder when <math>10K</math> is divided by <math>1000</math> is <math>936</math>.
+
+=== Solution 2 ===
+Let <math> (a,b)</math> denote a [[normal vector]] of the side containing <math> A</math>. Note that <math>\overline{AC}, \overline{BD}</math> intersect and hence must be opposite [[vertex|vertices]] of the square. The lines containing the sides of the square have the form <math> ax+by=12b</math>, <math> ax+by=8a</math>, <math> bx-ay=10b-9a</math>, and <math> bx-ay=-4b-7a</math>. The lines form a square, so the distance between <math>C</math> and the line through <math>A</math> equals the distance between <math>D</math> and the line through <math>B</math>, hence <math> 8a+0b-12b=-4b-7a-10b+9a</math>, or <math>-3a=b</math>. We can take <math>a=-1</math> and <math>b=3</math>. So the side of the square is <math>\frac{44}{\sqrt{10}}</math>, the area is <math>K=\frac{1936}{10}</math>, and the answer to the problem is <math>\boxed{936}</math>.

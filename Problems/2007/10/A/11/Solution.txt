@@ -1,0 +1,2 @@
+== Solution 1 ==
+The sum of the numbers on one face of the cube is equal to the sum of the numbers on the opposite face of the cube; these $8$ numbers represent all of the vertices of the cube. Thus the answer is $\frac{1 + 2 + \cdots + 8}{2} = 18\ \mathrm{(C)}$.

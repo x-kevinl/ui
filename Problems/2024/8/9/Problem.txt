@@ -1,0 +1,4 @@
+==Problem==
+All the marbles in Maria's collection are red, green, or blue. Maria has half as many red marbles as green marbles and twice as many blue marbles as green marbles. Which of the following could be the total number of marbles in Maria's collection?
+
+$\textbf{(A) } 24\qquad\textbf{(B) } 25\qquad\textbf{(C) } 26\qquad\textbf{(D) } 27\qquad\textbf{(E) } 28$

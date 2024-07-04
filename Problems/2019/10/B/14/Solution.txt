@@ -1,0 +1,2 @@
+==Solution 1==
+We can figure out $H = 0$ by noticing that $19!$ will end with $3$ zeroes, as there are three factors of $5$ in its prime factorization, so there would be 3 powers of 10 meaning it will end in 3 zeros. Next, we use the fact that $19!$ is a multiple of both $11$ and $9$. Their divisibility rules (see Solution 2) tell us that $T + M \equiv 3 \;(\bmod\; 9)$ and that $T - M \equiv 7 \;(\bmod\; 11)$. By guess and checking, we see that $T = 4, M = 8$ is a valid solution. Therefore the answer is $4 + 8 + 0 = \boxed{\textbf{(C) }12}$.

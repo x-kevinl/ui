@@ -1,0 +1,8 @@
+==Solution==
+The domain of the LHS implies that $$40<x<60$$ Begin from the left hand side
+$$\log_{10}[(x-40)(60-x)]<2$$
+$$(x-40)(60-x)<100$$
+$$-x^2+100x-2500<0$$
+$$(x-50)^2>0$$
+$$x \not = 50$$
+Hence, we have integers from 41 to 49 and 51 to 59. There are $\boxed{\textbf{(B)} 18}$ integers.

@@ -1,0 +1,4 @@
+== Problem ==
+Let <math> C </math> be the [[coefficient]] of <math> x^2 </math> in the expansion of the product <math> (1 - x)(1 + 2x)(1 - 3x)\cdots(1 + 14x)(1 - 15x). </math> Find <math> |C|. </math>
+
+__TOC__

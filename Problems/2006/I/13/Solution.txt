@@ -1,0 +1,20 @@
+== Solution 1 ==
+Given <math>g : x \mapsto \max_{j : 2^j | x} 2^j</math>, consider <math>S_n = g(2) + \cdots + g(2^n)</math>. Define <math>S = \{2, 4, \ldots, 2^n\}</math>. There are <math>2^0</math> elements of <math>S</math> that are divisible by <math>2^n</math>, <math>2^1 - 2^0 = 2^0</math> elements of <math>S</math> that are divisible by <math>2^{n-1}</math> but not by <math>2^n, \ldots,</math> and <math>2^{n-1}-2^{n-2} = 2^{n-2}</math> elements of <math>S</math> that are divisible by <math>2^1</math> but not by <math>2^2</math>.
+
+Thus 
+<cmath>\begin{align*}
+S_n &= 2^0\cdot2^n + 2^0\cdot2^{n-1} + 2^1\cdot2^{n-2} + \cdots + 2^{n-2}\cdot2^1\\ &= 2^n + (n-1)2^{n-1}\\ &= 2^{n-1}(n+1).\end{align*}</cmath> Let <math>2^k</math> be the highest power of <math>2</math> that divides <math>n+1</math>. Thus by the above formula, the highest power of <math>2</math> that divides <math>S_n</math> is <math>2^{k+n-1}</math>. For <math>S_n</math> to be a perfect square, <math>k+n-1</math> must be even. If <math>k</math> is odd, then <math>n+1</math> is even, hence <math>k+n-1</math> is odd, and <math>S_n</math> cannot be a perfect square. Hence <math>k</math> must be even. In particular, as <math>n<1000</math>, we have five choices for <math>k</math>, namely <math>k=0,2,4,6,8</math>.
+
+If <math>k=0</math>, then <math>n+1</math> is odd, so <math>k+n-1</math> is odd, hence the largest power of <math>2</math> dividing <math>S_n</math> has an odd exponent, so <math>S_n</math> is not a perfect square.
+
+In the other cases, note that <math>k+n-1</math> is even, so the highest power of <math>2</math> dividing <math>S_n</math> will be a perfect square. In particular, <math>S_n</math> will be a perfect square if and only if <math>(n+1)/2^{k}</math> is an odd perfect square.
+
+If <math>k=2</math>, then <math>n<1000</math> implies that <math>\frac{n+1}{4} \le 250</math>, so we have <math>n+1 = 4, 4 \cdot 3^2, \ldots, 4 \cdot 13^2, 4\cdot 3^2 \cdot 5^2</math>.
+
+If <math>k=4</math>, then <math>n<1000</math> implies that <math>\frac{n+1}{16} \le 62</math>, so <math>n+1 = 16, 16 \cdot 3^2, 16 \cdot 5^2, 16 \cdot 7^2</math>.
+
+If <math>k=6</math>, then <math>n<1000</math> implies that <math>\frac{n+1}{64}\le 15</math>, so <math>n+1=64,64\cdot 3^2</math>.
+
+If <math>k=8</math>, then <math>n<1000</math> implies that <math>\frac{n+1}{256}\le 3</math>, so <math>n+1=256</math>.
+
+Comparing the largest term in each case, we find that the maximum possible <math>n</math> such that <math>S_n</math> is a perfect square is <math>4\cdot 3^2 \cdot 5^2 - 1 = \boxed{899}</math>.

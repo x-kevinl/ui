@@ -1,0 +1,10 @@
+== Solution ==
+Since the equation has even powers of $x$ and $y$, let $y'=y^2$ and $x' = x^2$. Then $y'^2 + 1 = x'^2 + 2y'$. Rearranging gives $y'^2 - 2y' + 1 = x'^2$, or $(y'-1)^2=x'^2$. There are two cases: $y' \leq 1$ or $y' > 1$.
+
+If $y' \leq 1$, taking the square root of both sides gives $1 - y' = x'$, and rearranging gives $x' + y' = 1$. Substituting back in $x'=x^2$ and $y'=y^2$ gives us $x^2+y^2=1$, the equation for a circle.
+
+Similarly, if $y' > 1$, we take the square root of both sides to get $y' - 1 = x'$, or $y' - x' = 1$, which is equivalent to $y^2 - x^2 = 1$, a hyperbola.
+
+Hence, our answer is $\boxed{\textbf{(D)}\ \text{a circle and a hyperbola}}$.
+
+~[[User:Bxiao31415|Bxiao31415]]

@@ -1,0 +1,2 @@
+== Problem ==
+In triangle <math>ABC</math>, <math>AB=125</math>, <math>AC=117</math> and <math>BC=120</math>. The angle bisector of angle <math>A</math> intersects <math> \overline{BC} </math> at point <math>L</math>, and the angle bisector of angle <math>B</math> intersects <math> \overline{AC} </math> at point <math>K</math>. Let <math>M</math> and <math>N</math> be the feet of the perpendiculars from <math>C</math> to <math> \overline{BK}</math> and <math> \overline{AL}</math>, respectively. Find <math>MN</math>.

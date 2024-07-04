@@ -1,0 +1,11 @@
+== Solution ==
+Let the radius of the smallest circle be $r_A$, the radius of the second largest circle be $r_B$, and the radius of the largest circle be $r_C$. 
+$$r_A + r_B = 3$$
+$$r_A + r_C = 4$$
+$$r_ B + r_C = 5$$
+
+Adding up all these equations and then dividing both sides by 2, we get,
+
+$$r_A + r_B + r_C = 6$$
+
+Then, we get $r_A = 1$, $r_B = 2$, and $r_C = 3$ Then we get $1^2 \pi + 2^2 \pi + 3^2 \pi = 14 \pi \iff\mathrm{(E)}$

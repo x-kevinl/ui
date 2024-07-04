@@ -1,0 +1,10 @@
+==Problem==
+
+Niki usually leaves her cell phone on. If her cell phone is on but
+she is not actually using it, the battery will last for $24$ hours. If
+she is using it constantly, the battery will last for only $3$ hours.
+Since the last recharge, her phone has been on $9$ hours, and during
+that time she has used it for $60$ minutes. If she doesn’t use it any
+more but leaves the phone on, how many more hours will the battery last?
+
+$\textbf{(A)}\ 7 \qquad \textbf{(B)}\ 8 \qquad \textbf{(C)}\ 11 \qquad \textbf{(D)}\ 14 \qquad \textbf{(E)}\ 15$

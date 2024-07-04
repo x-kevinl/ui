@@ -1,0 +1,2 @@
+==Solution 1==
+$B$ is on the top, and $R$ is on the side, and $G$ is on the right side. That means that (image $2$) $W$ is on the left side. From the third image, you know that $P$ must be on the bottom since $G$ is sideways. That leaves us with the back, so the back must be $A$. The front is opposite of the back, so the answer is $\boxed{\textbf{(A)}\ R}$.

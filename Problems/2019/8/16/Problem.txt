@@ -1,0 +1,4 @@
+==Problem 16==
+Qiang drives $15$ miles at an average speed of $30$ miles per hour. How many additional miles will he have to drive at $55$ miles per hour to average $50$ miles per hour for the entire trip?
+
+$\textbf{(A) }45\qquad\textbf{(B) }62\qquad\textbf{(C) }90\qquad\textbf{(D) }110\qquad\textbf{(E) }135$

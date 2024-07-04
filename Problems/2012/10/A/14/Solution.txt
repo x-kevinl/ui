@@ -1,0 +1,4 @@
+== Solution 1==
+There are 15 rows with 15 black tiles, and 16 rows with 16 black tiles, so the answer is $15^2+16^2 =225+256= \boxed{\textbf{(B)}\ 481}$
+
+Note: When solving $16^2$+$15^2$, you only need to calculate the units digit.

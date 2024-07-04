@@ -1,0 +1,2 @@
+== Solution ==
+There are a total of $100+60+40+120=320$ dollars of sales spread through $4$ months, for an average of $320/4 = \boxed{\textbf{(D)}\ 80}$.

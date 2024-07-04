@@ -1,0 +1,23 @@
+==Solution 1 (Complete Residue System)==
+For a fixed value of $m,$ there is a total of $m(m-1)(m-2)(m-3)$ possible ordered quadruples $(a_1, a_2, a_3, a_4).$
+
+Let $S=a_1+a_2+a_3+a_4.$ We claim that exactly $\frac1m$ of these $m(m-1)(m-2)(m-3)$ ordered quadruples satisfy that $m$ divides $S:$
+
+Since $\gcd(m,4)=1,$ we conclude that $$\{k+4(0),k+4(1),k+4(2),\ldots,k+4(m-1)\}$$ is the complete residue system modulo $m$ for all integers $k.$
+
+Given any ordered quadruple $(a'_1, a'_2, a'_3, a'_4)$ in modulo $m,$ it follows that exactly one of these $m$ ordered quadruples has sum $0$ modulo $m:$
+$$\begin{array}{c|c}
+& \\ [-2.5ex]
+\textbf{Ordered Quadruple} & \textbf{Sum Modulo }\boldsymbol{m} \\ [0.5ex]
+\hline
+& \\ [-2ex]
+(a'_1, a'_2, a'_3, a'_4) & S'+4(0) \\ [0.5ex]
+(a'_1+1, a'_2+1, a'_3+1, a'_4+1) & S'+4(1) \\ [0.5ex]
+(a'_1+2, a'_2+2, a'_3+2, a'_4+2) & S'+4(2) \\ [0.5ex]
+\cdots & \cdots \\ [0.5ex]
+(a'_1+m-1, a'_2+m-1, a'_3+m-1, a'_4+m-1) & S'+4(m-1) \\ [0.5ex]
+\end{array}$$
+We conclude that $q(m)=\frac1m\cdot[m(m-1)(m-2)(m-3)]=(m-1)(m-2)(m-3),$ so $$q(x)=(x-1)(x-2)(x-3)=c_3x^3+c_2x^2+c_1x+c_0.$$
+By Vieta's Formulas, we get $c_1=1\cdot2+1\cdot3+2\cdot3=\boxed{\textbf{(E)}\ 11}.$
+
+~MRENTHUSIASM

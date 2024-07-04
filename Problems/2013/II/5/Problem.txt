@@ -1,0 +1,2 @@
+==Problem==
+In equilateral <math>\triangle ABC</math> let points <math>D</math> and <math>E</math> trisect <math>\overline{BC}</math>. Then <math>\sin(\angle DAE)</math> can be expressed in the form <math>\frac{a\sqrt{b}}{c}</math>, where <math>a</math> and <math>c</math> are relatively prime positive integers, and <math>b</math> is an integer that is not divisible by the square of any prime. Find <math>a+b+c</math>.

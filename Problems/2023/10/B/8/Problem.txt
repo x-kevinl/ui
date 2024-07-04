@@ -1,0 +1,4 @@
+==Problem==
+What is the units digit of $2022^{2023} + 2023^{2022}$?
+
+$\text{(A)}\ 7 \qquad \text{(B)}\ 1 \qquad \text{(C)}\ 9 \qquad \text{(D)}\ 5 \qquad \text{(E)}\ 3$

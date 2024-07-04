@@ -1,0 +1,11 @@
+==Solution 1==
+
+<asy> unitsize(40);draw((-1,0)--(1,0)--(0,2.75)--cycle);draw(circumcircle((-1,0),(0,0),(0,2.75)));label("$A$",(1,0),SE);label("$C$",(0,2.75),N);label("$B$",(-1,0),SW);label("$E$",(0,0),S);label("$D$",(0.77,0.64),E);draw((0,0)--(0,2.75));draw((-1,0)--(0.77,0.64));</asy>
+
+Drawing it out, we see $\angle BDC$ and $\angle BEC$ are right angles, as they are inscribed in a semicircle. Using the fact that it is an isosceles triangle, we find $\angle ABC=70^{\circ}$. We can find $\angle ECB=20^{\circ}$ and $\angle DBC=50^{\circ}$ by the triangle angle sum on $\triangle ECB$ and $\triangle DBC$. 
+
+$$\angle BDC+\angle DCB+\angle DBC=180^{\circ}\implies90^{\circ}+40^{\circ}+\angle DBC=180^{\circ}\implies\angle DBC=50^{\circ}$$
+
+$$\angle BEC+\angle EBC+\angle ECB=180^{\circ}\implies90^{\circ}+70^{\circ}+\angle ECB=180^{\circ}\implies\angle ECB=20^{\circ}$$
+
+Then, we take triangle $BFC$, and find $\angle BFC=180^{\circ}-50^{\circ}-20^{\circ}=\boxed{\textbf{(D) } 110^{\circ}}.$

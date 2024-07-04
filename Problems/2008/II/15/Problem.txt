@@ -1,0 +1,4 @@
+== Problem ==
+Find the largest integer <math>n</math> satisfying the following conditions:
+:(i) <math>n^2</math> can be expressed as the difference of two consecutive cubes;
+:(ii) <math>2n + 79</math> is a perfect square.

@@ -1,0 +1,2 @@
+== Problem ==
+How many positive integer multiples of <math>1001</math> can be expressed in the form <math>10^{j} - 10^{i}</math>, where <math>i</math> and <math>j</math> are integers and <math>0\leq i < j \leq 99</math>?

@@ -1,0 +1,8 @@
+== Solution 1==
+The probability of drawing a white marble from box $k$ is $\frac{k}{k + 1}$, and the probability of drawing a red marble from box $k$ is $\frac{1}{k+1}$.
+
+To stop after drawing $n$ marbles, we must draw a white marble from boxes $1, 2, \ldots, n-1,$ and draw a red marble from box $n.$ Thus, $$P(n) = \left(\frac{1}{2} \cdot \frac{2}{3} \cdot \frac{3}{4} \cdots \frac {n - 1}{n}\right) \cdot \frac{1}{n +1} = \frac{1}{n (n + 1)}.$$
+
+So, we must have $\frac{1}{n(n + 1)} < \frac{1}{2010}$ or $n(n+1) > 2010.$
+
+Since $n(n+1)$ increases as $n$ increases, we can simply test values of $n$; after some trial and error, we get that the minimum value of $n$ is $\boxed{\textbf{(A) }45}$, since $45(46) = 2070$ but $44(45) = 1980.$

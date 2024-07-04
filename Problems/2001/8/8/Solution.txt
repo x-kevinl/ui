@@ -1,0 +1,3 @@
+==Solution==
+
+Each diagonal of the large kite is $ 3 $ times the length of the corresponding diagonal of the short kite since it was made with a grid $ 3 $ times as long in each direction. The diagonals of the small kite are $ 6 $ and $ 7 $, so the diagonals of the large kite are $ 18 $ and $ 21 $, and the amount of bracing Genevieve needs is the sum of these lengths, which is $ 39, \boxed{\text{E}} $

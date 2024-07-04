@@ -1,0 +1,6 @@
+==Problem==
+
+A bug starts at a vertex of a grid made of equilateral triangles of side length $1$. At each step the bug moves in one of the $6$ possible directions along the grid lines randomly and independently with equal probability. What is the probability that after $5$ moves the bug never will have been more than $1$ unit away from the starting position?
+
+$\textbf{(A)}\ \frac{13}{108} \qquad\textbf{(B)}\  \frac{7}{54} \qquad\textbf{(C)}\  \frac{29}{216} \qquad\textbf{(D)}\
+\frac{4}{27} \qquad\textbf{(E)}\ \frac{1}{16}$

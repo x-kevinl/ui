@@ -1,0 +1,2 @@
+== Solution ==
+Average speed is distance over time, or the slope of the line through the point and the origin. $\boxed{\textbf{(E)}\ \text{Evelyn}}$ has the steepest line, and runs the greatest distance for the shortest amount of time.

@@ -1,0 +1,8 @@
+==Solution 1==
+
+If we let $p$ be the number of people initially in the group, then $0.4p$ is the number of girls. If two girls leave and two boys arrive, the number of people in the group is still $p$, but the number of girls is $0.4p-2$. Since only $30\%$ of the group are girls,
+$$\begin{align*}
+\frac{0.4p-2}{p}&=\frac{3}{10}\\
+4p-20&=3p\\
+p&=20\end{align*}$$
+The number of girls initially in the group is $0.4p=0.4(20)=\boxed{\mathrm{(C) \ } 8}$

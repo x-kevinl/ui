@@ -1,0 +1,2 @@
+==Solution==
+During the $ 10 $ seconds, the sound traveled $ 1088\times10=10880 $ feet from the lightning to Snoopy. This is equivalent to $ \frac{10880}{5280}\approx2 $ miles, $ \boxed{\text{C}} $.

@@ -1,0 +1,32 @@
+== Solution 1 (MAA) ==
+
+By the Inscribed Angle Theorem, $$\angle BOC = 2\angle BAC = 120^\circ .$$Let $D$ and $E$ be the feet of the altitudes of $\triangle ABC$ from $B$ and $C$, respectively. In $\triangle ACE$ we get $\angle ACE = 30^\circ$, and as exterior angle $$\angle BHC = 90^\circ + \angle ACE = 120^\circ .$$Because the lines $BI$ and $CI$ are bisectors of $\angle CBA$ and $\angle ACB$, respectively, it follows that$$\angle BIC = 90^\circ + \tfrac 12\angle A = 120^\circ .$$Thus the points $B, C, O, I$, and $H$ are all on a circle. 
+<asy>
+import geometry;
+size(200);
+defaultpen(fontsize(12)+0.8); 
+
+pair O,A,B,C,D,E,I,H;
+real h=2*sqrt(3);
+O=(0,1/h); B=(-0.5,0); C=(0.5,0);
+path c1=CR(O,length(O-B));
+// A=IP(c1,O--O+5*dir(120));
+A=IP(c1,B--B+5*dir(80));
+I=incenter(A,B,C);
+H=orthocenter(A,B,C);
+D=extension(A,C,B,H); E=extension(A,B,C,H);
+path c2=circumcircle(O,I,H);
+pair o2=circumcenter(O,I,H);
+draw(c1, royalblue); draw(A--B--C--A); draw(B--D^^C--E, dotted);
+draw(arc(o2,length(O-o2),10,170), dotted+red); draw(B--I--C--O--B, black+0.3);
+pen p =black+3.25; 
+dot("$O$", O, N,p);  dot("$A$", A, dir(110),p); dot("$B$", B, dir(210),p); dot("$C$", C, dir(-30),p); dot("$I$", I, N,p); dot("$H$", H, N,p); dot("$D$", D, D-H,p); dot("$E$", E, (E-C),p);
+</asy>
+Further, since 
+$$\angle OCI = \angle OCB - \angle ICB = 30^\circ - \tfrac 12\angle C $$
+$$\angle ICH = \angle ACE - \angle ACI = 30^\circ - \tfrac 12\angle C $$
+we have $OI=IH$. 
+
+Because $[BCOIH]=[BCO]+[BOIH]$, it is sufficient to maximize the area of quadrilateral $BOIH$. If $P_1$, $P_2$ are two points in an arc of circle $BO$ with $BP_1<BP_2$, then the maximum area of $BOP_1P_2$ occurs when $BP_1=P_1P_2=P_2O$. Indeed, if $BP_1\neq P_1P_2$, then replacing $P_1$ by the point $P_1’$ located halfway in the arc of the circle $BP_2$ yields a triangle $BP_1’P_2$ with larger area than $\triangle BP_1P_2$, and the area of $\triangle BOP_2$ remains the same. Similarly, if $P_1P_2\neq P_2O$. 
+
+Therefore the maximum is achieved when $OI=IH=HB$, that is, when $$\angle OCI = \angle ICH = \angle HCB = \tfrac 13 \angle OCB = 10^\circ.$$Thus $\angle ACB = 40^\circ$ and $\angle CBA = 80^\circ$.

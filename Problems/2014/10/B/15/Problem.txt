@@ -1,0 +1,17 @@
+==Problem==
+In rectangle $ABCD$, $DC = 2 \cdot CB$ and points $E$ and $F$ lie on $\overline{AB}$ so that $\overline{ED}$ and $\overline{FD}$ trisect $\angle ADC$ as shown. What is the ratio of the area of $\triangle DEF$ to the area of rectangle $ABCD$?
+
+<asy>
+draw((0, 0)--(0, 1)--(2, 1)--(2, 0)--cycle);
+draw((0, 0)--(sqrt(3)/3, 1));
+draw((0, 0)--(sqrt(3), 1));
+label("A", (0, 1), N);
+label("B", (2, 1), N);
+label("C", (2, 0), S);
+label("D", (0, 0), S);
+label("E", (sqrt(3)/3, 1), N);
+label("F", (sqrt(3), 1), N);
+</asy>
+
+$ \textbf{(A)}\ \ \frac{\sqrt{3}}{6}\qquad\textbf{(B)}\ \frac{\sqrt{6}}{8}\qquad\textbf{(C)}\ \frac{3\sqrt{3}}{16}\qquad\textbf{(D)}\ \frac{1}{3}\qquad\textbf{(E)}\ \frac{\sqrt{2}}{4}$
+[[Category: Introductory Geometry Problems]]

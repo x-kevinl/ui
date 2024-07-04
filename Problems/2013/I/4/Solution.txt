@@ -1,0 +1,6 @@
+== Solution ==
+When the array appears the same after a 90-degree rotation, the top formation must look the same as the right formation, which looks the same as the bottom one, which looks the same as the right one. There are four of the same configuration. There are not enough red squares for these to be all red, nor are there enough blue squares for there to be more than one blue square in each three-square formation. Thus there are 2 reds and 1 blue in each, and a blue in the center. There are 3 ways to choose which of the squares in the formation will be blue, leaving the other two red.
+
+There are <math>\binom{13}{5}</math> ways to have 5 blue squares in an array of 13. 
+
+<math>\frac{3}{\binom{13}{5}}</math> = <math>\frac{1}{429}</math> , so ''<math>n</math>'' = <math>\boxed{429}</math>

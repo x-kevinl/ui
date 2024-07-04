@@ -1,0 +1,19 @@
+== Solution 1 (Forward) ==
+From (ii), note that
+$$\begin{alignat*}{8}
+f(2) &= 1\cdot f(1) &&= 1, \\ 
+f\left(2^2\right) &= 2\cdot f(2)  &&= 2, \\ 
+f\left(2^3\right) &= 2^2\cdot f\left(2^2\right) &&= 2^{2+1}, \\
+f\left(2^4\right) &= 2^3\cdot f\left(2^3\right) &&= 2^{3+2+1},
+\end{alignat*}$$
+and so on.
+
+In general, we have $$f\left(2^n\right)=2^{(n-1)+(n-2)+(n-3)+\cdots+3+2+1}$$ for any positive integer $n.$
+
+Therefore, the answer is
+$$\begin{align*}
+f\left(2^{100}\right)&=2^{99+98+97+\cdots+3+2+1} \\
+&=2^{99\cdot100/2} \\
+&= \boxed{\textbf {(D)}\ 2^{4950}}.
+\end{align*}$$
+~MRENTHUSIASM

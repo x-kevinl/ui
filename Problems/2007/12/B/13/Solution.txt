@@ -1,0 +1,11 @@
+== Solution ==
+The traffic light runs through a $63$ second cycle.
+
+Letting $t=0$ reference the moment it turns green, the light changes at three different times: $t=30$, $t=33$, and $t=63$
+
+This means that the light will change if the beginning of Leah's interval lies in
+$[27,30]$, $[30,33]$ or $[60,63]$
+
+This gives a total of $9$ seconds out of $63$
+
+$\frac{9}{63} = \frac{1}{7} \Rightarrow \mathrm{(D)}$

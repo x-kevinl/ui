@@ -1,0 +1,4 @@
+==Problem==
+How many of the first ten numbers of the sequence $121, 11211, 1112111, \ldots$ are prime numbers?
+
+$\textbf{(A) } 0 \qquad \textbf{(B) }1 \qquad \textbf{(C) }2 \qquad \textbf{(D) }3 \qquad \textbf{(E) }4$

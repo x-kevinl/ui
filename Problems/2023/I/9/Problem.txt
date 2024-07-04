@@ -1,0 +1,2 @@
+==Problem==
+Find the number of cubic polynomials <math>p(x) = x^3 + ax^2 + bx + c,</math> where <math>a, b,</math> and <math>c</math> are integers in <math>\{-20,-19,-18,\ldots,18,19,20\},</math> such that there is a unique integer <math>m \not= 2</math> with <math>p(m) = p(2).</math>

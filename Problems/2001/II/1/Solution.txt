@@ -1,0 +1,11 @@
+== Solution ==
+The two-digit perfect squares are <math>16, 25, 36, 49, 64, 81</math>. We try making a sequence starting with each one:
+
+*<math>16 - 64 - 49</math>. This terminates since none of them end in a <math>9</math>, giving us <math>1649</math>.
+*<math>25</math>.
+*<math>36 - 64 - 49</math>, <math>3649</math>.
+*<math>49</math>.
+*<math>64 - 49</math>, <math>649</math>.
+*<math>81 - 16 - 64 - 49</math>, <math>81649</math>.
+
+The largest is <math>81649</math>, so our answer is <math>\boxed{816}</math>.

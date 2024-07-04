@@ -1,0 +1,42 @@
+==Problem==
+
+Car M traveled at a constant speed for a given time. This is shown by the dashed line. Car N traveled at twice the speed for the same distance. If Car M and Car N's speed and time are shown as solid line, which graph illustrates this?
+
+<asy>
+unitsize(12);
+
+draw((0,9)--(0,0)--(9,0));
+label("time",(4.5,0),S);
+label("s",(0,7),W); label("p",(0,6),W); label("e",(0,5),W); label("e",(0,4),W); label("d",(0,3),W);
+label("(A)",(-1,9),NW);
+draw((0,4)--(4,4),dashed); label("M",(4,4),E);
+draw((0,8)--(4,8),linewidth(1)); label("N",(4,8),E);
+
+draw((15,9)--(15,0)--(24,0));
+label("time",(19.5,0),S);
+label("s",(15,7),W); label("p",(15,6),W); label("e",(15,5),W); label("e",(15,4),W); label("d",(15,3),W);
+label("(B)",(14,9),NW);
+draw((15,4)--(19,4),dashed); label("M",(19,4),E);
+draw((15,8)--(23,8),linewidth(1)); label("N",(23,8),E);
+
+draw((30,9)--(30,0)--(39,0));
+label("time",(34.5,0),S);
+label("s",(30,7),W); label("p",(30,6),W); label("e",(30,5),W); label("e",(30,4),W); label("d",(30,3),W);
+label("(C)",(29,9),NW);
+draw((30,4)--(34,4),dashed); label("M",(34,4),E);
+draw((30,2)--(34,2),linewidth(1)); label("N",(34,2),E);
+
+draw((0,-6)--(0,-15)--(9,-15));
+label("time",(4.5,-15),S);
+label("s",(0,-8),W); label("p",(0,-9),W); label("e",(0,-10),W); label("e",(0,-11),W); label("d",(0,-12),W);
+label("(D)",(-1,-6),NW);
+draw((0,-11)--(4,-11),dashed); label("M",(4,-11),E);
+draw((0,-7)--(2,-7),linewidth(1)); label("N",(2,-7),E);
+
+draw((15,-6)--(15,-15)--(24,-15));
+label("time",(19.5,-15),S);
+label("s",(15,-8),W); label("p",(15,-9),W); label("e",(15,-10),W); label("e",(15,-11),W); label("d",(15,-12),W);
+label("(E)",(14,-6),NW);
+draw((15,-11)--(19,-11),dashed); label("M",(19,-11),E);
+draw((15,-13)--(23,-13),linewidth(1)); label("N",(23,-13),E);
+</asy>

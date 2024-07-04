@@ -1,0 +1,2 @@
+==Solution 1==
+This question is simply asking how many of the listed quadrilaterals are cyclic (since the point equidistant from all four vertices would be the center of the circumscribed circle). A square, a rectangle, and an isosceles trapezoid (that isn't a parallelogram) are all cyclic, and the other two are not. Thus, the answer is $\boxed{\textbf{(C) } 3}$.

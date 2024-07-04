@@ -1,0 +1,50 @@
+==Solution 1 (Pythagorean Theorem)==
+
+<asy>
+size(8cm);
+pair O = (0, 0), A = (0, 3), B = (0, 9), R = (19, 3), L = (17, 9);
+draw(O--A--B);
+draw(O--R);
+draw(O--L);
+label("$A$", A, NE);
+label("$B$", B, N);
+label("$R$", R, NE);
+label("$L$", L, NE);
+label("$O$", O, S);
+label("$d$", O--A, W);
+label("$2d$", A--B, W);
+label("$r$", O--R, S);
+label("$r$", O--L, NW);
+dot(O);
+dot(A);
+dot(B);
+dot(R);
+dot(L);
+
+draw(circle((0, 0), sqrt(370)));
+draw(-R -- (R.x, -R.y));
+draw((-R.x, R.y) -- R);
+draw((-L.x, L.y) -- L);
+</asy>
+
+
+
+Since two parallel chords have the same length ($38$), they must be equidistant from the center of the circle. Let the perpendicular distance of each chord from the center of the circle be $d$. Thus, the distance from the center of the circle to the chord of length $34$ is 
+
+$$2d + d = 3d$$
+
+and the distance between each of the chords is just $2d$. Let the radius of the circle be $r$. Drawing radii to the points where the lines intersect the circle, we create two different right triangles: 
+
+- One with base $\frac{38}{2}= 19$, height $d$, and hypotenuse $r$  ($\triangle RAO$ on the diagram)
+
+- Another with base $\frac{34}{2} = 17$, height $3d$, and hypotenuse $r$  ($\triangle LBO$ on the diagram)
+
+By the Pythagorean theorem, we can create the following system of equations:
+
+$$19^2 + d^2 = r^2$$
+
+$$17^2 + (2d + d)^2 = r^2$$
+
+Solving, we find $d = 3$, so $2d = \boxed{\textbf{(B)}\ 6}$.
+
+-Solution by Joeya, diagram by Jamess2022(burntTacos), and minor edits by lpieleanu.

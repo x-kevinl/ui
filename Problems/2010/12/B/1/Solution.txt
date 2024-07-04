@@ -1,0 +1,4 @@
+== Solution ==
+The total number of minutes in her $9$-hour work day is $9 \times 60 = 540.$
+The total amount of time spend in meetings in minutes is $45 + 45 \times 2 = 135.$
+The answer is then $\frac{135}{540}$ $= \boxed{25\%}$ or  $\boxed{(C)}$

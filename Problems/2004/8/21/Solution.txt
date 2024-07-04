@@ -1,0 +1,4 @@
+==Solution==
+An even number comes from multiplying an even and even, even and odd, or odd and even. Since an odd number only comes from multiplying an odd and odd, there are less cases and it would be easier to find the probability of spinning two odd numbers from $1$. Multiply the independent probabilities of each spinner getting an odd number together and subtract it from $1$.
+
+$$1-\frac24 \cdot \frac23 = 1- \frac13 = \boxed{\textbf{(D)}\ \frac23}$$

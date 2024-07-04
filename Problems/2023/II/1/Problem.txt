@@ -1,0 +1,3 @@
+==Problem==
+
+The numbers of apples growing on each of six apple trees form an arithmetic sequence where the greatest number of apples growing on any of the six trees is double the least number of apples growing on any of the six trees. The total number of apples growing on all six trees is <math>990.</math> Find the greatest number of apples growing on any of the six trees.

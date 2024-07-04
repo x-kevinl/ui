@@ -1,0 +1,2 @@
+==Solution==
+If each man danced with $3$ women, then there will be a total of $3\times12=36$ pairs of men and women.  However, each woman only danced with $2$ men, so there must have been $\frac{36}2 \Longrightarrow \boxed{\mathrm{(D)}\ 18}$ women.

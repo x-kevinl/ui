@@ -1,0 +1,7 @@
+==Solution 1==
+
+Using the fact that $n! = n\cdot (n-1)!$, we can write:
+
+$$\begin{align} A&=98! \cdot (99\cdot 98!) = 99 \cdot (98!)^2 = 11\cdot3^2\cdot(98!)^2 \\ B&=100 \cdot 99 \cdot (98!)^2 = 11\cdot10^2\cdot3^2\cdot( 98!)^2 \\ C&=100\cdot (99!)^2 = 10^2\cdot (99!)^2\\ D&=101\cdot 100\cdot (99!)^2 = 101 \cdot 10^2 \cdot (99!)^2\\ E& =101\cdot (100!)^2 \end{align}$$
+
+We see that $\boxed{\mathrm{(C) \ } 99! \cdot 100!}$ is a square, and because $11$, and $101$ are primes, none of the other four choices are squares.

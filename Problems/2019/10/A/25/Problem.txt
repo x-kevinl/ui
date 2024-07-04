@@ -1,0 +1,5 @@
+==Problem==
+
+For how many integers $n$ between $1$ and $50$, inclusive, is $$\frac{(n^2-1)!}{(n!)^n}$$ an integer? (Recall that $0! = 1$.)
+
+$\textbf{(A) } 31 \qquad \textbf{(B) } 32 \qquad \textbf{(C) } 33 \qquad \textbf{(D) } 34 \qquad \textbf{(E) } 35$

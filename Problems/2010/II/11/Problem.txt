@@ -1,0 +1,8 @@
+== Problem ==
+Define a <i>T-grid</i> to be a <math>3\times3</math> matrix which satisfies the following two properties:
+
+<OL>
+<LI>Exactly five of the entries are <math>1</math>'s, and the remaining four entries are <math>0</math>'s.</LI>
+<LI>Among the eight rows, columns, and long diagonals (the long diagonals are <math>\{a_{13},a_{22},a_{31}\}</math> and <math>\{a_{11},a_{22},a_{33}\}</math>, no more than one of the eight has all three entries equal.</LI></OL>
+
+Find the number of distinct <i>T-grids</i>.

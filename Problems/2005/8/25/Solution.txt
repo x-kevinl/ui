@@ -1,0 +1,24 @@
+== Solutions ==
+=== Solution 1 ===
+Let the region within the circle and square be $a$. In other words, it is the area inside the circle $\textbf{and}$ the square.  Let $r$ be the radius. We know that the area of the circle minus $a$ is equal to the area of the square, minus $a$ . 
+
+We get:
+
+$\pi r^2 -a=4-a$
+
+$r^2=\frac{4}{\pi}$
+
+$r=\frac{2}{\sqrt{\pi}}$
+
+So the answer is $\boxed{\textbf{(A)}\ \frac{2}{\sqrt{\pi}}}$.
+
+=== Solution 2 ===
+We realize that since the areas of the regions outside of the circle and the square are equal to each other, the area of the circle must be equal to the area of the square.
+
+$\pi r^2=4$
+
+$r^2=\frac{4}{\pi}$
+
+$r=\frac{2}{\sqrt{\pi}}$
+
+So the answer is $\boxed{\textbf{(A)}\ \frac{2}{\sqrt{\pi}}}$.

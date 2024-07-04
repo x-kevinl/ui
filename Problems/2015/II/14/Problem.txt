@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>x</math> and <math>y</math> be real numbers satisfying <math>x^4y^5+y^4x^5=810</math> and <math>x^3y^6+y^3x^6=945</math>. Evaluate <math>2x^3+(xy)^3+2y^3</math>.

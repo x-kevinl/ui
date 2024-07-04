@@ -1,0 +1,4 @@
+==Problem==
+Luka is making lemonade to sell at a school fundraiser. His recipe requires $4$ times as much water as sugar and twice as much sugar as lemon juice. He uses $3$ cups of lemon juice. How many cups of water does he need?
+
+$\textbf{(A) }6 \qquad \textbf{(B) }8 \qquad \textbf{(C) }12 \qquad \textbf{(D) }18 \qquad \textbf{(E) }24$

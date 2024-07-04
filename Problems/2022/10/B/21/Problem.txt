@@ -1,0 +1,8 @@
+==Problem==
+
+Let $P(x)$ be a polynomial with rational coefficients such that when $P(x)$ is divided by the polynomial
+$x^2 + x + 1$, the remainder is $x+2$, and when $P(x)$ is divided by the polynomial $x^2+1$, the remainder
+is $2x+1$. There is a unique polynomial of least degree with these two properties. What is the sum of
+the squares of the coefficients of that polynomial?
+
+$\textbf{(A)}\ 10 \qquad\textbf{(B)}\ 13 \qquad\textbf{(C)}\ 19 \qquad\textbf{(D)}\ 20 \qquad\textbf{(E)}\ 23$

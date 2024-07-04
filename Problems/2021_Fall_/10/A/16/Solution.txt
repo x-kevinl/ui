@@ -1,0 +1,5 @@
+==Solution 1 (Observations)==
+Note that $$f(1-x)=|\lfloor 1-x\rfloor|-|\lfloor x\rfloor|=-f(x),$$
+so $f\left(\frac12+x\right)=-f\left(\frac12-x\right)$.
+
+This means that the graph is symmetric about $\boxed{\textbf{(D) }\text{ the point }\left(\dfrac12, 0\right)}$.

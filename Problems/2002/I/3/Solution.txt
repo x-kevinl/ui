@@ -1,0 +1,6 @@
+== Solution ==
+Let Jane's age <math>n</math> years from now be <math>10a+b</math>, and let Dick's age be <math>10b+a</math>. If <math>10b+a>10a+b</math>, then <math>b>a</math>. The possible pairs of <math>a,b</math> are:
+
+<center><math>(1,2), (1,3), (2,3), (1,4), (2,4), (3,4), \dots , (8,9)</math></center>
+
+That makes 36. But <math>10a+b>25</math>, so we subtract all the extraneous pairs: <math>(1,2), (1,3), (2,3), (1,4), (2,4), (1,5), (2,5), (1,6), (1,7), (1,8),</math> and <math>(1,9)</math>. <math>36-11=\boxed{025}</math>

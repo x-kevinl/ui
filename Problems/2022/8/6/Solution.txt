@@ -1,0 +1,11 @@
+==Solution 1==
+
+Let the smallest number be $x.$ It follows that the largest number is $4x.$
+
+Since $x,15,$ and $4x$ are equally spaced on a number line, we have
+$$\begin{align*}
+4x-15 &= 15-x \\
+5x &= 30 \\
+x &= \boxed{\textbf{(C) } 6}.
+\end{align*}$$
+~MRENTHUSIASM

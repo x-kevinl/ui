@@ -1,0 +1,8 @@
+== Solution 1 ==
+Let <math>n</math> be the number of car lengths that separates each car (it is easy to see that this should be the same between each pair of consecutive cars.) Then their speed is at most <math>15n</math>. Let a ''unit'' be the distance between the cars (front to front). Then the length of each unit is <math>4(n + 1)</math>. To maximize, in a unit, the CAR comes first, THEN the empty space. So at time zero, the car is right at the eye.
+
+Hence, we count the number of units that pass the eye in an hour: <math>\frac {15,000n\frac{\text{meters}}{\text{hour}}}{4(n + 1)\frac{\text{meters}}{\text{unit}}} = \frac {15,000n}{4(n + 1)}\frac{\text{units}}{\text{hour}}</math>. We wish to maximize this.
+
+Observe that as <math>n</math> gets larger, the <math> + 1</math> gets less and less significant, so we take the limit as <math>n</math> approaches infinity
+<center><math>\lim_{n\rightarrow \infty}\frac {15,000n}{4(n + 1)} = \lim_{n\rightarrow \infty}\frac {15,000}{4} = 3750</math></center>
+Now, as the speeds are clearly finite, we can never actually reach <math>3750</math> full UNITs. However, we only need to find the number of CARS. We can increase their speed so that the camera stops (one hour goes by) after the car part of the <math>3750</math>th unit has passed, but not all of the space behind it. Hence, <math>3750</math> cars is possible, and the answer is <math>\boxed {375}</math>.

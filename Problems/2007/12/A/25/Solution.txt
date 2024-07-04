@@ -1,0 +1,21 @@
+== Solution 1 ==
+Let $S_{n}$ denote the number of spacy subsets of $\{ 1, 2, ... n \}$.  We have $S_{0} = 1, S_{1} = 2, S_{2} = 3$.  
+
+The spacy subsets of $S_{n + 1}$ can be divided into two groups:
+*$A = $ those not containing $n + 1$.  Clearly $|A|=S_{n}$. 
+*$B = $ those containing $n + 1$. We have $|B|=S_{n - 2}$, since removing $n + 1$ from any set in $B$ produces a spacy set with all elements at most equal to $n - 2,$ and each such spacy set can be constructed from exactly one spacy set in $B$.
+Hence,
+
+<div style="text-align:center;">$S_{n + 1} = S_{n} + S_{n - 2}$</div>
+
+From this [[recursion]], we find that
+
+{| class="wikitable" border="1px solid"
+|-
+| $S(0)$ || $S(1)$ || $S(2)$ || $S(3)$ || $S(4)$ || $S(5)$ || $S(6)$ || $S(7)$ || $S(8)$ || $S(9)$ || $S(10)$ || $S(11)$ || $S(12)$ ||
+
+
+|-
+| 1 || 2 || 3 || 4 || 6 || 9 || 13 || 19 || 28 || 41 || 60 || 88 || 129
+|}
+And so the answer is $\boxed{\textbf{(E)}129}$.

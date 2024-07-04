@@ -1,0 +1,9 @@
+==Solution 1==
+
+Multiples of $5$ will always end in $0$ or $5$, and since the numbers have to be a three-digit numbers (otherwise it would be a two-digit number), it cannot start with 0, narrowing our choices to 3-digit numbers starting with $5$. Since the numbers must be divisible by 7, all possibilities have to be in the range from $7 \cdot 72$ to $7 \cdot 85$ inclusive. 
+
+$85 - 72 + 1 = 14$. $\boxed{\textbf{(B) } 14}$.
+
+(Add 1 to include 72)
+
+~walmartbrian ~Shontai ~andliu766 ~andyluo ~ESAOPS

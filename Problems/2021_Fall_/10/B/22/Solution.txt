@@ -1,0 +1,9 @@
+== Solution 1 ==
+To get from $ S_n $ to $ S_{n+1} $, we add $ 1(n+1)+2(n+1)+\cdots +n(n+1)=(1+2+\cdots +n)(n+1)=\frac{n(n+1)^2}{2}$.
+
+Now, we can look at the different values of $ n $ mod $ 3 $. For $ n\equiv 0\pmod{3} $ and $ n\equiv 2\pmod{3} $, then we have $ \frac{n(n+1)^2}{2}\equiv 0\pmod{3} $. However, for $ n\equiv 1\pmod{3} $, we have
+$$\frac{1\cdot {2}^2}{2}\equiv 2\pmod{3}.$$
+
+Clearly, $ S_2\equiv 2\pmod{3}. $ Using the above result, we have $ S_5\equiv 1\pmod{3} $, and $ S_8 $, $ S_9 $, and $ S_{10} $ are all divisible by $ 3 $. After $ 3\cdot 3=9 $, we have $ S_{17} $, $ S_{18} $, and $ S_{19} $ all divisible by $ 3 $, as well as $ S_{26}, S_{27}, S_{28} $, and $ S_{35} $. Thus, our answer is $ 8+9+10+17+18+19+26+27+28+35=27+54+81+35=162+35=\boxed{\mathrm{(B)}\ 197} .$ -BorealBear
+
+-minor edit by [[User: Yiyj1|Yiyj1]]

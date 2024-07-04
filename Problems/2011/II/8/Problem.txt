@@ -1,0 +1,3 @@
+== Problem ==
+
+Let <math>z_1,z_2,z_3,\dots,z_{12}</math> be the 12 zeroes of the polynomial <math>z^{12}-2^{36}</math>. For each <math>j</math>, let <math>w_j</math> be one of <math>z_j</math> or <math>i z_j</math>. Then the maximum possible value of the real part of <math>\sum_{j=1}^{12} w_j</math> can be written as <math>m+\sqrt{n}</math> where <math>m</math> and <math>n</math> are positive integers. Find <math>m+n</math>.

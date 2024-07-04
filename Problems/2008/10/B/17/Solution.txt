@@ -1,0 +1,2 @@
+==Solution 1==
+Letting Y stand for a voter who approved of the work, and N stand for a person who didn't approve of the work, the pollster could select responses in $3$ different ways: $\text{YNN, NYN, and NNY}$. The probability of each of these is $(0.7)(0.3)^2=0.063$. Thus, the answer is $3\cdot0.063=\boxed{\mathrm{(B)}\ {{{0.189}}}}$

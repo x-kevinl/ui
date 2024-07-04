@@ -1,0 +1,23 @@
+==Problem==
+
+A chess king is said to attack all the squares one step away from it, horizontally, vertically, or diagonally. For instance, a king on the center square of a $3$ x $3$ grid attacks all $8$ other squares, as shown below. Suppose a white king and a black king are placed on different squares of a $3$ x $3$ grid so that they do not attack each other (in other words, not right next to each other). In how many ways can this be done?
+
+<asy>
+/* AMC8 P17 2024, revised by Teacher David */
+unitsize(29pt);
+import math;
+add(grid(3,3));
+
+pair [] a = {(0.5,0.5), (0.5, 1.5), (0.5, 2.5), (1.5, 2.5), (2.5,2.5), (2.5,1.5), (2.5,0.5), (1.5,0.5)};
+
+for (int i=0; i<a.length; ++i) {
+    pair x = (1.5,1.5) + 0.4*dir(225-45*i);
+    draw(x -- a[i], arrow=EndArrow());
+}
+
+label("$K$", (1.5,1.5));
+</asy>
+
+$\textbf{(A)}\ 20 \qquad \textbf{(B)}\ 24 \qquad \textbf{(C)}\ 27 \qquad \textbf{(D)}\ 28 \qquad \textbf{(E)}\ 32$
+
+~Diagram by Andrei.martynau

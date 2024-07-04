@@ -1,0 +1,4 @@
+==Solution 1==
+By PIE, <math>|A|+|B|-|A \cap B| = |A \cup B|</math>. Substituting into the equation and factoring, we get that <math>(|A| - |A \cap B|)(|B| - |A \cap B|) = 0</math>, so therefore <math>A \subseteq B</math> or <math>B \subseteq A</math>. WLOG <math>A\subseteq B</math>, then for each element there are <math>3</math> possibilities, either it is in both <math>A</math> and <math>B</math>, it is in <math>B</math> but not <math>A</math>, or it is in neither <math>A</math> nor <math>B</math>. This gives us <math>3^{5}</math> possibilities, and we multiply by <math>2</math> since it could have also been the other way around. Now we need to subtract the overlaps where <math>A=B</math>, and this case has <math>2^{5}=32</math> ways that could happen. It is <math>32</math> because each number could be in the subset or it could not be in the subset. So the final answer is <math>2\cdot 3^5 - 2^5 = \boxed{454}</math>.
+
+~math31415926535

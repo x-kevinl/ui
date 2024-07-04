@@ -1,0 +1,8 @@
+==Solution==
+There are $5$ days from May 1 to May 5. The number of bananas he eats each day is an arithmetic sequence. He eats $n$ bananas on May 5, and $n-4(6)=n-24$ bananas on May 1. The sum of this arithmetic sequence is equal to $100$.
+
+$$\begin{align*}
+\frac{n+n-24}{2} \cdot 5 &= 100\\
+n-12&=20\\
+n&=\boxed{\textbf{(D)}\ 32}
+\end{align*}$$

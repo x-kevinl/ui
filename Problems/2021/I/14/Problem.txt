@@ -1,0 +1,2 @@
+==Problem==
+For any positive integer <math>a, \sigma(a)</math> denotes the sum of the positive integer divisors of <math>a</math>. Let <math>n</math> be the least positive integer such that <math>\sigma(a^n)-1</math> is divisible by <math>2021</math> for all positive integers <math>a</math>. Find the sum of the prime factors in the prime factorization of <math>n</math>.

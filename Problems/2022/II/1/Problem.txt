@@ -1,0 +1,3 @@
+==Problem==
+
+Adults made up <math>\frac5{12}</math> of the crowd of people at a concert. After a bus carrying <math>50</math> more people arrived, adults made up <math>\frac{11}{25}</math> of the people at the concert. Find the minimum number of adults who could have been at the concert after the bus arrived.

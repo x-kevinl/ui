@@ -1,0 +1,3 @@
+==Problem==
+
+A plane contains <math>40</math> lines, no <math>2</math> of which are parallel. Suppose that there are <math>3</math> points where exactly <math>3</math> lines intersect, <math>4</math> points where exactly <math>4</math> lines intersect, <math>5</math> points where exactly <math>5</math> lines intersect, <math>6</math> points where exactly <math>6</math> lines intersect, and no points where more than <math>6</math> lines intersect. Find the number of points where exactly <math>2</math> lines intersect.

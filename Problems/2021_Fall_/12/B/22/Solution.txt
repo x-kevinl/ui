@@ -1,0 +1,6 @@
+==Diagram==
+<center><asy>
+defaultpen(fontsize(10)+0.8); size(150);
+pair A,B,C,M,Ic,Ib,O,P;
+C=MP("C",origin,down+left); A=MP("A",8*right,down+right); B=MP("B",6*up,2*up); draw(A--B--C--A); draw(B--(B+A), gray+0.25); M=MP("M",(A+B)/2,down+left); O=MP("O",extension(B,B+A,M,M+(B-M)*dir(-90)),down); P=MP("P",extension(A,B+A,M,M+(B-M)*dir(-90)),up); draw(M--P^^A--P, gray+0.25); label("$\theta$", A, 7*dir(162)); label("$\theta$", B, 7*dir(-20)); label("$\theta$", P, 7*dir(-110)); label("$6$", B--C, left); label("$8$", A--C, down); label("$D$", A+B, right);
+</asy></center>

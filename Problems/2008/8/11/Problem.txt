@@ -1,0 +1,8 @@
+==Problem==
+Each of the $39$ students in the eighth grade at Lincoln Middle School has one dog or one cat or both a dog and a cat. Twenty students have a dog and $26$ students have a cat. How many students have both a dog and a cat?
+
+$\textbf{(A)}\ 7\qquad
+\textbf{(B)}\ 13\qquad
+\textbf{(C)}\ 19\qquad
+\textbf{(D)}\ 39\qquad
+\textbf{(E)}\ 46$

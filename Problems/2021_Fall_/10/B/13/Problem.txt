@@ -1,0 +1,13 @@
+==Problem==
+A square with side length $3$ is inscribed in an isosceles triangle with one side of the square along the base of the triangle. A square with side length $2$ has two vertices on the other square and the other two on sides of the triangle, as shown. What is the area of the triangle?
+
+<asy>
+//diagram by kante314 
+draw((0,0)--(8,0)--(4,8)--cycle, linewidth(1.5)); 
+draw((2,0)--(2,4)--(6,4)--(6,0)--cycle, linewidth(1.5)); 
+draw((3,4)--(3,6)--(5,6)--(5,4)--cycle, linewidth(1.5));
+</asy>
+
+
+
+$(\textbf{A})\: 19\frac14\qquad(\textbf{B}) \: 20\frac14\qquad(\textbf{C}) \: 21 \frac34\qquad(\textbf{D}) \: 22\frac12\qquad(\textbf{E}) \: 23\frac34$

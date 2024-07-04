@@ -1,0 +1,8 @@
+==Solution 1==
+Note that he drives at $50$ miles per hour after the first hour and continues doing so until he arrives.
+
+Let $d$ be the distance still needed to travel after $1$ hour. We have that $\dfrac{d}{50}+1.5=\dfrac{d}{35}$, where the $1.5$ comes from $1$ hour late decreased to $0.5$ hours early.
+
+Simplifying gives $7d+525=10d$, or $d=175$.
+
+Now, we must add an extra $35$ miles traveled in the first hour, giving a total of $\boxed{\textbf{(C) } 210}$ miles.

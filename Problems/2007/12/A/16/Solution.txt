@@ -1,0 +1,19 @@
+== Solution 1==
+We can find the number of increasing [[arithmetic sequence]]s of length 3 possible from 0 to 9, and then find all the possible permutations of these sequences.
+
+{| class = "wikitable" border="1px solid"
+|-
+| Common difference || Sequences possible || Number of sequences
+|-
+| 1 || $012, \ldots, 789$ || 8
+|-
+| 2 || $024, \ldots, 579$ || 6
+|-
+| 3 || $036, \ldots, 369$ || 4
+|-
+| 4 || $048, \ldots, 159$ || 2
+|}
+
+This gives us a total of $2 + 4 + 6 + 8 = 20$ sequences. There are $3! = 6$ to permute these, for a total of $120$.
+
+However, we note that the conditions of the problem require three-digit numbers, and hence our numbers cannot start with zero. There are $2! \cdot 4 = 8$ numbers which start with zero, so our answer is $120 - 8 = 112 \Longrightarrow \mathrm{(C)}$.

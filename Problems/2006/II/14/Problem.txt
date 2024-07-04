@@ -1,0 +1,2 @@
+== Problem ==
+Let <math> S_n </math> be the sum of the [[reciprocal]]s of the non-zero digits of the integers from <math>1</math> to <math> 10^n </math> inclusive. Find the smallest positive integer <math>n</math> for which <math> S_n </math> is an integer.

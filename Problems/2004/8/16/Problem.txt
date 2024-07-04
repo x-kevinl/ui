@@ -1,0 +1,4 @@
+==Problem==
+Two $600$ mL pitchers contain orange juice. One pitcher is $1/3$ full and the other pitcher is $2/5$ full. Water is added to fill each pitcher completely, then both pitchers are poured into one large container. What fraction of the mixture in the large container is orange juice?
+
+$\textbf{(A)}\ \frac18 \qquad \textbf{(B)}\ \frac{3}{16} \qquad \textbf{(C)}\ \frac{11}{30} \qquad \textbf{(D)}\ \frac{11}{19}\qquad \textbf{(E)}\ \frac{11}{15}$

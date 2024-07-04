@@ -1,0 +1,82 @@
+==Solution 1==
+
+Denote <math>a_n = \sec^n A + \tan^n A</math>.
+For any <math>k</math>, we have
+<cmath>
+\begin{align*}
+a_n & = \sec^n A + \tan^n A \\
+& = \left( \sec^{n-k} A + \tan^{n-k} A \right) \left( \sec^k A + \tan^k A \right)
+- \sec^{n-k} A \tan^k A - \tan^{n-k} A \sec^k A \\
+& = a_{n-k} a_k - 2^k \sec^{n-k} A \cos^k A - 2^k \tan^{n-k} A \cot^k A \\
+& = a_{n-k} a_k - 2^k a_{n-2k} .
+\end{align*}
+</cmath>
+
+Next, we compute the first several terms of <math>a_n</math>.
+
+By solving equation <math>\tan A = 2 \cos A</math>, we get <math>\cos A = \frac{\sqrt{2 \sqrt{17} - 2}}{4}</math>.
+Thus, <math>a_0 = 2</math>, <math>a_1 = \sqrt{\sqrt{17} + 4}</math>, <math>a_2 = \sqrt{17}</math>, <math>a_3 = \sqrt{\sqrt{17} + 4} \left( \sqrt{17} - 2 \right)</math>, <math>a_4 = 9</math>.
+
+In the rest of analysis, we set <math>k = 4</math>.
+Thus,
+<cmath>
+\begin{align*}
+a_n & = a_{n-4} a_4 - 2^4 a_{n-8}  \\
+& = 9 a_{n-4} - 16 a_{n-8} .
+\end{align*}
+</cmath>
+
+Thus, to get <math>a_n</math> an integer, we have <math>4 | n</math>.
+In the rest of analysis, we only consider such <math>n</math>. Denote <math>n = 4 m</math> and <math>b_m = a_{4n}</math>.
+Thus,
+<cmath>
+\begin{align*}
+b_m & = 9 b_{m-1} - 16 b_{m-2}
+\end{align*}
+</cmath>
+with initial conditions <math>b_0 = 2</math>, <math>b_1 = 9</math>.
+
+To get the units digit of <math>b_m</math> to be 9, we have
+<cmath>
+\begin{align*}
+b_m \equiv -1 & \pmod{2} \\
+b_m \equiv -1 & \pmod{5}
+\end{align*}
+</cmath>
+
+Modulo 2, for <math>m \geq 2</math>, we have
+<cmath>
+\begin{align*}
+b_m & \equiv 9 b_{m-1} - 16 b_{m-2} \\
+& \equiv b_{m-1} .
+\end{align*}
+</cmath>
+
+Because <math>b_1 \equiv -1 \pmod{2}</math>, we always have <math>b_m \equiv -1 \pmod{2}</math> for all <math>m \geq 2</math>.
+
+Modulo 5, for <math>m \geq 5</math>, we have
+<cmath>
+\begin{align*}
+b_m & \equiv 9 b_{m-1} - 16 b_{m-2} \\
+& \equiv - b_{m-1} - b_{m-2} .
+\end{align*}
+</cmath>
+
+We have <math>b_0 \equiv 2 \pmod{5}</math>, <math>b_1 \equiv -1 \pmod{5}</math>,
+<math>b_2 \equiv -1 \pmod{5}</math>, <math>b_3 \equiv 2 \pmod{5}</math>, <math>b_4 \equiv -1 \pmod{5}</math>, <math>b_5 \equiv -1 \pmod{5}</math>, <math>b_6 \equiv 2 \pmod{5}</math>.
+Therefore, the congruent values modulo 5 is cyclic with period 3.
+To get <math>b_m \equiv -1 \pmod{5}</math>, we have <math>3 \nmid m \pmod{3}</math>.
+
+From the above analysis with modulus 2 and modulus 5, we require <math>3 \nmid m \pmod{3}</math>.
+
+For <math>n \leq 1000</math>, because <math>n = 4m</math>, we only need to count feasible <math>m</math> with <math>m \leq 250</math>.
+The number of feasible <math>m</math> is
+<cmath>
+\begin{align*}
+250 - \left\lfloor \frac{250}{3} \right\rfloor
+& = 250 - 83 \\
+& = \boxed{\textbf{(167) }} .
+\end{align*}
+</cmath>
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)

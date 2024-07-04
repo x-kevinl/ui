@@ -1,0 +1,16 @@
+==Solution 1==
+
+Since $\angle ABO=90^\circ$, and $\angle AOB=30^\circ$, we know that this triangle is one of the [[Special Right Triangles]].
+
+We also know that $B$ is $(5,0)$, so $B$ lies on the x-axis. Therefore, $OB = 5$.
+
+Then, since we know that this is a Special Right Triangle ($30$-$60$-$90$ triangle), we can use the proportion $$\frac{5}{\sqrt 3}=\frac{AB}{1}$$ to find $AB$.
+
+We find that $$AB=\frac{5\sqrt 3}{3}$$
+
+That means the coordinates of $A$ are $\left(5,\frac{5\sqrt 3}3\right)$.
+
+Rotate this triangle $90^\circ$ counterclockwise around $O$, and you will find that $A$ will end up in the second quadrant with the coordinates
+$\boxed{ \left( -\frac{5\sqrt 3}3, 5\right)}$.
+
+Note: To better visualize this, one can sketch a diagram.

@@ -1,0 +1,9 @@
+== Solution ==
+Let $x$ represent the amount of candies Casper had at the beginning.
+
+$$\begin{align*}
+\frac{2}{3} \left(\frac{2}{3} x - 2\right) - 4 - 8 &= 0\\
+\frac{2}{3} x - 2 &= 18\\
+\frac{2}{3} x &= 20\\
+x &= \boxed{\textbf{(A)} 30}
+\end{align*}$$

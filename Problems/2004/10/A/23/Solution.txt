@@ -1,0 +1,59 @@
+== Solution 1 ==
+
+<asy>
+import graph;
+size(400);
+defaultpen(fontsize(10));
+pair OA=(-1,0),OB=(2/3,8/9),OC=(2/3,-8/9),OD=(0,0),E=(2/3,0);
+real t = 2.5;
+pair OA1=(-2+2*t,0),OB1=(4/3+2*t,16/9),OC1=(4/3+2*t,-16/9),OD1=(0+2*t,0),E1=(4/3+2*t,0);
+draw(Circle(OD,2));
+draw(Circle(OA,1));
+draw(Circle(OB,8/9));
+draw(Circle(OC,8/9));
+draw(OA--OB--OC--cycle);
+draw(OD--OB--OB+(OB-OD)*4/5);
+draw(OA--E);
+label("$O_{A}$",OA,(-1,0));
+label("$O_{B}$",OB,(-1,1));
+label("$O_{C}$",OC,(-1,-1));
+label("$O_{D}$",OD,(-1,-1));
+label("$E$",E,(0.5,-1));
+label("$r$",OB+(OB-OD)*2/5,(-0.5,1));
+label("$r$",(1*OA+3*OB)/4,(-0.5,1));
+dot(OA^^OB^^OC^^OD^^E);
+draw(OA1--OB1--OC1--cycle);
+draw(OD1--OB1);
+draw(OA1--E1);
+label("$O_{A}$",OA1,(-1,0));
+label("$O_{B}$",OB1,(1,1));
+label("$O_{C}$",OC1,(1,-1));
+label("$O_{D}$",OD1,(0,-1));
+label("$E$",E1,(1,0));
+label("$1+r$",(OA1+OB1)/2,(-0.5,1));
+label("$r$",(E1+OB1)/2,(1,0));
+label("$r$",(E1+OC1)/2,(1,0));
+label("$2-r$",(OB1+OD1)/2,(-1,0));
+label("$1$",(OA1+OD1)/2,(0,-1));
+label("$x$",(E1+OD1)/2,(0,-1));
+dot(OA1^^OB1^^OC1^^OD1^^E1);
+</asy>
+
+Let $O_{i}$ be the center of circle $i$ for all $i \in \{A,B,C,D\}$ and let $E$ be the tangent point of $B,C$. Since the radius of $D$ is the diameter of $A$, the radius of $D$ is $2$. 
+
+
+Let the radius of $B,C$ be $r$ and let $O_{D}E = x$. If we connect $O_{A},O_{B},O_{C}$, we get an [[isosceles triangle]] with lengths $1 + r, 2r$. 
+
+Then right triangle $O_{D}O_{B}O_{E}$ has legs $r, x$ and [[hypotenuse]] $2-r$. Solving for $x$, we get $x^2 = (2-r)^2 - r^2 \Longrightarrow x = \sqrt{4-4r}$. 
+
+Also, right triangle $O_{A}O_{B}O_{E}$ has legs $r, 1+x$, and hypotenuse $1+r$. Solving, 
+
+$$\begin{eqnarray*}
+r^2 + (1+\sqrt{4-4r})^2 &=& (1+r)^2\\
+1+4-4r+2\sqrt{4-4r}&=& 2r + 1\\
+1-r &=& \left(\frac{6r-4}{4}\right)^2\\
+\frac{9}{4}r^2-2r&=& 0\\
+r &=& \frac 89 
+\end{eqnarray*}$$ 
+ 
+So the answer is $\boxed{\mathrm{(D)}\ \frac{8}{9}}$.

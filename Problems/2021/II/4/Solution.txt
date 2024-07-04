@@ -1,0 +1,15 @@
+==Solution 1 (Complex Conjugate Root Theorem and Vieta's Formulas)==
+By the Complex Conjugate Root Theorem, the imaginary roots for each of <math>x^3+ax+b</math> and <math>x^3+cx^2+d</math> are complex conjugates. Let <math>z=m+\sqrt{n}\cdot i</math> and <math>\overline{z}=m-\sqrt{n}\cdot i.</math> It follows that the roots of <math>x^3+ax+b</math> are <math>-20,z,\overline{z},</math> and the roots of <math>x^3+cx^2+d</math> are <math>-21,z,\overline{z}.</math>
+
+We know that
+<cmath>\begin{align*}
+z+\overline{z}&=2m, & (1) \\
+z\overline{z}&=m^2+n. & (2)
+\end{align*}</cmath>
+Applying Vieta's Formulas to <math>x^3+ax+b,</math> we have <math>-20+z+\overline{z}=0.</math> Substituting <math>(1)</math> into this equation, we get <math>m=10.</math>
+
+Applying Vieta's Formulas to <math>x^3+cx^2+d,</math> we have <math>-21z-21\overline{z}+z\overline{z}=0,</math> or <math>-21(z+\overline{z})+z\overline{z}=0.</math> Substituting <math>(1)</math> and <math>(2)</math> into this equation, we get <math>n=320.</math>
+
+Finally, the answer is <math>m+n=\boxed{330}.</math>
+
+~MRENTHUSIASM

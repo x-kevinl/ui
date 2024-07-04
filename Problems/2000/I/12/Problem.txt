@@ -1,0 +1,5 @@
+== Problem ==
+Given a [[function]] <math>f</math> for which
+<cmath>
+f(x) = f(398 - x) = f(2158 - x) = f(3214 - x)</cmath>
+holds for all real <math>x,</math> what is the largest number of different values that can appear in the list <math>f(0),f(1),f(2),\ldots,f(999)?</math>

@@ -1,0 +1,5 @@
+== Solution 1==
+
+We can let $\angle AEB$ be $4x$ and $\angle ABE$ be $5x$ because they are in the ratio $4 : 5$. When an [[inscribed angle]] contains the [[diameter]], the inscribed angle is a [[right angle]]. Therefore by triangle sum theorem, $4x+5x+90=180 \longrightarrow x=10$ and $\angle ABE = 50$.
+
+$\angle ABE = \angle BED$ because they are alternate interior angles and $\overline{AB} \parallel \overline{ED}$. Opposite angles in a [[cyclic]] quadrilateral are [[supplementary]], so $\angle BED + \angle BCD = 180$. Use substitution to get $\angle ABE + \angle BCD = 180 \longrightarrow 50 + \angle BCD = 180 \longrightarrow \angle BCD = \boxed{\textbf{(C)} 130}$

@@ -1,0 +1,5 @@
+==Problem==
+Mr. Lopez has a choice of two routes to get to work. Route A is $6$ miles long, and his average speed along this route is $30$ miles per hour. Route B is $5$ miles long, and his average speed along this route is $40$ miles per hour, except for a $\frac{1}{2}$-mile stretch in a school zone where his average speed is $20$ miles per hour. By how many minutes is Route B quicker than Route A?
+
+$\textbf{(A)}\ 2 \frac{3}{4}  \qquad\textbf{(B)}\  3 \frac{3}{4} \qquad\textbf{(C)}\  4 \frac{1}{2} \qquad\textbf{(D)}\
+ 5 \frac{1}{2} \qquad\textbf{(E)}\ 6 \frac{3}{4}$

@@ -1,0 +1,33 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(300);
+real r = 4*sqrt(114)/13;
+pair A, B, C, D, P, X, Y;
+A = origin;
+B = (2,r);
+C = (3/2*sqrt(2^2+r^2),0);
+D = A + 2*(C-B);
+P = B + 2*dir(C-B);
+X = intersectionpoint(B--D,A--P);
+Y = intersectionpoint(B--D,A--C);
+dot("$A$",A,1.5*W,linewidth(4));
+dot("$B$",B,1.5*N,linewidth(4));
+dot("$C$",C,1.5*E,linewidth(4));
+dot("$P$",P,1.5*dir(P),linewidth(4));
+dot("$D$",D,1.5*dir(D),linewidth(4));
+dot(X^^Y,linewidth(4));
+markscalefactor=0.03;
+draw(rightanglemark(B,X,A),red);
+draw(anglemark(P,A,B,20), red);
+draw(anglemark(C,A,P,20), red);
+add(pathticks(anglemark(P,A,B,20), n = 1, r = 0.1, s = 7, red));
+add(pathticks(anglemark(C,A,P,20), n = 1, r = 0.1, s = 7, red));
+draw(A--B--C--cycle^^A--P^^B--D^^A--D);
+draw(B--C,MidArrow(0.3cm,Fill(red)));
+draw(A--D,MidArrow(0.3cm,Fill(red)));
+label("$2$",midpoint(B--P),rotate(90)*dir(midpoint(P--B)--P),red);
+label("$3$",midpoint(P--C),rotate(90)*dir(midpoint(C--P)--C),red);
+</asy>
+
+~MRENTHUSIASM

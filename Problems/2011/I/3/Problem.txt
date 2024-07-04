@@ -1,0 +1,3 @@
+== Problem ==
+
+Let <math>L</math> be the line with slope <math>\frac{5}{12}</math> that contains the point <math>A=(24,-1)</math>, and let <math>M</math> be the line perpendicular to line <math>L</math> that contains the point <math>B=(5,6)</math>.  The original coordinate axes are erased, and line <math>L</math> is made the <math>x</math>-axis and line <math>M</math> the <math>y</math>-axis.  In the new coordinate system, point <math>A</math> is on the positive <math>x</math>-axis, and point <math>B</math> is on the positive <math>y</math>-axis.  The point <math>P</math> with coordinates <math>(-14,27)</math> in the original system has coordinates <math>(\alpha,\beta)</math> in the new coordinate system.  Find <math>\alpha+\beta</math>.

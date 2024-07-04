@@ -1,0 +1,9 @@
+==Solution 1==
+
+Here is an easy way to look at this, where $p$ is the perimeter, and $a$ is the [[apothem]]:
+
+Area of Octagon: $ \frac{ap}{2}=1 $.
+
+Area of Rectangle: $ \frac{p}{8}\times 2a=\dfrac{2ap}{8}=\frac{ap}{4} $.
+
+You can see from this that the octagon's area is twice as large as the rectangle's area is $\boxed{\textbf{(D)}\ \frac{1}{2}}$.

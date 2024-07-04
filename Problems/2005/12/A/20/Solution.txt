@@ -1,0 +1,7 @@
+== Solution 1 ==
+For the two functions $f(x)=2x,0\le x\le \frac{1}{2}$ and $f(x)=2-2x,\frac{1}{2}\le x\le 1$,as long as $f(x)$ is between $0$ and $1$, $x$ will be in the right domain, so we don't need to worry about the domain of $x$.  
+
+
+Also, every time we change $f(x)$, the expression for the final answer in terms of $x$ will be in a different form(although they'll all satisfy the final equation), so we get a different starting value of $x$.  Every time we have two choices for $f(x$) and altogether we have to choose $2005$ times. Thus, $2^{2005}\Rightarrow\boxed{E}$.
+
+Note: the values of x that satisfy $f^{[n]}(x) = \frac {1}{2}$ are $\frac{1}{2^{n+1}}$, $\frac{3}{2^{n+1}}$, $\frac{5}{2^{n+1}}$, $\cdots$ ,$\frac{2^{n+1}-1}{2^{n+1}}$.

@@ -1,0 +1,29 @@
+==Solution==
+
+The polynomial we are given is rather complicated, so we could use [[Rational Root Theorem]] to turn the given polynomial into a degree-2 polynomial. With Rational Root Theorem, <math>x = 1, -1, 2, -2</math> are all possible rational roots. Upon plugging these roots into the polynomial, <math>x = -2</math> and <math>x = 1</math> make the polynomial equal 0 and thus, they are roots that we can factor out.
+
+The polynomial becomes:
+
+<math>(x - 1)(x + 2)(x^2 + (2a - 1)x + 1)</math>
+
+Since we know <math>1</math> and <math>-2</math> are real numbers, we only need to focus on the quadratic.
+
+We should set the discriminant of the quadratic greater than or equal to 0.
+
+<math>(2a - 1)^2 - 4 \geq 0</math>.
+
+This simplifies to:
+
+<math>a \geq \dfrac{3}{2}</math>
+
+or
+
+<math>a \leq -\dfrac{1}{2}</math>
+
+This means that the interval <math>\left(-\dfrac{1}{2}, \dfrac{3}{2}\right)</math> is the "bad" interval. The length of the interval where <math>a</math> can be chosen from is 38 units long, while the bad interval is 2 units long. Therefore, the "good" interval is 36 units long.
+
+<math>\dfrac{36}{38} = \dfrac{18}{19}</math>
+
+<math>18 + 19 = \boxed{037}</math>
+
+~First

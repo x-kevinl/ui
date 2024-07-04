@@ -1,0 +1,4 @@
+==Problem==
+Six pepperoni circles will exactly fit across the diameter of a $12$-inch pizza when placed. If a total of $24$ circles of pepperoni are placed on this pizza without overlap, what fraction of the pizza is covered by pepperoni?
+
+$ \textbf{(A)}\ \frac 12 \qquad\textbf{(B)}\ \frac 23 \qquad\textbf{(C)}\ \frac 34 \qquad\textbf{(D)}\ \frac 56 \qquad\textbf{(E)}\ \frac 78 $

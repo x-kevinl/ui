@@ -1,0 +1,6 @@
+== Solution 1 == 
+The formula for fuel efficiency is $$\frac{\text{Distance}}{\text{Gas Consumption}}.$$
+Note that $1$ mile equals $\frac 1m$ kilometers. We have $$\frac{x\text{ miles}}{1\text{ gallon}} = \frac{\frac{x}{m}\text{ kilometers}}{l\text{ liters}} = \frac{1\text{ kilometer}}{\frac{lm}{x}\text{ liters}} = \frac{100\text{ kilometers}}{\frac{100lm}{x}\text{ liters}}.$$
+Therefore, the answer is $\boxed{\textbf{(E) } \frac{100lm}{x}}.$
+
+~MRENTHUSIASM

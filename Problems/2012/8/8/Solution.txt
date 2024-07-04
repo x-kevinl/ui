@@ -1,0 +1,10 @@
+==Solution 1: With Algebra==
+Let the original price of an item be $x$.
+
+First, everything is half-off, so the price is now $\frac{x}{2} = 0.5x$.
+
+Next, the extra coupon applies 20% off on the <i>sale price</i>, so the price after this discount will be $100\% - 20\% = 80\%$ of what it was before. (Notice how this is not applied to the original price; if it were, the solution would be applying 50% + 20 % = 70% off the original price.)
+
+$80\% \cdot 0.5 x = \frac{4}{5} \cdot 0.5 x = 0.4x$
+
+The price of the item after all discounts have been applied is $0.4x = 40\% \cdot x$. However, we need to find the percentage off the original price, not the current percentage of the original price. We then subtract $40\% x$ from $100\% x$ (the original price of the item), to find the answer, $ \boxed{\textbf{(D)}\ 60} $.

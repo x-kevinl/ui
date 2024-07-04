@@ -1,0 +1,5 @@
+==Problem==
+
+Call a positive integer an uphill integer if every digit is strictly greater than the previous digit. For example, $1357, 89,$ and $5$ are all uphill integers, but $32, 1240,$ and $466$ are not. How many uphill integers are divisible by $15$?
+
+$\textbf{(A)} ~4 \qquad\textbf{(B)} ~5 \qquad\textbf{(C)} ~6 \qquad\textbf{(D)} ~7 \qquad\textbf{(E)} ~8$

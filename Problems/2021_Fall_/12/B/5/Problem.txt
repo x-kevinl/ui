@@ -1,0 +1,4 @@
+==Problem==
+Call a fraction $\frac{a}{b}$, not necessarily in the simplest form, ''special'' if $a$ and $b$ are positive integers whose sum is $15$. How many distinct integers can be written as the sum of two, not necessarily different, special fractions?
+
+$\textbf{(A)}\ 9 \qquad\textbf{(B)}\  10 \qquad\textbf{(C)}\  11 \qquad\textbf{(D)}\ 12 \qquad\textbf{(E)}\ 13$

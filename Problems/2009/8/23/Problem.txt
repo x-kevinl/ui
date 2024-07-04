@@ -1,0 +1,5 @@
+==Problem==
+
+On the last day of school, Mrs. Wonderful gave jelly beans to her class. She gave each boy as many jelly beans as there were boys in the class. She gave each girl as many jelly beans as there were girls in the class. She brought $400$ jelly beans, and when she finished, she had six jelly beans left. There were two more boys than girls in her class. How many students were in her class? 
+
+$ \textbf{(A)}\ 26\qquad\textbf{(B)}\ 28\qquad\textbf{(C)}\ 30\qquad\textbf{(D)}\ 32\qquad\textbf{(E)}\ 34 $

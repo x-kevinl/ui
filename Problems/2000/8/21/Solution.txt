@@ -1,0 +1,12 @@
+==Solution==
+Divide it into $2$ cases:
+
+1) Keiko and Ephriam both get $0$ heads:
+This means that they both roll all tails, so there is only $1$ way for this to happen.
+
+2) Keiko and Ephriam both get $1$ head:
+For Keiko, there is only $1$ way for this to happen because he is only flipping 1 penny, but for Ephriam, there are 2 ways since there are $2$ choices for when he can flip the head. So, in total there are $2 \cdot 1 = 2$ ways for this case.
+
+Thus, in total there are $3$ ways that work. Since there are $2$ choices for each coin flip (Heads or Tails), there are $2^3 = 8$ total ways of flipping 3 coins.
+
+Thus, since all possible coin flips of 3 coins are equally likely, the probability is $\boxed{(B) \frac38}$.

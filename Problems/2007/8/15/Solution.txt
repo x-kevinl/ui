@@ -1,0 +1,5 @@
+== Solution ==
+
+According to the given rules, every number needs to be positive. Since $c$ is always greater than $b$, adding a positive number ($a$) to $c$ will always make it greater than $b$.
+
+Therefore, the answer is $\boxed{\textbf{(A)}\ a+c<b}$

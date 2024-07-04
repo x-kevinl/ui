@@ -1,0 +1,4 @@
+== Problem ==
+A [[chord]] of a [[circle]] is [[perpendicular]] to a [[radius]] at the [[midpoint]] of the radius. The [[ratio]] of the [[area]] of the larger of the two regions into which the chord divides the circle to the smaller can be expressed in the form <math> \frac{a\pi+b\sqrt{c}}{d\pi-e\sqrt{f}}, </math> where <math> a, b, c, d, e, </math> and <math> f </math> are [[positive integer]]s, <math> a </math> and <math> e </math> are [[relatively prime]], and neither <math> c </math> nor <math> f </math> is [[divisibility | divisible]] by the [[square]] of any [[prime]]. Find the [[remainder]] when the product <math> abcdef </math> is divided by 1000.
+
+[[Image:2004 AIME II Problem 1.png]]

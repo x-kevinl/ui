@@ -1,0 +1,8 @@
+== Solution ==
+
+Georgie can enter the haunted house through any of the six windows. Then, he can leave through any of the remaining five windows.
+
+So, Georgie has a total of $6 \cdot 5$ ways he can enter the house by one window and leave
+by a different window.
+
+Therefore, we have $ \boxed{\textbf{(D)}\ 30} $ ways.

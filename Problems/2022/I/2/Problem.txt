@@ -1,0 +1,3 @@
+== Problem ==
+
+Find the three-digit positive integer <math>\underline{a}\,\underline{b}\,\underline{c}</math> whose representation in base nine is <math>\underline{b}\,\underline{c}\,\underline{a}_{\,\text{nine}},</math> where <math>a,</math> <math>b,</math> and <math>c</math> are (not necessarily distinct) digits.

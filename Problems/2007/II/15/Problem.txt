@@ -1,0 +1,4 @@
+== Problem ==
+Four [[circle]]s <math>\omega,</math> <math>\omega_{A},</math> <math>\omega_{B},</math> and <math>\omega_{C}</math> with the same [[radius]] are drawn in the interior of [[triangle]] <math>ABC</math> such that <math>\omega_{A}</math> is [[tangent]] to sides <math>AB</math> and <math>AC</math>, <math>\omega_{B}</math> to <math>BC</math> and <math>BA</math>, <math>\omega_{C}</math> to <math>CA</math> and <math>CB</math>, and <math>\omega</math> is [[externally tangent]] to <math>\omega_{A},</math> <math>\omega_{B},</math> and <math>\omega_{C}</math>. If the sides of triangle <math>ABC</math> are <math>13,</math> <math>14,</math> and <math>15,</math> the radius of <math>\omega</math> can be represented in the form <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. Find <math>m+n.</math>
+
+__TOC__

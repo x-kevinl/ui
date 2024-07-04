@@ -1,0 +1,16 @@
+== Solution ==
+
+Given any path on the surface, we can unfold the surface into a plane to get a path of the same length in the plane. Consider the net of a tetrahedron in the picture below. A pair of opposite points is marked by dots. It is obvious that in the plane the shortest path is just a segment that connects these two points. Its length is the same as the length of the tetrahedron's edge, i.e. $\boxed{1}$.
+
+<asy>
+unitsize(2cm);
+defaultpen(0.8);
+pair A=(0,0), B=(1,0), C=rotate(60)*B, D1=B+C-A, D2=A+C-B, D3=A+B-C;
+draw(A--B--C--cycle);
+draw(D1--B--C--cycle);
+draw(D2--A--C--cycle);
+draw(D3--B--A--cycle);
+dot( A+0.5*(C-A) );
+dot( B+0.5*(C-A) );
+draw( ( A+0.5*(C-A) ) -- ( B+0.5*(C-A) ), dashed );
+</asy>

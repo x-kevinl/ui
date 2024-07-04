@@ -1,0 +1,12 @@
+==Solution==
+Every time the pedometer flips from $99999$ to
+
+$00000$ Pete has walked $100000$ steps.
+
+So, if the pedometer flipped $44$ times
+
+Pete walked $44*100000+50000=4450000$ steps.
+
+Dividing by $1800$ steps per mile gives $2472.\overline{2}$
+
+This is closest to answer $\boxed{A}$.

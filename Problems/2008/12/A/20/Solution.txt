@@ -1,0 +1,44 @@
+== Solution 1==
+<center><asy>
+import olympiad;
+size(300);
+defaultpen(0.8);
+pair C=(0,0),A=(0,3),B=(4,0),D=(4-2.28571,1.71429);
+pair O=incenter(A,C,D), P=incenter(B,C,D);
+picture p = new picture; 
+draw(p,Circle(C,0.2)); draw(p,Circle(B,0.2));
+clip(p,B--C--D--cycle);
+add(p);
+draw(A--B--C--D--C--cycle);
+draw(incircle(A,C,D));
+draw(incircle(B,C,D));
+dot(O);dot(P);
+label("\(A\)",A,W);
+label("\(B\)",B,E);
+label("\(C\)",C,W);
+label("\(D\)",D,NE);
+label("\(O_A\)",O,W);
+label("\(O_B\)",P,W);
+label("\(3\)",(A+C)/2,W);
+label("\(4\)",(B+C)/2,S);
+label("\(\frac{15}{7}\)",(A+D)/2,NE);
+label("\(\frac{20}{7}\)",(B+D)/2,NE);
+label("\(45^{\circ}\)",(.2,.1),E);
+label("\(\sin \theta = \frac{3}{5}\)",B-(.2,-.1),W);
+</asy></center>
+
+By the [[Angle Bisector Theorem]], 
+$$\frac{BD}{4} = \frac{5-BD}{3} \Longrightarrow BD = \frac{20}7$$
+By [[Law of Sines]] on $\triangle BCD$, 
+$$\frac{BD}{\sin 45^{\circ}} = \frac{CD}{\sin \angle B} \Longrightarrow \frac{20/7}{\sqrt{2}/2} = \frac{CD}{3/5} \Longrightarrow CD=\frac{12\sqrt{2}}{7}$$
+Since the area of a triangle satisfies $[\triangle]=rs$, where $r = $ the [[inradius]] and $s =$ the [[semiperimeter]], we have 
+$$\frac{r_A}{r_B} = \frac{[ACD] \cdot s_B}{[BCD] \cdot s_A}$$
+<!--Using any of various formulas for triangle area, we find the area $[BCD]$ to be 
+$$[BCD] = \frac{1}{2} (\sin \angle CBD) \cdot (BD) \cdot (CD) = \frac 12 \cdot \frac 35 \cdot \frac{20}{7} \cdot 4 = \frac{24}{7}$$
+and 
+$$[ACD] = [ABC] - [BCD] = \frac 12 (3)(4) - \frac{24}{7} = \frac{18}{7}$$-->
+Since $\triangle ACD$ and $\triangle BCD$ share the [[altitude]] (to $\overline{AB}$), their areas are the ratio of their bases, or $$\frac{[ACD]}{[BCD]} = \frac{AD}{BD} = \frac{3}{4}$$
+The semiperimeters are $s_A = \left(3 + \frac{15}{7} + \frac{12\sqrt{2}}{7}\right)\left/\right.2 = \frac{18+6\sqrt{2}}{7}$ and $s_B = \frac{24+ 6\sqrt{2}}{7}$. Thus,
+$$\begin{align*}
+\frac{r_A}{r_B} &= \frac{[ACD] \cdot s_B}{[BCD] \cdot s_A} = \frac{3}{4} \cdot \frac{(24+ 6\sqrt{2})/7}{(18+6\sqrt{2})/7} \\
+&= \frac{3(4+\sqrt{2})}{4(3+\sqrt{2})} \cdot \left(\frac{3-\sqrt{2}}{3-\sqrt{2}}\right) = \frac{3}{28}(10-\sqrt{2}) \Rightarrow \mathrm{(E)}\qquad \blacksquare \end{align*}$$

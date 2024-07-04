@@ -1,0 +1,4 @@
+== Problem ==
+Let <math>m \ge 3</math> be an [[integer]] and let <math>S = \{3,4,5,\ldots,m\}</math>. Find the smallest value of <math>m</math> such that for every [[partition]] of <math>S</math> into two subsets, at least one of the subsets contains integers <math>a</math>, <math>b</math>, and <math>c</math> (not necessarily distinct) such that <math>ab = c</math>.
+
+'''Note''': a partition of <math>S</math> is a pair of sets <math>A</math>, <math>B</math> such that <math>A \cap B = \emptyset</math>, <math>A \cup B = S</math>.

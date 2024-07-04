@@ -1,0 +1,3 @@
+== Solution ==
+
+For every tens digit 2, we subtract 10, and for every units digit 2, we subtract 1. Because 2 appears 10 times as a tens digit and 2 appears 3 times as a units digit, the answer is $10\cdot 10+1\cdot 3=\boxed{\textbf{(D) }103.}$

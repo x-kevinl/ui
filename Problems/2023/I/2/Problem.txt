@@ -1,0 +1,2 @@
+==Problem==
+Positive real numbers <math>b \not= 1</math> and <math>n</math> satisfy the equations <cmath>\sqrt{\log_b n} = \log_b \sqrt{n} \qquad \text{and} \qquad b \cdot \log_b n = \log_b (bn).</cmath> The value of <math>n</math> is <math>\frac{j}{k},</math> where <math>j</math> and <math>k</math> are relatively prime positive integers. Find <math>j+k.</math>

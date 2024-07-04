@@ -1,0 +1,8 @@
+==Problem==
+Four congruent semicircles are drawn on the surface of a sphere with radius $2$, as
+shown, creating a close curve that divides the surface into two congruent regions.
+The length of the curve is $\pi\sqrt{n}$. What is $n$?
+
+[[Image:202310bQ20.jpeg|center]]
+
+$\textbf{(A) } 32 \qquad \textbf{(B) } 12 \qquad \textbf{(C) } 48 \qquad \textbf{(D) } 36 \qquad \textbf{(E) } 27$

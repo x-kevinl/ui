@@ -1,0 +1,4 @@
+==Problem==
+For how many values of the constant $k$ will the polynomial $x^{2}+kx+36$ have two distinct integer roots?
+
+$\textbf{(A)}\ 6 \qquad\textbf{(B)}\ 8 \qquad\textbf{(C)}\ 9 \qquad\textbf{(D)}\ 14 \qquad\textbf{(E)}\ 16$

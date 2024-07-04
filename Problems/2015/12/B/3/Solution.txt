@@ -1,0 +1,2 @@
+==Solution==
+Let $a$ be the number written two times, and $b$ the number written three times. Then $2a + 3b = 100$. Plugging in $a = 28$ doesn't yield an integer for $b$, so it must be that $b = 28$, and we get $2a + 84 = 100$. Solving for $a$, we obtain $a = \boxed{\textbf{(A)}\; 8}$.

@@ -1,0 +1,9 @@
+== Solution 1 ==
+
+Let $x$ be the time it is not raining, and $y$ be the time it is raining, in hours.
+
+We have the system: $30x+20y=16$ and $x+y=2/3$
+
+Solving gives $x=\frac{4}{15}$ and $y=\frac{2}{5}$
+
+We want $y$ in minutes, $\frac{2}{5} \cdot 60=24 \Rightarrow C$

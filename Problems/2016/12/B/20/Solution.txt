@@ -1,0 +1,5 @@
+==Solution 1==
+
+We use complementary counting. First, because each team played $20$ other teams, there are $21$ teams total. All sets that do not have $A$ beat $B$, $B$ beat $C$, and $C$ beat $A$ have one team that beats both the other teams. Thus we must count the number of sets of three teams such that one team beats the two other teams and subtract that number from the total number of ways to choose three teams.
+
+There are $21$ ways to choose the team that beat the two other teams, and $\binom{10}{2} = 45$ to choose two teams that the first team both beat. This is $21 * 45 = 945$ sets. There are $\binom{21}{3} = 1330$ sets of three teams total. Subtracting, we obtain $1330 - 945 = \boxed{385}$, thus $(\text{A})$  is our answer.

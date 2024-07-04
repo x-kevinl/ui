@@ -1,0 +1,3 @@
+== Problem ==
+
+In rectangle <math>ABCD</math>, <math>AB = 12</math> and <math>BC = 10</math>.  Points <math>E</math> and <math>F</math> lie inside rectangle <math>ABCD</math> so that <math>BE = 9</math>, <math>DF = 8</math>, <math>\overline{BE} \parallel \overline{DF}</math>, <math>\overline{EF} \parallel \overline{AB}</math>, and line <math>BE</math> intersects segment <math>\overline{AD}</math>.  The length <math>EF</math> can be expressed in the form <math>m \sqrt{n} - p</math>, where <math>m</math>, <math>n</math>, and <math>p</math> are positive integers and <math>n</math> is not divisible by the square of any prime.  Find <math>m + n + p</math>.

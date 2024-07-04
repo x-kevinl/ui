@@ -1,0 +1,4 @@
+==Solution 1==
+Let $A(6+m,2+n)$ and $B(6-m,2-n)$, since $(6,2)$ is their midpoint. Thus, we must find $2m$. We find two equations due to $A,B$ both lying on the function $y=\log_{2}x$. The two equations are then $\log_{2}(6+m)=2+n$ and $\log_{2}(6-m)=2-n$. Now add these two equations to obtain $\log_{2}(6+m)+\log_{2}(6-m)=4$. By logarithm rules, we get $\log_{2}((6+m)(6-m))=4$. By raising 2 to the power of  both sides, we obtain $(6+m)(6-m)=16$. We then get $$36-m^2=16 \rightarrow m^2=20 \rightarrow m=2\sqrt{5}$$. Since we're looking for $2m$, we obtain $(2)(2\sqrt{5})=\boxed{\textbf{(D) }4\sqrt{5}}$
+
+~amcrunner (yay, my first AMC solution)

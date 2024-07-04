@@ -1,0 +1,4 @@
+==Problem==
+How many nonempty subsets $B$ of $\{0, 1, 2, 3, \cdots, 12\}$ have the property that the number of elements in $B$ is equal to the least element of $B$? For example, $B = \{4, 6, 8, 11\}$ satisfies the condition.
+
+$\textbf{(A) } 256 \qquad\textbf{(B) } 136 \qquad\textbf{(C) } 108 \qquad\textbf{(D) } 144 \qquad\textbf{(E) } 156$

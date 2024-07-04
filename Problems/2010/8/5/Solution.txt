@@ -1,0 +1,4 @@
+==Solution==
+Convert everything to the same unit. Since the answer is in centimeters, change meters to centimeters by moving the decimal place two places to the right.
+
+The ceiling is $240$ centimeters above the floor. The combined height of Alice and the light bulb when she reaches for it is $10+150+46=206$ centimeters. That means the stool's height needs to be $240-206=\boxed{\textbf{(B)}\ 34}$

@@ -1,0 +1,25 @@
+== Problem ==
+The $8\times18$ [[rectangle]] $ABCD$ is cut into two congruent hexagons, as shown, in such a way that the two hexagons can be repositioned without overlap to form a square.  What is $y$?
+
+<asy>
+unitsize(3mm);
+defaultpen(fontsize(10pt)+linewidth(.8pt));
+dotfactor=4;
+draw((0,4)--(18,4)--(18,-4)--(0,-4)--cycle);
+draw((6,4)--(6,0)--(12,0)--(12,-4));
+label("$A$",(0,4),NW);
+label("$B$",(18,4),NE);
+label("$C$",(18,-4),SE);
+label("$D$",(0,-4),SW);
+label("$y$",(3,4),S);
+label("$y$",(15,-4),N);
+label("$18$",(9,4),N);
+label("$18$",(9,-4),S);
+label("$8$",(0,0),W);
+label("$8$",(18,0),E);
+dot((0,4));
+dot((18,4));
+dot((18,-4));
+dot((0,-4));</asy>
+
+$\mathrm{(A)}\ 6\qquad\mathrm{(B)}\ 7\qquad\mathrm{(C)}\ 8\qquad\mathrm{(D)}\ 9\qquad\mathrm{(E)}\ 10$

@@ -1,0 +1,3 @@
+==Solution==
+
+The quadrilateral cannot be a straight line. Thus, the fourth side must be longer than $15 - (3 + 7) = 5$ and shorter than $15 + 3 + 7 = 25$. This means Joy can use the $19$ possible integer rod lengths that fall into $[6, 24]$. However, she has already used the rods of length $7$ cm and $15$ cm so the answer is $19 - 2 = 17$ $\boxed{\textbf{(B)}}$

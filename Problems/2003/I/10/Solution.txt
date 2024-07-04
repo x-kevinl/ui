@@ -1,0 +1,79 @@
+== Solutions ==
+<center><asy>
+pointpen = black; pathpen = black+linewidth(0.7); size(220);
+
+/* We will WLOG AB = 2 to draw following */
+
+pair A=(0,0), B=(2,0), C=(1,Tan(37)), M=IP(A--(2Cos(30),2Sin(30)),B--B+(-2,2Tan(23)));
+
+D(MP("A",A)--MP("B",B)--MP("C",C,N)--cycle); D(A--D(MP("M",M))--B); D(C--M);
+</asy></center>
+
+=== Solution 1 ===
+<center><asy>
+pointpen = black; pathpen = black+linewidth(0.7); size(220);
+
+/* We will WLOG AB = 2 to draw following */
+
+pair A=(0,0), B=(2,0), C=(1,Tan(37)), M=IP(A--(2Cos(30),2Sin(30)),B--B+(-2,2Tan(23))), N=(2-M.x,M.y);
+
+D(MP("A",A)--MP("B",B)--MP("C",C,N)--cycle); D(A--D(MP("M",M))--B); D(C--M); D(C--D(MP("N",N))--B--N--M,linetype("6 6")+linewidth(0.7)); 
+</asy></center>
+
+Take point <math>N</math> inside <math>\triangle ABC</math> such that <math>\angle CBN = 7^\circ</math> and <math>\angle BCN = 23^\circ</math>.
+
+<math>\angle MCN = 106^\circ - 2\cdot 23^\circ = 60^\circ</math>. Also, since <math>\triangle AMC</math> and <math>\triangle BNC</math> are congruent (by ASA), <math>CM = CN</math>. Hence <math>\triangle CMN</math> is an [[equilateral triangle]], so <math>\angle CNM = 60^\circ</math>.
+
+Then <math>\angle MNB = 360^\circ - \angle CNM - \angle CNB = 360^\circ - 60^\circ - 150^\circ = 150^\circ</math>. We now see that <math>\triangle MNB</math> and <math>\triangle CNB</math> are congruent. Therefore, <math>CB = MB</math>, so <math>\angle CMB = \angle MCB = \boxed{83^\circ}</math>.
+
+=== Solution 2 ===
+From the givens, we have the following [[angle]] [[measure]]s: <math>m\angle AMC = 150^\circ</math>, <math>m\angle MCB = 83^\circ</math>.  If we define <math>m\angle CMB = \theta</math> then we also have <math>m\angle CBM = 97^\circ - \theta</math>.  Then apply the [[Law of Sines]] to triangles <math>\triangle AMC</math> and <math>\triangle BMC</math> to get
+
+<cmath>\frac{\sin 150^\circ}{\sin 7^\circ} = \frac{AC}{CM} = \frac{BC}{CM} = \frac{\sin \theta}{\sin (97^\circ - \theta)}</cmath>
+
+Clearing [[denominator]]s, evaluating <math>\sin 150^\circ = \frac 12</math> and applying one of our [[trigonometric identities]] to the result gives
+
+<cmath>\frac{1}{2} \cos (7^\circ - \theta )= \sin 7^\circ \sin \theta</cmath>
+
+and multiplying through by 2 and applying the [https://artofproblemsolving.com/wiki/index.php/Trigonometric_identities#Double-angle_identities| double angle formulas] gives
+
+<cmath>\cos 7^\circ\cos\theta + \sin7^\circ\sin\theta = 2 \sin7^\circ \sin\theta</cmath>
+
+and so <math>\cos 7^\circ \cos \theta = \sin 7^\circ \sin\theta \Longleftrightarrow \tan 7^{\circ} = \cot \theta</math>; since <math>0^\circ < \theta < 180^\circ</math>, we must have <math>\theta = 83^\circ</math>, so the answer is <math>\boxed{83}</math>.
+
+=== Solution 3 ===
+[[Without loss of generality]], let <math>AC = BC = 1</math>.  Then, using the [[Law of Sines]] in triangle <math>AMC</math>, we get <math>\frac {1}{\sin 150} = \frac {MC}{\sin 7}</math>, and using the sine addition formula to evaluate <math>\sin 150 = \sin (90 + 60)</math>, we get <math>MC = 2 \sin 7</math>.  
+
+Then, using the [[Law of Cosines]] in triangle <math>MCB</math>, we get <math>MB^2 = 4\sin^2 7 + 1 - 4\sin 7(\cos 83) = 1</math>, since <math>\cos 83 = \sin 7</math>. So triangle <math>MCB</math> is isosceles, and <math>\angle CMB = \boxed{83}</math>.
+
+=== Solution 4 ===
+Note: A diagram would be much appreciated; I cannot make one since I'm bad at asymptote. Also, please make this less cluttered :) ~tauros
+
+First, take point <math>E</math> outside of <math>\triangle{ABC}</math> so that <math>\triangle{CEB}</math> is equilateral. Then, connect <math>A</math>, <math>C</math>, and <math>M</math> to <math>E</math>. Also, let <math>ME</math> intersect <math>AB</math> at <math>F</math>. <math>\angle{MCE} = 83^\circ - 60^\circ = 23^\circ</math>, <math>CE = AB</math>, and (trivially) <math>CM = CM</math>, so <math>\triangle{MCE} \cong 
+\triangle{MCA}</math> by SAS congruence. Also, <math>\angle{CMA} = \angle{CME} = 150^\circ</math>, so <math>\angle{AME} = 60^\circ</math>, and <math>AM = ME</math>,
+making <math>\triangle{AME}</math> also equilateral. (it is isosceles with a <math>60^\circ</math> angle) <math>\triangle{MAF} \cong \triangle{EAF}</math> by SAS (<math>MA = AE</math>, 
+<math>AF = AF</math>, and <math>m\angle{MAF} = m\angle{EAF} = 30^\circ</math>), and <math>\triangle{MAB} \cong \triangle{EAB}</math> by SAS (<math>MA = AE</math>, <math>AB = AB</math>, and 
+<math>m\angle{MAB} = m\angle{EAB} = 30^\circ</math>). Thus, <math>\triangle{BME}</math> is isosceles, with <math>m\angle{BME} = m\angle{BEM} = 60^\circ + 7^\circ = 67^\circ</math>. Also, <math>\angle{EMB} + \angle {CMB} = \angle{CME} = 150^\circ</math>, so <math>\angle{CME} = 150^\circ - 67^\circ  = \boxed{83^\circ}</math>.
+
+=== Solution 5 (Ceva) ===
+
+Noticing that we have three concurrent cevians, we apply Ceva's theorem:
+
+<cmath>(\sin \angle ACM)(\sin \angle BAM)(\sin \angle CBM) = (\sin \angle CAM)(\sin \angle ABM)(\sin \angle BCM) </cmath>
+<cmath>(\sin 23)(\sin 30)(\sin x) = (\sin 7)(\sin 37-x)(\sin 83)</cmath>
+
+using the fact that <math>\sin 83 = \cos 7</math> and <math>(\sin 7)(\cos 7) = 1/2 (\sin 14)</math> we have:
+
+<cmath> (\sin 23)(\sin x) = (\sin 14)(\sin 37-x)</cmath>
+
+By inspection, <math>x=14^\circ</math> works, so the answer is <math>180-83-14= \boxed{083}</math>
+=== Solution 6 ===
+
+Let <math>\angle{APC} = \theta^{\circ}</math>
+Using sine rule on <math>\triangle{APB}, \triangle{APC}</math>, letting <math>AP=d</math> we get :
+<math>\frac{d}{1} = \frac{\sin{7^{\circ}}}{\sin{150^{\circ}}} = 2\sin{7^{\circ}}= \frac{\sin{14^{\circ}}}{\cos{7^{\circ}}}= \frac{\sin{14^{\circ}}}{\sin{83^{\circ}}}= \frac{\sin{(97-\theta)^{\circ}}}{\sin{\theta^{\circ}}}</math>
+Simplifying, we get that
+<math>\cos{(14-\theta)^{\circ}}-\cos{(14+\theta)^{\circ}}=\cos{(14-\theta)^{\circ}}-\cos{(180-\theta)^{\circ}},</math> from where <math>\cos{(14-\theta)^{\circ}}=\cos{(180-\theta)^{\circ}}</math>
+Simplifying more, we get that <math>\sin{97^{\circ}} \cdot \sin{(\theta-83)^{\circ}} = 0</math>, so <math>\theta = 83^{\circ}</math>
+NOTE: The simplifications were carried out by the product-to-sum and sum-to-product identities 
+~Prabh1512

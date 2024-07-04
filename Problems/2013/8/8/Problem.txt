@@ -1,0 +1,4 @@
+==Problem==
+A fair coin is tossed 3 times. What is the probability of at least two consecutive heads?
+
+$\textbf{(A)}\frac{1}{8} \qquad \textbf{(B)}\frac{1}{4} \qquad \textbf{(C)}\frac{3}{8} \qquad \textbf{(D)}\frac{1}{2} \qquad \textbf{(E)}\frac{3}{4}$

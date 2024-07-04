@@ -1,0 +1,7 @@
+== Problem 14 ==
+
+Let <math>m</math> be the largest real solution to the equation
+
+<math>\frac{3}{x-3}+\frac{5}{x-5}+\frac{17}{x-17}+\frac{19}{x-19}=x^2-11x-4</math>
+
+There are positive integers <math>a</math>, <math>b</math>, and <math>c</math> such that <math>m=a+\sqrt{b+\sqrt{c}}</math>. Find <math>a+b+c</math>.

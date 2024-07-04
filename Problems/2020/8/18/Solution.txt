@@ -1,0 +1,4 @@
+==Solution 1 (Pythagorean Theorem)==
+<asy>  draw(arc((0,0),17,180,0)); draw((-17,0)--(17,0)); fill((-8,0)--(-8,15)--(8,15)--(8,0)--cycle, 1.5*grey); draw((-8,0)--(-8,15)--(8,15)--(8,0)--cycle); dot("$A$",(8,0), 1.25*S); dot("$B$",(8,15), 1.25*N); dot("$C$",(-8,15), 1.25*N); dot("$D$",(-8,0), 1.25*S); dot("$E$",(17,0), 1.25*S); dot("$F$",(-17,0), 1.25*S); label("$16$",(0,0),N); label("$9$",(12.5,0),N); label("$9$",(-12.5,0),N); dot("$O$", (0,0), 1.25*S); draw((0,0)--(-8,15));</asy>
+
+Let $O$ be the center of the semicircle. The diameter of the semicircle is $9+16+9=34$, so $OC = 17$. By symmetry, $O$ is the midpoint of $DA$, so $OD=OA=\frac{16}{2}= 8$. By the Pythagorean theorem in right-angled triangle $ODC$ (or $OBA$), we have that $CD$ (or $AB$) is $\sqrt{17^2-8^2}=15$. Accordingly, the area of $ABCD$ is $16\cdot 15=\boxed{\textbf{(A) }240}$.

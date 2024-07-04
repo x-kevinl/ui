@@ -1,0 +1,6 @@
+==Solution==
+Where $a,b,c$ is the number of nickels, dimes, and quarters, respectively, we can set up two equations:
+
+$$(1)\ 5a+10b+25c=835\ \ \ \ (2)\ a+b+c=100$$
+
+Eliminate $a$ by subtracting $(2)$ from $(1)/5$ to get $b+4c=67$. Of the integer solutions $(b,c)$ to this equation, the number of dimes $b$ is least in $(3,16)$ and greatest in $(67,0)$, yielding a difference of $67-3=\boxed{\textbf{(D)}\ 64}$.

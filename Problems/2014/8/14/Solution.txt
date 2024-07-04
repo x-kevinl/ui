@@ -1,0 +1,2 @@
+==Solution==
+The area of $\bigtriangleup CDE$ is $\frac{DC\cdot CE}{2}$. The area of $ABCD$ is $AB\cdot AD=5\cdot 6=30$, which also must be equal to the area of $\bigtriangleup CDE$, which, since $DC=5$, must in turn equal $\frac{5\cdot CE}{2}$. Through transitivity, then, $\frac{5\cdot CE}{2}=30$, and $CE=12$. Then, using the Pythagorean Theorem, you should be able to figure out that $\bigtriangleup CDE$ is a $5-12-13$ triangle, so $DE=\boxed{13}$ , or $\boxed{(B)}$.

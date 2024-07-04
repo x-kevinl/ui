@@ -1,0 +1,4 @@
+==Solution 1==
+$a+b= 2-c$. Now, by [[Cauchy-Schwarz]], we have that $(a^2+b^2) \ge \frac{(2-c)^2}{2}$. Therefore, we have that $\frac{(2-c)^2}{2}+c^2 \le 12$. We then find the roots of $c$ that satisfy equality and find the difference of the roots. This gives the answer, $\boxed{\textbf{(D)} \ \frac{16}{3}}$.
+
+Note: We arrived at $(a^2+b^2) \ge \frac{(2-c)^2}{2}$ as we consider the two sets of numbers $(a,b)$ and $(1,1)$. From [[Cauchy-Schwarz]], we have that $(a^2+b^2)(1^2+1^2) \ge (2\cdot 1 -c\cdot 1)^2$. $a+b = 2-c$ which is how we got the second part of the inequality.

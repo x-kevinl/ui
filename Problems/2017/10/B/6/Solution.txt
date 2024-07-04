@@ -1,0 +1,2 @@
+==Solution==
+We find that the volume of the larger block is $18$, and the volume of the smaller block is $4$. Dividing the two, we see that only a maximum of four $2$ by $2$ by $1$ blocks can fit inside the $3$ by $3$ by $2$ block. Drawing it out, we see that such a configuration is indeed possible. Therefore, the answer is $\boxed{\textbf{(B) }4}$.

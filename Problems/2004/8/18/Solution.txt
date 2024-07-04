@@ -1,0 +1,2 @@
+==Solution 1==
+The only way to get Ben's score is with $1+3=4$. Cindy's score can be made of $3+4$ or $2+5$, but since Ben already hit the $3$, Cindy hit $2+5=7$. Similarly, Dave's darts were in the region $4+7=11$. Lastly, because there is no $7$ left, $\boxed{\textbf{(A)}\ \text{Alice}}$ must have hit the regions $6+10=16$ and Ellen $8+9=17$.

@@ -1,0 +1,9 @@
+==Problem==
+
+The six children listed below are from two families of three siblings each. Each child has blue or brown eyes and black or blond hair. Children from the same family have at least one of these characteristics in common. Which two children are Jim's siblings?
+
+$$ \begin{array}{c|c|c}\text{Child}&\text{Eye Color}&\text{Hair Color}\\ \hline\text{Benjamin}&\text{Blue}&\text{Black}\\ \hline\text{Jim}&\text{Brown}&\text{Blonde}\\ \hline\text{Nadeen}&\text{Brown}&\text{Black}\\ \hline\text{Austin}&\text{Blue}&\text{Blonde}\\ \hline\text{Tevyn}&\text{Blue}&\text{Black}\\ \hline\text{Sue}&\text{Blue}&\text{Blonde}\\ \hline\end{array} $$
+
+$\textbf{(A)}\ \text{Nadeen and Austin}\qquad\textbf{(B)}\ \text{Benjamin and Sue}\qquad\textbf{(C)}\ \text{Benjamin and Austin}\qquad\textbf{(D)}\ \text{Nadeen and Tevyn}$
+
+$\textbf{(E)}\ \text{Austin and Sue} $

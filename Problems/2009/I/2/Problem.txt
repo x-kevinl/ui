@@ -1,0 +1,7 @@
+== Problem ==
+
+There is a complex number <math>z</math> with imaginary part <math>164</math> and a positive integer <math>n</math> such that
+
+<cmath>\frac {z}{z + n} = 4i.</cmath>
+
+Find <math>n</math>.

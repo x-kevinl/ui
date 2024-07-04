@@ -1,0 +1,8 @@
+==Problem==
+
+How many strings of length $5$ formed from the digits $0$, $1$, $2$, $3$, $4$ are there such that for each $j \in \{1,2,3,4\}$, at least $j$ of the digits are less than $j$? (For example, $02214$ satisfies this condition
+because it contains at least $1$ digit less than $1$, at least $2$ digits less than $2$, at least $3$ digits less
+than $3$, and at least $4$ digits less than $4$. The string $23404$ does not satisfy the condition because it
+does not contain at least $2$ digits less than $2$.)
+
+$\textbf{(A) }500\qquad\textbf{(B) }625\qquad\textbf{(C) }1089\qquad\textbf{(D) }1199\qquad\textbf{(E) }1296$

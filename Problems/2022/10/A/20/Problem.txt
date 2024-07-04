@@ -1,0 +1,5 @@
+==Problem==
+
+A four-term sequence is formed by adding each term of a four-term arithmetic sequence of positive integers to the corresponding term of a four-term geometric sequence of positive integers. The first three terms of the resulting four-term sequence are $57$, $60$, and $91$. What is the fourth term of this sequence?
+
+$\textbf{(A) } 190 \qquad \textbf{(B) } 194 \qquad \textbf{(C) } 198 \qquad \textbf{(D) } 202 \qquad \textbf{(E) } 206$

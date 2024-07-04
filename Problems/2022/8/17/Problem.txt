@@ -1,0 +1,4 @@
+==Problem==
+If $n$ is an even positive integer, the $\emph{double factorial}$ notation $n!!$ represents the product of all the even integers from $2$ to $n$. For example, $8!! = 2 \cdot 4 \cdot 6 \cdot 8$. What is the units digit of the following sum? $$2!! + 4!! + 6!! + \cdots + 2018!! + 2020!! + 2022!!$$
+
+$\textbf{(A) } 0\qquad\textbf{(B) } 2\qquad\textbf{(C) } 4\qquad\textbf{(D) } 6\qquad\textbf{(E) } 8$

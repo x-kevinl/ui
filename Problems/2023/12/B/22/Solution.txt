@@ -1,0 +1,11 @@
+==Solution 1==
+
+Substituting $a = b$ we get 
+$$
+f(2a) + f(0) = 2f(a)^2
+$$
+Substituting $a= 0$ we find $$2f(0) = 2f(0)^2 \implies f(0) \in \{0, 1\}.$$
+This gives $$f(2a) = 2f(a)^2 - f(0) \geq 0-1$$
+Plugging in $a = \frac{1}{2}$ implies $f(1) \geq -1$, so answer choice $\boxed{\textbf{(E) -2}}$ is impossible. 
+
+~AtharvNaphade

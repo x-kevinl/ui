@@ -1,0 +1,14 @@
+== Diagram ==
+<asy>
+defaultpen(fontsize(12)+0.8); size(300);
+
+pair A,B,C,X,Y,Z,P,Q,R;
+B=origin; C=15*right; A=IP(CR(B,13),CR(C,14)); P=incenter(A,B,C);
+real r=260/129;
+Q=r*(rotate(-90)*A/length(A)); X=extension(A,P,Q,Q+A); Y=extension(B,P,Q,Q+A);
+R=rotate(90,C)*(C+r*(A-C)/length(A-C)); Z=extension(C,P,R,R+A-C);
+draw(A--B--C--A); draw(CR(X,r)^^CR(Y,r)^^CR(Z,r)^^A--P--B^^P--C, gray); draw(CR(circumcenter(X,Y,Z),r), gray);
+label("$A$",A,N); label("$B$",B,0.15*(B-P)); label("$C$",C,0.1*(C-P));
+pen p=fontsize(10)+linewidth(3);
+dot("$O_A$",X,right,p); dot("$O_B$",Y,left+up,p); dot("$O_C$",Z,right+up,p); dot("$O$",circumcenter(X,Y,Z),right+down,p); dot("$I$",P,left+up,p);
+</asy>

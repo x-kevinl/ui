@@ -1,0 +1,16 @@
+==Solution 1==
+The first thing we would do is track Aaron's footsteps:
+
+He starts by taking $1$ step East and $1$ step North, ending at $(1,1)$ after $2$ steps and about to head West.
+
+Then he takes $2$ steps West and $2$ steps South, ending at $(-1,-1$) after $2+4$ steps, and about to head East.
+
+Then he takes $3$ steps East and $3$ steps North, ending at $(2,2)$ after $2+4+6$ steps, and about to head West.
+
+Then he takes $4$ steps West and $4$ steps South, ending at $(-2,-2)$ after $2+4+6+8$ steps, and about to head East.
+
+From this pattern, we can notice that for any integer $k \ge 1$ he's at $(-k, -k)$ after $2 + 4 + 6 + ... + 4k$ steps, and about to head East.  There are $2k$ terms in the sum, with an average value of $(2 + 4k)/2 = 2k + 1$, so:
+
+$$2 + 4 + 6 + ... + 4k = 2k(2k + 1)$$
+
+If we substitute $k = 22$ into the equation:  $44(45) = 1980 < 2015$.  So he has $35$ moves to go.  This makes him end up at $(-22+35,-22) = (13,-22) \implies \boxed{\textbf{(D)} (13, -22)}$.

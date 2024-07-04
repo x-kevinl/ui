@@ -1,0 +1,20 @@
+==Solution 1==
+<math>m(m-1)</math> is the product of two consecutive integers, so it is always even. Thus <math>m(m-1)+11</math> is odd and never divisible by <math>2</math>. Thus any prime <math>p</math> that divides <math>m^2-m+11</math> must divide <math>4m^2-4m+44=(2m-1)^2+43</math>. We see that <math>(2m-1)^2\equiv -43\pmod{p}</math>. We can verify that <math>-43</math> is not a perfect square mod <math>p</math> for each of <math>p=3,5,7</math>. Therefore, all prime factors of <math>m^2-m+11</math> are <math>\ge 11</math>.
+
+Let <math>m^2 - m + 11 = pqrs</math> for primes <math>11\le p \le q \le r \le s</math>. From here, we could go a few different ways:
+
+===Solution 1a===
+
+Suppose <math>p=11</math>; then <math>m^2-m+11=11qrs</math>. Reducing modulo 11, we get <math>m\equiv  1,0 \pmod{11}</math> so <math>k(11k\pm 1)+1 = qrs</math>. 
+
+Suppose <math>q=11</math>. Then we must have <math>11k^2\pm k + 1 = 11rs</math>, which leads to <math>k\equiv \mp 1 \pmod{11}</math>, i.e., <math>k\in \{1,10,12,21,23,\ldots\}</math>. 
+
+<math>k=1</math> leads to <math>rs=1</math> (impossible)! Then <math>k=10</math> leads to <math>rs=103</math>, a prime (impossible). Finally, for <math>k=12</math> we get <math>rs=143=11\cdot 13</math>. 
+
+Thus our answer is <math>m=11k= \boxed{132}</math>.
+
+===Solution 1b===
+
+Let <math>m^2 - m + 11 = pqrs</math> for primes <math>p, q, r, s\ge11</math>. If <math>p, q, r, s = 11</math>, then <math>m^2-m+11=11^4</math>. We can multiply this by <math>4</math> and complete the square to find <math>(2m-1)^2=4\cdot 11^4-43</math>. But 
+<cmath>(2\cdot 11^2-1)^2=4\cdot 11^4-4\cdot 11^2+1 <4\cdot 11^4-43<(2\cdot 11^2)^2,</cmath>
+hence we have pinned a perfect square <math>(2m-1)^2=4\cdot 11^4-43</math> strictly between two consecutive perfect squares, a contradiction. Hence <math>pqrs \ge 11^3 \cdot 13</math>. Thus <math>m^2-m+11\ge 11^3\cdot 13</math>, or <math>(m-132)(m+131)\ge0</math>. From the inequality, we see that <math>m \ge 132</math>. <math>132^2 - 132 + 11 = 11^3 \cdot 13</math>, so <math>m = \boxed{132}</math> and we are done.

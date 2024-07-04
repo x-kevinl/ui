@@ -1,0 +1,5 @@
+==Solution==
+The price Jack rings up is $\textdollar{(90.00)(1.06)(0.80)}$. The price Jill rings up is $\textdollar{(90.00)(0.80)(1.06)}$. By the commutative property of multiplication, these quantities are the same, and the difference is $\boxed{\textbf{(C)}\ \textdollar 0}$.
+
+
+Reminder: Commutative states abc = bac= acb =..... and is the same in any order. This only works for addition and multiplication.

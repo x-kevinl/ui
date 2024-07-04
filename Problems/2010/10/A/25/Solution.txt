@@ -1,0 +1,11 @@
+==Solution 1==
+
+We can find the answer by working backwards. We begin with $1-1^2=0$ on the bottom row, then the $1$ goes to the right of the equal's sign in the row above. We find the smallest value $x$ for which $x-1^2=1$ and $x>1^2$, which is $x=2$.
+
+We repeat the same procedure except with $x-1^2=1$ for the next row and $x-1^2=2$ for the row after that. However, at the fourth row, we see that solving $x-1^2=3$ yields $x=4$, in which case it would be incorrect since $1^2=1$ is not the greatest perfect square less than or equal to $x$ . So we make it a $2^2$ and solve $x-2^2=3$. We continue on using this same method where we increase the perfect square until $x$ can be made bigger than it. When we repeat this until we have $8$ rows, we get:
+
+$$ \begin{array}{ccccc}{}&{}&{}&{}&7223\\ 7223&-&84^{2}&=&167\\ 167&-&12^{2}&=&23\\ 23&-&4^{2}&=&7\\ 7&-&2^{2}&=&3\\ 3&-&1^{2}&=&2\\ 2&-&1^{2}&=&1\\ 1&-&1^{2}&=&0\\ \end{array} $$
+
+Hence the solution is the last digit of $7223$, which is $\boxed{\textbf{(B)}\ 3}$.
+
+Note: We can go up to $167$, and then notice the pattern of units digits alternating between $3$ and $7$, so we do not need to calculate $7223$.

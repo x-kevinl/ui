@@ -1,0 +1,3 @@
+==Problem==
+
+Find the remainder when<cmath>\binom{\binom{3}{2}}{2} + \binom{\binom{4}{2}}{2} + \dots +  \binom{\binom{40}{2}}{2}</cmath>is divided by <math>1000</math>.

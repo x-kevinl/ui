@@ -1,0 +1,86 @@
+== Solution 1 (Complex Numbers in Polar Form) ==
+
+Recall that translations preserve the shapes and the sizes for all objects. We translate the solutions to the given equation $6$ units right, so they become the solutions to the equation $z^8=81.$
+
+We rewrite $z$ to the polar form $$z=r(\cos\theta+i\sin\theta)=r\operatorname{cis}\theta,$$ where $r$ is the magnitude of $z$ such that $r\geq0,$ and $\theta$ is the argument of $z$ such that $0\leq\theta<2\pi.$
+
+By De Moivre's Theorem, we have $$z^8=r^8\operatorname{cis}(8\theta)={\sqrt3}^8(1),$$ from which
+<ol style="margin-left: 1.5em;">
+  <li>$r^8={\sqrt3}^8,$ so $r=\sqrt3.$</li><p>
+  <li>$\begin{cases}
+\begin{aligned}
+\cos(8\theta) &= 1 \\
+\sin(8\theta) &= 0
+\end{aligned},
+\end{cases}$ so $\theta=0,\frac{\pi}{4},\frac{\pi}{2},\frac{3\pi}{4},\pi,\frac{5\pi}{4},\frac{3\pi}{2},\frac{7\pi}{4}.$</li><p>
+</ol>
+In the complex plane, the solutions to the equation $z^8=81$ are the vertices of a regular octagon with center $0$ and radius $\sqrt3.$
+
+The least possible area of $\triangle ABC$ occurs when $A,B,$ and $C$ are the consecutive vertices of the octagon. For simplicity purposes, let $A=\sqrt3\operatorname{cis}\frac{\pi}{4}=\frac{\sqrt6}{2}+\frac{\sqrt6}{2}i, B=\sqrt3\operatorname{cis}\frac{\pi}{2}=\sqrt3i,$ and $C=\sqrt3\operatorname{cis}\frac{3\pi}{4}=-\frac{\sqrt6}{2}+\frac{\sqrt6}{2}i,$ as shown below.
+<asy>
+/* Made by MRENTHUSIASM */
+size(200); 
+
+int xMin = -2;
+int xMax = 2;
+int yMin = -2;
+int yMax = 2;
+int numRays = 24;
+
+//Draws a polar grid that goes out to a number of circles 
+//equal to big, with numRays specifying the number of rays: 
+void polarGrid(int big, int numRays) 
+{
+  for (int i = 1; i < big+1; ++i)
+  {
+    draw(Circle((0,0),i), gray+linewidth(0.4));
+  }
+  for (int i=0;i<numRays;++i) 
+  draw(rotate(i*360/numRays)*((-big,0)--(big,0)), gray+linewidth(0.4));
+}
+
+//Draws the horizontal gridlines
+void horizontalLines()
+{
+  for (int i = yMin+1; i < yMax; ++i)
+  {
+    draw((xMin,i)--(xMax,i), mediumgray+linewidth(0.4));
+  }
+}
+
+//Draws the vertical gridlines
+void verticalLines()
+{
+  for (int i = xMin+1; i < xMax; ++i)
+  {
+    draw((i,yMin)--(i,yMax), mediumgray+linewidth(0.4));
+  }
+}
+
+horizontalLines();
+verticalLines();
+polarGrid(xMax,numRays);
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("Re",(xMax,0),2*E);
+label("Im",(0,yMax),2*N);
+
+//The n such that we're taking the nth roots of unity multiplied by 2.
+int n = 8;
+
+pair A[];
+for(int i = 0; i <= n-1; i+=1) {
+  A[i] = rotate(360*i/n)*(sqrt(3),0);
+}
+
+label("$A$",A[1],1.5*NE,UnFill);
+label("$B$",A[2],1.5*NE,UnFill);
+label("$C$",A[3],1.5*NW,UnFill);
+fill(A[1]--A[2]--A[3]--cycle,green);
+
+draw(A[1]--A[3]^^A[0]--A[1]--A[2]--A[3]--A[4]--A[5]--A[6]--A[7]--cycle,red);
+
+for(int i = 0; i< n; ++i) dot(A[i],red+linewidth(4.5)); 
+</asy>
+Note that $\triangle ABC$ has base $AC=\sqrt6$ and height $\sqrt3-\frac{\sqrt6}{2},$ so its area is $$\frac12\cdot\sqrt6\cdot\left(\sqrt3-\frac{\sqrt6}{2}\right)=\boxed{\textbf{(B) } \frac{3}{2}\sqrt{2}-\frac{3}{2}}.$$
+~MRENTHUSIASM

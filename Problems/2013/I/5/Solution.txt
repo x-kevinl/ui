@@ -1,0 +1,2 @@
+== Solution 1 ==
+We note that <math>8x^3 - 3x^2 - 3x - 1 = 9x^3 - x^3 - 3x^2 - 3x - 1 = 9x^3 - (x + 1)^3</math>. Therefore, we have that <math>9x^3 = (x+1)^3</math>, so it follows that <math>x\sqrt[3]{9} = x+1</math>. Solving for <math>x</math> yields <math>\frac{1}{\sqrt[3]{9}-1} = \frac{\sqrt[3]{81}+\sqrt[3]{9}+1}{8}</math>, so the answer is <math>\boxed{98}</math>.

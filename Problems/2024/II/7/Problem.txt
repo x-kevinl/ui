@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>N</math> be the greatest four-digit positive integer with the property that whenever one of its digits is changed to <math>1</math>, the resulting number is divisible by <math>7</math>. Let <math>Q</math> and <math>R</math> be the quotient and remainder, respectively, when <math>N</math> is divided by <math>1000</math>. Find <math>Q+R</math>.

@@ -1,0 +1,17 @@
+==Solution 1==
+First, note that the first two digits will always be a positive number. We will start with base twelve because of its repetition. List all the positive numbers in base eight that have equal tens and ones digits in base 12.
+
+<math>11_{12}=15_8</math>
+
+<math>22_{12}=32_8</math>
+
+<math>33_{12}=47_8</math>
+
+<math>44_{12}=64_8</math>
+
+<math>55_{12}=101_8</math> 
+
+We stop because we only can have two-digit numbers in base 8 and 101 is not a 2 digit number.
+Compare the ones places to check if they are equal. We find that they are equal if <math>b=2</math> or <math>b=4</math>.
+Evaluating the places to the right side of the decimal point gives us <math>22.23_{12}</math> or <math>44.46_{12}</math>.
+When the numbers are converted into base 8, we get <math>32.14_8</math> and <math>64.30_8</math>. Since <math>d\neq0</math>, the first value is correct. Compiling the necessary digits leaves us a final answer of <math>\boxed{321}</math>

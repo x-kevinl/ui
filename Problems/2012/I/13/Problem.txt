@@ -1,0 +1,2 @@
+==Problem==
+Three concentric circles have radii <math>3,</math> <math>4,</math> and <math>5.</math> An equilateral triangle with one vertex on each circle has side length <math>s.</math> The largest possible area of the triangle can be written as <math>a + \tfrac{b}{c} \sqrt{d},</math> where <math>a,</math> <math>b,</math> <math>c,</math> and <math>d</math> are positive integers, <math>b</math> and <math>c</math> are relatively prime, and <math>d</math> is not divisible by the square of any prime. Find <math>a+b+c+d.</math>

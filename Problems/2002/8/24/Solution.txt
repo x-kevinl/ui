@@ -1,0 +1,4 @@
+==Solution 1==
+A pear gives $8/3$ ounces of juice per pear. An orange gives $8/2=4$ ounces of juice per orange. If the pear-orange juice blend used one pear and one orange each, the percentage of pear juice would be
+
+$$\frac{8/3}{8/3+4} \times 100 = \frac{8}{8+12} \times 100  = \boxed{\text{(B)}\ 40}$$

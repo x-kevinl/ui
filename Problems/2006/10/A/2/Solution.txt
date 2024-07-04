@@ -1,0 +1,4 @@
+== Solution 1 ==
+By the definition of $\otimes$, we have $h\otimes h=h^{3}-h$. 
+
+Then, $h\otimes (h\otimes h)=h\otimes (h^{3}-h)=h^{3}-(h^{3}-h)=\boxed{\textbf{(C) }h}.$

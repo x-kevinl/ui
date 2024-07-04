@@ -1,0 +1,29 @@
+== Solution ==
+
+$(x-2)^2$ = perfect square.
+
+1 < perfect square < 25
+
+Perfect square can equal: 4, 9, or 16
+
+Solve for $x$:
+
+$(x-2)^2=4$ 
+
+$x=4,0$
+
+and
+
+$(x-2)^2=9$
+
+$x=5,-1$
+
+and
+
+$(x-2)^2=16$
+
+$x=6,-2$
+
+The sum of all integer solutions is
+
+$4+5+6+0+(-1)+(-2)=\boxed{\textbf{(B)} 12}$

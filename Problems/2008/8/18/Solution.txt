@@ -1,0 +1,9 @@
+== Solution ==
+We will deal with this part by part:
+Part 1: 1/4 circumference of big circle= $\frac{2\pi r}{4}=\frac{\pi r}{2}=\frac{20\pi}{2}=10\pi$
+Part 2: Big radius minus small radius= $20-10=10$
+Part 3: 1/4 circumference of small circle= $\frac{\pi r}{2}=\frac{10\pi}{2}=5\pi$
+Part 4: Diameter of small circle: $2*10=20$
+Part 5: Same as part 3: $5\pi$
+Part 6: Same as part 2: $10$
+Total: $10\pi + 10 + 5\pi + 20 + 5\pi + 10 = \boxed{E = 20\pi + 40}$

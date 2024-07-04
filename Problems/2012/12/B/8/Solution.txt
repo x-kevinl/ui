@@ -1,0 +1,19 @@
+==Solution==
+We can count the number of possible foods for each day and then multiply to enumerate the number of combinations.
+
+On Friday, we have one possibility: cake.
+
+On Saturday, we have three possibilities: pie, ice cream, or pudding. This is the end of the week.
+
+On Thursday, we have three possibilities: pie, ice cream, or pudding. We can't have cake because we have to have cake the following day, which is the Friday with the birthday party.
+
+On Wednesday, we have three possibilities: cake, plus the two things that were not eaten on Thursday.
+
+Similarly, on Tuesday, we have three possibilities: the three things that were not eaten on Wednesday.
+
+Likewise on Monday: three possibilities, the three things that were not eaten on Tuesday.
+
+On Sunday, it is tempting to think there are four possibilities, but remember that cake must be served on Friday. This serves to limit the number of foods we can eat on Sunday, with the result being that there are three possibilities: The three things that were not eaten on Monday.
+
+So the number of menus is $3 \cdot 3 \cdot 3 \cdot 3 \cdot 3 \cdot 1 \cdot 3 = 729.$
+The answer is $\boxed{A}$.

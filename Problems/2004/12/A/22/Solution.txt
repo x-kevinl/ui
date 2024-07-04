@@ -1,0 +1,11 @@
+== Solution 1==
+
+The height from the center of the bottom sphere to the plane is $1$, and from the center of the top sphere to the tip is $2$. 
+
+[[Image:2004_AMC12A-22a.png]]
+
+We now need the vertical height of the centers. If we connect centers, we get a rectangular [[pyramid]] with an [[equilateral triangle]] base. The distance from the vertex of the equilateral triangle to its [[centroid]] can be found by $30\text-60\text-90 \triangle$s to be $\frac{2\sqrt{3}}{3}$.
+
+[[Image:2004_AMC12A-22b.png]]
+
+By the [[Pythagorean Theorem]], we have $\left(\frac{2}{\sqrt{3}}\right)^2 + h^2 = 3^2 \Longrightarrow h = \frac{\sqrt{69}}{3}$. Adding the heights up, we get $\frac{\sqrt{69}}{3} + 1 + 2 \Rightarrow\boxed{\mathrm{(B)}\ 3+\frac{\sqrt{69}}{3}}$

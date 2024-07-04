@@ -1,0 +1,8 @@
+==Problem 15==
+Let the letters $F$,$L$,$Y$,$B$,$U$,$G$ represent distinct digits. Suppose $\underline{F}~\underline{L}~\underline{Y}~\underline{F}~\underline{L}~\underline{Y}$ is the greatest number that satisfies the equation
+
+$$8\cdot\underline{F}~\underline{L}~\underline{Y}~\underline{F}~\underline{L}~\underline{Y}=\underline{B}~\underline{U}~\underline{G}~\underline{B}~\underline{U}~\underline{G}.$$
+
+What is the value of $\underline{F}~\underline{L}~\underline{Y}+\underline{B}~\underline{U}~\underline{G}$?
+
+$\textbf{(A)}\ 1089 \qquad \textbf{(B)}\ 1098 \qquad \textbf{(C)}\ 1107 \qquad \textbf{(D)}\ 1116 \qquad \textbf{(E)}\ 1125$

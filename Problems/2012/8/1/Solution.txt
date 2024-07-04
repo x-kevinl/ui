@@ -1,0 +1,2 @@
+==Solution 1==
+Since Rachelle uses $3$ pounds of meat to make $8$ hamburgers, she uses $\frac{3}{8}$ pounds of meat to make one hamburger. She'll need 24 times that amount of meat for 24 hamburgers, or $\frac{3}{8} \cdot 24 = \boxed{\textbf{(E)}\ 9}$.

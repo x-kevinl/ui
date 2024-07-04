@@ -1,0 +1,4 @@
+==Problem==
+There are two values of $a$ for which the equation $ 4x^2 + ax + 8x + 9 = 0 $ has only one solution for $x$. What is the sum of those values of $a$?
+
+$ \textbf{(A) }-16\qquad\textbf{(B) }-8\qquad\textbf{(C) } 0\qquad\textbf{(D) }8\qquad\textbf{(E) }20 $

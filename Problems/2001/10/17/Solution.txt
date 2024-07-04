@@ -1,0 +1,21 @@
+== Solution ==
+
+<asy>
+import graph;
+unitsize(1.5cm);
+defaultpen(fontsize(8pt));
+
+draw(Arc((0,0),1,-72,180),linewidth(.8pt) + red);
+draw(dir(288)--(0,0)--(-1,0),linewidth(.8pt) + blue);
+label("$10$",(-0.5,0),S);
+draw(Arc((0,0),0.1,-72,180));
+label("$252^{\circ}$",(0.05,0.05),NE);
+</asy>
+
+The blue lines will be joined together to form a single blue line on the surface of the cone, hence $10$ will be the slant height of the cone.
+
+The red line will form the circumference of the base. We can compute its length and use it to determine the radius.
+
+The length of the red line is $\dfrac{252}{360}\cdot 2\pi \cdot 10 = 14\pi$. This is the circumference of a circle with radius $7$.
+
+Therefore the correct answer is $\boxed{\textbf{(C)} \text{ A cone with slant height of } 10 \text{ and radius } 7}$.

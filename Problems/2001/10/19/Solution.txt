@@ -1,0 +1,4 @@
+== Solution 1 ==
+
+Let's use [[stars and bars]].
+Let the donuts be represented by $ O $s. We wish to find all possible combinations of glazed, chocolate, and powdered donuts that give us $ 4 $ in all. The four donuts we want can be represented as $ OOOO $. Notice that we can add two "dividers" to divide the group of donuts into three different kinds; the first will be glazed, second will be chocolate, and the third will be powdered. For example, $ O|OO|O $ represents one glazed, two chocolate, and one powdered. We have six objects in all, and we wish to turn two into dividers, which can be done in $ \binom{6}{2}=15 $ ways. Our answer is hence $ \boxed{\textbf{(D)}\ 15} $. Notice that this can be generalized to get the stars and bars (balls and urns) identity.

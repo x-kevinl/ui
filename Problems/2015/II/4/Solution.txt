@@ -1,0 +1,7 @@
+==Solution==
+
+Call the trapezoid <math>ABCD</math> with <math>AB</math> as the smaller base and <math>CD</math> as the longer. Let the point where an altitude intersects the larger base be <math>E</math>, where <math>E</math> is closer to <math>D</math>. 
+
+Subtract the two bases and divide to find that <math>ED</math> is <math>\log 8</math>. The altitude can be expressed as <math>\frac{4}{3} \log 8</math>. Therefore, the two legs are <math>\frac{5}{3} \log 8</math>, or <math>\log 32</math>.
+
+The perimeter is thus <math>\log 32 + \log 32 + \log 192 + \log 3</math> which is <math>\log 2^{16} 3^2</math>. So <math>p + q = \boxed{018}</math>

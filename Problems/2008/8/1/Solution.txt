@@ -1,0 +1,2 @@
+==Solution==
+If Susan spent 12 dollars, then twice that much on rides, then she spent $12+12 \times 2=36$ dollars in total. We subtract $36$ from $50$ to get $\boxed{\textbf{(B)}\ 14}$

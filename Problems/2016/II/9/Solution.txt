@@ -1,0 +1,2 @@
+==Solution 1==
+Since all the terms of the sequences are integers, and 100 isn't very big, we should just try out the possibilities for <math>b_2</math>. When we get to <math>b_2=9</math> and <math>a_2=91</math>, we have <math>a_4=271</math> and <math>b_4=729</math>, which works, therefore, the answer is <math>b_3+a_3=81+181=\boxed{262}</math>.

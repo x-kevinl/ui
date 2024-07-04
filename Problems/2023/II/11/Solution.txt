@@ -1,0 +1,88 @@
+==Solution==
+
+Denote by <math>\mathcal C</math> a collection of 16 distinct subsets of <math>\left\{ 1, 2, 3, 4, 5 \right\}</math>.
+Denote <math>N = \min \left\{ |S|: S \in \mathcal C \right\}</math>.
+
+Case 1: <math>N = 0</math>.
+
+This entails <math>\emptyset \in \mathcal C</math>.
+Hence, for any other set <math>A \in \mathcal C</math>, we have <math>\emptyset \cap A = \emptyset</math>. This is infeasible.
+
+Case 2: <math>N = 1</math>.
+
+Let <math>\{a_1\} \in \mathcal C</math>.
+To get <math>\{a_1\} \cap A \neq \emptyset</math> for all <math>A \in \mathcal C</math>.
+We must have <math>a_1 \in \mathcal A</math>.
+
+The total number of subsets of <math>\left\{ 1, 2, 3, 4, 5 \right\}</math> that contain <math>a_1</math> is <math>2^4 = 16</math>.
+Because <math>\mathcal C</math> contains 16 subsets.
+We must have <math>\mathcal C = \left\{ \{a_1\} \cup A : \forall \ A \subseteq \left\{ 1, 2, 3, 4, 5 \right\} \backslash \left\{a_1 \right\} \right\}</math>.
+Therefore, for any <math>X, Y \in \mathcal C</math>, we must have <math>X \cap Y \supseteq \{a_1\}</math>.
+So this is feasible.
+
+Now, we count the number of <math>\mathcal C</math> in this case.
+We only need to determine <math>a_1</math>.
+Therefore, the number of solutions is 5.
+
+Case 3: <math>N = 2</math>.
+
+Case 3.1: There is exactly one subset in <math>\mathcal C</math> that contains 2 elements.
+
+Denote this subset as <math>\left\{ a_1, a_2 \right\}</math>.
+We then put all subsets of <math>\left\{ 1, 2, 3, 4, 5 \right\}</math> that contain at least three elements into <math>\mathcal C</math>, except <math>\left\{ a_3, a_4, a_5 \right\}</math>.
+This satisfies <math>X \cap Y \neq \emptyset</math> for any <math>X, Y \in \mathcal C</math>.
+
+Now, we count the number of <math>\mathcal C</math> in this case.
+We only need to determine <math>\left\{ a_1, a_2 \right\}</math>.
+Therefore, the number of solutions is <math>\binom{5}{2} = 10</math>.
+
+Case 3.2: There are exactly two subsets in <math>\mathcal C</math> that contain 2 elements.
+
+They must take the form <math>\left\{ a_1, a_2 \right\}</math> and <math>\left\{ a_1, a_3 \right\}</math>.
+
+We then put all subsets of <math>\left\{ 1, 2, 3, 4, 5 \right\}</math> that contain at least three elements into <math>\mathcal C</math>, except <math>\left\{ a_3, a_4, a_5 \right\}</math> and <math>\left\{ a_2, a_4, a_5 \right\}</math>.
+This satisfies <math>X \cap Y \neq \emptyset</math> for any <math>X, Y \in \mathcal C</math>.
+
+Now, we count the number of <math>\mathcal C</math> in this case.
+We only need to determine <math>\left\{ a_1, a_2 \right\}</math> and <math>\left\{ a_1, a_3 \right\}</math>.
+Therefore, the number of solutions is <math>5 \cdot \binom{4}{2} = 30</math>.
+
+Case 3.3: There are exactly three subsets in <math>\mathcal C</math> that contain 2 elements.
+They take the form <math>\left\{ a_1, a_2 \right\}</math>, <math>\left\{ a_1, a_3 \right\}</math>, <math>\left\{ a_1, a_4 \right\}</math>.
+
+We then put all subsets of <math>\left\{ 1, 2, 3, 4, 5 \right\}</math> that contain at least three elements into <math>\mathcal C</math>, except <math>\left\{ a_3, a_4, a_5 \right\}</math>, <math>\left\{ a_2, a_4, a_5 \right\}</math>, <math>\left\{ a_2, a_3, a_5 \right\}</math>.
+This satisfies <math>X \cap Y \neq \emptyset</math> for any <math>X, Y \in \mathcal C</math>.
+
+Now, we count the number of <math>\mathcal C</math> in this case.
+We only need to determine <math>\left\{ a_1, a_2 \right\}</math>, <math>\left\{ a_1, a_3 \right\}</math>, <math>\left\{ a_1, a_4 \right\}</math>.
+Therefore, the number of solutions is <math>5 \cdot \binom{4}{3} = 20</math>.
+
+Case 3.4: There are exactly three subsets in <math>\mathcal C</math> that contain 2 elements.
+They take the form <math>\left\{ a_1, a_2 \right\}</math>, <math>\left\{ a_1, a_3 \right\}</math>, <math>\left\{ a_2, a_3 \right\}</math>.
+
+We then put all subsets of <math>\left\{ 1, 2, 3, 4, 5 \right\}</math> that contain at least three elements into <math>\mathcal C</math>, except <math>\left\{ a_3, a_4, a_5 \right\}</math>, <math>\left\{ a_2, a_4, a_5 \right\}</math>, <math>\left\{ a_1, a_4, a_5 \right\}</math>.
+This satisfies <math>X \cap Y \neq \emptyset</math> for any <math>X, Y \in \mathcal C</math>.
+
+Now, we count the number of <math>\mathcal C</math> in this case.
+We only need to determine <math>\left\{ a_1, a_2 \right\}</math>, <math>\left\{ a_1, a_3 \right\}</math>, <math>\left\{ a_2, a_3 \right\}</math>.
+Therefore, the number of solutions is <math>\binom{5}{3} = 10</math>.
+
+Case 3.5: There are exactly four subsets in <math>\mathcal C</math> that contain 2 elements.
+They take the form <math>\left\{ a_1, a_2 \right\}</math>, <math>\left\{ a_1, a_3 \right\}</math>, <math>\left\{ a_1, a_4 \right\}</math>, <math>\left\{ a_1, a_5 \right\}</math>.
+
+We then put all subsets of <math>\left\{ 1, 2, 3, 4, 5 \right\}</math> that contain at least three elements into <math>\mathcal C</math>, except <math>\left\{ a_3, a_4, a_5 \right\}</math>, <math>\left\{ a_2, a_4, a_5 \right\}</math>, <math>\left\{ a_1, a_4, a_5 \right\}</math>, <math>\left\{ a_2, a_3, a_4 \right\}</math>.
+This satisfies <math>X \cap Y \neq \emptyset</math> for any <math>X, Y \in \mathcal C</math>.
+
+Now, we count the number of <math>\mathcal C</math> in this case.
+We only need to determine <math>\left\{ a_1, a_2 \right\}</math>, <math>\left\{ a_1, a_3 \right\}</math>, <math>\left\{ a_1, a_4 \right\}</math>, <math>\left\{ a_1, a_5 \right\}</math>.
+Therefore, the number of solutions is 5.
+
+Putting all subcases together, the number of solutions is this case is <math>10 + 30 + 20 + 10 + 5 = 75</math>.
+
+Case 4: <math>N \geq 3</math>.
+
+The number of subsets of <math>\left\{ 1, 2, 3, 4, 5 \right\}</math> that contain at least three elements is <math>\sum_{i=3}^5 \binom{5}{i} = 16</math>.
+Because <math>\mathcal C</math> has 16 elements, we must select all such subsets into <math>\mathcal C</math>.
+Therefore, the number of solutions in this case is 1.
+
+Putting all cases together, the total number of <math>\mathcal C</math> is <math>5 + 75 + 1 = \boxed{\textbf{(081) }}</math>.

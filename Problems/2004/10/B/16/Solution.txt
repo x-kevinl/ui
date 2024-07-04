@@ -1,0 +1,30 @@
+==Solution 1==
+
+The situation is shown in the picture below. The radius we seek is $SD = AD + AS$. Clearly $AD=1$. The point $S$ is the center of the equilateral triangle $ABC$, thus $AS$ is $2/3$ of the altitude of this triangle. We get that $AS = \frac23 \cdot \sqrt 3$. Therefore the radius we seek is
+$1 + \frac23 \cdot \sqrt 3 = \boxed{\mathrm{(D)\ }\frac{3+2\sqrt{3}}3}$.
+
+
+<asy>
+unitsize(2cm);
+pair A=(0,0), B=dir(0)*2, C=dir(60)*2;
+draw(circle(A,1));
+draw(circle(B,1));
+draw(circle(C,1));
+dot(A); dot(B); dot(C);
+draw(A--B--C--cycle);
+
+pair D=A+dir(210), E=B+dir(-30), F=C+dir(90);
+draw(circumcircle(D,E,F));
+dot(D); dot(E); dot(F);
+
+pair S=(A+B+C)/3;
+dot(S);
+
+draw(S--D); draw(S--E); draw(S--F);
+
+label("$S$",S,S);
+label("$A$",A,SE);
+label("$D$",D,SW);
+label("$B$",B,NE);
+label("$C$",C,ENE);
+</asy>

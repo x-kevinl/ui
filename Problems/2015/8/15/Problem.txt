@@ -1,0 +1,5 @@
+==Problem==
+
+At Euler Middle School, $198$ students voted on two issues in a school referendum with the following results: $149$ voted in favor of the first issue and $119$ voted in favor of the second issue. If there were exactly $29$ students who voted against both issues, how many students voted in favor of both issues?
+
+$\textbf{(A) }49\qquad\textbf{(B) }70\qquad\textbf{(C) }79\qquad\textbf{(D) }99\qquad \textbf{(E) }149$

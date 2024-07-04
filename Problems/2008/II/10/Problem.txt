@@ -1,0 +1,12 @@
+== Problem ==
+The diagram below shows a <math>4\times4</math> rectangular array of points, each of which is <math>1</math> unit away from its nearest neighbors.
+<center><asy>
+unitsize(0.25inch);
+defaultpen(linewidth(0.7));
+
+int i, j;
+for(i = 0; i < 4; ++i)
+	for(j = 0; j < 4; ++j)
+		dot(((real)i, (real)j));
+</asy></center>
+Define a ''growing path'' to be a sequence of distinct points of the array with the property that the distance between consecutive points of the sequence is strictly increasing. Let <math>m</math> be the maximum possible number of points in a growing path, and let <math>r</math> be the number of growing paths consisting of exactly <math>m</math> points. Find <math>mr</math>.

@@ -1,0 +1,89 @@
+==Solution 1==
+
+Because <math>M</math> is the midpoint of <math>BC</math>, following from the Stewart's theorem, <math>AM = 2 \sqrt{37}</math>.
+
+Because <math>A</math>, <math>B</math>, <math>C</math>, and <math>P</math> are concyclic, <math>\angle BPA = \angle C</math>, <math>\angle CPA = \angle B</math>.
+
+Denote <math>\theta = \angle PBQ</math>.
+
+In <math>\triangle BPQ</math>, following from the law of sines,
+<cmath>
+\[
+\frac{BQ}{\sin \angle BPA} = \frac{PQ}{\angle PBQ}
+\]
+</cmath>
+
+Thus,
+<cmath>
+\[
+\frac{BQ}{\sin C} = \frac{PQ}{\sin \theta} . \hspace{1cm} (1)
+\]
+</cmath>
+
+In <math>\triangle CPQ</math>, following from the law of sines,
+<cmath>
+\[
+\frac{CQ}{\sin \angle CPA} = \frac{PQ}{\angle PCQ}
+\]
+</cmath>
+
+Thus,
+<cmath>
+\[
+\frac{CQ}{\sin B} = \frac{PQ}{\sin \theta} . \hspace{1cm} (2)
+\]
+</cmath>
+
+Taking <math>\frac{(1)}{(2)}</math>, we get
+<cmath>
+\[
+\frac{BQ}{\sin C} = \frac{CQ}{\sin B}
+\]
+</cmath>
+
+In <math>\triangle ABC</math>, following from the law of sines,
+<cmath>
+\[
+\frac{AB}{\sin C} = \frac{AC}{\sin B} . \hspace{1cm} (3)
+\]
+</cmath>
+
+Thus, Equations (2) and (3) imply
+<cmath>
+\begin{align*}
+\frac{BQ}{CQ} & = \frac{AB}{AC} \\
+& = \frac{13}{15} . \hspace{1cm} (4)
+\end{align*}
+</cmath>
+
+
+
+Next, we compute <math>BQ</math> and <math>CQ</math>.
+
+We have
+<cmath>
+\begin{align*}
+BQ^2 & = AB^2 + AQ^2 - 2 AB\cdot AQ \cos \angle BAQ \\
+& = AB^2 + AQ^2 - 2 AB\cdot AQ \cos \angle BAM \\
+& = AB^2 + AQ^2 - 2 AB\cdot AQ \cdot \frac{AB^2 + AM^2 - BM^2}{2 AB \cdot AM} \\
+& = AB^2 + AQ^2 -  AQ \cdot \frac{AB^2 + AM^2 - BM^2}{AM} \\
+& = 169 + AQ^2 - \frac{268}{2 \sqrt{37}} AQ .  \hspace{1cm} (5)
+\end{align*}
+</cmath>
+
+We have
+<cmath>
+\begin{align*}
+CQ^2 & = AC^2 + AQ^2 - 2 AC\cdot AQ \cos \angle CAQ \\
+& = AC^2 + AQ^2 - 2 AC\cdot AQ \cos \angle CAM \\
+& = AC^2 + AQ^2 - 2 AC\cdot AQ \cdot \frac{AC^2 + AM^2 - CM^2}{2 AC \cdot AM} \\
+& = AC^2 + AQ^2 -  AQ \cdot \frac{AC^2 + AM^2 - CM^2}{AM} \\
+& = 225 + AQ^2 - \frac{324}{2 \sqrt{37}} AQ .  \hspace{1cm} (6)
+\end{align*}
+</cmath>
+
+Taking (5) and (6) into (4), we get <math>AQ = \frac{99}{\sqrt{148}}</math>
+
+Therefore, the answer is <math>99 + 148 = \boxed{\textbf{(247) }}</math>
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)

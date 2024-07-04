@@ -1,0 +1,5 @@
+==Problem 11==
+A square-shaped floor is covered with congruent square tiles. If the total number of tiles that lie on the two diagonals is 37, how many tiles cover the floor?
+
+
+$\textbf{(A) }148\qquad\textbf{(B) }324\qquad\textbf{(C) }361\qquad\textbf{(D) }1296\qquad\textbf{(E) }1369$

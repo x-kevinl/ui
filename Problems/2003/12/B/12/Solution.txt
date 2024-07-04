@@ -1,0 +1,2 @@
+== Solution 1==
+For all consecutive odd integers, one of every five is a multiple of 5 and one of every three is a multiple of 3. The answer is $3 \cdot 5 = 15$, so  ${\boxed{\textbf{(D)15}}}$ is the correct answer.

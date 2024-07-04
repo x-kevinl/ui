@@ -1,0 +1,8 @@
+==Solution 1==
+A fourth degree polynomial has four [[root]]s. Since the coefficients are real(meaning that complex roots come in conjugate pairs), the remaining two roots must be the [[complex conjugate]]s of the two given roots. By the factor theorem, our roots are $2-i,-2i$. Now we work backwards for the polynomial:
+
+<div style="text-align:center;">$(x-(2+i))(x-(2-i))(x-2i)(x+2i) = 0$<br />
+$(x^2 - 4x + 5)(x^2 + 4) = 0$<br />
+$x^4 - 4x^3 + 9x^2 - 16x + 20 = 0$</div>
+
+Thus our answer is $- 4 + 9 - 16 + 20 = 9\ \mathrm{(D)}$.

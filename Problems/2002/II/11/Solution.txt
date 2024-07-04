@@ -1,0 +1,6 @@
+== Solution 1==
+Let the second term of each series be <math>x</math>. Then, the common ratio is <math>\frac{1}{8x}</math>, and the first term is <math>8x^2</math>. 
+
+So, the sum is <math>\frac{8x^2}{1-\frac{1}{8x}}=1</math>. Thus, <math>64x^3-8x+1 = (4x-1)(16x^2+4x-1) = 0 \Rightarrow x = \frac{1}{4}, \frac{-1 \pm \sqrt{5}}{8}</math>. 
+
+The only solution in the appropriate form is <math>x = \frac{\sqrt{5}-1}{8}</math>. Therefore, <math>100m+10n+p = \boxed{518}</math>.

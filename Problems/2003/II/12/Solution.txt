@@ -1,0 +1,18 @@
+== Solution ==
+Let <math>v_i</math> be the number of votes candidate <math>i</math> received, and let <math>s=v_1+\cdots+v_{27}</math> be the total number of votes cast. Our goal is to determine the smallest possible <math>s</math>.
+
+Candidate <math>i</math> got <math>\frac{v_i}s</math> of the votes, hence the percentage of votes they received is <math>\frac{100v_i}s</math>. The condition in the problem statement says that <math>\forall i: \frac{100v_i}s + 1 \leq v_i</math>.  (<math>\forall</math> means "for all", so this means "For all <math>i</math>, <math>\frac{100v_i}s + 1 \leq v_i</math> is true")
+
+Obviously, if some <math>v_i</math> would be <math>0</math> or <math>1</math>, the condition would be false. Thus <math>\forall i: v_i\geq 2</math>. We can then rewrite the above inequality as <math>\forall i: s\geq\frac{100v_i}{v_i-1}</math>. 
+
+If for some <math>i</math> we have <math>v_i=2</math>, then from the inequality we just derived we would have <math>s\geq 200</math>.
+
+If for some <math>i</math> we have <math>v_i=3</math>, then <math>s\geq 150</math>.
+
+And if for some <math>i</math> we have <math>v_i=4</math>, then <math>s\geq \frac{400}3 = 133\frac13</math>, and hence <math>s\geq 134</math>.
+
+Is it possible to have <math>s<134</math>? We just proved that to have such <math>s</math>, all <math>v_i</math> have to be at least <math>5</math>. But then <math>s=v_1+\cdots+v_{27}\geq 27\cdot 5 = 135</math>, which is a contradiction. Hence the smallest possible <math>s</math> is at least <math>134</math>.
+
+Now consider a situation where <math>26</math> candidates got <math>5</math> votes each, and one candidate got <math>4</math> votes. In this situation, the total number of votes is exactly <math>134</math>, and for each candidate the above inequality is satisfied. Hence the minimum number of committee members is <math>s=\boxed{134}</math>.
+
+Note: Each of the <math>26</math> candidates received <math>\simeq 3.63\%</math> votes, and the last candidate received <math>\simeq 2.985\%</math> votes.

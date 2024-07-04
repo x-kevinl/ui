@@ -1,0 +1,11 @@
+==Solution 1 (Substitution)==
+Use a system of equations. Let $x$ be the weight of a pizza and $y$ be the weight of a cup of orange slices.
+We have $$\frac{1}{3}x+\frac{7}{2}y=\frac{3}{4}x+\frac{1}{2}y.$$
+Rearranging, we get $$\begin{align*}
+\frac{5}{12}x&=3y, \\
+x&=\frac{36}{5}y.
+\end{align*}$$
+Plugging in $\frac{1}{4}$ pounds for $y$ by the given gives $\frac{9}{5}=\boxed{\textbf{(A) }1\frac{4}{5}}.$
+
+~ItsMeNoobieboy
+~walmartbrian

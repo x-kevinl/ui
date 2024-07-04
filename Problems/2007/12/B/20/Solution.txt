@@ -1,0 +1,11 @@
+==Solution 1==
+<!-- <center><asy>
+pathpen = linewidth(0.7);
+real a = 3, b = 1, c = 9, d = 3; 
+D((0,c) -- ((d-c)/(a-b),(a*d-b*c)/(a-b)) -- (0,d) -- ((c-d)/(a-b),(b*c-a*d)/(a-b)) -- cycle);
+D((0,c) -- ((-d-c)/(a-b),(-a*d-b*c)/(a-b)) -- (0,-d) -- ((c+d)/(a-b),-(-a*d-b*c)/(a-b)) -- cycle);
+</asy></center> -->
+Plotting the parallelogram on the coordinate plane, the 4 corners are at $(0,c),(0,d),\left(\frac{d-c}{a-b},\frac{ad-bc}{a-b}\right),\left(\frac{c-d}{a-b},\frac{bc-ad}{a-b}\right)$. Because $72= 4\cdot 18$, we have that $4(c-d)\left(\frac{c-d}{a-b}\right) = (c+d)\left(\frac{c+d}{a-b}\right)$ or that $2(c-d)=c+d$, which gives $c=3d$ (consider a [[homothety]], or dilation, that carries the first parallelogram to the second parallelogram; because the area increases by $4\times$, it follows that the stretch along the diagonal, or the ratio of side lengths, is $2\times$). The area of the triangular half of the parallelogram on the right side of the y-axis is given by $9 = \frac{1}{2} (c-d)\left(\frac{d-c}{a-b}\right)$, so substituting $c = 3d$:
+<center>$$
+\frac{1}{2} (c-d)\left(\frac{c-d}{a-b}\right) = 9 \quad \Longrightarrow \quad 2d^2 = 9(a-b)$$</center>
+Thus $3|d$, and we verify that $d = 3$, $a-b = 2 \Longrightarrow a = 3, b = 1$ will give us a minimum value for $a+b+c+d$. Then $a+b+c+d = 3 + 1 + 9 + 3 = \boxed{\mathbf{(D)} 16}$.

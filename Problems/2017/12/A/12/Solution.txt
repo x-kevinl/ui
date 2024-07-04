@@ -1,0 +1,5 @@
+==Solution 1==
+
+We know that Horse $k$ will be at the starting point after $n$ minutes if $k|n$. Thus, we are looking for the smallest $n$ such that at least $5$ of the numbers $\{1,2,\cdots,10\}$ divide $n$. Thus, $n$ has at least $5$ positive integer divisors.
+
+We quickly see that $12$ is the smallest number with at least $5$ positive integer divisors and that $1,2,3,4,6$ are each numbers of horses. Thus, our answer is $1+2=\boxed{\textbf{(B) } 3}$.

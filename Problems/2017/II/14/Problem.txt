@@ -1,0 +1,2 @@
+==Problem==
+A <math>10\times10\times10</math> grid of points consists of all points in space of the form <math>(i,j,k)</math>, where <math>i</math>, <math>j</math>, and <math>k</math> are integers between <math>1</math> and <math>10</math>, inclusive. Find the number of different lines that contain exactly <math>8</math> of these points.

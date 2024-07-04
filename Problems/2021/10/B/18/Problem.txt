@@ -1,0 +1,5 @@
+==Problem==
+
+A fair $6$-sided die is repeatedly rolled until an odd number appears. What is the probability that every even number appears at least once before the first occurrence of an odd number?
+
+$\textbf{(A)} ~\frac{1}{120} \qquad\textbf{(B)} ~\frac{1}{32} \qquad\textbf{(C)} ~\frac{1}{20} \qquad\textbf{(D)} ~\frac{3}{20} \qquad\textbf{(E)} ~\frac{1}{6}$

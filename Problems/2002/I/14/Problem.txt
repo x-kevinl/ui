@@ -1,0 +1,2 @@
+== Problem ==
+A set <math>\mathcal{S}</math> of distinct positive integers has the following property: for every integer <math>x</math> in <math>\mathcal{S},</math> the arithmetic mean of the set of values obtained by deleting <math>x</math> from <math>\mathcal{S}</math> is an integer.  Given that 1 belongs to <math>\mathcal{S}</math> and that 2002 is the largest element of <math>\mathcal{S},</math> what is the greatest number of elements that <math>\mathcal{S}</math> can have?

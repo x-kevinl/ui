@@ -1,0 +1,2 @@
+==Problem==
+Find the number of ordered pairs <math>(m, n)</math> such that <math>m</math> and <math>n</math> are positive integers in the set <math>\{1, 2, ..., 30\}</math> and the greatest common divisor of <math>2^m + 1</math> and <math>2^n - 1</math> is not <math>1</math>.

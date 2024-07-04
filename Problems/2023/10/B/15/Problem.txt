@@ -1,0 +1,4 @@
+==Problem==
+What is the least positive integer $m$ such that $m\cdot2!\cdot3!\cdot4!\cdot5!...16!$ is a perfect square?
+
+$\textbf{(A) }30\qquad\textbf{(B) }30030\qquad\textbf{(C) }70\qquad\textbf{(D) }1430\qquad\textbf{(E) }1001$

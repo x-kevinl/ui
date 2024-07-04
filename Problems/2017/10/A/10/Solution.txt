@@ -1,0 +1,2 @@
+==Solution==
+The triangle inequality generalizes to all polygons, so $x < 3+7+15$ and $15<x+3+7$ yields $5<x<25$. Now, we know that there are $19$ numbers between $5$ and $25$ exclusive, but we must subtract $2$ to account for the 2 lengths already used that are between those numbers, which gives $19-2=\boxed{\textbf{(B)}\ 17}$

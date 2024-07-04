@@ -1,0 +1,23 @@
+==Solution 1==
+
+Suppose our four sides lengths cut out arc lengths of <math>2a</math>, <math>2b</math>, <math>2c</math>, and <math>2d</math>, where <math>a+b+c+d=180^\circ</math>. Then, we only have to consider which arc is opposite <math>2a</math>. These are our three cases, so
+<cmath>\varphi_A=a+c</cmath>
+<cmath>\varphi_B=a+b</cmath>
+<cmath>\varphi_C=a+d</cmath>
+Our first case involves quadrilateral <math>ABCD</math> with <math>\overarc{AB}=2a</math>, <math>\overarc{BC}=2b</math>, <math>\overarc{CD}=2c</math>, and <math>\overarc{DA}=2d</math>.
+
+Then, by Law of Sines, <math>AC=2\sin\left(\frac{\overarc{ABC}}{2}\right)=2\sin(a+b)</math> and <math>BD=2\sin\left(\frac{\overarc{BCD}}{2}\right)=2\sin(a+d)</math>. Therefore,
+
+<cmath>K=\frac{1}{2}\cdot AC\cdot BD\cdot \sin(\varphi_A)=2\sin\varphi_A\sin\varphi_B\sin\varphi_C=\frac{24}{35},</cmath>
+so our answer is <math>24+35=\boxed{059}</math>.
+
+Note that the conditions of the problem are satisfied when the lengths of the four sticks are about <math>0.32, 0.91, 1.06, 1.82</math>.
+
+By S.B.
+
+===Note===
+[[File:CyclIntersect.png|400px]]
+
+The solution uses <cmath>\varphi_A=a+c.</cmath>
+
+We can see that this follows because <math>\varphi_A = \frac12 (2a+2c)=a+c,</math> where <math>a</math> and <math>c</math> are the central angles of opposite sides.

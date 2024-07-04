@@ -1,0 +1,13 @@
+== Solution 1==
+First, modulo $2$ or $5$, $\underline{20210A} \equiv A$.
+Hence, $A \neq 0, 2, 4, 5, 6, 8$.
+
+Second modulo $3$, $\underline{20210A} \equiv 2 + 0 + 2 + 1 + 0 + A \equiv 5 + A$.
+Hence, $A \neq 1, 4, 7$.
+
+Third, modulo $11$, $\underline{20210A} \equiv A + 1 + 0 - 0 - 2 - 2 \equiv A - 3$.
+Hence, $A \neq 3$.
+
+Therefore, the answer is $\boxed{\textbf{(E)}\ 9}$.
+
+~NH14 ~Steven Chen (www.professorchenedu.com)

@@ -1,0 +1,14 @@
+==Solution 1==
+Let $O$ be the incenter of $\triangle{ABC}$. Because $\overline{MO} \parallel \overline{BC}$ and $\overline{BO}$ is the angle bisector of $\angle{ABC}$, we have 
+
+$$\angle{MBO} = \angle{CBO} = \angle{MOB} = \frac{1}{2}\angle{MBC}$$
+
+It then follows due to alternate interior angles and base angles of isosceles triangles that $MO = MB$. Similarly, $NO = NC$. The perimeter of $\triangle{AMN}$ then becomes
+$$
+\begin{align*}
+AM + MN + NA &= AM + MO + NO + NA \\
+&= AM + MB + NC + NA \\
+&= AB + AC \\
+&= 30 \rightarrow \boxed{(B)}
+\end{align*}
+$$

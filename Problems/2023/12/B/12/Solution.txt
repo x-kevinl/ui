@@ -1,0 +1,16 @@
+==Solution 1==
+let $z$ = $a+bi$.
+
+$z \otimes z = a^{2}+b^{2}i$.
+
+This is equal to $z^{2} + 40 = a^{2}-b^{2}+40+2abi$
+
+Since the real values have to be equal to each other, $a^{2}-b^{2}+40 = a^{2}$.
+Simple algebra shows $b^{2} = 40$, so $b$ is $2\sqrt{10}$.
+
+The imaginary components must also equal each other, meaning $b^{2} = 2ab$, or $b = 2a$. This means $a = \frac{b}{2} = \sqrt{10}$.
+
+Thus, the magnitude of z is $ \sqrt{a^{2}+b^{2}} = \sqrt{50} = 5\sqrt{2}$
+$=\text{\boxed{\textbf{(E) }5\sqrt{2}}}$
+
+~Failure.net

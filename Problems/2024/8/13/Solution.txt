@@ -1,0 +1,18 @@
+==Solution 1==
+Looking at the answer choices, you see that you can list them out. 
+Doing this gets you:
+
+$UUDDUD$
+
+$UDUDUD$
+
+$UUUDDD$
+
+$UDUUDD$
+
+$UUDUDD$
+
+Counting all the paths listed above gets you $\boxed{\textbf{(B)} \ 5}$.
+
+~ALWAYSRIGHT11
+~vockey(minor edits)

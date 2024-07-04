@@ -1,0 +1,6 @@
+==Solution 1==
+The area of the hexagon is equal to $\dfrac{3(6)^2\sqrt{3}}{2}=54\sqrt{3}$ by the formula for the area of a hexagon.
+
+We note that each interior angle of the regular hexagon is $120^\circ$ which means that each sector is $\dfrac{1}{3}$ of the circle it belongs to. The area of each sector is $\dfrac{9\pi}{3}=3\pi$. The area of all six is $6\times 3\pi=18\pi$. 
+
+The shaded area is equal to the area of the hexagon minus the sum of the area of all the sectors, which is equal to $\boxed{\textbf{(C)}\ 54\sqrt{3}-18\pi}$

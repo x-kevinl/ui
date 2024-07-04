@@ -1,0 +1,16 @@
+==Solution 1 (Linear Polynomials)==
+
+Let <math>R(x)=P(x)+Q(x).</math> Since the <math>x^2</math>-terms of <math>P(x)</math> and <math>Q(x)</math> cancel, we conclude that <math>R(x)</math> is a linear polynomial.
+
+Note that
+<cmath>\begin{alignat*}{8}
+R(16) &= P(16)+Q(16) &&= 54+54 &&= 108, \\
+R(20) &= P(20)+Q(20) &&= 53+53 &&= 106,
+\end{alignat*}</cmath>
+so the slope of <math>R(x)</math> is <math>\frac{106-108}{20-16}=-\frac12.</math>
+
+It follows that the equation of <math>R(x)</math> is <cmath>R(x)=-\frac12x+c</cmath> for some constant <math>c,</math> and we wish to find <math>R(0)=c.</math>
+
+We substitute <math>x=20</math> into this equation to get <math>106=-\frac12\cdot20+c,</math> from which <math>c=\boxed{116}.</math>
+
+~MRENTHUSIASM

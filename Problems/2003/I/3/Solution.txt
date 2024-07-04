@@ -1,0 +1,18 @@
+== Solution ==
+Order the numbers in the set from greatest to least to reduce error: <math>\{34, 21, 13, 8, 5, 3, 2, 1\}.</math>
+Each [[element]] of the [[set]] will appear in <math>7</math> two-element [[subset]]s, once with each other number.
+
+*<math>34</math> will be the greater number in <math>7</math> subsets. 
+*<math>21</math> will be the greater number in <math>6</math> subsets. 
+*<math>13</math> will be the greater number in <math>5</math> subsets. 
+*<math>8</math> will be the greater number in <math>4</math> subsets. 
+*<math>5</math> will be the greater number in <math>3</math> subsets. 
+*<math>3</math> will be the greater number in <math>2</math> subsets. 
+*<math>2</math> will be the greater number in <math>1</math> subsets. 
+*<math>1</math> will be the greater number in <math>0</math> subsets. 
+
+Therefore the desired sum is <math>34\cdot7+21\cdot6+13\cdot5+8\cdot4+5\cdot3+3 \cdot2+2\cdot1+1\cdot0=\boxed{484}</math>.
+
+Note: Note that <math>7+6+5+4+3+2+1=\binom{8}{2}</math>, so we have counted all the possible cases.
+
+~Yiyj1

@@ -1,0 +1,37 @@
+== Diagram ==
+<center>
+<asy>
+import olympiad;
+
+size(200);
+
+pair A, B, C, I, M, E;
+
+A = (0, 0);
+B = (3, 0);
+C = (0, 3);
+M = (1.5, 1.5);
+I = (0, 1.5 + sqrt(2) / 2);
+E = (1.5 - sqrt(2) / 2, 0);
+
+draw(A -- B -- C -- cycle);
+draw(I -- M -- E -- cycle);
+draw(rightanglemark(I, A, E, 4));
+
+dot(A);
+dot(B);
+dot(C);
+dot(I);
+dot(M);
+dot(E);
+
+label("$A$", A, SW);
+label("$B$", B, E);
+label("$C$", C, N);
+label("$I$", I, NE);
+label("$M$", M, NE);
+label("$E$", E + (0.1, 0.04), NE);
+label("$3$", (A + C) / 2, W);
+label("$3$", (A + B) / 2, S);
+</asy>
+</center>

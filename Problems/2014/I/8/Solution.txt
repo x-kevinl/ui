@@ -1,0 +1,5 @@
+==Solution 1 (similar to Solution 3)==  
+
+We have that <math>N^2 - N = N(N - 1)\equiv 0\mod{10000}</math>
+
+Thus, <math>N(N-1)</math> must be divisible by both <math>5^4</math> and <math>2^4</math>. Note, however, that if either <math>N</math> or <math>N-1</math> has both a <math>5</math> and a <math>2</math> in its factorization, the other must end in either <math>1</math> or <math>9</math>, which is impossible for a number that is divisible by either <math>2</math> or <math>5</math>. Thus, one of them is divisible by <math>2^4 = 16</math>, and the other is divisible by <math>5^4 = 625</math>. Noting that <math>625 \equiv 1\mod{16}</math>, we see that <math>625</math> would work for <math>N</math>, except the thousands digit is <math>0</math>. The other possibility is that <math>N</math> is a multiple of <math>16</math> and <math>N-1</math> is a multiple of <math>625</math>. In order for this to happen, <cmath>N-1 \equiv -1 \pmod {16}.</cmath> Since <math>625 \equiv 1 \pmod{16}</math>, we know that <math>15 \cdot 625 = 9375 \equiv 15 \equiv -1 \mod{16}</math>. Thus, <math>N-1 = 9375</math>, so <math>N = 9376</math>, and our answer is <math>\boxed{937}</math>.

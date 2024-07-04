@@ -1,0 +1,46 @@
+== Solution ==
+First of all, it is easy to see by induction that for any <math>P(x,y)</math> in the frog's jump sequence, <math>x+y</math> will be a multiple of <math>3</math> and <math>x-y</math> will be a multiple of <math>5.</math> The base case <math>(x,y) = (0,0)</math> obviously satisfies the constraints and if <math>x+y = 3n</math> and <math>x-y = 5m,</math> any of the four transformations will sustain this property:
+
+<cmath>
+\begin{align*}
+(x+7)+(y+2) = x+y+9 \rightarrow 3(n+3) &\text{ and } (x+7)-(y+2) = x-y+5 \rightarrow 5(m+1)\\
+(x+2)+(y+7) = x+y+9 \rightarrow 3(n+3) &\text{ and } (x+2)-(y+7) = x-y-5 \rightarrow 5(m-1)\\
+(x-5)+(y-10) = x+y-15 \rightarrow 3(n-5) &\text{ and } (x-5)-(y-10) = x-y+5 \rightarrow 5(m+1)\\
+(x-10)+(y-5) = x+y-15 \rightarrow 3(n-5) &\text{ and } (x-10)-(y-5) = x-y-5 \rightarrow 5(m-1).\\
+\end{align*}
+</cmath>
+So we know that any point the frog can reach will satisfy <math>x+y = 3n</math> and <math>x-y = 5m.</math> 
+---------------
+<math>\textbf{Lemma:}</math> Any point <math>(x,y)</math> such that there exists 2 integers <math>m</math> and <math>n</math> that satisfy <math>x+y = 3n</math> and <math>x-y = 5m</math> is reachable. 
+
+
+<math>\textbf{Proof:}</math> Denote the total amounts of each specific transformation in the frog's jump sequence to be <math>a,</math> <math>b,</math> <math>c,</math> and <math>d</math> respectively. Then
+
+<math>x=7a+2b-5c-10d</math>,
+
+<math>y=2a+7b-10c-5d</math>,
+
+<math>x+y = 9(a+b)-15(c+d) = 3n</math>, and
+
+<math>x-y = 5(a-b)+5(c-d) = 5m</math>
+
+together must have integral solutions. But
+
+<math>3(a+b)-5(c+d) = n</math> implies
+
+<math>(c+d) \equiv n \mod 3</math> and thus
+
+<math>(a+b) = \lfloor{n/3}\rfloor + 2(c+d).</math>
+
+Similarly, <math>(a-b)+(c-d) = m</math> implies that <math>(a-b)</math> and <math>(c-d)</math> have the same parity. Now in order for an integral solution to exist, there must always be a way to ensure that the pairs <math>(a+b)</math> and <math>(a-b)</math> and <math>(c+d)</math> and <math>(c-d)</math> have identical parities. The parity of <math>(a+b)</math> is completely dependent on <math>n,</math> so the parities of <math>(a-b)</math> and <math>(c-d)</math> must be chosen to match this value. But the parity of <math>(c+d)</math> can then be adjusted by adding or subtracting <math>3</math> until it is identical to the parity of <math>(c-d)</math> as chosen before, so we conclude that it is always possible to find an integer solution for <math>(a,b,c,d)</math> and thus any point that satisfies <math>x+y = 3n</math> and <math>x-y = 5m</math> can be reached by the frog.
+---------------
+To count the number of such points in the region <math>|x| + |y| \le 100,</math> we first note that any such point will lie on the intersection of one line of the form <math>y=x-5m</math> and another line of the form <math>y=-x+3n.</math> The intersection of two such lines will yield the point <math>\left(\frac{3n+5m}{2},\frac{3n-5m}{2}\right),</math> which will be integral if and only if <math>m</math> and <math>n</math> have the same parity. Now since <math>|x| + |y| = |x \pm y|,</math> we find that
+
+<cmath>
+\begin{align*}
+|x + y| = |3n| \le 100 &\rightarrow -33 \le n \le 33\\
+|x - y| = |5m| \le 100 &\rightarrow -20 \le m \le 20.
+\end{align*}
+</cmath>
+
+So there are <math>34</math> possible odd values and <math>33</math> possible even values for <math>n,</math> and <math>20</math> possible odd values and <math>21</math> possible even values for <math>m.</math> Every pair of lines described above will yield a valid accessible point for all pairs of <math>m</math> and <math>n</math> with the same parity, and the number of points <math>M</math> is thus <math>34 \cdot 20 + 33 \cdot 21 = 1373 \rightarrow \boxed{373}</math>.

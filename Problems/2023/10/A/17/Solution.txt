@@ -1,0 +1,40 @@
+==Solution 1==
+<asy>
+/* ~ItsMeNoobieboy */
+size(200);
+pair A, B, C, D, P, Q;
+A = (0,28/30);
+B = (1,28/30);
+C = (1,0);
+D = (0,0);
+P = (1,12/30);
+Q = (21/30,0);
+draw(A--B--C--D--cycle);
+draw(A--P--Q--cycle);
+dot("$A$",A,NW,linewidth(4));
+dot("$B$",B,NE,linewidth(4));
+dot("$C$",C,SE,linewidth(4));
+dot("$D$",D,SW,linewidth(4));
+dot("$P$",P,E,linewidth(4));
+dot("$Q$",Q,S,linewidth(4));
+label("$30$",midpoint(A--B),N);
+label("$16$",midpoint(B--P),E);
+label("$34$",midpoint(A--P),NE, red);
+label("$28$",midpoint(A--D),W);
+label("$21$",midpoint(D--Q),S);
+label("$35$",midpoint(A--Q),SW, red);
+label("$9$",midpoint(Q--C),S);
+label("$12$",midpoint(C--P),E);
+label("$15$",midpoint(Q--P),SE, red);
+</asy>
+
+We know that all side lengths are integers, so we can test Pythagorean triples for all triangles. 
+
+First, we focus on $\triangle{ABP}$. The length of $AB$ is $30$, and the possible (small enough) Pythagorean triples $\triangle{ABP}$ can be are $(3, 4, 5), (5, 12, 13), (8, 15, 17),$ where the length of the longer leg is a factor of $30$. Testing these, we get that only $(8, 15, 17)$ is a valid solution. Thus, we know that $BP = 16$ and $AP = 34$. 
+
+Next, we move on to $\triangle{QDA}$. The length of $AD$ is $28$, and the small enough triples are $(3, 4, 5)$ and $(7, 24, 25)$. Testing again, we get that $(3, 4, 5)$ is our triple. We get the value of $DQ = 21$, and $AQ = 35$.
+
+We know that $CQ = CD - DQ$ which is $9$, and $CP = BC - BP$ which is $12$. $\triangle{CPQ}$ is therefore a right triangle with side length ratios ${3, 4, 5}$, and the hypotenuse is equal to $15$.
+$\triangle{APQ}$ has side lengths $34, 35,$ and $15,$ so the perimeter is equal to $34 + 35 + 15 = \boxed{\textbf{(A) } 84}.$
+
+~Gabe Horn ~ItsMeNoobieboy ~oinava

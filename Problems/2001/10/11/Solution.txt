@@ -1,0 +1,21 @@
+==Solution==
+===Solution 1===
+
+We can partition the $ n^\text{th} $ ring into $ 4 $ rectangles: two containing $ 2n+1 $ unit squares and two containing $ 2n-1 $ unit squares.
+
+There are $ 2(2n+1)+2(2n-1)=4n+2+4n-2=8n $ unit squares in the $ n^\text{th} $ ring.
+
+Thus, the $100^\text{th}$ ring has $ 8 \times 100 = \boxed{\textbf{(C) }800} $ unit squares.
+
+===Solution 2===
+We can make the $ n^\text{th} $ ring by removing a square of side length $ 2n-1 $ from a square of side length $ 2n+1 $. 
+
+This ring contains $ (2n+1)^2-(2n-1)^2=(4n^2+4n+1)-(4n^2-4n+1)=8n $ unit squares.
+
+Thus, the $ 100^\text{th} $ ring has $ 8 \times 100 = \boxed{\textbf{(C)}\ 800} $ unit squares.
+
+===Solution 3 (Less Rigorous)===
+
+Notice that the first ring around the center square contains $ 8 $ unit squares, the second ring contains $ 16 $ unit squares, the third contains $ 24 $ unit squares, and so on. The number of squares in the $ n^\text{th} $ ring is determined by the expression $ 8 \times n $. Thus, the number of unit squares in the $100^\text{th}$ ring is equal to $ 8 \times 100 $, which equals $ \boxed{\textbf{(C) }800} $ unit squares.
+
+-Darth_Cadet

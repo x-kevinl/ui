@@ -1,0 +1,14 @@
+== Solution ==
+Note that the three expressions are symmetric with respect to interchanging <math>\sin</math> and <math>\cos</math>, and so the probability is symmetric around <math>45^\circ</math>.  Thus, take <math>0 < x < 45</math> so that <math>\sin x < \cos x</math>.  Then <math>\cos^2 x</math> is the largest of the three given expressions and those three lengths not forming a [[triangle]] is equivalent to a violation of the [[triangle inequality]]
+
+<cmath>\cos^2 x > \sin^2 x + \sin x \cos x</cmath>
+
+This is equivalent to 
+
+<cmath>\cos^2 x - \sin^2 x > \sin x \cos x</cmath>
+
+and, using some of our [[trigonometric identities]], we can re-write this as <math>\cos 2x > \frac 12 \sin 2x</math>. Since we've chosen <math>x \in (0, 45)</math>, <math>\cos 2x > 0</math> so 
+
+<cmath>2 > \tan 2x \Longrightarrow  x < \frac 12 \arctan 2.</cmath>
+
+The [[probability]] that <math>x</math> lies in this range is <math>\frac 1{45} \cdot \left(\frac 12 \arctan 2\right) = \frac{\arctan 2}{90}</math> so that <math>m = 2</math>, <math>n = 90</math> and our answer is <math>\boxed{092}</math>.

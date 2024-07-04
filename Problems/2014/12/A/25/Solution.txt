@@ -1,0 +1,11 @@
+==Solution==
+
+The parabola is symmetric through $y=- \frac{4}{3}x$, and the common distance is $5$, so the directrix is the line through $(1,7)$ and $(-7,1)$, which is the line $$ 3x-4y = -25. $$ Using the point-line distance formula, the parabola is the locus $$ x^2+y^2 = \frac{\left\lvert 3x-4y+25 \right\rvert^2}{3^2+4^2} $$ which rearranges to $(4x+3y)^2 = 25(6x-8y+25)$.
+
+Let $m = 4x+3y \in \mathbb Z$, $\left\lvert m \right\rvert \le 1000$.  Put $m = 25k$ to obtain
+$$25k^2 = 6x-8y+25$$$$25k = 4x+3y.$$
+and accordingly we find by solving the system that $x = \frac{1}{2} (3k^2-3) + 4k$ and $y = -2k^2+3k+2$.
+
+One can show that the values of $k$ that make $(x,y)$ an integer pair are precisely odd integers $k$.  For $\left\lvert 25k \right\rvert \le 1000$ this is $k= -39,-37,-35,\dots,39$, so $40$ values work and the answer is $\boxed{\textbf{(B)}}$.
+
+(Solution by C-273)

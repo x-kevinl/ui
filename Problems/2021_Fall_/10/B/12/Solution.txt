@@ -1,0 +1,13 @@
+== Solution 1 (Completing the Square)==
+
+It is obvious $x$, $y$, and $z$ are symmetrical. We are going to solve the problem by Completing the Square.
+
+$x ^ 2 + y ^ 2 + z ^ 2 - xy - yz - zx = 1$
+
+$2x ^ 2 + 2y ^ 2 + 2z ^ 2 - 2xy - 2yz - 2zx = 2$
+
+$(x-y)^2 + (y-z)^2 + (z-x)^2 = 2$
+
+Because $x, y, z$ are integers, $(x-y)^2$, $(y-z)^2$, and $(z-x)^2$ can only equal $0, 1, 1$. So one variable must equal another, and the third variable is $1$ different from those $2$ equal variables. So the answer is $\boxed{D}$.
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen]

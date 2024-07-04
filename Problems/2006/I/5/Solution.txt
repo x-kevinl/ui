@@ -1,0 +1,74 @@
+== Solution 1 ==
+We begin by [[equate | equating]] the two expressions:
+
+<cmath> a\sqrt{2}+b\sqrt{3}+c\sqrt{5} = \sqrt{104\sqrt{6}+468\sqrt{10}+144\sqrt{15}+2006}</cmath>
+
+Squaring both sides yields: 
+
+<cmath> 2ab\sqrt{6} + 2ac\sqrt{10} + 2bc\sqrt{15} + 2a^2 + 3b^2 + 5c^2 = 104\sqrt{6}+468\sqrt{10}+144\sqrt{15}+2006 </cmath> 
+
+Since <math>a</math>, <math>b</math>, and <math>c</math> are integers, we can match coefficients: 
+
+<cmath> 
+\begin{align*}
+2ab\sqrt{6} &= 104\sqrt{6} \\
+ 2ac\sqrt{10} &=468\sqrt{10} \\
+ 2bc\sqrt{15} &=144\sqrt{15}\\
+ 2a^2 + 3b^2 + 5c^2 &=2006
+\end{align*}
+</cmath> 
+
+Solving the first three equations gives: 
+<cmath>\begin{eqnarray*}ab &=& 52\\ 
+ac &=& 234\\ 
+bc &=& 72 \end{eqnarray*}</cmath> 
+
+Multiplying these equations gives <math> (abc)^2 = 52 \cdot 234 \cdot 72 = 2^63^413^2 \Longrightarrow abc = \boxed{936}</math>. 
+
+<!--
+Since this is the AIME and you do not have a calculator solving <math> abc = \sqrt{52 \cdot 234 \cdot 72} = 936</math> might prove difficult.
+So instead use the three equations given above.
+
+<math> ab = 52 </math> 
+
+<math> ac = 234 </math> 
+
+<math> bc = 72 </math> 
+
+Thus <math> a = 52/b = 234/c </math>
+
+<math> 52c = 234b </math>
+
+<math> c = 234/52b </math>
+
+<math> c = 9/2b </math>
+
+Plugging into last equation leads to:
+
+<math> 9/2b^2 = 72 </math>
+
+<math> b = 4 </math>
+
+Plugging into others you get 
+
+<math>a=13</math>
+
+<math>b=4</math>
+
+<math>c=18</math>
+
+Much easier than taking crazy square roots without a calculator!
+
+If it was required to solve for each variable, dividing the product of the three variables by the product of any two variables would yield the third variable. Doing so yields: 
+
+<math>a=13</math>
+
+<math>b=4</math>
+
+<math>c=18</math>
+
+Which clearly fits the fourth equation:
+<math> 2 \cdot 13^2 + 3 \cdot 4^2 + 5 \cdot 18^2 = 2006 </math>
+
+<math>abc=\boxed{936}</math>
+-->

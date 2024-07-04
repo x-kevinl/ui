@@ -1,0 +1,2 @@
+==Solution 1==
+We can rewrite the fraction as $\frac{123456789}{2^{22} \cdot 10^4} = \frac{12345.6789}{2^{22}}$. Since the last digit of the numerator is odd, a $5$ is added to the right if the numerator is divided by $2$, and this will continuously happen because $5$, itself, is odd. Indeed, this happens twenty-two times since we divide by $2$ twenty-two times, so we will need $22$ more digits. Hence, the answer is $4 + 22 = \boxed{\textbf{(C)}\ 26}$

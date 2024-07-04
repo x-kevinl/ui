@@ -1,0 +1,36 @@
+==Diagram==
+<asy>
+unitsize(30);
+draw(Circle((0,0),3));
+pair A,B,C,O, Q, P, M, N;
+A=(2.5, -sqrt(11/4));
+B=(-2.5, -sqrt(11/4));
+C=(-1.96, 2.28);
+Q=(-1.89, 2.81);
+P=(1.13, -1.68);
+O=origin;
+M=foot(O,C,B);
+N=foot(O,A,B);
+draw(A--B--C--cycle);
+label("$A$",A,SE);
+label("$B$",B,SW);
+label("$C$",C,NW);
+label("$Q$",Q,NW);
+dot(O);
+label("$O$",O,NE);
+label("$M$",M,W);
+label("$N$",N,S);
+label("$P$",P,S);
+draw(B--O);
+draw(C--Q);
+draw(Q--O);
+draw(O--C);
+draw(O--A);
+draw(O--P);
+draw(O--M, dashed);
+draw(O--N, dashed);
+draw(rightanglemark((-2.5, -sqrt(11/4)),(0,0),(-1.89, 2.81),5));
+draw(rightanglemark(O,N,B,5));
+draw(rightanglemark(B,O,P,5));
+draw(rightanglemark(O,M,C,5));
+</asy>

@@ -1,0 +1,8 @@
+== Problem ==
+Ms. Math's kindergarten class has <math>16</math> registered students. The classroom has a very large number, <math>N</math>, of play blocks which satisfies the conditions:
+
+(a) If <math>16</math>, <math>15</math>, or <math>14</math> students are present in the class, then in each case all the blocks can be distributed in equal numbers to each student, and
+
+(b) There are three integers <math>0 < x < y < z < 14</math> such that when <math>x</math>, <math>y</math>, or <math>z</math> students are present and the blocks are distributed in equal numbers to each student, there are exactly three blocks left over.
+
+Find the sum of the distinct prime divisors of the least possible value of <math>N</math> satisfying the above conditions.

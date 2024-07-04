@@ -1,0 +1,22 @@
+==Solution==
+Let $m$ = cost of movie ticket<br>
+Let $s$  = cost of soda
+
+We can create two equations:
+
+$$m = \frac{1}{5}(A - s)$$
+$$s  = \frac{1}{20}(A - m)$$
+
+Substituting we get: <br>
+
+$$m = \frac{1}{5}(A - \frac{1}{20}(A - m))$$
+which yields:<br>
+$$m = \frac{19}{99}A$$
+
+Now we can find s and we get:<br>
+
+$$s = \frac{4}{99}A$$
+
+Since we want to find what fraction of $A$ did Roger pay for his movie ticket and soda, we add $m$ and $s$ to get:
+
+$$\frac{19}{99}A + \frac{4}{99}A \implies \boxed{\textbf{(D)}\ 23\%}$$

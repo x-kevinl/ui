@@ -1,0 +1,2 @@
+==Solution==
+Assume arbitrarily (and WLOG) there are $5$ women in the room, of which $5 \cdot \frac25 =  2$ are single and $5-2=3$ are married. Each married woman came with her husband, so there are $3$ married men in the room as well for a total of $5+3=8$ people. The fraction of the people that are married men is $\boxed{\textbf{(B)}\ \frac38}$.

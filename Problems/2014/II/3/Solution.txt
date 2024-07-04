@@ -1,0 +1,27 @@
+==Solution 1==
+
+When we squish the rectangle, the hexagon is composed of a rectangle and two isosceles triangles with side lengths 18, 18, and 24 as shown below.
+
+<asy>
+pair R,S,T,X,Y,Z;
+dotfactor = 2;
+unitsize(.1cm);
+R = (12*2.236 +22,0);
+S = (12*2.236 + 22 - 13.4164,12);
+T = (12*2.236 + 22,24);
+X = (12*4.472+ 22,24);
+Y = (12*4.472+ 22 + 13.4164,12);
+Z = (12*4.472+ 22,0);
+draw(R--S--T--X--Y--Z--cycle);
+draw(T--R,red);
+draw(X--Z,red);
+dot(" ",R,NW);
+dot(" ",S,NW);
+dot(" ",T,NW);
+dot(" ",X,NW);
+dot(" ",Y,NW);
+dot(" ",Z,NW);
+// sqrt180 = 13.4164
+// sqrt5 = 2.236</asy>
+
+By Heron's Formula, the area of each isosceles triangle is <math>\sqrt{(30)(12)(12)(6)}=\sqrt{180\times 12^2}=72\sqrt{5}</math>. So the area of both is <math>144\sqrt{5}</math>. From the rectangle, our original area is <math>36a</math>. The area of the rectangle in the hexagon is <math>24a</math>. So we have <cmath>24a+144\sqrt{5}=36a\implies 12a=144\sqrt{5}\implies a=12\sqrt{5}\implies a^2=\boxed{720}.</cmath>

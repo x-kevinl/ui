@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>P</math> be a point on the circle circumscribing square <math>ABCD</math> that satisfies <math>PA \cdot PC = 56</math> and <math>PB \cdot PD = 90.</math> Find the area of <math>ABCD.</math>

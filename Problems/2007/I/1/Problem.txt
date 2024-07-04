@@ -1,0 +1,2 @@
+== Problem ==
+How many [[positive]] [[perfect square]]s less than <math>10^6</math> are [[multiple]]s of <math>24</math>?

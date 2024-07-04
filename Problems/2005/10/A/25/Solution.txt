@@ -1,0 +1,42 @@
+==Solution 1==
+We have
+$$\frac{[ADE]}{[ABC]} = \frac{AD}{AB} \cdot \frac{AE}{AC} = \frac{19}{25} \cdot \frac{14}{42} = \frac{19}{75}.$$
+
+<asy>
+unitsize(0.15 cm);
+
+pair A, B, C, D, E;
+
+A = (191/39,28*sqrt(1166)/39);
+B = (0,0);
+C = (39,0);
+D = (6*A + 19*B)/25;
+E = (28*A + 14*C)/42;
+
+draw(A--B--C--cycle);
+draw(D--E);
+
+label("$A$", A, N);
+label("$B$", B, SW);
+label("$C$", C, SE);
+label("$D$", D, W);
+label("$E$", E, NE);
+label("$19$", (A + D)/2, W);
+label("$6$", (B + D)/2, W);
+label("$14$", (A + E)/2, NE);
+label("$28$", (C + E)/2, NE);
+</asy>
+
+But $[BCED] = [ABC] - [ADE]$, so
+$$
+\begin{align*}
+\frac{[ADE]}{[BCED]} &= \frac{[ADE]}{[ABC] - [ADE]} \\
+&= \frac{1}{\frac{ABC}{ADE} - 1} \\
+&= \frac{1}{\frac{75}{19} - 1} \\
+&= \boxed{\textbf{(D) }\frac{19}{56}}.
+\end{align*}
+$$
+
+
+
+Note: If it is hard to understand why $$\frac{[ADE]}{[ABC]} = \frac{AD}{AB} \cdot \frac{AE}{AC}$$, you can use the fact that the area of a triangle equals $\frac{1}{2} \cdot ab \cdot \sin(C)$. If angle $DAE = Z$, we have that $$\frac{[ADE]}{[ABC]} = \frac{\frac{1}{2} \cdot 19 \cdot 14 \cdot \sin(Z)}{\frac{1}{2} \cdot 25 \cdot 42 \cdot \sin(Z)} = \frac{19 \cdot 14}{25 \cdot 42} = \frac{ab}{cd}$$.

@@ -1,0 +1,7 @@
+== Solution 1 ==
+
+Clearly, since $\overline{FE}$ is a side of a square with area $32$, $\overline{FE} = \sqrt{32} = 4 \sqrt{2}$. Now, since $\overline{FE} = \overline{BC}$, we have $\overline{BC} = 4 \sqrt{2}$.
+
+Now, $\overline{JB}$ is a side of a square with area $18$, so $\overline{JB} = \sqrt{18} = 3 \sqrt{2}$. Since $\Delta JBK$ is equilateral, $\overline{BK} = 3 \sqrt{2}$.
+
+Lastly, $\Delta KBC$ is a right triangle. We see that $\angle JBA + \angle ABC + \angle CBK + \angle KBJ = 360^{\circ} \rightarrow 90^{\circ} + 120^{\circ} + \angle CBK + 60^{\circ} = 360^{\circ} \rightarrow \angle CBK = 90^{\circ}$, so $\Delta KBC$ is a right triangle with legs $3 \sqrt{2}$ and $4 \sqrt{2}$. Now, its area is $\dfrac{3 \sqrt{2} \cdot 4 \sqrt{2}}{2} = \dfrac{24}{2} = \boxed{\textbf{(C)}~12}$.

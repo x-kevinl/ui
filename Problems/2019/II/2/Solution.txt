@@ -1,0 +1,8 @@
+==Solution (Probability States)==
+Let <math>P_n</math> be the probability the frog visits pad <math>7</math> starting from pad <math>n</math>. Then <math>P_7 = 1</math>, <math>P_6 = \frac12</math>, and <math>P_n = \frac12(P_{n + 1} + P_{n + 2})</math> for all integers <math>1 \leq n \leq 5</math>. Working our way down, we find
+<cmath>P_5 = \frac{3}{4}</cmath>
+<cmath>P_4 = \frac{5}{8}</cmath>
+<cmath>P_3 = \frac{11}{16}</cmath>
+<cmath>P_2 = \frac{21}{32}</cmath>
+<cmath>P_1 = \frac{43}{64}</cmath>
+<math>43 + 64 = \boxed{107}</math>.

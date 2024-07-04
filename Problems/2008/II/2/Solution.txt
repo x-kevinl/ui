@@ -1,0 +1,6 @@
+== Simple Solution ==
+Let <math>r</math> be the time Rudolph takes disregarding breaks and <math>\frac{4}{3}r</math> be the time Jennifer takes disregarding breaks. We have the equation
+<cmath>r+5\left(49\right)=\frac{4}{3}r+5\left(24\right)</cmath>
+<cmath>125=\frac13r</cmath>
+<cmath>r=375.</cmath>
+Thus, the total time they take is <math>375 + 5(49) = \boxed{620}</math> minutes.

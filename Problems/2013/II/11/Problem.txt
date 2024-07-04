@@ -1,0 +1,2 @@
+==Problem 11==
+Let <math>A = \{1, 2, 3, 4, 5, 6, 7\}</math>, and let <math>N</math> be the number of functions <math>f</math> from set <math>A</math> to set <math>A</math> such that <math>f(f(x))</math> is a constant function. Find the remainder when <math>N</math> is divided by <math>1000</math>.

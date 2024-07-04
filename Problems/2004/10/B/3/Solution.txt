@@ -1,0 +1,3 @@
+==Solution==
+
+At the fourth practice she made $48/2=24$ throws, at the third one it was $24/2=12$, then we get $12/2=6$ throws for the second practice, and finally $6/2=3\Rightarrow\boxed{\mathrm{(A)}\ 3}$ throws at the first one.

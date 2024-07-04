@@ -1,0 +1,20 @@
+== Solution 1 (Casework) ==
+A quadratic equation does not have two distinct real solutions if and only if the discriminant is nonpositive. We conclude that:
+<ol style="margin-left: 1.5em;">
+  <li>Since $x^2+bx+c=0$ does not have real solutions, we have $b^2\leq 4c.$</li><p>
+  <li>Since $x^2+cx+b=0$ does not have real solutions, we have $c^2\leq 4b.$</li><p>
+</ol>
+Squaring the first inequality, we get $b^4\leq 16c^2.$ Multiplying the second inequality by $16,$ we get $16c^2\leq 64b.$ Combining these results, we get $$b^4\leq 16c^2\leq 64b.$$
+We apply casework to the value of $b:$
+
+* If $b=1,$ then $1\leq 16c^2\leq 64,$ from which $c=1,2.$
+
+* If $b=2,$ then $16\leq 16c^2\leq 128,$ from which $c=1,2.$
+
+* If $b=3,$ then $81\leq 16c^2\leq 192,$ from which $c=3.$
+
+* If $b=4,$ then $256\leq 16c^2\leq 256,$ from which $c=4.$
+
+Together, there are $\boxed{\textbf{(B) } 6}$ ordered pairs $(b,c),$ namely $(1,1),(1,2),(2,1),(2,2),(3,3),$ and $(4,4).$
+
+~MRENTHUSIASM

@@ -1,0 +1,2 @@
+==Solution==
+The fewest amount of coins that can be used is $2$ (a quarter and a dime). The greatest amount is $7$, if he only uses nickels. Therefore we have $7-2=\boxed{\textbf{(E)}~5}$.

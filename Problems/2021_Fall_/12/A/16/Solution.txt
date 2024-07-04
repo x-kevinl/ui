@@ -1,0 +1,24 @@
+== Solution==
+We claim that to maximize the number of cables used, we isolate one computer and connect all cables for the remaining $29$ computers, then connect one more cable for the isolated computer.
+
+If a brand A computer is isolated, then the technician can use at most $19\cdot10+1=191$ cables. If a brand B computer is isolated instead, then the technician can use at most $20\cdot9+1=181$ cables. Therefore, the answer is $\boxed{\textbf{(B)}\  191}.$
+
+<u><b>Remark</b></u>
+
+Suppose that the computers are labeled $A_1, A_2, \ldots, A_{20}$ and $B_1, B_2, \ldots, B_{10}.$ We will prove the claim in the first paragraph of this solution:
+<ol style="margin-left: 1.5em;">
+  <li><b>With exactly $\boldsymbol{190}$ cables, it is possible that some computers cannot communicate with each other.</b></li><p>
+From this solution, it is clear that this claim is true: We isolate $A_{20}$ and connect all cables for $A_1, A_2, \ldots, A_{19}$ and $B_1, B_2, \ldots, B_{10}$ to get $19\cdot10=190$ cables. However, $A_{20}$ cannot communicate with any of these $29$ computers. <p>
+  <li><b>With exactly $\boldsymbol{191}$ cables, all computers must be able to communicate with each other.</b></li><p>
+By the Pigeonhole Principle, we conclude that at least one brand B computer connects to all $20$ brand A computers. Without loss of generality, we assume that $B_1$ connects to all $20$ brand A computers. On the other hand, we conclude that at least $11$ brand A computer connects to all $10$ brand B computers. Without loss of generality, we assume that $A_1, A_2, \ldots, A_{11}$ connect to all $10$ brand B computers. <p>
+Therefore, any two computers must be able to communicate with each other:
+<ul style="list-style-type:square, margin-left: 3em;">
+  <li>Between $A_i$ and $A_j,$ where $i,j\in\{1,2,\ldots,20\}$ and $i\neq j$</li><p>
+The relay is $A_i\leftrightarrow B_1\leftrightarrow A_j.$ <p>
+  <li>Between $B_i$ and $B_j,$ where $i,j\in\{1,2,\ldots,10\}$ and $i\neq j$</li><p>
+The relay is $B_i\leftrightarrow \{A_1, A_2, \ldots, A_{11}\}\leftrightarrow B_j.$ <p>
+  <li>Between $A_i$ and $B_j,$ where $i\in\{1,2,\ldots,20\}$ and $j\in\{1,2,\ldots,10\}$</li><p>
+The relay is $A_i\leftrightarrow B_1\leftrightarrow \{A_1, A_2, \ldots, A_{11}\}\leftrightarrow B_j.$ <p>
+</ul>
+</ol>
+~MRENTHUSIASM

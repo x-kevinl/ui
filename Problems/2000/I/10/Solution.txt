@@ -1,0 +1,8 @@
+== Solution ==
+Let the sum of all of the terms in the sequence be <math>\mathbb{S}</math>. Then for each integer <math>k</math>, <math>x_k = \mathbb{S}-x_k-k \Longrightarrow \mathbb{S} - 2x_k = k</math>. Summing this up for all <math>k</math> from <math>1, 2, \ldots, 100</math>,
+
+<cmath>\begin{align*}100\mathbb{S}-2(x_1 + x_2 + \cdots + x_{100}) &= 1 + 2 + \cdots + 100\\
+100\mathbb{S} - 2\mathbb{S} &= \frac{100 \cdot 101}{2} = 5050\\
+\mathbb{S}&=\frac{2525}{49}\end{align*}</cmath>
+
+Now, substituting for <math>x_{50}</math>, we get <math>2x_{50}=\frac{2525}{49}-50=\frac{75}{49} \Longrightarrow x_{50}=\frac{75}{98}</math>, and the answer is <math>75+98=\boxed{173}</math>.

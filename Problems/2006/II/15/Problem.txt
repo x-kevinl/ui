@@ -1,0 +1,8 @@
+== Problem ==
+Given that <math> x, y, </math> and <math>z</math> are real numbers that satisfy:
+<cmath>\begin{align*}
+x &= \sqrt{y^2-\frac{1}{16}}+\sqrt{z^2-\frac{1}{16}}, \\
+y &= \sqrt{z^2-\frac{1}{25}}+\sqrt{x^2-\frac{1}{25}}, \\
+z &= \sqrt{x^2 - \frac 1{36}}+\sqrt{y^2-\frac 1{36}},
+\end{align*}</cmath>
+and that <math> x+y+z = \frac{m}{\sqrt{n}}, </math> where <math> m </math> and <math> n </math> are positive integers and <math> n </math> is not divisible by the square of any prime, find <math> m+n.</math>

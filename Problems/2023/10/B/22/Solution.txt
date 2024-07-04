@@ -1,0 +1,19 @@
+==Solution 1==
+
+To further grasp at this equation, we rearrange the equation into
+$$\lfloor{x}\rfloor^2=3x-2.$$
+Thus, $3x-2$ is a perfect square and nonnegative. It is now much more apparent that $x \ge 2/3,$ and that $x = 2/3$ is a solution.
+
+Additionally, by observing the RHS, $x<4,$ as
+$$\lfloor{4}\rfloor^2 > 3\cdot4,$$
+since squares grow quicker than linear functions. 
+
+Now that we have narrowed down our search, we can simply test for intervals $[2/3,1], [1,2],[2,3],[3,4).$ This intuition to use intervals stems from the fact that $x=1,2$ are observable integral solutions. 
+
+Notice how there is only one solution per interval, as $3x-2$ increases while $\lfloor{x}\rfloor^2$ stays the same.
+
+Finally, we see that $x=3$ does not work, however, through setting $\lfloor{x}\rfloor^2 = 9,$ $x = 11/3$ is a solution and within our domain of $[3,4).$
+
+This provides us with solutions $\left(\frac23, 1, 2, \frac{11}{3}\right),$ thus the final answer is $\boxed{(\text{B}) \ 4}.$
+
+~mathbrek, happyhari

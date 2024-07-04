@@ -1,0 +1,2 @@
+==Solution 1==
+Since he pays $\dfrac{2}{3}$ the price for every second balloon, the price for two balloons is $\dfrac{5}{3}$. Thus, if he had enough money to buy $30$ balloons before, he now has enough to buy $30 \cdot \dfrac{2}{\dfrac{5}{3}} = 30 \cdot \dfrac{6}{5} = \fbox{(C) 36}$.

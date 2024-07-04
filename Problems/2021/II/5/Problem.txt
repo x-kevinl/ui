@@ -1,0 +1,2 @@
+==Problem==
+For positive real numbers <math>s</math>, let <math>\tau(s)</math> denote the set of all obtuse triangles that have area <math>s</math> and two sides with lengths <math>4</math> and <math>10</math>. The set of all <math>s</math> for which <math>\tau(s)</math> is nonempty, but all triangles in <math>\tau(s)</math> are congruent, is an interval <math>[a,b)</math>. Find <math>a^2+b^2</math>.

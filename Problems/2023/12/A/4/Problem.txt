@@ -1,0 +1,4 @@
+==Problem==
+How many digits are in the base-ten representation of $8^5 \cdot 5^{10} \cdot 15^5$?
+
+$\textbf{(A)}~14\qquad\textbf{(B)}~15\qquad\textbf{(C)}~16\qquad\textbf{(D)}~17\qquad\textbf{(E)}~18\qquad$

@@ -1,0 +1,2 @@
+==Solution==
+$2-(-2)^{-2}=2-\frac{1}{(-2)^2}=2-\frac{1}{4}=\frac{8}{4}-\frac{1}{4}=\boxed{\textbf{(C) }\frac{7}{4}}$

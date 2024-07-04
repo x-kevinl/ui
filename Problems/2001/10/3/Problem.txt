@@ -1,0 +1,6 @@
+== Problem ==
+The sum of two numbers is $S$. Suppose $3$ is added to each number and then
+each of the resulting numbers is doubled. What is the sum of the final two
+numbers?
+
+$\textbf{(A)}\ 2S + 3\qquad \textbf{(B)}\ 3S + 2\qquad \textbf{(C)}\ 3S + 6 \qquad\textbf{(D)}\ 2S + 6 \qquad \textbf{(E)}\ 2S + 12$

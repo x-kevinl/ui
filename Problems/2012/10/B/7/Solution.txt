@@ -1,0 +1,14 @@
+==Solution 1==
+Let $x$ be the number of acorns that both animals had.
+
+So by the info in the problem:
+
+$\frac{x}{3}=\left( \frac{x}{4} \right)+4$
+
+Subtracting $ \frac{x}{4}$ from both sides leaves
+
+$\frac{x}{12}=4$
+
+$\boxed{x=48}$
+
+This is answer choice $\textbf{(D)}$

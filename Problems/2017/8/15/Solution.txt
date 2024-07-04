@@ -1,0 +1,7 @@
+==Solution 1 (Not Very Efficient)==
+Notice that the upper-most section contains a 3 by 3 square that looks like:
+
+<asy>label("$8$", (1, 2)); label("$C$", (2, 2)); label("$8$", (3, 2)); label("$C$", (1, 1)); label("$M$", (2, 1)); label("$C$", (3, 1)); label("$M$", (1, 0)); label("$A$", (2, 0)); label("$M$", (3, 0));</asy>
+
+
+It has 6 paths in which you can spell out AMC8. You will find four identical copies of this square in the figure, so multiply ${6 \cdot 4}$ to get $\boxed{\textbf{(D)}\ 24}$ total paths.

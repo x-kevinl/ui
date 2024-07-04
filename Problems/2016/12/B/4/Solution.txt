@@ -1,0 +1,14 @@
+==Solution 1==
+By: dragonfly
+
+We set up equations to find each angle. The larger angle will be represented as $x$ and the smaller angle will be represented as $y$, in degrees. This implies that 
+
+$4x=5y$
+
+and
+
+$2\times(90-x)=90-y$
+
+since the larger the original angle, the smaller the complement.
+
+We then find that $x=75$ and $y=60$, and their sum is $\boxed{\textbf{(C)}\ 135}$

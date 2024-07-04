@@ -1,0 +1,6 @@
+==Solution 1==
+
+Let this positive integer be written as $p_1^{e_1}\cdot p_2^{e_2}$. The number of factors of this number is therefore $(e_1+1) \cdot (e_2+1)$, and this must equal 2021. The prime factorization of 2021 is $43 \cdot 47$, so $e_1+1 = 43 \implies e_1=42$ and $e_2+1=47\implies e_2=46$. To minimize this integer, we set $p_1 = 3$ and $p_2 = 2$. Then this integer is $3^{42} \cdot 2^{46} = 2^4 \cdot 2^{42} \cdot 3^{42} = 16 \cdot 6^{42}$.
+Now $m=16$ and $k=42$ so $m+k = 16 + 42 = \boxed{\textbf{(B) }58}$
+
+~KingRavi

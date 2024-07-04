@@ -1,0 +1,25 @@
+==Solution 1==
+
+<center><asy>
+unitsize(5mm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+dotfactor=4;
+
+pair A=(-5,0), B=(5,0), C=(sqrt(45),6), D=(0,0), E=(sqrt(45),0);
+draw(A--B--C--cycle);
+draw(D--C); draw(E--C);
+
+pair[] ps={A,B,C,D,E};
+dot(ps);
+
+label("$A$",A,SW);
+label("$B$",B,SE);
+label("$C$",C,N);
+label("$D$",D,SW);
+label("$E$",E,S);
+label("$9$",(D--C),NW);
+label("$6$",(E--C));
+label("$10$",(A--B),SE);
+</asy></center>
+
+$AB$ is the side of length $10$, and $CD$ is the median of length $9$. The altitude of $C$ to $AB$ is $6$ because the 0.5(altitude)(base)=Area of the triangle. $\theta$ is $\angle CDE$. To find $\sin{\theta}$, just use opposite over hypotenuse with the right triangle $\triangle DCE$. This is equal to $\frac69=\boxed{\textbf{(D)}\ \frac23}$.

@@ -1,0 +1,4 @@
+== Solution ==
+The calorie to gram ratio of Francesca's lemonade is $\frac{25+386+0}{100+100+400}=\frac{411\textrm{ calories}}{600\textrm{ grams}}=\frac{137\textrm{ calories}}{200\textrm{ grams}}$ 
+
+So in $200\textrm{ grams}$ of Francesca's lemonade there are $200\textrm{ grams}\cdot\frac{137\textrm{ calories}}{200\textrm{ grams}}=\boxed{\textbf{(B) }137\textrm{ calories}}.$

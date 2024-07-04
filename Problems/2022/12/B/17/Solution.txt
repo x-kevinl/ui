@@ -1,0 +1,5 @@
+==Solution 1 (One-to-One Correspondence)==
+
+Note that the arrays and the sum configurations have one-to-one correspondence. Furthermore, the row sum configuration and the column sum configuration are independent of each other. Therefore, the answer is $(4!)^2=\boxed{\textbf{(D) }576}.$
+
+~bad_at_mathcounts ~MRENTHUSIASM

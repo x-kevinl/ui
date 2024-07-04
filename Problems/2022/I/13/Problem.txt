@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>S</math> be the set of all rational numbers that can be expressed as a repeating decimal in the form <math>0.\overline{abcd},</math> where at least one of the digits <math>a,</math> <math>b,</math> <math>c,</math> or <math>d</math> is nonzero. Let <math>N</math> be the number of distinct numerators obtained when numbers in <math>S</math> are written as fractions in lowest terms. For example, both <math>4</math> and <math>410</math> are counted among the distinct numerators for numbers in <math>S</math> because <math>0.\overline{3636} = \frac{4}{11}</math> and <math>0.\overline{1230} = \frac{410}{3333}.</math> Find the remainder when <math>N</math> is divided by <math>1000.</math>

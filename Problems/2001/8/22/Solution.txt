@@ -1,0 +1,3 @@
+==Solution==
+
+The highest possible score is if you get every answer right, to get $ 5(20)=100 $. The second highest possible score is if you get $ 19 $ questions right and leave the remaining one blank, to get a $ 5(19)+1(1)=96 $. Therefore, no score between $ 96 $ and $ 100 $, exclusive, is possible, so $ 97 $ is not possible, $ \boxed{\text{E}} $.

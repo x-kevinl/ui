@@ -1,0 +1,2 @@
+== Problem 6 ==
+Let <math>z=a+bi</math> be the complex number with <math>\vert z \vert = 5</math> and <math>b > 0</math> such that the distance between <math>(1+2i)z^3</math> and <math>z^5</math> is maximized, and let <math>z^4 = c+di</math>. Find <math>c+d</math>.

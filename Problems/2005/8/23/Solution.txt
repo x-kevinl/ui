@@ -1,0 +1,2 @@
+==Solution==
+First, we notice half a square so first let's create a square. Once we have a square, we will have a full circle. This circle has a diameter of 4 which will be the side of the square. The area would be $4\cdot 4 = 16.$ Divide 16 by 2 to get the original shape and you get $\boxed{8}$

@@ -1,0 +1,5 @@
+==Problem==
+
+A [[circle]] and two distinct [[Line|lines]] are drawn on a sheet of paper. What is the largest possible number of points of intersection of these figures?
+
+$\text {(A)}\ 2 \qquad \text {(B)}\ 3 \qquad {(C)}\ 4 \qquad {(D)}\ 5 \qquad {(E)}\ 6$

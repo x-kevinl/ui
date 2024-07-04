@@ -1,0 +1,2 @@
+==Solution==
+There are $46$ students paired with a blue partner. The other $11$ students wearing blue shirts must each be paired with a partner wearing a shirt of the opposite color. There are $64$ students remaining. Therefore the requested number of pairs is $\tfrac{64}{2}=\boxed{\textbf{(B)} ~32}$ ~Punxsutawney Phil

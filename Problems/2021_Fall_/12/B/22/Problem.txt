@@ -1,0 +1,6 @@
+==Problem==
+
+Right triangle $ABC$ has side lengths $BC=6$, $AC=8$, and $AB=10$. A circle centered at $O$ is tangent to line $BC$ at $B$ and passes through $A$. A circle centered at $P$ is tangent to line $AC$ at $A$ and passes through $B$. What is $OP$?
+
+$\textbf{(A)}\ \frac{23}{8} \qquad\textbf{(B)}\  \frac{29}{10} \qquad\textbf{(C)}\  \frac{35}{12} \qquad\textbf{(D)}\
+\frac{73}{25} \qquad\textbf{(E)}\ 3$

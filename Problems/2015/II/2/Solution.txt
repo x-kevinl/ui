@@ -1,0 +1,2 @@
+==Solution 1==
+We see that <math>40\% \cdot 100\% + 30\% \cdot 80\% + 20\% \cdot 50\% + 10\% \cdot 20\% = 76\%</math> of students are learning Latin. In addition, <math>30\% \cdot 80\% = 24\%</math> of students are sophomores learning Latin. Thus, our desired probability is <math>\dfrac{24}{76}=\dfrac{6}{19}</math> and our answer is <math>6+19=\boxed{025}</math>.

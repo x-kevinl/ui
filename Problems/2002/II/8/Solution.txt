@@ -1,0 +1,60 @@
+== Solutions ==
+===Solution 1===
+Note that if <math>\frac{2002}n - \frac{2002}{n+1}\leq 1</math>, then either <math>\left\lfloor\frac{2002}{n}\right\rfloor=\left\lfloor\frac{2002}{n+1}\right\rfloor</math>,
+or <math>\left\lfloor\frac{2002}{n}\right\rfloor=\left\lfloor\frac{2002}{n+1}\right\rfloor+1</math>. Either way, we won't skip any natural numbers.
+
+The greatest <math>n</math> such that <math>\frac{2002}n - \frac{2002}{n+1} > 1</math> is <math>n=44</math>. (The inequality simplifies to <math>n(n+1)<2002</math>, which is easy to solve by trial, as the solution is obviously <math>\simeq \sqrt{2002}</math>.)
+
+
+We can now compute:
+<cmath>\left\lfloor\frac{2002}{45}\right\rfloor=44 </cmath>
+<cmath>\left\lfloor\frac{2002}{44}\right\rfloor=45 </cmath>
+<cmath>\left\lfloor\frac{2002}{43}\right\rfloor=46 </cmath>
+<cmath>\left\lfloor\frac{2002}{42}\right\rfloor=47 </cmath>
+<cmath>\left\lfloor\frac{2002}{41}\right\rfloor=48 </cmath>
+<cmath>\left\lfloor\frac{2002}{40}\right\rfloor=50 </cmath>
+
+From the observation above (and the fact that <math>\left\lfloor\frac{2002}{2002}\right\rfloor=1</math>) we know that all integers between <math>1</math> and <math>44</math> will be achieved for some values of <math>n</math>. Similarly, for <math>n<40</math> we obviously have <math>\left\lfloor\frac{2002}{n}\right\rfloor > 50</math>.
+
+Hence the least positive integer <math>k</math> for which the equation <math>\left\lfloor\frac{2002}{n}\right\rfloor=k</math> has no integer solutions for <math>n</math> is <math>\boxed{049}</math>.
+
+====Note====
+
+After getting that <math>\left\lfloor\frac{2002}{45}\right\rfloor=44</math>, for ease of computation above, we can use the fact that <math>(40+k)(49-k)</math> varies solely based on <math>k^2</math> and checking these gives us that the pattern fails at <math>k=0</math> giving us <math>\boxed{049}</math> as the answer.
+
+~Dhillonr25
+
+===Solution 2===
+Rewriting the given information and simplifying it a bit, we have
+<cmath> \begin{align*} 
+k \le \frac{2002}{n} < k+1 &\implies \frac{1}{k} \ge \frac{n}{2002} > \frac{1}{k+1}. \\ &\implies \frac{2002}{k} \ge n > \frac{2002}{k+1}.  
+\end{align*} </cmath>
+
+Now note that in order for there to be no integer solutions to <math>n,</math> we must have <math>\left\lfloor \frac{2002}{k} \right\rfloor = \left\lfloor \frac{2002}{k+1} \right\rfloor.</math> We seek the smallest such <math>k.</math> A bit of experimentation yields that <math>k=49</math> is the smallest solution, as for <math>k=49,</math> it is true that <math>\left\lfloor \frac{2002}{49} \right\rfloor = \left\lfloor \frac{2002}{50} \right\rfloor = 40.</math> Furthermore, <math>k=49</math> is the smallest such case. (If unsure, we could check if the result holds for <math>k=48,</math> and as it turns out, it doesn't.) Therefore, the answer is <math>\boxed{049}.</math>
+
+===Solution 3===
+In this solution we use inductive reasoning and a lot of trial and error. Depending on how accurately you can estimate, the solution will come quicker or slower.
+
+Using values of <math>k</math> as <math>1, 2, 3, 4,</math> and <math>5,</math> we can find the corresponding values of <math>n</math> relatively easily. For <math>k = 1</math>, <math>n</math> is in the range <math>[2002-1002]</math>; for <math>k = 2</math>, <math>n</math> is the the range <math>[1001-668]</math>, etc: <math>3, [667,501]; 4, [500-401]; 5, [400-334]</math>. For any positive integer <math>k, n</math> is in a range of <math>\left\lfloor \frac{2002}{k} \right\rfloor -\left\lceil \frac{2002}{k+1} \right\rceil</math>.
+
+Now we try testing <math>k = 1002</math> to get a better understanding of what our solution will look like. Obviously, there will be no solution for <math>n</math>, but we are more interested in how the range will compute to. Using the formula we got above, the range will be <math>1-2</math>. Testing any integer <math>k</math> from <math>1002-2000</math> will result in the same range. Also, notice that each and every one of them have no solution for <math>n</math>. Testing <math>1001</math> gives a range of <math>2-2</math>, and <math>2002</math> gives <math>1-1</math>. They each have a solution for <math>n</math>, and their range is only one value. Therefore, we can assume with relative safety that the integer <math>k</math> we want is the lowest integer that follows this equation
+
+<cmath>\left\lfloor\frac{2002}{k}\right\rfloor + 1 = \left\lceil \frac{2002}{k+1}\right\rceil</cmath>
+
+Now we can easily guess and check starting from <math>k = 1</math>. After a few tests it's not difficult to estimate a few jumps, and it took me only a few minutes to realize the answer was somewhere in the forties (You could also use the fact that <math>45^2=2025</math>). Then it's just a matter of checking them until we get <math>\boxed{049}</math>.
+Alternatively, you could use the equation above and proceed with one of the other two solutions listed.
+
+
+-jackshi2006
+
+Edited and <math>\LaTeX</math>ed by PhunsukhWangdu
+
+===Solution 4===
+
+Here is an intuitive way to approximate the answer is around <math>45</math>: For the function 
+<math>f(n)=\frac{2002}{n}</math> 
+its derivative is 
+<math>-\frac{2002}{n^2}</math>,
+which should be close to <math>-1</math> because we need to find the smallest skipped integer. The rest of the steps are the same as Solution 1.
+
+-maxamc

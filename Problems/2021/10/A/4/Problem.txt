@@ -1,0 +1,4 @@
+==Problem==
+A cart rolls down a hill, travelling $5$ inches the first second and accelerating so that during each successive $1$-second time interval, it travels $7$ inches more than during the previous $1$-second interval. The cart takes $30$ seconds to reach the bottom of the hill. How far, in inches, does it travel?
+
+$\textbf{(A)} ~215 \qquad\textbf{(B)} ~360\qquad\textbf{(C)} ~2992\qquad\textbf{(D)} ~3195\qquad\textbf{(E)} ~3242$

@@ -1,0 +1,13 @@
+== Solution ==
+<center><asy>
+draw((5,0){up}..{left}(0,5),red);
+draw((-5,0){up}..{right}(0,5),red);
+draw((5,0){down}..{left}(0,-5),red);
+draw((-5,0){down}..{right}(0,-5),red);
+draw((6,0){up}..{left}(0,6),blue);
+draw((-6,0){up}..{right}(0,6),blue);
+draw((6,0){down}..{left}(0,-6),blue);
+draw((-6,0){down}..{right}(0,-6),blue);
+</asy></center>
+
+Since $d = rt$, we note that Odell runs one lap in $\frac{2 \cdot 50\pi}{250} = \frac{2\pi}{5}$ minutes, while Kershaw also runs one lap in $\frac{2 \cdot 60\pi}{300} = \frac{2\pi}{5}$ minutes. They take the same amount of time to run a lap, and since they are running in opposite directions they will meet exactly twice per lap (once at the starting point, the other at the half-way point). Thus, there are $\frac{30}{\frac{2\pi}{5}} \approx 23.8$ laps run by both, or $\lfloor 2\cdot 23.8\rfloor = 23 \cdot 2 + 1 =\boxed{\textbf{(D) } 47}$ meeting points.

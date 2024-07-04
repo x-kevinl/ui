@@ -1,0 +1,28 @@
+==Solution 1==
+
+The length of the side opposite to the angle with $120^\circ$ is longest. 
+We denote its value as $x$.
+
+Because three side lengths form an arithmetic sequence, the middle-valued side length is $\frac{x + 6}{2}$.
+
+Following from the law of cosines, we have
+$$
+\begin{align*}
+6^2 + \left( \frac{x + 6}{2} \right)^2 
+- 2 \cdot 6 \cdot \frac{x + 6}{2} \cdot \cos 120^\circ
+= x^2 .
+\end{align*}
+$$
+
+By solving this equation, we get $x = 14$.
+Thus, $\frac{x + 6}{2} = 10$.
+
+Therefore, the area of the triangle is
+$$
+\begin{align*}
+\frac{1}{2} 6 \cdot 10 \cdot \sin 120^\circ
+= \boxed{\textbf{(E) } 15 \sqrt{3}} .
+\end{align*}
+$$
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)

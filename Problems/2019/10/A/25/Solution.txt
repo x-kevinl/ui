@@ -1,0 +1,16 @@
+==Solution 1==
+The main insight is that 
+
+$$\frac{(n^2)!}{(n!)^{n+1}}$$ 
+
+is always an integer. This is true because it is precisely the number of ways to split up $n^2$ objects into $n$ unordered groups of size $n$. Thus,
+
+$$\frac{(n^2-1)!}{(n!)^n}=\frac{(n^2)!}{(n!)^{n+1}}\cdot\frac{n!}{n^2}$$
+
+is an integer if $n^2 \mid n!$, or in other words, if $\frac{(n-1)!}{n}$, is an integer. This condition is false precisely when $n=4$ or $n$ is prime, by [[Wilson's Theorem]]. There are $15$ primes between $1$ and $50$, inclusive, so there are $15 + 1 = 16$ terms for which
+
+$$\frac{(n^2-1)!}{(n!)^{n}}$$
+
+is potentially not an integer. It can be easily verified that the above expression is not an integer for $n=4$ as there are more factors of $2$ in the denominator than the numerator. Similarly, it can be verified that the above expression is not an integer for any prime $n=p$, as there are more factors of p in the denominator than the numerator. Thus all $16$ values of n make the expression not an integer and the answer is $50-16=\boxed{\textbf{(D)}\ 34}$.
+
+SideNote: Another method to prove that $$\frac{(n^2)!}{(n!)^{n+1}}$$ is always an integer is instead as follows using Number Theory. Notice that $n$ will divide the numerator $n+1$ times, since $n^2 = n \times n$ contains not one but two factors of $n.$ Also, for $a < n,$ notice that $a$ divides $(n^2)!$ at least $$\lfloor \frac{n^2}{a} \rfloor \ge \lfloor \frac{n^2}{n-1} \rfloor \ge \lfloor \frac{n^2 - 1}{n-1} \rfloor \ge n+1$$ times. Thus, each integer from $1$ to $n$ will divide $(n^2)!$ at least $n+1$ times, which proves such a lemma. $\square{}$

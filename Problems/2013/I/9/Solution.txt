@@ -1,0 +1,18 @@
+== Solution 1 ==
+Let <math>M</math> and <math>N</math> be the points on <math>\overline{AB}</math> and <math>\overline{AC}</math>, respectively, where the paper is folded. Let <math>D</math> be the point on <math>\overline{BC}</math> where the folded <math>A</math> touches it.
+<asy> import cse5; size(8cm); pen tpen = defaultpen + 1.337; 
+real a = 39/5.0; real b = 39/7.0; 
+pair B = MP("B", (0,0), dir(200)); pair A = MP("A", 12*dir(60), dir(90)); pair C = MP("C", (12,0), dir(-20)); pair D = MP("D", (9,0), dir(-80)); pair Y = MP("Y", midpoint(A--D), dir(-50)); pair M = MP("M", extension(A,B,Y,Y+(dir(90)*(D-A))), dir(180)); pair N = MP("N", extension(A,C,M,Y), dir(20)); pair F = MP("F", foot(A,B,C), dir(-90)); pair X = MP("X", extension(A,F,M,N), dir(-120));
+draw(B--A--C--cycle, tpen); draw(M--N^^F--A--D); draw(rightanglemark(D,F,A,15)); draw(rightanglemark(A,Y,M,15)); MA("\theta",F,A,D,1.8); 
+</asy>
+We have <math>AF=6\sqrt{3}</math> and <math>FD=3</math>, so <math>AD=3\sqrt{13}</math>. Denote <math>\angle DAF = \theta </math>; we get <math>\cos\theta = 2\sqrt{3}/\sqrt{13}</math>. 
+
+In triangle <math>AXY</math>, <math>AY=\tfrac 12 AD = \tfrac 32 \sqrt{13}</math>, and <math>AX=AY\sec\theta =\tfrac{13}{4}\sqrt{3}</math>. 
+
+In triangle <math>AMX</math>, we get <math>\angle AMX=60^\circ-\theta</math> and then use sine-law to get <math>MX=\tfrac 12 AX\csc(60^\circ-\theta)</math>; similarly, from triangle <math>ANX</math> we get <math>NX=\tfrac 12 AX\csc(60^\circ+\theta)</math>. Thus <cmath>MN=\tfrac 12 AX(\csc(60^\circ-\theta) +\csc(60^\circ+\theta)).</cmath> Since <math>\sin(60^\circ\pm \theta) = \tfrac 12 (\sqrt{3}\cos\theta \pm \sin\theta)</math>, we get
+<cmath>\begin{align*}
+    \csc(60^\circ-\theta) +\csc(60^\circ+\theta) &= \frac{\sqrt{3}\cos\theta}{\cos^2\theta - \tfrac 14} = \frac{24 \cdot \sqrt{13}}{35}
+\end{align*}</cmath>
+Then <cmath>MN = \frac 12 AX \cdot \frac{24 \cdot \sqrt{13}}{35} = \frac{39\sqrt{39}}{35}</cmath>
+
+The answer is <math>39 + 39 + 35 = \boxed{113}</math>.

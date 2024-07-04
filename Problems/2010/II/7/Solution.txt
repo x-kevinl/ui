@@ -1,0 +1,19 @@
+== Solution (vieta's) ==
+Set <math>w=x+yi</math>, so <math>x_1 = x+(y+3)i</math>, <math>x_2 = x+(y+9)i</math>, <math>x_3 = 2x-4+2yi</math>.
+
+Since <math>a,b,c\in{R}</math>, the imaginary part of <math>a,b,c</math> must be <math>0</math>.
+
+Start with a, since it's the easiest one to do: <math>y+3+y+9+2y=0, y=-3</math>,
+
+and therefore: <math>x_1 = x</math>, <math>x_2 = x+6i</math>, <math>x_3 = 2x-4-6i</math>.
+
+Now, do the part where the imaginary part of c is 0 since it's the second easiest one to do: 
+<math>x(x+6i)(2x-4-6i)</math>. The imaginary part is <math>6x^2-24x</math>, which is 0, and therefore <math>x=4</math>, since <math>x=0</math> doesn't work.
+
+So now, <math>x_1 = 4, x_2 = 4+6i, x_3 = 4-6i</math>,
+
+and therefore: <math>a=-12, b=84, c=-208</math>. Finally, we have <math>|a+b+c|=|-12+84-208|=\boxed{136}</math>.
+
+=== Solution 1b ===
+
+Same as solution 1 except that when you get to <math>x_1 = x</math>, <math>x_2 = x+6i</math>, <math>x_3 = 2x-4-6i</math>, you don't need to find the imaginary part of <math>c</math>. We know that <math>x_1</math> is a real number, which means that <math>x_2</math> and <math>x_3</math> are complex conjugates. Therefore, <math>x=2x-4</math>.

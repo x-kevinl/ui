@@ -1,0 +1,5 @@
+== Problem ==
+
+What is the value of $\frac{(2112-2021)^2}{169}$?
+
+$\textbf{(A) } 7 \qquad\textbf{(B) } 21 \qquad\textbf{(C) } 49 \qquad\textbf{(D) } 64 \qquad\textbf{(E) } 91$

@@ -1,0 +1,29 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(200);
+import graph3;
+import solids;
+
+triple A, B, C, D, M;
+A = (2/3*sqrt(3)*Cos(90),2/3*sqrt(3)*Sin(90),0);
+B = (2/3*sqrt(3)*Cos(210),2/3*sqrt(3)*Sin(210),0);
+D = (2/3*sqrt(3)*Cos(330),2/3*sqrt(3)*Sin(330),0);
+C = (0,0,2/3*sqrt(6));
+M = midpoint(A--B);
+
+currentprojection=orthographic((-2,0,1));
+
+draw(A--B--D);
+draw(A--D,dashed);
+draw(C--A^^C--B^^C--D);
+draw(C--M,red);
+draw(M--D,red+dashed);
+
+dot("$A$",A,A-D,linewidth(5));
+dot("$B$",B,B-A,linewidth(5));
+dot("$C$",C,C-M,linewidth(5));
+dot("$D$",D,D-A,linewidth(5));
+dot("$M$",M,M-C,linewidth(5));
+</asy>
+~MRENTHUSIASM

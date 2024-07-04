@@ -1,0 +1,37 @@
+==Solution 1==
+
+We first subtract the second equation from the first, noting that they both equal <math>60</math>. 
+<cmath>\begin{align*}
+xy+4z-yz-4x&=0 \\
+4(z-x)-y(z-x)&=0 \\
+(z-x)(4-y)&=0
+\end{align*}</cmath>
+
+Case 1: Let <math>y=4</math>.
+
+The first and third equations simplify to:
+<cmath>\begin{align*}
+x+z&=15 \\
+xz&=44
+\end{align*}</cmath>
+from which it is apparent that <math>x=4</math> and <math>x=11</math> are solutions.
+
+Case 2: Let <math>x=z</math>.
+
+The first and third equations simplify to:
+<cmath>\begin{align*}
+xy+4x&=60 \\
+x^2+4y&=60
+\end{align*}</cmath>
+
+We subtract the following equations, yielding:
+<cmath>\begin{align*}
+x^2+4y-xy-4x&=0 \\
+x(x-4)-y(x-4)&=0 \\
+(x-4)(x-y)&=0
+\end{align*}</cmath>
+
+We thus have <math>x=4</math> and <math>x=y</math>, substituting in <math>x=y=z</math> and solving yields <math>x=6</math> and <math>x=-10</math>.
+
+Then, we just add the squares of the solutions (make sure not to double count the <math>4</math>), and get <cmath>4^2+11^2+6^2+(-10)^2=16+121+36+100=\boxed{273}.</cmath>
+~SAHANWIJETUNGA

@@ -1,0 +1,11 @@
+==Solution 1 (Transformation Rules)==
+
+The final image of $P$ is $(-6,3)$. We know the reflection rule for reflecting over $y=-x$ is $(x,y) \rightarrow (-y, -x)$. So before the reflection and after rotation the point is $(-3,6)$.
+
+By definition of rotation, the slope between $(-3,6)$ and $(1,5)$ must be perpendicular to the slope between $(a,b)$ and $(1,5)$. The first slope is $\frac{5-6}{1-(-3)} = \frac{-1}{4}$. This means the slope of $P$ and $(1,5)$ is $4$.
+
+Rotations also preserve distance to the center of rotation, and since we only "travelled" up and down by the slope once to get from $(3,-6)$ to $(1,5)$ it follows we shall only use the slope once to travel from $(1,5)$ to $P$.
+
+Therefore point $P$ is located at $(1+1, 5+4) = (2,9)$. The answer is $9-2 = 7 = \boxed{\textbf{(D)} ~7}$.
+
+-abhinavg0627

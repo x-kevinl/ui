@@ -1,0 +1,11 @@
+==Solution 1==
+Let's express the number in terms of <math>10^n</math>. We can obtain <math>(10-1)+(10^2-1)+(10^3-1)+\cdots+(10^{321}-1)</math>. By the commutative and associative property, we can group it into <math>(10+10^2+10^3+\cdots+10^{321})-321</math>. We know the former will yield <math>1111....10</math>, so we only have to figure out what the last few digits are. There are currently <math>321</math> 1's. We know the last four digits are <math>1110</math>, and that the others will not be affected if we subtract <math>321</math>. If we do so, we get that <math>1110-321=789</math>. This method will remove three <math>1</math>'s, and add a <math>7</math>, <math>8</math> and <math>9</math>. Therefore, the sum of the digits is <math>(321-3)+7+8+9=\boxed{342}</math>.
+
+-eric2020
+-another Eric in 2020
+
+
+
+A similar and simpler way to consider the initial manipulations is to observe that adding <math>1</math> to each term results in <math>(10+100+... 10^{320}+10^{321})</math>. There are <math>321</math> terms, so it becomes <math>11...0</math>, where there are <math>322</math> digits in <math>11...0</math>. Then, subtract the <math>321</math> you initially added. 
+
+~ BJHHar

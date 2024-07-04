@@ -1,0 +1,4 @@
+==Solution 1==
+Note that the only positive 2-digit palindromes are multiples of 11, namely $11, 22, \ldots, 99$. Since $N$ is the sum of 2-digit palindromes, $N$ is necessarily a multiple of 11. The smallest 3-digit multiple of 11 which is not a palindrome is 110, so $N=110$ is a candidate solution. We must check that 110 can be written as the sum of three distinct 2-digit palindromes; this suffices as $110=77+22+11$. Then, $N = 110$, and the sum of the digits of $N$ is $1+1+0 = \boxed{\textbf{(A) }2}$.
+
+*There are other sets of 2-digit numbers that satisfy this rule. Some of them are $110 = 11+33+66$ and $110 = 22+33+55$

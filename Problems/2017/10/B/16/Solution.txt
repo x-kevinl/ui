@@ -1,0 +1,2 @@
+==Solution 1==
+We can use complementary counting. There are $2017$ positive integers in total to consider, and there are $9$ one-digit integers, $9 \cdot 9 = 81$ two digit integers without a zero, $9 \cdot 9 \cdot 9 = 729$ three digit integers without a zero, and $9 \cdot 9 \cdot 9 = 729$ four-digit integers starting with a 1 without a zero. Therefore, the answer is $2017 - 9 - 81 - 729 - 729 = \boxed{\textbf{(A) }469}$.

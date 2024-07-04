@@ -1,0 +1,2 @@
+== Problem ==
+An [[integer]] between <math>1000</math> and <math>9999</math>, inclusive, is called ''balanced'' if the sum of its two leftmost [[digit]]s equals the sum of its two rightmost digits. How many balanced integers are there?

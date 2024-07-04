@@ -1,0 +1,4 @@
+==Problem==
+There exists a unique positive integer <math>a</math> for which the sum <cmath>U=\sum_{n=1}^{2023}\left\lfloor\dfrac{n^{2}-na}{5}\right\rfloor</cmath> is an integer strictly between <math>-1000</math> and <math>1000</math>. For that unique <math>a</math>, find <math>a+U</math>.
+
+(Note that <math>\lfloor x\rfloor</math> denotes the greatest integer that is less than or equal to <math>x</math>.)

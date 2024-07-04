@@ -1,0 +1,2 @@
+==Solution==
+For the first man, there are $10$ possible seats. For each subsequent man, there are $4$, $3$, $2$, or $1$ possible seats. After the men are seated, there are only two possible arrangements for the five women. The answer is $10\cdot 4\cdot 3\cdot 2\cdot 1\cdot 2 = \boxed{(\text{C}) 480}$.

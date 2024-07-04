@@ -1,0 +1,6 @@
+== Solution 1== 
+The Pythagorean Inequality tells us that in an obtuse triangle, $a^{2} + b^{2} < c^{2}$. The triangle inequality tells us that $a + b > c$. So, we have two inequalities:
+$$x^2 + y^2 < 1$$
+$$x + y > 1$$
+The first equation is $\frac14$ of a circle with radius $1$, and the second equation is a line from $(0, 1)$ to $(1, 0)$.
+So, the area is $\frac{\pi}{4} - \frac12$ which is approximately $\boxed{\textbf{(C)} ~0.29}$

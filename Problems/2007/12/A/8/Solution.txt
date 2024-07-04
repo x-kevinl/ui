@@ -1,0 +1,4 @@
+==Solution==
+[[Image:2007_AMC12A-8.png]]
+
+We look at the angle between 12, 5, and 10. It subtends $\frac 16$ of the circle, or $60$ degrees (or you can see that the [[arc]] is $\frac 23$ of the [[right angle]]). Thus, the angle at each vertex is an [[inscribed angle]] subtending $60$ degrees, making the answer $\frac 1260 = 30^{\circ} \Longrightarrow \mathrm{(C)}$

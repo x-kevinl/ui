@@ -1,0 +1,2 @@
+== Problem ==
+In isosceles trapezoid <math>ABCD</math>, parallel bases <math>\overline{AB}</math> and <math>\overline{CD}</math> have lengths <math>500</math> and <math>650</math>, respectively, and <math>AD=BC=333</math>. The angle bisectors of <math>\angle{A}</math> and <math>\angle{D}</math> meet at <math>P</math>, and the angle bisectors of <math>\angle{B}</math> and <math>\angle{C}</math> meet at <math>Q</math>. Find <math>PQ</math>.

@@ -1,0 +1,7 @@
+== Problem ==
+
+Suppose that $\{a_n\}$ is an arithmetic sequence with
+$$ a_1+a_2+\cdots+a_{100}=100 \text{ and } a_{101}+a_{102}+\cdots+a_{200}=200.$$
+What is the value of $a_2 - a_1 ?$
+
+$ \mathrm{(A) \ } 0.0001\qquad \mathrm{(B) \ } 0.001\qquad \mathrm{(C) \ } 0.01\qquad \mathrm{(D) \ } 0.1\qquad \mathrm{(E) \ } 1 $

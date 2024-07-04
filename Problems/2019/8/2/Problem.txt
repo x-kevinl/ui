@@ -1,0 +1,21 @@
+==Problem==
+Three identical rectangles are put together to form rectangle $ABCD$, as shown in the figure below. Given that the length of the shorter side of each of the smaller rectangles is  5 feet, what is the area in square feet of rectangle $ABCD$?
+
+<asy>
+draw((0,0)--(3,0));
+draw((0,0)--(0,2));
+draw((0,2)--(3,2));
+draw((3,2)--(3,0));
+dot((0,0));
+dot((0,2));
+dot((3,0));
+dot((3,2));
+draw((2,0)--(2,2));
+draw((0,1)--(2,1));
+label("A",(0,0),S);
+label("B",(3,0),S);
+label("C",(3,2),N);
+label("D",(0,2),N);
+</asy>
+
+$\textbf{(A) }45\qquad\textbf{(B) }75\qquad\textbf{(C) }100\qquad\textbf{(D) }125\qquad\textbf{(E) }150$

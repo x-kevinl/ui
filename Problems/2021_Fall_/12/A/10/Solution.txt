@@ -1,0 +1,11 @@
+==Solution 1 (Modular Arithmetic)==
+Recall that $9\equiv-1\pmod{5}.$ We expand $N$ by the definition of bases:
+$$\begin{align*}
+N&=27{,}006{,}000{,}052_9 \\
+&= 2\cdot9^{10} + 7\cdot9^9 + 6\cdot9^6 + 5\cdot9 + 2 \\
+&\equiv 2\cdot(-1)^{10} + 7\cdot(-1)^9 + 6\cdot(-1)^6 + 2 &&\pmod{5} \\
+&\equiv 2-7+6+2 &&\pmod{5} \\
+&\equiv -2 &&\pmod{5} \\
+&\equiv \boxed{\textbf{(D) } 3} &&\pmod{5}.
+\end{align*}$$
+~Aidensharp ~Kante314 ~MRENTHUSIASM

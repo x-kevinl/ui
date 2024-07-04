@@ -1,0 +1,5 @@
+==Problem==
+
+The least common multiple of $a$ and $b$ is $12$, and the least common multiple of $b$ and $c$ is $15$. What is the least possible value of the least common multiple of $a$ and $c$?
+
+$\textbf{(A) }20\qquad\textbf{(B) }30\qquad\textbf{(C) }60\qquad\textbf{(D) }120\qquad \textbf{(E) }180$

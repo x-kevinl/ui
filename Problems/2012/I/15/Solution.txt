@@ -1,0 +1,11 @@
+== Solution ==
+It is a well-known fact that the set <math>0, a, 2a, ... (n-1)a</math> forms a complete set of residues if and only if <math>a</math> is relatively prime to <math>n</math>.
+
+Thus, we have <math>a</math> is relatively prime to <math>n</math>. In addition, for any seats <math>p</math> and <math>q</math>, we must have <math>ap - aq</math> not be equivalent to either <math>p - q</math> or <math>q - p</math> modulo <math>n</math> to satisfy our conditions. These simplify to <math>(a-1)p \not\equiv (a-1)q</math> and <math>(a+1)p \not\equiv (a+1)q</math> modulo <math>n</math>, so multiplication by both <math>a-1</math> and <math>a+1</math> must form a complete set of residues mod <math>n</math> as well. 
+
+Thus, we have <math>a-1</math>, <math>a</math>, and <math>a+1</math> are relatively prime to <math>n</math>. We must find all <math>n</math> for which such an <math>a</math> exists. <math>n</math> obviously cannot be a multiple of <math>2</math> or <math>3</math>, but for any other <math>n</math>, we can set <math>a = n-2</math>, and then <math>a-1 = n-3</math> and <math>a+1 = n-1</math>. All three of these will be relatively prime to <math>n</math>, since two numbers <math>x</math> and <math>y</math> are relatively prime if and only if <math>x-y</math> is relatively prime to <math>x</math>. In this case, <math>1</math>, <math>2</math>, and <math>3</math> are all relatively prime to <math>n</math>, so <math>a = n-2</math> works.
+
+Now we simply count all <math>n</math> that are not multiples of <math>2</math> or <math>3</math>, which is easy using inclusion-exclusion. We get a final answer of <math>998 - (499 + 333 - 166) = \boxed{332}</math>.
+
+
+Note: another way to find that <math>(a-1)</math> and <math>(a+1)</math> have to be relative prime to <math>n</math> is the following: start with <math>ap-aq \not \equiv \pm(p-q) \pmod n</math>. Then, we can divide by <math>p-q</math> to get <math>a \not \equiv \pm 1</math> modulo <math>\frac{n}{\gcd(n, p-q)}</math>. Since <math>\gcd(n, p-q)</math> ranges through all the divisors of <math>n</math>, we get that <math>a \not \equiv \pm 1</math> modulo the divisors of <math>n</math> or <math>\gcd(a-1, n) = \gcd(a+1, n) = 1</math>.

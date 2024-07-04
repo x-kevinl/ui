@@ -1,0 +1,2 @@
+==Solution 1 (Direct)==
+We have $\text{water} : \text{sugar} : \text{lemon juice} = 4\cdot 2 : 2 : 1 = 8 : 2 : 1,$ so Luka needs $3 \cdot 8 = \boxed{\textbf{(E) }24}$ cups.

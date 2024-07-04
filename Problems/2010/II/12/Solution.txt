@@ -1,0 +1,10 @@
+== Solution 1==
+Let <math>s</math> be the semiperimeter of the two triangles. Also, let the base of the longer triangle be <math>16x</math> and the base of the shorter triangle be <math>14x</math> for some arbitrary factor <math>x</math>. Then, the dimensions of the two triangles must be <math>s-8x,s-8x,16x</math> and <math>s-7x,s-7x,14x</math>. By Heron's Formula, we have 
+
+<center>
+<cmath>\sqrt{s(8x)(8x)(s-16x)}=\sqrt{s(7x)(7x)(s-14x)}</cmath>
+<cmath>8\sqrt{s-16x}=7\sqrt{s-14x}</cmath>
+<cmath>64s-1024x=49s-686x</cmath>
+<cmath>15s=338x</cmath>
+</center>
+Since <math>15</math> and <math>338</math> are coprime, to minimize, we must have <math>s=338</math> and <math>x=15</math>. However, we want the minimum perimeter. This means that we must multiply our minimum semiperimeter by <math>2</math>, which gives us a final answer of <math>\boxed{676}</math>.

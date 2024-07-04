@@ -1,0 +1,5 @@
+==Problem==
+
+Ara and Shea were once the same height. Since then Shea has grown 20% while Ara has grown half as many inches as Shea. Shea is now 60 inches tall. How tall, in inches, is Ara now?
+
+$\text{(A)}\ 48 \qquad \text{(B)}\ 51 \qquad \text{(C)}\ 52 \qquad \text{(D)}\ 54 \qquad \text{(E)}\ 55$

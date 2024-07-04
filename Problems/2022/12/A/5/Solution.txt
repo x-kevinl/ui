@@ -1,0 +1,76 @@
+==Diagram==
+All possible locations of $P$ are lattice points such that $|x|+|y|\leq 20,$ whose graph is shown below:
+<asy>
+/* Made by MRENTHUSIASM */
+size(350); 
+
+int xMin = -21;
+int xMax = 21;
+int yMin = -21;
+int yMax = 21;
+
+filldraw((20,0)--(0,20)--(-20,0)--(0,-20)--cycle,yellow,linewidth(1.25));
+
+//Draws the horizontal gridlines
+void horizontalLines()
+{
+  for (int i = yMin+1; i < yMax; ++i)
+  {
+    draw((xMin,i)--(xMax,i), mediumgray+linewidth(0.4));
+  }
+}
+
+void verticalLines()
+{
+  for (int i = xMin+1; i < xMax; ++i)
+  {
+    draw((i,yMin)--(i,yMax), mediumgray+linewidth(0.4));
+  }
+}
+
+void horizontalTicks()
+{
+  for (int i = yMin+1; i < yMax; ++i)
+  {
+    draw((-3/8,i)--(3/8,i), black+linewidth(1.5));
+  }
+}
+
+//Draws the vertical ticks
+void verticalTicks()
+{
+  for (int i = xMin+1; i < xMax; ++i)
+  {
+    draw((i,-3/8)--(i,3/8), black+linewidth(1.5));
+  }
+}
+
+horizontalLines();
+verticalLines();
+horizontalTicks();
+verticalTicks();
+
+label("$20$",(0,20),(-2,0),fontsize(10));
+label("$20$",(20,0),(0,-2),fontsize(10));
+label("${-}20$",(0,-20),(-2,0),fontsize(10));
+label("${-}20$",(-20,0),(0,-2),fontsize(10));
+
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$x$",(xMax,0),(2,0));
+label("$y$",(0,yMax),(0,2));
+
+for (int y = 20; y >= 0; --y) {
+	for (int x = y-20; x <= 20-y; ++x) {
+    	dot((x,y),linewidth(4));
+    }
+}
+
+for (int y = -1; y >= -20; --y) {
+	for (int x = -y-20; x <= y+20; ++x) {
+    	dot((x,y),linewidth(4));
+    }
+}
+</asy>
+
+~MRENTHUSIASM

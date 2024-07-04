@@ -1,0 +1,9 @@
+== Solution ==
+We let $p =$ cost of  one pencil in dollars, $n = $ cost of one notebook in dollars. Then
+
+$$\begin{align*}
+7p + 8n = 4.15 &\Longrightarrow  35p + 40n = 20.75\\
+5p + 3n = 1.77 &\Longrightarrow  35p + 21n = 12.39
+\end{align*}$$
+
+Subtracting these equations yields $19n = 8.36 \Longrightarrow n = 0.44$. Solving backwards gives $p = 0.09$. Thus the answer is $16p + 10n = 5.84\ \mathrm{(B)}$.

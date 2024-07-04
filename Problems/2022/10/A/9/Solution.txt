@@ -1,0 +1,4 @@
+==Solution 1==
+The top left rectangle can be $5$ possible colors. Then the bottom left region can only be $4$ possible colors, and the bottom middle can only be $3$ colors since it is next to the top left and bottom left. Similarly, we have $3$ choices for the top right and $3$ choices for the bottom right, which gives us a total of $5\cdot4\cdot3\cdot3\cdot3=\boxed{\textbf{(D) }540}$.
+
+~Txu

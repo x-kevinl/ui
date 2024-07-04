@@ -1,0 +1,5 @@
+==Problem==
+
+The lengths of the sides of a triangle in inches are three consecutive integers. The length of the shortest side is $30\%$ of the perimeter. What is the length of the longest side?
+
+$ \textbf{(A)}\ 7 \qquad\textbf{(B)}\ 8\qquad\textbf{(C)}\ 9\qquad\textbf{(D)}\ 10\qquad\textbf{(E)}\ 11 $

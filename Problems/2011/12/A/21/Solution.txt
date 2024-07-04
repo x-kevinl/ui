@@ -1,0 +1,12 @@
+== Solution ==
+
+The domain of $f_{1}(x)=\sqrt{1-x}$ is defined when $x\leq1$. 
+$$f_{2}(x)=f_{1}\left(\sqrt{4-x}\right)=\sqrt{1-\sqrt{4-x}}$$ 
+
+Applying the domain of $f_{1}(x)$ and the fact that square roots must be positive, we get $0\leq\sqrt{4-x}\leq1$. Simplifying, the domain of $f_{2}(x)$ becomes $3\leq x\leq4$. 
+
+Repeat this process for $f_{3}(x)=\sqrt{1-\sqrt{4-\sqrt{9-x}}}$ to get a domain of $-7\leq x\leq0$.  
+
+For $f_{4}(x)$, since square roots must be nonnegative, we can see that the negative values of the previous domain will not work, so $\sqrt{16-x}=0$. Thus we now arrive at $16$ being the only number in the of domain of $f_4 x$ that defines $x$. However, since we are looking for the largest value for $n$ for which the domain of $f_{n}$ is nonempty, we must continue checking until we arrive at a domain that is empty. 
+
+We continue with $f_{5}(x)$ to get a domain of $\sqrt{25-x}=16 \implies x=-231$. Since square roots cannot be negative, this is the last nonempty domain. We add to get $5-231=\boxed{\textbf{(A)}\ -226}$.

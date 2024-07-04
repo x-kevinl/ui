@@ -1,0 +1,16 @@
+== Solution 1 ==
+Let <math>w = \operatorname{cis}{(\alpha)}</math> and <math>z = 10\operatorname{cis}{(\beta)}</math>. Then, <math>\dfrac{w - z}{z} = \dfrac{\operatorname{cis}{(\alpha)} - 10\operatorname{cis}{(\beta)}}{10\operatorname{cis}{\beta}}</math>.
+
+Multiplying both the numerator and denominator of this fraction by <math>\operatorname{cis}{(-\beta)}</math> gives us:
+
+<math>\dfrac{w - z}{z} = \dfrac{1}{10}\operatorname{cis}{(\alpha - \beta)} - 1 = \dfrac{1}{10}\cos{(\alpha - \beta)} + \dfrac{1}{10}i\sin{(\alpha - \beta)} - 1</math>.
+
+We know that <math>\tan{\theta}</math> is equal to the imaginary part of the above expression divided by the real part. Let <math>x = \alpha - \beta</math>. Then, we have that:
+
+<math>\tan{\theta} = \dfrac{\sin{x}}{\cos{x} - 10}.</math>
+
+We need to find a maximum of this expression, so we take the derivative:
+
+Note (not from author): To take the derivative, we need to use the [https://en.wikipedia.org/wiki/Quotient_rule Quotient Rule]. In this case, <cmath>\frac{d}{dx}\left(\frac{\sin x}{\cos x-10}\right)=\frac{\cos x(\cos x-10)-(-\sin x)\sin x}{(\cos x-10)^2}=\dfrac{1 - 10\cos{x}}{(\cos{x} - 10)^2}</cmath>
+
+Thus, we see that the maximum occurs when <math>\cos{x} = \dfrac{1}{10}</math>. Therefore, <math>\sin{x} = \pm\dfrac{\sqrt{99}}{10}</math>, and <math>\tan{\theta} = \pm\dfrac{\sqrt{99}}{99}</math>. Thus, the maximum value of <math>\tan^2{\theta}</math> is <math>\dfrac{99}{99^2}</math>, or <math>\dfrac{1}{99}</math>, and our answer is <math>1 + 99 = \boxed{100}</math>.

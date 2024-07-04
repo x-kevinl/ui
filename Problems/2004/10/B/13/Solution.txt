@@ -1,0 +1,18 @@
+== Solution 1 ==
+
+All numbers in this solution will be in hundredths of a millimeter.
+
+The thinnest coin is the dime, with thickness $135$. A stack of $n$ dimes has height $135n$.
+
+The other three coin types have thicknesses $135+20$, $135+40$, and $135+60$. By replacing some of the dimes in our stack by other, thicker coins, we can clearly create exactly all heights in the set $\{135n, 135n+20, 135n+40, \dots, 195n\}$.
+
+If we take an odd $n$, then all the possible heights will be odd, and thus none of them will be $1400$. Hence $n$ is even.
+
+If $n<8$ the stack will be too low and if $n>10$ it will be too high. Thus we are left with cases $n=8$ and $n=10$.
+
+If $n=10$ the possible stack heights are $1350,1370,1390,\dots$, with the remaining ones exceeding $1400$.
+
+Therefore there are $\boxed{\mathrm{(B)\ }8}$ coins in the stack.
+
+Using the above observation we can easily construct such a stack. A stack of $8$ dimes would have height $8\cdot 135=1080$, thus we need to add $320$.
+This can be done for example by replacing five dimes by nickels (for $+60\cdot 5 = +300$), and one dime by a penny (for $+20$).

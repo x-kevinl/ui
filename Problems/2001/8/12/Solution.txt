@@ -1,0 +1,4 @@
+==Solution==
+
+$ 6\otimes4=\frac{6+4}{6-4}=5 $. 
+$ 5\otimes3=\frac{5+3}{5-3}=4, \boxed{\text{A}} $

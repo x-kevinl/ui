@@ -1,0 +1,4 @@
+==Problem==
+Greta Grasshopper sits on a long line of lily pads in a pond. From any lily pad, Greta can jump $5$ pads to the right or $3$ pads to the left. What is the fewest number of jumps Greta must make to reach the lily pad located $2023$ pads to the right of her starting position?
+
+$\textbf{(A) } 405 \qquad \textbf{(B) } 407 \qquad \textbf{(C) } 409 \qquad \textbf{(D) } 411 \qquad \textbf{(E) } 413$

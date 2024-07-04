@@ -1,0 +1,10 @@
+== Solution 1==
+If two of our big equilateral triangles have the same color for their center triangle and the same [[multiset]] of colors for their outer three triangles, we can carry one onto the other by a combination of rotation and reflection.  Thus, to make two triangles distinct, they must differ either in their center triangle or in the collection of colors which make up their outer three triangles.
+
+There are 6 possible colors for the center triangle.
+
+*There are <math>{6\choose3} = 20</math> possible choices for the three outer triangles, if all three have different colors.
+*There are <math>6\cdot 5 = 30</math> (or <math>2 {6\choose2}</math>) possible choices for the three outer triangles, if two are one color and the third is a different color.
+*There are <math>{6\choose1} = 6</math> possible choices for the three outer triangles, if all three are the same color.
+
+Thus, in total we have <math>6\cdot(20 + 30 + 6) = \boxed{336}</math> total possibilities.

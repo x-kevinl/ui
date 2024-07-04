@@ -1,0 +1,5 @@
+==The Geometry Part - Solution 1==
+
+Consider the splitting line through <math>M</math>. Extend <math>D</math> on ray <math>BC</math> such that <math>CD=CA</math>. Then the splitting line bisects segment <math>BD</math>, so in particular it is the midline of triangle <math>ABD</math> and thus it is parallel to <math>AD</math>. But since triangle <math>ACD</math> is isosceles, we can easily see <math>AD</math> is parallel to the angle bisector of <math>C</math>, so the splitting line is also parallel to this bisector, and similar for the splitting line through <math>N</math>. Some simple angle chasing reveals the condition is now equivalent to <math>\angle A=120^\circ</math>.
+
+- MortemEtInteritum

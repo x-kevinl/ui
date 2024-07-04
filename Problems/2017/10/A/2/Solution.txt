@@ -1,0 +1,3 @@
+==Solution==
+
+$\$3$ boxes give us the most popsicles/dollar, so we want to buy as many of those as possible. After buying $2$, we have $\$2$ left. We cannot buy a third $\$3$ box, so we opt for the $\$2$ box instead (since it has a higher popsicles/dollar ratio than the $\$1$ pack). We're now out of money. We bought $5+5+3=13$ popsicles, so the answer is $\boxed{\textbf{(D) }13}$.

@@ -1,0 +1,3 @@
+==Solution==
+
+The surface area of the cube is $6(3)(3)=54$. Each of the eight black cubes has 3 faces on the outside, making $3(8)=24$ black faces. Therefore there are $54-24=30$ white faces. To find the ratio, we evaluate $\frac{30}{54}= \boxed{\textbf{(D)}\ \frac{5}{9}}$.

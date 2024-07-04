@@ -1,0 +1,64 @@
+==Solution 1==
+Let $f(x, y)$ be the number of cells the line segment from $(0, 0)$ to $(x, y)$ passes through. The problem is then  equivalent to finding $$f(5000-2000, 8000-3000)=f(3000, 5000).$$ Sometimes the segment passes through lattice points in between the endpoints, which happens $\text{gcd}(3000, 5000)-1=999$ times. This partitions the segment into $1000$ congruent pieces that each pass through $f(3, 5)$ cells, which means the answer is $$1000f(3, 5).$$ Note that a new square is entered when the lines pass through one of the lines in the coordinate grid, which for $f(3, 5)$ happens $3-1+5-1=6$ times. Because $3$ and $5$ are relatively prime, no lattice point except for the endpoints intersects the line segment from $(0, 0)$ to $(3, 5).$ This means that including the first cell closest to $(0, 0),$ The segment passes through $f(3, 5)=6+1=7$ cells. Thus, the answer is $\boxed{\textbf{(C)}7000}.$ Alternatively, $f(3, 5)$ can be found by drawing an accurate diagram, leaving you with the same answer.
+
+~BS2012
+
+Note: A general form for finding $f(x, y)$ is $x+y-\text{gcd}(x, y).$ We subtract $\text{gcd}(x, y)$ to account for overlapping, when the line segment goes through a lattice point.
+
+~mathkiddus
+
+===Proof of This Claim===
+
+$\textbf{Lemma 1 for Problem 23:}$
+
+Let $p$ and $q$ be relatively prime positive integers. When a $p\times q$ rectangle is split up into $pq$ unit squares, exactly $p + q - 1$ unit squares are crossed by the diagonal of this rectangle. 
+
+
+$\textbf{Proof:}$
+
+
+First, we claim that the diagonal does not cross the corner of a unit square. \\\\
+To prove this claim we proceed by way of contradiction. Plot the rectangle on the Cartesian plane at the vertices $(0,0),(p,0),(q,p),(0,q).$ The diagonal has endpoints at $(0,0),(q,p)$, so its slope is $\frac{p}{q}.$  Now, suppose the diagonal goes through the corner point $(a,b)$, where $a<q$ and $b<p$. The slope of this line is $\frac{b}{a}$, which must be equal to $\frac{p}{q},$ implying that $\frac{p}{q}$ can be reduced, contradicting the fact that $p$ and $q$ are relatively prime. We conclude that no corner points of a grid entry (unit square) are crossed. \\\\
+Since no corner points are crossed, each time the diagonal crosses either a horizontal or vertical grid line, exactly one more unit square is touched by the diagonal. There are $p-1$ horizontal lines and $q-1$ vertical lines, so there are $p + q - 2$ total lines crossed by the diagonal. This doesn't include the square in the bottom left corner, crossed initially. Therefore, there are $p + q-2 + 1 = p + q - 1$ unit squares crossed by the diagonal and our claim is proven.
+
+$\textbf{Lemma 2 for Problem 23:}$
+
+
+Let $p$ and $q$ be positive integers. When a $p\times q$ rectangle is split up into $pq$ units squares, exactly $p + q - \gcd(p, q)$ unit squares are crossed by the diagonal of this rectangle.
+
+
+If $\gcd (p,q) = 1$, then we are done by Lemma 1.
+
+Suppose $\gcd(p,q) = k>1$, i.e $p = ak$ and $q = bk$, for positive integers $a$ and $b$. We can then split the $p\times q$ rectangle up into $k$ $\frac{p}{k} \times \frac{q}{k}$ rectangles, strung together at the diagonal. An example for $(p,q)=(4,6)$ is shown below, where two $2\times 3$ rectangles are strung together: 
+
+<asy>
+unitsize(1cm);
+draw((0,0)--(6,4),linewidth(1));
+currentpen = linewidth(.5);
+for (real i = 0; i <= 6; ++i) {
+    draw((i, 0)--(i, 4));
+}
+for (real i = 0; i < 5; ++i) {
+    draw((0, i)--(6, i));
+}
+
+currentpen = linewidth(1.5);
+for (real i = 0; i <= 3; ++i) {
+    draw((i, 0)--(i, 2));
+}
+for (real i = 0; i <= 2; ++i) {
+    draw((0, i)--(3, i));
+}
+
+for (real i = 3; i <= 6; ++i) {
+    draw((i, 2)--(i, 4));
+}
+for (real i = 3; i <= 5; ++i) {
+    draw((3, i-1)--(6, i-1));
+}
+</asy>
+
+After the diagonal crosses the corner point of a square, the pattern repeats itself with the next one. By Lemma 1, there are $\frac{p}{k}+ \frac{q}{k} - 1$ diagonals crossed in each rectangle. There are $k = \gcd (p, q)$ rectangles, so the number of crossed diagonals in total is
+$$k\left( \frac{p}{k}+ \frac{q}{k} - 1 \right) = p + q - \gcd(p,q).$$
+
+-Benedict T (countmath1)

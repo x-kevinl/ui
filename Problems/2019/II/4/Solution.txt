@@ -1,0 +1,18 @@
+==Solution 1==
+Notice that, other than the number 5, the remaining numbers 1, 2, 3, 4, 6 are only divisible by 2 and/or 3. We can do some cases on the number of 5's rolled (note that there are <math>6^4 = 1296</math> outcomes).
+
+Case 1 (easy): Four 5's are rolled. This has probability <math>\frac{1}{6^4}</math> of occurring.
+
+Case 2: Two 5's are rolled.
+
+Case 3: No 5's are rolled.
+
+To find the number of outcomes for the latter two cases, we will use recursion. Consider a 5-sided die with faces numbered 1, 2, 3, 4, 6. For <math>n \ge 1</math>, let <math>a_n</math> equal the number of outcomes after rolling the die <math>n</math> times, with the property that the product is a square. Thus, <math>a_1 = 2</math> as 1 and 4 are the only possibilities.
+
+To find <math>a_{n+1}</math> given <math>a_n</math> (where <math>n \ge 1</math>), we observe that if the first <math>n</math> rolls multiply to a perfect square, then the last roll must be 1 or 4. This gives <math>2a_n</math> outcomes. Otherwise, the first <math>n</math> rolls do not multiply to a perfect square (<math>5^n - a_n</math> outcomes). In this case, we claim that the last roll is uniquely determined (either 2, 3, or 6). If the product of the first <math>n</math> rolls is <math>2^x 3^y</math> where <math>x</math> and <math>y</math> are not both even, then we observe that if <math>x</math> and <math>y</math> are both odd, then the last roll must be 6; if only <math>x</math> is odd, the last roll must be 2, and if only <math>y</math> is odd, the last roll must be 3. Thus, we have <math>5^n - a_n</math> outcomes in this case, and <math>a_{n+1} = 2a_n + (5^n - a_n) = 5^n + a_n</math>.
+
+Computing <math>a_2</math>, <math>a_3</math>, <math>a_4</math> gives <math>a_2 = 7</math>, <math>a_3 = 32</math>, and <math>a_4 = 157</math>. Thus for Case 3, there are 157 outcomes. For case 2, we multiply <math>a_2</math> by <math>\binom{4}{2} = 6</math> to distribute the two 5's among four rolls. Thus the probability is
+
+<cmath> \frac{1 + 6 \cdot 7 + 157}{6^4} = \frac{200}{6^4} = \frac{25}{162} \implies m+n = \boxed{187} </cmath>
+
+-scrabbler94

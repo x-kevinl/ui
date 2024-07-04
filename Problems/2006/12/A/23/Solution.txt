@@ -1,0 +1,6 @@
+== Solution 1 ==
+$$A^1(S)=\left(\frac{1+x}{2},\frac{x+x^2}{2},...,\frac{x^{99}+x^{100}}{2}\right)$$
+$$A^2(S)=\left(\frac{1+2x+x^2}{2^2},\frac{x+2x^2+x^3}{2^2},...,\frac{x^{98}+2x^{99}+x^{100}}{2^2}\right)$$
+$$\Rightarrow A^2(S)=\left(\frac{(x+1)^2}{2^2},\frac{x(x+1)^2}{2^2},...,\frac{x^{98}(x+1)^2}{2^2}\right)$$
+
+In general, $A^n(S)=\left(\frac{(x+1)^n}{2^n},\frac{x(x+1)^n}{2^n},...,\frac{x^{100-n}(x+1)^n}{2^n}\right)$ such that $A^n(s)$ has $101-n$ terms. Specifically, $A^{100}(S)=\frac{(x+1)^{100}}{2^{100}}$ To find x, we need only solve the equation $\frac{(x+1)^{100}}{2^{100}}=\frac{1}{2^{50}}$. Algebra yields $x=\sqrt{2}-1$.

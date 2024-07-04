@@ -1,0 +1,9 @@
+==Solution 1==
+Let the area of $\triangle CEF$ be $x$. Thus, the area of triangle $\triangle ACD$ is $45+x$ and the area of the square is $2(45+x) = 90+2x$.
+
+By AA similarity, $\triangle CEF \sim \triangle ABF$ with a 1:2 ratio, so the area of triangle $\triangle ABF$ is $4x$. Now, consider trapezoid $ABED$. Its area is $45+4x$, which is three-fourths the area of the square. We set up an equation in $x$:
+
+$$ 45+4x = \frac{3}{4}\left(90+2x\right) $$
+Solving, we get $x = 9$. The area of square $ABCD$ is $90+2x = 90 + 2 \cdot 9 = \boxed{\textbf{(B) } 108}$.
+
+Sidenote: $\triangle CEF \sim \triangle ABF$ is a 1:2 ratio because it was given.

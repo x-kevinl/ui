@@ -1,0 +1,6 @@
+==Solution==
+Let's work on both parts of the problem separately. First, <cmath>855 \equiv 787 \equiv 702 \equiv r \pmod{m}.</cmath> We take the difference of <math>855</math> and <math>787</math>, and also of <math>787</math> and <math>702</math>. We find that they are <math>85</math> and <math>68</math>, respectively. Since the greatest common divisor of the two differences is <math>17</math> (and the only one besides one), it's safe to assume that <math>m = 17</math>.
+
+Then, we divide <math>855</math> by <math>17</math>, and it's easy to see that <math>r = 5</math>. Dividing <math>787</math> and <math>702</math> by <math>17</math> also yields remainders of <math>5</math>, which means our work up to here is correct.
+
+Doing the same thing with <math>815</math>, <math>722</math>, and <math>412</math>, the differences between <math>815</math> and <math>722</math> and <math>412</math> are <math>310</math> and <math>93</math>, respectively. Since the only common divisor (besides <math>1</math>, of course) is <math>31</math>, <math>n = 31</math>. Dividing all <math>3</math> numbers by <math>31</math> yields a remainder of <math>9</math> for each, so <math>s = 9</math>. Thus, <math>m + n + r + s = 17 + 5 + 31 + 9 = \boxed{062}</math>.

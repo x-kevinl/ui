@@ -1,0 +1,6 @@
+== Problem ==
+There exist <math>r</math> unique nonnegative integers <math>n_1 > n_2 > \cdots > n_r</math> and <math>r</math> unique integers <math>a_k</math> (<math>1\le k\le r</math>) with each <math>a_k</math> either <math>1</math> or <math>- 1</math> such that
+<cmath>
+a_13^{n_1} + a_23^{n_2} + \cdots + a_r3^{n_r} = 2008.
+</cmath>
+Find <math>n_1 + n_2 + \cdots + n_r</math>.

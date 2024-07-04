@@ -1,0 +1,25 @@
+==Problem==
+
+Each half of this figure is composed of 3 red triangles, 5 blue triangles and 8 white triangles. When the upper half is folded down over the centerline, 2 pairs of red triangles coincide, as do 3 pairs of blue triangles. There are 2 red-white pairs. How many white pairs coincide?
+
+<asy>
+draw((0,0)--(4,4*sqrt(3)));
+draw((1,-sqrt(3))--(5,3*sqrt(3)));
+draw((2,-2*sqrt(3))--(6,2*sqrt(3)));
+draw((3,-3*sqrt(3))--(7,sqrt(3)));
+draw((4,-4*sqrt(3))--(8,0));
+draw((8,0)--(4,4*sqrt(3)));
+draw((7,-sqrt(3))--(3,3*sqrt(3)));
+draw((6,-2*sqrt(3))--(2,2*sqrt(3)));
+draw((5,-3*sqrt(3))--(1,sqrt(3)));
+draw((4,-4*sqrt(3))--(0,0));
+draw((3,3*sqrt(3))--(5,3*sqrt(3)));
+draw((2,2*sqrt(3))--(6,2*sqrt(3)));
+draw((1,sqrt(3))--(7,sqrt(3)));
+draw((-1,0)--(9,0));
+draw((1,-sqrt(3))--(7,-sqrt(3)));
+draw((2,-2*sqrt(3))--(6,-2*sqrt(3)));
+draw((3,-3*sqrt(3))--(5,-3*sqrt(3)));
+</asy>
+
+$\textbf{(A)}\ 4 \qquad \textbf{(B)}\ 5 \qquad \textbf{(C)}\ 6 \qquad \textbf{(D)}\ 7 \qquad \textbf{(E)}\ 9$

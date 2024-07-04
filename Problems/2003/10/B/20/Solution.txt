@@ -1,0 +1,10 @@
+==Solution 1==
+
+$\triangle EFG \sim \triangle EAB$ because $FG \parallel AB.$ The ratio of $\triangle EFG$ to $\triangle EAB$ is $2:5$ since $AB=5$ and $FG=2$ from subtraction. If we let $h$ be the height of $\triangle EAB,$
+
+$$\frac{2}{5} = \frac{h-3}{h}$$
+$$2h = 5h-15$$
+$$3h = 15$$
+$$h = 5$$
+
+The height is $5$ so the area of $\triangle EAB$ is $\frac{1}{2}(5)(5) = \boxed{\textbf{(D)}\ \frac{25}{2}}$.

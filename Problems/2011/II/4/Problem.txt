@@ -1,0 +1,2 @@
+== Problem 4 ==
+In triangle <math>ABC</math>, <math>AB=20</math> and <math>AC=11</math>. The angle bisector of <math>\angle A</math> intersects <math>BC</math> at point <math>D</math>, and point <math>M</math> is the midpoint of <math>AD</math>. Let <math>P</math> be the point of the intersection of <math>AC</math> and <math>BM</math>. The ratio of <math>CP</math> to <math>PA</math> can be expressed in the form <math>\dfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

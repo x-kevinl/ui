@@ -1,0 +1,7 @@
+==Solutions==
+===Solution 1===
+In a $1$-foot-by-$1$-foot floor, there is $1$ white tile. In a $3$-by-$3$, there are $4$. Continuing on, you can deduce the $n^{th}$ positive odd integer floor has $n^2$ white tiles. $15$ is the $8^{th}$ odd integer, so there are $\boxed{\textbf{(C)}\ 64}$ white tiles.
+
+===Solution 2===
+
+After testing a couple of cases, we find that the number of white squares is $(s/2)^2$, where s is the side length of the square and $s/2$ is rounded up to the next whole number. Therefore, $15/2$ rounded up is 8, so $8^2=64$, or $\framebox{(C) 64}$.

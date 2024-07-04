@@ -1,0 +1,16 @@
+== Solution ==
+
+<asy>
+draw((-2,1)--(-6,1),red+dashed,EndArrow);
+draw((-6,2)--(5,2),blue+dashed,EndArrow);
+dot((-2,0));
+dot((-6,0));
+dot((5,0));
+label("$-2$",(-2,0),dir(270));
+label("$-6$",(-6,0),dir(270));
+label("$5$",(5,0),dir(270));
+label("$4$",(-4,0.9),dir(270));
+label("$11$",(-1.5,2.5),dir(90));
+</asy>
+
+Crawling from $-2$ to $-6$ takes it a distance of $4$ units. Crawling from $-6$ to $5$ takes it a distance of $11$ units. Add $4$ and $11$ to get $\boxed{\textbf{(E)}\ 15}$

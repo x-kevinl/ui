@@ -1,0 +1,35 @@
+== Solution ==
+[[Image:2000_I_AIME-8.png]]
+=== Solution 1 ===
+The scale factor is uniform in all dimensions, so the volume of the liquid is <math>\left(\frac{3}{4}\right)^{3}</math> of the container. The remaining section of the volume is <math>\frac{1-\left(\frac{3}{4}\right)^{3}}{1}</math> of the volume, and therefore <math>\frac{\left(1-\left(\frac{3}{4}\right)^{3}\right)^{1/3}}{1}</math> of the height when the vertex is at the top.
+
+So, the liquid occupies <math>\frac{1-\left(1-\left(\frac{3}{4}\right)^{3}\right)^{1/3}}{1}</math> of the height, or <math>12-12\left(1-\left(\frac{3}{4}\right)^{3}\right)^{1/3}=12-3\left(37^{1/3}\right)</math>. Thus <math>m+n+p=\boxed{052}</math>.
+
+=== Solution 2 ===
+(Computational) The volume of a cone can be found by <math>V = \frac{\pi}{3}r^2h</math>. In the second container, if we let <math>h',r'</math> represent the height, radius (respectively) of the air (so <math>12 -h'</math> is the height of the liquid), then the volume of the liquid can be found by <math>\frac{\pi}{3}r^2h - \frac{\pi}{3}(r')^2h'</math>. 
+
+By [[similar triangle]]s, we find that the dimensions of the liquid in the first cone to the entire cone is <math>\frac{3}{4}</math>, and that <math>r' = \frac{rh'}{h}</math>; equating,
+
+<cmath>\begin{align*}\frac{\pi}{3}\left(\frac{3}{4}r\right)^2 \left(\frac{3}{4}h\right) &= \frac{\pi}{3}\left(r^2h - \left(\frac{rh'}{h}\right)^2h'\right)\\
+\frac{37}{64}r^2h &= \frac{r^2}{h^2}(h')^3 \\
+h' &= \sqrt[3]{\frac{37}{64} \cdot 12^3} = 3\sqrt[3]{37}\end{align*}</cmath>
+
+Thus the answer is <math>12 - h' = 12-3\sqrt[3]{37}</math>, and <math>m+n+p=\boxed{052}</math>.
+
+=== Solution 3 ===
+From the formula <math>V=\frac{\pi r^2h}{3}</math>, we can find that the volume of the container is <math>100\pi</math>. The cone formed by the liquid is similar to the original, but scaled down by <math>\frac{3}{4}</math> in all directions, so its volume is <math>100\pi*\frac{27}{64}=\frac{675\pi}{16}</math>. The volume of the air in the container is the volume of the container minus the volume of the liquid, which is <math>\frac{925\pi}{16}</math>, which is <math>\frac{37}{64}</math> of the volume of the container. When the point faces upwards, the air forms a cone at the top of the container. This cone must have <math>\sqrt[3]{\frac{37}{64}}=\frac{\sqrt[3]{37}}{4}</math> of the height of the container. This means that the height of the liquid is <math>12\left(1-\frac{\sqrt[3]{37}}{4}\right)=12-3\sqrt[3]{37}</math> inches, so our answer is <math>\boxed{052}</math>. Solution by Zeroman
+
+=== Solution 4 ===
+We find that the volume of the cone is <math>100\pi</math>. 
+
+The volume of the cone with height 9 is <math>\frac{675}{16}\pi</math>. 
+
+The difference between the two volumes is <math>\frac{925}{16}\pi</math>. Note that this is the volume of the cone essentially 'on top of' the frustum described in the problem when the liquid is held with the base horizontal. 
+
+We can express the volume as <math>x^2\pi\cdot\frac{12}{5}x\cdot\frac{1}{3}</math>, where x is the radius of the cone. 
+
+Solving this equation, we get <math>x=\frac{5\sqrt[3]{37}}{4}</math>. The height of this cone is <math>\frac{12}{5}</math> of the radius. 
+
+Then we subtract the value from the height, 12, to get our answer: <math>12-3\sqrt[3]{37}</math>. 
+
+Therefore, our answer is <math>12+3+37=\boxed{52}</math>. ~MC413551

@@ -1,0 +1,169 @@
+==Solution 1==
+Note that <math>\operatorname{lcm}(6,7)=42.</math> It is clear that <math>42\not\in S</math> and <math>84\not\in S,</math> otherwise the three other elements in <math>S</math> are divisible by neither <math>6</math> nor <math>7.</math>
+
+In the table below, the multiples of <math>6</math> are colored in yellow, and the multiples of <math>7</math> are colored in green. By the least common multiple, we obtain cycles: If <math>n</math> is a possible maximum value of <math>S,</math> then <math>n+42</math> must be another possible maximum value of <math>S,</math> and vice versa. By observations, we circle all possible maximum values of <math>S.</math>
+<asy>
+/* Made by MRENTHUSIASM */
+size(20cm);
+
+fill((5,0)--(6,0)--(6,2)--(5,2)--cycle,yellow);
+fill((11,0)--(12,0)--(12,3)--(11,3)--cycle,yellow);
+fill((17,1)--(18,1)--(18,3)--(17,3)--cycle,yellow);
+fill((23,1)--(24,1)--(24,3)--(23,3)--cycle,yellow);
+fill((29,1)--(30,1)--(30,3)--(29,3)--cycle,yellow);
+fill((35,1)--(36,1)--(36,3)--(35,3)--cycle,yellow);
+
+fill((6,0)--(7,0)--(7,2)--(6,2)--cycle,green);
+fill((13,0)--(14,0)--(14,3)--(13,3)--cycle,green);
+fill((20,1)--(21,1)--(21,3)--(20,3)--cycle,green);
+fill((27,1)--(28,1)--(28,3)--(27,3)--cycle,green);
+fill((34,1)--(35,1)--(35,3)--(34,3)--cycle,green);
+
+fill((42,3)--(41,3)--(41,2)--cycle,yellow);
+fill((42,2)--(41,2)--(41,1)--cycle,yellow);
+fill((42,3)--(42,2)--(41,2)--cycle,green);
+fill((42,2)--(42,1)--(41,1)--cycle,green);
+
+for (real i=9.5; i<=41.5; ++i) {
+   label("$"+string(i+0.5)+"$",(i,2.5),fontsize(9pt));
+}
+
+for (real i=0.5; i<=41.5; ++i) {
+   label("$"+string(i+42.5)+"$",(i,1.5),fontsize(9pt));
+}
+
+for (real i=0.5; i<=14.5; ++i) {
+   label("$"+string(i+84.5)+"$",(i,0.5),fontsize(9pt));
+}
+
+draw(circle((6.5,1.5),0.45)); draw(circle((6.5,0.5),0.45));
+draw(circle((7.5,1.5),0.45)); draw(circle((7.5,0.5),0.45));
+draw(circle((8.5,1.5),0.45)); draw(circle((8.5,0.5),0.45));
+draw(circle((13.5,2.5),0.45)); draw(circle((13.5,1.5),0.45)); draw(circle((13.5,0.5),0.45));
+draw(circle((14.5,2.5),0.45)); draw(circle((14.5,1.5),0.45)); draw(circle((14.5,0.5),0.45));
+draw(circle((20.5,2.5),0.45)); draw(circle((20.5,1.5),0.45));
+draw(circle((23.5,2.5),0.45)); draw(circle((23.5,1.5),0.45));
+draw(circle((29.5,2.5),0.45)); draw(circle((29.5,1.5),0.45));
+draw(circle((30.5,2.5),0.45)); draw(circle((30.5,1.5),0.45));
+draw(circle((35.5,2.5),0.45)); draw(circle((35.5,1.5),0.45));
+draw(circle((36.5,2.5),0.45)); draw(circle((36.5,1.5),0.45));
+draw(circle((37.5,2.5),0.45)); draw(circle((37.5,1.5),0.45));
+
+draw((9,3)--(42,3));
+draw((0,2)--(42,2));
+draw((0,1)--(42,1));
+draw((0,0)--(15,0));
+
+for (real i=0; i<9; ++i) 
+{
+    draw((i,2)--(i,0));
+}
+
+for (real i=9; i<16; ++i) 
+{
+    draw((i,3)--(i,0));
+}
+
+for (real i=16; i<=42; ++i) 
+{
+    draw((i,3)--(i,1));
+}
+</asy>
+From the second row of the table above, we perform casework on the possible maximum value of <math>S:</math>
+<cmath>\begin{array}{c||c|c|l}
+& & & \\ [-2.5ex]
+\textbf{Max Value} & \boldsymbol{S} & \textbf{Valid?} & \hspace{16.25mm}\textbf{Reasoning/Conclusion} \\ [0.5ex]
+\hline
+& & & \\ [-2ex]
+49 & \{46,47,48,49\} & & \text{The student who gets } 46 \text{ will reply yes.} \\
+50 & \{47,48,49,50\} & \checkmark & \text{Another possibility is } S=\{89,90,91,92\}. \\
+51 & \{48,49,50,51\} & & \text{The student who gets } 51 \text{ will reply yes.} \\
+56 & \{53,54,55,56\} & & \text{The student who gets } 53 \text{ will reply yes.} \\
+57 & \{54,55,56,57\} & & \text{The student who gets } 57 \text{ will reply yes.} \\
+63 & \{60,61,62,63\} & & \text{The students who get } 60,61,62 \text{ will reply yes.} \\
+66 & \{63,64,65,66\} & & \text{The students who get } 64,65,66 \text{ will reply yes.} \\
+72 & \{69,70,71,72\} & & \text{The student who gets } 69 \text{ will reply yes.} \\
+73 & \{70,71,72,73\} & & \text{The student who gets } 73 \text{ will reply yes.} \\
+78 & \{75,76,77,78\} & & \text{The student who gets } 75 \text{ will reply yes.} \\
+79 & \{76,77,78,79\} & \checkmark & \text{Another possibility is } S=\{34,35,36,37\}. \\
+80 & \{77,78,79,80\} & & \text{The student who gets } 80 \text{ will reply yes.}
+\end{array}</cmath>
+Finally, all possibilities for <math>S</math> are <math>\{34,35,36,37\}, \{47,48,49,50\}, \{76,77,78,79\},</math> and <math>\{89,90,91,92\},</math> from which the answer is <math>37+50+79+92=\boxed{258}.</math>
+
+<u><b>Remarks</b></u>
+<ol style="margin-left: 1.5em;">
+  <li>Alternatively, we can reconstruct the second table in this solution as follows, where Y and N denote the replies of "yes" and "no", respectively. Notice that this table has some kind of symmetry!
+
+<asy>
+/* Made by MRENTHUSIASM */
+size(20cm);
+
+for (real j=5.5; j<41.5; j+=6) 
+{
+	fill((j+0.5,4)--(j-0.5,4)--(j-0.5,3)--(j+0.5,3)--cycle,yellow);
+}
+
+for (real j=6.5; j<41.5; j+=7) 
+{
+	fill((j+0.5,4)--(j-0.5,4)--(j-0.5,3)--(j+0.5,3)--cycle,green);
+}
+
+fill((4,1)--(8,1)--(8,2)--(4,2)--cycle,mediumgray);
+fill((33,1)--(37,1)--(37,2)--(33,2)--cycle,mediumgray);
+fill((42,4)--(41,4)--(41,3)--cycle,yellow);
+fill((42,4)--(42,3)--(41,3)--cycle,green);
+
+for (real i=0.5; i<=41.5; ++i) {
+   label("$"+string(i+42.5)+"$",(i,3.5),fontsize(9pt));
+}
+
+draw(circle((6.5,3.5),0.45));
+draw(circle((7.5,3.5),0.45));
+draw(circle((8.5,3.5),0.45));
+draw(circle((13.5,3.5),0.45));
+draw(circle((14.5,3.5),0.45));
+draw(circle((20.5,3.5),0.45));
+draw(circle((23.5,3.5),0.45));
+draw(circle((29.5,3.5),0.45));
+draw(circle((30.5,3.5),0.45));
+draw(circle((35.5,3.5),0.45));
+draw(circle((36.5,3.5),0.45));
+draw(circle((37.5,3.5),0.45));
+
+label("Y",(3.5,2.5),blue); label("N",(4.5,2.5),blue); 
+label("N",(5.5,2.5),blue); label("N",(6.5,2.5),blue); 
+label("N",(4.5,1.5),blue); label("N",(5.5,1.5),blue); 
+label("N",(6.5,1.5),blue); label("N",(7.5,1.5),blue); 
+label("N",(5.5,0.5),blue); label("N",(6.5,0.5),blue); 
+label("N",(7.5,0.5),blue); label("Y",(8.5,0.5),blue); 
+label("Y",(10.5,2.5),blue); label("N",(11.5,2.5),blue); 
+label("N",(12.5,2.5),blue); label("N",(13.5,2.5),blue); 
+label("N",(11.5,1.5),blue); label("N",(12.5,1.5),blue); 
+label("N",(13.5,1.5),blue); label("Y",(14.5,1.5),blue); 
+label("Y",(17.5,2.5),blue); label("Y",(18.5,2.5),blue); 
+label("Y",(19.5,2.5),blue); label("N",(20.5,2.5),blue); 
+label("N",(20.5,1.5),blue); label("Y",(21.5,1.5),blue); 
+label("Y",(22.5,1.5),blue); label("Y",(23.5,1.5),blue); 
+label("Y",(26.5,2.5),blue); label("N",(27.5,2.5),blue); 
+label("N",(28.5,2.5),blue); label("N",(29.5,2.5),blue); 
+label("N",(27.5,1.5),blue); label("N",(28.5,1.5),blue); 
+label("N",(29.5,1.5),blue); label("Y",(30.5,1.5),blue); 
+label("Y",(32.5,2.5),blue); label("N",(33.5,2.5),blue); 
+label("N",(34.5,2.5),blue); label("N",(35.5,2.5),blue); 
+label("N",(33.5,1.5),blue); label("N",(34.5,1.5),blue); 
+label("N",(35.5,1.5),blue); label("N",(36.5,1.5),blue); 
+label("N",(34.5,0.5),blue); label("N",(35.5,0.5),blue); 
+label("N",(36.5,0.5),blue); label("Y",(37.5,0.5),blue); 
+
+for (real i=0; i<=42; ++i)
+{
+    draw((i,4)--(i,3));
+}
+
+draw((0,4)--(42,4));
+draw((0,3)--(42,3));
+</asy></li>
+  <li>As a confirmation, we can verify that each student will be able to deduce what <math>S</math> is upon hearing the four replies of "no" in unison. For example, if <math>S=\{47,48,49,50\},</math> then all students will know that no one gets <math>46</math> or <math>51,</math> otherwise that student will reply yes (as discussed). Therefore, all students will conclude that <math>S</math> has only one possibility.</li><p>
+</ol>
+
+~MRENTHUSIASM

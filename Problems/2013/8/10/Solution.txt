@@ -1,0 +1,12 @@
+==Solution 1== 
+To find either the LCM or the GCF of two numbers, always prime factorize first.
+
+The prime factorization of $180 = 3^2 \times  5 \times 2^2$.
+
+The prime factorization of $594 = 3^3 \times  11 \times 2$.
+
+Then, to find the LCM, we have to find the greatest power of all the numbers there are; if one number is one but not the other, use it (this is $3^3, 5, 11, 2^2$). Multiply all of these to get 5940. 
+
+For the GCF of 180 and 594, use the least power of all of the numbers that are in both factorizations and multiply. $3^2 \times 2$ = 18.
+
+Thus the answer = $\frac{5940}{18}$ = $\boxed{\textbf{(C)}\ 330}$.

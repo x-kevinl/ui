@@ -1,0 +1,4 @@
+==Problem==
+Semicircle $\Gamma$ has diameter $\overline{AB}$ of length $14$. Circle $\Omega$ lies tangent to $\overline{AB}$ at a point $P$ and intersects $\Gamma$ at points $Q$ and $R$. If $QR=3\sqrt3$ and $\angle QPR=60^\circ$, then the area of $\triangle PQR$ equals $\tfrac{a\sqrt{b}}{c}$, where $a$ and $c$ are relatively prime positive integers, and $b$ is a positive integer not divisible by the square of any prime. What is $a+b+c$?
+
+$\textbf{(A) }110 \qquad \textbf{(B) }114 \qquad \textbf{(C) }118 \qquad \textbf{(D) }122\qquad \textbf{(E) }126$

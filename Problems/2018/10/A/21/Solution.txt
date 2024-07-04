@@ -1,0 +1,8 @@
+== Solution 1 (Algebra) ==
+Substituting $y=x^2-a$ into $x^2+y^2=a^2$, we get
+$$x^2+(x^2-a)^2=a^2 \implies x^2+x^4-2ax^2=0 \implies x^2(x^2-(2a-1))=0$$
+Since this is a quartic, there are $4$ total roots (counting multiplicity). We see that $x=0$ always has at least one intersection at $(0,-a)$ (and is in fact a double root). 
+
+The other two intersection points have $x$ coordinates $\pm\sqrt{2a-1}$. We must have $2a-1> 0;$ otherwise we are in the case where the parabola lies entirely above the circle (tangent at the point $(0,a)$). This only results in a single intersection point in the real coordinate plane. Thus, we see that $\boxed{\textbf{(E) }a>\frac12}$.
+
+(projecteulerlover)

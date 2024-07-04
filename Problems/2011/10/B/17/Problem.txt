@@ -1,0 +1,35 @@
+== Problem==
+
+In the given circle, the diameter $\overline{EB}$ is parallel to $\overline{DC}$, and $\overline{AB}$ is parallel to $\overline{ED}$. The angles $AEB$ and $ABE$ are in the ratio $4 : 5$. What is the degree measure of angle $BCD$?
+
+<center><asy>
+unitsize(7mm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+dotfactor=4;
+
+real r=3;
+pair A=(-3cos(80),-3sin(80));
+pair D=(3cos(80),3sin(80)), C=(-3cos(80),3sin(80));
+pair O=(0,0), E=(-3,0), B=(3,0);
+path outer=Circle(O,r);
+draw(outer);
+draw(E--B);
+draw(E--A);
+draw(B--A);
+draw(E--D);
+draw(C--D);
+draw(B--C);
+
+pair[] ps={A,B,C,D,E,O};
+dot(ps);
+
+label("$A$",A,N);
+label("$B$",B,NE);
+label("$C$",C,S);
+label("$D$",D,S);
+label("$E$",E,NW);
+label("$$",O,N);
+</asy></center>
+
+$ \textbf{(A)}\ 120 \qquad\textbf{(B)}\ 125 \qquad\textbf{(C)}\ 130 \qquad\textbf{(D)}\ 135 \qquad\textbf{(E)}\ 140$
+[[Category: Introductory Geometry Problems]]

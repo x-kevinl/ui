@@ -1,0 +1,27 @@
+== Solution ==
+
+We compute:
+
+$$
+\begin{align*}
+1 + \frac {1}{1 + \frac {1}{1 + 1}}
+&=
+1 + \frac {1}{1 + \frac {1}{1 + 1}}
+\\
+&=
+1 + \frac {1}{1 + \frac 12}
+\\
+&=
+1 + \frac {1}{\frac 32}
+\\
+&=
+1 + \frac 23
+\\
+&=
+\frac 53
+\end{align*}
+$$
+
+This is choice $\boxed{\text{C}}$.
+
+Interesting sidenote: The continued fraction $1 + \frac {1}{1 + \frac {1}{1 + 1....}}$ is equal to the golden ratio, or $\frac{1+\sqrt{5}}{2}$.

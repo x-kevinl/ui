@@ -1,0 +1,7 @@
+==Solution 1==
+If we factor into irreducible polynomials (in $\mathbb{Q}[x]$), each factor $f_i$ has exponent $1$ in the factorization and degree at most $2$ (since the $a+bi$ with $b\ne0$ come in conjugate pairs with product $a^2+b^2$). Clearly we want the product of constant terms of these polynomials to equal $50$; for $d\mid 50$, let $f(d)$ be the number of permitted $f_i$ with constant term $d$. It's easy to compute $f(1)=2$, $f(2)=3$, $f(5)=5$, $f(10)=5$, $f(25)=6$, $f(50)=7$, and obviously $f(d) = 1$ for negative $d\mid 50$.
+
+Note that by the distinctness condition, the only constant terms $d$ that can be repeated are those with $d^2\mid 50$ and $f(d)>1$, i.e. $+1$ and $+5$. Also, the $+1$s don't affect the product, so we can simply count the number of polynomials with no constant terms of $+1$ and multiply by $2^{f(1)} = 4$ at the end.
+
+We do casework on the (unique) even constant term $d\in\{\pm2,\pm10,\pm50\}$ in our product. For convenience, let $F(d)$ be the number of ways to get a product of $50/d$ without using $\pm 1$ (so only using $\pm5,\pm25$) and recall $f(-1) = 1$; then our final answer will be $2^{f(1)}\sum_{d\in\{2,10,50\}}(f(-d)+f(d))(F(-d)+F(d))$. It's easy to compute $F(-50)=0$, $F(50)=1$, $F(-10)=f(5)=5$, $F(10)=f(-5)=1$, $F(-2)=f(-25)+f(-5)f(5)=6$, $F(2)=f(25)+\binom{f(5)}{2}=16$, so we get
+$$ 4 [ (1+3)(6+16) + (1+5)(1+5) + (1+7)(0+1) ] = 4[132] = \boxed{\textbf{(B) }528} $$

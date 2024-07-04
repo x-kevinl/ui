@@ -1,0 +1,2 @@
+== Solution ==
+Let $D_J, D_M$ be the distances traveled by Josh and Mike, respectively, and let $r,t$ be the time and rate of Mike. Using $d = rt$, we have that $D_M = rt$ and $D_J = \left(\frac{4}{5}r\right)\left(2t\right) = \frac 85rt$. Then $13 = D_M + D_J = rt + \frac{8}{5}rt = \frac{13}{5}rt$ $\Longrightarrow rt = D_M = 5\ \mathrm{(B)}$.

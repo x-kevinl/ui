@@ -1,0 +1,5 @@
+==Solution==
+$\angle ADB$ and $\angle ACB$ are both subtended by segment $AB$, hence $\angle ACB = \angle ADB = 40^\circ$. By considering $\triangle ABC$, it follows that $\angle ABC = 180^\circ - (70^\circ + 40^\circ) = 70^\circ$. Hence $\triangle ABC$ is isosceles, and $AC = BC = \boxed{\textbf{(B)}\; 6}.$
+
+
+Note: The statement $AD=4$ is not needed.

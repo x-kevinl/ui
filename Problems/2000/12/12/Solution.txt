@@ -1,0 +1,13 @@
+== Solution 1 ==
+It is not hard to see that 
+$$(A+1)(M+1)(C+1)=$$
+$$AMC+AM+AC+MC+A+M+C+1$$
+Since $A+M+C=12$, we can rewrite this as
+$$(A+1)(M+1)(C+1)=$$
+$$AMC+AM+AC+MC+13$$
+So we wish to maximize
+$$(A+1)(M+1)(C+1)-13$$
+Which is largest when all the factors are equal (consequence of AM-GM).  Since $A+M+C=12$, we set $A=M=C=4$
+Which gives us 
+$$(4+1)(4+1)(4+1)-13=112$$
+so the answer is $\boxed{\textbf{(E) }112}.$

@@ -1,0 +1,125 @@
+== Solution ==
+=== Solution 1 ===
+Extend <math>\overline{AB}</math> and <math>\overline{CD}</math> to meet at a point <math>E</math>. Then <math>\angle AED = 180 - 53 - 37 = 90^{\circ}</math>.
+<center><asy>
+size(220);
+defaultpen(0.7+fontsize(10));
+real f=100, r=1004/f;
+pair A=(0,0), D=(2*r, 0), N=(r,0), E=N+r*expi(74*pi/180);
+pair B=(126*A+125*E)/251, C=(126*D + 125*E)/251;
+pair[] M = intersectionpoints(N--E,B--C);
+draw(A--B--C--D--cycle); 
+draw(B--E--C,dashed);
+draw(M[0]--N); draw(N--E,dashed);
+draw(rightanglemark(D,E,A,2));
+picture p = new picture; 
+draw(p,Circle(N,r),dashed+linewidth(0.5));
+clip(p,A--D--D+(0,20)--A+(0,20)--cycle);
+add(p);
+label("\(A\)",A,SW);
+label("\(B\)",B,NW);
+label("\(C\)",C,NE);
+label("\(D\)",D,SE);
+label("\(E\)",E,NE);
+label("\(M\)",M[0],SW);
+label("\(N\)",N,S);
+label("\(1004\)",(N+D)/2,S);
+label("\(500\)",(M[0]+C)/2,S);
+</asy></center>
+As <math>\angle AED = 90^{\circ}</math>, note that the midpoint of <math>\overline{AD}</math>, <math>N</math>, is the center of the [[circumcircle]] of <math>\triangle AED</math>. We can do the same with the circumcircle about <math>\triangle BEC</math> and <math>M</math> (or we could apply the homothety to find <math>ME</math> in terms of <math>NE</math>). It follows that
+
+<cmath>NE = ND = \frac {AD}{2} = 1004, \quad ME = MC = \frac {BC}{2} = 500.</cmath>
+
+Thus <math>MN = NE - ME = \boxed{504}</math>.
+
+
+For purposes of rigor we will show that <math>E,M,N</math> are collinear. Since <math>\overline{BC} \parallel \overline{AD}</math>, then <math>BC</math> and <math>AD</math> are [[homothecy|homothetic]] with respect to point <math>E</math> by a ratio of <math>\frac{BC}{AD} = \frac{125}{251}</math>. Since the homothety carries the midpoint of <math>\overline{BC}</math>, <math>M</math>, to the midpoint of <math>\overline{AD}</math>, which is <math>N</math>, then <math>E,M,N</math> are [[collinear]].
+
+=== Solution 2 ===
+<center><asy>
+size(220);
+defaultpen(0.7+fontsize(10));
+real f=100, r=1004/f;
+pair A=(0,0), D=(2*r, 0), N=(r,0), E=N+r*expi(74*pi/180);
+pair B=(126*A+125*E)/251, C=(126*D + 125*E)/251;
+pair[] M = intersectionpoints(N--E,B--C);
+pair F = foot(B,A,D), G=foot(C,A,D), H=foot(M[0],A,D);
+draw(A--B--C--D--cycle); 
+draw(M[0]--N); draw(B--F,dashed); draw(C--G,dashed); draw(M[0]--H,dashed);
+label("\(A\)",A,SW);
+label("\(B\)",B,NW);
+label("\(C\)",C,NE);
+label("\(D\)",D,NE);
+label("\(F\)",F,S);
+label("\(G\)",G,SW);
+label("\(M\)",M[0],SW);
+label("\(N\)",N,S);
+label("\(H\)",H,S);
+label("\(x\)",(N+H)/2+(0,1),S);
+label("\(h\)",(B+F)/2,W);
+label("\(h\)",(C+G)/2,W);
+label("\(1000\)",(B+C)/2,NE);
+label("\(504-x\)",(G+D)/2,S);
+label("\(504+x\)",(A+F)/2,S);
+label("\(h\)",(M[0]+H)/2,(1,0));
+</asy></center>
+Let <math>F,G,H</math> be the feet of the [[perpendicular]]s from <math>B,C,M</math> onto <math>\overline{AD}</math>, respectively. Let <math>x = NH</math>, so <math>DG = 1004 - 500 - x = 504 - x</math> and <math>AF = 1004 - (500 - x) = 504 + x</math>. Also, let <math>h = BF = CG = HM</math>. 
+
+By AA~, we have that <math>\triangle AFB \sim \triangle CGD</math>, and so 
+<cmath>\frac{BF}{AF} = \frac {DG}{CG} \Longleftrightarrow \frac{h}{504+x} = \frac{504-x}{h} \Longrightarrow x^2 + h^2 = 504^2.</cmath>
+
+By the [[Pythagorean Theorem]] on <math>\triangle MHN</math>,
+<cmath>MN^{2} = x^2 + h^2 = 504^2,</cmath> so <math>MN = \boxed{504}</math>.
+
+=== Solution 3 ===
+If you drop perpendiculars from <math>B</math> and <math>C</math> to <math>AD</math>, and call the points where they meet <math>\overline{AD}</math>, <math>E</math> and <math>F</math> respectively, then <math>FD = x</math> and <math>EA = 1008-x</math> , and so you can solve an equation in tangents. Since <math>\angle{A} = 37</math> and <math>\angle{D} = 53</math>, you can solve the equation [by cross-multiplication]:
+
+<cmath>\begin{align*}\tan{37}\times (1008-x) &= \tan{53} \times x\\
+\frac{(1008-x)}{x} &= \frac{\tan{53}}{\tan{37}} = \frac{\sin{53}}{\cos{53}} \times\frac{\sin{37}}{\cos{37}}\end{align*}</cmath>
+
+However, we know that <math>\cos{90-x} = \sin{x}</math> and <math>\sin{90-x} = \cos{x}</math> are co-functions. Applying this,
+
+<cmath>\begin{align*}\frac{(1008-x)}{x} &= \frac{\sin^2{53}}{\cos^2{53}} \\
+x\sin^2{53} &= 1008\cos^2{53} - x\cos^2{53}\\
+x(\sin^2{53}  + \cos^2{53}) &= 1008\cos^2{53}\\
+x = 1008\cos^2{53} &\Longrightarrow 1008-x = 1008\sin^2{53}
+\end{align*}</cmath>
+Now, if we can find <math>1004 - (EA + 500)</math>, and the height of the trapezoid, we can create a right triangle and use the [[Pythagorean Theorem]] to find <math>MN</math>. 
+
+The leg of the right triangle along the horizontal is:
+
+<cmath>1004 - 1008\sin^2{53} - 500 = 504 - 1008\sin^2{53}.</cmath>
+
+Now to find the other leg of the right triangle (also the height of the trapezoid), we can simplify the following expression:
+
+<cmath>\begin{align*}\tan{37} \times 1008 \sin^2{53}
+= \tan{37} \times 1008 \cos^2{37}
+= 1008\cos{37}\sin{37}
+= 504\sin74\end{align*}</cmath>
+
+Now we used Pythagorean Theorem and get that <math>MN</math> is equal to:
+
+<cmath>
+\begin{align*}&\sqrt{(1008\sin^2{53} + 500 -1004)^2 + (504\sin{74})^2} = 504\sqrt{1-2\sin^2{53} + \sin^2{74}}
+\end{align*}
+</cmath>
+
+However, <math>1-2\sin^2{53} = \cos^2{106}</math> and <math>\sin^2{74} = \sin^2{106}</math> so now we end up with:
+
+<cmath>504\sqrt{\cos^2{106} + \sin^2{106}} =\fbox{504}.</cmath>
+
+=== Solution 4 ===
+
+Plot the trapezoid such that <math>B=\left(1000\cos 37^\circ, 0\right)</math>, <math>C=\left(0, 1000\sin 37^\circ\right)</math>, <math>A=\left(2008\cos 37^\circ, 0\right)</math>, and <math>D=\left(0, 2008\sin 37^\circ\right)</math>.
+
+The midpoints of the requested sides are <math>\left(500\cos 37^\circ, 500\sin 37^\circ\right)</math> and <math>\left(1004\cos 37^\circ, 1004\sin 37^\circ\right)</math>.
+
+To find the distance from <math>M</math> to <math>N</math>, we simply apply the distance formula and the Pythagorean identity <math>\sin^2 x + \cos^2 x = 1</math> to get <math>MN=\boxed{504}</math>.
+
+
+=== Solution 5 ===
+
+Similar to solution 1; Notice that it forms a right triangle. Remembering that the median to the hypotenuse is simply half the length of the hypotenuse, we quickly see that the length is <math>\frac{2008}{2}-\frac{1000}{2}=504</math>.
+
+=== Solution 6 ===
+Obviously, these angles are random--the only special thing about them is that they add up to 90. So we might as well let the given angles equal 45 and 45, and now the answer is trivially <math>\boxed{504}</math>. (The trapezoid is isosceles, and you see two 45-45-90 triangles;from there you can get the answer.)

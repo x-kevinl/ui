@@ -1,0 +1,18 @@
+==Solution 1==
+We can translate this wordy problem into this simple equation:
+
+$$\left\lceil \frac{s}{2} \right\rceil - 19 = \left\lceil \frac{s}{5} \right\rceil$$
+
+We will proceed to solve this equation via casework.
+
+Case 1: $\left\lceil \frac{s}{2} \right\rceil = \frac{s}{2}$
+
+Our equation becomes $\frac{s}{2} - 19 = \frac{s}{5} + \frac{j}{5}$, where $j \in \{0,1,2,3,4\}$ Using the fact that $s$ is an integer, we quickly find that $j=1$ and $j=4$ yield $s=64$ and $s=66$, respectively.
+
+<br>
+
+Case 2: $\left\lceil \frac{s}{2} \right\rceil = \frac{s}{2}+\frac{1}{2}$
+
+Our equation becomes $\frac{s}{2} +\frac{1}{2} - 19 = \frac{s}{5} + \frac{j}{5}$, where $j \in \{0,1,2,3,4\}$ Using the fact that $s$ is an integer, we quickly find that $j=2$ yields $s=63$.
+
+Summing up we get $63+64+66=193$. The sum of the digits is $\boxed{\textbf{(D)}\; 13}$.

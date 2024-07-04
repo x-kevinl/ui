@@ -1,0 +1,7 @@
+== Solution ==
+It is easy to see that the ferry boat takes $6$ trips total. The total number of people taken to the island is
+
+$$\begin{align*}&100+99+98+97+96+95\\
+ &=6(100)-(1+2+3+4+5)\\
+ &=600 - 15\\
+ &=\boxed{585\ \textbf{(A)}}\end{align*}$$

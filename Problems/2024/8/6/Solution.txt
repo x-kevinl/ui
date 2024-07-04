@@ -1,0 +1,11 @@
+==Solution 1==
+
+You can measure the lengths of the paths until you find a couple of guaranteed true inferred statements as such:
+Q is greater than S, 
+P is greater than R, 
+and R and P are the smallest two, therefore the order is R, P, S, Q.
+Thus we get the answer $\boxed{\textbf{(D)}~R, P, S, Q}$.
+
+- U-King
+
+~ cxsmi (minor $\LaTeX$ edits)

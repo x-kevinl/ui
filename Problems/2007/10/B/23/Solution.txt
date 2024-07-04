@@ -1,0 +1,8 @@
+==Solution==
+
+Since the two pyramids are similar, the ratio of the altitudes is the square root of the ratio of the surface areas.
+
+If $a$ is the altitude of the larger pyramid, then $a-2$ is the altitude of the smaller pyramid.
+
+$$\frac{a}{a-2}=\sqrt{\frac21}=\frac{\sqrt{2}}{1} \longrightarrow a= a\sqrt{2} - 2\sqrt{2} \longrightarrow a\sqrt{2}-a=2\sqrt{2}$$
+$$a=\frac{2\sqrt{2}}{\sqrt{2}-1} = \frac{4+2\sqrt{2}}{2-1} = \boxed{\textbf{(E) \ } 4+2\sqrt{2}}.$$

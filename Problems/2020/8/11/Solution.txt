@@ -1,0 +1,2 @@
+==Solution 1==
+Naomi travels $6$ miles in a time of $10$ minutes, which is equivalent to $\dfrac{1}{6}$ of an hour. Since $\text{speed} = \frac{\text{distance}}{\text{time}}$, her speed is $\frac{6}{\left(\frac{1}{6}\right)} = 36$ mph. By a similar calculation, Maya's speed is $12$ mph, so the answer is $36-12 = \boxed{\textbf{(E) }24}$.

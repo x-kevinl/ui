@@ -1,0 +1,2 @@
+==Solution==
+Alice moves $5k$ steps and Bob moves $9k$ steps, where $k$ is the turn they are on. Alice and Bob coincide when the number of steps they move collectively, $14k$, is a multiple of $12$. Since this number must be a multiple of $12$, as stated in the previous sentence, $14$ has a factor $2$, $k$ must have a factor of $6$. The smallest number of turns that is a multiple of $6$ is $\boxed{\textbf{(A)}\ 6}$.

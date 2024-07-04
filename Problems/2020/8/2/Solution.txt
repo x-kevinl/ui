@@ -1,0 +1,2 @@
+==Solution==
+The friends earn $\$\left(15+20+25+40\right)=\$100$ in total. Since they decided to split their earnings equally, it follows that each person will get $\$\left(\frac{100}{4}\right)=\$25$. Since the friend who earned $\$40$ will need to leave with $\$25$, he will have to give $\$\left(40-25\right)=\boxed{\textbf{(C) }\$15}$ to the others.

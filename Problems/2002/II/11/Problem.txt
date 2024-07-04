@@ -1,0 +1,2 @@
+== Problem ==
+Two distinct, real, infinite geometric series each have a sum of <math>1</math> and have the same second term. The third term of one of the series is <math>1/8</math>, and the second term of both series can be written in the form <math>\frac{\sqrt{m}-n}p</math>, where <math>m</math>, <math>n</math>, and <math>p</math> are positive integers and <math>m</math> is not divisible by the square of any prime. Find <math>100m+10n+p</math>.

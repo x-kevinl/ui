@@ -1,0 +1,12 @@
+==Problem==
+Eight circles of radius <math>34</math> are sequentially tangent, and two of the circles are tangent to <math>AB</math> and <math>BC</math> of triangle <math>ABC</math>, respectively. <math>2024</math> circles of radius <math>1</math> can be arranged in the same manner. The inradius of triangle <math>ABC</math> can be expressed as <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.
+
+<asy>
+pair A = (2,1); pair B = (0,0); pair C = (3,0);
+dot(A^^B^^C);
+label("$A$", A, N); label("$B$", B, S); label("$C$", C, S);
+draw(A--B--C--cycle);
+for(real i=0.62; i<2.7; i+=0.29){
+draw(circle((i,0.145), 0.145));
+}
+</asy>

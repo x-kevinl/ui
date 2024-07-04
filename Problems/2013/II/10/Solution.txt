@@ -1,0 +1,36 @@
+==Solution 1 (Coordbash)==
+<asy>
+import math;
+import olympiad;
+import graph;
+pair A, B, K, L;
+B = (sqrt(13), 0); A=(4+sqrt(13), 0);
+dot(B);
+dot(A);
+
+draw(Circle((0,0), sqrt(13)));
+label("$O$", (0,0), S);label("$B$", B, SW);label("$A$", A, S);
+dot((0,0));
+
+
+
+</asy>
+
+
+Now we put the figure in the Cartesian plane, let the center of the circle <math>O (0,0)</math>, then <math>B (\sqrt{13},0)</math>, and <math>A(4+\sqrt{13},0)</math>
+
+The equation for Circle O is <math>x^2+y^2=13</math>, and let the slope of the line <math>AKL</math> be <math>k</math>, then the equation for line <math>AKL</math> is <math>y=k(x-4-\sqrt{13})</math>.
+
+Then we get <math>(k^2+1)x^2-2k^2(4+\sqrt{13})x+k^2\cdot (4+\sqrt{13})^2-13=0</math>. According to [[Vieta's Formulas]], we get
+
+<math>x_1+x_2=\frac{2k^2(4+\sqrt{13})}{k^2+1}</math>, and <math>x_1x_2=\frac{(4+\sqrt{13})^2\cdot k^2-13}{k^2+1}</math>
+
+So, <math>LK=\sqrt{1+k^2}\cdot \sqrt{(x_1+x_2)^2-4x_1x_2}</math>
+
+Also, the distance between <math>B</math> and <math>LK</math> is <math>\frac{k\times \sqrt{13}-(4+\sqrt{13})\cdot k}{\sqrt{1+k^2}}=\frac{-4k}{\sqrt{1+k^2}}</math>
+ 
+So the area <math>S=0.5ah=\frac{-4k\sqrt{(16+8\sqrt{13})k^2-13}}{k^2+1}</math>
+
+Then the maximum value of <math>S</math> is <math>\frac{104-26\sqrt{13}}{3}</math>
+
+So the answer is <math>104+26+13+3=\boxed{146}</math>.

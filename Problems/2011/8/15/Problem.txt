@@ -1,0 +1,4 @@
+==Problem==
+How many digits are in the product $4^5 \cdot 5^{10}$?
+
+$ \textbf{(A) } 8 \qquad\textbf{(B) } 9 \qquad\textbf{(C) } 10 \qquad\textbf{(D) } 11 \qquad\textbf{(E) } 12 $

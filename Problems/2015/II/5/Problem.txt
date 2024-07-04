@@ -1,0 +1,3 @@
+==Problem==
+
+Two unit squares are selected at random without replacement from an <math>n \times n</math> grid of unit squares. Find the least positive integer <math>n</math> such that the probability that the two selected unit squares are horizontally or vertically adjacent is less than <math>\frac{1}{2015}</math>.

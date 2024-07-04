@@ -1,0 +1,2 @@
+== Problem ==
+There are two distinguishable flagpoles, and there are <math>19</math> flags, of which <math>10</math> are identical blue flags, and <math>9</math> are identical green flags. Let <math>N</math> be the number of distinguishable arrangements using all of the flags in which each flagpole has at least one flag and no two green flags on either pole are adjacent. Find the remainder when <math>N</math> is divided by <math>1000</math>.

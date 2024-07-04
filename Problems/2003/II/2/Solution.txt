@@ -1,0 +1,6 @@
+== Solution ==
+We want a number with no digits repeating, so we can only use the digits <math>0-9</math> once in constructing our number. To make the greatest number, we want the greatest digit to occupy the leftmost side and the least digit to occupy the rightmost side. Therefore, the last three digits of the greatest number should be an arrangement of the digits <math>0,1,2</math>. Since the number has to be divisible by 8, the integer formed by the arrangement of <math>0,1,2</math> is also divisible by 8. The only arrangement that works is <math>120</math>. 
+
+Therefore, the remainder when the number is divided by <math>1000</math> is <math>\boxed{120}</math>.
+
+Note: The number is <math>9876543120</math>

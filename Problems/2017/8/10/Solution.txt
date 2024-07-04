@@ -1,0 +1,3 @@
+==Solution 1 (combinations)==
+
+There are $\binom{5}{3}$ possible groups of cards that can be selected. If $4$ is the largest card selected, then the other two cards must be either $1$, $2$, or $3$, for a total $\binom{3}{2}$ groups of cards. Then, the probability is just ${\frac{{\dbinom{3}{2}}}{{\dbinom{5}{3}}}} = \boxed{{\textbf{(C) }} {\frac{3}{10}}}$.

@@ -1,0 +1,23 @@
+==Problem==
+The two spinners shown are spun once and each lands on one of the numbered sectors. What is the probability that the sum of the numbers in the two sectors is prime? 
+
+<asy>
+unitsize(30); 
+draw(unitcircle);
+draw((0,0)--(0,-1));
+draw((0,0)--(cos(pi/6),sin(pi/6)));
+draw((0,0)--(-cos(pi/6),sin(pi/6)));
+label("$1$",(0,.5));
+label("$3$",((cos(pi/6))/2,(-sin(pi/6))/2));
+label("$5$",(-(cos(pi/6))/2,(-sin(pi/6))/2));</asy>
+<asy>
+unitsize(30); 
+draw(unitcircle);
+draw((0,0)--(0,-1));
+draw((0,0)--(cos(pi/6),sin(pi/6)));
+draw((0,0)--(-cos(pi/6),sin(pi/6)));
+label("$2$",(0,.5));
+label("$4$",((cos(pi/6))/2,(-sin(pi/6))/2));
+label("$6$",(-(cos(pi/6))/2,(-sin(pi/6))/2));</asy>
+
+$ \textbf{(A)}\ \frac{1}{2}\qquad\textbf{(B)}\ \frac{2}{3}\qquad\textbf{(C)}\ \frac{3}{4}\qquad\textbf{(D)}\ \frac{7}{9}\qquad\textbf{(E)}\ \frac{5}{6} $

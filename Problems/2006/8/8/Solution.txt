@@ -1,0 +1,6 @@
+== Solution ==
+Filling out the chart, it becomes
+
+$ \begin{tabular}{|c|c|c|c|}\hline & Listen & Don't Listen & Total\\ \hline Males & 78 & 26 & 104\\ \hline Females & 58 & 38 & 96\\ \hline Total & 136 & 64 & 200\\ \hline\end{tabular} $
+
+Thus, the percentage of males surveyed that listen to the station is $ 100 \cdot \frac{78}{104} \%= \boxed{\textbf{(E)}\ 75 \%} $.

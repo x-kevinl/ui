@@ -1,0 +1,31 @@
+==Solution 1==
+First observe that <math>AO_2 = O_2D</math> and <math>BO_1 = O_1C</math>. Let points <math>A'</math> and <math>B'</math> be the reflections of <math>A</math> and <math>B</math>, respectively, about the perpendicular bisector of <math>\overline{O_1O_2}</math>. Then quadrilaterals <math>ABO_1O_2</math> and <math>B'A'O_2O_1</math> are congruent, so hexagons <math>ABO_1CDO_2</math> and <math>A'B'O_1CDO_2</math> have the same area. Furthermore, triangles <math>DO_2A'</math> and <math>B'O_1C</math> are congruent, so <math>A'D = B'C</math> and quadrilateral <math>A'B'CD</math> is an isosceles trapezoid.
+<asy>
+	import olympiad;
+size(180);
+defaultpen(linewidth(0.7));
+pair Ap = dir(105), Bp = dir(75), O1 = dir(25), C = dir(320), D = dir(220), O2 = dir(175);
+draw(unitcircle^^Ap--Bp--O1--C--D--O2--cycle);
+label("$A'$",Ap,dir(origin--Ap));
+label("$B'$",Bp,dir(origin--Bp));
+label("$O_1$",O1,dir(origin--O1));
+label("$C$",C,dir(origin--C));
+label("$D$",D,dir(origin--D));
+label("$O_2$",O2,dir(origin--O2));
+draw(O2--O1,linetype("4 4"));
+draw(Ap--D^^Bp--C,linetype("2 2"));
+</asy>
+Next, remark that <math>B'O_1 = DO_2</math>, so quadrilateral <math>B'O_1DO_2</math> is also an isosceles trapezoid; in turn, <math>B'D = O_1O_2 = 15</math>, and similarly <math>A'C = 15</math>. Thus, Ptolmey's theorem on <math>A'B'CD</math> yields <math>A'D\cdot B'C + 2\cdot 16 = 15^2</math>, whence <math>A'D = B'C = \sqrt{193}</math>. Let <math>\alpha = \angle A'B'D</math>. The Law of Cosines on triangle <math>A'B'D</math> yields
+<cmath>\cos\alpha = \frac{15^2 + 2^2 - (\sqrt{193})^2}{2\cdot 2\cdot 15} = \frac{36}{60} = \frac 35,</cmath> and hence <math>\sin\alpha = \tfrac 45</math>. Thus the distance between bases <math>A’B’</math> and <math>CD</math> is <math>12</math> (in fact, <math>\triangle A'B'D</math> is a <math>9-12-15</math> triangle with a <math>7-12-\sqrt{193}</math> triangle removed), which implies the area of <math>A'B'CD</math> is <math>\tfrac12\cdot 12\cdot(2+16) = 108</math>.
+
+Now let <math>O_1C = O_2A' = r_1</math> and <math>O_2D = O_1B' = r_2</math>; the tangency of circles <math>\omega_1</math> and <math>\omega_2</math> implies <math>r_1 +  r_2 = 15</math>. Furthermore, angles <math>A'O_2D</math> and <math>A'B'D</math> are opposite angles in cyclic quadrilateral <math>B'A'O_2D</math>, which implies the measure of angle <math>A'O_2D</math> is <math>180^\circ - \alpha</math>. Therefore, the Law of Cosines applied to triangle <math>\triangle A'O_2D</math> yields
+<cmath>\begin{align*}
+193 &= r_1^2 + r_2^2 - 2r_1r_2(-\tfrac 35) = (r_1^2 + 2r_1r_2 + r_2^2) - \tfrac45r_1r_2\\
+&= (r_1+r_2)^2 - \tfrac45 r_1r_2 = 225 - \tfrac45r_1r_2.
+\end{align*}</cmath>
+
+Thus <math>r_1r_2 = 40</math>, and so the area of triangle <math>A'O_2D</math> is <math>\tfrac12r_1r_2\sin\alpha = 16</math>.
+
+Thus, the area of hexagon <math>ABO_{1}CDO_{2}</math> is <math>108 + 2\cdot 16 = \boxed{140}</math>.
+
+~djmathman

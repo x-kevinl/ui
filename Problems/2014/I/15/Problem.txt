@@ -1,0 +1,3 @@
+== Problem 15 ==
+
+In <math>\triangle ABC</math>, <math>AB = 3</math>, <math>BC = 4</math>, and <math>CA = 5</math>. Circle <math>\omega</math> intersects <math>\overline{AB}</math> at <math>E</math> and <math>B</math>, <math>\overline{BC}</math> at <math>B</math> and <math>D</math>, and <math>\overline{AC}</math> at <math>F</math> and <math>G</math>. Given that <math>EF=DF</math> and <math>\frac{DG}{EG} = \frac{3}{4}</math>, length <math>DE=\frac{a\sqrt{b}}{c}</math>, where <math>a</math> and <math>c</math> are relatively prime positive integers, and <math>b</math> is a positive integer not divisible by the square of any prime. Find <math>a+b+c</math>.

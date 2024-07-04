@@ -1,0 +1,2 @@
+==Solution==
+The number of points could have been 10, 11, 12, 13, 14, or 15. This is because the minimum is 2*5=10 and the maximum is 3*5=15. The numbers between 10 and 15 are possible as well. Thus, the answer is $\boxed{\mathrm{(E)}\ 6}$.

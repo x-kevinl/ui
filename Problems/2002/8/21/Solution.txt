@@ -1,0 +1,8 @@
+==Solution 1==
+Case 1: There are two heads and two tails. There are $\binom{4}{2} = 6$ ways to choose which two tosses are heads, and the other two must be tails.
+
+Case 2: There are three heads, one tail. There are $\binom{4}{1} = 4$ ways to choose which of the four tosses is a tail.
+
+Case 3: There are four heads and no tails. This can only happen $1$ way.
+
+There are a total of $2^4=16$ possible configurations, giving a probability of $\frac{6+4+1}{16} = \boxed{\text{(E)}\ \frac{11}{16}}$.

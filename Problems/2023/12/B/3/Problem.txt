@@ -1,0 +1,4 @@
+==Problem==
+A $3-4-5$ right triangle is inscribed in circle $A$, and a $5-12-13$ right triangle is inscribed in circle $B$. What is the ratio of the area of circle $A$ to the area of circle $B$?
+
+$\textbf{(A) }\frac{9}{25}\qquad\textbf{(B) }\frac{1}{9}\qquad\textbf{(C) }\frac{1}{5}\qquad\textbf{(D) }\frac{25}{169}\qquad\textbf{(E) }\frac{4}{25}$

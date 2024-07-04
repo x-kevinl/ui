@@ -1,0 +1,7 @@
+==Solution 1==
+
+Consider any sequence with $n$ terms.  Every 10 number has such choices: never appear, appear the first time in the first spot, appear the first time in the second spot… and appear the first time in the $n$th spot, which means every number has $(n+1)$ choices to show up in the sequence. Consequently, for each sequence with length $n$, there are $(n+1)^{10}$ possible ways.
+
+Thus, the desired value is $\sum_{i=1}^{10}(i+1)^{10}\equiv \boxed{\textbf{(C) } 5}\pmod{10}$
+
+~bluesoul

@@ -1,0 +1,18 @@
+== Solution ==
+<center><asy>
+size(220);
+import three; currentprojection = perspective(5,4,3); defaultpen(linetype("8 8")+linewidth(0.6));
+draw(box((0,-.1,0),(0.4,0.6,0.3)));
+draw(box((-.1,0,0),(0.5,0.5,0.3)));
+draw(box((0,0,-.1),(0.4,0.5,0.4)));
+draw(box((0,0,0),(0.4,0.5,0.3)),linewidth(1.2)+linetype("1"));
+</asy></center>
+
+The set can be broken into several parts: the big <math>3\times 4 \times 5</math> parallelepiped, <math>6</math> external parallelepipeds that each share a face with the large parallelepiped and have a height of <math>1</math>, the <math>1/8</math> [[sphere]]s (one centered at each [[vertex]] of the large parallelepiped), and the <math>1/4</math> [[cylinder]]s connecting each adjacent pair of spheres.
+
+*The volume of the parallelepiped is <math>3 \times 4 \times 5 = 60 </math> cubic units.
+*The volume of the external parallelepipeds is <math>2(3 \times 4 \times 1)+2(3 \times 5 \times 1 )+2(4 \times 5 \times 1)=94 </math>.
+*There are <math>8</math> of the <math>1/8</math> spheres, each of radius <math>1</math>. Together, their volume is <math> \frac{4}{3}\pi </math>.
+*There are <math>12</math> of the <math>1/4</math> cylinders, so <math>3</math> complete cylinders can be formed. Their volumes are <math> 3\pi </math>, <math> 4\pi </math>, and <math> 5\pi </math>, adding up to <math>12\pi</math>.
+
+The combined volume of these parts is <math> 60+94+\frac{4}{3}\pi+12\pi = \frac{462+40\pi}{3} </math>. Thus, the answer is <math> m+n+p = 462+40+3 = \boxed{505} </math>.

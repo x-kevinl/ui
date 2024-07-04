@@ -1,0 +1,7 @@
+== Solutions==
+
+===Solution 1===
+Let $z = a+bi$, so $\overline{z} = a-bi$. By definition, $z = a+bi = f(z) = i(a-bi) = b+ai$, which implies that all solutions to $f(z) = z$ lie on the line $y=x$ on the complex plane. The graph of $|z| = 5$ is a [[circle]] centered at the origin, and there are $2 \Rightarrow \mathrm{(C)}$ intersections.
+
+===Solution 2===
+Let $z=a+bi$, like above. Therefore, $z = a+bi = i\overline{z} = i(a-bi) = ai+b$. We move some terms around to get $bi-b = ai-a$. We factor: $b(i-1) = a(i-1)$. We divide out the common factor to see that $b = a$. Next we put this into the definition of $|z| = a^2 + b^2 = a^2 + a^2 = 2a^2 = 25$. Finally, $a = \pm\sqrt{\frac{25}{2}}$, and $a$ has two solutions.

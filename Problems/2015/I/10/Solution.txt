@@ -1,0 +1,11 @@
+==Solution 1==
+Let <math>f(x)</math> = <math>ax^3+bx^2+cx+d</math>.
+Since <math>f(x)</math> is a third degree polynomial, it can have at most two bends in it where it goes from up to down, or from down to up.
+By drawing a coordinate axis, and two lines representing <math>12</math> and <math>-12</math>, it is easy to see that <math>f(1)=f(5)=f(6)</math>, and <math>f(2)=f(3)=f(7)</math>; otherwise more bends would be required in the graph. Since only the absolute value of <math>f(0)</math> is required, there is no loss of generalization by stating that <math>f(1)=12</math>, and <math>f(2)=-12</math>. This provides the following system of equations.
+<cmath> a +     b +   c +   d =  12</cmath>
+<cmath>8a +   4b + 2c +   d = -12</cmath>
+<cmath> 27a +   9b + 3c +   d = -12</cmath>
+<cmath>125a + 25b + 5c +   d =  12</cmath>
+<cmath>216a + 36b + 6c +   d =  12</cmath>
+<cmath>343a + 49b + 7c +   d = -12</cmath>
+Using any four of these functions as a system of equations yields <math>d = |f(0)| = \boxed{072}</math>

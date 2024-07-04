@@ -1,0 +1,12 @@
+==Solution==
+Let $m$ be Mike's bill and $j$ be Joe's bill. 
+
+$\frac{10}{100}m=2$
+
+$m=20$
+
+$\frac{20}{100}j=2$
+
+$j=10$
+
+So the desired difference is $m-j=20-10=10 \Rightarrow \boxed{\textbf{(D) }10}$

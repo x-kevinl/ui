@@ -1,0 +1,29 @@
+==Solution 1 (bash) ==
+
+Plugging <math>2</math> and <math>m</math> into <math>P(x)</math> and equating them, we get <math>8+4a+2b+c = m^3+am^2+bm+c</math>. Rearranging, we have <cmath>(m^3-8) + (m^2 - 4)a + (m-2)b = 0.</cmath> Note that the value of <math>c</math> won't matter as it can be anything in the provided range, giving a total of <math>41</math> possible choices for <math>c.</math> So what we just need to do is to just find the number of ordered pairs <math>(a, b)</math> that work, and multiply it by <math>41.</math>
+We can start by first dividing both sides by <math>m-2.</math> (Note that this is valid since <math>m\neq2:</math> <cmath>m^2 + 2m + 4 + (m+2)a + b = 0.</cmath> We can rearrange this so it is a quadratic in <math>m</math>: <cmath>m^2 + (a+2)m + (4 + 2a + b) = 0.</cmath> Remember that <math>m</math> has to be unique and not equal to <math>2.</math> We can split this into two cases: case <math>1</math> being that <math>m</math> has exactly one solution, and it isn't equal to <math>2</math>; case <math>2</math> being that <math>m</math> has two solutions, one being equal to <math>2,</math> but the other is a unique solution not equal to <math>2.</math>
+
+
+<math>\textbf{Case 1:}</math>
+
+There is exactly one solution for <math>m,</math> and that solution is not <math>2.</math> This means that the discriminant of the quadratic equation is <math>0,</math> using that, we have <math>(a+2)^2 = 4(4 + 2a + b),</math> rearranging in a neat way, we have <cmath>(a-2)^2 = 4(4 + b)\Longrightarrow a = 2\pm2\sqrt{4+b}.</cmath> Using the fact that <math>4+b</math> must be a perfect square, we can easily see that the values for <math>b</math> can be <math>-4, -3, 0, 5,</math> and <math>12.</math> Also since it's a "<math>\pm</math>" there will usually be <math>2</math> solutions for <math>a</math> for each value of <math>b.</math> The two exceptions for this would be if <math>b = -4</math> and <math>b = 12.</math> For <math>b=-4</math> because it would be a <math>\pm0,</math> which only gives one solution, instead of two. And for <math>b=12</math> because then <math>a = -6</math> and the solution for <math>m</math> would equal to <math>2,</math> and we don't want this. (We can know this by putting the solutions back into the quadratic formula). 
+
+So we have <math>5</math> solutions for <math>b,</math> each of which give <math>2</math> values for <math>a,</math> except for <math>2,</math> which only give one. So in total, there are <math>5*2 - 2 = 8</math> ordered pairs of <math>(a,b)</math> in this case.
+
+
+<math>\textbf{Case 2:}</math>
+
+<math>m</math> has two solutions, but exactly one of them isn't equal to <math>2.</math> This ensures that <math>1</math> of the solutions is equal to <math>2.</math>
+
+Let <math>r</math> be the other value of <math>m</math> that isn't <math>2.</math> By Vieta: 
+<cmath>\begin{align*}
+r+2 &= -a-2\\
+2r &= 4+2a+b.
+\end{align*}</cmath> From the first equation, we subtract both sides by <math>2</math> and double both sides to get <math>2r = -2a - 8</math> which also equals to <math>4+2a+b</math> from the second equation. Equating both, we have <math>4a + b + 12 = 0.</math> We can easily count that there would be <math>11</math> ordered pairs <math>(a,b)</math> that satisfy that.
+
+However, there's an outlier case in which <math>r</math> happens to also equal to <math>2,</math> and we don't want that. We can reverse engineer and find out that <math>r=2</math> when <math>(a,b) = (-6, 12),</math> which we overcounted. So we subtract by one and we conclude that there are <math>10</math> ordered pairs of <math>(a,b)</math> that satisfy this case.
+
+
+This all shows that there are a total of <math>8+10 = 18</math> amount of ordered pairs <math>(a,b).</math> Multiplying this by <math>41</math> (the amount of values for <math>c</math>) we get <math>18\cdot41=\boxed{738}</math> as our final answer.
+
+~s214425

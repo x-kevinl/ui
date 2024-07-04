@@ -1,0 +1,11 @@
+== Solution 1 ==
+
+When $m=1$, $a_{n+1}=1+a_n+n$. Hence,
+$$a_{2}=1+a_1+1$$
+$$a_{3}=1+a_2+2$$
+$$a_{4}=1+a_3+3$$
+$$\dots$$
+$$a_{12}=1+a_{11}+11$$
+Adding these equations up, we have that $a_{12}=12+(1+2+3+...+11)=\boxed{\mathrm{(D) \ } 78}$
+
+~AopsUser101

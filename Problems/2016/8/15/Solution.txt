@@ -1,0 +1,5 @@
+==Solution 1==
+
+First, we use difference of squares on $13^4 - 11^4 = (13^2)^2 - (11^2)^2 $ to get $ 13^4 - 11^4 = (13^2 + 11^2)(13^2 - 11^2) $. Using difference of squares again and simplifying, we get $(169 + 121)(13+11)(13-11) = 290 \cdot 24 \cdot 2 = (2\cdot 8 \cdot 2) \cdot (3 \cdot 145)$. Realizing that we don't need the right-hand side because it doesn't contain any factor of 2, we see that the greatest power of $2$ that is a divisor $13^4 - 11^4$ is $\boxed{\textbf{(C)}\ 32}$.
+
+~CHECKMATE2021

@@ -1,0 +1,4 @@
+==Problem==
+Danica wants to arrange her model cars in rows with exactly 6 cars in each row. She now has 23 model cars. What is the greatest number of additional cars she must buy in order to be able to arrange all her cars this way?
+
+$\textbf{(A)}\ 3 \qquad \textbf{(B)}\ 2 \qquad \textbf{(C)}\ 1 \qquad \textbf{(D)}\ 4 \qquad \textbf{(E)}\ 533$

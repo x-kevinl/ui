@@ -1,0 +1,70 @@
+== Solutions ==
+=== Solution 1 ===
+<center><asy>
+unitsize(36);
+draw((0,0)--(6,0)--(0,3)--cycle);
+draw((0,0)--(2,0)--(2,2)--(0,2)--cycle);
+label("$1$",(1,2),S);
+label("$1$",(2,1),W);
+label("$2m$",(4,0),S);
+label("$x$",(0,2.5),W);
+</asy></center>
+
+WLOG, let a side of the square be $1$. Simple angle chasing shows that the two right triangles are [[similar triangles|similar]]. Thus the ratio of the sides of the triangles are the same. Since $A = \frac{1}{2}bh = \frac{h}{2}$, the base of the triangle with area $m$ is $2m$. Therefore $\frac{2m}{1} = \frac{1}{x}$ where $x$ is the height of the other triangle. $x = \frac{1}{2m}$, and the area of that triangle is $\frac{1}{2} \cdot 1 \cdot \frac{1}{2m} = \frac{1}{4m}\ \text{\boxed{D}}$.
+
+=== Solution 2 (Video Solution) ===
+
+https://youtu.be/HTHveknJFpk
+
+https://m.youtube.com/watch?v=TUQsHeJ6RSA&feature=youtu.be
+
+=== Solution 3 ===
+<center><asy>
+unitsize(36);
+draw((0,0)--(6,0)--(0,3)--cycle);
+draw((0,0)--(2,0)--(2,2)--(0,2)--cycle);
+label("$b$",(2.5,0),S);
+label("$a$",(0,1.5),W);
+label("$c$",(2.5,1),W);
+label("$A$",(0.5,2.5),W);
+label("$B$",(3.5,0.75),W);
+label("$C$",(1,1),W);
+</asy></center>
+
+From the diagram from the previous solution, we have $a$, $b$ as the legs and $c$ as the side length of the square. WLOG, let the area of triangle $A$
+be $m$ times the area of square $C$.
+
+Since triangle $A$ is similar to the large triangle, it has $h_A = a(\frac{c}{b}) = \frac{ac}{b}$, $b_A = c$ and $$[A] = \frac{bh}{2} = \frac{ac^2}{2b} = m[C] = mc^2$$
+Thus $\frac{a}{2b} = m$
+
+Now since triangle $B$ is similar to the large triangle, it has $h_B = c$, $b_B = b\frac{c}{a} = \frac{bc}{a}$ and $$[B] = \frac{bh}{2} = \frac{bc^2}{2a} = nc^2 = n[C]$$ 
+
+Thus $n = \frac{b}{2a} = \frac{1}{4(\frac{a}{2b})} = \frac{1}{4m}$. $\text{\boxed{D}}$.
+
+~ Nafer
+
+=== Solution 4 (process of elimination) ===
+Simply testing specific triangles is sufficient.
+
+A triangle with legs of 1 and 2 gives a square of area $S=\frac{2}{3}\times\frac{2}{3}=\frac{4}{9}$. The larger sub-triangle has area $T_1=\frac{\frac{2}{3}\times\frac{4}{3}}{2}=\frac{4}{9}$, and the smaller triangle has area $T_2=\frac{\frac{2}{3}\times\frac{1}{3}}{2}=\frac{1}{9}$. Computing ratios you get $\frac{T_1}{S}=1$ and $\frac{T_2}{S}=\frac{1}{4}$. Plugging $m=1$ in shows that the only possible answer is $\text{\boxed{D}}$
+
+~ Snacc
+=== Solution 5 ===
+<center><asy>
+unitsize(36);
+draw((0,0)--(6,0)--(0,3)--cycle);
+draw((0,0)--(2,0)--(2,2)--(0,2)--cycle);
+draw((0,0)--(6,0)--(6,3)--(0,3)--cycle);
+draw((0,0)--(6,0)--(6,2)--(0,2)--cycle);
+draw((0,0)--(2,0)--(2,3)--(0,3)--cycle);
+label("$1$",(1,2),S);
+label("$1$",(2,1),W);
+label("$2m$",(4,0),S);
+label("$x$",(0,2.5),W);
+label("$A$", (1.25,1),W);
+label("$B$", (4, 2.25),N);
+</asy></center>
+WLOG, let the length of the square be $1$ (Like Solution 1). Then the length of the larger triangle is $2m$. Let the length of the smaller triangle be $x$.
+Therefore, since $A = B$ (try to prove that yourself), $1 = 2mx$ or $x = 1/2m$
+The area of the other triangle is $1/4m$.
+From here, the answer is $\text{\boxed{D}}$.

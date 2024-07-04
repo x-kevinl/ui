@@ -1,0 +1,8 @@
+== Solution ==
+Let $k$ be the number of points Chelsea currently has. In order to guarantee victory, we must consider the possibility that the opponent scores the maximum amount of points by getting only bullseyes.
+
+$$\begin{align*}k+ 10n + 4(50-n) &> (k-50) + 50\cdot{10}\\
+ 6n &> 250\end{align*}$$
+
+
+The lowest integer value that satisfies the inequality is $\boxed{42\ \textbf{(C)}}$.

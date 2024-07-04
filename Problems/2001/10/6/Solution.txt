@@ -1,0 +1,2 @@
+== Solution ==
+Denote $a$ and $b$ as the tens and units digit of $N$, respectively. Then $N = 10a+b$. It follows that $10a+b=ab+a+b$, which implies that $9a=ab$. Since $a\neq0$, $b=9$. So the units digit of $N$ is $\boxed{(\textbf{E})\ 9}$.

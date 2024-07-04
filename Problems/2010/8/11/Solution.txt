@@ -1,0 +1,2 @@
+== Solution 1(algebra solution)==
+Let the height of the taller tree be $h$ and let the height of the smaller tree be $h-16$. Since the ratio of the smaller tree to the larger tree is $\frac{3}{4}$, we have $\frac{h-16}{h}=\frac{3}{4}$. Solving for $h$ gives us $h=64 \Rightarrow \boxed{\textbf{(B)}\ 64}$

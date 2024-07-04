@@ -1,0 +1,8 @@
+==Problem==
+
+Buzz Bunny is hopping up and down a set of stairs, one step at a time. In how many ways can Buzz start on the ground, make a sequence of $6$ hops, and end up back on the ground?
+(For example, one sequence of hops is up-up-down-down-up-down.)
+
+[[File:2024-AMC8-q13.png]]
+
+$\textbf{(A)}\ 4 \qquad \textbf{(B)}\ 5 \qquad \textbf{(C)}\ 6 \qquad \textbf{(D)}\ 8 \qquad \textbf{(E)}\ 12$

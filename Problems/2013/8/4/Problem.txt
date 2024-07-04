@@ -1,0 +1,4 @@
+==Problem==
+Eight friends ate at a restaurant and agreed to share the bill equally. Because Judi forgot her money, each of her seven friends paid an extra \$2.50 to cover her portion of the total bill. What was the total bill?
+
+$ \textbf{(A)}\ \text{\textdollar}120\qquad\textbf{(B)}\ \text{\textdollar}128\qquad\textbf{(C)}\ \text{\textdollar}140\qquad\textbf{(D)}\ \text{\textdollar}144\qquad\textbf{(E)}\ \text{\textdollar}160 $

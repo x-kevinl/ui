@@ -1,0 +1,2 @@
+==Solution 1==
+Let $A=x$. Then from $A+B+C=30$, we find that $B=25-x$. From $B+C+D=30$, we then get that $D=x$. Continuing this pattern, we find $E=25-x$, $F=5$, $G=x$, and finally $H=25-x$. So $A+H=x+25-x=25 \rightarrow \boxed{\textbf{C}}$

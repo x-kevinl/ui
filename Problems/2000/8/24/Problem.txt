@@ -1,0 +1,23 @@
+==Problem==
+
+If $ \angle A = 20^\circ $ and $ \angle AFG =\angle AGF $, then $ \angle B+\angle D = $
+
+<asy>
+pair A,B,C,D,EE,F,G;
+A = (0,0);
+B = (9,4);
+C = (21,0);
+D = (13,-12);
+EE = (4,-16);
+F = (13/2,-6);
+G = (8,0);
+draw(A--C--EE--B--D--cycle);
+label("$A$",A,W);
+label("$B$",B,N);
+label("$C$",C,E);
+label("$D$",D,SE);
+label("$E$",EE,SW);
+label("$F$",F,WSW);
+label("$G$",G,NW);</asy>
+
+$ \text{(A)}\ 48^\circ\qquad\text{(B)}\ 60^\circ\qquad\text{(C)}\ 72^\circ\qquad\text{(D)}\ 80^\circ\qquad\text{(E)}\ 90^\circ $

@@ -1,0 +1,2 @@
+==Problem 12==
+Call a set <math>S</math> product-free if there do not exist <math>a, b, c \in S</math> (not necessarily distinct) such that <math>a b = c</math>. For example, the empty set and the set <math>\{16, 20\}</math> are product-free, whereas the sets <math>\{4, 16\}</math> and <math>\{2, 8, 16\}</math> are not product-free. Find the number of product-free subsets of the set <math>\{1, 2, 3, 4,..., 7, 8, 9, 10\}</math>.

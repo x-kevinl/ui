@@ -1,0 +1,2 @@
+== Solution ==
+There is $1$ hour and $60-34 = 26$ minutes between 10:34 AM and noon; and there is $1$ hour and $18$ minutes between noon and 1:18 PM. Hence the flight took $2$ hours and $26 + 18 = 44$ minutes, and $h+m= 46\ \textbf{(A)}$.

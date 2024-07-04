@@ -1,0 +1,10 @@
+== Solution 1==
+Jar A contains <math>\frac{11}{5}</math> liters of water, and <math>\frac{9}{5}</math> liters of acid; jar B contains <math>\frac{13}{5}</math> liters of water and <math>\frac{12}{5}</math> liters of acid.
+
+The gap between the amount of water and acid in the first jar, <math>\frac{2}{5}</math>, is double that of the gap in the second jar, <math>\frac{1}{5}</math>. Therefore, we must add twice as much of jar C into the jar <math>A</math> over jar <math>B</math>. So, we must add <math>\frac{2}{3}</math> of jar C into jar <math>A</math>, so <math>m = 2, n=3</math>.
+
+Since jar C contains <math>1</math> liter of solution, we are adding <math>\frac{2}{3}</math> of a liter of solution to jar <math>A</math>. In order to close the gap between water and acid, there must be <math>\frac{2}{5}</math> more liters of acid than liters of water in these <math>\frac{2}{3}</math> liters of solution. So, in the <math>\frac{2}{3}</math> liters of solution, there are <math>\frac{2}{15}</math> liters of water, and <math>\frac{8}{15}</math> liters of acid.  So, 80% of the <math>\frac{2}{3}</math> sample is acid, so overall, in jar C, 80% of the sample is acid.
+
+Therefore, our answer is <math>80 + 2 + 3 = \boxed{85}</math>.
+
+~ ihatemath123

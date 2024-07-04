@@ -1,0 +1,10 @@
+== Solution 1==
+Note that <math>x</math> degrees is equal to <math>\frac{\pi x}{180}</math> radians. Also, for <math>\alpha \in \left[0 , \frac{\pi}{2} \right]</math>, the two least positive angles <math>\theta > \alpha</math> such that <math>\sin{\theta} = \sin{\alpha}</math> are <math>\theta = \pi-\alpha</math>, and <math>\theta = 2\pi + \alpha</math>. 
+
+Clearly <math>x > \frac{\pi x}{180}</math> for positive real values of <math>x</math>. 
+
+<math>\theta = \pi-\alpha</math> yields: <math>x = \pi - \frac{\pi x}{180} \Rightarrow x = \frac{180\pi}{180+\pi} \Rightarrow (p,q) = (180,180)</math>. 
+
+<math>\theta = 2\pi + \alpha</math> yields: <math>x = 2\pi + \frac{\pi x}{180} \Rightarrow x = \frac{360\pi}{180-\pi} \Rightarrow (m,n) = (360,180)</math>. 
+
+So, <math>m+n+p+q = \boxed{900}</math>.

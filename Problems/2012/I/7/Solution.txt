@@ -1,0 +1,16 @@
+==Solution 1==
+Say the student in the center starts out with <math>a</math> coins, the students neighboring the center student each start with <math>b</math> coins, and all other students start out with <math>c</math> coins. Then the <math>a</math>-coin student has five neighbors, all the <math>b</math>-coin students have three neighbors, and all the <math>c</math>-coin students have four neighbors.
+
+Now in order for each student's number of coins to remain equal after the trade, the number of coins given by each student must be equal to the number received, and thus
+
+<cmath>
+\begin{align*}
+a &= 5 \cdot \frac{b}{3}\\
+b &= \frac{a}{5} + 2 \cdot \frac{c}{4}\\
+c &= 2 \cdot \frac{c}{4} + 2 \cdot \frac{b}{3}.
+\end{align*}
+</cmath>
+
+Solving these equations, we see that <math>\frac{a}{5} = \frac{b}{3} = \frac{c}{4}.</math> Also, the total number of coins is <math>a + 5b + 10c = 3360,</math> so <math>a + 5 \cdot \frac{3a}{5} + 10 \cdot \frac{4a}{5} = 3360 \rightarrow a = \frac{3360}{12} = \boxed{280}.</math>
+
+*One way to make this more rigorous (answering the concern in Solution 3) is to let <math>a</math>, <math>b</math>, and <math>c</math> represent the <math>total</math> number of coins in the rings. Then, you don't care about individual people in the passing, you just know that each ring gets some coins and loses some coins, which must cancel each other out.

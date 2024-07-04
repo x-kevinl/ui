@@ -1,0 +1,11 @@
+==Quick Solution using Olympiad Terms ==
+
+Take a force-overlaid inversion about <math>A</math> and note <math>D</math> and <math>E</math> map to each other. As <math>DE</math> was originally the diameter of <math>\gamma</math>, <math>DE</math> is still the diameter of <math>\gamma</math>. Thus <math>\gamma</math> is preserved. Note that the midpoint <math>M</math> of <math>BC</math> lies on <math>\gamma</math>, and <math>BC</math> and <math>\omega</math> are swapped. Thus points <math>F</math> and <math>M</math> map to each other, and are isogonal. It follows that <math>AF</math> is a symmedian of <math>\triangle{ABC}</math>, or that <math>ABFC</math> is harmonic. Then <math>(AB)(FC)=(BF)(CA)</math>, and thus we can let <math>BF=5x, CF=3x</math> for some <math>x</math>. By the LoC, it is easy to see <math>\angle{BAC}=120^\circ</math> so <math>(5x)^2+(3x)^2-2\cos{60^\circ}(5x)(3x)=49</math>. Solving gives <math>x^2=\frac{49}{19}</math>, from which by Ptolemy's we see <math>AF=\frac{30}{\sqrt{19}}</math>. We conclude the answer is <math>900+19=\boxed{919}</math>.
+
+'''- Emathmaster'''
+
+Side Note: You might be wondering what the motivation for this solution is. Most of the people who've done EGMO Chapter 8 should recognize this as problem 8.32 (2009 Russian Olympiad) with the computational finish afterwards.
+Now if you haven't done this, but still know what inversion is, here's the motivation. We'd see that it's kinda hard to angle chase, and if we could, it would still be a bit hard to apply (you could use trig, but it won't be so clean most likely). If you give up after realizing that angle chasing won't work, you'd likely go in a similar approach to Solution 1 (below) or maybe be a bit more insightful and go with the elementary solution above.
+
+Finally, we notice there's circles! Classic setup for inversion! Since we're involving an angle-bisector, the first thing that comes to mind is a force overlaid inversion described in Lemma 8.16 of EGMO (where we invert with radius <math>\sqrt{AB \cdot AC}</math> and center <math>A</math>, then reflect over the <math>A</math>-angle bisector, which fixes <math>B, C</math>). We try applying this to the problem, and it's fruitful - we end up with this solution.
+-MSC

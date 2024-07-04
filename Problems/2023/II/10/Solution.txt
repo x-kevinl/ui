@@ -1,0 +1,21 @@
+==Solution 1==
+
+We replace the numbers which are 0 mod(3) to 0, 1 mod(3) to 1, and 2 mod(3) to 2.
+
+Then, the problem is equivalent to arranging 4 0's,4 1's, and 4 2's into the grid (and then multiplying by <math>4!^3</math> to account for replacing the remainder numbers with actual numbers) such that no 2 of the same numbers are adjacent. 
+
+Then, the numbers which are vertically connected must be different. 2 1s must be connected with 2 2s, and 2 1s must be connected with 2 2s (vertically), as if there are less 1s connected with either, then there will be 2s or 3s which must be connected within the same number.
+For instance if we did did:
+- 12 x 3
+- 13 x 1
+Then we would be left with 23 x1, and 2 remaining 3s which aren't supposed to be connected, so it is impossible. Similar logic works for why all 1s can't be connected with all 2s. 
+
+
+Thus, we are left with the problem of re-arranging 2x 12 pairs, 2x 13 pairs, 2x 23 pairs. Notice that the pairs can be re-arranged horizontally in any configuration, but when 2 pairs are placed adjacent there is only 1 configuration for the rightmost pair to be set after the leftmost one has been placed.
+
+We have <math>\frac{6!}{2!2!2!}=90</math> ways to horizontally re-arrange the pairs, with 2 ways to set the initial leftmost column. Thus, there are 180 ways to arrange the pairs. Accounting for the initial simplification of the problem with 1-12 -> 0-3, we obtain the answer is: 
+
+<cmath>2488320=2^{11}\cdot3^5\cdot5^1</cmath>
+
+The number of divisors is: <math>12\cdot6\cdot2=\boxed{144}.</math>
+~SAHANWIJETUNGA

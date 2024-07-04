@@ -1,0 +1,5 @@
+==Problem==
+
+A cup of boiling water ($212^{\circ}\text{F}$) is placed to cool in a room whose temperature remains constant at $68^{\circ}\text{F}$. Suppose the difference between the water temperature and the room temperature is halved every $5$ minutes. What is the water temperature, in degrees Fahrenheit, after $15$ minutes?
+
+$\textbf{(A) } 77 \qquad \textbf{(B) } 86 \qquad \textbf{(C) } 92 \qquad \textbf{(D) } 98 \qquad \textbf{(E) } 104$

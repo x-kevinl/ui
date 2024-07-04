@@ -1,0 +1,18 @@
+==Solution 1==
+Extend the "inner part" of the mountain so that the image is two right triangles that overlap in a third right triangle as shown. 
+<asy>
+unitsize(.2cm);
+draw((0,0)--(8,8)--(11,5)--(18,12)--(30,0)--cycle,linewidth(1));
+draw((11,5)--(6, 0)--(16, 0)--cycle,linewidth(0.5));
+label("$8\sqrt{2}$",(4,4),NW);
+label("$12\sqrt{2}$",(24,6),NE);
+draw((8,8)--(7.5,7.5)--(8,7)--(8.5,7.5)--cycle);
+draw((18,12)--(17.5,11.5)--(18,11)--(18.5,11.5)--cycle);
+draw((11,5)--(11,0),dashed);
+label("$h$",(11,2.5),E);
+</asy>
+The side length of the largest right triangle is $12\sqrt{2},$ which means its area is $144.$ Similarly, the area of the second largest right triangle is $64$ (the side length is $8\sqrt{2}$), and the area of the overlap is $h^2$ (the side length is $h\sqrt{2}$). Thus,
+$$144+64-h^2=183,$$
+which means that the answer is $\boxed{\mathbf{(B)}\text{ 5}}.$
+
+~BS2012

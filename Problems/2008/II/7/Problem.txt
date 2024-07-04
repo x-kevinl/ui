@@ -1,0 +1,6 @@
+== Problem ==
+Let <math>r</math>, <math>s</math>, and <math>t</math> be the three roots of the equation
+<cmath>
+8x^3 + 1001x + 2008 = 0.
+</cmath>
+Find <math>(r + s)^3 + (s + t)^3 + (t + r)^3</math>.

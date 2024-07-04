@@ -1,0 +1,6 @@
+==Solution 1==
+Let $BC = x$ and $CD = AD = y$ be positive integers. Drop a perpendicular from $A$ to $CD$ to show that, using the Pythagorean Theorem, that
+$$x^2 + (y - 2)^2 = y^2.$$
+Simplifying yields $x^2 - 4y + 4 = 0$, so $x^2 = 4(y - 1)$. Thus, $y$ is one more than a perfect square.
+
+The perimeter $p = 2 + x + 2y = 2y + 2\sqrt{y - 1} + 2$ must be less than 2015. Simple calculations demonstrate that $y = 31^2 + 1 = 962$ is valid, but $y = 32^2 + 1 = 1025$ is not. On the lower side, $y = 1$ does not work (because $x > 0$), but $y = 1^2 + 1$ does work. Hence, there are 31 valid $y$ (all $y$ such that $y = n^2 + 1$ for $1 \le n \le 31$), and so our answer is $\boxed{\textbf{(B) } 31}$

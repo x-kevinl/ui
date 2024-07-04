@@ -1,0 +1,6 @@
+== Problem ==
+The increasing [[geometric sequence]] <math>x_{0},x_{1},x_{2},\ldots</math> consists entirely of [[integer|integral]] powers of <math>3.</math> Given that
+
+<math>\sum_{n=0}^{7}\log_{3}(x_{n}) = 308</math> and <math>56 \leq \log_{3}\left ( \sum_{n=0}^{7}x_{n}\right ) \leq 57,</math>
+
+find <math>\log_{3}(x_{14}).</math>

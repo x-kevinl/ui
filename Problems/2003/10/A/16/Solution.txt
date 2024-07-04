@@ -1,0 +1,8 @@
+== Solution 1==
+$13^{2003}\equiv 3^{2003}\pmod{10}$
+
+Since $3^4=81\equiv1\pmod{10}$: 
+
+$3^{2003}=(3^{4})^{500}\cdot3^{3}\equiv1^{500}\cdot27\equiv7\pmod{10}$
+
+Therefore, the units digit is $7 \Rightarrow\boxed{\mathrm{(C)}\ 7}$

@@ -1,0 +1,2 @@
+==Problem==
+A set contains four numbers. The six pairwise sums of distinct elements of the set, in no particular order, are <math>189</math>, <math>320</math>, <math>287</math>, <math>234</math>, <math>x</math>, and <math>y</math>. Find the greatest possible value of <math>x+y</math>.

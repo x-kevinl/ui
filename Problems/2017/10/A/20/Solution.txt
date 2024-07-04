@@ -1,0 +1,2 @@
+==Solution 1==
+Note that $n \equiv S(n) \pmod{9}$. This can be seen from the fact that $\sum_{k=0}^{n}10^{k}a_k \equiv \sum_{k=0}^{n}a_k \pmod{9}$. Thus, if $S(n) = 1274$, then $n \equiv 5 \pmod{9}$, and thus $n+1 \equiv S(n+1) \equiv 6 \pmod{9}$. The only answer choice that satisfies $n+1 \equiv 6 \pmod{9}$ is $\boxed{\textbf{(D)} 1239}$.

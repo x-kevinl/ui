@@ -1,0 +1,9 @@
+== Problem ==
+
+The graph of $y=x^2+2x-15$ intersects the $x$-axis at points $A$ and $C$ and the $y$-axis at point $B$. What is $\tan(\angle ABC)$?
+
+$\textbf{(A)}\ \frac{1}{7} \qquad
+\textbf{(B)}\ \frac{1}{4} \qquad
+\textbf{(C)}\ \frac{3}{7} \qquad
+\textbf{(D)}\ \frac{1}{2} \qquad
+\textbf{(E)}\ \frac{4}{7} \qquad$

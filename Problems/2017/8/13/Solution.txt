@@ -1,0 +1,4 @@
+==Solution==
+
+Given $n$ games, there must be a total of $n$ wins and $n$ losses. Hence, $4 + 3 + K = 2 + 3 + 3$ where $K$ is Kyler's wins. $K = 1$, so our final answer is $\boxed{\textbf{(B)}\ 1}.$
+~CHECKMATE2021

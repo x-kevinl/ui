@@ -1,0 +1,12 @@
+== Solution ==
+If a factor of <math>10^{n}</math> has a <math>2</math> and a <math>5</math> in its [[prime factorization]], then that factor will end in a <math>0</math>. Therefore, we have left to consider the case when the two factors have the <math>2</math>s and the <math>5</math>s separated, so we need to find the first power of 2 or 5 that contains a 0.
+
+For <math>n = 1:</math> <cmath>2^1 = 2 , 5^1 = 5</cmath>
+<math>n = 2:</math> <cmath>2^2 = 4 , 5 ^ 2 =25</cmath>
+<math>n = 3:</math> <cmath>2^3 = 8 , 5 ^3 = 125</cmath>
+
+and so on, until, 
+
+<math>n = 8:</math> <math>2^8 = 256</math> | <math>5^8 = 390625</math>
+
+We see that <math>5^8</math> contains the first zero, so <math>n = \boxed{8}</math>.

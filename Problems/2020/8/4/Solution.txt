@@ -1,0 +1,3 @@
+==Solution 1 (Pattern of the Rows)==
+
+Looking at the rows of each hexagon, we see that the first hexagon has $1$ dot, the second has $2+3+2$ dots, and the third has $3+4+5+4+3$ dots. Given the way the hexagons are constructed, it is clear that this pattern continues. Hence, the fourth hexagon has $4+5+6+7+6+5+4=\boxed{\textbf{(B) }37}$ dots.

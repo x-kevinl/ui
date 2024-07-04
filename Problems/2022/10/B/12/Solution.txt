@@ -1,0 +1,6 @@
+==Solution 1 (Complement)==
+Rolling a pair of fair $6$-sided dice, the probability of getting a sum of $7$ is $\frac16:$ Regardless what the first die shows, the second die has exactly one outcome to make the sum $7.$ We consider the complement: The probability of not getting a sum of $7$ is $1-\frac16=\frac56.$ Rolling the pair of dice $n$ times, the probability of getting a sum of $7$ at least once is $1-\left(\frac56\right)^n.$
+
+Therefore, we have $1-\left(\frac56\right)^n>\frac12,$ or $$\left(\frac56\right)^n<\frac12.$$ Since $\left(\frac56\right)^4<\frac12<\left(\frac56\right)^3,$ the least integer $n$ satisfying the inequality is $\boxed{\textbf{(C) } 4}.$
+
+~MRENTHUSIASM

@@ -1,0 +1,7 @@
+== Problem ==
+A collection of 8 [[cube (geometry) | cube]]s consists of one cube with [[edge]]-[[length]] <math> k </math> for each [[integer]] <math> k, 1 \le k \le 8. </math> A tower is to be built using all 8 cubes according to the rules: 
+
+* Any cube may be the bottom cube in the tower.
+* The cube immediately on top of a cube with edge-length <math> k </math> must have edge-length at most <math> k+2. </math> 
+
+Let <math> T </math> be the number of different towers than can be constructed. What is the [[remainder]] when <math> T </math> is divided by 1000?

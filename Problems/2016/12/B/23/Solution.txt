@@ -1,0 +1,2 @@
+==Solution 1 (Non Calculus)==
+The first inequality refers to the interior of a regular octahedron with top and bottom vertices $(0,0,1),\ (0,0,-1)$. Its volume is $8\cdot\tfrac16=\tfrac43$. The second inequality describes an identical shape, shifted $+1$ upwards along the $Z$ axis. The intersection will be a similar octahedron, linearly scaled down by half. Thus the volume of the intersection is one-eighth of the volume of the first octahedron, giving an answer of $\textbf{(A) }\tfrac16$.

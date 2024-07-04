@@ -1,0 +1,17 @@
+==Problem==
+Ann made a $3$-step staircase using $18$ toothpicks as shown in the figure. How many toothpicks does she need to add to complete a $5$-step staircase?
+
+$\textbf{(A)}\ 9\qquad\textbf{(B)}\ 18\qquad\textbf{(C)}\ 20\qquad\textbf{(D)}\ 22\qquad\textbf{(E)}\ 24$
+
+<asy>
+size(150);
+defaultpen(linewidth(0.8));
+path h = ellipse((0.5,0),0.45,0.015), v = ellipse((0,0.5),0.015,0.45);
+for(int i=0;i<=2;i=i+1)
+{
+for(int j=0;j<=3-i;j=j+1)
+{
+filldraw(shift((i,j))*h,black);
+filldraw(shift((j,i))*v,black);
+}
+}</asy>

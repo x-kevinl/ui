@@ -1,0 +1,4 @@
+== Problem ==
+A quadratic polynomial with real coefficients and leading coefficient $1$ is called $\emph{disrespectful}$ if the equation $p(p(x))=0$ is satisfied by exactly three real numbers. Among all the disrespectful quadratic polynomials, there is a unique such polynomial $\tilde{p}(x)$ for which the sum of the roots is maximized. What is $\tilde{p}(1)$?
+
+$\textbf{(A) } \dfrac{5}{16} \qquad\textbf{(B) } \dfrac{1}{2} \qquad\textbf{(C) } \dfrac{5}{8} \qquad\textbf{(D) } 1 \qquad\textbf{(E) } \dfrac{9}{8}$

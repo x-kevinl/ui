@@ -1,0 +1,71 @@
+==Solution==
+<asy>
+import olympiad;
+import math;
+
+real a;
+a=2*asin(11/(5+sqrt(267)));
+pair A,B,C,D,E,F;
+A=expi(pi); B=expi(pi-a); C=expi(a); D=expi(0); E=expi(-a); F=expi(pi+a);
+draw(A--B--C--D--E--F--A--D);
+dot(A); dot(B); dot(C); dot(D); dot(E); dot(F);
+draw(unitcircle);
+label("$A$",A,W);label("$B$",B,NW);label("$C$",C,NE);label("$D$",D,dir(0));label("$E$",E,SE);label("$F$",F,SW);
+
+</asy>
+
+
+===Solution 1===
+Let us call the hexagon <math>ABCDEF</math>, where <math>AB=CD=DE=AF=22</math>, and <math>BC=EF=20</math>. 
+We can just consider one half of the hexagon, <math>ABCD</math>, to make matters simpler. 
+Draw a line from the center of the circle, <math>O</math>, to the midpoint of <math>BC</math>, <math>X</math>. Now, draw a line from <math>O</math> to the midpoint of <math>AB</math>, <math>Y</math>. Clearly, <math>\angle BXO=90^{\circ}</math>, because <math>BO=CO</math>, and <math>\angle BYO=90^{\circ}</math>, for similar reasons. Also notice that <math>\angle AOX=90^{\circ}</math>. 
+Let us call <math>\angle BOY=\theta</math>. Therefore, <math>\angle AOB=2\theta</math>, and so <math>\angle BOX=90-2\theta</math>. Let us label the radius of the circle <math>r</math>. This means <cmath>\sin{\theta}=\frac{BY}{r}=\frac{11}{r}</cmath> <cmath>\sin{(90-2\theta)}=\frac{BX}{r}=\frac{10}{r}</cmath>
+Now we can use simple trigonometry to solve for <math>r</math>.
+Recall that  <math>\sin{(90-\alpha)}=\cos(\alpha)</math>: That means <math>\sin{(90-2\theta)}=\cos{2\theta}=\frac{10}{r}</math>.
+Recall that <math>\cos{2\alpha}=1-2\sin^2{\alpha}</math>: That means <math>\cos{2\theta}=1-2\sin^2{\theta}=\frac{10}{r}</math>.
+Let <math>\sin{\theta}=x</math>.
+Substitute to get <math>x=\frac{11}{r}</math> and <math>1-2x^2=\frac{10}{r}</math>
+Now substitute the first equation into the second equation: <math>1-2\left(\frac{11}{r}\right)^2=\frac{10}{r}</math>
+Multiplying both sides by <math>r^2</math> and reordering gives us the quadratic <cmath>r^2-10r-242=0</cmath>
+Using the quadratic equation to solve, we get that <math>r=5+\sqrt{267}</math> (because <math>5-\sqrt{267}</math> gives a negative value), so the answer is <math>5+267=\boxed{272}</math>.
+
+===Solution 2===
+Using the trapezoid <math>ABCD</math> mentioned above, draw an altitude of the trapezoid passing through point <math>B</math> onto <math>AD</math> at point <math>J</math>. Now, we can use the pythagorean theorem: <math>(22^2-(r-10)^2)+10^2=r^2</math>. Expanding and combining like terms gives us the quadratic <cmath>r^2-10r-242=0</cmath> and solving for <math>r</math> gives <math>r=5+\sqrt{267}</math>. So the solution is <math>5+267=\boxed{272}</math>.
+
+===Solution 3===
+
+Join the diameter of the circle <math>AD</math> and let the length be <math>d</math>. By [[Ptolemy's Theorem]] on trapezoid <math>ADEF</math>, <math>(AD)(EF) + (AF)(DE) = (AE)(DF)</math>. Since it is an isosceles trapezoid, both diagonals are equal. Let them be equal to <math>x</math> each. Then
+
+<cmath>20d + 22^2 = x^2</cmath>
+
+Since <math>\angle AED</math> is subtended by the diameter, it is right. Hence by the Pythagorean Theorem with right <math>\triangle AED</math>:
+
+<cmath>(AE)^2 + (ED)^2 = (AD)^2</cmath>
+<cmath>x^2 + 22^2 = d^2</cmath>
+
+From the above equations, we have:
+<cmath>x^2 = d^2 - 22^2 = 20d + 22^2</cmath>
+<cmath>d^2 - 20d = 2\times22^2</cmath>
+<cmath>d^2 - 20d + 100 = 968+100 = 1068</cmath>
+<cmath>(d-10) = \sqrt{1068}</cmath>
+<cmath>d = \sqrt{1068} + 10 = 2\times(\sqrt{267}+5)</cmath>
+
+Since the radius is half the diameter, it is <math>\sqrt{267}+5</math>, so the answer is <math>5+267 \Rightarrow \boxed{272}</math>.
+===Solution 4===
+As we can see this image, it is symmetrical hence the diameter divides the hexagon into two congruent quadrilateral. Now we can apply the Ptolemy's theorem. Denote the radius is r, we can get <cmath>22*2x+440=\sqrt{4x^2-400}\sqrt{4x^2-484}</cmath>, after simple factorization, we can get <cmath>x^4-342x^2-2420x=0</cmath>, it is easy to see that <math>x=-10, x=0</math> are two solutions for the equation, so we can factorize that into <cmath>x(x+10)(x^2-10x-242)</cmath>so we only need to find the solution for <cmath>x^2-10x-242=0</cmath> and we can get <math>x=(\sqrt{267}+5)</math> is the desired answer for the problem, and our answer is <math>5+267 \Rightarrow \boxed{272}</math>.～bluesoul
+
+===Solution 5===
+
+[[File:2013_AIME_II_8.png|center]]
+
+
+Using solution 1's diagram, extend line segments <math>AB</math> and <math>CD</math> upwards until they meet at point <math>G</math>. Let point <math>O</math> be the center of the hexagon. By the <math>AA</math> postulate, <math>\Delta ADG \sim \Delta BCG \sim \Delta CDO</math>. This means <math>\frac{DC}{AD} = \frac{22}{2r} = \frac{CO}{AG}</math>, so <math>AG = r \times \frac{2r}{22} = \frac{r^2}{11}</math>. We then solve for <math>AB</math>: <cmath> \frac{AD-BC}{AD} = \frac{2r-20}{2r} = \frac{AB}{AG} </cmath> <cmath>AB = \frac{r^2}{11} \times \frac{2r-20}{2r} = \frac{r^2-10r}{11}</cmath>
+Remember that <math>AB=22</math> as well, so <math>22 = \frac{r^2-10r}{11} \Rightarrow r^2-10r-242=0</math>. Solving for <math>r</math> gives <math>r=5+\sqrt{267}</math>. So the solution is <math>5+267=\boxed{272}</math>.
+
+~SoilMilk
+
+===Solution 6 (Trig Bash)===
+
+Let <math>\angle{AOB} = \theta</math>. So, we have <math>\sin \dfrac{\theta}{2} = \dfrac{11}{r}</math> and <math>\cos \dfrac{\theta}{2} = \dfrac{\sqrt{r^{2} - 121}}{r}</math>. So, <math>\sin \theta = 2 \sin \dfrac{\theta}{2} \cos \dfrac{\theta}{2} = \dfrac{22 \sqrt{r^{2} - 121}}{r^{2}}</math>. Let <math>H</math> be the foot of the perpendicular from <math>B</math> to <math>\overline{AD}</math>. We have <math>BF = 2 BH = 2 r \sin \theta = \dfrac{44 \sqrt{r^{2} - 121}}{r}</math>. Using Pythagorean theorem on <math>\triangle BCF</math>, to get <math>(\dfrac{44 \sqrt{r^{2} - 121}}{r})^{2} + 20^{2} = (2r)^{2}</math>, or <math>\dfrac{44^{2}r^{2} - 44^{2} \cdot 121}{r^{2}} + 20^{2} = 4r^{4}</math>. Multiplying by <math>r^{2}</math>, we get <math>44^{2} r^{2} - 44^{2} \cdot 121 + 20^{2} r^{2} = 4r^{4}</math>. Rearranging and simplifying, we get a quadratic in <math>r^{2}</math>: <cmath>r^{4} - 584r^{2} + 242^{2} = 0 \text{,}</cmath> which gives us <math>r^{2} = 292 \pm 10\sqrt{267}</math>. Because <math>r</math> is in the form <math>p + \sqrt{q}</math>, we know to choose the larger option, meaning <math>r^2 = 292 + 10\sqrt{267}</math>, so <math>p\sqrt{q} = 5\sqrt{267}</math> and <math>p^2 + q = 292</math>. By inspection, we get <math>(p, q) = (5, 267)</math>, so our answer is <math>5 + 267 = \boxed{272}</math>.
+
+~Puck_0

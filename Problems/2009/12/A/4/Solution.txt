@@ -1,0 +1,11 @@
+== Solution ==
+
+As all five options are divisible by $5$, we may not use any pennies. (This is because a penny is the only coin that is not divisible by $5$, and if we used between $1$ and $4$ pennies, the sum would not be divisible by $5$.)
+
+Hence the smallest coin we can use is a nickel, and thus the smallest amount we can get is $4\cdot 5 = 20$. Therefore the option that is not reachable is $\boxed{15}$ $\Rightarrow$ $(A)$.
+
+We can verify that we can indeed get the other ones:
+* $25 = 10+5+5+5$
+* $35 = 10+10+10+5$
+* $45 = 25+10+5+5$
+* $55 = 25+10+10+10$

@@ -1,0 +1,2 @@
+== Problem ==
+Consider a string of <math> n </math> <math> 7 </math>'s, <math> 7777\cdots77, </math> into which <math> + </math> signs are inserted to produce an arithmetic [[expression]]. For example, <math> 7+77+777+7+7=875 </math> could be obtained from eight <math> 7 </math>'s in this way. For how many values of <math> n </math> is it possible to insert <math> + </math> signs so that the resulting expression has value <math> 7000 </math>?

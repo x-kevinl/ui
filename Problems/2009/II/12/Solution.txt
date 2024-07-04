@@ -1,0 +1,24 @@
+== Solution ==
+
+Suppose that we have a valid solution with <math>k</math> pairs. As all <math>a_i</math> and <math>b_i</math> are distinct, their sum is at least <math>1+2+3+\cdots+2k=k(2k+1)</math>. On the other hand, as the sum of each pair is distinct and at most equal to <math>2009</math>, the sum of all <math>a_i</math> and <math>b_i</math> is at most <math>2009 + (2009-1) + \cdots + (2009-(k-1)) = \frac{k(4019-k)}{2}</math>.
+
+Hence we get a necessary condition on <math>k</math>: For a solution to exist, we must have <math>\frac{k(4019-k)}{2} \geq k(2k+1)</math>. As <math>k</math> is positive, this simplifies to <math>\frac{4019-k}{2} \geq 2k+1</math>, whence <math>5k\leq 4017</math>, and as <math>k</math> is an integer, we have <math>k\leq \lfloor 4017/5\rfloor = 803</math>.
+
+If we now find a solution with <math>k=803</math>, we can be sure that it is optimal. 
+
+From the proof it is clear that we don't have much "maneuvering space", if we want to construct a solution with <math>k=803</math>.
+We can try to use the <math>2k</math> smallest numbers: <math>1</math> to <math>2\cdot 803 = 1606</math>. 
+When using these numbers, the average sum will be <math>1607</math>. Hence we can try looking for a nice systematic solution that achieves all sums between <math>1607-401=1206</math> and <math>1607+401=2008</math>, inclusive.
+
+Such a solution indeed does exist, here is one:
+
+Partition the numbers <math>1</math> to <math>1606</math> into four sequences:
+* <math>A=1,3,5,7,\dots,801,803</math>
+* <math>B=1205,1204,1203,1202,\dots,805,804</math>
+* <math>C=2,4,6,8,\dots,800,802</math>
+* <math>D=1606,1605,1604,1603,\dots,1207,1206</math>
+
+Sequences <math>A</math> and <math>B</math> have <math>402</math> elements each, and the sums of their corresponding elements are <math>1206,1207,1208,1209,\dots,1606,1607</math>.
+Sequences <math>C</math> and <math>D</math> have <math>401</math> elements each, and the sums of their corresponding elements are <math>1608,1609,1610,1611,\dots,2007,2008</math>.
+
+Thus we have shown that there is a solution for <math>k=\boxed{803}</math> and that for larger <math>k</math> no solution exists.

@@ -1,0 +1,3 @@
+==Problem==
+
+In a new school <math>40</math> percent of the students are freshmen, <math>30</math> percent are sophomores, <math>20</math> percent are juniors, and <math>10</math> percent are seniors. All freshmen are required to take Latin, and <math>80</math> percent of the sophomores, <math>50</math> percent of the juniors, and <math>20</math> percent of the seniors elect to take Latin. The probability that a randomly chosen Latin student is a sophomore is <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

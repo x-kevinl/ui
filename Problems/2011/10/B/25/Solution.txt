@@ -1,0 +1,62 @@
+==Solution 1==
+ 
+By constructing the bisectors of each angle and the perpendicular radii of the incircle the triangle consists of 3 kites. 
+
+[[Image:File2011AMC10B25.png|center|260px]]
+
+Hence $AD=AF$ and $BD=BE$ and $CE=CF$. Let $AD = x, BD = y$ and $CE = z$ gives three equations:
+
+$x+y = a-1$
+
+$x+z = a$
+
+$y+z = a+1$
+
+(where $a = 2012$ for the first triangle.)
+
+Solving gives:
+
+$x= \frac{a}{2} -1$
+
+$y = \frac{a}{2}$
+
+$z = \frac{a}{2}+1$
+
+Subbing in gives that $T_2$ has sides of $1005, 1006, 1007$.
+
+$T_3$ can easily be derived from this as the sides still differ by 1 hence the above solutions still work (now with $a=1006$). All additional triangles will differ by one as the solutions above differ by one so this process can be repeated indefinitely until the side lengths no longer form a triangle.
+
+Subbing in gives $T_3$ with sides $502, 503, 504$.
+
+$T_4$ has sides $\frac{501}{2}, \frac{503}{2}, \frac{505}{2}$.
+
+$T_5$ has sides $\frac{499}{4}, \frac{503}{4}, \frac{507}{4}$.
+
+$T_6$ has sides $\frac{495}{8}, \frac{503}{8}, \frac{511}{8}$.
+
+$T_7$ has sides $\frac{487}{16}, \frac{503}{16}, \frac{519}{16}$.
+
+$T_8$ has sides $\frac{471}{32}, \frac{503}{32}, \frac{535}{32}$.
+
+$T_9$ has sides $\frac{439}{64}, \frac{503}{64}, \frac{567}{64}$.
+
+$T_{10}$ has sides $\frac{375}{128}, \frac{503}{128}, \frac{631}{128}$.
+
+$T_{11}$ would have sides $\frac{247}{256}, \frac{503}{256}, \frac{759}{256}$ but these lengths do not make a 
+triangle as 
+$$\frac{247}{256} + \frac{503}{256} < \frac{759}{256}$$
+
+
+Likewise, you could create an equation instead of listing all the triangles to $T_{11}$.
+The sides of a triangle $T_{k}$ would be 
+$$\frac{503}{2^{k-3}} - 1, \frac{503}{2^{k-3}}, \frac{503}{2^{k-3}} + 1$$
+We then have 
+$$503 - 2^{k-3} + 503 > 503 + 2^{k-3}$$
+$$1006 - 2^{k-3} > 503 + 2^{k-3}$$
+$$503 > 2^{k-2}$$
+$$9 > k-2$$
+$$k < 11$$
+Hence, the first triangle which does not exist in this sequence is $T_{11}$.
+
+Hence the perimeter is 
+$$\frac{375}{128} + \frac{503}{128} + \frac{631}{128} = \boxed{\textbf{(D)} \frac{1509}{128}}$$.

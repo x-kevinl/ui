@@ -1,0 +1,2 @@
+==Solution 1(logical solution)==
+Since 80 percent of the 500 balls are red, there are 400 red balls. Therefore, there must be 100 blue balls. For the 100 blue balls to be 25% or $\dfrac{1}{4}$ of the bag, there must be 400 balls in the bag so 100 red balls must be removed. The answer is $\boxed{\textbf{(D)}\ 100}$.

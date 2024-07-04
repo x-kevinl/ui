@@ -1,0 +1,13 @@
+== Problem 5 ==
+In the accompanying figure, the outer square <math>S</math> has side length <math>40</math>. A second square <math>S'</math> of side length <math>15</math> is constructed inside <math>S</math> with the same center as <math>S</math> and with sides parallel to those of <math>S</math>. From each midpoint of a side of <math>S</math>, segments are drawn to the two closest vertices of <math>S'</math>. The result is a four-pointed starlike figure inscribed in <math>S</math>. The star figure is cut out and then folded to form a pyramid with base <math>S'</math>. Find the volume of this pyramid.
+
+<center><asy>
+
+pair S1 = (20, 20), S2 = (-20, 20), S3 = (-20, -20), S4 = (20, -20);
+pair M1 = (S1+S2)/2, M2 = (S2+S3)/2, M3=(S3+S4)/2, M4=(S4+S1)/2;
+pair Sp1 = (7.5, 7.5), Sp2=(-7.5, 7.5), Sp3 = (-7.5, -7.5), Sp4 = (7.5, -7.5);
+
+draw(S1--S2--S3--S4--cycle);
+draw(Sp1--Sp2--Sp3--Sp4--cycle);
+draw(Sp1--M1--Sp2--M2--Sp3--M3--Sp4--M4--cycle);
+</asy></center>

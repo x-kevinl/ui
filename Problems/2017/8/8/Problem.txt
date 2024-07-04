@@ -1,0 +1,14 @@
+==Problem==
+Malcolm wants to visit Isabella after school today and knows the street where she lives but doesn't know her house number. She tells him, "My house number has two digits, and exactly three of the following four statements about it are true."
+
+(1) It is prime.
+
+(2) It is even.
+
+(3) It is divisible by 7.
+
+(4) One of its digits is 9.
+
+This information allows Malcolm to determine Isabella's house number. What is its units digit?
+
+$\textbf{(A) }4\qquad\textbf{(B) }6\qquad\textbf{(C) }7\qquad\textbf{(D) }8\qquad\textbf{(E) }9$

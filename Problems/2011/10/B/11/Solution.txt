@@ -1,0 +1,3 @@
+==Solution==
+
+Pretend you have $52$ people you want to place  in $12$ boxes, because there are $12$ months in a year. By the [[Pigeonhole Principle]], one box must have at least $\left\lceil \frac{52}{12} \right\rceil$ people $\longrightarrow \boxed{\textbf{(D)} 5}$

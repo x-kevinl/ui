@@ -1,0 +1,47 @@
+== Solution ==
+<asy>
+pathpen = linewidth(0.7);
+pen f = fontsize(10);
+size(5cm);
+pair B = (0,sqrt(85+42*sqrt(2)));
+pair A = (B.y,0);
+pair C = (0,0);
+pair P = IP(arc(B,7,180,360),arc(C,6,0,90));
+D(A--B--C--cycle);
+D(P--A);
+D(P--B);
+D(P--C);
+MP("A",D(A),plain.E,f);
+MP("B",D(B),plain.N,f);
+MP("C",D(C),plain.SW,f);
+MP("P",D(P),plain.NE,f);
+MP("\alpha",C,5*dir(80),f);
+MP("90^\circ-\alpha",C,3*dir(30),f);
+MP("s",(A+C)/2,plain.S,f);
+MP("s",(B+C)/2,plain.W,f);
+</asy>
+Using the Law of Cosines on $\triangle PBC$, we have:
+
+$$
+\begin{align*}
+PB^2&=BC^2+PC^2-2\cdot BC\cdot PC\cdot \cos(\alpha) \Rightarrow 49 = 36 + s^2 - 12s\cos(\alpha) \Rightarrow \cos(\alpha) = \dfrac{s^2-13}{12s}.
+\end{align*}
+$$
+
+Using the Law of Cosines on $\triangle PAC$, we have:
+$$
+\begin{align*}
+PA^2&=AC^2+PC^2-2\cdot AC\cdot PC\cdot \cos(90^\circ-\alpha) \Rightarrow 121 = 36 + s^2 - 12s\sin(\alpha) \Rightarrow \sin(\alpha) = \dfrac{s^2-85}{12s}.
+\end{align*}
+$$
+
+Now we use $\sin^2(\alpha) + \cos^2(\alpha) = 1$.
+$$
+\begin{align*}
+\sin^2(\alpha)+\cos^2(\alpha) = 1 &\Rightarrow \frac{s^4-26s^2+169}{144s^2} + \frac{s^4-170s^2+7225}{144s^2} = 1 \\
+&\Rightarrow s^4-170s^2+3697 = 0 \\
+&\Rightarrow s^2 = \dfrac{170 \pm 84\sqrt{2}}{2} = 85 \pm 42\sqrt2 
+\end{align*}
+$$
+
+Note that we know that we want the solution with $s^2 > 85$ since we know that $\sin(\alpha) > 0$.  Thus, $a+b=85+42=\boxed{127}$.

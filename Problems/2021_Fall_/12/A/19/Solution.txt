@@ -1,0 +1,10 @@
+==Solution 1==
+The smallest $x$ to make $\sin(x) = \sin(x^2)$ would require $x=x^2$, but since $x$ needs to be greater than $1$, these solutions are not valid.
+
+The next smallest $x$ would require $x=180-x^2$, or $x^2+x=180$. 
+
+After a bit of guessing and checking, we find that $12^2+12=156$, and $13^2+13=182$, so the solution lies between $12{ }$ and $13$, making our answer $\boxed{\textbf{(B) } 13}.$
+
+Note: One can also solve the quadratic and estimate the radical.
+
+~kingofpineapplz

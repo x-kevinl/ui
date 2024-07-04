@@ -1,0 +1,2 @@
+== Solution ==
+We know the repeating section is made of $2$ red lights and $3$ green lights. The 3rd red light would appear in the 2nd section of this pattern, and the 21st red light would appear in the 11th section. There would then be a total of $44$ lights in between the 3rd and 21st red light, translating to $45$ $6$-inch gaps. Since the question asks for the answer in feet, the answer is $\frac{45*6}{12} \rightarrow \boxed{\textbf{(E)}\ 22.5}$.

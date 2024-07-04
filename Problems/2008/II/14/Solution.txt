@@ -1,0 +1,65 @@
+== Solutions ==
+=== Solution 1 ===
+Notice that the given equation implies
+<center><math>a^2 + y^2 = b^2 + x^2 = 2(ax + by)</math></center>
+We have <math>2by \ge y^2</math>, so <math>2ax \le a^2 \implies x \le \frac {a}{2}</math>.
+
+Then, notice <math>b^2 + x^2 = a^2 + y^2 \ge a^2</math>, so <math>b^2 \ge \frac {3}{4}a^2 \implies \rho^2 \le \frac {4}{3}</math>.
+
+The solution <math>(a, b, x, y) = \left(1, \frac {\sqrt {3}}{2}, \frac {1}{2}, 0\right)</math> satisfies the equation, so <math>\rho^2 = \frac {4}{3}</math>, and the answer is <math>3 + 4 = \boxed{007}</math>.
+
+=== Solution 2 ===
+Consider the points <math>(a,y)</math> and <math>(x,b)</math>. They form an [[equilateral triangle]] with the origin. We let the side length be <math>1</math>, so <math>a = \cos{\theta}</math> and <math>b = \sin{\left(\theta + \frac {\pi}{3}\right)}</math>.
+
+Thus <math>f(\theta) = \frac {a}{b} = \frac {\cos{\theta}}{\sin{\left(\theta + \frac {\pi}{3}\right)}}</math> and we need to maximize this for <math>0 \le \theta \le \frac {\pi}{6}</math>.
+
+Taking the [[derivative]] shows that <math>-f'(\theta) = \frac {\cos{\frac {\pi}{3}}}{\sin^2{\left(\theta + \frac {\pi}{3}\right)}} \ge 0</math>, so the maximum is at the endpoint <math>\theta = 0</math>. We then get
+<center><math>\rho = \frac {\cos{0}}{\sin{\frac {\pi}{3}}} = \frac {2}{\sqrt {3}}</math></center>
+Then, <math>\rho^2 = \frac {4}{3}</math>, and the answer is <math>3+4=\boxed{007}</math>.
+
+(For a non-calculus way to maximize the function above:
+
+Let us work with degrees. Let <math>f(x)=\frac{\cos x}{\sin(x+60)}</math>. We need to maximize <math>f</math> on <math>[0,30]</math>. 
+
+Suppose <math>k</math> is an upper bound of <math>f</math> on this range; in other words, assume <math>f(x)\le k</math> for all <math>x</math> in this range. Then: <cmath>\cos x\le k\sin(x+60)=k\cdot\left(\frac{\sqrt{3}}{2}\cos x+\frac{1}{2}\sin x\right)</cmath>
+<cmath>\rightarrow 0\le \left(\frac{\sqrt{3}k}{2}-1\right)\cos x+\frac{k}{2}\sin x\rightarrow 0\le (\sqrt{3}k-2)\cos x+k\sin x</cmath>
+<cmath>\rightarrow (2-\sqrt{3}k)\cos x\le k\sin x\rightarrow \frac{2-\sqrt{3}k}{k}\le \tan x,</cmath>
+for all <math>x</math> in <math>[0,30]</math>. In particular, for <math>x=0</math>, <math>\frac{2-\sqrt{3}k}{k}</math> must be less than or equal to <math>0</math>, so <math>k\ge \frac{2}{\sqrt{3}}</math>.
+
+The least possible upper bound of <math>f</math> on this interval is <math>k=\frac{2}{\sqrt{3}}</math>. This inequality must hold by the above logic, and in fact, the inequality reaches equality when <math>x=0</math>. Thus, <math>f(x)</math> attains a maximum of <math>\frac{2}{\sqrt{3}}</math> on the interval.)
+
+=== Solution 3 ===
+Consider a [[cyclic quadrilateral]] <math>ABCD</math> with 
+<math>\angle B = \angle D = 90^{\circ}</math>, and <math>AB = y, BC = a, CD = b, AD = x</math>. Then
+<cmath>AC^2 = a^2 + y^2 = b^2 + x^2</cmath>
+From [[Ptolemy's Theorem]], <math>ax + by = AC(BD)</math>, so
+<cmath>AC^2 = (a - x)^2 + (b - y)^2 = a^2 + y^2 + b^2 + x^2 - 2(ax + by) = 2AC^2 - 2AC*BD</cmath>
+Simplifying, we have <math>BD = AC/2</math>. 
+
+Note the [[circumcircle]] of <math>ABCD</math> has [[radius]] <math>r = AC/2</math>, so <math>BD = r</math> and has an arc of <math>60^{\circ}</math>, so 
+<math>\angle C = 30^{\circ}</math>. Let <math>\angle BDC = \theta</math>.
+
+<math>\frac ab = \frac{BC}{CD} = \frac{\sin \theta}{\sin(150^{\circ} - \theta)}</math>, where both <math>\theta</math> and <math>150^{\circ} - \theta</math> are <math>\leq 90^{\circ}</math> since triangle <math>BCD</math> must be [[acute triangle|acute]]. Since <math>\sin</math> is an increasing function over <math>(0, 90^{\circ})</math>, <math>\frac{\sin \theta}{\sin(150^{\circ} - \theta)}</math> is also increasing function over <math>(60^{\circ}, 90^{\circ})</math>.
+
+<math>\frac ab</math> maximizes at <math>\theta = 90^{\circ} \Longrightarrow \frac ab</math> maximizes at <math>\frac 2{\sqrt {3}}</math>. This squared is <math>(\frac 2{\sqrt {3}})^2 = \frac4{3}</math>, and <math>4 +
+ 3 = \boxed{007}</math>.
+
+=== Note: ===
+None of the above solutions point out clearly the importance of the restriction that <math>a</math>, <math>b</math>, <math>x</math> and <math>y</math> be positive. Indeed, larger values of p are obtained when the lower vertex of the equilateral triangle in Solution 2 dips below the x-axis. Take for example <math>-15= \theta</math>. This yields <math>p = (1 + \sqrt{3})/2 > 4/3</math>
+
+=== Solution 4 ===
+The problem is looking for an intersection in the said range between parabola <math>P</math>: <math>y = \tfrac{(x-a)^2 + b^2-a^2}{2b}</math> and the hyperbola <math>H</math>: <math>y^2 = x^2 + b^2 - a^2</math>. The vertex of <math>P</math> is below the x-axis and it's x-coordinate is a, which is to the right of the vertex of the <math>H</math>, which is <math>\sqrt{a^2 - b^2}</math>. So for the intersection to exist with <math>x<a</math> and <math>y \geq 0</math>, <math>P</math> needs to cross x-axis between <math>\sqrt{a^2 - b^2}</math>, and <math>a</math>, meaning,
+<cmath> (\sqrt{a^2 - b^2}-a)^2 + b^2-a^2 \geq 0</cmath>
+Divide both side by <math>b^2</math>,
+<cmath> (\sqrt{\rho^2 - 1}-\rho)^2 + 1-\rho^2 \geq 0</cmath>
+which can be easily solved by moving <math>1-\rho^2</math> to RHS and taking square roots. Final answer <math>\rho^2 \leq \frac{4}{3}</math>
+<math>\boxed{007}</math>
+
+=== Solution 5 ===
+The given system is equivalent to the points <math>(a,y)</math> and <math>(x,b)</math> forming an equilateral triangle with the origin. WLOG let this triangle have side length <math>1</math>, so <math>x=\sqrt{1-a^2}</math>. The condition <math>x<a</math> implies <math>(x,b)</math> lies to the left of <math>(a,y)</math>, so <math>(x,b)</math> is the top vertex. Now we can compute (by complex numbers, or the sine angle addition identity) that <math>b = \frac{\sqrt{3}}{2}a + \frac{1}{2}\sqrt{1-a^2}</math>, so <math>\frac{a}{b} = \frac{a}{\frac{\sqrt{3}}{2}a + \frac{1}{2}\sqrt{1-a^2}} = \frac{1}{\frac{\sqrt{3}}{2} + \frac{1}{2a}\sqrt{1-a^2}}</math>. Minimizing this is equivalent to minimizing the denominator, which happens when <math>\sqrt{1-a^2} = 0</math> and thus <math>a=1</math>, resulting in <math>\rho = \frac{2}{\sqrt{3}}</math>, so <math>\rho^2 = \frac{4}{3}</math> and the answer is <math>\boxed{007}</math>.
+
+As a remark, expressing the condition that the triangle is equilateral purely algebraically instead of using trig eliminates the need for calculus or analyzing the behavior of sine.
+
+=== Solution 6 (Geometry and Trigonometry) ===
+Notice that by Pythagorean theorem, if we take a triangle with vertices <math>(0,0),</math> <math>(a,y),</math> and <math>(x,b)</math> forming an equilateral triangle. Now, take a rectangle with vertices <math>(0,0), (a,0), (0,b), (a,b).</math> Notice that <math>(a,y)</math> and <math>(x,b)</math> are on the sides. Let <math>\alpha</math> be the angle formed by the points <math>(0,b), (0,0), (x,b).</math> Then, we have that <cmath>\cos \alpha = \frac{b}{s},</cmath> where <math>s</math> is the side of the equilateral triangle. Also, we have that <math>30^{\circ}-\alpha</math> is the angle formed by the points <math>(a,0), (0,0), (a,y),</math> and so <cmath>\cos (30^{\circ}-\alpha) = \frac{a}{s}.</cmath> Thus, we have that 
+<cmath>\frac{a}{b} = \frac{\cos (30^{\circ}-\alpha)}{\cos \alpha}.</cmath> We see that this expression is maximized when <math>\alpha</math> is maximized (at least when <math>\alpha</math> is in the interval <math>(0,90^{\circ}),</math> which it is). Then, <math>\alpha \ge 30^{\circ},</math> so ew have that the maximum of <math>\frac{a}{b}</math> is <cmath>\frac{\cos 0}{\cos 30^{\circ}} = \frac{2}{\sqrt{3}},</cmath> and so our answer is <math>4+3 = 7.</math>

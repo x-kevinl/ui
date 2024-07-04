@@ -1,0 +1,2 @@
+== Solution ==
+We are given $c=2$. So the product of the roots is $-c = -2$ by [[Vieta's formulas]]. These also tell us that $\frac{-a}{3}$ is the average of the zeros, so $\frac{-a}3=-2 \implies a = 6$. We are also given that the sum of the coefficients is $-2$, so $1+6+b+2 = -2 \implies b=-11$. So the answer is $\fbox{A}$.

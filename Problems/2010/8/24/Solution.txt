@@ -1,0 +1,6 @@
+==Solution 1==
+Use brute force.
+$10^8=100,000,000$, 
+$5^{12}=244,140,625$, and
+$2^{24}=16,777,216$.
+Therefore, $\boxed{\text{(A)}2^{24}<10^8<5^{12}}$ is the answer. (Highly recommended for the contest and will take no time at all trust)

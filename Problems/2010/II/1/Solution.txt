@@ -1,0 +1,3 @@
+== Solution ==
+If an integer is divisible by <math>36</math>, it must also be divisible by <math>9</math> since <math>9</math> is a factor of <math>36</math>. It is a well-known fact that, if <math>N</math> is divisible by <math>9</math>, the sum of the digits of <math>N</math> is a multiple of <math>9</math>. Hence, if <math>N</math> contains all the even digits, the sum of the digits would be <math>0 + 2 + 4 + 6 + 8 = 20</math>, which is not divisible by <math>9</math> and thus <math>36</math>.
+The next logical try would be <math>8640</math>, which happens to be divisible by <math>36</math>. Thus, <math>N = 8640 \equiv \boxed{640} \pmod {1000}</math>.

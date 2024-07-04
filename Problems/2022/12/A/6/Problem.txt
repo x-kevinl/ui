@@ -1,0 +1,5 @@
+==Problem==
+
+A data set consists of $6$ (not distinct) positive integers: $1$, $7$, $5$, $2$, $5$, and $X$. The average (arithmetic mean) of the $6$ numbers equals a value in the data set. What is the sum of all possible values of $X$?
+
+$\textbf{(A) } 10 \qquad \textbf{(B) } 26 \qquad \textbf{(C) } 32 \qquad \textbf{(D) } 36 \qquad \textbf{(E) } 40$

@@ -1,0 +1,9 @@
+== Solution 1 ==
+
+[[File:circle-triangle problem.PNG]]
+
+We can draw a circle and a triangle, such that each side is tangent to the circle. This means that each side would intersect the circle at one point.
+
+You would then have $ 3 $ points, but what if the circle was bigger? Then, each side would intersect the circle at 2 points. 
+
+Therefore, $ 2 \times 3 = \boxed{\textbf{(E) }6} $.

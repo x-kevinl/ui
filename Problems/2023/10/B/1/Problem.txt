@@ -1,0 +1,4 @@
+==Problem==
+Mrs. Jones is pouring orange juice into four identical glasses for her four sons. She fills the first three glasses completely but runs out of juice when the fourth glass is only $\frac{1}{3}$ full. What fraction of a glass must Mrs. Jones pour from each of the first three glasses into the fourth glass so that all four glasses will have the same amount of juice?
+
+$\textbf{(A) } \frac{1}{12} \qquad\textbf{(B) } \frac{1}{4} \qquad\textbf{(C) } \frac{1}{6} \qquad\textbf{(D) } \frac{1}{8} \qquad\textbf{(E) } \frac{2}{9}$

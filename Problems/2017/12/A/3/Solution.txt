@@ -1,0 +1,2 @@
+==Solution==
+Taking the contrapositive of the statement "if he got all of them right, he got an A" yields "if he didn't get an A, he didn't get all of them right", yielding the answer $\boxed{\textbf{(B)}}$.

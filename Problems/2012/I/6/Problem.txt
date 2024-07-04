@@ -1,0 +1,2 @@
+==Problem ==
+The complex numbers <math>z</math> and <math>w</math> satisfy <math>z^{13} = w,</math> <math>w^{11} = z,</math> and the imaginary part of <math>z</math> is <math>\sin{\frac{m\pi}{n}}</math>, for relatively prime positive integers <math>m</math> and <math>n</math> with <math>m<n.</math> Find <math>n.</math>

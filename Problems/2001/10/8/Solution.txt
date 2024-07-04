@@ -1,0 +1,7 @@
+== Solution ==
+
+We need to find the least common multiple of the four numbers given. 
+
+$\textrm{LCM}(3, 4, 6, 7) = \textrm{LCM}(3, 2^2, 2 \cdot 3, 7) = 2^2 \cdot 3 \cdot 7 = 84$
+
+So the answer is $\boxed{\textbf{(B) } 84} $.

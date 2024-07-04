@@ -1,0 +1,3 @@
+== Solution ==
+
+Using the formulas of circles, $ C=2 \pi r $ and $ A= \pi r^2 $, we find that circle $ Y $ has a radius of $ 4 $ and circle $ Z $ has a radius of $ 3 $. Also, circle X has a radius of $ \pi $. Thus, the order from smallest to largest radius is $ \boxed{\textbf{(B)}\ Z, X, Y} $.

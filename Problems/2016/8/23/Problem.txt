@@ -1,0 +1,5 @@
+==Problem==
+
+Two congruent circles centered at points $A$ and $B$ each pass through the other circle's center. The line containing both $A$ and $B$ is extended to intersect the circles at points $C$ and $D$. The circles intersect at two points, one of which is $E$. What is the degree measure of $\angle CED$?
+
+$\textbf{(A) }90\qquad\textbf{(B) }105\qquad\textbf{(C) }120\qquad\textbf{(D) }135\qquad \textbf{(E) }150$

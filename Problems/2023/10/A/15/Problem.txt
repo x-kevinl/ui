@@ -1,0 +1,15 @@
+==Problem==
+An even number of circles are nested, starting with a radius of $1$ and increasing by $1$ each time, all sharing a common point. The region between every other circle is shaded, starting with the region inside the circle of radius $2$ but outside the circle of radius $1.$ An example showing $8$ circles is displayed below. What is the least number of circles needed to make the total shaded area at least $2023\pi$?
+
+<asy>
+filldraw(circle((0,0),8),gray);
+filldraw(circle((-1,0),7),white);
+filldraw(circle((-2,0),6),gray);
+filldraw(circle((-3,0),5),white);
+filldraw(circle((-4,0),4),gray);
+filldraw(circle((-5,0),3),white);
+filldraw(circle((-6,0),2),gray);
+filldraw(circle((-7,0),1),white);
+</asy>
+
+$\textbf{(A) } 46 \qquad \textbf{(B) } 48 \qquad \textbf{(C) } 56 \qquad \textbf{(D) } 60 \qquad \textbf{(E) } 64$

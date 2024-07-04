@@ -1,0 +1,32 @@
+==Solution 1==
+Notice repeating decimals can be written as the following:
+
+<math>0.\overline{ab}=\frac{10a+b}{99}</math>
+
+<math>0.\overline{abc}=\frac{100a+10b+c}{999}</math>
+
+where a,b,c are the digits. Now we plug this back into the original fraction:
+
+<math>\frac{10a+b}{99}+\frac{100a+10b+c}{999}=\frac{33}{37}</math>
+
+Multiply both sides by <math>999*99.</math> This helps simplify the right side as well because <math>999=111*9=37*3*9</math>:
+
+<math>9990a+999b+9900a+990b+99c=33/37*37*3*9*99=33*3*9*99</math>
+
+Dividing both sides by <math>9</math> and simplifying gives:
+
+<math>2210a+221b+11c=99^2=9801</math>
+
+At this point, seeing the <math>221</math> factor common to both a and b is crucial to simplify. This is because taking <math>mod 221</math> to both sides results in:
+
+<math>2210a+221b+11c  \equiv 9801 \mod 221 \iff 11c  \equiv 77 \mod 221</math>
+
+Notice that we arrived to the result <math>9801 \equiv 77 \mod 221</math> by simply dividing <math>9801</math> by <math>221</math> and seeing <math>9801=44*221+77.</math> Okay, now it's pretty clear to divide both sides by <math>11</math> in the modular equation but we have to worry about <math>221</math> being multiple of <math>11.</math> Well, <math>220</math> is a multiple of <math>11</math> so clearly, <math>221</math> couldn't be. Also, <math>221=13*17.</math> Now finally we simplify and get:
+
+<math>c \equiv 7 \mod 221</math>
+
+But we know <math>c</math> is between <math>0</math> and <math>9</math> because it is a digit, so <math>c</math> must be <math>7.</math> Now it is straightforward from here to find <math>a</math> and <math>b</math>:
+
+<math>2210a+221b+11(7)=9801 \iff 221(10a+b)=9724 \iff 10a+b=44</math>
+
+and since a and b are both between <math>0</math> and <math>9</math>, we have <math>a=b=4</math>. Finally we have the <math>3</math> digit integer <math>\boxed{447}</math>

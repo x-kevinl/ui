@@ -1,0 +1,9 @@
+==Problem==
+Mahdi practices exactly one sport each day of the week. He runs three days a week but never on two consecutive days. On Monday he plays basketball and two days later golf. He swims and plays tennis, but he never plays tennis the day after running or swimming. Which day of the week does Mahdi swim?
+
+$\textbf{(A) } \text{Sunday}
+\qquad\textbf{(B) } \text{Tuesday}
+\qquad\textbf{(C) } \text{Thursday}
+\qquad\textbf{(D) } \text{Friday}
+\qquad\textbf{(E) } \text{Saturday}
+$

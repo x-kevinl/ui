@@ -1,0 +1,11 @@
+==Problem==
+
+A list of positive integers has the following properties:
+
+<math>\bullet</math> The sum of the items in the list is <math>30</math>.
+
+<math>\bullet</math> The unique mode of the list is <math>9</math>.
+
+<math>\bullet</math> The median of the list is a positive integer that does not appear in the list itself.
+
+Find the sum of the squares of all the items in the list.

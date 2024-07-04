@@ -1,0 +1,6 @@
+==Solution 1 (BRUTE FORCE)==
+How many values could be on the first day? Only $2$ dollars. The second day, you can either add $3$ dollars, or double, so you can have $5$ dollars, or $4$. For each of these values, you have $2$ values for each. For $5$ dollars, you have $10$ dollars or $8$, and for $4$ dollars, you have $8$ dollars or \$$7$. Now, you have $2$ values for each of these. For $10$ dollars, you have $13$ dollars or $20$, for $8$ dollars, you have $16$ dollars or $11$, for $8$ dollars, you have $16$ dollars or $11$, and for $7$ dollars, you have $14$ dollars or $10$.
+
+On the final day, there are 11, 11, 16, and 16 repeating, leaving you with $8-2 = \boxed{\textbf{(D)\ 6}}$ different values.
+ 
+~ cxsmi (minor formatting edits)

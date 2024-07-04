@@ -1,0 +1,2 @@
+== Problem ==
+A [[circle]] is [[inscribe]]d in [[quadrilateral]] <math>ABCD</math>, [[tangent]] to <math>\overline{AB}</math> at <math>P</math> and to <math>\overline{CD}</math> at <math>Q</math>. Given that <math>AP=19</math>, <math>PB=26</math>, <math>CQ=37</math>, and <math>QD=23</math>, find the [[Perfect square|square]] of the [[radius]] of the circle.

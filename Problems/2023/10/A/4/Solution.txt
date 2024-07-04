@@ -1,0 +1,6 @@
+==Solution 1==
+Let's use the triangle inequality. We know that for a triangle, the sum of the 2 shorter sides must always be longer than the longest side. This is because if the longest side were to be as long as the sum of the other sides, or longer, we would only have a line.
+
+Similarly, for a convex quadrilateral, the sum of the shortest 3 sides must always be longer than the longest side. Thus, the answer is $\frac{26}{2}-1=13-1=\boxed {\textbf{(D) 12}}$
+
+~zhenghua

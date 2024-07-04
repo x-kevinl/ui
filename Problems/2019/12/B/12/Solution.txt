@@ -1,0 +1,21 @@
+== Solutions ==
+=== Solution 1 ===
+Firstly, note by the Pythagorean Theorem in $\triangle ABC$ that $AC = \sqrt{2}$. Now, the equal perimeter condition means that $BC + BA = 2 = CD + DA$, since side $AC$ is common to both triangles and thus can be discounted. This relationship, in combination with the Pythagorean Theorem in $\triangle ACD$, gives $AC^2+CD^2=\left(\sqrt{2}\right)^2+\left(2-DA\right)^2=DA^2$. Hence $2 + 4 - 4DA + DA^2 = DA^2$, so $DA = \frac{3}{2}$, and thus $CD = \frac{1}{2}$.
+
+Next, since $\angle BAC = 45^{\circ}$, $\sin{\left(\angle BAC\right)} = \cos{\left(\angle BAC\right)} = \frac{1}{\sqrt{2}}$. Using the lengths found above, $\sin{\left(\angle CAD\right)} = \frac{\left(\frac{1}{2}\right)}{\left(\frac{3}{2}\right)} = \frac{1}{3}$, and $\cos{\left(\angle CAD\right)} = \frac{\sqrt{2}}{\left(\frac{3}{2}\right)} = \frac{2 \sqrt{2}}{3}$.
+
+Thus, by the addition formulae for $\sin$ and $\cos$, we have
+$$\begin{split}\sin{\left(\angle BAD\right)}&=\sin{\left(\angle BAC + \angle CAD\right)}\\&=\sin{\left(\angle BAC\right)}\cos{\left(\angle CAD\right)}+\cos{\left(\angle BAC\right)}\sin{\left(\angle CAD\right)}\\&=\frac{1}{\sqrt{2}}\cdot\frac{2 \sqrt{2}}{3} + \frac{1}{\sqrt{2}}\cdot\frac{1}{3} \\ &= \frac{2 \sqrt{2} + 1}{3 \sqrt{2}}\end{split}$$
+and
+$$\begin{split}\cos{\left(\angle BAD\right)}&=\cos{\left(\angle BAC + \angle CAD\right)}\\&=\cos{\left(\angle BAC\right)}\cos{\left(\angle CAD\right)}-\sin{\left(\angle BAC\right)}\sin{\left(\angle CAD\right)}\\&=\frac{1}{\sqrt{2}}\cdot\frac{2 \sqrt{2}}{3} - \frac{1}{\sqrt{2}}\cdot\frac{1}{3} \\ &= \frac{2 \sqrt{2} - 1}{3 \sqrt{2}}\end{split}$$
+
+Hence, by the double angle formula for $\sin$, $\sin{\left(2\angle BAD\right)} = 2\sin{\left(\angle BAD\right)}\cos{\left(\angle BAD\right)} = \frac{2(8-1)}{18} = \boxed{\textbf{(D) } \frac{7}{9}}$.
+
+=== Solution 2 (coordinate geometry) ===
+We use the Pythagorean Theorem, as in Solution 1, to find $AD=\frac{3}{2}$ and $CD=\frac{1}{2}$. Now notice that the angle between $CD$ and the vertical (i.e. the $y$-axis) is $45^{\circ}$ &ndash; to see this, drop a perpendicular from $D$ to $BA$ which meets $BA$ at $E$, and use the fact that the angle sum of quadrilateral $CBED$ must be $360^{\circ}$. Anyway, this implies that the line $CD$ has slope $1$, so since $C$ is the point $(0,1)$ and the length of $CD$ is $\frac{1}{2}$, $D$ has coordinates $\left(0+\frac{\left(\frac{1}{2}\right)}{\sqrt{2}}, 1+\frac{\left(\frac{1}{2}\right)}{\sqrt{2}}\right) = \left(\frac{1}{2\sqrt{2}}, 1+\frac{1}{2\sqrt{2}}\right)$. 
+
+Thus we have the lengths $DE=1+\frac{1}{2\sqrt{2}}$ (it is just the $y$-coordinate) and $AE = 1-\frac{1}{2\sqrt{2}}$. By simple trigonometry in $\triangle DAE$, we now find $$\sin{\left(\angle BAD\right)} = \frac{\left(1+\frac{1}{2\sqrt{2}}\right)}{\left(\frac{3}{2}\right)} = \frac{\left(2+\frac{1}{\sqrt{2}}\right)}{3} = \frac{2\sqrt{2}+1}{3\sqrt{2}}$$ and $$\cos{\left(\angle BAD\right)} = \frac{\left(1-\frac{1}{2\sqrt{2}}\right)}{\left(\frac{3}{2}\right)} = \frac{\left(2-\frac{1}{\sqrt{2}}\right)}{3} = \frac{2\sqrt{2}-1}{3\sqrt{2}}$$ just as before. We can then use the double angle formula (as in Solution 1) to deduce $\sin{\left(2\angle BAD\right)} = \boxed{\textbf{(D) } \frac{7}{9}}$.
+
+=== Solution 3 (easier finish to Solution 1) ===
+Again, use Pythagorean Theorem to find that $AD=\frac{3}{2}$ and $CD=\frac{1}{2}$. Let $\angle DAC=\theta$. Note that we want $$\sin{(90+2\theta)}=\cos{2\theta}$$
+which is easy to compute: $$\cos{\theta}=\frac{2\sqrt{2}}{3}\implies \cos{2\theta}=2(\frac{8}{9})-1= \boxed{\textbf{(D) } \frac{7}{9}}$$

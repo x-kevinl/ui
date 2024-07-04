@@ -1,0 +1,8 @@
+==Solution==
+Using the radical axis theorem, the lines <math>\overline{AD}, \overline{BC}, \overline{XY}</math> are all concurrent at one point, call it <math>F</math>. Now recall by Miquel's theorem in <math>\triangle FDC</math> the fact that quadrilaterals <math>DAXY</math> and <math>CBXY</math> are cyclic implies <math>FAXB</math> is cyclic as well. Denote <math>\omega_{3}\equiv(FAXB)</math> and <math>Z\equiv\ell\cap\overline{FXY}</math>.
+
+Since point <math>Z</math> lies on the radical axis of <math>\omega_{1},\omega_{2}</math>, it has equal power with respect to both circles, thus <cmath>AZ^{2}=\text{Pow}_{\omega_{1}}(Z)=ZX\cdot ZY=\text{Pow}_{\omega_{2}}(Z)=ZB^{2}\implies AZ=ZB.</cmath> Also, notice that <cmath>AZ\cdot ZB=\text{Pow}_{\omega_{3}}(Z)=ZX\cdot ZF\implies ZY=ZF.</cmath> The diagonals of quadrilateral <math>FAYB</math> bisect each other at <math>Z</math>, so we conclude that <math>FAYB</math> is a parallelogram. Let <math>u:=ZX</math>, so that <math>ZY=ZF=u+47</math>.
+
+Because <math>FAYB</math> is a parallelogram and quadrilaterals <math>DAXY, CBXY</math> are cyclic, <cmath>\angle DFX=\angle AFX=\angle BYX=\angle BCX=\angle FCX~~\text{and}~~\angle XDF=\angle XDA=\angle XYA=\angle XFB=\angle XFC</cmath> so we have the pair of similar triangles <math>\triangle DFX~\sim~\triangle FCX</math>. Thus <cmath>\dfrac{37}{2u+47}=\dfrac{2u+47}{67}\implies 2u+47=\sqrt{37\cdot 67}\implies u=\dfrac{1}{2}\left(\sqrt{37\cdot 67}-47\right).</cmath> Now compute <cmath>AB^{2}=4AZ^{2}=4\cdot ZX\cdot ZY=4u(u+47)=37\cdot 67-47^{2}=\textbf{270}.</cmath>
+
+[[File:AIME 2016-I15 Geogebra Diagram.png|840px]]

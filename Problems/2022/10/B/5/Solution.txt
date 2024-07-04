@@ -1,0 +1,11 @@
+==Solution 1 (Difference of Squares)==
+We apply the difference of squares to the denominator, and then regroup factors:
+$$\begin{align*}
+\frac{\left(1+\frac13\right)\left(1+\frac15\right)\left(1+\frac17\right)}{\sqrt{\left(1-\frac{1}{3^2}\right)\left(1-\frac{1}{5^2}\right)\left(1-\frac{1}{7^2}\right)}} &= \frac{\left(1+\frac13\right)\left(1+\frac15\right)\left(1+\frac17\right)}{\sqrt{\left(1+\frac13\right)\left(1+\frac15\right)\left(1+\frac17\right)}\cdot\sqrt{\left(1-\frac13\right)\left(1-\frac15\right)\left(1-\frac17\right)}} \\
+&= \frac{\sqrt{\left(1+\frac13\right)\left(1+\frac15\right)\left(1+\frac17\right)}}{\sqrt{\left(1-\frac13\right)\left(1-\frac15\right)\left(1-\frac17\right)}} \\
+&= \frac{\sqrt{\frac43\cdot\frac65\cdot\frac87}}{\sqrt{\frac23\cdot\frac45\cdot\frac67}} \\
+&= \frac{\sqrt{4\cdot6\cdot8}}{\sqrt{2\cdot4\cdot6}} \\
+&= \frac{\sqrt8}{\sqrt2} \\
+&= \boxed{\textbf{(B)}\ 2}.
+\end{align*}$$
+~MRENTHUSIASM

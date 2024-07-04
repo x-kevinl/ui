@@ -1,0 +1,10 @@
+==Solution 1==
+Let the number be $10a+b$ where $a$ and $b$ are the tens and units digits of the number. 
+
+So $(10a+b)-(a+b)=9a$ must have a units digit of $6$ 
+
+This is only possible if $9a=36$, so $a=4$ is the only way this can be true. 
+
+So the numbers that have this property are $40, 41, 42, 43, 44, 45, 46, 47, 48, 49$. 
+
+Therefore the answer is $\boxed{\textbf{(D) }10}$

@@ -1,0 +1,2 @@
+== Solution ==
+Let $D$ be the foot of the altitude to $\overline BC$.  Then $BD = \sqrt {13^2 - 12^2} = 5$ and $DC = \sqrt {15^2 - 12^2} = 9$.  Thus $BC = BD + BC = 5 + 9 = 14$ or  assume that the triangle is obtuse at angle $B$ then $BC = DC - BD = 9 -5 = 4$.  The sum of the two possible values is $14 + 4 = \boxed{18}$.  The answer is $\mathrm{(D)}$.

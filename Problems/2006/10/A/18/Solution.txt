@@ -1,0 +1,9 @@
+== Solution ==
+There are $10\cdot10\cdot10\cdot10 = 10^4$ ways to choose 4 digits.
+
+There are $26 \cdot 26 = 26^2$ ways to choose the 2 letters. 
+
+For the letters to be next to each other, they can be the 1st and 2nd, 2nd and 3rd, 3rd and 4th, 4th and 5th, or the 5th and 6th characters. 
+So, there are $6 - 1 = 5$ choices for the position of the letters.
+
+Therefore, the number of distinct license plates is  $ 5\times 10^4\times 26^2 \Longrightarrow \boxed{\mathrm{C}}$.

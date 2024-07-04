@@ -1,0 +1,9 @@
+== Problem ==
+
+To complete the grid below, each of the digits 1 through 4 must occur once
+in each row and once in each column. What number will occupy the lower
+right-hand square?
+
+$$ \begin{tabular}{|c|c|c|c|}\hline 1 & & 2 &\\ \hline 2 & 3 & &\\ \hline & &&4\\ \hline & &&\\ \hline\end{tabular} $$
+
+$\mathrm{(A)}\ 1 \qquad \mathrm{(B)}\ 2 \qquad \mathrm{(C)}\ 3 \qquad \mathrm{(D)}\ 4 \qquad\textbf{(E)}\ \text{cannot be determined}$

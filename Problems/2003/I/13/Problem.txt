@@ -1,0 +1,2 @@
+== Problem ==
+Let <math> N </math> be the number of positive integers that are less than or equal to <math>2003</math> and whose base-<math>2</math> representation has more <math>1</math>'s than <math>0</math>'s. Find the [[remainder]] when <math> N </math> is divided by <math>1000</math>.

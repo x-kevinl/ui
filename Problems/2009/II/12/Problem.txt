@@ -1,0 +1,2 @@
+== Problem ==
+From the set of integers <math>\{1,2,3,\dots,2009\}</math>, choose <math>k</math> pairs <math>\{a_i,b_i\}</math> with <math>a_i<b_i</math> so that no two pairs have a common element. Suppose that all the sums <math>a_i+b_i</math> are distinct and less than or equal to <math>2009</math>. Find the maximum possible value of <math>k</math>.

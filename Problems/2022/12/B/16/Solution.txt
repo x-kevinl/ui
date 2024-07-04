@@ -1,0 +1,11 @@
+== Solution ==
+
+Take the base-two logarithm of both equations to get
+$$y\log_2 x = 64\quad\text{and}\quad (\log_2 y)(\log_2\log_2 x) = 7.$$
+Now taking the base-two logarithm of the first equation again yields
+$$\log_2 y + \log_2\log_2 x = 6.$$
+It follows that the real numbers $r:=\log_2 y$ and $s:=\log_2\log_2 x$ satisfy $r+s=6$ and $rs = 7$. Solving this system yields
+$$\{\log_2 y,\log_2\log_2 x\}\in\{3-\sqrt 2, 3 + \sqrt 2\}.$$
+Thus the largest possible value of $\log_2 y$ is $3+\sqrt 2 \implies \boxed{\textbf {(C)}}$.
+
+cr. djmathman

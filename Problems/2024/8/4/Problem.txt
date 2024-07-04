@@ -1,0 +1,4 @@
+==Problem==
+When Yunji added all the integers from $1$ to $9$, she mistakenly left out a number. Her incorrect sum turned out to be a square number. What number did Yunji leave out?
+
+$\textbf{(A) } 5\qquad\textbf{(B) } 6\qquad\textbf{(C) } 7\qquad\textbf{(D) } 8\qquad\textbf{(E) } 9$

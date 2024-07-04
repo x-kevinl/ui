@@ -1,0 +1,5 @@
+==Solution 1==
+
+Note that common factors (from $3$ to $20,$ inclusive) of the numerator and the denominator cancel. Therefore, the original expression becomes $$\frac{1}{\cancel{3}}\cdot\frac{2}{\cancel{4}}\cdot\frac{\cancel{3}}{\cancel{5}}\cdots\frac{\cancel{18}}{\cancel{20}}\cdot\frac{\cancel{19}}{21}\cdot\frac{\cancel{20}}{22}=\frac{1\cdot2}{21\cdot22}=\frac{1}{21\cdot11}=\boxed{\textbf{(B) } \frac{1}{231}}.$$
+
+~MRENTHUSIASM

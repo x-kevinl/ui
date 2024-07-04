@@ -1,0 +1,22 @@
+==Solution 1==
+A [[quadratic equation]] has exactly one [[root]] if and only if it is a [[perfect square]].  So set
+
+$4x^2 + ax + 8x + 9 = (mx + n)^2$
+
+$4x^2 + ax + 8x + 9 = m^2x^2 + 2mnx + n^2$
+
+Two [[polynomial]]s are equal only if their [[coefficient]]s are equal, so we must have
+
+$m^2 = 4, n^2 = 9$
+
+$m = \pm 2, n = \pm 3$
+
+$a + 8= 2mn = \pm 2\cdot 2\cdot 3 = \pm 12$
+
+$a = 4$ or $a = -20$.
+
+So the desired sum is $ (4)+(-20)=\boxed{\textbf{(A)}-16} $
+
+
+
+Alternatively, note that whatever the two values of $a$ are, they must lead to equations of the form $px^2 + qx + r =0$ and $px^2 - qx + r = 0$.  So the two choices of $a$ must make $a_1 + 8 = q$ and $a_2 + 8 = -q$ so $a_1 + a_2 + 16 = 0$ and $a_1 + a_2 =\boxed{\textbf{(A)}-16} $

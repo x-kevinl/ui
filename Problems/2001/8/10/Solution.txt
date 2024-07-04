@@ -1,0 +1,3 @@
+==Solution==
+
+$ 2000\% $ is equivalent to $ 20\times100\% $. Therefore, $ 2000\% $ of a number is the same as $ 20 $ times that number. $ 4 $ quarters is $ 1 $ dollar, so Bryden will get $ 20\times1={20} $ dollars, $ \boxed{\text{A}} $.

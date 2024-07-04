@@ -1,0 +1,16 @@
+== Solution ==
+Let $R_i$ and $B_j$ designate the red card numbered $i$ and the blue card numbered $j$, respectively. 
+
+$B_5$ is the only blue card that $R_5$ evenly divides, so $R_5$ must be at one end of the stack and $B_5$ must be the card next to it. 
+
+$R_1$ is the only other red card that evenly divides $B_5$, so $R_1$ must be the other card next to $B_5$. 
+
+$B_4$ is the only blue card that $R_4$ evenly divides, so $R_4$ must be at one end of the stack and $B_4$ must be the card next to it. 
+
+$R_2$ is the only other red card that evenly divides $B_4$, so $R_2$ must be the other card next to $B_4$. 
+
+$R_2$ doesn't evenly divide $B_3$, so $B_3$ must be next to $R_1$, $B_6$ must be next to $R_2$, and $R_3$ must be in the middle. 
+
+This yields the following arrangement from top to bottom: $\{R_5,B_5,R_1,B_3,R_3,B_6,R_2,B_4,R_4\}$
+
+Therefore, the sum of the numbers on the middle three cards is $3+3+6=\boxed{\mathrm{(E)}\ 12}$.

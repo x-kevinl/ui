@@ -1,0 +1,10 @@
+==Solution 1==
+
+Let $k$ be the number of knights: then the number of red knights is $\frac{2}{7}k$ and the number of blue knights is $\frac{5}{7}k$.
+
+Let $b$ be the fraction of blue knights that are magical - then $2b$ is the fraction of red knights that are magical. Thus we can write the equation $b \cdot \frac{5}{7}k + 2b \cdot \frac{2}{7}k = \frac{k}{6}\implies \frac{5}{7}b + \frac{4}{7}b = \frac{1}{6}$
+$\implies \frac{9}{7}b = \frac{1}{6} \implies b=\frac{7}{54}$
+
+We want to find the fraction of red knights that are magical, which is $2b = \frac{7}{27} = \boxed{\textbf{(C) }\frac{7}{27}}$
+
+~KingRavi

@@ -1,0 +1,39 @@
+==Solution 1 (Recursion)==
+Let $f(n)$ be the number of valid sequences of length $n$ (satisfying the conditions given in the problem). 
+
+We know our valid sequence must end in a $0$. Then, since we cannot have two consecutive $0$s, it must end in a $10$. Now, we only have two cases: it ends with $010$, or it ends with $110$ which is equivalent to $0110$. Thus, our sequence must be of the forms $0\ldots010$ or $0\ldots0110$. In the first case, the first $n-2$ digits are equivalent to a valid sequence of length $n-2$. In the second, the first $n-3$ digits are equivalent to a valid sequence of length $n-3$. Therefore, it must be the case that $f(n) = f(n-3) + f(n-2)$, with $n \ge 3$ (because otherwise, the sequence would contain only 0s and this is not allowed due to the given conditions). 
+
+It is easy to find $f(3) = 1$ since the only possible valid sequence is $010$. $f(4)=1$ since the only possible valid sequence is $0110$. $f(5)=1$ since the only possible valid sequence is $01010$. 
+
+The recursive sequence is then as follows:
+
+$$f(3)=1$$
+$$f(4)=1$$
+$$f(5) = 1$$
+$$f(6) = 1 + 1 = 2$$ 
+$$f(7) = 1 + 1 = 2$$
+$$f(8) = 1 + 2 = 3$$ 
+$$f(9) = 2 + 2 = 4$$
+$$f(10) = 2 + 3 = 5$$
+$$f(11) = 3 + 4 = 7$$ 
+$$f(12) = 4 + 5 = 9$$ 
+$$f(13) = 5 + 7 = 12$$
+$$f(14) = 7 + 9 = 16$$ 
+$$f(15) = 9 + 12 = 21$$
+$$f(16) = 12 + 16 = 28$$
+$$f(17) = 16 + 21 = 37$$ 
+$$f(18) = 21 + 28 = 49$$
+$$f(19) = 28 + 37 = 65$$
+
+So, our answer is $\boxed{\text{\bf{(C)}  } 65}$.
+
+
+'''Contributors:'''
+
+~Original Author
+
+~solasky
+
+~BakedPotato66
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Crazyvideogamez CrazyVideoGamez]

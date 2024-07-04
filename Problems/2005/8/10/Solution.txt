@@ -1,0 +1,2 @@
+==Solution 1==
+We can use the equation $d=rt$ where $d$ is the distance, $r$ is the rate, and $t$ is the time. The distances he ran and walked are equal, so $r_rt_r=r_wt_w$, where $r_r$ is the rate at which he ran, $t_r$ is the time for which he ran, $r_w$ is the rate at which he walked, and $t_w$ is the time for which he walked. Because he runs three times faster than he walks, $r_r=3r_w$. We want to find the time he ran, $t_r = \frac{r_wt_w}{t_r} = \frac{(r_w)(6)}{3r_w} = 2$ minutes. He traveled for a total of $6+2=\boxed{\textbf{(D)}\ 8}$ minutes.

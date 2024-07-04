@@ -1,0 +1,6 @@
+== Solution 1==
+
+If $A$ and $B$ meet, their paths connect $(0,0)$ and $(5,7).$ There are $\binom{12}{5}=792$ such paths. Since the path is $12$ units long, they must meet after each travels $6$ units, so the probability is $\frac{792}{2^{6}\cdot 2^{6}} \approx 0.20 \Rightarrow \boxed{C}$.
+
+Note: The number of paths, $\binom{12}{5}$ comes from the fact that there must be 5 ups/downs and 7 lefts/rights in one path. WLOG, for Object A, the number of paths would be the amount of combinations of the sequence of letters with 5 "U"s 7 "R"s (i.e. UUUUURRRRRRR). This is $\frac{12!}{5!7!}$, which is equivalent to $\binom{12}{5}$.
+~bearjere

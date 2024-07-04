@@ -1,0 +1,2 @@
+== Problem ==
+A cylindrical log has diameter <math>12</math> inches. A wedge is cut from the log by making two planar cuts that go entirely through the log. The first is perpendicular to the axis of the cylinder, and the plane of the second cut forms a <math>45^\circ</math> angle with the plane of the first cut. The intersection of these two planes has exactly one point in common with the log. The number of cubic inches in the wedge can be expressed as <math>n\pi</math>, where n is a positive integer. Find <math>n</math>.

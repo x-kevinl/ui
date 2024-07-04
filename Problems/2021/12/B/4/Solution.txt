@@ -1,0 +1,4 @@
+==Solution 1 (One Variable)==
+Let there be $3x$ students in the morning class and $4x$ students in the afternoon class. The total number of students is $3x + 4x = 7x$. The average is $\frac{3x\cdot84 + 4x\cdot70}{7x}=76$. Therefore, the answer is $\boxed{\textbf{(C)} ~76}$.
+
+~ {TSun} ~

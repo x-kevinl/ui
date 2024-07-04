@@ -1,0 +1,4 @@
+== Problem ==
+An [[equilateral triangle]] is inscribed in the [[ellipse]] whose equation is <math>x^2+4y^2=4</math>. One vertex of the triangle is <math>(0,1)</math>, one altitude is contained in the y-axis, and the square of the length of each side is <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.
+
+__TOC__

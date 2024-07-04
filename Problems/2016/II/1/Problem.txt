@@ -1,0 +1,2 @@
+==Problem==
+Initially Alex, Betty, and Charlie had a total of <math>444</math> peanuts. Charlie had the most peanuts, and Alex had the least. The three numbers of peanuts that each person had formed a geometric progression. Alex eats <math>5</math> of his peanuts, Betty eats <math>9</math> of her peanuts, and Charlie eats <math>25</math> of his peanuts. Now the three numbers of peanuts each person has forms an arithmetic progression. Find the number of peanuts Alex had initially.

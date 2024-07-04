@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>S = \{2^0,2^1,2^2,\ldots,2^{10}\}</math>. Consider all possible positive differences of pairs of elements of <math>S</math>. Let <math>N</math> be the sum of all of these differences. Find the remainder when <math>N</math> is divided by <math>1000</math>.

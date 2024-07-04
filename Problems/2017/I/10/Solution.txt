@@ -1,0 +1,158 @@
+==Solution 1 (Coordinates, Geometry)==
+
+This problem is pretty obvious how to bash, and indeed many of the solutions below explain how to do that. But there’s no fun in that, and let’s see if we can come up with a slicker solution that will be more enjoyable.
+
+Instead of thinking of complex numbers as purely a real plus a constant times <math>i</math>, let’s graph them and hope that the geometric visualization adds insight to the problem.
+
+<asy>
+
+size(1200,300); 
+
+real xMin = 0;
+real xMax = 100;
+real yMin = 0;
+real yMax = 120;
+
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$R$",(xMax,0),(2,0));
+label("$Im$",(0,yMax),(0,2));
+
+pair A,B,C,D;
+A = (18,83); B = (18,39); C = (78,99); D = (56, 104.908997);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+
+label("$Z_1$", A, N); 
+label("$Z_2$", B, S);
+label("$Z_3$", C, N); 
+label("$Z$", D, N);
+
+
+
+
+</asy>
+
+Note that when we subtract two vectors, the geometric result is the line segment between the two endpoints of the vectors. Thus we can fill in <math>z_3 - z_1, z_2 - z_1, z-z_2 </math> and <math>z-z_3</math> as so;
+
+<asy>
+
+size(1200,300); 
+
+real xMin = 0;
+real xMax = 100;
+real yMin = 0;
+real yMax = 120;
+
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$R$",(xMax,0),(2,0));
+label("$Im$",(0,yMax),(0,2));
+
+pair A,B,C,D;
+A = (18,83); B = (18,39); C = (78,99); D = (56, 104.908997);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+
+draw(A--C);
+
+draw(A--B);
+
+draw(D--C);
+
+draw(D--B);
+
+label("$Z_1$", A, N); 
+label("$Z_2$", B, S);
+label("$Z_3$", C, N); 
+label("$Z$", D, N);
+
+</asy>
+
+
+<math>\angle Z_3Z_1Z_2</math> looks similar to <math>\angle Z_3ZZ_2</math>, so let’s try to prove that they are congruent. We can show this in two ways;
+
+===Solution 1.1===
+
+Let’s look back at the information given to us. The problem states that <math>\frac{z_3-z_1}{z_2-z_1}~\cdot~\frac{z-z_2}{z-z_3}</math> is a real number. Let the real number be some constant, <math>c</math>. Rearranging yields <math>\frac{z_3-z_1}{z_2-z_1} = c~\cdot~\frac{z-z_3}{z-z_2}</math>.
+But how do we relate this expression to our angles? Well, let’s take a look at the divisions themselves.
+
+The subtraction of two vectors yields a vector, and we can write any vector division as <math>\frac{V_1}{V_2}= X</math> where <math>X</math> is a complex number, as the division of two vectors also yields a vector. We can rewrite this as <math>V_1 = V_2 \cdot X</math>. We can think of this expression as transforming <math>V_2</math> directly on to <math>V_1</math>, and <math>X</math> is the transformation function. However, this transformation must be some kind of rotation, which means that the degree measure of <math>X</math> is equal to the angle between the two vectors since we need to rotate by that angle to lay <math>V_2</math> flat on <math>V_1</math>.
+
+Thus we can rewrite our previous equation as <math>X_1 = c \cdot X_2</math>, where the angle of <math>X_1</math> equals the angle between <math>z_3-z_1</math> and <math>z_2-z_1</math> and likewise for <math>X_2</math>. More precisely, we can write <math>X_1, X_2</math> as <math>r_1 \cdot e^{i \theta_1} </math> and <math>r_2 \cdot e^{i\theta_2}</math>, respectively by Euler’s formula. Then <math>\theta_1= \theta_2</math> is the claim we wish to prove.
+
+We can now do some simple algebra to prove this;  
+
+<math>r_1 \cdot e^{i \theta_1} = c \cdot r_2 \cdot e^{i\theta_2} \implies \frac{c \cdot r_2}{r_1} = e^{i(\theta_1-\theta_2)} = \cos{(\theta_1-\theta_2)} + i \cdot \sin{(\theta_1-\theta_2)}</math>
+
+<math>\frac{c \cdot r_2}{r_1}</math> is obviously real, so <math> \cos{(\theta_1-\theta_2)} + i \cdot \sin{(\theta_1-\theta_2)}</math> must be real as well. But the only way that can happen is if <math>\sin{(\theta_1-\theta_2)} = 0 \implies \theta_1-\theta_2 = 0 \implies \boxed{\theta_1 = \theta_2}</math>.
+
+Food For Thought: Let a, b, c, and d be pairwise distinct complex numbers. Then, a, b, c, and d are concyclic if and only if d-b/d-a : c-b/c-a  is a real number. How can we use the above theorem to prove this?
+
+===Solution 1.2===
+
+Let us write <math>\frac{z_3 - z_1}{z_2 - z_1}</math> as some complex number with form <math>r_1 (\cos \theta_1 + i \sin \theta_1).</math> Similarly, we can write <math>\frac{z-z_2}{z-z_3}</math> as some <math>r_2 (\cos \theta_2 + i \sin \theta_2).</math>
+
+The product must be real, so we have that <math>r_1 r_2 (\cos \theta_1 + i \sin \theta_1) (\cos \theta_2 + i \sin \theta_2)</math> is real. <math>r_1 r_2</math> is real by definition, so dividing the real number above by <math>r_1 r_2</math> will still yield a real number. (Note that we can see that <math>r_1 r_2 \not= 0</math> from the definitions of <math>z_1,</math> <math>z_2,</math> and <math>z_3</math>). Thus we have 
+
+<cmath>(\cos \theta_1 + i \sin \theta_1) (\cos \theta_2 + i \sin \theta_2) = \cos \theta_1 \cos \theta_2 - \sin \theta_1 \sin \theta_2 + i(\cos \theta_1 \sin \theta_2 + \cos \theta_2 \sin \theta_1)</cmath>
+
+is real. The imaginary part of this is <math>(\cos \theta_1 \sin \theta_2 + \cos \theta_2 \sin \theta_1),</math> which we recognize as <math>\sin(\theta_1 + \theta_2).</math> This is only <math>0</math> when <math>\theta_1 + \theta_2 = k\pi</math> for some integer <math>k</math>. Here <math>\theta_2</math> represents the major angle<math> \angle Z_3ZZ_2</math>, and the angle we want is the minor angle, so we can rewrite the equation as <math>\theta_1 + 2\pi - \theta_2 = k\pi \implies \theta_1 - \theta_2 = (k-2)\pi</math>. We can see from the diagram that both <math>\theta_1</math> and <math>\theta_2</math> are obtuse, so therefore <math>\theta_1 - \theta_2 = 0 \implies \boxed{\theta_1 = \theta_2}</math>.
+
+===Solution 1 Rejoined===
+
+Now that we’ve proven this fact, we know that all four points lie on a circle (intuitively one can also observe this because <math>z=z_1</math> and <math>z=z_2</math> satisfy the property in the question, and <math>z=z_3</math> techincally gives no imaginary part), so let’s draw that in;
+
+
+<asy>
+
+size(1200,300); 
+
+real xMin = 0;
+real xMax = 100;
+real yMin = 0;
+real yMax = 120;
+
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$R$",(xMax,0),(2,0));
+label("$Im$",(0,yMax),(0,2));
+
+pair A,B,C,D;
+A = (18,83); B = (18,39); C = (78,99); D = (56,104.908997);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+
+draw(A--C);
+
+draw(A--B);
+
+draw(D--C);
+
+draw(C--B);
+
+draw(D--B);
+
+label("$Z_1$", A, W); 
+label("$Z_2$", B, W);
+label("$Z_3$", C, N); 
+label("$Z$", D, N);
+
+draw(circle((56,61), 43.9089968));
+
+</asy>
+
+While <math>Z_1, Z_2, Z_3</math> are fixed, <math>Z</math> can be anywhere on the circle because those are the only values of <math>Z</math> that satisfy the problem requirements. However, we want to find the real part of the <math>Z</math> with the maximum imaginary part. This Z would lie directly above the center of the circle, and thus the real part would be the same as the x-value of the center of the circle. So all we have to do is find this value and we’re done.
+
+Consider the perpendicular bisectors of <math>Z_1Z_2</math> and <math>Z_2Z_3</math>. Since any chord can be perpendicularly bisected by a radius of a circle, these two lines both intersect at the center. Since <math>Z_1Z_2</math> is vertical, the perpendicular bisector will be horizontal and pass through the midpoint of this line, which is (18, 61). Therefore the equation for this line is <math>y=61</math>. 
+<math>Z_2Z_3</math> is nice because it turns out the differences in the x and y values are both equal (60) which means that the slope of the line is 1. The slope of the perpendicular bisector is therefore -1 and it passes through the midpoint, (48,69), so the equation of this line is <math>y=-x+117</math>. Finally, equating the two yields <cmath>61=-x+117 \implies x = \boxed{056}</cmath>
+
+~KingRavi
+
+~Anonymous(Solution 1.2)

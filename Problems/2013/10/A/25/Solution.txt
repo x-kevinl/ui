@@ -1,0 +1,40 @@
+==Solution 1 (Drawing)==
+
+If you draw a clear diagram like the one below, it is easy to see that there are $\boxed{\textbf{(A) }49}$ points.
+
+<asy>
+size(14cm);
+pathpen = brown + 1.337;
+// Initialize octagon
+pair[] A;
+for (int i=0; i<8; ++i) {
+A[i] = dir(45*i);
+}
+D(CR( (0,0), 1));
+// Draw diagonals
+// choose pen colors
+pen[] colors;
+colors[1] = orange + 1.337;
+colors[2] = purple;
+colors[3] = green;
+colors[4] = black;
+for (int d=1; d<=4; ++d) {
+pathpen = colors[d];
+for (int j=0; j<8; ++j) {
+D(A[j]--A[(j+d) % 8]);
+}
+}
+pathpen = blue + 2;
+// Draw all the intersections
+pointpen = red + 7;
+for (int x1=0; x1<8; ++x1) {
+for (int x2=x1+1; x2<8; ++x2) {
+for (int x3=x2+1; x3<8; ++x3) {
+for (int x4=x3+1; x4<8; ++x4) {
+D(IP(A[x1]--A[x2], A[x3]--A[x4]));
+D(IP(A[x1]--A[x3], A[x4]--A[x2]));
+D(IP(A[x1]--A[x4], A[x2]--A[x3]));
+}
+}
+}
+}</asy>

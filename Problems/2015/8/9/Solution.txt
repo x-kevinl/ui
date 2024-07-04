@@ -1,0 +1,38 @@
+==Solutions==
+===Solution 1 (Best)===
+
+First, we recognize that the number of widgets Janabel sells each day forms an arithmetic sequence. On day 1, she sells 1 widget, on day 2, she sells 3 widgets, on day 3, she sells 5 widgets, and so on. This sequence can be described by the first term \( a = 1 \) and the common difference \( d = 2 \).
+
+Step 1: Find the number of widgets sold on day 20
+
+The formula for the \( n \)-th term of an arithmetic sequence is:
+$$ a_n = a + (n-1)d $$
+For \( n = 20 \):
+$$ a_{20} = 1 + (20-1) \cdot 2 = 1 + 38 = 39 $$
+
+So, Janabel sells 39 widgets on day 20.
+
+Step 2: Calculate the total number of widgets sold in 20 days}
+
+The sum \( S_n \) of the first \( n \) terms of an arithmetic sequence is given by:
+$$ S_n = \frac{n}{2} \cdot (a + a_n) $$
+
+For \( n = 20 \):
+$$ S_{20} = \frac{20}{2} \cdot (1 + 39) = 10 \cdot 40 = 400 $$
+
+Therefore, the total number of widgets sold after 20 days is:
+$(40\cdot10)=\boxed{\textbf{(D)}~400}$
+
+~ GeometryMystery
+
+===Solution 2===
+First, we have to find how many widgets she makes on Day $20$. We can write the linear equation $y=-1+2x$ to represent this situation. Then, we can plug in $20$ for $x$:  $y=-1+2(20)$ -- $y=-1+40$ -- $y=39$. The sum of $1,3,5, ... 39$ is $\dfrac{(1 + 39)(20)}{2}= \boxed{\textbf{(D)}~400}$.
+
+===Solution 3===
+The sum is just the first $20$ odd counting/natural numbers, which is $20^2=\boxed{\textbf{(D)}~400}$.
+
+Note: The sum of the first $x$ odd numbers is $x^2$.
+
+===Solution 4===
+We can easily find out she makes $2\cdot20-1 = 39$ widgets on Day $20$. Then, we make the sum of $1,3, 5, ... ,35,37,39$ by adding in this way: $(1+39)+(3+37)+(5+35)+...+(19+21)$, which include $10$ pairs of $40$. So, the sum of $1,3,5, ...~39$ is $(40\cdot10)=\boxed{\textbf{(D)}~400}$.
+--LarryFlora

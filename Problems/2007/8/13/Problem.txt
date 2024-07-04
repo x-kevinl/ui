@@ -1,0 +1,15 @@
+== Problem ==
+
+Sets $A$ and $B$, shown in the Venn diagram, have the same number of elements.
+Their union has $2007$ elements and their intersection has $1001$ elements. Find
+the number of elements in $A$.
+
+<asy>
+defaultpen(linewidth(0.7));
+draw(Circle(origin, 5));
+draw(Circle((5,0), 5));
+label("$A$", (0,5), N);
+label("$B$", (5,5), N);
+label("$1001$", (2.5, -0.5), N);</asy>
+
+$\mathrm{(A)}\ 503 \qquad \mathrm{(B)}\ 1006 \qquad \mathrm{(C)}\ 1504 \qquad \mathrm{(D)}\ 1507 \qquad \mathrm{(E)}\ 1510$

@@ -1,0 +1,88 @@
+==Solution (Bounds and Decimal Part Analysis, Rigorous)==
+
+Define <math>\left\{ x \right\} = x - \left\lfloor x \right\rfloor</math>.
+
+First, we bound <math>U</math>.
+
+We establish an upper bound of <math>U</math>. We have
+<cmath>
+\begin{align*}
+U & \leq \sum_{n=1}^{2023} \frac{n^2 - na}{5} \\
+& = \frac{1}{5} \sum_{n=1}^{2023} n^2 - \frac{a}{5} \sum_{n=1}^{2023} n \\
+& = \frac{1012 \cdot 2023}{5} \left( 1349 - a \right) \\
+& \triangleq UB .
+\end{align*}
+</cmath>
+
+We establish a lower bound of <math>U</math>. We have
+<cmath>
+\begin{align*}
+U & =  \sum_{n=1}^{2023} \left(  \frac{n^2 - na}{5} - \left\{ \frac{n^2 - na}{5} \right\}  \right) \\
+& = \sum_{n=1}^{2023} \frac{n^2 - na}{5}
+- \sum_{n=1}^{2023} \left\{ \frac{n^2 - na}{5} \right\} \\
+& = UB -  \sum_{n=1}^{2023} \left\{ \frac{n^2 - na}{5} \right\} \\
+& \geq UB -  \sum_{n=1}^{2023} \mathbf 1 \left\{ \frac{n^2 - na}{5} \notin \Bbb Z \right\} .
+\end{align*}
+</cmath>
+
+We notice that if <math>5 | n</math>, then <math>\frac{n^2 - na}{5} \in \Bbb Z</math>.
+Thus,
+<cmath>
+\begin{align*}
+U & \geq UB -  \sum_{n=1}^{2023} \mathbf 1 \left\{ \frac{n^2 - na}{5} \notin \Bbb Z \right\} \\
+& \geq UB -  \sum_{n=1}^{2023} \mathbf 1 \left\{ 5 \nmid n \right\} \\
+& = UB - \left( 2023 - \left\lfloor \frac{2023}{5} \right\rfloor \right) \\
+& = UB - 1619 \\
+& \triangleq LB .
+\end{align*}
+</cmath>
+
+Because <math>U \in \left[ - 1000, 1000 \right]</math> and <math>UB - LB = 1619 < \left( 1000 - \left( - 1000 \right) \right)</math>, we must have either <math>UB \in \left[ - 1000, 1000 \right]</math> or <math>LB \in \left[ - 1000, 1000 \right]</math>.
+
+For <math>UB \in \left[ - 1000, 1000 \right]</math>, we get a unique <math>a = 1349</math>.
+For <math>LB \in \left[ - 1000, 1000 \right]</math>, there is no feasible <math>a</math>.
+
+Therefore, <math>a = 1349</math>. Thus <math>UB = 0</math>.
+
+Next, we compute <math>U</math>.
+
+Let <math>n = 5 q + r</math>, where <math>r = {\rm Rem} \ \left( n, 5 \right)</math>.
+
+We have
+<cmath>
+\begin{align*}
+\left\{ \frac{n^2 - na}{5} \right\}
+& = \left\{ \frac{\left( 5 q + r \right)^2 - \left( 5 q + r \right)\left( 1350 - 1 \right)}{5} \right\} \\
+& = \left\{ 5 q^2 + 2 q r - \left( 5 q + r \right) 270 + q + \frac{r^2 + r}{5}  \right\} \\
+& = \left\{\frac{r^2 + r}{5}  \right\} \\
+& = \left\{
+\begin{array}{ll}
+0 & \mbox{ if } r = 0, 4 \\
+\frac{2}{5} & \mbox{ if } r = 1, 3 \\
+\frac{1}{5} & \mbox{ if } r = 2
+\end{array}
+\right. .
+\end{align*}
+</cmath>
+
+Therefore,
+<cmath>
+\begin{align*}
+U & =  \sum_{n=1}^{2023} \left(  \frac{n^2 - na}{5} - \left\{ \frac{n^2 - na}{5} \right\}  \right) \\
+& = UB
+- \sum_{n=1}^{2023} \left\{ \frac{n^2 - na}{5} \right\} \\
+& = - \sum_{n=1}^{2023} \left\{ \frac{n^2 - na}{5} \right\} \\
+& = - \sum_{q=0}^{404} \sum_{r=0}^4 \left\{\frac{r^2 + r}{5}  \right\}
++ \left\{ \frac{0^2 - 0 \cdot a}{5} \right\}
++ \left\{ \frac{2024^2 - 2024a}{5} \right\} \\
+& = - \sum_{q=0}^{404} \left( 0 + 0 + \frac{2}{5} + \frac{2}{5} + \frac{1}{5} \right)
++ 0 + 0 \\
+& = - 405 .
+\end{align*}
+</cmath>
+
+Therefore, <math>a + U = 1349 - 405 = \boxed{\textbf{944}}</math>.
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)
+
+~minor edits by [https://artofproblemsolving.com/wiki/index.php/User:Kevinchen_yay KevinChen_Yay]

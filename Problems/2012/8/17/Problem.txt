@@ -1,0 +1,4 @@
+==Problem==
+A square with integer side length is cut into 10 squares, all of which have integer side length and at least 8 of which have area 1. What is the smallest possible value of the length of the side of the original square?
+
+$ \text{(A)}\hspace{.05in}3\qquad\text{(B)}\hspace{.05in}4\qquad\text{(C)}\hspace{.05in}5\qquad\text{(D)}\hspace{.05in}6\qquad\text{(E)}\hspace{.05in}7 $

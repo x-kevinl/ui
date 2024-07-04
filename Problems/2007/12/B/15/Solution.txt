@@ -1,0 +1,22 @@
+==Solution 1==
+The sum of an infinite geometric series is given by $\frac{a}{1-r}$ where $a$ is the first term and $r$ is the common ratio.
+
+In this series, $\frac{a}{1-r} = 7$
+
+The series with odd powers of $r$ is given as $$ar + ar^3 + ar^5 ...$$
+
+Its sum can be given by $\frac{ar}{1-r^2} = 3$
+
+Doing a little algebra
+
+$ar = 3(1-r)(1+r)$
+
+$ar = 3\left(\frac{a}{7}\right)(1+r)$
+
+$\frac{7}{3}r = 1 + r$
+
+$r = \frac{3}{4}$
+
+$a = 7(1-r) = \frac{7}{4}$
+
+$a + r =\boxed{ \frac{5}{2}} \Rightarrow \mathrm{(E)}$

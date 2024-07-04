@@ -1,0 +1,15 @@
+== Solution ==
+Let the length of the inner rectangle be $x$.
+
+Then the area of that rectangle is $x\cdot1 = x$.
+
+The second largest rectangle has dimensions of $x+2$ and $3$, making its area $3x+6$. The area of the second shaded area, therefore, is $3x+6-x = 2x+6$.
+
+The largest rectangle has dimensions of $x+4$ and $5$, making its area $5x + 20$. The area of the largest shaded region is the largest rectangle minus the second largest rectangle, which is $(5x+20) - (3x+6) = 2x + 14$.
+
+The problem states that $x, 2x+6, 2x+14$ is an arithmetic progression, meaning that the terms in the sequence increase by the same amount each term.
+
+Therefore,
+$(2x+6) - (x) = (2x+14) - (2x+6)\implies
+x+6 = 8\implies
+x =2\implies \boxed{\textbf B}$

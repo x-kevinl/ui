@@ -1,0 +1,14 @@
+==Solution 1==
+
+Let the two primes be $a$ and $b$. We would have $a-b=2$ and $a^{3}-b^{3}=31106$. Using difference of cubes, we would have $(a-b)(a^{2}+ab+b^{2})=31106$. Since we know $a-b$ is equal to $2$, $(a-b)(a^{2}+ab+b^{2})$ would become $2(a^{2}+ab+b^{2})=31106$. Simplifying more, we would get $a^{2}+ab+b^{2}=15553$.
+
+Now let's introduce another variable. Instead of using $a$ and $b$, we can express the primes as $x+2$ and $x$ where $a$ is $x+2$ and b is $x$. Plugging $x$ and $x+2$ in, we would have $(x+2)^{2}+x(x+2)+x^{2}$. When we expand the parenthesis, it would become $x^{2}+4x+4+x^{2}+2x+x^{2}$. Then we combine like terms to get $3x^{2}+6x+4$ which equals $15553$. Then we subtract 4 from both sides to get $3x^{2}+6x=15549$. Since all three numbers are divisible by 3, we can divide by 3 to get $x^{2}+2x=5183$.
+
+
+Notice how if we add 1 to both sides, the left side would become a perfect square trinomial: $x^{2}+2x+1=5184$ which is $(x+1)^{2}=5184$. Since $2$ is too small to be a valid number, the two primes must be odd, therefore $x+1$ is the number in the middle of them. Conveniently enough, $5184=72^{2}$ so the two numbers are $71$ and $73$. The next prime number is $79$, and $7+9=16$ so the answer is  $\boxed{\textbf{(E) }16}$.
+
+~Trex226
+
+A note: If you aren't entirely familiar with square trinomials, after we have $x^{2}+2x=5183$, we can simply guess and check from here. We know that $70^{2} = 4900$, and we notice that for $x^{2}+2x=5183$, $x$ must be a odd number. Thus we can guess that $x$=71, which proves to be right. Continuing, we then know the larger prime is 73, and we know that 75 and 77 aren't primes, so thus our next bigger prime is 79, and 7+9=16. Thus the answer is $\boxed{\textbf{(E) }16}$.
+
+~Rhx

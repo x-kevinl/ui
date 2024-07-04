@@ -1,0 +1,24 @@
+==Solution==
+Suppose that line $\ell$ is horizontal, and each circle lies either north or south to $\ell.$ We construct the circles one by one:
+<ol style="margin-left: 1.5em;">
+  <li>Without the loss of generality, we draw the circle with radius $7$ north to $\ell.$</li><p>
+  <li>To maximize the area of region $S,$ we draw the circle with radius $5$ south to $\ell.$</li><p>
+  <li>Now, we need to subtract the circle with radius $3$ <i><b>at least</b></i>. The optimal situation is that the circle with radius $3$ encompasses the circle with radius $1,$ in which we do not need to subtract more. That is, the two smallest circles are on the same side of $\ell,$ but can be on either side. </li>
+</ol>
+The diagram below shows one possible configuration of the four circles:
+<asy>
+/* diagram made by samrocksnature, edited by MRENTHUSIASM */
+pair A=(10,0);
+pair B=(-10,0);
+draw(A--B);
+filldraw(circle((0,7),7),yellow);
+filldraw(circle((0,-5),5),yellow);
+filldraw(circle((0,-3),3),white);
+filldraw(circle((0,-1),1),white);
+dot((0,0));
+label("$A$",(0,0),(0,1.5));
+label("$\ell$",(10,0),(1.5,0));
+</asy>
+Together, the answer is $\pi\cdot7^2+\pi\cdot5^2-\pi\cdot3^2=\boxed{\textbf{(D) }65\pi}.$
+
+~samrocksnature ~MRENTHUSIASM

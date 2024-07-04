@@ -1,0 +1,2 @@
+== Solution ==
+To simplify the problem, WLOG, let us say that there were a total of $100$ birds. The number of birds that are not swans is $75$. The number of geese is $30$. Therefore the percentage is just $\frac{30}{75} \times 100 = 40 \Rightarrow \boxed{C}$

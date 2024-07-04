@@ -1,0 +1,19 @@
+==Solution (Casework)==
+
+First, note that $1+7+5+2+5=20$. There are $3$ possible cases:
+
+'''Case 1: the mean is $5$.'''
+
+$X = 5 \cdot 6 - 20 = 10$.
+
+'''Case 2: the mean is $7$.'''
+
+$X = 7 \cdot 6 - 20 = 22$.
+
+'''Case 3: the mean is $X$.'''
+
+$X= \frac{20+X}{6} \Rightarrow X=4$.
+
+Therefore, the answer is $10+22+4=\boxed{\textbf{(D) }36}$.
+
+~MrThinker

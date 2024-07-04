@@ -1,0 +1,2 @@
+== Problem ==
+Consider the set of all triangles <math>OPQ</math> where <math>O</math> is the origin and <math>P</math> and <math>Q</math> are distinct points in the plane with nonnegative integer coordinates <math>(x,y)</math> such that <math>41x + y = 2009</math>. Find the number of such distinct triangles whose area is a positive integer.

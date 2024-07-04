@@ -1,0 +1,25 @@
+==Solution 1==
+
+Let the centers of the circles containing arcs $\overarc{SR}$ and $\overarc{TR}$ be $X$ and $Y$, respectively. Extend $\overline{US}$ and $\overline{UT}$ to $X$ and $Y$, and connect point $X$ with point $Y$. 
+<asy>
+unitsize(1 cm);
+pair U,S,T,R,X,Y;
+U =(2,3.464);
+S=(1,1.732);
+T=(3,1.732);
+R=(2,0);
+X=(0,0);
+Y=(4,0);
+draw(U--S);
+draw(S--U--T);
+draw(S--X--Y--T,red);
+draw(arc(X,R,S),red);
+draw(arc(Y,T,R),red);
+label("$U$",U, N);
+label("$S$", S, W);
+label("$T$", T, E);
+label("$R$", R, S);
+label("$X$",X, W);
+label("$Y$", Y, E);
+</asy>
+We can clearly see that $\triangle UXY$ is an equilateral triangle, because the problem states that $m\angle TUS = 60^\circ$. We can figure out that $m\angle SXR= 60^\circ$ and $m\angle TYR = 60^\circ$ because they are $\frac{1}{6}$ of a circle. The area of the figure is equal to $[\triangle UXY]$ minus the combined area of the $2$ sectors of the circles (in red). Using the area formula for an equilateral triangle, $\frac{a^2\sqrt{3}}{4},$ where $a$ is the side length of the equilateral triangle, $[\triangle UXY]$ is $\frac{\sqrt 3}{4} \cdot 4^2 = 4\sqrt 3.$ The combined area of the $2$ sectors is $2\cdot\frac16\cdot\pi r^2$, which is $\frac 13\pi \cdot 2^2 = \frac{4\pi}{3}.$ Thus, our final answer is $\boxed{\textbf{(B)}\ 4\sqrt{3}-\frac{4\pi}{3}}.$

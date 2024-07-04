@@ -1,0 +1,25 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(375);
+
+pair A, B, C, O, G, X, Y;
+A = origin;
+B = (1,0);
+C = extension(A,A+10*dir(585/7),B,B+10*dir(180-585/7));
+O = circumcenter(A,B,C);
+G = centroid(A,B,C);
+Y = intersectionpoint(G--G+(100,0),B--C);
+X = intersectionpoint(G--G-(100,0),A--scale(100)*rotate(90)*dir(O-A));
+markscalefactor=3/160;
+draw(rightanglemark(O,G,X),red);
+dot("$A$",A,1.5*dir(180+585/7),linewidth(4));
+dot("$B$",B,1.5*dir(-585/7),linewidth(4));
+dot("$C$",C,1.5N,linewidth(4));
+dot("$O$",O,1.5N,linewidth(4));
+dot("$G$",G,1.5S,linewidth(4));
+dot("$Y$",Y,1.5E,linewidth(4));
+dot("$X$",X,1.5W,linewidth(4));
+draw(A--B--C--cycle^^X--O--Y--cycle^^A--X^^O--G^^circumcircle(A,B,C));
+</asy>
+~MRENTHUSIASM

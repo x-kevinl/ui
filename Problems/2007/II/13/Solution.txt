@@ -1,0 +1,8 @@
+== Solution ==
+Label each of the bottom squares as <math>x_0, x_1 \ldots x_9, x_{10}</math>. 
+
+Through [[induction]], we can find that the top square is equal to <math>{10\choose0}x_0 + {10\choose1}x_1 + {10\choose2}x_2 + \ldots {10\choose10}x_{10}</math>. (This also makes sense based on a combinatorial argument: the number of ways a number can "travel" to the top position going only up is equal to the number of times it will be counted in the final sum.)
+
+Examine the equation <math>\mod 3</math>. All of the coefficients from <math>x_2 \ldots x_8</math> will be multiples of <math>3</math> (since the numerator will have a <math>9</math>). Thus, the expression boils down to <math>x_0 + 10x_1 + 10x_9 + x_{10} \equiv 0 \mod 3</math>. Reduce to find that <math>x_0 + x_1 + x_9 + x_{10} \equiv 0 \mod 3</math>. Out of <math>x_0,\ x_1,\ x_9,\ x_{10}</math>, either all are equal to <math>0</math>, or three of them are equal to <math>1</math>. This gives <math>{4\choose0} + {4\choose3} = 1 + 4 = 5</math> possible combinations of numbers that work. 
+
+The seven terms from <math>x_2 \ldots x_8</math> can assume either <math>0</math> or <math>1</math>, giving us <math>2^7</math> possibilities. The answer is therefore <math>5 \cdot 2^7 = \boxed{640}</math>.

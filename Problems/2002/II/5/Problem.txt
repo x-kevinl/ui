@@ -1,0 +1,2 @@
+== Problem ==
+Find the sum of all positive integers <math>a=2^n3^m</math> where <math>n</math> and <math>m</math> are non-negative integers, for which <math>a^6</math> is not a divisor of <math>6^a</math>.

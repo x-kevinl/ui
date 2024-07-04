@@ -1,0 +1,2 @@
+==Solution==
+Draw altitudes from $B$ and $C$ to base $AD$ to create a rectangle and two right triangles. The side opposite $BC$ is equal to $50$. The bases of the right triangles can be found using Pythagorean or special triangles to be $18$ and $7$. Add it together to get $AD=18+50+7=75$. The perimeter is $75+30+50+25=\boxed{\textbf{(A)}\ 180}$.

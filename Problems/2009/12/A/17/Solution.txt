@@ -1,0 +1,10 @@
+== Solution ==
+
+Using the formula for the sum of a geometric series we get that the sums of the given two sequences are $\frac a{1-r_1}$ and $\frac a{1-r_2}$. 
+
+Hence we have $\frac a{1-r_1} = r_1$ and $\frac a{1-r_2} = r_2$.
+This can be rewritten as $r_1(1-r_1) = r_2(1-r_2) = a$. 
+
+As we are given that $r_1$ and $r_2$ are distinct, these must be precisely the two roots of the equation $x^2 - x + a = 0$.
+
+Using [[Vieta's formulas]] we get that the sum of these two roots is $\boxed{1}$.

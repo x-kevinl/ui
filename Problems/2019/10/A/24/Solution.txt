@@ -1,0 +1,11 @@
+==Solution 1==
+Multiplying both sides by $(s-p)(s-q)(s-r)$ yields
+$$1 = A(s-q)(s-r) + B(s-p)(s-r) + C(s-p)(s-q)$$
+As this is a polynomial identity, and it is true for infinitely many $s$, it must be true for all $s$ (since a polynomial with infinitely many roots must in fact be the constant polynomial $0$). This means we can plug in $s = p$ to find that $\frac1A = (p-q)(p-r)$.  Similarly, we can find $\frac1B = (q-p)(q-r)$ and $\frac1C = (r-p)(r-q)$.  Summing them up, we get that $$\frac1A + \frac1B + \frac1C = p^2 + q^2 + r^2 - pq - qr - pr$$
+We can express $p^2 + q^2 + r^2 = (p+q+r)^2 - 2(pq + qr + pr)$, and by Vieta's Formulas, we know that this expression is equal to $324$. Vieta's also gives $pq + qr + pr = 80$ (which we also used to find $p^2+q^2+r^2$), so the answer is $324 -80 = \boxed{\textbf{(B) } 244}$. 
+
+''Note'': this process of substituting in the 'forbidden' values in the original identity is a standard technique for partial fraction decomposition, as taught in calculus classes.  
+
+-very small latex edit from countmath1 :)
+
+Minor rephrasing for correctness and clarity ~ Technodoggo

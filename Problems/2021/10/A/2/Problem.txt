@@ -1,0 +1,4 @@
+==Problem==
+Portia's high school has $3$ times as many students as Lara's high school. The two high schools have a total of $2600$ students. How many students does Portia's high school have?
+
+$\textbf{(A)} ~600 \qquad\textbf{(B)} ~650 \qquad\textbf{(C)} ~1950 \qquad\textbf{(D)} ~2000\qquad\textbf{(E)} ~2050$

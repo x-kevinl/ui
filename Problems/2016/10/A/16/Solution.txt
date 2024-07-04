@@ -1,0 +1,2 @@
+==Solution==
+Consider a point $(x, y)$. Reflecting it about the $x$-axis will map it to $(x, -y)$, and rotating it counterclockwise about the origin by $90^{\circ}$ will map it to $(y, x)$. The operation that undoes this is a reflection about the $y = x$, so the answer is $\boxed{\textbf{(D)}}$.

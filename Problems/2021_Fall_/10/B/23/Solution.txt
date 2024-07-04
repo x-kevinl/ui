@@ -1,0 +1,14 @@
+==Solution 1==
+
+Instead of finding the probability of a same-colored triangle appearing, let us find the probability that one does not appear.
+After drawing the regular pentagon out, note the topmost vertex; it has 4 sides/diagonals emanating outward from it. We do casework on the color distribution of these sides/diagonals.
+
+$\textbf{Case 1}$: all 4 are colored one color. In that case, all of the remaining sides must be of the other color to not have a triangle where all three sides are of the same color. We can correspondingly fill out each color based on this constraint, but in this case you will always end up with a triangle where all three sides have the same color by inspection. 
+
+$\textbf{Case 2}$: 3 are one color and one is the other. Following the steps from the previous case, you can try filling out the colors, but will always arrive at a contradiction so this case does not work either.
+
+$\textbf{Case 3}$: 2 are one color and 2 are of the other color. Using the same logic as previously, we can color the pentagon 2 different ways by inspection to satisfy the requirements. There are ${4\choose2}$ ways to color the original sides/diagonals and 2 ways after that to color the remaining ones for a total of $6\cdot 2 = 12$ ways to color the pentagon so that no such triangle has the same color for all of its sides. 
+
+These are all the cases, and there are a total of $2^{10}$ ways to color the pentagon. Therefore the answer is $1-\frac{12}{1024} = 1-\frac{3}{256} = \frac{253}{256} = \boxed{D}$
+
+~KingRavi

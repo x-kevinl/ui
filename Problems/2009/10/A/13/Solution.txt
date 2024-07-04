@@ -1,0 +1,3 @@
+== Solution ==
+
+We have $12^{mn} = (2\cdot 2\cdot 3)^{mn} = 2^{2mn} \cdot 3^{mn} = (2^m)^{2n} \cdot (3^n)^m = \boxed{\bold{E)} P^{2n} Q^m}$.

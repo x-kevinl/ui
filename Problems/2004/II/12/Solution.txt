@@ -1,0 +1,20 @@
+== Solution ==
+Let the radius of the center circle be <math>r</math> and its center be denoted as <math>O</math>.
+
+<center><asy>
+pointpen = black; pathpen = black+linewidth(0.7); pen d = linewidth(0.7) + linetype("4 4"); pen f = fontsize(8);
+  
+real r = (-60 + 48 * 3^.5)/23;
+pair A=(0,0), B=(6,0), D=(1, 24^.5), C=(5,D.y), O = (3,(r^2 + 6*r)^.5); 
+D(MP("A",A)--MP("B",B)--MP("C",C,N)--MP("D",D,N)--cycle); D(CR(A,3));D(CR(B,3));D(CR(C,2));D(CR(D,2));D(CR(O,r));
+D(O); D((3,0)--(3,D.y),d); D(A--O--D,d); MP("3",(3/2,0),S,f);MP("2",(2,D.y),N,f);
+</asy></center> 
+
+Clearly line <math>AO</math> passes through the point of tangency of circle <math>A</math> and circle <math>O</math>. Let <math>y</math> be the height from the base of the trapezoid to <math>O</math>. From the [[Pythagorean Theorem]], 
+<cmath>3^2 + y^2 = (r + 3)^2 \Longrightarrow y = \sqrt {r^2 + 6r}.</cmath>
+
+We use a similar argument with the line <math>DO</math>, and find the height from the top of the trapezoid to <math>O</math>, <math>z</math>, to be <math>z = \sqrt {r^2 + 4r}</math>.
+
+Now <math>y + z</math> is simply the height of the trapezoid. Let <math>D'</math> be the foot of the [[perpendicular]] from <math>D</math> to <math>AB</math>; then <math>AD' = 3 - 2 = 1</math>. By the Pythagorean Theorem, <math>(AD')^2 + (DD')^2 = (AD)^2 \Longrightarrow DD' = \sqrt{24}</math> so we need to solve the equation <math>\sqrt {r^2 + 4r} + \sqrt {r^2 + 6r} = \sqrt {24}</math>. We can solve this by moving one radical to the other side, and squaring the equation twice to end with a [[quadratic equation]]. 
+
+Solving this, we get <math>r = \frac { - 60 + 48\sqrt {3}}{23}</math>, and the answer is <math>k + m + n + p = 60 + 48 + 3 + 23 = \boxed{134}</math>.

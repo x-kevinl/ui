@@ -1,0 +1,4 @@
+==Problem==
+An inverted cone with base radius $12  \mathrm{cm}$ and height $18  \mathrm{cm}$ is full of water. The water is poured into a tall cylinder whose horizontal base has radius of $24  \mathrm{cm}$. What is the height in centimeters of the water in the cylinder?
+
+$\textbf{(A)} ~1.5 \qquad\textbf{(B)} ~3 \qquad\textbf{(C)} ~4 \qquad\textbf{(D)} ~4.5 \qquad\textbf{(E)} ~6$

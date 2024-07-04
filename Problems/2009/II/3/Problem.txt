@@ -1,0 +1,2 @@
+== Problem ==
+In rectangle <math>ABCD</math>, <math>AB=100</math>. Let <math>E</math> be the midpoint of <math>\overline{AD}</math>. Given that line <math>AC</math> and line <math>BE</math> are perpendicular, find the greatest integer less than <math>AD</math>.

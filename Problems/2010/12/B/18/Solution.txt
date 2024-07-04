@@ -1,0 +1,4 @@
+==Solution 1 (Complex Numbers)==
+We will let the moves be complex numbers $ a$, $ b$, and $ c$, each of magnitude one. The  starts on the origin. It is relatively easy to show that exactly one element in the set
+$$ \{|a + b + c|, |a + b - c|, |a - b + c|, |a - b - c|\}$$
+has magnitude less than or equal to $ 1$. (Can you show how?) Hence, the probability is $ \boxed{\text{(C)} \frac {1}{4}}$.

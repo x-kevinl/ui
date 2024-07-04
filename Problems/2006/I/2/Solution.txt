@@ -1,0 +1,4 @@
+== Solution ==
+The smallest <math>S</math> is <math>1+2+ \ldots +90 = 91 \cdot 45 = 4095</math>. The largest <math>S</math> is <math>11+12+ \ldots +100=111\cdot 45=4995</math>. All numbers between <math>4095</math> and <math>4995</math> are possible values of S, so the number of possible values of S is <math>4995-4095+1=901</math>.
+
+Alternatively, for ease of calculation, let set <math>\mathcal{B}</math> be a 10-element subset of <math>\{1,2,3,\ldots,100\}</math>, and let <math>T</math> be the sum of the elements of <math>\mathcal{B}</math>. Note that the number of possible <math>S</math> is the number of possible <math>T=5050-S</math>. The smallest possible <math>T</math> is <math>1+2+ \ldots +10 = 55</math> and the largest is <math>91+92+ \ldots + 100 = 955</math>, so the number of possible values of T, and therefore S, is <math>955-55+1=\boxed{901}</math>.

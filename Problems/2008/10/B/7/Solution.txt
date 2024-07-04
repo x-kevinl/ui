@@ -1,0 +1,2 @@
+==Solution 1==
+The area of the large triangle is $\frac{10^2\sqrt3}{4}$, while the area of each small triangle is $\frac{1^2\sqrt3}{4}$. Dividing these two quantities results in $100$, therefore $\boxed{100} \mathrm{(C)}$ small triangles can fill the large one without overlap.

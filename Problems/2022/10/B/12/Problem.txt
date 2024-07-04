@@ -1,0 +1,4 @@
+==Problem==
+A pair of fair $6$-sided dice is rolled $n$ times. What is the least value of $n$ such that the probability that the sum of the numbers face up on a roll equals $7$ at least once is greater than $\frac{1}{2}$?
+
+$\textbf{(A) } 2 \qquad \textbf{(B) } 3 \qquad \textbf{(C) } 4 \qquad \textbf{(D) } 5 \qquad \textbf{(E) } 6$

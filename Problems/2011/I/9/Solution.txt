@@ -1,0 +1,18 @@
+==Solution 1==
+We can rewrite the given expression as
+<cmath>\sqrt{24^3\sin^3 x}=24\cos x</cmath>
+Square both sides and divide by <math>24^2</math> to get
+<cmath>24\sin ^3 x=\cos ^2 x</cmath>
+Rewrite <math>\cos ^2 x</math> as <math>1-\sin ^2 x</math>
+<cmath>24\sin ^3 x=1-\sin ^2 x</cmath>
+<cmath>24\sin ^3 x+\sin ^2 x - 1=0</cmath>
+Testing values using the rational root theorem gives <math>\sin x=\frac{1}{3}</math> as a root, <math>\sin^{-1} \frac{1}{3}</math> does fall in the first quadrant so it satisfies the interval. 
+There are now two ways to finish this problem. 
+
+'''First way:''' Since <math>\sin x=\frac{1}{3}</math>, we have
+<cmath>\sin ^2 x=\frac{1}{9}</cmath>
+Using the Pythagorean Identity gives us <math>\cos ^2 x=\frac{8}{9}</math>. Then we use the definition of <math>\cot ^2 x</math> to compute our final answer. <math>24\cot ^2 x=24\frac{\cos ^2 x}{\sin ^2 x}=24\left(\frac{\frac{8}{9}}{\frac{1}{9}}\right)=24(8)=\boxed{192}</math>.
+
+'''Second way:''' Multiplying our old equation <math>24\sin ^3 x=\cos ^2 x</math> by <math>\dfrac{24}{\sin^2x}</math> gives 
+<cmath>576\sin x = 24\cot^2x</cmath>
+So, <math>24\cot^2x=576\sin x=576\cdot\frac{1}{3}=\boxed{192}</math>.

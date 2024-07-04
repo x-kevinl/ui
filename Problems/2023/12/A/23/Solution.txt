@@ -1,0 +1,5 @@
+==Solution 1: AM-GM Inequality==
+
+Using AM-GM on the two terms in each factor on the left, we get
+$$(1+2a)(2+2b)(2a+b) \ge 8\sqrt{2a \cdot 4b \cdot 2ab}= 32ab,$$
+meaning the equality condition must be satisfied. This means $1 = 2a = b$, so we only have $\boxed{1}$ solution.

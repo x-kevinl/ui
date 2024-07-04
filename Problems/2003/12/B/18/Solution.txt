@@ -1,0 +1,14 @@
+== Solution 1==
+
+Substitute $a^cb^d$ into $x$. We then have $7(a^{5c}b^{5d}) = 11y^{13}$. Divide both sides by $7$, and it follows that:
+
+$$(a^{5c}b^{5d}) = \frac{11y^{13}}{7}.$$
+
+Note that because $11$ and $7$ are prime, the minimum value of $x$ must involve factors of $7$ and $11$ only. Thus, we try to look for the lowest power $p$ of $11$ such that $13p + 1 \equiv 0 \pmod{5}$, so that we can take $11^{13p + 1}$ to the fifth root. Similarly, we want to look for the lowest power $n$ of $7$ such that $13n - 1 \equiv 0 \pmod{5}$. Again, this allows us to take the fifth root of $7^{13n - 1}$. Obviously, we want to add $1$ to $13p$ and subtract $1$ from $13n$ because $11^{13p}$ and $7^{13n}$ are multiplied by $11$ and divided by $7$, respectively. With these conditions satisfied, we can simply multiply $11^{p}$ and $7^{n}$ and substitute this quantity into $y$ to attain our answer.
+
+
+We can simply look for suitable values for $p$ and $n$. We find that the lowest $p$, in this case, would be $3$ because $13(3) + 1 \equiv 0 \pmod{5}$. Moreover, the lowest $q$ should be $2$ because $13(2) - 1 \equiv 0 \pmod{5}$. Hence, we can substitute the quantity $11^{3} \cdot 7^{2}$ into $y$. Doing so gets us:
+
+$$(a^{5c}b^{5d}) = \frac{11(11^{3} \cdot 7^{2})^{13}}{7} = 11^{40} \cdot 7^{25}.$$
+
+Taking the fifth root of both sides, we are left with $a^cb^d = 11^{8} \cdot 7^{5}$. $a + b + c + d = 11 + 7 + 8 + 5 = \boxed{\textbf{(B)}\ 31}$

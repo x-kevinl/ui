@@ -1,0 +1,12 @@
+==Solution==
+Let $m$ be the distance in miles that Mike rode. 
+
+Since Josh rode for twice the length of time as Mike and at four-fifths of Mike's rate, he rode $2\cdot\frac{4}{5}\cdot m = \frac{8}{5}m$ miles. 
+
+Since their combined distance was $13$ miles, 
+
+$ \frac{8}{5}m + m = 13 $
+
+$ \frac{13}{5}m = 13 $ 
+
+$ m = \boxed{\textbf{(B) }5} $

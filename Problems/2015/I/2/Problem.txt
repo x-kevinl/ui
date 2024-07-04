@@ -1,0 +1,2 @@
+==Problem==
+The nine delegates to the Economic Cooperation Conference include <math>2</math> officials from Mexico, <math>3</math> officials from Canada, and <math>4</math> officials from the United States. During the opening session, three of the delegates fall asleep. Assuming that the three sleepers were determined randomly, the probability that exactly two of the sleepers are from the same country is <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

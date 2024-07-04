@@ -1,0 +1,18 @@
+== Solution 1==
+Let <math>x = a_2</math>; then solving for the next several terms, we find that <math>a_3 = x^2,\ a_4 = x(2x-1),\ a_5</math> <math>= (2x-1)^2,\ a_6</math> <math>= (2x-1)(3x-2)</math>, and in general, <math>a_{2n} = f(n-1)f(n)</math>, <math>a_{2n+1} = f(n)^2</math>, where <math>f(n) = nx - (n-1)</math>.{{ref|1}} 
+
+From <cmath>a_9 + a_{10} = f(4)^2 + f(4)f(5) = (4x-3)(9x-7) = 646 = 2\cdot 17 \cdot 19</cmath>, we find that by either the [[quadratic formula]] or trial-and-error/modular arithmetic that <math>x=5</math>. Thus <math>f(n) = 4n+1</math>, and we need to find the largest <math>n</math> such that either <math>f(n)^2\, \mathrm{or}\, f(n)f(n-1) < 1000</math>. This happens with <math>f(7)f(8) = 29 \cdot 33 = 957</math>, and this is the <math>2(8) = 16</math>th term of the sequence.
+
+The answer is <math>957 + 16 = \boxed{973}</math>.
+
+
+
+{{note|1}} We can show this by simultaneous [[induction]]: since 
+<cmath>\begin{align*}a_{2n} &= 2a_{2n-1} - a_{2n-2} = 2a_{2(n-1)+1} - a_{2(n-1)} \\
+&= 2f(n-1)^2 - f(n-2)f(n-1) \\
+&= f(n-1)[2f(n-1) - f(n-2)] \\
+&= f(n-1)[(2n-2-n+2)x-(2n-4-n+3)] \\
+&= f(n-1)f(n) \end{align*}</cmath>
+and
+<cmath>\begin{align*}a_{2n+1} &= \frac{a_{2n}^2}{a_{2n-1}} = \frac{f(n-1)^2f(n)^2}{f(n-1)^2} = f(n)^2 \\
+\end{align*}</cmath>

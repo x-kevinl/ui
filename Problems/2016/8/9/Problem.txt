@@ -1,0 +1,8 @@
+== Problem ==
+
+What is the sum of the distinct prime integer divisors of $2016$?
+
+$\textbf{(A) }9\qquad\textbf{(B) }12\qquad\textbf{(C) }16\qquad\textbf{(D) }49\qquad \textbf{(E) }63$
+
+[[2016 AMC 8 Problems/Problem 9|Solution
+]]

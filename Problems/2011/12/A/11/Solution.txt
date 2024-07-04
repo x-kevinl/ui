@@ -1,0 +1,54 @@
+==Solution 1==
+
+<asy>
+unitsize(1.1cm);
+defaultpen(linewidth(.8pt));
+dotfactor=4;
+
+pair A=(0,0), B=(2,0), C=(1,-1);
+pair M=(1,0);
+pair D=(2,-1);
+dot (A);
+dot (B);
+dot (C);
+dot (D);
+dot (M);
+
+draw(Circle(A,1));
+draw(Circle(B,1));
+draw(Circle(C,1));
+
+draw(A--B);
+draw(M--D);
+draw(D--B);
+
+label("$A$",A,W);
+label("$B$",B,E);
+label("$C$",C,W);
+label("$M$",M,NE);
+label("$D$",D,SE);
+</asy>
+
+The requested area is the area of $C$ minus the area shared between circles $A$, $B$ and $C$.
+
+Let $M$ be the midpoint of $\overline{AB}$ and $D$ be the other intersection of circles $C$ and $B$.
+
+The area shared between $C$, $A$ and $B$ is $4$ of the regions between arc $\widehat {MD}$ and line $\overline{MD}$, which is (considering the arc on circle $B$) a quarter of the circle $B$ minus $\triangle MDB$:
+
+$\frac{\pi r^2}{4}-\frac{bh}{2}$
+
+$b = h = r = 1$
+
+(We can assume this because $\angle DBM$ is 90 degrees, since $CDBM$ is a square, due to the application of the tangent chord theorem at point $M$)
+
+So the area of the small region is
+
+$\frac{\pi}{4}-\frac{1}{2}$
+
+The requested area is area of circle $C$ minus 4 of this area:
+
+$\pi 1^2 - 4\left(\frac{\pi}{4}-\frac{1}{2}\right)
+= \pi - \pi + 2
+= 2$
+
+$\boxed{\textbf{C}}$.

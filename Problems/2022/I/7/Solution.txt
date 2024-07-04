@@ -1,0 +1,10 @@
+==Solution 1 (Optimization)==
+To minimize a positive fraction, we minimize its numerator and maximize its denominator. It is clear that <math>\frac{a \cdot b \cdot c - d \cdot e \cdot f}{g \cdot h \cdot i} \geq \frac{1}{7\cdot8\cdot9}.</math>
+
+If we minimize the numerator, then <math>a \cdot b \cdot c - d \cdot e \cdot f = 1.</math> Note that <math>a \cdot b \cdot c \cdot d \cdot e \cdot f = (a \cdot b \cdot c) \cdot (a \cdot b \cdot c - 1) \geq 6! = 720,</math> so <math>a \cdot b \cdot c \geq 28.</math> It follows that <math>a \cdot b \cdot c</math> and <math>d \cdot e \cdot f</math> are consecutive composites with prime factors no other than <math>2,3,5,</math> and <math>7.</math> The smallest values for <math>a \cdot b \cdot c</math> and <math>d \cdot e \cdot f</math> are <math>36</math> and <math>35,</math> respectively. So, we have <math>\{a,b,c\} = \{2,3,6\}, \{d,e,f\} = \{1,5,7\},</math> and <math>\{g,h,i\} = \{4,8,9\},</math> from which <math>\frac{a \cdot b \cdot c - d \cdot e \cdot f}{g \cdot h \cdot i} = \frac{1}{288}.</math>
+
+If we do not minimize the numerator, then <math>a \cdot b \cdot c - d \cdot e \cdot f > 1.</math> Note that <math>\frac{a \cdot b \cdot c - d \cdot e \cdot f}{g \cdot h \cdot i} \geq \frac{2}{7\cdot8\cdot9} > \frac{1}{288}.</math>
+
+Together, we conclude that the minimum possible positive value of <math>\frac{a \cdot b \cdot c - d \cdot e \cdot f}{g \cdot h \cdot i}</math> is <math>\frac{1}{288}.</math> Therefore, the answer is <math>1+288=\boxed{289}.</math>
+
+~MRENTHUSIASM ~jgplay

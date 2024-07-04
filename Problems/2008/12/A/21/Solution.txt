@@ -1,0 +1,10 @@
+==Solution 1 (Symmetry) ==
+There are $5!=120$ total permutations. 
+
+For every permutation $(a_1,a_2,a_3,a_4,a_5)$ such that $a_1 + a_2 < a_4 + a_5$, there is exactly one permutation such that $a_1 + a_2 > a_4 + a_5$. Thus it suffices to count the permutations such that $a_1 + a_2 = a_4 + a_5$. 
+
+$1+4=2+3$, $1+5=2+4$, and $2+5=3+4$ are the only combinations of numbers that can satisfy $a_1 + a_2 = a_4 + a_5$. 
+
+There are $3$ combinations of numbers, $2$ possibilities of which side of the equation is $a_1+a_2$ and which side is $a_4+a_5$, and $2^2=4$ possibilities for rearranging $a_1,a_2$ and $a_4,a_5$. Thus, there are $3\cdot2\cdot4=24$ permutations such that $a_1 + a_2 = a_4 + a_5$. 
+
+Thus, the number of <u>heavy-tailed</u> permutations is $\frac{120-24}{2}=48 \Rightarrow D$.

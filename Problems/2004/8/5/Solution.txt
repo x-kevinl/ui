@@ -1,0 +1,4 @@
+==Solution 1==
+Note that the winning team will the be the only team that wins all of the games. Therefore, to find the total number of games to determine the winner has a 1:1 correspondence to the number of ways to determine the losers. ( Think of it this way: If you want to select two balls from a bag of 6 balls, it is analogous to selecting the 4 balls that you don't want to select, both are 6 choose 2.). There are 15 losing teams, and since each round is unique, there are 15 total rounds. 
+
+~Brackie1331

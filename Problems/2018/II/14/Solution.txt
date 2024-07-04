@@ -1,0 +1,5 @@
+==Diagram==
+<asy> size(200); import olympiad; defaultpen(linewidth(1)+fontsize(12)); 
+pair A,B,C,P,Q,Wp,X,Y,Z; B=origin; C=(6.75,0); A=IP(CR(B,7),CR(C,8)); path c=incircle(A,B,C); Wp=IP(c,A--C); Z=IP(c,A--B); X=IP(c,B--C); Y=IP(c,A--X); pair I=incenter(A,B,C); P=extension(A,B,Y,Y+dir(90)*(Y-I)); Q=extension(A,C,P,Y);
+draw(A--B--C--cycle, black+1); draw(c^^A--X^^P--Q); 
+pen p=4+black; dot("$A$",A,N,p); dot("$B$",B,SW,p); dot("$C$",C,SE,p); dot("$X$",X,S,p); dot("$Y$",Y,dir(55),p); dot("$W$",Wp,E,p); dot("$Z$",Z,W,p); dot("$P$",P,W,p); dot("$Q$",Q,E,p); MA("\beta",C,X,A,0.3,black); MA("\alpha",B,A,X,0.7,black); </asy>

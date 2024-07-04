@@ -1,0 +1,31 @@
+== Solution ==
+=== Solution 1 ===
+We know by [[De Moivre's Theorem]] that <math>(\cos t + i \sin t)^n = \cos nt + i \sin nt</math> for all [[real number]]s <math>t</math> and all [[integer]]s <math>n</math>.  So, we'd like to somehow convert our given expression into a form from which we can apply De Moivre's Theorem.  
+
+Recall the [[trigonometric identities]] <math>\cos \left(\frac{\pi}2 - u\right) = \sin u</math> and <math>\sin \left(\frac{\pi}2 - u\right) = \cos u</math> hold for all real <math>u</math>.  If our original equation holds for all <math>t</math>, it must certainly hold for <math>t = \frac{\pi}2 - u</math>.  Thus, the question is equivalent to asking for how many [[positive integer]]s <math>n \leq 1000</math> we have that <math>\left(\sin\left(\frac\pi2 - u\right) + i \cos\left(\frac\pi 2 - u\right)\right)^n = \sin n \left(\frac\pi2 -u \right) + i\cos n \left(\frac\pi2 - u\right)</math> holds for all real <math>u</math>.
+
+<math>\left(\sin\left(\frac\pi2 - u\right) + i \cos\left(\frac\pi 2 - u\right)\right)^n = \left(\cos u + i \sin u\right)^n = \cos nu + i\sin nu</math>.  We know that two [[complex number]]s are equal if and only if both their [[real part]] and [[imaginary part]] are equal.  Thus, we need to find all <math>n</math> such that <math>\cos n u = \sin n\left(\frac\pi2 - u\right)</math> and <math>\sin nu = \cos n\left(\frac\pi2 - u\right)</math> hold for all real <math>u</math>.
+
+<math>\sin x = \cos y</math> if and only if either <math>x + y = \frac \pi 2 + 2\pi \cdot k</math> or <math>x - y = \frac\pi2 + 2\pi\cdot k</math> for some integer <math>k</math>.  So from the equality of the real parts we need either <math>nu + n\left(\frac\pi2 - u\right) = \frac\pi 2 + 2\pi \cdot k</math>, in which case <math>n = 1 + 4k</math>, or we need <math>-nu + n\left(\frac\pi2 - u\right) = \frac\pi 2 + 2\pi \cdot k</math>, in which case <math>n</math> will depend on <math>u</math> and so the equation will not hold for all real values of <math>u</math>.  Checking <math>n = 1 + 4k</math> in the equation for the imaginary parts, we see that it works there as well, so exactly those values of <math>n</math> congruent to <math>1 \pmod 4</math> work.  There are <math>\boxed{250}</math> of them in the given range.
+
+=== Solution 2 ===
+This problem begs us to use the familiar identity <math>e^{it} = \cos(t) + i \sin(t)</math>. Notice, <math>\sin(t) + i \cos(t) = i(\cos(t) - i \sin(t)) = i e^{-it}</math> since <math>\sin(-t) = -\sin(t)</math>. Using this, <math>(\sin(t) + i \cos(t))^n = \sin(nt) + i \cos(nt)</math> is recast as <math>(i e^{-it})^n = i e^{-itn}</math>. Hence we must have <math>i^n = i \Rightarrow i^{n-1} = 1 \Rightarrow n \equiv 1 \bmod{4}</math>. Thus since <math>1000</math> is a multiple of <math>4</math> exactly one quarter of the residues are congruent to <math>1</math> hence we have <math>\boxed{250}</math>.
+
+=== Solution 3 ===
+We can rewrite <math>\sin(t)</math> as <math>\cos\left(\frac{\pi}{2}-t\right)</math> and <math>\cos(t)</math> as <math>\sin\left(\frac{\pi}{2}-t\right)</math>. This means that <math>\sin t + i\cos t = e^{i\left(\frac{\pi}{2}-t\right)}=\frac{e^{\frac{\pi i}{2}}}{e^{it}}</math>. This theorem also tells us that <math>e^{\frac{\pi i}{2}}=i</math>, so <math>\sin t + i\cos t = \frac{i}{e^{it}}</math>. By the same line of reasoning, we have <math>\sin nt + i\cos nt = \frac{i}{e^{int}}</math>.
+
+For the statement in the question to be true, we must have <math>\left(\frac{i}{e^{it}}\right)^n=\frac{i}{e^{int}}</math>. The left hand side simplifies to <math>\frac{i^n}{e^{int}}</math>. We cancel the denominators and find that the only thing that needs to be true is that <math>i^n=i</math>. This is true if <math>n\equiv1\pmod{4}</math>, and there are <math>\boxed{250}</math> such numbers between <math>1</math> and <math>1000</math>. Solution by Zeroman
+
+=== Solution 4 ===
+We are using degrees in this solution instead of radians. I just process stuff better that way.
+
+We can see that the LHS is <math>cis(n(90^{\circ}-t))</math>, and the RHS is <math>cis(90^{\circ}-nt)</math> So, <math>n(90-t) \equiv 90-nt \mod 360</math> Expanding and canceling the nt terms, we will get <math>90n \equiv 90 \mod 360</math>. Canceling gets <math>n \equiv 1 \mod 4</math>, and thus there are <math>\boxed{250}</math> values of n.
+
+-AlexLikeMath
+
+=== Solution 5(CHEAP) ===
+Let <math>t=0</math>. Then, we have <math>i^n=i</math> which means <math>n\equiv 1\pmod{4}</math>. Thus, the answer is <math>\boxed{250}</math>.
+
+=== Solution 6 ===
+
+We factor out <math>i^n</math> from <math>(\sin t + i \cos t)^n = i^n (\cos(t) - i \sin t)= i^n(\cos(nt) - i\sin nt).</math> We know the final expression must be the same as <math>\sin nt + i \cos nt</math> so we must have <math>i^n(\cos(nt) - i\sin nt) = \sin nt + i \cos nt</math> in which testing yields <math>n \equiv 1 \pmod{4}</math> is the only mod that works, so we have a total of <math>1000 \cdot\frac{1}{4} = \boxed{250}</math> integers <math>n</math> that work.

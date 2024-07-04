@@ -1,0 +1,2 @@
+==Solution==
+$\boxed{\textbf{(A)}\ \text{Art}}$ is the right answer because out of all the cookies, Art's had an area of $12 \text{ in}^2$, which was the greatest area out of all the cookies' areas. Roger's cookie had an area of $8 \text{ in} ^2$, and both Paul and Trisha's cookies had an area of $6 \text{ in}^2$. This means Art makes less cookies, since his cookie area is the greatest. The answer is not that there is a tie between Paul and Trisha because they can make the most cookies with a given amount of cookie dough, not the least.

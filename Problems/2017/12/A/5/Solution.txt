@@ -1,0 +1,6 @@
+==Solution 1 (Basic)==
+All of the handshakes will involve at least one person from the $10$ who knows no one.  Label these ten people $A$, $B$, $C$, $D$, $E$, $F$, $G$, $H$, $I$, $J$.
+
+Person $A$ from the group of $10$ will initiate a handshake with everyone else ($29$ people).  Person $B$ initiates $28$ handshakes plus the one already counted from person $A$.  Person $C$ initiates $27$ new handshakes plus the two we already counted.  This continues until person $J$ initiates $20$ handshakes plus the nine we already counted from $A$ ... $I$.
+
+$29+28+27+26+25+24+23+22+21+20 = \boxed{(B)=\ 245}$

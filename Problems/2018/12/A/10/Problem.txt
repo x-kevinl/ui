@@ -1,0 +1,11 @@
+== Problem ==
+How many ordered pairs of real numbers $(x,y)$ satisfy the following system of equations?
+$$\begin{align*}
+x+3y&=3 \\
+\big||x|-|y|\big|&=1
+\end{align*}$$
+$\textbf{(A) } 1 \qquad 
+\textbf{(B) } 2 \qquad 
+\textbf{(C) } 3 \qquad 
+\textbf{(D) } 4 \qquad 
+\textbf{(E) } 8 $

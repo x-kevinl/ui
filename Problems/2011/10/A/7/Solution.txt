@@ -1,0 +1,15 @@
+== Solution 1 ==
+
+
+$|-3x|+5=0$ has no solution because absolute values only output nonnegative numbers.
+
+Further:
+$(x+7)^2 = 0$ is true for $x = -7$ 
+
+$\sqrt{-x}-2=0$ is true for $x = -4$
+
+$\sqrt{x}-8=0$ is true for $x = 64$
+
+$|-3x|-4=0$ is true for $x = \frac{4}{3}, -\frac{4}{3}$
+
+Therefore, the answer is $ \boxed{\mathrm{(B)}} $.

@@ -1,0 +1,2 @@
+== Solution ==
+There are <math>{38 \choose 2} = 703</math> ways we can draw two cards from the reduced deck. The two cards will form a pair if both are one of the nine numbers that were not removed, which can happen in <math>9{4 \choose 2} = 54</math> ways, or if the two cards are the remaining two cards of the number that was removed, which can happen in <math>1</math> way. Thus, the answer is <math>\frac{54+1}{703} = \frac{55}{703}</math>, and <math>m+n = \boxed{758}</math>.

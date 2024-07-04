@@ -1,0 +1,2 @@
+==Solution 1==
+The distance of an interior diagonal in this cube is $\sqrt{3}$ and the distance of a diagonal on one of the square faces is $\sqrt{2}$. It is not possible for the fly to travel any interior diagonal twice, as then it would visit a corner more than once. So, the final sum can have at most  $4$ as the coefficient of $\sqrt{3}$. The other $4$ paths taken can be across a diagonal on one of the faces (try to find a such path!), so the maximum distance traveled is $\textbf{(D)}\ 4\sqrt{2}+4\sqrt{3}$.

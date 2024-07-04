@@ -1,0 +1,5 @@
+==Problem==
+
+The least common multiple of a positive integer $n$ and $18$ is $180$, and the greatest common divisor of $n$ and $45$ is $15$. What is the sum of the digits of $n$?
+
+$\textbf{(A) } 3 \qquad \textbf{(B) } 6 \qquad \textbf{(C) } 8 \qquad \textbf{(D) } 9 \qquad \textbf{(E) } 12$

@@ -1,0 +1,2 @@
+==Solution 1==
+We can try to guess and check to find the answer. If she got five right, her score would be $(5*5)-(5*2)=15$. If she got six right her score would be $(6*5)-(2*4)=22$. That's close, but it's still not right! If she got 7 right, her score would be $(7*5)-(2*3)=29$. Thus, our answer is $\boxed{\text{(C)}\ 7}$. ~avamarora

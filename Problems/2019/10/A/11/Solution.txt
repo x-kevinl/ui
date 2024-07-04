@@ -1,0 +1,9 @@
+==Solution 1 (PIE)==
+Prime factorizing $201^9$, we get $3^9\cdot67^9$. 
+A perfect square must have even powers of its prime factors, so our possible choices for our exponents to get perfect square are $0, 2, 4, 6, 8$ for both $3$ and $67$. This yields $5\cdot5 = 25$ perfect squares. 
+
+Perfect cubes must have multiples of $3$ for each of their prime factors' exponents, so we have either $0, 3, 6$, or $9$ for both $3$ and $67$, which yields $4\cdot4 = 16$ perfect cubes, for a total of $25+16 = 41$. 
+
+Subtracting the overcounted powers of $6$ ($3^0\cdot67^0$ , $3^0\cdot67^6$ , $3^6\cdot67^0$, and $3^6\cdot67^6$), we get $41-4 = \boxed{\textbf{(C) }37}$.
+
+~ Continuous_Pi

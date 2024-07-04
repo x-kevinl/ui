@@ -1,0 +1,13 @@
+==Solution==
+
+The length $L$ of the rectangle is $\frac{1000}{25}=40$ meters. The perimeter $P$ is $\frac{1000}{10}=100$ meters. Since $P_{rect} = 2L + 2W$, we plug values in to get:
+
+$100 = 2\cdot 40 + 2W$
+
+$100 = 80 + 2W$
+
+$2W = 20$
+
+$W = 10$ meters
+
+Since $A_{rect} = LW$, the area is $40\cdot 10=400$ square meters or $\boxed{C}$.

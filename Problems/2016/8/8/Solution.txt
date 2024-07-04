@@ -1,0 +1,14 @@
+==Solutions==
+===Solution 1===
+We can group each subtracting pair together:
+$$(100-98)+(96-94)+(92-90)+ \ldots +(8-6)+(4-2).$$
+After subtracting, we have:
+$$2+2+2+\ldots+2+2=2(1+1+1+\ldots+1+1).$$
+There are $50$ even numbers, therefore there are $\dfrac{50}{2}=25$ even pairs. Therefore the sum is $2 \cdot 25=\boxed{\textbf{(C) }50}$
+
+===Solution 2===
+Since our list does not end with one, we divide every number by 2 and we end up with
+$$50-49+48-47+ \ldots +4-3+2-1$$
+We can group each subtracting pair together:
+$$(50-49)+(48-47)+(46-45)+ \ldots +(4-3)+(2-1).$$
+There are now $25$ pairs of numbers, and the value of each pair is $1$.  This sum is $25$. However, we divided by $2$ originally so we will multiply $2*25$ to get the final answer of $\boxed{\textbf{(C) }50}$

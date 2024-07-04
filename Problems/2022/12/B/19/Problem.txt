@@ -1,0 +1,5 @@
+== Problem ==
+
+In $\triangle{ABC}$ medians $\overline{AD}$ and $\overline{BE}$ intersect at $G$ and $\triangle{AGE}$ is equilateral. Then $\cos(C)$ can be written as $\frac{m\sqrt p}n$, where $m$ and $n$ are relatively prime positive integers and $p$ is a positive integer not divisible by the square of any prime. What is $m+n+p?$
+
+$\textbf{(A) }44 \qquad \textbf{(B) }48 \qquad \textbf{(C) }52 \qquad \textbf{(D) }56 \qquad \textbf{(E) }60$

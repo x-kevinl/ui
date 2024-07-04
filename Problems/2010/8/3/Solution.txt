@@ -1,0 +1,3 @@
+==Solution==
+The highest price was in Month 1, which was \$17. The lowest price was in Month 3, which was \$10. 17 is $\frac{17}{10}\cdot100=170\%$ of 10, and is $170-100=70\%$ more than 10.
+Therefore, the answer is $ \boxed{\textbf{(C)}\  70}$

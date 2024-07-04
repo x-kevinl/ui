@@ -1,0 +1,28 @@
+==Solution==
+===Solution 1===
+Let <math>f(x) = a(x-r)(x-s)</math>. Then <math>ars=2010=2\cdot3\cdot5\cdot67</math>. First consider the case where <math>r</math> and <math>s</math> (and thus <math>a</math>) are positive. There are <math>3^4 = 81</math> ways to split up the prime factors between <math>a</math>, <math>r</math>, and <math>s</math>. However, <math>r</math> and <math>s</math> are indistinguishable. In one case, <math>(a,r,s) = (2010,1,1)</math>, we have <math>r=s</math>. The other <math>80</math> cases are double counting, so there are <math>40</math>.
+
+We must now consider the various cases of signs. For the <math>40</math> cases where <math>|r|\neq |s|</math>, there are a total of four possibilities, For the case <math>|r|=|s|=1</math>, there are only three possibilities, <math>(r,s) = (1,1); (1,-1); (-1,-1)</math> as <math>(-1,1)</math> is not distinguishable from the second of those three.
+
+You may ask: How can one of <math>{r, s}</math> be positive and the other negative? <math>a</math> will be negative as a result. That way, it's still <math>+2010</math> that gets multiplied.
+
+Thus the grand total is <math>4\cdot40 + 3 = \boxed{163}</math>.
+
+Note: The only reason why we can be confident that <math>r = s</math> is the only case where the polynomials are being overcounted is because of this: We have the four configurations listed below:
+
+<math>(a,r,s)\\
+(a,-r,-s)\\
+(-a,-r,s)\\
+(-a,r,-s)</math>
+
+And notice, we start by counting all the positive solutions. So <math>r</math> and <math>s</math> must be strictly positive, no <math>0</math> or negatives allowed. The negative transformations will count those numbers.
+
+So with these we can conclude that only the first and second together have a chance of being equal, and the third and fourth together. If we consider the first and second, the <math>x</math> term would have coefficients that are always different, <math>-a(r + s)</math> and <math>a(r + s)</math> because of the negative <math>r</math> and <math>s</math>. Since the <math>a</math> is never equal, these can never create equal <math>x</math> coefficients. We don't need to worry about this as <math>r</math> and <math>s</math> are positive and so that won't have any chance.
+
+However with the <math>(-a,-r,s)</math> and <math>(-a,r,-s)</math>, we have the coefficients of the <math>x</math> term as <math>a(s-r)</math> and <math>a(r-s)</math>. In other words, they are equal if <math>s-r=r-s</math> or <math>r=s</math>. Well if <math>r = 1</math>, then we have <math>s = 1</math> and in the <math>(r,-s)</math> case we have <math>(1,-1)</math> and if we transform using <math>(s,-r)</math>, then we have <math>(-1, 1)</math>. So this is the only way that we could possibly overcount the equal cases, and so we need to make sure we don't count <math>(-1,1)</math> and <math>(1,-1)</math> twice as they will create equal sums. This is why we subtract <math>1</math> from <math>41*4=164</math>.
+
+Each different transformation will give us different coordinates <math>(a,r,s)...</math> it is just that some of them create equal coefficients for the <math>x</math>-term, and we see that they are equal only in this case by our exploration, so we subtract <math>1</math> to account and get <math>163</math>.
+
+===Solution 2===
+We use [[Burnside's Lemma]]. The set being acted upon is the set of integer triples <math>(a,r,s)</math> such that <math>ars=2010</math>. Because <math>r</math> and <math>s</math> are indistinguishable, the permutation group consists of the identity and the permutation that switches <math>r</math> and <math>s</math>. In cycle notation, the group consists of <math>(a)(r)(s)</math> and <math>(a)(r \: s)</math>. There are <math>4 \cdot 3^4</math> fixed points of the first permutation (after distributing the primes among <math>a</math>, <math>r</math>, <math>s</math> and then considering their signs. We have 4 ways since we can keep them all positive, first 2 negative, first and third negative, or last two negative) and <math>2</math> fixed points of the second permutation (<math>r=s=\pm 1</math>). By Burnside's Lemma, there are <math>\frac{1}{2} (4 \cdot 3^4+2)= \boxed{163}</math> distinguishable triples <math>(a,r,s)</math>.
+Note: The permutation group is isomorphic to <math>\mathbb{Z}/2\mathbb{Z}</math>.

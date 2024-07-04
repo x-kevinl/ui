@@ -1,0 +1,4 @@
+==Problem==
+Aaliyah rolls two standard 6-sided dice. She notices that the product of the two numbers rolled is a multiple of $6$. Which of the following integers cannot be the sum of the two numbers?
+
+$\textbf{(A) } 5\qquad\textbf{(B) } 6\qquad\textbf{(C) } 7\qquad\textbf{(D) } 8\qquad\textbf{(E) } 9$

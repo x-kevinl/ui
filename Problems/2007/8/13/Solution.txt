@@ -1,0 +1,12 @@
+== Solution ==
+
+Let $x$ be the number of elements in $A$ and $B$ which is equal. 
+
+Then we could form equation 
+$2x-1001 = 2007$
+
+$2x = 3008$
+
+$x = 1504$. 
+
+The answer is $\boxed{\textbf{(C)}\ 1504}$

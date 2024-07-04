@@ -1,0 +1,16 @@
+==Solution 1==
+The triangle is isosceles. The height of the triangle is therefore given by $h = \sqrt{10^2 - \left( \dfrac{12}{2} \right)^2} =  \sqrt{64} = 8$
+
+Now, the area of the triangle is $\dfrac{bh}{2} = \dfrac{12*8}{2} = \dfrac{96}{2} = 48 $
+
+We have that the area of the rectangle is the same as the area of the triangle, namely $48$. We also have the width of the rectangle: $4$.
+
+The length of the rectangle therefore is:
+$l = \dfrac{48}{4} = 12$
+
+The perimeter of the rectangle then becomes:
+$2l + 2w = 2*12 + 2*4 = 32$
+
+The answer is:
+
+$ \boxed{\textbf{(D)}\ 32} $

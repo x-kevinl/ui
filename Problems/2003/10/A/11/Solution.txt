@@ -1,0 +1,14 @@
+== Solution ==
+$AMC10+AMC12=123422$
+
+$AMC00+AMC00=123400$ 
+
+$AMC+AMC=1234$
+
+$2\cdot AMC=1234$ 
+
+$AMC=\frac{1234}{2}=617$
+
+Since $A$, $M$, and $C$ are digits, $A=6$, $M=1$, $C=7$. 
+
+Therefore, $A+M+C = 6+1+7 = \boxed{\mathrm{(E)}\ 14} $.

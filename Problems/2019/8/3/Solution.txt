@@ -1,0 +1,16 @@
+==Solution 1 (Bashing/Butterfly Method)==
+We take a common denominator:
+$$\frac{15}{11},\frac{19}{15}, \frac{17}{13} = \frac{15\cdot 15 \cdot 13}{11\cdot 15 \cdot 13},\frac{19 \cdot 11 \cdot 13}{15\cdot 11 \cdot 13}, \frac{17 \cdot 11 \cdot 15}{13\cdot 11 \cdot 15} = \frac{2925}{2145},\frac{2717}{2145},\frac{2805}{2145}.$$
+
+Since $2717<2805<2925$ it follows that the answer is $\boxed{\textbf{(E)}\frac{19}{15}<\frac{17}{13}<\frac{15}{11}}$.
+
+Another approach to this problem is using the properties of one fraction being greater than another, also known as the <b>butterfly method</b>. That is, if 
+$\frac{a}{b}>\frac{c}{d}$, then it must be true that $a * d$ is greater than $b * c$. Using this approach, we can check for <b>at least</b> two distinct pairs of fractions and find out the greater one of those two, logically giving us the expected answer of $\boxed{\textbf{(E)}\frac{19}{15}<\frac{17}{13}<\frac{15}{11}}$.
+
+-xMidnightFirex
+
+~ dolphin7 - I took your idea and made it an explanation.
+
+- Clearness by doulai1
+
+- Alternate Solution by Nivaar

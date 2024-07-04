@@ -1,0 +1,7 @@
+==Solution 1==
+
+Set the cube at the origin with the three vertices along the axes and the plane equal to <math>ax+by+cz+d=0</math>, where <math>a^2+b^2+c^2=1</math>.  The distance from a point <math>(X,Y,Z)</math> to a plane with equation <math>Ax+By+Cz+D=0</math> is 
+<cmath>\frac{AX+BY+CZ+D}{\sqrt{A^2+B^2+C^2}},</cmath>
+so the (directed) distance from any point <math>(x,y,z)</math> to the plane is <math>ax+by+cz+d</math>.  So, by looking at the three vertices, we have <math>10a+d=10, 10b+d=11, 10c+d=12</math>, and by rearranging and summing, <cmath>(10-d)^2+(11-d)^2+(12-d)^2= 100\cdot(a^2+b^2+c^2)=100.</cmath>
+
+Solving the equation is easier if we substitute <math>11-d=y</math>, to get <math>3y^2+2=100</math>, or <math>y=\sqrt {98/3}</math>.  The distance from the origin to the plane is simply <math>d</math>, which is equal to <math>11-\sqrt{98/3} =(33-\sqrt{294})/3</math>, so <math>33+294+3=\boxed{330}</math>.

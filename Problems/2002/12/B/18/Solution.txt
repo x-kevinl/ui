@@ -1,0 +1,19 @@
+== Solution ==
+
+
+
+=== Solution 1 ===
+
+Assume that the point $P$ is randomly chosen within the rectangle with vertices $(0,0)$, $(3,0)$, $(3,1)$, $(0,1)$. In this case, the region for $P$ to be closer to the origin than to point $(3,1)$ occupies exactly $\frac{1}{2}$ of the area of the rectangle, or $1.5$ square units.
+
+
+If $P$ is chosen within the square with vertices $(2,0)$, $(3,0)$, $(3,1)$, $(2,1)$ which has area $1$ square unit, it is for sure closer to $(3,1)$.
+
+
+Now if $P$ can only be chosen within the rectangle with vertices $(0,0)$, $(2,0)$, $(2,1)$, $(0,1)$, then the square region is removed and the area for $P$ to be closer to $(3,1)$ is then decreased by $1$ square unit, left with only $0.5$ square unit.
+
+
+Thus the probability that $P$ is closer to $(3.1)$ is $\frac{0.5}{2}=\frac{1}{4}$ and that of $P$ is closer to the origin is $1-\frac{1}{4}=\frac{3}{4}$. $\mathrm{(C)}$
+
+
+~ Nafer

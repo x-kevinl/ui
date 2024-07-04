@@ -1,0 +1,36 @@
+== Solution ==
+
+===Solution 1===
+By the [[trigonometric identity|product-to-sum identities]], we have that <math>2\cos a \sin b = \sin (a+b) - \sin (a-b)</math>. Therefore, this reduces to a telescope series: 
+<cmath>\begin{align*}
+\sum_{k=1}^{n} 2\cos(k^2a)\sin(ka) &= \sum_{k=1}^{n} [\sin(k(k+1)a) - \sin((k-1)ka)]\\
+&= -\sin(0) + \sin(2a)- \sin(2a) + \sin(6a) - \cdots - \sin((n-1)na) + \sin(n(n+1)a)\\
+&= -\sin(0) + \sin(n(n+1)a) = \sin(n(n+1)a)
+\end{align*}</cmath>
+
+Thus, we need <math>\sin \left(\frac{n(n+1)\pi}{2008}\right)</math> to be an integer; this can be only <math>\{-1,0,1\}</math>, which occur when <math>2 \cdot \frac{n(n+1)}{2008}</math> is an integer. Thus <math>1004 = 2^2 \cdot 251 | n(n+1) \Longrightarrow 251 | n, n+1</math>. We know that <math>n</math> cannot be <math>250</math> as <math>250</math> isn't divisible by <math>4</math>, so 1004 doesn't divide <math>n(n+1) = 250 \cdot 251</math>. Therefore, it is clear that <math>n = \boxed{251}</math> is the smallest such integer.
+
+===Solution 2===
+We proceed with complex trigonometry. We know that for all <math>\theta</math>, we have <math>\cos \theta = \dfrac{1}{2} \left( z + \dfrac{1}{z} \right)</math> and <math>\sin \theta = \dfrac{1}{2i} \left( z - \dfrac{1}{z} \right)</math> for some complex number <math>z</math> on the unit circle. Similarly, we have <math>\cos n \theta = \dfrac{1}{2} \left( z^n + \dfrac{1}{z^n} \right)</math> and <math>\sin n \theta = \dfrac{1}{2i} \left(z^n - \dfrac{1}{z^n} \right)</math>. Thus, we have <math>\cos n^2 a \sin n a = \dfrac{1}{4i} \left( z^{n^2} + \dfrac{1}{z^{n^2}} \right) \left( z^{n} - \dfrac{1}{z^n} \right)</math>
+
+<math>= \dfrac{1}{4i} \left( z^{n^2 + n} - \dfrac{1}{z^{n^2 + n}} - z^{n^2 - n} + \dfrac{1}{z^{n^2 - n}} \right)</math>
+
+<math>= \dfrac{1}{2} \left( \dfrac{1}{2i} \left(z^{n^2 + n} - \dfrac{1}{z^{n^2 + n}} \right) - \dfrac{1}{2i} \left(z^{n^2 - n} - \dfrac{1}{z^{n^2 - n}} \right) \right)</math>
+
+<math>= \dfrac{1}{2} \left( \sin ((n^2 + n)a) - \sin ((n^2 - n)a) \right)</math>
+
+<math>= \dfrac{1}{2} \left( \sin(((n+1)^2 - (n+1))a) - \sin((n^2 - n)a) \right)</math>
+
+which clearly telescopes! Since the <math>2</math> outside the brackets cancels with the <math>\dfrac{1}{2}</math> inside, we see that the sum up to <math>n</math> terms is 
+
+<math>\sin ((2^2 - 2)a) - \sin ((1^2 - 1)a) + \sin ((3^3 - 3)a) - \sin ((2^2 - 2)a) \cdots + \sin (((n+1)^2 - (n+1))a) - \sin ((n^2 - n)a)</math>
+
+<math>= \sin (((n+1)^2 - (n+1))a) - \sin(0)</math>
+
+<math>= \sin ((n^2 + n)a) - 0</math>
+
+<math>= \sin \left( \dfrac{n(n+1) \pi}{2008} \right)</math>.
+
+This expression takes on an integer value iff <math>\dfrac{2n(n+1)}{2008} = \dfrac{n(n+1)}{1004}</math> is an integer; that is, <math>1004 \mid n(n+1)</math>. Clearly, <math>1004 = 2^2 \cdot 251</math>, implying that <math>251 \mid n(n+1)</math>. Since we want the smallest possible value of <math>n</math>, we see that we must have <math>{n,n+1} = 251</math>. If <math>n+1 = 251 \rightarrow n=250</math>, then we have <math>n(n+1) = 250(251)</math>, which is clearly not divisible by <math>1004</math>. However, if <math>n = 251</math>, then <math>1004 \mid n(n+1)</math>, so our answer is <math>\boxed{251}</math>.
+
+It should be noted that the product-to-sum rules follow directly from complex trigonometry, so this solution is essentially equivalent to the solution above.

@@ -1,0 +1,167 @@
+== Solution ==
+===Diagram===
+<center><asy> /* geogebra conversion, see azjps userscripts.org/scripts/show/72997 */
+import graph; defaultpen(linewidth(0.7)+fontsize(10)); size(500);
+pen zzttqq = rgb(0.6,0.2,0);
+pen xdxdff = rgb(0.4902,0.4902,1);
+
+  /* segments and figures */
+draw((0,-154.31785)--(0,0));
+draw((0,0)--(252,0));
+draw((0,0)--(126,0),zzttqq);
+draw((126,0)--(63,109.1192),zzttqq);
+draw((63,109.1192)--(0,0),zzttqq);
+draw((-71.4052,(+9166.01287-109.1192*-71.4052)/21)--(504.60925,(+9166.01287-109.1192*504.60925)/21));
+draw((0,-154.31785)--(252,-154.31785));
+draw((252,-154.31785)--(252,0));
+draw((0,0)--(84,0));
+draw((84,0)--(252,0));
+draw((63,109.1192)--(63,0));
+draw((84,0)--(84,-154.31785));
+draw(arc((126,0),126,0,180));
+
+  /* points and labels */
+dot((0,0));
+label("$A$",(-16.43287,-9.3374),NE/2);
+dot((252,0));
+label("$B$",(255.242,5.00321),NE/2);
+dot((0,-154.31785));
+label("$D$",(3.48464,-149.55669),NE/2);
+dot((252,-154.31785));
+label("$C$",(255.242,-149.55669),NE/2);
+dot((126,0));
+label("$O$",(129.36332,5.00321),NE/2);
+dot((63,109.1192));
+label("$N$",(44.91307,108.57427),NE/2);
+label("$126$",(28.18236,40.85473),NE/2);
+dot((84,0));
+label("$U$",(87.13819,5.00321),NE/2);
+dot((113.69848,-154.31785));
+label("$T$",(116.61611,-149.55669),NE/2);
+dot((63,0));
+label("$N'$",(66.42398,5.00321),NE/2);
+label("$84$",(41.72627,-12.5242),NE/2);
+label("$168$",(167.60494,-12.5242),NE/2);
+dot((84,-154.31785));
+label("$T'$",(87.13819,-149.55669),NE/2);
+dot((252,0));
+label("$I$",(255.242,5.00321),NE/2);
+clip((-71.4052,-225.24323)--(-71.4052,171.51361)--(504.60925,171.51361)--(504.60925,-225.24323)--cycle);
+</asy></center>
+=== Solution 1 ===
+
+The center of the semicircle is also the midpoint of <math>AB</math>. Let this point be O. Let <math>h</math> be the length of <math>AD</math>.
+
+Rescale everything by 42, so <math>AU = 2, AN = 3, UB = 4</math>. Then <math>AB = 6</math> so <math>OA = OB = 3</math>.
+
+Since <math>ON</math> is a radius of the semicircle, <math>ON = 3</math>. Thus <math>OAN</math> is an equilateral triangle.
+
+Let <math>X</math>, <math>Y</math>, and <math>Z</math> be the areas of triangle <math>OUN</math>, sector <math>ONB</math>, and trapezoid <math>UBCT</math> respectively.
+
+<math>X = \frac {1}{2}(UO)(NO)\sin{O} = \frac {1}{2}(1)(3)\sin{60^\circ} = \frac {3}{4}\sqrt {3}</math>
+
+<math>Y = \frac {1}{3}\pi(3)^2 = 3\pi</math>
+
+To find <math>Z</math> we have to find the length of <math>TC</math>. Project <math>T</math> and <math>N</math> onto <math>AB</math> to get points <math>T'</math> and <math>N'</math>. Notice that <math>UNN'</math> and <math>TUT'</math> are similar. Thus:
+
+<math>\frac {TT'}{UT'} = \frac {UN'}{NN'} \implies \frac {TT'}{h} = \frac {1/2}{3\sqrt {3}/2} \implies TT' = \frac {\sqrt {3}}{9}h</math>.
+
+Then <math>TC = T'C - T'T = UB - TT' = 4 - \frac {\sqrt {3}}{9}h</math>. So:
+
+<math>Z = \frac {1}{2}(BU + TC)(CB) = \frac {1}{2}\left(8 - \frac {\sqrt {3}}{9}h\right)h = 4h - \frac {\sqrt {3}}{18}h^2</math>
+
+Let <math>L</math> be the area of the side of line <math>l</math> containing regions <math>X, Y, Z</math>. Then
+
+<math>L = X + Y + Z = \frac {3}{4}\sqrt {3} + 3\pi + 4h - \frac {\sqrt {3}}{18}h^2</math>
+
+Obviously, the <math>L</math> is greater than the area on the other side of line <math>l</math>. This other area is equal to the total area minus <math>L</math>. Thus:
+
+<math>\frac {2}{1} = \frac {L}{6h + \frac {9}{2}{\pi} - L} \implies 12h + 9\pi = 3L</math>.
+
+Now just solve for <math>h</math>.
+
+<cmath>\begin{align*} 12h + 9\pi & = \frac {9}{4}\sqrt {3} + 9\pi + 12h - \frac {\sqrt {3}}{6}h^2 \\
+0 & = \frac {9}{4}\sqrt {3} - \frac {\sqrt {3}}{6}h^2 \\
+h^2 & = \frac {9}{4}(6) \\
+h & = \frac {3}{2}\sqrt {6} \end{align*}</cmath>
+
+Don't forget to un-rescale at the end to get <math>AD = \frac {3}{2}\sqrt {6} \cdot 42 = 63\sqrt {6}</math>. 
+
+Finally, the answer is <math>63 + 6 = \boxed{069}</math>.
+
+=== Solution 2 ===
+
+Let <math>O</math> be the center of the semicircle. It follows that <math>AU + UO = AN = NO = 126</math>, so triangle <math>ANO</math> is [[equilateral]].
+
+Let <math>Y</math> be the foot of the altitude from <math>N</math>, such that <math>NY = 63\sqrt{3}</math> and <math>NU = 21</math>.
+
+Finally, denote <math>DT = a</math>, and <math>AD = x</math>. Extend <math>U</math> to point <math>Z</math> so that <math>Z</math> is on <math>CD</math> and <math>UZ</math> is perpendicular to <math>CD</math>. It then follows that <math>ZT = a-84</math>. Since <math>NYU</math> and <math>UZT</math> are [[similar]],
+
+<math>\frac {x}{a-84} = \frac {63\sqrt{3}}{21} = 3\sqrt{3}</math>
+
+Given that line <math>NT</math> divides <math>R</math> into a ratio of <math>1:2</math>, we can also say that
+
+<math>(x)(\frac{84+a}{2}) + \frac {126^2\pi}{6} - (63)(21)(\sqrt{3}) = (\frac{1}{3})(252x + \frac{126^2\pi}{2})</math>
+
+where the first term is the area of trapezoid <math>AUTD</math>, the second and third terms denote the areas of <math>\frac{1}{6}</math> a full circle, and the area of <math>NUO</math>, respectively, and the fourth term on the right side of the equation is equal to <math>R</math>. Cancelling out the <math>\frac{126^2\pi}{6}</math> on both sides, we obtain
+
+<math>(x)(\frac{84+a}{2}) - \frac{252x}{3} = (63)(21)(\sqrt{3})</math>
+
+By adding and collecting like terms,
+<math>\frac{3ax - 252x}{6} = (63)(21)(\sqrt{3})</math>
+
+<math>\frac{(3x)(a-84)}{6} = (63)(21)(\sqrt{3})</math>.
+
+Since <math>a - 84 = \frac{x}{3\sqrt{3}}</math>,
+
+<math>\frac {(3x)(\frac{x}{3\sqrt{3}})}{6} = (63)(21)(\sqrt{3})</math>
+
+<math>\frac {x^2}{\sqrt{3}} = (63)(126)(\sqrt{3})</math>
+
+<math>x^2 = (63)(126)(3) = (2)(3^5)(7^2)</math>
+
+<math>x = AD = (7)(3^2)(\sqrt{6}) = 63\sqrt{6}</math>, so the answer is <math>\boxed{069}.</math>
+
+
+=== Solution 3 ===
+
+Note that the total area of <math> \mathcal{R} </math> is <math>252DA + \frac {126^2 \pi}{2}</math> and thus one of the regions has area <math>84DA + \frac {126^2 \pi}{6}</math>
+
+As in the above solutions we discover that <math>\angle AON = 60^\circ</math>, thus sector <math>ANO</math> of the semicircle has <math>\frac{1}{3}</math> of the semicircle's area.
+
+Similarly, dropping the <math>N'T'</math> perpendicular we observe that <math>[AN'T'D] = 84DA</math>, which is <math>\frac{1}{3}</math> of the total rectangle.
+
+Denoting the region to the left of <math>\overline {NT}</math> as <math>\alpha</math> and to the right as <math>\beta</math>, it becomes clear that if <math>[\triangle UT'T] = [\triangle NUO]</math> then the regions will have the desired ratio.
+
+Using the 30-60-90 triangle, the slope of <math>NT</math>, is <math>{-3\sqrt{3}}</math>, and thus <math>[\triangle UT'T] = \frac {DA^2}{6\sqrt{3}}</math>.
+
+<math>[NUO]</math> is most easily found by <math>\frac{absin(c)}{2}</math>: <math>[\triangle NUO] = \frac {126*42 * \frac {\sqrt{3}}{2}}{2}</math>
+
+Equating, <math>\frac {126*42 * \frac {\sqrt{3}}{2}}{2} = \frac {DA^2}{6\sqrt{3}}</math>
+
+Solving, <math> 63 * 21 * 3 * 6 = DA^2</math>
+
+<math>DA = 63 \sqrt{6} \longrightarrow \boxed {069}</math>
+
+=== Solution 4 (Coordinates) ===
+Like above solutions, note that <math>ANO</math> is equilateral with side length <math>126,</math> where <math>O</math> is the midpoint of <math>AB.</math> Then, if we let <math>DA=a</math> and set origin at <math>D=(0,0),</math> we get <math>N=(63,a+63\sqrt{3}), U=(84,a).</math> Line <math>NU</math> is then <math>y-a=\sqrt{27}(x-84),</math> so it intersects <math>CA,</math> the <math>x</math>-axis, at <math>x=(a/\sqrt{27}+84),</math> giving us point <math>T.</math> Now the area of region <math>R</math> is <math>252a+\pi(126)^2 / 2,</math> so one third of that is <math>84a+\pi(126)^2 / 6.</math>
+
+The area of the smaller piece of <math>R</math> is <math>[AUTD] + [ANU] + [\text{lune} AN] = \frac{1}{2} \cdot a(84+\frac{a}{\sqrt{27}}+84)+\frac{1}{2} \cdot 84 \cdot 63 \sqrt{3}+ \frac{\pi (126)^2}{6}-\frac{1}{2} \cdot 126 \cdot 63 \sqrt{2}</math>
+<math>=\frac{a^2}{2\sqrt{27}}+84a-21\cdot 63\sqrt{2} + \frac{\pi(126)^2}{6}.</math>
+Setting this equal to <math>84a+\pi(126)^2 / 6</math> and canceling the <math>84a + \pi(126)^2</math> yields
+<math>\frac{a^2}{2\sqrt{27}}=21 \cdot 63 \sqrt{3},</math> so <math>a = 63 \sqrt{6}</math> and the anser is <math>\boxed{069}.</math>
+~ rzlng
+
+=== Solution 5 (Minimal calculation) ===
+
+Once we establish that <math>\Delta ANO</math> is equilateral, we have 
+<cmath>[{\rm Sector } BON] = 2[{\rm Sector } AON],  [BCT'U]=2[ADT'U]</cmath>
+<cmath>\Rightarrow [\overset{\large\frown}{NB} CT'UO]=2[\overset{\large\frown}{NA} DT'UO]</cmath>
+On the other hand,
+<cmath>[\overset{\large\frown}{NB} CT]=2[\overset{\large\frown}{NA} DT]</cmath>
+Therefore, <math>[UT'T]=[NUO]</math>. 
+
+Now, <math>UO=42, NU=21 \Rightarrow [UT'T]=[NUO]=2[NN'U]</math>. Also <math>\Delta UT'T \sim \Delta NN'U</math>. Therefore,
+<cmath>DA=UT'=\sqrt{2} NN'=\sqrt{2} \left(\frac{\sqrt{3}}{2}\cdot 126\right)=63\sqrt{6}\longrightarrow \boxed {069}</cmath>
+
+~asops

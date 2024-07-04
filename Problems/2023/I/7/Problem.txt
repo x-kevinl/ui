@@ -1,0 +1,2 @@
+==Problem==
+Call a positive integer <math>n</math> extra-distinct if the remainders when <math>n</math> is divided by <math>2, 3, 4, 5,</math> and <math>6</math> are distinct. Find the number of extra-distinct positive integers less than <math>1000</math>.

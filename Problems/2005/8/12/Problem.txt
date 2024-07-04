@@ -1,0 +1,4 @@
+==Problem==
+Big Al, the ape, ate 100 bananas from May 1 through May 5. Each day he ate six more bananas than on the previous day. How many bananas did Big Al eat on May 5?
+
+$ \textbf{(A)}\ 20\qquad\textbf{(B)}\ 22\qquad\textbf{(C)}\ 30\qquad\textbf{(D)}\ 32\qquad\textbf{(E)}\ 34 $

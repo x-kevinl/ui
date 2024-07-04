@@ -1,0 +1,4 @@
+==Problem==
+Five friends compete in a dart-throwing contest. Each one has two darts to throw at the same circular target, and each individual's score is the sum of the scores in the target regions that are hit. The scores for the target regions are the whole numbers $1$ through $10$. Each throw hits the target in a region with a different value. The scores are: Alice $16$ points, Ben $4$ points, Cindy $7$ points, Dave $11$ points, and Ellen $17$ points. Who hits the region worth $6$ points?
+
+$\textbf{(A)}\ \text{Alice}\qquad \textbf{(B)}\ \text{Ben}\qquad \textbf{(C)}\ \text{Cindy}\qquad \textbf{(D)}\ \text{Dave} \qquad \textbf{(E)}\ \text{Ellen}$

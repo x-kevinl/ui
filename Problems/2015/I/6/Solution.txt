@@ -1,0 +1,23 @@
+==Solution 1==
+
+Let <math>O</math> be the center of the circle with <math>ABCDE</math> on it. 
+
+Let <math>x</math> be the degree measurement of <math>\overarc{ED}=\overarc{DC}=\overarc{CB}=\overarc{BA}</math> in circle <math>O</math> 
+
+and <math>y</math> be the degree measurement of <math>\overarc{EF}=\overarc{FG}=\overarc{GH}=\overarc{HI}=\overarc{IA}</math> in circle <math>C</math>.
+
+<math>\angle ECA</math> is, therefore, <math>5y</math> by way of circle <math>C</math> and <cmath>\frac{360-4x}{2}=180-2x</cmath> by way of circle <math>O</math>.
+<math>\angle ABD</math> is <math>180 - \frac{3x}{2}</math> by way of circle <math>O</math>, and <cmath>\angle AHG = 180 - \frac{3y}{2}</cmath> by way of circle <math>C</math>.
+
+This means that:
+
+<cmath>180-\frac{3x}{2}=180-\frac{3y}{2}+12</cmath>
+
+which when simplified yields <cmath>\frac{3x}{2}+12=\frac{3y}{2}</cmath> or <cmath>x+8=y</cmath>
+Since:
+<cmath>5y=180-2x</cmath> and <cmath>5x+40=180-2x</cmath>
+So:
+<cmath>7x=140\Longleftrightarrow x=20</cmath> 
+<cmath>y=28</cmath>
+<math>\angle BAG</math> is equal to <math>\angle BAE</math> + <math>\angle EAG</math>, which equates to <math>\frac{3x}{2} + y</math>.
+Plugging in yields <math>30+28</math>, or <math>\boxed{058}</math>.

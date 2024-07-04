@@ -1,0 +1,11 @@
+== Solution 1 ==
+$3p-q$ and $3p+q$ are consecutive terms, so the common difference is $(3p+q)-(3p-q) = 2q$.
+
+$$\begin{align*}p+2q &= 9\\
+9+2q &= 3p-q\\
+q&=2\\
+p&=5\end{align*}$$
+
+The common difference is $4$. The first term is $5$ and the $2010^\text{th}$ term is
+
+$$5+4(2009) = \boxed{\textbf{(A) }8041}$$

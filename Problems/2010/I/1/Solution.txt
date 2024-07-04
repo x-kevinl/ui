@@ -1,0 +1,3 @@
+== Solution 1==
+<math>2010^2 = 2^2\cdot3^2\cdot5^2\cdot67^2</math>. Thus there are <math>(2+1)^4</math> divisors, <math>(1+1)^4</math> of which are squares (the exponent of each prime factor must either be <math>0</math> or <math>2</math>). Therefore the probability is
+<cmath>\frac {2\cdot2^4\cdot(3^4 - 2^4)}{3^4(3^4 - 1)} = \frac {26}{81} \Longrightarrow 26+ 81 = \boxed{107}.</cmath>

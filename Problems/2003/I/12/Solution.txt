@@ -1,0 +1,29 @@
+== Solution ==
+
+===Solution 1===
+<center><asy>
+real x = 1.60; /* arbitrary */
+
+pointpen = black; pathpen = black+linewidth(0.7); size(180);
+real BD = x*x + 1.80*1.80 - 2 * 1.80 * x * 7 / 9;
+pair A=(0,0),B=(1.8,0),D=IP(CR(A,x),CR(B,BD)),C=OP(CR(D,1.8),CR(B,2.80 - x));
+D(MP("A",A)--MP("B",B)--MP("C",C)--MP("D",D,N)--B--A--D);
+MP("180",(A+B)/2); MP("180",(C+D)/2,NE); D(anglemark(B,A,D)); D(anglemark(D,C,B));
+</asy></center>
+
+By the [[Law of Cosines]] on <math>\triangle ABD</math> at angle <math>A</math> and on <math>\triangle BCD</math> at angle <math>C</math> (note <math>\angle C = \angle A</math>),
+
+<cmath>180^2 + AD^2 - 360 \cdot AD \cos A = 180^2 + BC^2 - 360 \cdot BC \cos A </cmath>
+<cmath>(AD^2 - BC^2) = 360(AD - BC) \cos A</cmath>
+<cmath>(AD - BC)(AD + BC) = 360(AD - BC) \cos A</cmath>
+<cmath>(AD + BC) = 360 \cos A</cmath>
+We know that <math>AD + BC = 640 - 360 = 280</math>. <math>\cos A = \dfrac{280}{360} =  \dfrac{7}{9} = 0.777 \ldots</math>
+
+<math>\lfloor 1000 \cos  A \rfloor = \boxed{777}</math>.
+
+===Solution 2===
+Notice that <math>AB = CD</math>, and <math>BD = DB</math>, and <math>\angle{DAB} \cong \angle{BCD}</math>, so we have side-side-angle matching on triangles <math>ABD</math> and <math>CDB</math>.  Since the problem does not allow <math>\triangle{ABD} \cong \triangle{CDB}</math>, we know that <math>\angle{ADB}</math> is not a right angle, and there is a unique other triangle with the matching side-side-angle.
+
+Extend <math>AD</math> to <math>C'</math> so that <math>\triangle{ABC'}</math> is isosceles with <math>AB = C'B</math>.  Then notice that <math>\triangle{DC'B}</math> has matching side-side-angle, and yet <math>\triangle{ADB} \not\cong \triangle{C'DB}</math> because <math>\angle{ADB}</math> is not right.  Therefore <math>\triangle{C'DB}</math> is the unique triangle mentioned above, so <math>\triangle{CDB}</math> is congruent, in some order of vertices, to <math>\triangle{C'DB}</math>.  Since <math>\triangle{CDB} \cong \triangle{C'DB}</math> would imply <math>\triangle{CDB} = \triangle{C'DB}</math>, making quadrilateral <math>ABCD</math> degenerate, we must have <math>\triangle{CDB} \cong \triangle{C'BD}</math>.
+
+Since the perimeter of <math>ABCD</math> is <math>640</math>, <math>AD + BC = 640 - 180 - 180 = 280</math>.  Hence <math>280 = AD + BC = AD + DC'</math>.  Drop the altitude of <math>\triangle{ABC'}</math> from <math>B</math> and call the foot <math>P</math>.  Then right triangle trigonometry on <math>\triangle{APB}</math> shows that <math>\cos{A} = AP/AB = 140/180 = 7/9</math>, so <math>\lfloor 1000 \cos A \rfloor = \boxed{777}</math>.

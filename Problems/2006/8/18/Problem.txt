@@ -1,0 +1,4 @@
+==Problem==
+A cube with 3-inch edges is made using 27 cubes with 1-inch edges. Nineteen of the smaller cubes are white and eight are black. If the eight black cubes are placed at the corners of the larger cube, what fraction of the surface area of the larger cube is white? 
+
+$ \textbf{(A)}\ \frac{1}{9}\qquad\textbf{(B)}\ \frac{1}{4}\qquad\textbf{(C)}\ \frac{4}{9}\qquad\textbf{(D)}\ \frac{5}{9}\qquad\textbf{(E)}\ \frac{19}{27} $

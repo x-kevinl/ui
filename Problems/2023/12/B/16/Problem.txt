@@ -1,0 +1,4 @@
+==Problem==
+In the state of Coinland, coins have values $6,10,$ and $15$ cents. Suppose $x$ is the value in cents of the most expensive item in Coinland that cannot be purchased using these coins with exact change. What is the sum of the digits of $x?$
+
+$\textbf{(A) }8\qquad\textbf{(B) }10\qquad\textbf{(C) }7\qquad\textbf{(D) }11\qquad\textbf{(E) }9$

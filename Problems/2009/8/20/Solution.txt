@@ -1,0 +1,2 @@
+==Solution==
+Assume the base of the triangle is on the bottom four points because a congruent triangle can be made by reflecting the base on the top four points. For a triangle with a base of length $1$, there are $3$ triangles. For a triangle with a base of length $2$, there are $3$ triangles. For length $3$, there are $2$. In total, the number of non-congruent triangles is $3+3+2=\boxed{\textbf{(D)}\ 8}$.

@@ -1,0 +1,31 @@
+== Problem ==
+In the overlapping [[triangle]]s $\triangle{ABC}$ and $\triangle{ABE}$ sharing common [[edge | side]] $AB$, $\angle{EAB}$ and $\angle{ABC}$ are [[right angle]]s, $AB=4$, $BC=6$, $AE=8$, and $\overline{AC}$ and $\overline{BE}$ intersect at $D$. What is the difference between the areas of $\triangle{ADE}$ and $\triangle{BDC}$? 
+
+<asy>
+size(150);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+pair A, B, C, D, E;
+
+//Variable Definitions
+A=(0, 0);
+B=(4, 0);
+C=(4, 6);
+E=(0, 8);
+D=extension(A,C,B,E);
+
+//Initial Diagram
+draw(A--B--C--A--E--B);
+label("$A$",A,SW);
+label("$B$",B,SE);
+label("$C$",C,NE);
+label("$D$",D,3N);
+label("$E$",E,NW);
+
+//Side labels
+label("$4$",A--B,S);
+label("$8$",A--E,W);
+label("$6$",B--C,ENE);
+</asy>
+
+$\mathrm {(A)}\ 2 \qquad \mathrm {(B)}\ 4 \qquad \mathrm {(C)}\ 5 \qquad \mathrm {(D)}\ 8 \qquad \mathrm {(E)}\ 9 \qquad$

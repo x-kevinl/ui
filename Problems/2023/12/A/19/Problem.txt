@@ -1,0 +1,5 @@
+==Problem==
+What is the product of all solutions to the equation
+$$\log_{7x}2023\cdot \log_{289x}2023=\log_{2023x}2023$$
+
+$\textbf{(A) } (\log_{2023}7\cdot \log_{2023}289)^2\qquad\textbf{(B) } \log_{2023}7\cdot \log_{2023}289\qquad\textbf{(C) } 1 \\ \qquad \textbf{(D) } \log_{7}2023\cdot \log_{289}2023\qquad \textbf{(E) } (\log_7 2023\cdot\log_{289} 2023)^2$

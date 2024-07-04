@@ -1,0 +1,5 @@
+==Solution 1 ==
+
+The shortest segments would be perpendicular to the square. The lemming went $x$ meters horizontally and $y$ meters vertically. No matter how much it went, the lemming would have been $x$ and $y$ meters from the sides and $10-x$ and $10-y$ meters from the remaining two. To find the average, add the lengths of the four segments and divide by four: $\frac {\cancel{x}+10-\cancel{x}+\cancel{y}+10-\cancel{y}}{4} = $ $\boxed{\textbf{(C)}\ 5}$.
+
+*Note that from any point in the square, the average distance from one side to the other is half of the square's side length.

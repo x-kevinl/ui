@@ -1,0 +1,2 @@
+== Problem==
+In [[trapezoid]] <math>ABCD</math> with <math>\overline{BC}\parallel\overline{AD}</math>, let <math>BC = 1000</math> and <math>AD = 2008</math>. Let <math>\angle A = 37^\circ</math>, <math>\angle D = 53^\circ</math>, and <math>M</math> and <math>N</math> be the [[midpoint]]s of <math>\overline{BC}</math> and <math>\overline{AD}</math>, respectively. Find the length <math>MN</math>.

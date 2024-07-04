@@ -1,0 +1,5 @@
+==Problem==
+
+The sum of $25$ consecutive even integers is $10,000$. What is the largest of these $25$ consecutive integers?
+
+$\textbf{(A)}\mbox{ }360\qquad\textbf{(B)}\mbox{ }388\qquad\textbf{(C)}\mbox{ }412\qquad\textbf{(D)}\mbox{ }416\qquad\textbf{(E)}\mbox{ }424$

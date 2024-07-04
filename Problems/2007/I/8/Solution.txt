@@ -1,0 +1,51 @@
+== Solution ==
+=== Solution 1 ===
+We can see that <math>Q_1</math> and <math>Q_2</math> must have a [[root]] in common for them to both be [[factor]]s of the same cubic.
+
+Let this root be <math>a</math>.
+
+We then know that <math>a</math> is a root of
+<math>
+Q_{2}(x)-2Q_{1}(x) = 2x^{2}+2kx-43x+k-2x^{2}-2kx+58x+2k = 15x+3k = 0
+</math>
+, so <math>x = \frac{-k}{5}</math>.
+
+We then know that <math>\frac{-k}{5}</math> is a root of <math>Q_{1}</math> so we get:
+<math>
+\frac{k^{2}}{25}+(k-29)\left(\frac{-k}{5}\right)-k = 0 = k^{2}-5(k-29)(k)-25k = k^{2}-5k^{2}+145k-25k
+</math>
+or <math>k^{2}=30k</math>, so <math>k=30</math> is the highest.
+
+We can trivially check into the original equations to find that <math>k=30</math> produces a root in common, so the answer is <math>\boxed{030}</math>.
+
+=== Solution 2 ===
+Again, let the common root be <math>a</math>; let the other two roots be <math>m</math> and <math>n</math>. We can write that <math>(x - a)(x - m) = x^2 + (k - 29)x - k</math> and that <math>2(x - a)(x - n) = 2\left(x^2 + \left(k - \frac{43}{2}\right)x + \frac{k}{2}\right)</math>.
+
+Therefore, we can write four equations (and we have four [[variable]]s), <math>a + m = 29 - k</math>, <math>a + n = \frac{43}{2} - k</math>, <math>am = -k</math>, and <math>an = \frac{k}{2}</math>. 
+
+The first two equations show that <math>m - n = 29 - \frac{43}{2} = \frac{15}{2}</math>. The last two equations show that <math>\frac{m}{n} = -2</math>. Solving these show that <math>m = 5</math> and that <math>n = -\frac{5}{2}</math>. Substituting back into the equations, we eventually find that <math>k = \boxed{030}</math>.
+
+=== Solution 3 ===
+
+Since <math>Q_1(x)</math> and <math>Q_2(x)</math> are both factors of <math>P(x)</math>, which is cubic, we know the other factors associated with each of <math>Q_1(x)</math> and <math>Q_2(x)</math> must be linear. Let <math>Q_1(x)R(x) = Q_2(x)S(x) = P(x)</math>, where <math>R(x) = ax + b</math> and <math>S(x) = cx + d</math>. Then we have that <math>((x^2 + (k-29)x - k))(ax + b) = ((2x^2+ (2k-43)x + k))(cx + d)</math>. Equating coefficients, we get the following system of equations: 
+
+<cmath>\begin{align} 
+a = 2c \\
+b = -d \\
+2c(k - 29) - d = c(2k - 43) + 2d \\
+-d(k - 29) - 2ck = d(2k - 43) + ck 
+\end{align}</cmath>
+
+Using equations <math>(1)</math> and <math>(2)</math> to make substitutions into equation <math>(3)</math>, we see that the <math>k</math>'s drop out and we're left with <math>d = -5c</math>. Substituting this expression for <math>d</math> into equation <math>(4)</math> and solving, we see that <math>k</math> must be <math>\boxed {030}</math>.  
+
+~ anellipticcurveoverq
+
+=== Solution 4 === 
+
+Notice that if the roots of <math>Q_1(x)</math> and <math>Q_2(x)</math> are all distinct, then <math>P(x)</math> would have four distinct roots, which is a contradiction since it's cubic. Thus, <math>Q_1(x)</math> and <math>Q_2(x)</math> must share a root. Let this common value be <math>r.</math> 
+
+Thus, we see that we have 
+<cmath>r^2 + (k - 29)r - k = 0,</cmath>
+<cmath>2r^2 + (2k - 43)r + k = 0.</cmath> Adding the two equations gives us <cmath>3r^2 + (3k - 72)r = 0 \implies r = 0, 24 - k.</cmath> Now, we have two cases to consider. If <math>r = 0,</math> then we have that <math>Q_1(r) = 0 = r^2 + (k - 29)r - k \implies k = 0.</math> On the other hand, if <math>r = 24 - k,</math> we see that <cmath>Q_1(r) = 0 = (24 - k)^2 + (k - 29)(24 - k) - k \implies k = \boxed{030}.</cmath> This can easily be checked to see that it does indeed work, and we're done! 
+
+~Ilikeapos

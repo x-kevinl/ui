@@ -1,0 +1,3 @@
+==Solution==
+$$\frac{2x}{3}-\frac{x}{6}\quad\Longrightarrow\quad\frac{4x}{6}-\frac{x}{6}\quad\Longrightarrow\quad\frac{3x}{6}\quad\Longrightarrow\quad\frac{x}{2}$$
+For $\frac{x}{2}$ to be an integer, $x$ must be even, but not necessarily divisible by $3$. Thus, the answer is $\mathrm{(B)}$.

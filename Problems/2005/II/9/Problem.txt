@@ -1,0 +1,2 @@
+== Problem ==
+For how many positive integers <math> n </math> less than or equal to <math>1000</math> is <math> (\sin t + i \cos t)^n = \sin nt + i \cos nt </math> true for all real <math> t </math>?

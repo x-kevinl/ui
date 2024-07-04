@@ -1,0 +1,7 @@
+== Solution ==
+Since $1 + 2 + \cdots + n = \frac{n(n+1)}{2}$, the condition is equivalent to having an integer value for $\frac{n!}
+{\frac{n(n+1)}{2}}$. This reduces, when $n\ge 1$, to having an integer value for $\frac{2(n-1)!}{n+1}$. This fraction is an 
+integer unless $n+1$ is an odd prime. There are $8$ odd primes less than or equal to $24$, so there 
+
+are $24 - 8 = 
+\boxed{\textbf{(C) }16}$ numbers less than or equal to $24$ that satisfy the condition.

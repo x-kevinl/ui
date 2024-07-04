@@ -1,0 +1,2 @@
+== Solution ==
+The area of the square around the pinwheel is 25. The area of the pinwheel is equal to $\text{the square } - \text{ the white space.}$ Each of the four triangles have a base of 3 units and a height of 2.5 units, and so their combined area is 15 units squared. Then the unshaded space consists of the four triangles with total area of 15, and there are four white corner squares. Therefore the area of the pinwheel is $25-(15+4)$ which is $\boxed{\textbf{(B) 6}}$

@@ -1,0 +1,2 @@
+== Problem ==
+The terms of the sequence <math>(a_i)</math> defined by <math>a_{n + 2} = \frac {a_n + 2009} {1 + a_{n + 1}}</math> for <math>n \ge 1</math> are positive integers. Find the minimum possible value of <math>a_1 + a_2</math>.

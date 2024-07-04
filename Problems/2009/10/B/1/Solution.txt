@@ -1,0 +1,6 @@
+== Solution 1 (Observations: Replacements) ==
+If Jane bought one more bagel but one fewer muffin, then her total cost for the week would increase by $25$ cents.
+
+If Jane bought $1$ bagel, then she bought $4$ muffins. Her total cost for the week would be $75\cdot1+50\cdot4=275$ cents, or $2.75$ dollars. Clearly, she bought one more bagel but one fewer muffin at a total cost of $3.00$ dollars. Therefore, she bought $\boxed{\textbf{(B) } 2}$ bagels.
+
+~MRENTHUSIASM

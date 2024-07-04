@@ -1,0 +1,21 @@
+==Solution 1==
+
+You can create the equation $\frac{x+1}{y+1}=\frac{11x}{10y}$
+
+Cross multiplying and combining like terms gives $xy + 11x - 10y = 0$.
+
+This can be factored into $(x - 10)(y + 11) = -110$.
+
+$x$ and $y$ must be positive, so $x > 0$ and $y > 0$, so $x - 10> -10$ and $y + 11 > 11$.
+
+Using the factors of 110, we can get the factor pairs: $(-1, 110),$ $(-2, 55),$ and $(-5, 22).$
+
+But we can't stop here because $x$ and $y$ must be relatively prime.
+
+$(-1, 110)$ gives $x = 9$ and $y = 99$. $9$ and $99$ are not relatively prime, so this doesn't work.
+
+$(-2, 55)$ gives $x = 8$ and $y = 44$. This doesn't work.
+
+$(-5, 22)$ gives $x = 5$ and $y = 11$. This does work.
+
+We found one valid solution so the answer is $\boxed{\textbf{(B) }1}$.

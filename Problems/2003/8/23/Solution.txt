@@ -1,0 +1,9 @@
+==Solution==
+
+Break this problem into two parts: where the cat will be after the $247^{\text{th}}$ move, and where the mouse will be.
+
+The cat has four possible positions in 1 cycle which are repeated every four moves. $247$ has a remainder of $3$ when divided by $4$. This corresponds to the position the cat has after the 3rd move, which is the bottom right corner.
+
+Similarly, the mouse has eight possible positions in 1 cycle that repeat every eight moves. $247$ has a remainder of $7$ when divided by $8$. This corresponds to the position the rat has after the 7th move which is bottom left corner. 
+
+The only arrangement with the mouse in that position and the cat in the bottom right square is $\boxed{\textbf{(A)}}$.

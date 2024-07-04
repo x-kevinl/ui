@@ -1,0 +1,2 @@
+==Solution==
+We observe the graph and see that the shape of the graph does not matter. We only want the total time it took Carmen and the total distance she traveled. Based on the graph, Carmen traveled 35 miles for 7 hours. Therefore, her average speed is $\boxed{\textbf{(E)}\ 5}$

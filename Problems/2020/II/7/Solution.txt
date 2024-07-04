@@ -1,0 +1,35 @@
+==Solution (Official MAA)==
+Consider the cross section of the cones and sphere by a plane that contains the two axes of symmetry of the cones as shown below. The sphere with maximum radius will be tangent to the sides of each of the cones. The center of that sphere must be on the axis of symmetry of each of the cones and thus must be at the intersection of their axes of symmetry. Let <math>A</math> be the point in the cross section where the bases of the cones meet, and let <math>C</math> be the center of the sphere. Let the axis of symmetry of one of the cones extend from its vertex, <math>B</math>, to the center of its base, <math>D</math>. Let the sphere be tangent to <math>\overline{AB}</math> at <math>E</math>. The right triangles <math>\triangle ABD</math> and <math>\triangle CBE</math> are similar, implying that the radius of the sphere is<cmath>CE = AD \cdot\frac{BC}{AB} = AD \cdot\frac{BD-CD}{AB} =3\cdot\frac5{\sqrt{8^2+3^2}} = \frac{15}{\sqrt{73}}=\sqrt{\frac{225}{73}}.</cmath>The requested sum is <math>225+73=298</math>.
+<asy>
+unitsize(0.6cm);
+pair A = (0,0); 
+pair TriangleOneLeft = (-6,0); 
+pair TriangleOneDown = (-3,-8); 
+pair TriangleOneMid = (-3,0);
+
+pair D = (0,-3); 
+pair TriangleTwoDown = (0,-6); 
+pair B = (-8,-3);
+
+pair C = IP(TriangleOneMid -- TriangleOneDown, B--D);
+pair EE = foot(C, A, B); 
+real radius = arclength(C--EE); 
+path circ = Circle(C, radius);
+
+
+
+draw(A--B--TriangleTwoDown--cycle);
+draw(B--D); 
+draw(A--TriangleOneLeft--TriangleOneDown--cycle); 
+draw(circ); 
+draw(C--EE); 
+draw(TriangleOneMid -- TriangleOneDown, gray);
+
+dot("$B$", B, W); 
+dot("$E$", EE, NW); 
+dot("$A$", A, NE); 
+dot("$D$", D, E); 
+dot("$C$", C, SE);
+</asy>
+
+Not part of MAA's solution, but this: https://www.geogebra.org/calculator/xv4nm97a is a good visual of the cones in GeoGebra.

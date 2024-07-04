@@ -1,0 +1,3 @@
+==Solution 1==
+The least multiple of 6 greater than 23 is 24. So she will need to add $24-23=\boxed{\textbf{(C)}\ 1}$ more model car.
+~avamarora

@@ -1,0 +1,20 @@
+== Solution 1 (Geometric Interpretation)==
+Let <math>\triangle XYZ</math> be a triangle with sides of length <math>x, y</math> and <math>z</math>, and suppose this triangle is acute (so all [[altitude]]s are in the interior of the triangle).
+
+
+Let the altitude to the side of length <math>x</math> be of length <math>h_x</math>, and similarly for <math>y</math> and <math>z</math>. Then we have by two applications of the [[Pythagorean Theorem]] we that <cmath>x = \sqrt{y^2 - h_x^2} + \sqrt{z^2 - h_x^2}</cmath> 
+As a [[function]] of <math>h_x</math>, the [[RHS]] of this equation is strictly decreasing, so it takes each value in its [[range]] exactly once.  Thus we must have that <math>h_x^2 = \frac1{16}</math> and so <math>h_x = \frac{1}4</math> and similarly <math>h_y = \frac15</math> and <math>h_z = \frac16</math>.
+
+
+The area of the triangle must be the same no matter how we measure it; therefore <math>x\cdot h_x = y\cdot h_y = z \cdot h_z</math> gives us <math>\frac x4 = \frac y5 = \frac z6 = 2A</math> and <math>x = 8A, y = 10A</math> and <math>z = 12A</math>.  
+
+
+The [[semiperimeter]] of the triangle is <math>s = \frac{8A + 10A + 12A}{2} = 15A</math> so by [[Heron's formula]] we have <cmath>A = \sqrt{15A \cdot 7A \cdot 5A \cdot 3A} = 15A^2\sqrt{7}</cmath>  
+
+Thus, <math>A = \frac{1}{15\sqrt{7}}</math> and <math>x + y + z = 30A = \frac2{\sqrt{7}}</math> and the answer is <math>2 + 7 = \boxed{009}</math>.
+-------------------------------------
+The justification that there is an acute triangle with sides of length <math>x, y</math> and <math>z</math>:
+
+Note that <math>x, y</math> and <math>z</math> are each the sum of two positive [[square root]]s of real numbers, so <math>x, y, z \geq 0</math>.  (Recall that, by [[AIME]] [[mathematical convention| convention]], all numbers (including square roots) are taken to be real unless otherwise indicated.)  
+
+Also, <math>\sqrt{y^2-\frac{1}{16}} < \sqrt{y^2} = y</math>, so we have <math>x < y + z</math>, <math>y < z + x</math> and <math>z < x + y</math>.  But these conditions are exactly those of the [[triangle inequality]], so there does exist such a triangle.

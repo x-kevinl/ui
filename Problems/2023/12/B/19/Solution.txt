@@ -1,0 +1,16 @@
+==Important Clarification==
+Stars and Bars does not provide an exact probability. However, it does provide a good estimate for the approximate answer as on average, the number of arrangements will be almost the same when each container has an odd # of balls or when each container has an even # of balls. (similar binomial distributions)
+
+
+The above clarification is a good explanation of why the stars and bars argument still yields an expression sufficiently closed to $\frac{1}{4}$. However, I think the content of this clarification should be clearly explained WITHIN any stars and bars solution. Even with this clarification, this page is currently a redundant mess of poorly explained fakesolves:
+
+Solutions 1 and 2 both use stars and bars to arrive at an incorrect probability and fail to explain why their method is a good approximation of the actual probability.
+
+The explanation in solution 4 does not make sense at all.
+
+The nature of this problem makes it so that pretty much any approach will arrive at an answer close to $\frac{1}{4}$. However, I'm concerned that the current state of this page will make most readers come away with a worsened understanding of the structure of the problem, especially since the first two solutions are both fakesolves. This page should be fixed ASAP.
+
+Please don't delete this message without addressing any of my concerns. If you have any questions, feel free to PM me. ~ CT17
+
+(Solution 5 by Dissmo does a very good job at explaining Solution 4.)
+-Multpi12

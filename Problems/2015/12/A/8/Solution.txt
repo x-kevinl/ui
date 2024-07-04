@@ -1,0 +1,2 @@
+==Solution==
+Let the rectangle have length $4x$ and width $3x$. Then by $3-4-5$ triangles (or the Pythagorean Theorem), we have $d = 5x$, and so $x = \dfrac{d}{5}$. Hence, the area of the rectangle is $3x \cdot 4x = 12x^2 = \dfrac{12d^2}{25}$, so the answer is $\boxed{\textbf{(C) }\frac{12}{25}}$

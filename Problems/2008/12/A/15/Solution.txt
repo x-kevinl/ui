@@ -1,0 +1,24 @@
+==Solution==
+$k \equiv 2008^2 + 2^{2008} \equiv 8^2 + 2^4 \equiv 4+6 \equiv 0 \pmod{10}$. 
+
+So, $k^2 \equiv 0 \pmod{10}$. Since $k = 2008^2+2^{2008}$   is a multiple of four and the units digit of powers of two repeat in cycles of four, $2^k \equiv 2^4 \equiv 6 \pmod{10}$. 
+
+Therefore, $k^2+2^k \equiv 0+6 \equiv 6 \pmod{10}$. So the units digit is $6 \Rightarrow \boxed{D}$.
+
+===Note===
+Another way to get $k \equiv 0 \pmod{10}$ is to find the cycles of the last digit.
+
+For $2008^2$, we need only be concerned with the last digit $8$ since the other digits do not affect the last digit. Since $8^{2} = 64$, the last digit of $2008^2$ is $4$.
+
+For $2^{2008}$, note that the last digit cycles through the pattern ${2, 4, 8, 6}$. (You can try to see this by calculating the first powers of $2$.)
+
+Since $2008$ is a multiple of $4$, the last digit of $2^{2008}$ is evidently $6.$
+
+Continue as follows.
+
+~mathboy282
+
+Mathboy282,
+That is actually what solution 1 is explaining in the first sentence but I think yours is a more detailed and easier to comprehend explanation.
+
+@graceandmymommath, I will offer my own solution below. Thanks for the comment.

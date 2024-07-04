@@ -1,0 +1,10 @@
+== Solution 1 ==
+From $f(1) = 0$, we know that $a+b+c = 0$.
+
+From the first inequality, we get $50 < 49a+7b+c < 60$. Subtracting $a+b+c = 0$ from this gives us $50 < 48a+6b < 60$, and thus $\frac{25}{3} < 8a+b < 10$. Since $8a+b$ must be an integer, it follows that $8a+b = 9$.
+
+Similarly, from the second inequality, we get $70 < 64a+8b+c < 80$. Again subtracting $a+b+c = 0$ from this gives us $70 < 63a+7b < 80$, or $10 < 9a+b < \frac{80}{7}$. It follows from this that $9a+b = 11$.
+
+We now have a system of three equations: $a+b+c = 0$, $8a+b = 9$, and $9a+b = 11$. Solving gives us $(a, b, c) = (2, -7, 5)$ and from this we find that $f(100) = 2(100)^2-7(100)+5 = 19305$
+
+Since $15000 < 19305 < 20000 \to 5000(3) < 19305 < 5000(4)$, we find that $k = 3 \rightarrow \boxed{\textbf{(C)}\ 3}$.

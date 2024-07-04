@@ -1,0 +1,4 @@
+== Solution ==
+Suppose the two numbers are $a$ and $b$, with $a+b=S$.
+Then the desired sum is
+$2(a+3)+2(b+3)=2(a+b)+12=2S +12$, which is answer $\boxed{\textbf{(E)}}$.

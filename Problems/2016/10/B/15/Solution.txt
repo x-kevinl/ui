@@ -1,0 +1,4 @@
+==Solution 1==
+Consecutive numbers share an edge. That means that it is possible to walk from $1$ to $9$ by single steps north, south, east, or west. Consequently, the squares in the diagram with different shades have different parity:<asy>size(4cm);
+for(int i=0;i<3;++i)for(int j=0;j<3;++j)filldraw(box((i,j),(i+1,j+1)),gray((i+j)%2*.2+.7));</asy>
+But since there are only four even numbers in the set, the five darker squares must contain the odd numbers, which sum to $1+3+5+7+9=25.$ Therefore if the sum of the numbers in the corners is $18$, the number in the center must be $\boxed {\textbf{(C) }7}$.

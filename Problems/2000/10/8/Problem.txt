@@ -1,0 +1,13 @@
+==Problem==
+
+At Olympic High School, $\frac{2}{5}$ of the freshmen and $\frac{4}{5}$ of the sophomores took the AMC-10. Given that the number of freshmen and sophomore contestants was the same, which of the following must be true? 
+
+$\textbf{(A)}$ There are five times as many sophomores as freshmen. 
+
+$\textbf{(B)}$ There are twice as many sophomores as freshmen.
+
+$\textbf{(C)}$ There are as many freshmen as sophomores.
+
+$\textbf{(D)}$ There are twice as many freshmen as sophomores. 
+
+$\textbf{(E)}$ There are five times as many freshmen as sophomores.

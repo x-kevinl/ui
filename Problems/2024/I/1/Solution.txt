@@ -1,0 +1,27 @@
+==Solution 1==
+
+<math>\frac{9}{s} + t = 4</math> in hours and <math>\frac{9}{s+2} + t = 2.4</math> in hours.
+
+Subtracting the second equation from the first, we get, 
+
+<math>\frac{9}{s} - \frac{9}{s+2} = 1.6</math>
+
+Multiplying by <math>(s)(s+2)</math>, we get 
+
+<math>9s+18-9s=18=1.6s^{2} + 3.2s</math>
+
+Multiplying by 5/2 on both sides, we get
+
+<math>0 = 4s^{2} + 8s - 45</math>
+
+Factoring gives us 
+
+<math>(2s-5)(2s+9) = 0</math>, of which the solution we want is <math>s=2.5</math>.
+
+Substituting this back to the first equation, we can find that <math>t = 0.4</math> hours.
+
+Lastly, <math>s + \frac{1}{2} = 3</math> kilometers per hour, so
+
+<math>\frac{9}{3} + 0.4 = 3.4</math> hours, or <math>\framebox{204}</math> minutes
+
+-Failure.net

@@ -1,0 +1,11 @@
+== Solution==
+We have
+$$\begin{align*}
+16383 & = 2^{14} - 1 \\
+& = \left( 2^7 + 1 \right) \left( 2^7 - 1 \right) \\
+& = 129 \cdot 127 \\
+\end{align*}$$
+
+Since $129$ is composite, $127$ is the largest prime which can divide $16383$. The sum of $127$'s digits is $1+2+7=\boxed{\textbf{(C) }10}$.
+
+~Steven Chen (www.professorchenedu.com) ~NH14 ~kingofpineapplz ~Arcticturn ~MrThinker ~abed_nadir(youtube.com/@indianmathguy)

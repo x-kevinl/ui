@@ -1,0 +1,2 @@
+== Problem ==
+For how many [[ordered pair]]s <math>(x,y)</math> of [[integer]]s is it true that <math>0 < x < y < 10^6</math> and that the [[arithmetic mean]] of <math>x</math> and <math>y</math> is exactly <math>2</math> more than the [[geometric mean]] of <math>x</math> and <math>y</math>?

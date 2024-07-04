@@ -1,0 +1,10 @@
+==Solution==
+Using $d=rt$, we can set up an equation for when Jill arrives at the swimming pool:
+
+$1=10t$
+
+Solving for $t$, we get that Jill gets to the pool in $\frac{1}{10}$ of an hour, which is $6$ minutes.  Doing the same for Jack, we get that 
+
+Jack arrives at the pool in $\frac{1}{4}$ of an hour, which in turn is $15$ minutes.  Thus, Jill has to wait $15-6=\boxed{\textbf{(D)}~9}$ 
+
+minutes for Jack to arrive at the pool.

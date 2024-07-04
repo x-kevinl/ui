@@ -1,0 +1,25 @@
+== Solution ==
+By the [[Triangle Inequality]] and applying the well-known logarithmic property <math>\log_{c} a + \log_{c} b = \log_{c} ab</math>, we have that
+<div style="text-align:center;">
+<math>\log_{10} 12 + \log_{10} n > \log_{10} 75 </math>
+
+<math>\log_{10} 12n > \log_{10} 75 </math>
+
+<math> 12n > 75 </math> 
+
+<math> n > \frac{75}{12} = \frac{25}{4} = 6.25 </math>
+</div>
+
+Also, 
+<div style="text-align:center;">
+<math>\log_{10} 12 + \log_{10} 75 > \log_{10} n </math>
+
+<math>\log_{10} 12\cdot75 > \log_{10} n </math>
+
+<math> n < 900 </math> 
+</div>
+Combining these two inequalities: 
+
+<cmath> 6.25 < n < 900 </cmath>
+
+Thus <math>n</math> is in the set <math>(6.25 , 900)</math>; the number of positive integer <math>n</math> which satisfies this requirement is <math>\boxed{893}</math>.

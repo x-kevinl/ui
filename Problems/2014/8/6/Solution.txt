@@ -1,0 +1,2 @@
+==Solution==
+The sum of the areas is equal to $2\cdot1+2\cdot4+2\cdot9+2\cdot16+2\cdot25+2\cdot36$. This is equal to $2(1+4+9+16+25+36)$, which is equal to $2\cdot91$. This is equal to our final answer of $\boxed{\textbf{(D)}~182}$.

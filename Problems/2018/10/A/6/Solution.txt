@@ -1,0 +1,2 @@
+==Solution 1==
+If $65\%$ of the votes were likes, then $35\%$ of the votes were dislikes. $65\%-35\%=30\%$, so $90$ votes is $30\%$ of the total number of votes. Doing quick arithmetic shows that the answer is $\boxed{\textbf{(B) } 300}$.

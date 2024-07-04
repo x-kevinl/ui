@@ -1,0 +1,2 @@
+==Solution 1==
+If we move every term dependent on $x$ or $y$ to the LHS, we get $x^2 - 10x + y^2 + 6y = -34$. Adding $34$ to both sides, we have $x^2 - 10x + y^2 + 6y + 34 = 0$. We can split the $34$ into $25$ and $9$ to get $(x - 5)^2 + (y + 3)^2 = 0$. Notice this is a circle with radius $0$, which only contains one point. So, the only point is $(5, -3)$, so the sum is $5 + (-3) = 2 \implies \boxed{\textbf{(B)}}$. ~ asdf334

@@ -1,0 +1,5 @@
+==Problem==
+How many ordered pairs of positive real numbers $(a,b)$ satisfy the equation
+$$(1+2a)(2+2b)(2a+b) = 32ab?$$
+
+$\textbf{(A) }0\qquad\textbf{(B) }1\qquad\textbf{(C) }2\qquad\textbf{(D) }3\qquad\textbf{(E) }\text{an infinite number}$

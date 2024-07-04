@@ -1,0 +1,4 @@
+== Problem ==
+An athlete's target heart rate, in beats per minute, is $80\%$ of the theoretical maximum heart rate. The maximum heart rate is found by subtracting the athlete's age, in years, from $220$. To the nearest whole number, what is the target heart rate of an athlete who is $26$ years old?
+
+$ \textbf{(A)}\ 134\qquad\textbf{(B)}\ 155\qquad\textbf{(C)}\ 176\qquad\textbf{(D)}\ 194\qquad\textbf{(E)}\ 243 $

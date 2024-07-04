@@ -1,0 +1,2 @@
+==Problem==
+A frog begins at <math>P_0 = (0,0)</math> and makes a sequence of jumps according to the following rule: from <math>P_n = (x_n, y_n),</math> the frog jumps to <math>P_{n+1},</math> which may be any of the points <math>(x_n + 7, y_n + 2),</math> <math>(x_n + 2, y_n + 7),</math> <math>(x_n - 5, y_n - 10),</math> or <math>(x_n - 10, y_n - 5).</math> There are <math>M</math> points <math>(x, y)</math> with <math>|x| + |y| \le 100</math> that can be reached by a sequence of such jumps. Find the remainder when <math>M</math> is divided by <math>1000.</math>

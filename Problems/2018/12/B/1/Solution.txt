@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+The area of the pan is $20\cdot18=360$. Since the area of each piece is $2\cdot2=4$, there are $\frac{360}{4} = \boxed{\textbf{(A) } 90}$ pieces.

@@ -1,0 +1,7 @@
+==Problem==
+
+Alicia, Brenda, and Colby were the candidates in a recent election for student president. The pie chart below shows how the votes were distributed among the three candidates. If Brenda received $36$ votes, then how many votes were cast all together? 
+
+<asy> draw((-1,0)--(0,0)--(0,1)); draw((0,0)--(0.309, -0.951)); filldraw(arc((0,0), (0,1), (-1,0))--(0,0)--cycle, lightgray); filldraw(arc((0,0), (0.309, -0.951), (0,1))--(0,0)--cycle, gray); draw(arc((0,0), (-1,0), (0.309, -0.951))); label("Colby", (-0.5, 0.5)); label("25\%", (-0.5, 0.3)); label("Alicia", (0.7, 0.2)); label("45\%", (0.7, 0)); label("Brenda", (-0.5, -0.4)); label("30\%", (-0.5, -0.6)); </asy>
+
+$\textbf{(A) }70 \qquad \textbf{(B) }84 \qquad \textbf{(C) }100 \qquad \textbf{(D) }106 \qquad \textbf{(E) }120$

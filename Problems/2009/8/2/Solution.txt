@@ -1,0 +1,2 @@
+==Solution==
+This means the ratio is $4:7$. If the ratio now is $28:x$, then that means $x= \boxed{\textbf{(D) }49}$.

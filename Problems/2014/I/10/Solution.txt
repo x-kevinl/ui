@@ -1,0 +1,27 @@
+== Solution 1 ==
+
+
+<asy>
+size(150);
+pair a=(5,0),b=(2,3*sqrt(3)),c=(6,0),d=(3,3*sqrt(3)),e=(0,0);
+draw(circle(e,5));
+draw(circle(c,1));
+draw(circle(d,1));
+dot(a^^b^^c^^d^^e^^(5/2,5*sqrt(3)/2));
+label("$A$",a,W,fontsize(9));
+label("$B$",b,NW,fontsize(9));
+label("$C$",c,E,fontsize(9));
+label("$D$",d,E,fontsize(9));
+label("$E$",e,SW,fontsize(9));
+label("$F$",(5/2,5*sqrt(3)/2),SSW,fontsize(9));
+</asy>
+
+Let <math>F</math> be the new tangency point of the two disks. The smaller disk rolled along minor arc <math>\overarc{AF}</math> on the larger disk.
+
+Let <math>\alpha = \angle AEF</math>, in radians. The smaller disk must then have rolled along an arc of length <math>5\alpha</math>, since the larger disk has a radius of <math>5</math>.  Since all of the points on major arc <math>\overarc{BF}</math> on the smaller disk have come into contact with the larger disk at some point during the rolling, and none of the other points on the smaller disk did,<cmath>\overarc{BF}=\overarc{AF}=5\alpha</cmath>. 
+
+Since <math>\overline{AC} || \overline{BD}</math>, <cmath>\angle BDF \cong \angle FEA</cmath> so the angles of minor arc <math>\overarc{BF}</math> and minor arc <math>\overarc{AF}</math> are equal, so minor arc <math>\overarc{BF}</math> has an angle of <math>\alpha</math>. Since the smaller disk has a radius of <math>1</math>, the length of minor arc <math>\overarc{BF}</math> is <math>\alpha</math>. This means that <math>5\alpha + \alpha</math> equals the circumference of the smaller disk, so <math>6\alpha = 2\pi</math>, or <math>\alpha = \frac{\pi}{3}</math>.
+
+Now, to find <math>\sin^2{\angle BEA}</math>, we construct <math>\triangle BDE</math>. Also, drop a perpendicular from <math>D</math> to <math>\overline{EA}</math>, and call this point <math>X</math>. Since <math>\alpha = \frac{\pi}{3}</math> and <math>\angle DXE</math> is right, <cmath>DE = 6</cmath> <cmath>EX = 3</cmath> and <cmath>DX = 3\sqrt{3}</cmath> 
+
+Now drop a perpendicular from <math>B</math> to <math>\overline{EA}</math>, and call this point <math>Y</math>. Since <math>\overline{BD} || \overline{EA}</math>, <cmath>XY = BD = 1</cmath> and <cmath>BY = DX = 3\sqrt{3}</cmath> Thus, we know that <cmath>EY = EX - XY = 3 - 1 = 2</cmath> and by using the Pythagorean Theorem on <math>\triangle BEY</math>, we get that <cmath>BE = \sqrt{31}</cmath> Thus, <cmath>\sin{\angle BEA} = \frac{\sqrt{27}}{\sqrt{31}}</cmath> so <cmath>\sin^2{\angle BEA} = \frac{27}{31}</cmath> and our answer is <math>27 + 31 = \boxed{058}</math>.

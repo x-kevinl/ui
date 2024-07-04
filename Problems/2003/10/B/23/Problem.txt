@@ -1,0 +1,7 @@
+==Problem==
+
+A regular octagon $ ABCDEFGH $ has an area of one square unit. What is the area of the rectangle $ ABEF $?
+
+<asy> unitsize(1cm); defaultpen(linewidth(.8pt)+fontsize(8pt)); pair C=dir(22.5), B=dir(67.5), A=dir(112.5), H=dir(157.5), G=dir(202.5), F=dir(247.5), E=dir(292.5), D=dir(337.5); draw(A--B--C--D--E--F--G--H--cycle); label("$A$",A,NNW); label("$B$",B,NNE); label("$C$",C,ENE); label("$D$",D,ESE); label("$E$",E,SSE); label("$F$",F,SSW); label("$G$",G,WSW); label("$H$",H,WNW);</asy>
+
+$ \textbf{(A)}\ 1-\frac{\sqrt2}{2}\qquad\textbf{(B)}\ \frac{\sqrt2}{4}\qquad\textbf{(C)}\ \sqrt2-1\qquad\textbf{(D)}\ \frac{1}2\qquad\textbf{(E)}\ \frac{1+\sqrt2}{4} $

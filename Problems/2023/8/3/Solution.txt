@@ -1,0 +1,10 @@
+== Solution ==
+
+By substitution, we have
+$$\begin{align*}
+(\text{wind chill}) &= 36 - 0.7 \times 18 \\
+&= 36 - 12.6 \\
+&= 23.4 \\
+&\approx \boxed{\textbf{(B)}\ 23}.
+\end{align*}$$
+~apex304, SohumUttamchandani, wuwang2002, TaeKim, Cxrupptedpat, MRENTHUSIASM

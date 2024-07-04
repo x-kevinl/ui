@@ -1,0 +1,2 @@
+==Problem==
+For <math>n \ge 1</math> call a finite sequence <math>(a_1, a_2 \ldots a_n)</math> of positive integers <i>progressive</i> if <math>a_i < a_{i+1}</math> and <math>a_i</math> divides <math>a_{i+1}</math> for all <math>1 \le i \le n-1</math>. Find the number of progressive sequences such that the sum of the terms in the sequence is equal to <math>360</math>.

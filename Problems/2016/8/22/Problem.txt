@@ -1,0 +1,22 @@
+== Problem ==
+
+Rectangle $DEFA$ below is a $3 \times 4$ rectangle with $DC=CB=BA=1$. The area of the "bat wings" (shaded area) is
+
+<asy>
+draw((0,0)--(3,0)--(3,4)--(0,4)--(0,0)--(2,4)--(3,0));
+draw((3,0)--(1,4)--(0,0));
+fill((0,0)--(1,4)--(1.5,3)--cycle, black);
+fill((3,0)--(2,4)--(1.5,3)--cycle, black);
+label("$A$",(3.05,4.2));
+label("$B$",(2,4.2));
+label("$C$",(1,4.2));
+label("$D$",(0,4.2));
+label("$E$", (0,-0.2));
+label("$F$", (3,-0.2));
+label("$1$", (0.5, 4), N);
+label("$1$", (1.5, 4), N);
+label("$1$", (2.5, 4), N);
+label("$4$", (3.2, 2), E);
+</asy>
+
+$\textbf{(A) }2\qquad\textbf{(B) }2 \frac{1}{2}\qquad\textbf{(C) }3\qquad\textbf{(D) }3 \frac{1}{2}\qquad \textbf{(E) }5$

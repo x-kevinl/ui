@@ -1,0 +1,2 @@
+== Problem 2 ==
+On [[square]] <math>ABCD</math>, point <math>E</math> lies on side <math>AD</math> and point <math>F</math> lies on side <math>BC</math>, so that <math>BE=EF=FD=30</math>. Find the area of the square <math>ABCD</math>.

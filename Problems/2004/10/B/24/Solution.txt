@@ -1,0 +1,3 @@
+== Solution 1==
+
+Set $\overline{BD}$'s length as $x$. $\overline{CD}$'s length must also be $x$ since $\angle BAD$ and $\angle DAC$ intercept arcs of equal length (because $\angle BAD=\angle DAC$). Using [[Ballemy's Theorem]], $7x+8x=9(AD)$. The ratio is $\frac{5}{3}\implies\boxed{\text{(B)}}$

@@ -1,0 +1,2 @@
+== Solution ==
+The function $f(x) = \sin x$ has roots in the form of $\pi n$ for all integers $n$. Therefore, we want $\frac{1}{x} = \pi n$ on $\frac{1}{10000} \le x \le \frac{1}{1000}$, so $1000 \le \frac 1x = \pi n \le 10000$. There are $\frac{10000-1000}{\pi} \approx \boxed{2900} \Rightarrow \mathrm{(A)}$ solutions for $n$ on this interval.

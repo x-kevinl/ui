@@ -1,0 +1,158 @@
+== Solutions ==
+
+===Solution 1 (Quick Calculus)===
+Let <math>V = \overline{NM} \cap \overline{AC}</math> and <math>W = \overline{NM} \cap \overline{BC}</math>. Further more let <math>\angle NMC = \alpha</math> and <math>\angle MNC = 90^\circ - \alpha</math>. Angle chasing reveals <math>\angle NBC = \angle NAC = \alpha</math> and <math>\angle MBC = \angle MAC = 90^\circ - \alpha</math>. Additionally <math>NB = \frac{4}{5}</math> and <math>AN = AM</math> by the Pythagorean Theorem.
+
+By the Angle Bisector Formula,
+<cmath>\frac{NV}{MV} = \frac{\sin (\alpha)}{\sin (90^\circ - \alpha)} = \tan (\alpha)</cmath>
+<cmath>\frac{MW}{NW} = \frac{3\sin (90^\circ - \alpha)}{4\sin (\alpha)} = \frac{3}{4} \cot (\alpha)</cmath>
+
+As <math>NV + MV =MW + NW = 1</math> we compute <math>NW = \frac{1}{1+\frac{3}{4}\cot(\alpha)}</math> and <math>MV = \frac{1}{1+\tan (\alpha)}</math>, and finally <math>VW = NW + MV - 1 =  \frac{1}{1+\frac{3}{4}\cot(\alpha)} + \frac{1}{1+\tan (\alpha)} - 1</math>. Taking the derivative of <math>VW</math> with respect to <math>\alpha</math>, we arrive at
+<cmath>VW' = \frac{7\cos^2 (\alpha) - 4}{(\sin(\alpha) + \cos(\alpha))^2(4\sin(\alpha)+3\cos(\alpha))^2}</cmath>
+Clearly the maximum occurs when <math>\alpha = \cos^{-1}\left(\frac{2}{\sqrt{7}}\right)</math>. Plugging this back in, using the fact that <math>\tan(\cos^{-1}(x)) = \frac{\sqrt{1-x^2}}{x}</math> and <math>\cot(\cos^{-1}(x)) = \frac{x}{\sqrt{1-x^2}}</math>, we get
+
+<math>VW = 7 - 4\sqrt{3}</math>
+with <math>7 + 4 + 3 = \boxed{014}</math>
+
+~always_correct
+
+===Solution 2 (Projective)===
+Since <math>MA = \frac{\sqrt{2}}{2} \approx 0.707 > \frac{3}{5}</math>, point <math>B</math> lies between <math>M</math> and <math>A</math> on the semicircular arc. We will first compute the length of <math>\overline{AB}</math>. By the law of cosines, <math>\cos \angle MOB = \frac{-(3/5)^2 + 2(1/2)^2}{2(1/2)^2} = \frac{7}{25}</math>, so <math>\cos \angle AOB = \sin \angle MOB = \frac{24}{25}</math>. Then <math>AB^2 = 2\left(\frac{1}{2}\right)^2 - 2\left(\frac{1}{2}\right)^2 \cdot \frac{24}{25} = \frac{1}{50}</math>, so <math>AB = \frac{1}{5\sqrt{2}}</math>.
+
+Let <math>P = AC \cap MN</math> and <math>Q = BC \cap MN</math>, and let <math>MQ = x</math>, <math>PQ = d</math>, <math>PN = y</math>. Note that<cmath>(M, P; Q, N) \stackrel{C}{=} (M, A; B, N),</cmath>that is,<cmath>\frac{QP}{QM} \div \frac{NP}{NM} = \frac{BA}{BM} \div \frac{NA}{NM}</cmath>or<cmath>\frac{d}{xy} = \frac{1/(5\sqrt{2})}{(3/5) \cdot (\sqrt{2}/2)} = \frac{1}{3}.</cmath>Hence <math>d = \frac{1}{3}xy</math>, and we also know <math>d+x+y=1</math>. Now AM-GM gives<cmath>\frac{x+y}{2} \ge \sqrt{xy} \implies \frac{1-d}{2} \ge \sqrt{3d}.</cmath>This gives the quadratic inequality <math>d^2 - 14d + 1 \ge 0</math>, which solves as<cmath>d \in \left(-\infty, 7-4\sqrt3\right] \cup \left[7+4\sqrt3, \infty\right).</cmath>But <math>d \le 1</math>, so the greatest possible value of <math>d</math> is <math>7-4\sqrt3</math>. The answer is <math>7+4+3=\boxed{014}</math>.
+
+~MSTang
+
+===Solution 3 (Calculus)===
+Let <math>O</math> be the center of the circle. Define <math>\angle{MOC}=t</math>, <math>\angle{BOA}=2a</math>, and let <math>BC</math> and <math>AC</math> intersect <math>MN</math> at points <math>X</math> and <math>Y</math>, respectively. We will express the length of <math>XY</math> as a function of <math>t</math> and maximize that function in the interval <math>[0, \pi]</math>.
+
+Let <math>C'</math> be the foot of the perpendicular from <math>C</math> to <math>MN</math>. We compute <math>XY</math> as follows.
+
+(a) By the Extended Law of Sines in triangle <math>ABC</math>, we have
+
+<cmath>CA</cmath>
+
+<cmath>= \sin\angle{ABC}</cmath>
+
+<cmath>= \sin\left(\frac{\widehat{AN} + \widehat{NC}}{2}\right)</cmath>
+
+<cmath>= \sin\left(\frac{\frac{\pi}{2} + (\pi-t)}{2}\right)</cmath>
+
+<cmath>= \sin\left(\frac{3\pi}{4} - \frac{t}{2}\right)</cmath>
+
+<cmath>= \sin\left(\frac{\pi}{4} + \frac{t}{2}\right)</cmath>
+
+(b) Note that <math>CC' = CO\sin(t) = \left(\frac{1}{2}\right)\sin(t)</math> and <math>AO = \frac{1}{2}</math>. Since <math>CC'Y</math> and <math>AOY</math> are similar right triangles, we have <math>CY/AY = CC'/AO = \sin(t)</math>, and hence,
+
+<cmath>CY/CA</cmath>
+
+<cmath>= \frac{CY}{CY + AY}</cmath>
+
+<cmath>= \frac{\sin(t)}{1 + \sin(t)}</cmath>
+
+<cmath>= \frac{\sin(t)}{\sin\left(\frac{\pi}{2}\right) + \sin(t)}</cmath>
+
+<cmath>= \frac{\sin(t)}{2\sin\left(\frac{\pi}{4} + \frac{t}{2}\right)\cos\left(\frac{\pi}{4} - \frac{t}{2}\right)}</cmath>
+
+(c) We have <math>\angle{XCY} = \frac{\widehat{AB}}{2}=a</math> and <math>\angle{CXY} = \frac{\widehat{MB}+\widehat{CN}}{2} = \frac{\left(\frac{\pi}{2} - 2a\right) + (\pi - t)}{2} = \frac{3\pi}{4} - a - \frac{t}{2}</math>, and hence by the Law of Sines,
+
+<cmath>XY/CY</cmath>
+
+<cmath>= \frac{\sin\angle{XCY}}{\sin\angle{CXY}}</cmath>
+
+<cmath>= \frac{\sin(a)}{\sin\left(\frac{3\pi}{4} - a - \frac{t}{2}\right)}</cmath>
+
+<cmath>= \frac{\sin(a)}{\sin\left(\frac{\pi}{4} + a + \frac{t}{2}\right)}</cmath>
+
+(d) Multiplying (a), (b), and (c), we have
+
+<cmath>XY</cmath>
+
+<cmath>= CA * (CY/CA) * (XY/CY)</cmath>
+
+<cmath>= \frac{\sin(t)\sin(a)}{2\cos\left(\frac{\pi}{4} - \frac{t}{2}\right)\sin\left(\frac{\pi}{4} + a + \frac{t}{2}\right)}</cmath>
+
+<cmath>= \frac{\sin(t)\sin(a)}{\sin\left(\frac{\pi}{2} + a\right) + \sin(a + t)}</cmath>
+
+<cmath>= \sin(a)\times\frac{\sin(t)}{\sin(t + a) + \cos(a)}</cmath>,
+
+which is a function of <math>t</math> (and the constant <math>a</math>). Differentiating this with respect to <math>t</math> yields
+
+<cmath>\sin(a)\times\frac{\cos(t)(\sin(t + a) + \cos(a)) - \sin(t)\cos(t + a)}{(\sin(t + a) + \cos(a))^2}</cmath>,
+
+and the numerator of this is
+
+<cmath>\sin(a) \times(\sin(t + a)\cos(t) - \cos(t + a)\sin(t) + \cos(a)\cos(t))</cmath> 
+<cmath>= \sin(a) \times (\sin(a) + \cos(a)\cos(t))</cmath>,
+
+which vanishes when <math>\sin(a) + \cos(a)\cos(t) = 0</math>. Therefore, the length of <math>XY</math> is maximized when <math>t=t'</math>, where <math>t'</math> is the value in <math>[0, \pi]</math> that satisfies <math>\cos(t') = -\tan(a)</math>.
+
+Note that
+
+<cmath>\frac{1 - \tan(a)}{1 + \tan(a)} = \tan\left(\frac{\pi}{4} - a\right) = \tan((\widehat{MB})/2) = \tan\angle{MNB} = \frac{3}{4}</cmath>,
+
+so <math>\tan(a) = \frac{1}{7}</math>. We compute
+
+<cmath>\sin(a) = \frac{\sqrt{2}}{10}</cmath>
+
+<cmath>\cos(a) = \frac{7\sqrt{2}}{10}</cmath>
+
+<cmath>\cos(t') = -\tan(a) = -\frac{1}{7}</cmath>
+
+<cmath>\sin(t') = \frac{4\sqrt{3}}{7}</cmath>
+
+<cmath>\sin(t' + a)=\sin(t')\cos(a) + \cos(t')\sin(a) = \frac{28\sqrt{6} - \sqrt{2}}{70}</cmath>,
+
+so the maximum length of <math>XY</math> is <math>\sin(a)\times\frac{\sin(t')}{\sin(t' + a) + \cos(a)} = 7 - 4\sqrt{3}</math>, and the answer is <math>7 + 4 + 3 = \boxed{014}</math>.
+
+===Solution 4===
+<asy>
+unitsize(144);
+pair A, B, C, M, n;
+A = (0,1); B = (-7/25, 24/25); C=(1/7,-4*sqrt(3)/7); M = (-1,0); n = (1,0);
+pair [] D = intersectionpoints(A--C,M--n); pair [] e = intersectionpoints(B--C,M--n);
+
+draw(circle((0,0),1));
+draw(M--n--B--M--A--n--C--A--B--C--cycle);
+
+label("$A$",A,N); label("$B$",B,NNW); label("$M$",M,W); label("$C$",C,SSE); label("$N$",n,E);
+label("$D$",D[0],SE); label("$E$",e[0],SW);
+label("$x$",(M+C)/2,SW); label("$y$",(n+C)/2,SE);
+</asy>
+
+Suppose <math>\overline{AC}</math> and <math>\overline{BC}</math> intersect <math>\overline{MN}</math> at <math>D</math> and <math>E</math>, respectively, and let <math>MC = x</math> and <math>NC = y</math>. Since <math>A</math> is the midpoint of arc <math>MN</math>, <math>\overline{CA}</math> bisects <math>\angle MCN</math>, and we get
+<cmath>\frac{MC}{MD} = \frac{NC}{ND}\Rightarrow MD = \frac{x}{x + y}.</cmath>
+To find <math>ME</math>, we note that <math>\triangle BNE\sim\triangle MCE</math> and <math>\triangle BME\sim\triangle NCE</math>, so
+
+<cmath>\begin{align*}
+\frac{BN}{NE} &= \frac{MC}{CE} \\
+\frac{ME}{BM} &= \frac{CE}{NC}.
+\end{align*}</cmath>
+
+Writing <math>NE = 1 - ME</math>, we can substitute known values and multiply the equations to get
+
+<cmath>\frac{4(ME)}{3 - 3(ME)} = \frac{x}{y}\Rightarrow ME = \frac{3x}{3x + 4y}.</cmath>
+
+The value we wish to maximize is
+
+<cmath>\begin{align*}
+DE &= MD - ME \\
+&= \frac{x}{x + y} - \frac{3x}{3x + 4y} \\
+&= \frac{xy}{3x^2 + 7xy + 4y^2} \\
+&= \frac{1}{3(x/y) + 4(y/x) + 7}.
+\end{align*}</cmath>
+
+By the AM-GM inequality, <math>3(x/y) + 4(y/x)\geq 2\sqrt{12} = 4\sqrt{3}</math>, so
+<cmath>DE\leq \frac{1}{4\sqrt{3} + 7} = 7 - 4\sqrt{3},</cmath>
+giving the answer of <math>7 + 4 + 3 = \boxed{014}</math>. Equality is achieved when <math>3(x/y) = 4(y/x)</math> subject to the condition <math>x^2 + y^2 = 1</math>, which occurs for <math>x = \frac{2\sqrt{7}}{7}</math> and <math>y = \frac{\sqrt{21}}{7}</math>.
+
+===Solution 5 (Projective)===
+By Pythagoras in <math>\triangle BMN,</math> we get <math>BN=\dfrac{4}{5}.</math>
+ 
+Since cross ratios are preserved upon projecting, note that <math>(M,Y;X,N)\stackrel{C}{=}(M,B;A,N).</math> By definition of a cross ratio, this becomes <cmath>\dfrac{XM}{NY}:\dfrac{NM}{NY}=\dfrac{AM}{AB}:\dfrac{MN}{NB}.</cmath> Let <math>MY=a,YX=b,XN=c</math> such that <math>a+b+c=1.</math> We know that <math>XM=a+b,XY=b,NM=1,NY=b+c,</math> so the LHS becomes <math>\dfrac{(a+b)(b+c)}{b}.</math>
+
+In the RHS, we are given every value except for <math>AB.</math> However, Ptolemy's Theorem on <math>MBAN</math> gives <math>AB\cdot MN+AN\cdot BM=AM\cdot BN\implies AB+\dfrac{3}{5\sqrt{2}}=\dfrac{4}{5\sqrt{2}}\implies AB=\dfrac{1}{5\sqrt{2}}.</math> Substituting, we get <math>\dfrac{(a+b)(b+c)}{b}=4\implies b(a+b+c)+ac=4b, b=\dfrac{ac}{3}</math> where we use <math>a+b+c=1.</math>
+
+Again using <math>a+b+c=1,</math> we have <math>a+b+c=1\implies a+\dfrac{ac}{3}+c=1\implies a=3\dfrac{1-c}{c+3}.</math> Then <math>b=\dfrac{ac}{3}=\dfrac{c-c^2}{c+3}.</math> Since this is a function in <math>c,</math> we differentiate WRT <math>c</math> to find its maximum. By quotient rule, it suffices to solve <cmath>(-2c+1)(c+3)-(c-c^2)=0 \implies c^2+6c-3,c=-3+2\sqrt{3}.</cmath> Substituting back yields <math>b=7-4\sqrt{3},</math> so <math>7+4+3=\boxed{014}</math> is the answer.
+
+~Generic_Username

@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>B</math> be the set of all binary integers that can be written using exactly <math>5</math> zeros and <math>8</math> ones where leading zeros are allowed. If all possible subtractions are performed in which one element of <math>B</math> is subtracted from another, find the number of times the answer <math>1</math> is obtained.

@@ -1,0 +1,68 @@
+==Solution 1==
+<asy>
+pair A,B,C,M,E,W,Z,X,Y;
+A=(2,0);
+B=(0,2);
+C=(0,0);
+M=(A+B)/2;
+W=(-2,2);
+Z=(-2,-0);
+X=(2,4);
+Y=(4,2);
+E=(W+Z)/2;
+draw(A--B--C--cycle);
+draw(W--B--C--Z--cycle);
+draw(A--B--X--Y--cycle);
+dot(M);
+dot(E);
+label("W",W,NW);
+label("Z",Z,SW);
+label("C",C,S);
+label("A",A,S);
+label("B",B,N);
+label("X",X,NE);
+label("Y",Y,SE);
+label("E",E,1.5*plain.W);
+label("M",M,NE);
+draw(circle(M,sqrt(10)));
+</asy>
+First, we should find the center and radius of this circle. We can find the center by drawing the perpendicular bisectors of $WZ$ and $XY$ and finding their intersection point. This point happens to be the midpoint of $AB$, the hypotenuse. Let this point be $M$. To find the radius, determine $MY$, where $MY^{2} = MA^2 + AY^2$, $MA = \frac{12}{2} = 6$, and $AY = AB = 12$. Thus, the radius $=r =MY = 6\sqrt5$.
+
+Next we let $AC = b$ and $BC = a$. Consider the right triangle $ACB$ first. Using the Pythagorean theorem, we find that $a^2 + b^2 = 12^2 = 144$. 
+<asy>
+pair A,B,C,M,E,W,Z,X,Y;
+A=(2,0);
+B=(0,2);
+C=(0,0);
+M=(A+B)/2;
+W=(-2,2);
+Z=(-2,-0);
+X=(2,4);
+Y=(4,2);
+E=(W+Z)/2;
+draw(A--B--C--cycle);
+draw(W--B--C--Z--cycle);
+draw(A--B--X--Y--cycle);
+dot(M);
+dot(E);
+label("W",W,NW);
+label("Z",Z,SW);
+label("C",C,S);
+label("A",A,S);
+label("B",B,N);
+label("X",X,NE);
+label("Y",Y,SE);
+label("E",E,1.5*plain.W);
+label("M",M,NE);
+draw(circle(M,sqrt(10)));
+draw(E--Z--M--cycle,dashed);
+</asy>
+Now, we let $E$ be the midpoint of $WZ$, and we consider right triangle $ZEM$. By the Pythagorean theorem, we have that $\left(\frac{a}{2}\right)^2 + \left(a + \frac{b}{2}\right)^2 = r^2 = 180$. Expanding this equation, we get that
+
+$$\frac{1}{4}(a^2+b^2) + a^2 + ab = 180$$
+$$\frac{144}{4} + a^2 + ab = 180$$
+$$a^2 + ab = 144 = a^2 + b^2$$
+$$ab = b^2$$
+$$b = a$$
+
+This means that $ABC$ is a 45-45-90 triangle, so $a = b = \frac{12}{\sqrt2} = 6\sqrt2$. Thus the perimeter is $a + b + AB = 12\sqrt2 + 12$ which is answer $\boxed{\textbf{(C)}\; 12 + 12\sqrt2}$.

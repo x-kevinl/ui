@@ -1,0 +1,5 @@
+==Problem==
+
+The real number $x$ satisfies the equation $x+\frac{1}{x} = \sqrt{5}$. What is the value of $x^{11}-7x^{7}+x^3?$
+
+$\textbf{(A)} ~-1 \qquad\textbf{(B)} ~0 \qquad\textbf{(C)} ~1 \qquad\textbf{(D)} ~2 \qquad\textbf{(E)} ~\sqrt{5}$

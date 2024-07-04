@@ -1,0 +1,3 @@
+==Problem==
+
+A strictly increasing sequence of positive integers <math>a_1</math>, <math>a_2</math>, <math>a_3</math>, <math>\cdots</math> has the property that for every positive integer <math>k</math>, the subsequence <math>a_{2k-1}</math>, <math>a_{2k}</math>, <math>a_{2k+1}</math> is geometric and the subsequence <math>a_{2k}</math>, <math>a_{2k+1}</math>, <math>a_{2k+2}</math> is arithmetic. Suppose that <math>a_{13} = 2016</math>. Find <math>a_1</math>.

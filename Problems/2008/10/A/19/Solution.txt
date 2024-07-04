@@ -1,0 +1,15 @@
+==Solution==
+<center><asy>
+size(220);pathpen=black+linewidth(0.65);pointpen=black;
+/* draw in rectangles */
+D(MP("R",(0,0))--MP("Q",(-6,0))--MP("P",(-6,2),N)--MP("S",(0,2),NW)--cycle);
+D((0,0)--MP("Q'",(0,6),SW)--MP("P'",(2,6),SE)--MP("S'",(2,0))--cycle);
+D(MP("R''",(2,2),NE)--MP("Q''",(8,2),N)--MP("P''",(8,0))--(2,0)--cycle);
+D(arc((0,0),(2,6),(-6,2)),dashed);D(arc((2,0),(8,0),(2,6)),dashed);D((2,6)--(0,0)--(-6,2),dashed);
+D(rightanglemark((2,6),(0,0),(-6,2),12));D(rightanglemark((2,6),(2,0),(8,0),12));
+MP("2",(-6,1),W);MP("6",(-3,0),S);
+</asy></center>
+
+We let $P'Q'R'S'$ be the rectangle after the first rotation, and $P''Q''R''S''$ be the rectangle after the second rotation. Point $P$ pivots about $R$ in an [[arc]] of a circle of radius $\sqrt{2^2+6^2} = 2\sqrt{10}$, and since $\angle PRS,\, \angle P'RQ'$ are complementary, it follows that the arc has a degree measure of $90^{\circ}$ and length $\frac14$ of the [[circumference]]. Thus, $P$ travels $\frac 14 \left(4\sqrt{10}\right)\pi = \sqrt{10}\pi$ in the first rotation.
+
+Similarly, in the second rotation, $P$ travels in a $90^{\circ}$ arc about $S'$, with the radius being $6$. It travels $\frac 14(12)\pi = 3\pi$. Therefore, the total distance it travels is $\left(3+\sqrt{10}\right)\pi\ \mathrm{(C)}$.

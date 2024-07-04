@@ -1,0 +1,2 @@
+==Solution==
+This is the number cubes that are adjacent to another cube on two sides. The bottom corner cubes are connected on three sides, and the top corner cubes are connected on one. The number we are looking for is the number of middle cubes, which is $\boxed{\textbf{(B)}\ 6}$.

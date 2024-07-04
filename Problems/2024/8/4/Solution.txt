@@ -1,0 +1,7 @@
+==Solution 1==
+
+The sum of the digits from $1-9$ are $1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 = 45$. Note that one of the answer choices (that is equal to Yunju's digits) subtracted from her sum of $45$ must equal a square.
+
+Note that $6^2 = 36$ is a very close square to the sum of 45. Checking, we see that $45 - 9 = 36 = 6^2$ works.
+
+Therefore, the missing number is $\boxed{\textbf{(E) } \text{9}}$.

@@ -1,0 +1,4 @@
+== Problem ==
+In a 6 x 4 grid (6 rows, 4 columns), 12 of the 24 squares are to be shaded so that there are two shaded squares in each row and three shaded squares in each column.  Let <math>N</math> be the number of shadings with this property.  Find the remainder when <math>N</math> is divided by 1000.
+
+[[Image:AIME I 2007-10.png]]

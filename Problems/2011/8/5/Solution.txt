@@ -1,0 +1,3 @@
+==Solution 1==
+
+There are $60$ minutes in an hour. $2011/60=33\text{r}31,$ or $33$ hours and $31$ minutes. There are $24$ hours in a day, so the time is $9$ hours and $31$ minutes after midnight on January 2, 2011. $\Rightarrow\boxed{\textbf{(D)}\text{ January 2 at 9:31AM}}$

@@ -1,0 +1,17 @@
+==Solution 1==
+
+Assume that <math>5 \in \{a_1, a_2, a_3\}</math>, <math>m \neq 5</math>, and WLOG, <math>\max{(a_1, a_2, a_3)} = 5</math>. Then we know that the other two medians in <math>\{a_1, a_2, a_3\}</math> and the smallest number of rows 1, 2, and 3 are all less than 5. But there are only 4 numbers less than 5 in <math>1, 2, 3, \dots, 9</math>, a Contradiction. Thus, if <math>5 \in \{a_1, a_2, a_3\}</math>, then <math>m = 5</math>.
+
+WLOG, assume <math>5</math> is in the upper left corner. One of the two other values in the top row needs to be below <math>5</math>, and the other needs to be above <math>5</math>. This can be done in <math>4\cdot4\cdot2=32</math> ways.
+The other <math>6</math> can be arranged in <math>6!=720</math> ways.
+Finally, accounting for when <math>5</math> is in every other space, our answer is <math>32\cdot720\cdot9</math>, which is <math>207360</math>. But we only need the last <math>3</math> digits, so <math>\boxed{360}</math> is our answer.
+
+~Solution by SuperSaiyanOver9000, mathics42, edited by zhaohm
+===Alternative Proof===
+'''Claim:''' As long as one median is equal to <math>5,</math> the overall median is equal to <math>5.</math>
+
+'''Proof:''' Notice that to obtain a median of <math>5,</math> we need one number greater and one number lesser than <math>5</math> along with <math>5.</math>
+
+Thus, we remain with 3 numbers greater than <math>5</math> and 3 less than <math>5,</math> meaning that the overall median, no matter the distribution, of the remaining two rows must be <math>5.</math>
+
+mathboy282

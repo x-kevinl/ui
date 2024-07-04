@@ -1,0 +1,2 @@
+== Problem ==
+Ten identical crates each of dimensions <math>3\mathrm{ft}\times 4\mathrm{ft}\times 6\mathrm{ft}</math>.  The first crate is placed flat on the floor.  Each of the remaining nine crates is placed, in turn, flat on top of the previous crate, and the orientation of each crate is chosen at random.  Let <math>\frac {m}{n}</math> be the probability that the stack of crates is exactly <math>41\mathrm{ft}</math> tall, where <math>m</math> and <math>n</math> are relatively prime positive integers.  Find <math>m</math>.

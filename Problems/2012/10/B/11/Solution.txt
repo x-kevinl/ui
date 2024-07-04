@@ -1,0 +1,5 @@
+== Solution ==
+
+Desserts must be chosen for $7$ days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday. 
+
+There are $3$ choices for dessert on Saturday: pie, ice cream, or pudding, as there must be cake on Friday and the same dessert may not be served two days in a row. Likewise, there are $3$ choices for dessert on Thursday. Once dessert for Thursday is selected, there are $3$ choices for dessert on Wednesday, once Wednesday's dessert is selected there are $3$ choices for dessert on Tuesday, etc. Thus, there are $3$ choices for dessert for each of $6$ days, so the total number of possible dessert menus is $3^6$, or $\boxed{\textbf{(A)}\ 729}$.

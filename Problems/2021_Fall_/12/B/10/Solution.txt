@@ -1,0 +1,63 @@
+== Solution ==
+
+Let $A = (\cos 40^{\circ}, \sin 40^{\circ}), B = (\cos 60^{\circ}, \sin 60^{\circ}),$ and $C = (\cos t^{\circ}, \sin t^{\circ}).$ We apply casework to the legs of isosceles $\triangle ABC:$
+<ol style="margin-left: 1.5em;">
+  <li>$AB=AC$<p>
+Note that $A$ must be the midpoint of $\widehat{BC}.$ It follows that $C = (\cos 20^{\circ}, \sin 20^{\circ}),$ so $t=20.$</li><p>
+  <li>$BA=BC$<p>
+Note that $B$ must be the midpoint of $\widehat{AC}.$ It follows that $C = (\cos 80^{\circ}, \sin 80^{\circ}),$ so $t=80.$</li><p>
+  <li>$CA=CB$<p>
+Note that $C$ must be the midpoint of $\widehat{AB}.$ It follows that $C = (\cos 50^{\circ}, \sin 50^{\circ})$ or $C = (\cos 230^{\circ}, \sin 230^{\circ}),$ so $t=50$ or $t=230.$
+</li><p>
+</ol>
+Together, the sum of all such possible values of $t$ is $20+80+50+230=\boxed{\textbf{(E)} \: 380}.$
+
+<u><b>Remark</b></u>
+
+The following diagram shows all possible locations of $C:$
+
+<asy>
+/* Made by MRENTHUSIASM */
+size(200); 
+
+int xMin = -1;
+int xMax = 1;
+int yMin = -1;
+int yMax = 1;
+int numRays = 36;
+
+//Draws a polar grid that goes out to a number of circles 
+//equal to big, with numRays specifying the number of rays: 
+void polarGrid(int big, int numRays) 
+{
+  for (int i = 1; i < big+1; ++i)
+  {
+    draw(Circle((0,0),i), gray+linewidth(0.4));
+  }
+  for (int i=0;i<numRays;++i) 
+  draw(rotate(i*360/numRays)*((-big,0)--(big,0)), gray+linewidth(0.4));
+}
+
+polarGrid(xMax,numRays);
+draw((xMin,0)--(xMax,0),black+linewidth(1.5),EndArrow(5));
+draw((0,yMin)--(0,yMax),black+linewidth(1.5),EndArrow(5));
+label("$x$",(xMax,0),2*E);
+label("$y$",(0,yMax),2*N);
+
+pair A, B, C1, C2, C3, C4;
+A = dir(40);
+B = dir(60);
+C1 = dir(20);
+C2 = dir(80);
+C3 = dir(50);
+C4 = dir(230);
+
+dot("$A$",A,1.5*dir(A),linewidth(4));
+dot("$B$",B,1.5*dir(B),linewidth(4));
+dot("$C_1$",C1,1.5*dir(C1),red+linewidth(4));
+dot("$C_2$",C2,1.5*dir(C2),red+linewidth(4));
+dot("$C_3$",C3,1.5*dir(C3),red+linewidth(4));
+dot("$C_3$",C4,1.5*dir(C4),red+linewidth(4));
+</asy>
+
+~Steven Chen (www.professorchenedu.com) ~Wilhelm Z ~MRENTHUSIASM

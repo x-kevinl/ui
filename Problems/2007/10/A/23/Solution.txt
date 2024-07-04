@@ -1,0 +1,4 @@
+==Solution 1==
+$$m^2 - n^2 = (m+n)(m-n) = 96 = 2^{5} \cdot 3$$ 
+
+For every two factors $xy = 96$, we have $m+n=x, m-n=y \Longrightarrow m = \frac{x+y}{2}, n = \frac{x-y}{2}$. It follows that the number of ordered pairs $(m,n)$ is given by the number of ordered pairs $(x,y): xy=96, x > y > 0$. There are $(5+1)(1+1) = 12$ factors of $96$, which give us six pairs $(x,y)$. However, since $m,n$ are positive integers, we also need that $\frac{x+y}{2}, \frac{x-y}{2}$ are positive integers, so $x$ and $y$ must have the same [[parity]]. Thus we exclude the factors $(x,y) = (1,96)(3,32)$, and we are left with $4$ pairs $\mathrm{(B)}$.

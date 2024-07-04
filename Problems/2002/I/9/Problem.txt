@@ -1,0 +1,8 @@
+== Problem ==
+Harold, Tanya, and Ulysses paint a very long picket fence. 
+
+* Harold starts with the first picket and paints every <math>h</math>th picket; 
+* Tanya starts with the second picket and paints every <math>t</math>th picket; and 
+* Ulysses starts with the third picket and paints every <math>u</math>th picket. 
+
+Call the positive integer <math>100h+10t+u</math> paintable when the triple <math>(h,t,u)</math> of positive integers results in every picket being painted exactly once. Find the sum of all the paintable integers.

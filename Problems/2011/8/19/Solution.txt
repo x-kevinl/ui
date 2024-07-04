@@ -1,0 +1,4 @@
+==Solution==
+The figure can be divided into $7$ sections. The number of rectangles with just one section is $3.$ The number of rectangles with two sections is $5.$ There are none with only three sections. The number of rectangles with four sections is $3.$ 
+
+$3+5+3=\boxed{\textbf{(D)}\ 11}$

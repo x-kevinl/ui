@@ -1,0 +1,19 @@
+== Solution 1==
+The first condition gives us that
+$$x^2 + 6x + 1 + y^2 + 6y + 1 \le 0 \Longrightarrow (x+3)^2 + (y+3)^2 \le 16$$
+
+which is a [[circle]] centered at $(-3,-3)$ with [[radius]] $4$. The second condition gives us that 
+
+$$x^2 + 6x + 1 - y^2 - 6y - 1 \le 0 \Longrightarrow (x^2 - y^2) + 6(x-y) \le 0 \Longrightarrow (x-y)(x+y+6) \le 0$$
+
+Thus either
+
+$$x - y \ge 0,\quad x+y+6 \le 0$$
+
+or
+
+$$x - y \le 0,\quad x+y+6 \ge 0$$
+
+[[Image:2002_12B_AMC-25.png|center]]
+
+Each of those lines passes through $(-3,-3)$ and has slope $\pm 1$, as shown above. Therefore, the area of $R$ is half of the area of the circle, which is $\frac{1}{2} (\pi \cdot 4^2) = 8\pi \approx \boxed{\textbf{(E) }25}$.

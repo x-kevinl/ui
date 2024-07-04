@@ -1,0 +1,4 @@
+== Problem ==
+In [[quadrilateral]] <math> ABCD,\ BC=8,\ CD=12,\ AD=10, </math> and <math> m\angle A= m\angle B = 60^\circ. </math> Given that <math> AB = p + \sqrt{q}, </math> where <math> p </math> and <math> q </math> are [[positive]] [[integer]]s, find <math> p+q. </math>
+
+__TOC__

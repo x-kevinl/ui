@@ -1,0 +1,2 @@
+== Solution 1 ==
+First we figure out the number of ways to put the $3$ blue disks. Denote the spots to put the disks as $1-6$ from left to right, top to bottom. The cases to put the blue disks are $(1,2,3),(1,2,4),(1,2,5),(1,2,6),(2,3,5),(1,4,6)$. For each of those cases we can easily figure out the number of ways for each case, so the total amount is $2+2+3+3+1+1 = \boxed{\textbf{(D) } 12}$.

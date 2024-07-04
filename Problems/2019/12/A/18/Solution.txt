@@ -1,0 +1,28 @@
+==Diagram==
+3D:
+<asy>
+import graph3;
+import palette;
+size(200);
+currentprojection=orthographic(0,4,2);
+
+triple f(pair z) {return expi(z.x,z.y);}
+
+surface s=surface(f,(0,0),(pi,2pi),70,Spline);
+draw((0,-5/6,sqrt(5)/3)--(2,2/3,sqrt(5)/3)--(-2,2/3,sqrt(5)/3)--cycle);
+draw(s,mean(palette(s.map(zpart),Grayscale())),nolight);
+draw((2,2/3,sqrt(5)/3)--(-2,2/3,sqrt(5)/3));
+</asy>
+Plane through triangle:
+<asy>
+draw((0,0)--(12,9)--(24,0)--cycle);
+draw((12,9)--(12,0), dashed);
+draw((11.5,0)--(11.5,0.5)--(12,0.5));
+draw(circle((12,4),4));
+draw((12,4)--(48/5, 36/5));
+dot((12,4));
+label("$15$", (6,9/2),NW);
+label("$15$", (18,9/2),NE);
+label("$24$", (12,-1),S);
+label("$r$",(54/5, 28/5), SW);
+</asy>

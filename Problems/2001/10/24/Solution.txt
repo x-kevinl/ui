@@ -1,0 +1,32 @@
+==Solution==
+
+<asy> 
+/* Geogebra to Asymptote conversion, documentation at artofproblemsolving.com/Wiki, go to User:Azjps/geogebra */
+import graph; size(7cm); 
+real labelscalefactor = 0.5; /* changes label-to-point distance */
+pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */ 
+pen dotstyle = black; /* point style */ 
+real xmin = -4.3, xmax = 7.3, ymin = -3.16, ymax = 6.3; /* image dimensions */
+
+/* draw figures */
+draw(circle((0.2,4.92), 1.3)); 
+draw(circle((1.04,1.58), 2.14)); 
+draw((-1.1,4.92)--(0.2,4.92)); 
+draw((0.2,4.92)--(1.04,1.58)); 
+draw((1.04,1.58)--(-1.1,1.58)); 
+draw((-1.1,1.58)--(-1.1,4.92)); 
+/* dots and labels */
+dot((-1.1,4.92),dotstyle); 
+label("$A$", (-1.02,5.12), NE * labelscalefactor); 
+dot((0.2,4.92),dotstyle); 
+label("$B$", (0.28,5.12), NE * labelscalefactor); 
+dot((-1.1,1.58),dotstyle); 
+label("$D$", (-1.02,1.78), NE * labelscalefactor); 
+dot((1.04,1.58),dotstyle); 
+label("$C$", (1.12,1.78), NE * labelscalefactor); 
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle); 
+/* end of picture */
+</asy>
+
+If $ AB=x $ and $ CD=y $, then $ BC=x+y $. By the [[Pythagorean theorem]], we have $ (x+y)^2=(y-x)^2+49. $ 
+Solving the equation, we get $ 4xy=49 \implies xy = \boxed{\textbf{(B)}\ 12.25} $.

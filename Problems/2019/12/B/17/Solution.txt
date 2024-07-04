@@ -1,0 +1,7 @@
+==Solution 1==
+
+Convert $z$ and $z^3$ into modulus-argument (polar) form, giving $z=r\text{cis}(\theta)$ for some $r$ and $\theta$. Thus, by De Moivre's Theorem, $z^3=r^3\text{cis}(3\theta)$. Since the distance from $0$ to $z$ is $r$, and the triangle is equilateral, the distance from $0$ to $z^3$ must also be $r$, so $r^3=r$, giving $r=1$. (We know $r \neq 0$ since the problem statement specifies that $z$ must be nonzero.)
+
+Now, to get from $z$ to $z^3$, which should be a rotation of $60^{\circ}$ if the triangle is equilateral, we multiply by $z^2 = r^2\text{cis}(2\theta)$, again using De Moivre's Theorem. Thus we require $2\theta=\pm\frac{\pi}{3} + 2\pi k$ (where $k$ can be any integer). If $0 < \theta < \frac{\pi}{2}$, we must have $\theta=\frac{\pi}{6}$, while if $\frac{\pi}{2} \leq \theta < \pi$, we must have $\theta = \frac{5\pi}{6}$. Hence there are $2$ values that work for $0 < \theta < \pi$. By symmetry, the interval $\pi \leq \theta < 2\pi$ will also give $2$ solutions. The answer is thus $2 + 2 = \boxed{\textbf{(D) }4}$.
+
+''Note'': Here's a graph showing how $z$ and $z^3$ move as $\theta$ increases: https://www.desmos.com/calculator/xtnpzoqkgs.

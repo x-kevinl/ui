@@ -1,0 +1,32 @@
+==Solution 1==
+
+Let <math>n\ge 2</math> and define <math>a(n) = \left\lfloor \sqrt n \right\rfloor</math>. For <math>2\le n \le 1000</math>, we have <math>1\le a(n)\le 31</math>. 
+
+For <math>a^2 \le x < (a+1)^2</math> we have <math>y=ax</math>. Thus <math>A(n+1)-A(n)=a(n+\tfrac 12) = \Delta_n</math> (say), and <math>\Delta_n</math> is an integer if <math>a</math> is even; otherwise <math>\Delta_n</math> is an integer plus <math>\tfrac 12</math>.
+
+If <math>a=1</math>, <math>n\in \{1,2,3\}</math> and <math>\Delta_n</math> is of the form <math>k(n)+\tfrac 12</math> so <math>A(n)</math> is an integer when <math>n</math> is even. 
+
+If <math>a=2</math>, <math>n\in\{4,\ldots , 8\}</math> and <math>\Delta_n</math> is an integer for all <math>n</math>. Since <math>A(3)</math> is not an integer, so <math>A(n)</math> is not an integer for any <math>n</math>. 
+
+If <math>a=3</math>, <math>n\in\{9,\ldots , 15\}</math> and <math>\Delta_n</math> is of the form <math>k(n)+\tfrac 12</math>. Since <math>A(8)</math> is of the form <math>k+\tfrac 12</math> so <math>A(n)</math> is an integer only when <math>n</math> is odd.
+
+If <math>a=4</math>, <math>n\in\{16,\ldots , 24\}</math> and <math>\Delta_n</math> is an integer for all <math>n</math>. Since <math>A(15)</math> is an integer so <math>A(n)</math> is an integer for all <math>n</math>. 
+
+Now we are back to where we started; i.e., the case <math>a=5</math> will be the same as <math>a=1</math> and so on. Thus, 
+<cmath>
+\begin{align}
+a(n)\equiv 1\pmod 4 \qquad &\Longrightarrow \qquad A(n) \in \mathbb{Z} \textrm{ for even } n, \\
+a(n)\equiv 2\pmod 4 \qquad &\Longrightarrow \qquad A(n) \not\in \mathbb{Z} \textrm{  for any } n, \\
+a(n)\equiv 3\pmod 4 \qquad &\Longrightarrow \qquad A(n) \in \mathbb{Z} \textrm{ for odd  } n, \\
+a(n)\equiv 0\pmod 4 \qquad &\Longrightarrow \qquad A(n) \in \mathbb{Z} \textrm{ for all } n.
+\end{align}
+</cmath>
+
+For each <math>a</math> there are <math>2a+1</math> corresponding values of <math>n</math>: i.e., <math>n\in \{a^2, \ldots , (a+1)^2-1\}</math>.
+
+Thus, the number of values of <math>n</math> corresponding to <math>(4)</math> (i.e., <math>a(n)\equiv 0\pmod 4</math>) is given by <cmath>\sum_{\substack{a=4k \\ a\le 31}}(2a+1) = \sum_{k=1}^7 (8k+1)=231.</cmath>
+
+The cases <math>(1)</math> and <math>(3)</math> combine to account for half the values of <math>n</math> corresponding to odd values of <math>a(n)</math>; i.e.,
+<cmath>\frac 12 \cdot \sum_{\substack{a=2k+1 \\ a\le 31}} (2a+1) = \sum_{k=0}^{15} (2k+\tfrac 32) = 264</cmath>However, this also includes the odd integers in <math>\{1001, \ldots , 1023\}</math>. Subtracting <math>12</math> to account for these, we get the  number of values of <math>n</math> corresponding to cases <math>(1)</math> and <math>(3)</math> to be <math>264-12=252</math>.
+
+Adding the contributions from all cases we get our answer to be <math>231+252= \boxed{483}</math>.

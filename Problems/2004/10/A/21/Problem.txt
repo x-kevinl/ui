@@ -1,0 +1,22 @@
+==Problem==
+Two distinct lines pass through the center of three concentric circles of radii 3, 2, and 1. The area of the shaded region in the diagram is $\frac{8}{13}$ of the area of the unshaded region. What is the radian measure of the acute angle formed by the two lines? (Note: $\pi$ radians is $180$ degrees.)
+
+<center><asy>
+size(85);
+fill((-30,0)..(-24,18)--(0,0)--(-24,-18)..cycle,gray(0.7));
+fill((30,0)..(24,18)--(0,0)--(24,-18)..cycle,gray(0.7));
+fill((-20,0)..(0,20)--(0,-20)..cycle,white);
+fill((20,0)..(0,20)--(0,-20)..cycle,white);
+fill((0,20)..(-16,12)--(0,0)--(16,12)..cycle,gray(0.7));
+fill((0,-20)..(-16,-12)--(0,0)--(16,-12)..cycle,gray(0.7));
+fill((0,10)..(-10,0)--(10,0)..cycle,white);
+fill((0,-10)..(-10,0)--(10,0)..cycle,white);
+fill((-10,0)..(-8,6)--(0,0)--(-8,-6)..cycle,gray(0.7));
+fill((10,0)..(8,6)--(0,0)--(8,-6)..cycle,gray(0.7));
+draw(Circle((0,0),10),linewidth(0.7));
+draw(Circle((0,0),20),linewidth(0.7));
+draw(Circle((0,0),30),linewidth(0.7));
+draw((-28,-21)--(28,21),linewidth(0.7));
+draw((-28,21)--(28,-21),linewidth(0.7));</asy></center>
+
+$ \mathrm{(A) \ } \frac{\pi}{8} \qquad \mathrm{(B) \ } \frac{\pi}{7} \qquad \mathrm{(C) \ } \frac{\pi}{6} \qquad \mathrm{(D) \ } \frac{\pi}{5} \qquad \mathrm{(E) \ } \frac{\pi}{4} $

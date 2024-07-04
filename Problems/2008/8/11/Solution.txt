@@ -1,0 +1,2 @@
+==Solution 1==
+The union of two sets is equal to the sum of each set minus their intersection. The number of students that have both a dog and a cat is $20+26-39 = \boxed{\textbf{(A)}\ 7}$.

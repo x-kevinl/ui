@@ -1,0 +1,9 @@
+== Solution ==
+Clearly we have people ''moving'' at speeds of <math>6,8</math> and <math>10</math> feet/second. Notice that out of the three people, Cy is at the largest disadvantage to begin with and since all speeds are close, it is hardest for him to catch up. Furthermore, Bob is clearly the farthest along. Thus it is reasonable to assume that there is some point when Al is halfway between Cy and Bob. At this time <math>s</math>, we have that
+
+<math>
+\frac{8(s-4)+10(s-2)}{2}=6s
+</math>
+After solving, <math>s=\frac{26}{3}</math>. At this time, Al has traveled <math>6\cdot\frac{26}{3}=52</math> feet.
+
+We could easily check that Al is in the middle by trying all three possible cases. <math>\frac{6s + 8(s-4)}{2} = 10(s-2)</math> yields that <math>s = \frac 43</math>, which can be disregarded since both Bob and Cy hadn't started yet. <math>\frac{6s + 10(s-2)}{2} = 8(s-4)</math> yields that <math>-10=-32</math>, a contradiction. Thus, the answer is <math>\boxed{52}</math>.

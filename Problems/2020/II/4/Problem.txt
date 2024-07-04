@@ -1,0 +1,2 @@
+==Problem==
+Triangles <math>\triangle ABC</math> and <math>\triangle A'B'C'</math> lie in the coordinate plane with vertices <math>A(0,0)</math>, <math>B(0,12)</math>, <math>C(16,0)</math>, <math>A'(24,18)</math>, <math>B'(36,18)</math>, <math>C'(24,2)</math>. A rotation of <math>m</math> degrees clockwise around the point <math>(x,y)</math> where <math>0<m<180</math>, will transform <math>\triangle ABC</math> to <math>\triangle A'B'C'</math>. Find <math>m+x+y</math>.

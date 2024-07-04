@@ -1,0 +1,2 @@
+== Problem 2 ==
+A point <math>P</math> is chosen at random in the interior of a unit square <math>S</math>. Let <math>d(P)</math> denote the distance from <math>P</math> to the closest side of <math>S</math>. The probability that <math>\frac{1}{5}\le d(P)\le\frac{1}{3}</math> is equal to <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

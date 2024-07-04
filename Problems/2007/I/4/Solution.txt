@@ -1,0 +1,5 @@
+== Solution ==
+
+Denote the planets <math>A, B, C </math> respectively.  Let <math>a(t), b(t), c(t) </math> denote the angle which each of the respective planets makes with its initial position after <math>t </math> years.  These are given by <math> a(t) = \frac{t \pi}{30} </math>, <math> b(t) = \frac{t \pi}{42} </math>, <math>c(t) = \frac{t \pi}{70}</math>.
+
+In order for the planets and the central star to be collinear, <math>a(t)</math>, <math>b(t) </math>, and <math>c(t) </math> must differ by a multiple of <math>\pi </math>.  Note that <math> a(t) - b(t) = \frac{t \pi}{105}</math> and <math> b(t) - c(t) = \frac{t \pi}{105}</math>, so <math> a(t) - c(t) = \frac{ 2 t \pi}{105} </math>.  These are simultaneously multiples of <math>\pi </math> exactly when <math>t </math> is a multiple of <math>105</math>, so the planets and the star will next be collinear in <math>\boxed{105}</math> years.

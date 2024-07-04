@@ -1,0 +1,23 @@
+== Solutions==
+
+===Solution 1===
+1. Identify the total number of ways to select two different numbers from the set:
+
+The set has 6 elements. The number of ways to choose 2 different numbers from 6 is given by the combination formula: $\binom{6}{2} = \frac{6 \times 5}{2 \times 1} = 15$.
+
+2. Identify the favorable outcomes:
+
+For the product to be zero, one of the chosen numbers must be zero. The set contains one zero (0). To have a product of zero, we need to choose 0 and any other number from the remaining five numbers $-2, -1, 3, 4, 5$.
+
+The number of ways to choose 0 and one other number from the remaining five is 5.
+
+3. Calculate the probability:
+
+The probability is the number of favorable outcomes divided by the total number of outcomes: $\text{Probability} = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}} = \frac{5}{15} = \frac{1}{3}$.
+
+Thus, the probability that the product is $0$ is $\boxed{\textbf{(D)} \ \frac{1}{3}}.$
+
+~GeometryMystery
+
+===Solution 2 (Complementary Counting)===
+Because the only way the product of the two numbers is $0$ is if one of the numbers we choose is $0,$ we calculate the probability of NOT choosing a $0.$ We get $\frac{5}{6} \cdot \frac{4}{5} = \frac{2}{3}.$ Therefore our answer is $1 - \frac{2}{3} = \boxed{\textbf{(D)} \ \frac{1}{3}}.$

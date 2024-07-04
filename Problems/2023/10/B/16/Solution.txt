@@ -1,0 +1,13 @@
+== Solution 1 ==
+
+First, we know that $D$ is greater than $U$, since there are less upnos than downnos. To see why, we examine what determines an upno or downno. 
+
+We notice that, given any selection of unique digits (notice that "unique" constrains this to be a finite number), we can construct a unique downno. Similarly, we can also construct an upno, but the selection can not include the digit $0$ since that isn't valid. 
+
+Thus, there are $2^{10}$ total downnos and $2^9$ total upnos. However, we are told that each upno or downno must be at least $2$ digits, so we subtract out the $0$-digit and $1$-digit cases. 
+
+For the downnos, there are $10$ $1$-digit cases, and for the upnos, there are $9$ $1$-digit cases. There is $1$ $0$-digit case for both upnos and downnos. 
+
+Thus, the difference is $\left(\left(2^{10}-10-1\right)-\left(2^9-9-1\right)\right)=2^9-1=\boxed{\textbf{(E) }511}.$ 
+
+~Technodoggo ~minor edits by lucaswujc

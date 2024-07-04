@@ -1,0 +1,18 @@
+==Solution 1==
+
+The $365$-day time period can be split up into $6$, $60$-day time periods, because after $60$ days, all three of them visit again (Least common multiple of $3$, $4$, and $5$).
+You can find how many times each pair of visitors can meet by finding the LCM of their visiting days and dividing that number by 60.
+Remember to subtract $1$, because you do not wish to count the $60$th day, when all three visit.
+
+A and B visit $\frac{60}{3 \cdot 4}-1 = 4$ times.
+
+A and C visit $\frac{60}{3 \cdot 5}-1 = 3$ times.
+
+B and C visit $\frac{60}{4 \cdot 5}-1 = 2$ times.
+
+
+This is a total of $9$ visits per $60$ day period.
+Therefore, the total number of $2$-person visits is $9 \cdot 6 = \boxed{\textbf{(B) }54}$.
+
+*Note: We do not have to worry about the numbers over 360: ($361,362,363,364,365$) having 2 factors. This is because we can rewrite
+$(361,362,363,364,365) \Rightarrow (361,362, 3\cdot 121, 4 \cdot 91, 5 \cdot 73)$. We note that $121$ is not further divisible by 4 or 5, $91$ is not further divisible by 3 or 5, 73 is not further divisible by 3 or 4. Therefore, none of the numbers from $361-365$ have 2 factors of $3,4,$ or $5$, so we can conclude that the answer is indeed $\boxed{54}$

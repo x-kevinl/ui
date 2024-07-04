@@ -1,0 +1,13 @@
+==Solution 1 (Casework)==
+
+Clearly, the integers from $8$ through $14$ must be in different pairs, and $7$ must pair with $14.$
+
+Note that $6$ can pair with either $12$ or $13.$ From here, we consider casework:
+
+* If $6$ pairs with $12,$ then $5$ can pair with one of $10,11,13.$ After that, each of $1,2,3,4$ does not have any restrictions. This case produces $3\cdot4!=72$ ways.
+
+* If $6$ pairs with $13,$ then $5$ can pair with one of $10,11,12.$ After that, each of $1,2,3,4$ does not have any restrictions. This case produces $3\cdot4!=72$ ways.
+
+Together, the answer is $72+72=\boxed{\textbf{(E) } 144}.$
+
+~MRENTHUSIASM

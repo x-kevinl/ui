@@ -1,0 +1,2 @@
+== Solution ==
+Set up the proportion $\frac{12\ \text{meals}}{18\ \text{people}}=\frac{x\ \text{meals}}{12\ \text{people}}$. Solving for $x$ gives us $x= \boxed{\textbf{(A)}\ 8}$.

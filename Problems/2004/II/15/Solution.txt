@@ -1,0 +1,23 @@
+== Solution 1 ==
+Number the squares <math>0, 1, 2, 3, ... 2^{k} - 1</math>.  In this case <math>k = 10</math>, but we will consider more generally to find an inductive solution.  Call <math>s_{n, k}</math> the number of squares below the <math>n</math> square after the final fold in a strip of length <math>2^{k}</math>.
+
+Now, consider the strip of length <math>1024</math>.  The problem asks for <math>s_{941, 10}</math>.  We can derive some useful recurrences for <math>s_{n, k}</math> as follows:  Consider the first fold.  Each square <math>s</math> is now paired with the square <math>2^{k} - s - 1</math>.  Now, imagine that we relabel these pairs with the indices <math>0, 1, 2, 3... 2^{k - 1} - 1</math> - then the <math>s_{n, k}</math> value of the pairs correspond with the <math>s_{n, k - 1}</math> values - specifically, double, and maybe <math>+ 1</math> (if the member of the pair that you're looking for is the top one at the final step).
+
+So, after the first fold on the strip of length <math>1024</math>, the <math>941</math> square is on top of the <math>82</math> square.  We can then write
+
+<cmath>s_{941, 10} = 2s_{82, 9} + 1</cmath>
+
+(We add one because <math>941</math> is the odd member of the pair, and it will be on top.  This is more easily visually demonstrated than proven.)  We can repeat this recurrence, adding one every time we pair an odd to an even (but ignoring the pairing if our current square is the smaller of the two):
+
+<cmath>s_{82, 9} = 2s_{82, 8} = 4s_{82, 7} = 8s_{127 - 82, 6} = 8s_{45, 6}</cmath>
+
+<cmath>s_{45, 6} = 2s_{63 - 45, 5} + 1 = 2s_{18, 5} + 1 = 4s_{31 - 18, 4} + 1 = 4s_{13, 4} + 1</cmath>
+
+<cmath>s_{13, 4} = 2s_{15 - 13, 3} + 1 = 2s_{2, 3}+1</cmath>
+
+We can easily calculate <math>s_{2, 3} = 4</math> from a diagram.  Plugging back in,
+
+<cmath>\begin{align*} s_{13, 4} &= 9 \\
+s_{45, 6} &= 37 \\
+s_{82, 9} &= 296 \\
+s_{941, 10} &= \boxed{593}\end{align*}</cmath>

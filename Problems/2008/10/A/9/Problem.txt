@@ -1,0 +1,6 @@
+==Problem==
+Suppose that
+$$\frac{2x}{3}-\frac{x}{6}$$
+is an integer. Which of the following statements must be true about $x$?
+
+$\mathrm{(A)}\ \text{It is negative.}\\\mathrm{(B)}\ \text{It is even, but not necessarily a multiple of 3.}\\\mathrm{(C)}\ \text{It is a multiple of 3, but not necessarily even.}\\\mathrm{(D)}\ \text{It is a multiple of 6, but not necessarily a multiple of 12.}\\\mathrm{(E)}\ \text{It is a multiple of 12.}$

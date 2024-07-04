@@ -1,0 +1,11 @@
+== Solution 1 ==
+
+Let vertex $A$ be any vertex, then vertex $B$ be one of the diagonal vertices to $A$, $C$ be one of the diagonal vertices to $B$, and so on. We consider cases for this problem.
+
+In the case that $C$ has the same color as $A$, $D$ has a different color from $A$ and so $E$ has a different color from $A$ and $D$. In this case, $A$ has $6$ choices, $B$ has $5$ choices (any color but the color of $A$), $C$ has $1$ choice, $D$ has $5$ choices, and $E$ has $4$ choices, resulting in a possible of $6 \cdot 5 \cdot 1 \cdot 5 \cdot 4 = 600$ combinations.
+
+In the case that $C$ has a different color from $A$ and $D$ has a different color from $A$, $A$ has $6$ choices, $B$ has $5$ choices, $C$ has $4$ choices (since $A$ and $B$ necessarily have different colors), $D$ has $4$ choices, and $E$ has $4$ choices, resulting in a possible of $6 \cdot 5 \cdot 4 \cdot 4 \cdot 4 = 1920$ combinations.
+ 
+In the case that $C$ has a different color from $A$ and $D$ has the same color as $A$, $A$ has $6$ choices, $B$ has $5$ choices, $C$ has $4$ choices, $D$ has $1$ choice, and $E$ has $5$ choices, resulting in a possible of $6 \cdot 5 \cdot 4 \cdot 1 \cdot 5 = 600$ combinations.
+
+Adding all those combinations up, we get $600+1920+600=\boxed{3120 \ \mathbf{(C)}}$.

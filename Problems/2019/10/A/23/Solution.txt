@@ -1,0 +1,31 @@
+==Solution 1==
+
+Define a ''round'' as one complete rotation through each of the three children, and define a ''turn'' as the portion when one child says his numbers (similar to how a game is played).
+
+We create a table to keep track of what numbers each child says for each round.
+
+$
+
+ \begin{tabular}{||c c c c||} 
+ \hline
+ Round & Tadd & Todd & Tucker \\ [0.5ex] 
+ \hline\hline
+ 1 & 1 & 2-3 & 4-6 \\ 
+ \hline
+ 2 & 7-10 & 11-15 & 16-21 \\
+ \hline
+ 3 & 22-28 & 29-36 & 37-45 \\
+ \hline
+ 4 & 46-55 & 56-66 & 67-78 \\ [1ex] 
+ \hline
+\end{tabular}
+
+$
+
+
+
+Tadd says $1$ number in round 1, $4$ numbers in round 2, $7$ numbers in round 3, and in general $3n - 2$ numbers in round n. At the end of round n, the number of numbers Tadd has said so far is $1 + 4 + 7 + \dots + (3n - 2) = \frac{n(3n-1)}{2}$, by the sum of arithmetic series formula. 
+
+We find that $\dfrac{37(110)}{2}=2035$, so Tadd says his 2035th number at the end of his turn in round 37. That also means that Tadd says his 2019th number in round 37. At the end of Tadd's turn in round 37, the children have, in total, completed $36+36+37=109$ turns. In general, at the end of turn $n$, the nth triangular number is said, or $\dfrac{n(n+1)}{2}$. So at the end of turn 109 (or the end of Tadd's turn in round 37), Tadd says the number $\dfrac{109(110)}{2}=5995$. Recalling that this was the 2035th number said by Tadd, so the 2019th number he said was $5995-16=5979$.
+
+Thus, the answer is $\boxed{\textbf{(C) }5979}$.

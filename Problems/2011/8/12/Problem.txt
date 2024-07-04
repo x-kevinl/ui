@@ -1,0 +1,4 @@
+==Problem==
+Angie, Bridget, Carlos, and Diego are seated at random around a square table, one person to a side. What is the probability that Angie and Carlos are seated opposite each other?
+
+$ \textbf{(A) } \frac14 \qquad\textbf{(B) } \frac13 \qquad\textbf{(C) } \frac12 \qquad\textbf{(D) } \frac23 \qquad\textbf{(E) } \frac34 $

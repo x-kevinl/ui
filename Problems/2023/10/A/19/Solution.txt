@@ -1,0 +1,19 @@
+==Solution 1==
+
+Due to rotations preserving an equal distance, we can bash the answer with the distance formula. $D(A, P) = D(A', P)$, and $D(B, P) = D(B',P)$.
+Thus we will square our equations to yield: 
+$(1-r)^2+(2-s)^2=(3-r)^2+(1-s)^2$, and $(3-r)^2+(3-s)^2=(4-r)^2+(3-s)^2$.
+Canceling $(3-s)^2$ from the second equation makes it clear that $r$ equals $3.5$.
+
+Substituting will yield 
+
+$$\begin{align*}(2.5)^2+(2-s)^2 &= (-0.5)^2+(1-s)^2 \\
+6.25+4-4s+s^2 &= 0.25+1-2s+s^2 \\
+2s &= 9 \\
+s &=4.5 \\
+\end{align*}
+$$.
+
+Now $|r-s| = |3.5-4.5| = \boxed{\textbf{(E) } 1}$.
+
+-Antifreeze5420

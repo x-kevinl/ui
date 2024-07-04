@@ -1,0 +1,25 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(300);
+pair A, B, C, D, O, P;
+C = (43,0);
+D = (0,0);
+B = intersectionpoints(Circle(C,43),Circle(D,66))[0];
+A = intersectionpoints(Circle(D,4*sqrt(190)),B--B+100*dir(180))[1];
+P = midpoint(B--D);
+O = intersectionpoint(A--C,B--D);
+dot("$C$",C,1.5*SE,linewidth(4));
+dot("$D$",D,1.5*SW,linewidth(4));
+dot("$B$",B,1.5*NE,linewidth(4));
+dot("$A$",A,1.5*NW,linewidth(4));
+dot("$P$",P,1.5*N,linewidth(4));
+dot("$O$",O,1.5*S,linewidth(4));
+markscalefactor=0.25;
+draw(rightanglemark(A,D,O),red);
+draw(A--B--C--D--cycle^^A--C^^B--D^^C--P);
+label("$43$",B--C,E);
+label("$43$",C--D,S);
+label("$11$",midpoint(O--P),NW);
+</asy>
+~MRENTHUSIASM

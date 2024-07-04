@@ -1,0 +1,17 @@
+== Solutions ==
+=== Solution 1 ===
+
+Whenever $ n $ is the product of three consecutive integers, $ n $ is divisible by $ 3! $, meaning it is divisible by $ 6 $.
+
+It also mentions that it is divisible by $ 7 $, so the number is definitely divisible by all the factors of $ 42 $.
+
+In our answer choices, the one that is not a factor of $ 42 $ is $ \boxed{\textbf{(D)}\ 28} $.
+
+=== Solution 2 ===
+ 
+We can look for counterexamples. For example, letting $n = 13 \cdot 14 \cdot 15$, we see that $n$ is not divisible by 28, so $\boxed{\textbf{(D) }28}$ is our answer.
+
+===Solution 3(elimination)===
+No matter what 3 integers you choose, one of them has to be even, so since $14 = 7 \cdot 2$, and it has 7 and 2 as a divisor, answer B is out. Now, if it wasn't divisible by 3, it could be A or C($21 = 7 \cdot 3$,and $6 = 2 \cdot 3$)m so it must be divisible by 3. Therefore, it is either D or E. Since we eliminated 6, if it was E, it would be not divisible by 6($42 = 7 \cdot 6$), but it is not, so the answer is $ \boxed{\textbf{(D)}\ 28} $.
+
+~idk12345678

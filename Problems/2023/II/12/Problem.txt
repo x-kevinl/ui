@@ -1,0 +1,3 @@
+==Problem==
+
+In <math>\triangle ABC</math> with side lengths <math>AB = 13,</math> <math>BC = 14,</math> and <math>CA = 15,</math> let <math>M</math> be the midpoint of <math>\overline{BC}.</math> Let <math>P</math> be the point on the circumcircle of <math>\triangle ABC</math> such that <math>M</math> is on <math>\overline{AP}.</math> There exists a unique point <math>Q</math> on segment <math>\overline{AM}</math> such that <math>\angle PBQ = \angle PCQ.</math> Then <math>AQ</math> can be written as <math>\frac{m}{\sqrt{n}},</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n.</math>

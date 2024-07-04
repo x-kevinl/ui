@@ -1,0 +1,5 @@
+==Solution==
+
+If there are $10$ pieces of pasta, Henry took $10-1=9$ bites. Each of these $9$ bites took $3$ inches of pasta out, and thus his bites in total took away $9\cdot 3 = 27$ inches of pasta. Thus, the original piece of pasta was $27+17=\boxed{\textbf{(D) } 44}$ inches long.
+
+~wamofan

@@ -1,0 +1,4 @@
+==Problem==
+How many 4-digit numbers greater than 1000 are there that use the four digits of 2012?
+
+$ \textbf{(A)}\hspace{.05in}6\qquad\textbf{(B)}\hspace{.05in}7\qquad\textbf{(C)}\hspace{.05in}8\qquad\textbf{(D)}\hspace{.05in}9\qquad\textbf{(E)}\hspace{.05in}12 $

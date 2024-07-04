@@ -1,0 +1,34 @@
+==Solution 1==
+
+There are a total of $6!$ ways to arrange the kids.
+
+Abby and Bridget can sit in 3 ways if they are adjacent in the same column:
+$$\begin{eqnarray*}
+\text{A}&\quad\text{X}\quad&\text{X} \\
+\text{B}&\quad\text{X}\quad&\text{X} 
+\end{eqnarray*}$$
+
+
+$$\begin{eqnarray*}
+\text{X}&\quad\text{A}\quad&\text{X} \\
+\text{X}&\quad\text{B}\quad&\text{X} 
+\end{eqnarray*}$$
+
+
+$$\begin{eqnarray*}
+\text{X}&\quad\text{X}\quad&\text{A} \\
+\text{X}&\quad\text{X}\quad&\text{B} 
+\end{eqnarray*}$$
+
+
+For each of these seat positions, Abby and Bridget can switch seats, and the other 4 people can be arranged in $4!$ ways which results in a total of $3 \times 2 \times 4!$ ways to arrange them. 
+
+
+By the same logic, there are 4 ways for Abby and Bridget to be placed if they are adjacent in the same row: they can swap seats, and the other $4$ people can be arranged in $4!$ ways for a total of $4 \times 2 \times 4!$ ways to arrange them.
+
+
+We sum the 2 possibilities up to get $\frac{(3\cdot2)\cdot4!+(4\cdot2)\cdot4!}{6!} = \frac{14\cdot4!}{6!}=\boxed{\frac{7}{15}}$ or $\textbf{(C)}$.
+
+If you got stuck on this problem, refer to AOPS Probability and Combinations 
+
+~Nivaar

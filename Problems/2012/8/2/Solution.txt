@@ -1,0 +1,2 @@
+==Solution==
+There are $24\text{ hours}\div8\text{ hours} = 3$ births and one death everyday in East Westmore. Therefore, the population increases by $3$ - $1$ = $2$ people everyday. Thus, there are $2 \times 365 = 730$ people added to the population every year. Rounding, we find the answer is $\boxed{\textbf{(B)}\ 700}$.

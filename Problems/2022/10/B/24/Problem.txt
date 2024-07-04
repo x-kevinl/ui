@@ -1,0 +1,5 @@
+==Problem==
+
+Consider functions $f$ that satisfy $$|f(x)-f(y)|\leq \frac{1}{2}|x-y|$$ for all real numbers $x$ and $y$. Of all such functions that also satisfy the equation $f(300) = f(900)$, what is the greatest possible value of
+$$f(f(800))-f(f(400))?$$
+$\textbf{(A)}\ 25 \qquad\textbf{(B)}\ 50 \qquad\textbf{(C)}\ 100 \qquad\textbf{(D)}\ 150 \qquad\textbf{(E)}\ 200$

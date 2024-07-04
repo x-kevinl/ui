@@ -1,0 +1,11 @@
+==Solution==
+
+Finding the area of the shaded walkway can be achieved by computing the total area of Tamara's garden and then subtracting the combined area of her six flower beds.
+
+Since the width of Tamara's garden contains three margins, the total width is $2\cdot 6+3\cdot 1 = 15$ feet.
+
+Similarly, the height of Tamara's garden is $3\cdot 2+4\cdot 1 = 10$ feet.
+
+Therefore, the total area of the garden is $15\cdot 10 =150$ square feet.
+
+Finally, since the six flower beds each have an area of $2\cdot 6 = 12$ square feet, the area we seek is $150 - 6\cdot 12$, and our answer is $ \boxed{\textbf{(B)}\ 78}$

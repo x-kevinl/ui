@@ -1,0 +1,6 @@
+==Solution 1==
+The expression we want to find is <math>2(x^3+y^3) + x^3y^3</math>.
+
+Factor the given equations as <math>x^4y^4(x+y) = 810</math> and <math>x^3y^3(x^3+y^3)=945</math>, respectively. Dividing the latter by the former equation yields <math>\frac{x^2-xy+y^2}{xy} = \frac{945}{810}</math>. Adding 3 to both sides and simplifying yields <math>\frac{(x+y)^2}{xy} = \frac{25}{6}</math>. Solving for <math>x+y</math> and substituting this expression into the first equation yields <math>\frac{5\sqrt{6}}{6}(xy)^{\frac{9}{2}} = 810</math>. Solving for <math>xy</math>, we find that <math>xy = 3\sqrt[3]{2}</math>, so <math>x^3y^3 = 54</math>. Substituting this into the second equation and solving for <math>x^3+y^3</math> yields <math>x^3+y^3=\frac{35}{2}</math>. So, the expression to evaluate is equal to <math>2 \times \frac{35}{2} + 54 = \boxed{089}</math>.
+
+Note that since the value we want to find is <math>2(x^3+y^3)+x^3y^3</math>, we can convert <math>2(x^3+y^3)</math> into an expression in terms of <math>x^3y^3</math>, since from the second equation which is <math>x^3y^3(x^3+y^3)=945</math>, we see that <math>2(x^3+y^3)=1890+x^6y^6,</math> and thus the value is <math>\frac{1890+x^6y^6}{x^3y^3}.</math> Since we've already found <math>x^3y^3,</math> we substitute and find the answer to be 89.

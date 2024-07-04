@@ -1,0 +1,26 @@
+==Solution 1==
+
+<asy>
+pair A,B,C,D,E;
+A=(0,4);
+B=(3,4);
+C=(3,0);
+D=(0,0);
+draw(A--B--C--D--cycle);
+label("$A$",A,N);
+label("$B$",B,N);
+label("$C$",C,S);
+label("$D$",D,S);
+E=foot(B,A,C);
+draw(E--B);
+draw(A--C);
+draw(rightanglemark(B,E,C));
+label("$E$",E,N);
+draw(D--E);
+label("$3$",A--B,N);
+label("$4$",B--C,E);
+</asy>
+
+First, note that $AC=5$ because $ABC$ is a right triangle. In addition, we have $AB\cdot BC=2[ABC]=AC\cdot BE$, so $BE=\frac{12}{5}$. Using similar triangles within $ABC$, we get that $AE=\frac{9}{5}$ and $CE=\frac{16}{5}$.
+
+Let $F$ be the foot of the perpendicular from $E$ to $AB$. Since $EF$ and $BC$ are parallel, $\Delta AFE$ is similar to $\Delta ABC$. Therefore, we have $\frac{AF}{AB}=\frac{AE}{AC}=\frac{9}{25}$. Since $AB=3$, $AF=\frac{27}{25}$. Note that $AF$ is an altitude of $\Delta AED$ from $AD$, which has length $4$. Therefore, the area of $\Delta AED$ is $\frac{1}{2}\cdot\frac{27}{25}\cdot4=\boxed{\textbf{(E)}\frac{54}{25}}.$

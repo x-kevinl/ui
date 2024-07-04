@@ -1,0 +1,18 @@
+==Solution 1==
+Initially, suppose that the bus is at Stop $0$ (starting point) and Zia is at Stop $3.$
+
+We construct the following table of $5$-minute intervals:
+$$\begin{array}{c||c|c}
+& & \\ [-2.5ex]
+\textbf{Time} & \textbf{Bus's Location} & \textbf{Zia's Location} \\ [0.5ex]
+\hline
+& & \\ [-2ex]
+\boldsymbol{5} \ \textbf{Minutes} & \text{Stop} \ 2 \ \text{(Waiting)} & \text{Stop} \ 4 \\
+\boldsymbol{10} \ \textbf{Minutes} & \text{Midpoint of Stops} \ 3 \ \text{and} \ 4 & \text{Stop} \ 5 \\
+\boldsymbol{15} \ \textbf{Minutes} & \text{Stop} \ 5 \ \text{(Leaving)} & \text{Stop} \ 6
+\end{array}$$
+Note that Zia will wait for the bus after $15$ minutes, and the bus will arrive $2$ minutes later.
+
+Therefore, the answer is $15+2=\boxed{\textbf{(A) } 17}.$
+
+~MRENTHUSIASM

@@ -1,0 +1,4 @@
+== Solution 1==
+If the common sum of the first two and last two digits is <math>n</math>, such that <math>1 \leq n \leq 9</math>, there are <math>n</math> choices for the first two digits and <math>n + 1</math> choices for the second two digits (since zero may not be the first digit).  This gives <math>\sum_{n = 1}^9 n(n + 1) = 330</math> balanced numbers.  If the common sum of the first two and last two digits is <math>n</math>, such that <math>10 \leq n \leq 18</math>, there are <math>19 - n</math> choices for both pairs.  This gives <math>\sum_{n = 10}^{18} (19 - n)^2 = \sum_{n = 1}^9 n^2 = 285</math> balanced numbers.  Thus, there are in total <math>330 + 285 = \boxed{615}</math> balanced numbers.
+
+Both summations may be calculated using the formula for the [[perfect square|sum of consecutive squares]], namely <math>\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}</math>.

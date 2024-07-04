@@ -1,0 +1,2 @@
+==Problem==
+Suppose that a parabola has vertex <math>\left(\frac{1}{4},-\frac{9}{8}\right)</math> and equation <math>y = ax^2 + bx + c</math>, where <math>a > 0</math> and <math>a + b + c</math> is an integer.  The minimum possible value of <math>a</math> can be written in the form <math>\frac{p}{q}</math>, where <math>p</math> and <math>q</math> are relatively prime positive integers.  Find <math>p + q</math>.

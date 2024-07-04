@@ -1,0 +1,4 @@
+== Solution 1 ==
+Let $n$ be the number of children. Then the total ages of the family is $48 + 16(n+1)$, and the total number of people in the family is $n+2$. So
+
+$$20 = \frac{48 + 16(n+1)}{n+2} \Longrightarrow 20n + 40 = 16n + 64 \Longrightarrow n = 6\ \mathrm{(E)}.$$

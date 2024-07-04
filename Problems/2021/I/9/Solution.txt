@@ -1,0 +1,32 @@
+==Diagram==
+<asy>
+/* Made by MRENTHUSIASM */
+size(250);
+pair A, B, C, D, E, F, G, H;
+A = (-45sqrt(2)/8,18);
+B = (45sqrt(2)/8,18);
+C = (81sqrt(2)/8,0);
+D = (-81sqrt(2)/8,0);
+E = foot(A,C,B);
+F = foot(A,C,D);
+G = foot(A,B,D);
+H = intersectionpoint(A--F,B--D);
+markscalefactor=0.1;
+draw(rightanglemark(A,E,B),red);
+draw(rightanglemark(A,F,C),red);
+draw(rightanglemark(A,G,D),red);
+dot("$A$",A,1.5*NW,linewidth(4));
+dot("$B$",B,1.5*NE,linewidth(4));
+dot("$C$",C,1.5*SE,linewidth(4));
+dot("$D$",D,1.5*SW,linewidth(4));
+dot(E,linewidth(4));
+dot(F,linewidth(4));
+dot(G,linewidth(4));
+draw(A--B--C--D--cycle^^B--D^^B--E);
+draw(A--E^^A--F^^A--G,dashed);
+label("$10$",midpoint(A--G),1.5*(1,0));
+label("$15$",midpoint(A--E),1.5*N);
+Label L = Label("$18$", align=(0,0), position=MidPoint, filltype=Fill(0,3,white));
+draw(C+(5,0)--(81sqrt(2)/8,18)+(5,0), L=L, arrow=Arrows(),bar=Bars(15));
+</asy>
+~MRENTHUSIASM

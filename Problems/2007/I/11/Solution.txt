@@ -1,0 +1,5 @@
+== Solution 1 ==
+<math>\left(k- \frac 12\right)^2=k^2-k+\frac 14</math> and <math>\left(k+ \frac 12\right)^2=k^2+k+ \frac 14</math>. Therefore <math>b(p)=k</math> if and only if <math>p</math> is in this range, or <math>k^2-k<p\leq k^2+k</math>. There are <math>2k</math> numbers in this range, so the sum of <math>b(p)</math> over this range is <math>(2k)k=2k^2</math>. <math>44<\sqrt{2007}<45</math>, so all numbers <math>1</math> to <math>44</math> have their full range. Summing this up with the formula for the sum of the first <math>n</math> squares (<math>\frac{n(n+1)(2n+1)}{6}</math>), we get <math>\sum_{k=1}^{44}2k^2=2\frac{44(44+1)(2*44+1)}{6}=58740</math>. We need only consider the <math>740</math> because we are working with modulo <math>1000</math>.
+
+Now consider the range of numbers such that <math>b(p)=45</math>. These numbers are <math>\left\lceil\frac{44^2 + 45^2}{2}\right\rceil = 1981</math> to <math>2007</math>. There are <math>2007 - 1981 + 1 = 27</math> (1 to be inclusive) of them. <math>27*45=1215</math>, and <math>215+740=
+\boxed{955}</math>, the answer.

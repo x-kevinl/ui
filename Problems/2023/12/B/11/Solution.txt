@@ -1,0 +1,6 @@
+==Solution 1==
+Let the trapezoid be $ABCD$ with $AD = BC = 1, \; AB = x, CD = 2x$. Extend $AD$ and $BC$ to meet at point $E$. Then, notice $\triangle ABE \sim \triangle DCE$ with side length ratio $1:2$ and $AE = BE = 1$. Thus, $[DCE] = 4 \cdot [ABE]$ and $[ABCD] = [DCE] - [ABE] = \frac{3}{4} \cdot [DCE]$.
+
+The problem reduces to maximizing the area of $[DCE]$, an isosceles triangle with legs of length $2$. Analyzing the sine area formula, this is clearly maximized when $\angle DEC = 90^{\circ}$, so $[DCE] = 2$ and $[ABCD] = \frac{3}{4} \cdot 2 = \boxed{\frac{3}{2}}.$
+
+-PIDay

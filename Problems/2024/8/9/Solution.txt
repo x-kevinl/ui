@@ -1,0 +1,5 @@
+==Solution 1==
+
+Since she has half as many red marbles as green, we can call the number of red marbles $x$, and the number of green marbles $2x$.
+Since she has half as many green marbles as blue, we can call the number of blue marbles $4x$. 
+Adding them up, we have $7x$ marbles. The number of marbles therefore must be a multiple of $7$. The only possible answer is $\boxed{\textbf{(E) 28}}.$

@@ -1,0 +1,16 @@
+==Solution==
+A positive integer with only four positive divisors has its prime factorization in the form of $a \cdot b$, where $a$ and $b$ are both prime positive integers or $c^3$ where $c$ is a prime. One can easily deduce that none of the numbers are even near a cube so the second case is not possible. We now look at the case of $a \cdot b$. The four factors of this number would be $1$, $a$, $b$, and $ab$.  The sum of these would be $ab+a+b+1$, which can be factored into the form $(a+1)(b+1)$. Easily we can see that now we can take cases again. 
+
+Case 1: Either $a$ or $b$ is 2. 
+
+If this is true then we have to have that one of $(a+1)$ or $(b+1)$ is odd and that one is 3. The other is still even.  So we have that in this case the only numbers that work are even multiples of 3 which are 2010 and 2016. So we just have to check if either $\frac{2016}{3} - 1$  or $\frac{2010}{3} - 1$ is a prime. We see that in this case none of them work.
+
+Case 2: Both $a$ and $b$ are odd primes. 
+
+This implies that both $(a+1)$ and $(b+1)$ are even which implies that in this case the number must be divisible by $4$. This leaves only $2012$ and $2016$.
+$2012={4}\cdot{503}$ so either $(a+1)$ or $(b+1)$ both have a factor of $2$ or one has a factor of $4$. If it was the first case, then $a$ or $b$ will equal $1$.  That means that either $(a+1)$ or $(b+1)$ has a factor of $4$.  That means that $a$ or $b$ is $502$ which isn't a prime, so 2012 does not work.  $2016 = 4 \cdot 504$ so we have $(503 + 1)(3 + 1)$. 503 and 3 are both odd primes, so 2016 is a solution. Thus the answer is $\boxed{\textbf{(A)}\ 1}$.
+
+===Shortcut===
+After deducing that $2012$ and case $1$ is impossible, and since there is no option for $0$, $2016$ is obviously a solution and the answer is $\boxed{\textbf{(A)}\ 1}$.
+
+-mathboy282

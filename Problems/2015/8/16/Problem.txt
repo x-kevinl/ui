@@ -1,0 +1,4 @@
+==Problem==
+In a middle-school mentoring program, a number of the sixth graders are paired with a ninth-grade student as a buddy. No ninth grader is assigned more than one sixth-grade buddy. If $\frac{1}{3}$ of all the ninth graders are paired with $\frac{2}{5}$ of all the sixth graders, what fraction of the total number of sixth and ninth graders have a buddy?
+
+$\textbf{(A) } \frac{2}{15} \qquad\textbf{(B) } \frac{4}{11} \qquad\textbf{(C) } \frac{11}{30} \qquad\textbf{(D) } \frac{3}{8} \qquad\textbf{(E) } \frac{11}{15}$

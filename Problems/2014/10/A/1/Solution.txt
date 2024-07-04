@@ -1,0 +1,12 @@
+== Solution ==
+
+We have $$10\cdot\left(\frac{1}{2}+\frac{1}{5}+\frac{1}{10}\right)^{-1}$$
+Making the denominators equal gives
+$$\implies 10\cdot\left(\frac{5}{10}+\frac{2}{10}+\frac{1}{10}\right)^{-1}$$
+$$\implies 10\cdot\left(\frac{5+2+1}{10}\right)^{-1}$$
+$$\implies 10\cdot\left(\frac{8}{10}\right)^{-1}$$
+$$\implies 10\cdot\left(\frac{4}{5}\right)^{-1}$$
+$$\implies 10\cdot\frac{5}{4}$$
+$$\implies \frac{50}{4}$$
+Finally, simplifying gives
+$$\implies \boxed{\textbf{(C)}\ \frac{25}{2}}$$

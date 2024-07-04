@@ -1,0 +1,3 @@
+==Solution==
+
+Shea has grown $20\%$, if x was her original height, then $1.2x = 60$, so she was originally $\frac{60}{1.2}=50$ inches tall which is a $60 - 50 = 10$ inch increase.  Ara also started off at $50$ inches.  Since Ara grew half as much as Shea, Ara grew $\frac{10}{2} = 5$ inches.  Therefore, Ara is now $50+5=55$ inches tall which is choice $\boxed{E}.$

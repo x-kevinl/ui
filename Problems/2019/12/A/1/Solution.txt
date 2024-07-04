@@ -1,0 +1,3 @@
+==Solution==
+
+The area of the larger pizza is $16\pi$, while the area of the smaller pizza is $9\pi$. Therefore, the larger pizza is $\frac{7\pi}{9\pi} \cdot 100\%$ bigger than the smaller pizza. $\frac{7\pi}{9\pi} \cdot 100\% = 77.777....$, which is closest to $\boxed{\textbf{(E) }78}$.

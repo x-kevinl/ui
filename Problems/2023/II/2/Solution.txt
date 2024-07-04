@@ -1,0 +1,17 @@
+== Solution ==
+
+Assuming that such palindrome is greater than <math>777_8 = 511,</math> we conclude that the palindrome has four digits when written in base <math>8.</math> Let such palindrome be <cmath>(\underline{ABBA})_8 = 512A + 64B + 8B + A = 513A + 72B.</cmath>
+
+It is clear that <math>A=1,</math> so we repeatedly add <math>72</math> to <math>513</math> until we get palindromes less than <math>1000:</math>
+<cmath>\begin{align*}
+513+72\cdot0 &= 513, \\
+513+72\cdot1 &= \boxed{585}, \\
+513+72\cdot2 &= 657, \\
+513+72\cdot3 &= 729, \\
+513+72\cdot4 &= 801, \\
+513+72\cdot5 &= 873, \\
+513+72\cdot6 &= 945, \\
+513+72\cdot7 &= 1017. \\
+\end{align*}</cmath>
+
+~MRENTHUSIASM

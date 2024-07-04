@@ -1,0 +1,25 @@
+==Solution==
+
+Casework by the units digit $u$ will help organize the answer.
+
+$u=0$ gives no solutions, since no real numbers are divisible by $0$
+
+$u=1$ has $4$ solutions, since all numbers are divisible by $1$.
+
+$u=2$ has $4$ solutions, since every number ending in $2$ is even (ie divisible by $2$).
+
+$u=3$ has $1$ solution: $33$.  $\pm 10$ or $\pm 20$ will retain the units digit, but will stop the number from being divisible by $3$.  $\pm 30$ is the smallest multiple of $10$ that will keep the number divisible by $3$, but those numbers are $3$ and $63$, which are out of the range of the problem.
+
+$u=4$ has $2$ solutions:  $24$ and $44$.  Adding or subtracting $10$ will kill divisibility by $4$, since $10$ is not divisible by $4$.
+
+$u=5$ has $4$ solutions:  every number ending in $5$ is divisible by $5$.
+
+$u=6$ has $1$ solution:  $36$.  $\pm 10$ or $\pm 20$ will kill divisibility by $3$, and thus kill divisibility by $6$.
+
+$u=7$ has no solutions.  The first multiples of $7$ that end in $7$ are $7$ and $77$, but both are outside of the range of this problem.
+
+$u=8$ has $1$ solution:  $48$.  $\pm 10, \pm 20, \pm 30$ will all kill divisibility by $8$ since $10, 20, $ and $30$ are not divisible by $8$.
+
+$u=9$ has no solutions.  $9$ and $99$ are the smallest multiples of $9$ that end in $9$.
+
+Totalling the solutions, we have $0 + 4 + 4 + 1 + 2 + 4 + 1 + 0 + 1 + 0 = 17$ solutions, giving the answer $\boxed{C}$, which is 17.

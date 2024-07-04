@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+We can calculate the total number of wins ($1$'s) by seeing how many matches were players, which is $12$ matches played. Then, we can calculate the # of wins already on the table, which is $5 + 3 + 2 = 10$, so there are $12 - 10 = 2$ wins left in the mystery player. Now, we will make the key observation that there is only $2$ wins ($1$'s) per column as there are $2$ winners and $2$ losers in each round. Strategically looking through the columns counting the $1$'s and putting our own $2$ $1$'s when the column isn't already full yields $\boxed{\textbf{(A)}\ \texttt{000101}}$.
+
+~SohumUttamchandani -edits apex304, lpieleanu

@@ -1,0 +1,42 @@
+==Solution 1==
+
+We can simplify the problem first, then apply reasoning to the original problem. Let's say that there are $8$ coins. Shaded coins flip heads, and blank coins flip tails. So, after the first flip;
+
+<asy>
+filldraw(circle((-5,0),0.35),white);
+filldraw(circle((-4,0),0.35),white);
+filldraw(circle((-3,0),0.35),white);
+filldraw(circle((-2,0),0.35),white);
+filldraw(circle((-1,0),0.35),black);
+filldraw(circle((-0,0),0.35),black);
+filldraw(circle((1,0),0.35),black);
+filldraw(circle((2,0),0.35),black);
+</asy>
+
+Then, after the second (new heads in blue);
+
+<asy>
+filldraw(circle((-5,0),0.35),white);
+filldraw(circle((-4,0),0.35),white);
+filldraw(circle((-3,0),0.35),blue);
+filldraw(circle((-2,0),0.35),blue);
+filldraw(circle((-1,0),0.35),black);
+filldraw(circle((-0,0),0.35),black);
+filldraw(circle((1,0),0.35),black);
+filldraw(circle((2,0),0.35),black);
+</asy>
+
+And after the third (new head in green);
+
+<asy>
+filldraw(circle((-5,0),0.35),white);
+filldraw(circle((-4,0),0.35),green);
+filldraw(circle((-3,0),0.35),blue);
+filldraw(circle((-2,0),0.35),blue);
+filldraw(circle((-1,0),0.35),black);
+filldraw(circle((-0,0),0.35),black);
+filldraw(circle((1,0),0.35),black);
+filldraw(circle((2,0),0.35),black);
+</asy>
+
+So in total, $7$ of the $8$ coins resulted in heads. Now we have the ratio of $\frac{7}{8}$ of the total coins will end up heads. Therefore, we have $\frac{7}{8}\cdot64=\boxed{\mathbf{(D)}\ 56}$

@@ -1,0 +1,31 @@
+== Solution 1 ==
+
+First of all, we have to agree on the range of $\sin^{-1}$ and $\cos^{-1}$. This should have been a part of the problem statement -- but as it is missing, we will assume the most common definition: $\forall x: -\pi/2 \leq \sin^{-1}(x) \leq \pi/2$ and $\forall x: 0\leq \cos^{-1}(x) \leq \pi$.
+
+Hence we get that $\forall x\in[0,\pi]: \cos^{ - 1}(\cos x) = x$, thus our equation simplifies to $\sin^{ - 1}(\sin 6x) = x$.
+
+Consider the function $f(x) = \sin^{ - 1}(\sin 6x)  - x$. We are looking for roots of $f$ on $[0,\pi]$.
+
+By analyzing properties of $\sin$ and $\sin^{-1}$ (or by computing the derivative of $f$) one can discover the following properties of $f$:
+
+* $f(0)=0$.
+* $f$ is increasing and then decreasing on $[0,\pi/6]$.
+* $f$ is decreasing and then increasing on $[\pi/6,2\pi/6]$.
+* $f$ is increasing and then decreasing on $[2\pi/6,3\pi/6]$.
+
+For $x=\pi/6$ we have $f(x) = \sin^{-1} (\sin \pi) - \pi/6 = -\pi/6 < 0$. Hence $f$ has exactly one root on $(0,\pi/6)$.
+
+For $x=2\pi/6$ we have $f(x) = \sin^{-1} (\sin 2\pi) - 2\pi/6 = -2\pi/6 < 0$. Hence $f$ is negative on the entire interval $[\pi/6,2\pi/6]$.
+
+Now note that $\forall t: \sin^{-1}(t) \leq \pi/2$. Hence for $x > 3\pi/6$ we have $f(x) < 0$, and we can easily check that $f(3\pi/6)<0$ as well.
+
+Thus the only unknown part of $f$ is the interval $(2\pi/6,3\pi/6)$. On this interval, $f$ is negative in both endpoints, and we know that it is first increasing and then decreasing. Hence there can be zero, one, or two roots on this interval.
+
+To prove that there are two roots, it is enough to find any $x$ from this interval such that $f(x)>0$.
+
+A good guess is its midpoint, $x=5\pi/12$, where the function $\sin^{-1}(\sin 6x)$ has its local maximum. We can evaluate:
+$f(x) = \sin^{-1}(\sin 5\pi/2) - 5\pi/12 = \pi/2 - 5\pi/12 = \pi/12 > 0$.
+
+Summary: The function $f$ has $\boxed{\textbf{(B) }4}$ roots on $[0,\pi]$: the first one is $0$, the second one is in $(0,\pi/6)$, and the last two are in $(2\pi/6,3\pi/6)$.
+
+Actual solutions are $x=0$, $x=\pi/7$, $x=2\pi/5$, and $x=3\pi/7$.

@@ -1,0 +1,17 @@
+== Solution ==
+<cmath>\begin{align*}f(2158 - x) = f(x) &= f(3214 - (2158 - x)) &= f(1056 + x)\\
+f(398 - x) = f(x) &= f(2158 - (398 - x)) &= f(1760 + x)\end{align*}</cmath>
+
+Since <math>\mathrm{gcd}(1056, 1760) = 352</math> we can conclude that (by the [[Euclidean algorithm]])
+
+<cmath>f(x) = f(352 + x)</cmath>
+
+So we need only to consider one period <math>f(0), f(1), ... f(351)</math>, which can have at most <math>352</math> distinct values which determine the value of <math>f(x)</math> at all other integers.  
+
+But we also know that <math>f(x) = f(46 - x) = f(398 - x)</math>, so the values <math>x = 24, 25, ... 46</math> and <math>x = 200, 201, ... 351</math> are repeated.  This gives a total of
+
+<cmath>352 - (46 - 24 + 1) - (351 - 200 + 1) = \boxed{ 177 }</cmath>
+
+distinct values.
+
+To show that it is possible to have <math>f(23), f(24), \ldots, f(199)</math> distinct, we try to find a function which fulfills the given conditions. A bit of trial and error would lead to the [[cosine]] function: <math>f(x) = \cos \left(\frac{360}{352}(x-23)\right)</math> (in degrees).

@@ -1,0 +1,7 @@
+==Solution==
+
+By the Binomial Theorem, each term in the expansion is of the form $$\binom{1000}{k}\left(x\sqrt[3]{2}\right)^k\left(y\sqrt{3}\right)^{1000-k}=\binom{1000}{k}2^{\frac k3}3^{\frac{1000-k}{2}}x^k y^{1000-k},$$ where $k\in\{0,1,2,\ldots,1000\}.$
+
+This problem is equivalent to counting the values of $k$ such that both $\frac k3$ and $\frac{1000-k}{2}$ are integers. Note that $k$ must be a multiple of $3$ and a multiple of $2,$ so $k$ must be a multiple of $6.$ There are $\boxed{\textbf{(C)}\ 167}$ such values of $k:$ $$6(0), 6(1), 6(2), \ldots, 6(166).$$
+
+~MRENTHUSIASM

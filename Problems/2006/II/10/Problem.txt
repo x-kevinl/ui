@@ -1,0 +1,4 @@
+== Problem ==
+Seven teams play a soccer tournament in which each team plays every other team exactly once. No ties occur, each team has a <math> 50\% </math> chance of winning each game it plays, and the outcomes of the games are independent. In each game, the winner is awarded a point and the loser gets 0 points. The total points are accumulated to decide the ranks of the teams. In the first game of the tournament, team <math> A </math> beats team <math> B. </math> The [[probability]] that team <math> A </math> finishes with more points than team <math> B </math> is <math> m/n, </math> where <math> m </math> and <math> n </math> are relatively prime positive integers. Find <math> m+n. </math>
+
+__TOC__

@@ -1,0 +1,4 @@
+==Problem==
+If the positive integer $n$ has positive integer divisors $a$ and $b$ with $n = ab$, then $a$ and $b$ are said to be $\textit{complementary}$ divisors of $n$. Suppose that $N$ is a positive integer that has one complementary pair of divisors that differ by $20$ and another pair of complementary divisors that differ by $23$. What is the sum of the digits of $N$?
+
+$\textbf{(A) } 9 \qquad \textbf{(B) } 13\qquad \textbf{(C) } 15 \qquad \textbf{(D) } 17 \qquad \textbf{(E) } 19$

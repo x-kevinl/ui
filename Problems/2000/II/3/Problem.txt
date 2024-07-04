@@ -1,0 +1,2 @@
+== Problem ==
+A deck of forty cards consists of four <math>1</math>'s, four <math>2</math>'s,..., and four <math>10</math>'s.  A matching pair (two cards with the same number) is removed from the deck.  Given that these cards are not returned to the deck, let <math>m/n</math> be the [[probability]] that two randomly selected cards also form a pair, where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers.  Find <math>m + n.</math>

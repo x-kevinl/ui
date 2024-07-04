@@ -1,0 +1,24 @@
+==Solution 1==
+The problem asks us to find the sum of every integer value of $a$ such that the roots of $x^2 - ax + 2a = 0$ are both integers.
+
+The quadratic formula gives the roots of the quadratic equation: $x=\frac{a\pm\sqrt{a^2-8a}}{2}$
+
+As long as the numerator is an even integer, the roots are both integers. But first of all, the radical term in the numerator needs to be an integer; that is, the discriminant $a^2 - 8a$ equals $k^2$, for some nonnegative integer $k$.
+
+$a^2-8a=k^2$
+
+$a(a-8)=k^2$
+
+$((a-4)+4)((a-4)-4)=k^2$
+
+$(a-4)^2-4^2=k^2$
+
+$(a-4)^2=k^2+4^2$
+
+From this last equation, we are given a hint of the Pythagorean theorem. Thus, $(k,4,|a-4|)$ must be a Pythagorean triple unless $k = 0$.
+
+In the case $k=0$, the equation simplifies to $|a-4|=4$. From this equation, we have $a=0,8$. For both $a=0$ and $a=8$, $\frac{a\pm\sqrt{a^2-8a}}{2}$ yields two integers, so these values satisfy the constraints from the original problem statement. (Note: the two zero roots count as "two integers.")
+
+If $k$ is a positive integer, then only one Pythagorean triple could match the triple $(k,4,|a - 4|)$ because the only Pythagorean triple with a $4$ as one of the values is the classic $(3,4,5)$ triple. Here, $k=3$ and $|a-4|=5$. Hence, $a=-1,9$. Again, $\frac{a\pm\sqrt{a^2-8a}}{2}$ yields two integers for both $a=-1$ and $a=9$, so these two values also satisfy the original constraints.
+
+There are a total of four possible values for $a$: $-1,0,8,$ and $9$. Hence, the sum of all of the possible values of $a$ is $\boxed{\textbf{(C) }16}$.

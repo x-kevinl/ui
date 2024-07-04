@@ -1,0 +1,11 @@
+== Solution ==
+
+Using the laws of [[logarithms]], the given equation becomes
+
+$$\log_{10}2^{a}+\log_{10}3^{b}+\log_{10}5^{c}+\log_{10}7^{d}=2005$$
+$$\Rightarrow \log_{10}{2^{a}\cdot 3^{b}\cdot 5^{c}\cdot 7^{d}}=2005$$
+$$\Rightarrow 2^{a}\cdot 3^{b}\cdot 5^{c}\cdot 7^{d} = 10^{2005}$$
+
+As $a,b,c,d$ must all be rational, and there are no powers of $3$ or $7$ in $10^{2005}$, $b=d=0$. Then $2^{a}\cdot 5^{c}=2^{2005}\cdot 5^{2005} \Rightarrow a=c=2005$.
+
+Only the four-tuple $(2005,0,2005,0)$ satisfies the equation, so the answer is $\boxed{1} \Rightarrow \mathrm{(B)}$.

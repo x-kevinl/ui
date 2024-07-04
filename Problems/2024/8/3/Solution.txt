@@ -1,0 +1,7 @@
+==Solution 1== 
+We work inwards. The area of the outer shaded square is the area of the whole square minus the area of the second largest square. The area of the inner shaded region is the area of the third largest square minus the area of the smallest square. The sum of these areas is 
+$$10^2 - 9^2 + 7^2 - 4^2 = 19 + 33 = \boxed{\textbf{(E)}\ 52}$$
+
+This problem appears multiple times in various math competitions including the AMC and MATHCOUNTS.
+
+-Benedict (countmath1) ~Nivaar

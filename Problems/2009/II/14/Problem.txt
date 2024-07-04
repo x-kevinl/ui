@@ -1,0 +1,2 @@
+== Problem ==
+The sequence <math>(a_n)</math> satisfies <math>a_0=0</math> and <math>a_{n + 1} = \frac85a_n + \frac65\sqrt {4^n - a_n^2}</math> for <math>n\geq 0</math>. Find the greatest integer less than or equal to <math>a_{10}</math>.

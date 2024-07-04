@@ -1,0 +1,10 @@
+== Solution 1 ==
+Recall that the sum of the first $100$ positive integers is $\sum^{100}_{k=1} k = \frac{101\cdot100}{2}=5050.$ It follows that
+$$\begin{align*}
+\sum^{100}_{i=1} \sum^{100}_{j=1} (i+j) &= \sum^{100}_{i=1} \sum^{100}_{j=1}i + \sum^{100}_{i=1} \sum^{100}_{j=1}j \\
+&= \sum^{100}_{i=1} (100i) + 100 \sum^{100}_{j=1}j \\
+&= 100 \sum^{100}_{i=1}i + 100 \sum^{100}_{j=1}j \\
+&= 100\cdot5050 + 100\cdot5050 \\
+&= \boxed{\textbf{(E) }1{,}010{,}000}.
+\end{align*}$$
+~MRENTHUSIASM

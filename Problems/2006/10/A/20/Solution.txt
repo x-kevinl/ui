@@ -1,0 +1,6 @@
+== Solution ==
+For two numbers to have a difference that is a multiple of $5$, the numbers must be congruent $\bmod{5}$ (their remainders after division by $5$ must be the same).
+
+$0, 1, 2, 3, 4 $ are the possible values of numbers in $\bmod{5}$. Since there are only $5$ possible values in $\bmod{5}$ and we are picking $6$ numbers, by the [[Pigeonhole Principle]], two of the numbers must be congruent $\bmod{5}$. 
+
+Therefore the probability that some pair of the $6$ integers has a difference that is a multiple of $5$ is $\boxed{\textbf{(E) }1}$.

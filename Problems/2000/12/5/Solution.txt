@@ -1,0 +1,5 @@
+== Solution ==
+When $x < 2,$ $x-2$ is negative so $|x - 2| = 2-x = p$ and $x = 2-p$.
+
+Thus $x-p = (2-p)-p = 2-2p$.
+$\boxed{\mathbf{(C)}\ \ensuremath{2-2p}}$

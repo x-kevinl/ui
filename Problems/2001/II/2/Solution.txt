@@ -1,0 +1,14 @@
+== Solution ==
+Let <math>S</math> be the percent of people who study Spanish, <math>F</math> be the number of people who study French, and let <math>S \cap F</math> be the number of students who study both. Then <math>\left\lceil 80\% \cdot 2001 \right\rceil = 1601 \le S \le \left\lfloor 85\% \cdot 2001 \right\rfloor = 1700</math>, and <math>\left\lceil 30\% \cdot 2001 \right\rceil = 601 \le F \le \left\lfloor 40\% \cdot 2001 \right\rfloor = 800</math>. By the [[Principle of Inclusion-Exclusion]],
+
+<cmath>S+F- S \cap F = S \cup F = 2001 </cmath>
+
+For <math>m = S \cap F</math> to be smallest, <math>S</math> and <math>F</math> must be minimized.
+
+<cmath>1601 + 601 - m = 2001 \Longrightarrow m = 201</cmath>
+
+For <math>M = S \cap F</math> to be largest, <math>S</math> and <math>F</math> must be maximized.
+
+<cmath>1700 + 800 - M = 2001 \Longrightarrow M = 499</cmath>
+
+Therefore, the answer is <math>M - m = 499 - 201 = \boxed{298}</math>.

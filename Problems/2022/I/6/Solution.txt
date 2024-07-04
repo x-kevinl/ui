@@ -1,0 +1,20 @@
+== Solution 1==
+Since <math>3,4,5,a</math> and <math>3,4,5,b</math> cannot be an arithmetic progression, <math>a</math> or <math>b</math> can never be <math>6</math>. Since <math>b, 30, 40, 50</math> and <math>a, 30, 40, 50</math> cannot be an arithmetic progression, <math>a</math> and <math>b</math> can never be <math>20</math>. Since <math>a < b</math>, there are <math>{24 - 2 \choose 2} = 231</math> ways to choose <math>a</math> and <math>b</math> with these two restrictions in mind.
+
+However, there are still specific invalid cases counted in these <math>231</math> pairs <math>(a,b)</math>. Since
+<cmath>3,5,a,b</cmath>
+cannot form an arithmetic progression, <math>\underline{(a,b) \neq (7,9)}</math>.
+<cmath>a,b,30,50</cmath>
+cannot be an arithmetic progression, so <math>(a,b) \neq (-10,10)</math>; however, since this pair was not counted in our <math>231</math>, we do not need to subtract it off.
+<cmath>3,a,b,30</cmath>
+cannot form an arithmetic progression, so <math>\underline{(a,b) \neq (12,21)}</math>.
+<cmath>4, a, b, 40</cmath>
+cannot form an arithmetic progression, so <math>\underline{(a,b) \neq (16,28)}</math>.
+<cmath>5, a,b, 50</cmath>
+cannot form an arithmetic progression, <math>(a,b) \neq 20, 35</math>; however, since this pair was not counted in our <math>231</math> (since we disallowed <math>a</math> or <math>b</math> to be <math>20</math>), we do not to subtract it off.
+
+Also, the sequences <math>(3,a,b,40)</math>, <math>(3,a,b,50)</math>, <math>(4,a,b,30)</math>, <math>(4,a,b,50)</math>, <math>(5,a,b,30)</math> and <math>(5,a,b,40)</math> will never be arithmetic, since that would require <math>a</math> and <math>b</math> to be non-integers.
+
+So, we need to subtract off <math>3</math> progressions from the <math>231</math> we counted, to get our final answer of <math>\boxed{228}</math>.
+
+~ ihatemath123

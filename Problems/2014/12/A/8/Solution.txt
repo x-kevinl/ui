@@ -1,0 +1,13 @@
+==Solution 1==
+Let the listed price be $x$. Since all the answer choices are above $\textdollar100$, we can assume $x > 100$. Thus the discounts after the coupons are used will be as follows:
+
+Coupon 1: $x\times10\%=.1x$
+
+Coupon 2: $20$
+
+Coupon 3: $18\%\times(x-100)=.18x-18$
+
+
+For coupon $1$ to give a greater price reduction than the other coupons, we must have $.1x>20\implies x>200$ and $.1x>.18x-18\implies.08x<18\implies x<225$.
+
+The only choice that satisfies such conditions is $\boxed{\textbf{(C)}\ \textdollar219.95}$

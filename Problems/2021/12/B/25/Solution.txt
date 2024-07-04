@@ -1,0 +1,29 @@
+==Solution 1==
+
+First, we find a numerical representation for the number of lattice points in $S$ that are under the line $y=mx. $ For any value of $x,$ the highest lattice point under $y=mx$ is $\lfloor mx \rfloor. $ Because every lattice point from $(x, 1)$ to $(x, \lfloor mx \rfloor)$ is under the line, the total number of lattice points under the line is $\sum_{x=1}^{30}(\lfloor mx \rfloor). $
+
+
+Now, we proceed by finding lower and upper bounds for $m. $ To find the lower bound, we start with an approximation. If $300$ lattice points are below the line, then around $\frac{1}{3}$ of the area formed by $S$ is under the line. By using the formula for a triangle's area, we find that when $x=30, y \approx 20. $ Solving for $m$ assuming that $(30, 20)$ is a point on the line, we get $m = \frac{2}{3}. $ Plugging in $m$ to $\sum_{x=1}^{30}(\lfloor mx \rfloor), $ we get:
+
+$$\sum_{x=1}^{30}(\lfloor \frac{2}{3}x \rfloor) = 0 + 1 + 2 + 2 + 3 + \cdots + 18 + 18 + 19 + 20$$
+
+We have a repeat every $3$ values (every time $y=\frac{2}{3}x$ goes through a lattice point). Thus, we can use arithmetic sequences to calculate the value above:
+
+$$\sum_{x=1}^{30}(\lfloor \frac{2}{3}x \rfloor) = 0 + 1 + 2 + 2 + 3 + \cdots + 18 + 18 + 19 + 20$$$$=\frac{20(21)}{2} + 2 + 4 + 6 + \cdots + 18 $$$$=210 + \frac{20}{2}\cdot 9$$$$=300$$
+
+This means that $\frac{2}{3}$ is a possible value of $m. $ Furthermore, it is the lower bound for $m. $ This is because $y=\frac{2}{3}x$ goes through many points (such as $(21, 14)$). If $m$ was lower, $y=mx$ would no longer go through some of these points, and there would be less than $300$ lattice points under it.
+
+Now, we find an upper bound for $m. $ Imagine increasing $m$ slowly and rotating the line $y=mx, $ starting from the lower bound of $m=\frac{2}{3}. $The upper bound for $m$ occurs when $y=mx$ intersects a lattice point again (look at this problem to get a better idea of what's happening: https://artofproblemsolving.com/wiki/index.php/2011_AMC_10B_Problems/Problem_24).
+
+In other words, we are looking for the first $m > \frac{2}{3}$ that is expressible as a ratio of positive integers $\frac{p}{q}$ with $q \le 30. $ For each $q=1,\dots,30$, the smallest multiple of $\frac{1}{q}$ which exceeds $\frac{2}{3}$ is $1, \frac{2}{2}, \frac{3}{3}, \frac{3}{4}, \frac{4}{5}, \cdots , \frac{19}{27}, \frac{19}{28}, \frac{20}{29}, \frac{21}{30}$ respectively, and the smallest of these is $\frac{19}{28}. $
+
+Alternatively, see the method of finding upper bounds in solution 2.
+
+The lower bound is $\frac{2}{3}$ and the upper bound is $\frac{19}{28}. $ Their difference is $\frac{1}{84}, $ so the answer is $1 + 84 = \boxed{85}. $
+
+~JimY
+~Minor edits by sl_hc
+
+An alternative would be using Farey fractions and the mediant theorem to find the upper bound. $\frac{2}{3}$ and $\frac{7}{10}$ gives $\frac{9}{13},$ and so on using Farey addition.
+
+An alternative approach with the same methodology can be done using Pick's Theorem. Wikipedia page: https://en.wikipedia.org/wiki/Pick%27s_theorem. It's a formula to find the number of lattice points strictly inside a polygon. Approximation of the lower bound is still necessary.

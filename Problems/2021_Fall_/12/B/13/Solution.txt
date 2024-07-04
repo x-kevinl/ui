@@ -1,0 +1,9 @@
+==Solution==
+
+Plugging in $c$, we get
+$$\frac{\sin 3c \cdot \sin 6c \cdot \sin 9c \cdot \sin 12c \cdot \sin 15c}{\sin c \cdot \sin 2c \cdot \sin 3c \cdot \sin 4c \cdot \sin 5c}=\frac{\sin \frac{6\pi}{11} \cdot \sin \frac{12\pi}{11} \cdot \sin \frac{18\pi}{11} \cdot \sin \frac{24\pi}{11} \cdot \sin \frac{30\pi}{11}}{\sin \frac{2\pi}{11} \cdot \sin \frac{4\pi}{11} \cdot \sin \frac{6\pi}{11} \cdot \sin \frac{8\pi}{11} \cdot \sin \frac{10\pi}{11}}.$$
+Since $\sin(x+2\pi)=\sin(x),$ $\sin(2\pi-x)=\sin(-x),$ and $\sin(-x)=-\sin(x),$ we get
+$$\frac{\sin \frac{6\pi}{11} \cdot \sin \frac{12\pi}{11} \cdot \sin \frac{18\pi}{11} \cdot \sin \frac{24\pi}{11} \cdot \sin \frac{30\pi}{11}}{\sin \frac{2\pi}{11} \cdot \sin \frac{4\pi}{11} \cdot \sin \frac{6\pi}{11} \cdot \sin \frac{8\pi}{11} \cdot \sin \frac{10\pi}{11}}=\frac{\sin \frac{6\pi}{11} \cdot \sin \frac{-10\pi}{11} \cdot \sin \frac{-4\pi}{11} \cdot \sin \frac{2\pi}{11} \cdot \sin \frac{8\pi}{11}}{\sin \frac{2\pi}{11} \cdot \sin \frac{4\pi}{11} \cdot \sin \frac{6\pi}{11} \cdot \sin \frac{8\pi}{11} \cdot \sin \frac{10\pi}{11}}=\boxed{\textbf{(E)}\ 1}.$$
+
+~kingofpineapplz
+~Ziyao7294 (minor edit)

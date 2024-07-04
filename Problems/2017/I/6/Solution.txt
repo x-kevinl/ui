@@ -1,0 +1,15 @@
+==Solution==
+The probability that the chord doesn't intersect the triangle is <math>\frac{11}{25}</math>. The only way this can happen is if the two points are chosen on the same arc between two of the triangle vertices. The probability that a point is chosen on one of the arcs opposite one of the base angles is <math>\frac{2x}{360}=\frac{x}{180}</math> (this comes from the Central Angle Theorem, which states that the central angle from two points on a circle is always twice the inscribed angle from those two points), and the probability that a point is chosen on the arc between the two base angles is <math>\frac{180-2x}{180}</math>. Therefore, we can write <cmath>2\left(\frac{x}{180}\right)^2+\left(\frac{180-2x}{180}\right)^2=\frac{11}{25}</cmath>
+This simplifies to <cmath>x^2-120x+3024=0</cmath>
+
+(Note that the simplification is quite tedious)
+
+Which factors as <cmath>(x-84)(x-36)=0</cmath>
+So <math>x=84, 36</math>. The difference between these is <math>\boxed{048}</math>.
+
+
+Note:
+
+We actually do not need to spend time factoring <math>x^2 - 120x + 3024</math>. Since the problem asks for <math>|x_1 - x_2|</math>, where <math>x_1</math> and <math>x_2</math> are the roots of the quadratic, we can utilize Vieta's by noting that <math>(x_1 - x_2) ^ 2 = (x_1 + x_2) ^ 2 - 4x_1x_2</math>. Vieta's gives us <math>x_1 + x_2 = 120,</math> and <math>x_1x_2 = 3024.</math> Plugging this into the above equation and simplifying gives us <math>(x_1 - x_2) ^ 2 = 2304,</math> or <math>|x_1 - x_2| = 48</math>. 
+
+Our answer is then <math>\boxed{048}</math>.

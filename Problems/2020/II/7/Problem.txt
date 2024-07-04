@@ -1,0 +1,2 @@
+==Problem==
+Two congruent right circular cones each with base radius <math>3</math> and height <math>8</math> have the axes of symmetry that intersect at right angles at a point in the interior of the cones a distance <math>3</math> from the base of each cone. A sphere with radius <math>r</math> lies within both cones. The maximum possible value of <math>r^2</math> is <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

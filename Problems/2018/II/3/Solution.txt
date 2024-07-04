@@ -1,0 +1,17 @@
+==Solution 1==
+
+The first step is to convert <math>36_{b}</math> and <math>27_{b}</math> into base-10 numbers. Then, we can write <cmath>36_{b} = 3b + 6</cmath> and <cmath>27_{b} = 2b + 7</cmath>. It should also be noted that <math>8 \leq b < 1000</math>.
+
+Because there are less perfect cubes than perfect squares for the restriction we are given on <math>b</math>, it is best to list out all the perfect cubes. Since the maximum <math>b</math> can be is 1000 and <math>2</math> • <math>1000 + 7 = 2007</math>, we can list all the perfect cubes less than 2007.
+
+Now, <math>2b + 7</math> must be one of <cmath>3^3, 4^3, ... , 12^3</cmath>. However, <math>2b + 7</math> will always be odd, so we can eliminate the cubes of the even numbers and change our list of potential cubes to <cmath>3^3, 5^3, 7^3, 9^3\text{, and }11^3</cmath>.
+
+Because <math>3b + 6</math> is a perfect square and is clearly divisible by 3, it must be divisible by 9, so <math>b + 2</math> is divisible by 3. Thus the cube, which is <cmath>2b + 7 = 2(b + 2) + 3</cmath>, must also be divisible by 3. Therefore, the only cubes that <math>2b + 7</math> could potentially be now are <math>3^3</math> and <math>9^3</math>.
+
+We need to test both of these cubes to make sure <math>3b + 6</math> is a perfect square.
+
+<math>\textbf{Case 1:}</math> If we set <cmath>3^3 = 2b + 7</cmath>so <cmath>b = 10</cmath>. If we plug this value of b into <math>3b + 6</math>, the expression equals <math>36</math>, which is indeed a perfect square.
+
+<math>\textbf{Case 2:}</math> If we set <cmath>9^3 = 2b + 7</cmath>so <cmath>b = 361</cmath>. If we plug this value of b into <math>3b + 6</math>, the expression equals <math>1089</math>, which is <math>33^2</math>.
+
+We have proven that both <math>b = 10</math> and <math>b = 361</math> are the only solutions, so <cmath>10 + 361 = \boxed{371}</cmath>

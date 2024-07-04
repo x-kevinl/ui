@@ -1,0 +1,2 @@
+== Problem ==
+For each [[positive]] [[integer]] <math>p</math>, let <math>b(p)</math> denote the unique positive integer <math>k</math> such that <math>|k-\sqrt{p}| < \frac{1}{2}</math>.  For example, <math>b(6) = 2</math> and <math>b(23) = 5</math>.  If <math>S = \sum_{p=1}^{2007} b(p),</math> find the [[remainder]] when <math>S</math> is divided by 1000.

@@ -1,0 +1,18 @@
+==Diagram==
+
+Let <math>AP=x</math> and let <math>PC=\rho x</math>. Let <math>[ABP]=\Delta</math> and let <math>[ADP]=\Lambda</math>.
+<asy>
+defaultpen(fontsize(14)+0.6); unitsize(12);
+
+real x=11.25;
+pair B1=origin, D1=(x,0), C1=IP(CR(B1,14),CR(D1,10)), A1=OP(CR(B1,10),CR(D1,2*sqrt(65))), P1=extension(A1,C1,B1,D1);
+
+pair A=origin, C=(length(C1-A1),0), B=IP(CR(A,10),CR(C,14)), D=OP(CR(A,2*sqrt(65)),CR(C,10)), P=extension(A,C,B,D);
+
+draw(A--B--C--D--A);
+draw(A--C^^B--D,gray+0.4);
+dot("$A$",A,dir(A-P)); dot("$B$",B,dir(B-P)); dot("$C$",C,dir(C-P)); dot("$D$",D,dir(D-P)); dot("$P$",P,dir(230));
+
+pen p=fontsize(10);
+label("$10$",A--B,up,p); label("$10$", C--D, 2*right,p); label("$14$", B--C, N,p); label("$2\sqrt{65}$", A--D, SW,p); label("$x$", A--P,down,p); label("$\rho x$", P--C,down,p); label("$\Delta$",(A+B+P)/3, right,p); label("$\Lambda$",(A+D+P)/3, right,p);
+</asy>

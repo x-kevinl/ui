@@ -1,0 +1,5 @@
+==Solution 1==
+
+We let $a=\sqrt{49-x^2}+\sqrt{25-x^2}$; in other words, we want to find $a$. We know that $a\cdot3=\left(\sqrt{49-x^2}+\sqrt{25-x^2}\right)\cdot\left(\sqrt{49-x^2}-\sqrt{25-x^2}\right)=\left(\sqrt{49-x^2}\right)^2-\left(\sqrt{25-x^2}\right)^2=\left(49-x^2\right)-\left(25-x^2\right)=24.$ Thus, $a=\boxed{8}$. 
+
+~Technodoggo

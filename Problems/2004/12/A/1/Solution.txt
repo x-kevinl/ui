@@ -1,0 +1,2 @@
+== Solution ==
+$20$ dollars is the same as $2000$ cents, and $1.45\%$ of $2000$ is $0.0145\times2000=29$ cents. $\Rightarrow\boxed{\mathrm{(E)}\ 29}$.

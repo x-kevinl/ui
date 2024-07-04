@@ -1,0 +1,6 @@
+==Solution 1==
+
+This is a time period of $50$ years, so we can expect the ppm to increase by $50*1.515=75.75~76$.
+$76+338=\boxed{\textbf{(B)\ 414}}$.
+
+-ILoveMath31415926535

@@ -1,0 +1,4 @@
+== Solution ==
+Since the area of the square is $40$, the length of a side is $\sqrt{40}=2\sqrt{10}$. The distance between the center of the semicircle and one of the bottom vertices of the square is half the length of the side, which is $\sqrt{10}$.
+
+Using the [[Pythagorean Theorem]] to find the radius $r$ of the semicircle, $r^2 = (2\sqrt{10})^2 + (\sqrt{10})^2 = 50$. So, the area of the semicircle is $\frac{1}{2}\cdot \pi \cdot 50 = \boxed{\textbf{(B) }25\pi}$.

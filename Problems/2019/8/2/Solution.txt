@@ -1,0 +1,23 @@
+==Solutions==
+
+===Solution 1===
+
+We can see that there are $2$ rectangles lying on top of the other and that is the same as the length of one rectangle. Now we know that the shorter side is $5$, so the bigger side is $10$, if we do $5 \cdot 2 = 10$. Now we get the sides of the big rectangle being $15$ and $10$, so the area is $\boxed{\textbf{(E)}\ 150}$. ~avamarora
+
+===Solution 2===
+Using the diagram we find that the larger side of the small rectangle is $2$ times the length of the smaller side. Therefore, the longer side is $5 \cdot 2 = 10$. So the area of the identical rectangles is $5 \cdot 10 = 50$. We have 3 identical rectangles that form the large rectangle. Therefore the area of the large rectangle is $50 \cdot 3 = \boxed{\textbf{(E)}\ 150}$.    ~~fath2012
+
+===Solution 3===
+We see that if the short sides are 5, the long side has to be $5\cdot2=10$ because the long side is equal to the 2 short sides and because the rectangles are congruent. If that is to be, then the long side of the BIG rectangle(rectangle $ABCD$)
+is $10+5=15$ because long side + short side of the small rectangle is $15$. The short side of rectangle $ABCD$ is $10$ because it is the long side of the short rectangle. Multiplying $15$ and $10$ together gets us $15\cdot10$ which is $\boxed{\textbf{(E)}\ 150}$.
+~~mathboy282
+
+===Solution 4===
+We see that the $2$ rectangles lying on top of each other give us the height of the rectangle. Using what we know, we can find out that the $2$ rectangles put together is a square. So, we can infer that the length of the rectangles is $10$. Adding that to the width of the third rectangle which is $5$, we get that the length of the rectangle is $15$. Multiplying $10$ and $15$ gives us $15\cdot10$ which is $\boxed{\textbf{(E)}\ 150}$.
+~~awesomepony566
+
+===Solution 5===
+There are two rectangles lying on the side and one standing up. Given that one small side is 5, we can determine that two of the small sides make up a big side which means that the long side is equal to 10. The top side of the rectangle is made up of one small side and one long side, therefore the dimensions for the rectangle is 10x15. 10 multiplied by 15 is 150, hence the answer $\boxed{\textbf{(E)}\ 150}$.
+~elenafan
+
+=== Video Solution ===

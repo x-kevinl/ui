@@ -1,0 +1,20 @@
+==Solution 1==
+
+Let <math>a_{n}</math> be the number of ways to form <math>n</math>-letter strings made up of As and Bs such that no more than <math>3</math> adjacent letters are identical.
+
+Note that, at the end of each <math>n</math>-letter string, there are <math>3</math> possibilities for the last letter chain: it must be either <math>1</math>, <math>2</math>, or <math>3</math> letters long. Removing this last chain will make a new string that is <math>n-1</math>, <math>n-2</math>, or <math>n-3</math> letters long, respectively.
+
+Therefore we can deduce that <math>a_{n}=a_{n-1}+a_{n-2}+a_{n-3}</math>.
+
+We can see that
+<cmath>a_{1}=2</cmath>
+<cmath>a_{2}=2^{2}=4</cmath>
+<cmath>a_{3}=2^{3}=8</cmath>
+so using our recursive relation we find
+<cmath>a_{4}=14</cmath>
+<cmath>a_{5}=26</cmath>
+<cmath>a_{6}=48</cmath>
+<cmath>a_{7}=88</cmath>
+<cmath>a_{8}=162</cmath>
+<cmath>a_{9}=298</cmath>
+<cmath>a_{10}=\boxed{548}</cmath>

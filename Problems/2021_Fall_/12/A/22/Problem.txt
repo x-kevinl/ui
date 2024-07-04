@@ -1,0 +1,4 @@
+==Problem==
+Azar and Carl play a game of tic-tac-toe. Azar places an in $X$ one of the boxes in a $3$-by-$3$ array of boxes, then Carl places an $O$ in one of the remaining boxes. After that, Azar places an $X$ in one of the remaining boxes, and so on until all boxes are filled or one of the players has of their symbols in a row—horizontal, vertical, or diagonal—whichever comes first, in which case that player wins the game. Suppose the players make their moves at random, rather than trying to follow a rational strategy, and that Carl wins the game when he places his third $O$. How many ways can the board look after the game is over?
+
+$\textbf{(A) } 36 \qquad\textbf{(B) } 112 \qquad\textbf{(C) } 120 \qquad\textbf{(D) } 148 \qquad\textbf{(E) } 160$

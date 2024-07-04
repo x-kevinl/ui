@@ -1,0 +1,52 @@
+==Solution 1 (completely no calculus required)==
+
+Begin by finding the equation of the line <math>\overline{AB}</math>: <math>y= -\sqrt{3}x+\frac{\sqrt{3}}{2}</math> Now, consider the general equation of all lines that belong to <math>\mathcal{F}</math>. Let <math>P</math> be located at <math>(a,0)</math> and <math>Q</math> be located at <math>(0,b)</math>. With these assumptions, we may arrive at the equation <math>ay +bx =ab</math>. However, a critical condition that must be satisfied by our parameters is that <math>a^2+b^2=1</math>, since the length of <math>\overline{PQ}=1</math>. 
+
+Here's the golden trick that resolves the problem: we wish to find some point <math>C</math> along <math>\overline{AB}</math> such that <math>\overline{PQ}</math> passes through <math>C</math> if <math>a=\frac{1}{2}</math>. It's not hard to convince oneself of this, since the property <math>a^2+b^2=1</math> implies that if <math>a=\frac{1}{2}</math>, then <math>\overline{PQ}=\overline{AB}</math>.
+
+We should now try to relate the point <math>C</math> to some value of <math>a</math>. This is accomplished by finding the intersection of two lines: <cmath>
+
+\[
+    a(-\sqrt{3}x +\frac{\sqrt{3}}{2}) + x\sqrt{1-a^2} = a\sqrt{1-a^2}
+\]
+
+</cmath>
+
+Where we have also used the fact that <math>b=\sqrt{1-a^2}</math>, which follows nicely from <math>a^2+b^2 =1</math>.  <cmath>
+
+\[
+    a(-\sqrt{3}x +\frac{\sqrt{3}}{2})   = (a-x)\sqrt{1-a^2}
+\]
+
+</cmath>
+
+Square both sides and go through some algebraic manipulations to arrive at 
+<cmath>
+
+\[
+    -a^4 +2xa^3+(-4x^2+3x+\frac{1}{4})a^2-2xa+x^2=0
+\]
+
+</cmath>
+
+Note how <math>a=\frac{1}{2}</math> is a solution to this polynomial, and it is logically so. If we found the set of intersections consisting of line segment <math>\overline{AB}</math> with an identical copy of itself, every single point on the line (all <math>x</math> values) should satisfy the equation. Thus, we can perform polynomial division to eliminate the extraneous solution <math>a=\frac{1}{2}</math>. <cmath>
+
+\[
+    -a^3 + (2x-\frac{1}{2})a^2+(-4x^2+4x)a-2x^2=0
+\]
+</cmath>
+
+Remember our original goal. It was to find an <math>x</math> value such that <math>a=\frac{1}{2}</math> is the only valid solution. Therefore, we can actually plug in <math>a=\frac{1}{2}</math> back into the equation to look for values of <math>x</math> such that the relation is satisfied, then eliminate undesirable answers.
+<cmath>
+
+\[
+    16x^2-10x+1=0
+\]
+</cmath>
+This is easily factored, allowing us to determine that <math>x=\frac{1}{8},\frac{1}{2}</math>. The latter root is not our answer, since on line <math>\overline{AB}</math>, <math>y(\frac{1}{2})=0</math>, the horizontal line segment running from <math>(0,0)</math> to <math>(1,0)</math> covers that point. From this, we see that <math>x=\frac{1}{8}</math> is the only possible candidate.
+
+Going back to line <math>\overline{AB}, y= -\sqrt{3}x+\frac{\sqrt{3}}{2}</math>, plugging in <math>x=\frac{1}{8} </math> yields <math>y=\frac{3\sqrt{3}}{8}</math>. The distance from the origin is then given by <math>\sqrt{\frac{1}{8^2}+(\frac{3\sqrt{3}}{8})^2} =\sqrt{\frac{7}{16}}</math>. That number squared is <math>\frac{7}{16}</math>, so the answer is <math>\boxed{023}</math>. 
+
+
+
+~Installhelp_hex

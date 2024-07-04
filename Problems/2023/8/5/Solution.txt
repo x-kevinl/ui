@@ -1,0 +1,5 @@
+==Solution==
+
+Note that $$\frac{\text{number of trout}}{\text{total number of fish}} = \frac{30}{180} = \frac16.$$ So, the total number of fish is $6$ times the number of trout. Since the lake contains $250$ trout, there are $250\cdot6=\boxed{\textbf{(B)}\ 1500}$ fish in the lake.
+
+~apex304, SohumUttamchandani, wuwang2002, TaeKim, Cxrupptedpat, MRENTHUSIASM

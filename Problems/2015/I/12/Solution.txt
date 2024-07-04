@@ -1,0 +1,6 @@
+==Hint==
+Use the Hockey Stick Identity in the form
+
+<cmath>\binom{a}{a} + \binom{a+1}{a} + \binom{a+2}{a} + \dots + \binom{b}{a} = \binom{b+1}{a+1}.</cmath>
+
+(This is best proven by a combinatorial argument that coincidentally pertains to the problem: count two ways the number of subsets of the first <math>(b + 1)</math> numbers with <math>(a + 1)</math> elements whose least element is <math>i</math>, for <math>1 \le i \le b - a</math>.)

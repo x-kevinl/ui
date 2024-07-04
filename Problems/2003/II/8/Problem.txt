@@ -1,0 +1,2 @@
+==Problem==
+Find the eighth term of the sequence <math>1440,</math> <math>1716,</math> <math>1848,\ldots,</math> whose terms are formed by multiplying the corresponding terms of two arithmetic sequences.

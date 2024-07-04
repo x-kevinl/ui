@@ -1,0 +1,32 @@
+== Solution ==
+=== Solution 1 ===
+<asy>draw((0,0)--(20.87,0)--(15.87,8.66)--(5,8.66)--cycle);
+draw((5,8.66)--(5,0));
+draw((15.87,8.66)--(15.87,0));
+draw((5,8.66)--(16.87,6.928));
+label("$A$",(0,0),SW);
+label("$B$",(20.87,0),SE);
+label("$E$",(15.87,8.66),NE);
+label("$D$",(5,8.66),NW);
+label("$P$",(5,0),S);
+label("$Q$",(15.87,0),S);
+label("$C$",(16.87,7),E);
+label("$12$",(10.935,7.794),S);
+label("$10$",(2.5,4.5),W);
+label("$10$",(18.37,4.5),E);
+</asy>
+
+Draw line segment <math>DE</math> such that line <math>DE</math> is concurrent with line <math>BC</math>. Then, <math>ABED</math> is an isosceles trapezoid so <math>AD=BE=10</math>, and <math>BC=8</math> and <math>EC=2</math>. We are given that <math>DC=12</math>. Since <math>\angle CED = 120^{\circ}</math>, using Law of Cosines on <math>\bigtriangleup CED</math> gives <cmath>12^2=DE^2+4-2(2)(DE)(\cos 120^{\circ})</cmath> which gives <cmath>144-4=DE^2+2DE</cmath>. Adding <math>1</math> to both sides gives <math>141=(DE+1)^2</math>, so <math>DE=\sqrt{141}-1</math>. <math>\bigtriangleup DAP</math> and <math>\bigtriangleup EBQ</math> are both <math>30-60-90</math>, so <math>AP=5</math> and <math>BQ=5</math>. <math>PQ=DE</math>, and therefore <math>AB=AP+PQ+BQ=5+\sqrt{141}-1+5=9+\sqrt{141} \rightarrow (p,q)=(9,141) \rightarrow \boxed{150}</math>.
+
+=== Solution 2 ===
+<center>[[Image:AIME_2005I_Solution_7_1.png]]</center>
+
+Draw the [[perpendicular]]s from <math>C</math> and <math>D</math> to <math>AB</math>, labeling the intersection points as <math>E</math> and <math>F</math>. This forms 2 <math>30-60-90</math> [[right triangle]]s, so <math>AE = 5</math> and <math>BF = 4</math>. Also, if we draw the horizontal line extending from <math>C</math> to a point <math>G</math> on the line <math>DE</math>, we find another right triangle <math>\triangle DGC</math>. <math>DG = DE - CF = 5\sqrt{3} - 4\sqrt{3} = \sqrt{3}</math>. The [[Pythagorean Theorem]] yields that <math>GC^2 = 12^2 - \sqrt{3}^2 = 141</math>, so <math>EF = GC = \sqrt{141}</math>. Therefore, <math>AB = 5 + 4 + \sqrt{141} = 9 + \sqrt{141}</math>, and <math>p + q = \boxed{150}</math>.
+
+=== Solution 3 ===
+<center>[[Image:AIME_2005I_Solution_7_2.png]]</center>
+Extend <math>AD</math> and <math>BC</math> to an intersection at point <math>E</math>. We get an [[equilateral triangle]] <math>ABE</math>. We denote the length of a side of <math>\triangle ABE</math> as <math>s</math> and solve for it using the [[Law of Cosines]]: <cmath>12^2 = (s - 10)^2 + (s - 8)^2 - 2(s - 10)(s - 8)\cos{60}</cmath>
+<cmath>144 = 2s^2 - 36s + 164 - (s^2 - 18s + 80)</cmath> This simplifies to <math>s^2 - 18s - 60=0</math>; the [[quadratic formula]] yields the (discard the negative result) same result of <math>9 + \sqrt{141}</math>.
+
+=== Solution 4 ===
+Extend <math>BC</math> and <math>AD</math> to meet at point <math>E</math>, forming an equilateral triangle <math>\triangle ABE</math>. Draw a line from <math>C</math> parallel to <math>AB</math> so that it intersects <math>AD</math> at point <math>F</math>. Then, apply [[Stewart's Theorem]] on <math>\triangle CFE</math>. Let <math>CE=x</math>. <cmath>2x(x-2) + 12^2x = 2x^2 + x^2(x-2)</cmath> <cmath>x^3 - 2x^2 - 140x = 0</cmath> By the quadratic formula (discarding the negative result), <math>x = 1 + \sqrt{141}</math>, giving <math>AB = 9 + \sqrt{141}</math> for a final answer of <math>p+q=150</math>.

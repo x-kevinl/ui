@@ -1,0 +1,2 @@
+==Solution==
+The perimeter of the triangle is $6.1+8.2+9.7=24$ cm. A square's perimeter is four times its sidelength, since all its sidelengths are equal. If the square's perimeter is $24$, the sidelength is $24/4=6$, and the area is $6^2=\boxed{\textbf{(C)}\ 36}$.

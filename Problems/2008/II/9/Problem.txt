@@ -1,0 +1,2 @@
+== Problem ==
+A particle is located on the coordinate plane at <math>(5,0)</math>. Define a ''move'' for the particle as a counterclockwise rotation of <math>\pi/4</math> radians about the origin followed by a translation of <math>10</math> units in the positive <math>x</math>-direction. Given that the particle's position after <math>150</math> moves is <math>(p,q)</math>, find the greatest integer less than or equal to <math>|p| + |q|</math>.

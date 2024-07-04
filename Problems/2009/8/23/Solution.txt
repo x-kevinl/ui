@@ -1,0 +1,11 @@
+==Solution 1==
+If there are $x$ girls, then there are $x+2$ boys. She gave each girl $x$ jellybeans and each boy $x+2$ jellybeans, for a total of $x^2 + (x+2)^2$ jellybeans. She gave away $400-6=394$ jellybeans.
+
+$$\begin{align*}
+x^2+(x+2)^2 &= 394\\
+x^2+x^2+4x+4 &= 394\\
+2x^2 + 4x &= 390\\
+x^2 + 2x &= 195\\
+\end{align*}$$
+
+From here, we can see that $x = 13$ as  $13^2 + 26 = 195$, so there are $13$ girls, $13+2=15$ boys, and $13+15=\boxed{\textbf{(B)}\ 28}$ students.

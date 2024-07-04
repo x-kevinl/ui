@@ -1,0 +1,11 @@
+==Solution 1==
+
+Let x be the square root of the smaller of the two perfect squares. Then, $(x+1)^2 - x^2 =x^2+2x+1-x^2 = 2x+1 \le 2023$. Thus, $x \le 1011$. So there are $\boxed{\text{(B)}1011}$ numbers that satisfy the equation. 
+
+~andliu766
+
+A very similar solution offered by ~darrenn.cp and ~DarkPheonix has been combined with Solution 1.
+
+Minor corrections by ~milquetoast
+
+Note from ~milquetoast: Alternatively, you can let $x$ be the square root of the larger number, but if you do that, keep in mind that $x=1$ must be rejected, since $(x-1)$ cannot be $0$.

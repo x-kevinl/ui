@@ -1,0 +1,3 @@
+==Solution==
+
+The amount of pages Bob, Chandra, and Alice will read is in the ratio 4:6:9. Therefore, Bob, Chandra, and Alice read 160, 240, and 360 pages respectively. They would also be reading for the same amount of time because the ratio of the pages read was based on the time it takes each of them to read a page. Therefore, the amount of seconds each person reads is simply $160 \cdot 45 = \boxed{\textbf{(E)}\ 7200}$.

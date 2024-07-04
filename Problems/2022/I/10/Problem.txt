@@ -1,0 +1,2 @@
+== Problem ==
+Three spheres with radii <math>11</math>, <math>13</math>, and <math>19</math> are mutually externally tangent. A plane intersects the spheres in three congruent circles centered at <math>A</math>, <math>B</math>, and <math>C</math>, respectively, and the centers of the spheres all lie on the same side of this plane. Suppose that <math>AB^2 = 560</math>. Find <math>AC^2</math>.

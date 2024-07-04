@@ -1,0 +1,6 @@
+==Solution==
+The area of the ''trefoil'' is equal to the area of the big equilateral triangle plus the area of four $60^\circ$ sectors with a radius of $\frac{2}{2}=1$ minus the area of  a small equilateral triangle. 
+
+This is equivalent to the area of four $60^\circ$ sectors with a radius of $1$. 
+
+So the answer is $4\cdot\frac{60}{360}\cdot\pi\cdot1^2 = \frac{4}{6}\cdot\pi = \boxed{\textbf{(B) }\frac{2}{3}\pi} $

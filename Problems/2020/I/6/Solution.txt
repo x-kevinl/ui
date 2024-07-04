@@ -1,0 +1,24 @@
+== Diagram ==
+<asy>
+/* Made by MRENTHUSIASM */
+size(300);
+import graph3;
+import solids;
+
+currentprojection=orthographic((1,-5,1));
+real r = sqrt(160/13);
+
+triple C1, C2, B1, B2;
+C1 = (0,0,sqrt(r^2-1^2));
+C2 = (7,0,sqrt(r^2-2^2));
+B1 = (0,0,0);
+B2 = (7,0,0);
+draw((-5,-10,0)--(-5,10,0)--(12,10,0)--(12,-10,0)--cycle);
+draw(shift(C1)*scale3(r)*unitsphere,yellow,light=White);
+draw(shift(C2)*scale3(r)*unitsphere,yellow,light=White);
+draw(Circle(B1,1,(0,0,1)));
+draw(Circle(B2,2,(0,0,1)));
+
+dot(C1^^C2^^B1^^B2,linewidth(4.5));
+</asy>
+~MRENTHUSIASM

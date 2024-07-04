@@ -1,0 +1,15 @@
+==Solution 1==
+
+Since $2011 \equiv 11  \pmod{1000},$ we know that $2011^{2011} \equiv 11^{2011}  \pmod{1000}.$
+
+To compute this, we use a clever application of the [[binomial theorem]].
+
+$\begin{aligned} 11^{2011} &= (1+10)^{2011} \\ &= 1 + \dbinom{2011}{1} \cdot 10 + \dbinom{2011}{2} \cdot 10^2 + \cdots \end{aligned}$
+
+In all of the other terms, the power of $10$ is greater than $2$ and so is equivalent to $0$ modulo $1000,$ which means we can ignore it. We have:
+
+$\begin{aligned}11^{2011} &\equiv 1 + 2011\cdot 10 + \dfrac{2011 \cdot 2010}{2} \cdot 100 \\ &\equiv 1+20110 + \dfrac{11\cdot 10}{2} \cdot 100\\ &= 1 + 20110 + 5500\\ &\equiv 1 + 110 + 500\\&=611 \pmod{1000} \end{aligned}$
+
+Therefore, the hundreds digit is $\boxed{\textbf{(D) } 6}.$
+
+Side note: By [[Euler's Totient Theorem]], $a^{\phi (1000)} \equiv 1 \pmod{1000}$ for any $a$ relatively prime with 1000, so $a^{400} \equiv 1 \pmod{1000}$ and $11^{2011} \equiv 11^{11} \pmod{1000}$. We can then proceed using the clever application of the Binomial Theorem, or we can just proceed with solution 6 from here.

@@ -1,0 +1,31 @@
+== Solution ==
+
+<center><asy>
+unitsize(3.5mm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+dotfactor=4;
+
+pair A=(0,0), B=(8,0); pair C=(20,0); pair D=(1.25,-0.25sqrt(375)); pair E=(8.75,-0.15sqrt(375));
+path a=Circle(A,5);
+path b=Circle(B,3);
+draw(a); draw(b);
+draw(C--D);
+draw(A--C);
+draw(A--D);
+draw(B--E);
+
+pair[] ps={A,B,C,D,E};
+dot(ps);
+
+label("$A$",A,N); label("$B$",B,N); label("$C$",C,N);
+label("$D$",D,SE); label("$E$",E,SE);
+label("$5$",(A--D),SW);
+label("$3$",(B--E),SW);
+label("$8$",(A--B),N);
+label("$x$",(C--B),N);
+
+</asy></center>
+
+Let $D$ and $E$ be the points of tangency on circles $A$ and $B$ with line $CD$. $AB=8$. Also, let $BC=x$. As $\angle ADC$ and $\angle BEC$ are right angles (a radius is perpendicular to a tangent line at the point of tangency) and both triangles share $\angle ACD$, $\triangle ADC \sim \triangle BEC$. From this we can get a proportion.
+
+$\frac{BC}{AC}=\frac{BE}{AD} \rightarrow \frac{x}{x+8}=\frac{3}{5} \rightarrow 5x=3x+24 \rightarrow x=\boxed{\textbf{(D)}\ 12}$

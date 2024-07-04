@@ -1,0 +1,2 @@
+==Problem 13==
+For every <math>m \geq 2</math>, let <math>Q(m)</math> be the least positive integer with the following property: For every <math>n \geq Q(m)</math>, there is always a perfect cube <math>k^3</math> in the range <math>n < k^3 \leq m \cdot n</math>. Find the remainder when <cmath>\sum_{m = 2}^{2017} Q(m)</cmath>is divided by 1000.

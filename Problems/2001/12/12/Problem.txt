@@ -1,0 +1,15 @@
+== Problem ==
+
+How many positive integers not exceeding $2001$ are multiples of $3$ or $4$ but not $5$?
+
+$
+\textbf{(A) }768
+\qquad
+\textbf{(B) }801
+\qquad
+\textbf{(C) }934
+\qquad
+\textbf{(D) }1067
+\qquad
+\textbf{(E) }1167
+$

@@ -1,0 +1,2 @@
+==Problem==
+Find the number of subsets of <math>\{1, 2, 3, 4, 5, 6, 7, 8\}</math> that are subsets of neither <math>\{1, 2, 3, 4, 5\}</math> nor <math>\{4, 5, 6, 7, 8\}</math>.

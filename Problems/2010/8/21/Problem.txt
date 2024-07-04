@@ -1,0 +1,4 @@
+==Problem==
+Hui is an avid reader. She bought a copy of the best seller ''Math is Beautiful''. On the first day, Hui read $1/5$ of the pages plus $12$ more, and on the second day she read $1/4$ of the remaining pages plus $15$ pages. On the third day she read $1/3$ of the remaining pages plus $18$ pages. She then realized that there were only $62$ pages left to read, which she read the next day. How many pages are in this book? 
+
+$ \textbf{(A)}\ 120 \qquad\textbf{(B)}\ 180\qquad\textbf{(C)}\ 240\qquad\textbf{(D)}\ 300\qquad\textbf{(E)}\ 360 $

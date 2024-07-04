@@ -1,0 +1,2 @@
+==Solution==
+There are $6$ people to split the $1500$ dollars among, so each person must raise $\frac{1500}6=250$ dollars.  $\Rightarrow\boxed{\mathrm{(A)}\ 250}$

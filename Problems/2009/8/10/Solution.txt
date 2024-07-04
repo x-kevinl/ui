@@ -1,0 +1,2 @@
+==Solution==
+There are $8^2=64$ total squares. There are $(8-1)(4)=28$ unit squares on the perimeter and therefore $64-28=36$ NOT on the perimeter. The probability of choosing one of those squares is $\frac{36}{64} = \boxed{\textbf{(D)}\ \frac{9}{16}}$.

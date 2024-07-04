@@ -1,0 +1,4 @@
+== Solution 1 ==
+From the given information, <math>121a+11b+c=512+64b+8c+a \implies 120a=512+53b+7c</math>. Since <math>a</math>, <math>b</math>, and <math>c</math> have to be positive, <math>a \geq 5</math>. Since we need to minimize the value of <math>n</math>, we want to minimize <math>a</math>, so we have <math>a = 5</math>. Then we know <math>88=53b+7c</math>, and we can see the only solution is <math>b=1</math>, <math>c=5</math>. Finally, <math>515_{11} = 621_{10}</math>, so our answer is <math>\boxed{621}</math>.
+
+~ JHawk0224

@@ -1,0 +1,23 @@
+==Solution 1 (Complementary Counting)==
+We will use complementary counting.
+First, the frog can go left with probability $\frac14$. We observe symmetry, so our final answer will be multiplied by 4 for the 4 directions, and since $4\cdot \frac14=1$, we will ignore the leading probability.
+
+From the left, she either goes left to another edge ($\frac14$) or back to the center ($\frac14$). Time for some casework.
+
+$\textbf{Case 1:}$ She goes back to the center.
+
+Now, she can go in any 4 directions, and then has 2 options from that edge. This gives $\frac12$. --End case 1
+
+$\textbf{Case 2:}$ She goes to another edge (rightmost).
+
+Subcase 1: She goes back to the left edge. She now has 2 places to go, giving $\frac12$
+
+Subcase 2: She goes to the center. Now any move works.
+
+$\frac14 \cdot \frac12 + \frac14 \cdot 1=\frac18 + \frac 14=\frac38$ for this case. --End case 2
+
+She goes back to the center in Case 1 with probability $\frac14$, and to the right edge with probability $\frac14$
+
+So, our answer is $\frac14 \cdot \frac12 + \frac14 \cdot \frac38=\frac14 (\frac12+\frac38)=\frac14 \cdot \frac78 = \frac7{32}$
+
+But, don't forget complementary counting. So, we get $1-\frac7{32}=\frac{25}{32} \implies \boxed{D}$. ~ firebolt360

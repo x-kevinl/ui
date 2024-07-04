@@ -1,0 +1,51 @@
+== Solution ==
+Examine the first term in the expression we want to evaluate, <math>\frac{\sin 2x}{\sin 2y}</math>, separately from the second term, <math>\frac{\cos 2x}{\cos 2y}</math>.
+
+=== The First Term ===
+
+Using the identity <math>\sin 2\theta = 2\sin\theta\cos\theta</math>, we have:
+
+<math>\frac{2\sin x \cos x}{2\sin y \cos y} = \frac{\sin x \cos x}{\sin y \cos y} = \frac{\sin x}{\sin y}\cdot\frac{\cos x}{\cos y}=3\cdot\frac{1}{2} = \frac{3}{2}</math>
+
+=== The Second Term ===
+
+Let the equation <math>\frac{\sin x}{\sin y} = 3</math> be equation 1, and let the equation <math>\frac{\cos x}{\cos y} = \frac12</math> be equation 2.
+Hungry for the widely-used identity <math>\sin^2\theta + \cos^2\theta = 1</math>, we cross multiply equation 1 by <math>\sin y</math> and multiply equation 2 by <math>\cos y</math>.
+
+Equation 1 then becomes:
+
+<math>\sin x = 3\sin y</math>.
+
+Equation 2 then becomes:
+
+<math>\cos x = \frac{1}{2} \cos y</math>
+
+Aha! We can square both of the resulting equations and match up the resulting LHS with the resulting RHS:
+
+<math>1 = 9\sin^2 y + \frac{1}{4} \cos^2 y</math>
+
+Applying the identity <math>\cos^2 y = 1 - \sin^2 y</math> (which is similar to <math>\sin^2\theta + \cos^2\theta = 1</math> but a bit different), we can change <math>1 = 9\sin^2 y + \frac{1}{4} \cos^2 y</math> into:
+
+<math>1 = 9\sin^2 y + \frac{1}{4} - \frac{1}{4} \sin^2 y</math>
+
+Rearranging, we get <math>\frac{3}{4} = \frac{35}{4} \sin^2 y </math>.
+
+So, <math>\sin^2 y = \frac{3}{35}</math>.
+
+Squaring Equation 1 (leading to <math>\sin^2 x = 9\sin^2 y</math>), we can solve for <math>\sin^2 x</math>:
+
+<math>\sin^2 x = 9\left(\frac{3}{35}\right) = \frac{27}{35}</math>
+
+Using the identity <math>\cos 2\theta = 1 - 2\sin^2\theta</math>, we can solve for <math>\frac{\cos 2x}{\cos 2y}</math>.
+
+<math>\cos 2x = 1 - 2\sin^2 x = 1 - 2\cdot\frac{27}{35} = 1 - \frac{54}{35} = -\frac{19}{35}</math>
+
+<math>\cos 2y = 1 - 2\sin^2 y = 1 - 2\cdot\frac{3}{35} = 1 - \frac{6}{35} = \frac{29}{35}</math>
+
+Thus, <math>\frac{\cos 2x}{\cos 2y} = \frac{-19/35}{29/35} = -\frac{19}{29}</math>.
+
+Plugging in the numbers we got back into the original equation :
+
+We get <math>\frac{\sin 2x}{\sin 2y} + \frac{\cos 2x}{\cos 2y} = \frac32 + \left(-\frac{19}{29} \right) = \frac{49}{58}</math>.
+
+So, the answer is <math>49+58=\boxed{107}</math>.

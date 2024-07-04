@@ -1,0 +1,5 @@
+==Solution 1 (Substitution)==
+
+To solve this question, you can use $y = mx + b$ where the $x$ is Fahrenheit and the $y$ is Breadus. We have $(110,0)$ and $(350,100)$. We want to find the value of $y$ in $(200,y)$ that falls on this line. The slope for these two points is $\frac{5}{12}$; $y = \frac{5}{12}x + b$. Solving for $b$ using $(110, 0)$, $\frac{550}{12} = -b$. We get $b = \frac{-275}{6}$. Plugging in $(200, y), \frac{1000}{12}-\frac{550}{12}=y$. Simplifying, $\frac{450}{12} = \boxed{\textbf{(D) }37.5}$
+
+~walmartbrian

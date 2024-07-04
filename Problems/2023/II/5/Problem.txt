@@ -1,0 +1,2 @@
+==Problem==
+Let <math>S</math> be the set of all positive rational numbers <math>r</math> such that when the two numbers <math>r</math> and <math>55r</math> are written as fractions in lowest terms, the sum of the numerator and denominator of one fraction is the same as the sum of the numerator and denominator of the other fraction. The sum of all the elements of <math>S</math> can be expressed in the form <math>\frac{p}{q},</math> where <math>p</math> and <math>q</math> are relatively prime positive integers. Find <math>p+q.</math>

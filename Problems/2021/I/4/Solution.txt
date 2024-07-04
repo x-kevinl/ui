@@ -1,0 +1,7 @@
+==Solution 1==
+Suppose we have <math>1</math> coin in the first pile. Then <math>(1, 2, 63), (1, 3, 62), \ldots, (1, 32, 33)</math> all work for a total of <math>31</math> piles. Suppose we have <math>2</math> coins in the first pile, then <math>(2, 3, 61), (2, 4, 60), \ldots, (2, 31, 33)</math> all work, for a total of <math>29</math>. Continuing this pattern until <math>21</math> coins in the first pile, we have the sum 
+<cmath>\begin{align*}
+31+29+28+26+25+\cdots+4+2+1 &= (31+28+25+22+\cdots+1)+(29+26+23+\cdots+2) \\
+&= 176+155 \\
+&= \boxed{331}.
+\end{align*}</cmath>

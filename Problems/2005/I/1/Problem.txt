@@ -1,0 +1,4 @@
+== Problem ==
+Six [[congruent]] [[circle]]s form a ring with each circle [[externally tangent]] to two circles adjacent to it. All circles are [[internally tangent]] to a circle <math> C </math> with [[radius]] 30. Let <math> K </math> be the area of the region inside circle <math> C </math> and outside of the six circles in the ring. Find <math> \lfloor K \rfloor</math> (the [[floor function]]).
+
+[[Image:2005 AIME I Problem 1.png]]

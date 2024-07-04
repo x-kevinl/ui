@@ -1,0 +1,25 @@
+==Solution==
+
+In $\triangle ACT$, the three angles sum to $180^\circ$, and $\angle C = \angle T$
+
+$\angle CAT + \angle ATC + \angle ACT = 180$
+
+$36 + \angle ATC + \angle ATC = 180$
+
+$2 \angle ATC = 144$
+
+$\angle ATC = 72$
+
+Since $\angle ATC$ is bisected by $\overline{TR}$, $\angle RTC = \frac{72}{2} = 36$
+
+Now focusing on the smaller $\triangle RTC$, the sum of the angles in that triangle is $180^\circ$, so:
+
+$\angle RTC + \angle TCR + \angle CRT = 180$
+
+$36 + \angle ACT + \angle CRT = 180$
+
+$36 + \angle ATC + \angle CRT = 180$
+
+$36 + 72 + \angle CRT = 180$
+
+$\angle CRT = 72^\circ$, giving the answer $\boxed{C}$

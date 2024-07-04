@@ -1,0 +1,8 @@
+==Problem==
+The average age of the $6$ people in Room A is $40$. The average age of the $4$ people in Room B is $25$. If the two groups are combined, what is the average age of all the people?
+
+$\textbf{(A)}\ 32.5 \qquad
+\textbf{(B)}\ 33 \qquad
+\textbf{(C)}\ 33.5 \qquad
+\textbf{(D)}\ 34\qquad
+\textbf{(E)}\ 35$

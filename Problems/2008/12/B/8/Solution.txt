@@ -1,0 +1,6 @@
+==Solution==
+Since $\overline{AB}=4\overline{BD}$ and $\overline{AB}+\overline{BD}=\overline{AD}$, $\overline{AB}=\frac{4}{5}\overline{AD}$.  
+
+Since $\overline{AC}=9\overline{CD}$ and $\overline{AC}+\overline{CD}=\overline{AD}$,  $\overline{AC}=\frac{9}{10}\overline{AD}$. 
+
+Thus, $\overline{BC}=\overline{AC}-\overline{AB}=\left(\frac{9}{10}-\frac{4}{5}\right)\overline{AD} = \frac {1}{10}\overline{AD} \Rightarrow C$.

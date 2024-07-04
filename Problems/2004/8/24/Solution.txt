@@ -1,0 +1,7 @@
+==Excellent Solution==
+The area of the parallelogram can be found in two ways. The first is by taking rectangle $ABCD$ and subtracting the areas of the triangles cut out to create parallelogram $EFGH$. This is
+$$(4+6)(5+3) - 2 \cdot \frac12 \cdot 6 \cdot 5 - 2 \cdot \frac12 \cdot 3 \cdot 4 = 80 - 30 - 12 = 38$$
+The second way is by multiplying the base of the parallelogram such as $\overline{FG}$ with its altitude $d$, which is perpendicular to both bases. $\triangle FGC$ is a $3-4-5$ triangle so $\overline{FG} = 5$. Set these two representations of the area together.
+$$5d = 38 \rightarrow d = \boxed{\textbf{(C)}\ 7.6}$$
+
+~Ak

@@ -1,0 +1,86 @@
+== Solution ==
+=== Solution 1 ===
+Note first that the intersection is a [[pentagon]].
+
+Use 3D analytical geometry, setting the origin as the center of the square base and the pyramid’s points oriented as shown above. <math>A(-2,2,0),\ B(2,2,0),\ C(2,-2,0),\ D(-2,-2,0),\ E(0,0,2\sqrt{2})</math>. Using the coordinates of the three points of intersection <math>(-1,1,\sqrt{2}),\ (2,0,0),\ (0,-2,0)</math>, it is possible to determine the equation of the plane. The equation of a plane resembles <math>ax + by + cz = d</math>, and using the points we find that <math>2a = d \Longrightarrow d = \frac{a}{2}</math>, <math>-2b = d \Longrightarrow d = \frac{-b}{2}</math>, and <math>-a + b + \sqrt{2}c = d \Longrightarrow -\frac{d}{2} - \frac{d}{2} + \sqrt{2}c = d \Longrightarrow c = d\sqrt{2}</math>. It is then <math>x - y + 2\sqrt{2}z = 2</math>.
+
+<center> 
+<asy>import three; 
+pointpen = black; 
+pathpen = black+linewidth(0.7); 
+currentprojection = perspective(2.5,-12,4);
+triple A=(-2,2,0), B=(2,2,0), C=(2,-2,0), D=(-2,-2,0), E=(0,0,2*2^.5), P=(A+E)/2, Q=(B+C)/2, R=(C+D)/2, Y=(-3/2,-3/2,2^.5/2),X=(3/2,3/2,2^.5/2);
+draw(A--B--C--D--A--E--B--E--C--E--D); 
+label("A",A, SE); 
+label("B",B,(1,0,0)); 
+label("C",C, SE); 
+label("D",D, W); 
+label("E",E,N); 
+label("P",P, NW); 
+label("Q",Q,(1,0,0)); 
+label("R",R, S);  
+label("Y",Y,NW);  
+label("X",X,NE); 
+draw(P--X--Q--R--Y--cycle,linetype("6 6")+linewidth(0.7)); 
+</asy>
+<asy>
+pointpen = black; 
+pathpen = black+linewidth(0.7); 
+pair P = (0, 2.5^.5), X = (3/2^.5,0), Y = (-3/2^.5,0), Q = (2^.5,-2.5^.5), R = (-2^.5,-2.5^.5); 
+D(MP("P",P,N)--MP("X",X,NE)--MP("Q",Q)--MP("R",R)--MP("Y",Y,NW)--cycle); 
+D(X--Y,linetype("6 6") + linewidth(0.7)+blue); D(P--(0,-P.y),linetype("6 6") + linewidth(0.7) + red);
+MP("\color{blue}{3\sqrt{2}}",(X+Y)/2); 
+MP("2\sqrt{2}",(Q+R)/2); 
+MP("\color{red}{\sqrt{\frac{5}{2}}}",(0,-P.y/2),E); 
+MP("\color{red}{\sqrt{\frac{5}{2}}}",(0,2*P.y/5),E); 
+</asy>
+</center>
+
+Write the equation of the lines and substitute to find that the other two points of intersection on <math>\overline{BE}</math>, <math>\overline{DE}</math> are <math>\left(\frac{\pm 3}{2},\frac{\pm 3}{2},\frac{\sqrt{2}}{2}\right)</math>. To find the area of the pentagon, break it up into pieces (an [[isosceles triangle]] on the top, an [[isosceles trapezoid]] on the bottom). Using the [[distance formula]] (<math>\sqrt{a^2 + b^2 + c^2}</math>), it is possible to find that the area of the triangle is <math>\frac{1}{2}bh \Longrightarrow \frac{1}{2} 3\sqrt{2} \cdot \sqrt{\frac 52} = \frac{3\sqrt{5}}{2}</math>. The trapezoid has area <math>\frac{1}{2}h(b_1 + b_2) \Longrightarrow \frac 12\sqrt{\frac 52}\left(2\sqrt{2} + 3\sqrt{2}\right) = \frac{5\sqrt{5}}{2}</math>. In total, the area is <math>4\sqrt{5} = \sqrt{80}</math>, and the solution is <math>\boxed{080}</math>.
+
+=== Solution 2===
+Use the same coordinate system as above, and let the plane determined by <math>\triangle PQR</math> intersect <math>\overline{BE}</math> at <math>X</math> and <math>\overline{DE}</math> at <math>Y</math>. Then the line <math>\overline{XY}</math> is the intersection of the planes determined by <math>\triangle PQR</math> and <math>\triangle BDE</math>.
+
+Note that the plane determined by <math>\triangle BDE</math> has the equation <math>x=y</math>, and <math>\overline{PQ}</math> can be described by <math>x=2(1-t)-t,\ y=t,\ z=t\sqrt{2}</math>. It intersects the plane when <math>2(1-t)-t=t</math>, or <math>t=\frac{1}{2}</math>. This intersection point has <math>z=\frac{\sqrt{2}}{2}</math>. Similarly, the intersection between <math>\overline{PR}</math> and <math>\triangle BDE</math> has <math>z=\frac{\sqrt{2}}{2}</math>. So <math>\overline{XY}</math> lies on the plane <math>z=\frac{\sqrt{2}}{2}</math>, from which we obtain <math>X=\left( \frac{3}{2},\frac{3}{2},\frac{\sqrt{2}}{2}\right)</math> and <math>Y=\left( -\frac{3}{2},-\frac{3}{2},\frac{\sqrt{2}}{2}\right)</math>. The area of the pentagon <math>EXQRY</math> can be computed in the same way as above.
+
+=== Solution 3 ===
+<center> 
+<asy>import three; 
+import math;
+pointpen = black; 
+pathpen = black+linewidth(0.7); 
+currentprojection = perspective(2.5,-12,4);
+triple A=(-2,2,0), B=(2,2,0), C=(2,-2,0), D=(-2,-2,0), E=(0,0,2*2^.5), P=(A+E)/2, Q=(B+C)/2, R=(C+D)/2, Y=(-3/2,-3/2,2^.5/2),X=(3/2,3/2,2^.5/2), H=(4,2,0), I=(-2,-4,0);
+draw(A--B--C--D--A--E--B--E--C--E--D); 
+draw(B--H--Q, linetype("6 6")+linewidth(0.7)+blue);
+draw(X--H, linetype("6 6")+linewidth(0.7)+blue);
+draw(D--I--R, linetype("6 6")+linewidth(0.7)+blue);
+draw(Y--I, linetype("6 6")+linewidth(0.7)+blue);
+label("A",A, SE); 
+label("B",B,NE); 
+label("C",C, SE); 
+label("D",D, W); 
+label("E",E,N); 
+label("P",P, NW); 
+label("Q",Q,(1,0,0)); 
+label("R",R, S);  
+label("Y",Y,NW);  
+label("X",X,NE); 
+label("H",H,NE);
+label("I",I,S);
+draw(P--X--Q--R--Y--cycle,linetype("6 6")+linewidth(0.7)); 
+</asy>
+</center> 
+Extend <math>\overline{RQ}</math> and <math>\overline{AB}</math>. The point of intersection is <math>H</math>. Connect <math>\overline{PH}</math>. <math>\overline{EB}</math> intersects <math>\overline{PH}</math> at <math>X</math>. Do the same for <math>\overline{QR}</math> and <math>\overline{AD}</math>, and let the intersections be <math>I</math> and <math>Y</math>
+
+Because <math>Q</math> is the midpoint of <math>\overline{BC}</math>, and <math>\overline{AB}\parallel\overline{DC}</math>, so <math>\triangle{RQC}\cong\triangle{HQB}</math>. <math>\overline{BH}=2</math>. 
+
+Because <math>\overline{BH}=2</math>, we can use mass point geometry to get that <math>\overline{PX}=\overline{XH}</math>. <math>|\triangle{XHQ}|=\frac{\overline{XH}}{\overline{PH}}\cdot\frac{\overline{QH}}{\overline{HI}}\cdot|\triangle{PHI}|=\frac{1}{6}\cdot|\triangle{PHI}|</math> 
+
+Using the same principle, we can get that <math>|\triangle{IYR}|=\frac{1}{6}|\triangle{PHI}|</math>
+
+Therefore, the area of <math>PYRQX</math> is <math>\frac{2}{3}\cdot|\triangle{PHI}|</math>
+
+<math>\overline{RQ}=2\sqrt{2}</math>, so <math>\overline{IH}=6\sqrt{2}</math>. Using the law of cosines, <math>\overline{PH}=\sqrt{28}</math>. The area of <math>\triangle{PHI}=\frac{1}{2}\cdot\sqrt{28-18}\cdot6\sqrt{2}=6\sqrt{5}</math>
+
+Using this, we can get the area of <math>PYRQX = \sqrt{80}</math> so the answer is <math>\fbox{080}</math>.

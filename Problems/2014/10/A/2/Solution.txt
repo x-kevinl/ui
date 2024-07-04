@@ -1,0 +1,5 @@
+== Solution 1 ==
+Each day, the cat eats $\dfrac13+\dfrac14=\dfrac7{12}$ of a can of cat food. Therefore, the cat food will last for $\dfrac{6}{\frac7{12}}=\dfrac{72}7$ days, which is greater than $10$ days but less than $11$ days.
+
+
+Because the number of days is greater than 10 and less than 11, the cat will finish eating in on the 11th day, which is equal to $10$ days after Monday, or $\boxed{\textbf{(C)}\ \text{Thursday}}$

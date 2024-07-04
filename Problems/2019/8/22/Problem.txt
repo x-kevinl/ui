@@ -1,0 +1,4 @@
+==Problem 22==
+A store increased the original price of a shirt by a certain percent and then lowered the new price by the same amount. Given that the resulting price was $84\%$ of the original price, by what percent was the price increased and decreased$?$
+
+$\textbf{(A) }16\qquad\textbf{(B) }20\qquad\textbf{(C) }28\qquad\textbf{(D) }36\qquad\textbf{(E) }40$

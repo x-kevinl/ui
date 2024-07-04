@@ -1,0 +1,4 @@
+== Problem ==
+The sequence $a_0,a_1,a_2,\cdots$ is a strictly increasing arithmetic sequence of positive integers such that $$2^{a_7}=2^{27} \cdot a_7.$$ What is the minimum possible value of $a_2$?
+
+$\textbf{(A)}\ 8 \qquad \textbf{(B)}\ 12 \qquad \textbf{(C)}\ 16 \qquad \textbf{(D)}\ 17 \qquad \textbf{(E)}\ 22$

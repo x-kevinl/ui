@@ -1,0 +1,6 @@
+==Problem==
+
+The $\textit{taxicab distance}$ between points $(x_1, y_1)$ and $(x_2, y_2)$ in the coordinate plane is given by $$|x_1 - x_2| + |y_1 - y_2|.$$
+For how many points $P$ with integer coordinates is the taxicab distance between $P$ and the origin less than or equal to $20$?
+
+$\textbf{(A)} \, 441 \qquad\textbf{(B)} \, 761 \qquad\textbf{(C)} \, 841 \qquad\textbf{(D)} \, 921  \qquad\textbf{(E)} \, 924 $

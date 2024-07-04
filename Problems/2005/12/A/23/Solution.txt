@@ -1,0 +1,4 @@
+== Solution ==
+Let $\log_a b = z$, so $a^z = b$. Define $a = 2^x$, $b = 2^y$; then $\left(2^x\right)^z = 2^{xz}= 2^y$, so $x|y$. Here we can just make a table and count the number of values of $y$ per value of $x$. The largest possible value of $x$ is 12, and we get $\sum_{x=1}^{12} \lfloor\frac {25}x-1\rfloor = 24 + 11 + 7 + 5 + 4 + 3 + 2 + 2 + 1 + 1 + 1 + 1 = 62$. 
+
+The total number of ways to pick two distinct numbers is $\frac{25!}{(25-2)!}= 25 \cdot 24 = 600$, so we get a probability of $\frac{62}{600} = \boxed{\textbf{(B) }\frac{31}{300}}$.

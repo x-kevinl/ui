@@ -1,0 +1,2 @@
+==Solution==
+If Marla evenly distributes her $300$ square feet of paint between the 6 faces, each face will get $300\div6 = 50$ square feet of paint. The surface area of one of the faces of the cube is $10^2 = 100 $ square feet. Therefore, there will be $100-50 = \boxed{\textbf{(D)}\ 50} $ square feet of white on each side.

@@ -1,0 +1,5 @@
+==Problem==
+
+Two dice are thrown. What is the probability that the product of the two numbers is a multiple of 5?
+
+$\text{(A)}\ \dfrac{1}{36} \qquad \text{(B)}\ \dfrac{1}{18} \qquad \text{(C)}\ \dfrac{1}{6} \qquad \text{(D)}\ \dfrac{11}{36} \qquad \text{(E)}\ \dfrac{1}{3}$

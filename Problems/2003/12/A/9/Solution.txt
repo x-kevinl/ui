@@ -1,0 +1,2 @@
+== Solution ==
+If $(2,3)$ is in $S$, then $(3,2)$ is also, and quickly we see that every point of the form $(\pm 2, \pm 3)$ or $(\pm 3, \pm 2)$ must be in $S$. Now note that these $8$ points satisfy all of the symmetry conditions. Thus the answer is $\boxed{\mathrm{(D)}\ 8}$.

@@ -1,0 +1,5 @@
+==Problem==
+
+The year 2002 is a palindrome (a number that reads the same from left to right as it does from right to left). What is the product of the digits of the next year after 2002 that is a palindrome?
+
+$\text{(A)}\ 0 \qquad \text{(B)}\ 4 \qquad \text{(C)}\ 9 \qquad \text{(D)}\ 16 \qquad \text{(E)}\ 25$

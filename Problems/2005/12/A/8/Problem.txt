@@ -1,0 +1,10 @@
+== Problem ==
+Let $A,M$, and $C$ be digits with
+
+$$(100A+10M+C)(A+M+C) = 2005$$
+
+What is $A$?
+
+$
+(\mathrm {A}) \ 1 \qquad (\mathrm {B}) \ 2 \qquad (\mathrm {C})\ 3 \qquad (\mathrm {D}) \ 4 \qquad (\mathrm {E})\ 5
+$

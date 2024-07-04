@@ -1,0 +1,2 @@
+==Solution 1==
+The total area of the four congruent triangles formed by the squares is $5-4 = 1 $. Therefore, the area of one of these triangles is  $ \frac{1}{4} $. The height of one of these triangles is $ a $ and the base is $ b $. Using the formula for area of the triangle, we have $ \frac{ab}{2} = \frac{1}{4} $. Multiply by $ 2 $ on both sides to find that the value of $ ab $ is $ \boxed{\textbf{(C)}\ \frac{1}2} $.

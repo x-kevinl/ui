@@ -1,0 +1,10 @@
+== Problem ==
+Let <math>m</math> and <math>n</math> be positive integers satisfying the conditions
+
+<math>\quad\bullet\ \gcd(m+n,210)=1,</math>
+
+<math>\quad\bullet\ m^m</math> is a multiple of <math>n^n,</math> and
+
+<math>\quad\bullet\ m</math> is not a multiple of <math>n.</math>
+
+Find the least possible value of <math>m+n.</math>

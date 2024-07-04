@@ -1,0 +1,9 @@
+==Problem 6==
+
+Steve's empty swimming pool will hold $ 24,000$ gallons of water when full. It will be filled by $ 4$ hoses, each of which supplies $ 2.5$ gallons of water per minute. How many hours will it take to fill Steve's pool?
+
+$ \textbf{(A)}\  40  \qquad
+\textbf{(B)}\   42  \qquad
+\textbf{(C)}\  44   \qquad
+\textbf{(D)}\  46   \qquad
+\textbf{(E)}\   48$

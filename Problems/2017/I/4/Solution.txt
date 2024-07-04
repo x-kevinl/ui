@@ -1,0 +1,63 @@
+==Solution==
+Let the triangular base be <math>\triangle ABC</math>, with <math>\overline {AB} = 24</math>. We find that the altitude to side <math>\overline {AB}</math> is <math>16</math>, so the area of <math>\triangle ABC</math> is <math>(24*16)/2 = 192</math>.
+
+Let the fourth vertex of the tetrahedron be <math>P</math>, and let the midpoint of <math>\overline {AB}</math> be <math>M</math>. Since <math>P</math> is equidistant from <math>A</math>, <math>B</math>, and <math>C</math>, the line through <math>P</math> perpendicular to the plane of <math>\triangle ABC</math> will pass through the circumcenter of <math>\triangle ABC</math>, which we will call <math>O</math>. Note that <math>O</math> is equidistant from each of <math>A</math>, <math>B</math>, and <math>C</math>. Then,
+
+<cmath>\overline {OM} + \overline {OC} = \overline {CM} = 16</cmath>
+
+Let <math>\overline {OM} = d</math>. Then <math>OC=OA=\sqrt{d^2+12^2}.</math>
+Equation <math>(1)</math>:
+<cmath>d + \sqrt {d^2 + 144} = 16</cmath>
+
+Squaring both sides, we have
+
+<cmath>d^2 + 144 + 2d\sqrt {d^2+144} + d^2 = 256</cmath>
+
+<cmath>2d^2 + 2d\sqrt {d^2+144} = 112</cmath>
+
+<cmath>2d(d + \sqrt {d^2+144}) = 112</cmath>
+
+Substituting with equation <math>(1)</math>:
+
+<cmath>2d(16) = 112</cmath>
+
+<cmath>d = 7/2</cmath>
+
+We now find that <math>\sqrt{d^2 + 144} = 25/2</math>.
+
+Let the distance <math>\overline {OP} = h</math>. Using the Pythagorean Theorem on triangle <math>AOP</math>, <math>BOP</math>, or <math>COP</math> (all three are congruent by SSS):
+
+<cmath>25^2 = h^2 + (25/2)^2</cmath>
+
+<cmath>625 = h^2 + 625/4</cmath>
+
+<cmath>1875/4 = h^2</cmath>
+
+<cmath>25\sqrt {3} / 2 = h</cmath>
+
+
+Finally, by the formula for volume of a pyramid,
+
+<cmath>V = Bh/3</cmath>
+
+<cmath>V = (192)(25\sqrt{3}/2)/3</cmath>
+This simplifies to <math>V = 800\sqrt {3}</math>, so <math>m+n = \boxed {803}</math>.
+
+
+NOTE : If you don’t know or remember the formula for the volume of a triangular pyramid, you can derive it using calculus as follows :
+
+Take a small triangular element in the pyramid. We know that it’s area is proportional to the height from the vertex to the base. Hence, we know that <math>\frac{A_{small element}}{A} = \frac{h^2}{H^2} \implies A_{small element} = \frac{Ah^2}{H^2}</math>. Now integrate it taking the limits <math>0</math> to <math>H</math>
+
+===Shortcut===
+Here is a shortcut for finding the radius <math>R</math> of the circumcenter of <math>\triangle ABC</math>.
+
+As before, we find that the foot of the altitude from <math>P</math> lands on the circumcenter of <math>\triangle ABC</math>. Let <math>BC=a</math>, <math>AC=b</math>, and <math>AB=c</math>.
+Then we write the area of <math>\triangle ABC</math> in two ways:
+<cmath>[ABC]= \frac{1}{2} \cdot 24 \cdot 16 = \frac{abc}{4R}</cmath>
+
+Plugging in <math>20</math>, <math>20</math>, and <math>24</math> for <math>a</math>, <math>b</math>, and <math>c</math> respectively, and solving for <math>R</math>, we obtain <math>R= \frac{25}{2}=OA=OB=OC</math>.
+
+Then continue as before to use the Pythagorean Theorem on <math>\triangle AOP</math>, find <math>h</math>, and find the volume of the pyramid.
+
+===Another Shortcut (Extended Law of Sines)===
+Take the base <math>\triangle ABC</math>, where <math>AB = BC = 20</math> and <math>AC = 24</math>. Draw an altitude from <math>B</math> to <math>AC</math> that bisects <math>AC</math> at point <math>D</math>. Then the altitude has length <math>\sqrt{20^2 - 12^2} = \sqrt{16^2} = 16</math>. Next, let <math>\angle BCA = \theta</math>. Then from the right triangle <math>\triangle BDC</math>, <math>\sin \theta = 4/5</math>. From the extended law of sines, the circumradius is <math>20 \cdot \dfrac{5}{4} \cdot \dfrac{1}{2} = \dfrac{25}{2}</math>.

@@ -1,0 +1,35 @@
+== Solution 1 ==
+
+<asy>
+unitsize(.5cm);
+defaultpen(linewidth(.8pt));
+dotfactor=4;
+
+pair A=(0,0), B=(3,0), C=(0,4);
+
+dot (A);
+dot (B);
+dot (C);
+draw(A--B);
+draw(A--C);
+draw(B--C);
+
+
+draw(Circle(A,1));
+draw(Circle(B,2));
+draw(Circle(C,3));
+
+
+</asy>
+
+The centers of these circles form a 3-4-5 triangle, which has an area equal to 6.
+
+The areas of the three triangles determined by the center and the two points of tangency of each circle are, using Triangle Area by Sine,
+
+$\frac{1}{2} \cdot 1 \cdot 1 \cdot 1 = \frac{1}{2}$
+
+$\frac{1}{2} \cdot 2 \cdot 2 \cdot \frac{4}{5} = \frac{8}{5}$
+
+$\frac{1}{2} \cdot 3 \cdot 3 \cdot \frac{3}{5} = \frac{27}{10}$
+
+which add up to $4.8$. The area we're looking for is the large 3-4-5 triangle minus the three smaller triangles, or $6 - 4.8 = 1.2 = \frac{6}{5} \rightarrow \boxed{(D)}$.

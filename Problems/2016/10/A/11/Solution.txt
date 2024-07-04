@@ -1,0 +1,27 @@
+== Solution 1 ==
+
+
+<asy>
+
+size(6cm);
+defaultpen(fontsize(9pt));
+draw((0,0)--(8,0)--(8,5)--(0,5)--cycle);
+filldraw((7,0)--(8,0)--(8,1)--(0,4)--(0,5)--(1,5)--cycle,gray(0.8));
+
+label("$1$",(1/2,5),dir(90));
+label("$7$",(9/2,5),dir(90));
+
+label("$1$",(8,1/2),dir(0));
+
+
+label("$1$",(15/2,0),dir(270));
+label("$7$",(7/2,0),dir(270));
+
+label("$1$",(0,9/2),dir(180));
+label("$4$",(0,2),dir(180));
+
+draw((0,5)--(8,0));
+
+</asy>
+
+The bases of these triangles are all $1$, and by symmetry, their heights are $4$, $\frac{5}{2}$, $4$, and $\frac{5}{2}$. Thus, their areas are $2$, $\frac{5}{4}$, $2$, and $\frac{5}{4}$, which add to the area of the shaded region, which is $\boxed{6\frac{1}{2}}$.

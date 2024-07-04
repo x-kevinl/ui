@@ -1,0 +1,11 @@
+==Problem==
+
+Suppose $a$, $b$, and $c$ are positive integers such that$$\frac{a}{14}+\frac{b}{15}=\frac{c}{210}.$$Which of the following statements are necessarily true?
+
+I. If $\gcd(a,14)=1$ or $\gcd(b,15)=1$ or both, then $\gcd(c,210)=1$.
+
+II. If $\gcd(c,210)=1$, then $\gcd(a,14)=1$ or $\gcd(b,15)=1$ or both.
+
+III. $\gcd(c,210)=1$ if and only if $\gcd(a,14)=\gcd(b,15)=1$.
+
+$\textbf{(A)}~\text{I, II, and III}\qquad\textbf{(B)}~\text{I only}\qquad\textbf{(C)}~\text{I and II only}\qquad\textbf{(D)}~\text{III only}\qquad\textbf{(E)}~\text{II and III only}$

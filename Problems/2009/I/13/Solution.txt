@@ -1,0 +1,71 @@
+==Solution 1==
+
+This question is guessable but let's prove our answer
+
+<cmath>a_{n + 2} = \frac {a_n + 2009} {1 + a_{n + 1}}</cmath>
+
+
+<cmath>a_{n + 2}(1 + a_{n + 1})= a_n + 2009</cmath>
+
+
+<cmath>a_{n + 2}+a_{n + 2} a_{n + 1}-a_n= 2009</cmath>
+
+
+lets put <math>n+1</math> into <math>n</math> now
+
+
+<cmath>a_{n + 3}+a_{n + 3} a_{n + 2}-a_{n+1}= 2009</cmath>
+
+
+and set them equal now
+
+
+<cmath>a_{n + 3}+a_{n + 3} a_{n + 2}-a_{n+1}= a_{n + 2}+a_{n + 2} a_{n + 1}-a_n</cmath>
+
+
+<cmath>a_{n + 3}-a_{n+1}+a_{n + 3} a_{n + 2}-a_{n + 2} a_{n + 1}= a_{n + 2}-a_n</cmath>
+
+
+let's rewrite it
+
+
+<cmath>(a_{n + 3}-a_{n+1})(a_{n + 2}+1)= a_{n + 2}-a_n</cmath>
+
+
+Let's make it look nice and let <math>b_n=a_{n + 2}-a_n</math>
+
+
+<cmath>(b_{n+1})(a_{n + 2}+1)= b_n</cmath>
+
+
+Since <math>b_n</math> and <math>b_{n+1}</math> are integers, we can see <math>b_n</math> is divisible by <math>b_{n+1}</math>
+
+
+But we can't have an infinite sequence of proper factors, unless <math>b_n=0</math>
+
+
+Thus, <math>a_{n + 2}-a_n=0</math>
+
+
+<cmath>a_{n + 2}=a_n</cmath>
+
+
+So now, we know <math>a_3=a_1</math>
+
+
+<cmath>a_{3} = \frac {a_1 + 2009} {1 + a_{2}}</cmath>
+
+
+<cmath>a_{1} = \frac {a_1 + 2009} {1 + a_{2}}</cmath>
+
+
+<cmath>a_{1}+a_{1}a_{2} = a_1 + 2009</cmath>
+
+
+<cmath>a_{1}a_{2} = 2009</cmath>
+
+
+To minimize <math>a_{1}+a_{2}</math>, we need <math>41</math> and <math>49</math>
+
+
+Thus, our answer <math>= 41+49=\boxed {090}</math>

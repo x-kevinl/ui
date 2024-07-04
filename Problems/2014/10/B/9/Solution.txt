@@ -1,0 +1,3 @@
+==Solution==
+
+Multiply the numerator and denominator of the LHS by $wz$ to get $\frac{z+w}{z-w}=2014$. Then since $z+w=w+z$ and $w-z=-(z-w)$, $\frac{w+z}{w-z}=-\frac{z+w}{z-w}=-2014$, or choice $\boxed{A}$.

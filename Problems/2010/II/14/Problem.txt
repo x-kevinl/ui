@@ -1,0 +1,2 @@
+== Problem ==
+[[Triangle]] <math>ABC</math> with [[right angle]] at <math>C</math>, <math>\angle BAC < 45^\circ</math> and <math>AB = 4</math>. Point <math>P</math> on <math>\overline{AB}</math> is chosen such that <math>\angle APC = 2\angle ACP</math> and <math>CP = 1</math>. The ratio <math>\frac{AP}{BP}</math> can be represented in the form <math>p + q\sqrt{r}</math>, where <math>p</math>, <math>q</math>, <math>r</math> are positive integers and <math>r</math> is not divisible by the square of any prime. Find <math>p+q+r</math>.

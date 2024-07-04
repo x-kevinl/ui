@@ -1,0 +1,6 @@
+==Problem==
+Let $x_0,x_1,x_2,\dotsc$ be a sequence of numbers, where each $x_k$ is either $0$ or $1$. For each positive integer $n$, define 
+$$S_n = \sum_{k=0}^{n-1} x_k 2^k$$
+Suppose $7S_n \equiv 1 \pmod{2^n}$ for all $n \geq 1$. What is the value of the sum  
+$$x_{2019} + 2x_{2020} + 4x_{2021} + 8x_{2022}?$$
+$\textbf{(A) } 6 \qquad \textbf{(B) } 7 \qquad \textbf{(C) }12\qquad \textbf{(D) } 14\qquad \textbf{(E) }15$

@@ -1,0 +1,13 @@
+==Solution==
+===Solution 1===
+The counting numbers that leave a remainder of $4$ when divided by $6$ are
+$4, 10, 16, 22, 28, 34, \cdots$ The counting numbers that leave a remainder of $3$ when
+divided by $5$ are $3,8,13,18,23,28,33, \cdots$ So $28$ is the smallest possible number
+of coins that meets both conditions. Because 28 is divisible by 7, there are $\boxed{\textbf{(A)}\ 0}$ coins left
+when they are divided among seven people.
+
+===Solution 2===
+
+If there were two more coins in the box, the number of coins would be divisible
+by both $6$ and $5$. The smallest number that is divisible by $6$ and $5$ is $30$, so the
+smallest possible number of coins in the box is $28$ and the remainder when divided by $7$ is $\boxed{\textbf{(A)}\ 0}$.

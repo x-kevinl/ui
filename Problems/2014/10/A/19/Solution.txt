@@ -1,0 +1,5 @@
+==Solution==
+
+By Pythagorean Theorem in three dimensions, the distance $XY$ is $\sqrt{4^2+4^2+10^2}=2\sqrt{33}$.
+
+Let the length of the segment $XY$ that is inside the cube with side length $3$ be $x$. By similar triangles, $\dfrac{x}{3}=\dfrac{2\sqrt{33}}{10}$, giving $x=\boxed{\textbf{(A) }\dfrac{3\sqrt{33}}{5}} skr-$.

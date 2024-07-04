@@ -1,0 +1,5 @@
+==Solution==
+
+Since the bricks are $1$ foot high, there will be $7$ rows.  To minimize the number of blocks used, rows $1, 3, 5,$ and $7$ will look like the bottom row of the picture, which takes $\frac{100}{2} = 50$ bricks to construct.  Rows $2, 4, $ and $6$ will look like the upper row pictured, which has $49$ 2-foot bricks in the middle, and $2$ 1-foot bricks on each end for a total of $51$ bricks.
+
+Four rows of $50$ bricks and three rows of $51$ bricks totals $4\cdot 50 + 3\cdot 51 = 200 + 153 = 353$ bricks, giving the answer $\boxed{D}.$

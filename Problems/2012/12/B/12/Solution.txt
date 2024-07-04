@@ -1,0 +1,13 @@
+==Solutions==
+
+===Solution 1===
+
+There are $\binom{20}{2}$ selections; however, we count these twice, therefore
+
+$2\cdot\binom{20}{2} = \boxed{\textbf{(D)}\ 380}$. The wording of the question implies D, not E.
+
+However, MAA decided to accept both D and E.
+
+===Solution 2===
+
+Consider the 20 term sequence of $0$'s and $1$'s.  Keeping all other terms 1, a sequence of $k>0$ consecutive 0's can be placed in $21-k$ locations. That is, there are 20 strings with 1 zero, 19 strings with 2 consecutive zeros, 18 strings with 3 consecutive zeros, ..., 1 string with 20 consecutive zeros. Hence there are $20+19+\cdots+1=\binom{21}{2}$ strings with consecutive zeros. The same argument shows there are $\binom{21}{2}$ strings with consecutive 1's. This yields $2\binom{21}{2}$ strings in all. However, we have counted twice those strings in which all the 1's and all the 0's are consecutive. These are the cases $01111...$, $00111...$, $000111...$, ..., $000...0001$ (of which there are 19) as well as the cases $10000...$, $11000...$, $111000...$, ..., $111...110$ (of which there are 19 as well). This yields $2\binom{21}{2}-2\cdot19=\boxed{\textbf{(E)}\ 382}$

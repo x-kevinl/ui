@@ -1,0 +1,9 @@
+== Solution 1 (Strategic Casework)==
+There can be two different cases for this problem, either <math>f(2)=f(4)</math> or not. If it is, note that by Vieta's formulas <math>a = -6</math>. Then, <math>b</math> can be anything. However, <math>c</math> can also be anything, as we can set the root of <math>g</math> (not equal to <math>f(2) = f(4)</math>) to any integer, producing a possible integer value of <math>d</math>. Therefore there are <math>21^2 = 441</math> in this case*. If it isn't, then <math>f(2),f(4)</math> are the roots of <math>g</math>. This means by Vieta's, that:
+
+<cmath>f(2)+f(4) = -c \in [-10,10]</cmath>
+<cmath>20 + 6a + 2b \in [-10,10]</cmath>
+<cmath>3a + b \in [-15,-5].</cmath>
+
+Solving these inequalities while considering that <math>a \neq -6</math> to prevent <math>f(2) = f(4)</math>, we obtain <math>69</math> possible tuples and adding gives <math>441+69=\boxed{510}</math>. 
+~awang11

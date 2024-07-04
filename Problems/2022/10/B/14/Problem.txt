@@ -1,0 +1,5 @@
+==Problem==
+
+Suppose that $S$ is a subset of $\left\{ 1, 2, 3, \cdots , 25 \right\}$ such that the sum of any two (not necessarily distinct) elements of $S$ is never an element of $S.$ What is the maximum number of elements $S$ may contain?
+
+$\textbf{(A)}\ 12 \qquad\textbf{(B)}\ 13 \qquad\textbf{(C)}\ 14 \qquad\textbf{(D)}\ 15 \qquad\textbf{(E)}\ 16$

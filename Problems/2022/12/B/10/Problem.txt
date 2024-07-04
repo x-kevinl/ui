@@ -1,0 +1,9 @@
+==Problem==
+
+Regular hexagon $ABCDEF$ has side length $2$. Let $G$ be the midpoint of $\overline{AB}$, and let $H$ be the midpoint of $\overline{DE}$. What is the perimeter of $GCHF$?
+
+$ \textbf{(A)}\ 4\sqrt3 \qquad
+\textbf{(B)}\ 8 \qquad
+\textbf{(C)}\ 4\sqrt5 \qquad
+\textbf{(D)}\ 4\sqrt7 \qquad
+\textbf{(E)}\ 12$

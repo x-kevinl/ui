@@ -1,0 +1,4 @@
+== Solution ==
+Using the [[binomial theorem]], <math>\binom{2000}{1998} b^{1998}a^2 = \binom{2000}{1997}b^{1997}a^3 \Longrightarrow b=666a</math>.
+
+Since <math>a</math> and <math>b</math> are positive relatively prime integers, <math>a=1</math> and <math>b=666</math>, and <math>a+b=\boxed{667}</math>.

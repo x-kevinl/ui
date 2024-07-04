@@ -1,0 +1,20 @@
+== Problem ==
+Initially, a spinner points west. Chenille moves it clockwise $ 2 \dfrac{1}{4}$ revolutions and then counterclockwise $ 3 \dfrac{3}{4}$ revolutions. In what direction does the spinner point after the two moves?
+
+<asy>size(96);
+draw(circle((0,0),1),linewidth(1));
+draw((0,0.75)--(0,1.25),linewidth(1));
+draw((0,-0.75)--(0,-1.25),linewidth(1));
+draw((0.75,0)--(1.25,0),linewidth(1));
+draw((-0.75,0)--(-1.25,0),linewidth(1));
+label("$N$",(0,1.25), N);
+label("$W$",(-1.25,0), W);
+label("$E$",(1.25,0), E);
+label("$S$",(0,-1.25), S);
+draw((0,0)--(-0.5,0),EndArrow);</asy>
+
+$ \textbf{(A)}\ \text{north} \qquad 
+\textbf{(B)}\ \text{east} \qquad 
+\textbf{(C)}\ \text{south} \qquad 
+\textbf{(D)}\ \text{west} \qquad 
+\textbf{(E)}\ \text{northwest}$

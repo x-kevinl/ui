@@ -1,0 +1,2 @@
+==Solution 1==
+Applying [https://artofproblemsolving.com/wiki/index.php/Newton's_Sums Newton's Sums], we have$$s_{k+1}+(-5)s_k+(8)s_{k-1}+(-13)s_{k-2}=0,$$so$$s_{k+1}=5s_k-8s_{k-1}+13s_{k-2},$$we get the answer as $5+(-8)+13=10$.

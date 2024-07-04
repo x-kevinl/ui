@@ -1,0 +1,3 @@
+==Solution==
+
+There are $ 3 $ possibilities for the meat and $ 4 $ possibilites for the dessert, for a total of $ 4\times3=12 $ possibilities for the meat and the dessert. There are $ 4 $ possibilities for the first vegetable and $ 3 $ possibilities for the second, but order doesn't matter, so we overcounted by a factor of $ 2 $. For example, we counted 'baked beans and corn' and 'corn and baked beans' as $ 2 $ different possibilities, so the total possibilites for the two vegetables is $ \frac{4\times3}{2}=6 $, and the total number of possibilites is $ 12\times6=\boxed{\textbf{(C)}\ 72}.$

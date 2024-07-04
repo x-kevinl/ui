@@ -1,0 +1,3 @@
+== Solution 1 (Euclidean algorithm, fast)==
+
+Let the numerator and denominator <math>x,y</math> with <math>\gcd(x,y)=1</math> and <math>x+y = 1000.</math> Now if <math>\gcd(x,y) = 1</math> then <math>\gcd(x,y) =\gcd(x,1000-x)= \gcd(x,1000-x-(-1)x)=\gcd(x,1000)=1.</math> Therefore any pair that works satisfies <math>\gcd(x,1000)= 1.</math> By Euler's totient theorem, there are <math>\phi(1000) = 400</math> numbers relatively prime to 1000 from 1 to 1000. Recall that <math>r=\frac{x}{y}<1</math> and note by Euclidean algorithm <math>\gcd(1000,1000-x)=1</math>, so we want <math>x<y=1000-x.</math> Thus the <math>400</math> relatively prime numbers can generate <math>\boxed{200}</math> desired fractions.

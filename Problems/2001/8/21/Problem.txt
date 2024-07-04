@@ -1,0 +1,5 @@
+==Problem==
+
+The mean of a set of five different positive integers is 15. The median is 18. The maximum possible value of the largest of these five integers is
+
+$\text{(A)}\ 19 \qquad \text{(B)}\ 24 \qquad \text{(C)}\ 32 \qquad \text{(D)}\ 35 \qquad \text{(E)}\ 40$

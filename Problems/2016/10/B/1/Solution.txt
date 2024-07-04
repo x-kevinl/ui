@@ -1,0 +1,3 @@
+==Solution==
+
+Factorizing the numerator, $\frac{\frac{1}{a}\cdot(2+\frac{1}{2})}{a}$ then becomes $\frac{\frac{5}{2}}{a^{2}}$ which is equal to $\frac{5}{2}\cdot 2^2$ which is $\boxed{\textbf{(D) }10}$.

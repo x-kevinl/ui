@@ -1,0 +1,13 @@
+==Solution==
+We consider 3 cases based on the outcome of the coin:
+
+Case 1, 0 heads:
+The probability of this occurring on the coin flip is $\frac{1} {4}$. The probability that 0 rolls of a die will result in an odd sum is $0$. 
+
+Case 2, 1 head:
+The probability of this case occurring is $\frac{1} {2} \cdot \frac {1} {2} \cdot 2 = \frac {1} {2}.$ The probability that 1 die results in an odd number is $\frac{1} {2}$.
+
+Case 3, 2 heads:
+The probability of this occurring is $\frac{1} {4}$. The probability that 2 dice result in an odd sum is $\frac{1} {2}$, because regardless of what we throw on the first die, we have $\frac{1} {2}$ probability that the second die will have the opposite parity.
+
+Thus, the probability of having an odd sum rolled is $\frac{1} {4} \cdot 0 + \frac{1} {2} \cdot \frac{1} {2} + \frac{1} {4} \cdot \frac{1} {2}=\frac{3} {8}\Rightarrow \boxed{A}$

@@ -1,0 +1,19 @@
+==Solution 1==
+We apply the Change of Base Formula, then rearrange:
+$$\begin{align*}
+\frac{\log_2{4}}{\log_2{(3x)}}&=\frac{\log_2{8}}{\log_2{(2x)}} \\
+\frac{2}{\log_2{(3x)}}&=\frac{3}{\log_2{(2x)}} \\
+3\log_2{(3x)}&=2\log_2{(2x)}. \\
+\end{align*}$$
+By the logarithmic identity $n\log_b{a}=\log_b{\left(a^n\right)},$ it follows that
+$$\begin{align*}
+\log_2{\left[(3x)^3\right]}&=\log_2{\left[(2x)^2\right]} \\
+(3x)^3&=(2x)^2 \\
+27x^3&=4x^2 \\
+x&=\frac{4}{27},
+\end{align*}$$
+from which the answer is $4+27=\boxed{\textbf{(D) } 31}.$
+
+~jeremylu (Fundamental Logic)
+
+~MRENTHUSIASM (Reconstruction)

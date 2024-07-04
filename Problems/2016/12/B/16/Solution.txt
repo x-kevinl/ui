@@ -1,0 +1,17 @@
+==Solution 1==
+We proceed with this problem by considering two cases, when: 1) There are an odd number of consecutive numbers, 2) There are an even number of consecutive numbers.
+
+For the first case, we can cleverly choose the convenient form of our sequence to be
+$$a-n,\cdots, a-1, a, a+1, \cdots, a+n$$
+
+because then our sum will just be $(2n+1)a$. We now have 
+$$(2n+1)a = 345$$
+and $a$ will have a solution when $\frac{345}{2n+1}$ is an integer, namely when $2n+1$ is a divisor of 345. We check that 
+$$2n+1 = 3, 5, 15, 23$$
+work, and no more, because $2n+1=1$ does not satisfy the requirements of two or more consecutive integers, and when $2n+1$ equals the next biggest factor, $69$, there must be negative integers in the sequence. Our solutions are $\{114,115, 116\}, \{67, \cdots, 71\}, \{16, \cdots, 30\}, \{4, \cdots, 26\}$.
+
+For the even cases, we choose our sequence to be of the form:
+$$a-(n-1), \cdots, a, a+1, \cdots, a+n$$
+so the sum is $\frac{(2n)(2a+1)}{2} = n(2a+1)$. In this case, we find our solutions to be $\{172, 173\}, \{55,\cdots, 60\}, \{30,\cdots, 39\}$.
+
+We have found all 7 solutions and our answer is $\boxed{\textbf{(E)} \, 7}$.

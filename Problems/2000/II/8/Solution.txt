@@ -1,0 +1,51 @@
+== Solution ==
+
+=== Solution 1 ===
+Let <math>x = BC</math> be the height of the trapezoid, and let <math>y = CD</math>. Since <math>AC \perp BD</math>, it follows that <math>\triangle BAC \sim \triangle CBD</math>, so <math>\frac{x}{\sqrt{11}} = \frac{y}{x} \Longrightarrow x^2 = y\sqrt{11}</math>.
+
+Let <math>E</math> be the foot of the altitude from <math>A</math> to <math>\overline{CD}</math>. Then <math>AE = x</math>, and <math>ADE</math> is a [[right triangle]]. By the [[Pythagorean Theorem]], 
+
+<cmath>x^2 + \left(y-\sqrt{11}\right)^2 = 1001 \Longrightarrow x^4 - 11x^2 - 11^2 \cdot 9 \cdot 10 = 0</cmath>
+
+The positive solution to this [[quadratic equation]] is <math>x^2 = \boxed{110}</math>.
+
+<center><asy>
+size(200); pathpen = linewidth(0.7);
+pair C=(0,0),B=(0,110^.5),A=(11^.5,B.y),D=(10*11^.5,0),E=foot(A,C,D);
+D(MP("A",A,(2,.5))--MP("B",B,W)--MP("C",C)--MP("D",D)--cycle); D(A--C);D(B--D);D(A--E,linetype("4 4") + linewidth(0.7));
+MP("\sqrt{11}",(A+B)/2,N);MP("\sqrt{1001}",(A+D)/2,NE);MP("\sqrt{1001}",(A+D)/2,NE);MP("x",(B+C)/2,W);MP("y",(D+C)/2);D(rightanglemark(B,IP(A--C,B--D),C,20));
+</asy></center>
+
+=== Solution 2 ===
+Let <math>BC=x</math>. Dropping the altitude from <math>A</math> and using the Pythagorean Theorem tells us that <math>CD=\sqrt{11}+\sqrt{1001-x^2}</math>. Therefore, we know that vector <math>\vec{BD}=\langle \sqrt{11}+\sqrt{1001-x^2},-x\rangle</math> and vector <math>\vec{AC}=\langle-\sqrt{11},-x\rangle</math>. Now we know that these vectors are perpendicular, so their dot product is 0.<cmath>\vec{BD}\cdot \vec{AC}=-11-\sqrt{11(1001-x^2)}+x^2=0</cmath>
+<cmath>(x^2-11)^2=11(1001-x^2)</cmath>
+<cmath>x^4-11x^2-11\cdot 990=0.</cmath>
+As above, we can solve this quadratic to get the positve solution <math>BC^2=x^2=\boxed{110}</math>.
+
+=== Solution 3 ===
+Let <math>BC=x</math> and <math>CD=y+\sqrt{11}</math>. From Pythagoras with <math>AD</math>, we obtain <math>x^2+y^2=1001</math>. Since <math>AC</math> and <math>BD</math> are perpendicular diagonals of a quadrilateral, then <math>AB^2+CD^2=BC^2+AD^2</math>, so we have <cmath>\left(y+\sqrt{11}\right)^2+11=x^2+1001.</cmath> Substituting <math>x^2=1001-y^2</math> and simplifying yields <cmath>y^2+\sqrt{11}y-990=0,</cmath> and the quadratic formula gives <math>y=9\sqrt{11}</math>. Then from <math>x^2+y^2=1001</math>, we plug in <math>y</math> to find <math>x^2=\boxed{110}</math>.
+
+
+=== Solution 4 ===
+
+Let <math>E</math> be the intersection of the diagonals. Since the diagonals are perpendicular, applying the Pythagorean Theorem multiple times we have
+<cmath>\begin{align*}
+BC^2&=BE^2+CE^2 \\
+&=(AB^2-AE^2)+(CD^2-DE^2) \\
+&=CD^2+\sqrt{11}^2-(AE^2+DE^2) \\
+&=CD^2+11-AD^2 \\
+&=CD^2-990
+\end{align*}</cmath>
+Followed by dropping the perpendicular like in solution 1, we obtain system of equation
+<cmath>BC^2=CD^2-990</cmath>
+<cmath>BC^2+CD^2-2\sqrt{11}CD=990</cmath>
+Rearrange the first equation yields
+<cmath>BC^2-CD^2=990</cmath>
+Equating it with the second equation we have
+<cmath>BC^2-CD^2=BC^2+CD^2-2\sqrt{11}CD</cmath>
+Which gives <math>CD^2=\frac{BC^2}{11}</math>.
+Substituting into equation 1 obtains the quadratic in terms of <math>BC^2</math>
+<cmath>(BC^2)^2-11BC^2-11\cdot990=0</cmath>
+Solving the quadratic to obtain <math>BC^2=\boxed{110}</math>.
+
+~ Nafer

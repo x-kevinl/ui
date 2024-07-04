@@ -1,0 +1,4 @@
+==Problem==
+How many positive factors does $23,232$ have?
+
+$\textbf{(A) }9\qquad\textbf{(B) }12\qquad\textbf{(C) }28\qquad\textbf{(D) }36\qquad\textbf{(E) }42$

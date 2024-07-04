@@ -1,0 +1,20 @@
+== Solution ==
+<center><asy>
+import three; currentprojection = orthographic(camera=(1/4,2,3/4)); defaultpen(linewidth(0.7)); pen l = linewidth(0.5) + linetype("10 2");
+
+triple S=(1,0,0), T=(2,0,2), U=(8,6,8), V=(8,8,6), W=(2,2,0), X=(6,8,8);
+draw((1,0,0)--(8,0,0)--(8,0,8)--(0,0,8)--(0,0,1)); draw((1,0,0)--(8,0,0)--(8,8,0)--(0,8,0)--(0,1,0),l); draw((0,8,0)--(0,8,8)); draw((0,8,8)--(0,0,8)--(0,0,1)); draw((8,8,0)--(8,8,6),l); draw((8,0,8)--(8,6,8)); draw((0,8,8)--(6,8,8));
+
+draw(S--T--U--V--W--cycle); draw((0,0,1)--T--U--X--(0,2,2)--cycle); draw((0,1,0)--W--V--X--(0,2,2)--cycle);
+</asy> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asy>
+import three; currentprojection = orthographic(camera=(1/2,1/3,-1/4)); defaultpen(linewidth(0.7)); pen l = linewidth(0.5) + linetype("10 2");
+
+triple S=(1,0,0), T=(2,0,2), U=(8,6,8), V=(8,8,6), W=(2,2,0), X=(6,8,8);
+draw((1,0,0)--(8,0,0)--(8,0,8),l); draw((8,0,8)--(0,0,8)); draw((0,0,8)--(0,0,1),l); draw((8,0,0)--(8,8,0)); draw((8,8,0)--(0,8,0)); draw((0,8,0)--(0,1,0),l); draw((0,8,0)--(0,8,8)); draw((0,0,8)--(0,0,1),l); draw((8,8,0)--(8,8,6)); draw((8,0,8)--(8,6,8)); draw((0,0,8)--(0,8,8)--(6,8,8));
+
+draw(S--T--U--V--W--cycle); draw((0,0,1)--T--U--X--(0,2,2)--cycle); draw((0,1,0)--W--V--X--(0,2,2)--cycle);
+</asy></center>
+
+Set the coordinate system so that vertex <math>E</math>, where the drilling starts, is at <math>(8,8,8)</math>. Using a little visualization (involving some [[similar triangles]], because we have parallel lines) shows that the tunnel meets the bottom face (the xy plane one) in the line segments joining <math>(1,0,0)</math> to <math>(2,2,0)</math>, and <math>(0,1,0)</math> to <math>(2,2,0)</math>, and similarly for the other three faces meeting at the origin (by symmetry). So one face of the tunnel is the polygon with vertices (in that order), <math>S(1,0,0), T(2,0,2), U(8,6,8), V(8,8,6), W(2,2,0)</math>, and the other two faces of the tunnel are congruent to this shape. 
+
+Observe that this shape is made up of two congruent [[trapezoid]]s each with height <math>\sqrt {2}</math> and bases <math>7\sqrt {3}</math> and <math>6\sqrt {3}</math>. Together they make up an area of <math>\sqrt {2}(7\sqrt {3} + 6\sqrt {3}) = 13\sqrt {6}</math>. The total area of the tunnel is then <math>3\cdot13\sqrt {6} = 39\sqrt {6}</math>. Around the corner <math>E</math> we're missing an area of <math>6</math>, the same goes for the corner opposite <math>E</math> . So the outside area is <math>6\cdot 64 - 2\cdot 6 = 372</math>. Thus the the total surface area is <math>372 + 39\sqrt {6}</math>, and the answer is <math>372 + 39 + 6 = \boxed{417}</math>.

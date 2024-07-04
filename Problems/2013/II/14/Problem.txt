@@ -1,0 +1,2 @@
+==Problem 14==
+For positive integers <math>n</math> and <math>k</math>, let <math>f(n, k)</math> be the remainder when <math>n</math> is divided by <math>k</math>, and for <math>n > 1</math> let <math>F(n) = \max_{\substack{1\le k\le \frac{n}{2}}} f(n, k)</math>. Find the remainder when <math>\sum\limits_{n=20}^{100} F(n)</math> is divided by <math>1000</math>.

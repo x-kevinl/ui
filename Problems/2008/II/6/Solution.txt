@@ -1,0 +1,6 @@
+== Solution ==
+Rearranging the definitions, we have
+<cmath>\frac{a_n}{a_{n-1}} = \frac{a_{n-1}}{a_{n-2}} + 1,\quad \frac{b_n}{b_{n-1}} = \frac{b_{n-1}}{b_{n-2}} + 1</cmath>
+from which it follows that <math>\frac{a_n}{a_{n-1}} = 1+ \frac{a_{n-1}}{a_{n-2}} = \cdots = (n-1) + \frac{a_{1}}{a_0} = n</math> and <math>\frac{b_n}{b_{n-1}} = (n-1) + \frac{b_{1}}{b_0} = n+2</math>. These [[recursion]]s, <math>a_{n} = na_{n-1}</math> and <math>b_{n} = (n+2)b_{n-1}</math>, respectively, correspond to the explicit functions <math>a_n = n!</math> and <math>b_n = \frac{(n+2)!}{2}</math> (after applying our initial conditions). It follows that <math>\frac{b_{32}}{a_{32}} = \frac{\frac{34!}{2}}{32!} = \frac{34 \cdot 33}{2} = \boxed{561}</math>.
+
+From this, we can determine that the sequence <math>\frac {b_n}{a_n}</math> corresponds to the [[triangular number]]s.

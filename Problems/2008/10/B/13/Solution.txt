@@ -1,0 +1,4 @@
+==Solution 1==
+Since the mean of the first $n$ terms is $n$, the sum of the first $n$ terms is $n^2$. Thus, the sum of the first $2007$ terms is $2007^2$ and the sum of the first $2008$ terms is $2008^2$. Hence, the $2008^{\text{th}}$ term of the sequence is $2008^2-2007^2=(2008+2007)(2008-2007)=4015\Rightarrow \boxed{\textbf{(B) 4015}}$
+
+Note that $n^2$ is the sum of the first n odd integers.

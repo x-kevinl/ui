@@ -1,0 +1,4 @@
+== Solution ==
+ 
+The probability of rolling an even number on the first turn is $\frac{1}{2}$ and the probability of rolling the same number on the next turn is $\frac{1}{6}$. The probability of winning is $\frac{1}{2}\cdot \frac{1}{6} =\frac{1}{12}$. If the game is to be fair, the amount paid, $5$ dollars, must be $\frac{1}{12}$ the amount of the prize money, so the answer is
+$\boxed{\textbf{(D) } \$60}.$

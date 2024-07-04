@@ -1,0 +1,5 @@
+==Solution==
+
+
+
+To find the average, we add up the widths $6$, $\dfrac{1}{2}$, $1$, $2.5$, and $10$, to get a total sum of $20$. Since there are $5$ books, the average book width is $\frac{20}{5}=4$ The answer is $\boxed{D}$.

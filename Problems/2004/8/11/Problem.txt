@@ -1,0 +1,11 @@
+==Problem==
+
+The numbers $-2, 4, 6, 9$ and $12$ are rearranged according to these rules:
+        
+         1. The largest isn't first, but it is in one of the first three places. 
+         2. The smallest isn't last, but it is in one of the last three places. 
+         3. The median isn't first or last.
+
+What is the average of the first and last numbers?
+
+$\textbf{(A)}\ 3.5 \qquad \textbf{(B)}\ 5 \qquad \textbf{(C)}\ 6.5 \qquad \textbf{(D)}\ 7.5 \qquad \textbf{(E)}\ 8$

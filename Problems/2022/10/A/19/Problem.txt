@@ -1,0 +1,7 @@
+==Problem==
+
+Define $L_n$ as the least common multiple of all the integers from $1$ to $n$ inclusive. There is a unique integer $h$ such that
+$$\frac{1}{1}+\frac{1}{2}+\frac{1}{3}+\cdots+\frac{1}{17}=\frac{h}{L_{17}}$$
+What is the remainder when $h$ is divided by $17$?
+
+$\textbf{(A) } 1 \qquad \textbf{(B) } 3 \qquad \textbf{(C) } 5 \qquad \textbf{(D) } 7 \qquad \textbf{(E) } 9$

@@ -1,0 +1,5 @@
+==Problem==
+
+Let $M$ be the midpoint of $\overline{AB}$ in regular tetrahedron $ABCD$. What is $\cos(\angle CMD)$?
+
+$\textbf{(A) } \frac14 \qquad \textbf{(B) } \frac13 \qquad \textbf{(C) } \frac25 \qquad \textbf{(D) } \frac12 \qquad \textbf{(E) } \frac{\sqrt{3}}{2}$

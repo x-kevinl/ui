@@ -1,0 +1,4 @@
+==Problem==
+Professor Chang has nine different language books lined up on a bookshelf: two Arabic, three German, and four Spanish. How many ways are there to arrange the nine books on the shelf keeping the Arabic books together and keeping the Spanish books together?
+
+$\textbf{(A) }1440\qquad\textbf{(B) }2880\qquad\textbf{(C) }5760\qquad\textbf{(D) }182,440\qquad \textbf{(E) }362,880$

@@ -1,0 +1,2 @@
+==Solution 1==
+Let the number of sixth graders be $s$, and the number of ninth graders be $n$. Thus, $\frac{n}{3}=\frac{2s}{5}$, which simplifies to $n=\frac{6s}{5}$. Since we are trying to find the value of $\frac{\frac{n}{3}+\frac{2s}{5}}{n+s}$, we can just substitute $\frac{6s}{5}$ for  $n$  into the equation. We then get a value of $\frac{\frac{\frac{6s}{5}}{3}+\frac{2s}{5}}{\frac{6s}{5}+s} = \frac{\frac{6s+6s}{15}}{\frac{11s}{5}} = \frac{\frac{4s}{5}}{\frac{11s}{5}} = \boxed{\textbf{(B)}~\frac{4}{11}}$.

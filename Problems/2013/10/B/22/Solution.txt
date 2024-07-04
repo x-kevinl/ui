@@ -1,0 +1,47 @@
+==Solution 1==
+First of all, note that $J$ must be $1$, $5$, or $9$ to preserve symmetry, since the sum of 1 to 9 is 45, and we need the remaining 8 to be divisible by 4 (otherwise we will have uneven sums). So, we have:
+
+<asy>
+pair A,B,C,D,E,F,G,H,J;
+A=(20,20(2+sqrt(2)));
+B=(20(1+sqrt(2)),20(2+sqrt(2)));
+C=(20(2+sqrt(2)),20(1+sqrt(2)));
+D=(20(2+sqrt(2)),20);
+E=(20(1+sqrt(2)),0);
+F=(20,0);
+G=(0,20);
+H=(0,20(1+sqrt(2)));
+J=(10(2+sqrt(2)),10(2+sqrt(2)));
+draw(A--B);
+draw(B--C);
+draw(C--D);
+draw(D--E);
+draw(E--F);
+draw(F--G);
+draw(G--H);
+draw(H--A);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(E);
+dot(F);
+dot(G);
+dot(H);
+dot(J);
+label("A",A,NNW);
+label("B",B,NNE);
+label("C",C,ENE);
+label("D",D,ESE);
+label("E",E,SSE);
+label("F",F,SSW);
+label("G",G,WSW);
+label("H",H,WNW);
+label("J $(1, 5, 9)$",J,SE);
+</asy>
+
+We also notice that $A+E = B+F = C+G = D+H$.  
+
+WLOG, assume that $J = 1$.  Thus the pairs of vertices must be $9$ and $2$, $8$ and $3$, $7$ and $4$, and $6$ and $5$.  There are $4! = 24$ ways to assign these to the vertices.  Furthermore, there are $2^{4} = 16$ ways to switch them (i.e. do $2$ $9$ instead of $9$ $2$).  
+
+Thus, there are $16(24) = 384$ ways for each possible J value.  There are $3$ possible J values that still preserve symmetry: $384(3) = \boxed{\textbf{(C) }1152}$

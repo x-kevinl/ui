@@ -1,0 +1,5 @@
+==Problem==
+
+Determine how many two-digit numbers satisfy the following property: when the number is added to the number obtained by reversing its digits, the sum is $132.$
+
+$\textbf{(A) }5\qquad\textbf{(B) }7\qquad\textbf{(C) }9\qquad\textbf{(D) }11\qquad \textbf{(E) }12$

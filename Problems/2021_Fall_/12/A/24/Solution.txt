@@ -1,0 +1,56 @@
+==Solution 1==
+
+Let $E$ be a point on $\overline{AB}$ such that $BCDE$ is a parallelogram. Suppose that $BC=ED=b, CD=BE=c,$ and $DA=d,$ so $AE=18-c,$ as shown below.
+<asy>
+/* Made by MRENTHUSIASM */
+size(250);
+pair A, B, C, D, E;
+A = (0,0);
+B = (18,0);
+D = A+9*dir(60);
+C = D+(7,0);
+E = D+(B-C);
+dot("$A$",A,1.5*SW,linewidth(4));
+dot("$B$",B,1.5*SE,linewidth(4));
+dot("$C$",C,1.5*NE,linewidth(4));
+dot("$D$",D,1.5*NW,linewidth(4));
+dot("$E$",E,1.5*S,linewidth(4));
+draw(A--B--C--D--cycle);
+draw(D--E,dashed);
+label("$60^\circ$",A,2.5*dir(30),fontsize(10));
+label("$18-c$",midpoint(A--E),1.5*S,red);
+label("$c$",midpoint(E--B),2.25*S,red);
+label("$b$",midpoint(B--C),scale(1.5)*rotate(90)*dir(midpoint(B--C)--B),red);
+label("$b$",midpoint(D--E),scale(1.5)*rotate(90)*dir(midpoint(E--D)--E),red);
+label("$c$",midpoint(C--D),1.5*N,red);
+label("$d$",midpoint(D--A),scale(1.5)*rotate(90)*dir(midpoint(D--A)--D),red);
+</asy>
+We apply the Law of Cosines to $\triangle ADE:$
+$$\begin{align*}
+AD^2 + AE^2 - 2\cdot AD\cdot AE\cdot\cos 60^\circ &= DE^2 \\
+d^2 + (18-c)^2 - d(18-c) &= b^2 \\
+(18-c)^2 - d(18-c) &= b^2 - d^2 \\
+(18-c)(18-c-d) &= (b+d)(b-d). \hspace{15mm}(\bigstar)
+\end{align*}$$
+Let $k$ be the common difference of the arithmetic progression of the side-lengths. It follows that $b,c,$ and $d$ are $18-k, 18-2k,$ and $18-3k,$ in some order. It is clear that $0\leq k<6.$
+
+If $k=0,$ then $ABCD$ is a rhombus with side-length $18,$ which is valid.
+
+If $k\neq0,$ then we have six cases:
+<ol style="margin-left: 1.5em;">
+  <li>$(b,c,d)=(18-k,18-2k,18-3k)$</li><p>
+Note that $(\bigstar)$ becomes $2k(5k-18)=(36-4k)(2k),$ from which $k=6.$ So, this case generates no valid solutions $(b,c,d).$<p>
+  <li>$(b,c,d)=(18-k,18-3k,18-2k)$</li><p>
+Note that $(\bigstar)$ becomes $3k(5k-18)=(36-3k)k,$ from which $k=5.$ So, this case generates $(b,c,d)=(13,3,8).$<p>
+  <li>$(b,c,d)=(18-2k,18-k,18-3k)$</li><p>
+Note that $(\bigstar)$ becomes $k(4k-18)=(36-5k)k,$ from which $k=6.$ So, this case generates no valid solutions $(b,c,d).$<p>
+  <li>$(b,c,d)=(18-2k,18-3k,18-k)$</li><p>
+Note that $(\bigstar)$ becomes $3k(4k-18)=(36-3k)(-k),$ from which $k=2.$ So, this case generates $(b,c,d)=(14,12,16).$<p>
+  <li>$(b,c,d)=(18-3k,18-k,18-2k)$</li><p>
+Note that $(\bigstar)$ becomes $k(3k-18)=(36-5k)(-k),$ from which $k=9.$ So, this case generates no valid solutions $(b,c,d).$<p>
+  <li>$(b,c,d)=(18-3k,18-2k,18-k)$</li><p>
+Note that $(\bigstar)$ becomes $2k(3k-18)=(36-4k)(-2k),$ from which $k=18.$ So, this case generates no valid solutions $(b,c,d).$<p>
+</ol>
+Together, the sum of all possible values of $a$ is $18+(13+3+8)+(14+12+16)=\boxed{\textbf{(E) } 84}.$
+
+~MRENTHUSIASM

@@ -1,0 +1,2 @@
+==Solution 1==
+$\langle\langle\langle 6\rangle\rangle\rangle= \langle\langle 6\rangle\rangle = \langle 6\rangle=\ 6\quad\Longrightarrow\quad\mathrm{(A)}$

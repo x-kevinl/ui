@@ -1,0 +1,2 @@
+== Problem ==
+Two positive integers differ by <math>60</math>. The sum of their square roots is the square root of an integer that is not a perfect square. What is the maximum possible sum of the two integers?

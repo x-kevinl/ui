@@ -1,0 +1,12 @@
+==Solution 1 (casework)==
+The natural way to go is casework. And the natural process is to sort <math>f</math> and <math>g</math> based on range size! Via Pigeonhole Principle, we see that the only real possibilities are: <math>f 1 g 1; f 1 g 2; f 1 g 3; f 2 g 2</math>. Note that the <math>1, 2</math> and <math>1, 3</math> cases are symmetrical and we need just a <math>*2</math>. Note also that the total number of cases is <math>4^4*4^4=4^8</math>.
+
+<math>f 1 g 1</math>: clearly, we choose one number as the range for <math>f</math>, one for <math>g</math>, yielding <math>12</math> possibilities.
+
+<math>f 1 g 2</math> with symmetry (WLOG <math>f</math> has 1 element): start by selecting numbers for the ranges. This yields <math>4</math> for the one number in <math>f</math>, and <math>3</math> options for the two numbers for <math>g</math>. Afterwards, note that the function with 2 numbers in the range can have <math>4+6+4=14</math> arrangements of these two numbers (1 of one, 3 of the other *2 and 2 of each). Therefore, we have <math>2*12*14</math> possibilities, the 2 from symmetry.
+
+<math>f 2 g 2</math>: no symmetry, still easy! Just note that we have <math>6</math> choices of which numbers go to <math>f</math> and <math>g</math>, and within each, <math>14*14=196</math> choices for the orientation of each of the two numbers. That's <math>6*196</math> possibilities.
+
+<math>f 1 g 3</math>: again, symmetrical (WLOG <math>f</math> has one element): <math>4</math> ways to select the single element for <math>f</math>, and then find the number of ways to distribute the <math>3</math> distinct numbers in the range for <math>g</math>. The only arrangement for the frequency of each number is <math>{1, 1, 2}</math> in some order. Therefore, we have <math>3</math> ways to choose which number is the one represented twice, and then note that there are <math>12</math> ways to arrange these! The number of possibilities in this situation is <math>2 * 4 * 3 * 12</math>.
+
+Total, divided by <math>4^8</math>, gets <math>\frac{3 * (1 + 2 * 7^2 + 2^2 * 7 + 2^3 * 3)}{4^7}</math>, with numerator <math>\boxed{453}</math>.

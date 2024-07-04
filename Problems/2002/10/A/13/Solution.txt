@@ -1,0 +1,14 @@
+==Solution==
+===Solution 1===
+This is a Pythagorean triple (a $3-4-5$ actually) with legs $15$ and $20$. The area is then $\frac{(15)(20)}{2}=150$. Now, consider an altitude drawn to any side. Since the area remains constant, the altitude and side to which it is drawn are inversely proportional. To get the smallest altitude, it must be drawn to the hypotenuse. Let the length be $x$; we have $\frac{(x)(25)}{2}=\frac{(15)(20)}{2}$, so $25x=300$ and $x$ is 12. Our answer is then $\boxed{\textbf{(B)}\ 12}$.
+
+===Solution 2===
+By [[Heron's formula]], the area is $150$, hence the shortest altitude's length is $2\cdot\frac{150}{25}=\boxed{12\Rightarrow \textbf{(B)}}$.
+
+===Solution 3 (similarity rule)===
+
+The sides are in the ratio of $3-4-5$, and are therefore a Pythagorean Triple and a part of a right triangle.
+We know two altitudes, the legs $15$ and $20$. All that is left is to check the altitude from the right angle vertex to the hypotenuse. There is a rule that states that the three triangles formed when the altitude is dropped (the big triangle and two smaller ones it gets split into) are similar! We take the triangle with hypotenuse $20$. The ratio of sides between that triangle and the bigger one is $4:5$. Since the side of length $15$ in the big triangle corresponds with our altitude, we take $15\cdot\frac{4}{5}$ to get our answer ${12}$ or $\boxed{\textbf{(B)}\ 12}$.
+
+===Solution 4 (fast calculation)===
+The triangle forms a $3-4-5$ right triangle, so we can first draw a triangle with legs $3$ and $4$ and hypotenuse $5$. The two altitudes $3$ and $4$ are known, and the area is $6$; therefore $5x/2 = 6$, and $x=12/5$, which is clearly less than $3$ or $4$. Now scale the triangle back up by multiplying every dimension by $5$. The smallest altitude is then $12/5 * 5$ = ${12}$ or $\boxed{\textbf{(B)}\ 12}$

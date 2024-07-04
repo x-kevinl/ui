@@ -1,0 +1,148 @@
+== Solution ==
+
+=== Solution 1 ===
+
+It shouldn't be hard to use [[trigonometry]] to bash this and find the height, but there is a much easier way. Extend $\overline{AD}$ and $\overline{BC}$ to meet at point $E$:
+
+<center><asy>
+size(250);
+defaultpen(0.8);
+pair A=(0,0), B = (52,0), C=(52-144/13,60/13), D=(25/13,60/13), F=(100/13,240/13);
+draw(A--B--C--D--cycle);
+draw(D--F--C,dashed);
+label("\(A\)",A,S);
+label("\(B\)",B,S);
+label("\(C\)",C,NE);
+label("\(D\)",D,W);
+label("\(E\)",F,N);
+label("39",(C+D)/2,N);
+label("52",(A+B)/2,S);
+label("5",(A+D)/2,E);
+label("12",(B+C)/2,WSW);
+</asy></center>
+
+Since $\overline{AB} || \overline{CD}$ we have $\triangle AEB \sim \triangle DEC$, with the ratio of [[proportion]]ality being $\frac {39}{52} = \frac {3}{4}$. Thus
+$$
+\begin{align*} \frac {CE}{CE + 12} = \frac {3}{4} & \Longrightarrow CE = 36 \\
+\frac {DE}{DE + 5} = \frac {3}{4} & \Longrightarrow DE = 15 \end{align*}
+$$
+So the sides of $\triangle CDE$ are $15,36,39$, which we recognize to be a $5 - 12 - 13$ [[right triangle]]. Therefore (we could simplify some of the calculation using that the ratio of areas is equal to the ratio of the sides squared),
+$$
+[ABCD] = [ABE] - [CDE] = \frac {1}{2}\cdot 20 \cdot 48 - \frac {1}{2} \cdot 15 \cdot 36 = \boxed{\mathrm{(C)}\ 210}$$
+
+=== Solution 2 ===
+
+Draw altitudes from points $C$ and $D$:
+
+<center><asy>
+unitsize(0.2cm);
+defaultpen(0.8);
+pair A=(0,0), B = (52,0), C=(52-144/13,60/13), D=(25/13,60/13), E=(52-144/13,0), F=(25/13,0);
+draw(A--B--C--D--cycle);
+draw(C--E,dashed);
+draw(D--F,dashed);
+label("\(A\)",A,SW);
+label("\(B\)",B,S);
+label("\(C\)",C,NE);
+label("\(D\)",D,N);
+label("\(D'\)",F,SSE);
+label("\(C'\)",E,S);
+label("39",(C+D)/2,N);
+label("52",(A+B)/2,S);
+label("5",(A+D)/2,W);
+label("12",(B+C)/2,ENE);
+</asy></center>
+
+Translate the triangle $ADD'$ so that $DD'$ coincides with $CC'$. We get the following triangle:
+
+<center><asy>
+unitsize(0.2cm);
+defaultpen(0.8);
+pair A=(0,0), B = (13,0), C=(25/13,60/13), F=(25/13,0);
+draw(A--B--C--cycle);
+draw(C--F,dashed);
+label("\(A'\)",A,SW);
+label("\(B\)",B,S);
+label("\(C\)",C,N);
+label("\(C'\)",F,SE);
+label("5",(A+C)/2,W);
+label("12",(B+C)/2,ENE);
+</asy></center>
+
+The length of $A'B$ in this triangle is equal to the length of the original $AB$, minus the length of $CD$.
+Thus $A'B = 52 - 39 = 13$.
+
+Therefore $A'BC$ is a well-known $(5,12,13)$ right triangle. Its area is $[A'BC]=\frac{A'C\cdot BC}2 = \frac{5\cdot 12}2 = 30$, and therefore its altitude $CC'$ is $\frac{[A'BC]}{A'B} = \frac{60}{13}$.
+
+Now the area of the original trapezoid is $\frac{(AB+CD)\cdot CC'}2 = \frac{91 \cdot 60}{13 \cdot 2} = 7\cdot 30 = \boxed{\mathrm{(C)}\ 210}$
+
+=== Solution 3 ===
+
+Draw altitudes from points $C$ and $D$:
+
+<center><asy>
+unitsize(0.2cm);
+defaultpen(0.8);
+pair A=(0,0), B = (52,0), C=(52-144/13,60/13), D=(25/13,60/13), E=(52-144/13,0), F=(25/13,0);
+draw(A--B--C--D--cycle);
+draw(C--E,dashed);
+draw(D--F,dashed);
+label("\(A\)",A,SW);
+label("\(B\)",B,S);
+label("\(C\)",C,NE);
+label("\(D\)",D,N);
+label("\(D'\)",F,SSE);
+label("\(C'\)",E,S);
+label("39",(C+D)/2,N);
+label("52",(A+B)/2,S);
+label("5",(A+D)/2,W);
+label("12",(B+C)/2,ENE);
+</asy></center>
+
+Call the length of $AD'$ to be $y$, the length of $BC'$ to be $z$, and the height of the trapezoid to be $x$.
+By the Pythagorean Theorem, we have:
+$$z^2 + x^2 = 144$$
+$$y^2 + x^2 = 25$$
+
+Subtracting these two equation yields:
+$$z^2-y^2=119 \implies (z+y)(z-y)=119$$
+
+We also have: $z+y=52-39=13$.
+
+We can substitute the value of $z+y$ into the equation we just obtained, so we now have:
+
+$$(13) (z-y)=119 \implies z-y=\frac{119}{13}$$.
+
+We can add the $z+y$ and the $z-y$ equation to find the value of $z$, which simplifies down to be $\frac{144}{13}$. Finally, we can plug in $z$ and use the Pythagorean theorem to find the height of the trapezoid.
+
+$$\frac{12^4}{13^2} + x^2 = 12^2 \implies x^2 = \frac{(12^2)(13^2)}{13^2} -\frac{12^4}{13^2}  \implies x^2 = \frac{(12 \cdot 13)^2 - (144)^2}{13^2} \implies x^2 = \frac{(156+144)(156-144)}{13^2} \implies x = \sqrt{\frac{3600}{169}} = \frac{60}{13}$$
+
+Now that we have the height of the trapezoid, we can multiply this by the median to find our answer.
+
+The median of the trapezoid is $\frac{39+52}{2} = \frac{91}{2}$, and multiplying this and the height of the trapezoid gets us:
+
+$$\frac{60 \cdot 91}{13 \cdot 2} = \boxed{\mathrm{(C)}\ 210}$$
+
+=== Solution 4 ===
+
+We construct a line segment parallel to $\overline{AD}$ from point $C$ to line $\overline{AB},$ and label the intersection of this segment with line $\overline{AB}$ as point $E.$ Then quadrilateral $AECD$ is a parallelogram, so $CE=5, AE=39,$ and $EB=13.$ Triangle $EBC$ is therefore a right triangle, with area $\frac12 \cdot 5 \cdot 12 = 30.$
+
+By continuing to split $\overline{AB}$ and $\overline{CD}$ into segments of length $13,$ we can connect these vertices in a "zig-zag," creating seven congruent right triangles, each with sides $5,12,$ and $13,$ and each with area $30.$ The total area is therefore $7 \cdot 30 = \boxed{\textbf{(C)} 210}.$
+
+Alternative: Instead of creating seven congruent right triangles, we can find the height of parallelogram $AECD$ by drawing an altitude from $D$ to side $AE$, creating the new point $F$. By recognizing that triangle $DAF$ is similar to triangle $BEC$, we can use properties of similar triangles and find that $DE = 12 \cdot \frac{5}{13} = \frac{60}{13}$. Thus, the area of parallelogram $AECD$ is $\frac{60}{13} \cdot 39 = 180$. Finally, we add the areas of the parallelogram $AECD$ and the right triangle $BEC$ together and we get $180 + 30 = \boxed{\textbf{(C)} 210}$. ~scarletsyc
+
+=== Solution 2 but quicker ===
+From Solution $2$ we know that the the altitude of the trapezoid is $\frac{60}{13}$ and the triangle's area is $30$.
+Note that once we remove the triangle we get a rectangle with length $39$ and height $\frac{60}{13}$.
+The numbers multiply nicely to get $180+30=\boxed{(C) 210}$
+-harsha12345
+
+=== Quick Time Trouble Solution 5 ===
+
+First note how the answer choices are all integers.
+The area of the trapezoid is $\frac{39+52}{2} \cdot h = \frac{91}{2} h$. So h divides 2. Let $x$ be $2h$. The area is now $91x$. 
+Trying $x=1$ and $x=2$ can easily be seen to not work. Those make the only integers possible so now you know x is a fraction. 
+Since the area is an integer the denominator of x must divide either 13 or 7 since $91 = 13\cdot7$.
+Seeing how $39 = 3\cdot13$ and $52 = 4\cdot13$ assume that the denominator divides 13. Letting $y = \frac{x}{13}$ the area is now $7y$.
+Note that (A) and (C) are the only multiples of 7. We know that A doesn't work because that would mean $h$ is $4$ which we ruled out. 
+So the answer is $\boxed{\textbf{(C)} 210}$. - megateleportingrobots

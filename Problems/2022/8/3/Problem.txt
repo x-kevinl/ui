@@ -1,0 +1,5 @@
+==Problem==
+
+When three positive integers $a$, $b$, and $c$ are multiplied together, their product is $100$. Suppose $a < b < c$. In how many ways can the numbers be chosen?
+
+$\textbf{(A) } 0 \qquad \textbf{(B) } 1\qquad\textbf{(C) } 2\qquad\textbf{(D) } 3\qquad\textbf{(E) } 4$

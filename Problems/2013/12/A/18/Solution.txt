@@ -1,0 +1,9 @@
+==Solution 1==
+
+Set up an isosceles triangle between the center of the 8th sphere and two opposite ends of the hexagon. Then set up another triangle between the point of tangency of the 7th and 8th spheres, and the points of tangency between the 7th sphere and 2 of the original spheres on opposite sides of the hexagon. Express each side length of the triangles in terms of r (the radius of sphere 8) and h (the height of the first triangle). You can then use Pythagorean Theorem to set up two equations for the two triangles, and find the values of h and r.
+
+$(1+r)^2=2^2+h^2$
+
+$(3\sqrt{2})^2=3^2+(h+r)^2$
+
+$r = \boxed{\textbf{(B) }\frac{3}{2}}$

@@ -1,0 +1,12 @@
+== Solution 1 ==
+
+The probability of three heads and five tails is <math>\binom {8}{3}p^3(1-p)^5</math> and the probability of five heads and three tails is <math>\binom {8}{3}p^5(1-p)^3</math>.
+
+<cmath>\begin{align*}
+25\binom {8}{3}p^3(1-p)^5&=\binom {8}{3}p^5(1-p)^3 \\
+25(1-p)^2&=p^2 \\
+25p^2-50p+25&=p^2 \\
+24p^2-50p+25&=0 \\
+p&=\frac {5}{6}\end{align*}</cmath>
+
+Therefore, the answer is <math>5+6=\boxed{011}</math>.

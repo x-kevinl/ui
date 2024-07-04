@@ -1,0 +1,5 @@
+==Solution 1==
+The area of the shaded region is $(24s)^2$. To find the area of the large square, we note that there is a $d$-inch border between each of the $23$ pairs of consecutive squares, as well as from between first/last squares and the large square, for a total of $23+2 = 25$ times the length of the border, i.e. $25d$. Adding this to the total length of the consecutive squares, which is $24s$, the side length of the large square is $(24s+25d)$, yielding the equation $\frac{(24s)^2}{(24s+25d)^2}=\frac{64}{100}$. Taking the square root of both sides (and using the fact that lengths are non-negative) gives $\frac{24s}{24s+25d}=\frac{8}{10} = \frac{4}{5}$, and cross-multiplying now gives $120s = 96s + 100d \Rightarrow 24s = 100d \Rightarrow \frac{d}{s} = \frac{24}{100} = \boxed{\textbf{(A) }\frac{6}{25}}$.
+
+
+Note: Once we obtain $\tfrac{24s}{24s+25d} = \tfrac{4}{5},$ to ease computation, we may take the reciprocal of both sides to yield $\tfrac{24s+25d}{24s} = 1 + \tfrac{25d}{24s} = \tfrac{5}{4},$ so $\tfrac{25d}{24s} = \tfrac{1}{4}.$ Multiplying both sides by $\tfrac{24}{25}$ yields the same answer as before. ~peace09

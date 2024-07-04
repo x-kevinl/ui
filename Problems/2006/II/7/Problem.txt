@@ -1,0 +1,4 @@
+== Problem ==
+Find the number of [[ordered pair]]s of [[positive]] [[integer]]s <math> (a,b) </math> such that <math> a+b=1000 </math> and neither <math> a </math> nor <math> b </math> has a zero digit.
+
+__TOC__

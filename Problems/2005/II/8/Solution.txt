@@ -1,0 +1,42 @@
+== Solution ==
+<center>
+<asy>
+pointpen = black; 
+pathpen = black + linewidth(0.7); 
+size(200);
+
+pair C1 = (-10,0), C2 = (4,0), C3 = (0,0), H = (-10-28/3,0), T = 58/7*expi(pi-acos(3/7)); 
+path cir1 = CR(C1,4.01), cir2 = CR(C2,10), cir3 = CR(C3,14), t = H--T+2*(T-H);
+pair A = OP(cir3, t), B = IP(cir3, t), T1 = IP(cir1, t), T2 = IP(cir2, t);
+
+draw(cir1); draw(cir2); draw(cir3); 
+draw((14,0)--(-14,0));
+draw(A--B); 
+MP("H",H,W);
+draw((-14,0)--H--A, linewidth(0.7) + linetype("4 4"));
+
+draw(MP("O_1",C1)); 
+draw(MP("O_2",C2)); 
+draw(MP("O_3",C3)); 
+
+draw(MP("T",T,N)); 
+draw(MP("A",A,NW)); 
+draw(MP("B",B,NE)); 
+draw(C1--MP("T_1",T1,N)); 
+
+draw(C2--MP("T_2",T2,N)); 
+draw(C3--T); 
+draw(rightanglemark(C3,T,H));
+</asy></center>
+
+Let <math>O_1, O_2, O_3</math> be the centers and <math>r_1 = 4, r_2 = 10,r_3 = 14</math> the radii of the circles <math>C_1, C_2, C_3</math>. Let <math>T_1, T_2</math> be the points of tangency from the common external tangent of <math>C_1, C_2</math>, respectively, and let the extension of <math>\overline{T_1T_2}</math> intersect the extension of <math>\overline{O_1O_2}</math> at a point <math>H</math>. Let the endpoints of the chord/tangent be <math>A,B</math>, and the foot of the perpendicular from <math>O_3</math> to <math>\overline{AB}</math> be <math>T</math>. From the similar [[right triangle]]s <math>\triangle HO_1T_1 \sim \triangle HO_2T_2 \sim \triangle HO_3T </math>,
+
+<cmath> \frac{HO_1}{4} = \frac{HO_1+14}{10} = \frac{HO_1+10}{O_3T}. </cmath>
+
+It follows that <math>HO_1 = \frac{28}{3}</math>, and that <math>O_3T = \frac{58}{7}\dagger</math>. By the [[Pythagorean Theorem]] on <math>\triangle ATO_3</math>, we find that 
+
+<cmath>AB = 2AT = 2\left(\sqrt{r_3^2 - O_3T^2}\right) = 2\sqrt{14^2 - \frac{58^2}{7^2}} = \frac{8\sqrt{390}}{7}</cmath>
+
+and the answer is <math>m+n+p=\boxed{405}</math>.
+
+<math>\dagger</math> Alternatively, drop an altitude from <math>O_1</math> to <math>O_3T</math> at <math>O_3'</math>, and to <math>O_2T_2</math> at <math>O_2'</math>. Then, <math>O_2O_2'=10-4=6</math>, and <math>O_1O_2=14</math>. But <math>O_1O_3O_3'</math> is similar to <math>O_1O_2O_2'</math> so <math>O_3O_3'=\frac{6}{14} \cdot 10=\frac{30}{7}</math>. From rectangles, <math>O_3'T=O_1T_1=4</math> so <math>O_3T=4+\frac{30}{7}=\frac{58}{7}</math>.

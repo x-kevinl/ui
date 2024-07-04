@@ -1,0 +1,8 @@
+==Solution 1==
+We can separate this into two cases. If an integer is a multiple of $5,$ the last digit must be either $0$ or $5.$
+
+Case 1: The last digit is $5.$ The leading digit can be $1,2,3,$ or $4.$ Because the second digit can be $0$ but not the leading digit, there are also $4$ choices. The third digit cannot be the leading digit or the second digit, so there are $3$ choices. The number of integers is this case is $4\cdot4\cdot3\cdot1=48.$
+
+Case 2: The last digit is $0.$ Because $5$ is the largest digit, one of the remaining three digits must be $5.$ There are $3$ ways to choose which digit should be $5.$ The remaining digits can be $1,2,3,$ or $4,$ but since they have to be different there are $4\cdot3$ ways to choose. The number of integers in this case is $1\cdot3\cdot4\cdot3=36.$
+
+Therefore, the answer is $48+36=\boxed{\textbf{(D)}\ 84}$.

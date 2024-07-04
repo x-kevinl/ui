@@ -1,0 +1,4 @@
+== Solution ==
+Let the $n$th term of the series be $ar^{n-1}$.  Because
+$$\frac {8!}{7!} = \frac {ar^7}{ar^4} = r^3 = 8,$$
+it follows that $r = 2$ and the first term is $a = \frac {7!}{r^4} = \frac {7!}{16} = \boxed{315}$.  The answer is $\mathrm{(E)}$.

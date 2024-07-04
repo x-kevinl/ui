@@ -1,0 +1,13 @@
+== Solution 1 ==
+
+We are given that <cmath>100a + 10b + c = 81b + 9c + a,</cmath> which rearranges to <cmath>99a = 71b + 8c.</cmath>
+Taking both sides modulo <math>71,</math> we have
+<cmath>\begin{align*}
+28a &\equiv 8c \pmod{71} \\
+7a &\equiv 2c \pmod{71}.
+\end{align*}</cmath>
+The only solution occurs at <math>(a,c)=(2,7),</math> from which <math>b=2.</math>
+
+Therefore, the requested three-digit positive integer is <math>\underline{a}\,\underline{b}\,\underline{c}=\boxed{227}.</math>
+
+~MRENTHUSIASM

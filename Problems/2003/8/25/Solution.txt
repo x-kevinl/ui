@@ -1,0 +1,4 @@
+==Solution==
+We see that $XY = 5$, the vertical distance between $B$ and $X$ is $1$, and the vertical distance between $C$ and $Y$ is $1$. Therefore, $BC = 5 - 1 - 1 = 3$. We are given that the length of the altitude of $\triangle ABC$ is equal to the distance between $\overline{BC}$ and $O$, which is $1 + 1 + \frac{5}{2} = \frac{9}{2}$. So the area of $\triangle ABC$ is $\frac{1}{2}\left(3\cdot \frac{9}{2}\right)$, which is $\boxed{\textbf{(C)} \ \frac{27}{4}}$.
+
+~sidkris

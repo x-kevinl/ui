@@ -1,0 +1,2 @@
+== Problem ==
+Of the students attending a school party, <math>60\%</math> of the students are girls, and <math>40\%</math> of the students like to dance. After these students are joined by <math>20</math> more boy students, all of whom like to dance, the party is now <math>58\%</math> girls. How many students now at the party like to dance?

@@ -1,0 +1,14 @@
+==Solution 1==
+
+For this problem, we will have to write a three-variable equation, but not necessarily solve it. Let $a, b,$ and $c$ represent the original portions of Al, Betty, and Clare, respectively. At the end of one year, they each have $a-100, 2b,$ and $2c$. From this, we can write two equations, marked by (1) and (2). 
+
+$$a+b+c=1000$$
+$$(1). \text{ }2a+2b+2c=2000$$
+$$a-100+2b+2c=1500$$
+$$(2). \text{ }a+2b+2c=1600$$
+
+(Equations (1) and (2) are derived from each equation above them.)
+
+Since all we need to find is $a,$ subtract the second equation from the first equation to get $a=400.$
+
+Al's original portion was $\boxed{\textbf{(C)}\ \textdollar 400}$.

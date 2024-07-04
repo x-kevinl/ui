@@ -1,0 +1,2 @@
+== Problem ==
+There is a unique positive real number <math>x</math> such that the three numbers <math>\log_8{2x}</math>, <math>\log_4{x}</math>, and <math>\log_2{x}</math>, in that order, form a geometric progression with positive common ratio.  The number <math>x</math> can be written as <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m + n</math>.

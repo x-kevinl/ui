@@ -1,0 +1,7 @@
+==Solution 1==
+
+Each of the vertices is counted $3$ times because each vertex is shared by three different edges. 
+Each of the edges is counted $2$ times because each edge is shared by two different faces. 
+Since the sum of the integers assigned to all vertices is $21$, the final answer is $ 21\times3\times2=\boxed{\textbf{(D) } 126}$
+
+~Mintylemon66

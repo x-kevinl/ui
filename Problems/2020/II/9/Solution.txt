@@ -1,0 +1,3 @@
+==Solution (Bash)==
+There are <math>2^{5}-1</math> intersections that we must consider if we are to perform a PIE bash on this problem. Since we don't really want to think that hard, and bashing does not take that long for this problem, we can write down half of all permutations that satisfy the conditions presented in the problem in "lexicographically next" order to keep track easily. We do this for all cases such that the first "person" is <math>A-C</math>, and multiply by two, since the number of working permutations with <math>D-F</math> as the first person is the same as if it were <math>A-C</math>, hence, after doing such a bash, we get <math>45\times2=90</math> permutations that result in no consecutive letters being adjacent to each other.
+~afatperson

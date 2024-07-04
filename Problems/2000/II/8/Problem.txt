@@ -1,0 +1,2 @@
+== Problem ==
+In [[trapezoid]] <math>ABCD</math>, leg <math>\overline{BC}</math> is [[perpendicular]] to bases <math>\overline{AB}</math> and <math>\overline{CD}</math>, and diagonals <math>\overline{AC}</math> and <math>\overline{BD}</math> are perpendicular. Given that <math>AB=\sqrt{11}</math> and <math>AD=\sqrt{1001}</math>, find <math>BC^2</math>.

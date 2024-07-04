@@ -1,0 +1,5 @@
+==Problem==
+For integers <math>a</math> and <math>b</math> consider the complex number
+<cmath>\frac{\sqrt{ab+2016}}{ab+100}-\left({\frac{\sqrt{|a+b|}}{ab+100}}\right)i</cmath>
+
+Find the number of ordered pairs of integers <math>(a,b)</math> such that this complex number is a real number.

@@ -1,0 +1,3 @@
+== Solution ==
+
+The length of the rectangle will relate invertly to the width, specifically using the theorem $ l=\frac{12}{w} $. The only graph that could represent a inverted relationship is $ \boxed{\textbf{(A)}} $. (The rest are linear graphs that represent direct relationships, therefore they are incorrect.)

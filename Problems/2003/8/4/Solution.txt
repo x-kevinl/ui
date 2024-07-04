@@ -1,0 +1,8 @@
+==Solution==
+===Solution 1===
+If all the children were riding bicycles, there would be $ 2 \times 7=14 $ wheels. Each tricycle adds an extra wheel and $ 19-14=5 $ extra wheels are needed, so there are $ \boxed{\mathrm{(C)}\ 5} $ tricycles.
+
+===Solution 2===
+Setting up an equation, we have $a+b=7$ children and $3a+2b=19$. Solving for the variables, we get, $a=\boxed{\mathrm{(C)}\ 5} $ tricycles.
+
+~AllezW

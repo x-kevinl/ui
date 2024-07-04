@@ -1,0 +1,13 @@
+== Solution ==
+Out of all ten-element subsets with distinct elements that do not possess the triangle property, we want to find the one with the smallest maximum element. Call this subset <math>\mathcal{S}</math>. Without loss of generality, consider any <math>a, b, c \,\in \mathcal{S}</math> with <math>a < b < c</math>. <math>\,\mathcal{S}</math> does not possess the [[triangle inequality|triangle property]], so <math>c \geq a + b</math>. We use this property to build up <math>\mathcal{S}</math> from the smallest possible <math>a</math> and <math>b</math>:
+
+<cmath>\mathcal{S} = \{\, 4,\, 5,\, 4+5, \,5+(4+5),\, \ldots\,\} = \{4, 5, 9, 14, 23, 37, 60, 97, 157, 254\}</cmath>
+
+<math>\mathcal{S}</math> is the "smallest" ten-element subset without the triangle property, and since the set <math>\{4, 5, 6, \ldots, 253\}</math> is the largest set of consecutive integers that does not contain this subset, it is also the largest set of consecutive integers in which all ten-element subsets possess the triangle property. Thus, our answer is <math>n = \fbox{253}</math>.
+
+===Note===
+
+If we wanted to find this for a much larger number (say 2001), we could have noted that this is a "quasi-Fibonacci" sequence with initial terms <math>4,5</math> and built up an explicit function to find the <math>nth</math> term. (The latter part is generally pretty annoying).
+
+~Dhillonr25
+~Minor edit by Yiyj1

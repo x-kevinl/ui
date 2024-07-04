@@ -1,0 +1,6 @@
+== Solution ==
+
+[[File:Pentonimoes.gif]]
+
+The ones with lines over the shapes have at least one line of symmetry. Counting the number of shapes that have line(s) on them,
+we find $ \boxed{\textbf{(D)}\ 6} $ pentominoes.

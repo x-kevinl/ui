@@ -1,0 +1,8 @@
+==Problem==
+Let <math>f(n)</math> and <math>g(n)</math> be functions satisfying
+<cmath>f(n) = \begin{cases}\sqrt{n} & \text{ if } \sqrt{n} \text{ is an integer}\\
+1 + f(n+1) & \text{ otherwise}
+\end{cases}</cmath>and
+<cmath>g(n) = \begin{cases}\sqrt{n} & \text{ if } \sqrt{n} \text{ is an integer}\\
+2 + g(n+2) & \text{ otherwise}
+\end{cases}</cmath>for positive integers <math>n</math>. Find the least positive integer <math>n</math> such that <math>\tfrac{f(n)}{g(n)} = \tfrac{4}{7}</math>.

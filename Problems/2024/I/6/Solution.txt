@@ -1,0 +1,12 @@
+==Solution 1==
+We divide the path into eight “<math>R</math>” movements and eight “<math>U</math>” movements. Five sections of alternative <math>RURUR</math> or <math>URURU</math> are necessary in order to make four “turns.” We use the first case and multiply by <math>2</math>.
+
+
+For <math>U</math>, we have seven ordered pairs of positive integers <math>(a,b)</math> such that <math>a+b=8</math>.
+
+For <math>R</math>, we subtract <math>1</math> from each section (to make the minimum stars of each section <math>0</math>) and we use Stars and Bars to get <math>{7 \choose 5}=21</math>.
+
+
+Thus our answer is <math>7\cdot21\cdot2=\boxed{294}</math>.
+
+~eevee9406

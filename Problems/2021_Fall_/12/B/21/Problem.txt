@@ -1,0 +1,9 @@
+==Problem==
+
+For real numbers $x$, let 
+$$P(x)=1+\cos(x)+i\sin(x)-\cos(2x)-i\sin(2x)+\cos(3x)+i\sin(3x)$$
+where $i = \sqrt{-1}$. For how many values of $x$ with $0\leq x<2\pi$ does 
+$$P(x)=0?$$
+
+$\textbf{(A)}\ 0 \qquad\textbf{(B)}\  1 \qquad\textbf{(C)}\  2 \qquad\textbf{(D)}\
+3 \qquad\textbf{(E)}\ 4$

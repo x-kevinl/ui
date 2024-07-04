@@ -1,0 +1,29 @@
+==Problem==
+The figure below is a map showing $12$ cities and $17$ roads connecting certain pairs of cities. Paula wishes to travel along exactly $13$ of those roads, starting at city $A$ and ending at city $L$, without traveling along any portion of a road more than once. (Paula is allowed to visit a city more than once.)
+<asy>
+import olympiad;
+unitsize(50);
+for (int i = 0; i < 3; ++i) {
+for (int j = 0; j < 4; ++j) {
+pair A = (j,i);
+dot(A);
+
+}
+}
+for (int i = 0; i < 3; ++i) {
+for (int j = 0; j < 4; ++j) {
+if (j != 3) {
+draw((j,i)--(j+1,i));
+}
+if (i != 2) {
+draw((j,i)--(j,i+1));
+}
+}
+}
+label("$A$", (0,2), W);
+label("$L$", (3,0), E);
+</asy>
+
+How many different routes can Paula take?
+
+$\textbf{(A) } 0 \qquad\textbf{(B) } 1 \qquad\textbf{(C) } 2 \qquad\textbf{(D) } 3 \qquad\textbf{(E) } 4$

@@ -1,0 +1,32 @@
+==Solution 1==
+Notice that $ADE$ and $ABC$ are right triangles. Then $AE = \sqrt{7^2+5^2} = \sqrt{74}$. $\sin{DAE} = \frac{5}{\sqrt{74}} = \sin{BAE} = \sin{BAC} = \frac{BC}{4}$, so $BC = \frac{20}{\sqrt{74}}$. We also find that $AC = \frac{28}{\sqrt{74}}$ (You can also use power of point ~MATHWIZARD2010), and thus the area of $ABC$ is $\frac{\frac{20}{\sqrt{74}}\cdot\frac{28}{\sqrt{74}}}{2} = \frac{\frac{560}{74}}{2} = \boxed{\textbf{(D) } \frac{140}{37}}$.
+
+<center><asy>
+size(10cm);
+pair A, B, C, D, E, O;
+A = (-2,0);
+B = (2,0);
+C = (2*cos(1.24),2*sin(1.24));
+D = (5,0);
+E = (5,5);
+O = (A+B)/2;
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(E);
+dot(O);
+draw(Circle((A+B)/2,2));
+draw(A--D--E--C--A);
+draw(C--B);
+draw(rightanglemark(A,C,B,5));
+draw(rightanglemark(A,D,E,5));
+label("$A$",A,W);
+label("$B$",B,SE);
+label("$D$",D,SE);
+label("$E$",E,NE);
+label("$C$",C,N);
+label("$2$",(O+B)/2,S);
+label("$3$",(B+D)/2,S);
+label("$5$",(D+E)/2,NE);
+</asy></center>

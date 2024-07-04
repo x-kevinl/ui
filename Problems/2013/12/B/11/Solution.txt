@@ -1,0 +1,8 @@
+== Solution ==
+Let A and B begin at $(0,0,0)$. In $6$ steps, $A$ will have done his route twice, ending up at $(2,2,2)$, and $B$ will have done his route three times, ending at $(-3,-3,0)$. Their distance is $\sqrt{(2+3)^2+(2+3)^2+2^2}=\sqrt{54} < 10$. We now move forward one step at a time until they are ten feet away:
+
+7 steps: $A$ moves north to $(2,3,2)$, $B$ moves south to $(-3,-4,0)$, distance of $\sqrt{(2+3)^2+(3+4)^2+2^2}=\sqrt{78} < 10$
+
+8 steps: $A$ moves east to $(3,3,2)$, $B$ moves west to $(-4,-4,0)$, distance of $\sqrt{(3+4)^2+(3+4)^2+2^2}=\sqrt{102}>10$
+
+Thus they reach $10$ feet away when $A$ is moving east and B is moving west, between moves 7 and 8. Thus the answer is  $\boxed{\textbf{(A)}}$.

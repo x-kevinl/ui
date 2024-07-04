@@ -1,0 +1,14 @@
+==Solution 1==
+There are 81 multiples of 11 between $100$ and $999$ inclusive. Some have digits repeated twice, making 3 permutations.
+
+Others that have no repeated digits have 6 permutations, but switching the hundreds and units digits also yield a multiple of 11. Switching shows we have overcounted by a factor of 2, so assign  $6 \div 2 = 3$ permutations to each multiple.
+
+There are now 81*3 = 243 permutations, but we have overcounted*. Some multiples of 11 have $0$ as a digit. Since $0$ cannot be the digit of the hundreds place, we must subtract a permutation for each. 
+
+There are 110, 220, 330 ... 990, yielding 9 extra permutations
+
+Also, there are 209, 308, 407...902, yielding 8 more permutations.
+
+Now, just subtract these 17 from the total (243) to get 226. $\boxed{\textbf{(A) } 226}$
+
+*If short on time, observe that 226 is the only answer choice less than 243, and therefore is the only feasible answer.

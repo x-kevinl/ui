@@ -1,0 +1,5 @@
+==Problem==
+
+Quadrilateral $ABCD$ with side lengths $AB=7, BC=24, CD=20, DA=15$ is inscribed in a circle. The area interior to the circle but exterior to the quadrilateral can be written in the form $\frac{a\pi-b}{c},$ where $a,b,$ and $c$ are positive integers such that $a$ and $c$ have no common prime factor. What is $a+b+c?$
+
+$\textbf{(A) } 260 \qquad \textbf{(B) } 855 \qquad \textbf{(C) } 1235 \qquad \textbf{(D) } 1565 \qquad \textbf{(E) } 1997$

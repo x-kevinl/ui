@@ -1,0 +1,9 @@
+== Solution 1==
+
+Start with Brian. If he is a toad, he tells the truth, hence Mike is a frog. If Brian is a frog, he lies, hence Mike is a frog, too. Thus Mike must be a frog.
+
+As Mike is a frog, his statement is false, hence there is at most one toad.
+
+As there is at most one toad, at least one of Chris and LeRoy is a frog. But then the other one tells the truth, and therefore is a toad.
+
+Hence we must have one toad and $\boxed{\textbf{(D)}\ 3}$ frogs.

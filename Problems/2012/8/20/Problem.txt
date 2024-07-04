@@ -1,0 +1,6 @@
+==Problem==
+What is the correct ordering of the three numbers $ \frac{5}{19} $, $ \frac{7}{21} $, and $ \frac{9}{23} $, in increasing order?
+
+$ \textbf{(A)}\hspace{.05in}\frac{9}{23}<\frac{7}{21}<\frac{5}{19}\quad\textbf{(B)}\hspace{.05in}\frac{5}{19}<\frac{7}{21}<\frac{9}{23}\quad\textbf{(C)}\hspace{.05in}\frac{9}{23}<\frac{5}{19}<\frac{7}{21} $ 
+
+$ \textbf{(D)}\hspace{.05in}\frac{5}{19}<\frac{9}{23}<\frac{7}{21}\quad\textbf{(E)}\hspace{.05in}\frac{7}{21}<\frac{5}{19}<\frac{9}{23} $

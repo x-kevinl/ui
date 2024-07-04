@@ -1,0 +1,13 @@
+==Solution==
+Imagine we have $2$ regular polygons with $m$ and $n$ sides and $m>n$ inscribed in a circle without sharing a vertex. We see that each side of the polygon with $n$ sides (the polygon with fewer sides) will be intersected twice.
+(We can see this because to have a vertex of the $m$-gon on an arc subtended by a side of the $n$-gon, there will be one intersection to “enter” the arc and one to “exit” the arc. ~KingRavi)
+
+This means that we will end up with $2$ times the number of sides in the polygon with fewer sides.
+
+If we have polygons with $5,$ $6,$ $7,$ and $8$ sides, we need to consider each possible pair of polygons and count their intersections. 
+
+Throughout $6$ of these pairs, the $5$-sided polygon has the least number of sides $3$ times, the $6$-sided polygon has the least number of sides $2$ times, and the $7$-sided polygon has the least number of sides $1$ time.
+
+Therefore the number of intersections is $2\cdot(3\cdot5+2\cdot6+1\cdot7)=\boxed{(\textbf{E}) \:68}$.
+
+~kingofpineapplz

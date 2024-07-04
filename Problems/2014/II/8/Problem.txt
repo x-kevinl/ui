@@ -1,0 +1,3 @@
+==Problem==
+
+Circle <math>C</math> with radius 2 has diameter <math>\overline{AB}</math>. Circle D is internally tangent to circle <math>C</math> at <math>A</math>. Circle <math>E</math> is internally tangent to circle <math>C</math>, externally tangent to circle <math>D</math>, and tangent to <math>\overline{AB}</math>. The radius of circle <math>D</math> is three times the radius of circle <math>E</math>, and can be written in the form <math>\sqrt{m}-n</math>, where <math>m</math> and <math>n</math> are positive integers. Find <math>m+n</math>.

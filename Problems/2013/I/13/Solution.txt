@@ -1,0 +1,6 @@
+==Solution 1 ==
+Note that every <math>B_nC_n</math> is parallel to each other for any nonnegative <math>n</math>. Also, the area we seek is simply the ratio <math>k=\frac{[B_0B_1C_1]}{[B_0B_1C_1]+[C_1C_0B_0]}</math>, because it repeats in smaller and smaller units. Note that the area of the triangle, by Heron's formula, is 90.
+
+For ease, all ratios I will use to solve this problem are with respect to the area of <math>[AB_0C_0]</math>. For example, if I say some area has ratio <math>\frac{1}{2}</math>, that means its area is 45.
+
+Now note that <math>k=</math> 1 minus ratio of <math>[B_1C_1A]</math> minus ratio <math>[B_0C_0C_1]</math>. We see by similar triangles given that ratio <math>[B_0C_0C_1]</math> is <math>\frac{17^2}{25^2}</math>. Ratio <math>[B_1C_1A]</math> is <math>(\frac{336}{625})^2</math>, after seeing that <math>C_1C_0 = \frac{289}{625}</math>, . Now it suffices to find 90 times ratio <math>[B_0B_1C_1]</math>, which is given by 1 minus the two aforementioned ratios. Substituting these ratios to find <math>k</math> and clearing out the <math>5^8</math>, we see that the answer is <math>90\cdot \frac{5^8-336^2-17^2\cdot 5^4}{5^8-336^2}</math>, which gives <math>q= \boxed{961}</math>.

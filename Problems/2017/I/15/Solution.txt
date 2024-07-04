@@ -1,0 +1,17 @@
+==Solution 1==
+Lemma: If <math>x,y</math> satisfy <math>px+qy=1</math>, then the minimal value of <math>\sqrt{x^2+y^2}</math> is <math>\frac{1}{\sqrt{p^2+q^2}}</math>.
+
+Proof: Recall that the distance between the point <math>(x_0,y_0)</math> and the line <math>px+qy+r = 0</math> is given by <math>\frac{|px_0+qy_0+r|}{\sqrt{p^2+q^2}}</math>. In particular, the distance between the origin and any point <math>(x,y)</math> on the line <math>px+qy=1</math> is at least <math>\frac{1}{\sqrt{p^2+q^2}}</math>.
+
+---
+
+Let the vertices of the right triangle be <math>(0,0),(5,0),(0,2\sqrt{3}),</math> and let <math>(a,0),(0,b)</math> be the two vertices of the equilateral triangle on the legs of the right triangle. Then, the third vertex of the equilateral triangle is <math>\left(\frac{a+b\sqrt{3}}{2},\frac{a\sqrt{3}+b}{2}\right)</math>. This point must lie on the hypotenuse <math>\frac{x}{5} + \frac{y}{2\sqrt{3}} = 1</math>, i.e. <math>a,b</math> must satisfy
+<cmath> \frac{a+b\sqrt{3}}{10}+\frac{a\sqrt{3}+b}{4\sqrt{3}} = 1,</cmath>
+which can be simplified to
+<cmath>\frac{7}{20}a + \frac{11\sqrt{3}}{60}b = 1.</cmath>
+
+By the lemma, the minimal value of <math>\sqrt{a^2+b^2}</math> is
+<cmath>\frac{1}{\sqrt{\left(\frac{7}{20}\right)^2 + \left(\frac{11\sqrt{3}}{60}\right)^2}} = \frac{10\sqrt{3}}{\sqrt{67}},</cmath>
+so the minimal area of the equilateral triangle is
+<cmath> \frac{\sqrt{3}}{4} \cdot \left(\frac{10\sqrt{3}}{\sqrt{67}}\right)^2 = \frac{\sqrt{3}}{4} \cdot \frac{300}{67} = \frac{75\sqrt{3}}{67},</cmath>
+and hence the answer is <math>75+3+67=\boxed{145}</math>.

@@ -1,0 +1,2 @@
+== Problem ==
+A [[right cone|right circular cone]] has a [[base]] with [[radius]] <math>600</math> and [[height]] <math> 200\sqrt{7}. </math> A fly starts at a point on the surface of the cone whose distance from the [[vertex]] of the cone is <math>125</math>, and crawls along the surface of the cone to a point on the exact opposite side of the cone whose distance from the vertex is <math>375\sqrt{2}.</math> Find the least distance that the fly could have crawled.

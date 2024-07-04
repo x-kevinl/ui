@@ -1,0 +1,9 @@
+==Solution 1==
+Notice that $1000$ is $3E8$ when converted to hexadecimal ($3 \cdot 16^2 + 14 \cdot 16^1 + 8 \cdot 16^0$). We will proceed by constructing numbers that consist of only numeric digits in hexadecimal.
+
+The first digit could be $0,$ $1,$ $2,$ or $3,$ and the second two could be any digit $0 - 9$, giving $4 \cdot 10 \cdot 10 = 400$ combinations. However, this includes $000,$ so this number must be diminished by $1.$  Therefore, there are $399$ valid $n$ corresponding to those $399$ positive integers less than $1000$ that consist of only numeric digits.  (Notice that $399$ is the least hexadecimal number using only decimal digits before $3E8$.)  Therefore, our answer is $3 + 9 + 9 = \boxed{\textbf{(E) } 21}$
+
+===Reasoning for the 400 Combinations===
+This is because we don't want more than $9$ for each digit since that would lead to a letter digit(A, B, C, D, E, or F.) Thus we have $3 \cdot 16^2 + 9 \cdot 16^1 + 9 \cdot 16^0.$ Then continue as follows.
+
+~Clarification by mathboy282

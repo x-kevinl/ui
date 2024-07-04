@@ -1,0 +1,7 @@
+==Solution 1 (One Variable)==
+Let $x$ be the length of the ship.
+Then, in the time that Emily walks $210$ steps, the ship moves $210-x$ steps.
+Also, in the time that Emily walks $42$ steps, the ship moves $x-42$ steps.
+Since the ship and Emily have the same ratio of absolute speeds in either direction, $\frac{210}{210-x} = \frac{42}{x-42}$. Dividing both sides by $42$ and cross multiplying, we get $5(x-42) = 210-x$, so $6x = 420$, and $x = \boxed{\textbf{(A) }70}$.
+
+~ihatemath123

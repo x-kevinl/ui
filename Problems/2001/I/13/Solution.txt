@@ -1,0 +1,33 @@
+== Solution ==
+
+=== Solution 1 ===
+<center>[[File:2001AIME13.png]]</center>
+
+Note that a cyclic quadrilateral in the form of an isosceles trapezoid can be formed from three chords of three <math>d</math>-degree arcs and one chord of one <math>3d</math>-degree arc. The diagonals of this trapezoid turn out to be two chords of two <math>2d</math>-degree arcs. Let <math>AB</math>, <math>AC</math>, and <math>BD</math> be the chords of the <math>d</math>-degree arcs, and let <math>CD</math> be the chord of the <math>3d</math>-degree arc. Also let <math>x</math> be equal to the chord length of the <math>3d</math>-degree arc. Hence, the length of the chords, <math>AD</math> and <math>BC</math>, of the <math>2d</math>-degree arcs can be represented as <math>x + 20</math>, as given in the problem. 
+
+Using Ptolemy's theorem,
+
+<cmath>AB(CD) + AC(BD) = AD(BC)</cmath>
+<cmath>22x + 22(22)  = (x + 20)^2</cmath>
+<cmath>22x + 484 = x^2 + 40x + 400</cmath>
+<cmath>0 = x^2 + 18x - 84</cmath>
+
+We can then apply the quadratic formula to find the positive root to this equation since polygons obviously cannot have sides of negative length.
+<cmath>x = \frac{-18 + \sqrt{18^2 + 4(84)}}{2}</cmath>
+<cmath>x = \frac{-18 + \sqrt{660}}{2}</cmath>
+
+<math>x</math> simplifies to <math>\frac{-18 + 2\sqrt{165}}{2},</math> which equals <math>-9 + \sqrt{165}.</math> Thus, the answer is <math>9 + 165 = \boxed{174}</math>.
+
+=== Solution 2 ===
+
+Let <math>z=\frac{d}{2},</math> and <math>R</math> be the circumradius. From the given information, <cmath>2R\sin z=22</cmath> <cmath>2R(\sin 2z-\sin 3z)=20</cmath> Dividing the latter by the former, <cmath>\frac{2\sin z\cos z-(3\cos^2z\sin z-\sin^3 z)}{\sin z}=2\cos z-(3\cos^2z-\sin^2z)=1+2\cos z-4\cos^2z=\frac{10}{11}</cmath> <cmath>4\cos^2z-2\cos z-\frac{1}{11}=0 (1)</cmath> We want to find <cmath>\frac{22\sin (3z)}{\sin z}=22(3-4\sin^2z)=22(4\cos^2z-1).</cmath> From <math>(1),</math> this is equivalent to <math>44\cos z-20.</math> Using the quadratic formula, we find that the desired length is equal to <math>\sqrt{165}-9,</math> so our answer is <math>\boxed{174}</math>
+
+===Solution 3===
+
+Let <math>z=\frac{d}{2}</math>, <math>R</math> be the circumradius, and <math>a</math> be the length of 3d degree chord. Using the extended sine law, we obtain:
+<cmath>22=2R\sin(z)</cmath>
+<cmath>20+a=2R\sin(2z)</cmath>
+<cmath>a=2R\sin(3z)</cmath>
+Dividing the second from the first we get <math>\cos(z)=\frac{20+a}{44}</math>
+By the triple angle formula we can manipulate the third equation as follows: <math>a=2R\times \sin(3z)=\frac{22}{\sin(z)} \times (3\sin(z)-4\sin^3(z)) = 22(3-4\sin^2(z))=22(4\cos^2(z)-1)=\frac{(20+a)^2}{22}-22</math>
+Solving the quadratic equation gives the answer to be <math>\boxed{174}</math>.

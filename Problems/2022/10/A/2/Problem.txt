@@ -1,0 +1,4 @@
+==Problem==
+Mike cycled $15$ laps in $57$ minutes. Assume he cycled at a constant speed throughout. Approximately how many laps did he complete in the first $27$ minutes?
+
+$\textbf{(A) } 5 \qquad\textbf{(B) } 7 \qquad\textbf{(C) } 9 \qquad\textbf{(D) } 11 \qquad\textbf{(E) } 13$

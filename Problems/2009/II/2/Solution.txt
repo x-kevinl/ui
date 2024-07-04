@@ -1,0 +1,47 @@
+== Solution 1 ==
+
+First, we have:
+<cmath>
+x^{(\log_y z)^2}
+= x^{\left( (\log_y z)^2 \right) }
+= x^{(\log_y z) \cdot (\log_y z) }
+= \left( x^{\log_y z} \right)^{\log_y z}
+</cmath>
+
+Now, let <math>x=y^w</math>, then we have:
+<cmath>
+x^{\log_y z} 
+= \left( y^w \right)^{\log_y z} 
+= y^{w\log_y z} 
+= y^{\log_y (z^w)} 
+= z^w
+</cmath>
+
+This is all we need to evaluate the given formula. Note that in our case we have <math>27=3^3</math>, <math>49=7^2</math>, and <math>\sqrt{11}=11^{1/2}</math>. We can now compute:
+
+<cmath>
+a^{(\log_3 7)^2}
+= \left( a^{\log_3 7} \right)^{\log_3 7}
+= 27^{\log_3 7}
+= (3^3)^{\log_3 7}
+= 7^3
+= 343
+</cmath>
+
+Similarly, we get
+<cmath>
+b^{(\log_7 11)^2} 
+= (7^2)^{\log_7 11}
+= 11^2 
+= 121
+</cmath>
+
+and
+<cmath>
+c^{(\log_{11} 25)^2}
+= (11^{1/2})^{\log_{11} 25}
+= 25^{1/2}
+= 5
+</cmath>
+
+and therefore the answer is <math>343+121+5 = \boxed{469}</math>.

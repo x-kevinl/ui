@@ -1,0 +1,2 @@
+== Problem ==
+A cube with side length 10 is suspended above a plane. The vertex closest to the plane is labeled <math>A</math>. The three vertices adjacent to vertex <math>A</math> are at heights 10, 11, and 12 above the plane. The distance from vertex <math>A</math> to the plane can be expressed as <math> \frac{r-\sqrt{s}}{t}</math>, where <math>r</math>, <math>s</math>, and <math>t</math> are positive integers. Find <math>r+s+t</math>.

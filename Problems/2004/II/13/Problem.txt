@@ -1,0 +1,2 @@
+== Problem ==
+Let <math> ABCDE </math> be a [[convex]] [[pentagon]] with <math> AB \parallel CE, BC \parallel AD, AC \parallel DE, \angle ABC=120^\circ, AB=3, BC=5, </math> and <math>DE = 15. </math> Given that the [[ratio]] between the area of triangle <math> ABC </math> and the area of triangle <math> EBD </math> is <math> m/n, </math> where <math> m </math> and <math> n </math> are relatively prime positive integers, find <math> m+n. </math>

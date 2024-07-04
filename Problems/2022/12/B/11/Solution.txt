@@ -1,0 +1,15 @@
+== Solution 1 ==
+Converting both summands to exponential form, 
+$$\begin{align*}
+-1 + i\sqrt{3} &= 2e^{\frac{2\pi i}{3}}, \\
+-1 - i\sqrt{3} &= 2e^{-\frac{2\pi i}{3}} = 2e^{\frac{4\pi i}{3}}.
+\end{align*}$$
+Notice that both are scaled copies of the third roots of unity.
+When we replace the summands with their exponential form, we get $$f(n) = \left(e^{\frac{2\pi i}{3}}\right)^n + \left(e^{\frac{4\pi i}{3}}\right)^n.$$
+When we substitute $n = 2022$, we get $$f(2022) = \left(e^{\frac{2\pi i}{3}}\right)^{2022} + \left(e^{\frac{4\pi i}{3}}\right)^{2022}.$$
+We can rewrite $2022$ as $3 \cdot 674$, how does that help?
+$$f(2022) = \left(e^{\frac{2\pi i}{3}}\right)^{3 \cdot 674} + \left(e^{\frac{4\pi i}{3}}\right)^{3 \cdot 674} = \left(\left(e^{\frac{2\pi i}{3}}\right)^{3}\right)^{674} + \left(\left(e^{\frac{4\pi i}{3}}\right)^{3}\right)^{674} =
+1^{674} + 1^{674} = \boxed{\textbf{(E)} \ 2}.$$
+Since any third root of unity must cube to $1$.
+
+~ zoomanTV

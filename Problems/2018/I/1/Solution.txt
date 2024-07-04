@@ -1,0 +1,24 @@
+==Solution 1==
+
+Let the linear factors be <math>(x+c)(x+d)</math>.
+
+Then, <math>a=c+d</math> and <math>b=cd</math>.
+
+We know that <math>1\le a\le 100</math> and <math>b\ge 0</math>, so <math>c</math> and <math>d</math> both have to be non-negative
+
+However, <math>a</math> cannot be <math>0</math>, so at least one of <math>c</math> and <math>d</math> must be greater than <math>0</math>, ie positive.
+
+Also, <math>a</math> cannot be greater than <math>100</math>, so <math>c+d</math> must be less than or equal to <math>100</math>.
+
+Essentially, if we plot the solutions, we get a triangle on the coordinate plane with vertices <math>(0,0), (0, 100),</math> and <math>(100,0)</math>. Remember that <math>(0,0)</math> does not work, so there is a square with the top right corner <math>(1,1)</math>.
+
+Note that <math>c</math> and <math>d</math> are interchangeable since they end up as <math>a</math> and <math>b</math> in the end anyways. Thus, we simply draw a line from <math>(1,1)</math> to <math>(50,50)</math>, designating one of the halves as our solution (since the other side is simply the coordinates flipped).
+
+We note that the pattern from <math>(1,1)</math> to <math>(50,50)</math> is <math>2+3+4+\dots+51</math> solutions and from <math>(51, 49)</math> to <math>(100,0)</math> is <math>50+49+48+\dots+1</math> solutions, since we can decrease the <math>y</math>-value by <math>1</math> until <math>0</math> for each coordinate.
+
+Adding up gives <cmath>\dfrac{2+51}{2}\cdot 50+\dfrac{50+1}{2}\cdot 50.</cmath>
+This gives us <math>2600</math>, and <math>2600\equiv 600 \bmod{1000}.</math>
+
+Thus, the answer is: <cmath>\boxed{600}.</cmath>
+
+~Minor edit by Yiyj1

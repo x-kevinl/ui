@@ -1,0 +1,5 @@
+==Problem==
+
+Triangle $ABC$ has side lengths $AB = 11, BC=24$, and $CA = 20$. The bisector of $\angle{BAC}$ intersects $\overline{BC}$ in point $D$, and intersects the circumcircle of $\triangle{ABC}$ in point $E \ne A$. The circumcircle of $\triangle{BED}$ intersects the line $AB$ in points $B$ and $F \ne B$. What is $CF$?
+
+$\textbf{(A) } 28 \qquad \textbf{(B) } 20\sqrt{2} \qquad \textbf{(C) } 30 \qquad \textbf{(D) } 32 \qquad \textbf{(E) } 20\sqrt{3}$

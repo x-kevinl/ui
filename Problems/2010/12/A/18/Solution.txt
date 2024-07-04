@@ -1,0 +1,9 @@
+== Solution 1==
+Each path must go through either the second or the fourth quadrant.
+Each path that goes through the second quadrant must pass through exactly one of the points $(-4,4)$, $(-3,3)$, and $(-2,2)$.
+
+There is $1$ path of the first kind, ${8\choose 1}^2=64$ paths of the second kind, and ${8\choose 2}^2=28^2=784$ paths of the third type. 
+Each path that goes through the fourth quadrant must pass through exactly one of the points $(4,-4)$, $(3,-3)$, and $(2,-2)$.
+Again, there is $1$ path of the first kind, ${8\choose 1}^2=64$ paths of the second kind, and ${8\choose 2}^2=28^2=784$ paths of the third type. 
+
+Hence the total number of paths is $2(1+64+784) = \boxed{1698}$.

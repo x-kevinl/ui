@@ -1,0 +1,2 @@
+== Problem ==
+[[Point]] <math> B </math> is on <math> \overline{AC} </math> with <math> AB = 9 </math> and <math> BC = 21. </math> Point <math> D </math> is not on <math> \overline{AC} </math> so that <math> AD = CD, </math> and <math> AD </math> and <math> BD </math> are [[integer]]s. Let <math> s </math> be the sum of all possible [[perimeter]]s of <math> \triangle ACD</math>. Find <math> s. </math>

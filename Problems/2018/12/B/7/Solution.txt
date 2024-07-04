@@ -1,0 +1,2 @@
+== Solution 1 ==
+From the Change of Base Formula, we have $$\frac{\prod_{i=3}^{13} \log (2i+1)}{\prod_{i=1}^{11}\log (2i+1)} = \frac{\log 25 \cdot \log 27}{\log 3 \cdot \log 5} = \frac{(2\log 5)\cdot(3\log 3)}{\log 3 \cdot \log 5} = \boxed{\textbf{(C) } 6}.$$

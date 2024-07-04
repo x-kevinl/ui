@@ -1,0 +1,32 @@
+==Solution 1==
+
+$$
+\begin{align*}
+\cos 2023 x + i \sin 2023 x
+&= (\cos x + i \sin x)^{2023}\\
+&= \cos^{2023} x + \binom{2023}{1} \cos^{2022} x (i\sin x) + \binom{2023}{2} \cos^{2021} x (i \sin x)^{2} +\binom{2023}{3} \cos^{2023} x (i \sin x)^{3}\\
+&+ \dots + \binom{2023}{2022} \cos x (i \sin x)^{2022} + (i \sin x)^{2023}\\
+&= \cos^{2023} x + i \binom{2023}{1} \cos^{2022} x \sin x - \binom{2023}{2} \cos^{2021} x \sin^{2} x - i\binom{2023}{3} \cos^{2020} x \sin^{3} x + \dots\\
+&- \binom{2023}{2022} \cos x \sin^{2022} x - i \sin^{2023} x\\
+\end{align*}$$
+
+By equating real and imaginary parts:
+
+$$\cos 2023 x = \cos^{2023} x - \binom{2023}{2} \cos^{2021} x \sin^{2} x + \dots - \binom{2023}{2022} \cos x \sin^{2022} x$$
+
+$$\sin 2023 x = \binom{2023}{1} \cos^{2022} x \sin x - \binom{2023}{3} \cos^{2020} x \sin^{3} x + \dots - \sin^{2023} x$$
+
+$$
+\begin{align*}
+\tan2023x 
+&= \frac{ \sin2023x }{ \cos2023x } = \frac{ \binom{2023}{1} \cos^{2022} x \sin x - \binom{2023}{3} \cos^{2020} x \sin^{3} x + \dots - \sin^{2023} x }{ \cos^{2023} x - \binom{2023}{2} \cos^{2021} x \sin^{2} x + \dots - \binom{2023}{2022} \cos x \sin^{2022} x }\\
+&= \frac{ \binom{2023}{1} \frac{\cos^{2022} x \sin x}{\cos^{2023} x} - \binom{2023}{3} \frac{\cos^{2020} x \sin^{3} x}{\cos^{2023} x} + \dots - \frac{\sin^{2023} x}{\cos^{2023} x} }{ \frac{\cos^{2023} x}{\cos^{2023} x} - \binom{2023}{2} \frac{\cos^{2021} x \sin^{2} x}{\cos^{2023} x} + \dots - \binom{2023}{2022} \frac{\cos x \sin^{2022} x}{\cos^{2023} x}
+ }\\
+&= \frac{ \binom{2023}{1} \tan x - \binom{2023}{3} \tan^{3}x + \dots - \tan^{2023}x }{ 1 - \binom{2023}{2} \tan^{2}x + \dots - \binom{2023}{2022} \tan^{2022} x }\\
+\end{align*}$$
+
+$$a_{2023} = \boxed{\textbf{(C)}-1}$$
+
+This problem is the same as problem 7.64 in the Art of Problem Solving textbook Precalculus chapter 7 that asks to prove $\tan{nx} = \frac{\binom{n}{1}\tan{x} - \binom{n}{3}\tan^{3}{x} + \binom{n}{5}\tan^{5}{x} - \binom{n}{7}\tan^{7}{x} + \dots}{1 - \binom{n}{2}\tan^{2}{x} + \binom{n}{4}\tan^{4}{x}  - \binom{n}{6}\tan^{6}{x} + \dots}$
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen]

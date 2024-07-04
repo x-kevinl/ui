@@ -1,0 +1,4 @@
+==Problem==
+Each of $6$ balls is randomly and independently painted either black or white with equal probability. What is the probability that every ball is different in color from more than half of the other $5$ balls?
+
+$\textbf{(A) } \frac{1}{64}\qquad\textbf{(B) } \frac{1}{6}\qquad\textbf{(C) } \frac{1}{4}\qquad\textbf{(D) } \frac{5}{16}\qquad\textbf{(E) }\frac{1}{2}$

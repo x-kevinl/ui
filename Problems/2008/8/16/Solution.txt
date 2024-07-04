@@ -1,0 +1,2 @@
+==Solution==
+The volume is of seven unit cubes which is $7$. The surface area is the same for each of the protruding cubes which is $5\cdot 6=30$. The ratio of the volume to the surface area is $\boxed{\textbf{(D)}\: 7 : 30}$.

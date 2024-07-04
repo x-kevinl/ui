@@ -1,0 +1,20 @@
+==Solution 1==
+For each of the false statements, we identify its corresponding true statement. Note that:
+<ol style="margin-left: 1.5em;">
+  <li>$\mathrm{False}\cap\mathrm{True}=\varnothing.$</li><p>
+  <li>$\mathrm{False}\cup\mathrm{True}=[0,\infty).$</li><p>
+</ol>
+We construct the following table:
+$$\begin{array}{c||c|c}
+& &  \\ [-2.5ex]
+\textbf{Hiker} & \textbf{False Statement} & \textbf{True Statement} \\ [0.5ex]
+\hline
+& & \\ [-2ex]
+\textbf{Alice} & [6,\infty) & [0,6) \\ 
+& & \\ [-2.25ex]
+\textbf{Bob} & [0,5] & (5,\infty)  \\
+& & \\ [-2.25ex]
+\textbf{Charlie} & [0,4] & (4,\infty)
+\end{array}$$
+Taking the intersection of the true statements, we have $$[0,6)\cap(5,\infty)\cap(4,\infty)=(5,6)\cap(4,\infty)=\boxed{\textbf{(D) } (5,6)}.$$
+~MRENTHUSIASM

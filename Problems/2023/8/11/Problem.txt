@@ -1,0 +1,5 @@
+==Problem==
+
+NASA’s Perseverance Rover was launched on July $30,$ $2020.$ After traveling $292{,}526{,}838$ miles, it landed on Mars in Jezero Crater about $6.5$ months later. Which of the following is closest to the Rover’s average interplanetary speed in miles per hour?
+
+$\textbf{(A)}\ 6{,}000 \qquad \textbf{(B)}\ 12{,}000 \qquad \textbf{(C)}\ 60{,}000 \qquad \textbf{(D)}\ 120{,}000 \qquad \textbf{(E)}\ 600{,}000$

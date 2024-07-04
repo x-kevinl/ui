@@ -1,0 +1,4 @@
+== Problem ==
+What is the graph of $y^4+1=x^4+2y^2$ in the coordinate plane?
+
+$\textbf{(A) } \text{two intersecting parabolas} \qquad \textbf{(B) } \text{two nonintersecting parabolas} \qquad \textbf{(C) } \text{two intersecting circles} \qquad \\\\ \textbf{(D) } \text{a circle and a hyperbola} \qquad \textbf{(E) } \text{a circle and two parabolas}$

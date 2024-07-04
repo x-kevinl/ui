@@ -1,0 +1,15 @@
+== Solution ==
+Let <math>A=\log_{225}x</math> and let <math>B=\log_{64}y</math>. 
+
+From the first equation: <math>A+B=4 \Rightarrow B = 4-A</math>. 
+
+Plugging this into the second equation yields <math>\frac{1}{A}-\frac{1}{B}=\frac{1}{A}-\frac{1}{4-A}=1 \Rightarrow A = 3\pm\sqrt{5}</math> and thus, <math>B=1\pm\sqrt{5}</math>. 
+
+So, <math>\log_{225}(x_1x_2)=\log_{225}(x_1)+\log_{225}(x_2)=(3+\sqrt{5})+(3-\sqrt{5})=6</math> <math>\Rightarrow x_1x_2=225^6=15^{12}</math>. 
+
+And <math>\log_{64}(y_1y_2)=\log_{64}(y_1)+\log_{64}(y_2)=(1+\sqrt{5})+(1-\sqrt{5})=2</math> <math>\Rightarrow y_1y_2=64^2=2^{12}</math>. 
+
+Thus, <math>\log_{30}\left(x_1y_1x_2y_2\right) = \log_{30}\left(15^{12}\cdot2^{12} \right) = \log_{30}\left(30^{12} \right) = \boxed{012}</math>. 
+
+
+One may simplify the work by applying [[Vieta's formulas]] to directly find that <math>\log x_1 + \log x_2 = 6 \log 225, \log y_1 + \log y_2 = 2 \log 64</math>.

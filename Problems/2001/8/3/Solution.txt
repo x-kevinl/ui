@@ -1,0 +1,3 @@
+==Solution==
+
+Since Anjou has $ \frac{1}{3} $ the amount of money as Granny Smith and Granny Smith has &#36;$ 63$, Anjou has $ \frac{1}{3}\times63=21 $ dollars. Elberta has &#36;$ 2$ more than this, so she has &#36;$ 23 $, or $\boxed{\text{E}} $.

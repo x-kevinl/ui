@@ -1,0 +1,20 @@
+==Problem==
+Tom has a collection of $13$ snakes, $4$ of which are purple and $5$ of which are happy. He observes that
+
+* all of his happy snakes can add,
+
+* none of his purple snakes can subtract, and
+
+* all of his snakes that can't subtract also can't add.
+
+Which of these conclusions can be drawn about Tom's snakes?
+
+$\textbf{(A) }$ Purple snakes can add.
+
+$\textbf{(B) }$ Purple snakes are happy.
+
+$\textbf{(C) }$ Snakes that can add are purple.
+
+$\textbf{(D) }$ Happy snakes are not purple.
+
+$\textbf{(E) }$ Happy snakes can't subtract.

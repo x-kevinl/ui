@@ -1,0 +1,15 @@
+== Solution 1 (Guess and check + Contrapositive)==
+We examine each of the conditions. 
+
+The first condition is false. A simple counterexample is $a=3$ and $b=5$. The corresponding value of $c$ is $17\cdot15=255$. Clearly, $\gcd(3,14)=1$ and $\gcd(5,15)=5$, so condition $I$ would imply that $\gcd(c,210)=1.$ However, $\gcd(255,210)$ is clearly not $1$ (they share a common factor of $15$). Obviously, condition $I$ is false, so we can rule out choices $A,B,$ and $C$. 
+
+We are now deciding between the two answer choices $D$ and $E$. What differs between them is the validity of condition $II$, so it suffices to simply check $II$. 
+
+We look at statement $II$'s contrapositive to prove it. The contrapositive states that if $\gcd(a,14)\neq1$ and $\gcd(b,15)\neq1$, then $\gcd(c,210)\neq1.$ In other words, if $a$ shares some common factor that is not $1$ with $14$ and $b$ shares some common factor that is not $1$ with $15$, then $c$ also shares a common factor with $210$. Let's say that $a=a'\cdot n$, where $a'$ is a factor of $14$ not equal to $1$. (So $a'$ is the common factor.) 
+
+We can rewrite the given equation as $15a+14b=c\implies15(a'n)+14b=c.$ We can express $14$ as $a'\cdot n'$, for some positive integer $n'$ (this $n'$ can be $1$). We can factor $a'$ out to get $a'(15n+14n')=c.$ 
+
+We know that all values in this equation are integers, so $c$ must be divisible by $a'$. Since $a'$ is a factor of $14$, $a'$ must also be a factor of $210$, a multiple of $14$. Therefore, we know that $c$ shares a common factor with $210$ (which is $a'$), so $\gcd(c,210)\neq1$. This is what $II$ states, so therefore $II$ is true. 
+
+Thus, our answer is $\boxed{\textbf{(E) }\text{II and III only}}.$ 
+~Technodoggo

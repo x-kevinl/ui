@@ -1,0 +1,11 @@
+==Solution==
+
+Because all the [[central angle]]s of a circle add up to $360^\circ,$
+
+$$\begin{align*}
+\angle BOC + \angle AOB + \angle AOC &= 360\\
+120 + 140 + \angle AOC &= 360\\
+\angle AOC &= 100.
+\end{align*}$$
+
+Therefore, the measure of $\text{arc}AC$ is also $100^\circ.$ Since the measure of an [[inscribed angle]] is equal to half the measure of the arc it intercepts, $\angle ABC = \boxed{\textbf{(D)} 50}$

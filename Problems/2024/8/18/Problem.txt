@@ -1,0 +1,22 @@
+==Problem==
+
+Three concentric circles centered at $O$ have radii of $1$, $2$, and $3$. Points $B$ and $C$ lie on the largest circle. The region between the two smaller circles is shaded, as is the portion of the region between the two larger circles bounded by central angles $BOC$, as shown in the figure below. Suppose the shaded and unshaded regions are equal in area. What is the measure of $\angle{BOC}$ in degrees?
+
+<asy>
+size(150);
+import graph;
+
+draw(circle((0,0),3));
+real radius = 3;
+real angleStart = -54;  // starting angle of the sector
+real angleEnd = 54;  // ending angle of the sector
+label("$O$",(0,0),W);
+pair O = (0, 0);
+filldraw(arc(O, radius, angleStart, angleEnd)--O--cycle, gray);
+filldraw(circle((0,0),2),gray);
+filldraw(circle((0,0),1),white);
+draw((1.763,2.427)--(0,0)--(1.763,-2.427));
+label("$B$",(1.763,2.427),NE);
+label("$C$",(1.763,-2.427),SE); 
+</asy>
+$\textbf{(A) } 108\qquad\textbf{(B) } 120\qquad\textbf{(C) } 135\qquad\textbf{(D) } 144\qquad\textbf{(E) } 150$

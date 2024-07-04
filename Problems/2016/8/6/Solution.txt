@@ -1,0 +1,7 @@
+==Solutions==
+
+=== Solution 1 ===
+We first notice that the median name will be the $(19+1)/2=10^{\mbox{th}}$ name. The $10^{\mbox{th}}$ name is $\boxed{\textbf{(B)}\ 4}$.
+
+=== Solution 2 ===
+To find the median length of a name from a bar graph, we must add up the number of names. Doing so gives us $7 + 3 + 1 + 4 + 4 = 19$. Thus the index of the median length would be the 10th name. Since there are $7$ names with length $3$, and $3$ names with length $4$, the $10$th name would have $4$ letters. Thus our answer is $\boxed{\textbf{(B)}\ 4}$.

@@ -1,0 +1,17 @@
+== Diagram ==
+Note that the center of the coin can lie anywhere inside a green region, as shown below.
+<asy>
+/* Made by MRENTHUSIASM */
+draw((0,0)--(8,0)--(8,8)--(0,8)--(0,0));
+fill((2,0)--(0,2)--(0,0)--cycle, black);
+fill((6,0)--(8,0)--(8,2)--cycle, black);
+fill((8,6)--(8,8)--(6,8)--cycle, black);
+fill((0,6)--(2,8)--(0,8)--cycle, black);
+fill((4,6)--(2,4)--(4,2)--(6,4)--cycle, black);
+draw((0.5,7.5)--(0.5+1+sqrt(2)/2,7.5)--(0.5,7.5-1-sqrt(2)/2)--cycle, green);
+draw((0.5,0.5)--(0.5+1+sqrt(2)/2,0.5)--(0.5,0.5+1+sqrt(2)/2)--cycle, green);
+draw((7.5,7.5)--(7.5-1-sqrt(2)/2,7.5)--(7.5,7.5-1-sqrt(2)/2)--cycle, green);
+draw((7.5,0.5)--(7.5-1-sqrt(2)/2,0.5)--(7.5,0.5+1+sqrt(2)/2)--cycle, green);
+draw(Arc((4,6),0.5,135,45)--Arc((6,4),0.5,45,-45)--Arc((4,2),0.5,-45,-135)--Arc((2,4),0.5,225,135)--cycle, green);
+</asy>
+~MRENTHUSIASM

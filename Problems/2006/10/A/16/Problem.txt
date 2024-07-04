@@ -1,0 +1,15 @@
+== Problem ==
+<!-- [[Image:2006_AMC10A-16.png]] -->
+A circle of radius $1$ is [[tangent]] to a circle of radius $2$. The sides of $\triangle ABC$ are tangent to the circles as shown, and the sides $\overline{AB}$  and $\overline{AC}$ are congruent. What is the area of $\triangle ABC$?
+
+<asy>
+size(200); pathpen = linewidth(0.7); pointpen = black;
+real t=2^0.5;
+D((0,0)--(4*t,0)--(2*t,8)--cycle);
+D(CR((2*t,2),2));
+D(CR((2*t,5),1));
+D('B', (0,0),SW); D('C',(4*t,0), SE); D('A', (2*t, 8), N);
+D((2*t,2)--(2*t,4)); D((2*t,5)--(2*t,6));
+MP('2', (2*t,3), W); MP('1',(2*t, 5.5), W);</asy>
+
+$\textbf{(A) } \frac{35}{2}\qquad\textbf{(B) } 15\sqrt{2}\qquad\textbf{(C) } \frac{64}{3}\qquad\textbf{(D) } 16\sqrt{2}\qquad\textbf{(E) } 24\qquad$

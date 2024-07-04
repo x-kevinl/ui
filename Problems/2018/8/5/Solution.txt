@@ -1,0 +1,7 @@
+==Solution 1==
+
+Rearranging the terms, we get $(1-2)+(3-4)+(5-6)+...(2017-2018)+2019$, and our answer is $-1009+2019=\boxed{\textbf{(E) }1010}$.
+
+If you were stuck on this problem, refer to AOPS arithmetic lessons.
+
+~Nivaar

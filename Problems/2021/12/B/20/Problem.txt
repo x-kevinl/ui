@@ -1,0 +1,4 @@
+==Problem==
+Let $Q(z)$ and $R(z)$ be the unique polynomials such that$$z^{2021}+1=(z^2+z+1)Q(z)+R(z)$$and the degree of $R$ is less than $2.$ What is $R(z)?$
+
+$\textbf{(A) }{-}z \qquad \textbf{(B) }{-}1 \qquad \textbf{(C) }2021\qquad \textbf{(D) }z+1 \qquad \textbf{(E) }2z+1$

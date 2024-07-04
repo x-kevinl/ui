@@ -1,0 +1,25 @@
+==Problem==
+
+There are 5 yellow pegs, 4 red pegs, 3 green pegs, 2 blue pegs, and 1 orange peg to be placed on a triangular peg board. In how many ways can the pegs be placed so that no (horizontal) row or (vertical) column contains two pegs of the same color?
+
+<asy>
+unitsize(20);
+dot((0,0));
+dot((1,0));
+dot((2,0));
+dot((3,0));
+dot((4,0));
+dot((0,1));
+dot((1,1));
+dot((2,1));
+dot((3,1));
+dot((0,2));
+dot((1,2));
+dot((2,2));
+dot((0,3));
+dot((1,3));
+dot((0,4));
+</asy>
+
+
+$\textbf{(A)}\ 0 \qquad\textbf{(B)}\ 1 \qquad\textbf{(C)}\ 5!\cdot 4!\cdot 3!\cdot 2!\cdot 1!  \qquad\textbf{(D)}\ \frac{15!}{5!\cdot 4!\cdot 3!\cdot 2!\cdot 1!} \qquad\textbf{(E)}\ 15!$

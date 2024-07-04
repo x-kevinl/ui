@@ -1,0 +1,140 @@
+==Solution 1==
+
+<asy>
+import geometry;
+pair A = (-3, 4);
+pair B = (-3, 5);
+pair C = (-1, 4);
+pair D = (-1, 5);
+
+
+pair AA = (0, 0);
+pair BB = (0, 1);
+pair CC = (2, 0);
+pair DD = (2, 1);
+
+
+
+//draw(A--B--D--C--cycle);
+
+
+
+draw(A--B);
+label("1",midpoint(A--B),W);
+label("2",midpoint(D--B),N);
+draw(A--C,dashed);
+draw(B--D);
+draw(C--D, dashed);
+
+draw(A--AA);
+label("5",midpoint(A--AA),W);
+draw(B--BB,dashed);
+draw(C--CC,dashed);
+draw(D--DD);
+label("5",midpoint(D--DD),E);
+label("1",midpoint(CC--DD),E);
+label("2",midpoint(AA--CC),S);
+
+// Dotted vertices
+dot(A); dot(B); dot(C); dot(D);
+
+
+
+dot(AA); dot(BB); dot(CC); dot(DD);
+
+draw(AA--BB,dashed);
+draw(AA--CC);
+draw(BB--DD,dashed);
+draw(CC--DD);
+
+label("(0,0)",AA,W);
+label("(-3,4)",A,SW);
+label("(-1,5)",D,E);
+label("(2,1)",DD,NE);
+</asy>
+	Notice that we are given a parametric form of the region, and $w$ is used in both $x$ and $y$. We first fix $u$ and $v$ to $0$, and graph $(-3w,4w)$ from $0\le w\le1$. When $w$ is $0$, we have the point $(0,0)$, and when $w$ is $1$, we have the point $(-3,4)$. We see that since this is a directly proportional function, we can just connect the dots like this: 
+
+	<asy>
+	import graph;
+	Label f;
+size(5cm);
+	unitsize(0.7cm);
+
+	xaxis(-5,5,Ticks(f, 5.0, 1.0));
+	yaxis(-5,5,Ticks(f, 5.0, 1.0));
+
+	draw((0,0)--(-3,4));
+	</asy>
+
+	Now, when we vary $u$ from $0$ to $2$, this line is translated to the right $2$ units: 
+
+	<asy>
+	import graph;
+	Label f;
+
+	unitsize(0.7cm);
+size(5cm);
+	xaxis(-5,5,Ticks(f, 5.0, 1.0));
+	yaxis(-5,5,Ticks(f, 5.0, 1.0));
+
+	draw((0,0)--(-3,4));
+	draw((2,0)--(-1,4));
+	</asy>
+
+	We know that any points in the region between the line (or rather segment) and its translation satisfy $w$ and $u$, so we shade in the region: 
+
+	<asy>
+	import graph;
+	Label f;
+
+	unitsize(0.7cm);
+size(5cm);
+	xaxis(-5,5,Ticks(f, 5.0, 1.0));
+	yaxis(-5,5,Ticks(f, 5.0, 1.0));
+
+	draw((0,0)--(-3,4));
+	draw((2,0)--(-1,4));
+
+	filldraw((0,0)--(-3,4)--(-1,4)--(2,0)--cycle, gray);
+	</asy>
+
+	We can also shift this quadrilateral one unit up, because of $v$. Thus, this is our figure: 
+
+	<asy>
+	import graph;
+	Label f;
+
+	unitsize(0.7cm);
+size(5cm);
+	xaxis(-5,5,Ticks(f, 5.0, 1.0));
+	yaxis(-5,5,Ticks(f, 5.0, 1.0));
+
+	draw((0,0)--(-3,4));
+	draw((2,0)--(-1,4));
+
+	filldraw((0,0)--(-3,4)--(-1,4)--(2,0)--cycle, gray);
+	filldraw((0,1)--(-3,5)--(-1,5)--(2,1)--cycle, gray);
+
+draw((0,0)--(0,1),black+dashed);
+draw((2,0)--(2,1),black+dashed);
+draw((-3,4)--(-3,5),black+dashed);
+	</asy>
+
+	<asy>
+	import graph;
+	Label f;
+
+	unitsize(0.7cm);
+size(5cm);
+	xaxis(-5,5,Ticks(f, 5.0, 1.0));
+	yaxis(-5,5,Ticks(f, 5.0, 1.0));
+
+	draw((0,0)--(-3,4));
+	draw((1,0)--(-2,4));
+
+	filldraw((0,0)--(2,0)--(2,1)--(-1,5)--(-3,5)--(-3,4)--cycle, gray);
+	</asy>
+
+	The length of the boundary is simply $1+2+5+1+2+5$ ($5$ can be obtained by Pythagorean theorem since we have side lengths $3$ and $4$.). This equals $\boxed{\textbf{(E) }16.}$ 
+
+~Technodoggo ~ESAOPS

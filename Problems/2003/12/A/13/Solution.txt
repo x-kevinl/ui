@@ -1,0 +1,21 @@
+== Solution ==
+===Solution 1===
+[[Image:2003amc10a10solution.gif]]
+
+Let the squares be labeled $A$, $B$, $C$, and $D$.
+
+When the polygon is folded, the "right" edge of square $A$ becomes adjacent to the "bottom edge" of square $C$, and the "bottom" edge of square $A$ becomes adjacent to the "bottom" edge of square $D$. 
+
+So, any "new" square that is attatched to those edges will prevent the polygon from becoming a cube with one face missing. 
+
+Therefore, squares $1$, $2$, and $3$ will prevent the polygon from becoming a cube with one face missing.
+
+Squares  $4$, $5$, $6$, $7$, $8$, and $9$ will allow the polygon to become a cube with one face missing when folded. 
+
+Thus the answer is $\boxed{\mathrm{(E)}\ 6}$.
+
+===Solution 2===
+Another way to think of it is that a cube missing one face has $5$ of its $6$ faces.  Since the shape has $4$ faces already, we need another face.  The only way to add another face is if the added square does not overlap any of the others.  $1$,$2$, and $3$ overlap, while squares $4$ to $9$ do not. The answer is $\boxed{\mathrm{(E)}\ 6}$
+
+===Solution 3===
+If you're good at visualizing, you can imagine each box and fold up the shape into a 3D shape. This solution is only recommended if you are either in a hurry or extremely skilled at visualizing. We find out that $4,5,6,7,8$ and $9$ work. Therefore, the answer is $\boxed{\mathrm{(E)}\ 6}$. ~Sophia866

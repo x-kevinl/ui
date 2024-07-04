@@ -1,0 +1,2 @@
+==Solution 1==
+Working backwards, if $3/4$ of the chairs are taken and $6$ are empty, then there are three times as many taken chairs as empty chairs, or $3 \cdot 6 = 18$. If $x$ is the number of people in the room and $2/3$ are seated, then $\frac23 x = 18$ and $x = \boxed{(\text{D}) 27}$.

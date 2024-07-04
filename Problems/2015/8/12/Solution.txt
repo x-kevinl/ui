@@ -1,0 +1,12 @@
+==Solutions==
+
+===Solution 1===
+We first count the number of pairs of parallel lines that are in the same direction as $\overline{AB}$.  The pairs of parallel lines are $\overline{AB}\text{ and }\overline{EF}$, $\overline{CD}\text{ and }\overline{GH}$, $\overline{AB}\text{ and }\overline{CD}$, $\overline{EF}\text{ and }\overline{GH}$, $\overline{AB}\text{ and }\overline{GH}$, and $\overline{CD}\text{ and }\overline{EF}$.  These are $6$ pairs total.  We can do the same for the lines in the same direction as $\overline{AE}$ and $\overline{AD}$.  This means there are $6\cdot 3=\boxed{\textbf{(C) } 18}$ total pairs of parallel lines.
+
+===Solution 2===
+Look at any edge, let's say $\overline{AB}$. There are three ways we can pair $\overline{AB}$ with another edge. $\overline{AB}\text{ and }\overline{EF}$, $\overline{AB}\text{ and }\overline{HG}$, and $\overline{AB}\text{ and }\overline{DC}$. There are 12 edges on a cube. 3 times 12 is 36. We have to divide by 2 because every pair is counted twice, so $\frac{36}{2}$ is $\boxed{\textbf{(C) } 18}$ total pairs of parallel lines.
+
+===Solution 3===
+We can use the feature of 3-Dimension in a cube to solve the problem systematically. For example, in the 3-D of the cube, $\overline{AB}$, $\overline{BC}$, and $\overline{BF}$ have $4$ different parallel edges respectively. So it gives us the total pairs of parallel lines are $\binom{4}{2}\cdot3 =\boxed{\textbf{(C) } 18}$.
+
+--LarryFlora

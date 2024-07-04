@@ -1,0 +1,4 @@
+==Solution 1 (Intuition):==
+Visualizing the two curves, we realize they are both parabolas with the same axis of symmetry. Now assume that the first equation is above the second, since order doesn't matter. Then $C>A$ and $B>D$. Therefore the number of ways to choose the four integers is $\tbinom{6}{2}\tbinom{4}{2}=90$, and the answer is $\boxed{\textbf{(C) }90}$. 
+
+~IceWolf10

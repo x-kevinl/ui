@@ -1,0 +1,2 @@
+== Problem==
+In parallelogram <math>ABCD</math>, point <math>M</math> is on <math>\overline{AB}</math> so that <math>\frac {AM}{AB} = \frac {17}{1000}</math> and point <math>N</math> is on <math>\overline{AD}</math> so that <math>\frac {AN}{AD} = \frac {17}{2009}</math>. Let <math>P</math> be the point of intersection of <math>\overline{AC}</math> and <math>\overline{MN}</math>. Find <math>\frac {AC}{AP}</math>.

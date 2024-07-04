@@ -1,0 +1,2 @@
+== Solution ==
+Let $N = \overline{abcd} = 1000a + \overline{bcd}$, such that $\frac{N}{9} = \overline{bcd}$. Then $1000a + \overline{bcd} = 9\overline{bcd} \Longrightarrow 125a = \overline{bcd}$. Since $100 \le \overline{bcd} < 1000$, from $a = 1, \ldots, 7$ we have $7$ three-digit solutions, and the answer is  $\mathrm{(D)}$.

@@ -1,0 +1,9 @@
+==Solution 1==
+[[File:2012amc85.png]]
+
+
+$1 + 1 + 1 + 2 + X = 1 + 2 + 1 + 6\\
+5 + X = 10\\
+X = 5$
+
+Thus, the answer is $ \boxed{\textbf{(E)}\ 5} $.

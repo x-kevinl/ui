@@ -1,0 +1,2 @@
+==Solution==
+Of the six shapes used to create the polygon, the triangle and octagon are adjacent to the others on one side, and the others are adjacent on two sides. In the triangle and octagon $3+8-2(1)=9$ sides are on the outside of the final polygon. In the other shapes $4+5+6+7-4(2) = 14$ sides are on the outside. The resulting polygon has $9+14 = \boxed{\textbf{(B)}\ 23}$ sides.

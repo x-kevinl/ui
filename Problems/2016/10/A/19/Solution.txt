@@ -1,0 +1,20 @@
+== Solution 1 (Similar Triangles)==
+
+<asy>
+size(6cm);
+pair D=(0,0), C=(6,0), B=(6,3), A=(0,3);
+draw(A--B--C--D--cycle);
+draw(B--D);
+draw(A--(6,2));
+draw(A--(6,1));
+label("$A$", A, dir(135));
+label("$B$", B, dir(45));
+label("$C$", C, dir(-45));
+label("$D$", D, dir(-135));
+label("$Q$", extension(A,(6,1),B,D),dir(-90));
+label("$P$", extension(A,(6,2),B,D), dir(90));
+label("$F$", (6,1), dir(0));
+label("$E$", (6,2), dir(0));
+</asy>
+
+Use similar triangles. Our goal is to put the ratio in terms of ${BD}$. Since $\triangle APD \sim \triangle EPB,$ $\frac{DP}{PB}=\frac{AD}{BE}=3.$ Therefore, $PB=\frac{BD}{4}$. Similarly, $\frac{DQ}{QB}=\frac{3}{2}$. This means that ${DQ}=\frac{3\cdot BD}{5}$. Therefore, $r:s:t=\frac{1}{4}:\frac{2}{5}-\frac{1}{4}:\frac{3}{5}=5:3:12,$ so $r+s+t=\boxed{\textbf{(E) }20.}$

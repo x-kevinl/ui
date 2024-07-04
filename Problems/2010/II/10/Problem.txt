@@ -1,0 +1,2 @@
+== Problem ==
+Find the number of second-degree [[polynomial]]s <math>f(x)</math> with integer [[coefficient]]s and integer zeros for which <math>f(0)=2010</math>.

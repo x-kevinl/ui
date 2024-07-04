@@ -1,0 +1,23 @@
+== Diagram ==
+<asy>
+/* Made by MRENTHUSIASM */
+size(250);
+
+pair A, B, C, O, I, M;
+C = origin;
+A = (12,0);
+B = (0,5);
+C = origin;
+O = circumcenter(A,B,C);
+I = incenter(A,B,C);
+M = (4,4);
+fill(M--O--I--cycle,yellow);
+draw(A--B--C--cycle^^circumcircle(A,B,C)^^incircle(A,B,C)^^circle(M,4)^^M--O--I--cycle);
+dot("$A$",A,1.5*SE,linewidth(4));
+dot("$B$",B,1.5*NW,linewidth(4));
+dot("$C$",C,1.5*SW,linewidth(4));
+dot("$O$",O,1.5*dir((5,12)),linewidth(4));
+dot("$I$",I,1.5*S,linewidth(4));
+dot("$M$",M,1.5*N,linewidth(4));
+</asy>
+~MRENTHUSIASM

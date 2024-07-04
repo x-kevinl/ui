@@ -1,0 +1,5 @@
+== See Also ==
+
+{{AMC10 box|year=2007|ab=B|num-b=7|num-a=9}}
+ 	
+{{MAA Notice}}

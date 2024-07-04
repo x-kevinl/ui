@@ -1,0 +1,4 @@
+==Problem==
+Regular polygons with $5,6,7,$ and $8$ sides are inscribed in the same circle. No two of the polygons share a vertex, and no three of their sides intersect at a common point. At how many points inside the circle do two of their sides intersect?
+
+$(\textbf{A})\: 52\qquad(\textbf{B}) \: 56\qquad(\textbf{C}) \: 60\qquad(\textbf{D}) \: 64\qquad(\textbf{E}) \: 68$

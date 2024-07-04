@@ -1,0 +1,11 @@
+==Problem==
+
+Steve says to Jon, "I am thinking of a polynomial whose roots are all positive integers. The polynomial has the form <math>P(x) = 2x^3-2ax^2+(a^2-81)x-c</math> for some positive integers <math>a</math> and <math>c</math>. Can you tell me the values of <math>a</math> and <math>c</math>?"
+
+After some calculations, Jon says, "There is more than one such polynomial."
+
+Steve says, "You're right.  Here is the value of <math>a</math>." He writes down a positive integer and asks, "Can you tell me the value of <math>c</math>?"
+
+Jon says, "There are still two possible values of <math>c</math>."
+
+Find the sum of the two possible values of <math>c</math>.

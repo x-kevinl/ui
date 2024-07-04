@@ -1,0 +1,7 @@
+==Solution==
+
+For a number to be divisible by $4,$ the last two digits have to be divisible by $4.$ That means the last two digits of this integer must be $4.$
+
+For a number to be divisible by $9,$ the sum of all the digits must be divisible by $9.$ The only way to make this happen is with nine $4$'s. However, we also need one $9.$
+
+The smallest integer that meets all these conditions is $4444444944$. The last four digits are $\boxed{\mathrm{(C) \ } 4944}$

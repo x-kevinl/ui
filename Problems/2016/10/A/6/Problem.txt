@@ -1,0 +1,4 @@
+== Problem ==
+Star lists the whole numbers $1$ through $30$ once. Emilio copies Star's numbers, replacing each occurrence of the digit $2$ by the digit $1$. Star adds her numbers and Emilio adds his numbers. How much larger is Star's sum than Emilio's?
+
+$\textbf{(A)}\ 13\qquad\textbf{(B)}\ 26\qquad\textbf{(C)}\ 102\qquad\textbf{(D)}\ 103\qquad\textbf{(E)}\ 110$

@@ -1,0 +1,47 @@
+==Solution 1==
+
+There are four marked points on the diagram; let us examine the top two points and call them $A$ and $B$. Similarly, let the bottom two dots be $C$ and $D$, as shown: 
+
+<asy>
+import graph;
+import geometry;
+
+unitsize(1cm);
+
+pair A = (-1.41, 1.41);
+pair B = (1.41, 1.41);
+pair C = (1.41, -1.41);
+pair D = (-1.41, -1.41);
+pair O = (0, 0);
+
+draw(circle(O,2));
+draw(A--O--B,black+dashed);
+draw(C--O--D,black+dashed);
+
+dot(A);dot(B);dot(C);dot(D);dot(O);
+
+label("$A$", A, NW);
+label("$B$", B, NE);
+label("$C$", C, SE);
+label("$D$", D, SW);
+label("$O$", (0,0.1), N);
+</asy>
+
+This is a cross-section of the sphere seen from the side. We know that ${AO}={BO}={CO}={DO}=2$, and by Pythagorean Theorem, length of  $\overline{AB}=2\sqrt2.$ 
+
+Each of the four congruent semicircles has the length $AB$ as a diameter (since $\overline{AB}$ is congruent to $\overline{BC},\overline{CD},$ and $\overline{DA}$), so its radius is $\dfrac{2\sqrt2}2=\sqrt2.$ Each one's arc length is thus $\pi\cdot\sqrt2=\sqrt2\pi.$ 
+
+We have $4$ of these, so the total length is $4\sqrt2\pi=\sqrt{32}\pi$, so thus our answer is $\boxed{\textbf{(A) }32.}$
+
+~Technodoggo
+~minor edits by JiuruAops
+
+
+
+Note:
+
+TLDR:
+
+The radius of $2$ gives us a line segment connecting diagonal vertices of the semi-circles with a measure of $4$, giving us through $45^{\circ}-45^{\circ}-90^{\circ}$ relations and Pythagorean theorem a diameter for each semi-circle of $2\sqrt{2}$, which we can use to bash out the circumference of a full circle, multiply by $2$, and move inside and under the root to get $32$.
+
+~Aryan Mukherjee

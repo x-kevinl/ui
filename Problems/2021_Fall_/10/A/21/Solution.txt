@@ -1,0 +1,6 @@
+==Solution 1 (Multinomial Coefficients)==
+For simplicity purposes, we assume that the balls and the bins are both distinguishable.
+
+Recall that there are $5^{20}$ ways to distribute $20$ balls into $5$ bins. We have
+$$p=\frac{5\cdot4\cdot\binom{20}{3,5,4,4,4}}{5^{20}} \text{ and } q=\frac{\binom{20}{4,4,4,4,4}}{5^{20}}.$$ Therefore, the answer is $$\frac pq=\frac{5\cdot4\cdot\binom{20}{3,5,4,4,4}}{\binom{20}{4,4,4,4,4}}=\frac{5\cdot4\cdot\frac{20!}{3!\cdot5!\cdot4!\cdot4!\cdot4!}}{\frac{20!}{4!\cdot4!\cdot4!\cdot4!\cdot4!}}=\frac{5\cdot4\cdot(4!\cdot4!\cdot4!\cdot4!\cdot4!)}{3!\cdot5!\cdot4!\cdot4!\cdot4!}=\frac{5\cdot4\cdot4}{5}=\boxed{\textbf{(E)}\ 16}.$$
+~MRENTHUSIASM ~Jesshuang

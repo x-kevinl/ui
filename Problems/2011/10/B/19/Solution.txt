@@ -1,0 +1,47 @@
+== Solution 1 ==
+
+First, square both sides, and isolate the absolute value.
+$$\begin{align*}
+5|x|+8&=x^2-16\\
+5|x|&=x^2-24\\
+|x|&=\frac{x^2-24}{5}. \\
+\end{align*}$$
+Solve for the absolute value and factor.
+
+Case 1: $x=\frac{x^2-24}{5}$
+
+Multiplying both sides by $5$ gives us 
+$$ 5x=x^2-24.$$
+Rearranging and factoring, we have
+$$\begin{align*}
+x^2-5x-24 &=0, \\
+(x-8)(x+3) &= 0.\\
+\end{align*}$$
+
+Case 2: $x=\frac{-x^2+24}{5}$
+
+As above, we multiply both sides by $5$ to find
+$$ 5x=-x^2+24.$$
+Rearranging and factoring gives us
+$$\begin{align*}
+x^2+5x-24 &=0, \\
+(x+8)(x-3) &= 0. \\
+\end{align*}$$
+
+Combining these cases, we have $x= -8, -3, 3, 8$. Because our first step of squaring is not reversible, however, we need to check for extraneous solutions. Plug each solution for $x$ back into the original equation to ensure it works. Whether the number is positive or negative does not matter since the absolute value or square will cancel it out anyways.
+Trying $|x|=|3|$, we have
+$$\begin{align*}
+\sqrt{5|3|+8}&=\sqrt{3^2-16}, \\
+\sqrt{15+8}&=\sqrt{9-16}, \\
+\sqrt{23} &\not= \sqrt{-7}.\\
+\end{align*}$$
+Therefore, $x = 3$ and $ x= -3$ are extraneous.
+
+Checking $|x|=|8|$, we have
+$$\begin{align*}
+\sqrt{5|8|+8}&=\sqrt{8^2-16}, \\
+\sqrt{40+8}&=\sqrt{64-16}, \\
+\sqrt{48}&=\sqrt{48}.\\
+\end{align*}$$
+
+The roots of our original equation are $-8$ and $8$ and product is $-8 \times 8 = \boxed{\textbf{(A)} -64}$.

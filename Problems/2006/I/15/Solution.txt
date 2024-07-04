@@ -1,0 +1,55 @@
+== Solutions ==
+=== Solution 1 ===
+Suppose <math>b_{i} = \frac {x_{i}}3</math>.
+We have
+<cmath>
+\sum_{i = 1}^{2006}b_{i}^{2} = \sum_{i = 0}^{2005}(b_{i} + 1)^{2} = \sum_{i = 0}^{2005}(b_{i}^{2} + 2b_{i} + 1)
+</cmath>
+So
+<cmath>
+\sum_{i = 0}^{2005}b_{i} = \frac {b_{2006}^{2} - 2006}2
+</cmath>
+Now
+<cmath>
+\sum_{i = 1}^{2006}b_{i} = \frac {b_{2006}^{2} + 2b_{2006} - 2006}2
+</cmath>
+Therefore
+<cmath>
+\left|\sum_{i = 1}^{2006}b_{i}\right| = \left|\frac {(b_{2006} + 1)^{2} - 2007}2\right|\geq \left|\frac{2025 - 2007}{2}\right| = 9
+</cmath>
+This lower bound can be achieved if we use <math>b_1 = -1</math>, <math>b_2 = 0</math>, <math>b_3 = -1</math>, <math>b_4 = 0</math>, and so on until <math>b_{1962} = 0</math>, after which we let <math>b_k = b_{k - 1} + 1</math> so that <math>b_{2006} = 44</math>. So
+<cmath>
+\left|\sum_{i = 1}^{2006}x_{i}\right|\geq \boxed{027}
+</cmath>
+
+=== Solution 2 ===
+First, we state that iff <math>x_{i - 1}\ge0</math>, <math>|x_i| = |x_{i - 1}| + 3</math> and iff <math>x_{i - 1} < 0</math>, <math>|x_i| = |x_{i - 1}| - 3</math>. Now suppose <math>x_i = x_j</math> for some <math>0\le i < j\le2006</math>. Now, this means that <math>|x_i| = |x_j|</math>, and so the number of positive numbers in the set <math>\{x_i,x_{i + 1},\ldots,x_{j - 1}\}</math> equals the number of negative numbers. Now pair the numbers in this list up in the following way: Whenever a positive and a negative number are adjacent in this progression, pair them up and remove them from this list. We claim that every pair will sum to -3.
+
+If the positive number comes first, then the negative number will have a magnitude three greater, so this is true. If the negative number comes first, then the positive number will have magnitude three smaller, and this will also be true. Now let us examine what happens when we remove those two from the sequence. WLOG, let the numbers be <math>x_k</math> and <math>x_{k + 1}</math>. Since one is positive and the other is negative, <math>|x_{k + 2}| = |x_{k + 1}|\pm3 = |x_k|\pm3\mp3 = |x_k| = |x_{k - 1} + 3|</math>. So the new sequence works under the same criteria as the old one. In this way, we can pair all of the numbers up in this subsequence so the sums of the pairs are -3. Thus, the average of these numbers will be -3/2 for all subsequences that start and end with the same number (not including one of those).
+
+Now, take all of the repeating subsequences out of the original sequence. The only thing that will be left will be a sequence <math>\{0,3,6,9,\cdots,3k\}</math> for some even <math>k</math>. Since we started with 2006 terms, we removed <math>2006 - k</math> (an even number) with an average of -3/2. Thus, the sum of both this remaining sequence and the removed stuff is <math>(2006 - k)( - 3/2) + \sum_{i = 1}^k3k = (3/2)(k - 2006 + k(k + 1)) = 3/2(k^2 + 2k - 2006)</math>. This must be minimized, so we find the roots: <math>k^2 + 2k = 2006\implies (k + 1)^2 = 2007</math> and <math>44^2 = 1936 < 2007 < 2025 = 45^2</math>. Plugging in <math>k = 44</math> yields <math>(3/2)(2025 - 2007) = 27</math> (and <math>k = 42</math> yields <math>- 237</math>, a worse result). Thus, <math>\fbox{027}</math> is the closest to zero this sum can get.
+
+=== Solution 3 ===
+We know <math>|x_k| = |x_{k - 1} + 3|</math>.  We get rid of the absolute value by squaring both sides: <math>{x_k}^2 = {x_{k - 1}}^2 + 6{x_{k - 1}} + 9\Rightarrow {x_k}^2 - {x_{k - 1}}^2 = 6{x_{k - 1}} + 9</math>. So we set this up:
+
+<cmath>
+\begin{align*} {x_1}^2 - {x_0}^2 & = 6{x_0} + 9 \\
+{x_2}^2 - {x_1}^2 & = 6{x_1} + 9 \\
+& \vdots \\
+{x_{2007}}^2 - {x_{2006}}^2 & = 6{x_{2006}} + 9
+\end{align*}
+</cmath>
+There are <math>2007</math> equations. Sum them. We get:
+<math>{x_{2007}}^2 = 6\left(x_1 + x_2 + \cdots + x_{2006}\right) + 9\cdot{2007}</math>
+
+So <math>|x_1 + x_2 + \cdots + x_{2006}| = \tfrac 16 \left|{x_{2007}}^2 - 9\cdot{2007}\right|</math>
+
+We know <math>3\ |\ x_{2007}</math> and we want to minimize <math>\left|{x_{2007}}^2 - 9\cdot{2007}\right|</math>, so <math>x_{2007}</math> must be <math>3\cdot{45}</math> for it to be minimal (<math>45^2 = 2025</math> which is closest to <math>2007</math>). We can achieve this with <math>x_k=3k</math> till <math>x_{45}=135</math> and then alternating <math>x_{46}=132</math>, <math>x_{47}=135</math> and so on ... Then <math>x_{2k}=132</math> and <math>x_{2k+1}=135</math> for all <math>k>22</math>. Since <math>2007</math> is odd, we have <math>x_{2007}=135</math>.
+
+This means that <math>|x_1 + x_2 + \cdots + x_{2006}| = \tfrac 16 \left|9(2025 - 2007)\right| = \boxed{027}</math>
+
+=== Solution 4 ===
+
+Playing around with a couple numbers, we see that we can generate the sequence <math>0, 3, -6, 3, -6, \cdots</math>, and we can also generate the sequence <math>3, 6, 9, 12, \cdots</math> after each <math>-6</math> value. Thus, we will apply this to try and find some bounds. We can test if the first <math>1000</math> pairs of numbers each sum up to <math>-3</math>, and the rest form an arithmetic sequence, if the first <math>990</math> pairs sum up to <math>-3</math>, and so on. When we get to <math>980</math>, we find that <math>980(-3) + 3 + 6 + \cdots + 3\cdot 46 = 303</math>. If we shift the number of pairs up by <math>1</math>, we get <math>981(-3) + 3 + 6 + \cdots + 3\cdot 44 = \boxed{027}</math>.
+
+~ Spacesam

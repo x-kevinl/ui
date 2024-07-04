@@ -1,0 +1,4 @@
+== Problem ==
+How many two-digit numbers have digits whose sum is a perfect square? 
+
+$ \textbf{(A)}\ 13\qquad\textbf{(B)}\ 16\qquad\textbf{(C)}\ 17\qquad\textbf{(D)}\ 18\qquad\textbf{(E)}\ 19 $

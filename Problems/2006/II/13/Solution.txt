@@ -1,0 +1,22 @@
+== Solution ==
+Let the first odd integer be <math>2n+1</math>, <math>n\geq 0</math>. Then the final odd integer is <math>2n+1 + 2(j-1) = 2(n+j) - 1</math>. The odd integers form an [[arithmetic sequence]] with sum <math>N = j\left(\frac{(2n+1) + (2(n+j)-1)}{2}\right) = j(2n+j)</math>. Thus, <math>j</math> is a factor of <math>N</math>.
+
+Since <math>n\geq 0</math>, it follows that <math>2n+j \geq j</math> and <math>j\leq \sqrt{N}</math>.
+
+Since there are exactly <math>5</math> values of <math>j</math> that satisfy the equation, there must be either <math>9</math> or <math>10</math> factors of <math>N</math>. This means <math>N=p_1^2p_2^2</math> or <math>N=p_1p_2^4</math>. Unfortunately, we cannot simply observe prime factorizations of <math>N</math> because the factor <math>(2n+j)</math> does not cover all integers for any given value of <math>j</math>.
+
+Instead we do some casework:
+
+*If <math>N</math> is odd, then <math>j</math> must also be odd. For every odd value of <math>j</math>, <math>2n+j</math> is also odd, making this case valid for all odd <math>j</math>. Looking at the forms above and the bound of <math>1000</math>, <math>N</math> must be
+<cmath>(3^2\cdot5^2),\ (3^2\cdot7^2),\ (3^4\cdot5),\ (3^4\cdot7),\ (3^4\cdot 11)</cmath>
+:Those give <math>5</math> possibilities for odd <math>N</math>.
+*If <math>N</math> is even, then <math>j</math> must also be even. Substituting <math>j=2k</math>, we get
+<cmath>N = 4k(n+k) \Longrightarrow \frac{N}{4} = k(n+k)</cmath>
+
+:Now we can just look at all the [[prime factorization]]s since <math>(n+k)</math> cover the integers for any <math>k</math>. Note that our upper bound is now <math>250</math>:
+
+<cmath>\frac{N}{4} = (2^2\cdot3^2),(2^2\cdot5^2),(2^2\cdot7^2), (3^2\cdot5^2), (2^4\cdot3), (2^4\cdot5), (2^4\cdot7), (2^4\cdot11), (2^4\cdot13), (3^4\cdot2)</cmath>
+
+:Those give <math>10</math> possibilities for even <math>N</math>.
+
+The total number of integers <math>N</math> is <math>5 + 10 = \boxed{15}</math>.

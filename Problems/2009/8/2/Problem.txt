@@ -1,0 +1,5 @@
+==Problem==
+
+On average, for every 4 sports cars sold at the local dealership, 7 sedans are sold. The dealership predicts that it will sell 28 sports cars next month. How many sedans does it expect to sell? 
+
+$ \textbf{(A)}\ 7\qquad\textbf{(B)}\ 32\qquad\textbf{(C)}\ 35\qquad\textbf{(D)}\ 49\qquad\textbf{(E)}\ 112 $

@@ -1,0 +1,12 @@
+==Solution 1==
+We must first get an idea of what $f(x)$ looks like:
+
+Between $0$ and $1$, $f(x)$ starts at $2$ and increases; clearly there is no zero here.
+
+Between $1$ and $\frac{\pi}{2}$, $f(x)$ starts at a positive number and increases to $\infty$; there is no zero here either.
+
+Between $\frac{\pi}{2}$ and 3, $f(x)$ starts at $-\infty$ and increases to some negative number; there is no zero here either.
+
+Between $3$ and $\pi$, $f(x)$ starts at some negative number and increases to -2; there is no zero here either.
+
+Between $\pi$ and $\pi+\frac{\pi}{4} < 4$, $f(x)$ starts at -2 and increases to $-\frac{\sqrt2}{2} + 2\left(-\frac{\sqrt2}{2}\right) + 3\left(1\right)=3\left(1-\frac{\sqrt2}{2}\right)>0$. There is a zero here by the Intermediate Value Theorem. Therefore, the answer is $\boxed{\textbf{(D)}}$.

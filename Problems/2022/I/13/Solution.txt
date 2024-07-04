@@ -1,0 +1,64 @@
+==Solution 1==
+
+<math>0.\overline{abcd}=\frac{abcd}{9999} = \frac{x}{y}</math>, <math>9999=9\times 11\times 101</math>.
+
+Then we need to find the number of positive integers <math>x</math> that (with one of more <math>y</math> such that <math>y|9999</math>) can meet the requirement <math>1 \leq {x}\cdot\frac{9999}{y} \leq 9999</math>.
+
+Make cases by factors of <math>x</math>. (A venn diagram of cases would be nice here.)
+
+
+Case <math>A</math>:
+
+<math>3 \nmid x</math> and <math>11 \nmid x</math> and <math>101 \nmid x</math>, aka <math>\gcd (9999, x)=1</math>.
+
+Euler's totient function counts these: 
+<cmath>\varphi \left(3^2 \cdot 11 \cdot 101 \right) = ((3-1)\cdot 3)(11-1)(101-1)= \bf{6000}</cmath> values (but it's enough to note that it's a multiple of 1000 and thus does not contribute to the final answer)
+
+Note: You don't need to know this formula. The remaining cases essentially re-derive the same computation for other factors of <math>9999</math>. This case isn't actually different. 
+
+The remaining cases have <math>3</math> (or <math>9</math>), <math>11</math>, and/or <math>101</math> as factors of <math>abcd</math>, which cancel out part of <math>9999</math>.
+Note: Take care about when to use <math>3</math> vs <math>9</math>.
+
+
+Case <math>B</math>: <math>3|x</math>, but <math>11 \nmid x</math> and <math>101 \nmid x</math>. 
+
+Then <math>abcd=9x</math> to leave 3 uncancelled, and <math>x=3p</math>, 
+so  <math>x \leq \frac{9999}{9} = 1111</math>, giving:
+
+<math>x \in 3 \cdot \{1, \dots \left\lfloor \frac{1111}{3}\right\rfloor\}</math>,
+
+<math>x \notin (3\cdot 11) \cdot \{1 \dots \left\lfloor \frac{1111}{3\cdot 11}\right\rfloor\}</math>,
+
+<math>x \notin (3 \cdot 101) \cdot \{1 \dots \left\lfloor \frac{1111}{3 \cdot 101}\right\rfloor\}</math>,
+
+for a subtotal of <math>\left\lfloor \frac{1111}{3}\right\rfloor -  (\left\lfloor\frac{1111}{3 \cdot 11}\right\rfloor + \left\lfloor\frac{1111}{3 \cdot 101}\right\rfloor ) = 370 - (33+3) = \bf{334}</math> values.
+
+
+Case <math>C</math>: <math>11|x</math>, but <math>3 \nmid x</math> and <math>101 \nmid x</math>. 
+
+Much like previous case, <math>abcd</math> is <math>11x</math>, so  <math>x \leq \frac{9999}{11} = 909  </math>,  
+
+giving <math>\left\lfloor \frac{909}{11}\right\rfloor -  \left(\left\lfloor\frac{909}{11 \cdot 3}\right\rfloor + \left\lfloor\frac{909}{11 \cdot 101}\right\rfloor \right) = 82 - (27 + 0) = \bf{55}</math> values.
+
+
+Case <math>D</math>: <math>3|x</math> and <math>11|x</math> (so <math>33|x</math>), but <math>101 \nmid x</math>.  
+
+Here, <math>abcd</math> is <math>99x</math>, so  <math>x \leq \frac{9999}{99} = 101  </math>, 
+
+giving <math>\left\lfloor \frac{101}{33}\right\rfloor - \left\lfloor \frac{101}{33 \cdot 101}\right\rfloor = 3-0 = \bf{3}</math> values.
+
+
+Case <math>E</math>: <math>101|x</math>.
+
+Here, <math>abcd</math> is <math>101x</math>, so  <math>x \leq \frac{9999}{101} = 99  </math>,
+
+giving <math>\left\lfloor \frac{99}{101}\right\rfloor = \bf{0}</math> values, so we don't need to account for multiples of <math>3</math> and <math>11</math>. 
+
+To sum up, the answer is <cmath>6000+334+55+3+0\equiv\boxed{392} \pmod{1000}.</cmath>
+
+===Clarification===
+In this context, when the solution says, "Then <math>abcd=9x</math> to leave 3 uncancelled, and <math>x=3p</math>," it is a bit vague. The best way to clarify this is by this exact example - what is really meant is we need to divide by 9 first to achieve 1111, which has no multiple of 3; thus, given that the fraction x/y is the simplest form, x can be a multiple of 3.
+
+Similar explanations can be said when the solution divides 9999 by 11, 101, and uses that divided result in the PIE calculation rather than 9999.
+
+'''mathboy282'''

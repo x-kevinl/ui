@@ -1,0 +1,10 @@
+==Solution 1==
+For this problem, all we need to do is find the amount of valid 4-digit numbers that can be made from the digits of $ 2012 $, since all of the valid 4-digit number will always be greater than $ 1000 $. The best way to solve this problem is by using casework.
+
+There can be only two leading digits, namely $ 1 $ or $ 2 $.
+
+When the leading digit is $ 1 $, you can make $ \frac{3!}{2!1!} \implies 3 $ such numbers. 
+
+When the leading digit is $ 2 $, you can make $ 3! \implies 6 $ such numbers.
+
+Summing the amounts of numbers, we find that there are $ \boxed{\textbf{(D)}\ 9} $ such numbers.

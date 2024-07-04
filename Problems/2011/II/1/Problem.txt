@@ -1,0 +1,2 @@
+== Problem ==
+Gary purchased a large beverage, but only drank <math>m/n</math> of it, where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. If he had purchased half as much and drunk twice as much, he would have wasted only <math>2/9</math> as much beverage. Find <math>m+n</math>.

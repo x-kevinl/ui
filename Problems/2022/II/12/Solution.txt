@@ -1,0 +1,24 @@
+==Solution==
+Denote <math>P = \left( x , y \right)</math>.
+ 		
+Because <math>\frac{x^2}{a^2}+\frac{y^2}{a^2-16} = 1</math>, <math>P</math>  is on an ellipse whose center is <math>\left( 0 , 0 \right)</math> and foci are <math>\left( - 4 , 0 \right)</math> and <math>\left( 4 , 0 \right)</math>.
+ 		
+Hence, the sum of distance from <math>P</math> to <math>\left( - 4 , 0 \right)</math> and <math>\left( 4 , 0 \right)</math> is equal to twice the major axis of this ellipse, <math>2a</math>.
+ 		
+Because <math>\frac{(x-20)^2}{b^2-1}+\frac{(y-11)^2}{b^2} = 1</math>, <math>P</math>  is on an ellipse whose center is <math>\left( 20 , 11 \right)</math> and foci are <math>\left( 20 , 10 \right)</math> and <math>\left( 20 , 12 \right)</math>.
+ 		
+Hence, the sum of distance from <math>P</math> to <math>\left( 20 , 10 \right)</math> and <math>\left( 20 , 12 \right)</math> is equal to twice the major axis of this ellipse, <math>2b</math>.
+ 		
+Therefore, <math>2a + 2b</math> is the sum of the distance from <math>P</math> to four foci of these two ellipses.
+ 		
+To make this minimized, <math>P</math> is the intersection point of the line that passes through <math>\left( - 4 , 0 \right)</math> and <math>\left( 20 , 10 \right)</math>, and the line that passes through <math>\left( 4 , 0 \right)</math> and <math>\left( 20 , 12 \right)</math>.
+ 		
+The distance between <math>\left( - 4 , 0 \right)</math> and <math>\left( 20 , 10 \right)</math> is <math>\sqrt{\left( 20 + 4 \right)^2 + \left( 10 - 0 \right)^2} = 26</math>.
+ 		
+The distance between <math>\left( 4 , 0 \right)</math> and <math>\left( 20 , 12 \right)</math> is <math>\sqrt{\left( 20 - 4 \right)^2 + \left( 12 - 0 \right)^2} = 20</math>.
+ 		
+Hence, <math>2 a + 2 b = 26 + 20 = 46</math>.
+ 		
+Therefore, <math>a + b = \boxed{\textbf{(023) }}.</math>
+ 		
+~Steven Chen (www.professorchenedu.com)

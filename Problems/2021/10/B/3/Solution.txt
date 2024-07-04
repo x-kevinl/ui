@@ -1,0 +1,6 @@
+==Solution 1==
+Say there are $j$ juniors and $s$ seniors in the program. Converting percentages to fractions, $\frac{j}{4}$ and $\frac{s}{10}$ are on the debate team, and since an equal number of juniors and seniors are on the debate team, $\frac{j}{4} = \frac{s}{10}.$
+
+Cross-multiplying and simplifying we get $5j=2s.$ Additionally, since there are $28$ students in the program, $j+s = 28.$ It is now a matter of solving the system of equations $$5j=2s$$$$j+s=28,$$ and the solution is $j = 8, s = 20.$ Since we want the number of juniors, the answer is $$\boxed{(C) \text{ } 8}.$$
+
+-[[User:PureSwag|PureSwag]]

@@ -1,0 +1,42 @@
+==Solution 1 (Generalized)==
+
+Let $r$ be the number of lattice points on the side length of square $R$, $s$ be the number of lattice points on the side length of square $S$, and $t$ be the number of lattice points on the side length of square $T$. Note that the actual lengths of the side lengths are the number of lattice points minus $1$, so we can work in terms of $r, s, t$ and subtract $3$ to get the actual answer at the end. Furthermore, note that the number of lattice points inside a rectangular region is equal to the number of lattice points in its width times the number of lattice points along its length.
+
+Using this fact, the number of lattice points in $R$ is $r^2$, the number of lattice points in $S$ is $s^2$, and the number of lattice points in $T$ is $t^2$.
+
+Now, by the first condition, we have $$r^2=\frac{9}{4}\cdot s^2 \implies r = \frac{3}{2}s     \quad \quad \quad \quad \quad (1)$$
+
+The second condition, the number of lattice points contained in $T$ is a fourth of the number of lattice points contained in $R \cup S$. The number of lattice points in $R \cup S$ is equal to the sum of the lattice points in their individually bounded regions, but the lattice points along the y-axis for the full length of square $S$ is shared by both of them, so we need to subtract that out.
+
+In all, this condition yields us $t^2 = \frac{1}{4}\cdot(r^2 + s^2 - s )\implies t^2 = \frac{1}{4}\cdot\left(\frac{9}{4}\cdot s^2 + s^2 - s \right)$
+$
+\implies t^2=\frac{1}{4}\cdot\frac{13s^2-4s}{4} \implies 16t^2= s(13s-4)$
+
+Note from $(1)$ that $s$ is a multiple of $2$. We can write $s=2j$ and substitute:
+$16t^2=2j(26j-4) \implies 4t^2=j(13j-2)$.
+Note that $j$ must be divisible by two for the product to be divisible by 4. Thus we make another substitution, $j=2k$:
+$$4t^2=2k(26k-2) \implies  t^2 = k(13k-1) \quad \quad \quad \quad \quad (2)$$
+
+Finally we look at the last condition; that the fraction of the lattice points inside $S$ that are inside $S \cap T$ is $27$ times the fraction of lattice points inside $r$ that are inside $R \cap T$.
+
+Let $x$ be the number of lattice points along the bottom of the rectangle formed by $S \cap T$, and $y$ be the number of lattice points along the bottom of the the rectangle formed by $R \cap T$.
+
+Therefore, the number of lattice points in $S\cap T $ is $xt$ and the number of lattice points in $R \cap T$ is $yt$.
+
+Thus by this condition, $\frac{xt}{s^2} = 27 \cdot \frac{yt}{r^2} \implies \frac{x}{s^2} = 27 \cdot \frac{y}{\frac{9}{4}\cdot s^2} \implies x= 12y$
+
+Finally, notice that $t=x+y-1=12y+y-1$ (subtracting overlap), and so we have $$t=13y-1 \quad \quad \quad \quad \quad (3)$$
+
+Now notice that by $(3)$ , $t\equiv -1 \pmod{13}\implies t^2 \equiv 1 \pmod{13}$.
+
+However, by $(2)$ , $t^2 \equiv k \cdot -1 \pmod{13}$. Therefore, $-k \equiv 1 \pmod{13} \implies k \equiv -1 \pmod{13}$
+
+Also, by $(2)$ , we know $k$ must be a perfect square since $k$ is relatively prime to $13k-1$ (Euclids algorithm) and the two must multiply to a perfect square. Hence we know two conditions on $k$, and we can now guess and check to find the smallest that satisfies both.
+
+We check $k=12$ first since its one less than a multiple of $13$, but this does not work. Next, we have $k=25$ which works because $25$ is a perfect square. Thus we have found the smallest $k$, and therefore the smallest $r, s, t$.
+
+Now we just work backwards: $j= 2k = 50$ and $s=2j=100$. Then $r=\frac{3}{2}\cdot 100 = 150$. Finally, from $(2)$ , $t^2=25(13\cdot25-1) \implies t^2 = 25 \cdot 324 \implies t=5\cdot 18=90$.
+
+Finally, the sum of each square’s side lengths is $r+s+t-3=340-3=337=\boxed{\textbf{(B) }337}$.
+
+~KingRavi

@@ -1,0 +1,26 @@
+==Solution==
+
+Notice that when we unfold the paper along the vertical fold line, we get the following shape:
+
+
+<asy>
+
+size(90);
+path sq = (-0.5,0)--(0.5,0)--(0.5,0.5)--(-0.5,0.5)--cycle;
+path trE = (-0.25,0)--(0.25,0)--(0,0.25)--cycle;
+
+real sh = 1.5;
+filldraw(shift((sh,-sh))*sq,mediumgrey,black);
+filldraw(shift((sh,-sh))*trE,white,black);
+
+size(90);
+path sq = (-0.5,-0.5)--(0.5,-0.5)--(0.5,0.5)--(-0.5,0.5)--cycle;
+path sqE = (-0.25,0)--(0,-0.25)--(0.25,0)--(0,0.25)--cycle;
+
+real sh = 1.5;
+filldraw(shift((sh,-sh))*sq,mediumgrey,black);
+filldraw(shift((sh,-sh))*sqE,white,black);
+</asy>
+
+It is clear that the answer is $\boxed{\textbf{(E)}}$.
+~MrThinker

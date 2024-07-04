@@ -1,0 +1,6 @@
+==Solution==
+Note that for any <math>x_i</math>, for any prime <math>p</math>, <math>p^2 \nmid x_i</math>.  This provides motivation to translate <math>x_i</math> into a binary sequence <math>y_i</math>. 
+
+Let the prime factorization of <math>x_i</math> be written as <math>p_{a_1} \cdot p_{a_2} \cdot p_{a_3} \cdots</math>, where <math>p_i</math> is the <math>i</math>th prime number. Then, for every <math>p_{a_k}</math> in the prime factorization of <math>x_i</math>, place a <math>1</math> in the <math>a_k</math>th digit of <math>y_i</math>. This will result in the conversion <math>x_1 = 2, x_{2} = 3, x_{3} = 2 * 3 = 6, \cdots</math>.
+
+Multiplication for the sequence <math>x_i</math> will translate to addition for the sequence <math>y_i</math>. Thus, we see that <math>x_{n+1}X(x_n) = x_np(x_n)</math> translates into <math>y_{n+1} = y_n+1</math>. Since <math>x_0=1</math>, and <math>y_0=0</math>, <math>x_i</math> corresponds to <math>y_i</math>, which is <math>i</math> in binary. Since <math>x_{10010101_2} = 2 \cdot 5 \cdot 11 \cdot 19 = 2090</math>, <math>t = 10010101_2</math> = <math>\boxed{149}</math>.

@@ -1,0 +1,4 @@
+== Problem ==
+The top of one tree is $16$ feet higher than the top of another tree. The heights of the two trees are in the ratio $3:4$. In feet, how tall is the taller tree? 
+
+$ \textbf{(A)}\ 48 \qquad\textbf{(B)}\ 64 \qquad\textbf{(C)}\ 80 \qquad\textbf{(D)}\ 96\qquad\textbf{(E)}\ 112 $

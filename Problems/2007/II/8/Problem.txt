@@ -1,0 +1,9 @@
+== Problem ==
+A [[rectangle|rectangular]] piece of paper measures 4 units by 5 units. Several [[line]]s are drawn [[parallel]] to the edges of the paper. A rectangle determined by the [[intersection]]s of some of these lines is called ''basic'' if 
+
+:(i) all four sides of the rectangle are segments of drawn line segments, and 
+:(ii) no [[segment]]s of drawn lines lie inside the rectangle.
+
+Given that the total length of all lines drawn is exactly 2007 units, let <math>N</math> be the maximum possible number of basic rectangles determined. Find the [[remainder]] when <math>N</math> is divided by 1000.
+
+__TOC__

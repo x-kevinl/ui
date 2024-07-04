@@ -1,0 +1,24 @@
+==Solution 1==
+
+The difference between consecutive terms is $(x-y)-(x+y)=-2y.$ Therefore we can also express the third and fourth terms as $x-3y$ and $x-5y.$ Then we can set them equal to $xy$ and $\frac{x}{y}$ because they are the same thing.
+
+$$\begin{align*}
+xy&=x-3y\\
+xy-x&=-3y\\
+x(y-1)&=-3y\\
+x&=\frac{-3y}{y-1}
+\end{align*}$$
+
+Substitute into our other equation.
+
+$$
+\frac{x}{y}=x-5y$$
+$$\frac{-3}{y-1}=\frac{-3y}{y-1}-5y$$
+$$-3=-3y-5y(y-1)$$
+$$0=5y^2-2y-3$$
+$$0=(5y+3)(y-1)$$
+$$y=-\frac35, 1$$
+
+But $y$ cannot be $1$ because then the first term would be $x+1$ and the second term $x-1$ while the last two terms would be equal to $x.$ Therefore $y=-\frac35.$ Substituting the value for $y$ into any of the equations, we get $x=-\frac98.$ Finally,
+
+$$ \frac{x}{y}-2y=\frac{9\cdot 5}{8\cdot 3}+\frac{6}{5}=\boxed{\textbf{(E)}\ \frac{123}{40}}$$

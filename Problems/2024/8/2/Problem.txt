@@ -1,0 +1,4 @@
+==Problem 2 ==
+What is the value of this expression in decimal form?
+$$\frac{44}{11} + \frac{110}{44} + \frac{44}{1100}$$
+$\textbf{(A) } 6.4\qquad\textbf{(B) } 6.504\qquad\textbf{(C) } 6.54\qquad\textbf{(D) } 6.9\qquad\textbf{(E) } 6.94$

@@ -1,0 +1,8 @@
+==Solution 1==
+We can first find the prime factorization of $23,232$, which is $2^6\cdot3^1\cdot11^2$. Now, we add one to our powers and multiply. Therefore, the answer is $(6+1)\cdot(1+1)\cdot(2+1)=7\cdot2\cdot3=\boxed{\textbf{(E) }42}$
+
+Note:
+23232 is a large number, so we can look for shortcuts to factor it. 
+One way to factor it quickly is to use 3 and 11 divisibility rules to observe that $23232 = 3 \cdot 7744 = 3 \cdot 11 \cdot 704 = 3 \cdot 11^2 \cdot 64 = 3^1  \cdot 11^2  \cdot  2^6$.
+
+Another way is to spot the "32" and compute that $23232 = 32\cdot(101 + 10000/16) = 32\cdot (101+ 5^4) = 32\cdot 726 = 32 \cdot 11 \cdot 66$.

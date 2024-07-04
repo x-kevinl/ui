@@ -1,0 +1,20 @@
+==Solution 1 (Casework)==
+
+Let $A$ denote the leaf where the cricket starts and $B$ denote one of the other $3$ leaves. Note that:
+
+* If the cricket is at $A,$ then the probability that it hops to $B$ next is $1.$
+
+* If the cricket is at $B,$ then the probability that it hops to $A$ next is $\frac13.$
+
+* If the cricket is at $B,$ then the probability that it hops to $B$ next is $\frac23.$
+
+We apply casework to the possible paths of the cricket:
+<ol style="margin-left: 1.5em;">
+  <li>$A \rightarrow B \rightarrow A \rightarrow B \rightarrow A$ <p>
+The probability for this case is $1\cdot\frac13\cdot1\cdot\frac13=\frac19.$</li><p>
+  <li>$A \rightarrow B \rightarrow B \rightarrow B \rightarrow A$ <p>
+The probability for this case is $1\cdot\frac23\cdot\frac23\cdot\frac13=\frac{4}{27}.$</li><p>
+</ol>
+Together, the probability that the cricket returns to $A$ after $4$ hops is $\frac19+\frac{4}{27}=\boxed{\textbf{(E) }\frac{7}{27}}.$
+
+~MRENTHUSIASM

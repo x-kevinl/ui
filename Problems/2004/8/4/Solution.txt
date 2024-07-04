@@ -1,0 +1,2 @@
+== Solution ==
+There are $\binom{4}{3}$ ways to choose three starters. Thus the answer is $\boxed{\textbf{(B)}\ 4}$.

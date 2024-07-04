@@ -1,0 +1,8 @@
+== Solution ==
+When they meet at the milepost, Sparky has been ridden for <math>n</math> miles total. Assume Butch rides Sparky for <math>a</math> miles, and Sundance rides for <math>n-a</math> miles. Thus, we can set up an equation, given that Sparky takes <math>\frac{1}{6}</math> hours per mile, Butch takes <math>\frac{1}{4}</math> hours per mile, and Sundance takes <math>\frac{2}{5}</math> hours per mile:
+
+<cmath>\frac{a}{6} + \frac{n-a}{4} = \frac{n-a}{6} + \frac{2a}{5} \rightarrow  a = \frac{5}{19}n.</cmath>
+
+The smallest possible integral value of <math>n</math> is <math>19</math>, so we plug in <math>n = 19</math> and <math>a = 5</math> and get <math>t = \frac{13}{3}</math> hours, or <math>260</math> minutes. So our answer is <math>19 + 260 = \boxed{279}</math>.
+
+Note that this solution is not rigorous because it is not guaranteed that they will switch properly to form this combination.

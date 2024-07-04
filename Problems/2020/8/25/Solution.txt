@@ -1,0 +1,2 @@
+==Solution 1==
+Let the side length of each square $S_k$ be $s_k$. Then, from the diagram, we can line up the top horizontal lengths of $S_1$, $S_2$, and $S_3$ to cover the top side of the large rectangle, so $s_{1}+s_{2}+s_{3}=3322$. Similarly, the short side of $R_2$ will be $s_1-s_2$, and lining this up with the left side of $S_3$ to cover the vertical side of the large rectangle gives $s_{1}-s_{2}+s_{3}=2020$. We subtract the second equation from the first to obtain $2s_{2}=1302$, and thus $s_{2}=\boxed{\textbf{(A) }651}$.

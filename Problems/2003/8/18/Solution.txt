@@ -1,0 +1,2 @@
+==Solution==
+There are $3$ people who are friends with only each other who won't be invited, plus $1$ person who has no friends, and $2$ people who are friends of friends of friends who won’t be invited. So the answer is $\boxed{\textbf{(D)}\ 6}$.

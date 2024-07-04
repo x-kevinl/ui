@@ -1,0 +1,5 @@
+== Problem ==
+
+Given a triangle with side lengths 15, 20, and 25, find the triangle's shortest altitude.
+
+$\textbf{(A)}\ 6 \qquad \textbf{(B)}\ 12 \qquad \textbf{(C)}\ 12.5 \qquad \textbf{(D)}\ 13 \qquad \textbf{(E)}\ 15$

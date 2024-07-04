@@ -1,0 +1,20 @@
+==Solution 1==
+
+Let $b_i=19\text{log}_2a_i$. Then $b_0=0, b_1=1,$ and $b_n=b_{n-1}+2b_{n-2}$ for all $n\geq 2$. The characteristic polynomial of this linear recurrence is $x^2-x-2=0$, which has roots $2$ and $-1$. 
+
+Therefore, $b_n=k_12^{n}+k_2(-1)^n$ for constants to be determined $k_1, k_2$.  Using the fact that $b_0=0, b_1=1,$ we can solve a pair of linear equations for $k_1, k_2$:
+
+$k_1+k_2=0$
+$2k_1-k_2=1$.
+
+Thus $k_1=\frac{1}{3}$, $k_2=-\frac{1}{3}$, and $b_n=\frac{2^n-(-1)^n}{3}$.
+
+Now, $a_1a_2\cdots a_k=2^{\frac{(b_1+b_2+\cdots+b_k)}{19}}$, so we are looking for the least value of $k$ so that
+
+$b_1+b_2+\cdots+b_k \equiv 0 \pmod{19}$. 
+
+Note that we can multiply all $b_i$ by three for convenience, as the $b_i$ are always integers, and it does not affect divisibility by $19$.
+
+Now, for all even $k$ the sum (adjusted by a factor of three) is $2^1+2^2+\cdots+2^k=2^{k+1}-2$. The smallest $k$ for which this is a multiple of $19$ is $k=18$ by Fermat's Little Theorem, as it is seen with further testing that $2$ is a primitive root $\pmod{19}$.  
+
+Now, assume $k$ is odd. Then the sum (again adjusted by a factor of three) is $2^1+2^2+\cdots+2^k+1=2^{k+1}-1$. The smallest $k$ for which this is a multiple of $19$ is $k=17$, by the same reasons. Thus, the minimal value of $k$ is $\boxed{\textbf{(A) } 17}$.

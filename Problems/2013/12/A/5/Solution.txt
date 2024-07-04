@@ -1,0 +1,5 @@
+==Solution 1==
+
+Simply write down two algebraic equations. We know that Tom gave $t$ dollars and Dorothy gave $d$ dollars. In addition, Tom originally paid $105$ dollars and Dorothy paid $125$ dollars originally. Since they all pay the same amount, we have: $$105 + t = 125 + d.$$ Rearranging, we have $$t-d = \boxed{\textbf{(B)} 20}.$$
+
+Solution $\textcopyright 2018$ RandomPieKevin. All Rights Reserved. skrrt...

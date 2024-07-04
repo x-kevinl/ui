@@ -1,0 +1,4 @@
+==Solution==
+[[Image:2007_AMC12A-10.png]]
+
+Since 3-4-5 is a [[Pythagorean triple]], the triangle is a [[right triangle]]. Since the hypotenuse is a [[diameter]] of the [[circumcircle]], the hypotenuse is $2r = 6$. Then the other legs are $\frac{24}5=4.8$ and $\frac{18}5=3.6$. The area is $\frac{4.8 \cdot 3.6}2 = 8.64\ \mathrm{(A)}$

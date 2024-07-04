@@ -1,0 +1,4 @@
+==Problem==
+Let $A$ be the area of the triangle with sides of length $25, 25$, and $30$. Let $B$ be the area of the triangle with sides of length $25, 25,$ and $40$. What is the relationship between $A$ and $B$?
+
+$ \textbf{(A) } A = \dfrac9{16}B \qquad\textbf{(B) } A = \dfrac34B \qquad\textbf{(C) } A=B \qquad \textbf{(D) } A = \dfrac43B \qquad \textbf{(E) }A = \dfrac{16}9B $

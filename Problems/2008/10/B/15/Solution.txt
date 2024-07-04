@@ -1,0 +1,17 @@
+==Solution==
+By the Pythagorean theorem, $a^2+b^2=b^2+2b+1$
+
+This means that $a^2=2b+1$.
+
+We know that $a,b>0$ and that $b<100$.
+
+We also know that $a^2$ is odd and thus $a$ is odd, since the right side of the equation is odd. $2b$ is even. $2b+1$ is odd.
+
+So $a=1,3,5,7,9,11,13$, but if $a=1$, then $b=0$. Thus $a\neq1.$
+
+$a=3,5,7,9,11,13$
+
+The answer is $\boxed{A}$.
+ 
+
+~qkddud (edited by aopsthedude and bburubburu)

@@ -1,0 +1,10 @@
+==Solution 1 (Cyclic Quadrilateral)==
+* Note: This solution requires the use of cyclic quadrilateral properties but could be a bit time-consuming during the contest.
+
+To start off, draw a diagram like in solution two and label the points. Create lines $\overline{AC}$ and $\overline{BD}$. We can call their intersection point $Y$. Note that triangle $BCD$ is an isosceles triangle so angles $CDB$ and $CBD$ are each $5$ degrees. Since $AB$ equals $BC$, angle $BAC$ equals $55$ degrees, thus making angle $AYB$ equal to $60$ degrees. We can also find out that angle $CYB$ equals $120$ degrees. 
+
+Extend $\overline{CD}$ and $\overline{AB}$ and let their intersection be $E$. Since angle $BEC$ plus angle $CYB$ equals $180$ degrees, quadrilateral $YCEB$ is a cyclic quadrilateral. 
+
+Next, draw a line from point $Y$ to point $E$. Since angle $YBC$ and angle $YEC$ point to the same arc, angle $YEC$ is equal to $5$ degrees. Since $EYD$ is an isosceles triangle (based on angle properties) and $YAE$ is also an isosceles triangle, we can find that $YAD$ is also an isosceles triangle. Thus, each of the other angles is $\frac{180-120}{2}=30$ degrees. Finally, we have angle $BAD$ equals $30+55=\boxed{85}$ degrees.
+
+~Minor edits by BakedPotato66

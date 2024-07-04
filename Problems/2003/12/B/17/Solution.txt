@@ -1,0 +1,12 @@
+== Solution ==
+Since 
+$$\begin{align*}
+&\log(xy) +2\log y = 1  \\
+\log(xy) + \log x = 1 \quad \Longrightarrow \quad &2\log(xy) + 2\log x = 2
+\end{align*}$$
+Summing gives 
+$$3\log(xy) + 2\log y + 2\log x = 3 \Longrightarrow 5\log(xy) = 3$$
+
+Hence $\log (xy) = \frac 35 \Rightarrow \mathrm{(D)}$.
+
+It is not difficult to find $x = 10^{\frac{2}{5}}, y = 10^{\frac{1}{5}}$.

@@ -1,0 +1,5 @@
+==Solution ==
+Note that<cmath>{{\left((3!)!\right)!}\over{3!}}=
+{{(6!)!}\over{6}}={{720!}\over6}={{720\cdot719!}\over6}=120\cdot719!.</cmath>Because <math>120\cdot719!<720!</math>, we can conclude that <math>n < 720</math>. Thus, the maximum value of <math>n</math> is <math>719</math>. The requested value of <math>k+n</math> is therefore <math>120+719=\boxed{839}</math>.
+
+~yofro

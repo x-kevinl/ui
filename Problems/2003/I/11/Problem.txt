@@ -1,0 +1,2 @@
+== Problem ==
+An [[angle]] <math> x </math> is chosen at random from the [[interval]] <math> 0^\circ < x < 90^\circ. </math> Let <math> p </math> be the probability that the numbers <math> \sin^2 x, \cos^2 x, </math> and <math> \sin x \cos x </math> are not the lengths of the sides of a triangle. Given that <math> p = d/n, </math> where <math> d </math> is the number of degrees in <math> \text{arctan}</math> <math>m</math> and <math> m </math> and <math> n </math> are [[positive integer]]s with <math> m + n < 1000, </math> find <math> m + n. </math>

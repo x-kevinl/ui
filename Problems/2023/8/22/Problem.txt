@@ -1,0 +1,4 @@
+==Problem==
+In a sequence of positive integers, each term after the second is the product of the previous two terms. The sixth term is $4000$. What is the first term?
+
+$\textbf{(A)}\ 1 \qquad \textbf{(B)}\ 2 \qquad \textbf{(C)}\ 4 \qquad \textbf{(D)}\ 5 \qquad \textbf{(E)}\ 10$

@@ -1,0 +1,5 @@
+==Solution 1==
+
+Change the equation to base 10: $$A^2 + 3A +2 + 4B +3= 6A + 6B + 9$$ $$ A^2 - 3A - 2B - 4=0$$ 
+
+Either $B = A + 1$ or $B = A - 1$, so either $A^2 - 5A - 6, B = A + 1$ or $A^2 - 5A - 2, B = A - 1$. The second case has no integer roots, and the first can be re-expressed as $(A-6)(A+1) = 0, B = A + 1$. Since A must be positive, $A = 6, B = 7$ and $A+B = \boxed{\textbf{(C)}\ 13}$

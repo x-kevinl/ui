@@ -1,0 +1,4 @@
+== Problem ==
+Each morning of her five-day workweek, Jane bought either a $50$-cent muffin or a $75$-cent bagel. Her total cost for the week was a whole number of dollars. How many bagels did she buy?
+
+$\textbf{(A) } 1\qquad\textbf{(B) } 2\qquad\textbf{(C) } 3\qquad\textbf{(D) } 4\qquad\textbf{(E) } 5$

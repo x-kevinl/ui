@@ -1,0 +1,32 @@
+==Solutions==
+===Solution 1===
+Say that there were <math>3k</math> girls and <math>2k</math> boys at the party originally. <math>2k</math> like to dance. Then, there are <math>3k</math> girls and <math>2k + 20</math> boys, and <math>2k + 20</math> like to dance.
+
+Thus, <math>\dfrac{3k}{5k + 20} = \dfrac{29}{50}</math>, solving gives <math>k = 116</math>. Thus, the number of people that like to dance is <math>2k + 20 = \boxed{252}</math>.
+
+===Solution 2===
+Let the number of girls be <math>g</math>. Let the number of total people originally be <math>t</math>.
+
+We know that <math>\frac{g}{t}=\frac{3}{5}</math> from the problem.
+
+We also know that <math>\frac{g}{t+20}=\frac{29}{50}</math> from the problem.
+
+We now have a system and we can solve.
+
+The first equation becomes:
+
+<math>3t=5g</math>.
+
+The second equation becomes: 
+
+<math>50g=29t+580</math>
+
+Now we can sub in <math>30t=50g</math> by multiplying the first equation by <math>10</math>. We can plug this into our second equation.
+
+<math>30t=29t+580</math>
+
+<math>t=580</math>
+
+We know that there were originally <math>580</math> people. Of those, <math>\frac{2}{5}*580=232</math> like to dance.
+
+We also know that with these people, <math>20</math> boys joined, all of whom like to dance. We just simply need to add <math>20</math> to get <math>232+20=\boxed{252}</math>

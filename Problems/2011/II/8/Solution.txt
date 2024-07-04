@@ -1,0 +1,19 @@
+== Solution ==
+<center>[[File:2011_AIME_II_-8.png‎]]</center>
+
+The twelve dots above represent the <math>12</math> roots of the equation <math>z^{12}-2^{36}=0</math>. If we write <math>z=a+bi</math>, then the real part of <math>z</math> is <math>a</math> and the real part of <math>iz</math> is <math>-b</math>. The blue dots represent those roots <math>z</math> for which the real part of <math>z</math> is greater than the real part of <math>iz</math>, and the red dots represent those roots <math>z</math> for which the real part of <math>iz</math> is greater than the real part of <math>z</math>. Now, the sum of the real parts of the blue dots is easily seen to be <math>8+16\cos\frac{\pi}{6}=8+8\sqrt{3}</math> and the negative of the sum of the imaginary parts of the red dots is easily seen to also be <math>8+8\sqrt{3}</math>. Hence our desired sum is <math>16+16\sqrt{3}=16+\sqrt{768}</math>, giving the answer <math>\boxed{784}.</math>
+
+=== Solution <math>1.\overline{3}</math> ===
+
+As a small note, we could factor the equation as <math>z^{12} = 2^{36} \implies (\frac{z}{8})^{12} = 1</math> in which these are just the 12th roots of unity for <math>\frac{z}{8}</math> which might be easier to work with. Then we just add up the optimal real parts as in solution 1 and then multiply by 8 at the end.
+
+=== Solution <math>1.\overline{6}</math> ===
+
+Note that <math>\sin(x) = \sin(x + \pi/2 - \pi/2) = \cos(x + \pi/2)</math>.
+
+So, one can easily translate all the red dots by <math>90^{\circ}</math>.
+
+[[File:Red Point Translation.png]]
+
+Then, it's easy to see that points 2, 3, and 4 cancel out with 5, 6, and 7, so you're left with <math>8 \cdot (\cos \pi/6 + \cos -\pi/6 + \cos 0)</math> times two
+~[https://artofproblemsolving.com/wiki/index.php?title=User:Crazyvideogamez CrazyVideoGamez]

@@ -1,0 +1,21 @@
+==Problem==
+In the figure, equilateral hexagon $ABCDEF$ has three nonadjacent acute interior angles that each measure $30^\circ$. The enclosed area of the hexagon is $6\sqrt{3}$. What is the perimeter of the hexagon?
+<asy>
+size(10cm);
+pen p=black+linewidth(1),q=black+linewidth(5);
+pair C=(0,0),D=(cos(pi/12),sin(pi/12)),E=rotate(150,D)*C,F=rotate(-30,E)*D,A=rotate(150,F)*E,B=rotate(-30,A)*F;
+draw(C--D--E--F--A--B--cycle,p);
+dot(A,q);
+dot(B,q);
+dot(C,q);
+dot(D,q);
+dot(E,q);
+dot(F,q);
+label("$C$",C,2*S);
+label("$D$",D,2*S);
+label("$E$",E,2*S);
+label("$F$",F,2*dir(0));
+label("$A$",A,2*N);
+label("$B$",B,2*W);
+</asy>
+$\textbf{(A)} \: 4 \qquad \textbf{(B)} \: 4\sqrt3 \qquad \textbf{(C)} \: 12 \qquad \textbf{(D)} \: 18 \qquad \textbf{(E)} \: 12\sqrt3$

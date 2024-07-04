@@ -1,0 +1,2 @@
+== Solution ==
+The original expression $x-y$ now becomes $(x+k) - (y-k)=(x-y)+2k>x-y$, where $k$ is a positive constant, hence the answer is $\boxed{\textbf{(A)}}$.

@@ -1,0 +1,25 @@
+==Solutions==
+===Solution 1===
+
+When dividing each number on the wheel by $4,$ the remainders are $1, 1, 2, 2, 3,$ and $3.$ Each column on the checkerboard is equally likely to be chosen.
+
+When dividing each number on the wheel by $5,$ the remainders are $1, 1, 2, 2, 3,$ and $4.$
+
+The probability that a shaded square in the $1$st or $3$rd row of the $1$st or $3$rd column is chosen is
+$$ \frac{2}{3} \times \frac{3}{6} = \frac{1}{3} $$
+
+The probability that a shaded square in the $2$nd or $4$th row of the $2$nd column is chosen is
+$$ \frac{1}{3} \times \frac{3}{6} = \frac{1}{6} $$
+
+Add those two together to get
+$$ \frac{1}{3} + \frac{1}{6} = \frac{2}{6} + \frac{1}{6} = \frac{3}{6} = \boxed{\textbf{(C)} \frac{1}{2}}$$
+
+===Solution 2===
+
+Alternatively, we may analyze this problem a little further. 
+
+First, we isolate the case where the rows are numbered 1 or 2. Notice that as listed before, the probability for picking a shaded square here is $$ \frac{1}{2} $$ because the column/row probabilities are the same, with the same number of shaded and non-shaded squares
+
+
+Next we isolate the rows numbered 3 or 4. Note that the probability of picking the rows is same, because of our list up above. The columns, of course, still have the same probability. Because the number of shaded and non-shaded squares are equal, we have $$ \frac{1}{2} $$
+Combining these we have a general probability of  $$ \boxed{\textbf{(C)} \frac{1}{2}} $$

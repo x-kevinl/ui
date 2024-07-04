@@ -1,0 +1,11 @@
+== Problem ==
+A paint brush is swept along both diagonals of a square to produce the symmetric painted area, as shown. Half the area of the square is painted. What is the ratio of the side length of the square to the brush width?
+
+<asy>
+unitsize(3 cm);
+real w = (sqrt(2) - 1)/2;
+filldraw((0,0)--(w*sqrt(2)/2,0)--(0.5,0.5 - w*sqrt(2)/2)--(1 - w*sqrt(2)/2,0)--(1,0)--(1,w*sqrt(2)/2)--(0.5 + w*sqrt(2)/2,0.5)--(1,1 - w*sqrt(2)/2)--(1,1)--(1 - w*sqrt(2)/2,1)--(0.5,0.5 + w*sqrt(2)/2)--(w*sqrt(2)/2,1)--(0,1)--(0,1 - w*sqrt(2)/2)--(0.5 - w*sqrt(2)/2,0.5)--(0,w*sqrt(2)/2)--cycle,gray(0.7));
+draw((0,0)--(1,0)--(1,1)--(0,1)--cycle); 
+</asy> 
+
+$\text{(A)}\ 2\sqrt {2} + 1 \qquad \text{(B)}\ 3\sqrt {2}\qquad \text{(C)}\ 2\sqrt {2} + 2 \qquad \text{(D)}\ 3\sqrt {2} + 1 \qquad \text{(E)}\ 3\sqrt {2} + 2$

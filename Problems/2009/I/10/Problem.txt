@@ -1,0 +1,3 @@
+== Problem ==
+
+The Annual Interplanetary Mathematics Examination (AIME) is written by a committee of five Martians, five Venusians, and five Earthlings.  At meetings, committee members sit at a round table with chairs numbered from <math>1</math> to <math>15</math> in clockwise order.  Committee rules state that a Martian must occupy chair <math>1</math> and an Earthling must occupy chair <math>15</math>,  Furthermore, no Earthling can sit immediately to the left of a Martian, no Martian can sit immediately to the left of a Venusian, and no Venusian can sit immediately to the left of an Earthling.  The number of possible seating arrangements for the committee is <math>N \cdot (5!)^3</math>.  Find <math>N</math>.

@@ -1,0 +1,15 @@
+==Solution 1==
+First, observe that the two tangent lines are of identical length. Therefore, supposing that the point of intersection is $(x, 0)$, the Pythagorean Theorem gives $\sqrt{(x-6)^2 + 13^2} = \sqrt{(x-12)^2 + 11^2}$. This simplifies to $x = 5$.
+
+Further, notice (due to the right angles formed by a radius and its tangent line) that the quadrilateral (a kite) $AOBX$ is cyclic. 
+
+Therefore, we can apply [[Ptolemy's Theorem]] to give:
+
+$2\sqrt{170}r = d \sqrt{40}$, where $r$ is the radius of the circle and $d$ is the distance between the circle's center and $(5, 0)$. Therefore, $d = \sqrt{17}r$. 
+
+Using the Pythagorean Theorem on the right triangle $OAX$ (or $OBX$), we find that $170 + r^2 = 17r^2$, so $r^2 = \frac{85}{8}$, and thus the area of the circle is $\boxed{\textbf{(C) }\frac{85}{8}\pi}$.
+
+===Diagram for Solution 1===
+[[File:Desmos-graph (1).png|900px|caption]]
+
+~BakedPotato66

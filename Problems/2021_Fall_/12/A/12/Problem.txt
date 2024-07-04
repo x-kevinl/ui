@@ -1,0 +1,5 @@
+==Problem==
+
+What is the number of terms with rational coefficients among the $1001$ terms in the expansion of $\left(x\sqrt[3]{2}+y\sqrt{3}\right)^{1000}?$
+
+$\textbf{(A)}\ 0 \qquad\textbf{(B)}\ 166 \qquad\textbf{(C)}\ 167 \qquad\textbf{(D)}\ 500 \qquad\textbf{(E)}\ 501$

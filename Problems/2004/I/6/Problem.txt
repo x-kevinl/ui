@@ -1,0 +1,2 @@
+== Problem ==
+An integer is called snakelike if its decimal representation <math> a_1a_2a_3\cdots a_k </math> satisfies <math> a_i<a_{i+1} </math> if <math> i </math> is [[odd integer | odd]] and <math> a_i>a_{i+1} </math> if <math> i </math> is [[even integer | even]]. How many snakelike integers between 1000 and 9999 have four distinct digits?

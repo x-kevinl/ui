@@ -1,0 +1,7 @@
+==Solution 1==
+
+The midpoints of the four sides of every rectangle are the vertices of a rhombus whose area is half the area of the rectangle: Note that the diagonals of the rhombus have the same lengths as the sides of the rectangle.
+
+Let $A=(-3,0), B=(2,0), C=(5,4),$ and $D=(0,4).$ Note that $A,B,C,$ and $D$ are the vertices of a rhombus whose diagonals have lengths $AC=4\sqrt{5}$ and $BD=2\sqrt{5}.$ It follows that the dimensions of the rectangle are $4\sqrt{5}$ and $2\sqrt{5},$ so the area of the rectangle is $4\sqrt{5}\cdot2\sqrt{5}=\boxed{\textbf{(C) } 40}.$
+
+~MRENTHUSIASM

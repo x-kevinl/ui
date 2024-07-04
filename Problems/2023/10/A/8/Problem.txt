@@ -1,0 +1,4 @@
+==Problem==
+Barb the baker has developed a new temperature scale for her bakery called the Breadus scale, which is a linear function of the Fahrenheit scale. Bread rises at $110$ degrees Fahrenheit, which is $0$ degrees on the Breadus scale. Bread is baked at $350$ degrees Fahrenheit, which is $100$ degrees on the Breadus scale. Bread is done when its internal temperature is $200$ degrees Fahrenheit. What is this in degrees on the Breadus scale?
+
+$\textbf{(A) }33\qquad\textbf{(B) }34.5\qquad\textbf{(C) }36\qquad\textbf{(D) }37.5\qquad\textbf{(E) }39$

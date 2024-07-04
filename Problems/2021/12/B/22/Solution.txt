@@ -1,0 +1,19 @@
+== Solution 1==
+We say that a game state is an N-position if it is winning for the next player (the player to move), and a P-position if it is winning for the other player. We are trying to find which of the given states is a P-position.
+
+First we note that symmetrical positions are P-positions, as the second player can win by mirroring the first player's moves. It follows that $(6, 1, 1)$ is an N-position, since we can win by moving to $(2, 2, 1, 1)$; this rules out $\textbf{(A)}$. We next look at $(6, 2, 1)$. The possible next states are
+$$(6, 2), \enskip (6, 1, 1), \enskip (6, 1), \enskip (5, 2, 1), \enskip (4, 2, 1, 1), \enskip (4, 2, 1), \enskip (3, 2, 2, 1), \enskip (3, 2, 1, 1), \enskip (2, 2, 2, 1).$$
+None of these are symmetrical, so we might reasonably suspect that they are all N-positions. Indeed, it just so happens that for all of these states except $(6, 2)$ and $(6, 1)$, we can win by moving to $(2, 2, 1, 1)$; it remains to check that $(6, 2)$ and $(6, 1)$ are N-positions.
+
+To save ourselves work, it would be nice if we could find a single P-position directly reachable from both $(6, 2)$ and $(6, 1)$. We notice that $(3, 2, 1)$ is directly reachable from both states, so it would suffice to show that $(3, 2, 1)$ is a P-position. Indeed, the possible next states are
+$$(3, 2), \enskip (3, 1, 1), \enskip (3, 1), \enskip (2, 2, 1), \enskip (2, 1, 1, 1), \enskip (2, 1, 1),$$
+which allow for the following refutations:
+
+$$\begin{align*}
+&(3, 2) \to (2, 2), && &&(3, 1, 1) \to (1, 1, 1, 1), && &&(3, 1) \to (1, 1), \\
+&(2, 2, 1) \to (2, 2), && &&(2, 1, 1, 1) \to (1, 1, 1, 1), && &&(2, 1, 1) \to (1, 1).
+\end{align*}$$
+
+Hence, $(3, 2, 1)$ is a P-position, so $(6, 2)$ and $(6, 1)$ are both N-positions, along with all other possible next states from $(6, 2, 1)$ as noted before. Thus, $(6, 2, 1)$ is a P-position, so our answer is $\boxed{\textbf{(B)}}$. (For completeness, we could also rule out $\textbf{(C)}$, $\textbf{(D)}$ and $\textbf{(E)}$ as in Solution 2.)
+
+-Note: In general, this game is very complicated. For example $(8, 7, 5, 3, 2)$ is winning for the first player but good luck showing that.

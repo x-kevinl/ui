@@ -1,0 +1,10 @@
+== Solution 1 ==
+Substitute <math>y = \frac34x</math> into <math>x^y = y^x</math> and solve.
+<cmath>x^{\frac34x} = \left(\frac34x\right)^x</cmath>
+<cmath>x^{\frac34x} = \left(\frac34\right)^x \cdot x^x</cmath>
+<cmath>x^{-\frac14x} = \left(\frac34\right)^x</cmath>
+<cmath>x^{-\frac14} = \frac34</cmath>
+<cmath>x = \frac{256}{81}</cmath>
+<cmath>y = \frac34x = \frac{192}{81}</cmath>
+<cmath>x + y = \frac{448}{81}</cmath>
+<cmath>448 + 81 = \boxed{529}</cmath>

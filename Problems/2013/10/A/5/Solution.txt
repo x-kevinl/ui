@@ -1,0 +1,5 @@
+==Solution 1==
+
+The total amount paid is $105 + 125 + 175 = 405$.  To get how much each should have paid, we do $405/3 = 135$.
+
+Thus, we know that Tom needs to give Sammy 30 dollars, and Dorothy 10 dollars.  This means that $t-d = 30 - 10 = \boxed{\textbf{(B) }20}$.

@@ -1,0 +1,12 @@
+== Solution 1==
+
+The y-coordinate of <math>F</math> must be <math>4</math>.  All other cases yield non-convex and/or degenerate hexagons, which violate the problem statement.
+
+Letting <math>F = (f,4)</math>, and knowing that <math>\angle FAB = 120^\circ</math>, we can use rewrite <math>F</math> using complex numbers:
+<math>f + 4 i = (b + 2 i)\left(e^{i(2 \pi / 3)}\right) = (b + 2 i)\left(-1/2 + \frac{\sqrt{3}}{2} i\right) = -\frac{b}{2}-\sqrt{3}+\left(\frac{b\sqrt{3}}{2}-1\right)i</math>.  We solve for <math>b</math> and <math>f</math> and find that <math>F = \left(-\frac{8}{\sqrt{3}}, 4\right)</math> and that <math>B = \left(\frac{10}{\sqrt{3}}, 2\right)</math>.
+
+The area of the hexagon can then be found as the sum of the areas of two congruent triangles (<math>EFA</math> and <math>BCD</math>, with height <math>8</math> and base <math>\frac{8}{\sqrt{3}}</math>) and a parallelogram (<math>ABDE</math>, with height <math>8</math> and base <math>\frac{10}{\sqrt{3}}</math>).
+
+<math>A = 2 \times \frac{1}{2} \times 8 \times \frac{8}{\sqrt{3}} + 8 \times \frac{10}{\sqrt{3}} = \frac{144}{\sqrt{3}} = 48\sqrt{3}</math>.
+
+Thus, <math>m+n = \boxed{051}</math>.

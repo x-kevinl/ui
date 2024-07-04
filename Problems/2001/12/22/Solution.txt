@@ -1,0 +1,34 @@
+== Solution 1 ==
+<asy>
+unitsize(0.5cm);
+defaultpen(0.8);
+pair A=(0,0), B=(10,0), C=(10,7), D=(0,7), E=(C+D)/2, F=(2*A+B)/3, G=(A+2*B)/3;
+pair H = intersectionpoint(A--C,E--F);
+pair J = intersectionpoint(A--C,E--G);
+draw(A--B--C--D--cycle);
+draw(G--E--F);
+draw(A--C);
+label("$A$",A,SW);
+label("$B$",B,SE);
+label("$C$",C,NE);
+label("$D$",D,NW);
+label("$E$",E,N);
+label("$F$",F,S);
+label("$G$",G,S);
+label("$H$",H,SE);
+label("$J$",J,ESE);
+filldraw(E--H--J--cycle,lightgray,black);
+draw(H--D, dashed);
+</asy>
+Note that the triangles $AFH$ and $CEH$ are similar, as they have the same angles. Hence $\frac {AH}{HC} = \frac{AF}{EC} = \frac 23$.
+
+Also, triangles $AGJ$ and $CEJ$ are similar, hence $\frac {AJ}{JC} = \frac {AG}{EC} = \frac 43$.
+
+We can now compute $[EHJ]$ as $[ACD]-[AHD]-[DEH]-[EJC]$. We have:
+
+* $[ACD]=\frac{[ABCD]}2 = 35$. 
+* $[AHD]$ is $2/5$ of $[ACD]$, as these two triangles have the same base $AD$, and $AH$ is $2/5$ of $AC$, therefore also the height from $H$ onto $AD$ is $2/5$ of the height from $C$. Hence $[AHD]=14$.
+* $[HED]$ is $3/10$ of $[ACD]$, as the base $ED$ is $1/2$ of the base $CD$, and the height from $H$ is $3/5$ of the height from $A$. Hence $[HED]=\frac {21}2$.
+* $[JEC]$ is $3/14$ of $[ACD]$ for similar reasons, hence $[JEC]=\frac{15}2$.
+
+Therefore $[EHJ]=[ACD]-[AHD]-[DEH]-[EJC]=35-14-\frac {21}2-\frac{15}2 = \boxed{3}$.

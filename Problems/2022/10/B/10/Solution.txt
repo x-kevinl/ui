@@ -1,0 +1,8 @@
+==Solution 1 (Variables)==
+Let $M$ be the median. It follows that the two largest integers are both $M+2.$
+
+Let $a$ and $b$ be the two smallest integers such that $a<b.$ The sorted list is $$a,b,M,M+2,M+2.$$
+Since the median is $2$ greater than their arithmetic mean, we have $\frac{a+b+M+(M+2)+(M+2)}{5}+2=M,$ or $$a+b+14=2M.$$
+Note that $a+b$ must be even. We minimize this sum so that the arithmetic mean, the median, and the unique mode are minimized. Let $a=1$ and $b=3,$ from which $M=9$ and $M+2=\boxed{\textbf{(D)}\ 11}.$
+
+~MRENTHUSIASM

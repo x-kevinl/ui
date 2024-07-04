@@ -1,0 +1,66 @@
+==Solution 1==
+
+Table of values of <math>P(x)</math>:
+
+<cmath>\begin{align*}
+P(5) &= 1 \\
+P(6) &= 9 \\
+P(7) &= 19 \\
+P(8) &= 31 \\
+P(9) &= 45 \\
+P(10) &= 61 \\
+P(11) &= 79 \\
+P(12) &= 99 \\
+P(13) &= 121 \\
+P(14) &= 145 \\
+P(15) &= 171 \\
+\end{align*}</cmath>
+
+In order for <math>\lfloor \sqrt{P(x)} \rfloor = \sqrt{P(\lfloor x \rfloor)}</math> to hold, <math>\sqrt{P(\lfloor x \rfloor)}</math> must be an integer and hence <math>P(\lfloor x \rfloor)</math> must be a perfect square. This limits <math>x</math> to <math>5 \le x < 6</math> or <math>6 \le x < 7</math> or <math>13 \le x < 14</math> since, from the table above, those are the only values of <math>x</math> for which <math>P(\lfloor x \rfloor)</math> is an perfect square. However, in order for <math>\sqrt{P(x)}</math> to be rounded down to <math>P(\lfloor x \rfloor)</math>, <math>P(x)</math> must be less than the next perfect square after <math>P(\lfloor x \rfloor)</math> (for the said intervals). Now, we consider the three cases:
+
+
+Case <math>5 \le x < 6</math>:
+
+<math>P(x)</math> must be less than the first perfect square after <math>1</math>, which is <math>4</math>, ''i.e.'':
+
+<math>1 \le P(x) < 4</math> (because <math>\lfloor \sqrt{P(x)} \rfloor = 1</math> implies <math>1 \le \sqrt{P(x)} < 2</math>)
+
+Since <math>P(x)</math> is increasing for <math>x \ge 5</math>, we just need to find the value <math>v \ge 5</math> where <math>P(v) = 4</math>, which will give us the working range <math>5 \le x < v</math>.
+
+<cmath>\begin{align*}
+v^2 - 3v - 9 &= 4 \\
+v &= \frac{3 + \sqrt{61}}{2}
+\end{align*}</cmath>
+
+So in this case, the only values that will work are <math>5 \le x < \frac{3 + \sqrt{61}}{2}</math>.
+
+Case <math>6 \le x < 7</math>:
+
+<math>P(x)</math> must be less than the first perfect square after <math>9</math>, which is <math>16</math>.
+
+<cmath>\begin{align*}
+v^2 - 3v - 9 &= 16 \\
+v &= \frac{3 + \sqrt{109}}{2}
+\end{align*}</cmath>
+
+So in this case, the only values that will work are <math>6 \le x < \frac{3 + \sqrt{109}}{2}</math>.
+
+Case <math>13 \le x < 14</math>:
+
+<math>P(x)</math> must be less than the first perfect square after <math>121</math>, which is <math>144</math>.
+
+<cmath>\begin{align*}
+v^2 - 3v - 9 &= 144 \\
+v &= \frac{3 + \sqrt{621}}{2}
+\end{align*}</cmath>
+
+So in this case, the only values that will work are <math>13 \le x < \frac{3 + \sqrt{621}}{2}</math>.
+
+Now, we find the length of the working intervals and divide it by the length of the total interval, <math>15 - 5 = 10</math>:
+
+<cmath>\begin{align*}
+\frac{\left( \frac{3 + \sqrt{61}}{2} - 5 \right) + \left( \frac{3 + \sqrt{109}}{2} - 6 \right) + \left( \frac{3 + \sqrt{621}}{2} - 13 \right)}{10} \\
+&= \frac{\sqrt{61} + \sqrt{109} + \sqrt{621} - 39}{20}
+\end{align*}</cmath>
+
+Thus, the answer is <math>61 + 109 + 621 + 39 + 20 = \fbox{850}</math>.

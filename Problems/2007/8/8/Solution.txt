@@ -1,0 +1,7 @@
+== Solution 1 (Area Formula for Triangles) ==
+Clearly, $ABED$ is a square with side-length $3.$ By segment subtraction, we have $EC = DC - DE = 6 - 3 = 3.$
+
+The area of $\triangle BEC$ is $$\frac12\cdot EC\cdot BE = \frac12\cdot3\cdot3 = \boxed{\textbf{(B)}\ 4.5}.$$
+~Aplus95 (Solution)
+
+~MRENTHUSIASM (Revision)

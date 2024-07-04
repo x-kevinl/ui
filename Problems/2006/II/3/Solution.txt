@@ -1,0 +1,19 @@
+== Solution ==
+
+Note that the product of the first <math>100</math> positive odd integers can be written as <math>1\cdot 3\cdot 5\cdot 7\cdots 195\cdot 197\cdot 199=\frac{1\cdot 2\cdots200}{2\cdot4\cdots200} = \frac{200!}{2^{100}\cdot 100!}</math>
+
+Hence, we seek the number of threes in <math>200!</math> decreased by the number of threes in <math>100!.</math>
+
+There are 
+
+<math>\left\lfloor \frac{200}{3}\right\rfloor+\left\lfloor\frac{200}{9}\right\rfloor+\left\lfloor \frac{200}{27}\right\rfloor+\left\lfloor\frac{200}{81}\right\rfloor =66+22+7+2=97</math>
+
+threes in <math>200!</math> and 
+
+<math>\left\lfloor \frac{100}{3}\right\rfloor+\left\lfloor\frac{100}{9}\right\rfloor+\left\lfloor \frac{100}{27}\right\rfloor+\left\lfloor\frac{100}{81}\right\rfloor=33+11+3+1=48 </math>
+
+threes in <math>100!</math>
+
+Therefore, we have a total of <math>97-48=\boxed{049}</math> threes.
+
+For more information, see also [[Factorial#Prime factorization| prime factorizations of a factorial]].

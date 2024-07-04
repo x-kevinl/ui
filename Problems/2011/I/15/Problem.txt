@@ -1,0 +1,2 @@
+== Problem ==
+For some integer <math>m</math>, the polynomial <math>x^3 - 2011x + m</math> has the three integer roots <math>a</math>, <math>b</math>, and <math>c</math>.  Find <math>|a| + |b| + |c|</math>.

@@ -1,0 +1,6 @@
+== Problem ==
+For all positive integers <math>x</math>, let
+<cmath>
+f(x)=\begin{cases}1 & \text{if }x = 1\\ \frac x{10} & \text{if }x\text{ is divisible by 10}\\ x+1 & \text{otherwise}\end{cases}
+</cmath>
+and define a [[sequence]] as follows: <math>x_1=x</math> and <math>x_{n+1}=f(x_n)</math> for all positive integers <math>n</math>. Let <math>d(x)</math> be the smallest <math>n</math> such that <math>x_n=1</math>. (For example, <math>d(100)=3</math> and <math>d(87)=7</math>.) Let <math>m</math> be the number of positive integers <math>x</math> such that <math>d(x)=20</math>. Find the sum of the distinct prime factors of <math>m</math>.

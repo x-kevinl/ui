@@ -1,0 +1,2 @@
+==Solution 1==
+Suppose the fraction of discount is $x$. That means $(1-x)(1+x)=0.84$; so, $1-x^{2}=0.84$, and $(x^{2})=0.16$, obtaining $x=0.4$. Therefore, the price was increased and decreased by $40$%, or $\boxed{\textbf{(E)}\ 40}$.

@@ -1,0 +1,41 @@
+== Solution 1 ==
+
+<center><asy>
+unitsize(15mm);
+defaultpen(linewidth(.8pt)+fontsize(10pt));
+dotfactor=4;
+
+real a=1; real b=2;
+pair O=(0,0);
+pair A=(-(sqrt(19)-2)/5,1);
+pair B=((sqrt(19)-2)/5,1);
+pair C=((sqrt(19)-2)/5,1+2(sqrt(19)-2)/5);
+pair D=(-(sqrt(19)-2)/5,1+2(sqrt(19)-2)/5);
+pair E=(-(sqrt(19)-2)/5,0);
+path inner=Circle(O,a);
+path outer=Circle(O,b);
+draw(outer); draw(inner);
+draw(A--B--C--D--cycle); 
+draw(O--D--E--cycle);
+
+label("$A$",D,NW);
+label("$E$",E,SW);
+label("$O$",O,SE);
+label("$s+1$",(D--E),W);
+label("$\frac{s}{2}$",(E--O),S);
+
+pair[] ps={A,B,C,D,E,O};
+dot(ps);
+</asy></center>
+
+The circles have radii of $1$ and $2$. Draw the triangle shown in the figure above and write expressions in terms of $s$ (length of the side of the square) for the sides of the triangle. Because $AO$ is the radius of the larger circle, which is equal to $2$, we can write the Pythagorean Theorem.
+
+$$\begin{align*} \left( \frac{s}{2} \right) ^2 + (s+1)^2 &= 2^2\\
+\frac14 s^2 + s^2 + 2s + 1 &= 4\\
+\frac54 s^2 +2s - 3 &= 0\\
+5s^2 + 8s - 12 &=0
+\end{align*}$$
+
+Use the quadratic formula.
+
+$$s = \frac{-8+\sqrt{8^2-4(5)(-12)}}{10} = \frac{-8+\sqrt{304}}{10} = \frac{-8+4\sqrt{19}}{10} = \boxed{\textbf{(D)}\ \frac{2\sqrt{19}-4}{5}}$$

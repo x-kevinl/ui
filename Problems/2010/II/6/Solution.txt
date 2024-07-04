@@ -1,0 +1,14 @@
+==Solution 1==
+You can factor the polynomial into two quadratic factors or a linear and a cubic factor.
+
+For two quadratic factors, let <math>x^2+ax+b</math> and <math>x^2+cx+d</math> be the two quadratics, so that
+
+<cmath>(x^2 + ax + b )(x^2 + cx + d) = x^4 + (a + c)x^3 + (b + d + ac)x^2 + (ad + bc)x + bd.</cmath>
+
+Therefore, again setting coefficients equal, <math>a + c = 0\Longrightarrow a=-c</math>, <math>b + d + ac = 0\Longrightarrow b+d=a^2</math> , <math>ad + bc = - n</math>, and so <math>bd = 63</math>.
+
+Since <math>b+d=a^2</math>, the only possible values for <math>(b,d)</math> are <math>(1,63)</math> and <math>(7,9)</math>. From this we find that the possible values for <math>n</math> are <math>\pm 8 \cdot 62</math> and <math>\pm 4 \cdot 2</math>. 
+
+For the case of one linear and one cubic factor, doing a similar expansion and matching of the coefficients gives the smallest <math>n</math> in that case to be <math>48</math>. 
+
+Therefore, the answer is <math>4 \cdot 2 = \boxed{008}</math>.

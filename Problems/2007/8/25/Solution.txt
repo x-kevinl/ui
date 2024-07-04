@@ -1,0 +1,24 @@
+==Solution 1==
+To get an odd sum, we must add an even number and an odd number (a 1 and a 2). So we have a little casework to do. Before we do that, we also have to figure out some relative areas. You could either find the absolute areas (as is done below for completeness), or apply some proportional reasoning and symmetry to realize the relative areas (which is really all that matters).
+
+
+The area of this entire smaller circle is $9\pi$. The area of each smaller section then must be $\frac{9\pi}{3}$ or $3\pi$. The larger sections trisect a "ring" which is the difference of two circles, one with radius $3$, the other radius $6$. So, the area of the ring (''annulus'') is $36\pi - 9\pi$ or $27\pi$. The area of each larger section must be $\frac{27\pi}{3}$ or $9\pi$. Note that the area of the whole circle is $36\pi$.
+
+
+One smaller section and two larger sections contain an odd number (that is, 1). So the probability of throwing an odd number is $3\pi + (2 \cdot 9\pi) = 21\pi$. Since the area of the whole circle is $36\pi$, the probability of getting an odd is $\frac{21\pi}{36\pi} = \frac{21}{36} = \frac{7}{12}$.
+
+Since the remaining sections contain even numbers (that is, 2), the probability of throwing an even is the complement, or $1 - \frac{7}{12} = \frac{5}{12}$.
+
+
+Now, the two cases: You could either get an odd then an even, or an even then an odd.
+
+
+Case 1: Odd, then even. 
+Multiply the probabilities to get $\frac{7}{12} \cdot \frac{5}{12} = \frac{35}{144}$.
+
+
+Case 2: Even, then odd. 
+Multiply the probabilities to get $\frac{5}{12} \cdot \frac{7}{12} = \frac{35}{144}$. Notice that this is the same.
+
+
+Thus, the total probability of an odd sum is $\frac{35}{144} \cdot \frac{2}{1} = \boxed{\textbf{(B)} = \frac{35}{72}}$.

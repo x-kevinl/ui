@@ -1,0 +1,19 @@
+==Solution==
+
+The best way to solve this problem is by simple brute force. 
+
+It is convenient to drop the usual way how exponentiation is denoted, and to write the formula as $2\uparrow 2\uparrow 2\uparrow 2$, where $\uparrow$ denotes exponentiation. We are now examining all ways to add parentheses to this expression. There are 5 ways to do so:
+# $2\uparrow (2\uparrow (2\uparrow 2))$
+# $2\uparrow ((2\uparrow 2)\uparrow 2)$
+# $((2\uparrow 2)\uparrow 2)\uparrow 2$
+# $(2\uparrow (2\uparrow 2))\uparrow 2$
+# $(2\uparrow 2)\uparrow (2\uparrow 2)$
+
+We can note that $2\uparrow (2\uparrow 2) = (2\uparrow 2)\uparrow 2 =16$. Therefore options 1 and 2 are equal, and options 3 and 4 are equal.
+Option 1 is the one given in the problem statement. Thus we only need to evaluate options 3 and 5.
+
+$((2\uparrow 2)\uparrow 2)\uparrow 2 = 16\uparrow 2 = 256$
+
+$(2\uparrow 2)\uparrow (2\uparrow 2) = 4 \uparrow 4 = 256$
+
+Thus the only other result is $256$, and our answer is $\boxed{\textbf{(B) } 1}$.

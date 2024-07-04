@@ -1,0 +1,4 @@
+==Problem 20==
+How many different real numbers $x$ satisfy the equation $$(x^{2}-5)^{2}=16?$$
+
+$\textbf{(A) }0\qquad\textbf{(B) }1\qquad\textbf{(C) }2\qquad\textbf{(D) }4\qquad\textbf{(E) }8$

@@ -1,0 +1,7 @@
+==Solution==
+
+To score twice as many runs as their opponent, the softball team must have scored an even number.
+
+Therefore we can deduce that when they scored an odd number of runs, they lost by one, and when they scored an even number of runs, they won by twice as much.
+
+Therefore, the total runs by the opponent is $(2+4+6+8+10)+(1+2+3+4+5) = 45$, which is $C$

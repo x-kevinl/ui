@@ -1,0 +1,94 @@
+== Solutions ==
+=== Solution 1 ===
+<cmath>\begin{eqnarray*}
+\frac{x+y}{2} &=& \sqrt{xy} + 2\\
+x+y-4 &=& 2\sqrt{xy}\\
+y - 2\sqrt{xy} + x &=& 4\\
+\sqrt{y} - \sqrt{x} &=& \pm 2\end{eqnarray*}</cmath>
+
+Because <math>y > x</math>, we only consider <math>+2</math>.
+
+For simplicity, we can count how many valid pairs of <math>(\sqrt{x},\sqrt{y})</math> that satisfy our equation.
+
+The maximum that <math>\sqrt{y}</math> can be is <math>\sqrt{10^6} - 1 = 999</math> because <math>\sqrt{y}</math> must be an integer (this is because <math>\sqrt{y} - \sqrt{x} = 2</math>, an integer). Then <math>\sqrt{x} = 997</math>, and we continue this downward until <math>\sqrt{y} = 3</math>, in which case <math>\sqrt{x} = 1</math>. The number of pairs of <math>(\sqrt{x},\sqrt{y})</math>, and so <math>(x,y)</math> is then <math>\boxed{997}</math>.
+<!-- solution lost in edit conflict - azjps -
+Since <math>y>x</math>, it follows that each ordered pair <math>(x,y) = (n^2, (n+2)^2)</math> satisfies this equation. The minimum value of <math>x</math> is <math>1</math> and the maximum value of <math>y = 999^2</math> which would make <math>x = 997^2</math>. Thus <math>x</math> can be any of the squares between <math>1</math> and <math>997^2</math> inclusive and the answer is <math>\boxed{997}</math>.
+-->
+
+=== Solution 2 ===
+
+
+Let <math>a^2</math> = <math>x</math> and <math>b^2</math> = <math>y</math>, where <math>a</math> and <math>b</math> are positive.
+
+Then <cmath>\frac{a^2 + b^2}{2} = \sqrt{{a^2}{b^2}} +2</cmath>
+<cmath>a^2 + b^2 = 2ab + 4</cmath>
+<cmath>(a-b)^2 = 4</cmath>
+<cmath>(a-b) = \pm 2</cmath>
+
+This makes counting a lot easier since now we just have to find all pairs <math>(a,b)</math> that differ by 2.
+
+
+Because <math>\sqrt{10^6} = 10^3</math>, then we can use all positive integers less than 1000 for <math>a</math> and <math>b</math>.
+
+
+We know that because <math>x < y</math>, we get <math>a < b</math>.
+
+
+We can count even and odd pairs separately to make things easier*:
+
+
+Odd: <cmath>(1,3) , (3,5) , (5,7)  .  .  .  (997,999)</cmath>
+
+
+Even: <cmath>(2,4) , (4,6) , (6,8)  .  .  .  (996,998)</cmath>
+
+
+This makes 499 odd pairs and 498 even pairs, for a total of <math>\boxed{997}</math> pairs.
+
+
+
+<math>*</math>Note: We are counting the pairs for the values of <math>a</math> and <math>b</math>, which, when squared, translate to the pairs of <math>(x,y)</math> we are trying to find.
+
+=== Solution 3 ===
+Since the arithmetic mean is 2 more than the geometric mean, <math>\frac{x+y}{2} = 2 + \sqrt{xy}</math>. We can multiply by 2 to get <math>x + y = 4 + 2\sqrt{xy}</math>. Subtracting 4 and squaring gives 
+<cmath>((x+y)-4)^2 = 4xy</cmath>
+<cmath>((x^2 + 2xy + y^2) + 16 - 2(4)(x+y)) = 4xy</cmath>
+<cmath>x^2 - 2xy + y^2 + 16 - 8x - 8y = 0</cmath>
+
+Notice that <math>((x-y)-4)^2 = x^2 - 2xy + y^2 + 16 - 8x +8y</math>, so the problem asks for solutions of 
+<cmath>(x-y-4)^2 = 16y</cmath>
+Since the left hand side is a perfect square, and 16 is a perfect square, <math>y</math> must also be a perfect square. Since <math>0 < y < (1000)^2</math>, <math>y</math> must be from <math>1^2</math> to <math>999^2</math>, giving at most 999 options for <math>y</math>.
+
+However if <math>y = 1^2</math>, you get <math>(x-5)^2 = 16</math>, which has solutions <math>x = 9</math> and <math>x = 1</math>. Both of those solutions are not less than <math>y</math>, so <math>y</math> cannot be equal to 1. If <math>y = 2^2 = 4</math>, you get <math>(x - 8)^2 = 64</math>, which has 2 solutions, <math>x = 16</math>, and <math>x = 0</math>. 16 is not less than 4, and <math>x</math> cannot be 0, so <math>y</math> cannot be 4. However, for all other <math>y</math>, you get exactly 1 solution for <math>x</math>, and that gives a total of <math>999 - 2 = \boxed{997}</math> pairs.
+
+- asbodke
+
+
+=== Solution 4 (Similar to Solution 3) ===
+Rearranging our conditions to 
+
+<cmath>x^2-2xy+y^2+16-8x-8y=0 \implies</cmath>
+<cmath>(y-x)^2=8(x+y-2).</cmath>
+
+Thus, <math>4|y-x.</math>
+
+Now, let <math>y = 4k+x.</math> Plugging this back into our expression, we get
+
+<cmath>(k-1)^2=x.</cmath>
+
+There, a unique value of <math>x, y</math> is formed for every value of <math>k</math>. However, we must have 
+
+<cmath>y<10^6 \implies (k+1)^2< 10^6-1</cmath>
+
+and 
+
+<cmath>x=(k-1)^2+1>0.</cmath>
+
+Therefore, there are only <math>\boxed{997}</math> pairs of <math>(x,y).</math>
+
+Solution by Williamgolly
+
+=== Solution 5 ===
+
+First we see that our condition is <math>\frac{x+y}{2} = 2 + \sqrt{xy}</math>. Then we can see that <math>x+y = 4 + 2\sqrt{xy}</math>. From trying a simple example to figure out conditions for <math>x,y</math>, we want to find <math>x-y</math> so we can isolate for <math>x</math>. From doing the example we can note that we can square both sides and subtract <math>4xy</math>: <math>(x-y)^2 = 16 + 16\sqrt{xy} \implies x-y = -2(
+\sqrt{1+\sqrt{xy}})</math> (note it is negative because <math>y > x</math>. Clearly the square root must be an integer, so now let <math>\sqrt{xy} = a^2-1</math>. Thus <math>x-y = -2a</math>. Thus <math>x = 2 + \sqrt{xy} - a = 2 + a^2 - 1 -2a</math>. We can then find <math>y</math>, and use the quadratic formula on <math>x,y</math> to ensure they are <math>>0</math> and <math><10^6</math> respectively. Thus we get that <math>y</math> can go up to 999 and <math>x</math> can go down to <math>3</math>, leaving <math>997</math> possibilities for <math>x,y</math>.

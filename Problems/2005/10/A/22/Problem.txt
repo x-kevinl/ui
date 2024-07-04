@@ -1,0 +1,4 @@
+==Problem==
+Let $S$ be the [[set]] of the $2005$ smallest positive multiples of $4$, and let $T$ be the set of the $2005$ smallest positive multiples of $6$. How many elements are common to $S$ and $T$?
+
+$ \textbf{(A) } 166\qquad \textbf{(B) } 333\qquad \textbf{(C) } 500\qquad \textbf{(D) } 668\qquad \textbf{(E) } 1001 $

@@ -1,0 +1,7 @@
+==Solution==
+In a cone, radius and height each vary inversely with increasing height (i.e. the radius of the cone formed by cutting off the mountain at $4,000$ feet is half that of the original mountain). Therefore, volume varies as the inverse cube of increasing height (expressed as a percentage of the total height of cone):
+$V_I\times \text{Height}^3 = V_N$
+
+Plugging in our given condition, $\frac{1}{8} = \text{Height}^3 \Rightarrow \text{Height} = \frac{1}{2}$.  
+
+$8000\cdot\frac{1}{2}=4000 \Rightarrow \boxed{\textbf{A}}$.

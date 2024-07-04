@@ -1,0 +1,3 @@
+==Problem==
+
+For positive integer <math>n</math>, let <math>s(n)</math> denote the sum of the digits of <math>n</math>.  Find the smallest positive integer satisfying <math>s(n) = s(n+864) = 20</math>.

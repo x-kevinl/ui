@@ -1,0 +1,39 @@
+==Solution==
+<asy>
+unitsize(10);
+pair A = (0,0);
+pair B = (9,0);
+pair C = (15,8);
+pair D = (-6,8);
+pair E = (-6,0);
+draw(A--B--C--cycle);
+draw(B--D--A);
+label("$A$",A,dir(-120));
+label("$B$",B,dir(-60));
+label("$C$",C,dir(60));
+label("$D$",D,dir(120));
+label("$E$",E,dir(-135));
+label("$9$",(A+B)/2,dir(-90));
+label("$10$",(D+A)/2,dir(-150));
+label("$10$",(C+B)/2,dir(-30));
+label("$17$",(D+B)/2,dir(60));
+label("$17$",(A+C)/2,dir(120));
+
+draw(D--E--A,dotted);
+label("$8$",(D+E)/2,dir(180));
+label("$6$",(A+E)/2,dir(-90));
+</asy>
+- Diagram by Brendanb4321
+
+
+Extend <math>AB</math> to form a right triangle with legs <math>6</math> and <math>8</math> such that <math>AD</math> is the hypotenuse and connect the points <math>CD</math> so 
+that you have a rectangle. (We know that <math>\triangle ADE</math> is a <math>6-8-10</math>, since <math>\triangle DEB</math> is an <math>8-15-17</math>.) The base <math>CD</math> of the rectangle will be <math>9+6+6=21</math>. Now, let <math>O</math> be the intersection of <math>BD</math> and <math>AC</math>. This means that <math>\triangle ABO</math> and <math>\triangle DCO</math> are with ratio <math>\frac{21}{9}=\frac73</math>. Set up a proportion, knowing that the two heights add up to 8. We will let <math>y</math> be the height from <math>O</math> to <math>DC</math>, and <math>x</math> be the height of <math>\triangle ABO</math>.
+<cmath>\frac{7}{3}=\frac{y}{x}</cmath>
+<cmath>\frac{7}{3}=\frac{8-x}{x}</cmath>
+<cmath>7x=24-3x</cmath>
+<cmath>10x=24</cmath>
+<cmath>x=\frac{12}{5}</cmath>
+
+This means that the area is <math>A=\tfrac{1}{2}(9)(\tfrac{12}{5})=\tfrac{54}{5}</math>. This gets us <math>54+5=\boxed{059}.</math>
+
+-Solution by the Math Wizard, Number Magician of the Second Order, Head of the Council of the Geometers

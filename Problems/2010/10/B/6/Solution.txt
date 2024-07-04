@@ -1,0 +1,2 @@
+==Solution 1==
+Assuming we do not already know an inscribed angle is always half of its central angle, we will try a different approach. Since $O$ is the center, $OC$ and $OA$ are radii and they are congruent. Thus, $\triangle COA$ is an isosceles triangle. Also, note that $\angle COB$ and $\angle COA$ are supplementary, then $\angle COA = 180 - 50 = 130^{\circ}$. Since $\triangle COA$ is isosceles, then $\angle OCA \cong \angle OAC$. They also sum to $50^{\circ}$, so each angle is $\boxed{\textbf{(B)}\ 25}$.

@@ -1,0 +1,23 @@
+==Solution==
+When tossed $n$ times, the probability of getting exactly 2 heads and the rest tails is
+
+$$\dbinom{n}{2} {\left( \frac{1}{4} \right)}^2 {\left( \frac{3}{4} \right) }^{n-2}.$$
+
+Similarly, the probability of getting exactly 3 heads is
+
+$$\dbinom{n}{3}{\left( \frac{1}{4} \right)}^3 {\left( \frac{3}{4} \right) }^{n-3}.$$
+
+Now set the two probabilities equal to each other and solve for $n$:
+
+$$\dbinom{n}{2}{\left( \frac{1}{4} \right)}^2 {\left( \frac{3}{4} \right) }^{n-2}=\dbinom{n}{3}{\left( \frac{1}{4} \right)}^3 {\left( \frac{3}{4} \right) }^{n-3}$$
+
+$$\frac{n(n-1)}{2!} \cdot \frac{3}{4} = \frac{n(n-1)(n-2)}{3!}  \cdot \frac{1}{4}$$
+
+$$3 = \frac{n-2}{3}$$
+
+$$n-2 = 9$$
+
+$$n = \fbox{\textbf{(D)}\; 11}$$
+
+
+Note: the original problem did not specify $n>1$, so $n=1$ was a solution, but this was fixed in the Wiki problem text so that the answer would make sense. [[User:Adihaya|— @adihaya]] ([[User talk:Adihaya|talk]]) 15:23, 19 February 2016 (EST)

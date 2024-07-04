@@ -1,0 +1,13 @@
+==Problem==
+A donkey suffers an attack of hiccups and the first hiccup happens at $4:00$ one afternoon. Suppose that
+the donkey hiccups regularly every $5$ seconds. At what time does the donkey’s $700$th hiccup occur?
+
+$\textbf{(A) }15 \text{ seconds after } 4:58$
+
+$\textbf{(B) }20 \text{ seconds after } 4:58$
+
+$\textbf{(C) }25 \text{ seconds after } 4:58$
+
+$\textbf{(D) }30 \text{ seconds after } 4:58$
+
+$\textbf{(E) }35 \text{ seconds after } 4:58$

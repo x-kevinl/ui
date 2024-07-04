@@ -1,0 +1,2 @@
+== Solution ==
+Each of the $\binom{9}{2} = 36$ pairs of vertices determines two equilateral triangles, for a total of 72 triangles. However, the three triangles $A_1A_4A_7$, $A_2A_5A_8$, and $A_3A_6A_9$ are each counted 3 times, resulting in an overcount of 6. Thus, there are $\boxed{66}$ distinct equilateral triangles.

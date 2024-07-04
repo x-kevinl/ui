@@ -1,0 +1,35 @@
+==Solution 1==
+This is easily solved by recursion/dynamic programming. To simplify the problem somewhat, let us imagine the seven vertices on a line <math>E \leftrightarrow P_4 \leftrightarrow P_5 \leftrightarrow S \leftrightarrow P_1 \leftrightarrow P_2 \leftrightarrow P_3 \leftrightarrow E</math>. We can count the number of left/right (L/R) paths of length <math>\le 11</math> that start at <math>S</math> and end at either <math>P_4</math> or <math>P_3</math>.
+
+We can visualize the paths using the common grid counting method by starting at the origin <math>(0,0)</math>, so that a right (R) move corresponds to moving 1 in the positive <math>x</math> direction, and a left (L) move corresponds to moving 1 in the positive <math>y</math> direction. Because we don't want to move more than 2 units left or more than 3 units right, our path must not cross the lines <math>y = x+2</math> or <math>y = x-3</math>. Letting <math>p(x,y)</math> be the number of such paths from <math>(0,0)</math> to <math>(x,y)</math> under these constraints, we have the following base cases:
+
+<math>p(x,0) = \begin{cases}
+1 & x \le 3 \\
+0 & x > 3
+\end{cases}
+\qquad p(0,y) = \begin{cases}
+1 & y \le 2 \\
+0 & y > 2
+\end{cases}
+</math>
+
+and recursive step
+<math>p(x,y) = p(x-1,y) + p(x,y-1)</math> for <math>x,y \ge 1</math>.
+
+The filled in grid will look something like this, where the lower-left <math>1</math> corresponds to the origin:
+
+<math>
+\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
+0 & 0 & 0 & 0 & \textbf{89} & & & \\ \hline
+0 & 0 & 0 & \textbf{28} & 89 & & & \\ \hline
+0 & 0 & \textbf{9} & 28 & 61 & 108 & 155 & \textbf{155} \\ \hline
+0 & \textbf{3} & 9 & 19 & 33 & 47 & \textbf{47} & 0 \\ \hline
+\textbf{1} & 3 & 6 & 10 & 14 & \textbf{14} & 0 & 0 \\ \hline
+1 & 2 & 3 & 4 & \textbf{4} & 0 & 0 & 0 \\ \hline
+1 & 1 & 1 & \textbf{1} & 0 & 0 & 0 & 0 \\ \hline
+\end{tabular}
+</math>
+
+The bolded numbers on the top diagonal represent the number of paths from <math>S</math> to <math>P_4</math> in 2, 4, 6, 8, 10 moves, and the numbers on the bottom diagonal represent the number of paths from <math>S</math> to <math>P_3</math> in 3, 5, 7, 9, 11 moves. We don't care about the blank entries or entries above the line <math>x+y = 11</math>. The total number of ways is <math>1+3+9+28+89+1+4+14+47+155 = \boxed{351}</math>.
+
+(Solution by scrabbler94)

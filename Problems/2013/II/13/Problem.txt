@@ -1,0 +1,2 @@
+==Problem 13==
+In <math>\triangle ABC</math>, <math>AC = BC</math>, and point <math>D</math> is on <math>\overline{BC}</math> so that <math>CD = 3\cdot BD</math>. Let <math>E</math> be the midpoint of <math>\overline{AD}</math>. Given that <math>CE = \sqrt{7}</math> and <math>BE = 3</math>, the area of <math>\triangle ABC</math> can be expressed in the form <math>m\sqrt{n}</math>, where <math>m</math> and <math>n</math> are positive integers and <math>n</math> is not divisible by the square of any prime. Find <math>m+n</math>.

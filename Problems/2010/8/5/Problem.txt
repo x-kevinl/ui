@@ -1,0 +1,4 @@
+==Problem==
+Alice needs to replace a light bulb located $10$ centimeters below the ceiling in her kitchen. The ceiling is $2.4$ meters above the floor. Alice is $1.5$ meters tall and can reach $46$ centimeters above the top of her head. Standing on a stool, she can just reach the light bulb. What is the height of the stool, in centimeters?
+
+$ \textbf{(A)}\ 32 \qquad\textbf{(B)}\ 34\qquad\textbf{(C)}\ 36\qquad\textbf{(D)}\ 38\qquad\textbf{(E)}\ 40 $

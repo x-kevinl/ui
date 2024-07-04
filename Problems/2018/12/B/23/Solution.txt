@@ -1,0 +1,20 @@
+== Diagram ==
+<asy>
+/* Made by MRENTHUSIASM */
+size(250);
+import graph3;
+import solids;
+
+currentprojection=orthographic((0.2,-0.5,0.2));
+triple A, B, C;
+A = (1,0,0);
+B = (-1/2,1/2,sqrt(2)/2);
+C = (0,0,0);
+draw(unitsphere,white,light=White);
+dot(A^^B^^C,linewidth(4.5));
+draw(Circle(C,1,(0,0,1))^^A--C--B);
+label("$A$",A,3*dir(A));
+label("$B$",B,3*dir(B));
+label("$C$",C,3*(0,0,-1));
+</asy>
+~MRENTHUSIASM

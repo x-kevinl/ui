@@ -1,0 +1,2 @@
+== Problem 12 ==
+Nine delegates, three each from three different countries, randomly select chairs at a round table that seats nine people. Let the [[probability]] that each delegate sits next to at least one delegate from another country be <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. Find <math>m + n</math>.

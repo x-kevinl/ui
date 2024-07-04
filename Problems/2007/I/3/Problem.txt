@@ -1,0 +1,2 @@
+== Problem ==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>The [[complex number]] <math>z</math> is equal to <math>9+bi</math>, where <math>b</math> is a [[positive]] [[real number]] and <math>i^{2}=-1</math>.  Given that the imaginary parts of <math>z^{2}</math> and <math>z^{3}</math> are the same, what is <math>b</math> equal to?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>

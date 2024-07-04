@@ -1,0 +1,2 @@
+==Solution 1==
+The text suggests that the number of students in the group has $12$ factors, since each arrangement is a factor. The smallest integer with $12$ factors is $2^2\cdot3\cdot5=\boxed{\textbf{(C) }60}$.

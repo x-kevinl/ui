@@ -1,0 +1,24 @@
+==Solution 1==
+Add the two equations to get that <math>\log x+\log y+2(\log(\gcd(x,y))+2(\log(\text{lcm}(x,y)))=630</math>.
+Then, we use the theorem <math>\log a+\log b=\log ab</math> to get the equation, <math>\log (xy)+2(\log(\gcd(x,y))+\log(\text{lcm}(x,y)))=630</math>.
+Using the theorem that <math>\gcd(x,y) \cdot \text{lcm}(x,y)=x\cdot y</math>, along with the previously mentioned theorem, we can get the equation <math>3\log(xy)=630</math>.
+This can easily be simplified to <math>\log(xy)=210</math>, or <math>xy = 10^{210}</math>.
+
+<math>10^{210}</math> can be factored into <math>2^{210} \cdot 5^{210}</math>, and <math>m+n</math> equals to the sum of the exponents of <math>2</math> and <math>5</math>, which is <math>210+210 = 420</math>.
+Multiply by two to get <math>2m +2n</math>, which is <math>840</math>.
+Then, use the first equation (<math>\log x + 2\log(\gcd(x,y)) = 60</math>) to show that <math>x</math> has to have lower degrees of <math>2</math> and <math>5</math> than <math>y</math>  (you can also test when <math>x>y</math>, which is a contradiction to the restrains we set before). Therefore, <math>\gcd(x,y)=x</math>. Then, turn the equation into <math>3\log x = 60</math>, which yields <math>\log x = 20</math>, or <math>x = 10^{20}</math>.
+Factor this into <math>2^{20} \cdot 5^{20}</math>, and add the two 20's, resulting in <math>m</math>, which is <math>40</math>.
+Add <math>m</math> to <math>2m + 2n</math> (which is <math>840</math>) to get <math>40+840 = \boxed{880}</math>.
+
+~minor mistake fix by virjoy2001
+~minor mistake fix by oralayhan
+
+Remark: You can obtain the contradiction by using LTE. If <math>\nu_2{(x)}\geq{\nu_2{(y)}}, \nu_2{(y^2x)}=60</math>. However, <math>\nu_2{(xy)}=210</math> a contradiction. Same goes with taking <math>\nu_5{(x,y)}</math>
+
+===Easier Approach to Finish===
+After noting that <math>xy=10^{210},</math> notice that we can let <math>x=10^a</math> and <math>y=10^b.</math> Thus, we have from the given equations (1) and (2) respectively, that:
+<cmath>a+2a=60</cmath>
+<cmath>b+2b=570</cmath>
+Solving, we get <math>(a,b)=(20,190).</math> This matches with our constraint that <math>xy=10^{210},</math> so we finish from here.
+
+<math>x=2^{20}\cdot 5^{20}, y=2^{190}\cdot 5^{190}.</math> Thus, the answer desired is <math>3(20+20)+2(190+190)=880.</math> ~mathboy282

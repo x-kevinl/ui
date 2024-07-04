@@ -1,0 +1,27 @@
+==Problem==
+
+The arrows on the two spinners shown below are spun. Let the number $N$  equal $10$ times the number on Spinner $\text{A}$, added to the number on Spinner $\text{B}$. What is the probability that $N$ is a perfect square number?
+<asy>
+//diagram by pog give me 1 billion dollars for this
+size(6cm);
+usepackage("mathptmx");
+filldraw(arc((0,0), r=4, angle1=0, angle2=90)--(0,0)--cycle,mediumgray*0.5+gray*0.5);
+filldraw(arc((0,0), r=4, angle1=90, angle2=180)--(0,0)--cycle,lightgray);
+filldraw(arc((0,0), r=4, angle1=180, angle2=270)--(0,0)--cycle,mediumgray);
+filldraw(arc((0,0), r=4, angle1=270, angle2=360)--(0,0)--cycle,lightgray*0.5+mediumgray*0.5);
+label("$5$", (-1.5,1.7));
+label("$6$", (1.5,1.7));
+label("$7$", (1.5,-1.7));
+label("$8$", (-1.5,-1.7));
+label("Spinner A", (0, -5.5));
+filldraw(arc((12,0), r=4, angle1=0, angle2=90)--(12,0)--cycle,mediumgray*0.5+gray*0.5);
+filldraw(arc((12,0), r=4, angle1=90, angle2=180)--(12,0)--cycle,lightgray);
+filldraw(arc((12,0), r=4, angle1=180, angle2=270)--(12,0)--cycle,mediumgray);
+filldraw(arc((12,0), r=4, angle1=270, angle2=360)--(12,0)--cycle,lightgray*0.5+mediumgray*0.5);
+label("$1$", (10.5,1.7));
+label("$2$", (13.5,1.7));
+label("$3$", (13.5,-1.7));
+label("$4$", (10.5,-1.7));
+label("Spinner B", (12, -5.5));
+</asy>
+$\textbf{(A)} ~\dfrac{1}{16}\qquad\textbf{(B)} ~\dfrac{1}{8}\qquad\textbf{(C)} ~\dfrac{1}{4}\qquad\textbf{(D)} ~\dfrac{3}{8}\qquad\textbf{(E)} ~\dfrac{1}{2}$

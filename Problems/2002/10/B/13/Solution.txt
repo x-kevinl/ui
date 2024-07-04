@@ -1,0 +1,5 @@
+== Solution ==
+
+We have $8xy - 12y + 2x - 3 = 4y(2x - 3) + (2x - 3) = (4y + 1)(2x - 3)$. 
+
+As $(4y + 1)(2x - 3) = 0$ must be true for all $y$, we must have $2x - 3 = 0$, hence $\boxed{x = \frac 32\ \mathrm{ (D)}}$.

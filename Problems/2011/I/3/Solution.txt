@@ -1,0 +1,15 @@
+== Solution ==
+
+Given that <math>L</math> has slope <math>\frac{5}{12}</math> and contains the point <math>A=(24,-1)</math>, we may write the point-slope equation for <math>L</math> as <math>y+1=\frac{5}{12}(x-24)</math>.
+Since <math>M</math> is perpendicular to <math>L</math> and  contains the point <math>B=(5,6)</math>, we have that the slope of <math>M</math> is <math>-\frac{12}{5}</math>, and consequently that the point-slope equation for <math>M</math> is <math>y-6=-\frac{12}{5}(x-5)</math>.
+
+
+
+Converting both equations to the form <math>0=Ax+By+C</math>, we have that <math>L</math> has the equation <math>0=5x-12y-132</math> and that <math>M</math> has the equation <math>0=12x+5y-90</math>.
+Applying the point-to-line distance formula, <math>\frac{|Ax+By+C|}{\sqrt{A^2+B^2}}</math>, to point <math>P</math> and lines <math>L</math> and <math>M</math>, we find that the distance from <math>P</math> to <math>L</math> and <math>M</math> are <math>\frac{526}{13}</math> and <math>\frac{123}{13}</math>, respectively. 
+
+
+
+Since <math>A</math> and <math>B</math> lie on the positive axes of the shifted coordinate plane, we may show by graphing the given system that point P will lie in the second quadrant in the new coordinate system. Therefore, the <math>x</math>-coordinate of <math>P</math> is negative, and is therefore <math>-\frac{123}{13}</math>; similarly, the <math>y</math>-coordinate of <math>P</math> is positive and is therefore <math>\frac{526}{13}</math>.
+
+Thus, we have that <math>\alpha=-\frac{123}{13}</math> and that <math>\beta=\frac{526}{13}</math>. It follows that <math>\alpha+\beta=-\frac{123}{13}+\frac{526}{13}=\frac{403}{13}=\boxed{031}</math>.

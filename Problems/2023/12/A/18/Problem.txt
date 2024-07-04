@@ -1,0 +1,27 @@
+==Problem==
+Circle $C_1$ and $C_2$ each have radius $1$, and the distance between their centers is $\frac{1}{2}$. Circle $C_3$ is the largest circle internally tangent to both $C_1$ and $C_2$. Circle $C_4$ is internally tangent to both $C_1$ and $C_2$ and externally tangent to $C_3$. What is the radius of $C_4$? 
+
+<asy>
+import olympiad;
+size(10cm);
+draw(circle((0,0),0.75));
+draw(circle((-0.25,0),1));
+draw(circle((0.25,0),1));
+draw(circle((0,6/7),3/28));
+pair A = (0,0), B = (-0.25,0), C = (0.25,0), D = (0,6/7), E = (-0.95710678118, 0.70710678118), F = (0.95710678118, -0.70710678118);
+dot(B^^C);
+draw(B--E, dashed);
+draw(C--F, dashed);
+draw(B--C);
+label("$C_4$", D);
+label("$C_1$", (-1.375, 0));
+label("$C_2$", (1.375,0));
+label("$\frac{1}{2}$", (0, -.125));
+label("$C_3$", (-0.4, -0.4));
+label("$1$", (-.85, 0.70));
+label("$1$", (.85, -.7));
+import olympiad;
+markscalefactor=0.005;
+</asy>
+
+$\textbf{(A) } \frac{1}{14} \qquad \textbf{(B) } \frac{1}{12} \qquad \textbf{(C) } \frac{1}{10} \qquad \textbf{(D) } \frac{3}{28} \qquad \textbf{(E) } \frac{1}{9}$

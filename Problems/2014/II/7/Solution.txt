@@ -1,0 +1,26 @@
+== Solution 1 ==
+First, let's split it into two cases to get rid of the absolute value sign
+
+<math>\left |\sum_{k=1}^n\log_{10}f(k)\right|=1 \iff \sum_{k=1}^n\log_{10}f(k)=1,-1 </math>
+
+Now we simplify using product-sum logarithmic identites:
+
+<math>\log_{10}{f(1)}+\log_{10}{f(2)}+...+\log_{10}{f(n)}=\log_{10}{f(1)\cdot f(2) \cdot ... \cdot f(n)}=1,-1</math>
+
+
+
+Note that the exponent <math>\cos{\pi(x)}</math> is either <math>-1</math> if <math>x</math> is odd or <math>1</math> if <math>x</math> is even. 
+
+Writing out the first terms we have 
+
+<math>\frac{1}{(2)(3)}(3)(4)\frac{1}{(4)(5)} \ldots</math>
+
+This product clearly telescopes (i.e. most terms cancel) and equals either <math>10</math> or <math>\frac{1}{10}</math>. But the resulting term after telescoping depends on parity (odd/evenness), so we split it two cases, one where <math>n</math> is odd and another where <math>n</math> is even. 
+
+<math>\textbf{Case 1: Odd n}</math>
+
+For odd <math>n</math>, it telescopes to <math>\frac{1}{2(n+2)}</math> where <math>n</math> is clearly <math>3</math>. 
+
+<math>\textbf{Case 2: Even n}</math>
+
+For even <math>n</math>, it telescopes to <math>\frac{n+2}{2}</math> where <math>18</math> is the only possible <math>n</math> value. Thus the answer is <math>\boxed{021}</math>

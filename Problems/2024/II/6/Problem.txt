@@ -1,0 +1,2 @@
+==Problem==
+Alice chooses a set <math>A</math> of positive integers. Then Bob lists all finite nonempty sets <math>B</math> of positive integers with the property that the maximum element of <math>B</math> belongs to <math>A</math>. Bob's list has 2024 sets. Find the sum of the elements of A.

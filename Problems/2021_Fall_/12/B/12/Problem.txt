@@ -1,0 +1,6 @@
+==Problem==
+For $n$ a positive integer, let $f(n)$ be the quotient obtained when the sum of all positive divisors of $n$ is divided by $n.$ For example, $$f(14)=(1+2+7+14)\div 14=\frac{12}{7}$$
+What is $f(768)-f(384)?$
+
+$\textbf{(A)}\ \frac{1}{768} \qquad\textbf{(B)}\ \frac{1}{192} \qquad\textbf{(C)}\ 1 \qquad\textbf{(D)}\
+\frac{4}{3} \qquad\textbf{(E)}\ \frac{8}{3}$

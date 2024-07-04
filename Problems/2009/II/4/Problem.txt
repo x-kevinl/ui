@@ -1,0 +1,2 @@
+== Problem ==
+A group of children held a grape-eating contest. When the contest was over, the winner had eaten <math>n</math> grapes, and the child in <math>k</math>-th place had eaten  <math>n+2-2k</math> grapes. The total number of grapes eaten in the contest was <math>2009</math>. Find the smallest possible value of <math>n</math>.

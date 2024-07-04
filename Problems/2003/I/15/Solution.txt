@@ -1,0 +1,23 @@
+== Solution 1 ==
+
+In the following, let the name of a point represent the mass located there. Since we are looking for a ratio, we assume that <math>AB=120</math>, <math>BC=169</math>, and <math>CA=260</math> in order to simplify our computations.
+
+First, reflect point <math>F</math> over angle bisector <math>BD</math> to a point <math>F'</math>.
+<center><asy>
+size(400); pointpen = black; pathpen = black+linewidth(0.7); 
+pair A=(0,0),C=(7.8,0),B=IP(CR(A,3.6),CR(C,5.07)), M=(A+C)/2, Da = bisectorpoint(A,B,C), D=IP(B--B+(Da-B)*10,A--C), F=IP(D--D+10*(B-D)*dir(270),B--C), E=IP(B--M,D--F);pair Fprime=2*D-F; /* scale down by 100x */
+D(MP("A",A,NW)--MP("B",B,N)--MP("C",C)--cycle); D(B--D(MP("D",D))--D(MP("F",F,NE))); D(B--D(MP("M",M)));D(A--MP("F'",Fprime,SW)--D); MP("E",E,NE); D(rightanglemark(F,D,B,4)); MP("390",(M+C)/2); MP("390",(M+C)/2); MP("360",(A+B)/2,NW); MP("507",(B+C)/2,NE);
+</asy></center>
+As <math>BD</math> is an angle bisector of both triangles <math>BAC</math> and <math>BF'F</math>, we know that <math>F'</math> lies on <math>AB</math>. We can now balance triangle <math>BF'C</math> at point <math>D</math> using mass points.
+
+By the [[Angle Bisector Theorem]], we can place [[mass points]] on <math>C,D,A</math> of <math>120,\,289,\,169</math> respectively. Thus, a mass of <math>\frac {289}{2}</math> belongs at both <math>F</math> and <math>F'</math> because BD is a median of triangle <math>BF'F</math> . Therefore, <math>CB/FB=\frac{289}{240}</math>.
+
+Now, we reassign mass points to determine <math>FE/FD</math>. This setup involves <math>\triangle CFD</math> and [[transversal]] <math>MEB</math>. For simplicity, put masses of <math>240</math> and <math>289</math> at <math>C</math> and <math>F</math> respectively. To find the mass we should put at <math>D</math>, we compute <math>CM/MD</math>. Applying the Angle Bisector Theorem again and using the fact <math>M</math> is a midpoint of <math>AC</math>, we find
+<cmath>
+\frac {MD}{CM} = \frac {\frac{169}{289}\cdot 260 - 130}{130} = \frac {49}{289}
+</cmath>
+At this point we could find the mass at <math>D</math> but it's unnecessary.
+<cmath>
+\frac {DE}{EF} = \frac {F}{D} = \frac {F}{C}\cdot\frac {C}{D} = \frac {289}{240}\cdot\frac {49}{289} = \boxed{\frac {49}{240}}
+</cmath>
+and the answer is <math>49 + 240 = \boxed{289}</math>.

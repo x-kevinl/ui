@@ -1,0 +1,3 @@
+== Solution 1==
+
+Let $s$ be the speed of the escalator and $c$ be the speed of Clea. Using $d = v t$, the first statement can be translated to the equation $d = 60c$. The second statement can be translated to $d = 24(c+s)$. Since the same distance is being covered in each scenario, we can set the two equations equal and solve for $s$. We find that $s = \dfrac{3c}{2}$. The problem asks for the time it takes her to ride down the escalator when she just stands on it. Since $t = \dfrac{d}{s}$ and $d = 60c$, we have $t = \dfrac{60c}{\dfrac{3c}{2}} = 40$ seconds. Answer choice $\boxed{B}$ is correct.

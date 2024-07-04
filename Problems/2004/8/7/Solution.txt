@@ -1,0 +1,2 @@
+== Solution ==
+The maximum heart rate is $220-26=194$ beats per minute. The target heart rate is then $0.8*194 \approx \boxed{\textbf{(B)}\ 155}$ beats per minute.

@@ -1,0 +1,14 @@
+==Solution 1 (Unrigorous)==
+We can start at $200$ and work our way down to $1$. We want to press the button that multiplies by $2$ the most, but since we are going down instead of up, we divide by $2$ instead. If we come across an odd number, then we will subtract that number by $1$. Notice
+ $200 \div 2 = 100$,  
+ $100 \div 2 = 50$,  
+ $50 \div 2 = 25$,
+ $25-1 = 24$,  
+ $24 \div 2 = 12$,  
+ $12 \div 2 = 6$,  
+ $6 \div 2 = 3$,  
+ $3-1 = 2$, 
+ $2 \div 2 = 1$.   
+Since we've reached $1$, it's clear that the answer should be $\boxed{\textbf{(B)}\ 9}$- $\boxed{\textbf{Javapost}}$. Because we only subtracted $1$ when we had to, this is optimal. ~Roy2020
+
+can someone please rigor this

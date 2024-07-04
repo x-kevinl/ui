@@ -1,0 +1,19 @@
+== Solution 1==
+
+First of all, notice that for any odd prime $p$, the largest prime that divides $p+1$ is no larger than $\frac{p+1}{2}$, therefore eventually the factorization of $f_k(N)$ does not contain any prime larger than $3$. Also, note that $f_2(2^m) = f_1(3^{m-1})=2^{2m-4}$, when $m=4$ it stays the same but when $m\geq 5$ it grows indefinitely. Therefore any number $N$ that is divisible by $2^5$ or any number $N$ such that $f_k(N)$ is divisible by $2^5$ makes the sequence $(f_1(N),f_2(N),f_3(N),\dots )$ unbounded. There are $12$ multiples of $2^5$ within $400$. $2^4 5^2=400$ also works: $f_2(2^4 5^2) = f_1(3^4 \cdot 2) = 2^6$.
+
+Now let's look at the other cases. Any first power of prime in a prime factorization will not contribute the unboundedness because $f_1(p^1)=(p+1)^0=1$. At least a square of prime is to contribute. So we test primes that are less than $\sqrt{400}=20$:
+
+$f_1(3^4)=4^3=2^6$ works, therefore any number $\leq 400$ that are divisible by $3^4$ works: there are $4$ of them.
+
+$3^3 \cdot Q^2$ could also work if $Q^2$ satisfies $2~|~f_1(Q^2)$, but $3^3 \cdot 5^2 > 400$.
+
+$f_1(5^3)=6^2 = 2^2 3^2$ does not work.
+
+$f_1(7^3)=8^2=2^6$ works. There are no other multiples of $7^3$ within $400$.
+
+$7^2 \cdot Q^2$ could also work if $4~|~f_1(Q^2)$, but $7^2 \cdot 3^2 > 400$ already.
+
+For number that are only divisible by $p=11, 13, 17, 19$, they don't work because none of these primes are such that $p+1$ could be a multiple of $2^5$ nor a multiple of $3^4$.
+
+In conclusion, there are $12+1+4+1=18$ number of $N$'s ... $\framebox{D}$.

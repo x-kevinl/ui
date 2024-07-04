@@ -1,0 +1,42 @@
+==Solution==
+===Solution 1===
+
+The number $0$ has no reciprocal, and $1$ and $-1$ are their own reciprocals. This leaves only $2$ and $-2$. The reciprocal of $2$ is $1/2$, but $2$ is not less than $1/2$. The reciprocal of $-2$ is $-1/2$, and $-2$ is less than$ -1/2$, so it is $\boxed{A}$.
+
+===Solution 2===
+
+The statement "a number is less than its reciprocal" can be translated as $x < \frac{1}{x}$.
+
+Multiplication by $x$ can be done if you do it in three parts:  $x>0$, $x=0$, and $x<0$.  You have to be careful about the direction of the inequality, as you do not know the sign of $x$.
+
+If $x>0$, the sign of the inequality remains the same.  Thus, we have $x^2 < 1$ when $x > 0$.  This leads to $0 < x < 1$. 
+
+If $x=0$, the inequality $x < \frac{1}{x}$ is undefined.
+
+If $x<0$, the sign of the inequality must be switched.  Thus, we have $x^2 > 1$ when $x < 0$.  This leads to $x < -1$.
+
+Putting the solutions together, we have $x<-1$ or $0 < x < 1$, or in interval notation, $(-\infty, -1) \cup(0, 1)$.  The only answer in that range is $\boxed {\text{(A)}\ -2}$
+
+===Solution 3===
+
+Starting again with $x < \frac{1}{x}$, we avoid multiplication by $x$.   Instead, move everything to the left, and find a common denominator:
+
+$x < \frac{1}{x}$
+
+$x - \frac{1}{x} < 0$
+
+$\frac{x^2 - 1}{x} < 0$
+
+$\frac{(x+1)(x-1)}{x} < 0$
+
+Divide this expression at $x=-1$, $x=0$, and $x=1$, as those are the three points where the expression on the left will "change sign".
+
+If $x<-1$, all three of those terms will be negative, and the inequality is true.  Therefore, $(-\infty, -1)$ is part of our solution set.
+
+If $-1 < x < 0$, the $(x+1)$ term will become positive, but the other two terms remain negative.  Thus, there are no solutions in this region.
+
+If $0 < x < 1$, then both $(x+1)$ and $x$ are positive, while $(x-1)$ remains negative.  Thus, the entire region $(0, -1)$ is part of the solution set.
+
+If $1 < x$, then all three terms are positive, and there are no solutions.
+
+At all three "boundary points", the function is either $0$ or undefined.  Therefore, the entire solution set is $(-\infty, -1) \cup (0, 1)$, and the only option in that region is $x=-2$, leading to $\boxed{A}$.

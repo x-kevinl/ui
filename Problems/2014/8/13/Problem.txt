@@ -1,0 +1,4 @@
+==Problem 13==
+If $n$ and $m$ are integers and $n^2+m^2$ is even, which of the following is impossible?
+
+$\textbf{(A) }$ $n$ and $m$ are even $\qquad\textbf{(B) }$ $n$ and $m$ are odd $\qquad\textbf{(C) }$ $n+m$ is even $\qquad\textbf{(D) }$ $n+m$ is odd $\qquad \textbf{(E) }$ none of these are impossible

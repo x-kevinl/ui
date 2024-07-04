@@ -1,0 +1,4 @@
+==Problem==
+Let $$P(x) = x^{2022} + x^{1011} + 1.$$ Which of the following polynomials is a factor of $P(x)$?
+
+$\textbf{(A)} \, x^2 -x + 1 \qquad\textbf{(B)} \, x^2 + x + 1 \qquad\textbf{(C)} \, x^4 + 1 \qquad\textbf{(D)} \, x^6 - x^3 + 1  \qquad\textbf{(E)} \, x^6 + x^3 + 1 $

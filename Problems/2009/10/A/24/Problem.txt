@@ -1,0 +1,14 @@
+== Problem ==
+Three distinct vertices of a cube are chosen at random. What is the probability that the plane determined by these three vertices contains points inside the cube?
+
+$
+\mathrm{(A)}\ \frac{1}{4}
+\qquad
+\mathrm{(B)}\ \frac{3}{8}
+\qquad
+\mathrm{(C)}\ \frac{4}{7}
+\qquad
+\mathrm{(D)}\ \frac{5}{7}
+\qquad
+\mathrm{(E)}\ \frac{3}{4}
+$

@@ -1,0 +1,65 @@
+==Solution 1==
+
+Since $x,y,z$ are all reals located in $[0, n]$, the number of choices for each one is continuous so we use geometric probability.
+
+WLOG([[Without loss of generality]]), assume that $n\geq x \geq y \geq z \geq 0$. Then the set of points $(x,y,z)$ is a tetrahedron, or a triangular pyramid. The point $(x,y,z)$ distributes uniformly in this region. If this is not easy to understand, read Solution II.
+
+The altitude of the tetrahedron is $n$ and the base is an isosceles right triangle with a leg length $n$. The volume is $V_1=\dfrac{n^3}{6}$, as shown in the first figure in red.
+
+<asy>
+import three;
+unitsize(10cm);
+size(150);
+currentprojection=orthographic(1/2,-1,2/3); 
+// three - currentprojection, orthographic
+draw((1,1,0)--(0,1,0)--(0,0,0),dashed);
+draw((0,0,0)--(0,0,1));
+draw((0,1,0)--(0,1,1),dashed);
+draw((1,1,0)--(1,1,1));
+draw((1,0,0)--(1,0,1));
+draw((0,0,1)--(1,0,1)--(1,1,1)--(0,1,1)--cycle);
+
+draw((0,0,0)--(1,0,0)--(1,1,0)--(1,1,1), red);
+draw((1,1,0)--(0,0,0)--(1,1,1), dashed+red);
+draw((1,1,1)--(1,0,0), red);
+</asy>
+
+
+Now we will find the region with points satisfying  $|x-y|\geq1$, $|y-z|\geq1$, $|z-x|\geq1$.
+
+Since $n\geq x \geq y \geq z \geq 0$, we have $x-y\geq1$, $y-z\geq1$.
+
+The region of points $(x,y,z)$ satisfying the condition is shown in the second figure in black. It is a tetrahedron, too.
+
+<asy>
+import three;
+unitsize(10cm);
+size(150);
+currentprojection=orthographic(1/2, -1, 2/3); 
+// three - currentprojection,  orthographic
+draw((1, 1, 0)--(0, 1, 0)--(0, 0, 0), dashed+green);
+draw((0, 0, 0)--(0, 0, 1), green);
+draw((0, 1, 0)--(0, 1, 1), dashed+green);
+
+draw((1, 0, 0)--(1, 0, 1), green);
+draw((0, 0, 1)--(1, 0, 1)--(1, 1, 1)--(0, 1, 1)--cycle, green);
+
+
+
+draw((1,0,0)--(1,1,0)--(0,0,0)--(1,1,1), dashed+red);
+draw((0,0,0)--(1,0,0)--(1,1,1), red);
+draw((1,1,1)--(1,1,0)--(1,0.9,0), red);
+
+draw((1, 0.1, 0)--(1, 0.9, 0)--(1, 0.9, 0.8)--cycle);
+draw((0.2, 0.1, 0)--(1, 0.9, 0.8),dashed);
+draw((1, 0.1, 0)--(0.2, 0.1, 0)--(1, 0.9, 0),dashed);
+
+</asy>
+
+The volume of this region is $V_2=\dfrac{(n-2)^3}{6}$.
+
+So the probability is $p=\dfrac{V_2}{V_1}=\dfrac{(n-2)^3}{n^3}$.
+
+Substituting $n$ with the values in the choices, we find that when $n=10$, $p=\frac{512}{1000}>\frac{1}{2}$, when $n=9$, $p=\frac{343}{729}<\frac{1}{2}$. So $n\geq 10$.
+
+So the answer is $ \boxed{\textbf{(D)}\ 10} $.

@@ -1,0 +1,16 @@
+== Solution ==
+Iterating <math>F</math> we get:
+
+<cmath>
+\begin{align*}
+F(z) &= \frac{z+i}{z-i}\\
+F(F(z)) &= \frac{\frac{z+i}{z-i}+i}{\frac{z+i}{z-i}-i} = \frac{(z+i)+i(z-i)}{(z+i)-i(z-i)}= \frac{z+i+zi+1}{z+i-zi-1}= \frac{(z+1)(i+1)}{(z-1)(1-i)}\\
+&= \frac{(z+1)(i+1)^2}{(z-1)(1^2+1^2)}= \frac{(z+1)(2i)}{(z-1)(2)}= \frac{z+1}{z-1}i\\
+F(F(F(z))) &= \frac{\frac{z+1}{z-1}i+i}{\frac{z+1}{z-1}i-i} = \frac{\frac{z+1}{z-1}+1}{\frac{z+1}{z-1}-1} = \frac{(z+1)+(z-1)}{(z+1)-(z-1)} = \frac{2z}{2} = z.
+\end{align*}
+</cmath>
+
+From this, it follows that <math>z_{k+3} = z_k</math>, for all <math>k</math>. Thus 
+<math>z_{2002} = z_{3\cdot 667+1} = z_1 = \frac{z_0+i}{z_0-i} = \frac{(\frac{1}{137}+i)+i}{(\frac{1}{137}+i)-i}= \frac{\frac{1}{137}+2i}{\frac{1}{137}}= 1+274i.</math>
+
+Thus <math>a+b = 1+274 = \boxed{275}</math>.

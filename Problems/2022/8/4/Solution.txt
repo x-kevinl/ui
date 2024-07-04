@@ -1,0 +1,21 @@
+==Solution==
+
+When <b>M</b> is first reflected over the line $q,$ we obtain the following diagram:
+<asy>
+/* Made by MRENTHUSIASM */
+usepackage("newtxtext");
+size(3cm);
+draw((-1,0)--(1,0)); draw((0,-1)--(0,1)); label(rotate(270)*"$\textbf{\textsf{M}}$",(0.6,0.25));
+draw((-0.8,-0.8)--(0.8,0.8),linewidth(1.1)); 
+</asy>
+When <b>M</b> is then reflected over the line $p,$ we obtain the following diagram:
+<asy>
+/* Made by MRENTHUSIASM */
+usepackage("newtxtext");
+size(3cm);
+draw((-1,0)--(1,0)); draw((0,-1)--(0,1)); label(rotate(270)*"$\textbf{\textsf{M}}$",(0.6,-0.25));
+draw((-0.8,-0.8)--(0.8,0.8),linewidth(1.1)); 
+</asy>
+Therefore, the answer is $\boxed{\textbf{(E)}}.$
+
+~MRENTHUSIASM

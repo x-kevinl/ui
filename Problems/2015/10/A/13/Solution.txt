@@ -1,0 +1,2 @@
+==Solution 1==
+Let Claudia have $x$ 5-cent coins and $\left( 12 - x \right)$ 10-cent coins. It is easily observed that any multiple of $5$ between $5$ and $5x + 10(12 - x) = 120 - 5x$ inclusive can be obtained by a combination of coins. Thus, $24 - x = 17$ combinations can be made, so $x = 7$. But the answer is not $7,$ because we are asked for the number of 10-cent coins, which is $12 - 7 = \boxed{\textbf{(C) } 5}$

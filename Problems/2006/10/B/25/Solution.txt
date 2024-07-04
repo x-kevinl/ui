@@ -1,0 +1,21 @@
+== Solutions ==
+=== Solution 1===
+Let $S$ be the set of the ages of Mr. Jones' children (in other words $i \in S$ if Mr. Jones has a child who is $i$ years old). Then $|S| = 8$ and $9 \in S$. Let $m$ be the positive integer seen on the license plate. Since at least one of $4$ or $8$ is contained in $S$, we have $4 | m$.
+
+We would like to prove that $5 \not\in S$, so for the sake of contradiction, let us suppose that $5 \in S$. Then $5\cdot 4 = 20 | m$ so the units digit of $m$ is $0$. Since the number has two distinct digits, each appearing twice, another digit of $m$ must be $0$. Since Mr. Jones can't be $00$ years old, the last two digits can't be $00$. Therefore $m$ must be of the form $d0d0$, where $d$ is a digit. Since $m$ is divisible by $9$, the sum of the digits of $m$ must be divisible by $9$ (see [[Divisibility_rules/Rule_for_3_and_9_proof | Divisibility rules for 9]]). Hence $9 | 2d$ which implies $d = 9$. But $m = 9090$ is not divisible by $4$, contradiction. So $5 \not\in S$ and $5$ is not the age of one of Mr. Jones' kids. $\boxed{ B }$
+
+(We might like to check that there does, indeed, exist such a positive integer $m$. If $5$ is not an age of one of Mr. Jones' kids, then the license plate's number must be a multiple of $ lcm(1,2,3,4,6,7,8,9) = 504 $. Since $11\cdot504 = 5544$ and $5544$ is the only $4$ digit multiple of $504$ that fits all the conditions of the license plate's number, the license plate's number is $5544$.)
+
+=== Solution 2 ===
+Alternatively, we can see that if one of Mr. Jones' children is of the age 5, then the license plate will have to end in the digit $0$ . The license plate cannot end in the digit $5$ as $2$ is a factor of the number, so it must be even. This means that the license plate would have to have two $0$ digits, and would either be of the form $XX00$ or $X0X0$ (X being the other digit in the license plate) . The condition $XX00$ is impossible as Mr. Jones can't be $00$ years old. If we separate the second condition, $X0X0$ into its prime factors, we get $ X\cdot 10\cdot 101 $. $101$ is prime, and therefore can't account for allowing $X0X0$ being evenly divisible by the childrens' ages.  The $10$ accounts for the 5 and one factor of 2. This leaves $X$, but no single digit number contains all the prime factors besides 5 and 2 of the childrens' ages, thus $5$ $\boxed{ B }$ can't be one of the childrens' ages.
+
+=== Solution 3 ===
+Another way to do the problem is by the process of elimination. The only possible correct choices are the highest powers of each prime, $2^3=8$, $3^2=9$, $5^1=5$, and $7^1=7$, since indivisibility by any powers lower than these means indivisibility by a higher power of the prime (for example, indivisibility by $2^2=4$ means indivisibility by $2^3=8)$. Since the number is divisible by $9$, it is not the answer, and the digits have to add up to $9$. Let $(a,b)$ be the digits: since $2\cdot(a+b) | 9$, $(a+b)|9$. The only possible choices for $(a,b)$ are $(0,9)$, $(1,8)$, $(2,7)$, $(3,6)$, and $(4,5)$. The only number that works is $5544$, but it is not divisible by $5$. $\boxed{ B }$
+
+~edited by mobius247
+
+=== Solution 4 ===
+
+Since 5 has the "strictest" divisibility rules of the single digit numbers, we check that case first. To be divisible by 9, the other repeating digit must be 4. Seeing that 5544 is the only arrangement of 2 4's and 2 5's that is divisible by the other single digit numbers and itself is not divisible by 5, the answer is $\boxed {(B) 5}$.
+-liu4505
+~edited by mobius247

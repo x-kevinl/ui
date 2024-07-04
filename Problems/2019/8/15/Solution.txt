@@ -1,0 +1,5 @@
+==Solution 1==
+The number of people wearing caps and sunglasses is 
+$\frac{2}{5}\cdot35=14$. So then, 14 people out of the 50 people wearing sunglasses also have caps.
+ 
+$\frac{14}{50}=\boxed{\textbf{(B)}\frac{7}{25}}$

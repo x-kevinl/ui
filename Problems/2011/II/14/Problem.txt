@@ -1,0 +1,2 @@
+==Problem 14==
+There are <math>N</math> [[permutation]]s <math>(a_{1}, a_{2}, ... , a_{30})</math> of <math>1, 2, \ldots, 30</math> such that for <math>m \in \left\{{2, 3, 5}\right\}</math>, <math>m</math> divides <math>a_{n+m} - a_{n}</math> for all integers <math>n</math> with <math>1 \leq n < n+m \leq 30</math>. Find the remainder when <math>N</math> is divided by <math>1000</math>.

@@ -1,0 +1,5 @@
+==Problem==
+
+Which of these numbers is less than its reciprocal?
+
+$\text{(A)}\ -2 \qquad \text{(B)}\ -1 \qquad \text{(C)}\ 0 \qquad \text{(D)}\ 1 \qquad \text{(E)}\ 2$

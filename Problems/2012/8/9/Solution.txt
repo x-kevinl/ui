@@ -1,0 +1,16 @@
+==Solution 1: Algebra==
+Let the number of two-legged birds be $x$ and the number of four-legged mammals be $y$. We can now use systems of equations to solve this problem.
+
+Write two equations:
+
+$ 2x + 4y = 522 $
+
+$ x + y = 200 $
+
+Now multiply the latter equation by $ 2 $.
+
+$ 2x + 4y = 522 $
+
+$ 2x + 2y = 400 $
+
+By subtracting the second equation from the first equation, we find that $ 2y = 122 \implies y = 61 $. Since there were $ 200 $ heads, meaning that there were $ 200 $ animals, there were $ 200 - 61 =  \boxed{\textbf{(C)}\ 139} $ two-legged birds.

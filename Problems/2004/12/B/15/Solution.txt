@@ -1,0 +1,12 @@
+== Solution 1 ==
+
+If Jack's current age is $\overline{ab}=10a+b$, then Bill's current age is $\overline{ba}=10b+a$.
+
+In five years, Jack's age will be $10a+b+5$ and Bill's age will be $10b+a+5$. 
+
+We are given that $10a+b+5=2(10b+a+5)$. 
+
+
+Thus $8a=19b+5 \Rightarrow a=\dfrac{19b+5}{8}$. 
+
+For $b=1$ we get $a=3$. For $b=2$ and $b=3$ the value $\frac{19b+5}8$ is not an integer, and for $b\geq 4$, $a$ is more than $9$. Thus the only solution is $(a,b)=(3,1)$, and the difference in ages is $31-13=\boxed{\mathrm{(B)\ }18}$.

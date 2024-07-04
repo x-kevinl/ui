@@ -1,0 +1,9 @@
+== Solution 1 (Inequality) ==
+
+The volume of the cube is $V_{\text{cube}}=6^3=216,$ and the volume of a clay ball is $V_{\text{ball}}=\frac43\cdot\pi\cdot2^3=\frac{32}{3}\pi.$
+
+Since the balls can be reshaped but not compressed, the maximum number of balls that can completely fit inside a cube is $$\left\lfloor\frac{V_{\text{cube}}}{V_{\text{ball}}}\right\rfloor=\left\lfloor\frac{81}{4\pi}\right\rfloor.$$
+Approximating with $\pi\approx3.14,$ we have $12<4\pi<13,$ or $\left\lfloor\frac{81}{13}\right\rfloor \leq \left\lfloor\frac{81}{4\pi}\right\rfloor \leq \left\lfloor\frac{81}{12}\right\rfloor.$ We simplify to get $$6 \leq \left\lfloor\frac{81}{4\pi}\right\rfloor \leq 6,$$
+from which $\left\lfloor\frac{81}{4\pi}\right\rfloor=\boxed{\textbf{(D) }6}.$
+
+~NH14 ~MRENTHUSIASM

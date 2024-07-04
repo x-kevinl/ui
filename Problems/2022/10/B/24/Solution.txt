@@ -1,0 +1,29 @@
+==Solution 1 (Absolute Values and Inequalities)==
+We have
+$$\begin{align*}
+|f(f(800))-f(f(400))| &\leq \frac12|f(800)-f(400)| &&(\bigstar) \\
+&\leq \frac12\left|\frac12|800-400|\right| \\
+&= 100,
+\end{align*}$$
+from which we eliminate answer choices $\textbf{(D)}$ and $\textbf{(E)}.$
+
+Note that
+$$\begin{alignat*}{8}
+|f(800)-f(300)| &\leq \frac12|800-300| &&= 250, \\
+|f(800)-f(900)| &\leq \frac12|800-900| &&= 50, \\
+|f(400)-f(300)| &\leq \frac12|400-300| &&= 50, \\
+|f(400)-f(900)| &\leq \frac12|400-900| &&= 250. \\
+\end{alignat*}$$
+Let $a=f(300)=f(900).$ Together, it follows that 
+$$\begin{align*}
+|f(800)-a|&\leq 50, \\
+|f(400)-a|&\leq 50. \\
+\end{align*}$$
+We rewrite $(\bigstar)$ as
+$$\begin{align*}
+|f(f(800))-f(f(400))| &\leq \frac12|f(800)-f(400)| \\
+&= \frac12|(f(800)-a)-(f(400)-a)| \\
+&\leq \frac12|50-(-50)| \\
+&=\boxed{\textbf{(B)}\ 50}.
+\end{align*}$$
+~MRENTHUSIASM

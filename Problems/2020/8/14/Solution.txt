@@ -1,0 +1,2 @@
+==Solution==
+We can see that the dotted line is exactly halfway between $4{,}500$ and $5{,}000$, so it is at $4{,}750$. As this is the average population of all $20$ cities, the total population is simply $4{,}750 \cdot 20 = \boxed{\textbf{(D) }95{,}000}$.

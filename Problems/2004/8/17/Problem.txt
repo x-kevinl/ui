@@ -1,0 +1,4 @@
+==Problem==
+Three friends have a total of $6$ identical pencils, and each one has at least one pencil. In how many ways can this happen?
+
+$\textbf{(A)}\ 1\qquad \textbf{(B)}\ 3\qquad \textbf{(C)}\ 6\qquad \textbf{(D)}\ 10 \qquad \textbf{(E)}\ 12$

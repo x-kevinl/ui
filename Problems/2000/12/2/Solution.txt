@@ -1,0 +1,6 @@
+== Solution ==
+We can use an elementary exponents rule to solve our problem.
+We know that $a^b\cdot a^c = a^{b+c}$. Hence,
+$ 2000(2000^{2000}) = (2000^{1})(2000^{2000}) = 2000^{2000+1} = 2000^{2001} \Rightarrow \boxed{\textbf{(A) } 2000^{2001}}$
+
+Solution edited by armang32324 and integralarefun

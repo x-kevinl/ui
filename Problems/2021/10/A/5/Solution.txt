@@ -1,0 +1,5 @@
+==Solution 1 (Generalized Value of k)==
+The total score of the class is $8k,$ and the total score of the $12$ quizzes is $12\cdot14=168.$
+Therefore, for the remaining quizzes ($k-12$ of them), the total score is $8k-168.$ Their mean score is $\boxed{\textbf{(B)} ~\frac{8k-168}{k-12}}.$
+
+~MRENTHUSIASM

@@ -1,0 +1,11 @@
+== Solution ==
+There are $80$ tiles.  Each tile has $[\mbox{square} - 4 \cdot (\mbox{quarter circle})]$ shaded.  Thus:
+
+$$
+\begin{align*}
+\mbox{shaded area} &= 80 \left( 1 - 4 \cdot \dfrac{1}{4} \cdot \pi \cdot \left(\dfrac{1}{2}\right)^2\right) \\
+&= 80\left(1-\dfrac{1}{4}\pi\right) \\
+&= \boxed{\textbf{(A) }80-20\pi}.
+\end{align*}
+$$
+4 quarters of a circle is a circle so that may save you 0.5 seconds (very much lots) :)

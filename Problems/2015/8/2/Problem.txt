@@ -1,0 +1,34 @@
+==Problem==
+
+Point $O$ is the center of the regular octagon $ABCDEFGH$, and $X$ is the midpoint of the side $\overline{AB}.$ What fraction of the area of the octagon is shaded?
+
+$\textbf{(A) }\frac{11}{32} \quad\textbf{(B) }\frac{3}{8} \quad\textbf{(C) }\frac{13}{32} \quad\textbf{(D) }\frac{7}{16}\quad \textbf{(E) }\frac{15}{32}$
+
+<asy>
+pair A,B,C,D,E,F,G,H,O,X;
+A=dir(45);
+B=dir(90);
+C=dir(135);
+D=dir(180);
+E=dir(-135);
+F=dir(-90);
+G=dir(-45);
+H=dir(0);
+O=(0,0);
+X=midpoint(A--B);
+
+fill(X--B--C--D--E--O--cycle,rgb(0.75,0.75,0.75));
+draw(A--B--C--D--E--F--G--H--cycle);
+
+dot("$A$",A,dir(45));
+dot("$B$",B,dir(90));
+dot("$C$",C,dir(135));
+dot("$D$",D,dir(180));
+dot("$E$",E,dir(-135));
+dot("$F$",F,dir(-90));
+dot("$G$",G,dir(-45));
+dot("$H$",H,dir(0));
+dot("$X$",X,dir(135/2));
+dot("$O$",O,dir(0));
+draw(E--O--X);
+</asy>

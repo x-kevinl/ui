@@ -1,0 +1,4 @@
+==Problem==
+Handy Aaron helped a neighbor $1 \frac14$ hours on Monday, $50$ minutes on Tuesday, from 8:20 to 10:45 on Wednesday morning, and a half-hour on Friday. He is paid $\textdollar 3$ per hour. How much did he earn for the week?
+
+$\textbf{(A)}\ \textdollar 8 \qquad \textbf{(B)}\ \textdollar 9 \qquad \textbf{(C)}\ \textdollar 10 \qquad \textbf{(D)}\ \textdollar 12 \qquad \textbf{(E)}\ \textdollar 15$

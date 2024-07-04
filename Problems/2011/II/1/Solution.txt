@@ -1,0 +1,2 @@
+== Solution ==
+Let <math>x</math> be the [[fraction]] consumed, then <math>(1-x)</math> is the fraction wasted. We have <math>\frac{1}{2} - 2x =\frac{2}{9} (1-x)</math>, or <math>9 - 36x = 4 - 4x</math>, or <math>32x = 5</math> or <math>x = 5/32</math>. Therefore, <math>m + n = 5 + 32 = \boxed{037}</math>.

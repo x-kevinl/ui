@@ -1,0 +1,10 @@
+==Solution 1==
+Get the area of the triangle by [https://artofproblemsolving.com/wiki/index.php/Heron%27s_Formula Heron's Formula]: 
+$$\sqrt{s(s-a)(s-b)(s-c)} = \sqrt{(12)(3)(4)(5)} = 12\sqrt{5}$$
+Use the area to find the height $AH$ with known base $BC$:
+$$Area = 12\sqrt{5} = \frac{1}{2}bh = \frac{1}{2}(8)(AH)$$
+$$AH = 3\sqrt{5}$$
+$$BH = \sqrt{AB^2 - AH^2} = \sqrt{7^2 - (3\sqrt{5})^2} = 2$$
+$$CH = BC - BH = 8 - 2 = 6$$
+Apply the [https://artofproblemsolving.com/wiki/index.php/Angle_Bisector_Theorem Angle Bisector Theorem] on $	\triangle ACH$ and $\triangle ABH$, we get $AP:PH = 9:6$ and $AQ:QH = 7:2$, respectively.
+To find $AP$, $PH$, $AQ$, and $QH$, apply variables, such that $AP:PH = 9:6$ is $\frac{3\sqrt{5} - x}{x} = \frac{9}{6}$ and $AQ:QH = 7:2$ is $\frac{3\sqrt{5} - y}{y} = \frac{7}{2}$. Solving them out, you will get $AP = \frac{9\sqrt{5}}{5}$, $PH = \frac{6\sqrt{5}}{5}$, $AQ = \frac{7\sqrt{5}}{3}$, and $QH = \frac{2\sqrt{5}}{3}$. Then, since $AP + PQ = AQ$ according to the Segment Addition Postulate, and thus manipulating, you get $PQ = AQ - AP = \frac{7\sqrt{5}}{3} - \frac{9\sqrt{5}}{5}$ = $$\boxed{\textbf{(D)}\frac{8}{15}\sqrt{5}}$$

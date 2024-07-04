@@ -1,0 +1,7 @@
+==Problem==
+
+In the multiplication problem below $A$, $B$, $C$, $D$ are different digits. What is $A+B$? 
+
+$$ \begin{array}{cccc}& A & B & A\\ \times & & C & D\\ \hline C & D & C & D\\ \end{array} $$
+
+$ \textbf{(A)}\ 1\qquad\textbf{(B)}\ 2\qquad\textbf{(C)}\ 3\qquad\textbf{(D)}\ 4\qquad\textbf{(E)}\ 9 $

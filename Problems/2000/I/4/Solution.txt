@@ -1,0 +1,17 @@
+== Solution 1 ==
+Call the squares' side lengths from smallest to largest <math>a_1,\ldots,a_9</math>, and let <math>l,w</math> represent the dimensions of the rectangle.
+
+The picture shows that
+<cmath>\begin{align*}
+a_1+a_2 &= a_3\\
+a_1 + a_3 &= a_4\\
+a_3 + a_4 &= a_5\\
+a_4 + a_5 &= a_6\\
+a_2 + a_3 + a_5 &= a_7\\
+a_2 + a_7 &= a_8\\
+a_1 + a_4 + a_6 &= a_9\\
+a_6 + a_9 &= a_7 + a_8.\end{align*}</cmath>
+
+Expressing all terms 3 to 9 in terms of <math>a_1</math> and <math>a_2</math> and substituting their expanded forms into the previous equation will give the expression <math>5a_1 = 2a_2</math>.
+
+We can guess that <math>a_1 = 2</math>. (If we started with <math>a_1</math> odd, the resulting sides would not be integers and we would need to scale up by a factor of <math>2</math> to make them integers; if we started with <math>a_1 > 2</math> even, the resulting dimensions would not be relatively prime and we would need to scale down.) Then solving gives <math>a_9 = 36</math>, <math>a_6=25</math>, <math>a_8 = 33</math>, which gives us <math>l=61,w=69</math>.  These numbers are relatively prime, as desired. The perimeter is <math>2(61)+2(69)=\boxed{260}</math>.

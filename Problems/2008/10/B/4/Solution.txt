@@ -1,0 +1,2 @@
+==Solution==
+The maximum salary for a single player occurs when the other 20 players receive the minimum salary. The total of all players' salaries is 700000. The answer is $700000-15000*20=400000\Rightarrow \boxed{\mathrm{(C)}}$.

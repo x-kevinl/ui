@@ -1,0 +1,3 @@
+== Problem ==
+
+In [[triangle]] <math> ABC, AB=13, BC=15, </math> and <math>CA = 14. </math> Point <math> D </math> is on <math> \overline{BC} </math> with <math> CD=6. </math> Point <math> E </math> is on <math> \overline{BC} </math> such that <math> \angle BAE\cong \angle CAD. </math> Given that <math> BE=\frac pq </math> where <math> p </math> and <math> q </math> are relatively prime positive integers, find <math> q. </math>

@@ -1,0 +1,5 @@
+==Problem==
+
+Square $ABCD$ has side length $1$. Points $P$, $Q$, $R$, and $S$ each lie on a side of $ABCD$ such that $APQCRS$ is an equilateral convex hexagon with side length $s$. What is $s$?
+
+$\textbf{(A) } \frac{\sqrt{2}}{3} \qquad \textbf{(B) } \frac{1}{2} \qquad \textbf{(C) } 2 - \sqrt{2} \qquad \textbf{(D) } 1 - \frac{\sqrt{2}}{4} \qquad \textbf{(E) } \frac{2}{3}$

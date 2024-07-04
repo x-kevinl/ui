@@ -1,0 +1,4 @@
+==Problem==
+Of the following complex numbers $z$, which one has the property that $z^5$ has the greatest real part?
+
+$\textbf{(A) }{-}2 \qquad \textbf{(B) }{-}\sqrt3+i \qquad \textbf{(C) }{-}\sqrt2+\sqrt2 i \qquad \textbf{(D) }{-}1+\sqrt3 i\qquad \textbf{(E) }2i$

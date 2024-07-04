@@ -1,0 +1,8 @@
+==Solution==
+To maximize the sum of the $13$ faces that are showing, we can minimize the sum of the numbers of the $5$ faces that are not showing. 
+
+The bottom $2$ cubes each have a pair of opposite faces that are covered up. When the cube is folded, $(1,32)$; $(2,16)$; and $(4,8)$ are opposite pairs. Clearly $4+8=12$ has the smallest sum. 
+
+The top cube has 1 number that is not showing. The smallest number on a face is $1$. 
+
+So, the minimum sum of the $5$ unexposed faces is $2\cdot12+1=25$.  Since the sum of the numbers on all the cubes is $3(32+16+8+4+2+1)=189$, the maximum possible sum of $13$ visible numbers is $189-25=164 \Rightarrow C$.

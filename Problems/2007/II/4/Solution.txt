@@ -1,0 +1,14 @@
+== Solutions ==
+Suppose that it takes <math>x</math> hours for one worker to create one widget, and <math>y</math> hours for one worker to create one whoosit.
+
+Therefore, we can write that (note that two hours is similar to having twice the number of workers, and so on):
+
+<div style="text-align:center;">
+<math>100 = 300x + 200y</math>
+
+<math>2(60) = 240x + 300y</math>
+
+<math>3(50) = 150x + my</math>
+</div>
+
+Solve the system of equations with the first two equations to find that <math>(x,y) = \left(\frac{1}{7}, \frac{2}{7}\right)</math>. Substitute this into the third equation to find that <math>1050 = 150 + 2m</math>, so <math>m = \boxed{450}</math>.

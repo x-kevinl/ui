@@ -1,0 +1,12 @@
+==Problem==
+Under what conditions is $\sqrt{a^2+b^2}=a+b$ true, where $a$ and $b$ are real numbers?
+
+$\textbf{(A) }$ It is never true.
+
+$\textbf{(B) }$ It is true if and only if $ab=0$.
+
+$\textbf{(C) }$ It is true if and only if $a+b\ge 0$.
+
+$\textbf{(D) }$ It is true if and only if $ab=0$ and $a+b\ge 0$.
+
+$\textbf{(E) }$ It is always true.

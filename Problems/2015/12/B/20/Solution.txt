@@ -1,0 +1,23 @@
+==Solution 1==
+Simply take some time to draw a table of values of $f(i,j)$ for the first few values of $i$:
+
+$$\begin{array}{|c || c | c | c | c | c |}
+\hline
+i \text{\ \textbackslash\ } j & 0 & 1 & 2 & 3 & 4\\ \hline\hline
+0 & 1 & 2 & 3 & 4 & 0\\ \hline
+1 & 2 & 3 & 4 & 0 & 1\\ \hline
+2 & 3 & 0 & 2 & 4 & 1\\ \hline
+3 & 0 & 3 & 4 & 1 & 0\\ \hline
+4 & 3 & 1 & 3 & 1 & 3\\ \hline
+5 & 1 & 1 & 1 & 1 & 1\\ \hline
+\end{array}$$
+
+Now we claim that for $i \ge 5$, $f(i,j) = 1$ for all values $0 \le j \le 4$.  We will prove this by induction on $i$ and $j$.  The base cases for $i = 5$, have already been proven.
+
+For our inductive step, we must show that for all valid values of $j$, $f(i, j) = 1$ if for all valid values of $j$, $f(i - 1, j) = 1$.
+
+We prove this itself by induction on $j$.  For the base case, $j=0$, $f(i, 0) = f(i-1, 1) = 1$.  For the inductive step, we need $f(i, j) = 1$ if $f(i, j-1) = 1$.  Then, $f(i, j) = f(i-1, f(i, j-1)).$  $f(i, j-1) = 1$ by our inductive hypothesis from our inner induction and $f(i-1, 1) = 1$ from our outer inductive hypothesis.  Thus, $f(i, j) = 1$, completing the proof.
+
+It is now clear that for $i \ge 5$, $f(i,j) = 1$ for all values $0 \le j \le 4$.
+
+Thus, $f(2015,2) = \boxed{\textbf{(B)} \; 1}$.

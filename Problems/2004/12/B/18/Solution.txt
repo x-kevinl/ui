@@ -1,0 +1,9 @@
+== Solution ==
+
+Let the coordinates of $A$ be $(x_A,y_A)$. As $A$ lies on the parabola, we have $y_A=4x_A^2+7x_A-1$.
+As the origin is the midpoint of $AB$, the coordinates of $B$ are $(-x_A,-y_A)$.
+We need to choose $x_A$ so that $B$ will lie on the parabola as well. In other words, we need $-y_A = 4(-x_A)^2 + 7(-x_A) - 1$.
+
+Substituting for $y_A$, we get: $-4x_A^2 - 7x_A + 1 = 4(-x_A)^2 + 7(-x_A) - 1$.
+
+This simplifies to $8x_A^2 - 2 = 0$, which solves to $x_A = \pm 1/2$. Both roots lead to the same pair of points: $(1/2,7/2)$ and $(-1/2,-7/2)$. Their distance is $\sqrt{ 1^2 + 7^2 } = \sqrt{50} = \boxed{5\sqrt2}$.

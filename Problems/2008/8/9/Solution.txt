@@ -1,0 +1,2 @@
+==Solution==
+After the $15 \%$ loss, Tammy has $100 \cdot 0.85 = 85$ dollars. After the $20 \%$ gain, she has $85 \cdot 1.2 = 102$ dollars. This is an increase in $2$ dollars from her original $100$ dollars, a $\boxed{\textbf{(D)}\ 2 \%\ \text{gain}}$.

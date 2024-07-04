@@ -1,0 +1,12 @@
+== Solution ==
+[[Image:2007 AIME II-11.png]]
+
+If it weren’t for the small tube, the larger tube would travel <math>144\pi</math>. Consider the distance from which the larger tube first contacts the smaller tube, until when it completely loses contact with the smaller tube.
+
+Drawing the radii as shown in the diagram, notice that the [[hypotenuse]] of the [[right triangle]] in the diagram has a length of <math>72 + 24 = 96</math>. The horizontal line divides the radius of the larger circle into <math>72 - 24 = 48</math> on the top half, which indicates that the right triangle has leg of 48 and hypotenuse of 96, a <math>30-60-90 \triangle</math>. 
+
+Find the length of the purple arc in the diagram (the distance the tube rolled, but not the horizontal distance). The sixty degree [[central angle]] indicates to take <math>\frac{60}{360} = \frac 16</math> of the circumference of the larger circle (twice), while the <math>180 - 2(30) = 120^{\circ}</math> central angle in the smaller circle indicates to take <math>\frac{120}{360} = \frac 13</math> of the circumference. This adds up to <math>2 \cdot \frac 16 144\pi + \frac 13 48\pi = 64\pi</math>. 
+
+The actual horizontal distance it takes can be found by using the <math>30-60-90 \triangle</math>s. The missing leg is equal in length to <math>48\sqrt{3}</math>. Thus, the total horizontal distance covered is <math>96\sqrt{3}</math>. 
+
+Thus, we get <math>144\pi - 64\pi + 96\sqrt{3} = 80\pi + 96\sqrt{3}</math>, and our answer is <math>\boxed{179}</math>.

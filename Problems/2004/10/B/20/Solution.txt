@@ -1,0 +1,9 @@
+== Solution 1 (Triangle Areas) ==
+
+We use the square bracket notation $[\cdot]$ to denote area.
+
+WLOG, we can assume $[\triangle BTD] = 1$. Then $[\triangle BTA] = 3$, and $[\triangle ATE] = 3/4$. We have $CD/BD = [\triangle  ACD]/[\triangle ABD]$, so we need to find the area of quadrilateral $TDCE$.
+
+Draw the line segment $TC$ to form the two triangles $\triangle TDC$ and $\triangle TEC$. Let $x = [\triangle TDC]$, and $y = [\triangle TEC]$. By considering triangles $\triangle BTC$ and $\triangle ETC$, we obtain $(1+x)/y=4$, and by considering triangles $\triangle ATC$ and $\triangle DTC$, we obtain $(3/4+y)/x=3$. Solving, we get $x=4/11$, $y=15/44$, so the area of quadrilateral $TDEC$ is $x+y=31/44$.
+
+Therefore $\frac{CD}{BD}=\frac{\frac{3}{4}+\frac{31}{44}}{3+1}=\boxed{\textbf{(D)} \frac{4}{11}}$

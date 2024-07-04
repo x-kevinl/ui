@@ -1,0 +1,5 @@
+==Problem==
+
+What is the value of the expression $\sqrt{16\sqrt{8\sqrt{4}}}$?
+
+$\textbf{(A) }4\qquad\textbf{(B) }4\sqrt{2}\qquad\textbf{(C) }8\qquad\textbf{(D) }8\sqrt{2}\qquad\textbf{(E) }16$

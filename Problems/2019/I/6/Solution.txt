@@ -1,0 +1,10 @@
+==Solution 1 (Trig)==
+Let <math>\angle MKN=\alpha</math> and <math>\angle LNK=\beta</math>. Let <math>P</math> be the project of <math>L</math> onto line <math>NK</math>. Note <math>\angle KLP=\beta</math>. 
+
+Then, <math>KP=28\sin\beta=8\cos\alpha</math>.
+Furthermore, <math>KN=\frac{65}{\sin\alpha}=\frac{28}{\sin\beta} \Rightarrow 65\sin\beta=28\sin\alpha</math>.
+
+Dividing the equations gives
+<cmath>\frac{65}{28}=\frac{28\sin\alpha}{8\cos\alpha}=\frac{7}{2}\tan\alpha\Rightarrow \tan\alpha=\frac{65}{98}</cmath>
+
+Thus, <math>MK=\frac{MN}{\tan\alpha}=98</math>, so <math>MO=MK-KO=\boxed{090}</math>.

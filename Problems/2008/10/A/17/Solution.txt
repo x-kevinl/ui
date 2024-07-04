@@ -1,0 +1,11 @@
+==Solution 1==
+<center><asy>
+pointpen = black; pathpen = black+linewidth(0.7); pen d = linetype("6 6")+linewidth(0.7);
+pair A=(0,0),B=(6,0),C=6*expi(-pi/3);
+D(arc(A,3,90,210)); D(arc(B,3,-30,90)); D(arc(C,3,210,330));
+D(arc(A,-3,90,210),d); D(arc(B,-3,-30,90),d); D(arc(C,-3,210,330),d);
+D(D(A)--D(B)--D(C)--cycle,linewidth(1));
+D(A--(0,3)--(6,3)--B); D(A--3*expi(7/6*pi)--C+3*expi(7/6*pi)--C); D(B--B+3*expi(11/6*pi)--C+3*expi(11/6*pi)--C);
+MP("3",(0,1.5),W); MP("6",(3,0),NW);
+</asy></center> <!-- Asymptote replacement for Image:AMC10A-2008-17.png by 1=2 -->
+The region described contains three rectangles of dimensions $3 \times 6$, and three $120^{\circ}$ degree arcs of circles of [[radius]] $3$. Thus the answer is $$3(3 \times 6) + 3 \left( \frac{120^{\circ}}{360^{\circ}} \times 3^2 \pi\right) = 54 + 9\pi \Longrightarrow \mathrm{(B)}.$$

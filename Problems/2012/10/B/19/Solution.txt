@@ -1,0 +1,43 @@
+==Solution==
+<asy>
+unitsize(10);
+pair B=(0,0);
+pair A=(0,6);
+pair C=(30,0);
+pair D=(30,6);
+pair G=(15,6);
+pair E=(0,-2);
+pair F=(15/2,0);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(G);
+dot(E);
+dot(F);
+label("A",(0,6),NW);
+label("B",(0,0),W);
+label("C",(30,0),E);
+label("D",(30,6),NE);
+label("G",(15,6),N);
+label("E",(0,-2),SW);
+label("F",(15/2,0),N);
+label("15",(A--G),N);
+label("15",(G--D),N);
+label("6",(A--B),W);
+label("2",(B--E),W);
+label("6",(D--C),E);
+draw(A--B);
+draw(B--C);
+draw(C--D);
+draw(D--A);
+draw(E--D);
+draw(B--E);
+draw(B--G);
+</asy>
+
+Note that the area of $BFDG$ equals the area of $ABCD-\triangle AGB-\triangle DCF$. 
+Since $AG=\frac{AD}{2}=15,$ $\triangle AGB=\frac{15\times 6}{2}=45$. Now, $\triangle AED\sim \triangle BEF$, so $\frac{AE}{BE}=4=\frac{AD}{BF}=\frac{30}{BF}\implies BF=7.5$ and $FC=22.5,$ so $\triangle DCF=\frac{22.5\times6}{2}=\frac{135}{2}. $
+
+Therefore, $$\begin{align*}BFDG&=ABCD-\triangle AGB-\triangle DCF \\ &=180-45-\frac{135}{2} \\ &=\boxed{\frac{135}{2}}\end{align*}$$
+hence our answer is $\fbox{C}$

@@ -1,0 +1,66 @@
+==Solution 1 ==
+
+<asy>
+size(250);
+defaultpen(linewidth(0.4));
+//Variable Declarations
+real RADIUS;
+pair A, B, C, D, E, F, O;
+RADIUS=3;
+
+//Variable Definitions
+A=RADIUS*dir(148.414);
+B=RADIUS*dir(109.471);
+C=RADIUS*dir(70.529);
+D=RADIUS*dir(31.586);
+O=(0,0);
+
+//Path Definitions
+path quad= A -- B -- C -- D -- cycle;
+
+//Initial Diagram
+draw(Circle(O, RADIUS), linewidth(0.8));
+draw(quad, linewidth(0.8));
+label("$A$",A,W);
+label("$B$",B,NW);
+label("$C$",C,NE);
+label("$D$",D,ENE);
+label("$O$",O,S);
+label("$\theta$",O,3N);
+
+//Radii
+draw(O--A);
+draw(O--B);
+draw(O--C);
+draw(O--D);
+
+//Construction
+E=extension(B,O,A,D);
+
+label("$E$",E,NE);
+
+F=extension(C,O,A,D);
+
+label("$F$",F,NE);
+
+
+//Angle marks
+draw(anglemark(C,O,B));
+
+</asy>
+
+Let $AD$ intersect $OB$ at $E$ and $OC$ at $F.$
+
+
+$\overarc{AB}= \overarc{BC}= \overarc{CD}=\theta$
+
+$\angle{BAD}=\frac{1}{2} \cdot \overarc{BCD}=\theta=\angle{AOB}$
+
+
+From there, $\triangle{OAB} \sim \triangle{ABE}$, thus:
+
+$\frac{OA}{AB} = \frac{AB}{BE} = \frac{OB}{AE}$
+
+$OA = OB$ because they are both radii of $\odot{O}$. Since $\frac{OA}{AB} = \frac{OB}{AE}$, we have that $AB = AE$. Similarly, $CD = DF$.
+
+$OE = 100\sqrt{2} = \frac{OB}{2}$ and $EF=\frac{BC}{2}=100$ , so $AD=AE + EF + FD = 200 + 100 + 200 = \boxed{\textbf{(E) } 500}$

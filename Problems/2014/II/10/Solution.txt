@@ -1,0 +1,29 @@
+==Solution 1 (long but non-bashy)== 
+
+Note that the given equality reduces to
+
+<cmath>\frac{1}{w+z} = \frac{w+z}{wz}</cmath>
+<cmath>wz = {(w+z)}^2</cmath>
+<cmath>w^2 + wz + z^2 = 0</cmath>
+<cmath>\frac{w^3 - z^3}{w-z} = 0</cmath>
+<cmath>w^3 = z^3, w \neq z</cmath>
+
+Now, let <math>w = r_w e^{i \theta_w}</math> and likewise for <math>z</math>. Consider circle <math>O</math> with the origin as the center and radius 2014 on the complex plane. It is clear that <math>z</math> must be one of the points on this circle, as <math>|z| = 2014</math>. 
+
+By DeMoivre's Theorem, the complex modulus of <math>w</math> is cubed when <math>w</math> is cubed. Thus <math>w</math> must lie on <math>O</math>, since its the cube of its modulus, and thus its modulus, must be equal to <math>z</math>'s modulus.
+
+Again, by DeMoivre's Theorem, <math>\theta_w</math> is tripled when <math>w</math> is cubed and likewise for <math>z</math>. For <math>w</math>, <math>z</math>, and the origin to lie on the same line, <math>3 \theta_w</math> must be some multiple of 360 degrees apart from <math>3 \theta_z</math> , so <math>\theta_w</math> must differ from <math>\theta_z</math> by some multiple of 120 degrees.
+
+Now, without loss of generality, assume that <math>z</math> is on the real axis. (The circle can be rotated to put <math>z</math> in any other location.) Then there are precisely two possible distinct locations for <math>w</math>; one is obtained by going 120 degrees clockwise from <math>z</math> about the circle and the other by moving the same amount counter-clockwise. Moving along the circle with any other multiple of 120 degrees in any direction will result in these three points.
+
+Let the two possible locations for <math>w</math> be <math>W_1</math> and <math>W_2</math> and the location of <math>z</math> be point <math>Z</math>. Note that by symmetry, <math>W_1W_2Z</math> is equilateral, say, with side length <math>x</math>. We know that the circumradius of this equilateral triangle is <math>2014</math>, so using the formula <math>\frac{abc}{4R} = [ABC]</math> and that the area of an equilateral triangle with side length <math>s</math> is <math>\frac{s^2\sqrt{3}}{4}</math>, so we have
+
+<cmath>\frac{x^3}{4R} = \frac{x^2\sqrt{3}}{4}</cmath>
+<cmath>x = R \sqrt{3}</cmath>
+<cmath>\frac{x^2\sqrt{3}}{4} = \frac{3R^2 \sqrt{3}}{4}</cmath>
+
+Since we're concerned with the non-radical part of this expression and <math>R = 2014</math>,
+
+<cmath>\frac{3R^2}{4} \equiv 3 \cdot 1007^2 \equiv 3 \cdot 7^2 \equiv \boxed{147} \pmod{1000}</cmath>
+
+and we are done. <math>\blacksquare</math>

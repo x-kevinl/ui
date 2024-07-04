@@ -1,0 +1,40 @@
+==Solution==
+===Solution 1 (Alcumus)===
+By [[Vieta's Formulas]], we know that $a$ is the sum of the three roots of the polynomial $x^3-ax^2+bx-2010$. Again Vieta's Formulas tell us that $2010$ is the product of the three integer roots. Also, $2010$ factors into $2\cdot3\cdot5\cdot67$. But, since the polynomial has only three roots, two of the four prime factors must be multiplied so that we are left with three roots. To minimize $a$, $2$ and $3$ should be multiplied, which means $a$ will be $6+5+67=78$ and the answer is $\boxed{\textbf{(A)78}}$.
+~JimPickens
+
+
+
+
+
+Note:
+
+If you are feeling unconfident about $78$, you can try to expand the expression $(x-5)(x-6)(x-67)$ which has roots $5$, $6$, and $67$.
+$$(x-5)(x-6)(x-67)=(x^{2}-11x+30)(x-67)$$
+$$=x\left(x^{2}-11x+30\right)-67\left(x^{2}-11x+30\right)=x^{3}-11x^{2}+30x-67x^{2}+737x-2010=x^{3}-78x^{2}+767x-2010$$
+
+As we can see, $a=78$, and since this is the least answer choice, we can be confident that the right option is $\boxed{\textbf{(A) } 78}$.
+
+~JH. L
+
+===Solution 2===
+We can expand $(x+a)(x+b)(x+c)$ as $(x^2+ax+bx+ab)(x+c)$
+
+$(x^2+ax+bx+ab)(x+c)=x^3+abx+acx+bcx+abx^2+acx^2+bcx^2+abc=x^3+x^2(a+b+c)+x(ab+ac+bc)+abc$
+
+We do not care about $+bx$ in this case, because we are only looking for $a$.  We know that the constant term is $-2010=-(2\cdot 3\cdot 5\cdot 67)$
+We are trying to minimize a, such that we have $-ax^2$
+Since we have three positive solutions, we have $(x-a)(x-b)(x-c)$ as our factors.  We have to combine two of the factors of $2\cdot 3\cdot 5\cdot 67$, and then sum up the $3$ resulting factors.  Since we are minimizing, we choose $2$ and $3$ to combine together.  We get $(x-6)(x-5)(x-67)$ which gives us a coefficient of $x^2$ of $-6-5-67=-78$
+Therefore $-a=-78$ or $a=\boxed{\textbf{(A)}78}$
+
+===Solution 3===
+We want the polynomial $x^3-ax^2+bx-2010$ to have POSITIVE integer roots. That means we want to factor it in to the form $(x-a)(x-b)(x-c).$ We therefore want the prime factorization for $2010$. The prime factorization of $2010$ is $2 \cdot 3 \cdot 5 \cdot 67$. We want the smallest difference of the $3$ roots since by [[Vieta's formulas]], $a$ is the sum of the $3$ roots.
+
+We proceed to factorize it in to $(x-5)(x-6)(x-67)$. Therefore, our answer is $5+6+67$ = $\boxed{\textbf{(A)78}}$.
+
+~Arcticturn
+
+
+Suggestion for the author: The variables $a$ and $b$ are already defined as coefficients of the cubic polynomial. So, consider using different variables when describing how we want to factor this polynomial in the second sentence. Thanks!
+
+~Jwarner

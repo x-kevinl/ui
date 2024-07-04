@@ -1,0 +1,2 @@
+==Problem==
+In convex quadrilateral <math>KLMN</math> side <math>\overline{MN}</math> is perpendicular to diagonal <math>\overline{KM}</math>, side <math>\overline{KL}</math> is perpendicular to diagonal <math>\overline{LN}</math>, <math>MN = 65</math>, and <math>KL = 28</math>. The line through <math>L</math> perpendicular to side <math>\overline{KN}</math> intersects diagonal <math>\overline{KM}</math> at <math>O</math> with <math>KO = 8</math>. Find <math>MO</math>.

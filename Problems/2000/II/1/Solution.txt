@@ -1,0 +1,30 @@
+== Solution ==
+=== Solution 1 ===
+<math>\frac 2{\log_4{2000^6}} + \frac 3{\log_5{2000^6}}</math>
+
+<math>=\frac{\log_4{16}}{\log_4{2000^6}}+\frac{\log_5{125}}{\log_5{2000^6}}</math>
+
+<math>=\frac{\log{16}}{\log{2000^6}}+\frac{\log{125}}{\log{2000^6}}</math>
+
+<math>=\frac{\log{2000}}{\log{2000^6}}</math>
+
+<math>=\frac{\log{2000}}{6\log{2000}}</math>
+
+<math>=\frac{1}{6}</math>
+
+Therefore, <math> m+n=1+6=\boxed{007}</math>
+
+=== Solution 2 ===
+
+Alternatively, we could've noted that, because <math>\frac 1{\log_a{b}} = \log_b{a}</math>
+
+<cmath>
+\begin{align*}
+\frac 2{\log_4{2000^6}} + \frac 3{\log_5{2000^6}} &= 2 \cdot \frac{1}{\log_4{2000^6}} + 3\cdot \frac {1}{\log_5{2000^6} }\\
+&=2{\log_{2000^6}{4}} + 3{\log_{2000^6}{5}} \\
+&={\log_{2000^6}{4^2}} + {\log_{2000^6}{5^3}}\\
+&={\log_{2000^6}{4^2 \cdot 5^3}}\\
+&={\log_{2000^6}{2000}}\\
+&= {\frac{1}{6}}.\end{align*}</cmath>
+
+Therefore our answer is <math>1 + 6 = \boxed{007}</math>.

@@ -1,0 +1,4 @@
+== Solution ==
+The path is a circle with radius equal to the slant height of the cone, which is <math>\sqrt {r^{2} + h^{2}}</math>. Thus, the length of the path is <math>2\pi\sqrt {r^{2} + h^{2}}</math>.
+
+Also, the length of the path is 17 times the circumference of the base, which is <math>34r\pi</math>. Setting these equal gives <math>\sqrt {r^{2} + h^{2}} = 17r</math>, or <math>h^{2} = 288r^{2}</math>. Thus, <math>\dfrac{h^{2}}{r^{2}} = 288</math>, and <math>\dfrac{h}{r} = 12\sqrt {2}</math>, giving an answer of <math>12 + 2 = \boxed{014}</math>.

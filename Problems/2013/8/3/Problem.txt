@@ -1,0 +1,4 @@
+==Problem==
+What is the value of $4 \cdot (-1+2-3+4-5+6-7+\cdots+1000)$?
+
+$\textbf{(A)}\ -10 \qquad \textbf{(B)}\ 0 \qquad \textbf{(C)}\ 1 \qquad \textbf{(D)}\ 500 \qquad \textbf{(E)}\ 2000$

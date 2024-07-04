@@ -1,0 +1,2 @@
+==Problem 7==
+For nonnegative integers <math>a</math> and <math>b</math> with  <math>a + b \leq 6</math>, let <math>T(a, b) = \binom{6}{a} \binom{6}{b} \binom{6}{a + b}</math>. Let <math>S</math> denote the sum of all <math>T(a, b)</math>, where  <math>a</math> and <math>b</math> are nonnegative integers with <math>a + b \leq 6</math>. Find the remainder when <math>S</math> is divided by <math>1000</math>.

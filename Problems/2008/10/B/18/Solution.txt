@@ -1,0 +1,4 @@
+==Solution==
+Let $x$ be the number of bricks in the chimney. The work done is the rate multiplied by the time. 
+
+Using $w = rt$, we get $x = \left(\frac{x}{9} + \frac{x}{10} - 10\right)\cdot(5)$. Solving for $x$, we get $\boxed{\mathrm{(B)}\ 900}$.

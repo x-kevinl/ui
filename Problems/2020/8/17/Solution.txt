@@ -1,0 +1,2 @@
+==Solution 1==
+Since $2020 = 2^2 \cdot 5 \cdot 101$, we can simply list its factors: $$1, 2, 4, 5, 10, 20, 101, 202, 404, 505, 1010, 2020.$$ There are $12$ factors; only $1, 2, 4, 5, 101$ don't have over $3$ factors, so the remaining $12-5 = \boxed{\textbf{(B) }7}$ factors have more than $3$ factors.

@@ -1,0 +1,4 @@
+==Problem==
+Let $x$ be the least real number greater than $1$ such that $\sin(x)= \sin(x^2)$, where the arguments are in degrees. What is $x$ rounded up to the closest integer?
+
+$\textbf{(A) } 10 \qquad \textbf{(B) } 13 \qquad \textbf{(C) } 14 \qquad \textbf{(D) } 19 \qquad \textbf{(E) } 20$

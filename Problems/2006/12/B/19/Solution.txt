@@ -1,0 +1,17 @@
+== Solution ==
+First, The number of the plate is divisible by $9$ and in the form of
+$aabb$, $abba$ or $abab$. 
+
+We can conclude straight away that $a+b= 9$ using the $9$ divisibility rule. 
+
+If $b=1$, the number is not divisible by $2$ (unless it's $1818$, which is not divisible by $4$), which means there are no $2$, $4$, $6$, or $8$ year olds on the car, but that can't be true, as that would mean there are less than $8$ kids on the car. 
+
+If $b=2$, then the only possible number is $7272$. $7272$ is divisible by $4$, $6$, and $8$, but not by $5$ and $7$, so that doesn't work. 
+
+If $b=3$, then the only number is $6336$, also not divisible by $5$ or $7$. 
+
+If $b=4$, the only number is $5544$. It is divisible by $4$, $6$, $7$, and $8$. 
+
+Therefore, we conclude that the answer is $ \mathrm{(B)}\ 5 $
+
+'''NOTE''': Automatically, since there are 8 children and all of their ages are less than or equal to 9 and are different, the answer choices can be narrowed down to $5$ or $8$.

@@ -1,0 +1,2 @@
+==Solution==
+The terms are  $\sqrt 3$, $\sqrt[3]3$, and $\sqrt[6]3$, which are equivalent to $3^{\frac{3}{6}}$, $3^{\frac{2}{6}}$, and $3^{\frac{1}{6}}$.  So the next term will be $3^{\frac{0}{6}}=1$, so the answer is $\boxed{\textbf{(A)}}$.

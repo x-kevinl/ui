@@ -1,0 +1,5 @@
+== Solution 1 == 
+
+There are three letters to make the first letter in the sequence. However, after the first letter (whatever it is), only two letters can follow it, since one of the letters is restricted. Therefore, the number of seven-letter good words is <math>3*2^6=192</math>
+
+Therefore, there are <math>\boxed{192}</math> seven-letter good words.

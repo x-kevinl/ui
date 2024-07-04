@@ -1,0 +1,15 @@
+==Solution==
+
+Let $a$ be the number of students that can only sing, $b$ can only dance, and $c$ can only act.
+
+Let $ab$ be the number of students that can sing and dance, $ac$ can sing and act, and $bc$ can dance and act.
+
+From the information given in the problem, $a + ab + b = 29, b + bc + c = 42,$ and $a + ac + c = 65$.
+
+Adding these equations together, we get $2(a + b + c) + ab + bc + ac = 136$.
+
+Since there are a total of $100$ students, $a + b + c + ab + bc + ac = 100$.
+
+Subtracting these equations, we get $a + b + c = 36$.
+
+Our answer is $ab + bc + ac = 100 - (a + b + c) = 100 - 36 = \boxed{\textbf{(E)}\; 64}$

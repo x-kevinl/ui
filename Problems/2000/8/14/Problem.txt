@@ -1,0 +1,5 @@
+==Problem==
+
+What is the units digit of $19^{19} + 99^{99}$?
+
+$\text{(A)}\ 0 \qquad \text{(B)}\ 1 \qquad \text{(C)}\ 2 \qquad \text{(D)}\ 8 \qquad \text{(E)}\ 9$

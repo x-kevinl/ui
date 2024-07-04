@@ -1,0 +1,36 @@
+==Solution==
+Letting <math>AI=a</math> and <math>IB=b</math>, we have <cmath>IJ^{2}=a^{2}+b^{2} \geq 1008</cmath> by [[AM-GM inequality]]. Also, since <math>EFGH||ABCD</math>, the angles that each square cuts another are equal, so all the triangles are formed by a vertex of a larger square and <math>2</math> adjacent vertices of a smaller square are similar. Therefore, the areas form a geometric progression, so since <cmath>2016=12^{2} \cdot 14</cmath> we have the maximum area is <cmath>2016 \cdot \dfrac{11}{12} = 1848</cmath> (the areas of the squares from largest to smallest are <math>12^{2} \cdot 14, 11 \cdot 12 \cdot 14, 11^{2} \cdot 14</math> forming a geometric progression). 
+
+
+The minimum area is <math>1008</math> (every square is half the area of the square whose sides its vertices touch), so the desired answer is <cmath>1848-1008=\boxed{840}</cmath>
+
+<asy>
+pair A,B,C,D,E,F,G,H,I,J,K,L;
+A=(0,0);
+B=(2016,0);
+C=(2016,2016);
+D=(0,2016);
+I=(1008,0);
+J=(2016,1008);
+K=(1008,2016);
+L=(0,1008);
+E=(504,504);
+F=(1512,504);
+G=(1512,1512);
+H=(504,1512);
+draw(A--B--C--D--A);
+draw(I--J--K--L--I);
+draw(E--F--G--H--E);
+label("$A$",A,SW);
+label("$B$",B,SE);
+label("$C$",C,NE);
+label("$D$",D,NW);
+label("$E$",E,SW);
+label("$F$",F,SE);
+label("$G$",G,NE);
+label("$H$",H,NW);
+label("$I$",I,S);
+label("$J$",J,NE);
+label("$K$",K,N);
+label("$L$",L,NW);
+</asy>

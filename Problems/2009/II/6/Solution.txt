@@ -1,0 +1,7 @@
+== Solution ==
+
+We can use complementary counting. We can choose a five-element subset in <math>{14\choose 5}</math> ways. We will now count those where no two numbers are consecutive. We will show a bijection between this set, and the set of 10-element strings that contain 5 <math>A</math>s and 5 <math>B</math>s, thereby showing that there are <math>{10\choose 5}</math> such sets.
+
+Given a five-element subset <math>S</math> of <math>\{1,2,\dots,14\}</math> in which no two numbers are consecutive, we can start by writing down a string of length 14, in which the <math>i</math>-th character is <math>A</math> if <math>i\in S</math> and <math>B</math> otherwise. Now we got a string with 5 <math>A</math>s and 9 <math>B</math>s. As no two numbers were consecutive, we know that in our string no two <math>A</math>s are consecutive. We can now remove exactly one <math>B</math> from between each pair of <math>A</math>s to get a string with 5 <math>A</math>s and 5 <math>B</math>s. And clearly this is a bijection, as from each string with 5 <math>A</math>s and 5 <math>B</math>s we can reconstruct one original set by reversing the construction.
+
+Hence we have <math>m = {14\choose 5} - {10\choose 5} = 2002 - 252 = 1750</math>, and the answer is <math>1750 \bmod 1000 = \boxed{750}</math>.

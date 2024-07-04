@@ -1,0 +1,9 @@
+==Solution==
+
+Sarah is leaving $3$ questions unanswered, guaranteeing her $3 \times 1.5 = 4.5$ points. She will either get $6$ points or $0$ points for the rest of the questions. Let $x$ be the number of questions Sarah answers correctly.
+$$\begin{align*}
+6x+4.5 &\ge 100\\
+6x &\ge 95.5\\
+x &\ge 15.92
+\end{align*}$$
+The number of questions she answers correctly has to be a whole number, so round up to get $\boxed{\textbf{(D) }16}$

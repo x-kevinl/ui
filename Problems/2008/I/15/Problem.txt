@@ -1,0 +1,19 @@
+== Problem ==
+A square piece of paper has sides of length <math>100</math>. From each corner a wedge is cut in the following manner: at each corner, the two cuts for the wedge each start at a distance <math>\sqrt{17}</math> from the corner, and they meet on the diagonal at an angle of <math>60^{\circ}</math> (see the figure below). The paper is then folded up along the lines joining the vertices of adjacent cuts. When the two edges of a cut meet, they are taped together. The result is a paper tray whose sides are not at right angles to the base. The height of the tray, that is, the perpendicular distance between the plane of the base and the plane formed by the upper edges, can be written in the form <math>\sqrt[n]{m}</math>, where <math>m</math> and <math>n</math> are positive integers, <math>m<1000</math>, and <math>m</math> is not divisible by the <math>n</math>th power of any prime. Find <math>m+n</math>.
+<center><asy>import cse5;
+size(200);
+pathpen=black;
+real s=sqrt(17);
+real r=(sqrt(51)+s)/sqrt(2);
+D((0,2*s)--(0,0)--(2*s,0));
+D((0,s)--r*dir(45)--(s,0));
+D((0,0)--r*dir(45));
+D((r*dir(45).x,2*s)--r*dir(45)--(2*s,r*dir(45).y));
+MP("30^\circ",r*dir(45)-(0.25,1),SW);
+MP("30^\circ",r*dir(45)-(1,0.5),SW);
+MP("\sqrt{17}",(0,s/2),W);
+MP("\sqrt{17}",(s/2,0),S);
+MP("\mathrm{cut}",((0,s)+r*dir(45))/2,N);
+MP("\mathrm{cut}",((s,0)+r*dir(45))/2,E);
+MP("\mathrm{fold}",(r*dir(45).x,s+r/2*dir(45).y),E);
+MP("\mathrm{fold}",(s+r/2*dir(45).x,r*dir(45).y));</asy></center>

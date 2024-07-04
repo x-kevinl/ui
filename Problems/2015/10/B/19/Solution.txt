@@ -1,0 +1,48 @@
+==Solution 1==
+The center of the circle lies on the intersection between the perpendicular bisectors of chords $ZW$ and $YX$. Therefore we know the center of the circle must also be the midpoint of the hypotenuse. Let this point be $O$. Draw perpendiculars to $ZW$ and $YX$ from $O$, and connect $OZ$ and $OY$. $OY^2=6^2+12^2=180$. Let $AC=a$ and $BC=b$. Then $\left(\dfrac{a}{2}\right)^2+\left(a+\dfrac{b}{2}\right)^2=OZ^2=OY^2=180$. Simplifying this gives $\dfrac{a^2}{4}+\dfrac{b^2}{4}+a^2+ab=180$. But by Pythagorean Theorem on $\triangle ABC$, we know $a^2+b^2=144$, because $AB=12$. Thus $\dfrac{a^2}{4}+\dfrac{b^2}{4}=\dfrac{144}{4}=36$. So our equation simplifies further to $a^2+ab=144$. However $a^2+b^2=144$, so $a^2+ab=a^2+b^2$, which means $ab=b^2$, or $a=b$. <i>Aha</i>! This means $\triangle ABC$ is just an isosceles right triangle, so $AC=BC=\dfrac{12}{\sqrt{2}}=6\sqrt{2}$, and thus the perimeter is $\boxed{\textbf{(C)}\ 12+12\sqrt{2}}$.
+<asy> 
+ /* Geogebra to Asymptote conversion, documentation at artofproblemsolving.com/Wiki, go to User:Azjps/geogebra */
+import graph; size(11.5cm); 
+real labelscalefactor = 0.5; /* changes label-to-point distance */
+pen dps = linewidth(0.7) + fontsize(10); defaultpen(dps); /* default pen style */ 
+pen dotstyle = black; /* point style */ 
+real xmin = -4.3, xmax = 18.7, ymin = -5.26, ymax = 6.3;  /* image dimensions */
+
+
+draw((3.46,0.96)--(3.44,-3.36)--(8.02,-3.44)--cycle); 
+draw((3.46,0.96)--(8.02,-3.44)--(12.42,1.12)--(7.86,5.52)--cycle); 
+ /* draw figures */
+draw((3.46,0.96)--(3.44,-3.36)); 
+draw((3.44,-3.36)--(8.02,-3.44)); 
+draw((8.02,-3.44)--(3.46,0.96)); 
+draw((3.46,0.96)--(-0.86,0.98)); 
+draw((-0.86,0.98)--(-0.88,-3.34)); 
+draw((-0.88,-3.34)--(3.44,-3.36)); 
+draw((3.46,0.96)--(8.02,-3.44)); 
+draw((8.02,-3.44)--(12.42,1.12)); 
+draw((12.42,1.12)--(7.86,5.52)); 
+draw((7.86,5.52)--(3.46,0.96)); 
+draw((5.74,-1.24)--(-0.86,0.98)); 
+draw((5.74,-1.24)--(-0.87,-1.18), linetype("4 4")); 
+draw((5.74,-1.24)--(7.86,5.52)); 
+draw((5.74,-1.24)--(10.14,3.32), linetype("4 4")); 
+draw(shift((5.82,-1.21))*xscale(6.99920709795045)*yscale(6.99920709795045)*arc((0,0),1,19.44457562540183,197.63600413408128), linetype("2 2")); 
+ /* dots and labels */
+dot((3.46,0.96),dotstyle); 
+label("$A$", (3.2,1.06), NE * labelscalefactor); 
+dot((3.44,-3.36),dotstyle); 
+label("$C$", (3.14,-3.86), NE * labelscalefactor); 
+dot((8.02,-3.44),dotstyle); 
+label("$B$", (8.06,-3.8), NE * labelscalefactor); 
+dot((-0.86,0.98),dotstyle); 
+label("$Z$", (-1.34,1.12), NE * labelscalefactor); 
+dot((-0.88,-3.34),dotstyle); 
+label("$W$", (-1.48,-3.54), NE * labelscalefactor); 
+dot((12.42,1.12),dotstyle); 
+label("$X$", (12.5,1.24), NE * labelscalefactor); 
+dot((7.86,5.52),dotstyle); 
+label("$Y$", (7.94,5.64), NE * labelscalefactor); 
+dot((5.74,-1.24),dotstyle); 
+label("$O$", (5.52,-1.82), NE * labelscalefactor); 
+clip((xmin,ymin)--(xmin,ymax)--(xmax,ymax)--(xmax,ymin)--cycle); 
+</asy>

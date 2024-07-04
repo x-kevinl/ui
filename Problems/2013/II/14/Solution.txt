@@ -1,0 +1,72 @@
+==Solution==
+
+===The Pattern===
+
+We can find that 
+
+<math>20\equiv 6 \pmod{7}</math>
+
+<math>21\equiv 5 \pmod{8}</math>
+
+<math>22\equiv 6 \pmod{8}</math>
+
+<math>23\equiv 7 \pmod{8}</math>
+
+<math>24\equiv 6 \pmod{9}</math>
+
+<math>25\equiv 7 \pmod{9}</math>
+
+<math>26\equiv 8 \pmod{9}</math>
+
+Observing these and we can find that the reminders are in groups of three continuous integers, considering this is true, and we get
+
+<math>99\equiv 31 \pmod{34}</math>
+
+<math>100\equiv 32 \pmod{34}</math>
+
+So the sum is <math>6+3\times(6+...+31)+31+32=1512</math>,it is also 17+20+23+...+95, so the answer is <math>\boxed{512}</math>.
+By: Kris17
+
+===The Intuition===
+First, let's see what happens if we remove a restriction. Let's define <math>G(x)</math> as
+
+<math>G(x):=\max_{\substack{1\le k}} f(n, k)</math>
+
+Now, if you set <math>k</math> as any number greater than <math>n</math>, you get n, obviously the maximum possible. That's too much freedom; let's restrict it a bit. Hence <math>H(x)</math> is defined as
+
+<math>H(x):=\max_{\substack{1\le k\le n}} f(n, k)</math>
+
+Now, after some thought, we find that if we set <math>k=\lfloor \frac{n}{2} \rfloor+1</math> we get a remainder of <math>\lfloor \frac{n-1}{2} \rfloor</math>, the max possible. Once we have gotten this far, it is easy to see that the original equation, 
+
+<math>F(n) = \max_{\substack{1\le k\le \frac{n}{2}}} f(n, k)</math>
+
+has a solution with <math>k=\lfloor \frac{n}{3} \rfloor+1</math>.
+
+<math>W^5</math>~Rowechen
+
+===The Proof===
+The solution presented above does not prove why <math>F(x)</math> is found by dividing <math>x</math> by <math>3</math>. Indeed, that is the case, as rigorously shown below.
+
+Consider the case where <math>x = 3k</math>. We shall prove that <math>F(x) = f(x, k+1)</math>.
+For all <math>x/2\ge n > k+1, x = 2n + q</math>, where <math>0\le q< n</math>. This is because <math>x < 3k + 3 < 3n</math> and <math>x \ge 2n</math>. Also, as <math>n</math> increases, <math>q</math> decreases. Thus, <math>q = f(x, n) < f(x, k+1) = k - 2</math> for all <math>n > k+1</math>.
+Consider all <math>n < k+1. f(x, k) = 0</math> and <math>f(x, k-1) = 3</math>. Also, <math>0 < f(x, k-2) < k-2</math>. Thus, for <math>k > 5, f(x, k+1) > f(x, n)</math> for <math>n < k+1</math>.
+
+Similar proofs apply for <math>x = 3k + 1</math> and <math>x = 3k + 2</math>. The reader should feel free to derive these proofs themself.
+
+===Generalized Solution===
+
+<math>Lemma:</math> Highest remainder when <math>n</math> is divided by <math>1\leq k\leq n/2</math> is obtained for <math>k_0 = (n + (3 - n \pmod{3}))/3</math> and the remainder thus obtained is <math>(n - k_0*2) = [(n - 6)/3 + (2/3)*n \pmod{3}]</math>. 
+
+<math>Note:</math> This is the second highest remainder when <math>n</math> is divided by <math>1\leq k\leq n</math> and the highest remainder occurs when <math>n</math> is divided by <math>k_M</math> = <math>(n+1)/2</math> for odd <math>n</math> and  <math>k_M</math> = <math>(n+2)/2</math> for even <math>n</math>.
+
+Using the lemma above:
+
+<math>\sum\limits_{n=20}^{100} F(n) = \sum\limits_{n=20}^{100} [(n - 6)/3 + (2/3)*n \pmod{3}] </math>
+<math>= [(120*81/2)/3 - 2*81 + (2/3)*81]
+= 1512</math>
+
+So the answer is <math>\boxed{512}</math>
+
+Proof of Lemma: It is similar to <math>The Proof</math> stated above. 
+
+Kris17

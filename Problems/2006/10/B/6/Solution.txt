@@ -1,0 +1,6 @@
+== Solution ==
+Since the side of the square is the diameter of the semicircle, the radius of the semicircle is $ \frac{1}{2}\cdot\frac{2}{\pi}=\frac{1}{\pi} $.
+
+Since the length of one of the semicircular [[arc]]s is half the circumference of the corresponding circle, the length of one arc is $ \frac{1}{2}\cdot2\cdot\pi\cdot\frac{1}{\pi}=1$. 
+
+Since the desired perimeter is made up of four of these arcs, the perimeter is $4\cdot1=\boxed{\textbf{(D) }4}$.

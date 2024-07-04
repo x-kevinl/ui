@@ -1,0 +1,2 @@
+==Solution 1==
+Since the area of the large square is $16$, the side length equals $4$. If all sides are bisected, the resulting square has side length $2\sqrt{2}$, thus making the area $8$. If we repeat this process again, we notice that the area is just half that of the previous square, so the area of $S_{3} = 4 \longrightarrow \fbox{E}$

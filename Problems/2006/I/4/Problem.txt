@@ -1,0 +1,2 @@
+== Problem ==
+Let <math> N </math> be the number of consecutive <math>0</math>'s at the right end of the decimal representation of the product <math> 1!2!3!4!\cdots99!100!. </math> Find the remainder when <math> N </math> is divided by <math>1000</math>.

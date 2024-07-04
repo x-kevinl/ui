@@ -1,0 +1,8 @@
+== Solution ==
+
+$\dfrac{2+4+6}{1+3+5} - \dfrac{1+3+5}{2+4+6} = \dfrac{12}{9} - \dfrac{9}{12} = \dfrac{4}{3} - \dfrac{3}{4} = \boxed{\dfrac{7}{12}\; \textbf{(C)}}$
+
+
+Note: This exact problem was reused in 2013 AMC 10B: 
+
+https://artofproblemsolving.com/wiki/index.php/2013_AMC_10B_Problems/Problem_1

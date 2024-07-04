@@ -1,0 +1,2 @@
+==Solution==
+Let $x$ be the number of two point shots attempted and $y$ the number of three point shots attempted. Because each two point shot is worth two points and the team made 50% and each three point shot is worth 3 points and the team made 40%, $0.5(2x)+0.4(3y)=54$ or $x+1.2y=54$. Because the team attempted 50% more two point shots then threes, $x=1.5y$. Substituting $1.5y$ for $x$ in the first equation gives $1.5y+1.2y=54$, which equals $2.7y=54$ so $y=$ $\boxed{\textbf{(C) }20}$

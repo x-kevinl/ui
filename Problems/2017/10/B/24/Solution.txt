@@ -1,0 +1,14 @@
+==Diagram==
+<asy>
+size(15cm);
+Label f; 
+f.p=fontsize(6); 
+xaxis(-8,8,Ticks(f, 2.0)); 
+yaxis(-8,8,Ticks(f, 2.0)); 
+real f(real x) 
+{ 
+return 1/x; 
+} 
+draw(graph(f,-8,-0.125));
+draw(graph(f,0.125,8));
+</asy>

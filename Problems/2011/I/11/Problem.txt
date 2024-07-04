@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>R</math> be the set of all possible remainders when a number of the form <math>2^n</math>, <math>n</math> a nonnegative integer, is divided by 1000. Let <math>S</math> be the sum of the elements in <math>R</math>. Find the remainder when <math>S</math> is divided by 1000.

@@ -1,0 +1,3 @@
+== Solution ==
+
+Cutting the square in half will bisect one pair of sides while the other side will remain unchanged. Thus, the new square is $\frac{8}{2}$ by $8$, or  $\boxed{\textbf{(E)}\ 4\ \text{by}\ 8}$.

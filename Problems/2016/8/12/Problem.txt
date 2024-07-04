@@ -1,0 +1,6 @@
+==Problem ==
+
+Jefferson Middle School has the same number of boys and girls. $\frac{3}{4}$ of the girls and $\frac{2}{3}$
+of the boys went on a field trip. What fraction of the students on the field trip were girls?
+
+$\textbf{(A) }\frac{1}{2}\qquad\textbf{(B) }\frac{9}{17}\qquad\textbf{(C) }\frac{7}{13}\qquad\textbf{(D) }\frac{2}{3}\qquad \textbf{(E) }\frac{14}{15}$

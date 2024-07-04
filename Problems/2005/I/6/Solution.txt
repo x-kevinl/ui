@@ -1,0 +1,5 @@
+== Solution 1 ==
+The left-hand side of that [[equation]] is nearly equal to <math>(x - 1)^4</math>.  Thus, we add 1 to each side in order to complete the fourth power and get
+<math>(x - 1)^4 = 2006</math>.
+
+Let <math>r = \sqrt[4]{2006}</math> be the positive [[real]] fourth root of 2006.  Then the roots of the above equation are <math>x = 1 + i^n r</math> for <math>n = 0, 1, 2, 3</math>.  The two non-real members of this set are <math>1 + ir</math> and <math>1 - ir</math>.  Their product is <math>P = 1 + r^2 = 1 + \sqrt{2006}</math>.  <math>44^2 = 1936 < 2006 < 2025 = 45^2</math> so <math>\lfloor P \rfloor = 1 + 44 = \boxed{045}</math>.

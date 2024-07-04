@@ -1,0 +1,38 @@
+== Solution 1 ==
+
+First, we must understand two important functions: $f(x) = b^x$ for $0 < b < 1$(decreasing exponential function), and $g(x) = x^k$ for $k > 0$(increasing power function for positive $x$). $f(x)$ is used to establish inequalities when we change the ''exponent'' and keep the ''base'' constant. $g(x)$ is used to establish inequalities when we change the ''base'' and keep the ''exponent'' constant.
+
+We will now examine the first few terms.
+
+Comparing $a_1$ and $a_2$, $0 < a_1 = (0.201)^1 < (0.201)^{a_1} < (0.2011)^{a_1} = a_2 < 1 \Rightarrow 0 < a_1 < a_2 < 1$.
+
+Therefore, $0 < a_1 < a_2 < 1$.
+
+Comparing $a_2$ and $a_3$, $0 < a_3 = (0.20101)^{a_2} < (0.20101)^{a_1} < (0.2011)^{a_1} = a_2 < 1 \Rightarrow 0 < a_3 < a_2 < 1$.
+
+Comparing $a_1$ and $a_3$, $0 < a_1 = (0.201)^1 < (0.201)^{a_2} < (0.20101)^{a_2} = a_3 < 1 \Rightarrow 0 < a_1 < a_3 < 1$.
+
+Therefore, $0 < a_1 < a_3 < a_2 < 1$.
+
+Comparing $a_3$ and $a_4$, $0 < a_3 = (0.20101)^{a_2} < (0.20101)^{a_3} < (0.201011)^{a_3} = a_4 < 1 \Rightarrow 0 < a_3 < a_4 < 1$.
+
+Comparing $a_2$ and $a_4$, $0 < a_4 = (0.201011)^{a_3} < (0.201011)^{a_1} < (0.2011)^{a_1} = a_2 < 1 \Rightarrow 0 < a_4 < a_2 < 1$.
+
+Therefore, $0 < a_1 < a_3 < a_4 < a_2 < 1$.
+
+Continuing in this manner, it is easy to see a pattern(see Note 1).
+
+Therefore, the only $k$ when $a_k = b_k$ is when $2(k-1006) = 2011 - k$. Solving gives $\boxed{\textbf{(C)} 1341}$.
+
+
+'''Note 1''':
+We claim that $0 < a_1 < a_3 < ... < a_{2011} < a_{2010} < ... < a_4 < a_2 < 1$.
+
+We can use induction to prove this statement. (not necessary for AMC):
+
+Base Case: We have already shown the base case above, where $0 < a_1 < a_2 < 1$.
+
+Inductive Step: 
+
+Rearranging in decreasing order gives 
+$1 > b_1 = a_2 > b_2 = a_4 > ... > b_{1005} = a_{2010} > b_{1006} = a_{2011} > ... > b_{2010} = a_3 > b_{2011} =  a_1 > 0$.

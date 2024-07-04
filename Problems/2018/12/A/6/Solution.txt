@@ -1,0 +1,2 @@
+==Solution 1==
+The mean and median are $$\frac{3m+4n+17}{6}=\frac{m+n+11}{2}=n,$$so $3m+17=2n$ and $m+11=n$. Solving this gives $\left(m,n\right)=\left(5,16\right)$ for $m+n=\boxed{21}$. (trumpeter)

@@ -1,0 +1,5 @@
+==Problem==
+
+How many complex numbers satisfy the equation $z^5=\overline{z}$, where $\overline{z}$ is the conjugate of the complex number $z$?
+
+$\textbf{(A)} ~2\qquad\textbf{(B)} ~3\qquad\textbf{(C)} ~5\qquad\textbf{(D)} ~6\qquad\textbf{(E)} ~7$

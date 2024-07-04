@@ -1,0 +1,4 @@
+== Solution ==
+$3x-1 =5 \implies x= 2$
+
+$f(3(2)-1) = 2^2+2+1=7 \implies (A)$

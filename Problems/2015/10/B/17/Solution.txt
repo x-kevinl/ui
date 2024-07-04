@@ -1,0 +1,2 @@
+==Solution 1==
+The octahedron is just two congruent pyramids glued together by their base. The base of one pyramid is a rhombus with diagonals $4$ and $5$, for an area $A=10$. The height $h$, of one pyramid, is $\frac{3}{2}$, so the volume of one pyramid is $\frac{Ah}{3}=5$. Thus, the octahedron has volume $2\cdot5=\boxed{\textbf{(B) }10}$

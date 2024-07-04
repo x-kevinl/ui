@@ -1,0 +1,8 @@
+== Solution == 
+Let the width and height of the screen be $4x$ and $3x$ respectively, and let the width and height of the movie be $2y$ and $y$ respectively. 
+
+By the [[Pythagorean Theorem]], the diagonal is $\sqrt{(3x)^2+(4x)^2}=5x = 27$. So $x=\frac{27}{5}$. 
+
+Since the movie and the screen have the same width, $2y=4x\Rightarrow y=2x$. 
+
+Thus, the height of each strip is $\frac{3x-y}{2}=\frac{3x-2x}{2}=\frac{x}{2}=\frac{27}{10}=2.7\Longrightarrow\mathrm{(D)}$.

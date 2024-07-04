@@ -1,0 +1,35 @@
+==Problem==
+The wheel shown below consists of two circles and five spokes, with a label at each point where a spoke meets a circle. A bug walks along the wheel, starting at point <math>A</math>. At every step of the process, the bug walks from one labeled point to an adjacent labeled point. Along the inner circle the bug only walks in a counterclockwise direction, and along the outer circle the bug only walks in a clockwise direction. For example, the bug could travel along the path <math>AJABCHCHIJA</math>, which has <math>10</math> steps. Let <math>n</math> be the number of paths with <math>15</math> steps that begin and end at point <math>A</math>. Find the remainder when <math>n</math> is divided by <math>1000.</math>
+<center><asy>
+unitsize(32);
+draw(unitcircle);
+draw(scale(2) * unitcircle);
+for(int d = 90; d < 360 + 90; d += 72){
+draw(2 * dir(d) -- dir(d));
+}
+
+real s = 4;
+dot(1 * dir( 90), linewidth(s));
+dot(1 * dir(162), linewidth(s));
+dot(1 * dir(234), linewidth(s));
+dot(1 * dir(306), linewidth(s));
+dot(1 * dir(378), linewidth(s));
+dot(2 * dir(378), linewidth(s));
+dot(2 * dir(306), linewidth(s));
+dot(2 * dir(234), linewidth(s));
+dot(2 * dir(162), linewidth(s));
+dot(2 * dir( 90), linewidth(s));
+
+defaultpen(fontsize(10pt));
+real r = 0.05;
+label("$A$", (1-r) * dir( 90), -dir( 90));
+label("$B$", (1-r) * dir(162), -dir(162));
+label("$C$", (1-r) * dir(234), -dir(234));
+label("$D$", (1-r) * dir(306), -dir(306));
+label("$E$", (1-r) * dir(378), -dir(378));
+label("$F$", (2+r) * dir(378), dir(378));
+label("$G$", (2+r) * dir(306), dir(306));
+label("$H$", (2+r) * dir(234), dir(234));
+label("$I$", (2+r) * dir(162), dir(162));
+label("$J$", (2+r) * dir( 90), dir( 90));
+</asy></center>

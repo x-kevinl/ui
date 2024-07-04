@@ -1,0 +1,4 @@
+== Problem ==
+At Frank's Fruit Market, 3 bananas cost as much as 2 apples, and 6 apples cost as much as 4 oranges. How many oranges cost as much as 18 bananas?
+
+$\mathrm {(A)} 6\qquad \mathrm {(B)} 8\qquad \mathrm {(C)} 9\qquad \mathrm {(D)} 12\qquad \mathrm {(E)} 18$

@@ -1,0 +1,3 @@
+==Solution==
+
+Because there are $14$ days in two weeks, Al spends $546/14 = 39$ dollars per day for the cost of a green pill and a pink pill. If the green pill costs $x$ dollars and the pink pill $x-1$ dollars, the sum of the two costs $2x-1$ should equal $39$ dollars. Then the cost of the green pill $x$ is $\boxed{\textbf{(D) }\textdollar  20}$.

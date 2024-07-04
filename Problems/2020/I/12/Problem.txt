@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>n</math> be the least positive integer for which <math>149^n-2^n</math> is divisible by <math>3^3\cdot5^5\cdot7^7.</math> Find the number of positive integer divisors of <math>n.</math>

@@ -1,0 +1,13 @@
+== Solution 1 ==
+
+Let $ ABCDE $ be the pyramid with $ ABCD $ as the square base. Let $ O $ and $ M $ be the center of square $ ABCD $ and the midpoint of side $ AB $ respectively. Lastly, let the hemisphere be tangent to the triangular face $ ABE $ at $ P $.
+
+Notice that $ \triangle EOM $ has a right angle at $ O $. Since the hemisphere is tangent to the triangular face $ ABE $ at $ P $, $\angle EPO $ is also $ 90^{\circ} $. Hence $ \triangle EOM $ is similar to $\triangle EPO $.
+
+$ \frac{OM}{2} = \frac{6}{EP} $
+
+$ OM = \frac{6}{EP} \times 2 $
+
+$ OM = \frac{6}{\sqrt{6^2 - 2^2}} \times 2 = \frac{3\sqrt{2}}{2} $
+
+The length of the square base is thus $2 \times \frac{3\sqrt{2}}{2} = 3\sqrt{2} \rightarrow \boxed{\textbf{A}}$

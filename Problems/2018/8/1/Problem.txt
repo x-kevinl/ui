@@ -1,0 +1,4 @@
+==Problem==
+An amusement park has a collection of scale models, with a ratio of $ 1: 20$, of buildings and other sights from around the country. The height of the United States Capitol is $289$ feet. What is the height in feet of its duplicate to the nearest whole number?
+
+$\textbf{(A) }14\qquad\textbf{(B) }15\qquad\textbf{(C) }16\qquad\textbf{(D) }18\qquad\textbf{(E) }20$

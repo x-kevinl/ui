@@ -1,0 +1,25 @@
+==Diagram==
+<asy>
+/* Made by Brendanb4321; edited by MRENTHUSIASM */
+size(250);
+pair A = (5,12);
+pair B = (0,0);
+pair C = (14,0);
+pair P = 2/3*A+1/3*C;
+pair D = 3/2*P;
+pair E = 3*P;
+draw(A--B--C--cycle^^A--D^^C--E--B);
+
+dot("$A$",A,1.5*N);
+dot("$B$",B,1.5*SW);
+dot("$C$",C,1.5*SE);
+dot("$D$",D,1.5*N);
+dot("$P$",P,1.5*W);
+dot("$E$",E,1.5*N);
+
+label("$13$", (A+B)/2, 1.5*NW);
+label("$14$", (B+C)/2, 1.5*S);
+label("$5$", (A+P)/2, NE);
+label("$10$", (C+P)/2, NE);
+</asy>
+~Brendanb4321

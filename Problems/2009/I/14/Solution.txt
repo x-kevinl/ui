@@ -1,0 +1,16 @@
+== Solution ==
+Because the order of the <math>a</math>'s doesn't matter, we simply need to find the number of <math>1</math>s <math>2</math>s <math>3</math>s and <math>4</math>s that minimize <math>S_2</math>. So let <math>w, x, y,</math> and <math>z</math> represent the number of <math>1</math>s, <math>2</math>s, <math>3</math>s, and <math>4</math>s respectively. Then we can write three equations based on these variables. Since there are a total of <math>350</math> <math>a</math>s, we know that <math>w + x + y + z = 350</math>. We also know that <math>w + 2x + 3y + 4z = 513</math> and <math>w + 16x + 81y + 256z = 4745</math>. We can now solve these down to two variables:
+<cmath>w = 350 - x - y - z</cmath>
+Substituting this into the second and third equations, we get
+<cmath>x + 2y + 3z = 163</cmath>
+and
+<cmath>15x + 80y + 255z = 4395.</cmath>
+The second of these can be reduced to 
+<cmath>3x + 16y + 51z = 879.</cmath>
+Now we substitute <math>x</math> from the first new equation into the other new equation.
+<cmath>x = 163 - 2y - 3z</cmath>
+<cmath>3(163 - 2y - 3z) + 16y + 51z = 879</cmath>
+<cmath>489 + 10y + 42z = 879</cmath>
+<cmath>5y + 21z = 195</cmath>
+Since <math>y</math> and <math>z</math> are integers, the two solutions to this are <math>(y,z) = (39,0)</math> or <math>(18,5)</math>.
+If you plug both these solutions in to <math>S_2</math> it is apparent that the second one returns a smaller value. It turns out that <math>w = 215</math>, <math>x = 112</math>, <math>y = 18</math>, and <math>z = 5</math>, so <math>S_2 = 215 + 4*112 + 9*18 + 16*5 = 215 + 448 + 162 + 80 = \boxed{905}</math>.

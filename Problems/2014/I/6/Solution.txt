@@ -1,0 +1,8 @@
+== Solution 1 ==
+Begin by setting <math>x</math> to 0, then set both equations to <math>h^2=\frac{2013-j}{3}</math> and <math>h^2=\frac{2014-k}{2}</math>, respectively. Notice that because the two parabolas have to have positive x-intercepts, <math>h\ge32</math>.
+
+We see that <math>h^2=\frac{2014-k}{2}</math>, so we now need to find a positive integer <math>h</math> which has positive integer x-intercepts for both equations.
+
+Notice that if <math>k=2014-2h^2</math> is -2 times a square number, then you have found a value of <math>h</math> for which the second equation has positive x-intercepts. We guess and check <math>h=36</math> to obtain <math>k=-578=-2(17^2)</math>.
+
+Following this, we check to make sure the first equation also has positive x-intercepts (which it does), so we can conclude the answer is <math>\boxed{036}</math>.

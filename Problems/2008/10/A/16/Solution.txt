@@ -1,0 +1,33 @@
+== Solution 1 ==
+<asy>size(200);
+defaultpen(fontsize(10));
+pair O=(0,0), A=(3,0), B=(3/2,3/2*3^.5), C=(3^.5,1), D=(3^.5,0), F=(1.5*3^.5,1.5), G=(2*3^.5,2);
+picture p = new picture; 
+draw(p,Circle(O,0.2));
+clip(p,O--C--A--cycle);
+add(p);
+draw(Circle(O,3));
+dot(A); dot(B); dot(C); dot(O);
+draw(A--O--B);
+draw(O--C--D);
+draw(C--F);
+draw(D-(0.2,0)--D-(0.2,-0.2)--D-(0,-0.2));
+draw(Circle(C,1));
+label("\(30^{\circ}\)",(0.65,0.15),O);
+label("\(r\)",(C+D)/2,E);
+label("\(2r\)",(O+C)/2,NNE);
+label("\(O\)",O,SW);
+label("\(r\)",(C+F)/2,SE);
+label("\(R\)",(O+A)/2-(0,0.3),S);
+label("\(P\)",C,NW);
+label("\(A\)",(3,0), A);
+label("\(B\)",(3/2,3/2*3^.5), B);
+label("\(C\)",(1.5*3^.5,1.5), G);
+label("\(Q\)",D,SE);</asy>
+Let $P$ be the center of the small circle with radius $r$, and let $Q$ be the point where the small circle is [[tangent]] to $OA$. Also, let $C$ be the point where the small circle is tangent to the big circle with radius $R$.
+
+Then $PQO$ is a right triangle. Angle $POQ$ is $30$ degrees because line $OP$ bisects angle $AOB$ (this can be proved by dropping a perpendicular line from $P$ to line $OB$, letting their intersection be point $S$, and proving triangles $PQO$ and $PSO$ congruent), meaning that $PQO$ is a $30-60-90$ triangle. Therefore, $OP=2PQ$.
+
+Since $OP=OC-PC=OC-r=R-r$, we have $R-r=2PQ$, or $R-r=2r$, or $\frac{1}{3}=\frac{r}{R}$.
+
+Ratio of areas of circles is ratio of radii squared, so the answer is $\left(\frac{1}{3}\right)^2 = \frac{1}{9} \Rightarrow \boxed{B}$

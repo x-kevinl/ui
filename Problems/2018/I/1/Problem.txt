@@ -1,0 +1,2 @@
+==Problem 1==
+Let <math>S</math> be the number of ordered pairs of integers <math>(a,b)</math> with <math>1 \leq a \leq 100</math> and <math>b \geq 0</math> such that the polynomial <math>x^2+ax+b</math> can be factored into the product of two (not necessarily distinct) linear factors with integer coefficients. Find the remainder when <math>S</math> is divided by <math>1000</math>.

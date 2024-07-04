@@ -1,0 +1,8 @@
+== Problem ==
+The letter T is formed by placing two $ 2 \times 4 $ inch rectangles next to each other, as shown. What is the perimeter of the T, in inches? 
+
+<asy>
+size(150);
+draw((0,6)--(4,6)--(4,4)--(3,4)--(3,0)--(1,0)--(1,4)--(0,4)--cycle, linewidth(1));</asy>
+
+$ \textbf{(A)}\ 12\qquad\textbf{(B)}\ 16\qquad\textbf{(C)}\ 20\qquad\textbf{(D)}\ 22\qquad\textbf{(E)}\ 24 $

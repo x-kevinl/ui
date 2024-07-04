@@ -1,0 +1,10 @@
+==Solution 1 (Trial and Error)==
+
+$6$ are blue and green - $b+g=6$
+
+$8$ are red and blue - $r+b=8$
+
+$4$ are red and green- $r+g=4$
+
+
+We can do trial and error. Let's make blue $5$. That makes green $1$ and red $3$ because $6-5=1$ and $8-5=3$. To check this, let's plug $1$ and $3$ into $r+g=4$, which works. Now count the number of marbles - $5+3+1=9$. So the answer is $\boxed{\textbf{(C)}\ 9}.$

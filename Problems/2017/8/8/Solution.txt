@@ -1,0 +1,3 @@
+==Solution==
+
+Notice that (1) cannot be true. Otherwise, the number would have to be prime and be either even or divisible by 7. This only happens if the number is 2 or 7, neither of which are two-digit numbers, so we run into a contradiction. Thus, we must have (2), (3), and (4) be true. By (2), the $2$-digit number is even, and thus, the digit in the tens place must be $9$. The only even $2$-digit number starting with $9$ and divisible by $7$ is $98$, which has a units digit of $\boxed{\textbf{(D)}\ 8}.$

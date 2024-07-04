@@ -1,0 +1,7 @@
+==Solution==
+
+Within the conference, there are 8 teams, so there are $\dbinom{8}{2}=28$ pairings of teams, and each pair must play two games, for a total of $28\cdot 2=56$ games within the conference.
+
+Each team also plays 4 games outside the conference, and there are 8 teams, so there are a total of $4\cdot 8 =32$ games outside the conference.
+
+Therefore, the total number of games is $56+32 = \boxed{88}$, so $\boxed{\text{(B)}}$ is our answer.

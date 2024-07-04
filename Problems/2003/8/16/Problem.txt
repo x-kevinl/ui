@@ -1,0 +1,4 @@
+==Problem==
+Ali, Bonnie, Carlo, and Dianna are going to drive together to a nearby theme park. The car they are using has $4$ seats: $1$ Driver seat, $1$ front passenger seat, and $2$ back passenger seat. Bonnie and Carlo are the only ones who know how to drive the car. How many possible seating arrangements are there?
+
+$ \textbf{(A)}\ 2\qquad\textbf{(B)}\ 4\qquad\textbf{(C)}\ 6\qquad\textbf{(D)}\ 12\qquad\textbf{(E)}\ 24 $

@@ -1,0 +1,24 @@
+==Solution 1==
+Let the three numbers be equal to $a$, $b$, and $c$. We can now write three equations:
+
+$a+b=12$
+
+$b+c=17$
+
+$a+c=19$
+
+Adding these equations together, we get that
+
+$2(a+b+c)=48$ and
+
+$a+b+c=24$
+
+Substituting the original equations into this one, we find
+
+$c+12=24$
+
+$a+17=24$
+
+$b+19=24$
+
+Therefore, our numbers are 12, 7, and 5. The middle number is $\boxed{\textbf{(D)}\ 7}$

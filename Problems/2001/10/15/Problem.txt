@@ -1,0 +1,5 @@
+== Problem ==
+
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>A street has parallel curbs $ 40 $ feet apart. A crosswalk bounded by two parallel stripes crosses the street at an angle. The length of the curb between the stripes is $ 15 $ feet and each stripe is $ 50 $ feet long. Find the distance, in feet, between the stripes.<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+$ \textbf{(A)}\ 9 \qquad \textbf{(B)}\ 10 \qquad \textbf{(C)}\ 12 \qquad \textbf{(D)}\ 15 \qquad \textbf{(E)}\ 25 $

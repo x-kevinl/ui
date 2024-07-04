@@ -1,0 +1,4 @@
+==Problem==
+Hammie is in $6^\text{th}$ grade and weighs 106 pounds. His quadruplet sisters are tiny babies and weigh 5, 5, 6, and 8 pounds. Which is greater, the average (mean) weight of these five children or the median weight, and by how many pounds?
+
+$\textbf{(A)}\ \text{median, by 60} \qquad \textbf{(B)}\ \text{median, by 20} \qquad \textbf{(C)}\ \text{average, by 5}\qquad \textbf{(D)}\ \text{average, by 15} \qquad \textbf{(E)}\ \text{average, by 20}$

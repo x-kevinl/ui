@@ -1,0 +1,2 @@
+==Problem==
+Find the least positive integer <math>n</math> such that when <math>3^n</math> is written in base <math>143^2</math>, its two right-most digits in base <math>143</math> are <math>01</math>.

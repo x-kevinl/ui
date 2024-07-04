@@ -1,0 +1,24 @@
+== Solution 1==
+
+By the angle bisector theorem, $\frac{AB}{AE} = \frac{CB}{CE}$
+
+$\frac{6}{AE} = \frac{7}{8 - AE}$ so $AE = \frac{48}{13}$
+
+Similarly, $CD = 4$.
+
+There are two ways to solve from here.
+First way: 
+
+Note that $DB = 7 - 4 = 3.$ By the angle bisector theorem on $\triangle ADB,$ $\frac{AF}{FD} = \frac{AB}{DB} = \frac{6}{3}.$ Thus the answer is $\boxed{\textbf{(C)}\; 2 : 1}$
+
+Second way:
+
+Now, we use [[mass points]]. Assign point $C$ a mass of $1$.
+
+$mC \cdot CD = mB \cdot DB$ , so $mB = \frac{4}{3}$
+
+Similarly, $A$ will have a mass of $\frac{7}{6}$
+
+$mD = mC + mB = 1 + \frac{4}{3} = \frac{7}{3}$
+
+So $\frac{AF}{FD} = \frac{mD}{mA} = \boxed{\textbf{(C)}\; 2 : 1}$

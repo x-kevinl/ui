@@ -1,0 +1,4 @@
+== Problem ==
+For each positive integer <math>n</math>, let <math>f(n) = \sum_{k = 1}^{100} \lfloor \log_{10} (kn) \rfloor</math>. Find the largest value of <math>n</math> for which <math>f(n) \le 300</math>.
+
+'''Note:''' <math>\lfloor x \rfloor</math> is the greatest integer less than or equal to <math>x</math>.

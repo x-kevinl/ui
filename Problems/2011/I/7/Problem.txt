@@ -1,0 +1,3 @@
+== Problem 7 ==
+Find the number of positive integers <math>m</math> for which there exist nonnegative integers <math>x_0</math>, <math>x_1</math> , <math>\dots</math> , <math>x_{2011}</math> such that
+<cmath>m^{x_0} = \sum_{k = 1}^{2011} m^{x_k}.</cmath>

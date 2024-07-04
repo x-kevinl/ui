@@ -1,0 +1,2 @@
+==Solution==
+Barney travels $1661-1441=220$ miles in $4+6=10$ hours for an average of $220/10=\boxed{\textbf{(E)}\ 22}$ miles per hour.

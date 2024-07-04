@@ -1,0 +1,3 @@
+== Problem ==
+
+Let <math>\triangle ABC</math> be an isosceles triangle with <math>\angle A = 90^\circ.</math> There exists a point <math>P</math> inside <math>\triangle ABC</math> such that <math>\angle PAB = \angle PBC = \angle PCA</math> and <math>AP = 10.</math> Find the area of <math>\triangle ABC.</math>

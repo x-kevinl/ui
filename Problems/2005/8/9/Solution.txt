@@ -1,0 +1,13 @@
+== Solutions ==
+=== Solution 1 ===
+Because $\overline{AD} = \overline{CD}$, $\triangle ADC$ is an isosceles triangle with $\angle DAC = \angle DCA$. Angles in a triangle add up to $180^\circ$, and since $\angle ADC=60^\circ$, the other two angles are also $60^\circ$, and $\triangle ADC$ is an equilateral triangle. Therefore $\overline{AC}=\overline{DA}=\boxed{\textbf{(D)}\ 17}$.
+
+=== Solution 2 ===
+We can divide $\overline{CD}$ in half and connect this point to A, dividing $\triangle ADC$ in half. This means the base will be $\frac{17}{2}$ and the hypotenuse will be 17. By using the Pythagorean's Theorem, we see that if the base and height are shared, the hypotenuse should be the same. This tells us that the length of $\overline{AC} = \boxed{(D) 17}$.
+
+~Champion1234
+
+=== Solution 3 (Easiest) ===
+Take an equilateral triangle with side length $17$. $\triangle ADC$ is congruent to this by $SAS$, hence it is equilateral. The answer is $\boxed{\textbf{(D)}17}$.
+
+~yofro

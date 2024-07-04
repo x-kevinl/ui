@@ -1,0 +1,4 @@
+==Solution 1==
+Let the two three-digit numbers she added be $a$ and $b$ with $a+b=S$ and $a<b$. The hundreds digits of these numbers must be at least $1$ and $2$, so $a\ge 100$ and $b\ge 200$.
+
+Say $a=100+p$ and $b=200+q$; then we just need $p+q=100$ with $p$ and $q$ having different digits which aren't $1$ or $2$.There are many solutions, but $p=3$ and $q=97$ give $103+297=400$ which proves that $\boxed{\textbf{(B)}\ 4}$ is attainable.

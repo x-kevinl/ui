@@ -1,0 +1,34 @@
+==Solution==
+
+<asy>
+unitsize(1.5mm);
+defaultpen(linewidth(.9pt)+fontsize(10pt));
+dotfactor=3;
+
+pair A,B,C,D,X,Y;
+A=(9,12); B=(59,12); C=(75,0); D=(0,0); X=(9,0); Y=(59,0);
+draw(A--B--C--D--cycle);
+draw(A--X); draw(B--Y);
+
+pair[] ps={A,B,C,D,X,Y};
+dot(ps);
+
+label("$A$",A,NW); label("$B$",B,NE); label("$C$",C,SE); label("$D$",D,SW);
+label("$X$",X,SE); label("$Y$",Y,S);
+label("$a$",D--X,S); label("$b$",Y--C,S);
+label("$15$",D--A,NW); label("$50$",B--A,N); label("$20$",B--C,NE); label("$12$",X--A,E); label("$12$",Y--B,W);
+</asy>
+
+If you draw altitudes from $A$ and $B$ to $CD,$ the trapezoid will be divided into two right triangles and a rectangle. You can find the values of $a$ and $b$ with the [[Pythagorean theorem]].
+
+$$a=\sqrt{15^2-12^2}=\sqrt{81}=9$$
+
+$$b=\sqrt{20^2-12^2}=\sqrt{256}=16$$
+
+$ABYX$ is a rectangle so $XY=AB=50.$
+
+$$CD=a+XY+b=9+50+16=75$$
+
+The area of the trapezoid is
+
+$$12\cdot \frac{(50+75)}{2} = 6(125) = \boxed{\textbf{(D)}\ 750}$$

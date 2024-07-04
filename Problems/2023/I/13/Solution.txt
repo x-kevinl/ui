@@ -1,0 +1,99 @@
+==Solution 1 (3-D Vector Analysis)==
+
+Denote <math>\alpha = \tan^{-1} \frac{\sqrt{21}}{\sqrt{31}}</math>.
+Denote by <math>d</math> the length of each side of a rhombus.
+
+Now, we put the solid to the 3-d coordinate space.
+We put the bottom face on the <math>x-O-y</math> plane.
+For this bottom face, we put a vertex with an acute angle <math>2 \alpha</math> at the origin, denoted as <math>O</math>.
+For two edges that are on the bottom face and meet at <math>O</math>, we put one edge on the positive side of the <math>x</math>-axis. The endpoint is denoted as <math>A</math>. Hence, <math>A = \left( d , 0 , 0 \right)</math>.
+We put the other edge in the first quadrant of the <math>x-O-y</math> plane. The endpoint is denoted as <math>B</math>. Hence, <math>B = \left( d \cos 2 \alpha , d \sin 2 \alpha , 0 \right)</math>.
+
+For the third edge that has one endpoint <math>O</math>, we denote by <math>C</math> its second endpoint.
+We denote <math>C = \left( u , v , w \right)</math>.
+Without loss of generality, we set <math>w > 0</math>.
+Hence,
+<cmath>
+\[
+u^2 + v^2 + w^2 = d^2 . \hspace{1cm} (1)
+\]
+</cmath>
+
+We have
+<cmath>
+\begin{align*}
+\cos \angle AOC & = \frac{\overrightarrow{OA} \cdot \overrightarrow{OC}}{|OA| \cdot |OC|} \\
+& = \frac{u}{d} , \hspace{1cm} (2)
+\end{align*}
+</cmath>
+and
+<cmath>
+\begin{align*}
+\cos \angle BOC & = \frac{\overrightarrow{OB} \cdot \overrightarrow{OC}}{|OB| \cdot |OC|} \\
+& = \frac{u \cos 2 \alpha + v \sin 2 \alpha}{d} . \hspace{1cm} (3)
+\end{align*}
+</cmath>
+
+Case 1: <math>\angle AOC = \angle BOC = 2 \alpha</math> or <math>2 \left( 90^\circ - \alpha \right)</math>.
+
+By solving (2) and (3), we get
+<cmath>
+\begin{align*}
+u & = \pm d \cos 2 \alpha , \\
+v & = \pm d \cos 2 \alpha \frac{1 - \cos 2 \alpha}{\sin 2 \alpha} \\
+& = \pm d \cos 2 \alpha \tan \alpha .
+\end{align*}
+</cmath>
+
+Plugging these into (1), we get
+<cmath>
+\begin{align*}
+w & = d \sqrt{1 - \cos^2 2 \alpha - \cos^2 2 \alpha \tan^2 \alpha} \\
+& = d \sqrt{\sin^2 2 \alpha - \cos^2 2 \alpha \tan^2 \alpha} . \hspace{1cm} (4)
+\end{align*}
+</cmath>
+
+Case 2: <math>\angle AOC = 2 \alpha</math> and <math>\angle BOC = 2 \left( 90^\circ - \alpha \right)</math>, or <math>\angle BOC = 2 \alpha</math> and <math>\angle AOC = 2 \left( 90^\circ - \alpha \right)</math>.
+
+By solving (2) and (3), we get
+<cmath>
+\begin{align*}
+u & = \pm d \cos 2 \alpha , \\
+v & = \mp d \cos 2 \alpha \frac{1 + \cos 2 \alpha}{\sin 2 \alpha} \\
+& = \mp d \cos 2 \alpha \cot \alpha .
+\end{align*}
+</cmath>
+
+Plugging these into (1), we get
+<cmath>
+\begin{align*}
+w & = d \sqrt{1 - \cos^2 2 \alpha - \cos^2 2 \alpha \cot^2 \alpha} \\
+& = d \sqrt{\sin^2 2 \alpha - \cos^2 2 \alpha \cot^2 \alpha} . \hspace{1cm} (5)
+\end{align*}
+</cmath>
+
+We notice that <math>(4) > (5)</math>. Thus, (4) (resp. (5)) is the parallelepiped with a larger (resp. smaller) height.
+
+Therefore, the ratio of the volume of the larger parallelepiped to the smaller one is
+<cmath>
+\begin{align*}
+\frac{(4)}{(5)}
+& = \frac{\sqrt{\sin^2 2 \alpha - \cos^2 2 \alpha \tan^2 \alpha}}
+{\sqrt{\sin^2 2 \alpha - \cos^2 2 \alpha \cot^2 \alpha}} \\
+& = \sqrt{\frac{\tan^2 2 \alpha - \tan^2 \alpha}{\tan^2 2 \alpha - \cot^2 \alpha}} .
+\end{align*}
+</cmath>
+
+Recall that <math>\tan \alpha = \frac{\sqrt{21}}{\sqrt{31}}</math>.
+Thus, <math>\tan 2 \alpha = \frac{2 \tan \alpha}{1 - \tan^2 \alpha} = \frac{\sqrt{21 \cdot 31}}{5}</math>.
+Plugging this into the equation above, we get
+<cmath>
+\begin{align*}
+\frac{(4)}{(5)}
+& = \frac{63}{62}.
+\end{align*}
+</cmath>
+
+Therefore, the answer is <math>63 + 62 = \boxed{\textbf{(125) }}</math>.
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)

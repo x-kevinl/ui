@@ -1,0 +1,6 @@
+== Solution 1 ==
+By placing the $ 2 \times 3 $ rectangle adjacent to the $ 3 \times 4 $ rectangle with the 3 side of the $ 2 \times 3 $ rectangle next to the 4 side of the $ 3 \times 4 $ rectangle, we get a figure that can be completely enclosed in a square with a side length of 5. The area of this square is $5^2 = 25$.
+
+Since placing the two rectangles inside a $ 4 \times 4 $ square must result in overlap, the smallest possible area of the square is $25$.
+
+So the answer is $\boxed{\textbf{(B) }25}$.

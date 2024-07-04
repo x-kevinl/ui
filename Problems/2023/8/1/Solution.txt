@@ -1,0 +1,4 @@
+==Solution 1== 
+
+By the [[order of operations]], we have $$(8 \times 4 + 2) - (8 + 4 \times 2) = (32+2) - (8+8) = 34 - 16 = \boxed{\textbf{(D)}\ 18}.$$
+~apex304, TaeKim, peelybonehead, MRENTHUSIASM

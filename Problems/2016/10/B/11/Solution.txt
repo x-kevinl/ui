@@ -1,0 +1,19 @@
+==Solution 1==
+If the dimensions are $4a\times 4b$, then one side will have $a+1$ posts (including corners) and the other $b+1$ (including corners).
+
+The total number of posts is $2(a+b)=20$.
+
+
+This diagram represents the number of posts around the garden.
+<asy>size(7cm);fill((0,0)--(5,0)--(5,7)--(0,7)--cycle,lightgreen);
+for(int i=0;i<5;++i)dot((i,0),red);for(int i=0;i<7;++i)dot((5,i),blue);dot((5,7));
+draw(arc((0,0),.5,-90,-270)--arc((4,0),.5,90,-90)--cycle,gray+dotted);
+draw(arc((5,0),.5,-180,0)--arc((5,6),.5,0,180)--cycle,gray+dotted);
+draw((0,-1)--(5,-1),Arrows);draw((6,0)--(6,7),Arrows);
+label("$a+1$",(0,-1)--(5,-1),S);label("$b+1$",(6,0)--(6,7),E);
+label("$a$",(1,1));label("$b$",(4,5));
+</asy>
+
+We solve the system $\begin{cases}b+1=2(a+1)\\a+b=10\end{cases}$ to get $a=3,\ b=7$. Then the area is $4a\cdot 4b=336$ which is $\boxed{\textbf{(B) } 336}$.
+
+~Edits by BakedPotato66

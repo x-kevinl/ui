@@ -1,0 +1,24 @@
+==Solution==
+
+We rewrite the given equation, then rearrange:
+$$\begin{align*}
+\frac{100a+10b+c}{999} &= \frac13\left(\frac a9 + \frac b9 + \frac c9\right) \\
+100a+10b+c &= 37a + 37b + 37c \\
+63a &= 27b+36c \\
+7a &= 3b+4c.
+\end{align*}$$
+Now, this problem is equivalent to counting the ordered triples $(a,b,c)$ that satisfies the equation.
+
+Clearly, the $9$ ordered triples $(a,b,c)=(1,1,1),(2,2,2),\ldots,(9,9,9)$ are solutions to this equation.
+
+The expression $3b+4c$ has the same value when:
+
+* $b$ increases by $4$ as $c$ decreases by $3.$
+
+* $b$ decreases by $4$ as $c$ increases by $3.$
+
+We find $4$ more solutions from the $9$ solutions above: $(a,b,c)=(4,8,1),(5,1,8),(5,9,2),(6,2,9).$ Note that all solutions are symmetric about $(a,b,c)=(5,5,5).$
+
+Together, we have $9+4=\boxed{\textbf{(D) } 13}$ ordered triples $(a,b,c).$
+
+~MRENTHUSIASM

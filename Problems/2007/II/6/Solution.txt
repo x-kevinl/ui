@@ -1,0 +1,31 @@
+== Solution 1==
+Let's set up a table of values. Notice that 0 and 9 both cannot appear as any of <math>a_1,\ a_2,\ a_3</math> because of the given conditions. (Also note that 0 cannot appear as 0 cannot be the first digit of an integer.) A clear pattern emerges.
+
+For example, for <math>3</math> in the second column, we note that <math>3</math> is less than <math>4,6,8</math>, but greater than <math>1</math>, so there are four possible places to align <math>3</math> as the second digit.
+
+{| align=center style="border:1px solid black;"
+|- 
+| Digit&nbsp;&nbsp; || 1st&nbsp;&nbsp; || 2nd&nbsp;&nbsp; || 3rd&nbsp;&nbsp; || 4th 
+|-
+| 0 || 0 || 0 || 0 || 64
+|-
+| 1 || 1 || 4 || 16 || 64
+|-
+| 2 || 1 || 4 || 16 || 64
+|-
+| 3 || 1 || 4 || 16 || 64
+|-
+| 4 || 1 || 4 || 16 || 64
+|-
+| 5 || 1 || 4 || 16 || 64
+|-
+| 6 || 1 || 4 || 16 || 64
+|-
+| 7 || 1 || 4 || 16 || 64
+|-
+| 8 || 1 || 4 || 16 || 64
+|-
+| 9 || 0 || 0 || 0 || 64
+|}
+
+For any number from 1-8, there are exactly 4 numbers from 1-8 that are odd and less than the number or that are even and greater than the number (the same will happen for 0 and 9 in the last column). Thus, the answer is <math>4^{k-1} \cdot 10 = 4^3\cdot10 = 640</math>.

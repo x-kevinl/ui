@@ -1,0 +1,4 @@
+== Problem 10 ==
+Find the number of positive integers <math>n</math> less than <math>1000</math> for which there exists a positive real number <math>x</math> such that <math>n=x\lfloor x \rfloor</math>.
+
+Note: <math>\lfloor x \rfloor</math> is the greatest integer less than or equal to <math>x</math>.

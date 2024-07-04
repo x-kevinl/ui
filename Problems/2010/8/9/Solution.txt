@@ -1,0 +1,3 @@
+==Solution==
+
+Ryan answered $(0.8)(25)=20$ problems correct on the first test, $(0.9)(40)=36$ on the second, and $(0.7)(10)=7$ on the third. This amounts to a total of $20+36+7=63$ problems correct. The total number of problems is $25+40+10=75.$ Therefore, the percentage is $\dfrac{63}{75} = 84\% \rightarrow \boxed{\textbf{(D)}\ 84}$

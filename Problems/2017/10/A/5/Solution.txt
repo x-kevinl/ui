@@ -1,0 +1,7 @@
+==Solution==
+
+Let the two real numbers be $x,y$. We are given that $x+y=4xy,$ and dividing both sides by $xy$, $\frac{x}{xy}+\frac{y}{xy}=4.$
+
+$$\frac{1}{y}+\frac{1}{x}=\boxed{\textbf{(C) } 4}.$$
+
+Note: we can easily verify that this is the correct answer; for example, $\left(\frac{1}{2}, \frac{1}{2}\right)$ works, and the sum of their reciprocals is $4$.

@@ -1,0 +1,9 @@
+== Solutions ==
+
+===Solution 1=== 
+The median of a sequence is the middle number of the sequence when the sequence is arranged in order. Since the integers are consecutive, the median is also the [[mean]], so the median is $\frac{7^5}{49} = 7^3\ \mathrm{(C)}$.
+
+===Solution 2===
+Notice that $49\cdot7^3=7^5$. So, our middle number (median) must be $ 7^3\ \mathrm{(C)}$ since all the other terms can be grouped to form an additional $48$ copies $7^3$. Adding them would give $7^5$.  
+
+Solution by franzliszt

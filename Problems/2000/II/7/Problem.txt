@@ -1,0 +1,2 @@
+== Problem ==
+Given that <center><math>\frac 1{2!17!}+\frac 1{3!16!}+\frac 1{4!15!}+\frac 1{5!14!}+\frac 1{6!13!}+\frac 1{7!12!}+\frac 1{8!11!}+\frac 1{9!10!}=\frac N{1!18!}</math></center> find the [[floor function|greatest integer]] that is less than <math>\frac N{100}</math>.

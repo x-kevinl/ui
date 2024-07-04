@@ -1,0 +1,7 @@
+==Solution 1==
+We only need to find the remainders of N when divided by 5 and 9 to determine the answer.
+By inspection, $N \equiv 4 \text{ (mod 5)}$.
+The remainder when $N$ is divided by $9$ is $1+2+3+4+ \cdots +1+0+1+1 +1+2 +\cdots + 4+3+4+4$, but since $10 \equiv 1 \text{ (mod 9)}$, we can also write this as $1+2+3 +\cdots +10+11+12+ \cdots 43 + 44 = \frac{44 \cdot 45}2 = 22 \cdot 45$, which has a remainder of 0 mod 9. Solving these modular congruence using the [[Chinese Remainder Theorem]] we get the remainder to be $9 \pmod{45}$. Therefore, the answer is $\boxed{\textbf{(C) } 9}$.
+
+===Alternative Ending to Solution 1===
+Once we find our 2 modular congruences, we can narrow our options down to ${C}$ and ${D}$ because the remainder when $N$ is divided by $45$ should be a multiple of 9 by our modular congruence that states $N$ has a remainder of $0$ when divided by $9$. Also, our other modular congruence states that the remainder when divided by $45$ should have a remainder of $4$ when divided by $5$. Out of options $C$ and $D$, only $\boxed{\textbf{(C) } 9}$ satisfies that the remainder when $N$ is divided by $45 \equiv 4 \text{ (mod 5)}$.

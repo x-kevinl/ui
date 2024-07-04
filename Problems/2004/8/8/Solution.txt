@@ -1,0 +1,2 @@
+== Solution ==
+The numbers are $16, 25, 34, 43, 52, 61, 70$ which gives us a total of $\boxed{\textbf{(B)}\ 7}$.

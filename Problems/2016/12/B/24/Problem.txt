@@ -1,0 +1,4 @@
+==Problem==
+There are exactly $77,000$ ordered quadruplets $(a, b, c, d)$ such that $\gcd(a, b, c, d) = 77$ and $\operatorname{lcm}(a, b, c, d) = n$. What is the smallest possible value for $n$?
+
+$\textbf{(A)}\ 13,860\qquad\textbf{(B)}\ 20,790\qquad\textbf{(C)}\ 21,560 \qquad\textbf{(D)}\ 27,720 \qquad\textbf{(E)}\ 41,580$

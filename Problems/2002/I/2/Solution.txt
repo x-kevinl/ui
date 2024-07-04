@@ -1,0 +1,4 @@
+== Solution ==
+Let the [[radius]] of the circles be <math>r</math>. The longer dimension of the rectangle can be written as <math>14r</math>, and by the [[Pythagorean Theorem]], we find that the shorter dimension is <math>2r\left(\sqrt{3}+1\right)</math>.
+
+Therefore, <math>\frac{14r}{2r\left(\sqrt{3}+1\right)}= \frac{7}{\sqrt{3} + 1} \cdot \left[\frac{\sqrt{3}-1}{\sqrt{3}-1}\right] = \frac{1}{2}\left(7\sqrt{3} - 7\right) = \frac{1}{2}\left(\sqrt{p}-q\right)</math>. Thus we have <math>p=147</math> and <math>q=7</math>, so <math>p+q=\boxed{154}</math>.

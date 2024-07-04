@@ -1,0 +1,4 @@
+==Problem==
+Let $S$ be the set of circles in the coordinate plane that are tangent to each of the three circles with equations $x^{2}+y^{2}=4$, $x^{2}+y^{2}=64$, and $(x-5)^{2}+y^{2}=3$. What is the sum of the areas of all circles in $S$?
+
+$\textbf{(A)}~48\pi\qquad\textbf{(B)}~68\pi\qquad\textbf{(C)}~96\pi\qquad\textbf{(D)}~102\pi\qquad\textbf{(E)}~136\pi\qquad$

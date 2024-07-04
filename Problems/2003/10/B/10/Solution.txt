@@ -1,0 +1,5 @@
+==Solution==
+
+There are $26$ letters and $10$ digits. There were $26 \cdot 10^4$ old license plates. There are $26^3 \cdot 10^3$ new license plates. The number of license plates increased by
+
+$$\frac{26^3 \cdot 10^3}{26 \cdot 10^4} = \boxed{\textbf{(C) \ } \frac{26^2}{10}}$$

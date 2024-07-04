@@ -1,0 +1,2 @@
+==Problem==
+Find the number of positive integers <math>n</math> less than <math>2017</math> such that <cmath>1+n+\frac{n^2}{2!}+\frac{n^3}{3!}+\frac{n^4}{4!}+\frac{n^5}{5!}+\frac{n^6}{6!}</cmath> is an integer.

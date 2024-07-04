@@ -1,0 +1,10 @@
+==Solution 1==
+Rewrite $\cos{4x} - 1$ as $2\cos^2{2x} - 2$.  Now let $a = \cos{2x}$, and let $b = \cos{\left( \frac{2014\pi^2}{x} \right) }$.  We have:
+$$2a(a - b) = 2a^2 - 2$$
+
+Therefore, $$ab = 1$$.
+
+Notice that either $a = 1$ and $b = 1$ or $a = -1$ and $b = -1$.  For the first case, $a = 1$ only when $x = k\pi$ and $k$ is an integer.  $b = 1$ when $\frac{2014\pi^2}{k\pi}$ is an even multiple of $\pi$, and since $2014 = 2*19*53$, $b =1$ only when $k$ is an odd divisor of $2014$.  This gives us these possible values for $x$:
+$$x= \pi, 19\pi, 53\pi, 1007\pi$$
+For the case where $a = -1$, $\cos{2x} = -1$, so $x = \frac{m\pi}{2}$, where m is odd.  $\frac{2014\pi^2}{\frac{m\pi}{2}}$ must also be an odd multiple of $\pi$ in order for $b$ to equal $-1$, so $\frac{4028}{m}$ must be odd.  We can quickly see that dividing an even number by an odd number will never yield an odd number, so there are no possible values for $m$, and therefore no cases where $a = -1$ and $b = -1$. Therefore, the sum of all our possible values for $x$ is
+$$\pi + 19\pi + 53\pi + 1007\pi = \boxed{\textbf{(D)}\ 1080 \pi}$$

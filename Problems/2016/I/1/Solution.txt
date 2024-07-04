@@ -1,0 +1,2 @@
+==Solution==
+The sum of an infinite geometric series is <math>\frac{a}{1-r}\rightarrow \frac{12}{1\mp a}</math>. The product <math>S(a)S(-a)=\frac{144}{1-a^2}=2016</math>. <math>\frac{12}{1-a}+\frac{12}{1+a}=\frac{24}{1-a^2}</math>, so the answer is <math>\frac{2016}{6}=\boxed{336}</math>.

@@ -1,0 +1,2 @@
+== Solution ==
+There are $4$ choices for the first element of $S$, and for each of these choices there are $4!$ ways to arrange the remaining elements. If the second element must be $2$, then there are only $3$ choices for the first element and $3!$ ways to arrange the remaining elements. Hence the answer is $\frac{3 \cdot 3!}{4 \cdot 4!} = \frac {18}{96} = \frac{3}{16}$, and $a+b=19 \Rightarrow \mathrm{(E)}$.

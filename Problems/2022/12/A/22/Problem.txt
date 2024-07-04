@@ -1,0 +1,6 @@
+==Problem==
+
+Let $c$ be a real number, and let $z_1$ and $z_2$ be the two complex numbers satisfying the equation
+$z^2 - cz + 10 = 0$. Points $z_1$, $z_2$, $\frac{1}{z_1}$, and $\frac{1}{z_2}$ are the vertices of (convex) quadrilateral $\mathcal{Q}$ in the complex plane. When the area of $\mathcal{Q}$ obtains its maximum possible value, $c$ is closest to which of the following?
+
+$\textbf{(A) }4.5 \qquad\textbf{(B) }5 \qquad\textbf{(C) }5.5 \qquad\textbf{(D) }6\qquad\textbf{(E) }6.5$

@@ -1,0 +1,6 @@
+== Solution 1 (Expected Values) ==
+The expected value of Alice's number is $\frac12\left(0+1\right)=\frac12,$ and the expected value of Bob's number is $\frac12\left(\frac12+\frac23\right)=\frac{7}{12}.$ To maximize her chance of winning, Carol should choose the midpoint between these two expected values. So, the answer is $\frac12\left(\frac12+\frac{7}{12}\right)=\boxed{\textbf{(B) }\frac{13}{24}}.$
+
+Alternatively, once we recognize that the answer lies in the interval $\left(\frac12,\frac{7}{12}\right),$ we should choose $\textbf{(B)}$ since no other answer choices lie in this interval.
+
+~Random_Guy ~MRENTHUSIASM

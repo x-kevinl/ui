@@ -1,0 +1,20 @@
+==Solution 1==
+
+Since the sequence is arithmetic, 
+
+$\log_{12}{162}$ + $4d$ = $\log_{12}{1250}$, where $d$ is the common difference.
+
+
+Therefore,
+
+$4d$ = $\log_{12}{1250}$ - $\log_{12}{162}$ = $\log_{12}{(1250/162)}$, and
+
+$d$ = $\frac{1}{4}$($\log_{12}{(1250/162)}$) = $\log_{12}{(1250/162)^{1/4}}$
+
+
+
+Now that we found $d$, we just add it to the first term to find $x$:
+
+$\log_{12}{162}$ + $\log_{12}{(1250/162)^{1/4}}$ = $\log_{12}{((162)(1250/162)^{1/4})}$
+
+$x$ = $(162)$$(1250/162)^{1/4}$ = $(162)$$(625/81)^{1/4}$ = $(162)(5/3)$ = $270$, which is $B$

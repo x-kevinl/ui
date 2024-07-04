@@ -1,0 +1,3 @@
+== Solution 1 (Statistics) ==
+
+To minimize the number of distinct values, we want to maximize the number of times a number appears. So, we could have $223$ numbers appear $9$ times, $1$ number appear once, and the mode appear $10$ times, giving us a total of $223 + 1 + 1 = \boxed{\textbf{(D)}\ 225}.$

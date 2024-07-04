@@ -1,0 +1,13 @@
+==Solution 1==
+The highest that $FLYFLY$ can be would have to be $124124$, and it cannot be higher than that because then it would exceed the $6$-digit limit set on $BUGBUG$. 
+
+So, if we start at $124124\cdot8$, we get $992992$, which would be wrong because both $B \& U$ would be $9$, and the numbers cannot be repeated between different letters. 
+
+If we move on to the next highest, $123123$, and multiply by $8$, we get $984984$. All the digits are different, so $FLY+BUG$ would be $123+984$, which is $1107$. So, the answer is $\boxed{\textbf{(C)}1107}$. 
+
+- Akhil Ravuri of John Adams Middle School
+
+
+- Aryan Varshney of John Adams Middle School (minor edits... props to Akhil for the main/full answer :D)
+
+~ cxsmi (minor formatting edits)

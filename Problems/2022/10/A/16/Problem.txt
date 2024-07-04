@@ -1,0 +1,6 @@
+==Problem==
+
+The roots of the polynomial $10x^3 - 39x^2 + 29x - 6$ are the height, length, and width of a rectangular box (right rectangular prism). A new rectangular box is formed by lengthening each edge of the original box by $2$
+units. What is the volume of the new box?
+
+$\textbf{(A) } \frac{24}{5} \qquad \textbf{(B) } \frac{42}{5} \qquad \textbf{(C) } \frac{81}{5} \qquad \textbf{(D) } 30 \qquad \textbf{(E) } 48$

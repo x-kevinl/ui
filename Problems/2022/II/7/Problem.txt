@@ -1,0 +1,3 @@
+==Problem==
+
+A circle with radius <math>6</math> is externally tangent to a circle with radius <math>24</math>. Find the area of the triangular region bounded by the three common tangent lines of these two circles.

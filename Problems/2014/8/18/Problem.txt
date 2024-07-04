@@ -1,0 +1,8 @@
+==Problem==
+Four children were born at City Hospital yesterday. Assume each child is equally likely to be a boy or a girl. Which of the following outcomes is most likely?
+
+(A) all 4 are boys
+(B) all 4 are girls
+(C) 2 are girls and 2 are boys
+(D) 3 are of one gender and 1 is of the other gender
+(E) all of these outcomes are equally likely

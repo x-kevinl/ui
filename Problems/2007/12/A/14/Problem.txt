@@ -1,0 +1,7 @@
+== Problem ==
+Let $a$, $b$, $c$, $d$, and $e$ be distinct integers such that
+$(6-a)(6-b)(6-c)(6-d)(6-e)=45$
+
+What is $a+b+c+d+e$?
+
+$\mathrm{(A)}\ 5\qquad \mathrm{(B)}\ 17\qquad \mathrm{(C)}\ 25\qquad \mathrm{(D)}\ 27\qquad \mathrm{(E)}\ 30$

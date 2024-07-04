@@ -1,0 +1,4 @@
+== Solution 1 ==
+There are either $$65 + 200 = 265$$ or $$66 + 200 = 266$$ days between the first two dates depending upon whether or not year $N+1$ is a leap year (since the February 29th of the leap year would come between the 300th day of year $N$ and 200th day of year $N + 1$). Since $7$ divides into $266$ but not $265$, for both days to be a Tuesday, year $N+1$ must be a leap year.
+
+Hence, year $N-1$ is not a leap year, and so since there are $$265 + 300 = 565$$ days between the date in years $N,\text{ }N-1$, this leaves a remainder of $5$ upon division by $7$. Since we are subtracting days, we count 5 days before Tuesday, which gives us  $\boxed{\mathbf{(A)} \ \text{Thursday}.}$

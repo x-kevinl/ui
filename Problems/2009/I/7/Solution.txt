@@ -1,0 +1,8 @@
+== Solution ==
+The best way to solve this problem is to get the iterated part out of the exponent:
+<cmath>5^{(a_{n + 1} - a_n)} = \frac {1}{n + \frac {2}{3}} + 1</cmath>
+<cmath>5^{(a_{n + 1} - a_n)} = \frac {n + \frac {5}{3}}{n + \frac {2}{3}}</cmath>
+<cmath>5^{(a_{n + 1} - a_n)} = \frac {3n + 5}{3n + 2}</cmath>
+<cmath>a_{n + 1} - a_n = \log_5{\left(\frac {3n + 5}{3n + 2}\right)}</cmath>
+<cmath>a_{n + 1} - a_n = \log_5{(3n + 5)} - \log_5{(3n + 2)}</cmath>
+Plug in <math>n = 1, 2, 3, 4</math> to see the first few terms of the sequence: <cmath>\log_5{5},\log_5{8}, \log_5{11}, \log_5{14}.</cmath> We notice that the terms  <math>5, 8, 11, 14</math> are in arithmetic progression. Since <math>a_1 = 1 = \log_5{5} = \log_5{(3(1) + 2)}</math>, we can easily use induction to show that <math>a_n = \log_5{(3n + 2)}</math>. So now we only need to find the next value of <math>n</math> that makes <math>\log_5{(3n + 2)}</math> an integer. This means that <math>3n + 2</math> must be a power of <math>5</math>. We test <math>25</math>: <cmath>3n + 2 = 25</cmath> <cmath>3n = 23</cmath> This has no integral solutions, so we try <math>125</math>: <cmath>3n + 2 = 125</cmath> <cmath>3n = 123</cmath> <cmath>n = \boxed{041}</cmath>

@@ -1,0 +1,15 @@
+== Solution 1 ==
+
+'''(B)''' Intuitively, $x$ will be largest for that option for which the value in the parentheses is smallest.
+
+Formally, first note that each of the values in parentheses is larger than $1$. Now, each of the options is of the form $3f(r)^x = 7$. This can be rewritten as $x\log f(r) = \log\frac 73$. As $f(r)>1$, we have $\log f(r)>0$. Thus $x$ is the largest for the option for which $\log f(r)$ is smallest. And as $\log f(r)$ is an increasing function, this is the option for which $f(r)$ is smallest.
+
+We now get the following easier problem: Given that $0<r<3$, find the smallest value in the set $\{ 1+r, 1+r/10, 1+2r, 1+\sqrt r, 1+1/r\}$.
+
+Clearly $1+r/10$ is smaller than the first and the third option. 
+
+We have $r^2 < 10$, dividing both sides by $10r$ we get $r/10 < 1/r$. 
+
+And finally, $r/100 < 1$, therefore $r^2/100 < r$, and as both sides are positive, we can take the square root and get $r/10 < \sqrt r$.
+
+Thus the answer is $\boxed{\textbf{(B) } 3\left(1+\frac{r}{10}\right)^x = 7}$.

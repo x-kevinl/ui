@@ -1,0 +1,14 @@
+==Solution 1==
+Let <math>O</math> be the circumcenter of <math>\triangle ABC</math>; say <math>OT</math> intersects <math>BC</math> at <math>M</math>; draw segments <math>XM</math>, and <math>YM</math>.  We have <math>MT=3\sqrt{15}</math>. 
+
+[[File:Fanyuchen.png|250px|right]]
+
+Since <math>\angle A=\angle CBT=\angle BCT</math>, we have <math>\cos A=\tfrac{11}{16}</math>. Notice that <math>AXTY</math> is cyclic, so <math>\angle XTY=180^{\circ}-A</math>, so <math>\cos XTY=-\cos A</math>, and the cosine law in <math>\triangle TXY</math> gives <cmath>1143-2XY^2=-\frac{11}{8}\cdot XT\cdot YT.</cmath> 
+
+Since <math>\triangle BMT \cong \triangle CMT</math>, we have <math>TM\perp BC</math>, and therefore quadrilaterals <math>BXTM</math> and <math>CYTM</math> are cyclic. Let <math>P</math> (resp. <math>Q</math>) be the midpoint of <math>BT</math> (resp. <math>CT</math>). So <math>P</math> (resp. <math>Q</math>) is the center of <math>(BXTM)</math> (resp. <math>CYTM</math>). Then <math>\theta=\angle ABC=\angle MTX</math> and <math>\phi=\angle ACB=\angle YTM</math>. So <math>\angle XPM=2\theta</math>, so<cmath>\frac{\frac{XM}{2}}{XP}=\sin \theta,</cmath>which yields <math>XM=2XP\sin \theta=BT(=CT)\sin \theta=TY</math>. Similarly we have <math>YM=XT</math>. 
+
+Ptolemy's theorem in <math>BXTM</math> gives <cmath>16TY=11TX+3\sqrt{15}BX,</cmath> while Pythagoras' theorem gives <math>BX^2+XT^2=16^2</math>. Similarly, Ptolemy's theorem in <math>YTMC</math> gives<cmath>16TX=11TY+3\sqrt{15}CY</cmath> while Pythagoras' theorem in <math>\triangle CYT</math> gives <math>CY^2+YT^2=16^2</math>. Solve this for <math>XT</math> and <math>TY</math> and substitute into the equation about <math>\cos XTY</math> to obtain the result <math>XY^2=\boxed{717}</math>.
+
+(Notice that <math>MXTY</math> is a parallelogram, which is an important theorem in Olympiad, and there are some other ways of computation under this observation.)
+
+-Fanyuchen20020715

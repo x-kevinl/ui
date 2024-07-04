@@ -1,0 +1,4 @@
+==Problem==
+Alina writes the numbers $1, 2, \dots , 9$ on separate cards, one number per card. She wishes to divide the cards into $3$ groups of $3$ cards so that the sum of the numbers in each group will be the same. In how many ways can this be done?
+
+$\textbf{(A) } 0 \qquad \textbf{(B) } 1 \qquad \textbf{(C) } 2 \qquad \textbf{(D) } 3 \qquad \textbf{(E) } 4$

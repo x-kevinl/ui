@@ -1,0 +1,2 @@
+== Problem ==
+For each [[positive integer]] <math>k</math>, let <math> S_k </math> denote the [[increasing sequence | increasing]] [[arithmetic sequence]] of [[integer]]s whose first term is <math>1</math> and whose common difference is <math> k</math>.  For example, <math> S_3 </math> is the [[sequence]] <math> 1,4,7,10,\ldots. </math> For how many values of <math> k </math> does <math> S_k </math> contain the term <math>2005</math>?

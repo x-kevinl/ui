@@ -1,0 +1,4 @@
+==Solution==
+Each box is weighed twice during this, so the combined weight of the three boxes is half the weight of these separate measures:
+
+$$\frac{122+125+127}{2} = \frac{374}{2} = \boxed{\textbf{(C)}\ 187}.$$

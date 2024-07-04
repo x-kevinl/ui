@@ -1,0 +1,24 @@
+== Solution ==
+We note that aligning the base of the semicircle with a side of the square is certainly non-optimal.  If the semicircle is tangent to only one side of the square, we will have "wiggle-room" to increase its size.  Once it is tangent to two adjacent sides of the square, we will maximize its size when it touches both other sides of the square.  This can happen only when it is arranged so that the center of the semicircle lies on one diagonal of the square.
+
+[[Image:2005 AIME I Problem 11.png]]
+
+Now, let the square be <math>ABCD</math>, and let <math>E \in AB</math> and <math>F \in DA</math> be the points at which the "corners" of the semicircle touch the square. Let <math>O</math> be the center of the semicircle.
+
+===Solution 1 ===
+We can just look at a quarter circle inscribed in a <math>45-45-90</math> right triangle. We can then extend a radius, <math>r</math> to one of the sides creating an <math>r,r, r\sqrt{2}</math> right triangle. This means that we have <math>r + r\sqrt{2} = 8\sqrt{2}</math> so <math>r = \frac{8\sqrt{2}}{1+\sqrt{2}} = 16 - 8\sqrt{2}</math>. Then the diameter is <math>32 - \sqrt{512}</math> giving us <math>32 + 512 = \boxed{544}</math>
+
+=== Solution 2 ===
+Define the radius of the semicircle as <math>r</math>. Draw the [[perpendicular]] from <math>O</math> to <math>AB</math>, which forms a <math>45-45-90</math> triangle. The length of the perpendicular is <math>\frac{r}{\sqrt{2}}</math>. Note also that <math>AD</math> is equal to the length of that perpendicular plus the radius to the point of tangency on <math>CD</math>. Thus, <math>r + \frac{r}{\sqrt{2}} = 8</math>, and <math>r = \frac{8\sqrt{2}}{\sqrt{2} + 1} \cdot (\frac{\sqrt{2} - 1}{\sqrt{2} - 1}) = 16 - 8\sqrt{2}</math>. The diameter is then <math>2r = 32 - \sqrt{512}</math>, and the solution is <math>32 + 512 = 544</math>.
+
+=== Solution 3 ===
+By the comments above, <math>AE = AF = a</math>.  By the [[Pythagorean Theorem]], <math>d^2 = 2a^2</math>.
+
+Now, if we draw a line through the center, <math>O</math>, of the semicircle and its point of tangency with <math>BC</math>, we see that this line is perpendicular to <math>BC</math> and so parallel to <math>AB</math>.  Thus, by [[triangle similarity]] it cuts <math>AF</math> in half, and so by symmetry the distance from <math>O</math> to <math>AD</math> is <math>\frac{a}{2}</math> and so the distance from <math>O</math> to <math>BC</math> is <math>8 - \frac a2</math>.  But this latter quantity is also the radius of the semicircle, so <math>d = 16 - a</math>.
+
+Our two previous paragraphs give <math>2a^2 = (16 - a)^2</math> so <math>a^2 + 32a - 256 = 0</math> and <math>a = 16\sqrt{2} - 16</math> (where we discard the negative root of that quadratic) and so <math>d = a\sqrt{2} = 32 - 16\sqrt{2} = 32 - \sqrt{512}</math>, so the answer is <math>32 + 512 = 544</math>.
+=== Solution 4 ===
+We proceed by finding the area of the square in 2 different ways. The square is obviously 8*8=64, but we can also find the area in terms of d. From the center of the circle, draw radii that hit the points where the square is tangent to the semicircle. Then the square's area is the area of the small square +2* the area of the trapezoids on the corners+ the area of an isoceles triangle. Adding these all up gives <math>64=\frac{d^2}{4}+\frac{d^2}{4}+(8-\frac{d\sqrt{2}}{2}+\frac{d}{2})(8-\frac{d}{2})</math>
+Simplifying gives <math>d-16\sqrt{2}+d\sqrt{2}=0</math>. Solving gives <math>d=32-16\sqrt{2}=32-\sqrt{512}</math> so the answer is <math>32+512= \boxed{544}</math>.
+=== Solution 5 ===
+It is easy after getting the image, after drawing labeling the lengths of those segments, assume the radius is <math>x</math>, we can see <math>x=\sqrt{2}(8-x)</math> and we get <math>2x=32-\sqrt{512}</math> and we have the answer <math>\boxed{544}</math> ~bluesoul

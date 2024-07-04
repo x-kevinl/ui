@@ -1,0 +1,21 @@
+==Solution 1==
+
+Let <math>D</math> be the midpoint of <math>\overline{BC}</math>. Then by SAS Congruence, <math>\triangle ABD \cong \triangle ACD</math>, so <math>\angle ADB = \angle ADC = 90^o</math>.
+
+Now let <math>BD=y</math>, <math>AB=x</math>, and <math>\angle IBD = \dfrac{\angle ABD}{2} = \theta</math>.
+
+Then <math>\mathrm{cos}{(\theta)} = \dfrac{y}{8}</math>
+
+and <math>\mathrm{cos}{(2\theta)} = \dfrac{y}{x} = 2\mathrm{cos^2}{(\theta)} - 1 = \dfrac{y^2-32}{32}</math>.
+
+Cross-multiplying yields <math>32y = x(y^2-32)</math>.
+
+Since <math>x,y>0</math>, <math>y^2-32</math> must be positive, so <math>y > 5.5</math>.
+
+Additionally, since <math>\triangle IBD</math> has hypotenuse <math>\overline{IB}</math> of length <math>8</math>, <math>BD=y < 8</math>.
+
+Therefore, given that <math>BC=2y</math> is an integer, the only possible values for <math>y</math> are <math>6</math>, <math>6.5</math>, <math>7</math>, and <math>7.5</math>.
+
+However, only one of these values, <math>y=6</math>, yields an integral value for <math>AB=x</math>, so we conclude that <math>y=6</math> and <math>x=\dfrac{32(6)}{(6)^2-32}=48</math>.
+
+Thus the perimeter of <math>\triangle ABC</math> must be <math>2(x+y) = \boxed{108}</math>.

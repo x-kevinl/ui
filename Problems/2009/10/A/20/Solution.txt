@@ -1,0 +1,7 @@
+== Solution 1 ==
+
+Let their speeds in kilometers per hour be $v_A$ and $v_L$. We know that $v_A=3v_L$ and that $v_A+v_L=60$. (The second equation follows from the fact that $1\mathrm km/min = 60\mathrm km/h$.) This solves to $v_A=45$ and $v_L=15$. 
+
+As the distance decreases at a rate of $1$ kilometer per minute, after $5$ minutes the distance between them will be $20-5=15$ kilometers.
+
+From this point on, only Lauren will be riding her bike. As there are $15$ kilometers remaining and $v_L=15$, she will need exactly an hour to get to Andrea. Therefore the total time in minutes is $5+60 = \boxed{65}$.

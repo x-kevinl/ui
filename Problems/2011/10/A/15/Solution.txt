@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+We know that $\frac{\text{total miles}}{\text{total gas}}=55$. Let $x$ be the distance in miles the car traveled during the time it ran on gasoline, then the amount of gas used is $0.02x$. The total distance traveled is $40+x$, so we get $\frac{40+x}{0.02x}=55$. Solving this equation, we get $x=400$, so the total distance is $400 + 40 = \boxed{440 \ \mathbf{(C)}}$.

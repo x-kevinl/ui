@@ -1,0 +1,5 @@
+==Solution 1==
+
+The trick is to realize that the sum $AMC+AM+MC+CA$ is similar to the product $(A+1)(M+1)(C+1)$. If we multiply $(A+1)(M+1)(C+1)$, we get $$(A+1)(M+1)(C+1) = AMC + AM + AC + MC + A + M + C + 1.$$ We know that $A+M+C=10$, therefore $(A+1)(M+1)(C+1) = (AMC + AM + MC + CA) + 11$ and $$AMC + AM + MC + CA = (A+1)(M+1)(C+1) - 11.$$ Now consider the maximal value of this expression. Suppose that some two of $A$, $M$, and $C$ differ by at least $2$.  Then this triple $(A,M,C)$ is not optimal. (To see this, WLOG let $A\geq C+2.$ We can then increase the value of $(A+1)(M+1)(C+1)$ by changing $A \to A-1$ and $C \to C+1$.)
+
+Therefore the maximum is achieved when $(A,M,C)$ is a rotation of $(3,3,4)$. The value of $(A+1)(M+1)(C+1)$ in this case is $4\cdot 4\cdot 5=80,$ and thus the maximum of $AMC + AM + MC + CA$ is $80-11 = \boxed{\textbf{(C)}\ 69}.$

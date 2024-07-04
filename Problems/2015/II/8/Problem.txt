@@ -1,0 +1,3 @@
+==Problem==
+
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>Let <math>a</math> and <math>b</math> be positive integers satisfying <math>\frac{ab+1}{a+b} < \frac{3}{2}</math>. The maximum possible value of <math>\frac{a^3b^3+1}{a^3+b^3}</math> is <math>\frac{p}{q}</math>, where <math>p</math> and <math>q</math> are relatively prime positive integers. Find <math>p+q</math>.<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>

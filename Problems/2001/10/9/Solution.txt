@@ -1,0 +1,13 @@
+==Solution 1==
+
+Let $A$, $T$ be Kristin's annual income and the income tax total, respectively. Notice that
+$$\begin{align*}
+T &= p\%\cdot28000 + (p + 2)\%\cdot(A - 28000) \\
+&= [p\%\cdot28000 + p\%\cdot(A - 28000)] + 2\%\cdot(A - 28000) \\
+&= p\%\cdot A + 2\%\cdot(A - 28000)
+\end{align*}$$
+We are also given that $$T = (p + 0.25)\%\cdot A = p\%\cdot A + 0.25\%\cdot A$$
+Thus, $$p\%\cdot A + 2\%\cdot(A - 28000) = p\%\cdot A + 0.25\%\cdot A$$ $$2\%\cdot(A - 28000) = 0.25\%\cdot A$$
+Solve for $A$ to obtain $A = \boxed{\textbf{(B) }\textdollar 32000} $.
+
+~ Nafer

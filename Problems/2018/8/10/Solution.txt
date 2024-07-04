@@ -1,0 +1,2 @@
+== Solution ==
+The sum of the reciprocals is $\frac{1}{1} + \frac{1}{2} + \frac{1}{4}= \frac{7}{4}$. Their average is $\frac{7}{12}$. Taking the reciprocal of this gives $\boxed{\textbf{(C) }\frac{12}{7}}$.

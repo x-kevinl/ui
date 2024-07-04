@@ -1,0 +1,4 @@
+== Problem ==
+A [[semicircle]] with [[diameter]] <math> d </math> is contained in a [[square (geometry) | square]] whose sides have length 8. Given the maximum value of <math> d </math> is <math> m - \sqrt{n},</math> find <math> m+n. </math>
+
+__TOC__

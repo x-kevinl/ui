@@ -1,0 +1,16 @@
+==Solution==
+There are $4$ ways that the same number of heads will be obtained; $0$, $1$, $2$, or $3$ heads.
+
+The probability of both getting $0$ heads is $\left(\frac12\right)^3{3\choose0}\left(\frac12\right)^4{4\choose0}=\frac1{128}$
+
+The probability of both getting $1$ head is
+$\left(\frac12\right)^3{3\choose1}\left(\frac12\right)^4{4\choose1}=\frac{12}{128}$
+
+The probability of both getting $2$ heads is
+$\left(\frac12\right)^3{3\choose2}\left(\frac12\right)^4{4\choose2}=\frac{18}{128}$
+
+The probability of both getting $3$ heads is
+$\left(\frac12\right)^3{3\choose3}\left(\frac12\right)^4{4\choose3}=\frac{4}{128}$
+
+Therefore, the probabiliy of flipping the same number of heads is:
+$\frac{1+12+18+4}{128}=\frac{35}{128}\Rightarrow\boxed{\mathrm{(D)}\ \frac{35}{128}}$

@@ -1,0 +1,6 @@
+== Solution ==
+A brute-force solution to this question is fairly quick, but we'll try something slightly more clever:  our numbers have the form <math>{\underline{(n+3)}}\,{\underline{(n+2)}}\,{\underline{( n+1)}}\,{\underline {(n)}} </math><math>= 1000(n + 3) + 100(n + 2) + 10(n + 1) + n = 3210 + 1111n</math>, for <math>n \in \lbrace0, 1, 2, 3, 4, 5, 6\rbrace</math>.
+
+Now, note that <math>3\cdot 37 = 111</math> so <math>30 \cdot 37 = 1110</math>, and <math>90 \cdot 37 = 3330</math> so <math>87 \cdot 37 = 3219</math>. So the [[remainder]]s are all congruent to <math>n - 9 \pmod{37}</math>. However, these numbers are negative for our choices of <math>n</math>, so in fact the remainders must equal <math>n + 28</math>.
+
+Adding these numbers up, we get <math>(0 + 1 + 2 + 3 + 4 + 5 + 6) + 7\cdot28 = \boxed{217}</math>

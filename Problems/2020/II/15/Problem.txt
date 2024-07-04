@@ -1,0 +1,2 @@
+==Problem==
+Let <math>\triangle ABC</math> be an acute scalene triangle with circumcircle <math>\omega</math>. The tangents to <math>\omega</math> at <math>B</math> and <math>C</math> intersect at <math>T</math>. Let <math>X</math> and <math>Y</math> be the projections of <math>T</math> onto lines <math>AB</math> and <math>AC</math>, respectively. Suppose <math>BT = CT = 16</math>, <math>BC = 22</math>, and <math>TX^2 + TY^2 + XY^2 = 1143</math>. Find <math>XY^2</math>.

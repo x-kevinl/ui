@@ -1,0 +1,21 @@
+==Solution 1==
+Let pile $A$ have $A$ rocks, and so on.
+
+The total weight of $A$ and $C$ can be expressed as $44(A + C)$.
+
+To get the total weight of $B$ and $C$, we add the weight of $B$ and subtract the weight of $A$: $44(A + C) + 50B - 40A = 4A + 44C + 50B$
+
+Therefore, the mean of $B$ and $C$ is $\frac{4A + 44C + 50B}{B + C}$, which is simplified to $44 + \frac{4A + 6B}{B + C}$.
+
+We now need to eliminate $A$ in the numerator.  
+Since we know that $40A + 50B = 43(A + B)$, we have $A = \frac{7}{3}B$
+
+Substituting,
+
+$44 + \frac{4(\frac{7}{3}B) + 6B}{B + C}=44 + \frac{46}{3}*\frac{B}{B + C}$
+
+In order to maximize $\frac{B}{B + C}$, we can minimize the denominator by letting $C = 1$ (C must be a positive integer). Since $\frac{46}{3}$ must cancel to give an integer, and the only fraction that satisfies both conditions is $\frac{45}{46}$
+
+Plugging in, we get
+
+$44 + \frac{46}{3} * \frac{45}{46} = 44 + 15 = 59$, which is choice E

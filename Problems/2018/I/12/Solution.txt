@@ -1,0 +1,88 @@
+==Solution 1==
+
+The question asks us for the probability that a randomly chosen subset of the set of the first 18 positive integers has the property that the sum of its elements is divisible by 3. Note that the total number of subsets is <math>2^{18}</math> because each element can either be in or not in the subset. To find the probability, we will find the total numbers of ways the problem can occur and divide by <math>2^{18}</math>.
+
+To simplify the problem, let’s convert the set to mod 3:
+
+<cmath>U' = \{1,2,0,1,2,0,1,2,0,1,2,0,1,2,0,1,2,0\}</cmath>
+
+Note that there are six elements congruent to 0 mod 3, 6 congruent to 1 mod 3, and 6 congruent to 2 mod 3. After conversion to mod three, the problem is the same but we’re dealing with much simpler numbers. Let’s apply casework on this converted set based on <math>S = s(T')</math>, the sum of the elements of a subset <math>T'</math> of <math>U'</math>.
+
+<math>\textbf{Case 1: }S=0</math>
+
+In this case, we can restrict the subsets to subsets that only contain 0. There are six 0’s and each one can be in or out of the subset, for a total of <math>2^{6} = 64</math> subsets. In fact, for every case we will have, we can always add a sequence of 0’s and the total sum will not change, so we will have to multiply by 64 for each case. Therefore, let’s just calculate the total number of ways we can have each case and remember to multiply it in after summing up the cases. This is equivalent to finding the number of ways you can choose such subsets without including the 0's. Therefore this case gives us <math>\boxed{1}</math> way.
+
+<math>\textbf{Case 2: }S= 3</math>
+
+In this case and each of the subsequent cases, we denote the number of 1’s in the case and the number of two’s in the case as <math>x, y</math> respectively. Then in this case we have two subcases;
+
+<math>x, y = 3,0: </math> This case has <math>\tbinom{6}{3} \cdot \tbinom{6}{0} = 20 </math> ways.
+
+<math>x, y = 1,1: </math> This case has <math>\tbinom{6}{1} \cdot \tbinom{6}{1} = 36 </math> ways.
+
+In total, this case has <math>20+36=\boxed{56}</math> ways.
+
+<math>\textbf{Case 3: }S=6</math>
+
+In this case, there are 4 subcases;
+
+<math>x, y = 6,0: </math> This case has <math>\tbinom{6}{6} \cdot \tbinom{6}{0} = 1 </math> way.
+
+<math>x, y = 4,1: </math> This case has <math>\tbinom{6}{4} \cdot \tbinom{6}{1} = 90 </math> ways.
+
+<math>x, y = 2,2: </math> This case has <math>\tbinom{6}{2} \cdot \tbinom{6}{2} = 225 </math> ways.
+
+<math>x, y = 0,3: </math> This case has <math>\tbinom{6}{0} \cdot \tbinom{6}{3} = 20 </math> ways.
+
+In total, this case has <math>1+90+225+20=\boxed{336}</math> ways.
+
+Note that for each case, the # of 1’s goes down by 2 and the # of 2’s goes up by 1. This is because the sum is fixed, so when we change one it must be balanced out by the other. This is similar to the Diophantine equation <math>x + 2y= S</math> and the total number of solutions will be <math>\tbinom{6}{x} \cdot \tbinom{6}{y}</math>. From here we continue our casework, and our subcases will be coming out quickly as we have realized this relation.
+
+<math>\textbf{Case 4: }S=9</math>
+
+In this case we have 3 subcases:
+
+<math>x, y = 5,2: </math> This case has <math>\tbinom{6}{5} \cdot \tbinom{6}{1} = 90 </math> ways.
+
+<math>x, y = 3,3: </math> This case has <math>\tbinom{6}{3} \cdot \tbinom{6}{3} = 400 </math> ways.
+
+<math>x, y = 1,4: </math> This case has <math>\tbinom{6}{1} \cdot \tbinom{6}{4} = 90 </math> ways.
+
+In total, this case has <math>90+400+90=\boxed{580}</math> ways.
+
+<math>\textbf{Case 5: } S=12</math>
+
+In this case we have 4 subcases:
+
+<math>x, y = 6,3: </math> This case has <math>\tbinom{6}{6} \cdot \tbinom{6}{3} = 20 </math> ways.
+
+<math>x, y = 4,4: </math> This case has <math>\tbinom{6}{4} \cdot \tbinom{6}{4} = 225 </math> ways.
+
+<math>x, y = 2,5: </math> This case has <math>\tbinom{6}{2} \cdot \tbinom{6}{5} = 90 </math> ways.
+
+<math>x, y = 0,6: </math> This case has <math>\tbinom{6}{0} \cdot \tbinom{6}{6} = 1 </math> way.
+
+Therefore the total number of ways in this case is <math>20 + 225 + 90 + 1=\boxed{336}</math>. 
+Here we notice something interesting. Not only is the answer the same as Case 3, the subcases deliver the exact same answers, just in reverse order. Why is that?
+
+We discover the pattern that the values of <math>x, y</math> of each subcase of Case 5 can be obtained by subtracting the corresponding values of <math>x, y</math> of each subcase in Case 3 from 6 ( For example, the subcase 0, 6 in Case 5 corresponds to the subcase 6, 0 in Case 3). Then by the combinatorial identity, <math>\tbinom{6}{k} = \tbinom{6}{6-k}</math>, which is why each subcase evaluates to the same number. But can we extend this reasoning to all subcases to save time?
+
+Let’s write this proof formally. Let <math>W_S</math> be the number of subsets of the set <math>\{1,2,1,2,1,2,1,2,1,2,1,2\}</math> (where each 1 and 2 is distinguishable) such that the sum of the elements of the subset is <math>S</math> and <math>S</math> is divisible by 3. We define the empty set as having a sum of 0. We claim that <math>W_S = W_{18-S}</math>.
+
+<math>W_S = \sum_{i=1}^{|D|} \tbinom{6}{x_i}\tbinom{6}{y_i}</math> if and only if there exists <math>x_i, y_i</math> that satisfy <math>0\leq x_i \leq 6</math>, <math>0\leq y_i \leq 6</math>, <math>x_i + 2y_i = S</math>, and <math>D</math>  is the set of the pairs <math>x_i, y_i</math>. This is because for each pair <math>x_i</math>, <math>y_i</math> there are six elements of the same residue mod(3) to choose <math>x_i</math> and <math>y_i</math> numbers from, and their value sum must be <math>S</math>.
+
+Let all <math>x_n</math>, <math>y_n</math> satisfy <math>x_n = 6-x_i</math> and <math>y_n = 6-y_i</math>.
+We can rewrite the equation <math> x_i+ 2y_i = S \implies -x_i- 2y_i = -S \implies 6-x_i+ 6-2y_i= 12 - S</math>
+<math>\implies 6-x_i+12-2y_i = 18-S \implies 6-x_i + 2(6-y_i) = 18-S </math>
+<cmath>\implies x_n + 2y_n = 18 - S</cmath>
+
+Therefore, since <math>0\leq x_i, y_i\leq 6</math> and <math>x_n = 6-x_i</math> and <math>y_n = 6-y_i</math>, <math>0\leq x_n, y_n\leq 6</math>. As shown above, <math>x_n + 2y_n = 18 - S</math> and since <math>S</math> and 18 are divisible by 3, 18 -<math>S</math> is divisible by 3. Therefore, by the fact that <math>W_S = \sum_{i=1}^{|D|} \tbinom{6}{x_i}\tbinom{6}{y_i}</math>, we have that;
+
+<math>W_{18-S} = \sum_{n=1}^{|D|} \tbinom{6}{x_n}\tbinom{6}{y_n} \implies W_{18-S} =  \sum_{i=1}^{|D|} \tbinom{6}{6-x_i}\tbinom{6}{6-y_i} \implies W_{18-S} =  \sum_{i=1}^{|D|} \tbinom{6}{x_i}\tbinom{6}{y_i} = W_S</math>, proving our claim.
+
+We have found our shortcut, so instead of bashing out the remaining cases, we can use this symmetry. The total number of ways over all the cases is <math>\sum_{k=0}^{6} W_{3k} = 2 \cdot (1+56+336)+580 = 1366</math>. The final answer is <math>\frac{2^{6}\cdot 1366}{2^{18}} = \frac{1366}{2^{12}} = \frac{683}{2^{11}}. </math>
+
+There are no more 2’s left to factor out of the numerator, so we are done and the answer is <math>\boxed{\boxed{683}}</math>.
+
+
+~KingRavi

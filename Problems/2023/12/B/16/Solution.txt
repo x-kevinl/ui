@@ -1,0 +1,33 @@
+==Solution 1==
+
+This problem asks to find largest $x$ that cannot be written as
+$$
+\[
+6 a + 10 b + 15 c = x, \hspace{1cm} (1)
+\]
+$$
+where $a, b, c \in \Bbb Z_+$.
+
+Denote by $r \in \left\{ 0, 1 \right\}$ the remainder of $x$ divided by 2.
+Modulo 2 on Equation (1), we get
+By using modulus $m \in \left\{ 2, 3, 5 \right\}$ on the equation above, we get
+$c \equiv r \pmod{2}$. 
+
+Following from Chicken McNugget's theorem, we have that any number that is no less than $(3-1)(5-1) = 8$ can be expressed in the form of $3a + 5b$ with $a, b \in \Bbb Z_+$.
+
+Therefore, all even numbers that are at least equal to $2 \cdot 8 + 15 \cdot 0 = 16$ can be written in the form of Equation (1) with $a, b, c \in \Bbb Z_+$.
+All odd numbers that are at least equal to $2 \cdot 8 + 15 \cdot 1 = 31$ can be written in the form of Equation (1) with $a, b, c \in \Bbb Z_+$.
+
+The above two cases jointly imply that all numbers that are at least 30 can be written in the form of Equation (1) with $a, b, c \in \Bbb Z_+$.
+
+Next, we need to prove that 29 cannot be written in the form of Equation (1) with $a, b, c \in \Bbb Z_+$.
+
+Because 29 is odd, we must have $c \equiv 1 \pmod{2}$.
+Because $a, b, c \in \Bbb Z_+$, we must have $c = 1$.
+Plugging this into Equation (1), we get $3 a + 5 b = 7$.
+However, this equation does not have non-negative integer solutions.
+
+All analysis above jointly imply that the largest $x$ that has no non-negative integer solution to Equation (1) is 29.
+Therefore, the answer is $2 + 9 = \boxed{\textbf{(D) 11}}$.
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)

@@ -1,0 +1,13 @@
+== Solution 1 ==
+
+<center>[[File:AMC 2010 12A Problem 8.png]]</center>
+
+
+Let $\angle BAE = \angle ACD = x$.
+
+$$\begin{align*}\angle BCD &= \angle AEC = 60^\circ\\
+ \angle EAC + \angle FCA + \angle ECF + \angle AEC &= \angle EAC + x + 60^\circ + 60^\circ = 180^\circ\\
+ \angle EAC &= 60^\circ - x\\
+ \angle BAC &= \angle EAC + \angle BAE = 60^\circ - x + x = 60^\circ\end{align*}$$
+
+Since $\frac{AC}{AB} = \frac{1}{2}$ and the angle between the hypotenuse and the shorter side is $60^\circ$, triangle $ABC$ is a $30-60-90$ triangle, so $\angle BCA = \boxed{90^\circ\,\textbf{(C)}}$.

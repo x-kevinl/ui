@@ -1,0 +1,4 @@
+==Problem==
+Abdul and Chiang are standing $48$ feet apart in a field. Bharat is standing in the same field as far from Abdul as possible so that the angle formed by his lines of sight to Abdul and Chiang measures $60^\circ$. What is the square of the distance (in feet) between Abdul and Bharat? 
+
+$\textbf{(A) } 1728 \qquad \textbf{(B) } 2601 \qquad \textbf{(C) } 3072 \qquad \textbf{(D) } 4608 \qquad \textbf{(E) } 6912$

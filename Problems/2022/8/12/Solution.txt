@@ -1,0 +1,5 @@
+==Solution 1==
+
+First, we calculate that there are a total of $4\cdot4=16$ possibilities. Now, we list all of two-digit perfect squares. $64$ and $81$ are the only ones that can be made using the spinner. Consequently, there is a $\frac{2}{16}=\boxed{\textbf{(B) }\dfrac{1}{8}}$ probability that the number formed by the two spinners is a perfect square.
+
+~MathFun1000

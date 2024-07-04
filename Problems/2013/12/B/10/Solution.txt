@@ -1,0 +1,7 @@
+== Solution 1==
+
+If Alex goes to the red booth 3 times, then goes to the blue booth once, Alex can exchange 6 red tokens for 4 silver tokens and one red token. Similarly, if Alex goes to the blue booth 2 times, then goes to the red booth once, Alex can exchange 6 blue tokens for 3 silver tokens and one blue token. Let's call the first combination Combo 1, and the second combination Combo 2.
+
+In other words, Alex can exchange 5 red tokens for 4 silver tokens as long as he has at least 6 red tokens, and Alex can exchange 5 blue tokens for 3 silver tokens as long as he has at least 6 blue tokens. Hence after performing 14 Combo 1's and 14 Combo 2's, we end up with 5 red, 5 blue, and 98 silver tokens.
+
+Finally, Alex can visit the blue booth once, then do Combo 1, then visit the blue booth once more to end up with 1 red token, 2 blue tokens, and $\boxed{\textbf{(E)}\ 103}$ silver tokens, at which point it is clear he cannot use the booths anymore.

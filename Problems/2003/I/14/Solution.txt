@@ -1,0 +1,11 @@
+== Solution ==
+To find the smallest value of <math>n</math>, we consider when the first three digits after the decimal point are <math>0.251\ldots</math>. 
+
+
+Otherwise, suppose the number is in the form of <math>\frac{m}{n} = 0.X251 \ldots</math>, where <math>X</math> is a string of <math>k</math> digits and <math>n</math> is small as possible. Then <math>10^k \cdot \frac{m}{n} - X = \frac{10^k m - nX}{n} = 0.251 \ldots</math>. Since <math>10^k m - nX</math> is an integer and <math>\frac{10^k m - nX}{n}</math> is a fraction between <math>0</math> and <math>1</math>, we can rewrite this as <math>\frac{10^k m - nX}{n} = \frac{p}{q}</math>, where <math>q \le n</math>. Then the fraction <math>\frac pq = 0.251 \ldots</math> suffices. 
+
+Thus we have <math>\frac{m'}{n} = 0.251\ldots</math>, or 
+
+<center><math>\frac{251}{1000} \le \frac{m'}{n} < \frac{252}{1000} \Longleftrightarrow 251n \le 1000m' < 252n \Longleftrightarrow n \le 250(4m'-n) < 2n.</math></center> 
+
+As <math>4m' > n</math>, we know that the minimum value of <math>4m' - n</math> is <math>1</math>; hence we need <math>250 < 2n \Longrightarrow 125 < n</math>. Since <math>4m' - n = 1</math>, we need <math>n + 1</math> to be divisible by <math>4</math>, and this first occurs when <math>n = \boxed{ 127 }</math> (note that if <math>4m'-n > 1</math>, then <math>n > 250</math>). Indeed, this gives <math>m' = 32</math> and the fraction <math>\frac {32}{127}\approx 0.25196 \ldots</math>).

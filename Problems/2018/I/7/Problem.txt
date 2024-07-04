@@ -1,0 +1,2 @@
+==Problem==
+A right hexagonal prism has height <math>2</math>. The bases are regular hexagons with side length <math>1</math>. Any <math>3</math> of the <math>12</math> vertices determine a triangle. Find the number of these triangles that are isosceles (including equilateral triangles).

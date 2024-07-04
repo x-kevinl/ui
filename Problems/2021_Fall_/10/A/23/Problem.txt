@@ -1,0 +1,4 @@
+== Problem ==
+For each positive integer $n$, let $f_1(n)$ be twice the number of positive integer divisors of $n$, and for $j \ge 2$, let $f_j(n) = f_1(f_{j-1}(n))$. For how many values of $n \le 50$ is $f_{50}(n) = 12?$
+
+$\textbf{(A) }7\qquad\textbf{(B) }8\qquad\textbf{(C) }9\qquad\textbf{(D) }10\qquad\textbf{(E) }11$

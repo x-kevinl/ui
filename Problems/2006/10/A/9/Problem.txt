@@ -1,0 +1,4 @@
+== Problem ==
+How many [[set]]s of two or more consecutive positive integers have a sum of $15$?
+
+$ \textbf{(A) } 1\qquad \textbf{(B) } 2\qquad \textbf{(C) } 3\qquad \textbf{(D) } 4\qquad \textbf{(E) }  5$

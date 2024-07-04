@@ -1,0 +1,2 @@
+==Solution==
+For each condiment, a customer may either choose to order it or not.  There are $8$ total condiments to choose from.  Therefore, there are $2^8=256$ ways to order the condiments. There are also $3$ choices for the meat, making a total of $256\times3=768$ possible hamburgers. $\boxed{\mathrm{(C)}\ 768}$

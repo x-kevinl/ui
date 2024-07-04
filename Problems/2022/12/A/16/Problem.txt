@@ -1,0 +1,6 @@
+==Problem==
+
+A $\emph{triangular number}$ is a positive integer that can be expressed in the form $t_n = 1+2+3+\cdots+n$, for some positive integer $n$. The three smallest triangular numbers that are also perfect squares are
+$t_1 = 1 = 1^2$, $t_8 = 36 = 6^2$, and $t_{49} = 1225 = 35^2$. What is the sum of the digits of the fourth smallest triangular number that is also a perfect square?
+
+$\textbf{(A) } 6 \qquad \textbf{(B) } 9 \qquad \textbf{(C) } 12 \qquad \textbf{(D) } 18 \qquad \textbf{(E) } 27 $

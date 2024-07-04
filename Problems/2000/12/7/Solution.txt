@@ -1,0 +1,2 @@
+== Solution ==
+If $\log_{b} 729 = n$, then $b^n = 729$. Since $729 = 3^6$, $b$ must be $3$ to some [[factor]] of 6. Thus, there are four (3, 9, 27, 729) possible values of $b \Longrightarrow \boxed{\mathrm{E}}$.

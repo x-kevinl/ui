@@ -1,0 +1,2 @@
+==Solution==
+For the least possible surface area that is white, we should have 1 cube in the center, and the other 5 with only 1 face exposed. This gives 5 square inches of white, surface area. Since the cube has a surface area of 54 square inches, our answer is $\boxed{\textbf{(A) }\frac{5}{54}}$.

@@ -1,0 +1,6 @@
+==Problem==
+The faces of a cube are painted in six different colors: red $(R)$, white $(W)$, green $(G)$, brown $(B)$, aqua $(A)$, and purple $(P)$. Three views of the cube are shown below. What is the color of the face opposite the aqua face?
+
+[[File:2019AMC8Prob12.png]]
+
+$ \textbf{(A)} \text{ red}\qquad\textbf{(B)} \text{ white}\qquad\textbf{(C)} \text{ green}\qquad\textbf{(D)} \text{ brown}\qquad\textbf{(E)} \text{ purple} $

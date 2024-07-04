@@ -1,0 +1,6 @@
+== Problem ==
+
+Lola, Lolo, Tiya, and Tiyo participated in a ping pong tournament. Each player competed against each of the other three players exactly twice. Shown below are the win-loss records for the players. The numbers $1$ and $0$ represent a win or loss, respectively. For example, Lola won five matches and lost the fourth match. What was Tiyo’s win-loss record?
+
+$$\begin{tabular}{c | c} Player & Result \\ \hline Lola & \texttt{111011}\\ Lolo & \texttt{101010}\\ Tiya & \texttt{010100}\\ Tiyo & \texttt{??????} \end{tabular}$$
+$\textbf{(A)}\ \texttt{000101} \qquad \textbf{(B)}\ \texttt{001001} \qquad \textbf{(C)}\ \texttt{010000} \qquad \textbf{(D)}\ \texttt{010101} \qquad \textbf{(E)}\ \texttt{011000}$

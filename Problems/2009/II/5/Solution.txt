@@ -1,0 +1,13 @@
+== Solution ==
+
+Let <math>X</math> be the intersection of the circles with centers <math>B</math> and <math>E</math>, and <math>Y</math> be the intersection of the circles with centers <math>C</math> and <math>E</math>. Since the radius of <math>B</math> is <math>3</math>, <math>AX =4</math>. Assume <math>AE</math> = <math>p</math>. Then <math>EX</math> and <math>EY</math> are radii of circle <math>E</math> and have length <math>4+p</math>. <math>AC = 8</math>, and angle <math>CAE = 60</math> degrees because we are given that triangle <math>T</math> is equilateral. Using the [[Law of Cosines]] on triangle <math>CAE</math>, we obtain
+
+<math>(6+p)^2 =p^2 + 64 - 2(8)(p) \cos 60</math>.
+
+The <math>2</math> and the <math>\cos 60</math> terms cancel out:
+
+<math>p^2 + 12p +36 = p^2 + 64 - 8p</math>
+
+<math>12p+ 36 = 64 - 8p</math>
+
+<math>p =\frac {28}{20} = \frac {7}{5}</math>. The radius of circle <math>E</math> is <math>4 + \frac {7}{5} = \frac {27}{5}</math>, so the answer is <math>27 + 5 = \boxed{032}</math>.

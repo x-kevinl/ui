@@ -1,0 +1,78 @@
+==Solution 1==
+
+Because <math>0 < x < 1</math>, we have
+<cmath>
+\begin{align*}
+P \left( x \right)
+& = \sum_{a=0}^6 
+\sum_{b=0}^\infty \sum_{c=0}^\infty \sum_{d=0}^\infty \sum_{e=0}^\infty
+\binom{6}{a} x^{2310a} \left( - 1 \right)^{6-a}
+x^{105b} x^{70c} x^{42d} x^{30e} \\
+& = \sum_{a=0}^6
+\sum_{b=0}^\infty \sum_{c=0}^\infty \sum_{d=0}^\infty \sum_{e=0}^\infty
+\left( - 1 \right)^{6-a}
+x^{2310 a + 105 b + 70 c + 42 d + 30 e} .
+\end{align*}
+</cmath>
+
+Denote by <math>c_{2022}</math> the coefficient of <math>P \left( x \right)</math>.
+Thus,
+<cmath>
+\begin{align*}
+c_{2022} & = \sum_{a=0}^6
+\sum_{b=0}^\infty \sum_{c=0}^\infty \sum_{d=0}^\infty \sum_{e=0}^\infty
+\left( - 1 \right)^{6-a} \Bbb I \left\{ 2310 a + 105 b + 70 c + 42 d + 30 e = 2022 \right\} \\
+& = 
+\sum_{b=0}^\infty \sum_{c=0}^\infty \sum_{d=0}^\infty \sum_{e=0}^\infty
+\left( - 1 \right)^{6-0} \Bbb I \left\{ 2310 \cdot 0 + 105 b + 70 c + 42 d + 30 e = 2022 \right\} \\
+& = \sum_{b=0}^\infty \sum_{c=0}^\infty \sum_{d=0}^\infty \sum_{e=0}^\infty
+\Bbb I \left\{ 105 b + 70 c + 42 d + 30 e = 2022 \right\} .
+\end{align*}
+</cmath>
+
+Now, we need to find the number of nonnegative integer tuples <math>\left( b , c , d , e \right)</math> that satisfy 
+<cmath>
+\[
+105 b + 70 c + 42 d + 30 e = 2022 . \hspace{1cm} (1)
+\]
+</cmath>
+
+Modulo 2 on Equation (1), we have <math>b \equiv 0 \pmod{2}</math>.
+Hence, we can write <math>b = 2 b'</math>. Plugging this into (1), the problem reduces to finding the number of 
+nonnegative integer tuples <math>\left( b' , c , d , e \right)</math> that satisfy
+<cmath>
+\[
+105 b' + 35 c + 21 d + 15 e = 1011 . \hspace{1cm} (2)
+\]
+</cmath>
+
+Modulo 3 on Equation (2), we have <math>2 c \equiv 0 \pmod{3}</math>.
+Hence, we can write <math>c = 3 c'</math>. Plugging this into (2), the problem reduces to finding the number of
+nonnegative integer tuples <math>\left( b' , c' , d , e \right)</math> that satisfy
+<cmath>
+\[
+35 b' + 35 c' + 7 d + 5 e = 337 . \hspace{1cm} (3)
+\]
+</cmath>
+
+Modulo 5 on Equation (3), we have <math>2 d \equiv 2 \pmod{5}</math>.
+Hence, we can write <math>d = 5 d' + 1</math>. Plugging this into (3), the problem reduces to finding the number of
+nonnegative integer tuples <math>\left( b' , c' , d' , e \right)</math> that satisfy
+<cmath>
+\[
+7 b' + 7 c' + 7 d' + e = 66 . \hspace{1cm} (4)
+\]
+</cmath>
+
+Modulo 7 on Equation (4), we have <math>e \equiv 3 \pmod{7}</math>.
+Hence, we can write <math>e = 7 e' + 3</math>. Plugging this into (4), the problem reduces to finding the number of
+nonnegative integer tuples <math>\left( b' , c' , d' , e' \right)</math> that satisfy
+<cmath>
+\[
+b' + c' + d' + e' = 9 . \hspace{1cm} (5)
+\]
+</cmath>
+
+The number of nonnegative integer solutions to Equation (5) is <math>\binom{9 + 4 - 1}{4 - 1} = \binom{12}{3} =  \boxed{\textbf{(220) }}</math>.
+
+~Steven Chen (www.professorchenedu.com)

@@ -1,0 +1,6 @@
+== Solution ==
+Taking the prime factorization of $161$ reveals that it is equal to $23*7.$ Therefore, the only ways to represent $161$ as a product of two positive integers is $161*1$ and $23*7.$ Because neither $161$ nor $1$ is a two-digit number, we know that $a$ and $b$ are $23$ and $7.$ Because $23$ is a two-digit number, we know that a, with its two digits reversed, gives $23.$ Therefore, $a = 32$ and $b = 7.$ Multiplying our two correct values of $a$ and $b$ yields
+
+$$ a*b = 32*7 = $$
+
+$$ = \boxed{224 \textbf{(E)}} $$

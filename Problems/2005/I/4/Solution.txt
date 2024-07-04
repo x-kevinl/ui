@@ -1,0 +1,31 @@
+== Solution ==
+=== Solution 1 ===
+If <math>n > 14</math> then <math>n^2 + 6n + 14 < n^2 + 7n < n^2 + 8n + 21</math> and so <math>(n + 3)^2 + 5 < n(n + 7) < (n + 4)^2 + 5</math>.  If <math>n</math> is an [[integer]] there are no numbers which are 5 more than a [[perfect square]] strictly between <math>(n + 3)^2 + 5</math> and <math>(n + 4)^2 + 5</math>.  Thus, if the number of columns is <math>n</math>, the number of students is <math>n(n + 7)</math> which must be 5 more than a perfect square, so <math>n \leq 14</math>.  In fact, when <math>n = 14</math> we have <math>n(n + 7) = 14\cdot 21 = 294 = 17^2 + 5</math>, so this number works and no larger number can.  Thus, the answer is <math>\boxed{294}</math>.
+
+=== Solution 2 ===
+Define the number of rows/columns of the square formation as <math>s</math>, and the number of rows of the rectangular formation <math>r</math> (so there are <math>r - 7</math> columns). Thus, <math>s^2 + 5 = r(r-7) \Longrightarrow r^2 - 7r - s^2 - 5 = 0</math>. The [[quadratic formula]] yields <math>r = \frac{7 \pm \sqrt{49 - 4(1)(-s^2 - 5)}}{2} = \frac{7 \pm \sqrt{4s^2 + 69}}{2}</math>. <math>\sqrt{4s^2 + 69}</math> must be an [[integer]], say <math>x</math>. Then <math>4s^2 + 69 = x^2</math> and <math>(x + 2s)(x - 2s) = 69</math>. The factors of <math>69</math> are <math>(1,69), (3,23)</math>; <math>x</math> is maximized for the first case. Thus, <math>x = \frac{69 + 1}{2} = 35</math>, and <math>r = \frac{7 \pm 35}{2} = 21, -14</math>. The latter obviously can be discarded, so there are <math>21</math> rows and <math>21 - 7 = 14</math> columns, making the answer <math>294</math>.
+
+=== Solution 3 ===
+The number of members is <math>m^2+5=n(n+7)</math> for some <math>n</math> and <math>m</math>. Multiply both sides by <math>4</math> and [[completing the square|complete the square]] to get <math>4m^2+69=(2n+7)^2</math>. Thus, we have <math>69=((2n+7)+2m)((2n+7)-2m)</math>. Since we want to maximize <math>n</math>, set the first factor equal to <math>69</math> and the second equal to <math>1</math>. Now we have the systems of equations 
+<cmath>2n+2m+7 = 69</cmath>
+<cmath>2n-2m+7 = 1</cmath>
+Adding these two equations gives us <math>4n+14=70</math> which means <math>4n=56</math> so <math>n=14</math>. 
+Thus, the answer is <math>14\cdot21=294</math>. <math>\square</math>
+
+~lpieleanu
+
+=== Solution 4 ===
+Partially completing the square
+
+Geometrically: Split up the formation of <math>n + 7</math> rows and <math>n</math> columns into a square of <math>n</math> rows and <math>n</math> columns and a separate rectangle of the dimensions <math>7</math> rows by <math>n</math> columns. We want to take the rows from the rectangle and add them to the square to get another square and <math>5</math> left over. If we attach exactly <math>2</math> rows on the top and exactly <math>2</math> rows on the side of the <math>n</math> x <math>n</math> square, then we have an <math>(n + 2)</math> x <math>(n + 2)</math> square that's missing a <math>2</math> x <math>2</math> corner. For the remaining <math>3n</math> to fill this square plus the <math>5</math> extra members, <math>n</math> must be <math>3</math>. If we instead plaster exactly <math>3</math> rows from the <math>7</math> x <math>n</math> formation to two adjacent sides of the <math>n</math> x <math>n</math> square, we have an <math>(n + 3)</math> x <math>(n + 3)</math> formation that's missing a <math>3</math> x <math>3</math> corner. For the remaining row of length <math>n</math> to fill this plus five, <math>n = 14</math>. Plugging these in, we find <math>n = 14</math> has a much higher count of members: <math>(n + 7)n; n = 14 --> 21(14) = 294</math>
+
+Algebraically: We have <math>n^2 + 7n = m</math>, where <math>m</math> is the number of members in the band and <math>n</math> is a positive integer. We partially complete the square for <math>n</math> to get 
+<math>n^2 + 7n = (n + 1)^2 + 5n - 1 = (n + 2)^2 + 3n - 4 = (n + 3)^2 + n - 9</math>
+Our goal is to get <math>n^2 + 7n = y^2 + 5</math> because we want <math>m</math> to be <math>5</math> more than a perfect square. From the above, <math>5n - 1 = 5</math> means <math>n</math> isn't an integer, <math>3n - 4 = 5</math> means that <math>n = 3</math>, and <math>n - 9 = 5</math> means that <math>n = 14</math>. Out of these, <math>n = 14</math> is associated with the highest number of members in the band, so <math>m = (14^2) + 7(14) = 294</math>
+
+
+=== Solution 5===
+
+Let there be <math>m</math> members and <math>n</math> members for the square and <math>c</math> for the number of columns of the other formation. We have <math>n^2 +5 = c(c+7) \implies n^2+5 = \left(c+\frac{7}{2}\right)^2 -\frac{49}{4} \implies n^2 - \left(c+\frac{7}{2}\right)^2 = -\frac{69}{4} \implies \left(n-c-\frac{7}{2}\right)\left(n + c +\frac{7}{2}\right) \implies (2n-2c-7)(2n+2n+7) = -69.</math>
+
+To maximize this we let <math>2n+2c+7 = 68</math> and <math>2n-2c-7 = 1.</math> Solving we find <math>n = 17</math> so the desired number of members is <math>17^2 + 5 = \boxed{294}.</math>

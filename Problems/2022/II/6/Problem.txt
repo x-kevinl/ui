@@ -1,0 +1,2 @@
+==Problem==
+Let <math>x_1\leq x_2\leq \cdots\leq x_{100}</math> be real numbers such that <math>|x_1| + |x_2| + \cdots + |x_{100}| = 1</math> and <math>x_1 + x_2 + \cdots + x_{100} = 0</math>. Among all such <math>100</math>-tuples of numbers, the greatest value that <math>x_{76} - x_{16}</math> can achieve is <math>\tfrac mn</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

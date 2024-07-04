@@ -1,0 +1,2 @@
+==Problem 10==
+Let <math>z_1=18+83i,~z_2=18+39i,</math> and <math>z_3=78+99i,</math> where <math>i=\sqrt{-1}.</math> Let <math>z</math> be the unique complex number with the properties that <math>\frac{z_3-z_1}{z_2-z_1}~\cdot~\frac{z-z_2}{z-z_3}</math> is a real number and the imaginary part of <math>z</math> is the greatest possible. Find the real part of <math>z</math>.

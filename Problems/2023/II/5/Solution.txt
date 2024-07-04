@@ -1,0 +1,67 @@
+==Solution==
+
+Denote <math>r = \frac{a}{b}</math>, where <math>\left( a, b \right) = 1</math>.
+We have <math>55 r = \frac{55a}{b}</math>.
+Suppose <math>\left( 55, b \right) = 1</math>, then the sum of the numerator and the denominator of <math>55r</math> is <math>55a + b</math>.
+This cannot be equal to the sum of the numerator and the denominator of <math>r</math>, <math>a + b</math>.
+Therefore, <math>\left( 55, b \right) \neq 1</math>.
+
+Case 1: <math>b</math> can be written as <math>5c</math> with <math>\left( c, 11 \right) = 1</math>.
+
+Thus, <math>55r = \frac{11a}{c}</math>.
+
+Because the sum of the numerator and the denominator of <math>r</math> and <math>55r</math> are the same,
+<cmath>
+\[
+a + 5c = 11a + c .
+\]
+</cmath>
+
+Hence, <math>2c = 5 a</math>.
+
+Because <math>\left( a, b \right) = 1</math>, <math>\left( a, c \right) = 1</math>.
+Thus, <math>a = 2</math> and <math>c = 5</math>.
+Therefore, <math>r = \frac{a}{5c} = \frac{2}{25}</math>.
+
+Case 2: <math>b</math> can be written as <math>11d</math> with <math>\left( d, 5 \right) = 1</math>.
+
+Thus, <math>55r = \frac{5a}{c}</math>.
+
+Because the sum of the numerator and the denominator of <math>r</math> and <math>55r</math> are the same,
+<cmath>
+\[
+a + 11c = 5a + c .
+\]
+</cmath>
+
+Hence, <math>2a = 5 c</math>.
+
+Because <math>\left( a, b \right) = 1</math>, <math>\left( a, c \right) = 1</math>.
+Thus, <math>a = 5</math> and <math>c = 2</math>.
+Therefore, <math>r = \frac{a}{11c} = \frac{5}{22}</math>.
+
+Case 3: <math>b</math> can be written as <math>55 e</math>.
+
+Thus, <math>55r = \frac{a}{c}</math>.
+
+Because the sum of the numerator and the denominator of <math>r</math> and <math>55r</math> are the same,
+<cmath>
+\[
+a + 55c = a + c .
+\]
+</cmath>
+
+Hence, <math>c = 0</math>. This is infeasible.
+Thus, there is no solution in this case.
+
+Putting all cases together, <math>S = \left\{ \frac{2}{25}, \frac{5}{22} \right\}</math>.
+Therefore, the sum of all numbers in <math>S</math> is
+<cmath>
+\[
+\frac{2}{25} + \frac{5}{22} = \frac{169}{550} .
+\]
+</cmath>
+
+Therefore, the answer is <math>169 + 550 = \boxed{\textbf{(719) }}</math>.
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)

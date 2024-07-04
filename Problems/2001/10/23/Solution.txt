@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+Imagine that we draw all the chips in random order, i.e., we do not stop when the last chip of a color is drawn. To draw out all the white chips first, the last chip left must be red, and all previous chips can be drawn in any order. Since there are $3$ red chips, the probability that the last chip of the five is red (and so also the probability that the last chip drawn is white) is $\boxed{\textbf{(D) } \frac {3}{5}}$.
+
+~A genius ofc

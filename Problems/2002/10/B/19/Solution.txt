@@ -1,0 +1,14 @@
+== Solution 1 ==
+
+
+We should realize that the two equations are 100 terms apart, so by subtracting the two equations in a form like...
+
+$$(a_{101} - a_1) + (a_{102} - a_2) +... + (a_{200} - a_{100}) = 200-100 = 100 $$
+
+...we get the value of the common difference of every hundred terms one hundred times. So we have to divide the answer by one hundred to get ... 
+
+$\frac{100}{100} = 1 $
+
+...the common difference of every hundred terms. Then we have to simply divide the answer by hundred again to find the common difference between one term, therefore...
+
+$\frac{1}{100} =\boxed{(\textbf{C})\ 0.01}$

@@ -1,0 +1,27 @@
+==Problem==
+An annulus is the region between two concentric circles. The concentric circles in the figure have radii $b$ and $c$, with $b>c$. Let $OX$ be a radius of the larger circle, let $XZ$ be tangent to the smaller circle at $Z$, and let $OY$ be the radius of the larger circle that contains $Z$. Let $a=XZ$, $d=YZ$, and $e=XY$. What is the area of the annulus? 
+
+<asy>
+unitsize(1.5cm);
+defaultpen(0.8);
+real r1=1.5, r2=2.5;
+pair O=(0,0);
+path inner=Circle(O,r1), outer=Circle(O,r2);
+pair Y=(0,r2), Z=(0,r1), X=intersectionpoint( Z--(Z+(10,0)), outer );
+filldraw(outer,lightgray,black);
+filldraw(inner,white,black);
+draw(X--O--Y); draw(Y--X--Z);
+label("$O$",O,SW);
+label("$X$",X,E);
+label("$Y$",Y,N);
+label("$Z$",Z,SW);
+label("$a$",X--Z,N);
+label("$b$",0.25*X,SE);
+label("$c$",O--Z,E);
+label("$d$",Y--Z,W);
+label("$e$",Y*0.65 + X*0.35,SW);
+defaultpen(0.5);
+dot(O); dot(X); dot(Z); dot(Y);
+</asy>
+
+$ \mathrm{(A) \ } \pi a^2 \qquad \mathrm{(B) \ } \pi b^2 \qquad \mathrm{(C) \ } \pi c^2 \qquad \mathrm{(D) \ } \pi d^2 \qquad \mathrm{(E) \ } \pi e^2 $

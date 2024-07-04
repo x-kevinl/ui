@@ -1,0 +1,16 @@
+==Solution==
+
+
+Let's set the altitude = z, distance from Alice to airplane's ground position (point right below airplane)=y and distance from Bob to airplane's ground position=x
+
+From Alice's point of view, $\tan(\theta)=\frac{z}{y}$. $\tan{30}=\frac{\sin{30}}{\cos{30}}=\frac{1}{\sqrt{3}}$. So, $y=z*\sqrt{3}$
+
+From Bob's point of view, $\tan(\theta)=\frac{z}{x}$. $\tan{60}=\frac{\sin{60}}{\cos{60}}=\sqrt{3}$. So, $x = \frac{z}{\sqrt{3}}$
+
+We know that <Math>x^2</Math> + <Math>y^2</Math> = <Math>10^2</Math>
+
+Solving the equation (by plugging in x and y), we get z=$\sqrt{30}$ = about 5.5.  
+
+So, answer is <Math>E) 5.5</Math>
+
+solution by sudeepnarala

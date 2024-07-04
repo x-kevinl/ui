@@ -1,0 +1,40 @@
+==Solution 1 (Reflections + Ptolemy's Theorem)==
+Consider the reflection $P^{\prime}$ of $P$ over the perpendicular bisector of $\overline{BC}$, creating two new isosceles trapezoids $DAPP^{\prime}$ and $CBPP^{\prime}$. Under this reflection, $P^{\prime}A=PD=4$, $P^{\prime}D=PA=1$, $P^{\prime}C=PB=2$, and $P^{\prime}B=PC=3$. 
+
+Since $DAPP'$ and $CBPP'$ are isosceles trapezoids, they are cyclic. Using [[Ptolemy's theorem|Ptolemy's theorem]] on $DAPP'$, we get that $(PP')(AD) + (PA)(P'D) = (AP')(PD)$, so 
+$$PP' \cdot AD + 1 \cdot 1 = 4 \cdot 4.$$ Then, using Ptolemy's theorem again on $CBPP'$, we get that $(BC)(PP') + (BP)(CP') = (BP')(CP)$, so 
+$$PP' \cdot BC + 2 \cdot 2 = 3 \cdot 3.$$ Thus, $PP^{\prime}\cdot AD=15$ and $PP^{\prime}\cdot BC=5$; dividing these two equations and taking the reciprocal yields $\frac{BC}{AD}=\boxed{\textbf{(B) }\frac{1}{3}}$.
+<asy>
+size(300);
+pair A = (0,0);
+pair B = (1, 2);
+pair C = (2,2);
+pair D = (3,0);
+label("$A$", A, SW);
+label("$B$", B, NW);
+label("$C$", C, NE);
+label("$D$", D, SE);
+draw(A--B--C--D--cycle, blue);
+pair P = (0.8, 0.6);
+dot("$P$", P, NW);
+draw(P--A, magenta);
+draw(P--B, magenta);
+draw(P--C);
+draw(P--D);
+label("$1$", P--A, NW);
+label("$2$", P--B, E);
+label("$3$", P--C, NW);
+label("$4$", P--D, S);
+pair P1 = (2.2, 0.6);
+dot("$P'$", P1, NE);
+draw(P1--D, magenta);
+draw(P1--C, magenta);
+draw(P1--A);
+draw(P1--B);
+label("$1$", P1--D, NE);
+label("$2$", P1--C, E);
+label("$3$", P1--B, NE);
+label("$4$", P1--A, SE);
+draw(P--P1, dashed+magenta);
+</asy>
+(diagram by cinnamon_e)

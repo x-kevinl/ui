@@ -1,0 +1,2 @@
+== Problem ==
+The number <math> \sqrt{104\sqrt{6}+468\sqrt{10}+144\sqrt{15}+2006}</math> can be written as <math> a\sqrt{2}+b\sqrt{3}+c\sqrt{5}, </math> where <math> a, b, </math> and <math> c </math> are [[positive]] [[integer]]s. Find <math>abc</math>.

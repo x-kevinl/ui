@@ -1,0 +1,7 @@
+==Solution==
+Note from the addition of the last digits that $A+B=D\text{ or }A+B=D+10$. 
+From the addition of the frontmost digits, $A+B$ cannot have a carry, since the answer is still a five-digit number. Also $A + B$ cant have a carry since then for the second column, $C + 1 + D$ cant equal $D$. 
+Therefore $A+B=D$. 
+
+Using the second or fourth column, this then implies that $C=0$, so that $B+C=B$ and $C+D=D$. 
+Note that all of the remaining equalities are now satisfied: $A+B=D, B+C=B,$ and $B+A=D$. Since the digits must be distinct, the smallest possible value of $D$ is $1+2=3$, and the largest possible value is $9$. Thus we have that $3\le D\le9$, so the number of possible values is $\boxed{\textbf{(C) }7}$

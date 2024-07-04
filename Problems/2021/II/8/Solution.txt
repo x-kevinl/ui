@@ -1,0 +1,94 @@
+==Solution 1 (Four-Variable Recursion)==
+For all positive integers <math>k,</math> let
+
+* <math>N(k,\mathrm{BB})</math> be the number of ways to make a sequence of exactly <math>k</math> moves, where the last move is from the bottom face to the bottom face.
+
+* <math>N(k,\mathrm{BT})</math> be the number of ways to make a sequence of exactly <math>k</math> moves, where the last move is from the bottom face to the top face.
+
+* <math>N(k,\mathrm{TB})</math> be the number of ways to make a sequence of exactly <math>k</math> moves, where the last move is from the top face to the bottom face.
+
+* <math>N(k,\mathrm{TT})</math> be the number of ways to make a sequence of exactly <math>k</math> moves, where the last move is from the top face to the top face.
+
+The base case occurs at <math>k=1,</math> from which <math>\left(N(1,\mathrm{BB}),N(1,\mathrm{BT}),N(1,\mathrm{TB}),N(1,\mathrm{TT})\right)=(2,1,0,0).</math> 
+
+Suppose the ant makes exactly <math>k</math> moves for some <math>k\geq2.</math> We perform casework on its last move:
+<ol style="margin-left: 1.5em;">
+  <li>If its last move is from the bottom face to the bottom face, then its next move has</li><p>
+<ul style="margin-left: 1.5em; list-style-type: circle">
+  <li><math>1</math> way to move from the bottom face to the bottom face.</li><p>
+  <li><math>1</math> way to move from the bottom face to the top face.</li><p>
+</ul>
+  <li>If its last move is from the bottom face to the top face, then its next move has <math>2</math> ways to move from the top face to the top face.</li><p>
+  <li>If its last move is from the top face to the bottom face, then its next move has <math>2</math> ways to move from the bottom face to the bottom face.</li><p>
+  <li>If its last move is from the top face to the top face, then its next move has<p>
+<ul style="margin-left: 1.5em; list-style-type: circle">
+  <li><math>1</math> way to move from the top face to the bottom face.</li><p>
+  <li><math>1</math> way to move from the top face to the top face.</li><p>
+</ul>
+</ol>
+Alternatively, this recursion argument is illustrated below, where each dashed arrow indicates <math>1</math> way, and each solid arrow indicates <math>2</math> ways:
+<asy>
+/* Made by MRENTHUSIASM */ 
+size(9cm); 
+pair A, B, C, D, E, F, G, H, X, Y; 
+A=(0,6); 
+B=(0,4); 
+C=(0,2); 
+D=(0,0); 
+E=(10,6); 
+F=(10,4); 
+G=(10,2); 
+H=(10,0); 
+X=(-1,8); 
+Y=(11,8); 
+label("BB", A, (-2,0)); 
+label("BT", B, (-2,0)); 
+label("TB", C, (-2,0)); 
+label("TT", D, (-2,0)); 
+label("BB", E, (2,0)); 
+label("BT", F, (2,0)); 
+label("TB", G, (2,0)); 
+label("TT", H, (2,0)); 
+label("\textbf{The \boldmath{$k$}th Move}", shift(0.3,0)*X); 
+label("\textbf{The \boldmath{$(k+1)$}th Move}", shift(-0.3,-0.085)*Y); 
+draw(A--E,0.8+black+dashed,EndArrow); 
+draw(A--F,0.8+black+dashed,EndArrow); 
+draw(B--H,0.8+black,EndArrow); 
+draw(C--E,0.8+black,EndArrow); 
+draw(D--G,0.8+black+dashed,EndArrow); 
+draw(D--H,0.8+black+dashed,EndArrow); 
+dot(A^^B^^C^^D^^E^^F^^G^^H, 5+black);
+</asy>
+Therefore, we have the following relationships:
+<cmath>\begin{align*}
+N(1,\mathrm{BB})&=2, \\ 
+N(1,\mathrm{BT})&=1, \\
+N(1,\mathrm{TB})&=0, \\
+N(1,\mathrm{TT})&=0, \\
+N(k+1,\mathrm{BB})&=N(k,\mathrm{BB})+2\cdot N(k,\mathrm{TB}), \\
+N(k+1,\mathrm{BT})&=N(k,\mathrm{BB}), \\
+N(k+1,\mathrm{TB})&=N(k,\mathrm{TT}), \\
+N(k+1,\mathrm{TT})&=N(k,\mathrm{TT})+2\cdot N(k,\mathrm{BT}).
+\end{align*}</cmath>
+Using these equations, we recursively fill out the table below:
+<cmath>\begin{array}{c||c|c|c|c|c|c|c|c}   
+\hspace{7mm}&\hspace{6.5mm}&\hspace{6.5mm}&\hspace{6.75mm}&\hspace{6.75mm}&\hspace{6.75mm}&\hspace{6.75mm}&& \\ [-2.5ex]
+\boldsymbol{k} & \boldsymbol{1} & \boldsymbol{2} & \boldsymbol{3} & \boldsymbol{4} & \boldsymbol{5} & \boldsymbol{6} & \boldsymbol{7} & \boldsymbol{8} \\ 
+\hline \hline
+&&&&&&&& \\ [-2.25ex]
+\boldsymbol{N(k,\mathrm{BB})} &2&2&2&6&18&38&66&118 \\ \hline  
+&&&&&&&& \\ [-2.25ex]
+\boldsymbol{N(k,\mathrm{BT})} &1&2&2&2&6&18&38&66 \\ \hline 
+&&&&&&&& \\ [-2.25ex]
+\boldsymbol{N(k,\mathrm{TB})} &0&0&2&6&10&14&26&62 \\ \hline   
+&&&&&&&& \\ [-2.25ex]
+\boldsymbol{N(k,\mathrm{TT})} &0&2&6&10&14&26&62&138 \\
+\hline \hline
+&&&&&&&& \\ [-2.25ex]
+\textbf{Total}&\boldsymbol{3}&\boldsymbol{6}&\boldsymbol{12}&\boldsymbol{24}&\boldsymbol{48}&\boldsymbol{96}&\boldsymbol{192}&\boldsymbol{384}
+\end{array}</cmath>
+By the Multiplication Principle, there are <math>3\cdot2^{k-1}</math> ways to make exactly <math>k</math> moves. So, we must get <cmath>N(k,\mathrm{BB})+N(k,\mathrm{BT})+N(k,\mathrm{TB})+N(k,\mathrm{TT})=3\cdot2^{k-1}</cmath> for all values of <math>k.</math>
+
+Finally, the requested probability is <cmath>\frac{N(8,\mathrm{BT})+N(8,\mathrm{TT})}{N(8,\mathrm{BB})+N(8,\mathrm{BT})+N(8,\mathrm{TB})+N(8,\mathrm{TT})}=\frac{66+138}{118+66+62+138}=\frac{204}{384}=\frac{17}{32},</cmath> from which the answer is <math>17+32=\boxed{049}.</math>
+
+~Arcticturn ~MRENTHUSIASM

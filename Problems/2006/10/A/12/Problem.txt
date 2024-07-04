@@ -1,0 +1,27 @@
+== Problem ==
+<!-- [[Image:2006 AMC 10A-12.GIF]] -->
+ 
+Rolly wishes to secure his dog with an 8-foot rope to a [[square (geometry) | square]] shed that is 16 feet on each side.  His preliminary drawings are shown.
+
+<asy>
+size(150); pathpen = linewidth(0.6); defaultpen(fontsize(10));
+D((0,0)--(16,0)--(16,-16)--(0,-16)--cycle);
+D((16,-8)--(24,-8));
+label('Dog', (24, -8), SE);
+MP('I', (8,-8), (0,0));
+MP('8', (16,-4), W);
+MP('8', (16,-12),W);
+MP('8', (20,-8), N);
+label('Rope', (20,-8),S);
+D((0,-20)--(16,-20)--(16,-36)--(0,-36)--cycle);
+D((16,-24)--(24,-24));
+MP("II", (8,-28), (0,0));
+MP('4', (16,-22), W);
+MP('8', (20,-24), N);
+label("Dog",(24,-24),SE);
+label("Rope", (20,-24), S);
+</asy>
+
+Which of these arrangements give the dog the greater [[area]] to roam, and by how many square feet?
+
+$ \textbf{(A) } I,\,\textrm{ by }\,8\pi\qquad \textbf{(B) } I,\,\textrm{ by }\,6\pi\qquad \textbf{(C) } II,\,\textrm{ by }\,4\pi\qquad \textbf{(D) } II,\,\textrm{ by }\,8\pi\qquad \textbf{(E) } II,\,\textrm{ by }\,10\pi $

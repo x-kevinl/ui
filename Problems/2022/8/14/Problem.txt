@@ -1,0 +1,5 @@
+==Problem==
+
+In how many ways can the letters in $\textbf{BEEKEEPER}$ be rearranged so that two or more $\textbf{E}$s do not appear together?
+
+$\textbf{(A) } 1 \qquad \textbf{(B) } 4 \qquad \textbf{(C) } 12 \qquad \textbf{(D) } 24 \qquad \textbf{(E) } 120$

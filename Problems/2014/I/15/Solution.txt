@@ -1,0 +1,9 @@
+== Solution 1 ==
+
+Since <math>\angle DBE = 90^\circ</math>, <math>DE</math> is the diameter of <math>\omega</math>. Then <math>\angle DFE=\angle DGE=90^\circ</math>. But <math>DF=FE</math>, so <math>\triangle DEF</math> is a 45-45-90 triangle. Letting <math>DG=3x</math>, we have that <math>EG=4x</math>, <math>DE=5x</math>, and <math>DF=EF=\frac{5x}{\sqrt{2}}</math>. 
+
+Note that <math>\triangle DGE \sim \triangle ABC</math> by SAS similarity, so <math>\angle BAC = \angle GDE</math> and <math>\angle ACB = \angle DEG</math>. Since <math>DEFG</math> is a cyclic quadrilateral, <math>\angle BAC = \angle GDE=180^\circ-\angle EFG = \angle AFE</math> and <math>\angle ACB = \angle DEG = \angle GFD</math>, implying that <math>\triangle AFE</math> and <math>\triangle CDF</math> are isosceles. As a result, <math>AE=CD=\frac{5x}{\sqrt{2}}</math>, so <math>BE=3-\frac{5x}{\sqrt{2}}</math> and <math>BD =4-\frac{5x}{\sqrt{2}}</math>. 
+
+Finally, using the Pythagorean Theorem on <math>\triangle BDE</math>, 
+<cmath> \left(3-\frac{5x}{\sqrt{2}}\right)^2 + \left(4-\frac{5x}{\sqrt{2}}\right)^2 = (5x)^2</cmath>
+Solving for <math>x</math>, we get that <math>x=\frac{5\sqrt{2}}{14}</math>, so <math>DE= 5x =\frac{25 \sqrt{2}}{14}</math>. Thus, the answer is <math>25+2+14=\boxed{041}</math>.

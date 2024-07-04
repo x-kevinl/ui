@@ -1,0 +1,4 @@
+==Problem==
+How many different isosceles triangles have integer side lengths and perimeter 23?
+
+$ \textbf{(A)}\ 2\qquad\textbf{(B)}\ 4\qquad\textbf{(C)}\ 6\qquad\textbf{(D)}\ 9\qquad\textbf{(E)}\ 11$

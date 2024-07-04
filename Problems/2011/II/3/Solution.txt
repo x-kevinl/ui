@@ -1,0 +1,20 @@
+==Solution==
+===Solution 1===
+The average angle in an 18-gon is <math>160^\circ</math>. In an arithmetic sequence the average is the same as the median, so the middle two terms of the sequence average to <math>160^\circ</math>. Thus for some positive (the sequence is increasing and thus non-constant) integer <math>d</math>, the middle two terms are <math>(160-d)^\circ</math> and <math>(160+d)^\circ</math>. Since the step is <math>2d</math> the last term of the sequence is <math>(160 + 17d)^\circ</math>, which must be less than <math>180^\circ</math>, since the polygon is convex. This gives <math>17d < 20</math>, so the only suitable positive integer <math>d</math> is 1. The first term is then <math>(160-17)^\circ = \fbox{143}.</math>
+
+===Solution 2===
+Another way to solve this problem would be to use exterior angles. [[Exterior angle]]s of any polygon add up to <math>360^{\circ}</math>. Since there are <math>18</math> exterior angles in an 18-gon, the average measure of an exterior angles is <math>\frac{360}{18}=20^\circ</math>. We know from the problem that since the exterior angles must be in an arithmetic sequence, the median and average of them is <math>20</math>. Since there are even number of exterior angles, the middle two must be <math>19^\circ</math> and <math>21^\circ</math>, and the difference between terms must be <math>2</math>. Check to make sure the smallest exterior angle is greater than <math>0</math>: <math>19-2(8)=19-16=3^\circ</math>. It is, so the greatest exterior angle is <math>21+2(8)=21+16=37^\circ</math> and the smallest interior angle is <math>180-37=\boxed{143}</math>.
+
+===Solution 3===
+The sum of the angles in a 18-gon is <math>(18-2) \cdot 180^\circ = 2880 ^\circ.</math> Because the angles are in an arithmetic sequence, we can also write the sum of the angles as <math>a+(a+d)+(a+2d)+\dots+(a+17d)=18a+153d,</math> where <math>a</math> is the smallest angle and <math>d</math> is the common difference. Since these two are equal, we know that <math>18a+153d = 2880 ^\circ,</math> or <math>2a+17d = 320^\circ.</math> The smallest value of <math>d</math> that satisfies this is <math>d=2,</math> so <math>a=143.</math> Other values of <math>d</math> and <math>a</math> satisfy that equation, but if we tried any of them the last angle would be greater than <math>180,</math> so the only value of <math>a</math> that works is <math>a=\boxed{143}</math>.
+
+Note: The equation <math>2a+17d = 320^\circ</math> can also be obtained by using the sum of an arithmetic sequence formula <math>\frac{2a_1+(n-1)d}{2} \cdot n</math>. We set <math>n = 18</math> and equate it to 2880, thereby achieving the same result.
+~Eclipse471
+~note by cxsmi
+
+===Solution 4===
+Each individual angle in a <math>18</math>-gon is <math>\frac {(18-2) \cdot 180^\circ}{18} = 160^\circ</math>. Since no angle in a convex polygon can be larger than <math>180^\circ</math>, the smallest angle possible is in the set <math>159, 161, 157, 163, 155, 165, 153, 167, 151, 169, 149, 171, 147, 173, 145, 175, 143, 177</math>. 
+
+Our smallest possible angle is <math>\boxed {143}</math>
+
+~Arcticturn

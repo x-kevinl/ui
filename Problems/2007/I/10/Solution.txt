@@ -1,0 +1,104 @@
+== Solution ==
+=== Solution 1 ===
+Consider the first column.  There are <math>{6\choose3} = 20</math> ways that the rows could be chosen, but without loss of generality let them be the first three rows.  (Change the order of the rows to make this true.)  We will multiply whatever answer we get by 20 to get our final answer.
+
+Now consider the 3x3 that is next to the 3 boxes we have filled in.  We must put one ball in each row (since there must be 2 balls in each row and we've already put one in each).  We split into three cases:
+
+*All three balls are in the same column.  In this case, there are 3 choices for which column that is.  From here, the bottom half of the board is fixed.
+
+*Two balls are in one column, and one is in the other.  In this case, there are 3 ways to choose which column gets 2 balls and 2 ways to choose which one gets the other ball.  Then, there are 3 ways to choose which row the lone ball is in.  Now, what happens in the bottom half of the board?  Well, the 3 boxes in the column with no balls in the top half must all be filled in, so there are no choices here.  In the column with two balls already, we can choose any of the 3 boxes for the third ball.  This forces the location for the last two balls.  So we have <math>3 \cdot 2 \cdot 3 \cdot 3 = 54</math>.
+
+*All three balls are in different columns.  Then there are 3 ways to choose which row the ball in column 2 goes and 2 ways to choose where the ball in column 3 goes.  (The location of the ball in column 4 is forced.)  Again, we think about what happens in the bottom half of the board.  There are 2 balls in each row and column now, so in the 3x3 where we still have choices, each row and column has one square that is '''not''' filled in.  But there are 6 ways to do this.  So in all there are 36 ways.
+
+So there are <math>20(3+54+36) = 1860</math> different shadings, and the solution is <math>\boxed{860}</math>.
+
+=== Solution 2 ===
+
+We start by showing that every group of <math>6</math> rows can be grouped into <math>3</math> complementary pairs.
+We proceed with proof by contradiction. Without loss of generality, assume that the first row has columns <math>1</math> and <math>2</math> shaded. Note how if there is no complement to this, then all the other five rows must have at least one square in the first two columns shaded. That means that in total, the first two rows have <math>2+5=7</math> squares shaded in- that is false since it should only be <math>6</math>.
+Thus, there exists another row that is complementary to the first. We remove those two and use a similar argument again to show that every group of <math>6</math> rows can be grouped into <math>3</math> complementary pairs.
+
+Now we proceed with three cases.
+
+*There are <math>\frac{\binom42}2=3</math> pairs of complementary pairs. The first case is that the three pairs are all different, meaning that every single possible pair of shaded squares is used once. This gives us <math>6!=720.</math>
+
+*Our second case is that two of the pairs are the same, and the third is different. We have <math>3</math> to choose the pair that shows up twice and <math>2</math> for the other, giving us <math>3\cdot2\cdot\binom62\binom42\binom21=6\cdot15\cdot6\cdot2=1080.</math>
+
+*Our final case is that all three pairs are the same. This is just <math>3\cdot\binom63=60.</math>
+
+Our answer is thus <math>720+1080+60=1860,</math> leaving us with a final answer of <math>\boxed{860}.</math>
+
+=== Solution 3 ===
+
+We draw a [[bijection]] between walking from <math>(0,0,0,0)</math> to <math>(3,3,3,3)</math> as follows: if in the <math>i</math>th row, the <math>j</math>th and <math>k</math>th columns are shaded, then the <math>(2i-1)</math>st step is in the direction corresponding to <math>j</math>, and the <math>(2i)</math>th step is in the direction corresponding to <math>k</math> (<math>j < k</math>) here. We can now use the [[Principle of Inclusion-Exclusion]] based on the stipulation that <math>j\ne k</math> to solve the problem:
+
+<math>\frac{1}{2^6}\left(\frac{12!}{3!^4}-4\cdot{6 \choose 1}\frac{10!}{3!^3}+4\cdot 3\cdot{6 \choose 2}\frac{8!}{3!^2}-4\cdot 3\cdot 2\cdot{6 \choose 3}\frac{6!}{3!}+4\cdot 3\cdot 2\cdot 1\cdot {6 \choose 4}4!\right) = 1860</math>
+
+So that the answer is <math>860</math>.
+
+=== Solution 4 ===
+There are <math>{6\choose3}</math> to choose the arrangement of the shaded squares in each column. Examine the positioning of the shaded squares in the first two columns:
+
+[[Image:AIME I 2007-10b.PNG|thumbnail|left|200px|One example of each case for the first two columns]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*If column 1 and column 2 do not share any two filled squares on the same row, then there are <math>{6\choose3}</math> combinations for column 1, and then column 2 is fixed. Now, any row cannot have more than 2 shaded squares, so after we pick three more squares in the third column, the fourth column is also fixed. This gives <math>{6\choose3}^2 = 400</math> arrangements.
+*If column 1 and column 2 share 1 filled square on the same row (6 places), then they each share 1 filled square on a row (<math>6 - 1 = 5</math> places), share another empty square on a row, and have 2 squares each on different rows. This gives <math>6 \cdot 5 \cdot {4\choose2} = 180</math>. Now, the third and fourths columns must also share a fixed shared shaded square in the row in which the first two columns both had spaces, and another fixed empty square. The remaining shaded squares can only go in 4 places, so we get <math>{4\choose2} = 6</math>. We get <math>180 \cdot 6 = 1080</math>.
+* If column 1 and column 2 share 2 filled squares on the same row (<math>{6\choose2} = 15</math> places), they must also share 2 empty squares on the same row (<math>{4\choose2} = 6</math>). The last two squares can be arranged in <math>{2\choose1} = 2</math> positions; this totals to <math>15 \cdot 6 \cdot 2 = 180</math>. Now, the third and fourth columns have a fixed 2 filled squares in common rows and 2 empty squares in common rows. The remaining 2 squares have <math>{2\choose1} = 2</math> places, giving <math>180 \cdot 2 = 360</math>.
+* If column 1 and column 2 share 3 filled squares on the same row (<math>{6\choose3} = 20</math> places), then the squares on columns 3 and 4 are fixed.
+
+Thus, there are <math>400 + 1080 + 360 + 20 = 1860</math> number of shadings, so the answer is <math>860</math>.
+
+=== Solution 5 ===
+
+Consider all possible shadings for a single row. There are <math>{4 \choose 2}=6</math> ways to do so, and denote these as <math>a=1+2</math>, <math>b=3+4</math>, <math>c=1+4</math>, <math>d=2+3</math>, <math>e=1+3</math>, and <math>f=2+4</math> where <math>x+y</math> indicates that columns <math>x</math> and <math>y</math> are shaded. From our condition on the columns, we have <math>a+c+e=a+d+f=b+d+e=b+c+f=3</math> Summing the first two and the last two equations, we have <math>2a+c+d+e+f=6=2b+c+d+e+f</math>, from which we have <math>a=b</math>. Likewise, <math>c=d</math> and <math>e=f</math> since these pairs shade in complimentary columns. So the six rows are paired up into a row and its compliment. In all, we can have 3 a's and 3 b's and similar setups for <math>c</math>/<math>d</math> and <math>e</math>/<math>f</math>, 2 a's, 2 b's, 1 c and 1 d and similar setups for all six arrangements, or one of each. This first case gives <math>3{6 \choose 3}=60</math> solutions; the second gives <math>6\cdot 6\cdot5\cdot{4 \choose 2}=1080</math> solutions, and the final case gives <math>6!=720</math> solutions. In all, we have 1860 solutions, for an answer of <math>860</math>.
+
+=== Solution 6 ===
+
+Each shading can be brought, via row swapping operations, to a state with a <math>3\times2</math> shaded <math>L</math> in the lower left hand corner. The number of such arrangements multiplied by <math>{5 \choose 2}{3\choose 2}</math> will be the total. Consider rows 2 and 3 up from the bottom: they each have one of their allotted two squares shaded. Depending how the remaining three shades are distributed, the column totals of columns 2,3, and 4 from the left can be of the form <math>\{3,0,0\},\{0,1,2\},\{1,1,1\}</math>.
+Form 1: The entire lower left <math>3\times2</math> rectangle is shaded, forcing the opposite <math>3\times2</math> rectangle to also be shaded; thus 1 arrangement
+Form 2: There is a column with nothing shaded in the bottom right <math>3\times2</math>, so it must be completely shaded in the upper right <math>3\times2</math>. Now consider the upper right half column that will have <math>1</math> shade. There are <math>3</math> ways of choosing this shade, and all else is determined from here; thus 3 arrangements
+Form 3: The upper right <math>3\times3</math> will have exactly <math>2</math> shades per column and row. This is equivalent to the number of terms in a <math>3\times3</math> determinant, or <math>6</math> arrangements
+
+Of the <math>3^2</math> ways of choosing to complete the bottom half of the <math>4\times6</math>, form 1 is achieved in exactly 1 way; form 2 is achieved in <math>3\times2</math> ways; and form <math>3</math> in the remaining <math>2</math> ways.
+Thus, the weighted total is <math>1+6\times3+2\times6=31</math>.
+Complete: <math>31\times60=860\mod{1000}</math>
+
+===Solution 7===
+Note that if we find a valid shading of the first 3 columns, the shading of the last column is determined. We also note that within the first 3 columns, there will be 3 rows with 1 shaded square and 3 rows with 2 shaded squares.
+
+There are <math>{6 \choose 3}</math> ways to choose which rows have 1 shaded square (which we'll call a "1-row") within the first 3 columns and which rows have 2 (we'll call these "2-rows") within the first 3 columns. Next, we do some casework:
+
+*If all of the shaded squares in the first column are in a 1-row, then the squares in the second and third columns must be in the 2-rows. Thus there is only <math>{3 \choose 3}{3 \choose 0} \times 1= 1</math> valid shading in this case.
+
+*If 2 of the shaded squares in the first column are in a 1-row, and the third shaded square is in a 2-row, then the other shaded square in that 2-row can either be in column 3 or column 4. Once we determine that, the other shaded squares are uniquely determined. Thus, there are <math>{3 \choose 2}{3 \choose 1}\times 2=18</math> valid shadings in this case.
+
+*If 1 shaded square in the first column is in a 1-row, and the other 2 are in 2-rows, then the 2-row without a shaded square in the first column must have shaded squares in both column 2 and column 3. This leaves 4 possible squares in the second column to be shaded (since there can't be another shaded square in the occupied 1-row). Thus, there are <math>{3 \choose 1}{3 \choose 2}\times {4 \choose 2}=54</math> valid shadings in this case. (We only need to choose 2, since 1 of the shaded squares in the third column must go to the unoccupied 2-row).
+
+*If all of the shaded squares in the first column are in the 3 2-rows, then if we choose any 3 squares in the second column to be shaded, then the third column is uniquely determined to create a valid shading. Thus, there are <math>{3 \choose 0}{3 \choose 3}\times{6 \choose 3} = 20</math> valid shadings in this case.
+
+In total, we have <math>{6\choose3}(1+18+54+20)=20*93=1860</math>. Thus our answer is <math>\boxed{860}</math>.
+
+===Solution 8===
+
+We can use generating functions. Suppose that the variables <math>a</math>, <math>b</math>, <math>c</math>, and <math>d</math> represent shading a square that appears in the first, second, third, or fourth columns, respectively. Then if two squares in the row are shaded, then the row is represented by the generating function <math>ab+ac+ad+bc+bd+cd</math>, which we can write as <math>P(a,b,c,d)=(ab+cd)+(a+b)(c+d)</math>. Therefore, <math>P(a,b,c,d)^6</math> represents all of the possible ways to color six rows such that each row has two shaded squares. We only want the possibilities when each column has three shaded squares, or rather, the coefficient of <math>a^3b^3c^3d^3</math> in <math>P(a,b,c,d)^6</math>.
+
+By the Binomial Theorem,
+<cmath>P(a,b,c,d)^6=\sum_{k=0}^6 \binom{6}{k} (ab+cd)^k(a+b)^{6-k}(c+d)^{6-k}.\tag{1}</cmath>
+If we expand <math>(ab+cd)^k</math>, then the powers of <math>a</math> and <math>b</math> are always equal. Therefore, to obtain terms of the form <math>a^3b^3c^3d^3</math>, the powers of <math>a</math> and <math>b</math> in <math>(a+b)^{6-k}</math> must be equal. In particular, only the central term in the binomial expansion will contribute, and this implies that <math>k</math> must be even. We can use the same logic for <math>c</math> and <math>d</math>. Therefore, the coefficient of <math>a^3b^3c^3d^3</math> in the following expression is the same as the coefficient of <math>a^3b^3c^3d^3</math> in (1).
+<cmath>\sum_{k=0}^3 \binom{6}{2k} (ab+cd)^{2k}(ab)^{3-k}(cd)^{3-k}\binom{6-2k}{3-k}^2.\tag{2}</cmath>
+Now we notice that the only way to obtain terms of the form <math>a^3b^3c^3d^3</math> is if we take the central term in the binomial expansion of <math>(ab+cd)^{2k}</math>. Therefore, the terms that contribute to the coefficient of <math>a^3b^3c^3d^3</math> in (2) are
+<cmath>\sum_{k=0}^3 \binom{6}{2k}\binom{2k}{k}\binom{6-2k}{3-k}^2(abcd)^3.</cmath>
+This sum is <math>400+1080+360+20=1860</math> so the answer is <math>\boxed{860}</math>.

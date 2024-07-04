@@ -1,0 +1,19 @@
+==Solution 1==
+
+<asy>
+Label f; 
+f.p=fontsize(5); 
+xaxis(-3,3,Ticks(f,1.0));
+yaxis(-3,26,Ticks(f,1.0));
+real f(real x){return (x+2)^2;}
+real g(real x){return x*-1;}
+real h(real x){return x*-2;}
+real i(real x){return x*-3;}
+real j(real x){return x*8;}
+draw(graph(f,-2,3),green);
+draw(graph(g,-2,2),red);
+draw(graph(h,-2,1),red);
+draw(graph(i,-2,1/3),red);
+draw(graph(j,-0.25,3),red);
+</asy>
+Note the equation <math>\log(kx)=2\log(x+2)</math> is valid for <math>kx>0</math> and <math>x>-2</math>. <math>\log(kx)=2\log(x+2)=\log((x+2)^2)</math>. The equation <math>kx=(x+2)^2</math> is derived by taking away the outside logs from the previous equation. Because <math>(x+2)^2</math> is always non-negative, <math>kx</math> must also be non-negative; therefore this takes care of the <math>kx>0</math> condition as long as <math>k\neq0</math>, i.e. <math>k</math> cannot be <math>0</math>. Now, we graph both <math>(x+2)^2</math> (the green graph) and <math>kx</math> (the red graph for <math>k=-1,k=-2,k=-3,k=8</math>) for <math>x>-2</math>. It is easy to see that all negative values of <math>k</math> make the equation <math>\log(kx)=2\log(x+2)</math> have only one solution. However, there is also one positive value of <math>k</math> that makes the equation only have one solution, as shown by the steepest line in the diagram. We can show that the slope of this line is a positive integer by setting the discriminant of the equation <math>(x+2)^2=kx</math> to be <math>0</math> and solving for <math>k</math>. Therefore, there are <math>500</math> negative solutions and <math>1</math> positive solution, for a total of <math>\boxed{501}</math>.

@@ -1,0 +1,5 @@
+==Problem==
+
+Let $\triangle ABC$ be a scalene triangle. Point $P$ lies on $\overline{BC}$ so that $\overline{AP}$ bisects $\angle BAC.$ The line through $B$ perpendicular to $\overline{AP}$ intersects the line through $A$ parallel to $\overline{BC}$ at point $D.$ Suppose $BP=2$ and $PC=3.$ What is $AD?$
+
+$\textbf{(A) } 8 \qquad \textbf{(B) } 9 \qquad \textbf{(C) } 10 \qquad \textbf{(D) } 11 \qquad \textbf{(E) } 12$

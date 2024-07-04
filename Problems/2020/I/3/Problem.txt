@@ -1,0 +1,2 @@
+== Problem ==
+A positive integer <math>N</math> has base-eleven representation <math>\underline{a}\kern 0.1em\underline{b}\kern 0.1em\underline{c}</math> and base-eight representation <math>\underline1\kern 0.1em\underline{b}\kern 0.1em\underline{c}\kern 0.1em\underline{a},</math> where <math>a,b,</math> and <math>c</math> represent (not necessarily distinct) digits. Find the least such <math>N</math> expressed in base ten.

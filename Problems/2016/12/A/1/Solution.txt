@@ -1,0 +1,3 @@
+==Solution 1==
+
+We can use subtraction of fractions to get $$\frac{11!-10!}{9!} = \frac{11!}{9!} - \frac{10!}{9!} = 110 -10 = \boxed{\textbf{(B)}\;100}.$$

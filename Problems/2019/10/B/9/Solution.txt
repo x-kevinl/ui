@@ -1,0 +1,14 @@
+== Solution 1 ==
+There are four cases we need to consider here.
+
+'''Case 1''': $x$ is a positive integer. Without loss of generality, assume $x=1$. Then $f(1) = 1 - 1 = 0$.
+
+'''Case 2''': $x$ is a positive fraction. Without loss of generality, assume $x=\frac{1}{2}$. Then $f\left(\frac{1}{2}\right) = 0 - 0 = 0$.
+
+'''Case 3''': $x$ is a negative integer. Without loss of generality, assume $x=-1$. Then $f(-1) = 1 - 1 = 0$.
+
+'''Case 4''': $x$ is a negative fraction. Without loss of generality, assume $x=-\frac{1}{2}$. Then $f\left(-\frac{1}{2}\right) = 0 - 1 = -1$.
+
+Thus the range of the function $f$ is $\boxed{\textbf{(A) } \{-1, 0\}}$.
+
+~IronicNinja

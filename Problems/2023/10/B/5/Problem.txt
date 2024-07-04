@@ -1,0 +1,5 @@
+==Problem==
+
+Maddy and Lara see a list of numbers written on a blackboard. Maddy adds $3$ to each number in the list and finds that the sum of her new numbers is $45$. Lara multiplies each number in the list by $3$ and finds that the sum of her new numbers is also $45$. How many numbers are written on the blackboard?
+
+$\textbf{(A) }10\qquad\textbf{(B) }5\qquad\textbf{(C) }6\qquad\textbf{(D) }8\qquad\textbf{(E) }9$

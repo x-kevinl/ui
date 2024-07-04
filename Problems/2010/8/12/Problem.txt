@@ -1,0 +1,4 @@
+==Problem==
+Of the $500$ balls in a large bag, $80\%$ are red and the rest are blue. How many of the red balls must be removed so that $75\%$ of the remaining balls are red?
+
+$ \textbf{(A)}\ 25\qquad\textbf{(B)}\ 50\qquad\textbf{(C)}\ 75\qquad\textbf{(D)}\ 100\qquad\textbf{(E)}\ 150 $

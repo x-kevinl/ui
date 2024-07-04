@@ -1,0 +1,2 @@
+==Solution==
+The sum of the ages of the fifth graders is $33 * 11$, while the sum of the ages of the parents is $55 * 33$. Therefore, the total sum of all their ages must be $2178$, and given $33 + 55 = 88$ people in total, their average age is $\frac{2178}{88} = \frac{99}{4} = \boxed{\textbf{(C)}\ 24.75}$.

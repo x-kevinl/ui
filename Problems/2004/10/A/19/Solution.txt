@@ -1,0 +1,2 @@
+==Solution==
+The cylinder can be "unwrapped" into a rectangle, and we see that the stripe is a parallelogram with base $3$ and height $80$. Thus, we get $3\times80=240\Rightarrow\boxed{\mathrm{(C)}\ 240}$

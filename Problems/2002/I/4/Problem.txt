@@ -1,0 +1,2 @@
+== Problem ==
+Consider the sequence defined by <math>a_k =\dfrac{1}{k^2+k}</math> for <math>k\geq 1</math>. Given that <math>a_m+a_{m+1}+\cdots+a_{n-1}=\dfrac{1}{29}</math>, for positive integers <math>m</math> and <math>n</math> with <math>m<n</math>, find <math>m+n</math>.

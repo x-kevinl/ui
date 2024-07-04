@@ -1,0 +1,4 @@
+==Problem==
+In an All-Area track meet, $216$ sprinters enter a $100-$meter dash competition. The track has $6$ lanes, so only $6$ sprinters can compete at a time. At the end of each race, the five non-winners are eliminated, and the winner will compete again in a later race. How many races are needed to determine the champion sprinter?
+
+$\textbf{(A)}\mbox{ }36\qquad\textbf{(B)}\mbox{ }42\qquad\textbf{(C)}\mbox{ }43\qquad\textbf{(D)}\mbox{ }60\qquad\textbf{(E)}\mbox{ }72$

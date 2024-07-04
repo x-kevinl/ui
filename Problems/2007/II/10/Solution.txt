@@ -1,0 +1,21 @@
+== Solution 1 ==
+Use [[casework]]:
+
+*<math>B</math> has 6 elements:
+**Probability: <math>\frac{1}{2^6} = \frac{1}{64}</math>
+**<math>A</math> must have either 0 or 6 elements, probability: <math>\frac{2}{2^6} = \frac{2}{64}</math>.
+*<math>B</math> has 5 elements:
+**Probability: <math>{6\choose5}/64 = \frac{6}{64}</math>
+**<math>A</math> must have either 0, 6, or 1, 5 elements. The total probability is <math>\frac{2}{64} + \frac{2}{64} = \frac{4}{64}</math>. 
+*<math>B</math> has 4 elements:
+**Probability: <math>{6\choose4}/64 = \frac{15}{64}</math>
+**<math>A</math> must have either 0, 6; 1, 5; or 2,4 elements. If there are 1 or 5 elements, the set which contains 5 elements must have four emcompassing <math>B</math> and a fifth element out of the remaining <math>2</math> numbers. The total probability is <math>\frac{2}{64}\left({2\choose0} + {2\choose1} + {2\choose2}\right) = \frac{2}{64} + \frac{4}{64} + \frac{2}{64} = \frac{8}{64}</math>.
+
+We could just continue our casework. In general, the probability of picking B with <math>n</math> elements is <math>\frac{{6\choose n}}{64}</math>. Since the sum of the elements in the <math>k</math>th row of [[Pascal's Triangle]] is <math>2^k</math>, the probability of obtaining <math>A</math> or <math>S-A</math> which encompasses <math>B</math> is <math>\frac{2^{7-n}}{64}</math>. In addition, we must count for when <math>B</math> is the empty set (probability: <math>\frac{1}{64}</math>), of which all sets of <math>A</math> will work (probability: <math>1</math>).
+
+Thus, the solution we are looking for is <math>\left(\sum_{i=1}^6 \frac{{6\choose i}}{64} \cdot \frac{2^{7-i}}{64}\right) + \frac{1}{64} \cdot \frac{64}{64}</math> 
+<math>=\frac{(1)(64)+(6)(64)+(15)(32)+(20)(16)+(15)(8)+(6)(4)+(1)(2)}{(64)(64)}</math> 
+<math>=\frac{1394}{2^{12}}</math>
+<math>=\frac{697}{2^{11}}</math>.
+
+The answer is <math>697 + 2 + 11 = 710</math>.

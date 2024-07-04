@@ -1,0 +1,2 @@
+==Solution 1==
+The arithmetic mean of these numbers is $\frac{\frac{2013}{3}}{2}=\frac{671}{2}=335.5$. Therefore the numbers are $333$, $334$, $335$, $336$, $337$, $338$, so the answer is $\boxed{\textbf{(B)}\ 338}$

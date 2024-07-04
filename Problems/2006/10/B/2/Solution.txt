@@ -1,0 +1,4 @@
+== Solution ==
+Since $ x \spadesuit y = (x+y)(x-y) $: 
+
+$ 3 \spadesuit (4 \spadesuit 5) = 3 \spadesuit((4+5)(4-5)) =  3 \spadesuit (-9) = (3+(-9))(3-(-9)) = \boxed{\textbf{(A)}-72}$

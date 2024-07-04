@@ -1,0 +1,4 @@
+==Solution==
+By: Albert471
+
+Plotting points $B$ and $C$ on the graph shows that they are at $\left( -x,x^2\right)$ and $\left( x,x^2\right)$, which is isosceles. By setting up the triangle area formula you get: $64=\frac{1}{2}*2x*x^2  =   64=x^3$ Making x=4, and the length of $BC$ is $2x$, so the answer is $\boxed{\textbf{(C)}\ 8}$.

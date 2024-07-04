@@ -1,0 +1,8 @@
+==Solution 1==
+
+We have these equations:
+<math>196a+14b+c=225a+15c+b=222a+37c</math>.
+Taking the last two we get <math>3a+b=22c</math>. Because <math>c \neq 0</math> otherwise <math>a \ngtr 0</math>, and <math>a \leq 5</math>, <math>c=1</math>.
+
+Then we know <math>3a+b=22</math>.
+Taking the first two equations we see that <math>29a+14c=13b</math>. Combining the two gives <math>a=4, b=10, c=1</math>. Then we see that <math>222 \times 4+37 \times1=\boxed{925}</math>.

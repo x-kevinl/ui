@@ -1,0 +1,2 @@
+== Problem ==
+Square <math>AIME</math> has sides of length <math>10</math> units.  Isosceles triangle <math>GEM</math> has base <math>EM</math>, and the area common to triangle <math>GEM</math> and square <math>AIME</math> is <math>80</math> square units.  Find the length of the altitude to <math>EM</math> in <math>\triangle GEM</math>.

@@ -1,0 +1,19 @@
+==Solution 1==
+
+If <math>\omega = 25</math>,  the area of rectangle <math>PQRS</math> is <math>0</math>, so
+
+<cmath>\alpha\omega - \beta\omega^2 = 25\alpha - 625\beta = 0</cmath>
+
+and <math>\alpha = 25\beta</math>.  If <math>\omega = \frac{25}{2}</math>, we can reflect <math>APQ</math> over <math>PQ</math>, <math>PBS</math> over <math>PS</math>, and <math>QCR</math> over <math>QR</math> to completely cover rectangle <math>PQRS</math>, so the area of <math>PQRS</math> is half the area of the triangle.  Using Heron's formula, since <math>s = \frac{12 + 17 + 25}{2} = 27</math>, 
+
+<cmath> [ABC] = \sqrt{27 \cdot 15 \cdot 10 \cdot 2} = 90</cmath>
+
+so
+
+<cmath>45 = \alpha\omega - \beta\omega^2 = \frac{625}{2} \beta - \beta\frac{625}{4} = \beta\frac{625}{4}</cmath>
+
+and 
+
+<cmath>\beta = \frac{180}{625} = \frac{36}{125}</cmath>
+
+so the answer is <math>m + n = 36 + 125 = \boxed{161}</math>.

@@ -1,0 +1,2 @@
+==Problem==
+Jenn randomly chooses a number <math>J</math> from <math>1, 2, 3,\ldots, 19, 20</math>. Bela then randomly chooses a number <math>B</math> from <math>1, 2, 3,\ldots, 19, 20</math> distinct from <math>J</math>. The value of <math>B - J</math> is at least <math>2</math> with a probability that can be expressed in the form <math>\frac{m}{n}</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

@@ -1,0 +1,15 @@
+==Solution 1==
+
+To quickly solve this multiple choice problem, make the (not necessarily valid, but very convenient) assumption that $ABCD$ can have any dimension.  Give the rectangle dimensions of $AB = CD = 12$ and $BC = AD= 6$, which is the easiest way to avoid fractions.  Labelling the right midpoint as $M$, and the bottom midpoint as $N$, we know that $DN = NC = 6$, and $BM = MC = 3$.  
+
+$[\triangle ADN] = \frac{1}{2}\cdot 6\cdot 6 = 18$
+
+$[\triangle MNC] = \frac{1}{2}\cdot 3\cdot 6 = 9$
+
+$[\triangle ABM] = \frac{1}{2}\cdot 12\cdot 3 = 18$
+
+$[\triangle AMN] = [\square ABCD] - [\triangle ADN] - [\triangle MNC] - [\triangle ABM]$
+
+$[\triangle AMN] = 72 - 18 - 9 - 18$
+  
+$[\triangle AMN] = 27$, and the answer is $\boxed{B}$

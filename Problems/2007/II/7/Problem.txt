@@ -1,0 +1,4 @@
+== Problem ==
+Given a [[real number]] <math>x,</math> let <math>\lfloor x \rfloor</math> denote the [[floor function|greatest integer]] less than or equal to <math>x.</math> For a certain [[integer]] <math>k,</math> there are exactly <math>70</math> positive integers <math>n_{1}, n_{2}, \ldots, n_{70}</math> such that <math>k=\lfloor\sqrt[3]{n_{1}}\rfloor = \lfloor\sqrt[3]{n_{2}}\rfloor = \cdots = \lfloor\sqrt[3]{n_{70}}\rfloor</math> and <math>k</math> divides <math>n_{i}</math> for all <math>i</math> such that <math>1 \leq i \leq 70.</math>
+
+Find the maximum value of <math>\frac{n_{i}}{k}</math> for <math>1\leq i \leq 70.</math>

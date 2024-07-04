@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>S</math> be the set of positive integer divisors of <math>20^9.</math> Three numbers are chosen independently and at random with replacement from the set <math>S</math> and labeled <math>a_1,a_2,</math> and <math>a_3</math> in the order they are chosen. The probability that both <math>a_1</math> divides <math>a_2</math> and <math>a_2</math> divides <math>a_3</math> is <math>\tfrac{m}{n},</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m.</math>

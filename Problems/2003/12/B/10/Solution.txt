@@ -1,0 +1,4 @@
+==Solution==
+Place the first triangle. Now, we can place the second triangle either adjacent to the first, or with one side between them, for a total of $\boxed{\text{(B) }2}$
+===Solution 2===
+Take ${5 \choose 2}$ to realize there are 10 ways to choose 2 different triangles. Then divide by 5 for each vertex of a pentagon to get $\boxed{\text{(B) }2}$

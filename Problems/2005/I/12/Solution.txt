@@ -1,0 +1,6 @@
+== Solution 1==
+It is well-known that <math>\tau(n)</math> is odd if and only if <math>n</math> is a [[perfect square]].  (Otherwise, we can group [[divisor]]s into pairs whose product is <math>n</math>.)  Thus, <math>S(n)</math> is odd if and only if there are an odd number of perfect squares less than <math>n</math>.  So <math>S(1), S(2)</math> and <math>S(3)</math> are odd, while <math>S(4), S(5), \ldots, S(8)</math> are even, and <math>S(9), \ldots, S(15)</math> are odd, and so on. 
+
+So, for a given <math>n</math>, if we choose the positive integer <math>m</math> such that <math>m^2 \leq n < (m + 1)^2</math> we see that <math>S(n)</math> has the same parity as <math>m</math>.  
+
+It follows that the numbers between <math>1^2</math> and <math>2^2</math>, between <math>3^2</math> and <math>4^2</math>, and so on, all the way up to the numbers between <math>43^2</math> and <math>44^2 = 1936</math> have <math>S(n)</math> odd. These are the only such numbers less than <math>2005</math> (because <math>45^2 = 2025 > 2005</math>).

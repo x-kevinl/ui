@@ -1,0 +1,7 @@
+==Problem==
+
+In the figure shown, $\overline{US}$ and $\overline{UT}$ are line segments each of length 2, and $m\angle TUS = 60^\circ$. Arcs $\overarc{TR}$ and $\overarc{SR}$ are each one-sixth of a circle with radius 2. What is the area of the region shown? 
+
+<asy>draw((1,1.732)--(2,3.464)--(3,1.732)); draw(arc((0,0),(2,0),(1,1.732))); draw(arc((4,0),(3,1.732),(2,0))); label("$U$", (2,3.464), N); label("$S$", (1,1.732), W); label("$T$", (3,1.732), E); label("$R$", (2,0), S);</asy>
+
+$\textbf{(A) }3\sqrt{3}-\pi\qquad\textbf{(B) }4\sqrt{3}-\frac{4\pi}{3}\qquad\textbf{(C) }2\sqrt{3}\qquad\textbf{(D) }4\sqrt{3}-\frac{2\pi}{3}\qquad\textbf{(E) }4+\frac{4\pi}{3}$

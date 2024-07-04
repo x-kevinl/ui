@@ -1,0 +1,6 @@
+==Solution 1==
+As 71 is prime, <math>c</math>, <math>d</math>, and <math>e</math> must be 1, 1, and 71 (in some order). However, since <math>c</math> and <math>e</math> are divisors of 70 and 72 respectively, the only possibility is <math>(c,d,e) = (1,71,1)</math>. Now we are left with finding the number of solutions <math>(a,b,f,g)</math> satisfying <math>ab = 70</math> and <math>fg = 72</math>, which separates easily into two subproblems. The number of positive integer solutions to <math>ab = 70</math> simply equals the number of divisors of 70 (as we can choose a divisor for <math>a</math>, which uniquely determines <math>b</math>). As <math>70 = 2^1 \cdot 5^1 \cdot 7^1</math>, we have <math>d(70) = (1+1)(1+1)(1+1) = 8</math> solutions. Similarly, <math>72 = 2^3 \cdot 3^2</math>, so <math>d(72) = 4 \times 3 = 12</math>.
+
+Then the answer is simply <math>8 \times 12 = \boxed{096}</math>.
+
+-scrabbler94

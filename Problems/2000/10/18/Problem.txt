@@ -1,0 +1,5 @@
+==Problem==
+
+Charlyn walks completely around the boundary of a square whose sides are each $5$ km long. From any point on her path she can see exactly $1$ km horizontally in all directions. What is the area of the region consisting of all points Charlyn can see during her walk, expressed in square kilometers and rounded to the nearest whole number?
+
+$\textbf{(A)} 24 \qquad\textbf{(B)}\ 27 \qquad\textbf{(C)}\ 39 \qquad\textbf{(D)}\ 40 \qquad\textbf{(E)}\ 42$

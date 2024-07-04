@@ -1,0 +1,36 @@
+== Solution ==
+[[Image:2004_I_AIME-10.png]]
+
+=== Solution 1 ===
+The location of the center of the circle must be in the <math>34 \times 13</math> rectangle that is one unit away from the sides of rectangle <math>ABCD</math>. We want to find the area of the [[right triangle]] with [[hypotenuse]] one unit away from <math>\overline{AC}</math>. Let this triangle be <math>A'B'C'</math>.
+
+Notice that <math>ABC</math> and <math>A'B'C'</math> share the same [[incenter]]; this follows because the corresponding sides are parallel, and so the perpendicular [[inradius|inradii]] are concurrent, except that the inradii of <math>\triangle ABC</math> extend one unit farther than those of <math>\triangle A'B'C'</math>. From <math>A = rs</math>, we note that <math>r_{ABC} = \frac{[ABC]}{s_{ABC}} = \frac{15 \cdot 36 /2}{(15+36+39)/2} = 6</math>. Thus <math>r_{A'B'C'} = r_{ABC} - 1 = 5</math>, and since the ratio of the areas of two similar figures is equal to the square of the ratio of their corresponding lengths, <math>[A'B'C'] = [ABC] \cdot \left(\frac{r_{A'B'C'}}{r_{ABC}}\right)^2 = \frac{15 \times 36}{2} \cdot \frac{25}{36} = \frac{375}{2}</math>. 
+
+The probability is <math>\frac{2[A'B'C']}{34 \times 13} = \frac{375}{442}</math>, and <math>m + n = \boxed{817}</math>.  
+
+=== Solution 2 ===
+[[Image:2004_I_AIME-10.png]]
+
+Let the bisector of <math>\angle CAD</math> be <math>AE</math>, with <math>E</math> on <math>CD</math>. By the angle bisector theorem, <math>DE = 36/5</math>. Since <math>\triangle AOR \sim \triangle AED</math> (<math>O</math> is the center of the circle), we find that <math>AR = 5</math> since <math>OR = 1</math>. Also <math>AT = 35</math> so <math>RT = OQ = 30</math>.
+
+We can apply the same principle again to find that <math>PT = 27/2</math>, and since <math>QT = 1</math>, we find that <math>PQ = 27/2 - 1 = 25/2</math>. The locus of all possible centers of the circle on this "half" of the rectangle is triangle <math>\triangle OPQ</math>. There exists another congruent triangle that is symmetric over <math>AC</math> that has the same area as triangle <math>\triangle OPQ</math>. <math>\triangle APQ</math> has area <math>\frac {1}{2}\cdot OP \cdot PQ = \frac {1}{2}\cdot 30\cdot \frac {25}{2}</math>, since <math>\angle OQP</math> is right. Thus the total area that works is <math>30\cdot \frac {25}{2} = 375</math>, and the area of the locus of all centers of any circle with radius 1 is <math>34\cdot 13 = 442</math>. Hence, the desired probability is <math>\frac {375}{442}</math>, and our answer is <math>\boxed {817}</math>.
+
+=== Solution 3 ===
+[[Image:2004_I_AIME-10b.png]]
+
+Again, the location of the center of the circle must be in the <math>34 \times 13</math> rectangle that is one unit away from the sides of rectangle <math>ABCD</math>. We want to find the area of the [[right triangle]] with [[hypotenuse]] one unit away from <math>\overline{AC}</math>.
+
+Let <math>A</math> be at the origin, <math>B (36,0)</math>, <math>C (36,15)</math>, <math>D (0,15)</math>. The slope of <math>\overline{AC}</math> is <math>\frac{15}{36} = \frac{5}{12}</math>. Let <math>\triangle A'B'C'</math> be the right triangle with sides one unit inside <math>\triangle ABC</math>. Since <math>\overline{AC} || \overline{A'C'}</math>, they have the same slope, and the equation of <math>A'C'</math> is <math>y = \frac{5}{12}x + c</math>. Manipulating, <math>5x - 12y + 12c = 0</math>. We need to find the value of <math>c</math>, which can be determined since <math>\overline{AC}</math> is one unit away from <math>\overline{A'C'}</math>. Since the diagonal contains the origin, we can use the distance from a point to the line formula at the origin:
+
+<cmath>\left|\frac{Ax + By + C}{\sqrt{A^2+B^2}}\right| = 1 \Longrightarrow \left|\frac{(5)(0) + (-12)(0) + 12c}{\sqrt{5^2 + (-12)^2}}\right| = 1</cmath>
+<cmath>c = \pm \frac{13}{12}</cmath>
+
+The two values of <math>c</math> correspond to the triangle on top and below the diagonal. We are considering <math>A'B'C'</math> which is below, so <math>c = -\frac{13}{12}</math>. Then the equation of <math>\overline{A'C'}</math> is <math>y = \frac{5}{12}x - \frac{13}{12}</math>. Solving for its intersections with the lines <math>y = 1, x = 35</math> (boundaries of the internal rectangle), we find the coordinates of <math>A'B'C'</math> are at <math>A'\ (5,1)\ B'\ (35,1)\ C'\ (35,\frac{27}{2})</math>. The area is <math>\frac{1}{2}bh = \frac{1}{2}(35-5)\left(\frac{27}{2} - 1\right) = \frac{375}{2}</math>.
+
+Finally, the probability is <math>\frac{2\cdot \mathrm{area\ of\ triangle}}{34 \times 13} = \frac{375}{442}</math>, and <math>m + n = \boxed{817}</math>.
+
+For this solution, if you didn't know the formula for the distance from a point to a line, you can use similar triangles to get the ratio:
+
+<math>\frac{1}{36}=\frac{c}{39}</math>
+
+This yields <math>c=\frac{13}{12}</math>.

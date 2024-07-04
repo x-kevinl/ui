@@ -1,0 +1,2 @@
+==Solution==
+The big cookie has radius $3$, since the center of the center cookie is the same as that of the large cookie.  The difference in areas of the big cookie and the seven small ones is $3^2\pi-7\pi=9\pi-7\pi=2 \pi$.  The scrap cookie has this area, so its radius must be $\boxed{\textbf{(A) }\sqrt 2}$.

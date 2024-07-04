@@ -1,0 +1,2 @@
+==Problem==
+Point <math>P</math> lies on the diagonal <math>AC</math> of [[square]] <math>ABCD</math> with <math>AP > CP</math>. Let <math>O_{1}</math> and <math>O_{2}</math> be the [[circumcenter]]s of triangles <math>ABP</math> and <math>CDP</math> respectively. Given that <math>AB = 12</math> and <math>\angle O_{1}PO_{2} = 120^{\circ}</math>, then <math>AP = \sqrt{a} + \sqrt{b}</math>, where <math>a</math> and <math>b</math> are positive integers. Find <math>a + b</math>.

@@ -1,0 +1,33 @@
+==Problem 10==
+The diagram shows the number of students at soccer practice each weekday during last week. After computing the mean and median values, Coach discovers that there were actually $21$ participants on Wednesday. Which of the following statements describes the change in the mean and median after the correction is made?
+
+<center><asy>
+unitsize(2mm);
+defaultpen(fontsize(8bp));
+real d = 5;
+real t = 0.7;
+real r;
+int[] num = {20,26,16,22,16};
+string[] days = {"Monday","Tuesday","Wednesday","Thursday","Friday"};
+for (int i=0; i<30;
+i=i+2) { draw((i,0)--(i,-5*d),gray);
+}for (int i=0;
+i<5;
+++i) {   r = -1*(i+0.5)*d;
+fill((0,r-t)--(0,r+t)--(num[i],r+t)--(num[i],r-t)--cycle,gray);
+label(days[i],(-1,r),W);
+}for(int i=0;
+i<32;
+i=i+4) { label(string(i),(i,1));
+}label("Number of students at soccer practice",(14,3.5));
+</asy></center>
+
+$\textbf{(A) }$The mean increases by $1$ and the median does not change.
+
+$\textbf{(B) }$The mean increases by $1$ and the median increases by $1$.
+
+$\textbf{(C) }$The mean increases by $1$ and the median increases by $5$.
+
+$\textbf{(D) }$The mean increases by $5$ and the median increases by $1$.
+
+$\textbf{(E) }$The mean increases by $5$ and the median increases by $5$.

@@ -1,0 +1,10 @@
+== Problem ==
+A positive number $x$ has the property that $x\%$ of $x$ is $4$.  What is $x$?
+
+$
+\textbf{(A) }\ 2      \qquad
+\textbf{(B) }\ 4      \qquad
+\textbf{(C) }\ 10      \qquad
+\textbf{(D) }\ 20      \qquad
+\textbf{(E) }\ 40
+$

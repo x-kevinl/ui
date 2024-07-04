@@ -1,0 +1,7 @@
+==Solution 1==
+There are $29$ possible pairs of consecutive integers, namely $p_1=\{1,2\},  \cdots, p_{29}=\{29,30\}$. 
+Define a random variable $X_i$, with $X_i=1$, if $p_i$ is part of the 5-element subset, and $0$ otherwise. 
+Then the number of pairs of consecutive integers in a $5$-element selection is given by the sum $X_1+\cdots + X_{29}$. By linearity of expectation, the expected value is equal to the sum of the $\mathbb{E}[X_i]$:
+$$\mathbb{E}[X_1+\cdots +X_{29}]=\mathbb{E}[X_1]+\cdots + \mathbb{E}[X_{29}]$$
+To compute $\mathbb{E}[X_i]$, note that $X_i=1$ for a total of $_{28}C_3$ out of $_{30}C_5$ possible selections. Thus$$\mathbb{E}[X_i]=\frac{\binom{28}{3}}{\binom{30}{5}}= \frac 1{29}\cdot \frac 23, \quad \textrm{which implies} \quad \mathbb{E}[X_1+\cdots +X_{29}]= \boxed{\textbf{(A)}\ \frac{2}{3}}.$$
+~kingofpineapplz

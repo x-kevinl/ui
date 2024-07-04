@@ -1,0 +1,2 @@
+== Problem 12 ==
+For a positive integer <math>p</math>, define the positive integer <math>n</math> to be <math>p</math>''-safe'' if <math>n</math> differs in absolute value by more than <math>2</math> from all multiples of <math>p</math>. For example, the set of <math>10</math>-safe numbers is <math>\{ 3, 4, 5, 6, 7, 13, 14, 15, 16, 17, 23, \ldots\}</math>. Find the number of positive integers less than or equal to <math>10,000</math> which are simultaneously <math>7</math>-safe, <math>11</math>-safe, and <math>13</math>-safe.

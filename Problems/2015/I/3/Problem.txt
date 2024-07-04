@@ -1,0 +1,3 @@
+==Problem==
+
+There is a prime number <math>p</math> such that <math>16p+1</math> is the cube of a positive integer.  Find <math>p</math>.

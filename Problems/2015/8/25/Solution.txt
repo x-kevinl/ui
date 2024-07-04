@@ -1,0 +1,89 @@
+==Solutions==
+
+
+===Solution 1===
+
+
+We can draw a diagram as shown:
+<asy>
+size(75);
+draw((0,0)--(0,5)--(5,5)--(5,0)--cycle);
+filldraw((0,4)--(1,4)--(1,5)--(0,5)--cycle, gray);
+filldraw((0,0)--(1,0)--(1,1)--(0,1)--cycle, gray);
+filldraw((4,0)--(4,1)--(5,1)--(5,0)--cycle, gray);
+filldraw((4,4)--(4,5)--(5,5)--(5,4)--cycle, gray);
+path arc = arc((2.5,4),1.5,0,90);
+pair P = intersectionpoint(arc,(0,5)--(5,5));
+pair Pp=rotate(90,(2.5,2.5))*P, Ppp = rotate(90,(2.5,2.5))*Pp, Pppp=rotate(90,(2.5,2.5))*Ppp;
+draw(P--Pp--Ppp--Pppp--cycle);
+</asy> 
+Let us focus on the $4$ big triangles that, together with the inscribed square, fill in the large square. If we zoom in on one of the four triangles, we can see that it is composed of a small unit square in the corner of the large square and two triangles, one smaller than the other. We are going to focus specifically on the smaller of the two triangles. This triangle is similar to the big triangle itself by $\mathrm{AA}$ similarity (because the two sides of a square are parallel. To prove this fact, draw a diagonal of the square and find congruent triangles). Let the shorter leg of the big triangle be $x$; then $\dfrac{x}{x-1}=\dfrac{5-x}{1}$.
+$$x=-x^2+6x-5$$
+$$x^2-5x+5=0$$
+$$x=\dfrac{5\pm \sqrt{(-5)^2-(4)(1)(5)}}{2}$$
+$$x=\dfrac{5\pm \sqrt{5}}{2}$$
+Thus, $x=\dfrac{5-\sqrt{5}}{2}$, because by symmetry, $x < \dfrac52$. Note that the other solution we got, namely, $x=\dfrac{5+\sqrt 5} 2$, is the length of the segment $5-x$. $x$ and $5-x$ together sum to $5$, the side of the length of the large square, and similarly, the sum of the solutions is $5$. This solution is a result of the symmetry of the problem; if we had set the longer leg of the big triangle to be $x$, then we would solve the same quadratic to find the same roots, the only difference being that we take the other root.
+
+This means the area of each triangle is $\dfrac{5-\sqrt{5}}{2}*(5-\dfrac{5-\sqrt{5}}{2})*\dfrac{1}{2}=\dfrac{5}{2}$.
+Thus, the area of the square is $25-(4*\dfrac{5}{2})=15\implies \boxed{\textbf{(C)}}$.
+
+Don't use this in a contest scenario, and only use it when practicing math skills. :)
+
+
+===Solution 2 (Contest Solution)===  
+
+
+We draw a square as shown:
+
+<asy>
+size(75);
+draw((0,0)--(0,5)--(5,5)--(5,0)--cycle); 
+filldraw((0,4)--(1,4)--(1,5)--(0,5)--cycle, gray); 
+filldraw((0,0)--(1,0)--(1,1)--(0,1)--cycle, gray); 
+filldraw((4,0)--(4,1)--(5,1)--(5,0)--cycle, gray); 
+filldraw((4,4)--(4,5)--(5,5)--(5,4)--cycle, gray); 
+path arc = arc((2.5,4),1.5,0,90); 
+pair P = intersectionpoint(arc,(0,5)--(5,5)); 
+pair Pp=rotate(90,(2.5,2.5))*P, Ppp = rotate(90,(2.5,2.5))*Pp, Pppp=rotate(90,(2.5,2.5))*Ppp; 
+draw(P--Pp--Ppp--Pppp--cycle); 
+filldraw((1,4)--P--(4,4)--cycle,red);
+filldraw((4,4)--Pppp--(4,1)--cycle,red);
+filldraw((1,1)--Ppp--(4,1)--cycle,red);
+filldraw((1,1)--Pp--(1,4)--cycle,red);
+</asy>
+
+
+We want to find the area of the biggest square. The area of this square is composed of the center white square and the four red triangles. Because the inner square has an area of $(5-2)$, $3$, squared, $9$, it also has a length of $\sqrt{9}=3$. The heights of each of the red triangles are 1 (because the gray squares have lengths of one), and the area of one triangle is namely $\frac{3 \cdot 1}{2}$. Thus, the combined area of the four triangles is $4 \cdot \frac 32=6$. Furthermore, the area of the smaller square is $9$. We add these to see that the area of the large square is $9+6=15\implies \boxed{\textbf{(C)}}$.
+
+===Solution 3===
+
+
+Let us find the area of the triangles and the unit squares: on each side, there are two triangles. They both have one leg of length $1$, and let's label the other legs $x$ for one of the triangles and $y$ for the other. Note that $x + y = 3$.
+The area of each of the triangles is $\frac{x}{2}$ and $\frac{y}{2}$, and there are $4$ of each. So now, we need to find $4\left(\frac{x}{2}\right) + 4\left(\frac{y}{2}\right)$. Expanding out the fractions, we get $4\left(\frac{x}{2}\right) + 4\left(\frac{y}{2}\right) = 2x + 2y = 2(x + y) = 2(3) = 6$.
+So, the area of the square we need is $25- (4+6) = 15\implies \boxed{\textbf{(C)}}$.
+
+===Solution 4===
+Proceed as in solution 1 to get $x^2 - 5x + 5 = 0$.
+
+Notice that the side length of the square is $\sqrt{x^2+(5-x)^2}$ by the Pythagorean Theorem. Thus, the area of the square is
+$$
+\left(\sqrt{x^2+(5-x)^2}\right)^2
+$$
+$$
+= x^2 + x^2 - 10x + 25
+$$
+$$
+= (2x^2 - 10x + 10) + 15
+$$
+$$
+= 2(x^2 - 5x + 5) + 15
+$$
+$$
+= 2(0) + 15
+$$
+$$
+= \boxed{15}
+$$
+$$
+\implies \boxed{\textbf{(C)}}
+$$

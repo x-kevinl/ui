@@ -1,0 +1,4 @@
+== Solution 1 ==
+First, turn $\frac34 + \frac34i$ into polar form as $\frac{3\sqrt{2}}{4}e^{\frac{\pi}{4}i}$. Restated using geometric probabilities, we are trying to find the portion of a square enlarged by a factor of $\frac{3\sqrt{2}}{4}$ and rotated $45$ degrees that lies within the original square. This skips all the absolute values required before. Finish with the symmetry method stated above.
+
+-asdf334

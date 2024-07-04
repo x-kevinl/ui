@@ -1,0 +1,22 @@
+== Solution 1 ==
+Since $|z_0|=1$, let $z_0=e^{i\theta_0}$, where $\theta_0$ is an [[argument]] of $z_0$. 
+We will prove by induction that $z_n=e^{i\theta_n}$, where $\theta_n=2^n(\theta_0+\frac{\pi}{2})-\frac{\pi}{2}$.
+
+Base Case: trivial
+
+Inductive Step: Suppose the formula is correct for $z_k$, then
+$$
+z_{k+1}=\frac{iz_k}{\overline {z_k}}=i e^{i\theta_k} e^{i\theta_k}=e^{i(2\theta_k+\pi/2)}
+$$
+Since
+$$
+2\theta_k+\frac{\pi}{2}=2\cdot 2^n(\theta_0+\frac{\pi}{2})-\pi+\frac{\pi}{2}=2^{n+1}(\theta_0+\frac{\pi}{2})-\frac{\pi}{2}=\theta_{n+1}
+$$
+the formula is proven
+
+$z_{2005}=1\Rightarrow \theta_{2005}=2k\pi$, where $k$ is an integer. Therefore,
+$$
+2^{2005}(\theta_0+\frac{\pi}{2})=(2k+\frac{1}{2})\pi$$
+$$\theta_0=\frac{k}{2^{2004}}\pi+\left(\frac{1}{2^{2006}}-\frac{1}{2}\right)\pi
+$$
+The value of $\theta_0$ only matters [[modulo]] $2\pi$. Since $\frac{k+2^{2005}}{2^{2004}}\pi\equiv\frac{k}{2^{2004}}\pi\mod 2\pi$, k can take values from 0 to $2^{2005}-1$, so the answer is $2^{2005}\Rightarrow\boxed{\mathrm{E}}$

@@ -1,0 +1,28 @@
+==Solution 1 (Casework)==
+For the next five races, Zou wins four and loses one. Let <math>W</math> and <math>L</math> denote a win and a loss, respectively. There are five possible outcome sequences for Zou:
+<ol style="margin-left: 1.5em;">
+  <li><math>LWWWW</math></li><p>
+  <li><math>WLWWW</math></li><p>
+  <li><math>WWLWW</math></li><p>
+  <li><math>WWWLW</math></li><p>
+  <li><math>WWWWL</math></li><p>
+</ol>
+We proceed with casework:
+
+<b><u>Case (1): Sequences #1-4, in which Zou does not lose the last race.</u></b>
+
+The probability that Zou loses a race is <math>\frac13,</math> and the probability that Zou wins the next race is <math>\frac13.</math> For each of the three other races, the probability that Zou wins is <math>\frac23.</math>
+
+There are four sequences in this case. The probability of one such sequence is <math>\left(\frac13\right)^2\left(\frac23\right)^3.</math>
+
+<b><u>Case (2): Sequence #5, in which Zou loses the last race.</u></b>
+
+The probability that Zou loses a race is <math>\frac13.</math> For each of the four other races, the probability that Zou wins is <math>\frac23.</math>
+
+There is one sequence in this case. The probability is <math>\left(\frac13\right)^1\left(\frac23\right)^4.</math>
+
+<b><u>Answer</u></b>
+
+The requested probability is <cmath>4\left(\frac13\right)^2\left(\frac23\right)^3+\left(\frac13\right)^1\left(\frac23\right)^4=\frac{32}{243}+\frac{16}{243}=\frac{48}{243}=\frac{16}{81},</cmath> from which the answer is <math>16+81=\boxed{097}.</math>
+
+~MRENTHUSIASM

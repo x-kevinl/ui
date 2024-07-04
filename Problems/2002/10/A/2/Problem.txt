@@ -1,0 +1,4 @@
+==Problem==
+Given that a, b, and c are non-zero real numbers, define $(a, b, c) = \frac{a}{b} + \frac{b}{c} + \frac{c}{a}$, find $(2, 12, 9)$.
+
+$\textbf{(A)}\ 4 \qquad \textbf{(B)}\ 5 \qquad \textbf{(C)}\ 6 \qquad \textbf{(D)}\ 7 \qquad \textbf{(E)}\ 8$

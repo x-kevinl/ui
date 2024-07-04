@@ -1,0 +1,6 @@
+==Problem==
+The one-way routes connecting towns $A,M,C,X,Y,$ and $Z$ are shown in the figure below(not drawn to scale).The distances in kilometers along each route are marked. Traveling along these routes, what is the shortest distance from A to Z in kilometers?
+
+[[File:2024-AMC8-q14.png]]
+
+$\textbf{(A)}\ 28 \qquad \textbf{(B)}\ 29 \qquad \textbf{(C)}\ 30 \qquad \textbf{(D)}\ 31 \qquad \textbf{(E)}\ 32$

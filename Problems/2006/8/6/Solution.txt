@@ -1,0 +1,2 @@
+== Solution ==
+If the two rectangles were seperate, the perimeter would be $ 2(2(2+4)=24 $. It easy to see that their connection erases 2 from each of the rectangles, so the final perimeter is $ 24-2 \times 2 = \boxed{\textbf{(C)}\ 20} $.

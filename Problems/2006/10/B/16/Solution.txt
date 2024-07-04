@@ -1,0 +1,8 @@
+== Solution ==
+There are $365$ days in a year, plus $1$ extra day if there is a Leap Day, which occurs on years that are multiples of $4$ (with a few exceptions that don't affect this problem). 
+
+Therefore, the number of days between Leap Day $2004$ and Leap Day $2020$ is: 
+
+$ 16 \cdot 365 + 4 \cdot 1 = 5844 $
+
+Since the days of the week repeat every $7$ days and $ 5844 \equiv -1 \bmod{7}$, the day of the week Leap Day $2020$ occurs is the day of the week the day before Leap Day $2004$ occurs, which is $\boxed{\textbf{(E) }\textrm{Saturday}}$.

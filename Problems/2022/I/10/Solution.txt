@@ -1,0 +1,28 @@
+== Diagram ==
+<asy>
+/* Made by MRENTHUSIASM */
+size(300);
+import graph3;
+import solids;
+
+currentprojection=orthographic((7,0.2,9));
+triple A, B, C, OA, OB, OC;
+A = (0,0,0);
+B = (0,sqrt(560),0);
+C = intersectionpoints(Circle(A,sqrt(756),(0,0,1)),Circle(B,sqrt(960),(0,0,1)))[1];
+OA = (0,0,4);
+OB = (0,sqrt(560),8);
+OC = (C.x,C.y,16);
+
+draw(shift(OC)*scale3(19)*unitsphere,green,light=Viewport);
+draw(shift(OA)*scale3(11)*unitsphere,red,light=Viewport);
+draw(shift(OB)*scale3(13)*unitsphere,yellow,light=Viewport);
+draw(Circle(A,sqrt(105),(0,0,1))^^Circle(B,sqrt(105),(0,0,1))^^Circle(C,sqrt(105),(0,0,1)));
+draw((-70,-20,0)--(-70,45,0)--(20,45,0)--(20,-20,0)--cycle);
+
+dot(OA^^OB^^OC,linewidth(4.5));
+dot("$A$",A,(0,1,0),linewidth(4.5));
+dot("$B$",B,(0,1,0),linewidth(4.5));
+dot("$C$",C,(0,1.5,0),linewidth(4.5));
+</asy>
+~MRENTHUSIASM

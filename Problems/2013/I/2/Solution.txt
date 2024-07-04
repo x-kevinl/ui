@@ -1,0 +1,2 @@
+== Solution==
+The number takes a form of <math>\overline{5xyz5}</math>, in which <math>5|(x+y+z)</math>. Let <math>x</math> and <math>y</math> be arbitrary digits. For each pair of <math>x,y</math>, there are exactly two values of <math>z</math> that satisfy the condition of <math>5|(x+y+z)</math>. Therefore, the answer is <math>10\times10\times2=\boxed{200}</math>

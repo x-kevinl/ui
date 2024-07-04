@@ -1,0 +1,2 @@
+== Solution ==
+Sally made $0.55*20=11$ shots originally. Letting $x$ be the number of shots she made, we have $\frac{11+x}{25}=0.56$. Solving for $x$ gives us $x=\boxed{\textbf{(C)}\ 3}$

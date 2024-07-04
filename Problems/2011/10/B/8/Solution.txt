@@ -1,0 +1,5 @@
+==Solution==
+
+The beach not being crowded only means that it is not both hot and sunny. Equivalently, it is either cool or cloudy, which means $\boxed{\textbf{(B)}}$ is correct.
+
+It could be in fact cool and sunny, which would violate '''(A)''' and '''(E)'''. It could also be cool and cloudy, which would violate '''(D)''', or hot and cloudy, which would violate '''(C)'''.

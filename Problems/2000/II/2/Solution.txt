@@ -1,0 +1,4 @@
+== Solution ==
+<cmath>(x-y)(x+y)=2000^2=2^8 \cdot 5^6</cmath>
+
+Note that <math>(x-y)</math> and <math>(x+y)</math> have the same [[parity|parities]], so both must be even. We first give a factor of <math>2</math> to both <math>(x-y)</math> and <math>(x+y)</math>. We have <math>2^6 \cdot 5^6</math> left. Since there are <math>7 \cdot 7=49</math> factors of <math>2^6 \cdot 5^6</math>, and since both <math>x</math> and <math>y</math> can be negative, this gives us <math>49\cdot2=\boxed{098}</math> lattice points.

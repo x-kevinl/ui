@@ -1,0 +1,2 @@
+== Problem 8 ==
+The positive integers <math>N</math> and <math>N^2</math> both end in the same sequence of four digits <math>abcd</math> when written in base <math>10</math>, where digit <math>a</math> is not zero. Find the three-digit number <math>abc</math>.

@@ -1,0 +1,25 @@
+==Solution 1 (Graph Theory)==
+
+This problem is about the relationships between the white unit cubes and the blue unit cubes, which can be solved by [https://en.wikipedia.org/wiki/Graph_theory Graph Theory]. We use a [https://en.wikipedia.org/wiki/Planar_graph Planar Graph] to represent the larger cube. Each vertex of the planar graph represents a unit cube. Each edge of the planar graph represents a shared face between $2$ neighboring unit cubes. Each face of the planar graph represents a face of the larger cube.
+
+Now the problem becomes a [https://en.wikipedia.org/wiki/Graph_coloring Graph Coloring] problem of how many ways to assign $4$ vertices blue and $4$ vertices white with [https://en.wikipedia.org/wiki/Homeomorphism Topological Equivalence]. For example, in Figure $(1)$, as long as the $4$ blue vertices belong to the same planar graph face, the different planar graphs are considered to be topological equivalent by rotating the larger cube.
+
+[[File:Topology.jpg | 950px]]
+ 
+Here is how the $4$ blue unit cubes are arranged: 
+
+In Figure $(1)$: $4$ blue unit cubes are on the same layer (horizontal or vertical).
+
+In Figure $(2)$: $4$ blue unit cubes are in $T$ shape.
+
+In Figure $(3)$ and $(4)$: $4$ blue unit cubes are in $S$ shape.
+
+In Figure $(5)$: $3$ blue unit cubes are in $L$ shape, and the other is isolated without a shared face.
+
+In Figure $(6)$: $2$ pairs of neighboring blue unit cubes are isolated from each other without a shared face.
+
+In Figure $(7)$: $4$ blue unit cubes are isolated from each other without a shared face.
+
+So the answer is $\boxed{\textbf{(A)}\ 7}$
+
+~[https://artofproblemsolving.com/wiki/index.php/User:Isabelchen isabelchen]

@@ -1,0 +1,4 @@
+==Problem==
+A fair $6$ sided die is rolled twice. What is the probability that the first number that comes up is greater than or equal to the second number?
+
+$ \textbf{(A) }\dfrac16\qquad\textbf{(B) }\dfrac5{12}\qquad\textbf{(C) }\dfrac12\qquad\textbf{(D) }\dfrac7{12}\qquad\textbf{(E) }\dfrac56 $

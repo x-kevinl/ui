@@ -1,0 +1,33 @@
+== Problem ==
+
+In $\triangle ABC$, $AB=13$, $AC=5$, and $BC=12$. Points $M$ and $N$ lie on $AC$ and $BC$, respectively, with $CM=CN=4$. Points $J$ and $K$ are on $AB$ so that $MJ$ and $NK$ are perpendicular to $AB$. What is the area of pentagon $CMJKN$? 
+
+<asy>
+unitsize(0.5cm);
+defaultpen(0.8);
+pair C=(0,0), A=(0,5), B=(12,0), M=(0,4), N=(4,0);
+pair J=intersectionpoint(A--B, M--(M+rotate(90)*(B-A)) );
+pair K=intersectionpoint(A--B, N--(N+rotate(90)*(B-A)) );
+draw( A--B--C--cycle );
+draw( M--J );
+draw( N--K );
+label("$A$",A,NW);
+label("$B$",B,SE);
+label("$C$",C,SW);
+label("$M$",M,SW);
+label("$N$",N,S);
+label("$J$",J,NE);
+label("$K$",K,NE);
+</asy>
+
+$
+\mathrm{(A)}\ 15
+\qquad
+\mathrm{(B)}\ \frac{81}{5}
+\qquad
+\mathrm{(C)}\ \frac{205}{12}
+\qquad
+\mathrm{(D)}\ \frac{240}{13}
+\qquad
+\mathrm{(E)}\ 20
+$

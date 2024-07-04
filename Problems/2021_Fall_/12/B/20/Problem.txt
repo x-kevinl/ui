@@ -1,0 +1,5 @@
+==Problem==
+A cube is constructed from $4$ white unit cubes and $4$ blue unit cubes. How many different ways are there to construct the $2 \times 2 \times 2$ cube using these smaller cubes? (Two constructions are considered the same if one can be rotated to match the other.)
+
+$\textbf{(A)}\ 7 \qquad\textbf{(B)}\  8 \qquad\textbf{(C)}\  9 \qquad\textbf{(D)}\
+10 \qquad\textbf{(E)}\ 11$

@@ -1,0 +1,2 @@
+==Problem==
+Jen enters a lottery by picking <math>4</math> distinct numbers from <math>S=\{1,2,3,\cdots,9,10\}.</math> <math>4</math> numbers are randomly chosen from <math>S.</math> She wins a prize if at least two of her numbers were <math>2</math> of the randomly chosen numbers, and wins the grand prize if all four of her numbers were the randomly chosen numbers. The probability of her winning the grand prize given that she won a prize is <math>\tfrac{m}{n}</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

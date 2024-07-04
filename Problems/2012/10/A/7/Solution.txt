@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+Assume that there are 5 total marbles in the bag. The actual number does not matter, since all we care about is the ratios, and the only operation performed on the marbles in the bag is doubling.
+
+There are 3 blue marbles in the bag and 2 red marbles. If you double the amount of red marbles, there will still be 3 blue marbles but now there will be 4 red marbles. Thus, the answer is $\boxed{\textbf{(C)}\ \frac{4}{7}}$.

@@ -1,0 +1,2 @@
+==Solution==
+We see that $2.0055$ works but $2.0045$ does not. The digit $d$ can be from $5$ through $9$, which is $\boxed{\textbf{(C)}\ 5}$ values.

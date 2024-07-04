@@ -1,0 +1,10 @@
+== Solution ==
+If $ 1+2+...+n $ evenly [[divide]]s $6n$, then $\frac{6n}{1+2+...+n}$ is an [[integer]]. 
+
+Since $ 1+2+...+n = \frac{n(n+1)}{2} $ we may substitute the [[RHS]] in the above [[fraction]]. So the problem asks us for how many [[positive integer]]s $n$ is $\frac{6n}{\frac{n(n+1)}{2}}=\frac{12}{n+1}$ an integer, or equivalently when $k(n+1) = 12$ for a positive integer $k$. 
+
+$\frac{12}{n+1}$ is an integer when $n+1$ is a [[divisor |factor]] of $12$. 
+
+The factors of $12$ are $1, 2, 3, 4, 6,$ and $12$, so the possible values of $n$ are $0, 1, 2, 3, 5,$ and $11$.
+
+But since $0$ isn't a positive integer, only $1, 2, 3, 5,$ and $11$ are the possible values of $n$. Therefore the number of possible values of $n$ is $\boxed{\textbf{(B) }5}$.

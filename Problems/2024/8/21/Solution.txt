@@ -1,0 +1,4 @@
+==Solution 1==
+Let the initial number of green frogs be $g$ and the initial number of yellow frogs be $y$. Since the ratio of the number of green frogs to yellow frogs is initially $3 : 1$, $g = 3y$. Now, $3$ green frogs move to the sunny side and $5$ yellow frogs move to the shade side, thus the new number of green frogs is $g + 2$ and the new number of yellow frogs is $y - 2$. We are given that $\frac{g + 2}{y - 2} = \frac{4}{1}$, so $g + 2 = 4y - 8$, since $g = 3y$, we have $3y + 2 = 4y - 8$, so $y = 10$ and $g = 30$. Thus the answer is $(g + 2) - (y - 2) = 32 - 8 = 24$
+
+-anonchalantdreadhead

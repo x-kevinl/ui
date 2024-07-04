@@ -1,0 +1,4 @@
+==Problem==
+When Clara totaled her scores, she inadvertently reversed the units digit and the tens digit of one score. By which of the following might her incorrect sum have differed from the correct one?
+
+$\textbf{(A)}\ 45 \qquad \textbf{(B)}\ 46 \qquad \textbf{(C)}\ 47 \qquad \textbf{(D)}\ 48 \qquad \textbf{(E)}\ 49$

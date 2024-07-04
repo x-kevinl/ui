@@ -1,0 +1,5 @@
+==Solution 1==
+
+We are given a 3x3 grid in the problem. Therefore, there are 9 possible spots for a triangle or circle to be placed, and we are then asked to choose any 3 possible positions in a row for either a triangle or circle. Thus we have $\binom{9}{3}$ which is equivalent to $\boxed{\textbf{(D) }84}$
+
+~Clew28

@@ -1,0 +1,7 @@
+== Solution ==
+
+The percent decrease is (the amount of decrease)/(original amount)
+
+the amount of decrease is $41 - 7 = 34$
+
+so the percent decrease is $\frac{34}{41}$ which is about $ \boxed{\textbf{(E)}\ 80\%} $

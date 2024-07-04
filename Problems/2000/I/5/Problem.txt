@@ -1,0 +1,2 @@
+== Problem ==
+Each of two boxes contains both black and white marbles, and the total number of marbles in the two boxes is <math>25.</math> One marble is taken out of each box randomly. The [[probability]] that both marbles are black is <math>27/50,</math> and the probability that both marbles are white is <math>m/n,</math> where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. What is <math>m + n</math>?

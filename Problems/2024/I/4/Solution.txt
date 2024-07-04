@@ -1,0 +1,18 @@
+==Solution 1==
+This is a conditional probability problem. Bayes' Theorem states that 
+<cmath>P(A|B)=\dfrac{P(B|A)\cdot P(A)}{P(B)}</cmath>
+; in other words, the probability of <math>A</math> given <math>B</math> is equal to the probability of <math>B</math> given <math>A</math> times the probability of <math>A</math> divided by the probability of <math>B</math>. In our case, <math>A</math> represents the probability of winning the grand prize, and <math>B</math> represents the probability of winning a prize. Clearly, <math>P(B|A)=1</math>, since by winning the grand prize you automatically win a prize. Thus, we want to find <math>\dfrac{P(A)}{P(B)}</math>. 
+
+Let us calculate the probability of winning a prize. We do this through casework: how many of Jen's drawn numbers match the lottery's drawn numbers? 
+
+To win a prize, Jen must draw at least <math>2</math> numbers identical to the lottery. Thus, our cases are drawing <math>2</math>, <math>3</math>, or <math>4</math> numbers identical. 
+
+Let us first calculate the number of ways to draw exactly <math>2</math> identical numbers to the lottery. Let Jen choose the numbers <math>a</math>, <math>b</math>, <math>c</math>, and <math>d</math>; we have <math>\dbinom42</math> ways to choose which <math>2</math> of these <math>4</math> numbers are identical to the lottery. We have now determined <math>2</math> of the <math>4</math> numbers drawn in the lottery; since the other <math>2</math> numbers Jen chose can not be chosen by the lottery, the lottery now has <math>10-2-2=6</math> numbers to choose the last <math>2</math> numbers from. Thus, this case is <math>\dbinom62</math>, so this case yields <math>\dbinom42\dbinom62=6\cdot15=90</math> possibilities. 
+
+Next, let us calculate the number of ways to draw exactly <math>3</math> identical numbers to the lottery. Again, let Jen choose <math>a</math>, <math>b</math>, <math>c</math>, and <math>d</math>. This time, we have <math>\dbinom43</math> ways to choose the identical numbers and again <math>6</math> numbers left for the lottery to choose from; however, since <math>3</math> of the lottery's numbers have already been determined, the lottery only needs to choose <math>1</math> more number, so this is <math>\dbinom61</math>. This case yields <math>\dbinom43\dbinom61=4\cdot6=24</math>. 
+
+Finally, let us calculate the number of ways to all <math>4</math> numbers matching. There is actually just one way for this to happen. 
+
+In total, we have <math>90+24+1=115</math> ways to win a prize. The lottery has <math>\dbinom{10}4=210</math> possible combinations to draw, so the probability of winning a prize is <math>\dfrac{115}{210}</math>. There is actually no need to simplify it or even evaluate <math>\dbinom{10}4</math> or actually even know that it has to be <math>\dbinom{10}4</math>; it suffices to call it <math>a</math> or some other variable, as it will cancel out later. However, let us just go through with this. The probability of winning a prize is <math>\dfrac{115}{210}</math>. Note that the probability of winning a grand prize is just matching all <math>4</math> numbers, which we already calculated to have <math>1</math> possibility and thus have probability <math>\dfrac1{210}</math>. Thus, our answer is <math>\dfrac{\frac1{210}}{\frac{115}{210}}=\dfrac1{115}</math>. Therefore, our answer is <math>1+115=\boxed{116}</math>. 
+
+~Technodoggo

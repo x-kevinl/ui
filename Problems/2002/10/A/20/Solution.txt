@@ -1,0 +1,39 @@
+==Solution 1==
+First we can draw an image.
+<asy>
+unitsize(0.8 cm);
+
+pair A, B, C, D, E, F, G, H, J;
+
+A = (0,0);
+B = (1,0);
+C = (2,0);
+D = (3,0);
+E = (4,0);
+F = (5,0);
+G = (-1.5,4);
+H = extension(D, G, C, C + G - A);
+J = extension(F, G, E, E + G - A);
+
+draw(A--F--G--cycle);
+draw(B--G);
+draw(C--G);
+draw(D--G);
+draw(E--G);
+draw(C--H);
+draw(E--J);
+
+label("$A$", A, SW);
+label("$B$", B, S);
+label("$C$", C, S);
+label("$D$", D, S);
+label("$E$", E, S);
+label("$F$", F, SE);
+label("$G$", G, NW);
+label("$H$", H, W);
+label("$J$", J, NE);
+</asy>
+
+Since $\overline{AG}$ and $\overline{CH}$ are parallel, triangles $\triangle GAD$ and $\triangle HCD$ are similar. Hence, $\frac{CH}{AG} = \frac{CD}{AD} = \frac{1}{3}$.
+
+Since $\overline{AG}$ and $\overline{JE}$ are parallel, triangles $\triangle GAF$ and $\triangle JEF$ are similar. Hence, $\frac{EJ}{AG} = \frac{EF}{AF} = \frac{1}{5}$. Therefore, $\frac{CH}{EJ} = \left(\frac{CH}{AG}\right)\div\left(\frac{EJ}{AG}\right) = \left(\frac{1}{3}\right)\div\left(\frac{1}{5}\right) = \boxed{\frac{5}{3}}$. The answer is $\boxed{(D) 5/3}$.

@@ -1,0 +1,5 @@
+==Solution 1==
+Let the terms be <math>a-b</math>, <math>a</math>, and <math>a+b</math>. Then we want <math>(a-b)^2+a^2+(a+b)^2=ab^2</math>, or <math>3a^2+2b^2=ab^2</math>. Rearranging, we get <math>b^2=\frac{3a^2}{a-2}</math>. Simplifying further, <math>b^2=3a+6+\frac{12}{a-2}</math>. Looking at this second equation, since the right side must be an integer, <math>a-2</math> must equal <math>\pm1, 2, 3, 4, 6, 12</math>. Looking at the first equation, we see <math>a>2</math> since <math>b^2</math> is positive. This means we must test <math>a=3, 4, 5, 6, 8, 14</math>. After testing these, we see that only <math>a=5</math> and <math>a=14</math> work which give <math>b=5</math> and <math>b=7</math> respectively. Thus the answer is <math>10+21=\boxed{031}</math>.
+~JHawk0224
+
+Note: If you don't understand the simplification of <math>b^2=\frac{3a^2}{a-2}</math>, you can actually just use synthetic division and arrive at the same place ~ Anonymous

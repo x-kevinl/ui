@@ -1,0 +1,4 @@
+==Solution 1==
+
+
+This is equivalent to asking for the probability that at least one of the numbers is a multiple of $ 5 $, since if one of the numbers is a multiple of $ 5 $, then the product with it and another integer is also a multiple of $ 5 $, and if a number is a multiple of $ 5 $, then since $ 5 $ is prime, one of the factors must also have a factor of $ 5 $, and $ 5 $ is the only multiple of $ 5 $ on a die, so one of the numbers rolled must be a $ 5 $. To find the probability of rolling at least one $ 5 $, we can find the probability of not rolling a $ 5 $ and subtract that from $ 1 $, since you either roll a $ 5 $ or not roll a $ 5 $. The probability of not rolling a $ 5 $ on either dice is $ \left(\frac{5}{6} \right) \left(\frac{5}{6} \right)=\frac{25}{36} $. Therefore, the probability of rolling at least one five, and thus rolling two numbers whose product is a multiple of $ 5 $, is $ 1-\frac{25}{36}=\frac{11}{36}, \boxed{\text{D}} $

@@ -1,0 +1,3 @@
+== Problem ==
+
+Centered at each lattice point in the coordinate plane are a circle radius <math>\frac{1}{10}</math> and a square with sides of length <math>\frac{1}{5}</math> whose sides are parallel to the coordinate axes. The line segment from <math>(0,0)</math> to <math>(1001, 429)</math> intersects <math>m</math> of the squares and <math>n</math> of the circles. Find <math>m + n</math>.

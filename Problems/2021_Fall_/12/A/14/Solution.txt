@@ -1,0 +1,11 @@
+==Solution 1==
+
+Divide the equilateral hexagon $ABCDEF$ into isosceles triangles $ABF$, $CBD$, and $EDF$ and triangle $BDF$. The three isosceles triangles are congruent by SAS congruence. By CPCTC, $BF=BD=DF$, so triangle $BDF$ is equilateral. 
+
+Let the side length of the hexagon be $s$. The area of each isosceles triangle is $$\frac{1}{2} a b \sin\angle C = \frac{1}{2} \cdot s \cdot s \cdot \sin{30^{\circ}} = \frac{1}{4}s^2.$$
+
+By the [[Law of Cosines]] on triangle $ABF$, $$BF^2=s^2+s^2-2s^2\cos{30^{\circ}}=2s^2-\sqrt{3}s^2.$$ 
+
+Hence, the [[Area_of_an_equilateral_triangle|area of the equilateral triangle]] $BDF$ is $$\frac{\sqrt{3}}{4} BF^2 = \frac{\sqrt{3}}{4}\left(2s^2-\sqrt{3}s^2\right)=\frac{\sqrt{3}}{2}s^2-\frac{3}{4}s^2.$$
+
+The total area of the hexagon is thrice the area of each isosceles triangle plus the area of the equilateral triangle, or $$3\left(\frac{1}{4}s^2\right)+ \left( \frac{\sqrt{3}}{2}s^2-\frac{3}{4}s^2 \right)=\frac{\sqrt{3}}{2}s^2=6\sqrt{3}.$$ Hence, $s=2\sqrt{3}$, and the perimeter of the hexagon is $6s=\boxed{\textbf{(E)} \: 12\sqrt3}$.

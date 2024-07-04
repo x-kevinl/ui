@@ -1,0 +1,6 @@
+==Solution 1==
+We know that in the same amount of time given, Ina will run twice the distance of Eve, and Paul would run quadruple the distance of Eve. Let's consider the time it takes for Paul to meet Eve: Paul would've run 4 times the distance of Eve, which we can denote as <math>d</math>. Thus, the distance between <math>B</math> and <math>C</math> is <math>4d+d=5d</math>. In that given time, Ina would've run twice the distance <math>d</math>, or <math>2d</math> units. 
+
+Now, when Paul starts running back towards <math>A</math>, the same amount of time would pass since he will meet Ina at his starting point. Thus, we know that he travels another <math>4d</math> units and Ina travels another <math>2d</math> units. 
+
+Therefore, drawing out the diagram, we find that <math>2d+2d+4d+d=9d=1800 \implies d=200</math>, and distance between <math>A</math> and <math>B</math> is the distance Ina traveled, or <math>4d=4(200)=\boxed{800}</math>

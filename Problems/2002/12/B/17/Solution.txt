@@ -1,0 +1,6 @@
+== Solution 1 ==
+We say Andy's lawn has an area of $x$. Beth's lawn thus has an area of $\frac{x}{2}$, and Carlos's lawn has an area of $\frac{x}{3}$. 
+
+We say Andy's lawn mower cuts at a speed of $y$. Carlos's cuts at a speed of $\frac{y}{3}$, and Beth's cuts at a speed $\frac{2y}{3}$.
+
+Each person's lawn is cut at a time of $\frac{\text{area}}{\text{rate}}$, so Andy's is cut in $\frac{x}{y}$ time, as is Carlos's. Beth's is cut in $\frac{3}{4}\times\frac{x}{y}$, so the first one to finish is $\boxed{\mathrm{(B)}\ \text{Beth}}$.

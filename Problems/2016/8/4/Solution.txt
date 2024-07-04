@@ -1,0 +1,4 @@
+==Solution==
+When Cheenu was a boy, he could run $15$ miles in $3$ hours and $30$ minutes $= 3\times60 + 30$ minutes $= 210$ minutes, thus running $\frac{210}{15} = 14$ minutes per mile. Now that he is an old man, he can walk $10$ miles in $4$ hours $= 4 \times 60$ minutes $= 240$ minutes, thus walking $\frac{240}{10} = 24$ minutes per mile. Therefore, it takes him $\boxed{\textbf{(B)}\ 10}$ minutes longer to walk a mile now compared to when he was a boy.
+
+~CHECKMATE2021

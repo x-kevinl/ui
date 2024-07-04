@@ -1,0 +1,4 @@
+== Problem ==
+Let <cmath>P(x) = 24x^{24} + \sum_{j = 1}^{23}(24 - j)(x^{24 - j} + x^{24 + j}).</cmath> Let <math>z_{1},z_{2},\ldots,z_{r}</math> be the distinct zeros of <math>P(x),</math> and let <math>z_{k}^{2} = a_{k} + b_{k}i</math> for <math>k = 1,2,\ldots,r,</math> where <math>a_{k}</math> and <math>b_{k}</math> are real numbers. Let
+<center><math>\sum_{k = 1}^{r}|b_{k}| = m + n\sqrt {p},</math></center>
+where <math>m, n,</math> and <math>p</math> are integers and <math>p</math> is not divisible by the square of any prime. Find <math>m + n + p.</math>

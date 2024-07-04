@@ -1,0 +1,2 @@
+== Solution ==
+We set up the proportion  $\frac{12  \text{cm}}{72  \text{km}}=\frac{17 \text{cm}}{x \text{km}}$. Thus $x=102 \Rightarrow \boxed{\textbf{(B)}\ 102}$

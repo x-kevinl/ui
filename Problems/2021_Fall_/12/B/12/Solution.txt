@@ -1,0 +1,10 @@
+==Solution 1==
+
+The prime factorizations of $768$ and $384$ are $2^8\cdot3$ and $2^7\cdot3,$ respectively. Note that $f(n)$ is the sum of all fractions of the form $\frac 1d,$ where $d$ is a positive divisor of $n.$ By geometric series, it follows that
+$$\begin{alignat*}{8}
+f(768)&=\left(\sum_{k=0}^{8}\frac{1}{2^k}\right)+\left(\sum_{k=0}^{8}\frac{1}{2^k\cdot3}\right)&&=\frac{511}{256}+\frac{511}{768}&&=\frac{2044}{768}, \\
+f(384)&=\left(\sum_{k=0}^{7}\frac{1}{2^k}\right)+\left(\sum_{k=0}^{7}\frac{1}{2^k\cdot3}\right)&&=\frac{255}{128}+\frac{255}{384}&&=\frac{1020}{384}.
+\end{alignat*}$$
+Therefore, the answer is $f(768)-f(384)=\boxed{\textbf{(B)}\ \frac{1}{192}}.$
+
+~lopkiloinm ~MRENTHUSIASM

@@ -1,0 +1,16 @@
+==Problem==
+In $\bigtriangleup ABC$, $D$ is a point on side $\overline{AC}$ such that $BD=DC$ and $\angle BCD$ measures $70^\circ$. What is the degree measure of $\angle ADB$?
+
+<asy>
+size(300);
+defaultpen(linewidth(0.8));
+pair A=(-1,0),C=(1,0),B=dir(40),D=origin;
+draw(A--B--C--A);
+draw(D--B);
+dot("$A$", A, SW);
+dot("$B$", B, NE);
+dot("$C$", C, SE);
+dot("$D$", D, S);
+label("$70^\circ$",C,2*dir(180-35));</asy>
+
+$\textbf{(A) }100\qquad\textbf{(B) }120\qquad\textbf{(C) }135\qquad\textbf{(D) }140\qquad \textbf{(E) }150$

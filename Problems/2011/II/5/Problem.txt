@@ -1,0 +1,3 @@
+==Problem==
+
+The sum of the first <math>2011</math> terms of a [[geometric sequence]] is <math>200</math>. The sum of the first <math>4022</math> terms is <math>380</math>. Find the sum of the first <math>6033</math> terms.

@@ -1,0 +1,4 @@
+==Problem==
+Forty slips of paper numbered $1$ to $40$ are placed in a hat. Alice and Bob each draw one number from the hat without replacement, keeping their numbers hidden from each other. Alice says, "I can't tell who has the larger number." Then Bob says, "I know who has the larger number." Alice says, "You do? Is your number prime?" Bob replies, "Yes." Alice says, "In that case, if I multiply your number by $100$ and add my number, the result is a perfect square. " What is the sum of the two numbers drawn from the hat?
+
+$\textbf{(A) }27\qquad\textbf{(B) }37\qquad\textbf{(C) }47\qquad\textbf{(D) }57\qquad\textbf{(E) }67$

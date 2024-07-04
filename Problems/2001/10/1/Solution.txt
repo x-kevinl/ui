@@ -1,0 +1,13 @@
+== Solution ==
+
+The median of the list is $ 10 $, and there are $ 9 $ numbers in the list, so the median must be the 5th number from the left, which is $ n+6 $.
+
+We substitute the median for $ 10 $ and the equation becomes $ n+6=10 $.
+
+Subtract both sides by 6 and we get $ n=4 $.
+
+$ n+n+3+n+4+n+5+n+6+n+8+n+10+n+12+n+15=9n+63 $.
+
+The mean of those numbers is $ \frac{9n+63}{9} $ which is $ n+7 $. 
+
+Substitute $ n $ for $ 4 $ and $ 4+7=\boxed{\textbf{(E) }11} $.

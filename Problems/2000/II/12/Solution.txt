@@ -1,0 +1,20 @@
+== Solution 1==
+Let <math>D</math> be the foot of the [[perpendicular]] from <math>O</math> to the plane of <math>ABC</math>. By the [[Pythagorean Theorem]] on triangles <math>\triangle OAD</math>, <math>\triangle OBD</math> and <math>\triangle OCD</math> we get:
+
+<cmath>DA^2=DB^2=DC^2=20^2-OD^2</cmath>
+
+It follows that <math>DA=DB=DC</math>, so <math>D</math> is the [[circumcenter]] of <math>\triangle ABC</math>.
+
+By [[Heron's Formula]] the area of <math>\triangle ABC</math> is (alternatively, a <math>13-14-15</math> triangle may be split into <math>9-12-15</math> and <math>5-12-13</math> [[right triangle]]s):
+
+<cmath>K = \sqrt{s(s-a)(s-b)(s-c)} = \sqrt{21(21-15)(21-14)(21-13)} = 84</cmath>
+
+From <math>R = \frac{abc}{4K}</math>, we know that the [[circumradius]] of <math>\triangle ABC</math> is:
+
+<cmath>R = \frac{abc}{4K} = \frac{(13)(14)(15)}{4(84)} = \frac{65}{8}</cmath>
+
+Thus by the [[Pythagorean Theorem]] again,
+
+<cmath>OD = \sqrt{20^2-R^2} = \sqrt{20^2-\frac{65^2}{8^2}} = \frac{15\sqrt{95}}{8}.</cmath>
+
+So the final answer is <math>15+95+8=\boxed{118}</math>.

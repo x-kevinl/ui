@@ -1,0 +1,4 @@
+== Solution 1 ==
+By the distributive property, 
+
+$$(3x-2)[(4x+1)-4x] + 1 = 3x-2 + 1 = 3x-1 = 3(4) - 1 = \boxed{\mathrm{(D)}\ 11}$$.

@@ -1,0 +1,3 @@
+== Problem ==
+
+A game uses a deck of <math> n </math> different cards, where <math> n </math> is an integer and <math> n \geq 6. </math> The number of possible sets of 6 cards that can be drawn from the deck is 6 times the number of possible sets of 3 cards that can be drawn. Find <math> n. </math>

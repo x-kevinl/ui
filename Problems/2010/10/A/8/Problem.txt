@@ -1,0 +1,14 @@
+== Problem 8 ==
+Tony works $2$ hours a day and is paid &#36;$0.50$ per hour for each full year of his age. During a six month period Tony worked $50$ days and earned &#36;$630$. How old was Tony at the end of the six month period?
+
+$
+\mathrm{(A)}\ 9
+\qquad
+\mathrm{(B)}\ 11
+\qquad
+\mathrm{(C)}\ 12
+\qquad
+\mathrm{(D)}\ 13
+\qquad
+\mathrm{(E)}\ 14
+$

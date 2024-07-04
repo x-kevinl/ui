@@ -1,0 +1,30 @@
+==Solution 1==
+<asy>
+pair A,B,C,D,M,n,O,P;
+A=(0,42);B=(84,42);C=(84,0);D=(0,0);M=(0,21);n=(28,42);O=(12,18);P=(32,13);
+fill(C--D--P--cycle,blue);
+draw(A--B--C--D--cycle);
+draw(C--M);
+draw(D--n);
+draw(B--P);
+draw(D--P);
+label("$A$",A,NW);
+label("$B$",B,NE);
+label("$C$",C,SE);
+label("$D$",D,SW);
+label("$M$",M,W);
+label("$N$",n,N);
+label("$O$",O,(-0.5,1));
+label("$P$",P,N);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(M);
+dot(n);
+dot(O);
+dot(P);
+label("28",(0,42)--(28,42),N);
+label("56",(28,42)--(84,42),N);
+</asy>
+Impose a coordinate system on the diagram where point <math>D</math> is the origin. Therefore <math>A=(0,42)</math>, <math>B=(84,42)</math>, <math>C=(84,0)</math>, and <math>D=(0,0)</math>. Because <math>M</math> is a midpoint and <math>N</math> is a trisection point, <math>M=(0,21)</math> and <math>N=(28,42)</math>. The equation for line <math>DN</math> is <math>y=\frac{3}{2}x</math> and the equation for line <math>CM</math> is <math>\frac{1}{84}x+\frac{1}{21}y=1</math>, so their intersection, point <math>O</math>, is <math>(12,18)</math>. Using the shoelace formula on quadrilateral <math>BCON</math>, or drawing diagonal <math>\overline{BO}</math> and using <math>\frac12bh</math>, we find that its area is <math>2184</math>. Therefore the area of triangle <math>BCP</math> is <math>\frac{2184}{2} = 1092</math>. Using <math>A = \frac 12 bh</math>, we get <math>2184 = 42h</math>. Simplifying, we get <math>h = 52</math>. This means that the x-coordinate of <math>P = 84 - 52 = 32</math>. Since P lies on <math>\frac{1}{84}x+\frac{1}{21}y=1</math>, you can solve and get that the y-coordinate of <math>P</math> is <math>13</math>. Therefore the area of <math>CDP</math> is <math>\frac{1}{2} \cdot 13 \cdot 84=\boxed{546}</math>.

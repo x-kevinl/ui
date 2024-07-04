@@ -1,0 +1,4 @@
+==Solution 1==
+First, note that $50+1=51$, which motivates us to factor the polynomial as $(x^2-50)(x^2-1)$. Since this expression is negative, one term must be negative and the other positive. Also, the first term is obviously smaller than the second, so $x^2-50<0<x^2-1$. Solving this inequality, we find $1<x^2<50$. There are  exactly $12$ integers $x$ that satisfy this inequality, $\pm \{2,3,4,5,6,7\}$.
+
+Thus our answer is $\boxed{\textbf {(C) } 12}$.

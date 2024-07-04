@@ -1,0 +1,11 @@
+== Problem ==
+
+Tom has twelve slips of paper which he wants to put into five cups labeled $A$, $B$, $C$, $D$, $E$. He wants the sum of the numbers on the slips in each cup to be an integer. Furthermore, he wants the five integers to be consecutive and increasing from $A$ to $E$. The numbers on the papers are $2, 2, 2, 2.5, 2.5, 3, 3, 3, 3, 3.5, 4,$ and $4.5$. If a slip with $2$ goes into cup $E$ and a slip with $3$ goes into cup $B$, then the slip with $3.5$ must go into what cup?
+
+$
+\textbf{(A) } A \qquad
+\textbf{(B) } B \qquad
+\textbf{(C) } C \qquad
+\textbf{(D) } D \qquad
+\textbf{(E) } E
+$

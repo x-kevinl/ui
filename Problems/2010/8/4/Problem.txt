@@ -1,0 +1,4 @@
+==Problem==
+What is the sum of the mean, median, and mode of the numbers $2,3,0,3,1,4,0,3$? 
+
+$ \textbf{(A)}\ 6.5 \qquad\textbf{(B)}\ 7\qquad\textbf{(C)}\ 7.5\qquad\textbf{(D)}\ 8.5\qquad\textbf{(E)}\ 9 $

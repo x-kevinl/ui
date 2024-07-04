@@ -1,0 +1,13 @@
+== Solution ==
+
+The answer is $\dfrac{\text{number of students who preferred spaghetti}}{\text{number of students who preferred manicotti}}$
+
+So,
+
+$\frac{250}{100}$ 
+ 
+Simplify,
+
+$\frac{5}{2}$ 
+
+The answer is $ \boxed{\textbf{(E)}\ \dfrac{5}{2}} $

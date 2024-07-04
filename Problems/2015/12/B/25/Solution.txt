@@ -1,0 +1,30 @@
+==Solution 1==
+
+Let $x=e^{i\pi/6}$, a $30^\circ$ counterclockwise rotation centered at the origin. Notice that $P_k$ on the complex plane is:
+
+$$1+2x+3x^2+\cdots+(k+1)x^k$$
+
+We need to find the magnitude of $P_{2015}$ on the complex plane. This is an [[arithmetico-geometric series]]. 
+
+$$\begin{align*} S &=1+2x+3x^2+\cdots+2015x^{2014} \\
+xS &=x+2x^2+3x^3+\cdots+2015x^{2015} \\
+(1-x)S &=1+x+x^2+\cdots+x^{2014}-2015x^{2015} \\
+S &= \frac{1-x^{2015}}{(1-x)^2}-\frac{2015x^{2015}}{1-x} \end{align*} $$
+
+We want to find $|S|$. First, note that $x^{2015}=x^{11}=x^{-1}$ because $x^{12}=1$. Therefore
+
+$$S =\frac{1-\frac{1}{x}}{(1-x)^2}-\frac{2015}{x(1-x)}=-\frac{1}{x(1-x)}-\frac{2015}{x(1-x)}=-\frac{2016}{x(1-x)}.$$
+
+Hence, since $|x|=1$, we have $|S| = \frac{2016}{|1-x|}.$
+
+Now we just have to find $|1-x|$. This can just be computed directly:
+
+$$1-x=1-\frac{\sqrt{3}}{2}-\frac{1}{2}i$$
+
+$$|1-x|^2=\left(1-\sqrt{3}+\frac{3}{4}\right)+\frac{1}{4}=2-\sqrt{3}={\left(\frac{\sqrt{6}-\sqrt{2}}{2}\right)}^2$$
+
+$$|1-x|=\frac{\sqrt{6}-\sqrt{2}}{2}$$
+
+Therefore $|S|=2016\cdot\frac{2}{\sqrt{6}-\sqrt{2}}=2016\left(\frac{\sqrt{6}+\sqrt{2}}{2}\right)=1008\sqrt{2}+1008 \sqrt{6}$.
+
+Thus the answer is $1008+2+1008+6=\boxed{\textbf{(B)}\; 2024}$.

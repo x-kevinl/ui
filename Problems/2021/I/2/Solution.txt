@@ -1,0 +1,13 @@
+==Solution 1 (Similar Triangles)==
+Let <math>G</math> be the intersection of <math>AD</math> and <math>FC</math>.
+From vertical angles, we know that <math>\angle FGA= \angle DGC</math>. Also, because we are given that <math>ABCD</math> and <math>AFCE</math> are rectangles, we know that <math>\angle AFG= \angle CDG=90 ^{\circ}</math>.
+Therefore, by AA similarity, we know that <math>\triangle AFG\sim\triangle CDG</math>.
+
+Let <math>AG=x</math>. Then, we have <math>DG=11-x</math>. By similar triangles, we know that <math>FG=\frac{7}{3}(11-x)</math> and <math>CG=\frac{3}{7}x</math>. We have <math>\frac{7}{3}(11-x)+\frac{3}{7}x=FC=9</math>.
+
+Solving for <math>x</math>, we have <math>x=\frac{35}{4}</math>.
+The area of the shaded region is just <math>3\cdot \frac{35}{4}=\frac{105}{4}</math>.
+
+Thus, the answer is <math>105+4=\framebox{109}</math>. 
+
+~yuanyuanC

@@ -1,0 +1,4 @@
+==Problem==
+Let <math>\omega\neq 1</math> be a 13th root of unity. Find the remainder when
+<cmath>\prod_{k=0}^{12}(2-2\omega^k+\omega^{2k})</cmath>
+is divided by 1000.

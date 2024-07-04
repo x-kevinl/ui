@@ -1,0 +1,12 @@
+==Solution 1==
+"Evenly spaced" just means the bins form an arithmetic sequence.
+
+Suppose the middle bin in the sequence is $x$. There are $x-1$ different possibilities for the first bin, and these two bins uniquely determine the final bin. Now, the probability that these $3$ bins are chosen is $6\cdot 2^{-3x} = 6\cdot \frac{1}{8^x}$, so the probability $x$ is the middle bin is $6\cdot\frac{x-1}{8^x}$. Then, we want the sum
+$$\begin{align*}
+6\sum_{x=2}^{\infty}\frac{x-1}{8^x} &= \frac{6}{8}\left[\frac{1}{8} + \frac{2}{8^2} + \frac{3}{8^3}\cdots\right]\\
+&= \frac34\left[\left(\frac{1}{8} + \frac{1}{8^2} + \frac{1}{8^3}+\cdots \right) + \left(\frac{1}{8^2} + \frac{1}{8^3} + \frac{1}{8^4} + \cdots \right) + \cdots\right]\\
+&= \frac34\left[\frac17\cdot \left(1 + \frac{1}{8} + \frac{1}{8^2} + \frac{1}{8^3} + \cdots \right)\right]\\
+&= \frac34\cdot \frac{8}{49}\\
+&= \frac{6}{49}
+\end{align*}$$
+The answer is $6+49=\boxed{\textbf{(A) }55}.$

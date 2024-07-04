@@ -1,0 +1,21 @@
+==Solution 1 (Cosine Rule) ==
+
+Construct the circle that passes through $A$, $O$, and $C$, centered at $X$. 
+
+Also notice that $\overline{OA}$ and $\overline{OC}$ are the angle bisectors of angle $\angle BAC$ and $\angle BCA$ respectively. We then deduce $\angle AOC=120^\circ$.
+
+Consider another point $M$ on Circle $X$ opposite to point $O$. 
+
+As $AOCM$ is an inscribed quadrilateral of Circle $X$, $\angle AMC=180^\circ-120^\circ=60^\circ$.
+
+Afterward, deduce that $\angle AXC=2·\angle AMC=120^\circ$.
+
+By the Cosine Rule, we have the equation: (where $r$ is the radius of circle $X$)
+
+$2r^2(1-\cos(120^\circ))=6^2$
+
+$r^2=12$
+
+The area is therefore $ \pi r^2 = \boxed{\textbf{(B)}\ 12\pi}$.
+
+~Wilhelm Z

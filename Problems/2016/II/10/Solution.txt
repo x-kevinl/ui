@@ -1,0 +1,36 @@
+==Solution 1==
+<asy>
+import cse5;
+pathpen = black; pointpen = black;
+pointfontsize = 9;
+size(8cm);
+
+pair A = origin, B = (13,0), P = (4,0), Q = (7,0),
+	T = B + 5 dir(220), C = IP(circumcircle(A,B,T),Line(T,Q,-0.1,10)),
+	S = IP(circumcircle(A,B,C),Line(C,P,-0.1,10));
+
+Drawing(A--B--C--cycle);
+D(circumcircle(A,B,C),rgb(0,0.6,1));
+DrawPathArray(C--S^^C--T,rgb(1,0.4,0.1));
+DrawPathArray(A--S^^B--T,rgb(0,0.4,0));
+D(S--T,rgb(1,0.2,0.4));
+
+D("A",A,dir(215));
+D("B",B,dir(330));
+D("P",P,dir(240));
+D("Q",Q,dir(240));
+D("T",T,dir(290));
+D("C",C,dir(120));
+D("S",S,dir(250));
+
+MP("4",(A+P)/2,dir(90));
+MP("3",(P+Q)/2,dir(90));
+MP("6",(Q+B)/2,dir(90));
+MP("5",(B+T)/2,dir(140));
+MP("7",(A+S)/2,dir(40));
+</asy>
+Let <math>\angle ACP=\alpha</math>, <math>\angle PCQ=\beta</math>, and <math>\angle QCB=\gamma</math>. Note that since <math>\triangle ACQ\sim\triangle TBQ</math> we have <math>\tfrac{AC}{CQ}=\tfrac56</math>, so by the Ratio Lemma <cmath>\dfrac{AP}{PQ}=\dfrac{AC}{CQ}\cdot\dfrac{\sin\alpha}{\sin\beta}\quad\implies\quad \dfrac{\sin\alpha}{\sin\beta}=\dfrac{24}{15}.</cmath>Similarly, we can deduce <math>\tfrac{PC}{CB}=\tfrac47</math> and hence <math>\tfrac{\sin\beta}{\sin\gamma}=\tfrac{21}{24}</math>.
+
+Now Law of Sines on <math>\triangle ACS</math>, <math>\triangle SCT</math>, and <math>\triangle TCB</math> yields <cmath>\dfrac{AS}{\sin\alpha}=\dfrac{ST}{\sin\beta}=\dfrac{TB}{\sin\gamma}.</cmath>Hence <cmath>\dfrac{ST^2}{\sin^2\beta}=\dfrac{TB\cdot AS}{\sin\alpha\sin\gamma},</cmath>so <cmath>TS^2=TB\cdot AS\left(\dfrac{\sin\beta}{\sin\alpha}\dfrac{\sin\beta}{\sin\gamma}\right)=\dfrac{15\cdot 21}{24^2}\cdot 5\cdot 7=\dfrac{35^2}{8^2}.</cmath>Hence <math>ST=\tfrac{35}8</math> and the requested answer is <math>35+8=\boxed{43}</math>.
+
+Edit: Note that the finish is much simpler. Once you get <math>\dfrac{AS}{\sin\alpha}=\dfrac{ST}{\sin\beta}</math>, you can solve quickly from there getting <math>ST=\dfrac{AS \sin(\beta)}{\sin(\alpha)}=7\cdot \dfrac{15}{24}=\dfrac{35}{8}</math>.

@@ -1,0 +1,5 @@
+==Solution 1==
+Because the triangles are right triangles, we know the hypotenuses are diameters of circles $A$ and $B$. Thus, their radii are 2.5 and 6.5 (respectively). Square the two numbers and multiply $\pi$ to get $6.25\pi$ and $42.25\pi$ as the areas of the circles. Multiply 4 on both numbers to get $25\pi$ and $169\pi$. Cancel out the $\pi$, and lastly, divide, to get your answer $=\boxed{\textbf{(D) }\frac{25}{169}}.$ 
+
+
+~Failure.net

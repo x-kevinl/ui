@@ -1,0 +1,23 @@
+==Solution 1 (Casework)==
+
+We can begin to put this into cases. Let's call the pairs $a$, $b$ and $c$, and assume that a member of pair $a$ is sitting in the leftmost seat of the second row. We can have the following cases then.
+
+Case $1$: 
+Second Row: a b c
+Third Row: b c a
+
+Case $2$:
+Second Row: a c b
+Third Row: c b a
+
+Case $3$: 
+Second Row: a b c
+Third Row: c a b
+
+Case $4$: 
+Second Row: a c b
+Third Row: b a c
+
+For each of the four cases, we can flip the siblings, as they are distinct. So, each of the cases has $2 \cdot 2 \cdot 2 = 8$ possibilities. Since there are four cases, when pair $a$ has someone in the leftmost seat of the second row, there are $32$ ways to rearrange it. However, someone from either pair $a$, $b$, or $c$ could be sitting in the leftmost seat of the second row. So, we have to multiply it by $3$ to get our answer of $32 \cdot 3 = 96$. So, the correct answer is $\boxed{\textbf{(D)} \text{ 96}}$.
+
+Written By: Archimedes15

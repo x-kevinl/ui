@@ -1,0 +1,4 @@
+== Problem ==
+In a triangle with integer side lengths, one side is three times as long as a second side, and the length of the third side is $15$. What is the greatest possible perimeter of the triangle? 
+
+$ \textbf{(A) } 43\qquad \textbf{(B) } 44\qquad \textbf{(C) } 45\qquad \textbf{(D) } 46\qquad \textbf{(E) } 47 $

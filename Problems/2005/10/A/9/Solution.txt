@@ -1,0 +1,6 @@
+==Solution==
+There are $\frac{5!}{2!3!}=10$ distinct arrangements of three $X$'s and two $O$'s. 
+
+There is only $1$ distinct arrangement that reads $XOXOX$.
+
+Therefore the desired [[probability]] is $\boxed{\textbf{(B) }\frac{1}{10}}$

@@ -1,0 +1,10 @@
+==Solution==
+We have that A is $x\%$ greater than B, so $A=\frac{100+x}{100}(B)$. We solve for $x$. We get 
+
+$\frac{A}{B}=\frac{100+x}{100}$
+
+$100\frac{A}{B}=100+x$
+
+$100\left(\frac{A}{B}-1\right)=x$
+
+$100\left(\frac{A-B}{B}\right)=x$.  $\boxed{\left(\textbf{A}\right)}$

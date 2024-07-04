@@ -1,0 +1,12 @@
+== Solution ==
+<math>PQ=\sqrt{(8-7)^2+(8-12)^2+(1-10)^2}=\sqrt{98}</math>
+
+<math>PR=\sqrt{(11-7)^2+(3-12)^2+(9-10)^2}=\sqrt{98}</math>
+
+<math>QR=\sqrt{(11-8)^2+(3-8)^2+(9-1)^2}=\sqrt{98}</math>
+
+So, <math>PQR</math> is an equilateral triangle. Let the side of the cube be <math>a</math>.
+
+<math>a\sqrt{2}=\sqrt{98}</math>
+
+So, <math>a=7</math>, and hence the surface area is <math>6a^2=\framebox{294}</math>.

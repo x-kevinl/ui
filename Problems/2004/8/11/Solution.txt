@@ -1,0 +1,2 @@
+==Solution==
+From rule 1, the largest number, $12$, can be second or third. From rule 2, because there are five places, the smallest number $-2$ can either be third or fourth. The median, $6$ can be second, third, or fourth. Because we know the middle three numbers, the first and last numbers are $4$ and $9$, disregarding their order. Their average is $(4+9)/2 = \boxed{\textbf{(C)}\ 6.5}$.

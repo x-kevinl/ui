@@ -1,0 +1,4 @@
+==Solution 1 (Arithmetic Series)==
+Since $$\mathrm{Distance}=\mathrm{Speed}\cdot\mathrm{Time},$$ we seek the sum $$5\cdot1+12\cdot1+19\cdot1+26\cdot1+\cdots=5+12+19+26+\cdots,$$ in which there are $30$ terms.
+
+The last term is $5+7\cdot(30-1)=208.$ Therefore, the requested sum is $$5+12+19+26+\cdots+208=\frac{5+208}{2}\cdot30=\boxed{\textbf{(D)} ~3195}.$$ Recall that to find the sum of an arithmetic series, we take the average of the first and last terms, then multiply by the number of terms: $$\mathrm{Sum}=\frac{\mathrm{First}+\mathrm{Last}}{2}\cdot\mathrm{Count}.$$ ~MRENTHUSIASM

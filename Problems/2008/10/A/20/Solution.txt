@@ -1,0 +1,14 @@
+==Solution 1==
+<center><asy>
+pointpen = black; pathpen = black + linewidth(0.62);  /* cse5 */
+pen sm = fontsize(10);             /* small font pen */
+pair D=(0,0),C=(12,0), K=(7,16/3); /* note that K.x is arbitrary, as generator for A,B */
+pair A=7*K/4-3*C/4, B=7*K/4-3*D/4;
+D(MP("A",A,N)--MP("B",B,N)--MP("C",C)--MP("D",D)--A--C);D(B--D);D(A--MP("K",K)--D--cycle,linewidth(0.7));
+MP("9",(A+B)/2,N,sm);MP("12",(C+D)/2,sm);MP("24",(A+D)/2+(1,0),E);
+</asy></center>
+Since $\overline{AB} \parallel \overline{DC}$ it follows that $\triangle ABK \sim \triangle CDK$. Thus $\frac{KA}{KC} = \frac{KB}{KD} = \frac{AB}{DC} = \frac{3}{4}$. 
+
+We now introduce the concept of [[area ratios]]: given two triangles that share the same height, the ratio of the areas is equal to the ratio of their bases. Since $\triangle AKB, \triangle AKD$ share a common [[altitude]] to $\overline{BD}$, it follows that (we let $[\triangle \ldots]$ denote the area of the triangle) $\frac{[\triangle AKB]}{[\triangle AKD]} = \frac{KB}{KD} = \frac{3}{4}$, so $[\triangle AKB] = \frac{3}{4}(24) = 18$. Similarly, we find $[\triangle DKC] = \frac{4}{3}(24) = 32$ and $[\triangle BKC] = 24$.
+
+Therefore, the area of $ABCD = [AKD] + [AKB] + [BKC] + [CKD] = 24 + 18 + 24 + 32 = 98\ \mathrm{(D)}$.

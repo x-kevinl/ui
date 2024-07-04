@@ -1,0 +1,2 @@
+==Problem==
+Find the number of positive integers less than <math>1000</math> that can be expressed as the difference of two integral powers of <math>2.</math>

@@ -1,0 +1,4 @@
+==Problem==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>You have nine coins: a collection of pennies, nickels, dimes, and quarters having a total value of &#36;$1.02$, with at least one coin of each type. How many dimes must you have?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+$\text{(A)}\ 1\qquad\text{(B)}\ 2\qquad\text{(C)}\ 3\qquad\text{(D)}\ 4\qquad\text{(E)}\ 5$

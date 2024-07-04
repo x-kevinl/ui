@@ -1,0 +1,2 @@
+== Problem ==
+A [[regular polygon|regular]] [[hexagon]] with center at the [[origin]] in the [[complex plane]] has opposite pairs of sides one unit apart. One pair of sides is parallel to the imaginary axis. Let <math>R</math> be the region outside the hexagon, and let <math>S = \left\lbrace\frac{1}{z}|z \in R\right\rbrace</math>. Then the area of <math>S</math> has the form <math>a\pi + \sqrt{b}</math>, where <math>a</math> and <math>b</math> are positive integers. Find <math>a + b</math>.

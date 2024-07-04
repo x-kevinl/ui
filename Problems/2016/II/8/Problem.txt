@@ -1,0 +1,2 @@
+==Problem==
+Find the number of sets <math>\{a,b,c\}</math> of three distinct positive integers with the property that the product of <math>a,b,</math> and <math>c</math> is equal to the product of <math>11,21,31,41,51,61</math>.

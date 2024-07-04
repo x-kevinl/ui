@@ -1,0 +1,10 @@
+==Solution 1 (Enumeration)==
+We write out the $5!=120$ cases, then filter out the valid ones:
+
+$13254,14253,14352,15243,15342,21435,21534,23154,24153,24351,25143,25341,\linebreak 
+31425,31524,32415,32514,34152,34251,35142,35241,41325,41523,42315,42513,\linebreak
+43512,45132,45231,51324,51423,52314,52413,53412.$
+
+We count these out and get $\boxed{\textbf{(D)} ~32}$ permutations that work. 
+
+~contactbibliophile

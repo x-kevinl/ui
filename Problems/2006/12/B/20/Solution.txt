@@ -1,0 +1,13 @@
+== Solution ==
+
+Let $k$ be an arbitrary integer. For which $x$ do we have $\lfloor\log_{10}4x\rfloor = \lfloor\log_{10}x\rfloor = k$?
+
+The equation $\lfloor\log_{10}x\rfloor = k$ can be rewritten as $10^k \leq x < 10^{k+1}$. The second one gives us $10^k \leq 4x < 10^{k+1}$. Combining these, we get that both hold at the same time if and only if $10^k \leq x < \frac{10^{k+1}}4$.
+
+Hence for each integer $k$ we get an interval of values for which $\lfloor\log_{10}4x\rfloor - \lfloor\log_{10}x\rfloor = 0$. These intervals are obviously pairwise disjoint.
+
+For any $k\geq 0$ the corresponding interval is disjoint with $(0,1)$, so it does not contribute to our answer. On the other hand, for any $k<0$ the entire interval is inside $(0,1)$. Hence our answer is the sum of the lengths of the intervals for $k<0$.
+
+For a fixed $k$ the length of the interval $\left[ 10^k, \frac{10^{k+1}}4 \right)$ is $\frac 32\cdot 10^k$. 
+
+This means that our result is $\frac 32 \left( 10^{-1} + 10^{-2} + \cdots \right) = \frac 32 \cdot \frac 19 = \boxed{\frac 16}$.

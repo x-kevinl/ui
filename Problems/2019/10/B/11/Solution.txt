@@ -1,0 +1,57 @@
+==Solutions==
+
+
+===Solution 1===
+Our ratios are $9:1$ in \( J_1 \) and $8:1$ in \( J_2 \).
+
+We start with the equation representing the total number of marbles in both jars, where \( x \) is the common multiplier:
+
+$$ 9x + x + 8x + x = 19x $$
+
+
+Given that the total number of green marbles is 95:
+
+$$ 19x = 95 $$
+
+Solving for \( x \):
+
+$$ x = \frac{95}{19} = 5 $$
+
+The difference between blue marbles in \( J_1 \) and \( J_2 \) is simply 
+
+$9x-8x=9(5)-8(5)=45-40= $$\boxed{\textbf{(A) } 5}$.
+
+~ GeometryMystery
+
+
+===Solution 2===
+Call the number of marbles in each jar $x$ (because the problem specifies that they each contain the same number). Thus, $\frac{x}{10}$ is the number of green marbles in Jar $1$, and $\frac{x}{9}$ is the number of green marbles in Jar $2$. Since $\frac{x}{9}+\frac{x}{10}=\frac{19x}{90}$, we have $\frac{19x}{90}=95$, so there are $x=450$ marbles in each jar. 
+
+Because $\frac{9x}{10}$ is the number of blue marbles in Jar $1$, and $\frac{8x}{9}$ is the number of blue marbles in Jar $2$, there are $\frac{9x}{10}-\frac{8x}{9}=\frac{x}{90} = 5$ more marbles in Jar $1$ than Jar $2$. This means the answer is $\boxed{\textbf{(A) } 5}$.
+
+===Solution 3 (Completely Solve)===
+Let $b_1$, $g_1$, $b_2$, $g_2$, represent the amount of blue marbles in jar 1, the amount of green marbles in jar 1, the 
+the amount of blue marbles in jar 2, and the amount of green marbles in jar 2, respectively. We now have the equations, 
+$\frac{b_1}{g_1} = \frac{9}{1}$, 
+$\frac{b_2}{g_2} = \frac{8}{1}$, 
+$g_1 + g_2 =95$, and 
+$b_1 + g_1 = b_2 + g_2$.
+Since $b_1 = 9g_1$ and $b_2 = 8g_2$, we substitute that in to obtain $10g_1 = 9g_2$. 
+Coupled with our third equation, we find that $g_1 = 45$, and that $g_2 = 50$. We now use this information to find $b_1 = 405$
+and $b_2 = 400$. 
+
+Therefore, $b_1 - b_2 = 5$ so our answer is $\boxed{\textbf{(A) } 5}$.
+~Binderclips1
+
+~LaTeX fixed by Starshooter11
+~Typo fixed by Little
+
+===Solution 4===
+Writing out to ratios, we have $9:1$ in jar $1$ and $8:1$ in jar $2$. Since the jar must have to same amount of marbles, let's make a variable $a$ and $b$ for each of the ratios to be multiplied by. Now we would have $9a + a = 8b + b \rightarrow 10a = 9b$. We can take the most obvious values of $a$ and $b$ and then scale it from there. We should be able to see that $a$ and $b$ could be $9$ and $10$ respectively. Now remember that there are $95$ green marbles or $x(a + b) = 95$ for some integer $x$ to scale it. Substituting and dividing, we find $x = 5$. Thus to find the difference of the blue marbles we must do 
+$$\begin{align*}
+x(9a - 8b) &= \\
+5(81 - 80) &= \\
+5(1) &= \boxed{\textbf{(B) }5} \\
+\end{align*}$$
+
+~ Wiselion

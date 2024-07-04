@@ -1,0 +1,14 @@
+== Problem ==
+If circular arcs $AC$ and $BC$ have centers at $B$ and $A$, respectively, then there exists a circle tangent to both $\overarc {AC}$ and $\overarc{BC}$, and to $\overline{AB}$. If the length of $\overarc{BC}$ is $12$, then the circumference of the circle is
+
+<asy>
+label("A", (0,0), W);
+label("B", (64,0), E);
+label("C", (32, 32*sqrt(3)), N);
+draw(arc((0,0),64,0,60));
+draw(arc((64,0),64,120,180));
+draw((0,0)--(64,0));
+draw(circle((32, 24), 24));
+</asy>
+
+$\textbf {(A)}\ 24 \qquad \textbf {(B)}\ 25 \qquad \textbf {(C)}\ 26 \qquad \textbf {(D)}\ 27 \qquad \textbf {(E)}\ 28$

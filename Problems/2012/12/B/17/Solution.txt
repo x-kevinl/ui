@@ -1,0 +1,5 @@
+==Diagram==
+
+<asy> size(7cm); pair A=(0,0),B=(1,1.5),D=B*dir(-90),C=B+D-A; draw((-4,-2)--(8,-2), Arrows); draw(A--B--C--D--cycle); pair AB = extension(A,B,(0,-2),(1,-2)); pair BC = extension(B,C,(0,-2),(1,-2)); pair CD = extension(C,D,(0,-2),(1,-2)); pair DA = extension(D,A,(0,-2),(1,-2)); draw(A--AB--B--BC--C--CD--D--DA--A, dotted); dot(AB^^BC^^CD^^DA);</asy>
+
+(diagram by MSTang)

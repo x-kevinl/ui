@@ -1,0 +1,2 @@
+==Problem==
+A rectangular box has width <math>12</math> inches, length <math>16</math> inches, and height <math>\frac{m}{n}</math> inches, where <math>m</math> and <math>n</math> are relatively prime positive integers. Three faces of the box meet at a corner of the box. The center points of those three faces are the vertices of a triangle with an area of <math>30</math> square inches. Find <math>m+n</math>.

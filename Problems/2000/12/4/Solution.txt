@@ -1,0 +1,6 @@
+== Solution ==
+Note that any digits other than the units digit will not affect the answer.  So to make computation quicker, we can just look at the Fibonacci sequence in $\bmod{10}$:
+
+$1,1,2,3,5,8,3,1,4,5,9,4,3,7,0,7,7,4,1,5,6,....$
+
+The last digit to appear in the units position of a number in the Fibonacci sequence is $ 6 \Longrightarrow \boxed{\mathrm{C}} $.

@@ -1,0 +1,2 @@
+==Problem==
+Segments <math>\overline{AB}, \overline{AC},</math> and <math>\overline{AD}</math> are edges of a cube and <math>\overline{AG}</math> is a diagonal through the center of the cube. Point <math>P</math> satisfies <math>BP=60\sqrt{10}</math>, <math>CP=60\sqrt{5}</math>, <math>DP=120\sqrt{2}</math>, and <math>GP=36\sqrt{7}</math>. Find <math>AP.</math>

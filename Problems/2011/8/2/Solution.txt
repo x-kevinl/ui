@@ -1,0 +1,3 @@
+==Solution==
+
+The area of a rectangle is given by the formula length times width. Karl's garden is $20 \times 45 = 900$ square feet and Makenna's garden is $25 \times 40 = 1000$ square feet. Since $1000 > 900,$ Makenna's garden is larger by $1000-900=100$ square feet. $\Rightarrow \boxed{ \textbf{(E)}\ \text{Makenna's garden is larger by 100 square feet.} }$

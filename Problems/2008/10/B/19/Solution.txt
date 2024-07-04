@@ -1,0 +1,33 @@
+==Solution==
+Any vertical cross-section of the tank parallel with its base looks as follows:
+<asy>
+unitsize(0.8cm);
+defaultpen(0.8);
+pair s=(0,0), bottom=(0,-4), mid=(0,-2);
+pair x[]=intersectionpoints( (-10,-2)--(10,-2), circle(s,4) );
+fill( arc(s,x[0],x[1]) -- cycle, lightgray );
+draw( circle(s,4) );
+dot(s);
+draw( s -- bottom );
+label( "$2$", (mid+bottom)/2, E );
+draw ( s -- x[0] -- x[1] -- s );
+label( "$4$", (s+x[0])/2, NW );
+label( "$4$", (s+x[1])/2, NE );
+label( "$A$", s, N );
+label( "$B$", x[0], W );
+label( "$C$", x[1], E );
+label( "$D$", mid, NW );
+label( "$E$", bottom, S );
+</asy>
+
+The volume of water can be computed as the height of the tank times the area of the shaded part.
+
+Let $\theta$ be the size of the smaller angle $DAC$. We then have $\cos\theta = \frac{AD}{AC}=\frac 12$, hence $\theta=60^\circ$.
+
+The figure is symmetrical, so the angle $CAB$ has size $2\cdot 60^\circ = 120^\circ$. Hence the shaded part consists of $\frac{120^\circ}{360^\circ} = \frac 13$ of the circle, minus the area of the triangle $ABC$.
+
+Using the [[Pythagorean theorem]] we can compute that $CD=\sqrt{AC^2-AD^2}=\sqrt{16-4}=2\sqrt 3$. Thus $BC=4\sqrt 3$, and the area of the triangle $ABC$ is $\frac {2 \cdot 4\sqrt 3} 2 = 4\sqrt 3$.
+
+The area of the shaded part is then $\frac{4^2\pi}3 - 4\sqrt 3$, and the volume of water is $9\cdot\left(\frac{4^2\pi}3 - 4\sqrt 3\right) = \boxed{48\pi - 36\sqrt 3}$. The answer is $\text{E}$.
+
+Alternatively, we can solve for DC and see it is congruent to a 30 60 90 triangle by SSS ~Williamgolly

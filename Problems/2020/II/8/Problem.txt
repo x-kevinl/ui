@@ -1,0 +1,2 @@
+==Problem==
+Define a sequence recursively by <math>f_1(x)=|x-1|</math> and <math>f_n(x)=f_{n-1}(|x-n|)</math> for integers <math>n>1</math>. Find the least value of <math>n</math> such that the sum of the zeros of <math>f_n</math> exceeds <math>500,000</math>.

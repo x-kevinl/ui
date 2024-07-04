@@ -1,0 +1,14 @@
+==Solution 1 (Massive Shoelace)==
+We represent octagon <math>ABCDEFGH</math> in the coordinate plane with the upper left corner of the rectangle being the origin. Then it follows that <math>A=(0,-6), B=(8, 0), C=(19,0), D=(27, -6), E=(27, -17), F=(19, -23), G=(8, -23), H=(0, -17), J=(0, -\frac{23}{2})</math>. Recall that the centroid is <math>\frac{1}{3}</math> way up each median in the triangle. Thus, we can find the centroids easily by finding the midpoint of the side opposite of point <math>J</math>. Furthermore, we can take advantage of the reflective symmetry across the line parallel to <math>BC</math> going through <math>J</math> by dealing with less coordinates and ommiting the <math>\frac{1}{2}</math> in the shoelace formula. 
+
+By doing some basic algebra, we find that the coordinates of the centroids of <math>\bigtriangleup JAB, \bigtriangleup JBC, \bigtriangleup JCD, \bigtriangleup JDE</math> are <math>\left(\frac{8}{3}, -\frac{35}{6}\right), \left(9, -\frac{23}{6}\right), \left(\frac{46}{3}, -\frac{35}{6}\right),</math> and <math>\left(18, -\frac{23}{2}\right)</math>, respectively. We'll have to throw in the projection of the centroid of <math>\bigtriangleup JAB</math> to the line of reflection to apply shoelace, and that point is <math>\left( \frac{8}{3}, -\frac{23}{2}\right)</math>
+
+Finally, applying Shoelace, we get: 
+<math>\left|\left(\frac{8}{3}\cdot (-\frac{23}{6})+9\cdot (-\frac{35}{6})+\frac{46}{3}\cdot (-\frac{23}{2})+18\cdot (\frac{-23}{2})+\frac{8}{3}\cdot (-\frac{35}{6})\right) - \left((-\frac{35}{6}\cdot 9) +\\(-\frac{23}{6}\cdot \frac{46}{3})+ (-\frac{35}{6}\cdot 18)+(\frac{-23}{2}\cdot \frac{8}{3})+(-\frac{23}{2}\cdot \frac{8}{3})\right)\right|</math>
+<math>=\left|\left(-\frac{92}{9}-\frac{105}{2}-\frac{529}{3}-207-\frac{140}{9}\right)-\left(-\frac{105}{2}-\frac{529}{9}-105-\frac{92}{3}-\frac{92}{3}\right)\right|</math>
+<math>=\left|-\frac{232}{9}-\frac{1373}{6}-207+\frac{529}{9}+\frac{184}{3}+105+\frac{105}{2}\right|</math>
+<math>=\left|\frac{297}{9}-\frac{690}{6}-102\right|=\left| 33-115-102\right|=\left|-184\right|=\boxed{184}</math>
+
+Solution by ktong
+
+note: for a slightly simpler calculation, notice that the heptagon can be divided into two trapezoids of equal area and a small triangle.

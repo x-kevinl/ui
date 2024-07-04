@@ -1,0 +1,4 @@
+==Solutions==
+=== Solution 1 ===
+
+Call the length of the race track $x$. When they meet at the first meeting point, Brenda has run $100$ meters, while Sally has run $\frac{x}{2} - 100$ meters. By the second meeting point, Sally has run $150$ meters, while Brenda has run $x - 150$ meters. Since they run at a constant speed, we can set up a [[proportion]]: $\frac{100}{x- 150} = \frac{\frac{x}{2} - 100}{150}$. Cross-multiplying, we get that $x = 350\Longrightarrow\boxed{\mathrm{(C)}\ 350}$.

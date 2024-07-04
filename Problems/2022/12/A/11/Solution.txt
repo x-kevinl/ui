@@ -1,0 +1,8 @@
+==Solution 1==
+Let $a = 2 \cdot |\log_6 10 - 1| = |\log_6 9 - \log_6 x|  =  |\log_6 \frac{9}{x}| $.
+
+$ \pm a = \log_6 \frac{9}{x} \implies 6^{\pm a} = b^{\pm 1} = \frac{9}{x}  \implies x = 9 \cdot b^{\pm 1} $ 
+
+$ 9b^1 \cdot 9b^{-1} = \boxed{81}$.
+
+~ oinava

@@ -1,0 +1,12 @@
+==Solution==
+
+Let there be $n$ numbers in the list of numbers, and let their sum be $S$. Then we have the following
+
+$$S+3n=45$$
+
+$$3S=45$$
+
+From the second equation, $S=15$. So, $15+3n=45$ $\Rightarrow$ $n=\boxed{\textbf{(A) }10}.$
+
+
+~Mintylemon66 (formatted atictacksh)

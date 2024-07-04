@@ -1,0 +1,12 @@
+== Problem ==
+A square of area 40 is inscribed in a semicircle as shown. What is the area of the semicircle?
+
+<asy>
+defaultpen(linewidth(0.8)); size(100);
+real r=sqrt(50), s=sqrt(10);
+draw(Arc(origin, r, 0, 180));
+draw((r,0)--(-r,0), dashed);
+draw((-s,0)--(s,0)--(s,2*s)--(-s,2*s)--cycle);
+</asy>
+
+$ \textbf{(A) } 20\pi\qquad \textbf{(B) } 25\pi\qquad \textbf{(C) } 30\pi\qquad \textbf{(D) } 40\pi\qquad \textbf{(E) } 50\pi $

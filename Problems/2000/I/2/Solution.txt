@@ -1,0 +1,15 @@
+== Solutions ==
+=== Solution 1 ===
+<center><asy>
+pointpen = black; pathpen = linewidth(0.7) + black; size(180);
+pair A=(11,10), B=(10,11), C=(-10, 11), D=(-10, -11), E=(10, -11);
+D(D(MP("A\ (u,v)",A,(1,0)))--D(MP("B",B,N))--D(MP("C",C,N))--D(MP("D",D))--D(MP("E",E))--cycle);
+D((-15,0)--(15,0),linewidth(0.6),Arrows(5)); D((0,-15)--(0,15),linewidth(0.6),Arrows(5)); D((-15,-15)--(15,15),linewidth(0.6),Arrows(5));
+</asy></center> <!-- Asymptote replacement for Image:2000_I_AIME-2.png -->
+
+Since <math>A = (u,v)</math>, we can find the coordinates of the other points: <math>B = (v,u)</math>, <math>C = (-v,u)</math>, <math>D = (-v,-u)</math>, <math>E = (v,-u)</math>. If we graph those points, we notice that since the latter four points are all reflected across the x/y-axis, they form a rectangle, and <math>ABE</math> is a triangle. The area of <math>BCDE</math> is <math>(2u)(2v) = 4uv</math> and the area of <math>ABE</math> is <math>\frac{1}{2}(2u)(u-v) = u^2 - uv</math>. Adding these together, we get <math>u^2 + 3uv = u(u+3v) = 451 = 11 \cdot 41</math>. Since <math>u,v</math> are positive, <math>u+3v>u</math>, and by matching factors we get either <math>(u,v) = (1,150)</math> or <math>(11,10)</math>. Since <math>v < u</math> the latter case is the answer, and <math>u+v = \boxed{021}</math>.
+
+=== Solution 2 ===
+We find the coordinates like in the solution above: <math>A = (u,v)</math>, <math>B = (v,u)</math>, <math>C = (-v,u)</math>, <math>D = (-v,-u)</math>, <math>E = (v,-u)</math>. Then we apply the [[Shoelace Theorem]]. <cmath>A =  \frac{1}{2}[(u^2 + vu + vu + vu + v^2) - (v^2 - uv - uv - uv -u^2)] = 451</cmath> <cmath>\frac{1}{2}(2u^2 + 6uv) = 451</cmath> <cmath>u(u + 3v) = 451</cmath>
+
+This means that <math>(u,v) = (11, 10)</math> or <math>(1,150)</math>, but since <math>v < u</math>, then the answer is <math>\boxed{021}</math>

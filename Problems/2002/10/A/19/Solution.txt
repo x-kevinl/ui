@@ -1,0 +1,14 @@
+==Solution==
+<center><asy>
+draw(polygon(6));
+draw(Arc((1/2,sqrt(3)/2),2,-60,180));
+draw(Arc((-1/2,sqrt(3)/2),1,180,240));
+draw(Arc((1,0),1,240,300));
+draw((-1/2,sqrt(3)/2)--(-3/2,sqrt(3)/2), dotted);
+draw((1,0)--(3/2,-sqrt(3)/2),dotted);
+</asy></center>
+Part of what Spot can reach is $\frac{240}{360}=\frac{2}{3}$ of a circle with radius 2, which 
+gives him $\frac{8\pi}{3}$. He can also reach two $\frac{60}{360}$ parts of a unit circle, which combines to give $\frac{\pi}{3}$. The total area is then $3\pi$, which gives $\boxed{\text{(E)}}$.
+
+===Note===
+We can clearly see that the area must be more than $\frac{8\pi}{3}$, and the only such answer is $\boxed{\text{(E)}}$.

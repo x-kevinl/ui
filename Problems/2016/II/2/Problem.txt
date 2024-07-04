@@ -1,0 +1,2 @@
+==Problem==
+There is a <math>40\%</math> chance of rain on Saturday and a <math>30\%</math> chance of rain on Sunday. However, it is twice as likely to rain on Sunday if it rains on Saturday than if it does not rain on Saturday. The probability that it rains at least one day this weekend is <math>\frac{a}{b}</math>, where <math>a</math> and <math>b</math> are relatively prime positive integers. Find <math>a+b</math>.

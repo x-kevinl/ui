@@ -1,0 +1,2 @@
+== Solution 1 ==
+From the [[greedy algorithm]], we have $9$ in the hours section and $59$ in the minutes section. $9+5+9=\boxed{\textbf{(E) }23}$

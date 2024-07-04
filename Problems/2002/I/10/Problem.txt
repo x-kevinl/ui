@@ -1,0 +1,4 @@
+== Problem ==
+In the diagram below, angle <math>ABC</math> is a right angle. Point <math>D</math> is on <math>\overline{BC}</math>, and <math>\overline{AD}</math> bisects angle <math>CAB</math>. Points <math>E</math> and <math>F</math> are on <math>\overline{AB}</math> and <math>\overline{AC}</math>, respectively, so that <math>AE=3</math> and <math>AF=10</math>. Given that <math>EB=9</math> and <math>FC=27</math>, find the integer closest to the area of quadrilateral <math>DCFG</math>.
+
+<center>[[Image:AIME_2002I_Problem_10.png]]</center>

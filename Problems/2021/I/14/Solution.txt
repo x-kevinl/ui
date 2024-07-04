@@ -1,0 +1,22 @@
+==Solution 1==
+We first claim that <math>n</math> must be divisible by <math>42</math>. Since <math>\sigma(a^n)-1</math> is divisible by <math>2021</math> for all positive integers <math>a</math>, we can first consider the special case where <math>a</math> is prime and <math>a \neq 0,1 \pmod{43}</math>. By Dirichlet's Theorem (Refer to the <b>Remark</b> section.), such <math>a</math> always exists.
+
+Then <math>\sigma(a^n)-1 = \sum_{i=1}^n a^i = a\left(\frac{a^n - 1}{a-1}\right)</math>. In order for this expression to be divisible by <math>2021=43\cdot 47</math>, a necessary condition is <math>a^n - 1 \equiv 0 \pmod{43}</math>. By [[Fermat's Little Theorem]], <math>a^{42} \equiv 1 \pmod{43}</math>. Moreover, if <math>a</math> is a primitive root modulo <math>43</math>, then <math>\text{ord}_{43}(a) = 42</math>, so <math>n</math> must be divisible by <math>42</math>.
+
+By similar reasoning, <math>n</math> must be divisible by <math>46</math>, by considering <math>a \not\equiv 0,1 \pmod{47}</math>.
+
+We next claim that <math>n</math> must be divisible by <math>43</math>. By Dirichlet, let <math>a</math> be a prime that is congruent to <math>1 \pmod{43}</math>. Then <math>\sigma(a^n) \equiv n+1 \pmod{43}</math>, so since <math>\sigma(a^n)-1</math> is divisible by <math>43</math>, <math>n</math> is a multiple of <math>43</math>.
+
+Alternatively, since <math>\left(\frac{a(a^n - 1^n)}{a-1}\right)</math> must be divisible by <math>43,</math> by LTE, we have <math>v_{43}(a)+v_{43}{(a-1)}+v_{43}{(n)}-v_{43}{(a-1)} \geq 1,</math> which simplifies to <math>v_{43}(n) \geq 1,</math> which implies the desired result.
+
+Similarly, <math>n</math> is a multiple of <math>47</math>.
+
+Lastly, we claim that if <math>n = \text{lcm}(42, 46, 43, 47)</math>, then <math>\sigma(a^n) - 1</math> is divisible by <math>2021</math> for all positive integers <math>a</math>. The claim is trivially true for <math>a=1</math> so suppose <math>a>1</math>. Let <math>a = p_1^{e_1}\ldots p_k^{e_k}</math> be the prime factorization of <math>a</math>. Since <math>\sigma(n)</math> is [[multiplicative function|multiplicative]], we have
+<cmath>\sigma(a^n) - 1 = \prod_{i=1}^k \sigma(p_i^{e_in}) - 1.</cmath>
+We can show that <math>\sigma(p_i^{e_in}) \equiv 1 \pmod{2021}</math> for all primes <math>p_i</math> and integers <math>e_i \ge 1</math>, so
+<cmath>\sigma(p_i^{e_in}) = 1 + (p_i + p_i^2 + \ldots + p_i^n) + (p_i^{n+1} + \ldots + p_i^{2n}) + \ldots + (p_i^{n(e_i-1)+1} + \ldots + p_i^{e_in}),</cmath>
+where each expression in parentheses contains <math>n</math> terms. It is easy to verify that if <math>p_i = 43</math> or <math>p_i = 47</math> then <math>\sigma(p_i^{e_in}) \equiv 1 \pmod{2021}</math> for this choice of <math>n</math>, so suppose <math>p_i \not\equiv 0 \pmod{43}</math> and <math>p_i \not\equiv 0 \pmod{47}</math>. Each expression in parentheses equals <math>\frac{p_i^n - 1}{p_i - 1}</math> multiplied by some power of <math>p_i</math>. If <math>p_i \not\equiv 1 \pmod{43}</math>, then FLT implies <math>p_i^n - 1 \equiv 0 \pmod{43}</math>, and if <math>p_i \equiv 1 \pmod{43}</math>, then <math>p_i + p_i^2 + \ldots + p_i^n \equiv 1 + 1 + \ldots + 1 \equiv 0 \pmod{43}</math> (since <math>n</math> is also a multiple of <math>43</math>, by definition). Similarly, we can show <math>\sigma(p_i^{e_in}) \equiv 1 \pmod{47}</math>, and a simple [[Chinese Remainder Theorem|CRT]] argument shows <math>\sigma(p_i^{e_in}) \equiv 1 \pmod{2021}</math>. Then <math>\sigma(a^n) \equiv 1^k \equiv 1 \pmod{2021}</math>.
+
+Then the prime factors of <math>n</math> are <math>2,3,7,23,43,</math> and <math>47,</math> and the answer is <math>2+3+7+23+43+47 = \boxed{125}</math>.
+
+~scrabbler94, Revised by wzs26843545602

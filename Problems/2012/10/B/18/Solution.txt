@@ -1,0 +1,8 @@
+==Solution ==
+This question can be solved by considering all the possibilities:
+
+$1$ out of $500$ people will have the disease and will be tested positive for the disease.
+
+Out of the remaining $499$ people, $2\%$, or $9.98$ people, will be tested positive for the disease incorrectly.
+
+Therefore, $p$ can be found by taking $\dfrac{1}{1+9.98}$, which is closest to $\dfrac{1}{1+10}$ or $\dfrac{1}{11}$,or $\boxed{\textbf{(C)}}$

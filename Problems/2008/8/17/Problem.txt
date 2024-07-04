@@ -1,0 +1,8 @@
+==Problem==
+Ms.Osborne asks each student in her class to draw a rectangle with integer side lengths and a perimeter of $50$ units. All of her students calculate the area of the rectangle they draw. What is the difference between the largest and smallest possible areas of the rectangles?
+
+$\textbf{(A)}\ 76\qquad
+\textbf{(B)}\ 120\qquad
+\textbf{(C)}\ 128\qquad
+\textbf{(D)}\ 132\qquad
+\textbf{(E)}\ 136$

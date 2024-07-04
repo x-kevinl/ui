@@ -1,0 +1,5 @@
+==Problem==
+
+
+
+Let <math>SP_1P_2P_3EP_4P_5</math> be a heptagon. A frog starts jumping at vertex <math>S</math>. From any vertex of the heptagon except <math>E</math>, the frog may jump to either of the two adjacent vertices. When it reaches vertex <math>E</math>, the frog stops and stays there. Find the number of distinct sequences of jumps of no more than <math>12</math> jumps that end at <math>E</math>.

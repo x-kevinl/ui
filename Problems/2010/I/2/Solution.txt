@@ -1,0 +1,2 @@
+== Solution ==
+Note that <math>999\equiv 9999\equiv\dots \equiv\underbrace{99\cdots9}_{\text{999 9's}}\equiv -1 \pmod{1000}</math> (see [[modular arithmetic]]). That is a total of <math>999 - 3 + 1 = 997</math> integers, so all those integers multiplied out are congruent to <math>- 1\pmod{1000}</math>. Thus, the entire expression is congruent to <math>- 1\times9\times99 = - 891\equiv\boxed{109}\pmod{1000}</math>.

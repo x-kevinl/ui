@@ -1,0 +1,18 @@
+==Solution==
+Let the number of 3-point shots attempted be $x$. Since she attempted 30 shots, the number of 2-point shots attempted must be $30 - x$.
+
+Since she was successful on $20\%$, or $\frac{1}{5}$, of her 3-pointers, and $30\%$, or $\frac{3}{10}$, of her 2-pointers, then her score must be
+
+$\frac{1}{5}*3x + \frac{3}{10}*2(30-x)$
+
+
+$\frac{3}{5}*x + \frac{3}{5}(30-x)$
+
+
+$\frac{3}{5}(x+30-x)$
+
+
+$\frac{3}{5}*30$
+
+
+$18$, which is $B$

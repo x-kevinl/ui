@@ -1,0 +1,5 @@
+==Solution 1==
+In this solution, we will use trial and error to solve.
+$4000$ can be expressed as $200 \times 20$. We divide $200$ by $20$ and get $10$, divide $20$ by $10$ and get $2$, and divide $10$ by $2$ to get $\boxed{\textbf{(D)}\ 5}$. No one said that they have to be in ascending order!
+
+Solution by [[User:ILoveMath31415926535|ILoveMath31415926535]] and clarification edits by apex304

@@ -1,0 +1,8 @@
+==Problem==
+Let <math>x,y,</math> and <math>z</math> be real numbers satisfying the system
+<cmath>\begin{align*}
+\log_2(xyz-3+\log_5 x)&=5,\\
+\log_3(xyz-3+\log_5 y)&=4,\\
+\log_4(xyz-3+\log_5 z)&=4.\\
+\end{align*}</cmath>
+Find the value of <math>|\log_5 x|+|\log_5 y|+|\log_5 z|</math>.

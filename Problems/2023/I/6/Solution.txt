@@ -1,0 +1,50 @@
+== Solution 1 (Casework) ==
+We break the problem into stages, one for each card revealed, then further into cases based on the number of remaining unrevealed cards of each color. Since [[expected value]] is linear, the expected value of the total number of correct card color guesses across all stages is the sum of the expected values of the number of correct card color guesses at each stage; that is, we add the probabilities of correctly guessing the color at each stage to get the final answer (See https://brilliant.org/wiki/linearity-of-expectation/)
+
+At any stage, if there are <math>a</math> unrevealed cards of one color and <math>b</math> of the other color, and <math>a \geq b</math>, then the optimal strategy is to guess the color with <math>a</math> unrevealed cards, which succeeds with probability <math>\frac{a}{a+b}.</math>
+
+<b>Stage 1:</b> 
+
+There are always <math>3</math> unrevealed cards of each color, so the probability of guessing correctly is <math>\frac{1}{2}</math>.
+
+<b>Stage 2:</b>
+
+There is always a <math>3</math>-<math>2</math> split (<math>3</math> unrevealed cards of one color and <math>2</math> of the other color), so the probability of guessing correctly is <math>\frac{3}{5}</math>.
+
+<b>Stage 3:</b>
+
+There are now <math>2</math> cases:
+<ul>
+<li> The guess from Stage 2 was correct, so there is now a <math>2</math>-<math>2</math> split of cards and a <math>\frac{1}{2}</math> probability of guessing the color of the third card correctly.
+<li> The guess from Stage 2 was incorrect, so the split is <math>3</math>-<math>1</math> and the probability of guessing correctly is <math>\frac{3}{4}</math>. 
+</ul>
+
+Thus, the overall probability of guessing correctly is <math>\frac{3}{5} \cdot \frac{1}{2} + \frac{2}{5} \cdot \frac{3}{4} = \frac{3}{5}</math>.
+
+<b>Stage 4:</b>
+
+This stage has <math>2</math> cases as well:
+<ul>
+<li> The guesses from both Stage 2 and Stage 3 were incorrect. This occurs with probability <math>\frac{2}{5} \cdot \frac{1}{4} = \frac{1}{10}</math> and results in a <math>3</math>-<math>0</math> split and a certain correct guess at this stage.
+<li> Otherwise, there must be a <math>2</math>-<math>1</math> split and a <math>\frac{2}{3}</math> probability of guessing correctly.
+</ul>
+
+The probability of guessing the fourth card correctly is therefore <math>\frac{1}{10} \cdot 1 + \frac{9}{10} \cdot \frac{2}{3} = \frac{7}{10}</math>.
+
+<b>Stage 5:</b>
+
+Yet again, there are <math>2</math> cases:
+<ul>
+<li> In Stage 4, there was a <math>2</math>-<math>1</math> split and the guess was correct. This occurs with probability <math>\frac{9}{10} \cdot \frac{2}{3} = \frac{3}{5}</math> and results in a <math>1</math>-<math>1</math> split with a <math>\frac{1}{2}</math> chance of a correct guess here.
+<li> Otherwise, there must be a <math>2</math>-<math>0</math> split, making a correct guess certain.
+</ul>
+
+In total, the fifth card can be guessed correctly with probability <math>\frac{3}{5} \cdot \frac{1}{2} + \frac{2}{5} \cdot 1 = \frac{7}{10}</math>.
+
+<b>Stage 6:</b>
+
+At this point, only <math>1</math> card remains, so the probability of guessing its color correctly is <math>1</math>.
+
+In conclusion, the expected value of the number of cards guessed correctly is <cmath>\frac{1}{2} + \frac{3}{5} + \frac{3}{5} + \frac{7}{10} + \frac{7}{10} + 1 = \frac{5+6+6+7+7+10}{10} = \frac{41}{10},</cmath> so the answer is <math>41 + 10 = \boxed{051}.</math>
+
+~OrangeQuail9

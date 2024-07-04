@@ -1,0 +1,4 @@
+== Solution ==
+$(-1)^n=1$ if n is even and $-1$ if n is odd. So we have
+
+$-1+1-1+1-\cdots-1+1=0+0+\cdots+0+0=0 \Rightarrow \text{(C)}$

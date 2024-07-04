@@ -1,0 +1,13 @@
+== Solution 1 == 
+Extend <math>{CM}</math> and <math>{CN}</math> such that they intersect line <math>{AB}</math> at points <math>P</math> and <math>Q</math>, respectively. 
+<asy>
+defaultpen(fontsize(10)+0.8); size(200);
+pen p=fontsize(9)+linewidth(3);
+pair A,B,C,D,K,L,M,N,P,Q;
+A=origin; B=(125,0); C=IP(CR(A,117),CR(B,120)); L=extension(B,C,A,bisectorpoint(B,A,C)); K=extension(A,C,B,bisectorpoint(C,B,A)); M=foot(C,B,K); N=foot(C,A,L);
+draw(A--B--C--A); draw(A--L^^B--K, gray+dashed+0.5); draw(M--C--N^^N--extension(A,B,C,N)^^M--extension(A,B,C,M), gray+0.5);
+dot("$A$",A,dir(200),p); dot("$B$",B,right,p); dot("$C$",C,up,p); dot("$L$",L,2*dir(70),p); dot("$N$",N,2*dir(-90),p); dot("$M$",M,2*dir(-90),p); dot("$P$",extension(A,B,C,M),2*down,p); dot("$Q$",extension(A,B,C,N),2*down,p);
+label("$125$",A--B,down,fontsize(10)); label("$117$",A--C,2*dir(130),fontsize(10)); label("$120$",B--C,1.5*dir(30),fontsize(10)); 
+</asy>
+Since <math>{BM}</math> is the angle bisector of angle <math>B</math> and <math>{CM}</math> is perpendicular to <math>{BM}</math>, <math>\triangle BCP</math> must be an isoceles triangle, so <math>BP=BC=120</math>, and <math>M</math> is the midpoint of <math>{CP}</math>. For the same reason, <math>AQ=AC=117</math>, and <math>N</math> is the midpoint of <math>{CQ}</math>.
+Hence <math>MN=\tfrac 12 PQ</math>. Since <cmath>PQ=BP+AQ-AB=120+117-125=112,</cmath> so <math>MN=\boxed{056}</math>.

@@ -1,0 +1,2 @@
+==Solution==
+The blue that's touching the center red square makes up 8 triangles, or 4 squares. Each of the corners is 1 square and each of the edges is 1, totaling 12 squares. There are 12 white squares, thus we have $\boxed{B=W\Rightarrow \text{(A)}}$.

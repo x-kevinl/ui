@@ -1,0 +1,3 @@
+==Solution 1==
+
+She will place $(12\cdot2)+(14\cdot2)=52$ tiles around the border. For the inner part of the room, we have $10\cdot14=140$ square feet. Each tile takes up $4$ square feet, so he will use $\frac{140}{4}=35$ tiles for the inner part of the room. Thus, the answer is $52+35= \boxed{\textbf{(B) }87}$.

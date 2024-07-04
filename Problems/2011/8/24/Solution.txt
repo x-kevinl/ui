@@ -1,0 +1,6 @@
+==Solution==
+For the sum of two numbers to be odd, one must be odd and the other must be even, because all odd numbers are of the form $2n+1$ where n is an integer, and all even numbers are of the form $2m$ where m is an integer.
+$$ 2n + 1 + 2m = 2m + 2n + 1 = 2(m+n) + 1 $$ and $m+n$ is an integer because $m$ and $n$ are both integers.
+The only even prime number is $2,$ so our only combination could be $2$ and $9999.$ 
+However, $9999$ is clearly divisible by $3$,  
+so the number of ways $10001$ can be written as the sum of two primes is $\boxed{\textbf{(A)}\ 0}$

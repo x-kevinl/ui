@@ -1,0 +1,15 @@
+== Solution 1==
+
+Let $x$ be the average of the remaining $4$ people.
+
+The equation we get is $\frac{4x + 18}{5} = 30$
+
+Simplify,
+
+$4x + 18 = 150$
+
+$4x = 132$
+
+$x = 33$
+
+Therefore, the answer is $ \boxed{\textbf{(D)}\ 33} $

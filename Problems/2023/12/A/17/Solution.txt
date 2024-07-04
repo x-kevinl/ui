@@ -1,0 +1,2 @@
+== Solution 1 ==
+Initially, the probability of landing at $10$ and landing past $10$ (summing the infinte series) are exactly the same. Landing before 10 repeats this initial condition, with a different irrelevant scaling factor. Therefore, the probability must be $\boxed{\textbf{(E)}~\frac12}$.

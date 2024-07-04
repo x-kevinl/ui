@@ -1,0 +1,14 @@
+==Solutions==
+===Solution 1===
+If the sum of the original sequence is <math>\sum_{i=1}^{n} a_i</math> then the sum of the new sequence can be expressed as <math>\sum_{i=1}^{n} a_i + (2i - 1) = n^2 + \sum_{i=1}^{n} a_i.</math> Therefore, <math>836 = n^2 + 715 \rightarrow n=11.</math> Now the middle term of the original sequence is simply the average of all the terms, or <math>\frac{715}{11} = 65,</math> and the first and last terms average to this middle term, so the desired sum is simply three times the middle term, or <math>\boxed{195}.</math>
+
+
+Alternatively, notice that in the original sequence, <math>11a_1 + 55d = 715</math>, from which <math>a_1 + 5d = 65</math>. Since we are tasked to find <math>a_1 + a_6 + a_{11} = 3(a_1 + 5d)</math>, the desired answer is <math>3 \cdot 65 = \boxed{195}.</math>
+
+===Solution 2===
+After the adding of the odd numbers, the total of the sequence increases by <math>836 - 715 = 121 = 11^2</math>. Since the sum of the first <math>n</math> positive odd numbers is <math>n^2</math>, there must be <math>11</math> terms in the sequence, so the mean of the sequence is <math>\dfrac{715}{11} = 65</math>. Since the first, last, and middle terms are centered around the mean, our final answer is <math>65 \cdot 3 = \boxed{195}</math>
+
+===Solution 3===
+Proceed as in Solution 2 until it is noted that there are 11 terms in the sequence. Since the sum of the terms of the original arithmetic sequence is 715, we note that <math>\frac{2a_1 + 10d}{2} \cdot 11 = 715</math> or <math>2a_1 + 10d = 130</math> for all sets of first terms and common differences that fit the conditions given in the problem. Assume WLOG that <math>a_1 = 60</math> and <math>d = 1</math>. Then the first term of the corresponding arithmetic sequence will be <math>60</math>, the sixth (middle) term will be <math>65</math>, and the eleventh (largest) term will be <math>70</math>. Thus, our final answer is <math>60 + 65 + 70 = \boxed{195}</math>.
+
+~ [https://artofproblemsolving.com/wiki/index.php/User:Cxsmi cxsmi]

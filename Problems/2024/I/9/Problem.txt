@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>A</math>, <math>B</math>, <math>C</math>, and <math>D</math> be points on the hyperbola <math>\frac{x^2}{20}- \frac{y^2}{24} = 1</math> such that <math>ABCD</math> is a rhombus whose diagonals intersect at the origin. Find the greatest real number that is less than <math>BD^2</math> for all such rhombi.

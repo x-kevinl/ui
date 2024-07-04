@@ -1,0 +1,24 @@
+== Solution 1 ==
+Substitute the points $ (2,3) $ and $ (4,3) $ into the given equation for $ (x,y) $.
+
+Then we get a system of two equations:
+
+$3=4+2b+c$
+
+$3=16+4b+c$
+
+Subtracting the first equation from the second we have:
+
+$0=12+2b$
+
+$b=-6$
+
+Then using $b=-6$ in the first equation:
+
+$0=1+-12+c$
+
+$c=\boxed{\textbf{(E) }11}$.
+
+=== Solution 1.1 ===
+
+Alternatively, notice that since the equation is that of a conic parabola, the vertex is likely $(3,2)$. Thus, the form of the equation of the parabola is $y - 2 = (x - 3)^2$. Expanding this out, we find that $c=\boxed{\textbf{(E) }11}$.

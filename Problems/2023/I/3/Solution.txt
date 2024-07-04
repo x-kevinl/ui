@@ -1,0 +1,19 @@
+==Solution==
+
+In this solution, let <b><math>\boldsymbol{n}</math>-line points</b> be the points where exactly <math>n</math> lines intersect. We wish to find the number of <math>2</math>-line points.
+
+There are <math>\binom{40}{2}=780</math> pairs of lines. Among them:
+
+* The <math>3</math>-line points account for <math>3\cdot\binom32=9</math> pairs of lines.
+
+* The <math>4</math>-line points account for <math>4\cdot\binom42=24</math> pairs of lines.
+
+* The <math>5</math>-line points account for <math>5\cdot\binom52=50</math> pairs of lines.
+
+* The <math>6</math>-line points account for <math>6\cdot\binom62=90</math> pairs of lines.
+
+It follows that the <math>2</math>-line points account for <math>780-9-24-50-90=\boxed{607}</math> pairs of lines, where each pair intersect at a single point. 
+
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)
+
+~MRENTHUSIASM

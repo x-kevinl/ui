@@ -1,0 +1,2 @@
+== Solution ==
+Let the two consecutive odd integers be $a$, $a+2$. Then $a+2 = 3a$, so $a = 1$ and their sum is $4\ \mathrm{(A)}$.

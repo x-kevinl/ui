@@ -1,0 +1,4 @@
+==Problem==
+What is the perimeter of the boundary of the region consisting of all points which can be expressed as $(2u-3w, v+4w)$ with $0\le u\le1$, $0\le v\le1,$ and $0\le w\le1$?
+
+$\textbf{(A) } 10\sqrt{3} \qquad \textbf{(B) } 13 \qquad \textbf{(C) } 12 \qquad \textbf{(D) } 18 \qquad \textbf{(E) } 16$

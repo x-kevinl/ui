@@ -1,0 +1,15 @@
+==Problem==
+Circle <math>C_0</math> has radius <math>1</math>, and the point <math>A_0</math> is a point on the circle. Circle <math>C_1</math> has radius <math>r<1</math> and is internally tangent to <math>C_0</math> at point <math>A_0</math>. Point <math>A_1</math> lies on circle <math>C_1</math> so that <math>A_1</math> is located <math>90^{\circ}</math> counterclockwise from <math>A_0</math> on <math>C_1</math>. Circle <math>C_2</math> has radius <math>r^2</math> and is internally tangent to <math>C_1</math> at point <math>A_1</math>. In this way a sequence of circles <math>C_1,C_2,C_3,\ldots</math> and a sequence of points on the circles <math>A_1,A_2,A_3,\ldots</math> are constructed, where circle <math>C_n</math> has radius <math>r^n</math> and is internally tangent to circle <math>C_{n-1}</math> at point <math>A_{n-1}</math>, and point <math>A_n</math> lies on <math>C_n</math> <math>90^{\circ}</math> counterclockwise from point <math>A_{n-1}</math>, as shown in the figure below. There is one point <math>B</math> inside all of these circles. When <math>r = \frac{11}{60}</math>, the distance from the center <math>C_0</math> to <math>B</math> is <math>\frac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.
+
+<asy>
+draw(Circle((0,0),125));
+draw(Circle((25,0),100));
+draw(Circle((25,20),80));
+draw(Circle((9,20),64));
+dot((125,0));
+label("$A_0$",(125,0),E);
+dot((25,100));
+label("$A_1$",(25,100),SE);
+dot((-55,20));
+label("$A_2$",(-55,20),E);
+</asy>

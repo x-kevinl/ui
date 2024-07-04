@@ -1,0 +1,6 @@
+==Problem==
+In the expansion of
+$$\left(1 + x + x^2 + \cdots + x^{27}\right)\left(1 + x + x^2 + \cdots + x^{14}\right)^2,$$
+what is the [[coefficient]] of $x^{28}$?
+
+$\mathrm{(A)}\ 195\qquad\mathrm{(B)}\ 196\qquad\mathrm{(C)}\ 224\qquad\mathrm{(D)}\ 378\qquad\mathrm{(E)}\ 405$

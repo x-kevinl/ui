@@ -1,0 +1,31 @@
+==Solution 1 (Complex Numbers in Rectangular Form)==
+We solve each equation separately:
+<ol style="margin-left: 1.5em;">
+  <li>$z^2=4+4\sqrt{15}i$<p>
+Let $z=a+bi$ for some real numbers $a$ and $b.$ <p>
+Substituting and expanding, we get 
+$$\begin{align*}
+(a+bi)^2&=4+4\sqrt{15}i \\
+\left(a^2-b^2\right)+2abi&=4+4\sqrt{15}i.
+\end{align*}$$
+Equating the real parts and the imaginary parts, respectively, we get
+$$\begin{align*}
+a^2-b^2&=4, &&(1) \\
+ab&=2\sqrt{15}. &&(2)
+\end{align*}$$
+We rearrange $(1)$ and square $(2):$
+$$\begin{align*}
+a^2&=b^2+4, \hspace{4mm} &&(1\star) \\
+a^2b^2&=60. &&(2\star)
+\end{align*}$$
+Substituting $(1\star)$ into $(2\star),$ we obtain $\left(b^2+4\right)b^2=60.$ Since $b^2\geq0$ for all real numbers $b,$ either inspection or factoring gives $b^2=6.$ Substituting this into either $(1\star)$ or $(2\star)$ produces $a^2=10.$ Since $ab>0$ from $(2),$ we have $(a,b)=\left(\sqrt{10},\sqrt{6}\right),\left(-\sqrt{10},-\sqrt{6}\right).$ <p>
+The solutions to $z^2=4+4\sqrt{15}i$ are $\boldsymbol{z=\sqrt{10}+\sqrt{6}i,-\sqrt{10}-\sqrt{6}i}.$</li><p>
+  <li>$z^2=2+2\sqrt{3}i$</li><p>
+By the same process, we have $(a,b)=\left(\sqrt3,1\right),\left(-\sqrt3,-1\right).$ <p>
+The solutions to $z^2=2+2\sqrt{3}i$ are $\boldsymbol{z=\sqrt3+i,-\sqrt3-i}.$
+</ol>
+Note that the problem is equivalent to finding the area of a parallelogram with consecutive vertices $(x_1,y_1)=\left(\sqrt{10}, \sqrt{6}\right),(x_2,y_2)=\left(\sqrt{3},1\right),(x_3,y_3)=\left(-\sqrt{10},-\sqrt{6}\right),$ and $(x_4,y_4)=\left(-\sqrt{3}, -1\right)$ in the coordinate plane. By the Shoelace Theorem, the area we seek is $$\frac{1}{2} \left|(x_1y_2 + x_2y_3 + x_3y_4 + x_4y_1) - (y_1x_2 + y_2x_3 + y_3x_4 + y_4x_1)\right| = 6\sqrt2-2\sqrt{10},$$ so the answer is $6+2+2+10=\boxed{\textbf{(A) } 20}.$
+
+~Rejas (Fundamental Logic)
+
+~MRENTHUSIASM (Reconstruction)

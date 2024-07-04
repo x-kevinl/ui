@@ -1,0 +1,7 @@
+== Solution ==
+
+It's important to note that <math>\dfrac{AE}{EB} + \dfrac{EB}{AE}</math> is equivalent to <math>\dfrac{AE^2 + EB^2}{(AE)(EB)}</math>
+
+We define <math>a</math> as the length of the side of larger inner square, which is also <math>EB</math>, <math>b</math> as the length of the side of the smaller inner square which is also <math>AE</math>, and <math>s</math> as the side length of <math>ABCD</math>. Since we are given that the sum of the areas of the two squares is<math>\frac{9}{10}</math> of the the area of ABCD, we can represent that as <math>a^2 + b^2 = \frac{9s^2}{10}</math>. The sum of the two nonsquare rectangles can then be represented as <math>2ab  = \frac{s^2}{10}</math>. 
+
+Looking back at what we need to find, we can represent <math>\dfrac{AE^2 + EB^2}{(AE)(EB)}</math> as <math>\dfrac{a^2 + b^2}{ab}</math>. We have the numerator, and dividing<math>\frac{s^2}{10}</math> by two gives us the denominator <math>\frac{s^2}{20}</math>. Dividing <math>\dfrac{\frac{9s^2}{10}}{\frac{s^2}{20}}</math> gives us an answer of <math>\boxed{018}</math>.

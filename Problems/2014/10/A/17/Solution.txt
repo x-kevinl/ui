@@ -1,0 +1,3 @@
+==Solution 1==
+
+First, we note that there are $1, 2, 3, 4,$ and $5$ ways to get sums of $2, 3, 4, 5, 6$ respectively--this is not too hard to see. With any specific sum, there is exactly one way to attain it on the other die. This means that the probability that two specific dice have the same sum as the other is $$\dfrac16 \left( \dfrac{1+2+3+4+5}{36}\right) = \dfrac{5}{72}.$$ Since there are $\dbinom31$ ways to choose which die will be the one with the sum of the other two, our answer is $3 \cdot \dfrac{5}{72} = \boxed{\textbf{(D)} \: \dfrac{5}{24}}$.

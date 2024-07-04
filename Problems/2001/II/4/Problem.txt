@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>R = (8,6)</math>. The lines whose equations are <math>8y = 15x</math> and <math>10y = 3x</math> contain points <math>P</math> and <math>Q</math>, respectively, such that <math>R</math> is the [[midpoint]] of <math>\overline{PQ}</math>. The length of <math>PQ</math> equals <math>\frac {m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m + n</math>.

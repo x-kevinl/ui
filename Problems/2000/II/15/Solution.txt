@@ -1,0 +1,13 @@
+== Solution 1 ==
+We apply the identity 
+
+<cmath>\begin{align*}
+\frac{1}{\sin n \sin (n+1)} &= \frac{1}{\sin 1} \cdot \frac{\sin (n+1) \cos n - \sin n \cos (n+1)}{\sin n \sin (n+1)} \\ &= \frac{1}{\sin 1} \cdot \left(\frac{\cos n}{\sin n} - \frac{\cos (n+1)}{\sin (n+1)}\right) \\ &= \frac{1}{\sin 1} \cdot \left(\cot n - \cot (n+1)\right). \end{align*}</cmath>
+
+The motivation for this identity arises from the need to decompose those fractions, possibly into [[telescoping]]. 
+
+Thus our summation becomes 
+
+<cmath>\sum_{k=23}^{67} \frac{1}{\sin (2k-1) \sin 2k} = \frac{1}{\sin 1} \left(\cot 45 - \cot 46 + \cot 47 - \cdots + \cot 133 - \cot 134 \right).</cmath>
+
+Since <math>\cot (180 - x) = - \cot x</math>, the summation simply reduces to <math>\frac{1}{\sin 1} \cdot \left( \cot 45 - \cot 90 \right) = \frac{1 - 0}{\sin 1} = \frac{1}{\sin 1^{\circ}}</math>. Therefore, the answer is <math>\boxed{001}</math>.

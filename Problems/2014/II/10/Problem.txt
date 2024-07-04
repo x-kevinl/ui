@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>z</math> be a complex number with <math>|z|=2014</math>. Let <math>P</math> be the polygon in the complex plane whose vertices are <math>z</math> and every <math>w</math> such that <math>\frac{1}{z+w}=\frac{1}{z}+\frac{1}{w}</math>. Then the area enclosed by <math>P</math> can be written in the form <math>n\sqrt{3}</math>, where <math>n</math> is an integer. Find the remainder when <math>n</math> is divided by <math>1000</math>.

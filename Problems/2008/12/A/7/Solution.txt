@@ -1,0 +1,6 @@
+==Solution 1== 
+It will take $\frac{1}{4}$ of an hour or $15$ minutes to get to shore.
+
+Since only $30$ gallons of water can enter the boat, only $\frac{30}{15}=2$ net gallons can enter the boat per minute.
+
+Since $10$ gallons of water enter the boat each minute, LeRoy must bail $10-2=8$ gallons per minute $\Rightarrow\mathrm{(D)}$.

@@ -1,0 +1,2 @@
+==Solution==
+The slice is cutting the cylinder into two equal wedges with equal volume. The cylinder's volume is $\pi r^2 h = \pi (4^2)(6) = 96\pi$. The volume of the wedge is half this which is $48\pi \approx \boxed{\textbf{(C)}\ 151}$.

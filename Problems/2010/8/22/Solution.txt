@@ -1,0 +1,3 @@
+==Solution 1==
+
+Let the hundreds, tens, and units digits of the original three-digit number be $a$, $b$, and $c$, respectively. We are given that $a=c+2$. The original three-digit number is equal to $100a+10b+c = 100(c+2)+10b+c = 101c+10b+200$. The hundreds, tens, and units digits of the reversed three-digit number are $c$, $b$, and $a$, respectively. This number is equal to $100c+10b+a = 100c+10b+(c+2) = 101c+10b+2$. Subtracting this expression from the expression for the original number, we get $(101c+10b+200) - (101c+10b+2) = 198$. Thus, the units digit in the final result is $\boxed{\textbf{(E)}\ 8}$

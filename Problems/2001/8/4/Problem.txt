@@ -1,0 +1,5 @@
+==Problem==
+
+The digits 1, 2, 3, 4 and 9 are each used once to form the smallest possible '''even''' five-digit number. The digit in the tens place is
+
+$\text{(A)}\ 1 \qquad \text{(B)}\ 2 \qquad \text{(C)}\ 3 \qquad \text{(D)}\ 4 \qquad \text{(E)}\ 9$

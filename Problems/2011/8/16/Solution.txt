@@ -1,0 +1,22 @@
+==Solution 1 (Using the Pythagorean Theorem)==
+'''25-25-30'''
+
+We can draw the altitude for the side with length 30. By HL Congruence, the two triangles formed are congruent. Thus the altitude splits the side with length 30 into two segments with length 15. By the [[Pythagorean Theorem]], we have 
+$$ 15^2 + x^2 =25^2 $$
+$$ x^2 = 25^2 - 15^2$$
+$$x^2 = (25 + 15)(25-15)$$
+$$x^2= 40\cdot 10$$
+$$x^2= 400$$
+$$x = \sqrt{400}$$
+$$x= 20$$
+
+
+Thus we have two 15-20-25 right triangles.
+
+'''25-25-40'''
+
+We can draw the altitude for the side with length 40. By HL Congruence, the two triangles formed are congruent. Thus the altitude splits the side with length 40 into two segments with length 20. From the 25-25-30 case, we know that the other side length is 15, so we have two 15-20-25 right triangles.
+Let the area of a 15-20-25 right triangle be $x$.
+$$a = 2x$$
+$$ b = 2x$$
+$$\boxed{\textbf{(C) } A = B} $$

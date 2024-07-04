@@ -1,0 +1,16 @@
+==Problem==
+A ship travels from point $A$ to point $B$ along a semicircular path, centered at Island $X$. Then it travels along a straight path from $B$ to $C$. Which of these graphs best shows the ship's distance from Island $X$ as it moves along its course?
+
+<asy>size(150);
+pair X=origin, A=(-5,0), B=(5,0), C=(0,5);
+draw(Arc(X, 5, 180, 360)^^B--C);
+dot(X);
+label("$X$", X, NE);
+label("$C$", C, N);
+label("$B$", B, E);
+label("$A$", A, W);
+</asy>
+
+<center>
+[[Image:2003amc8prob24ans.png|800px]]
+</center>

@@ -1,0 +1,33 @@
+==Solution 1==
+
+In binary numbers, we have $$S_n = (x_{n-1} x_{n-2} x_{n-3} x_{n-4} \ldots x_{2} x_{1} x_{0})_2.$$
+It follows that $$8S_n = (x_{n-1} x_{n-2} x_{n-3} x_{n-4} \ldots x_{2} x_{1} x_{0}000)_2.$$
+We obtain $7S_n$ by subtracting the equations:
+$$\begin{array}{clccrccccccr}
+  & (x_{n-1} & x_{n-2} & x_{n-3} & x_{n-4} & \ldots & x_2 & x_1 & x_0 & 0 & 0 & 0 \ )_2 \\
+-\quad & & & & (x_{n-1} & \ldots & x_5 & x_4 & x_3 & x_2 & x_1 & x_0)_2 \\
+\hline
+  & & & & & & & & & & &  \\ [-2.5ex]
+  & ( \ \ ?& ? & ? & 0 \ \ \ & \ldots & 0 & 0 & 0 & 0 & 0 & 1 \ )_2 \\
+\end{array}$$
+We work from right to left:
+$$\begin{alignat*}{6}
+x_0=x_1=x_2=1 
+\quad &\implies \quad &x_3 &= 0& \\ 
+\quad &\implies \quad &x_4 &= 1& \\ 
+\quad &\implies \quad &x_5 &= 1& \\
+\quad &\implies \quad &x_6 &= 0& \\ 
+\quad &\implies \quad &x_7 &= 1& \\ 
+\quad &\implies \quad &x_8 &= 1& \\
+\quad &\quad \vdots & & &
+\end{alignat*}$$
+For all $n\geq3,$ we conclude that
+
+* $x_n=0$ if and only if $n\equiv 0\pmod{3}.$
+
+* $x_n=1$ if and only if $n\not\equiv 0\pmod{3}.$
+
+Finally, we get $(x_{2019},x_{2020},x_{2021},x_{2022})=(0,1,1,0),$ from which $$x_{2019} + 2x_{2020} + 4x_{2021} + 8x_{2022} = \boxed{\textbf{(A) } 6}.$$
+~Steven Chen (Professor Chen Education Palace, www.professorchenedu.com)
+
+~MRENTHUSIASM

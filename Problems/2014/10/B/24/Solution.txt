@@ -1,0 +1,81 @@
+==Solution 1==
+
+We see that there are $5!$ total ways to arrange the numbers. However, we can always rotate these numbers so that, for example, the number $1$ is always at the top of the circle. Thus, there are only $4!$ ways under rotation. Every case has exactly $1$ reflection, so that gives us only $4!/2$, or $12$ cases, which is not difficult to list out. We systematically list out all $12$ cases. 
+
+Now, we must examine if they satisfy the conditions. We can see that by choosing one number at a time, we can always obtain subsets with sums $1, 2, 3, 4,$ and $5$. By choosing the full circle, we can obtain $15$. By choosing everything except for $1, 2, 3, 4,$ and $5$, we can obtain subsets with sums of $10, 11, 12, 13,$ and $14$. 
+
+This means that we now only need to check for $6, 7, 8,$ and $9$. However, once we have found a set summing to $6$, we can choose all remaining numbers and obtain a set summing to $15-6=9$, and similarly for $7$ and $8$. Thus, we only need to check each case for whether or not we can obtain $6$ or $7$. 
+
+We can make $6$ by having $4, 2$, or $3, 2, 1$, or $5, 1$. We can start with the group of three. To separate $3, 2, 1$ from each other, they must be grouped two together and one separate, like this.
+
+<asy>
+draw(circle((0, 0), 5));
+pair O, A, B, C, D, E;
+O=origin;
+A=(0, 5);
+B=rotate(72)*A;
+C=rotate(144)*A;
+D=rotate(216)*A;
+E=rotate(288)*A;
+label("$x$", A, N);
+label("$y$", C, SW);
+label("$z$", D, SE);
+</asy>
+
+Now, we note that $x$ is next to both blank spots, so we can't have a number from one of the pairs. So since we can't have $1$, because it is part of the $5, 1$ pair, and we can't have $2$ there, because it's part of the $4, 2$ pair, we must have $3$ inserted into the $x$ spot. We can insert $1$ and $2$ in $y$ and $z$ interchangeably, since reflections are considered the same.
+
+<asy>
+draw(circle((0, 0), 5));
+pair O, A, B, C, D, E;
+O=origin;
+A=(0, 5);
+B=rotate(72)*A;
+C=rotate(144)*A;
+D=rotate(216)*A;
+E=rotate(288)*A;
+label("$3$", A, N);
+label("$2$", C, SW);
+label("$1$", D, SE);
+</asy>
+
+We have $4$ and $5$ left to insert. We can't place the $4$ next to the $2$ or the $5$ next to the $1$, so we must place $4$ next to the $1$ and $5$ next to the $2$.
+
+<asy>
+draw(circle((0, 0), 5));
+pair O, A, B, C, D, E;
+O=origin;
+A=(0, 5);
+B=rotate(72)*A;
+C=rotate(144)*A;
+D=rotate(216)*A;
+E=rotate(288)*A;
+label("$3$", A, N);
+label("$5$", B, NW);
+label("$2$", C, SW);
+label("$1$", D, SE);
+label("$4$", E, NE);
+</asy>
+
+This is the only solution to make $6$ "bad."
+
+Next we move on to $7$, which can be made by $3, 4$, or $5, 2$, or $4, 2, 1$. We do this the same way as before. We start with the three group. Since we can't have $4$ or $2$ in the top slot, we must have one there, and $4$ and $2$ are next to each other on the bottom. When we have $3$ and $5$ left to insert, we place them such that we don't have the two pairs adjacent.
+
+<asy>
+draw(circle((0, 0), 5));
+pair O, A, B, C, D, E;
+O=origin;
+A=(0, 5);
+B=rotate(72)*A;
+C=rotate(144)*A;
+D=rotate(216)*A;
+E=rotate(288)*A;
+label("$1$", A, N);
+label("$3$", B, NW);
+label("$2$", C, SW);
+label("$4$", D, SE);
+label("$5$", E, NE);
+</asy>
+
+This is the only solution to make $7$ "bad."
+
+We've covered all needed cases, and the two examples we found are distinct, therefore the answer is $\boxed{\textbf {(B) }2}$.

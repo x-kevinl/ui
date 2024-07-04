@@ -1,0 +1,4 @@
+==Problem==
+The sum of six consecutive positive integers is 2013. What is the largest of these six integers?
+
+$\textbf{(A)}\ 335 \qquad \textbf{(B)}\ 338 \qquad \textbf{(C)}\ 340 \qquad \textbf{(D)}\ 345 \qquad \textbf{(E)}\ 350$

@@ -1,0 +1,6 @@
+==Problem==
+
+Let $ABCD$ be a rhombus with $\angle ADC = 46^\circ$. Let $E$ be the midpoint of $\overline{CD}$, and let $F$ be the point
+on $\overline{BE}$ such that $\overline{AF}$ is perpendicular to $\overline{BE}$. What is the degree measure of $\angle BFC$?
+
+$\textbf{(A)}\ 110 \qquad\textbf{(B)}\ 111 \qquad\textbf{(C)}\ 112 \qquad\textbf{(D)}\ 113 \qquad\textbf{(E)}\ 114$

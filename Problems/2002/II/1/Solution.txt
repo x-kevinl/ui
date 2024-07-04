@@ -1,0 +1,5 @@
+== Solution ==
+We express the numbers as <math>x=100a+10b+c</math> and <math>y=100c+10b+a</math>.  From this, we have 
+<cmath>\begin{eqnarray*}z&=&|100a+10b+c-100c-10b-a|\\&=&|99a-99c|\\&=&99|a-c|\\
+\end{eqnarray*}</cmath>
+Because <math>a</math> and <math>c</math> are digits, and <math>a</math> and <math>c</math> are both between 1 and 9 (from condition 1), there are <math>\boxed{009}</math> possible values (since all digits except <math>9</math> can be expressed this way).

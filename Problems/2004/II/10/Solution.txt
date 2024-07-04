@@ -1,0 +1,26 @@
+== Solution 1 (Rigorous)==
+
+Any number from 1 to <math>2^{40}</math> can be represented in binary with 40 digits (because <math>2^{40}</math> has 41) with leading zeroes if necessary. Therefore the number of sets where there are exactly two 1’s in this binary representation is just <math>\binom {40}{2}</math> because we’re choosing 2 1s to go in 40 digit slots. This is equal to 780; we have found <math>q</math>, our denominator.
+
+With these particular numbers, when converting back to decimal note that the 38 zeroes all cancel out. Let the first 1 when reading the number in binary from left to right be in position <math>y</math>, I.e. when converting to decimal, it will have value <math>2^{y}</math>. Similarly, let the second 1 have position <math>x</math> (note <math>x<y</math>); then the decimal value of that 1 will be <math>2^{x}</math>. For example, with the binary string 0001001000 <math>y</math> is 6 and <math>x</math> is 3 (note that it is zero indexed).
+
+It should also be noted that our constraints on <math>x</math> and <math>y</math> are <math>0 \leq x < y < 40</math> and <math>x, y \in \mathbb{Z}</math>.
+
+The numbers that satisfy the constraints are therefore equal to <math>2^{x}+2^{y} = 2^{x} \cdot (1+2^{y-x})</math>. The conditions say that this is divisible by 9. <math>2^{x}</math> is clearly never divisible by 9, so we can just focus on <math>1+2^{y-x}</math>. 
+<cmath>1+2^{y-x} \equiv 0 \pmod 9 \implies 2^{y-x} \equiv -1 \pmod 9 \implies 2^{y-x} \equiv 8 \pmod 9</cmath>
+
+<math>y-x = 3</math> clearly satisfies the congruence, but are there any more? Well, we see that any time we raise -1 (in the second congruence above) to an odd power we get -1 again, so if we raise <math>2^{3}</math>, which we know already works, to an odd power, we will also satisfy the congruence. Thus, <math>2^{3}, 2^{9}, 2^{15},</math> etc. work; or, <cmath>y-x \equiv 3 \pmod 6</cmath>
+
+To count the numbers that satisfy the condition, we need to find the amount of numbers that satisfy <math>2^{x} \cdot (1+2^{y-x}) \leq 2^{40}</math>, and <math>y-x \equiv 3 \pmod 6 = 6n +3</math> for some whole number <math>n</math>. 
+
+Since we know <math>1+2^{y-x} = 1+2^{6n+3}</math> is positive, we can divide both sides of the inequality by it;
+<cmath>2^{x} \cdot (1+2^{y-x}) \leq 2^{40} \implies 2^{x} \leq \frac{2^{40}}{1+2^{y-x}} \implies 2^{x} \leq \frac{2^{40}}{1+2^{6n+3}}</cmath>
+<cmath>\implies 2^{x} < \frac{2^{40}}{2^{6n+3}} \implies 2^{x} < 2^{40-(6n+3)}\implies 2^{x} < 2^{37-6n} \implies x < 37 - 6n</cmath>
+
+Finally, the number of possible values of <math>x</math> is <math>37-6n</math> because <math>x</math> can also be 0 and must be an integer.Therefore, as we increase <math>n</math> from zero upwards, we get the total number of possibilities for <math>x</math> is <math>37+31+25+\ldots+1 = 7 + 36 + 30 + 24 + \ldots + 6 + 0 = 7 + 6 \cdot (6 + 5 + 4\ldots + 1) </math>
+
+<math>= 7 + 6 \cdot 3 \cdot 7 = 7 + 18 \cdot 7 = 19 \cdot 7 = 133</math>.
+
+Since 133 and 780 are relatively prime, the answer is <math>\frac{133}{780}</math> and our final answer is <math>133+780 = \boxed{913}</math>
+
+~KingRavi

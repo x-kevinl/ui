@@ -1,0 +1,4 @@
+==Problem==
+Camila writes down five positive integers. The unique mode of these integers is $2$ greater than their median, and the median is $2$ greater than their arithmetic mean. What is the least possible value for the mode?
+
+$\textbf{(A)}\ 5 \qquad\textbf{(B)}\ 7 \qquad\textbf{(C)}\ 9 \qquad\textbf{(D)}\ 11 \qquad\textbf{(E)}\ 13$

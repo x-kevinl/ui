@@ -1,0 +1,2 @@
+==Problem==
+Let <math>\triangle ABC</math> have circumcenter <math>O</math> and incenter <math>I</math> with <math>\overline{IA}\perp\overline{OI}</math>, circumradius <math>13</math>, and inradius <math>6</math>. Find <math>AB\cdot AC</math>.

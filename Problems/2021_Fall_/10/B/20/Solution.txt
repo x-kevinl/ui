@@ -1,0 +1,12 @@
+==Solution 1==
+
+Since we know that Hugo wins, we know that he rolled the highest number in the first round. The probability that his first roll is a $5$ is just the probability that the highest roll in the first round is $5$.
+
+Let $P(x)$ indicate the probability that event $x$ occurs.
+We find that $P(\text{No one rolls a 6})-P(\text{No one rolls a 5 or 6})=P(\text{The highest roll is a 5})$,
+
+so  $$P(\text{No one rolls a 6})=\left(\frac56\right)^4,$$ 
+$$P(\text{No one rolls a 5 or 6})=\left(\frac23\right)^4,$$
+$$P(\text{The highest roll is a 5})=\left(\frac56\right)^4-\left(\frac46\right)^4=\frac{5^4-4^4}{6^4}=\frac{369}{1296}=\boxed{(\textbf{C}) \: \frac{41}{144}}.$$
+
+~kingofpineapplz

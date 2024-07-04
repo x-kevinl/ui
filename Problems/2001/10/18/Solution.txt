@@ -1,0 +1,20 @@
+== Solution ==
+Consider any single tile:
+
+<asy>
+unitsize(1cm);
+defaultpen(linewidth(0.8pt));
+
+path p1=(0,0)--(3,0)--(3,3)--(0,3)--(0,0);
+path p2=(0,1)--(1,1)--(1,0);
+path p3=(2,0)--(2,1)--(3,1);
+path p4=(3,2)--(2,2)--(2,3);
+path p5=(1,3)--(1,2)--(0,2);
+path p6=(1,1)--(2,2);
+path p7=(2,1)--(1,2);
+path[] p=p1^^p2^^p3^^p4^^p5^^p6^^p7;
+draw(p);
+</asy>
+
+If the side of the small square is $a$, then the area of the tile is $9a^2$, with $4a^2$ covered by squares and $5a^2$ by pentagons.
+Hence exactly $5/9$ of any tile are covered by pentagons, and therefore pentagons cover $5/9$ of the plane. When expressed as a percentage, this is $55.\overline{5}\%$, and the closest integer to this value is $\boxed{\textbf{(D) }56}$.

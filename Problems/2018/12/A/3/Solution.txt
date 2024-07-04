@@ -1,0 +1,19 @@
+==Solution 1==
+
+We must place the classes into the periods such that no two classes are in the same period or in consecutive periods.
+
+Ignoring distinguishability, we can thus list out the ways that three periods can be chosen for the classes when periods cannot be consecutive:
+
+Periods $1, 3, 5$
+
+Periods $1, 3, 6$
+
+Periods $1, 4, 6$
+
+Periods $2, 4, 6$
+
+There are $4$ ways to place $3$ nondistinguishable classes into $6$ periods such that no two classes are in consecutive periods. For each of these ways, there are $3! = 6$ orderings of the classes among themselves.
+
+Therefore, there are $4 \cdot 6 = \boxed{\textbf{(E) } 24}$ ways to choose the classes.
+
+-Versailles15625

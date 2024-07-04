@@ -1,0 +1,14 @@
+==Problem==
+
+In the right triangle $ABC$, $AC=12$, $BC=5$, and angle $C$ is a right angle. A semicircle is inscribed in the triangle as shown. What is the radius of the semicircle?
+
+<asy>
+draw((0,0)--(12,0)--(12,5)--(0,0));
+draw(arc((8.67,0),(12,0),(5.33,0)));
+label("$A$", (0,0), W);
+label("$C$", (12,0), E);
+label("$B$", (12,5), NE);
+label("$12$", (6, 0), S);
+label("$5$", (12, 2.5), E);</asy>
+
+$\textbf{(A) }\frac{7}{6}\qquad\textbf{(B) }\frac{13}{5}\qquad\textbf{(C) }\frac{59}{18}\qquad\textbf{(D) }\frac{10}{3}\qquad\textbf{(E) }\frac{60}{13}$

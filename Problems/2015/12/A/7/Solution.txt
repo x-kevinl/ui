@@ -1,0 +1,2 @@
+==Solution==
+Let the radius of the first cylinder be $r_1$ and the radius of the second cylinder be $r_2$. Also, let the height of the first cylinder be $h_1$ and the height of the second cylinder be $h_2$. We are told $$r_2=\frac{11r_1}{10}$$ $$\pi r_1^2h_1=\pi r_2^2h_2$$ Substituting the first equation into the second and dividing both sides by $\pi$, we get $$r_1^2h_1=\frac{121r_1^2}{100}h_2\implies h_1=\frac{121h_2}{100}.$$ Therefore, $\boxed{\textbf{(D)}\ \text{The first height is } 21\% \text{ more than the second.}}$

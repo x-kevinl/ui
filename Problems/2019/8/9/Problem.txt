@@ -1,0 +1,4 @@
+==Problem 9==
+Alex and Felicia each have cats as pets. Alex buys cat food in cylindrical cans that are $6$ cm in diameter and $12$ cm high. Felicia buys cat food in cylindrical cans that are $12$ cm in diameter and $6$ cm high. What is the ratio of the volume of one of Alex's cans to the volume of one of Felicia's cans?
+
+$\textbf{(A) }1:4\qquad\textbf{(B) }1:2\qquad\textbf{(C) }1:1\qquad\textbf{(D) }2:1\qquad\textbf{(E) }4:1$

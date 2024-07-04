@@ -1,0 +1,13 @@
+==Problem==
+
+Last academic year Yolanda and Zelda took different courses that did not necessarily administer the same number of quizzes during each of the two semesters. Yolanda's average on all the quizzes she took during the first semester was $3$ points higher than Zelda's average on all the quizzes she took during the first semester. Yolanda's average on all the quizzes she took during the second semester was $18$ points higher than her average for the first semester and was again $3$ points higher than Zelda's average on all the quizzes Zelda took during her second semester. Which one of the following statements cannot possibly be true?
+
+$\textbf{(A)}$ Yolanda's quiz average for the academic year was $22$ points higher than Zelda's.
+
+$\textbf{(B)}$ Zelda's quiz average for the academic year was higher than Yolanda's.
+
+$\textbf{(C)}$ Yolanda's quiz average for the academic year was $3$ points higher than Zelda's.
+
+$\textbf{(D)}$ Zelda's quiz average for the academic year equaled Yolanda's.
+
+$\textbf{(E)}$ If Zelda had scored $3$ points higher on each quiz she took, then she would have had the same average for the academic year as Yolanda.

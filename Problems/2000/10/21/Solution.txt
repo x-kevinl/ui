@@ -1,0 +1,17 @@
+== Solution ==
+
+We interpret the problem statement as a query about three abstract concepts denoted as "alligators", "creepy crawlers" and "ferocious creatures". In answering the question, we may NOT refer to reality -- for example to the fact that alligators do exist.
+
+To make more clear that we are not using anything outside the problem statement, let's rename the three concepts as $A$, $C$, and $F$.
+
+We got the following information:
+* If $x$ is an $A$, then $x$ is an $F$.
+* There is some $x$ that is a $C$ and at the same time an $A$.
+
+We CAN NOT conclude that the first statement is true. For example, the situation "Johnny and Freddy are $A$s, but only Johnny is a $C$" meets both conditions, but the first statement is false.
+
+We CAN conclude that the second statement is true. We know that there is some $x$ that is a $C$ and at the same time an $A$. Pick one such $x$ and call it Bobby. Additionally, we know that if $x$ is an $A$, then $x$ is an $F$. Bobby is an $A$, therefore Bobby is an $F$. And this is enough to prove the second statement -- Bobby is an $F$ that is also a $C$.
+
+We CAN NOT conclude that the third statement is true. For example, consider the situation when $A$, $C$ and $F$ are equivalent (represent the same set of objects). In such case both conditions are satisfied, but the third statement is false.
+
+Therefore the answer is $\boxed{\text{(B) \, II only}}$.

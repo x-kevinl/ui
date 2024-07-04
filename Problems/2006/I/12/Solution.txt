@@ -1,0 +1,4 @@
+== Solution ==
+Observe that <math>2\cos 4x\cos x = \cos 5x + \cos 3x</math> by the sum-to-product formulas. Defining <math>a = \cos 3x</math> and <math>b = \cos 5x</math>, we have <math>a^3 + b^3 = (a+b)^3 \rightarrow ab(a+b) = 0</math>. But <math>a+b = 2\cos 4x\cos x</math>, so we require <math>\cos x = 0</math>, <math>\cos 3x = 0</math>, <math>\cos 4x = 0</math>, or <math>\cos 5x = 0</math>.
+
+Hence we see by careful analysis of the cases that the solution set is <math>A = \{150, 126, 162, 198, 112.5, 157.5\}</math> and thus <math>\sum_{x \in A} x = \boxed{906}</math>.

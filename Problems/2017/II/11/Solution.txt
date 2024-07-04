@@ -1,0 +1,19 @@
+==Solution==
+It is obvious that any configuration of one-way roads which contains a town whose roads all lead into it or lead out of it cannot satisfy the given. We claim that any configuration which does not have a town whose roads all lead into it or lead out of it does satisfy the given conditions. Now we show that a loop of <math>3</math> or more towns exist. Pick a town, then choose a neighboring town to travel to <math>5</math> times. Of these <math>6</math> towns visited, at least two of them must be the same; therefore there must exist a loop of <math>3</math> or more towns because a loop of <math>2</math> towns cannot exist. We want to show that the loop can be reached from any town, and any town can be reached from the loop.
+
+<math>\textbf{Case 1}</math>. The loop has <math>5</math> towns.
+Clearly every town can be reached by going around the loop.
+
+<math>\textbf{Case 2}</math>. The loop has <math>4</math> towns.
+The town not on the loop must have a road leading to it. This road comes from a town on the loop. Therefore this town can be reached from the loop. This town not on the loop must also have a road leading out of it. This road leads to a town on the loop. Therefore the loop can be reached from the town.
+
+<math>\textbf{Case 3}</math>. The loop has <math>3</math> towns.
+There are two towns not on the loop; call them Town <math>A</math> and Town <math>B</math>. Without loss of generality assume <math>A</math> leads to <math>B</math>. Because a road must lead to <math>A</math>, the town where this road comes from must be on the loop. Therefore <math>A</math> and therefore <math>B</math> can be reached from the loop. Because a road must lead out of <math>B</math>, the town it leads to must be on the loop. Therefore the loop can be reached from <math>B</math> and also <math>A</math>.
+
+The number of good configurations is the total number of configurations minus the number of bad configurations. There are <math>2^{{5\choose2}}</math> total configurations. To find the number of bad configurations in which a town exists such that all roads lead to it, there are <math>5</math> ways to choose this town and <math>2^6</math> ways to assign the six other roads that do not connect to this town. The same logic is used to find the number of bad configurations in which a town exists such that all roads lead out of it. It might be tempting to conclude that there are <math>5 \cdot 2^6+5 \cdot 2^6</math> bad configurations, but the configurations in which there exists a town such that all roads lead to it and a town such that all roads lead out of it are overcounted. There are <math>5</math> ways to choose the town for which all roads lead to it, <math>4</math> ways to choose the town for which all roads lead out of it, and <math>2^3</math> ways to assign the remaining <math>3</math> roads not connected to either of these towns. Therefore, the answer is <math>2^{{5\choose2}}-(5 \cdot 2^6+5 \cdot 2^6-5\cdot 4 \cdot 2^3)=\boxed{544}</math>.
+
+===Diagram===
+[[File:2017AIMEII_P11_Diagram.JPG|400px]]
+
+Note that this isn't necessarily a diagram of the actual sequence of roads (I haven't drawn in every pair of cities to be connected), but a simplified diagram that can be used to represent a visualized representation of the loops in the cases
+'''mathboy282'''

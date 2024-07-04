@@ -1,0 +1,4 @@
+==Solution 1==
+It is very easy to see that the $+2 $ in the graph does not impact whether it passes through the lattice. 
+
+We need to make sure that $m$ cannot be in the form of $\frac{a}{b}$ for $1\le b\le 100$. Otherwise, the graph $y= mx$ passes through the lattice point at $x = b$. We only need to worry about $\frac{a}{b}$ very close to $\frac{1}{2}$, $\frac{n+1}{2n+1}$, $\frac{n+1}{2n}$ will be the only case we need to worry about and we want the minimum of those, clearly for  $1\le b\le 100$, the smallest is $\frac{50}{99} $, so answer is $\boxed{\frac{50}{99} \textbf{(B)}}$ (In other words we are trying to find the smallest $m>\frac{1}{2}$ such that $b\le 100$.)

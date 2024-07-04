@@ -1,0 +1,12 @@
+==Solutions==
+===Solution 1: Algebra===
+We multiply the first ratio by 8 on both sides, and the second ratio by 5 to get the same number for 8th graders, in order that we can put the two ratios together:
+
+$5:3 = 5(8):3(8) = 40:24$
+
+$8:5 = 8(5):5(5) = 40:25$
+
+Therefore, the ratio of 8th graders to 7th graders to 6th graders is $40:25:24$. Since the ratio is in lowest terms, the smallest number of students participating in the project is $40+25+24 = \boxed{\textbf{(E)}\ 89}$.
+
+===Solution 2: Fakesolving===
+The number of 8th graders has to be a multiple of 8 and 5, so assume it is 40 (the smallest possibility). Then there are $40*\frac{3}{5}=24$ 6th graders and $40*\frac{5}{8}=25$ 7th graders. The numbers of students is $40+24+25=\boxed{\textbf{(E)}\ 89}$

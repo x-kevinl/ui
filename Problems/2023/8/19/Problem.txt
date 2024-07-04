@@ -1,0 +1,24 @@
+==Problem==
+An equilateral triangle is placed inside a larger equilateral triangle so that the region between them can be divided into three congruent trapezoids, as shown below. The side length of the inner triangle is $\frac23$ the side length of the larger triangle. What is the ratio of the area of one trapezoid to the area of the inner triangle?
+
+<asy>
+// Diagram by TheMathGuyd 
+pair A,B,C;
+A=(0,1);
+B=(sqrt(3)/2,-1/2);
+C=-conj(B);
+fill(2B--3B--3C--2C--cycle,grey);
+dot(3A);
+dot(3B);
+dot(3C);
+dot(2A);
+dot(2B);
+dot(2C);
+draw(2A--2B--2C--cycle);
+draw(3A--3B--3C--cycle);
+draw(2A--3A);
+draw(2B--3B);
+draw(2C--3C);
+</asy>
+
+$\textbf{(A) } 1 : 3 \qquad \textbf{(B) } 3 : 8 \qquad \textbf{(C) } 5 : 12 \qquad \textbf{(D) } 7 : 16 \qquad \textbf{(E) } 4 : 9$

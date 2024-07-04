@@ -1,0 +1,2 @@
+== Problem ==
+Given that <math>z</math> is a complex number such that <math>z+\frac 1z=2\cos 3^\circ</math>, find the least integer that is greater than <math>z^{2000}+\frac 1{z^{2000}}</math>.

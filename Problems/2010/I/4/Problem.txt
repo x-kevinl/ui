@@ -1,0 +1,2 @@
+== Problem ==
+Jackie and Phil have two fair coins and a third coin that comes up heads with [[probability]] <math>\frac47</math>. Jackie flips the three coins, and then Phil flips the three coins. Let <math>\frac {m}{n}</math> be the probability that Jackie gets the same number of heads as Phil, where <math>m</math> and <math>n</math> are [[relatively prime]] positive integers. Find <math>m + n</math>.

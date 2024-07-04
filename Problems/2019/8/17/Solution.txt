@@ -1,0 +1,6 @@
+==Solution 1 (Telescoping)==
+We rewrite: $$\frac{1}{2}\cdot\left(\frac{3\cdot2}{2\cdot3}\right)\left(\frac{4\cdot3}{3\cdot4}\right)\cdots\left(\frac{99\cdot98}{98\cdot99}\right)\cdot\frac{100}{99}$$
+
+The middle terms cancel, leaving us with
+
+$$\left(\frac{1\cdot100}{2\cdot99}\right)= \boxed{\textbf{(B)}\frac{50}{99}}$$

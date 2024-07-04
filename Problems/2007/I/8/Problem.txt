@@ -1,0 +1,2 @@
+== Problem ==
+The [[polynomial]] <math>P(x)</math> is [[cubic polynomial | cubic]].  What is the largest value of <math>k</math> for which the polynomials <math>Q_1(x) = x^2 + (k-29)x - k</math> and <math>Q_2(x) = 2x^2+ (2k-43)x + k</math> are both [[factor]]s of <math>P(x)</math>?

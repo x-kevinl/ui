@@ -1,0 +1,2 @@
+== Solution 1 ==
+We wish to find $\frac{9+99+\cdots +999999999}{9}$, or $\frac{9(1+11+111+\cdots +111111111)}{9}=123456789$. This doesn't have the digit 0, so the answer is $\boxed{\mathrm{(A)}\ 0}$

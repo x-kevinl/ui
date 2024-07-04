@@ -1,0 +1,196 @@
+==Solution 1==
+
+<asy>
+unitsize(1cm);
+
+pair A, B, C, D, E, F, W,X,Y,Z;
+real bigSide = 3;
+real smallSide = 1;
+real angle = 60; // Each external angle for the hexagon
+real offset = 3/7; // Offset for the smaller hexagons
+
+// Function to draw a hexagon given a starting point and side length
+void drawHexagon(pair start, real side) {
+    pair current = start;
+    for (int i = 0; i < 6; ++i) {
+        pair next = current + side * dir(angle * i);
+        draw(current--next);
+        current = next;
+    }
+    draw(current--start); // Close the hexagon
+}
+
+// Define the first vertex of the big hexagon
+A = (0,0);
+
+// Calculate the other vertices of the big hexagon
+B = A + bigSide * dir(0);
+C = B + bigSide * dir(angle);
+D = C + bigSide * dir(2*angle);
+E = D + bigSide * dir(3*angle);
+F = E + bigSide * dir(4*angle);
+
+// Draw the big hexagon
+drawHexagon(A, bigSide);
+
+// Function to calculate the center of a side given two vertices
+pair sideCenter(pair start, pair end) {
+    return (start + end)/2;
+}
+
+// Draw the smaller hexagons
+drawHexagon(A + offset * dir(0), smallSide);
+drawHexagon(B - smallSide * dir(0)+offset*dir(60), smallSide);
+drawHexagon(C - smallSide * dir(0)-dir(60)+dir(120)*3/7, smallSide);
+drawHexagon(D - 2*smallSide*dir(120)-(2+3/7)*smallSide, smallSide);
+drawHexagon(E - 2*smallSide*dir(60)+smallSide-3/7*dir(60), smallSide);
+drawHexagon(F + smallSide*dir(-60)+(3/7)*dir(-60), smallSide);
+
+// Optionally, label the vertices of the big hexagon
+label("$A$", A, SW);
+label("$B$", B, SE);
+label("$C$", C, E);
+label("$D$", D, NE);
+label("$E$", E, NW);
+label("$F$", F, W);
+
+void drawTrap(pair W, real side, pen p) {
+  X = W+(3/7)*side*dir(0);
+  Y = X+(4/7)*side*dir(60);
+  Z = Y - side*dir(0);
+  draw(W--X, p);
+  draw(X--Y,p);
+  draw(Y--Z,p);
+  draw(Z--W,p);
+}
+W = A+smallSide*dir(120);
+
+drawTrap(W,1, red+2);
+
+pair W2,W3,W4,W5;
+W2 = A+3*dir(-90);
+W3 = W2+dir(90)*4*sqrt(3)/7;
+W4 = W3+dir(0)*6/7;
+W5 = W2+dir(0)*6/7;
+drawTrap(W2,2,blue+1);
+draw(W2--W3,blue+0.5);
+draw(W4--W5,blue+0.5);
+label("2/7",W3,NW);
+label("3/7",W3,NE);
+W4 = W3+6/7*dir(0);
+label("2/7",W4,NE);
+label("4/7",W2+dir(160)*0.5,W);
+
+draw(A  -1.5*dir(45)-- F -1.5*dir(45), green+0.5);
+pair J,K,L,M,N;
+J = ((A/10+9*F/10))-0.25*dir(45);
+L = ((A+F)/2)-0.25*dir(45);
+K = ((J+L)/2)-0.25*dir(45);
+M = ((L+A)/2)-0.25*dir(45);
+N = ((A+F)/2)-1.6*dir(45);
+
+label("3/7",J,SW);
+label("4/7",L,SW);
+label("1",K,SW);
+label("1",M,SW);
+label("3",N,SW);
+
+
+</asy>
+
+
+Examining the red isosceles trapezoid with $1$ and $\dfrac{3}{7}$ as two bases, we know that the side lengths are $\dfrac{4}{7}$ from $30-60-90$ triangle.
+
+We can conclude that the big hexagon has side length 3.
+
+Thus the target area is: area of the big hexagon - 6 * area of the small hexagon.
+$ \dfrac{3\sqrt{3}}{2}(3^2-6\cdot1^2) = \dfrac{3\sqrt{3}}{2}(3) = \boxed{\textbf{(C)}~\frac{9 \sqrt{3}}{2}}$
+
+~Technodoggo
+
+===Solution 1.1===
+We can extend the line of the parallelogram to the end until it touches the next hexagon and it will make a small equilateral triangle and a longer parallelogram. We can prove that one side of the tiny equilateral triangle is 4/7 by playing around with angles and the parallelogram because it is parallel, we can then use the whole side of the hexagon which is one and subtract 3/7 which is one side of the equilateral triangle which is 4/7. That means the whole side of the big hexagon length is 3 and we can continue with solution 1.
+
+<asy>
+unitsize(1cm);
+
+pair A, B, C, D, E, F, W,X,Y,Z;
+real bigSide = 3;
+real smallSide = 1;
+real angle = 60; // Each external angle for the hexagon
+real offset = 3/7; // Offset for the smaller hexagons
+
+// Function to draw a hexagon given a starting point and side length
+void drawHexagon(pair start, real side) {
+    pair current = start;
+    for (int i = 0; i < 6; ++i) {
+        pair next = current + side * dir(angle * i);
+        draw(current--next);
+        current = next;
+    }
+    draw(current--start); // Close the hexagon
+}
+
+// Define the first vertex of the big hexagon
+A = (0,0);
+
+// Calculate the other vertices of the big hexagon
+B = A + bigSide * dir(0);
+C = B + bigSide * dir(angle);
+D = C + bigSide * dir(2*angle);
+E = D + bigSide * dir(3*angle);
+F = E + bigSide * dir(4*angle);
+
+// Draw the big hexagon
+drawHexagon(A, bigSide);
+
+// Function to calculate the center of a side given two vertices
+pair sideCenter(pair start, pair end) {
+    return (start + end)/2;
+}
+
+// Draw the smaller hexagons
+drawHexagon(A + offset * dir(0), smallSide);
+drawHexagon(B - smallSide * dir(0)+offset*dir(60), smallSide);
+drawHexagon(C - smallSide * dir(0)-dir(60)+dir(120)*3/7, smallSide);
+drawHexagon(D - 2*smallSide*dir(120)-(2+3/7)*smallSide, smallSide);
+drawHexagon(E - 2*smallSide*dir(60)+smallSide-3/7*dir(60), smallSide);
+drawHexagon(F + smallSide*dir(-60)+(3/7)*dir(-60), smallSide);
+
+// Optionally, label the vertices of the big hexagon
+label("$A$", A, SW);
+label("$B$", B, SE);
+label("$C$", C, E);
+label("$D$", D, NE);
+label("$E$", E, NW);
+label("$F$", F, W);
+
+
+void drawTriangle(pair W, real side, pen p) {
+  X = W+(3/7)*side*dir(0);
+  Y = A+(3/7)*side*dir(0);
+  draw(W--X, p);
+  draw(W--A, p);
+  draw(Y--X, p);
+  draw(A--Y, p);
+}
+W = A+11/7*dir(120);
+
+drawTriangle(W,1, purple+2);
+
+draw(A  -1.5*dir(45)-- F -1.5*dir(45), green+0.5);
+pair J,K,L,M,N;
+J = ((A/10+9*F/10))-0.25*dir(45);
+L = ((A+F)/2)-0.25*dir(45);
+K = ((J+L)/2)-0.25*dir(45);
+M = ((L+A)/2)-0.25*dir(45);
+N = ((A+F)/2)-1.6*dir(45);
+
+label("3/7",J,SW);
+label("4/7",L,SW);
+label("1",K,SW);
+label("1",M,SW);
+label("3",N,SW);
+
+</asy>
+-BrandonChen

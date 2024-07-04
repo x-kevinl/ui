@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>N</math> be the least positive integer that is both <math>22</math> percent less than one integer and <math>16</math> percent greater than another integer. Find the remainder when <math>N</math> is divided by <math>1000</math>.

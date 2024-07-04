@@ -1,0 +1,5 @@
+==Solution 1==
+
+Observe that $2019_{10} = 5613_7$. To maximize the sum of the digits, we want as many $6$s as possible (since $6$ is the highest value in base $7$), and this will occur with either of the numbers $4666_7$ or $5566_7$. Thus, the answer is $4+6+6+6 = 5+5+6+6 = \boxed{\textbf{(C) }22}$.
+
+~IronicNinja went through this test 100 times

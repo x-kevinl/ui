@@ -1,0 +1,4 @@
+==Problem==
+What is the smallest positive integer that is neither prime nor square and that has no prime factor less than 50?
+
+$ \textbf{(A)}\hspace{.05in}3127\qquad\textbf{(B)}\hspace{.05in}3133\qquad\textbf{(C)}\hspace{.05in}3137\qquad\textbf{(D)}\hspace{.05in}3139\qquad\textbf{(E)}\hspace{.05in}3149 $

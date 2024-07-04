@@ -1,0 +1,4 @@
+==Problem==
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>What is the sum of the digits of the square of $\text 111111111$?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+$\mathrm{(A)}\ 18\qquad\mathrm{(B)}\ 27\qquad\mathrm{(C)}\ 45\qquad\mathrm{(D)}\ 63\qquad\mathrm{(E)}\ 81$

@@ -1,0 +1,46 @@
+== Solution 1 ==
+
+<asy>
+size(12cm);
+for (int x = 1; x < 18; ++x) {
+    draw((x, 0) -- (x, 9), dotted);
+}
+for (int y = 1; y < 9; ++y) {
+    draw((0, y) -- (18, y), dotted);
+}
+
+draw((0, 0) -- (18, 0) -- (18, 9) -- (0, 9) -- cycle);
+
+pair b1, b2, b3;
+pair c1, c2, c3;
+pair a1, a2, a3;
+b1 = (3, 0); b2 = (12, 0); b3 = (16, 0);
+c1 = (0, 2); c2 = (0, 4); c3 = (0, 8);
+a1 = b1 + c1; a2 = b2 + c2; a3 = b3 + c3;
+
+draw(b1 -- a1 -- c1);
+draw(b2 -- a2 -- c2);
+draw(b3 -- a3 -- c3);
+
+dot(a1); dot(a2); dot(a3);
+label("$a_1$", a1, NE);
+label("$a_2$", a2, NE);
+label("$a_3$", a3, NE);
+label("$b_1$", b1, S);
+label("$b_2$", b2, S);
+label("$b_3$", b3, S);
+label("$c_1$", c1, W);
+label("$c_2$", c2, W);
+label("$c_3$", c3, W);
+
+</asy>
+
+First, prime factorize <math>20^9</math> as <math>2^{18} \cdot 5^9</math>. Denote <math>a_1</math> as <math>2^{b_1} \cdot 5^{c_1}</math>, <math>a_2</math> as <math>2^{b_2} \cdot 5^{c_2}</math>, and <math>a_3</math> as <math>2^{b_3} \cdot 5^{c_3}</math>.
+
+In order for <math>a_1</math> to divide <math>a_2</math>, and for <math>a_2</math> to divide <math>a_3</math>, <math>b_1\le b_2\le b_3</math>, and <math>c_1\le c_2\le c_3</math>. We will consider each case separately. Note that the total amount of possibilities is <math>190^3</math>, as there are <math>(18+1)(9+1)=190</math> choices for each factor.
+
+We notice that if we add <math>1</math> to <math>b_2</math> and <math>2</math> to <math>b_3</math>, then we can reach the stronger inequality <math>0\le b_1<b_2+1<b_3+2\le 20</math>. Therefore, if we pick <math>3</math> integers from <math>0</math> to <math>20</math>, they will correspond to a unique solution, forming a 1-1 correspondence between the numbers <math>b_1</math>, <math>b_2+1</math>, and <math>b_3+2</math>. This is also equivalent to applying stars and bars on distributing the powers of 2 and 5 through differences. The amount of solutions to this inequality is <math>\dbinom{21}{3}</math>.
+
+The case for <math>c_1</math>,<math>c_2</math>, and <math>c_3</math> proceeds similarly for a result of <math>\dbinom{12}{3}</math>. Therefore, the probability of choosing three such factors is <cmath>\frac{\dbinom{21}{3} \cdot \dbinom{12}{3}}{190^3}.</cmath> Simplification gives <math>\frac{77}{1805}</math>, and therefore the answer is <math>\boxed{077}</math>.
+
+-molocyxu

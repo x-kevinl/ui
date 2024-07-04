@@ -1,0 +1,2 @@
+==Problem==
+Zou and Chou are practicing their <math>100</math>-meter sprints by running <math>6</math> races against each other. Zou wins the first race, and after that, the probability that one of them wins a race is <math>\frac23</math> if they won the previous race but only <math>\frac13</math> if they lost the previous race. The probability that Zou will win exactly <math>5</math> of the <math>6</math> races is <math>\frac mn</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n.</math>

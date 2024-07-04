@@ -1,0 +1,4 @@
+==Solution==
+If $x$ is the number, then $2x=60$ and $x=30$. Dividing the number by $2$ yields $\dfrac{30}{2} = \boxed{\textbf{(B)}\ 15}$.
+
+A second way to do it is to divide the number by $4$, as you multiplied by $2$ when you were supposed to divide by $2$. So, $\dfrac{60}{4} = \boxed{\textbf{(B)}\ 15}$.

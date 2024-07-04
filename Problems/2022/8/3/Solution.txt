@@ -1,0 +1,16 @@
+==Solution 1==
+
+The positive divisors of $100$ are $$1,2,4,5,10,20,25,50,100.$$
+It is clear that $10\leq c\leq50,$ so we apply casework to $c:$
+
+* If $c=10,$ then $(a,b,c)=(2,5,10).$
+
+* If $c=20,$ then $(a,b,c)=(1,5,20).$
+
+* If $c=25,$ then $(a,b,c)=(1,4,25).$
+
+* If $c=50,$ then $(a,b,c)=(1,2,50).$
+
+Together, the numbers $a,b,$ and $c$ can be chosen in $\boxed{\textbf{(E) } 4}$ ways.
+
+~MRENTHUSIASM

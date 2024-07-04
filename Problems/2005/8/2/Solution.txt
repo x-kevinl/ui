@@ -1,0 +1,2 @@
+==Solution==
+Karl paid $5 \cdot 2.50 = \textdollar 12.50$. $20 \%$ of this cost that he saved is $12.50 \cdot .2 = \boxed{\textbf{(C)}\ \textdollar 2.50}$.

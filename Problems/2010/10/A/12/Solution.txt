@@ -1,0 +1,4 @@
+== Solution ==
+The water tower holds $\frac{100000}{0.1} = 1000000$ times more water than Logan's miniature. The volume of a sphere is: $V=\dfrac{4}{3}\pi r^3$. Since we are comparing the heights (m), we should compare the radii (m) to find the ratio. Since, the radius is cubed, Logan should make his tower $\sqrt[3]{1000000} = 100$ times shorter than the actual tower. This is $\frac{40}{100} = \boxed{0.4}$ meters high, or choice $\textbf{(C)}$.
+
+Note: The fact that $1\text{ L}=1000\text{ cm}^3$ doesn't matter since only the ratios are important.

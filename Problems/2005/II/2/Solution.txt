@@ -1,0 +1,24 @@
+== Solution ==
+=== Solution 1 ===
+Use [[construction]]. We need only calculate the probability the first and second person all get a roll of each type, since then the rolls for the third person are determined. 
+
+*Person 1: <math>\frac{9 \cdot 6 \cdot 3}{9 \cdot 8 \cdot 7} = \frac{9}{28}</math>
+
+*Person 2: <math>\frac{6 \cdot 4 \cdot 2}{6 \cdot 5 \cdot 4} = \frac 25</math>
+*Person 3: One roll of each type is left, so the probability here is <math>1</math>. 
+
+Our answer is thus <math>\frac{9}{28} \cdot \frac{2}{5} = \frac{9}{70}</math>, and <math>m + n = \boxed{79}</math>.
+
+=== Solution 2 ===
+Call the three different types of rolls as A, B, and C. We need to arrange 3As, 3Bs, and 3Cs in a string such that A, B, and C appear in the first three, second three, and the third three like ABCABCABC or BCABACCAB. This can occur in <math>\left(\frac{3!}{1!1!1!}\right)^3 = 6^3 = 216</math> different manners. The total number of possible strings is <math>\frac{9!}{3!3!3!} = 1680</math>. The solution is therefore <math>\frac{216}{1680} = \frac{9}{70}</math>, and <math>m + n = \boxed{79}</math>.
+
+===Solution 3===
+The denominator of m/n is equal to the total amount of possible roll configurations given to the three people. This is equal to <math>{9 \choose 3}{6 \choose3}</math> as the amount of ways to select three rolls out of 9 to give to the first person is <math>{9 \choose 3}</math>, and three rolls out of 6 is <math>{6 \choose3}</math>. After that, the three remaining rolls have no more configurations. 
+
+The numerator is the amount of ways to give one roll of each type to each of the three people, which can be done by defining the three types of rolls as x flavored, y flavored, and z flavored. 
+
+xxx, yyy, zzz
+
+So you have to choose one x, one y, and one z to give to the first person. There are 3 xs, 3 ys, and 3 zs to select from, giving <math>3^3</math> combinations. Multiply that by the combinations of xs, ys, and zs for the second person, which is evidently <math>2^3</math> since there are two of each letter left. 
+
+<math>(27*8)/{9 \choose 3}{6 \choose3}</math> simplifies down to our fraction m/n, which is <math>9/70</math>. Adding them up gives <math>9 + 70 = \boxed{79}</math>.

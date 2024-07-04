@@ -1,0 +1,2 @@
+== Problem ==
+For <math>t = 1, 2, 3, 4</math>, define <math>S_t = \sum_{i = 1}^{350}a_i^t</math>, where <math>a_i \in \{1,2,3,4\}</math>. If <math>S_1 = 513</math> and <math>S_4 = 4745</math>, find the minimum possible value for <math>S_2</math>.

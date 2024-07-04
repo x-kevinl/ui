@@ -1,0 +1,3 @@
+== Solution ==
+
+The digit $7$ can be either the tens digit ($70, 71, \dots, 79$: $10$ possibilities), or the ones digit ($17, 27, \dots, 97$: $9$ possibilities), but we counted the number $77$ twice. This means that out of the $90$ two-digit numbers, $10+9-1=18$ have at least one digit equal to $7$. Therefore the probability is $\dfrac{18}{90} = \boxed{\dfrac{1}{5}} \Longrightarrow \mathrm{(B)}$.

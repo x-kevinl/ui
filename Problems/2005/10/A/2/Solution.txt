@@ -1,0 +1,2 @@
+==Solution==
+$ ((1 \star 2) \star 3) = \left(\left(\frac{1+2}{1-2}\right) \star 3\right) = (-3 \star 3) = \frac{-3+3}{-3-3} = 0 \Longrightarrow \boxed{\textbf{(C) }0}$

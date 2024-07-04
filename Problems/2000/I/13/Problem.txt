@@ -1,0 +1,2 @@
+== Problem ==
+In the middle of a vast prairie, a firetruck is stationed at the intersection of two [[perpendicular]] straight highways. The truck travels at <math>50</math> miles per hour along the highways and at <math>14</math> miles per hour across the prairie. Consider the set of points that can be reached by the firetruck within six minutes. The area of this region is <math>m/n</math> square miles, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m + n</math>.

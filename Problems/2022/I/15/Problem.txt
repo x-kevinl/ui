@@ -1,0 +1,8 @@
+==Problem==
+Let <math>x,</math> <math>y,</math> and <math>z</math> be positive real numbers satisfying the system of equations:
+<cmath>\begin{align*}
+\sqrt{2x-xy} + \sqrt{2y-xy} &= 1 \\
+\sqrt{2y-yz} + \sqrt{2z-yz} &= \sqrt2 \\
+\sqrt{2z-zx} + \sqrt{2x-zx} &= \sqrt3.
+\end{align*}</cmath> 
+Then <math>\left[ (1-x)(1-y)(1-z) \right]^2</math> can be written as <math>\frac{m}{n},</math> where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n.</math>

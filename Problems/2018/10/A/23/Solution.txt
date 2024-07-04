@@ -1,0 +1,35 @@
+==Solution 1 (Area Addition)==
+Note that the hypotenuse of the field is $5,$ and the area of the field is $6.$ Let $x$ be the side-length of square $S.$
+
+We partition the field into a red triangle, a yellow triangle, and a green triangle, as shown below:
+<asy>
+/* Edited by MRENTHUSIASM */
+size(180);
+pair A, B, C, D, F;
+A = origin;
+B = (4,0);
+C = (0,3);
+D = (2/7,2/7);
+F = foot(D,B,C);
+fill(A--D--C--cycle, red);
+fill(A--D--B--cycle, yellow);
+fill(B--D--C--cycle, green);
+draw(A--B--C--cycle);
+label("$5$", midpoint(B--C), NE);
+label("$4$", midpoint(A--B), S);
+label("$3$", midpoint(A--C), W);
+label("$2$", midpoint(D--F), SE);
+label("$S$", midpoint(A--D));
+label("$x$", midpoint((0,2/7)--D), N);
+label("$x$", midpoint((2/7,0)--D), E);
+draw((2/7,0)--D--(0,2/7));
+draw(A--D^^B--D^^C--D, dashed);
+draw(D--F, dashed);
+</asy>
+Let the brackets denote areas. By area addition, we set up an equation for $x:$
+$$\begin{align*}
+[\text{Red Triangle}]+[\text{Yellow Triangle}]+[\text{Green Triangle}]&=[\text{Field}] \\
+\frac{3x}{2}+\frac{4x}{2}+\frac{5\cdot2}{2}&=6,
+\end{align*}$$
+from which $x=\frac27.$ Therefore, the answer is $$\frac{[\text{Field}]-[S]}{[\text{Field}]}=\frac{6-x^2}{6}=\boxed{\textbf{(D) } \frac{145}{147}}.$$
+~MRENTHUSIASM

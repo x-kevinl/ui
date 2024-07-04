@@ -1,0 +1,3 @@
+==Solution 1==
+
+By [[PIE]], the number of adults who own both cars and motorcycles is $331+45-351=25.$ Out of the $331$ car owners, $25$ of them own motorcycles and $331-25=\boxed{\textbf{(D)}\ 306}$ of them don't.

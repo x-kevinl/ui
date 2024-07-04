@@ -1,0 +1,39 @@
+== Solution 1==
+
+First, note that <math>(2n)!! = 2^n \cdot n!</math>, and that <math>(2n)!! \cdot (2n-1)!! = (2n)!</math>. 
+
+We can now take the fraction <math>\dfrac{(2i-1)!!}{(2i)!!}</math> and multiply both the numerator and the denominator by <math>(2i)!!</math>. We get that this fraction is equal to <math>\dfrac{(2i)!}{(2i)!!^2} = \dfrac{(2i)!}{2^{2i}(i!)^2}</math>.
+
+Now we can recognize that <math>\dfrac{(2i)!}{(i!)^2}</math> is simply <math>{2i \choose i}</math>, hence this fraction is <math>\dfrac{{2i\choose i}}{2^{2i}}</math>, and our sum turns into <math>S=\sum_{i=1}^{2009} \dfrac{{2i\choose i}}{2^{2i}}</math>.
+
+Let <math>c = \sum_{i=1}^{2009} {2i\choose i} \cdot 2^{2\cdot 2009 - 2i}</math>.
+Obviously <math>c</math> is an integer, and <math>S</math> can be written as <math>\dfrac{c}{2^{2\cdot 2009}}</math>.
+Hence if <math>S</math> is expressed as a fraction in lowest terms, its denominator will be of the form <math>2^a</math> for some <math>a\leq 2\cdot 2009</math>. 
+
+In other words, we just showed that <math>b=1</math>.
+To determine <math>a</math>, we need to determine the largest power of <math>2</math> that divides <math>c</math>.
+
+Let <math>p(i)</math> be the largest <math>x</math> such that <math>2^x</math> that divides <math>i</math>. 
+
+We can now return to the observation that <math>(2i)! = (2i)!! \cdot (2i-1)!! = 2^i \cdot i! \cdot (2i-1)!!</math>. Together with the obvious fact that <math>(2i-1)!!</math> is odd, we get that <math>p((2i)!)=p(i!)+i</math>.
+
+It immediately follows that <math>p\left( {2i\choose i} \right) = p((2i)!) - 2p(i!) = i - p(i!)</math>,
+and hence <math>p\left( {2i\choose i} \cdot 2^{2\cdot 2009 - 2i} \right) = 2\cdot 2009 - i - p(i!)</math>. 
+
+Obviously, for <math>i\in\{1,2,\dots,2009\}</math> the function <math>f(i)=2\cdot 2009 - i - p(i!)</math> is is a strictly decreasing function. 
+Therefore <math>p(c) = p\left( {2\cdot 2009\choose 2009} \right) = 2009 - p(2009!)</math>.
+
+We can now compute <math>p(2009!) = \sum_{k=1}^{\infty} \left\lfloor \dfrac{2009}{2^k} \right\rfloor = 1004 + 502 + \cdots + 3 + 1 = 2001</math>.
+Hence <math>p(c)=2009-2001=8</math>.
+
+And thus we have <math>a=2\cdot 2009 - p(c) = 4010</math>, and the answer is <math>\dfrac{ab}{10} = \dfrac{4010\cdot 1}{10} = \boxed{401}</math>.
+
+----
+Additionally, once you count the number of factors of <math>2</math> in the summation, one can consider the fact that, since <math>b</math> must be odd, it has to take on a value of <math>1,3,5,7,</math> or <math>9</math> (Because the number of <math>2</math>s in the summation is clearly greater than <math>1000</math>, dividing by <math>10</math> will yield a number greater than <math>100</math>, and multiplying this number by any odd number greater than <math>9</math> will yield an answer <math>>999</math>, which cannot happen on the AIME.) Once you calculate the value of <math>4010</math>, and divide by <math>10</math>, <math>b</math> must be equal to <math>1</math>, as any other value of <math>b</math> will result in an answer <math>>999</math>. This gives <math>\boxed{401}</math> as the answer.
+
+----
+Just a small note. It's important to note the properties of the <math>v_p</math> function, which is what Solution 1 is using but denoting it as <math>p (...)</math>. 
+We want to calculate <math>v_2 \left( \sum ^{2009} _{i=1} \dbinom{2i}{i} \cdot 2^{2 \cdot 2009 - 2i} \right)</math> as the final step. We know that one property of <math>v_p</math> is that <math>v_p (a + b) \geq \min \left( v_p(a), v_p (b) \right)</math>. 
+Therefore, we have that <math>v_2 \left( \sum ^{2009} _{i=1} \dbinom{2i}{i} \cdot 2^{2 \cdot 2009 - 2i} \right) \geq \min \left( 2 \cdot 2009 -1, 2 \cdot 2009 -2 - 1, ... , 2 \cdot 2009 - 2008 - v_2 (2008!), 2 \cdot 2009 - 2009 - v_2 (2009!) \right)</math>. Thus, we see by similar calculations as in Solution 1, that <math>v_2 (c) \geq 8</math>. From which the conclusion follows. 
+
+- (OmicronGamma)

@@ -1,0 +1,11 @@
+== Solution ==
+Only the heights matter, and each crate is either 3, 4, or 6 feet tall with equal probability. We have the following:
+
+<cmath>\begin{align*}3a + 4b + 6c &= 41\\
+a + b + c &= 10\end{align*}</cmath>
+
+Subtracting 3 times the second from the first gives <math>b + 3c = 11</math>, or <math>(b,c) = (2,3),(5,2),(8,1),(11,0)</math>. The last doesn't work, obviously. This gives the three solutions <math>(a,b,c) = (5,2,3),(3,5,2),(1,8,1)</math>. In terms of choosing which goes where, the first two solutions are analogous.
+
+For <math>(5,2,3),(3,5,2)</math>, we see that there are <math>2\cdot\dfrac{10!}{5!2!3!} = 10\cdot9\cdot8\cdot7</math> ways to stack the crates. For <math>(1,8,1)</math>, there are <math>\dfrac{10!}{8!1!1!} = 90</math>. Also, there are <math>3^{10}</math> total ways to stack the crates to any height.
+
+Thus, our probability is <math>\dfrac{10\cdot9\cdot8\cdot7 + 90}{3^{10}} = \dfrac{10\cdot8\cdot7 + 10}{3^{8}} = \dfrac{570}{3^8} = \dfrac{190}{3^{7}}</math>. Our answer is the numerator, <math>\boxed{190}</math>.

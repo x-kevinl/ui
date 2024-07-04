@@ -1,0 +1,2 @@
+==Solution==
+$1\diamond2=1-\dfrac{1}{2}=\dfrac{1}{2}$, so $(1\diamond2)\diamond3=\dfrac{1}{2}\diamond3=\dfrac{1}{2}-\dfrac{1}{3}=\dfrac{1}{6}$. Also, $2\diamond3=2-\dfrac{1}{3}=\dfrac{5}{3}$, so $1\diamond(2\diamond3)=1-\dfrac{1}{5/3}=1-\dfrac{3}{5}=\dfrac{2}{5}$. Thus, $((1\diamond2)\diamond3)-(1\diamond(2\diamond3))=\dfrac{1}{6}-\dfrac{2}{5}=\boxed{\mathbf{(A)}\ -\dfrac{7}{30}}$

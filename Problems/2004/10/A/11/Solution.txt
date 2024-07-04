@@ -1,0 +1,4 @@
+== Solution ==
+When the diameter is increased by $25\%$, it is increased by $\dfrac{5}{4}$, so the area of the base is increased by $\left(\dfrac54\right)^2=\dfrac{25}{16}$.
+
+To keep the volume the same, the height must be $\dfrac{1}{\frac{25}{16}}=\dfrac{16}{25}$ of the original height, which is a $36\%$ reduction. $\boxed{\mathrm{(C)}\ 36}$

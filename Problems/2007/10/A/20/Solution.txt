@@ -1,0 +1,10 @@
+== Solution 1 (Decreases the Powers) ==
+Note that for all real numbers $k,$ we have $a^{2k} + a^{-2k} + 2 = (a^{k} + a^{-k})^2,$ from which $$a^{2k} + a^{-2k} = (a^{k} + a^{-k})^2-2.$$ We apply this result twice to get the answer:
+$$\begin{align*}
+a^4 + a^{-4} &= (a^2 + a^{-2})^2 - 2 \\
+&= [(a + a^{-1})^2 - 2]^2 - 2 \\
+&= \boxed{\textbf{(D)}\ 194}.
+\end{align*}$$
+~Azjps (Fundamental Logic)
+
+~MRENTHUSIASM (Reconstruction)

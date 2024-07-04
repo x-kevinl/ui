@@ -1,0 +1,3 @@
+==Solution==
+Putting the numbers in numerical order we get the list $0,0,1,2,3,3,3,4.$
+The mode is $3.$ The median is $\frac{2+3}{2}=2.5.$ The average is $\frac{0+0+1+2+3+3+3+4}{8}=\frac{16}{8}=2.$ The sum of all three is $3+2.5+2=\boxed{\textbf{(C)}\ 7.5}$

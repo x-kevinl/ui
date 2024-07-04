@@ -1,0 +1,11 @@
+== Solution ==
+$$\begin{align*}
+8&=7^d \\
+8&=\left(6^c\right)^d\\
+8&=\left(\left(5^b\right)^c\right)^d\\
+8&=\left(\left(\left(4^a\right)^b\right)^c\right)^d\\
+8&=4^{a\cdot b\cdot c\cdot d}\\
+2^3&=2^{2\cdot a\cdot b\cdot c\cdot d}\\
+3&=2\cdot a\cdot b\cdot c\cdot d\\
+a\cdot b\cdot c\cdot d&=\boxed{\textbf{(B) }\dfrac{3}{2}}\\
+\end{align*}$$

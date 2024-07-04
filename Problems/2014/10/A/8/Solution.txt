@@ -1,0 +1,10 @@
+== Solution ==
+
+Note that for all positive $n$, we have 
+$$\dfrac{n!(n+1)!}{2}$$
+$$\implies\dfrac{(n!)^2\cdot(n+1)}{2}$$
+$$\implies (n!)^2\cdot\dfrac{n+1}{2}$$ 
+
+We must find a value of $n$ such that $(n!)^2\cdot\dfrac{n+1}{2}$ is a perfect square. Since $(n!)^2$ is a perfect square, we must also have $\frac{n+1}{2}$ be a perfect square. 
+
+In order for $\frac{n+1}{2}$ to be a perfect square, $n+1$ must be twice a perfect square. From the answer choices, $n+1=18$ works, thus, $n=17$ and our desired answer is $\boxed{\textbf{(D)}\ \frac{17!18!}{2}}$

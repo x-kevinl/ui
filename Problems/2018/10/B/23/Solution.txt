@@ -1,0 +1,15 @@
+==Solution==
+Let $x = \text{lcm}(a, b)$, and $y = \text{gcd}(a, b)$. Therefore, $a\cdot b = lcm(a, b)\cdot gcd(a, b) = x\cdot y$. Thus, the equation becomes
+
+$$x\cdot y + 63 = 20x + 12y$$
+$$x\cdot y - 20x - 12y + 63 = 0$$
+
+Using [[Simon's Favorite Factoring Trick]], we rewrite this equation as
+
+$$(x - 12)(y - 20) - 240 + 63 = 0$$
+$$(x - 12)(y - 20) = 177$$
+
+Since $177 = 3\cdot 59$ and $x > y$, we have $x  - 12 = 59$ and $y - 20 = 3$, or $x - 12 = 177$ and $y - 20 = 1$. This gives us the solutions $(71, 23)$ and $(189, 21)$. Since the $\text{GCD}$ must be a divisor of the $\text{LCM}$, the first pair does not work. Assume $a>b$. We must have $a = 21 \cdot 9$ and $b = 21$, and we could then have $a<b$, so there are $\boxed{\textbf{(B)} ~2}$ solutions.
+(awesomeag)
+
+Edited by IronicNinja, Firebolt360, and mprincess0229~

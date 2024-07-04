@@ -1,0 +1,12 @@
+==Problem==
+In the pattern below, the cat moves clockwise through the four squares,  and the mouse moves counterclockwise through the eight exterior segments of the four squares.
+
+<center>
+[[Image:2003amc8prob23a.png|800px]]
+</center>
+
+If the pattern is continued, where would the cat and mouse be after the 247th move?
+
+<center>
+[[Image:2003amc8prob23b.png|800px]]
+</center>

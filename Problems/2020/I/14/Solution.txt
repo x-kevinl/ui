@@ -1,0 +1,4 @@
+== Solution 1 ==
+Either <math>P(3) = P(4)</math> or not. We first see that if <math>P(3) = P(4)</math> it's easy to obtain by Vieta's that <math>(a+b)^2 = 49</math>. Now, take <math>P(3) \neq P(4)</math> and WLOG <math>P(3) = P(a), P(4) = P(b)</math>. Now, consider the parabola formed by the graph of <math>P</math>. It has vertex <math>\frac{3+a}{2}</math>. Now, say that <math>P(x) = x^2 - (3+a)x + c</math>. We note <math>P(3)P(4) = c = P(3)\left(4 - 4a + \frac{8a - 1}{2}\right) \implies a = \frac{7P(3) + 1}{8}</math>. Now, we note <math>P(4) = \frac{7}{2}</math> by plugging in again. Now, it's easy to find that <math>a = -2.5, b = -3.5</math>, yielding a value of <math>36</math>. Finally, we add <math>49 + 36 = \boxed{085}</math>. ~awang11, charmander3333
+
+<b>Remark</b>: We know that <math>c=\frac{8a-1}{2}</math> from <math>P(3)+P(4)=3+a</math>.

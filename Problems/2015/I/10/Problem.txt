@@ -1,0 +1,3 @@
+==Problem==
+Let <math>f(x)</math> be a third-degree polynomial with real coefficients satisfying
+<cmath>|f(1)|=|f(2)|=|f(3)|=|f(5)|=|f(6)|=|f(7)|=12.</cmath> Find <math>|f(0)|</math>.

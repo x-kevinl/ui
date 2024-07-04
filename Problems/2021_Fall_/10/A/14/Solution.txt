@@ -1,0 +1,79 @@
+==Solution 1 (Graphing)==
+
+The second equation is $(|x|+|y| - 4)^2 = 1$. We know that the graph of $|x| + |y|$ is a very simple diamond shape, so let's see if we can reduce this equation to that form: $$(|x|+|y| - 4)^2 = 1 \implies |x|+|y| - 4 = \pm 1 \implies |x|+|y| = \{3,5\}.$$
+We now have two separate graphs for this equation and one graph for the first equation, so let's put it on the coordinate plane:
+<asy>
+
+Label f; 
+f.p=fontsize(6); 
+xaxis(-8,8,Ticks(f, 1.0,0.5)); 
+yaxis(-8,8,Ticks(f, 1.0,0.5));
+
+real f(real x) 
+{ 
+return 3-x; 
+} 
+draw(graph(f,0,3));
+
+real f(real x) 
+{ 
+return 3+x; 
+} 
+draw(graph(f,0,-3));
+real f(real x) 
+{ 
+return x-3; 
+} 
+draw(graph(f,0,3));
+real f(real x) 
+{ 
+return -x-3; 
+} 
+draw(graph(f,0,-3));
+real f(real x) 
+{ 
+return 5-x; 
+} 
+draw(graph(f,0,5));
+
+real f(real x) 
+{ 
+return 5+x; 
+} 
+draw(graph(f,0,-5));
+real f(real x) 
+{ 
+return x-5; 
+} 
+draw(graph(f,0,5));
+real f(real x) 
+{ 
+return -x-5; 
+} 
+draw(graph(f,0,-5));
+
+real f(real x) 
+{ 
+return 3-x; 
+} 
+draw(graph(f,0,3));
+
+real f(real x) 
+{ 
+return 3+x; 
+} 
+draw(graph(f,0,-3));
+real f(real x) 
+{ 
+return x-3; 
+} 
+draw(graph(f,0,3));
+real f(real x) 
+{ 
+return (-x^2)/3+3; 
+} 
+draw(graph(f,-5,5));
+</asy>
+We see from the graph that there are $5$ intersections, so the answer is $\boxed{\textbf{(D) } 5}$.
+
+~KingRavi

@@ -1,0 +1,3 @@
+== Solution 1 ==
+
+There are $36$ red balls; for these red balls to comprise $72 \%$ of the urn, there must be only $14$ blue balls. Since there are currently $64$ blue balls, this means we must remove $\boxed{\textbf{(D)}\ 50}$.

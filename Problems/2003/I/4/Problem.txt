@@ -1,0 +1,2 @@
+== Problem ==
+Given that <math> \log_{10} \sin x + \log_{10} \cos x = -1 </math> and that <math> \log_{10} (\sin x + \cos x) = \frac{1}{2} (\log_{10} n - 1), </math> find <math> n. </math>

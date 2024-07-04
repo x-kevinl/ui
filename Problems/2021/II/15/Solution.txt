@@ -1,0 +1,11 @@
+==Solution 1==
+
+Consider what happens when we try to calculate <math>f(n)</math> where n is not a square. If <math>k^2<n<(k+1)^2</math> for (positive) integer k, recursively calculating the value of the function gives us <math>f(n)=(k+1)^2-n+f((k+1)^2)=k^2+3k+2-n</math>. Note that this formula also returns the correct value when <math>n=(k+1)^2</math>, but not when <math>n=k^2</math>. Thus <math>f(n)=k^2+3k+2-n</math> for <math>k^2<n \leq (k+1)^2</math>.
+
+If <math>2 \mid (k+1)^2-n</math>, <math>g(n)</math> returns the same value as <math>f(n)</math>. This is because the recursion once again stops at <math>(k+1)^2</math>. We seek a case in which <math>f(n)<g(n)</math>, so obviously this is not what we want. We want <math>(k+1)^2,n</math> to have a different parity, or <math>n, k</math> have the same parity. When this is the case, <math>g(n)</math> instead returns <math>(k+2)^2-n+g((k+2)^2)=k^2+5k+6-n</math>.
+
+Write <math>7f(n)=4g(n)</math>, which simplifies to <math>3k^2+k-10=3n</math>. Notice that we want the LHS expression to be divisible by 3; as a result, <math>k \equiv 1 \pmod{3}</math>. We also want n to be strictly greater than <math>k^2</math>, so <math>k-10>0, k>10</math>. The LHS expression is always even (since <math>3k^2+k-10</math> factors to <math>k(3k+1)-10</math>, and one of <math>k</math> and <math>3k+1</math> will be even), so to ensure that <math>k</math> and <math>n</math> share the same parity, <math>k</math> should be even. Then the least <math>k</math> that satisfies these requirements is <math>k=16</math>, giving <math>n=258</math>.
+
+Indeed - if we check our answer, it works. Therefore, the answer is <math>\boxed{258}</math>.
+
+-Ross Gao

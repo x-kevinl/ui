@@ -1,0 +1,14 @@
+==Solution 1==
+
+[[Image:2023_10a_13.png]]
+
+Let $\theta=\angle ACB$ and $x=\overline{AB}$. 
+
+By the Law of Sines, we know that $\dfrac{\sin\theta}x=\dfrac{\sin60^\circ}{48}=\dfrac{\sqrt3}{96}$. Rearranging, we get that $x=\dfrac{\sin\theta}{\frac{\sqrt3}{96}}=32\sqrt3\sin\theta$ where $x$ is a function of $\theta$. We want to maximize $x$. 
+
+We know that the maximum value of $\sin\theta=1$, so this yields $x=32\sqrt3\implies x^2=\boxed{\textbf{(C) }3072.}$ 
+
+A quick check verifies that $\theta=90^\circ$ indeed works. 
+
+~Technodoggo
+~(minor grammar edits by vadava_lx)

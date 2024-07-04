@@ -1,0 +1,6 @@
+==Solution==
+Note that
+<cmath>\begin{align*}\sum_{1 \leq i < j \leq 216} x_ix_j &= \frac12\left(\left(\sum_{i=1}^{216} x_i\right)^2-\sum_{i=1}^{216} x_i^2\right)\\&=\frac12\left(1-\sum x_i^2\right).\end{align*}</cmath>
+Substituting this into the second equation and collecting <math>x_i^2</math> terms, we find 
+<cmath>\sum_{i=1}^{216}\frac{x_i^2}{1-a_i}=\frac{1}{215}.</cmath> Conveniently, <math>\sum_{i=1}^{216} 1-a_i=215</math> so we find
+<cmath>\left(\sum_{i=1}^{216} 1-a_i\right)\left(\sum_{i=1}^{216}\frac{x_i^2}{1-a_i}\right)=1=\left(\sum_{i=1}^{216} x_i\right)^2.</cmath> This is the equality case of the Cauchy-Schwarz Inequality, so <math>x_i=c(1-a_i)</math> for some constant <math>c</math>. Summing these equations and using the facts that <math>\sum_{i=1}^{216} x_i=1</math> and <math>\sum_{i=1}^{216} 1-a_i=215</math>, we find <math>c=\frac{1}{215}</math> and thus <math>x_2=c(1-a_2)=\frac{1}{215}\cdot \left(1-\frac{1}{4}\right)=\frac{3}{860}</math>. Hence the desired answer is <math>860+3=\boxed{863}</math>.

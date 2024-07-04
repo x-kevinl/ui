@@ -1,0 +1,39 @@
+== Solution ==
+Index the rows with $i = 1, 2, 3, ..., 13$
+Index the columns with $j = 1, 2, 3, ..., 17$
+
+For the first row number the cells $1, 2, 3, ..., 17$
+For the second, $18, 19, ..., 34$
+and so on
+
+So the number in row = $i$ and column = $j$ is
+$f(i, j) = 17(i-1) + j = 17i + j - 17$
+
+Similarly, numbering the same cells columnwise we
+find the number in row = $i$ and column = $j$ is
+$g(i, j) = i + 13j - 13$
+
+So we need to solve
+
+$f(i, j) = g(i, j)$
+
+$17i + j - 17 = i + 13j - 13$
+
+$16i = 4 + 12j$ 
+
+$4i = 1 + 3j$
+
+$i = (1 + 3j)/4$
+
+We get
+$(i, j) = (1, 1), f(i, j) = g(i, j) = 1$
+
+$(i, j) = (4, 5), f(i, j) = g(i, j) = 56$
+
+$(i, j) = (7, 9), f(i, j) = g(i, j) = 111$
+
+$(i, j) = (10, 13), f(i, j) = g(i, j) = 166$
+
+$(i, j) = (13, 17), f(i, j) = g(i, j) = 221$
+
+$\boxed{D}$ $555$

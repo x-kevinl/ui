@@ -1,0 +1,8 @@
+==Problem==
+In this addition problem, each letter stands for a different digit.
+
+$ \setlength{\tabcolsep}{0.5mm}\begin{array}{cccc}&T & W & O\\ +&T & W & O\\ \hline F& O & U & R\end{array} $
+
+If T = 7 and the letter O represents an even number, what is the only possible value for W?
+
+$ \textbf{(A)}\ 0\qquad\textbf{(B)}\ 1\qquad\textbf{(C)}\ 2\qquad\textbf{(D)}\ 3\qquad\textbf{(E)}\ 4 $

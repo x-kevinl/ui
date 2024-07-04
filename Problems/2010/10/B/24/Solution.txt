@@ -1,0 +1,12 @@
+== Solution 1 ==
+Let $a,ar,ar^{2},ar^{3}$ be the quarterly scores for the Raiders. We know $r > 1$ because the sequence is said to be increasing. We also know that each of $a, ar, ar^2, ar^3$ is an integer. We start by showing that '''$r$ must also be an integer.'''
+
+Suppose not, and say $r = m/n$ where $m>n>1$, and $\gcd(m,n)=1$. Then $n, n^2, n^3$ must all divide $a$ so $a=n^3k$ for some integer $k$. Then $S_R = n^3k + n^2mk + nm^2k + m^3k < 100$ and we see that even if $k=1$ and $n=2$, we get $m < 4$, which means that the only option for $r$ is $r=3/2$. A quick check shows that even this doesn't work. Thus $r$ must be an integer.
+
+Let $a, a+d, a+2d, a+3d$ be the quarterly scores for the Wildcats. Let $S_W = a+(a+d) + (a+2d)+(a+3d) = 4a+6d$. Let $S_R = a+ar+ar^2+ar^3 = a(1+r)(1+r^2)$. Then $S_R<100$ implies that $r<5$, so $r\in \{2, 3, 4\}$. The Raiders win by one point, so$$a(1+r)(1+r^2) = 4a+6d+1.$$
+*If $r=4$ we get $85a = 4a+6d+1$ which means $3(27a-2d) = 1$, which is not possible with the given conditions.
+*If $r=3$ we get $40a = 4a+6d+1$ which means $6(6a-d) = 1$, which is also not possible with the given conditions.
+*If $r=2$ we get $15a = 4a+6d+1$ which means $11a-6d = 1$. Reducing modulo 6 we get $a \equiv 5\pmod{6}$. Since $15a<100$ we get $a<7$. Thus $a=5$. It then follows that $d=9$.
+Then the quarterly scores for the Raiders are $5, 10, 20, 40$, and those for the Wildcats are $5, 14, 23, 32$. Also $S_R = 75 = S_W + 1$. The total number of points scored by the two teams in the first half is $5+10+5+14=\boxed{\textbf{(E)}\ 34}$.
+
+Note if you don't realize while taking the test that $r$ might not be an integer: since an answer is achieved through casework on the integer value of $r$ and since there is only one right answer, the proof of $r$ being an integer can be skipped on the test (it takes up time).

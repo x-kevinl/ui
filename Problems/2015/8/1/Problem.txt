@@ -1,0 +1,5 @@
+==Problem==
+
+Onkon wants to cover his room's floor with his favourite red carpet. How many square yards of red carpet are required to cover a rectangular floor that is $12$ feet long and $9$ feet wide? (There are 3 feet in a yard.)
+
+$\textbf{(A) }12\qquad\textbf{(B) }36\qquad\textbf{(C) }108\qquad\textbf{(D) }324\qquad \textbf{(E) }972$

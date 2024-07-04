@@ -1,0 +1,21 @@
+==Problem==
+The following analog clock has two hands that can move independently of each other.
+<asy>
+            unitsize(2cm);
+            draw(unitcircle,black+linewidth(2));
+
+            for (int i = 0; i < 12; ++i) {
+                draw(0.9*dir(30*i)--dir(30*i));
+            }
+            for (int i = 0; i < 4; ++i) {
+                draw(0.85*dir(90*i)--dir(90*i),black+linewidth(2));
+            }
+            for (int i = 1; i < 13; ++i) {
+                label("\small" + (string) i, dir(90 - i * 30) * 0.75);
+            }
+            draw((0,0)--0.6*dir(90),black+linewidth(2),Arrow(TeXHead,2bp));
+            draw((0,0)--0.4*dir(90),black+linewidth(2),Arrow(TeXHead,2bp));
+</asy>
+Initially, both hands point to the number <math>12</math>. The clock performs a sequence of hand movements so that on each movement, one of the two hands moves clockwise to the next number on the clock face while the other hand does not move.
+
+Let <math>N</math> be the number of sequences of <math>144</math> hand movements such that during the sequence, every possible positioning of the hands appears exactly once, and at the end of the <math>144</math> movements, the hands have returned to their initial position. Find the remainder when <math>N</math> is divided by <math>1000</math>.

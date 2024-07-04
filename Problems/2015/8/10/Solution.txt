@@ -1,0 +1,2 @@
+==Solution 1==
+There are $9$ choices for the first number, since it cannot be $0$, there are only $9$ choices left for the second number since it must differ from the first, $8$ choices for the third number, since it must differ from the first two, and $7$ choices for the fourth number, since it must differ from all three.  This means there are $9 \times 9 \times 8 \times 7=\boxed{\textbf{(B) }4536}$ integers between $1000$ and $9999$ with four distinct digits.

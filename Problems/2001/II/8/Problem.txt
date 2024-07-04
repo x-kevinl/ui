@@ -1,0 +1,2 @@
+== Problem ==
+A certain [[function]] <math>f</math> has the properties that <math>f(3x) = 3f(x)</math> for all positive real values of <math>x</math>, and that <math>f(x) = 1-|x-2|</math> for <math>1\le x \le 3</math>. Find the smallest <math>x</math> for which <math>f(x) = f(2001)</math>.

@@ -1,0 +1,2 @@
+==Solution==
+The smallest number divisible by $3,4,5,$ and $6$, or their least common multiple, can be found to be $60$. When $2$ is added to a multiple of number, its remainder when divided by that number is $2$. The number we are looking for is therefore $62$, and between $\boxed{\textbf{(B)}\ 60\ \text{and}\ 79}$.

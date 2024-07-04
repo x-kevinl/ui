@@ -1,0 +1,4 @@
+== Problem ==
+What is $ (-1)^{1} + (-1)^{2} + ... + (-1)^{2006} $ ?
+
+$ \textbf{(A)} -2006\qquad \textbf{(B)} -1\qquad \textbf{(C) } 0\qquad \textbf{(D) } 1\qquad \textbf{(E) } 2006 $

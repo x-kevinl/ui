@@ -1,0 +1,4 @@
+==Solution 1==
+Let the points be $A=(x_1,0)$, $B=(x_2,1)$, $C=(x_3,5)$, and $D=(x_4,4)$
+
+Note that the difference in $y$ value of $B$ and $C$ is $4$. By rotational symmetry of the square, the difference in $x$ value of $A$ and $B$ is also $4$. Note that the difference in $y$ value of $A$ and $B$ is $1$. We now know that $AB$, the side length of the square, is equal to $\sqrt{1^2+4^2}=\sqrt{17}$, so the area is $\boxed{\textbf{(B) }17}$.

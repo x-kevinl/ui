@@ -1,0 +1,41 @@
+== Solution 1 ==
+
+Inscribe the regular polygon inside a circle. A triangle inside this circle will be obtuse if and only if its three vertices lie on one side of a diameter of the circle. (This is because if an inscribed angle on a circle is obtuse, the arc it spans must be 180 degrees or greater).
+
+Break up the problem into two cases: an even number of sides <math>2n</math>, or an odd number of sides <math>2n-1</math>. For polygons with <math>2n</math> sides, the circumdiameter has endpoints on <math>2</math> vertices. There are <math>n-1</math> points on one side of a diameter, plus <math>1</math> of the endpoints of the diameter for a total of <math>n</math> points. For polygons with <math>2n - 1</math> points, the circumdiameter has <math>1</math> endpoint on a vertex and <math>1</math> endpoint on the midpoint of the opposite side. There are also <math>n - 1</math> points on one side of the diameter, plus the vertex for a total of <math>n</math> points on one side of the diameter.
+
+Case 1: <math>2n</math>-sided polygon. There are clearly <math> \binom{2n}{3}</math> different triangles total. To find triangles that meet the criteria, choose the left-most point. There are obviously <math>2n</math> choices for this point. From there, the other two points must be within the <math>n-1</math> points remaining on the same side of the diameter. So our desired probability is
+<math>\frac{2n\binom{n-1}{2}}{\binom{2n}{3}}</math>
+<math>=\frac{n(n-1)(n-2)}{\frac{2n(2n-1)(2n-2)}{6}}</math>
+<math>=\frac{6n(n-1)(n-2)}{2n(2n-1)(2n-2)}</math>
+<math>=\frac{3(n-2)}{2(2n-1)}</math>
+
+so <math>\frac{93}{125}=\frac{3(n-2)}{2(2n-1)}</math>
+
+<math>186(2n-1)=375(n-2)</math>.
+
+<math>372n-186=375n-750</math>
+
+<math>3n=564</math>
+
+<math>n=188</math> and so the polygon has <math>376</math> sides.
+
+Case 2: <math>2n-1</math>-sided polygon. Similarly, <math>\binom{2n-1}{3}</math> total triangles. Again choose the leftmost point, with <math>2n-1</math> choices. For the other two points, there are again <math>\binom{n-1}{2}</math> possibilities.
+
+The probability is <math>\frac{(2n-1)\binom{n-1}{2}}{\binom{2n-1}{3}}</math>
+
+<math>=\frac{3(2n-1)(n-1)(n-2)}{(2n-1)(2n-2)(2n-3)}</math>
+
+<math>=\frac{3(n-2)}{2(2n-3)}</math>
+
+so <math>\frac{93}{125}=\frac{3(n-2)}{2(2n-3)}</math>
+
+<math>186(2n-3)=375(n-2)</math>
+
+<math>375n-750=372n-558</math>
+
+<math>3n=192</math>
+
+<math>n=64</math> and our polygon has <math>127</math> sides.
+
+Adding, <math>127+376=\boxed{503}</math>

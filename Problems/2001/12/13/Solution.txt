@@ -1,0 +1,2 @@
+== Solution ==
+We write $p(x)$ as $a(x-h)^2+k$ (this is possible for any parabola). Then the reflection of $p(x)$ is $q(x) = -a(x-h)^2+k$. Then we find $p(x) + q(x) = 2k$. Since $p(1) = a+b+c$ and $q(1) = d+e+f$, we have $a+b+c+d+e+f = 2k$, so the answer is $\fbox{E}$.

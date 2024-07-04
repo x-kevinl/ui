@@ -1,0 +1,3 @@
+==Problem==
+
+Let <math>\omega = \cos\frac{2\pi}{7} + i \cdot \sin\frac{2\pi}{7},</math> where <math>i = \sqrt{-1}.</math> Find the value of the product<cmath>\prod_{k=0}^6 \left(\omega^{3k} + \omega^k + 1\right).</cmath>

@@ -1,0 +1,4 @@
+==Problem==
+Margie's car can go $32$ miles on a gallon of gas, and gas currently costs \$$4$ per gallon. How many miles can Margie drive on $\textdollar 20$ worth of gas?
+
+$\textbf{(A) }64\qquad\textbf{(B) }128\qquad\textbf{(C) }160\qquad\textbf{(D) }320\qquad \textbf{(E) }640$

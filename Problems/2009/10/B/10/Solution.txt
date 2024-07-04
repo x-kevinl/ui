@@ -1,0 +1,5 @@
+== Solution 1 ==
+
+The broken flagpole forms a right triangle with legs $1$ and $x$, and hypotenuse $5-x$. The [[Pythagorean theorem]] now states that $1^2 + x^2 = (5-x)^2$, hence $10x = 24$, and $x=\boxed{2.4}$.
+
+(Note that the resulting triangle is the well-known $5-12-13$ right triangle, scaled by $1/5$.)

@@ -1,0 +1,18 @@
+==Solution==
+We're given $ (130n)^{50} > n^{100} > 2^{200} $, so
+
+$ \sqrt[50]{(130n)^{50}} > \sqrt[50]{n^{100}} > \sqrt[50]{2^{200}} $ (because all terms are positive) and thus
+
+$ 130n > n^2 > 2^4 $ 
+
+$ 130n > n^2 > 16 $
+
+Solving each part separately: 
+
+$ n^2 > 16 \Longrightarrow n > 4 $ 
+
+$ 130n > n^2 \Longrightarrow 130 > n $ 
+
+So $ 4 < n < 130 $. 
+
+Therefore the answer is the number of [[positive integer]]s over the interval $ (4,130) $ which is $129-5+1 = \boxed{\textbf{(E) }125}$

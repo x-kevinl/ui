@@ -1,0 +1,4 @@
+==Solution==
+There are $\binom{9}{3}$ ways to choose three points out of the 9 there. There are 8 combinations of dots such that they lie in a straight line: three vertical, three horizontal, and the diagonals.
+
+$\dfrac{8}{\binom{9}{3}}=\dfrac{8}{84}=\dfrac{2}{21} \Rightarrow\boxed{\mathrm{(C)}\ \frac{2}{21}}$

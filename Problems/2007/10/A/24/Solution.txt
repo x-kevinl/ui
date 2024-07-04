@@ -1,0 +1,9 @@
+==Solution==
+The area we are trying to find is simply $ABFE-(\overarc{AEC}+\triangle{ACO}+\triangle{BDO}+\overarc{BFD})$.
+Obviously, $\overline{EF}\parallel\overline{AB}$.  Thus, $ABFE$ is a [[rectangle]], and so its area is $b\times{h}=2\times{(AO+OB)}=2\times{2(2\sqrt{2})}=8\sqrt{2}$.
+
+Since $\overline{OC}$ is tangent to circle $A$, $\triangle{ACO}$ is a right triangle.  We know $AO=2\sqrt{2}$ and $AC=2$, so $\triangle{ACO}$ is an isosceles right triangle, and has $\overline{CO}$ with length $2$.  The area of $\triangle{ACO}=\frac{1}{2}bh=2$.  By symmetry, $\triangle{ACO}\cong\triangle{BDO}$, and so the area of $\triangle{BDO}$ is also $2$.
+
+$\overarc{AEC}$ (or $\overarc{BFD}$, for that matter) is $\frac{1}{8}$ the area of its circle since $\angle{OAC}$ is 45 degrees and $\angle{OAE}$ forms a right [[triangle]].  Thus $\overarc{AEC}$ and $\overarc{BFD}$ both have an area of $\frac{\pi}{2}$.
+
+Plugging all of these areas back into the original equation yields $8\sqrt{2}-(\frac{\pi}{2}+2+2+\frac{\pi}{2})=8\sqrt{2}-(4+\pi)=\boxed{8\sqrt{2}-4-\pi}\ \mathrm{(B)}$.

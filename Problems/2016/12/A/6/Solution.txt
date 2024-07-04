@@ -1,0 +1,5 @@
+== Solution 1==
+
+We are trying to find the value of $N$ such that $$1+2+3\cdots+(N-1)+N=\frac{N(N+1)}{2}=2016.$$ Noticing that $\frac{63\cdot 64}{2}=2016,$ we have $N=63,$ so our answer is $\boxed{\textbf{(D) } 9}.$
+
+Notice that we were attempting to solve $\frac{N(N+1)}{2} = 2016 \Rightarrow N(N+1) = 2016\cdot2 = 4032$. Approximating $N(N+1) \approx N^2$, we were looking for a perfect square that is close to, but less than, $4032$. Since $63^2 = 3969$, we see that $N = 63$ is a likely candidate.  Multiplying $63\cdot64$ confirms that our assumption is correct.

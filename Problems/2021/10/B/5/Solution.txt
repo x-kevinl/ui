@@ -1,0 +1,9 @@
+==Solution==
+
+First look at the two cousins' ages that multiply to $24$. Since the ages must be single-digit, the ages must either be $3 \text{ and } 8$ or $4 \text{ and } 6.$
+
+Next, look at the two cousins' ages that multiply to $30$. Since the ages must be single-digit, the only ages that work are $5 \text{ and } 6.$ Remembering that all the ages must all be distinct, the only solution that works is when the ages are $3, 8$ and $5, 6$.
+
+We are required to find the sum of the ages, which is $$3 + 8 + 5 + 6 = \boxed{\textbf{(B)} ~22}.$$
+
+-[[User:PureSwag|PureSwag]]

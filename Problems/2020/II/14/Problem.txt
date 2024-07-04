@@ -1,0 +1,2 @@
+==Problem==
+For a real number <math>x</math> let <math>\lfloor x\rfloor</math> be the greatest integer less than or equal to <math>x</math>, and define <math>\{x\} = x - \lfloor x \rfloor</math> to be the fractional part of <math>x</math>. For example, <math>\{3\} = 0</math> and <math>\{4.56\} = 0.56</math>. Define <math>f(x)=x\{x\}</math>, and let <math>N</math> be the number of real-valued solutions to the equation <math>f(f(f(x)))=17</math> for <math>0\leq x\leq 2020</math>. Find the remainder when <math>N</math> is divided by <math>1000</math>.

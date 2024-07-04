@@ -1,0 +1,4 @@
+==Solution==
+First, we get rid of logs by taking powers: <math>xyz-3+\log_5 x=2^{5}=32</math>, <math>xyz-3+\log_5 y=3^{4}=81</math>, and <math>(xyz-3+\log_5 z)=4^{4}=256</math>. Adding all the equations up and using the <math>\log {xy}=\log {x}+\log{y}</math> property, we have <math>3xyz+\log_5{xyz} = 378</math>, so we have <math>xyz=125</math>. Solving for <math>x,y,z</math> by substituting <math>125</math> for <math>xyz</math> in each equation, we get <math>\log_5 x=-90, \log_5 y=-41, \log_5 z=134</math>, so adding all the absolute values we have <math>90+41+134=\boxed{265}</math>.
+
+Note: <math>xyz=125</math> because we know <math>xyz</math> has to be a power of <math>5</math>, and so it is not hard to test values in the equation <math>3xyz+\log_5{xyz} = 378</math> in order to achieve desired value for <math>xyz</math>.

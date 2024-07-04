@@ -1,0 +1,4 @@
+==Problem==
+Josh and Mike live $13$ miles apart. Yesterday Josh started to ride his bicycle toward Mike's house. A little later Mike started to ride his bicycle toward Josh's house. When they met, Josh had ridden for twice the length of time as Mike and at four-fifths of Mike's rate. How many miles had Mike ridden when they met? 
+
+$ \textbf{(A) } 4\qquad \textbf{(B) } 5\qquad \textbf{(C) } 6\qquad \textbf{(D) } 7\qquad \textbf{(E) } 8 $

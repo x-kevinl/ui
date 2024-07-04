@@ -1,0 +1,6 @@
+==Diagram==
+<center><asy>
+defaultpen(fontsize(11)+0.8); size(300);
+pair A,B,C,D,Ic,Ib,P;
+A=MP("A",origin,down+left); B=MP("B",8*right,down+right); C=MP("C",IP(CR(A,5), CR(B,7)),2*up); real t=0.505; D=MP("",B+t*(C-B),SW); draw(A--B--C--A--D); path c1=incircle(A,D,C); path c2=incircle(A,D,B); draw(c1, gray+0.25); draw(c2, gray+0.25); Ic=MP("I_C",incenter(A,D,C),down+left); Ib=MP("I_B",incenter(A,D,B),left); path c3=circumcircle(Ic,D,C); path c4=circumcircle(Ib,D,B); draw(c3, fuchsia+0.2); draw(c4, fuchsia+0.2); P=MP("P",OP(c3,c4),up); draw(arc(circumcenter(B,C,P),B,C), royalblue+0.5+dashed); draw(C--Ic--D--P--C^^P--Ic, black+0.3); draw(B--Ib--D--P--B^^P--Ib, black+0.3); label("10",A--B,down); label("16",A--C,left);
+</asy></center>

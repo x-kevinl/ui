@@ -1,0 +1,12 @@
+==Problem==
+Which of the following figures has the greatest number of lines of symmetry?
+
+$ \textbf{(A)}\ \text{equilateral triangle} $
+
+$ \textbf{(B)}\ \text{non-square rhombus} $
+
+$ \textbf{(C)}\ \text{non-square rectangle} $
+
+$ \textbf{(D)}\ \text{isosceles trapezoid} $
+
+$ \textbf{(E)}\ \text{square} $

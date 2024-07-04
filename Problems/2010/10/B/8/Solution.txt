@@ -1,0 +1,2 @@
+== Solution ==
+We find the greatest common factor of $48$ and $64$ to be $16$. The number of factors of $16$ is $5$ which is the answer $(E)$.

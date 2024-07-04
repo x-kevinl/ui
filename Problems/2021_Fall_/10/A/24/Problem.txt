@@ -1,0 +1,4 @@
+==Problem==
+Each of the $12$ edges of a cube is labeled $0$ or $1$. Two labelings are considered different even if one can be obtained from the other by a sequence of one or more rotations and/or reflections. For how many such labelings is the sum of the labels on the edges of each of the $6$ faces of the cube equal to $2$?
+
+$\textbf{(A) } 8 \qquad\textbf{(B) } 10 \qquad\textbf{(C) } 12 \qquad\textbf{(D) } 16 \qquad\textbf{(E) } 20$

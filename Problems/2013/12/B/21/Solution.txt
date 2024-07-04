@@ -1,0 +1,4 @@
+==Solution 1==
+Being on two parabolas means having the same distance from the common focus and both directrices. In particular, you have to be on an angle bisector of the directrices, and clearly on the same "side" of the directrices as the focus. So it's easy to see there are at most two solutions per pair of parabolae. Convexity and continuity imply exactly two solutions unless the directrices are parallel and on the same side of the focus.
+
+So out of $2\dbinom{30}{2}$ possible intersection points, only $2*5*2*\dbinom{3}{2}$ fail to exist. This leaves $870-60=810=\boxed{\textbf{(C)} \ 810}$ solutions.

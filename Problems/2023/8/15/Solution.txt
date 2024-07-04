@@ -1,0 +1,4 @@
+==Solution 1==
+Note that Viswam walks at a constant speed of $60$ blocks per hour as he takes $1$ minute to walk each block. After walking $5$ blocks, he has taken $5$ minutes, and he has $5$ minutes remaining, to walk $7$ blocks. Therefore, he must walk at a speed of $7 \cdot 60 \div 5 = 84$ blocks per hour to get to school on time, from the time he starts his detour. Since he normally walks $\frac{1}{2}$ mile, which is equal to $10$ blocks, $1$ mile is equal to $20$ blocks. Therefore, he must walk at $84 \div 20 = 4.2$ mph from the time he starts his detour to get to school on time, so the answer is $\boxed{\textbf{(B)}\ 4.2}$.
+
+~pianoboy (Edits by [[User:ILoveMath31415926535|ILoveMath31415926535]], apex304 and MrThinker)

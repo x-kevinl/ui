@@ -1,0 +1,14 @@
+== Solution 1 (Matrix's, Determinants) ==
+Let the two points <math>P</math> and <math>Q</math> be defined with coordinates; <math>P=(x_1,y_1)</math> and <math>Q=(x_2,y_2)</math>
+
+We can calculate the area of the parallelogram with the determinant of the matrix of the coordinates of the two points(shoelace theorem). 
+
+<math>\det \left(\begin{array}{c} P \\ Q\end{array}\right)=\det \left(\begin{array}{cc}x_1 &y_1\\x_2&y_2\end{array}\right).</math>
+
+Since the triangle has half the area of the parallelogram, we just need the determinant to be even.
+
+The determinant is
+
+<cmath>(x_1)(y_2)-(x_2)(y_1)=(x_1)(2009-41(x_2))-(x_2)(2009-41(x_1))=2009(x_1)-41(x_1)(x_2)-2009(x_2)+41(x_1)(x_2)=2009((x_1)-(x_2))</cmath>
+
+Since <math>2009</math> is not even, <math>((x_1)-(x_2))</math> must be even, thus the two <math>x</math>'s must be of the same parity. Also note that the maximum value for <math>x</math> is <math>49</math> and the minimum is <math>0</math>. There are <math>25</math> even and <math>25</math> odd numbers available for use as coordinates and thus there are <math>(_{25}C_2)+(_{25}C_2)=\boxed{600}</math> such triangles.

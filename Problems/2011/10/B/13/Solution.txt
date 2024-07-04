@@ -1,0 +1,4 @@
+== Solution ==
+
+For the product of two numbers to be greater than zero, they either have to both be negative or both be positive. The interval for a positive number is $\frac{1}{3}$ of the total interval, and the interval for a negative number is $\frac{2}{3}$. Therefore, the probability the product is greater than zero is
+$$\frac{1}{3} \times \frac{1}{3} + \frac{2}{3} \times \frac{2}{3} = \frac{1}{9} + \frac{4}{9} = \boxed{\textbf{(D)} \frac{5}{9}}$$

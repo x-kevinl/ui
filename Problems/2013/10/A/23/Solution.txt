@@ -1,0 +1,3 @@
+==Solution 1 (Number Theoretic Power of a Point)==
+
+Let $BX = q$, $CX = p$, and $AC$ meets the circle at $Y$ and $Z$, with $Y$ on $AC$.  Then $AZ = AY = 86$.  Using the Power of a Point (Secant-Secant Power Theorem), we get that $p(p+q) = 11(183) = 11 * 3 * 61$.  We know that $p+q>p$, so $p$ is either $3$, $11$, or $33$.  We also know that $p>11$ by the triangle inequality on $\triangle ACX$.  Thus, $p$ is $33$ so we get that $BC = p+q = \boxed{\textbf{(D) }61}$.

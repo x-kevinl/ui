@@ -1,0 +1,2 @@
+==Solution==
+The way to Temple took $\frac{50}{60}=\frac56$ hours, and the way back took $\frac{50}{40}=\frac54$ for a total of $\frac56 + \frac54 = \frac{25}{12}$ hours. The trip is $50\cdot2=100$ miles. The average speed is $\frac{100}{25/12} = \boxed{\textbf{(B)}\ 48}$ miles per hour.

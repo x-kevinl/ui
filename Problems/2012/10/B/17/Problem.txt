@@ -1,0 +1,6 @@
+==Problem==
+Jesse cuts a circular paper disk of radius 12 along two radii to form two sectors, the smaller having a central angle of 120 degrees. He makes two circular cones, using each sector to form the lateral surface of a cone. What is the ratio of the volume of the smaller cone to that of the larger?
+
+$\text{(A)} \frac{1}{8} \qquad \text{(B)} \frac{1}{4} \qquad \text{(C)} \frac{\sqrt{10}}{10} \qquad \text{(D)} \frac{\sqrt{5}}{6} \qquad \text{(E)} \frac{\sqrt{5}}{5}$
+
+[[Category: Introductory Geometry Problems]]

@@ -1,0 +1,12 @@
+==Solution==
+
+We split into 2 cases: 2013 coins, and 2014 coins.
+
+$\textbf{2013 coins:}$
+Notice that when there are $5$ coins left, whoever moves first loses, as they must leave an amount of coins the other person can take. If Jenna goes first, she can take $3$ coins. Then, whenever Barbara takes coins, Jenna will take the amount that makes the total coins taken in that round $5$. (For instance, if Barbara takes $4$ coins, Jenna will take $1$). Eventually, since $2010=0 (\text{mod }5)$ it will be Barbara's move with $5$ coins remaining, so she will lose. If Barbara goes first, on each round, Jenna will take the amount of coins that makes the total coins taken on that round $5$. Since $2013=3 (\text{mod }5)$, it will be Barbara's move with $3$ coins remaining, so she will have to take $2$ coins, allowing Jenna to take the last coin. Therefore, Jenna will win with $2013$ coins.
+
+$\textbf{2014 coins:}$
+If Jenna moves first, she will take $1$ coin, leaving $2013$ coins, and she wins as shown above. If Barbara moves first, she can take $4$ coins, leaving $2010$. After every move by Jenna, Barbara will then take the number of coins that makes the total taken in that round $5$. Since $2010=0\text{(mod }5)$, it will be Jenna's turn with $5$ coins left, so 
+Barbara will win. In this case, whoever moves first wins.
+
+Based on this, the answer is $\boxed{\textbf{(B)}}$

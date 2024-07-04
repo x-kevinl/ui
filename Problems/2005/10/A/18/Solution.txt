@@ -1,0 +1,8 @@
+==Solution==
+There are at most $5$ games played. 
+
+If team $B$ won the first two games, team $A$ would need to win the next three games. So the only possible order of wins is $BBAAA$. 
+
+If team $A$ won the first game, and team $B$ won the second game, the possible order of wins are: $ABBAA, ABABA,$ and $ABAAX$, where $X$ denotes that the $5$th game wasn't played. 
+
+There is $1$ possibility where team $B$ wins the first game and $4$ total possibilities when team $A$ wins the series and team $B$ wins the second game. Note that the fourth possibility $(ABAAX)$ occurs twice as often as the others, so we put $1$ over $5$ total possibilities. The desired probability is then $\boxed{\textbf{(A) }\frac{1}{5}}$.

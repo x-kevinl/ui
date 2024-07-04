@@ -1,0 +1,2 @@
+==Solution==
+Separate into two equations $\frac35 = \frac{M}{45}$ and $\frac35 = \frac{60}{N}$ and solve for the unknowns. $M=27$ and $N=100$, therefore $M+N=\boxed{\textbf{(E)}\ 127}$.

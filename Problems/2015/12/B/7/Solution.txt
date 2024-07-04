@@ -1,0 +1,2 @@
+==Solution==
+From consideration of a smaller regular polygon with an odd number of sides (e.g. a pentagon), we see that the lines of symmetry go through a vertex of the polygon and bisect the opposite side. Hence $L=15$, the number of sides / vertices. The smallest angle for a rotational symmetry transforms one side into an adjacent side, hence $R = 360^\circ / 15 = 24^\circ$, the number of degrees between adjacent sides. Therefore the answer is $L + R = 15 + 24 = \boxed{\textbf{(D)} \, 39}$.

@@ -1,0 +1,20 @@
+==Solution 1==
+
+[[Image:2007AMC10B21.png|center]]
+
+There are lots of similar triangles in the diagram, but we will only use $\triangle WBZ \sim \triangle ABC.$ If $h$ is the altitude from $B$ to $AC$ and $s$ is the sidelength of the square, then $h-s$ is the altitude from $B$ to $WZ.$ By similar triangles,
+$$\begin{align*}
+\frac{h-s}{s}&=\frac{h}{5}\\
+5(h-s)&=hs\\
+5h-5s&=hs\\
+5h&=s(h+5)\\
+s&=\frac{5h}{h+5}
+\end{align*}$$
+
+Find the length of the altitude of $\triangle ABC.$ Since it is a right triangle, the area of $\triangle ABC$ is $\frac{1}{2}(3)(4) = 6.$
+
+The area can also be expressed as $\frac{1}{2}(5)(h),$ so $\frac{5}{2}h=6 \longrightarrow h=2.4.$
+
+Substitute back into $s.$
+
+$$s=\frac{5h}{h+5} = \frac{12}{7.4} = \boxed{\mathrm{(B) \ } \frac{60}{37}}$$

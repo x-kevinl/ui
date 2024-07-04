@@ -1,0 +1,2 @@
+== Problem ==
+The coordinates of the vertices of [[isosceles trapezoid]] <math>ABCD</math> are all integers, with <math>A=(20,100)</math> and <math>D=(21,107)</math>. The trapezoid has no horizontal or vertical sides, and <math>\overline{AB}</math> and <math>\overline{CD}</math> are the only [[parallel]] sides. The sum of the absolute values of all possible slopes for <math>\overline{AB}</math> is <math>m/n</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

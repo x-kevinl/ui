@@ -1,0 +1,4 @@
+== Solution ==
+The three prices round to $ \textdollar 2 $, $ \textdollar 5 $, and $ \textdollar 10 $, which have a sum of $ \boxed{\textbf{(D)}\ 17} $.
+
+We know that there will not be a rounding error, as the total amount rounded is clearly less than $ \textdollar 0.50 $.

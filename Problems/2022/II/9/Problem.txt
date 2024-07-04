@@ -1,0 +1,33 @@
+==Problem==
+
+Let <math>\ell_A</math> and <math>\ell_B</math> be two distinct parallel lines. For positive integers <math>m</math> and <math>n</math>, distinct points <math>A_1, A_2, \allowbreak A_3, \allowbreak \ldots, \allowbreak A_m</math> lie on <math>\ell_A</math>, and distinct points <math>B_1, B_2, B_3, \ldots, B_n</math> lie on <math>\ell_B</math>. Additionally, when segments <math>\overline{A_iB_j}</math> are drawn for all <math>i=1,2,3,\ldots, m</math> and <math>j=1,\allowbreak 2,\allowbreak 3, \ldots, \allowbreak n</math>, no point strictly between <math>\ell_A</math> and <math>\ell_B</math> lies on more than 1 of the segments. Find the number of bounded regions into which this figure divides the plane when <math>m=7</math> and <math>n=5</math>. The figure shows that there are 8 regions when <math>m=3</math> and <math>n=2</math>.
+<asy>
+import geometry;
+size(10cm);
+draw((-2,0)--(13,0));
+draw((0,4)--(10,4));
+label("$\ell_A$",(-2,0),W);
+label("$\ell_B$",(0,4),W);
+point A1=(0,0),A2=(5,0),A3=(11,0),B1=(2,4),B2=(8,4),I1=extension(B1,A2,A1,B2),I2=extension(B1,A3,A1,B2),I3=extension(B1,A3,A2,B2);
+draw(B1--A1--B2);
+draw(B1--A2--B2);
+draw(B1--A3--B2);
+label("$A_1$",A1,S);
+label("$A_2$",A2,S);
+label("$A_3$",A3,S);
+label("$B_1$",B1,N);
+label("$B_2$",B2,N);
+label("1",centroid(A1,B1,I1));
+label("2",centroid(B1,I1,I3));
+label("3",centroid(B1,B2,I3));
+label("4",centroid(A1,A2,I1));
+label("5",(A2+I1+I2+I3)/4);
+label("6",centroid(B2,I2,I3));
+label("7",centroid(A2,A3,I2));
+label("8",centroid(A3,B2,I2));
+dot(A1);
+dot(A2);
+dot(A3);
+dot(B1);
+dot(B2);
+</asy>

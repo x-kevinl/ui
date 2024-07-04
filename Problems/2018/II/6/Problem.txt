@@ -1,0 +1,7 @@
+==Problem==
+
+A real number <math>a</math> is chosen randomly and uniformly from the interval <math>[-20, 18]</math>. The probability that the roots of the polynomial
+
+<math>x^4 + 2ax^3 + (2a - 2)x^2 + (-4a + 3)x - 2</math>
+
+are all real can be written in the form <math>\dfrac{m}{n}</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m + n</math>.

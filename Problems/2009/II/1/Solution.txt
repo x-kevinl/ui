@@ -1,0 +1,11 @@
+== Solution 1 ==
+
+Let <math>x</math> be the amount of paint in a strip. The total amount of paint is <math>130+164+188=482</math>. After painting the wall, the total amount of paint is <math>482-4x</math>. Because the total amount in each color is the same after finishing, we have
+
+<cmath>\frac{482-4x}{3} = 130-x</cmath>
+<cmath>482-4x=390-3x</cmath>
+<cmath>x=92</cmath>
+
+Our answer is <math>482-4\cdot 92 = 482 - 368 = \boxed{114}</math>.
+
+~ carolynlikesmath

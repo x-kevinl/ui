@@ -1,0 +1,4 @@
+==Solution 1(algebra solution)==
+Let $n$, $n+1$, and $n+2$ be the lengths of the sides of the triangle. Then the perimeter of the triangle is $n + (n+1) + (n+2) = 3n+3$. Using the fact that the length of the smallest side is $30\%$ of the perimeter, it follows that:
+
+$n = 0.3(3n+3) \Rightarrow n = 0.9n+0.9 \Rightarrow 0.1n = 0.9 \Rightarrow n=9$. The longest side is then $n+2 = 11$. Thus, answer choice $\boxed{\textbf{(E)}\ 11}$ is correct.

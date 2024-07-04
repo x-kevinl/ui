@@ -1,0 +1,4 @@
+== Solution 1==
+For any given pair of circles, they can intersect at most $2$ times. Since there are ${4\choose 2} = 6$ pairs of circles, the maximum number of possible intersections is $6 \cdot 2 = 12$. We can construct such a situation as below, so the answer is $\boxed{\mathrm{(D)}\ 12}$.
+
+[[Image:2002_12B_AMC-14.png]]

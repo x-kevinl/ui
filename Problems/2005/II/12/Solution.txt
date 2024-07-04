@@ -1,0 +1,206 @@
+== Solutions ==
+=== Solution 1 (trigonometry) ===
+<center><asy>
+size(200);
+defaultpen(linewidth(0.7)+fontsize(10)); pair A=(0,9), B=(9,9), C=(9,0), D=(0,0), E=(2.5-0.5*sqrt(7),9), F=(6.5-0.5*sqrt(7),9), G=(4.5,9), O=(4.5,4.5); draw(A--B--C--D--A);draw(E--O--F);draw(G--O); dot(A^^B^^C^^D^^E^^F^^G^^O); label("\(A\)",A,(-1,1));label("\(B\)",B,(1,1));label("\(C\)",C,(1,-1));label("\(D\)",D,(-1,-1)); label("\(E\)",E,(0,1));label("\(F\)",F,(1,1));label("\(G\)",G,(-1,1));label("\(O\)",O,(1,-1)); label("\(x\)",E/2+G/2,(0,1));label("\(y\)",G/2+F/2,(0,1)); label("\(450\)",(O+G)/2,(-1,1)); 
+</asy></center> <!-- Asymptote replacement for Image:AIME_2005II_Solution_12_1.png by Minsoens -->
+
+Let <math>G</math> be the foot of the [[perpendicular]] from <math>O</math> to <math>AB</math>. Denote <math>x = EG</math> and <math>y = FG</math>, and <math>x > y</math> (since <math>AE < BF</math> and <math>AG = BG</math>). Then <math>\tan \angle EOG = \frac{x}{450}</math>, and <math>\tan \angle FOG = \frac{y}{450}</math>.
+
+By the [[trigonometric identity|tangent addition rule]] <math>\left( \tan (a + b) = \frac{\tan a + \tan b}{1 - \tan a \tan b} \right)</math>, we see that <cmath>\tan 45 = \tan (EOG + FOG) = \frac{\frac{x}{450} + \frac{y}{450}}{1 - \frac{x}{450} \cdot \frac{y}{450}}.</cmath> Since <math>\tan 45 = 1</math>, this simplifies to <math>1 - \frac{xy}{450^2} = \frac{x + y}{450}</math>. We know that <math>x + y = 400</math>, so we can substitute this to find that <math>1 - \frac{xy}{450^2} = \frac 89 \Longrightarrow xy = 150^2</math>.
+
+Substituting <math>x = 400 - y</math> again, we know have <math>xy = (400 - y)y = 150^2</math>. This is a quadratic with roots <math>200 \pm 50\sqrt{7}</math>. Since <math>y < x</math>, use the smaller root, <math>200 - 50\sqrt{7}</math>.
+
+Now, <math>BF = BG - FG = 450 - (200 - 50\sqrt{7}) = 250 + 50\sqrt{7}</math>. The answer is <math>250 + 50 + 7 = \boxed{307}</math>.
+
+=== Solution 2 (synthetic) ===
+<center><asy>
+size(200);
+defaultpen(linewidth(0.7)+fontsize(10)); pair A=(0,9), B=(9,9), C=(9,0), D=(0,0), E=(2.5-0.5*sqrt(7),9), F=(6.5-0.5*sqrt(7),9), O=(4.5,4.5), G=O+(E-O)*dir(-90), J=O+(F-O)*dir(-90); draw(A--B--C--D--A);draw(E--O--F);draw(G--O--J);draw(F--G,linetype("4 4")); dot(A^^B^^C^^D^^E^^F^^G^^J^^O); label("\(A\)",A,(-1,1));label("\(B\)",B,(1,1));label("\(C\)",C,(1,-1));label("\(D\)",D,(-1,-1)); label("\(E\)",E,(0,1));label("\(F\)",F,(1,1));label("\(G\)",G,(1,0));label("\(J\)",J,(1,0));label("\(O\)",O,(1,-1)); label("\(x\)",(B+F)/2,(0,1)); label("\(400\)",(E+F)/2,(0,1)); label("\(900\)",(C+D)/2,(0,-1));
+</asy></center>
+
+Label <math>BF=x</math>, so <math>EA =</math> <math>500 - x</math>. Rotate <math>\triangle{OEF}</math> about <math>O</math> until <math>EF</math> lies on <math>BC</math>. Now we know that <math>\angle{EOF}=45^\circ</math> therefore <math>\angle BOF+\angle AOE=45^\circ</math> also since <math>O</math> is the center of the square.  Label the new triangle that we created <math>\triangle OGJ</math>.  Now we know that rotation preserves angles and side lengths, so <math>BG=500-x</math> and <math>JC=x</math>.  Draw <math>GF</math> and <math>OB</math>. Notice that <math>\angle BOG =\angle OAE</math> since rotations preserve the same angles so 
+<math>\angle{FOG}=45^\circ</math> too. By SAS we know that <math>\triangle FOE\cong \triangle FOG,</math> so <math>FG=400</math>. Now we have a right <math>\triangle BFG</math> with legs <math>x</math> and <math>500-x</math> and hypotenuse <math>400</math>. By the [[Pythagorean Theorem]], 
+
+<cmath>\begin{align*}
+(500-x)^2+x^2&=400^2 \\
+250000-1000x+2x^2&=16000 \\
+90000-1000x+2x^2&=0 \end{align*}</cmath>
+
+and applying the [[quadratic formula]] we get that 
+<math>x=250\pm 50\sqrt{7}</math>.  Since <math>BF > AE,</math> we take the positive root, and our answer is <math>p+q+r = 250 + 50 + 7 = 307</math>.
+
+=== Solution 3 (similar triangles)===
+<asy>
+size(3inch);
+pair A, B, C, D, M, O, X, Y;
+A = (0,900); B = (900,900); C = (900,0); D = (0,0);
+M = (450,900); O = (450,450); X = (250 - 50*sqrt(7),900); Y = (650 - 50*sqrt(7),900);
+draw(A--B--C--D--cycle);
+draw(X--O--Y);
+draw(M--O--A);
+label("$A$",A,NW); label("$B$",B,NE); label("$C$",C,SE); label("$D$",D,SW); label("$E$",X,N); label("$F$",Y,NNE); label("$O$",O,S); label("$M$",M,N);
+</asy>
+Let the midpoint of <math>\overline{AB}</math> be <math>M</math> and let <math>FB = x</math>, so then <math>MF = 450 - x</math> and <math>AF = 900 - x</math>. Drawing <math>\overline{AO}</math>, we have <math>\triangle OEF\sim\triangle AOF</math>, so
+<cmath>\frac{OF}{EF} = \frac{AF}{OF}\Rightarrow (OF)^2 = 400(900 - x).</cmath>
+By the Pythagorean Theorem on <math>\triangle OMF</math>,
+<cmath>(OF)^2 = 450^2 + (450 - x)^2.</cmath>
+Setting these two expressions for <math>(OF)^2</math> equal and solving for <math>x</math> (it is helpful to scale the problem down by a factor of 50 first), we get <math>x = 250\pm 50\sqrt{7}</math>. Since <math>BF > AE</math>, we want the value <math>x = 250 + 50\sqrt{7}</math>, and the answer is <math>250 + 50 + 7 = \boxed{307}</math>.
+
+=== Solution 4 (Abusing Stewart) ===
+Let <math>x = BF</math>, so <math>AE = 500-x</math>. Let <math>a = OE</math>, <math>b = OF</math>. Applying Stewart's Theorem on triangles <math>AOB</math> twice, first using <math>E</math> as the base point and then <math>F</math>, we arrive at the equations <cmath>(450 \sqrt{2})^2 (900) = 900(500-x)(400+x) + a^2 (900)</cmath> and <cmath>(450 \sqrt{2})^2 (900) = 900x(900-x) + b^2 (900)</cmath> Now applying law of sines and law of cosines on <math>\triangle EOF</math> yields <cmath>\frac{1}{2} ab \sin 45^{\circ}  = \frac{4}{9} \times \frac{1}{4}  \times 900^2 = 202500</cmath> and <cmath>a^2+b^2- 2 ab \cos 45^{\circ} = 160000</cmath> Solving for <math>ab</math> from the sines equation and plugging into the law of cosines equation yields <math>a^2+b^2 = 290000</math>. We now finish by adding the two original stewart equations and obtaining: <cmath>2(450\sqrt{2})^2 = (500-x)(400+x)+x(900-x)+520000</cmath> This is a quadratic which only takes some patience to solve for <math>x = 250 + 50\sqrt{7}</math>
+
+=== Solution 5 (Complex Numbers) ===
+Let lower case letters be the complex numbers correspond to their respective upper case points in the complex plane, with <math>o = 0, a = -450 + 450i, b = 450 + 450i</math>, and <math>f = x + 450i</math>. Since <math>EF</math> = 400, <math>e = (x-400) + 450i</math>. From <math>\angle{EOF} = 45^{\circ}</math>, we can deduce that the rotation of point <math>F</math> 45 degrees counterclockwise, <math>E</math>, and the origin are collinear. In other words, <cmath>\dfrac{e^{i \frac{\pi}{4}} \cdot (x + 450i)}{(x - 400) + 450i}</cmath> is a real number. Simplyfying using the fact that <math>e^{i \frac{\pi}{4}} = \dfrac{\sqrt{2}}{2} + i \dfrac{\sqrt{2}}{2}</math>, clearing the denominator, and setting the imaginary part equal to <math>0</math>, we eventually get the quadratic <cmath>x^2 - 400x + 22500 = 0</cmath> which has solutions <math>x = 200 \pm 50\sqrt{7}</math>. It is given that <math>AE < BF</math>, so <math>x = 200 - 50\sqrt{7}</math> and <cmath>BF = 450 - (200 - 50\sqrt{7}) = 250 + 50\sqrt{7} \Rightarrow \boxed{307}.</cmath>
+
+-MP8148
+
+=== Solution 6 ===
+<asy>
+size(250);
+pair A,B,C,D,O,E,F,G,H,K;
+A = (0,0);
+B = (900,0);
+C = (900,900);
+D = (0,900);
+O = (450,450);
+E = (600,0);
+F = (150,0);
+G = (-600,0);
+H = (450,0);
+K = (0,270);
+draw(A--B--C--D--cycle);
+draw(O--E);
+draw(O--F);
+draw(O--G);
+draw(A--G);
+draw(O--H);
+label("O",O,N);
+label("A",A,S);
+label("B",B,SE);
+label("C",C,NE);
+label("D",D,NW);
+label("E",E,SE);
+label("F",F,S);
+label("H",H,SW);
+label("G",G,SW);
+label("x",H--E,S);
+label("K",K,NW);
+</asy>
+Let G be a point such that it lies on AB, and GOE is 90 degrees. Let H be foot of the altitude from O to AB.
+Since <math>\triangle GOE \sim \triangle OHE</math>, <math>\frac{GO}{OE} = \frac{450}{x}</math>, and by [[Angle Bisector Theorem]], <math>\frac{GF}{FE} = \frac{450}{x}</math>. Thus, <math>GF = \frac{450 \cdot 400}{x}</math>. <math>AF = AH-FH = 50+x</math>, and <math>KA = EB</math> (90 degree rotation), and now we can bash on 2 similar triangles <math>\triangle GAK \sim \triangle GHO</math>.
+
+<cmath>\frac{GA}{AK} = \frac{GH}{OH}</cmath> 
+<cmath>\frac{\frac{450 \cdot 400}{x}-50-x}{450-x} = \frac{\frac{450 \cdot 400}{x}+400-x}{450}</cmath>
+I hope you like expanding
+<cmath>x^2 - 850x + \frac{81000000}{x} = -450x - 22500 + \frac{81000000}{x}</cmath>
+<cmath>x^2 - 400x + 22500 = 0</cmath>
+Quadratic formula gives us
+<cmath>x = 200 \pm 50 \sqrt{7}</cmath>
+Since AE < BF 
+<cmath>x = 200 - 50 \sqrt{7}</cmath>
+Thus, 
+<cmath>BF = 250 + 50 \sqrt{7}</cmath>
+So, our answer is <math>\boxed{307}</math>.
+
+-AlexLikeMath
+
+=== Solution 7 (Using a Circle) ===
+<center><asy>
+size(200);
+defaultpen(linewidth(0.7)+fontsize(10));
+pair A=(0,9), B=(9,9), C=(9,0), D=(0,0), E=(2.5-0.5*sqrt(7),9), F=(6.5-0.5*sqrt(7),9), G=(4.5-0.5*sqrt(7),7), O=(4.5,4.5), H=(4.5-0.5*sqrt(7),4.5), I=(0,4.5), J=(4.5-0.5*sqrt(7),9);
+draw(A--B--C--D--A);
+draw(E--O--F);
+draw(J--G);
+draw(E--G--F);
+draw(G--H--O--G);
+draw(I--H);
+draw(circle(G,2*sqrt(2)));
+markscalefactor=0.05;
+draw(rightanglemark(E,G,F));
+dot(A^^B^^C^^D^^E^^F^^G^^H^^I^^J^^O);
+label("\(A\)",A,(-1,1));
+label("\(B\)",B,(1,1));
+label("\(C\)",C,(1,-1));
+label("\(D\)",D,(-1,-1));
+label("\(E\)",E,(0,1));
+label("\(F\)",F,(1,1));
+label("\(G\)",G,(1,0));
+label("\(H\)",H,(-1,1));
+label("\(I\)",I,(-1,0));
+label("\(J\)",J,(0,1));
+label("\(O\)",O,(1,-1));
+</asy></center>
+
+We know that G is on the perpendicular bisector of <math>EF</math>, which means that <math>EJ=JF=200</math>, <math>EG=GF=200\sqrt{2}</math> and <math>GH=250</math>. Now, let <math>HO</math> be equal to <math>x</math>. We can set up an equation with the Pythagorean Theorem: 
+
+<cmath>
+\begin{align*}
+\sqrt{x^2+250^2}&=(200\sqrt{2})^2 \\
+x^2+62500&=80000 \\
+x^2&=17500 \\
+x&=50\sqrt{7}
+\end{align*}
+</cmath>
+
+Now, since <math>IO=450</math>, 
+
+<cmath>
+\begin{align*}
+HI&=450-x \\
+&=450-50\sqrt{7} \\
+\end{align*} \\
+</cmath>
+
+Since <math>HI=AJ</math>, we now have:
+
+<cmath>
+\begin{align*}
+BF&=AB-AJ-JF \\
+&=900-(450-50\sqrt{7})-200 \\
+&=250+50\sqrt{7} \\
+\end{align*}
+</cmath> 
+
+This means that our answer would be <math>250+50+7=\boxed{307}</math>
+
+~Jerry_Guo
+
+=== Solution 8 (More Similar Triangles) ===
+ 
+Construct <math>BO, AO.</math> Let <math>\angle{FOB} = \alpha.</math> Also let <math>FB = x</math> then <math>AE = 500-x.</math> We then have from simple angle-chasing:
+<cmath>
+\begin{align*}
+\angle{BFO} = 135 - \alpha \\
+\angle{OFE} = 45 + \alpha \\
+\angle{EOA} = 45 - \alpha \\
+\angle{AEO} = 90 + \alpha \\
+\angle{OEF} = 90 - \alpha.
+\end{align*}
+</cmath>
+From AA similarity we have <cmath>\triangle{EOB} \sim \triangle{EFO}.</cmath> This gives the ratios, 
+<cmath>\dfrac{400 + x}{EO} = \dfrac{450\sqrt{2}}{FO}.</cmath>
+Similarly from AA similarity <cmath>\triangle{FOA} \sim \triangle{FEO}.</cmath> So we get the ratios <cmath>\dfrac{EO}{450\sqrt{2}} = \dfrac{FO}{900-x}.</cmath> We can multiply to get 
+<cmath>\dfrac{400 + x}{450\sqrt{2}} = \dfrac{450\sqrt{2}}{900 - x}.</cmath> Cross-multiplying reveals
+<cmath>360000 + 500x - x^2 = 405000.</cmath> Bringing everything to one side we have <cmath>x^2 - 500x + 45000 = 0.</cmath> By the quadratic formula we get <cmath>x = \dfrac{500 + \sqrt{500^2 - 4\cdot45000}}{2} = \dfrac{500 + \sqrt{70000}}{2} = \dfrac{500 + 100\sqrt{7}}{2} = 250 + 50\sqrt{7}.</cmath>
+Therefore 
+<cmath>p+q+r = 250 + 50 + 7 = \boxed{307}.</cmath>
+~aa1024
+
+
+=== Solution 9 ===
+We use ratio lemma and Stewart's theorem:
+Connect <math>OA, OE, OF, OB</math> and let <math>AE = x</math> and <math>BF = 500 - x.</math>
+Let angle <math>AOE = y,</math> hence <math>BOF = 45 - y.</math>
+Now, we apply Stewart's theorem in triangles <math>AOF</math> and <math>BOE</math> to get <math>OE</math> and <math>OF</math> in terms of <math>X</math>
+finally, calculate <math>x/400</math> and <math>500-x/400</math> using ratio lemma to find <math>x</math> and <math>y</math>
+
+=== Solution 10(Similar Triangles) ===
+Draw AO, OB, and extend OB to D. Let <math>\angle{FOB} = \alpha.</math> Then, after angle chasing, we find that <cmath>\angle{AEB} = 90 + \alpha</cmath>. 
+Using this, we draw a line perpendicular to <math>AB</math> at <math>E</math> to meet <math>BD</math> at <math>M</math>. Since <math>\angle{MEO} = \alpha</math> and <math>\angle{EMO} = 45</math>, we have that <cmath>\triangle{EMO} \sim \triangle{OBF}</cmath>
+Let <math>FB = x</math>. Then <math>EM = 400+x</math>. Since <math>FB/BO = \frac{x}{450\sqrt{2}}</math>, and <math>MO/EM = FB/OB</math>, we have <cmath>MO = \frac{(400+x)x}{450\sqrt{2}}</cmath> 
+Since <math>\triangle{EBM}</math> is a <math>45-45-90</math> triangle, <cmath>(400+x)\sqrt{2} = 450
+\sqrt{2} + \frac{(400+x)x}{450\sqrt{2}}</cmath>
+Solving for <math>x</math>, we get that <math>x=250 +- 50s\sqrt{7}</math>, but since <math>FB>AE</math>, <math>FB = 250+50\sqrt{7}</math>, thus <cmath>p+q+r=\boxed{307}</cmath>
+-dchang0524

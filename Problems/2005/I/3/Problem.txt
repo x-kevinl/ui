@@ -1,0 +1,2 @@
+== Problem ==
+How many [[positive integer]]s have exactly three [[proper divisor]]s (positive integral [[divisor]]s excluding itself), each of which is less than 50?

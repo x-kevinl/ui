@@ -1,0 +1,2 @@
+==Solution==
+The class could send $25$ carnations and no roses, $22$ carnations and $2$ roses, $19$ carnations and $4$ roses, and so on, down to $1$ carnation and $16$ roses. There are 9 total possibilities (from 0 to 16 roses, incrementing by 2 at each step), $\Rightarrow \boxed{C}$

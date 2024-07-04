@@ -1,0 +1,11 @@
+==Solution 1==
+
+$60\%$ of seniors do not play a musical instrument. If we denote $x$ as the number of seniors, then $$\frac{3}{5}x + \frac{3}{10}\cdot(500-x) = \frac{468}{1000}\cdot500$$
+
+$$\frac{3}{5}x + 150 - \frac{3}{10}x = 234$$
+$$\frac{3}{10}x = 84$$
+$$x = 84\cdot\frac{10}{3} = 280$$
+
+Thus there are $500-x = 220$ non-seniors. Since 70% of the non-seniors play a musical instrument, $220 \cdot \frac{7}{10} = \boxed{\textbf{(B) } 154}$.
+
+~IronicNinja

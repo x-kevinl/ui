@@ -1,0 +1,2 @@
+==Problem==
+Equilateral <math>\triangle ABC</math> has side length <math>600</math>. Points <math>P</math> and <math>Q</math> lie outside the plane of <math>\triangle ABC</math> and are on opposite sides of the plane. Furthermore, <math>PA=PB=PC</math>, and <math>QA=QB=QC</math>, and the planes of <math>\triangle PAB</math> and <math>\triangle QAB</math> form a <math>120^{\circ}</math> dihedral angle (the angle between the two planes). There is a point <math>O</math> whose distance from each of <math>A,B,C,P,</math> and <math>Q</math> is <math>d</math>. Find <math>d</math>.

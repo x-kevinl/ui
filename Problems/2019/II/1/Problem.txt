@@ -1,0 +1,2 @@
+==Problem==
+Two different points, <math>C</math> and <math>D</math>, lie on the same side of line <math>AB</math> so that <math>\triangle ABC</math> and <math>\triangle BAD</math> are congruent with <math>AB = 9</math>, <math>BC=AD=10</math>, and <math>CA=DB=17</math>. The intersection of these two triangular regions has area <math>\tfrac mn</math>, where <math>m</math> and <math>n</math> are relatively prime positive integers. Find <math>m+n</math>.

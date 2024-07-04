@@ -1,0 +1,2 @@
+==Solution==
+Simplifying, we get $$\frac{3^{4016}-3^{4012}}{3^{4014}-3^{4010}}.$$ Factoring out $3^{4012}$ in the numerator and factoring out $3^{4010}$ in the denominator gives us $$\frac{(3^4-1)(3^{4012})}{(3^4-1)(3^{4010})}.$$ Canceling out $3^4-1$ gives us $\frac{3^{4012}}{3^{4010}}=\frac{3^2}{3^0}=9\ \mathrm{(E)}.$

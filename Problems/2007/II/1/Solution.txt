@@ -1,0 +1,7 @@
+== Solution ==
+There are 7 different characters that can be picked, with 0 being the only number that can be repeated twice.
+
+*If <math>0</math> appears 0 or 1 times amongst the sequence, there are <math>\frac{7!}{(7-5)!} = 2520</math> sequences possible.
+*If <math>0</math> appears twice in the sequence, there are <math>{5\choose2} = 10</math> places to place the <math>0</math>s. There are <math>\frac{6!}{(6-3)!} = 120</math> ways to place the remaining three characters. In total, that gives us <math>10 \cdot 120 = 1200</math>.
+
+Thus, <math>N = 2520 + 1200 = 3720</math>, and <math>\frac{N}{10} = \boxed{372}</math>.

@@ -1,0 +1,5 @@
+==Problem==
+
+Harold made a plum pie to take on a picnic. He was able to eat only $\frac{1}{4}$ of the pie, and he left the rest for his friends. A moose came by and ate $\frac{1}{3}$ of what Harold left behind. After that, a porcupine ate $\frac{1}{3}$ of what the moose left behind. How much of the original pie still remained after the porcupine left?
+
+$\textbf{(A)}\ \frac{1}{12} \qquad \textbf{(B)}\ \frac{1}{6} \qquad \textbf{(C)}\ \frac{1}{4} \qquad \textbf{(D)}\ \frac{1}{3} \qquad \textbf{(E)}\ \frac{5}{12}$

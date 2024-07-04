@@ -1,0 +1,3 @@
+==Solution 1==
+
+Since Anh spends half an hour to drive 10 miles on the coastal road, his speed is [mathjax]r=\dfrac dt=\dfrac{10}{0.5}=20[/mathjax] mph. His speed on the highway then is [mathjax]60[/mathjax] mph. He drives [mathjax]50[/mathjax] miles, so he drives for [mathjax]\dfrac{5}{6}[/mathjax] hours, which is equal to [mathjax]50[/mathjax] minutes (Note that [mathjax]60[/mathjax] miles per hour is the same as [mathjax]1[/mathjax] mile per minute). The total amount of minutes spent on his trip is [mathjax]30+50\implies \boxed{\textbf{(C) }80}[/mathjax].

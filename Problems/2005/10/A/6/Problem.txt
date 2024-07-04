@@ -1,0 +1,4 @@
+==Problem==
+The average (mean) of $20$ numbers is $30$, and the average of $30$ other numbers is $20$. What is the average of all $50$ numbers?
+
+$ \textbf{(A) } 23\qquad \textbf{(B) } 24\qquad \textbf{(C) } 25\qquad \textbf{(D) } 26\qquad \textbf{(E) } 27 $

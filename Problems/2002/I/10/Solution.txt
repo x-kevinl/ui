@@ -1,0 +1,8 @@
+== Solution 1 ==
+By the Pythagorean Theorem, <math>BC=35</math>. Letting <math>BD=x</math> we can use the Angle Bisector Theorem on triangle <math>ABC</math> to get <math>x/12=(35-x)/37</math>, and solving gives <math>BD=60/7</math> and <math>DC=185/7</math>.
+
+The area of triangle <math>AGF</math> is <math>10/3</math> that of triangle <math>AEG</math>, since they share a common side and angle, so the area of triangle <math>AGF</math> is <math>10/13</math> the area of triangle <math>AEF</math>.
+
+Since the area of a triangle is <math>\frac{ab\sin{C}}2</math>, the area of <math>AEF</math> is <math>525/37</math> and the area of <math>AGF</math> is <math>5250/481</math>.
+
+The area of triangle <math>ABD</math> is <math>360/7</math>, and the area of the entire triangle <math>ABC</math> is <math>210</math>. Subtracting the areas of <math>ABD</math> and <math>AGF</math> from <math>210</math> and finding the closest integer gives <math>\boxed{148}</math> as the answer.

@@ -1,0 +1,26 @@
+== Solution 1==
+By the [[Multinomial Theorem]], the summands can be written as
+
+$$\sum_{a+b+c=2006}{\frac{2006!}{a!b!c!}x^ay^bz^c}$$
+
+and
+
+$$\sum_{a+b+c=2006}{\frac{2006!}{a!b!c!}x^a(-y)^b(-z)^c},$$
+
+respectively. Since the coefficients of like terms are the same in each expression, each like term either cancel one another out or the coefficient doubles. In each expansion there are:
+
+$${2006+2\choose 2} = 2015028$$
+
+terms without cancellation. For any term in the second expansion to be negative, the parity of the exponents of $y$ and $z$ must be opposite. Now we find a pattern:
+
+if the exponent of $y$ is $1$, the exponent of $z$ can be all even integers up to $2004$, so there are $1003$ terms.
+
+if the exponent of $y$ is $3$, the exponent of $z$ can go up to $2002$, so there are $1002$ terms.
+
+$\vdots$
+
+if the exponent of $y$ is $2005$, then $z$ can only be 0, so there is $1$ term.
+
+If we add them up, we get $\frac{1003\cdot1004}{2}$ terms. However, we can switch the exponents of $y$ and $z$ and these terms will still have a negative sign. So there are a total of $1003\cdot1004$ negative terms.
+
+By subtracting this number from 2015028, we obtain $\boxed{\mathrm{D}}$ or $1,008,016$ as our answer.

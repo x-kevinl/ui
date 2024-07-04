@@ -1,0 +1,2 @@
+==Problem==
+Ten adults enter a room, remove their shoes, and toss their shoes into a pile. Later, a child randomly pairs each left shoe with a right shoe without regard to which shoes belong together. The probability that for every positive integer <math>k<5</math>, no collection of <math>k</math> pairs made by the child contains the shoes from exactly <math>k</math> of the adults is <math>\frac{m}{n}</math>, where m and n are relatively prime positive integers. Find <math>m+n.</math>

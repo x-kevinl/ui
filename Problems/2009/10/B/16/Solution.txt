@@ -1,0 +1,51 @@
+== Solution ==
+
+=== Solution 1 ===
+
+<asy>
+unitsize(1.5cm);
+defaultpen(0.8);
+pair B=(0,0), A=(3,0), C=3*dir(60), O=intersectionpoint( C -- (C+3*dir(-30)), A -- (A+3*dir(90)) );
+pair D=intersectionpoint(B--O, circle(O,length(A-O)));
+draw(circle(O,length(A-O)));
+draw(A--B--C--O--A);
+draw(B--O);
+draw(rightanglemark(B,A,O));
+draw(rightanglemark(B,C,O));
+draw(A--C, dashed );
+label("$B$",B,SW);
+label("$A$",A,S);
+label("$C$",C,NW);
+label("$O$",O,NE);
+label("$D$",D,(S+SSW));
+</asy>
+
+As $\triangle ABC$ is equilateral, we have $\angle BAC = \angle BCA = 60^\circ$, hence $\angle OAC = \angle OCA = 30^\circ$. Then $\angle AOC = 120^\circ$, and from symmetry we have $\angle AOB = \angle COB = 60^\circ$. Thus, this gives us $\angle ABO = \angle CBO = 30^\circ$.
+
+We know that $DO = AO$, as $D$ lies on the circle. From $\triangle ABO$ we also have $AO = BO \sin 30^\circ = \frac{BO}2$, Hence $DO = \frac{BO}2$, therefore $BD = BO - DO = \frac{BO}2$, and $\frac{BD}{BO} = \boxed{\frac 12 \Longrightarrow B}$.
+
+=== Solution 2 ===
+
+<asy>
+unitsize(1.5cm);
+defaultpen(0.8);
+pair B=(0,0), A=(3,0), C=3*dir(60), O=intersectionpoint( C -- (C+3*dir(-30)), A -- (A+3*dir(90)) );
+pair D=intersectionpoint(B--O, circle(O,length(A-O)));
+draw(circle(O,length(A-O)));
+draw(A--B--C--O--A);
+draw(B--O);
+draw(rightanglemark(B,A,O));
+draw(rightanglemark(B,C,O));
+draw(A--C--D--A, dashed );
+pair Sp = intersectionpoint(D--O,A--C);
+label("$B$",B,SW);
+label("$A$",A,S);
+label("$C$",C,NW);
+label("$O$",O,NE);
+label("$D$",D,(S+SSW));
+label("$S$",Sp,(S+SSW));
+</asy>
+
+As in the previous solution, we find out that $\angle AOB = \angle COB = 60^\circ$. Hence $\triangle AOD$ and $\triangle COD$ are both equilateral.
+
+We then have $\angle SCD = \angle SAD = 30^\circ$, hence $D$ is the incenter of $\triangle ABC$, and as $\triangle ABC$ is equilateral, $D$ is also its centroid. Hence $2 \cdot SD = BD$, and as $SD = SO$, we have $2\cdot SD = SD + SO = OD$, therefore $BD=OD$, and as before we conclude that $\frac{BD}{BO} = \boxed{\frac 12}$.

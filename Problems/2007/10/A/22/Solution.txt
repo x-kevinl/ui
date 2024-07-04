@@ -1,0 +1,2 @@
+==Solution==
+A given digit appears as the hundreds digit, the tens digit, and the units digit of a term the same number of times. Let $k$ be the sum of the units digits in all the terms. Then $S=111k=3 \cdot 37k$, so $S$ must be divisible by $37\ \mathrm{(D)}$. To see that it need not be divisible by any larger prime, the sequence $123, 231, 312$ gives $S=666=2 \cdot 3^2 \cdot 37\Rightarrow \mathrm{\boxed{(D)}}$.

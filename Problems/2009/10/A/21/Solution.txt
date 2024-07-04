@@ -1,0 +1,35 @@
+== Solution ==
+
+Draw some of the radii of the small circles as in the picture below.
+
+<asy>
+unitsize(12mm);
+defaultpen(linewidth(.8pt));
+
+draw(Circle((0,0),1+sqrt(2)));
+draw(Circle((sqrt(2),0),1));
+draw(Circle((0,sqrt(2)),1));
+draw(Circle((-sqrt(2),0),1));
+draw(Circle((0,-sqrt(2)),1));
+draw( (sqrt(2),0) -- (0,sqrt(2)) -- (-sqrt(2),0) -- (0,-sqrt(2)) -- cycle );
+draw( (0,sqrt(2)) -- (0,1+sqrt(2)) );
+draw( (0,-sqrt(2)) -- (0,-1-sqrt(2)) );
+draw( (0,sqrt(2)) -- (0,-sqrt(2)), dashed );
+</asy>
+
+Out of symmetry, the quadrilateral in the center must be a square. Its side is $2r$, and therefore its diagonal is $2r\sqrt{2}$. We can now compute the length of the vertical diameter of the large circle as $2r + 2r\sqrt{2}$. Hence $2R=2r + 2r\sqrt{2}$, and thus $R=r+r\sqrt{2}=r(1+\sqrt{2})$.
+
+Then the area of the large circle is $L = \pi R^2 = \pi r^2 (1+\sqrt 2)^2 = \pi r^2 (3+2\sqrt 2)$.
+The area of four small circles is $S = 4\pi r^2$. Hence their ratio is:
+
+$$ 
+\begin{align*}
+\frac SL 
+& = \frac{4\pi r^2}{\pi r^2 (3+2\sqrt 2)} \\
+& = \frac 4{3+2\sqrt 2} \\
+& = \frac 4{3+2\sqrt 2} \cdot \frac{3-2\sqrt 2}{3 - 2\sqrt 2} \\
+& = \frac{4(3 - 2\sqrt 2)}{3^2 - (2\sqrt 2)^2} \\
+& = \frac{4(3 - 2\sqrt 2)}1 \\
+& = \boxed{4(3 - 2\sqrt 2)}
+\end{align*}
+$$

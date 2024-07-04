@@ -1,0 +1,2 @@
+==Solution==
+The same pattern is repeated for every $6 \times 6$ tile. Looking closer, there is also symmetry of the top $3 \times 3$ square, so the fraction of the entire floor in dark tiles is the same as the fraction in the square. Counting the tiles, there are $4$ dark tiles, and $9$ total tiles, giving a fraction of $\boxed{\text{(B)}\ \frac49}$.

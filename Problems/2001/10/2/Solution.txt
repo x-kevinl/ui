@@ -1,0 +1,4 @@
+== Solution ==
+We can write our [[equation]] as 
+$ x= \left(\frac{1}{x} \right) \cdot (-x) +2 = -1+2 = 1$.
+Therefore, $ \boxed{\textbf{(C) }0 < x\le 2} $.

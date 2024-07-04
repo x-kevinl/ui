@@ -1,0 +1,2 @@
+==Problem==
+With all angles measured in degrees, the product <math>\prod_{k=1}^{45} \csc^2(2k-1)^\circ=m^n</math>, where <math>m</math> and <math>n</math> are integers greater than 1. Find <math>m+n</math>.

@@ -1,0 +1,4 @@
+==Problem 1==
+Jamie counted the number of edges of a cube, Jimmy counted the numbers of corners, and Judy counted the number of faces. They then added the three numbers. What was the resulting sum? 
+
+$\mathrm{(A)}\ 12 \qquad\mathrm{(B)}\ 16 \qquad\mathrm{(C)}\ 20 \qquad\mathrm{(D)}\ 22 \qquad\mathrm{(E)}\ 26$

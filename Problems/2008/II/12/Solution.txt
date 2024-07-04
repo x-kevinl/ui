@@ -1,0 +1,134 @@
+== Solution ==
+=== Solution 1 ===
+The well known problem of ordering <math>x</math> elements of a string of <math>y</math> elements such that none of the <math>x</math> elements are next to each other has <math>{y-x+1\choose x}</math> solutions. (1)
+
+We generalize for <math>a</math> blues and <math>b</math> greens. Consider a string of <math>a+b</math> elements such that we want to choose the greens such that none of them are next to each other. We would also like to choose a place where we can divide this string into two strings such that the left one represents the first pole, and the right one represents the second pole, in order up the pole according to position on the string. 
+
+However, this method does not account for the fact that the first pole could end with a green, and the second pole could start with a green, since the original string assumed that no greens could be consecutive. We solve this problem by introducing an extra blue, such that we choose our divider by choosing one of these <math>a+1</math> blues, and not including that one as a flag on either pole.
+
+From (1), we now have <math>{a+2\choose b}</math> ways to order the string such that no greens are next to each other, and <math>a+1</math> ways to choose the extra blue that will divide the string into the two poles: or <math>(a+1){a+2\choose b}</math> orderings in total.
+
+However, we have overcounted the solutions where either pole has no flags, we have to count these separately. This is the same as choosing our extra blue as one of the two ends, and ordering the other <math>a</math> blues and <math>b</math> greens such that no greens are next to each other: for a total of <math>2{a+1\choose b}</math> such orderings.
+
+Thus, we have <math>(a+1){a+2\choose b}-2{a+1\choose b}</math> orderings that satisfy the conditions in the problem: plugging in <math>a=10</math> and <math>b=9</math>, we get <math>2310 \equiv \boxed{310} \pmod{1000}</math>.
+
+=== Solution 2 ===
+Split the problem into two cases:
+
+Case 1 - Both poles have blue flags:
+There are 9 ways to place the 10 blue flags on the poles. In each of these configurations, there are 12 spots that a green flag could go. (either in between two blues or at the tops or bottoms of the poles) Then, since there are 9 green flags, all of which must be used, there are <math>{12\choose9}</math> possiblities for each of the 9 ways to place the blue flags. Total: <math>{12\choose9}*9</math> possibilities.
+
+Case 2 - One pole has no blue flags:
+Since each pole is non empty, the pole without a blue flag must have one green flag. The other pole has 10 blue flags and, by the argument used in case 1, there are <math>{11\choose8}</math> possibilities, and since the poles are distinguishable, there are a total of <math>2*{11\choose8}</math> possiblities for this case.
+
+Finally, we have <math>9*{12\choose9}+2*{11\choose8}=2310 \equiv \boxed{310} \pmod{1000}</math> as our answer.
+
+=== Solution 3 (mad bash) ===
+
+Call the two flagpoles Flagpole A and Flagpole B.
+Case 1:
+Flag distribution: 1|18
+B|variable: <math>\dbinom{10}{9}=10</math> ways
+G|variable: <math>\dbinom{11}{8}=165</math> ways
+Case 2:
+Flag distribution: 2|17
+BB|variable: <math>\dbinom{9}{9}=1</math> way
+BG|variable (two ways to arrange the first sequence): <math>\dbinom{10}{8} \times 2 = 90</math> ways
+GG|variable: can't happen
+Case 3: 
+Flag distribution: 3|16
+BBB|variable: can't happen
+BBG|variable (3 legal ways to arrange): <math>\dbinom{9}{8} \times 3 = 27</math> ways
+GBG|variable (1 legal way to arrange): <math>\dbinom{10}{7} = 120</math> ways
+GGG|variable: clearly can't happen
+Case 4:
+Flag distribution: 4|15
+BBBB|variable: can't happen
+BBBG|variable (4 legal ways to arrange): <math>\dbinom{8}{8} \times 4 = 4</math> ways
+GBBG|variable (3 legal ways to arrange): <math>\dbinom{9}{7} \times 3 = 108</math> ways
+GGBG|variable: can't happen
+GGGG|variable: can't happen
+Case 5:
+Flag distribution: 5|14
+BBBBB|variable: can't happen
+BBBBG|variable: can't happen
+BBGBG|variable (6 legal ways to arrange): <math>\dbinom{8}{7} \times 6 = 48</math> ways
+GBGBG|variable (1 legal way to arrange): <math>\dbinom{9}{6} = 84</math> ways
+GGGGB|variable: can't happen
+GGGGG|variable: can't happen 
+Case 6:
+Flag distribution: 6|13
+BBBBBB|variable: can't happen
+BBBBBG|variable: can't happen
+BBBBGG|variable (10 legal ways to arrange): <math>\dbinom{7}{7} \times 10 = 10</math> ways
+BBBGGG|variable (4 legal ways to arrange): <math>\dbinom{8}{6} \times 4 = 112</math> ways
+BBGGGG|variable: can't happen
+BGGGGG|variable: can't happen
+GGGGGG|variable: can't happen
+Case 7: 
+Flag distribution: 7|12
+BBBBBBB|variable: can't happen
+BBBBBBG|variable: can't happen
+BBBBBGG|variable: can't happen
+BBBBGGG|variable (10 legal ways to arrange): <math>\dbinom{7}{6} \times 10 = 70</math> ways
+BBBGGGG|variable (1 legal way to arrange): <math>\dbinom{8}{5} = 56</math> ways
+rest can't happen
+Case 8:
+Flag distribution: 8|11
+BBBBBBBB|variable: can't happen
+BBBBBBBG|variable: can't happen
+BBBBBBGG|variable: can't happen
+BBBBBGGG|variable (20 legal ways to arrange): <math>\dbinom{6}{6} \times 20 = 20</math> ways
+BBBBGGGG|variable: (5 legal ways to arrange): <math>\dbinom{7}{5} \times 5 = 105</math> ways
+others can't happen
+Case 9:
+Flag distribution: 9|10
+BBBBBGGGG|variable (15 legal ways to arrange): <math>\dbinom{6}{5} \times 15 = 90</math> ways
+BBBBGGGGG|variable (1 legal way to arrange): <math>\dbinom{7}{4} = 35</math> ways
+others can't happen
+So our total number of ways is <math>2</math> times <math>10+165+1+90+27+120+4+108+48+84+10+112+70+56+20+105+90+35</math> (since the two flagpoles are distinguishable) which is <math>2310</math> ways. We have to find the last 3 digits, so our final answer is <math>310</math>.
+
+Solution by fidgetboss_4000
+
+Note: Do not attempt unless you are good at bashing.
+
+
+
+
+=== Solution 4 (Vandermonde's) ===
+
+Let the number of blue flags on the first flagpole be <math>b</math> and define <math>g</math> similarly. Now note the bound <math>g \le b+1.</math> Now we cannot have any two consecutive greens. This condition is the same as "there are <math>b+1</math> spaces between each blue flag. How many ways can we put the <math>g</math> green flags in the <math>b+1</math> spaces?" Therefore given <math>b</math> blue flags on the first flagpole and <math>g</math> green flags on the first flagpole we have a total of <math>\binom{b+1}{g}.</math> Similarly there are <math>\binom{11-b}{9-g}</math> ways for the second flagpole. Summing over all possible possibilities we see the sum is <math>\sum_{g = 0}^{b+1} \sum_{b=0}^{10}\binom{b+1}{g}\binom{11-b}{9-g}.</math> Swapping the sum we have <math>\sum_{g = 0}^{b+1} \sum_{b=0}^{10}\binom{b+1}{g}\binom{11-b}{9-g} = \sum_{b=0}^{10} \sum_{g = 0}^{b+1}\binom{b+1}{g}\binom{11-b}{9-g}.</math> Then applying Vandermonde's yields <math> \sum_{b=0}^{10}\binom{12}{9}</math> so the sum is <math>11 \cdot\binom{12}{9}.</math> However, this answer overcounts. We cannot have no flags on a pole, so we subtract <math>2 \cdot\binom{11}{9}</math> since we can have empty flags for the first or second flag. Therefore the answer is <math>11 \cdot\binom{12}{9} - 2 \cdot\binom{11}{9} \pmod{1000} \equiv \boxed{310} \pmod{1000}.</math>
+
+=== Solution 5 ===
+
+Consider this as arranging the flags on one big flagpole, then splitting the flagpole into two. 
+
+Example: Start with big flagpole <math>BGBGBGGBBGBGBGBGBGB</math>, and then split it into <math>BGBGBG</math> and <math>GBBGBGBGBGBGB</math>.
+
+We will split this problem into two cases:
+
+Case 1: The split is not two greens. Basically if arranging 10 blue flags and 9 green flags does not give any consecutive green flags, then we can split it into two flagpoles wherever. For example,
+<cmath>BGBBGBGBGBGBGBGBGBG</cmath>
+can become <cmath>BGB|BGBGBGBGBGBGBGBG</cmath> or <cmath>BGBBG|BGBGBGBGBGBGBG</cmath>.
+
+By stars and bars, there are <math>\binom{11}{2}</math> ways to arrange the flags, then <math>18</math> ways to split the big flagpole, so total <math>\binom{11}{2}\cdot 18</math> ways.
+
+Case 2: The split is two greens. Here the big flagpole has two consecutive green flags, so we are forced to split the two green flags.
+
+There are <math>\binom{11}{3}\cdot 8</math> ways for this case, since we first place 8 “<math>G</math>”s among 10 blue flags, then choose one to become <math>GG</math>. (Look at the first example)
+
+Thus the total number of ways is
+<cmath>\binom{11}{2}\cdot 18 + \binom{11}{3}\cdot 8 = 2310 \equiv \boxed{310} \pmod{1000}.</cmath>
+
+~ RubixMaster21
+
+=== Solution 6 ===
+We split the 9 green flags over the two poles: <math>0</math> and <math>9</math>, <math>1</math> and <math>8</math>, <math>2</math> and <math>7</math>, and so on, respectively.
+
+For the first case, <math>0</math> and <math>9</math>, 8 of the 10 blue flags must be placed between the 9 green flags on the same pole, and the 9th blue flag must be placed on the other pole so that there is at least one flag on each pole. This leaves <math>\textbf{11}</math> choices for the last blue flag.
+
+Moving on, notice that now for every other case there will always be 3 blue flags left to place. Since we want to distribute 3 indistinguishable flags to 11 distinguishable spots, we use stars and bars. There are <math>\binom{13}{10} = \textbf{286}</math> ways to distribute the flags for the other cases.
+
+Then the total number of ways is <math>2 * (11 + 4 * 286) = 2310 \equiv \boxed{310} \pmod{1000}</math>, since the poles are distinguishable.
+
+~ AXcatterwocky

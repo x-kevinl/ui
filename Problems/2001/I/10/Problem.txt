@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>S</math> be the [[set]] of points whose [[coordinate]]s <math>x,</math> <math>y,</math> and <math>z</math> are integers that satisfy <math>0\le x\le2,</math> <math>0\le y\le3,</math> and <math>0\le z\le4.</math>  Two distinct points are randomly chosen from <math>S.</math>  The [[probability]] that the [[midpoint]] of the segment they determine also belongs to <math>S</math> is <math>m/n,</math> where <math>m</math> and <math>n</math> are relatively prime positive integers.  Find <math>m + n.</math>

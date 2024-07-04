@@ -1,0 +1,4 @@
+==Solution==
+The [[prime factorization]] of $588$ is $2^2\cdot3\cdot7^2.$ We can see $w=2, x=1,$ and $z=2.$ Because $5^0=1, y=0.$
+
+$$2w+3x+5y+7z=4+3+0+14=\boxed{\textbf{(A)}\ 21}$$

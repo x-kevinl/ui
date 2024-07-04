@@ -1,0 +1,6 @@
+==Solution==
+Area of the circle inscribed inside the semicircle $= \pi r^2 \Rightarrow \pi(2^2) = 4 \pi .$
+Area of the larger circle (semicircle's area x 2)$= \pi r^2 \Rightarrow \pi(4^2)= 16 \pi$ (4, or the diameter of the inscribed circle is the same thing as the radius of the semicircle). Thus, the area of the semicircle is $\frac{1}{2}(16 \pi) \Rightarrow 8 \pi .$
+Part of the semicircle that is unshaded is $\frac{4 \pi}{8 \pi} = \frac{1}{2}$ Therefore, the shaded part is $1 - \frac{1}{2} = \frac{1}{2}$
+
+Thus the answer is $\frac{1}{2}\Rightarrow \fbox{A}$

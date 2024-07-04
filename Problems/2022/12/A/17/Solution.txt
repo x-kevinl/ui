@@ -1,0 +1,22 @@
+==Solution 1==
+
+We are given that $a\cdot(\sin{x}+\sin{(2x)})=\sin{(3x)}$
+
+Using the sine double angle formula combine with the fact that $\sin{(3x)} = \sin{x}\cdot(4\cos^2{x}-1)$, which can be derived using sine angle addition with $\sin{(2x + x)}$, we have $$a\cdot(\sin{x}+2\sin{x}\cos{x})=\sin{x}\cdot(4\cos^2{x}-1)$$
+Since $\sin{x} \ne 0$ as it is on the open interval $(0, \pi)$, we can divide out $\sin{x}$ from both sides, leaving us with $$a\cdot(1+2\cos{x})=4\cos^2{x}-1$$
+Now, distributing $a$ and rearranging, we achieve the equation $$4\cos^2{x} - 2a\cos{x} - (1+a) = 0$$ which is a quadratic in $\cos{x}$.
+
+Applying the quadratic formula to solve for $\cos{x}$, we get $$\cos{x} =\frac{2a\pm\sqrt{4a^2+4(4)(1+a)}}{8}$$ and expanding the terms under the radical, we get $$\cos{x} =\frac{2a\pm\sqrt{4a^2+16a+16}}{8}$$
+Factoring, since $4a^2+16a+16 = (2a+4)^2$, we can simplify our expression even further to $$\cos{x} =\frac{a\pm(a+2)}{4}$$
+
+Now, solving for our two solutions,  $\cos{x} = -\frac{1}{2}$ and $\cos{x} = \frac{a+1}{2}$.
+
+Since $\cos{x} = -\frac{1}{2}$ yields a solution that is valid for all $a$, that being $x = \frac{2\pi}{3}$, we must now solve for the case where $\frac{a+1}{2}$ yields a valid value.
+
+As $x\in (0, \pi)$, $\cos{x}\in (-1, 1)$, and therefore $\frac{a+1}{2}\in (-1, 1)$, and $a\in(-3,1)$.
+
+There is one more case we must consider inside this interval though, the case where $\frac{a+1}{2} = -\frac{1}{2}$, as this would lead to a double root for $\cos{x}$, yielding only one valid solution for $x$. Solving for this case, $ a \ne -2$.
+
+Therefore, combining this fact with our solution interval, $a\in(-3, -2) \cup (-2, 1)$, so the answer is $-3-2+1 = \boxed{\textbf{(A) } {-}4}$.
+
+- DavidHovey

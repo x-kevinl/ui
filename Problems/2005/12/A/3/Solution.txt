@@ -1,0 +1,2 @@
+== Solution ==
+Let $w$ be the width, so the length is $2w$. By the [[Pythagorean Theorem]], $w^2 + 4w^2 = x^2 \Longrightarrow \frac{x}{\sqrt{5}} = w$. The area of the rectangle is $(w)(2w) = 2w^2 = 2\left(\frac{x}{\sqrt{5}}\right)^2 = \frac{2}{5}x^2 \ \mathrm{(B)}$.

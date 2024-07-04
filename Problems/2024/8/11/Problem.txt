@@ -1,0 +1,21 @@
+==Problem==
+
+The coordinates of $\triangle ABC$ are $A(5,7)$, $B(11,7)$, and $C(3,y)$, with $y>7$. The area of $\triangle ABC$ is 12. What is the value of $y$?
+
+<asy>
+
+draw((3,11)--(11,7)--(5,7)--(3,11));
+
+dot((5,7));
+label("$A(5,7)$",(5,7),S);
+
+dot((11,7));
+label("$B(11,7)$",(11,7),S);
+
+dot((3,11));
+label("$C(3,y)$",(3,11),NW);
+
+</asy>
+
+
+$\textbf{(A) }8\qquad\textbf{(B) }9\qquad\textbf{(C) }10\qquad\textbf{(D) }11\qquad \textbf{(E) }12$

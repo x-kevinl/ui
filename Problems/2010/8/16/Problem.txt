@@ -1,0 +1,4 @@
+== Problem 16 ==
+A square and a circle have the same area. What is the ratio of the side length of the square to the radius of the circle?
+
+$ \textbf{(A)}\ \frac{\sqrt{\pi}}{2}\qquad\textbf{(B)}\ \sqrt{\pi}\qquad\textbf{(C)}\ \pi\qquad\textbf{(D)}\ 2\pi\qquad\textbf{(E)}\ \pi^{2} $

@@ -1,0 +1,4 @@
+==Problem==
+For a positive integer $n$, the factorial notation $n!$ represents the product of the integers from $n$ to $1$. What value of $N$ satisfies the following equation? $$5!\cdot 9!=12\cdot N!$$
+
+$\textbf{(A) }10\qquad\textbf{(B) }11\qquad\textbf{(C) }12\qquad\textbf{(D) }13\qquad\textbf{(E) }14\qquad$

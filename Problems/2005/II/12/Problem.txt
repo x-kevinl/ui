@@ -1,0 +1,3 @@
+== Problem ==
+[[Square]] <math>ABCD </math> has [[center]] <math> O,\ AB=900,\ E </math> and <math> F </math> are on <math> AB </math> with <math> AE<BF </math> and <math> E </math> between <math> A </math> and <math> F, m\angle EOF =45^\circ, </math> and <math> EF=400. </math> Given that <math> BF=p+q\sqrt{r}, </math> where <math> p,q, </math> and <math> r </math> are [[positive]] [[integer]]s and <math> r </math> is not divisible by the [[square]] of any [[prime]], find <math> p+q+r. </math>
+__TOC__

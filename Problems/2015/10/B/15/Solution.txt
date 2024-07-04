@@ -1,0 +1,3 @@
+==Solution 1==
+Let the amount of people be $p$, horses be $h$, sheep be $s$, cows be $c$, and ducks be $d$. 
+We know $$3p=h$$ $$4s=c$$ $$3d=p$$ Then the total amount of people, horses, sheep, cows, and ducks may be written as $p+h+s+c+d = 3d+3(3d)+s+4s+d$. This is equivalent to $13d+5s$. Looking through the options, we see $47$ is impossible to make for integer values of $h$ and $c$. So the answer is $\boxed{\textbf{(B)} 47}$.

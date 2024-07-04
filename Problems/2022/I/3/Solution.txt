@@ -1,0 +1,44 @@
+== Diagram ==
+<asy>
+/* Made by MRENTHUSIASM */
+size(300);
+pair A, B, C, D, A1, B1, C1, D1, P, Q;
+A = (-250,6*sqrt(731));
+B = (250,6*sqrt(731));
+C = (325,-6*sqrt(731));
+D = (-325,-6*sqrt(731));
+A1 = bisectorpoint(B,A,D);
+B1 = bisectorpoint(A,B,C);
+C1 = bisectorpoint(B,C,D);
+D1 = bisectorpoint(A,D,C);
+P = intersectionpoint(A--300*(A1-A)+A,D--300*(D1-D)+D);
+Q = intersectionpoint(B--300*(B1-B)+B,C--300*(C1-C)+C);
+draw(anglemark(P,A,B,1000),red);
+draw(anglemark(D,A,P,1000),red);
+draw(anglemark(A,B,Q,1000),red);
+draw(anglemark(Q,B,C,1000),red);
+draw(anglemark(P,D,A,1000),red);
+draw(anglemark(C,D,P,1000),red);
+draw(anglemark(Q,C,D,1000),red);
+draw(anglemark(B,C,Q,1000),red);
+add(pathticks(anglemark(P,A,B,1000), n = 1, r = 0.15, s = 750, red));
+add(pathticks(anglemark(D,A,P,1000), n = 1, r = 0.15, s = 750, red));
+add(pathticks(anglemark(A,B,Q,1000), n = 1, r = 0.15, s = 750, red));
+add(pathticks(anglemark(Q,B,C,1000), n = 1, r = 0.15, s = 750, red));
+add(pathticks(anglemark(P,D,A,1000), n = 2, r = 0.12, spacing = 150, s = 750, red));
+add(pathticks(anglemark(C,D,P,1000), n = 2, r = 0.12, spacing = 150, s = 750, red));
+add(pathticks(anglemark(Q,C,D,1000), n = 2, r = 0.12, spacing = 150, s = 750, red));
+add(pathticks(anglemark(B,C,Q,1000), n = 2, r = 0.12, spacing = 150, s = 750, red));
+dot("$A$",A,1.5*dir(A),linewidth(4));
+dot("$B$",B,1.5*dir(B),linewidth(4));
+dot("$C$",C,1.5*dir(C),linewidth(4));
+dot("$D$",D,1.5*dir(D),linewidth(4));
+dot("$P$",P,1.5*NE,linewidth(4));
+dot("$Q$",Q,1.5*NW,linewidth(4));
+draw(A--B--C--D--cycle^^A--P--D^^B--Q--C^^P--Q);
+label("$500$",midpoint(A--B),1.25N);
+label("$650$",midpoint(C--D),1.25S);
+label("$333$",midpoint(A--D),1.25W);
+label("$333$",midpoint(B--C),1.25E);
+</asy>
+~MRENTHUSIASM ~ihatemath123

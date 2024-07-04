@@ -1,0 +1,8 @@
+== Solution 1 ==
+There are $41-1=40$ gaps between the $41$ telephone poles, so the distance of each gap is $5280\div40=132$ feet.
+
+Each of Oscar's leaps covers $132\div12=11$ feet, and each of Elmer's strides covers $132\div44=3$ feet.
+
+Therefore, Oscar's leap is $11-3=\boxed{\textbf{(B) }8}$ feet longer than Elmer's stride.
+
+~MRENTHUSIASM

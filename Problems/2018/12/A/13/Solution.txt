@@ -1,0 +1,3 @@
+==Solution 1==
+
+This looks like balanced ternary, in which all the integers with absolute values less than $\frac{3^n}{2}$ are represented in $n$ digits. There are 8 digits. Plugging in 8 into the formula for the balanced ternary gives a maximum bound of $|x|=3280.5$, which means there are 3280 positive integers, 0, and 3280 negative integers. Since we want all nonnegative integers, there are $3280+1=\boxed{3281}$ integers or $\boxed{\textbf{D}}$.

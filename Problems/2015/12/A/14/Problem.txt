@@ -1,0 +1,5 @@
+==Problem==
+
+<!-- don't remove the following tag, for PoTW on the Wiki front page--><onlyinclude>What is the value of $a$ for which $\frac{1}{\text{log}_2a} + \frac{1}{\text{log}_3a} + \frac{1}{\text{log}_4a} = 1$?<!-- don't remove the following tag, for PoTW on the Wiki front page--></onlyinclude>
+
+$ \textbf{(A)}\ 9\qquad\textbf{(B)}\ 12\qquad\textbf{(C)}\ 18\qquad\textbf{(D)}\ 24\qquad\textbf{(E)}\ 36$

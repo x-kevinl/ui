@@ -1,0 +1,28 @@
+==Solution 1==
+Note that triangles <math>\triangle AUV, \triangle BYZ</math> and <math>\triangle CWX</math> all have the same height because when they are folded up to create the legs of the table, the top needs to be parallel to the floor. We want to find the maximum possible value of this height, given that no two of <math>\overline{UV}, \overline{WX}</math> and <math>\overline{YZ}</math> intersect inside <math>\triangle ABC</math>. Let <math>h_{A}</math> denote the length of the altitude dropped from vertex <math>A,</math> and define <math>h_{B}</math> and <math>h_{C}</math> similarly. Also let <math>\{u, v, w, x, y, z\} = \{AU, AV, CW, CX, BY, BZ\}</math>. Then by similar triangles
+<cmath>\begin{align}
+\frac{u}{AB}=\frac{v}{AC}=\frac{h}{h_{A}}, \\
+\frac{w}{CA}=\frac{x}{CB}=\frac{h}{h_{C}}, \\
+\frac{y}{BC}=\frac{z}{BA}=\frac{h}{h_{B}}.
+\end{align}</cmath>
+Since <math>h_{A}=\frac{2K}{23}</math> and similarly for <math>27</math> and <math>30,</math> where <math>K</math> is the area of <math>\triangle ABC,</math> we can write
+<cmath>\begin{align}
+\frac{u}{30}=\frac{v}{27}=\frac{h}{\tfrac{2K}{23}}, \\
+\frac{w}{27}=\frac{x}{23}=\frac{h}{\tfrac{2K}{30}}, \\
+\frac{y}{23}=\frac{z}{30}=\frac{h}{\tfrac{2K}{27}}.
+\end{align}</cmath>
+and simplifying gives <math>u=x=\frac{690h}{2K}, v=y=\frac{621h}{2K}, w=z=\frac{810h}{2K}</math>. Because no two segments can intersect inside the triangle, we can form the inequalities <math>v+w\leq 27, x+y\leq 23,</math> and <math>z+u\leq 30</math>. That is, all three of the inequalities
+<cmath>\begin{align}
+\frac{621h+810h}{2K}\leq 27, \\
+\frac{690h+621h}{2K}\leq 23, \\
+\frac{810h+690h}{2K}\leq 30.
+\end{align}</cmath>
+must hold. Dividing both sides of each equation by the RHS, we have
+<cmath>\begin{align}
+\frac{53h}{2K}\leq 1\, \text{since}\, \frac{1431}{27}=53, \\
+\frac{57h}{2K}\leq 1\, \text{since}\, \frac{1311}{23}=57, \\
+\frac{50h}{2K}\leq 1\, \text{since}\, \frac{1500}{30}=50.
+\end{align}</cmath>
+It is relatively easy to see that <math>\frac{57h}{2K}\leq 1</math> restricts us the most since it cannot hold if the other two do not hold. The largest possible value of <math>h</math> is thus <math>\frac{2K}{57},</math> and note that by Heron's formula the area of <math>\triangle ABC</math> is <math>20\sqrt{221}</math>. Then <math>\frac{2K}{57}=\frac{40\sqrt{221}}{57},</math> and the answer is <math>40+221+57=261+57=\boxed{318}</math>
+
+~sugar_rush

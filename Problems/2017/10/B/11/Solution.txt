@@ -1,0 +1,2 @@
+==Solution==
+$60\% \cdot 20\% = 12\%$ of the people that claim that they like dancing actually dislike it, and $40\% \cdot 90\% = 36\%$ of the people that claim that they dislike dancing actually dislike it. Therefore, the answer is $\frac{12\%}{12\%+36\%} = \boxed{\textbf{(D) } 25\%}$.

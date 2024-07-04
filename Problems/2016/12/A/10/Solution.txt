@@ -1,0 +1,4 @@
+==Solution 1==
+Assume that Edie and Dee were originally in seats 3 and 4. If this were so, there is no possible position for which Bea can move 2 seats to the right. The same applies for seats 2 and 3. This means that either Edie or Dee was originally in an edge seat. If Edie and Dee were in seats 1 and 2, then Bea must have been in seat 3, which would mean that seat 5 would now be occupied and the positioning would not work. So, Edie and Dee are in seats 4 and 5. This means that Bea was originally in seat 1. Ceci must have been in seat 3 to keep seat 1 open, which leaves seat 2.
+
+Thus, Ada was in seat $\boxed{\textbf{(B) }2}$.

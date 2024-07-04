@@ -1,0 +1,3 @@
+== Problem 13 ==
+Equilateral <math>\triangle ABC</math> has side length <math>\sqrt{111}</math>. There are four distinct triangles <math>AD_1E_1</math>, <math>AD_1E_2</math>, <math>AD_2E_3</math>, and <math>AD_2E_4</math>, each congruent to <math>\triangle ABC</math>,
+with <math>BD_1 = BD_2 = \sqrt{11}</math>. Find <math>\sum_{k=1}^4(CE_k)^2</math>.

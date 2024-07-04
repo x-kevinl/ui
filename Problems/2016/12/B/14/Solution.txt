@@ -1,0 +1,10 @@
+==Solution==
+The second term in a geometric series is $a_2 = a \cdot r$, where $r$ is the common ratio for the series and $a$ is the first term of the series. So we know that $a\cdot r = 1$ and we wish to find the minimum value of the infinite sum of  the series. We know that: $S_\infty = \frac{a}{1-r}$ and substituting in $a=\frac{1}{r}$, we get that $S_\infty = \frac{\frac{1}{r}}{1-r} = \frac{1}{r(1-r)} = \frac{1}{r}+\frac{1}{1-r}$. From here, you can either use calculus or AM-GM.
+
+$\textbf{Calculus}$
+
+Let $f(x) = \frac{1}{x-x^2} = (x-x^2)^{-1}$, then $f'(x) = -(x-x^2)^{-2}\cdot (1-2x)$. Since $f(0)$ and $f(1)$ are undefined $x \neq 0,1$. This means that we only need to find where the derivative equals $0$, meaning $1-2x = 0 \Rightarrow x =\frac{1}{2}$. So $ r = \frac{1}{2}$, meaning that $S_\infty = \frac{1}{\frac{1}{2} - (\frac{1}{2})^2} = \frac{1}{\frac{1}{2}-\frac{1}{4}} = \frac{1}{\frac{1}{4}} = 4$
+
+$\textbf{AM-GM}$
+
+For 2 positive real numbers $a$ and $b$, $\frac{a+b}{2} \geq \sqrt{ab}$. Let $a = \frac{1}{r}$ and $b = \frac{1}{1-r}$. Then: $\frac{\frac{1}{r}+\frac{1}{1-r}}{2} \geq \sqrt{\frac{1}{r}\cdot\frac{1}{1-r}}=\sqrt{\frac{1}{r}+\frac{1}{1-r}}$. This implies that $\frac{S_\infty}{2} \geq \sqrt{S_\infty}$. or $S_\infty^2 \geq 4 \cdot S_\infty$. Rearranging : $(S_\infty-2)^2 \geq 4 \Rightarrow S_\infty - 2 \geq 2 \Rightarrow S_\infty \geq 4$. Thus, the smallest value is $S_\infty = 4$.

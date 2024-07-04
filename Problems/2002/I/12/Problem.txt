@@ -1,0 +1,2 @@
+== Problem ==
+Let <math>F(z)=\dfrac{z+i}{z-i}</math> for all complex numbers <math>z\neq i</math>, and let <math>z_n=F(z_{n-1})</math> for all positive integers <math>n</math>. Given that <math>z_0=\dfrac{1}{137}+i</math> and <math>z_{2002}=a+bi</math>, where <math>a</math> and <math>b</math> are real numbers, find <math>a+b</math>.

@@ -1,0 +1,2 @@
+==Solution==
+The first rotation moves the base of the $F$ to the negative $y$-axis, and the stem to the positive $x$-axis. The reflection then moves the stem to the negative $x$-axis, with the base unchanged. Then the half turn moves the stem to the positive $x$ axis and the base to the positive $y$-axis, choice $\boxed{\mathbf{(E)}}$.

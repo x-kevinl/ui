@@ -1,0 +1,5 @@
+==Problem 22==
+
+A roll of tape is $4$ inches in diameter and is wrapped around a ring that is $2$ inches in diameter. A cross section of the tape is shown in the figure below. The tape is $0.015$ inches thick. If the tape is completely unrolled, approximately how long would it be? Round your answer to the nearest $100$ inches. 
+
+$\textbf{(A) } 300\qquad\textbf{(B) } 600\qquad\textbf{(C) } 1200\qquad\textbf{(D) } 1500\qquad\textbf{(E) } 1800$

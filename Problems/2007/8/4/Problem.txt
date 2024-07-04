@@ -1,0 +1,7 @@
+== Problem ==
+
+A haunted house has six windows. In how many ways can
+Georgie the Ghost enter the house by one window and leave
+by a different window?
+
+$\mathrm{(A)}\ 12 \qquad\mathrm{(B)}\ 15 \qquad\mathrm{(C)}\ 18 \qquad\mathrm{(D)}\ 30 \qquad\mathrm{(E)}\ 36$

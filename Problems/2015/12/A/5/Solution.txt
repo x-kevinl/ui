@@ -1,0 +1,3 @@
+==Solution==
+
+To maximize our estimate, we want to maximize $\frac{a}{b}$ and minimize $c$, because both terms are positive values. Therefore we round $c$ down. To maximize $\frac{a}{b}$, round $a$ up and $b$ down. $\Rightarrow \boxed{\textbf{(D)}}$
