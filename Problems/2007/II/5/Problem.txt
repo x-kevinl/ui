@@ -1,4 +1,3 @@
 == Problem ==
 The [[graph]] of the [[equation]] <math>9x+223y=2007</math> is drawn on graph paper with each [[square]] representing one [[unit square|unit]] in each direction. How many of the <math>1</math> by <math>1</math> graph paper squares have interiors lying entirely below the graph and entirely in the first [[quadrant]]?
 
-__TOC__
